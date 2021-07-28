@@ -1,6 +1,4 @@
-import {
-	faExclamationTriangle, faInfoCircle, faTimesCircle
-} from '@fortawesome/free-solid-svg-icons';
+import { faExclamationTriangle, faInfoCircle, faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { NodeProps, recurseIntoChildren, registerNode } from './register';
 

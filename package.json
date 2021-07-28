@@ -6,6 +6,7 @@
 	"scripts": {
 		"build": "tsc",
 		"test": "jest",
+		"format": "prettier --write .",
 		"test:ci": "jest --ci --reporters='default' --reporters='./.github/github-actions-reporter'"
 	},
 	"license": "MIT",
