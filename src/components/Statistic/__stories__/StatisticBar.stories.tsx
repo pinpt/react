@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
-import StatisticsBar from '..';
+import StatisticsBar from '../Bar';
 
 export default {
 	component: StatisticsBar,

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
-import ViewStatistic from '..';
+import ViewStatistic from '../Views';
 
 export default {
 	component: ViewStatistic,
