@@ -47,6 +47,9 @@
     "transform": {
       ".(ts|tsx)": "ts-jest"
     },
+    "testPathIgnorePatterns": [
+      "dist"
+    ],
     "moduleFileExtensions": [
       "ts",
       "tsx",
