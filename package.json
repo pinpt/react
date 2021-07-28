@@ -48,7 +48,7 @@
       ".(ts|tsx)": "ts-jest"
     },
     "testPathIgnorePatterns": [
-      "src"
+      "dist"
     ],
     "moduleFileExtensions": [
       "ts",
