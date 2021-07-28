@@ -1,6 +1,6 @@
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { slugifyString } from '../lib/string';
+import { slugifyString } from '../../lib/string';
 import { NodeProps, recurseIntoChildren, registerNode } from './register';
 
 const Heading = ({ node }: NodeProps) => {

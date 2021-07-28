@@ -1,7 +1,7 @@
 import { ReactYouTubeLite as Youtube } from 'react-youtube-lite';
-import { getFileUrl } from '../lib/file_metadata';
-import { slugifyContent } from '../lib/string';
-import { ChangelogCoverMedia, ChangelogMediaType } from '../lib/types';
+import { getFileUrl } from '../../lib/file_metadata';
+import { slugifyContent } from '../../lib/string';
+import { ChangelogCoverMedia, ChangelogMediaType } from '../../lib/types';
 import { Content as Doc } from './';
 
 const ImageMedia = ({ src, title = '' }: { src: string; title?: string }) => {

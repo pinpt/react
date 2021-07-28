@@ -1,4 +1,4 @@
-import { extractImageMetadataFromFileID } from '../lib/file_metadata';
+import { extractImageMetadataFromFileID } from '../../lib/file_metadata';
 import { NodeProps, registerNode } from './register';
 
 const InlineImage = ({ node }: NodeProps) => {
