@@ -5,6 +5,9 @@ import ChangelogTitle from '../Title';
 export default {
 	component: ChangelogTitle,
 	title: 'Components/Changelog Card/Title',
+	parameters: {
+		jest: ['ChangelogCardTitle.test.tsx'],
+	}
 } as Meta;
 
 export const Short: React.VFC<{}> = () => <ChangelogTitle title="Short and Sweet" />;

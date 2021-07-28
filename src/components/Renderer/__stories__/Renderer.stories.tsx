@@ -25,6 +25,9 @@ import simple_image_block_with_link from '../__data__/simple_image_block_with_li
 export default {
 	component: Content,
 	title: 'Components/Renderer/Content',
+	parameters: {
+		jest: ['RendererContent.test.tsx'],
+	}
 } as Meta;
 
 export const Empty: React.VFC<{}> = () => <Content node={emptyDoc()} />;
