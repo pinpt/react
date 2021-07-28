@@ -4,7 +4,7 @@ import ChangelogTitle from '../Title';
 
 export default {
 	component: ChangelogTitle,
-	title: 'Components/Changelog/Title',
+	title: 'Components/Changelog Card/Title',
 } as Meta;
 
 export const Short: React.VFC<{}> = () => <ChangelogTitle title="Short and Sweet" />;
