@@ -19,6 +19,5 @@
 		"skipLibCheck": true,
 		"baseUrl": "./"
 	},
-	"include": ["src/**/*"],
 	"exclude": ["dist", "node_modules"]
 }
