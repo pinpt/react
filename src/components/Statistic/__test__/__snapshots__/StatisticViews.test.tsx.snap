@@ -1,0 +1,125 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test custom class with empty state 1`] = `
+<div
+  className="Statistic Views wrapper test-custom"
+>
+  <svg
+    fill="none"
+    height={16}
+    stroke="currentColor"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="2"
+    viewBox="0 0 24 24"
+    width={16}
+  >
+    <path
+      d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
+    />
+    <circle
+      cx="12"
+      cy="12"
+      r="3"
+    />
+  </svg>
+  <span
+    className="Statistic Views count"
+  >
+    0
+  </span>
+</div>
+`;
+
+exports[`Test custom class with large number 1`] = `
+<div
+  className="Statistic Views wrapper test-custom"
+>
+  <svg
+    fill="none"
+    height={16}
+    stroke="currentColor"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="2"
+    viewBox="0 0 24 24"
+    width={16}
+  >
+    <path
+      d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
+    />
+    <circle
+      cx="12"
+      cy="12"
+      r="3"
+    />
+  </svg>
+  <span
+    className="Statistic Views count"
+  >
+    2222
+  </span>
+</div>
+`;
+
+exports[`Test empty state 1`] = `
+<div
+  className="Statistic Views wrapper "
+>
+  <svg
+    fill="none"
+    height={16}
+    stroke="currentColor"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="2"
+    viewBox="0 0 24 24"
+    width={16}
+  >
+    <path
+      d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
+    />
+    <circle
+      cx="12"
+      cy="12"
+      r="3"
+    />
+  </svg>
+  <span
+    className="Statistic Views count"
+  >
+    0
+  </span>
+</div>
+`;
+
+exports[`Test large number 1`] = `
+<div
+  className="Statistic Views wrapper "
+>
+  <svg
+    fill="none"
+    height={16}
+    stroke="currentColor"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="2"
+    viewBox="0 0 24 24"
+    width={16}
+  >
+    <path
+      d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
+    />
+    <circle
+      cx="12"
+      cy="12"
+      r="3"
+    />
+  </svg>
+  <span
+    className="Statistic Views count"
+  >
+    2222
+  </span>
+</div>
+`;

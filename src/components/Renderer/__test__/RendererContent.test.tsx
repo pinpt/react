@@ -1,4 +1,3 @@
-import React from 'react';
 import renderer from 'react-test-renderer';
 import { Content, emptyDoc } from '..';
 import simple_blockquote from '../__data__/simple_blockquote';

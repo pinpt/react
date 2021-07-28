@@ -44,3 +44,18 @@
 	opacity: 1;
 	left: 3rem;
 }
+
+.Statistic.wrapper {
+	display: flex;
+	align-items: center;
+	color: gray;
+}
+
+.Statistic .count {
+	margin-left: 5px;
+	color: gray;
+}
+
+.Statistic.Bar .Statistic.Views.wrapper {
+	margin-right: 20px;
+} 
