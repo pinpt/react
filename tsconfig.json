@@ -1,0 +1,24 @@
+{
+	"compilerOptions": {
+		"sourceMap": true,
+		"strict": false,
+		"strictNullChecks": true,
+		"noImplicitAny": false,
+		"esModuleInterop": true,
+		"allowJs": true,
+		"resolveJsonModule": true,
+		"module": "commonjs",
+		"target": "es2017",
+		"jsx": "react-jsx",
+		"types": ["react", "node", "jest"],
+		"outDir": "dist",
+		"stripInternal": true,
+		"removeComments": true,
+		"declarationMap": true,
+		"declaration": true,
+		"skipLibCheck": true,
+		"baseUrl": "./"
+	},
+	"include": ["src/**/*"],
+	"exclude": ["dist", "node_modules"]
+}
