@@ -6,7 +6,7 @@ export interface IChangelogTitleProps {
 const ChangelogTitle = (props: IChangelogTitleProps) => {
 	const { className, title } = props;
 	return (
-		<h2 className={`Changelog Title ${className ?? ''}`}>
+		<h2 className={`Changelog Card Title ${className ?? ''}`}>
 			{title}
 		</h2>
 	);
