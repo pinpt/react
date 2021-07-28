@@ -1,0 +1,380 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test empty doc 1`] = `<p />`;
+
+exports[`Test simple H1 1`] = `
+<h1
+  className="heading"
+>
+  <a
+    aria-hidden="true"
+    className="anchor"
+    href="#Heading"
+    id="Heading"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-link fa-w-16 "
+      data-icon="link"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </a>
+  Heading
+</h1>
+`;
+
+exports[`Test simple H2 1`] = `
+<h2>
+  Heading
+</h2>
+`;
+
+exports[`Test simple H3 1`] = `
+<h3>
+  Heading
+</h3>
+`;
+
+exports[`Test simple H4 1`] = `
+<h4>
+  Heading
+</h4>
+`;
+
+exports[`Test simple blockquote 1`] = `
+<blockquote>
+  Hi
+</blockquote>
+`;
+
+exports[`Test simple break 1`] = `<br />`;
+
+exports[`Test simple bullet list 1`] = `
+<ul>
+  <li>
+    Hi
+  </li>
+</ul>
+`;
+
+exports[`Test simple code block 1`] = `
+<pre
+  style={
+    Object {
+      "MozHyphens": "none",
+      "MozTabSize": "4",
+      "OTabSize": "4",
+      "WebkitHyphens": "none",
+      "background": "black",
+      "border": ".3em solid hsl(0, 0%, 33%)",
+      "borderRadius": ".25em",
+      "borderWidth": "0px",
+      "boxShadow": "1px 1px .5em black inset",
+      "color": "white",
+      "fontFamily": "ui-monospace",
+      "fontSize": "1em",
+      "hyphens": "none",
+      "lineHeight": "1.5",
+      "margin": ".5em 0",
+      "msHyphens": "none",
+      "overflow": "auto",
+      "padding": "1em",
+      "tabSize": "4",
+      "textAlign": "left",
+      "textShadow": "0 -.1em .2em black",
+      "whiteSpace": "pre",
+      "wordBreak": "normal",
+      "wordSpacing": "normal",
+      "wordWrap": "normal",
+    }
+  }
+>
+  <code
+    className="language-javascript"
+    style={
+      Object {
+        "MozHyphens": "none",
+        "MozTabSize": "4",
+        "OTabSize": "4",
+        "WebkitHyphens": "none",
+        "background": "none",
+        "color": "white",
+        "fontFamily": "Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace",
+        "fontSize": "1em",
+        "hyphens": "none",
+        "lineHeight": "1.5",
+        "msHyphens": "none",
+        "tabSize": "4",
+        "textAlign": "left",
+        "textShadow": "0 -.1em .2em black",
+        "whiteSpace": "pre",
+        "wordBreak": "normal",
+        "wordSpacing": "normal",
+        "wordWrap": "normal",
+      }
+    }
+  >
+    <span
+      className="token"
+      style={
+        Object {
+          "color": "hsl(53, 89%, 79%)",
+        }
+      }
+    >
+      var
+    </span>
+    <span
+      style={Object {}}
+    >
+       a 
+    </span>
+    <span
+      className="token"
+      style={
+        Object {
+          "color": "hsl(76, 21%, 52%)",
+        }
+      }
+    >
+      =
+    </span>
+    <span
+      style={Object {}}
+    >
+       
+    </span>
+    <span
+      className="token"
+      style={
+        Object {
+          "color": "hsl(14, 58%, 55%)",
+        }
+      }
+    >
+      1
+    </span>
+    <span
+      className="token"
+      style={
+        Object {
+          "Opacity": ".7",
+        }
+      }
+    >
+      ;
+    </span>
+  </code>
+</pre>
+`;
+
+exports[`Test simple emoji 1`] = `
+<span
+  className="emoji"
+  data-markup="heart"
+>
+  ❤️
+</span>
+`;
+
+exports[`Test simple error notice 1`] = `
+<div
+  className="notice error"
+>
+  <div
+    className="icon"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-times-circle fa-w-16 fa-fw "
+      data-icon="times-circle"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm121.6 313.1c4.7 4.7 4.7 12.3 0 17L338 377.6c-4.7 4.7-12.3 4.7-17 0L256 312l-65.1 65.6c-4.7 4.7-12.3 4.7-17 0L134.4 338c-4.7-4.7-4.7-12.3 0-17l65.6-65-65.6-65.1c-4.7-4.7-4.7-12.3 0-17l39.6-39.6c4.7-4.7 12.3-4.7 17 0l65 65.7 65.1-65.6c4.7-4.7 12.3-4.7 17 0l39.6 39.6c4.7 4.7 4.7 12.3 0 17L312 256l65.6 65.1z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </div>
+  <div>
+    hi
+  </div>
+</div>
+`;
+
+exports[`Test simple hr 1`] = `
+<div
+  className="hr"
+>
+  <div>
+    <hr />
+  </div>
+</div>
+`;
+
+exports[`Test simple image block 1`] = `
+<div>
+  <div
+    className="image_block flex justify-start"
+  >
+    <img
+      alt="card"
+      height={NaN}
+      src="https://cdn.pinpoint.com/card.png"
+      width={NaN}
+    />
+  </div>
+  <div
+    className="text-center italic text-gray-400"
+  >
+    card
+  </div>
+</div>
+`;
+
+exports[`Test simple image block with link 1`] = `
+<div>
+  <a
+    href="https://pinpoint.com"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <div
+      className="image_block flex justify-start"
+    >
+      <img
+        alt="card"
+        height={NaN}
+        src="https://cdn.pinpoint.com/card.png"
+        width={NaN}
+      />
+    </div>
+  </a>
+  <div
+    className="text-center italic text-gray-400"
+  >
+    card
+  </div>
+</div>
+`;
+
+exports[`Test simple info notice 1`] = `
+<div
+  className="notice info"
+>
+  <div
+    className="icon"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-info-circle fa-w-16 fa-fw "
+      data-icon="info-circle"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </div>
+  <div>
+    hi
+  </div>
+</div>
+`;
+
+exports[`Test simple inline image 1`] = `
+<div>
+  <img
+    alt="card"
+    className="inline_image"
+    src="https://cdn.pinpoint.com/card.png"
+  />
+</div>
+`;
+
+exports[`Test simple inline image with link 1`] = `
+<div>
+  <a
+    href="https://pinpoint.com"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <img
+      alt="card"
+      className="inline_image"
+      src="https://cdn.pinpoint.com/card.png"
+    />
+  </a>
+</div>
+`;
+
+exports[`Test simple ordered list 1`] = `
+<ol>
+  <li>
+    Hi
+  </li>
+</ol>
+`;
+
+exports[`Test simple paragraph 1`] = `
+<p>
+  Hi
+</p>
+`;
+
+exports[`Test simple text 1`] = `"Hi"`;
+
+exports[`Test simple warning notice 1`] = `
+<div
+  className="notice warning"
+>
+  <div
+    className="icon"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-exclamation-triangle fa-w-18 fa-fw "
+      data-icon="exclamation-triangle"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 576 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </div>
+  <div>
+    hi
+  </div>
+</div>
+`;
