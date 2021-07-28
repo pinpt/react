@@ -62,9 +62,7 @@ const StatisticClaps = (props: IStatisticProps) => {
 					fill="currentColor"
 				/>
 			</svg>
-			<span className="Statistic Claps count">
-				{count}
-			</span>
+			<span className="Statistic Claps count">{count}</span>
 		</div>
 	);
 };

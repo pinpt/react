@@ -6,5 +6,4 @@ export default {
 	Views,
 	Claps,
 	Bar,
-}
-
+};

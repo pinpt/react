@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { Meta } from '@storybook/react';
 import { Content, emptyDoc } from '..';
 import simple_text from '../__data__/simple_text';

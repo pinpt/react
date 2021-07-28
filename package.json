@@ -1,59 +1,59 @@
 {
-  "name": "@pinpt/react",
-  "version": "0.0.1",
-  "description": "The Pinpoint UI Library for React",
-  "main": "dist/index.js",
-  "scripts": {
-    "build": "tsc",
-    "test": "jest",
-    "test:write": "jest --updateSnapshot",
-    "format": "prettier --write .",
-    "test:ci": "jest --ci --reporters='default' --reporters='./.github/github-actions-reporter'",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook -o docs-build"
-  },
-  "license": "MIT",
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.35",
-    "@fortawesome/free-regular-svg-icons": "^5.15.3",
-    "@fortawesome/free-solid-svg-icons": "^5.15.3",
-    "@fortawesome/react-fontawesome": "^0.1.14",
-    "isomorphic-unfetch": "^3.1.0",
-    "react-syntax-highlighter": "^15.4.4",
-    "react-youtube-lite": "^1.0.1",
-    "slugify": "^1.6.0"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.14.8",
-    "@babel/preset-env": "^7.14.8",
-    "@storybook/addon-actions": "^6.3.6",
-    "@storybook/addon-essentials": "^6.3.6",
-    "@storybook/addon-links": "^6.3.6",
-    "@storybook/react": "^6.3.6",
-    "@types/jest": "^26.0.24",
-    "@types/node": "^16.4.4",
-    "@types/react": "^17.0.15",
-    "babel-jest": "^27.0.6",
-    "babel-loader": "^8.2.2",
-    "babel-polyfill": "^6.26.0",
-    "jest": "^27.0.6",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-test-renderer": "^17.0.2",
-    "ts-jest": "^27.0.4",
-    "typescript": "^4.3.5"
-  },
-  "jest": {
-    "transform": {
-      ".(ts|tsx)": "ts-jest"
-    },
-    "testPathIgnorePatterns": [
-      "dist"
-    ],
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js"
-    ]
-  }
+	"name": "@pinpt/react",
+	"version": "0.0.1",
+	"description": "The Pinpoint UI Library for React",
+	"main": "dist/index.js",
+	"scripts": {
+		"build": "tsc",
+		"test": "jest",
+		"test:write": "jest --updateSnapshot",
+		"format": "prettier --write .",
+		"test:ci": "jest --ci --reporters='default' --reporters='./.github/github-actions-reporter'",
+		"storybook": "start-storybook -p 6006",
+		"build-storybook": "build-storybook -o docs-build"
+	},
+	"license": "MIT",
+	"dependencies": {
+		"@fortawesome/fontawesome-svg-core": "^1.2.35",
+		"@fortawesome/free-regular-svg-icons": "^5.15.3",
+		"@fortawesome/free-solid-svg-icons": "^5.15.3",
+		"@fortawesome/react-fontawesome": "^0.1.14",
+		"isomorphic-unfetch": "^3.1.0",
+		"react-syntax-highlighter": "^15.4.4",
+		"react-youtube-lite": "^1.0.1",
+		"slugify": "^1.6.0"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.14.8",
+		"@babel/preset-env": "^7.14.8",
+		"@storybook/addon-actions": "^6.3.6",
+		"@storybook/addon-essentials": "^6.3.6",
+		"@storybook/addon-links": "^6.3.6",
+		"@storybook/react": "^6.3.6",
+		"@types/jest": "^26.0.24",
+		"@types/node": "^16.4.4",
+		"@types/react": "^17.0.15",
+		"babel-jest": "^27.0.6",
+		"babel-loader": "^8.2.2",
+		"babel-polyfill": "^6.26.0",
+		"jest": "^27.0.6",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2",
+		"react-test-renderer": "^17.0.2",
+		"ts-jest": "^27.0.4",
+		"typescript": "^4.3.5"
+	},
+	"jest": {
+		"transform": {
+			".(ts|tsx)": "ts-jest"
+		},
+		"testPathIgnorePatterns": [
+			"dist"
+		],
+		"moduleFileExtensions": [
+			"ts",
+			"tsx",
+			"js"
+		]
+	}
 }
