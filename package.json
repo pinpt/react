@@ -6,6 +6,7 @@
   "scripts": {
     "build": "tsc",
     "test": "jest",
+    "test:write": "jest --updateSnapshot",
     "format": "prettier --write .",
     "test:ci": "jest --ci --reporters='default' --reporters='./.github/github-actions-reporter'",
     "storybook": "start-storybook -p 6006",
