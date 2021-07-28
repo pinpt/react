@@ -19,5 +19,5 @@
 		"skipLibCheck": true,
 		"baseUrl": "./"
 	},
-	"exclude": ["dist", "node_modules"]
+	"exclude": ["dist", "node_modules", "**/__stories__", "**/__test__", "**/__data__", "docs"]
 }

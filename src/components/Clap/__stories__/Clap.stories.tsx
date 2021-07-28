@@ -1,7 +1,5 @@
 import React from 'react'
-
 import { Meta } from '@storybook/react';
-
 import Clap from '..';
 
 export default {
@@ -9,4 +7,10 @@ export default {
 	title: 'Components/Clap',
 } as Meta;
 
-export const Primary: React.VFC<{}> = () => <Clap />;
+export const No_Claps: React.VFC<{}> = () => <Clap handleClap={() => console.log('click')} clapCount={0} />;
+
+export const Small_Count: React.VFC<{}> = () => <Clap handleClap={() => console.log('click')} clapCount={2} />;
+
+export const Medium_Count: React.VFC<{}> = () => <Clap handleClap={() => console.log('click')} clapCount={22} />;
+
+export const Large_Count: React.VFC<{}> = () => <Clap handleClap={() => console.log('click')} clapCount={22222} />;
