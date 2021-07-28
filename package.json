@@ -9,7 +9,7 @@
     "format": "prettier --write .",
     "test:ci": "jest --ci --reporters='default' --reporters='./.github/github-actions-reporter'",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook -o docs-build"
   },
   "license": "MIT",
   "dependencies": {
