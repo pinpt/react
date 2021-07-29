@@ -23,7 +23,7 @@ const Clap = (props: IClapProps) => {
 	}, [handleClap]);
 
 	return (
-		<div className={`Clap wrapper ${className ?? ''}`} onClick={handleClick}>
+		<div className={`Pinpoint Clap wrapper ${className ?? ''}`} onClick={handleClick}>
 			<div className={`Clap icon ${noticeVisible ? 'active' : ''}`}>
 				<svg width="45" height="45" viewBox="0 0 985 997" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path

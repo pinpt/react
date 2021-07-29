@@ -2,10 +2,10 @@
 
 exports[`Test custom class with empty state 1`] = `
 <div
-  className="Statistic Bar wrapper test-custom"
+  className="Pinpoint Statistic Bar wrapper test-custom"
 >
   <div
-    className="Statistic Views wrapper "
+    className="Pinpoint Statistic Views wrapper "
   >
     <svg
       fill="none"
@@ -33,7 +33,7 @@ exports[`Test custom class with empty state 1`] = `
     </span>
   </div>
   <div
-    className="Statistic Claps wrapper "
+    className="Pinpoint Statistic Claps wrapper "
   >
     <svg
       fill="none"
@@ -110,10 +110,10 @@ exports[`Test custom class with empty state 1`] = `
 
 exports[`Test custom class with large number 1`] = `
 <div
-  className="Statistic Bar wrapper test-custom"
+  className="Pinpoint Statistic Bar wrapper test-custom"
 >
   <div
-    className="Statistic Views wrapper "
+    className="Pinpoint Statistic Views wrapper "
   >
     <svg
       fill="none"
@@ -141,7 +141,7 @@ exports[`Test custom class with large number 1`] = `
     </span>
   </div>
   <div
-    className="Statistic Claps wrapper "
+    className="Pinpoint Statistic Claps wrapper "
   >
     <svg
       fill="none"
@@ -218,10 +218,10 @@ exports[`Test custom class with large number 1`] = `
 
 exports[`Test empty state 1`] = `
 <div
-  className="Statistic Bar wrapper "
+  className="Pinpoint Statistic Bar wrapper "
 >
   <div
-    className="Statistic Views wrapper "
+    className="Pinpoint Statistic Views wrapper "
   >
     <svg
       fill="none"
@@ -249,7 +249,7 @@ exports[`Test empty state 1`] = `
     </span>
   </div>
   <div
-    className="Statistic Claps wrapper "
+    className="Pinpoint Statistic Claps wrapper "
   >
     <svg
       fill="none"
@@ -326,10 +326,10 @@ exports[`Test empty state 1`] = `
 
 exports[`Test large number 1`] = `
 <div
-  className="Statistic Bar wrapper "
+  className="Pinpoint Statistic Bar wrapper "
 >
   <div
-    className="Statistic Views wrapper "
+    className="Pinpoint Statistic Views wrapper "
   >
     <svg
       fill="none"
@@ -357,7 +357,7 @@ exports[`Test large number 1`] = `
     </span>
   </div>
   <div
-    className="Statistic Claps wrapper "
+    className="Pinpoint Statistic Claps wrapper "
   >
     <svg
       fill="none"
@@ -434,10 +434,10 @@ exports[`Test large number 1`] = `
 
 exports[`Test optional props 1`] = `
 <div
-  className="Statistic Bar wrapper "
+  className="Pinpoint Statistic Bar wrapper "
 >
   <div
-    className="Statistic Views wrapper "
+    className="Pinpoint Statistic Views wrapper "
   >
     <svg
       fill="none"
@@ -465,7 +465,7 @@ exports[`Test optional props 1`] = `
     </span>
   </div>
   <div
-    className="Statistic Claps wrapper "
+    className="Pinpoint Statistic Claps wrapper "
   >
     <svg
       fill="none"

@@ -2,7 +2,7 @@
 
 exports[`Test custom class with empty state 1`] = `
 <div
-  className="Clap wrapper test-custom"
+  className="Pinpoint Clap wrapper test-custom"
   onClick={[Function]}
 >
   <div
@@ -87,7 +87,7 @@ exports[`Test custom class with empty state 1`] = `
 
 exports[`Test custom class with large number 1`] = `
 <div
-  className="Clap wrapper test-custom"
+  className="Pinpoint Clap wrapper test-custom"
   onClick={[Function]}
 >
   <div
@@ -174,7 +174,7 @@ exports[`Test custom class with large number 1`] = `
 
 exports[`Test empty state 1`] = `
 <div
-  className="Clap wrapper "
+  className="Pinpoint Clap wrapper "
   onClick={[Function]}
 >
   <div
@@ -259,7 +259,7 @@ exports[`Test empty state 1`] = `
 
 exports[`Test large number 1`] = `
 <div
-  className="Clap wrapper "
+  className="Pinpoint Clap wrapper "
   onClick={[Function]}
 >
   <div

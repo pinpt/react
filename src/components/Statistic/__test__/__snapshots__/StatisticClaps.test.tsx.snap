@@ -2,7 +2,7 @@
 
 exports[`Test custom class with empty state 1`] = `
 <div
-  className="Statistic Claps wrapper test-custom"
+  className="Pinpoint Statistic Claps wrapper test-custom"
 >
   <svg
     fill="none"
@@ -78,7 +78,7 @@ exports[`Test custom class with empty state 1`] = `
 
 exports[`Test custom class with large number 1`] = `
 <div
-  className="Statistic Claps wrapper test-custom"
+  className="Pinpoint Statistic Claps wrapper test-custom"
 >
   <svg
     fill="none"
@@ -154,7 +154,7 @@ exports[`Test custom class with large number 1`] = `
 
 exports[`Test empty state 1`] = `
 <div
-  className="Statistic Claps wrapper "
+  className="Pinpoint Statistic Claps wrapper "
 >
   <svg
     fill="none"
@@ -230,7 +230,7 @@ exports[`Test empty state 1`] = `
 
 exports[`Test large number 1`] = `
 <div
-  className="Statistic Claps wrapper "
+  className="Pinpoint Statistic Claps wrapper "
 >
   <svg
     fill="none"

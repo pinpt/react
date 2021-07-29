@@ -4,6 +4,7 @@ import ChangelogContainer from '../Container';
 import Description from '../Description';
 import Title from '../Title';
 import ChangelogDate from '../Date';
+import ReadButton from '../ReadButton';
 
 const TEST_TITLE = 'Test Title';
 const TEST_DESCRIPTION = 'Test Description';
@@ -16,6 +17,7 @@ test('Test full card', () => {
 			title={<Title title={TEST_TITLE} />}
 			description={<Description description={TEST_DESCRIPTION} />}
 			statistics={<StatisticsBar claps={22} views={135} />}
+			button={<ReadButton />}
 		/>
 	);
 	const tree = component.toJSON();
@@ -89,15 +91,19 @@ test('Test multiple cards', () => {
 		<div style={{ display: 'flex', columnGap: '20px' }}>
 			<ChangelogContainer
 				imageUrl="https://cdn.pinpoint.com/card.png"
+				date={<ChangelogDate />}
 				title={<Title title={TEST_TITLE} />}
 				description={<Description description={TEST_DESCRIPTION} />}
 				statistics={<StatisticsBar claps={22} views={135} />}
+				button={<ReadButton />}
 			/>
 			<ChangelogContainer
 				imageUrl="https://cdn.pinpoint.com/card.png"
+				date={<ChangelogDate />}
 				title={<Title title={TEST_TITLE} />}
 				description={<Description description={TEST_DESCRIPTION} />}
-				statistics={<StatisticsBar claps={45} views={235} />}
+				statistics={<StatisticsBar claps={22} views={135} />}
+				button={<ReadButton />}
 			/>
 		</div>
 	);

@@ -1,3 +1,7 @@
+.Pinpoint {
+	font-family: Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+
 .Clap.wrapper {
 	position: relative;
 	cursor: pointer;
@@ -78,6 +82,11 @@
     padding: 1.5rem;
 }
 
+.Changelog.Card.Container.wrapper .footer {
+	display: flex;
+	margin-top: 1rem;
+}
+
 .Changelog.Card.Container.wrapper .statistics {
 	margin-left: auto;
 }
@@ -87,5 +96,17 @@
     font-size: .75rem;
     line-height: 1rem;
 	color: gray;
+}
+
+.Changelog.Card.Read {
+	display: flex;
+	align-items: center;
+	color: rgb(79, 52, 255);
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.Changelog.Card.Read .arrow {
+	margin-left: 4px;
 }
 

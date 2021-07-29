@@ -3,7 +3,7 @@ import { IStatisticProps } from '../types';
 const StatisticViews = (props: IStatisticProps) => {
 	const { count, className } = props;
 	return (
-		<div className={`Statistic Views wrapper ${className ?? ''}`}>
+		<div className={`Pinpoint Statistic Views wrapper ${className ?? ''}`}>
 			<svg
 				width={16}
 				height={16}

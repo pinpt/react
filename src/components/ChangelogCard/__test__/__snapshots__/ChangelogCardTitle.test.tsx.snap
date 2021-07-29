@@ -2,7 +2,7 @@
 
 exports[`Test custom class 1`] = `
 <h2
-  className="Changelog Card Title test-custom"
+  className="Pinpoint Changelog Card Title test-custom"
 >
   Short and Sweet
 </h2>
@@ -10,7 +10,7 @@ exports[`Test custom class 1`] = `
 
 exports[`Test empty state 1`] = `
 <h2
-  className="Changelog Card Title "
+  className="Pinpoint Changelog Card Title "
 >
   
 </h2>
@@ -18,7 +18,7 @@ exports[`Test empty state 1`] = `
 
 exports[`Test long title 1`] = `
 <h2
-  className="Changelog Card Title "
+  className="Pinpoint Changelog Card Title "
 >
   This is an absurdly long title and you would never really want this but I guess we'll show it here anyways just for you
 </h2>
@@ -26,7 +26,7 @@ exports[`Test long title 1`] = `
 
 exports[`Test short title 1`] = `
 <h2
-  className="Changelog Card Title "
+  className="Pinpoint Changelog Card Title "
 >
   Short and Sweet
 </h2>

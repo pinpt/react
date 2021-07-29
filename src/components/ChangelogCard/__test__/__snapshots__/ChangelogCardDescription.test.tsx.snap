@@ -2,7 +2,7 @@
 
 exports[`Test custom class 1`] = `
 <p
-  className="Changelog Card Description test-custom"
+  className="Pinpoint Changelog Card Description test-custom"
 >
   Short and Sweet
 </p>
@@ -10,7 +10,7 @@ exports[`Test custom class 1`] = `
 
 exports[`Test empty state 1`] = `
 <p
-  className="Changelog Card Description "
+  className="Pinpoint Changelog Card Description "
 >
   
 </p>
@@ -18,7 +18,7 @@ exports[`Test empty state 1`] = `
 
 exports[`Test long description 1`] = `
 <p
-  className="Changelog Card Description "
+  className="Pinpoint Changelog Card Description "
 >
   This is description copied from the title and you would never really want this but I guess we'll show it here anyways just for you
 </p>
@@ -26,7 +26,7 @@ exports[`Test long description 1`] = `
 
 exports[`Test short description 1`] = `
 <p
-  className="Changelog Card Description "
+  className="Pinpoint Changelog Card Description "
 >
   Short and Sweet
 </p>

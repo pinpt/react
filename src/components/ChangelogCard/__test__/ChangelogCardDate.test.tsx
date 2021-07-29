@@ -49,3 +49,9 @@ test('Test huge format with custom timestamp', () => {
 	const tree = component.toJSON();
 	expect(tree).toMatchSnapshot();
 });
+
+test('Test custom class', () => {
+	const component = renderer.create(<Date className="test-custom" />);
+	const tree = component.toJSON();
+	expect(tree).toMatchSnapshot();
+});

@@ -1,8 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Test custom class 1`] = `
+<span
+  className="Pinpoint Changelog Card Date test-custom"
+>
+  12/31/1969
+</span>
+`;
+
 exports[`Test default state 1`] = `
 <span
-  className="Changelog Card Date "
+  className="Pinpoint Changelog Card Date "
 >
   12/31/1969
 </span>
@@ -10,7 +18,7 @@ exports[`Test default state 1`] = `
 
 exports[`Test default state with custom timestamp 1`] = `
 <span
-  className="Changelog Card Date "
+  className="Pinpoint Changelog Card Date "
 >
   7/29/2021
 </span>
@@ -18,7 +26,7 @@ exports[`Test default state with custom timestamp 1`] = `
 
 exports[`Test full format 1`] = `
 <span
-  className="Changelog Card Date "
+  className="Pinpoint Changelog Card Date "
 >
   December 31, 1969
 </span>
@@ -26,7 +34,7 @@ exports[`Test full format 1`] = `
 
 exports[`Test full format with custom timestamp 1`] = `
 <span
-  className="Changelog Card Date "
+  className="Pinpoint Changelog Card Date "
 >
   July 29, 2021
 </span>
@@ -34,7 +42,7 @@ exports[`Test full format with custom timestamp 1`] = `
 
 exports[`Test huge format 1`] = `
 <span
-  className="Changelog Card Date "
+  className="Pinpoint Changelog Card Date "
 >
   Wednesday, December 31, 1969, 6:00:00 PM Central Standard Time
 </span>
@@ -42,7 +50,7 @@ exports[`Test huge format 1`] = `
 
 exports[`Test huge format with custom timestamp 1`] = `
 <span
-  className="Changelog Card Date "
+  className="Pinpoint Changelog Card Date "
 >
   Thursday, July 29, 2021, 11:10:55 AM Central Daylight Time
 </span>
@@ -50,7 +58,7 @@ exports[`Test huge format with custom timestamp 1`] = `
 
 exports[`Test time format 1`] = `
 <span
-  className="Changelog Card Date "
+  className="Pinpoint Changelog Card Date "
 >
   12/31/1969, 6:00 PM
 </span>
@@ -58,7 +66,7 @@ exports[`Test time format 1`] = `
 
 exports[`Test time format with custom timestamp 1`] = `
 <span
-  className="Changelog Card Date "
+  className="Pinpoint Changelog Card Date "
 >
   7/29/2021, 11:10 AM
 </span>

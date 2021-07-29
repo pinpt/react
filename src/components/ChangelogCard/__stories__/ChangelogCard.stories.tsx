@@ -5,6 +5,7 @@ import Title from '../Title';
 import Description from '../Description';
 import StatisticsBar from '../../Statistic/Bar';
 import ChangelogDate from '../Date';
+import ChangelogReadButton from '../ReadButton';
 
 export default {
 	component: ChangelogContainer,
@@ -24,6 +25,7 @@ export const Full_Card: React.VFC<{}> = () => (
 		date={<ChangelogDate />}
 		description={<Description description={TEST_DESCRIPTION} />}
 		statistics={<StatisticsBar claps={22} views={135} />}
+		button={<ChangelogReadButton />}
 	/>	
 );
 
@@ -66,12 +68,14 @@ export const Multiple_Cards: React.VFC<{}> = () => (
 			title={<Title title={TEST_TITLE} />}
 			description={<Description description={TEST_DESCRIPTION} />}
 			statistics={<StatisticsBar claps={22} views={135} />}
+			button={<ChangelogReadButton />}
 		/>
 		<ChangelogContainer
 			imageUrl="https://cdn.pinpoint.com/card.png"
 			title={<Title title={TEST_TITLE} />}
 			description={<Description description={TEST_DESCRIPTION} />}
 			statistics={<StatisticsBar claps={45} views={235} />}
+			button={<ChangelogReadButton />}
 		/>
 	</div>
 );

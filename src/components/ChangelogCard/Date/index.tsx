@@ -10,7 +10,7 @@ export interface IChangelogDateProps {
 const ChangelogDate = (props: IChangelogDateProps) => {
 	const { className, ts = 0, format = DateTime.DATE_SHORT } = props;
 	return (
-		<span className={`Changelog Card Date ${className ?? ''}`}>
+		<span className={`Pinpoint Changelog Card Date ${className ?? ''}`}>
 			{DateTime.fromMillis(ts).toLocaleString(format)}
 		</span>
 	);

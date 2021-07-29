@@ -6,7 +6,7 @@ export interface IChangelogDescriptionProps {
 const ChangelogDescription = (props: IChangelogDescriptionProps) => {
 	const { className, description } = props;
 	return (
-		<p className={`Changelog Card Description ${className ?? ''}`}>
+		<p className={`Pinpoint Changelog Card Description ${className ?? ''}`}>
 			{description}
 		</p>
 	);
