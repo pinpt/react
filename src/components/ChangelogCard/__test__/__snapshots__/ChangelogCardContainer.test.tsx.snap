@@ -16,6 +16,11 @@ exports[`Test full card 1`] = `
     >
       Test Title
     </h2>
+    <span
+      className="Changelog Card Date "
+    >
+      12/31/1969
+    </span>
     <p
       className="Changelog Card Description "
     >

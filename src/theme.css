@@ -82,3 +82,10 @@
 	margin-left: auto;
 }
 
+.Changelog.Card.Date {
+	margin-top: .5rem;
+    font-size: .75rem;
+    line-height: 1rem;
+	color: gray;
+}
+

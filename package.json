@@ -8,6 +8,7 @@
 		"test": "jest",
 		"test:write": "jest --updateSnapshot",
 		"test:generate-output": "jest --json --outputFile=.jest-test-results.json",
+		"test:write:generate-output": "jest --updateSnapshot --json --outputFile=.jest-test-results.json",
 		"format": "prettier --write .",
 		"test:ci": "jest --ci --reporters='default' --reporters='./.github/github-actions-reporter'",
 		"storybook": "start-storybook -p 6006",
@@ -21,6 +22,7 @@
 		"@fortawesome/free-solid-svg-icons": "^5.15.3",
 		"@fortawesome/react-fontawesome": "^0.1.14",
 		"isomorphic-unfetch": "^3.1.0",
+		"luxon": "^2.0.1",
 		"react-syntax-highlighter": "^15.4.4",
 		"react-youtube-lite": "^1.0.1",
 		"slugify": "^1.6.0"
@@ -34,6 +36,7 @@
 		"@storybook/addon-links": "^6.3.6",
 		"@storybook/react": "^6.3.6",
 		"@types/jest": "^26.0.24",
+		"@types/luxon": "^1.27.1",
 		"@types/node": "^16.4.4",
 		"@types/react": "^17.0.15",
 		"babel-jest": "^27.0.6",

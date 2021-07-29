@@ -4,6 +4,7 @@ import ChangelogContainer from '../Container';
 import Title from '../Title';
 import Description from '../Description';
 import StatisticsBar from '../../Statistic/Bar';
+import ChangelogDate from '../Date';
 
 export default {
 	component: ChangelogContainer,
@@ -20,6 +21,7 @@ export const Full_Card: React.VFC<{}> = () => (
 	<ChangelogContainer
 		imageUrl="https://cdn.pinpoint.com/card.png"
 		title={<Title title={TEST_TITLE} />}
+		date={<ChangelogDate />}
 		description={<Description description={TEST_DESCRIPTION} />}
 		statistics={<StatisticsBar claps={22} views={135} />}
 	/>	

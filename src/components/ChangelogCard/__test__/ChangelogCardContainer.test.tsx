@@ -3,6 +3,7 @@ import StatisticsBar from '../../Statistic/Bar';
 import ChangelogContainer from '../Container';
 import Description from '../Description';
 import Title from '../Title';
+import ChangelogDate from '../Date';
 
 const TEST_TITLE = 'Test Title';
 const TEST_DESCRIPTION = 'Test Description';
@@ -11,6 +12,7 @@ test('Test full card', () => {
 	const component = renderer.create(
 		<ChangelogContainer
 			imageUrl="https://cdn.pinpoint.com/card.png"
+			date={<ChangelogDate />}
 			title={<Title title={TEST_TITLE} />}
 			description={<Description description={TEST_DESCRIPTION} />}
 			statistics={<StatisticsBar claps={22} views={135} />}
