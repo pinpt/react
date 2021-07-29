@@ -4,10 +4,10 @@
 - [X] View Count
 - [X] Clap Count
 - [X] Clap Button
-- [ ] Changelog Card
-- [ ] Read More Button
-- [ ] Changelog Title
-- [ ] Changelog Date
+- [X] Changelog Card
+- [X] Read More Button
+- [X] Changelog Title
+- [X] Changelog Date
 - [ ] Changelog Body
 - [ ] Latest Section
 - [ ] Recent Section
