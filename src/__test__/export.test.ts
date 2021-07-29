@@ -8,6 +8,7 @@ const {
 	Logo,
 	Copyright,
 	Subscribe,
+	Social,
 
 	emptyDoc,
 	getEnv,
@@ -27,8 +28,8 @@ const {
 test('Test component exports', () => {
 	// Test Statistic Exports
 	expect(Statistic).toBeTruthy();
-	const { Bar, Claps, Views, ...otherStatistic } = Statistic;
-	expect(Bar).toBeTruthy();
+	const { Bar: StatisticBar, Claps, Views, ...otherStatistic } = Statistic;
+	expect(StatisticBar).toBeTruthy();
 	expect(Claps).toBeTruthy();
 	expect(Views).toBeTruthy();
 	expect(Object.keys(otherStatistic).length).toEqual(0);
@@ -42,6 +43,18 @@ test('Test component exports', () => {
 	expect(Date).toBeTruthy();
 	expect(ReadButton).toBeTruthy();
 	expect(Object.keys(otherChangelogCard).length).toEqual(0);
+
+	// Test Social exports
+	expect(Social).toBeTruthy();
+	const { Bar: SocialBar, Facebook, Github, Instagram, LinkedIn, RSS, Twitter, ...otherSocial } = Social;
+	expect(SocialBar).toBeTruthy();
+	expect(Facebook).toBeTruthy();
+	expect(Github).toBeTruthy();
+	expect(Instagram).toBeTruthy();
+	expect(LinkedIn).toBeTruthy();
+	expect(RSS).toBeTruthy();
+	expect(Twitter).toBeTruthy();
+	expect(Object.keys(otherSocial).length).toEqual(0);
 
 	// Test other component exports
 	expect(Clap).toBeTruthy();

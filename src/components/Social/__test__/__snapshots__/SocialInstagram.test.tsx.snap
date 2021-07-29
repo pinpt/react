@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test click handler 1`] = `
+<span
+  className="Pinpoint Internal Link clickable Social Item Facebook "
+  onClick={[Function]}
+>
+  <svg
+    aria-hidden="true"
+    data-icon="facebook"
+    data-prefix="fab"
+    focusable="false"
+    height={14}
+    role="img"
+    viewBox="0 0 512 512"
+    width={14}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+      fill="currentColor"
+    />
+  </svg>
+</span>
+`;
+
+exports[`Test custom className 1`] = `
+<span
+  className="Pinpoint Internal Link  Social Item Facebook custom-test"
+>
+  <svg
+    aria-hidden="true"
+    data-icon="facebook"
+    data-prefix="fab"
+    focusable="false"
+    height={14}
+    role="img"
+    viewBox="0 0 512 512"
+    width={14}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+      fill="currentColor"
+    />
+  </svg>
+</span>
+`;
+
+exports[`Test default state 1`] = `
+<span
+  className="Pinpoint Internal Link  Social Item Facebook "
+>
+  <svg
+    aria-hidden="true"
+    data-icon="facebook"
+    data-prefix="fab"
+    focusable="false"
+    height={14}
+    role="img"
+    viewBox="0 0 512 512"
+    width={14}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+      fill="currentColor"
+    />
+  </svg>
+</span>
+`;
+
+exports[`Test link (new tab) 1`] = `
+<a
+  className="Pinpoint Internal Link Social Item Facebook "
+  href="https://www.instagram.com/pinpoint_sw/"
+  rel="noopener noreferrer"
+  target="_blank"
+>
+  <svg
+    aria-hidden="true"
+    data-icon="facebook"
+    data-prefix="fab"
+    focusable="false"
+    height={14}
+    role="img"
+    viewBox="0 0 512 512"
+    width={14}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+      fill="currentColor"
+    />
+  </svg>
+</a>
+`;
+
+exports[`Test link 1`] = `
+<a
+  className="Pinpoint Internal Link Social Item Facebook "
+  href="https://www.instagram.com/pinpoint_sw/"
+>
+  <svg
+    aria-hidden="true"
+    data-icon="facebook"
+    data-prefix="fab"
+    focusable="false"
+    height={14}
+    role="img"
+    viewBox="0 0 512 512"
+    width={14}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+      fill="currentColor"
+    />
+  </svg>
+</a>
+`;

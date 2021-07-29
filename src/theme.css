@@ -189,6 +189,28 @@
 	margin-left: 0.75rem;
 }
 
+/*
+ * Styles for the social components
+ */
+
+.Social {
+	color: gray;
+	text-decoration: none;
+	transition: color 0.2s;
+}
+
+.Social.Item:hover {
+	color: rgb(79, 52, 255);
+}
+
+.Social.Bar {
+	display: flex;
+	column-gap: 0.5rem;
+}
+
+/*
+ * Styles for the link component
+ */
 .Link.clickable {
 	cursor: pointer;
 }
