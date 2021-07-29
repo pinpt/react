@@ -164,3 +164,14 @@
 .Logo.clickable {
 	cursor: pointer;
 }
+
+/*
+ * Styles for the copyright component
+ */
+.Copyright {
+	line-height: 1.5;
+}
+
+.Copyright .text {
+	margin-top: 1rem;
+}

@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test with clickable logo 1`] = `
+<div
+  className="Pinpoint Copyright "
+>
+  <span
+    className="Pinpoint Logo sm clickable "
+    onClick={[Function]}
+  >
+    <img
+      className="image"
+      src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+    />
+  </span>
+  <span
+    className="text"
+  >
+    Copyright © 
+    2021 by Pinpoint Software, Inc.
+  </span>
+</div>
+`;
+
+exports[`Test with custom className 1`] = `
+<div
+  className="Pinpoint Copyright test-custom"
+>
+  <span
+    className="Pinpoint Logo sm  "
+  >
+    <img
+      className="image"
+      src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+    />
+  </span>
+  <span
+    className="text"
+  >
+    Copyright © 
+    2021 by Pinpoint Software, Inc.
+  </span>
+</div>
+`;
+
+exports[`Test with linked logo 1`] = `
+<div
+  className="Pinpoint Copyright "
+>
+  <a
+    className="Pinpoint Logo sm "
+    href="https://pinpoint.com"
+  >
+    <img
+      className="image"
+      src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+    />
+  </a>
+  <span
+    className="text"
+  >
+    Copyright © 
+    2021 by Pinpoint Software, Inc.
+  </span>
+</div>
+`;
+
+exports[`Test with logo 1`] = `
+<div
+  className="Pinpoint Copyright "
+>
+  <span
+    className="Pinpoint Logo sm  "
+  >
+    <img
+      className="image"
+      src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+    />
+  </span>
+  <span
+    className="text"
+  >
+    Copyright © 
+    2021 by Pinpoint Software, Inc.
+  </span>
+</div>
+`;
+
+exports[`Test without logo 1`] = `
+<div
+  className="Pinpoint Copyright "
+>
+  <span
+    className="text"
+  >
+    Copyright © 
+    2021 by Pinpoint Software, Inc.
+  </span>
+</div>
+`;

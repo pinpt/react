@@ -9,10 +9,11 @@
 -  [x] Read More Button
 -  [x] Changelog Title
 -  [x] Changelog Date
+-  [x] Logo
 -  [ ] Changelog Body
 -  [ ] Latest Section
 -  [ ] Recent Section
--  [ ] Copyright
+-  [X] Copyright
 -  [ ] Subscribe to Updates
 -  [ ] Social Links
 -  [ ] Footer
