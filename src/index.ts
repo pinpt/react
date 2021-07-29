@@ -7,3 +7,4 @@ export { default as Logo } from './components/Logo';
 export { default as Copyright } from './components/Copyright';
 export { default as Subscribe } from './components/Subscribe';
 export { default as Social } from './components/Social';
+export { default as Footer } from './components/Footer';

@@ -6,6 +6,10 @@
 		Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 
+.Box-Shadow {
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
 /*
  * Styles for the interactive clap component
  */
@@ -170,6 +174,7 @@
 
 .Copyright .text {
 	margin-top: 1rem;
+	font-size: 0.875rem;
 }
 
 /*
@@ -192,7 +197,6 @@
 /*
  * Styles for the social components
  */
-
 .Social {
 	color: gray;
 	text-decoration: none;
@@ -206,6 +210,23 @@
 .Social.Bar {
 	display: flex;
 	column-gap: 0.5rem;
+}
+
+/*
+ * Styles for the footer component
+ */
+.Footer {
+	display: flex;
+	align-items: flex-end;
+	padding: 1rem;
+}
+
+.Footer .right {
+	margin-left: auto;
+}
+
+.Footer .Social {
+	margin-top: 0.2rem;
 }
 
 /*

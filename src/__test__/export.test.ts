@@ -9,6 +9,7 @@ const {
 	Copyright,
 	Subscribe,
 	Social,
+	Footer,
 
 	emptyDoc,
 	getEnv,
@@ -63,6 +64,7 @@ test('Test component exports', () => {
 	expect(Logo).toBeTruthy();
 	expect(Copyright).toBeTruthy();
 	expect(Subscribe).toBeTruthy();
+	expect(Footer).toBeTruthy();
 });
 
 test('Test util exports', () => {
