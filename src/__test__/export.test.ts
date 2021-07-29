@@ -10,6 +10,7 @@ const {
 	Subscribe,
 	Social,
 	Footer,
+	Latest,
 
 	emptyDoc,
 	getEnv,
@@ -65,6 +66,7 @@ test('Test component exports', () => {
 	expect(Copyright).toBeTruthy();
 	expect(Subscribe).toBeTruthy();
 	expect(Footer).toBeTruthy();
+	expect(Latest).toBeTruthy();
 });
 
 test('Test util exports', () => {

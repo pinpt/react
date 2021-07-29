@@ -230,6 +230,24 @@
 }
 
 /*
+ * Styles for the latest component
+ */
+.Latest {
+	display: flex;
+}
+
+.Latest .heading {
+	margin-bottom: 0;
+	margin-right: 3rem;
+	width: 25%;
+}
+
+.Latest .container {
+	display: flex;
+	column-gap: 0.5rem;
+}
+
+/*
  * Styles for the link component
  */
 .Link.clickable {
