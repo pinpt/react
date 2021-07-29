@@ -7,7 +7,7 @@ export interface ICopyrightProps {
 	logo?: ReactElement<ILogoProps>;
 }
 
-const Logo = (props: ICopyrightProps) => {
+const Copyright = (props: ICopyrightProps) => {
 	const { className = '', text, logo } = props;
 	return (
 		<div className={`Pinpoint Copyright ${className}`}>
@@ -17,4 +17,4 @@ const Logo = (props: ICopyrightProps) => {
 	);
 };
 
-export default Logo;
+export default Copyright;

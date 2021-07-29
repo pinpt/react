@@ -7,7 +7,7 @@ export interface IStatisticsBarProps {
 	views?: number;
 }
 
-const StatisticsBar = (props: IStatisticsBarProps) => {
+const Bar = (props: IStatisticsBarProps) => {
 	const { className, claps, views } = props;
 	return (
 		<div className={`Pinpoint Statistic Bar wrapper ${className ?? ''}`}>
@@ -17,4 +17,4 @@ const StatisticsBar = (props: IStatisticsBarProps) => {
 	);
 };
 
-export default StatisticsBar;
+export default Bar;

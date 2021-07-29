@@ -3,9 +3,9 @@ export interface IChangelogDescriptionProps {
 	description: string;
 }
 
-const ChangelogDescription = (props: IChangelogDescriptionProps) => {
+const Description = (props: IChangelogDescriptionProps) => {
 	const { className, description } = props;
 	return <p className={`Pinpoint Changelog Card Description ${className ?? ''}`}>{description}</p>;
 };
 
-export default ChangelogDescription;
+export default Description;

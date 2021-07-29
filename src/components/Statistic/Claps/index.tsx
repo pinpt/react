@@ -1,6 +1,6 @@
 import { IStatisticProps } from '../types';
 
-const StatisticClaps = (props: IStatisticProps) => {
+const Claps = (props: IStatisticProps) => {
 	const { count, className } = props;
 	return (
 		<div className={`Pinpoint Statistic Claps wrapper ${className ?? ''}`}>
@@ -67,4 +67,4 @@ const StatisticClaps = (props: IStatisticProps) => {
 	);
 };
 
-export default StatisticClaps;
+export default Claps;

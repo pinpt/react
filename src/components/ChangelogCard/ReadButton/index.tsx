@@ -22,7 +22,7 @@ const Icon = (
 	</svg>
 );
 
-const ChangelogReadButton = (props: IChangelogReadButtonProps) => {
+const ReadButton = (props: IChangelogReadButtonProps) => {
 	const { className, href, newTab, onClick } = props;
 
 	if (href) {
@@ -46,4 +46,4 @@ const ChangelogReadButton = (props: IChangelogReadButtonProps) => {
 	);
 };
 
-export default ChangelogReadButton;
+export default ReadButton;

@@ -15,7 +15,7 @@ export interface IChangelogCardContainerProps {
 	className?: string;
 }
 
-const ChangelogCardContainer = (props: IChangelogCardContainerProps) => {
+const Container = (props: IChangelogCardContainerProps) => {
 	const { title, description, imageUrl, alt, className, statistics, date, button } = props;
 
 	return (
@@ -34,4 +34,4 @@ const ChangelogCardContainer = (props: IChangelogCardContainerProps) => {
 	);
 };
 
-export default ChangelogCardContainer;
+export default Container;

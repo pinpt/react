@@ -1,6 +1,6 @@
 import { IStatisticProps } from '../types';
 
-const StatisticViews = (props: IStatisticProps) => {
+const Views = (props: IStatisticProps) => {
 	const { count, className } = props;
 	return (
 		<div className={`Pinpoint Statistic Views wrapper ${className ?? ''}`}>
@@ -22,4 +22,4 @@ const StatisticViews = (props: IStatisticProps) => {
 	);
 };
 
-export default StatisticViews;
+export default Views;

@@ -6,7 +6,7 @@ export interface IChangelogDateProps {
 	format?: DateTimeFormatOptions;
 }
 
-const ChangelogDate = (props: IChangelogDateProps) => {
+const Date = (props: IChangelogDateProps) => {
 	const { className, ts = 0, format = DateTime.DATE_SHORT } = props;
 
 	return (
@@ -16,4 +16,4 @@ const ChangelogDate = (props: IChangelogDateProps) => {
 	);
 };
 
-export default ChangelogDate;
+export default Date;
