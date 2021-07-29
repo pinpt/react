@@ -7,7 +7,7 @@ export default {
 	title: 'Components/Clap',
 	parameters: {
 		jest: ['Clap.test.tsx'],
-	}
+	},
 } as Meta;
 
 export const No_Claps: React.VFC<{}> = () => <Clap handleClap={() => console.log('click')} clapCount={0} />;

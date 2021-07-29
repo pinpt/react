@@ -7,7 +7,7 @@ export default {
 	title: 'Components/Changelog Card/Read Button',
 	parameters: {
 		jest: ['ChangelogCardReadButton.test.tsx'],
-	}
+	},
 } as Meta;
 
 export const Default: React.VFC<{}> = () => <ChangelogReadButton />;

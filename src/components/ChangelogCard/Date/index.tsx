@@ -1,6 +1,5 @@
 import { DateTime, DateTimeFormatOptions } from 'luxon';
 
-
 export interface IChangelogDateProps {
 	className?: string;
 	ts?: number;

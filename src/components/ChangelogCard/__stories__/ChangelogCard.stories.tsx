@@ -12,7 +12,7 @@ export default {
 	title: 'Components/Changelog Card/Container',
 	parameters: {
 		jest: ['ChangelogCardContainer.test.tsx'],
-	}
+	},
 } as Meta;
 
 const TEST_TITLE = 'Test Title';
@@ -26,7 +26,7 @@ export const Full_Card: React.VFC<{}> = () => (
 		description={<Description description={TEST_DESCRIPTION} />}
 		statistics={<StatisticsBar claps={22} views={135} />}
 		button={<ChangelogReadButton />}
-	/>	
+	/>
 );
 
 export const No_Statistics: React.VFC<{}> = () => (
@@ -79,4 +79,3 @@ export const Multiple_Cards: React.VFC<{}> = () => (
 		/>
 	</div>
 );
-

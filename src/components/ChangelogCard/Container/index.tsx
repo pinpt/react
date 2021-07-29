@@ -26,16 +26,8 @@ const ChangelogCardContainer = (props: IChangelogCardContainerProps) => {
 				{date}
 				{description}
 				<div className="footer">
-					{button && (
-						<div className="button">
-							{button}
-						</div>
-					)}
-					{statistics && (
-						<div className="statistics">
-							{statistics}
-						</div>
-					)}
+					{button && <div className="button">{button}</div>}
+					{statistics && <div className="statistics">{statistics}</div>}
 				</div>
 			</div>
 		</div>

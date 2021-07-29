@@ -7,7 +7,7 @@ export default {
 	title: 'Components/Statistic/Claps',
 	parameters: {
 		jest: ['StatisticClaps.test.tsx'],
-	}
+	},
 } as Meta;
 
 export const No_Claps: React.VFC<{}> = () => <ClapStatistic count={0} />;

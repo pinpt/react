@@ -7,11 +7,13 @@ export default {
 	title: 'Components/Changelog Card/Title',
 	parameters: {
 		jest: ['ChangelogCardTitle.test.tsx'],
-	}
+	},
 } as Meta;
 
 export const Short: React.VFC<{}> = () => <ChangelogTitle title="Short and Sweet" />;
 
-export const Long: React.VFC<{}> = () => <ChangelogTitle title="This is an absurdly long title and you would never really want this but I guess we'll show it here anyways just for you" />;
+export const Long: React.VFC<{}> = () => (
+	<ChangelogTitle title="This is an absurdly long title and you would never really want this but I guess we'll show it here anyways just for you" />
+);
 
 export const Empty: React.VFC<{}> = () => <ChangelogTitle title="" />;

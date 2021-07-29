@@ -7,7 +7,7 @@ export default {
 	title: 'Components/Statistic/Views',
 	parameters: {
 		jest: ['StatisticViews.test.tsx'],
-	}
+	},
 } as Meta;
 
 export const No_Views: React.VFC<{}> = () => <ViewStatistic count={0} />;

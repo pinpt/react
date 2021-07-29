@@ -8,7 +8,7 @@ test('Test default state', () => {
 });
 
 test('Test link', () => {
-	const component = renderer.create(<ReadButton href="https://pinpoint.com"  />);
+	const component = renderer.create(<ReadButton href="https://pinpoint.com" />);
 	const tree = component.toJSON();
 	expect(tree).toMatchSnapshot();
 });

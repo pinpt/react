@@ -8,7 +8,7 @@ export default {
 	title: 'Components/Changelog Card/Date',
 	parameters: {
 		jest: ['ChangelogCardDate.test.tsx'],
-	}
+	},
 } as Meta;
 
 export const Default: React.VFC<{}> = () => <ChangelogDate />;

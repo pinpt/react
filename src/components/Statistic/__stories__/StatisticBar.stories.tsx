@@ -7,7 +7,7 @@ export default {
 	title: 'Components/Statistic/Bar',
 	parameters: {
 		jest: ['StatisticBar.test.tsx'],
-	}
+	},
 } as Meta;
 
 export const Empty: React.VFC<{}> = () => <StatisticsBar claps={0} views={0} />;

@@ -4,4 +4,4 @@ import Description from './Description';
 export default {
 	Title,
 	Description,
-}
+};

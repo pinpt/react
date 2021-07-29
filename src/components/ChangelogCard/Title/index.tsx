@@ -5,11 +5,7 @@ export interface IChangelogTitleProps {
 
 const ChangelogTitle = (props: IChangelogTitleProps) => {
 	const { className, title } = props;
-	return (
-		<h2 className={`Pinpoint Changelog Card Title ${className ?? ''}`}>
-			{title}
-		</h2>
-	);
+	return <h2 className={`Pinpoint Changelog Card Title ${className ?? ''}`}>{title}</h2>;
 };
 
 export default ChangelogTitle;

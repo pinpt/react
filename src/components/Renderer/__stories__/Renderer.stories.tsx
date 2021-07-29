@@ -27,7 +27,7 @@ export default {
 	title: 'Components/Renderer/Content',
 	parameters: {
 		jest: ['RendererContent.test.tsx'],
-	}
+	},
 } as Meta;
 
 export const Empty: React.VFC<{}> = () => <Content node={emptyDoc()} />;
