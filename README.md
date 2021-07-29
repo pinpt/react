@@ -13,7 +13,7 @@
 -  [ ] Changelog Body
 -  [ ] Latest Section
 -  [ ] Recent Section
--  [X] Copyright
+-  [x] Copyright
 -  [ ] Subscribe to Updates
 -  [ ] Social Links
 -  [ ] Footer

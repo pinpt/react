@@ -161,10 +161,6 @@
 	height: 100%;
 }
 
-.Logo.clickable {
-	cursor: pointer;
-}
-
 /*
  * Styles for the copyright component
  */
@@ -174,4 +170,25 @@
 
 .Copyright .text {
 	margin-top: 1rem;
+}
+
+/*
+ * Styles for the subscribe component
+ */
+.Subscribe {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	color: rgb(79, 52, 255);
+	text-decoration: none;
+}
+
+.Subscribe .text {
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	margin-left: 0.75rem;
+}
+
+.Link.clickable {
+	cursor: pointer;
 }

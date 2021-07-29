@@ -33,7 +33,7 @@ exports[`Test full card 1`] = `
         className="button"
       >
         <span
-          className="Pinpoint Changelog Card Read "
+          className="Pinpoint Internal Link  Changelog Card Read "
         >
           Read
           <svg
@@ -349,7 +349,7 @@ exports[`Test multiple cards 1`] = `
           className="button"
         >
           <span
-            className="Pinpoint Changelog Card Read "
+            className="Pinpoint Internal Link  Changelog Card Read "
           >
             Read
             <svg
@@ -516,7 +516,7 @@ exports[`Test multiple cards 1`] = `
           className="button"
         >
           <span
-            className="Pinpoint Changelog Card Read "
+            className="Pinpoint Internal Link  Changelog Card Read "
           >
             Read
             <svg

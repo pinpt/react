@@ -2,7 +2,7 @@
 
 exports[`Test click handler 1`] = `
 <span
-  className="Pinpoint Logo sm clickable "
+  className="Pinpoint Internal Link clickable Logo sm "
   onClick={[Function]}
 >
   <img
@@ -14,7 +14,7 @@ exports[`Test click handler 1`] = `
 
 exports[`Test click handler and link 1`] = `
 <a
-  className="Pinpoint Logo sm "
+  className="Pinpoint Internal Link Logo sm "
   href="https://pinpoint.com"
 >
   <img
@@ -26,7 +26,7 @@ exports[`Test click handler and link 1`] = `
 
 exports[`Test default state 1`] = `
 <span
-  className="Pinpoint Logo sm  "
+  className="Pinpoint Internal Link  Logo sm "
 >
   <img
     className="image"
@@ -37,7 +37,7 @@ exports[`Test default state 1`] = `
 
 exports[`Test extra large 1`] = `
 <span
-  className="Pinpoint Logo xl  "
+  className="Pinpoint Internal Link  Logo xl "
 >
   <img
     className="image"
@@ -48,7 +48,7 @@ exports[`Test extra large 1`] = `
 
 exports[`Test extra small 1`] = `
 <span
-  className="Pinpoint Logo xs  "
+  className="Pinpoint Internal Link  Logo xs "
 >
   <img
     className="image"
@@ -59,7 +59,7 @@ exports[`Test extra small 1`] = `
 
 exports[`Test large 1`] = `
 <span
-  className="Pinpoint Logo lg  "
+  className="Pinpoint Internal Link  Logo lg "
 >
   <img
     className="image"
@@ -70,7 +70,7 @@ exports[`Test large 1`] = `
 
 exports[`Test link (new tab) 1`] = `
 <a
-  className="Pinpoint Logo sm "
+  className="Pinpoint Internal Link Logo sm "
   href="https://pinpoint.com"
   rel="noopener noreferrer"
   target="_blank"
@@ -84,7 +84,7 @@ exports[`Test link (new tab) 1`] = `
 
 exports[`Test link 1`] = `
 <a
-  className="Pinpoint Logo sm "
+  className="Pinpoint Internal Link Logo sm "
   href="https://pinpoint.com"
 >
   <img
@@ -96,7 +96,7 @@ exports[`Test link 1`] = `
 
 exports[`Test medium 1`] = `
 <span
-  className="Pinpoint Logo md  "
+  className="Pinpoint Internal Link  Logo md "
 >
   <img
     className="image"
@@ -107,7 +107,7 @@ exports[`Test medium 1`] = `
 
 exports[`Test small 1`] = `
 <span
-  className="Pinpoint Logo sm  "
+  className="Pinpoint Internal Link  Logo sm "
 >
   <img
     className="image"

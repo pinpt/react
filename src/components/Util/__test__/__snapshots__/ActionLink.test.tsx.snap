@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test className 1`] = `
+<a
+  className="Pinpoint Internal Link text-className"
+  href="https://pinpoint.com"
+>
+  👋🏼
+</a>
+`;
+
+exports[`Test click handler 1`] = `
+<span
+  className="Pinpoint Internal Link clickable "
+  onClick={[Function]}
+>
+  👋🏼
+</span>
+`;
+
+exports[`Test click handler and link 1`] = `
+<a
+  className="Pinpoint Internal Link "
+  href="https://pinpoint.com"
+>
+  👋🏼
+</a>
+`;
+
+exports[`Test default state 1`] = `
+<span
+  className="Pinpoint Internal Link  "
+>
+  👋🏼
+</span>
+`;
+
+exports[`Test link 1`] = `
+<a
+  className="Pinpoint Internal Link "
+  href="https://pinpoint.com"
+>
+  👋🏼
+</a>
+`;
+
+exports[`Test link new tab 1`] = `
+<a
+  className="Pinpoint Internal Link "
+  href="https://pinpoint.com"
+  rel="noopener noreferrer"
+  target="_blank"
+>
+  👋🏼
+</a>
+`;

@@ -7,6 +7,7 @@ const {
 	ChangelogCard,
 	Logo,
 	Copyright,
+	Subscribe,
 
 	emptyDoc,
 	getEnv,
@@ -48,6 +49,7 @@ test('Test component exports', () => {
 	expect(Changelog).toBeTruthy();
 	expect(Logo).toBeTruthy();
 	expect(Copyright).toBeTruthy();
+	expect(Subscribe).toBeTruthy();
 });
 
 test('Test util exports', () => {
