@@ -1,6 +1,9 @@
 import renderer from 'react-test-renderer';
 import Date from '../Date';
-import { DateTime } from 'luxon';
+import { DateTime, Settings } from 'luxon';
+
+Settings.defaultLocale = 'en-US';
+Settings.defaultZoneName = 'America/Los_Angeles';
 
 test('Test default state', () => {
 	const component = renderer.create(<Date />);
