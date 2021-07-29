@@ -1,32 +1,32 @@
 {
 	"numFailedTestSuites": 0,
 	"numFailedTests": 0,
-	"numPassedTestSuites": 13,
-	"numPassedTests": 80,
+	"numPassedTestSuites": 14,
+	"numPassedTests": 92,
 	"numPendingTestSuites": 0,
 	"numPendingTests": 0,
 	"numRuntimeErrorTestSuites": 0,
 	"numTodoTests": 0,
-	"numTotalTestSuites": 13,
-	"numTotalTests": 80,
+	"numTotalTestSuites": 14,
+	"numTotalTests": 92,
 	"openHandles": [],
 	"snapshot": {
-		"added": 0,
+		"added": 10,
 		"didUpdate": true,
 		"failure": false,
-		"filesAdded": 0,
+		"filesAdded": 1,
 		"filesRemoved": 0,
 		"filesRemovedList": [],
 		"filesUnmatched": 0,
 		"filesUpdated": 0,
 		"matched": 68,
-		"total": 68,
+		"total": 78,
 		"unchecked": 0,
 		"uncheckedKeysByFile": [],
 		"unmatched": 0,
 		"updated": 0
 	},
-	"startTime": 1627577185486,
+	"startTime": 1627580586538,
 	"success": true,
 	"testResults": [
 		{
@@ -42,48 +42,6 @@
 				{
 					"ancestorTitles": [],
 					"failureMessages": [],
-					"fullName": "Test short title",
-					"location": null,
-					"status": "passed",
-					"title": "Test short title"
-				},
-				{
-					"ancestorTitles": [],
-					"failureMessages": [],
-					"fullName": "Test long title",
-					"location": null,
-					"status": "passed",
-					"title": "Test long title"
-				},
-				{
-					"ancestorTitles": [],
-					"failureMessages": [],
-					"fullName": "Test custom class",
-					"location": null,
-					"status": "passed",
-					"title": "Test custom class"
-				}
-			],
-			"endTime": 1627577194226,
-			"message": "",
-			"name": "/Users/keegan/Documents/react/src/components/ChangelogCard/__test__/ChangelogCardTitle.test.tsx",
-			"startTime": 1627577186182,
-			"status": "passed",
-			"summary": ""
-		},
-		{
-			"assertionResults": [
-				{
-					"ancestorTitles": [],
-					"failureMessages": [],
-					"fullName": "Test empty state",
-					"location": null,
-					"status": "passed",
-					"title": "Test empty state"
-				},
-				{
-					"ancestorTitles": [],
-					"failureMessages": [],
 					"fullName": "Test large number",
 					"location": null,
 					"status": "passed",
@@ -106,52 +64,10 @@
 					"title": "Test custom class with empty state"
 				}
 			],
-			"endTime": 1627577194321,
+			"endTime": 1627580594853,
 			"message": "",
-			"name": "/Users/keegan/Documents/react/src/components/Statistic/__test__/StatisticClaps.test.tsx",
-			"startTime": 1627577186215,
-			"status": "passed",
-			"summary": ""
-		},
-		{
-			"assertionResults": [
-				{
-					"ancestorTitles": [],
-					"failureMessages": [],
-					"fullName": "Test empty state",
-					"location": null,
-					"status": "passed",
-					"title": "Test empty state"
-				},
-				{
-					"ancestorTitles": [],
-					"failureMessages": [],
-					"fullName": "Test large number",
-					"location": null,
-					"status": "passed",
-					"title": "Test large number"
-				},
-				{
-					"ancestorTitles": [],
-					"failureMessages": [],
-					"fullName": "Test custom class with large number",
-					"location": null,
-					"status": "passed",
-					"title": "Test custom class with large number"
-				},
-				{
-					"ancestorTitles": [],
-					"failureMessages": [],
-					"fullName": "Test custom class with empty state",
-					"location": null,
-					"status": "passed",
-					"title": "Test custom class with empty state"
-				}
-			],
-			"endTime": 1627577194373,
-			"message": "",
-			"name": "/Users/keegan/Documents/react/src/components/Clap/__test__/Clap.test.tsx",
-			"startTime": 1627577186259,
+			"name": "/Users/keegan/Documents/react/src/components/Statistic/__test__/StatisticViews.test.tsx",
+			"startTime": 1627580587056,
 			"status": "passed",
 			"summary": ""
 		},
@@ -206,10 +122,10 @@
 					"title": "Test custom className"
 				}
 			],
-			"endTime": 1627577194425,
+			"endTime": 1627580594885,
 			"message": "",
 			"name": "/Users/keegan/Documents/react/src/components/ChangelogCard/__test__/ChangelogCardReadButton.test.tsx",
-			"startTime": 1627577194254,
+			"startTime": 1627580587058,
 			"status": "passed",
 			"summary": ""
 		},
@@ -226,32 +142,82 @@
 				{
 					"ancestorTitles": [],
 					"failureMessages": [],
-					"fullName": "Test short description",
+					"fullName": "Test large number",
 					"location": null,
 					"status": "passed",
-					"title": "Test short description"
+					"title": "Test large number"
 				},
 				{
 					"ancestorTitles": [],
 					"failureMessages": [],
-					"fullName": "Test long description",
+					"fullName": "Test custom class with large number",
 					"location": null,
 					"status": "passed",
-					"title": "Test long description"
+					"title": "Test custom class with large number"
 				},
 				{
 					"ancestorTitles": [],
 					"failureMessages": [],
-					"fullName": "Test custom class",
+					"fullName": "Test custom class with empty state",
 					"location": null,
 					"status": "passed",
-					"title": "Test custom class"
+					"title": "Test custom class with empty state"
+				},
+				{
+					"ancestorTitles": [],
+					"failureMessages": [],
+					"fullName": "Test optional props",
+					"location": null,
+					"status": "passed",
+					"title": "Test optional props"
 				}
 			],
-			"endTime": 1627577194443,
+			"endTime": 1627580595016,
 			"message": "",
-			"name": "/Users/keegan/Documents/react/src/components/ChangelogCard/__test__/ChangelogCardDescription.test.tsx",
-			"startTime": 1627577186194,
+			"name": "/Users/keegan/Documents/react/src/components/Statistic/__test__/StatisticBar.test.tsx",
+			"startTime": 1627580587054,
+			"status": "passed",
+			"summary": ""
+		},
+		{
+			"assertionResults": [
+				{
+					"ancestorTitles": [],
+					"failureMessages": [],
+					"fullName": "Test empty state",
+					"location": null,
+					"status": "passed",
+					"title": "Test empty state"
+				},
+				{
+					"ancestorTitles": [],
+					"failureMessages": [],
+					"fullName": "Test large number",
+					"location": null,
+					"status": "passed",
+					"title": "Test large number"
+				},
+				{
+					"ancestorTitles": [],
+					"failureMessages": [],
+					"fullName": "Test custom class with large number",
+					"location": null,
+					"status": "passed",
+					"title": "Test custom class with large number"
+				},
+				{
+					"ancestorTitles": [],
+					"failureMessages": [],
+					"fullName": "Test custom class with empty state",
+					"location": null,
+					"status": "passed",
+					"title": "Test custom class with empty state"
+				}
+			],
+			"endTime": 1627580595037,
+			"message": "",
+			"name": "/Users/keegan/Documents/react/src/components/Clap/__test__/Clap.test.tsx",
+			"startTime": 1627580587046,
 			"status": "passed",
 			"summary": ""
 		},
@@ -322,202 +288,10 @@
 					"title": "Test file metadata image extraction"
 				}
 			],
-			"endTime": 1627577194452,
+			"endTime": 1627580595044,
 			"message": "",
 			"name": "/Users/keegan/Documents/react/src/lib/__test__/file_metadata.test.ts",
-			"startTime": 1627577186281,
-			"status": "passed",
-			"summary": ""
-		},
-		{
-			"assertionResults": [
-				{
-					"ancestorTitles": [],
-					"failureMessages": [],
-					"fullName": "Test empty state",
-					"location": null,
-					"status": "passed",
-					"title": "Test empty state"
-				},
-				{
-					"ancestorTitles": [],
-					"failureMessages": [],
-					"fullName": "Test large number",
-					"location": null,
-					"status": "passed",
-					"title": "Test large number"
-				},
-				{
-					"ancestorTitles": [],
-					"failureMessages": [],
-					"fullName": "Test custom class with large number",
-					"location": null,
-					"status": "passed",
-					"title": "Test custom class with large number"
-				},
-				{
-					"ancestorTitles": [],
-					"failureMessages": [],
-					"fullName": "Test custom class with empty state",
-					"location": null,
-					"status": "passed",
-					"title": "Test custom class with empty state"
-				},
-				{
-					"ancestorTitles": [],
-					"failureMessages": [],
-					"fullName": "Test optional props",
-					"location": null,
-					"status": "passed",
-					"title": "Test optional props"
-				}
-			],
-			"endTime": 1627577194465,
-			"message": "",
-			"name": "/Users/keegan/Documents/react/src/components/Statistic/__test__/StatisticBar.test.tsx",
-			"startTime": 1627577186240,
-			"status": "passed",
-			"summary": ""
-		},
-		{
-			"assertionResults": [
-				{
-					"ancestorTitles": [],
-					"failureMessages": [],
-					"fullName": "Test slugify",
-					"location": null,
-					"status": "passed",
-					"title": "Test slugify"
-				},
-				{
-					"ancestorTitles": [],
-					"failureMessages": [],
-					"fullName": "Test slugify content with no title",
-					"location": null,
-					"status": "passed",
-					"title": "Test slugify content with no title"
-				},
-				{
-					"ancestorTitles": [],
-					"failureMessages": [],
-					"fullName": "Test slugify content with title",
-					"location": null,
-					"status": "passed",
-					"title": "Test slugify content with title"
-				}
-			],
-			"endTime": 1627577194484,
-			"message": "",
-			"name": "/Users/keegan/Documents/react/src/lib/__test__/string.test.ts",
-			"startTime": 1627577194329,
-			"status": "passed",
-			"summary": ""
-		},
-		{
-			"assertionResults": [
-				{
-					"ancestorTitles": [],
-					"failureMessages": [],
-					"fullName": "Test empty state",
-					"location": null,
-					"status": "passed",
-					"title": "Test empty state"
-				},
-				{
-					"ancestorTitles": [],
-					"failureMessages": [],
-					"fullName": "Test large number",
-					"location": null,
-					"status": "passed",
-					"title": "Test large number"
-				},
-				{
-					"ancestorTitles": [],
-					"failureMessages": [],
-					"fullName": "Test custom class with large number",
-					"location": null,
-					"status": "passed",
-					"title": "Test custom class with large number"
-				},
-				{
-					"ancestorTitles": [],
-					"failureMessages": [],
-					"fullName": "Test custom class with empty state",
-					"location": null,
-					"status": "passed",
-					"title": "Test custom class with empty state"
-				}
-			],
-			"endTime": 1627577194508,
-			"message": "",
-			"name": "/Users/keegan/Documents/react/src/components/Statistic/__test__/StatisticViews.test.tsx",
-			"startTime": 1627577186292,
-			"status": "passed",
-			"summary": ""
-		},
-		{
-			"assertionResults": [
-				{
-					"ancestorTitles": [],
-					"failureMessages": [],
-					"fullName": "Test full card",
-					"location": null,
-					"status": "passed",
-					"title": "Test full card"
-				},
-				{
-					"ancestorTitles": [],
-					"failureMessages": [],
-					"fullName": "Test no statistics",
-					"location": null,
-					"status": "passed",
-					"title": "Test no statistics"
-				},
-				{
-					"ancestorTitles": [],
-					"failureMessages": [],
-					"fullName": "Test no title",
-					"location": null,
-					"status": "passed",
-					"title": "Test no title"
-				},
-				{
-					"ancestorTitles": [],
-					"failureMessages": [],
-					"fullName": "Test no description",
-					"location": null,
-					"status": "passed",
-					"title": "Test no description"
-				},
-				{
-					"ancestorTitles": [],
-					"failureMessages": [],
-					"fullName": "Test no image",
-					"location": null,
-					"status": "passed",
-					"title": "Test no image"
-				},
-				{
-					"ancestorTitles": [],
-					"failureMessages": [],
-					"fullName": "Test full card with custom class",
-					"location": null,
-					"status": "passed",
-					"title": "Test full card with custom class"
-				},
-				{
-					"ancestorTitles": [],
-					"failureMessages": [],
-					"fullName": "Test multiple cards",
-					"location": null,
-					"status": "passed",
-					"title": "Test multiple cards"
-				}
-			],
-			"endTime": 1627577194519,
-			"message": "",
-			"name": "/Users/keegan/Documents/react/src/components/ChangelogCard/__test__/ChangelogCardContainer.test.tsx",
-			"startTime": 1627577186165,
+			"startTime": 1627580594872,
 			"status": "passed",
 			"summary": ""
 		},
@@ -596,10 +370,10 @@
 					"title": "Test custom class"
 				}
 			],
-			"endTime": 1627577194713,
+			"endTime": 1627580595056,
 			"message": "",
 			"name": "/Users/keegan/Documents/react/src/components/ChangelogCard/__test__/ChangelogCardDate.test.tsx",
-			"startTime": 1627577186179,
+			"startTime": 1627580587051,
 			"status": "passed",
 			"summary": ""
 		},
@@ -608,16 +382,348 @@
 				{
 					"ancestorTitles": [],
 					"failureMessages": [],
-					"fullName": "Test exports",
+					"fullName": "Test slugify",
 					"location": null,
 					"status": "passed",
-					"title": "Test exports"
+					"title": "Test slugify"
+				},
+				{
+					"ancestorTitles": [],
+					"failureMessages": [],
+					"fullName": "Test slugify content with no title",
+					"location": null,
+					"status": "passed",
+					"title": "Test slugify content with no title"
+				},
+				{
+					"ancestorTitles": [],
+					"failureMessages": [],
+					"fullName": "Test slugify content with title",
+					"location": null,
+					"status": "passed",
+					"title": "Test slugify content with title"
 				}
 			],
-			"endTime": 1627577195541,
+			"endTime": 1627580595078,
+			"message": "",
+			"name": "/Users/keegan/Documents/react/src/lib/__test__/string.test.ts",
+			"startTime": 1627580594894,
+			"status": "passed",
+			"summary": ""
+		},
+		{
+			"assertionResults": [
+				{
+					"ancestorTitles": [],
+					"failureMessages": [],
+					"fullName": "Test empty state",
+					"location": null,
+					"status": "passed",
+					"title": "Test empty state"
+				},
+				{
+					"ancestorTitles": [],
+					"failureMessages": [],
+					"fullName": "Test large number",
+					"location": null,
+					"status": "passed",
+					"title": "Test large number"
+				},
+				{
+					"ancestorTitles": [],
+					"failureMessages": [],
+					"fullName": "Test custom class with large number",
+					"location": null,
+					"status": "passed",
+					"title": "Test custom class with large number"
+				},
+				{
+					"ancestorTitles": [],
+					"failureMessages": [],
+					"fullName": "Test custom class with empty state",
+					"location": null,
+					"status": "passed",
+					"title": "Test custom class with empty state"
+				}
+			],
+			"endTime": 1627580595083,
+			"message": "",
+			"name": "/Users/keegan/Documents/react/src/components/Statistic/__test__/StatisticClaps.test.tsx",
+			"startTime": 1627580587066,
+			"status": "passed",
+			"summary": ""
+		},
+		{
+			"assertionResults": [
+				{
+					"ancestorTitles": [],
+					"failureMessages": [],
+					"fullName": "Test full card",
+					"location": null,
+					"status": "passed",
+					"title": "Test full card"
+				},
+				{
+					"ancestorTitles": [],
+					"failureMessages": [],
+					"fullName": "Test no statistics",
+					"location": null,
+					"status": "passed",
+					"title": "Test no statistics"
+				},
+				{
+					"ancestorTitles": [],
+					"failureMessages": [],
+					"fullName": "Test no title",
+					"location": null,
+					"status": "passed",
+					"title": "Test no title"
+				},
+				{
+					"ancestorTitles": [],
+					"failureMessages": [],
+					"fullName": "Test no description",
+					"location": null,
+					"status": "passed",
+					"title": "Test no description"
+				},
+				{
+					"ancestorTitles": [],
+					"failureMessages": [],
+					"fullName": "Test no image",
+					"location": null,
+					"status": "passed",
+					"title": "Test no image"
+				},
+				{
+					"ancestorTitles": [],
+					"failureMessages": [],
+					"fullName": "Test full card with custom class",
+					"location": null,
+					"status": "passed",
+					"title": "Test full card with custom class"
+				},
+				{
+					"ancestorTitles": [],
+					"failureMessages": [],
+					"fullName": "Test multiple cards",
+					"location": null,
+					"status": "passed",
+					"title": "Test multiple cards"
+				}
+			],
+			"endTime": 1627580595092,
+			"message": "",
+			"name": "/Users/keegan/Documents/react/src/components/ChangelogCard/__test__/ChangelogCardContainer.test.tsx",
+			"startTime": 1627580587077,
+			"status": "passed",
+			"summary": ""
+		},
+		{
+			"assertionResults": [
+				{
+					"ancestorTitles": [],
+					"failureMessages": [],
+					"fullName": "Test empty state",
+					"location": null,
+					"status": "passed",
+					"title": "Test empty state"
+				},
+				{
+					"ancestorTitles": [],
+					"failureMessages": [],
+					"fullName": "Test short title",
+					"location": null,
+					"status": "passed",
+					"title": "Test short title"
+				},
+				{
+					"ancestorTitles": [],
+					"failureMessages": [],
+					"fullName": "Test long title",
+					"location": null,
+					"status": "passed",
+					"title": "Test long title"
+				},
+				{
+					"ancestorTitles": [],
+					"failureMessages": [],
+					"fullName": "Test custom class",
+					"location": null,
+					"status": "passed",
+					"title": "Test custom class"
+				}
+			],
+			"endTime": 1627580595098,
+			"message": "",
+			"name": "/Users/keegan/Documents/react/src/components/ChangelogCard/__test__/ChangelogCardTitle.test.tsx",
+			"startTime": 1627580587082,
+			"status": "passed",
+			"summary": ""
+		},
+		{
+			"assertionResults": [
+				{
+					"ancestorTitles": [],
+					"failureMessages": [],
+					"fullName": "Test empty state",
+					"location": null,
+					"status": "passed",
+					"title": "Test empty state"
+				},
+				{
+					"ancestorTitles": [],
+					"failureMessages": [],
+					"fullName": "Test short description",
+					"location": null,
+					"status": "passed",
+					"title": "Test short description"
+				},
+				{
+					"ancestorTitles": [],
+					"failureMessages": [],
+					"fullName": "Test long description",
+					"location": null,
+					"status": "passed",
+					"title": "Test long description"
+				},
+				{
+					"ancestorTitles": [],
+					"failureMessages": [],
+					"fullName": "Test custom class",
+					"location": null,
+					"status": "passed",
+					"title": "Test custom class"
+				}
+			],
+			"endTime": 1627580595113,
+			"message": "",
+			"name": "/Users/keegan/Documents/react/src/components/ChangelogCard/__test__/ChangelogCardDescription.test.tsx",
+			"startTime": 1627580587122,
+			"status": "passed",
+			"summary": ""
+		},
+		{
+			"assertionResults": [
+				{
+					"ancestorTitles": [],
+					"failureMessages": [],
+					"fullName": "Test default state",
+					"location": null,
+					"status": "passed",
+					"title": "Test default state"
+				},
+				{
+					"ancestorTitles": [],
+					"failureMessages": [],
+					"fullName": "Test extra small",
+					"location": null,
+					"status": "passed",
+					"title": "Test extra small"
+				},
+				{
+					"ancestorTitles": [],
+					"failureMessages": [],
+					"fullName": "Test small",
+					"location": null,
+					"status": "passed",
+					"title": "Test small"
+				},
+				{
+					"ancestorTitles": [],
+					"failureMessages": [],
+					"fullName": "Test medium",
+					"location": null,
+					"status": "passed",
+					"title": "Test medium"
+				},
+				{
+					"ancestorTitles": [],
+					"failureMessages": [],
+					"fullName": "Test large",
+					"location": null,
+					"status": "passed",
+					"title": "Test large"
+				},
+				{
+					"ancestorTitles": [],
+					"failureMessages": [],
+					"fullName": "Test extra large",
+					"location": null,
+					"status": "passed",
+					"title": "Test extra large"
+				},
+				{
+					"ancestorTitles": [],
+					"failureMessages": [],
+					"fullName": "Test link",
+					"location": null,
+					"status": "passed",
+					"title": "Test link"
+				},
+				{
+					"ancestorTitles": [],
+					"failureMessages": [],
+					"fullName": "Test link (new tab)",
+					"location": null,
+					"status": "passed",
+					"title": "Test link (new tab)"
+				},
+				{
+					"ancestorTitles": [],
+					"failureMessages": [],
+					"fullName": "Test click handler",
+					"location": null,
+					"status": "passed",
+					"title": "Test click handler"
+				},
+				{
+					"ancestorTitles": [],
+					"failureMessages": [],
+					"fullName": "Test click handler and link",
+					"location": null,
+					"status": "passed",
+					"title": "Test click handler and link"
+				}
+			],
+			"endTime": 1627580595548,
+			"message": "",
+			"name": "/Users/keegan/Documents/react/src/components/Logo/__test__/Logo.test.tsx",
+			"startTime": 1627580595042,
+			"status": "passed",
+			"summary": ""
+		},
+		{
+			"assertionResults": [
+				{
+					"ancestorTitles": [],
+					"failureMessages": [],
+					"fullName": "Test component exports",
+					"location": null,
+					"status": "passed",
+					"title": "Test component exports"
+				},
+				{
+					"ancestorTitles": [],
+					"failureMessages": [],
+					"fullName": "Test util exports",
+					"location": null,
+					"status": "passed",
+					"title": "Test util exports"
+				},
+				{
+					"ancestorTitles": [],
+					"failureMessages": [],
+					"fullName": "Test for unexpected exports",
+					"location": null,
+					"status": "passed",
+					"title": "Test for unexpected exports"
+				}
+			],
+			"endTime": 1627580596379,
 			"message": "",
 			"name": "/Users/keegan/Documents/react/src/__test__/export.test.ts",
-			"startTime": 1627577186194,
+			"startTime": 1627580587064,
 			"status": "passed",
 			"summary": ""
 		},
@@ -792,10 +898,10 @@
 					"title": "Test simple image block with link"
 				}
 			],
-			"endTime": 1627577195608,
+			"endTime": 1627580596432,
 			"message": "",
 			"name": "/Users/keegan/Documents/react/src/components/Renderer/__test__/RendererContent.test.tsx",
-			"startTime": 1627577186181,
+			"startTime": 1627580587077,
 			"status": "passed",
 			"summary": ""
 		}

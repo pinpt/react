@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test click handler 1`] = `
+<span
+  className="Pinpoint Logo sm clickable "
+  onClick={[Function]}
+>
+  <img
+    className="image"
+    src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+  />
+</span>
+`;
+
+exports[`Test click handler and link 1`] = `
+<a
+  className="Pinpoint Logo sm "
+  href="https://pinpoint.com"
+>
+  <img
+    className="image"
+    src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+  />
+</a>
+`;
+
+exports[`Test default state 1`] = `
+<span
+  className="Pinpoint Logo sm  "
+>
+  <img
+    className="image"
+    src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+  />
+</span>
+`;
+
+exports[`Test extra large 1`] = `
+<span
+  className="Pinpoint Logo xl  "
+>
+  <img
+    className="image"
+    src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+  />
+</span>
+`;
+
+exports[`Test extra small 1`] = `
+<span
+  className="Pinpoint Logo xs  "
+>
+  <img
+    className="image"
+    src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+  />
+</span>
+`;
+
+exports[`Test large 1`] = `
+<span
+  className="Pinpoint Logo lg  "
+>
+  <img
+    className="image"
+    src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+  />
+</span>
+`;
+
+exports[`Test link (new tab) 1`] = `
+<a
+  className="Pinpoint Logo sm "
+  href="https://pinpoint.com"
+  rel="noopener noreferrer"
+  target="_blank"
+>
+  <img
+    className="image"
+    src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+  />
+</a>
+`;
+
+exports[`Test link 1`] = `
+<a
+  className="Pinpoint Logo sm "
+  href="https://pinpoint.com"
+>
+  <img
+    className="image"
+    src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+  />
+</a>
+`;
+
+exports[`Test medium 1`] = `
+<span
+  className="Pinpoint Logo md  "
+>
+  <img
+    className="image"
+    src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+  />
+</span>
+`;
+
+exports[`Test small 1`] = `
+<span
+  className="Pinpoint Logo sm  "
+>
+  <img
+    className="image"
+    src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+  />
+</span>
+`;

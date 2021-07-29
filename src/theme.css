@@ -1,8 +1,14 @@
+/*
+ * Generic styles for all Pinpoint components
+ */
 .Pinpoint {
 	font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial,
 		Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 
+/*
+ * Styles for the interactive clap component
+ */
 .Clap.wrapper {
 	position: relative;
 	cursor: pointer;
@@ -50,6 +56,9 @@
 	left: 3rem;
 }
 
+/*
+ * Styles for the statistic components
+ */
 .Statistic.wrapper {
 	display: flex;
 	align-items: center;
@@ -65,6 +74,9 @@
 	margin-right: 20px;
 }
 
+/*
+ * Styles for the changelog card components
+ */
 .Changelog.Card.Container.wrapper {
 	width: 100%;
 	border-radius: 0.5rem;
@@ -109,4 +121,46 @@
 
 .Changelog.Card.Read .arrow {
 	margin-left: 4px;
+}
+
+/*
+ * Styles for the logo component
+ */
+.Logo {
+	border-radius: 100%;
+	display: block;
+}
+
+.Logo.xs {
+	width: 22px;
+	height: 22px;
+}
+
+.Logo.sm {
+	width: 32px;
+	height: 32px;
+}
+
+.Logo.md {
+	width: 42px;
+	height: 42px;
+}
+
+.Logo.lg {
+	width: 52px;
+	height: 52px;
+}
+
+.Logo.xl {
+	width: 62px;
+	height: 62px;
+}
+
+.Logo .image {
+	width: 100%;
+	height: 100%;
+}
+
+.Logo.clickable {
+	cursor: pointer;
 }
