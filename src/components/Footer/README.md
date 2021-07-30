@@ -1,6 +1,6 @@
 ### A footer element to display social links, the copyright notice, and a subscribe button, as well as the powered by Pinpoint badge
 
-[Full Docs](https://laughing-train-834032fc.pages.github.io/?path=/docs/components-footer) | [Github](https://github.com/pinpt/react/tree/master/src/components/Footer)
+[Full Docs](pinpt.github.io/react/?path=/docs/components-footer) | [Github](https://github.com/pinpt/react/tree/master/src/components/Footer)
 
 #### Theming
 

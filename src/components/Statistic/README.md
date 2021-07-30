@@ -1,6 +1,6 @@
 ### The statistic component contains a number of sub-components for rendering clap counts and pageview counts.
 
-[Full Docs](https://laughing-train-834032fc.pages.github.io/?path=/docs/components-statistic) | [Github](https://github.com/pinpt/react/tree/master/src/components/Statistic)
+[Full Docs](pinpt.github.io/react/?path=/docs/components-statistic) | [Github](https://github.com/pinpt/react/tree/master/src/components/Statistic)
 
 #### Theming
 

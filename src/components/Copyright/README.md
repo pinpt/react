@@ -1,6 +1,6 @@
 ### Displays copyright text for your site, either with or without a logo
 
-[Full Docs](https://laughing-train-834032fc.pages.github.io/?path=/docs/components-copyright) | [Github](https://github.com/pinpt/react/tree/master/src/components/Copyright)
+[Full Docs](pinpt.github.io/react/?path=/docs/components-copyright) | [Github](https://github.com/pinpt/react/tree/master/src/components/Copyright)
 
 #### Theming
 

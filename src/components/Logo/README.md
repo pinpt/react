@@ -1,6 +1,6 @@
 ### Displays your site's logo. Can be made into a link or an onClick handler can be attached.
 
-[Full Docs](https://laughing-train-834032fc.pages.github.io/?path=/docs/components-logo) | [Github](https://github.com/pinpt/react/tree/master/src/components/Logo)
+[Full Docs](pinpt.github.io/react/?path=/docs/components-logo) | [Github](https://github.com/pinpt/react/tree/master/src/components/Logo)
 
 #### Theming
 

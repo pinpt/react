@@ -1,6 +1,6 @@
 ### Displays the title of your site, the description, and a subscribe button, and can contain search and your logo (coming soon)
 
-[Full Docs](https://laughing-train-834032fc.pages.github.io/?path=/docs/components-header) | [Github](https://github.com/pinpt/react/tree/master/src/components/Header)
+[Full Docs](pinpt.github.io/react/?path=/docs/components-header) | [Github](https://github.com/pinpt/react/tree/master/src/components/Header)
 
 #### Theming
 

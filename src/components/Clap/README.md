@@ -1,6 +1,6 @@
 ### An interactive clap button that users can press to clap on a changelog
 
-[Full Docs](https://laughing-train-834032fc.pages.github.io/?path=/docs/components-clap) | [Github](https://github.com/pinpt/react/tree/master/src/components/Clap)
+[Full Docs](pinpt.github.io/react/?path=/docs/components-clap) | [Github](https://github.com/pinpt/react/tree/master/src/components/Clap)
 
 #### Theming
 

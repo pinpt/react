@@ -1,6 +1,6 @@
 ### The social component contains a number of sub-components for rendering social links.
 
-[Full Docs](https://laughing-train-834032fc.pages.github.io/?path=/docs/components-social) | [Github](https://github.com/pinpt/react/tree/master/src/components/Social)
+[Full Docs](pinpt.github.io/react/?path=/docs/components-social) | [Github](https://github.com/pinpt/react/tree/master/src/components/Social)
 
 #### Theming
 
