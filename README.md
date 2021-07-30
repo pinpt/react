@@ -26,6 +26,9 @@ const component = () => (
 );
 ```
 
+## Read the docs
+[Check out the docs](https://laughing-train-834032fc.pages.github.io/) for detailed implementation guides.
+
 ## Components to Build
 
 -  [x] View Count
