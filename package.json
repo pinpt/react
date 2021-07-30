@@ -3,6 +3,7 @@
 	"version": "0.0.9",
 	"description": "The Pinpoint UI Library for React",
 	"main": "dist/src/index.js",
+	"files": ["dist/**/*", "base.css"],
 	"scripts": {
 		"build": "tsc",
 		"test": "jest",
