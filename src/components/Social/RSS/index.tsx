@@ -1,4 +1,4 @@
-import ActionLink from '../../Util/ActionLink';
+import ActionLink from '../../Internal/ActionLink';
 import { ISocialProps } from '../types';
 
 const RSS = (props: ISocialProps) => {

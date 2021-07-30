@@ -190,8 +190,18 @@
  */
 .Footer {
 	display: flex;
+	flex-direction: column;
+	padding: 4rem 2rem 0 4rem;
+}
+
+.Footer .content {
+	display: flex;
 	align-items: flex-end;
-	padding: 4rem 2rem;
+}
+
+.Footer .powered {
+	display: flex;
+	padding: 2rem 0;
 }
 
 .Footer .right {

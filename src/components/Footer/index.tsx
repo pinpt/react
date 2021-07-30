@@ -1,5 +1,6 @@
 import { ReactElement } from 'react';
 import { ICopyrightProps } from '../Copyright';
+import PoweredByPinpoint from '../Internal/PoweredByPinpoint';
 import { ISocialBarProps } from '../Social/Bar';
 import { ISubscribeProps } from '../Subscribe';
 
@@ -15,10 +16,15 @@ const Footer = (props: IFooterProps) => {
 
 	return (
 		<div className={`Pinpoint Footer ${className}`}>
-			<div className="left">{copyright}</div>
-			<div className="right">
-				{subscribe}
-				{social}
+			<div className="content">
+				<div className="left">{copyright}</div>
+				<div className="right">
+					{subscribe}
+					{social}
+				</div>
+			</div>
+			<div className="powered">
+				<PoweredByPinpoint campaign="" />
 			</div>
 		</div>
 	);

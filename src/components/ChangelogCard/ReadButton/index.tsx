@@ -1,4 +1,4 @@
-import ActionLink from '../../Util/ActionLink';
+import ActionLink from '../../Internal/ActionLink';
 
 export interface IChangelogReadButtonProps {
 	className?: string;
