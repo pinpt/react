@@ -1,8 +1,13 @@
 # Pinpoint React Library
 
 ## Usage
+Install the library:
 
-First, import the base styles. This is similar to a style reset and includes only the minimal styles for basic functionality.
+```
+npm i @pinpt/react
+```
+
+After installation, import the base styles. This is similar to a style reset and includes only the minimal styles for basic functionality.
 
 The library is designed to be easily themable with CSS.
 
@@ -13,12 +18,12 @@ import '@pinpt/react/base.css';
 Components can be imported as so:
 
 ```jsx
-	import { Statistic } from '@pinpt/react';
+import { Statistic } from '@pinpt/react';
 
 
-	const component = () => (
-		<Statistic.Bar claps={21} views={5} />
-	);
+const component = () => (
+	<Statistic.Bar claps={21} views={5} />
+);
 ```
 
 ## Components to Build
