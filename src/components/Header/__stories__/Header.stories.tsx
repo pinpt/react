@@ -2,12 +2,18 @@ import React from 'react';
 import { Meta } from '@storybook/react';
 import Header from '..';
 import Subscribe from '../../Subscribe';
+const { default: readme } = require('../README.md');
 
 export default {
 	component: Header,
 	title: 'Components/Header',
 	parameters: {
 		jest: ['Header.test.tsx'],
+		docs: {
+			description: {
+				component: readme,
+			},
+		},
 	},
 } as Meta;
 

@@ -5,12 +5,18 @@ import Social from '../../Social';
 import Copyright from '../../Copyright';
 import Logo from '../../Logo';
 import Subscribe from '../../Subscribe';
+const { default: readme } = require('../README.md');
 
 export default {
 	component: Footer,
 	title: 'Components/Footer',
 	parameters: {
 		jest: ['Footer.test.tsx'],
+		docs: {
+			description: {
+				component: readme,
+			},
+		},
 	},
 } as Meta;
 

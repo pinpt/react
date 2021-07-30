@@ -1,0 +1,53 @@
+### Displays the title of your site, the description, and a subscribe button, and can contain search and your logo (coming soon)
+
+[Full Docs](https://laughing-train-834032fc.pages.github.io/?path=/docs/components-header) | [Github](https://github.com/pinpt/react/tree/master/src/components/Header)
+
+#### Themeing
+
+The parent className for styling this component is `.Header`
+
+<details>
+	<summary>Base Theme Styles</summary>
+
+```css
+.Header {
+	display: flex;
+}
+
+.Header .title {
+	font-weight: 600;
+}
+
+.Header .center {
+	flex-grow: 1;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.Header .action {
+	margin: 2rem auto;
+}
+```
+
+</details>
+
+<details>
+	<summary>Additional Styles in This Demo</summary>
+
+```css
+.Clap.icon {
+	color: gray;
+}
+
+.Clap.icon.active {
+	color: purple;
+}
+
+.Clap.counter {
+	color: gray;
+}
+```
+
+</details>
