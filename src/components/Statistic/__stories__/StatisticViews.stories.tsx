@@ -1,12 +1,18 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
 import ViewStatistic from '../Views';
+const { default: readme } = require('../README.md');
 
 export default {
 	component: ViewStatistic,
 	title: 'Components/Statistic/Views',
 	parameters: {
 		jest: ['StatisticViews.test.tsx'],
+		docs: {
+			description: {
+				component: readme,
+			},
+		},
 	},
 } as Meta;
 

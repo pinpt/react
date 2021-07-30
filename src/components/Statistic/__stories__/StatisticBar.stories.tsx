@@ -1,12 +1,18 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
 import StatisticsBar from '../Bar';
+const { default: readme } = require('../README.md');
 
 export default {
 	component: StatisticsBar,
 	title: 'Components/Statistic/Bar',
 	parameters: {
 		jest: ['StatisticBar.test.tsx'],
+		docs: {
+			description: {
+				component: readme,
+			},
+		},
 	},
 } as Meta;
 

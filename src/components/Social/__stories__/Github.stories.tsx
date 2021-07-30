@@ -1,12 +1,18 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
 import SocialComponent from '../Github';
+const { default: readme } = require('../README.md');
 
 export default {
 	component: SocialComponent,
 	title: 'Components/Social/Github',
 	parameters: {
 		jest: ['SocialGithub.test.tsx'],
+		docs: {
+			description: {
+				component: readme,
+			},
+		},
 	},
 } as Meta;
 

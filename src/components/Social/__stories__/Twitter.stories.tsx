@@ -1,12 +1,18 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
 import SocialComponent from '../Twitter';
+const { default: readme } = require('../README.md');
 
 export default {
 	component: SocialComponent,
 	title: 'Components/Social/Twitter',
 	parameters: {
 		jest: ['SocialTwitter.test.tsx'],
+		docs: {
+			description: {
+				component: readme,
+			},
+		},
 	},
 } as Meta;
 

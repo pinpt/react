@@ -7,12 +7,18 @@ import Twitter from '../Twitter';
 import Github from '../Github';
 import LinkedIn from '../LinkedIn';
 import RSS from '../RSS';
+const { default: readme } = require('../README.md');
 
 export default {
 	component: Bar,
 	title: 'Components/Social/Bar',
 	parameters: {
 		jest: ['SocialBar.test.tsx'],
+		docs: {
+			description: {
+				component: readme,
+			},
+		},
 	},
 } as Meta;
 
