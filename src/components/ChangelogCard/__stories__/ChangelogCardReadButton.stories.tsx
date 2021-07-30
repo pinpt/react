@@ -7,6 +7,7 @@ export default {
 	title: 'Components/Changelog Card/Read Button',
 	parameters: {
 		jest: ['ChangelogCardReadButton.test.tsx'],
+		controls: { hideNoControlsWarning: true },
 	},
 } as Meta;
 

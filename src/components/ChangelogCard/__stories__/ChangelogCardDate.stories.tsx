@@ -8,6 +8,7 @@ export default {
 	title: 'Components/Changelog Card/Date',
 	parameters: {
 		jest: ['ChangelogCardDate.test.tsx'],
+		controls: { hideNoControlsWarning: true },
 	},
 } as Meta;
 

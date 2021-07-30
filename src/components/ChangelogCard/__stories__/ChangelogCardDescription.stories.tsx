@@ -7,6 +7,7 @@ export default {
 	title: 'Components/Changelog Card/Description',
 	parameters: {
 		jest: ['ChangelogCardDescription.test.tsx'],
+		controls: { hideNoControlsWarning: true },
 	},
 } as Meta;
 

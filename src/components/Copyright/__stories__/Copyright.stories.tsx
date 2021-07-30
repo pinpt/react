@@ -14,6 +14,7 @@ export default {
 				component: readme,
 			},
 		},
+		controls: { hideNoControlsWarning: true },
 	},
 } as Meta;
 

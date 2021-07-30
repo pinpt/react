@@ -7,6 +7,7 @@ export default {
 	title: 'Components/Subscribe',
 	parameters: {
 		jest: ['Subscribe.test.tsx'],
+		controls: { hideNoControlsWarning: true },
 	},
 } as Meta;
 

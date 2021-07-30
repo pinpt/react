@@ -27,6 +27,7 @@ export default {
 	title: 'Components/Renderer/Content',
 	parameters: {
 		jest: ['RendererContent.test.tsx'],
+		controls: { hideNoControlsWarning: true },
 	},
 } as Meta;
 
