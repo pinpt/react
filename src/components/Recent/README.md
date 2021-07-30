@@ -4,7 +4,7 @@
 
 [Full Docs](https://laughing-train-834032fc.pages.github.io/?path=/docs/components-recent) | [Github](https://github.com/pinpt/react/tree/master/src/components/Recent)
 
-#### Themeing
+#### Theming
 
 The parent className for styling this component is `.Latest`
 
@@ -28,7 +28,6 @@ The parent className for styling this component is `.Latest`
 	display: flex;
 	column-gap: 1rem;
 }
-
 ```
 
 </details>

@@ -2,7 +2,7 @@
 
 [Full Docs](https://laughing-train-834032fc.pages.github.io/?path=/docs/components-clap) | [Github](https://github.com/pinpt/react/tree/master/src/components/Clap)
 
-#### Themeing
+#### Theming
 
 The parent className for styling this component is `.Clap`
 
