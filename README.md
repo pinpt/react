@@ -1,6 +1,7 @@
 # Pinpoint React Library
 
 ## Usage
+
 Install the library:
 
 ```
@@ -20,13 +21,11 @@ Components can be imported as so:
 ```jsx
 import { Statistic } from '@pinpt/react';
 
-
-const component = () => (
-	<Statistic.Bar claps={21} views={5} />
-);
+const component = () => <Statistic.Bar claps={21} views={5} />;
 ```
 
 ## Read the docs
+
 [Check out the docs](pinpt.github.io/react/) for detailed implementation guides.
 
 ## Components to Build
