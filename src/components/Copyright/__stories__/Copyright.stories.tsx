@@ -2,12 +2,18 @@ import React from 'react';
 import { Meta } from '@storybook/react';
 import Copyright from '../';
 import Logo from '../../Logo';
+const { default: readme } = require('../README.md');
 
 export default {
 	component: Copyright,
 	title: 'Components/Copyright',
 	parameters: {
 		jest: ['Copyright.test.tsx'],
+		docs: {
+			description: {
+				component: readme,
+			},
+		},
 	},
 } as Meta;
 

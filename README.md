@@ -11,16 +11,16 @@
 -  [x] Changelog Date
 -  [x] Logo
 -  [ ] Changelog Body
--  [ ] Latest Section
--  [ ] Recent Section
+-  [x] Latest Section
+-  [x] Recent Section
 -  [x] Copyright
--  [ ] Subscribe to Updates
--  [ ] Social Links
--  [ ] Footer
--  [ ] Page
+-  [x] Subscribe to Updates
+-  [x] Social Links
+-  [x] Footer
+-  [x] Page
 -  [ ] Search Field
 -  [ ] Tag
 -  [ ] Tag Group
--  [ ] Header
+-  [x] Header
 -  [ ] Search Filters
 -  [ ] Search Results
