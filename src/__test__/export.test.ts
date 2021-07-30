@@ -11,6 +11,7 @@ const {
 	Social,
 	Footer,
 	Latest,
+	Recent,
 
 	emptyDoc,
 	getEnv,
@@ -67,6 +68,7 @@ test('Test component exports', () => {
 	expect(Subscribe).toBeTruthy();
 	expect(Footer).toBeTruthy();
 	expect(Latest).toBeTruthy();
+	expect(Recent).toBeTruthy();
 });
 
 test('Test util exports', () => {
