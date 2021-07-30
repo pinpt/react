@@ -2,7 +2,7 @@
 	"name": "@pinpt/react",
 	"version": "0.0.5",
 	"description": "The Pinpoint UI Library for React",
-	"main": "dist/index.js",
+	"main": "dist/src/index.js",
 	"scripts": {
 		"build": "tsc",
 		"test": "jest",
