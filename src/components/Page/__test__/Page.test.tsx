@@ -19,7 +19,7 @@ const IMAGE_URL =
 test('Test full page', () => {
 	const component = renderer.create(
 		<Page
-			latest={(
+			latest={
 				<Latest>
 					<Card.Container
 						imageUrl={TEST_IMAGE}
@@ -38,8 +38,8 @@ test('Test full page', () => {
 						button={<Card.ReadButton />}
 					/>
 				</Latest>
-			)}
-			recent={(
+			}
+			recent={
 				<Recent>
 					<Card.Container
 						imageUrl={TEST_IMAGE}
@@ -74,8 +74,8 @@ test('Test full page', () => {
 						button={<Card.ReadButton />}
 					/>
 				</Recent>
-			)}
-			footer={(
+			}
+			footer={
 				<Footer
 					social={
 						<Social.Bar>
@@ -90,7 +90,7 @@ test('Test full page', () => {
 					copyright={<Copyright text="2021 by Pinpoint Software, Inc." logo={<Logo src={IMAGE_URL} />} />}
 					subscribe={<Subscribe href="https://pinpoint.com" />}
 				/>
-			)}
+			}
 		/>
 	);
 	const tree = component.toJSON();
@@ -100,7 +100,7 @@ test('Test full page', () => {
 test('Test no latest', () => {
 	const component = renderer.create(
 		<Page
-			recent={(
+			recent={
 				<Recent>
 					<Card.Container
 						imageUrl={TEST_IMAGE}
@@ -135,8 +135,8 @@ test('Test no latest', () => {
 						button={<Card.ReadButton />}
 					/>
 				</Recent>
-			)}
-			footer={(
+			}
+			footer={
 				<Footer
 					social={
 						<Social.Bar>
@@ -151,7 +151,7 @@ test('Test no latest', () => {
 					copyright={<Copyright text="2021 by Pinpoint Software, Inc." logo={<Logo src={IMAGE_URL} />} />}
 					subscribe={<Subscribe href="https://pinpoint.com" />}
 				/>
-			)}
+			}
 		/>
 	);
 	const tree = component.toJSON();
@@ -161,7 +161,7 @@ test('Test no latest', () => {
 test('Test no recent', () => {
 	const component = renderer.create(
 		<Page
-			latest={(
+			latest={
 				<Latest>
 					<Card.Container
 						imageUrl={TEST_IMAGE}
@@ -180,8 +180,8 @@ test('Test no recent', () => {
 						button={<Card.ReadButton />}
 					/>
 				</Latest>
-			)}
-			footer={(
+			}
+			footer={
 				<Footer
 					social={
 						<Social.Bar>
@@ -196,7 +196,7 @@ test('Test no recent', () => {
 					copyright={<Copyright text="2021 by Pinpoint Software, Inc." logo={<Logo src={IMAGE_URL} />} />}
 					subscribe={<Subscribe href="https://pinpoint.com" />}
 				/>
-			)}
+			}
 		/>
 	);
 	const tree = component.toJSON();
@@ -206,7 +206,7 @@ test('Test no recent', () => {
 test('Test no footer', () => {
 	const component = renderer.create(
 		<Page
-			latest={(
+			latest={
 				<Latest>
 					<Card.Container
 						imageUrl={TEST_IMAGE}
@@ -225,8 +225,8 @@ test('Test no footer', () => {
 						button={<Card.ReadButton />}
 					/>
 				</Latest>
-			)}
-			recent={(
+			}
+			recent={
 				<Recent>
 					<Card.Container
 						imageUrl={TEST_IMAGE}
@@ -261,7 +261,7 @@ test('Test no footer', () => {
 						button={<Card.ReadButton />}
 					/>
 				</Recent>
-			)}
+			}
 		/>
 	);
 	const tree = component.toJSON();

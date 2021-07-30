@@ -26,39 +26,38 @@ body {
 
 .Changelog.Card.Container.wrapper {
 	background: #473e53;
-	color: #FAF9F9;
+	color: #faf9f9;
 }
-
 
 .Latest {
 	background-color: #292135;
 }
 
 .Latest .heading {
-	color: #FAF9F9;
+	color: #faf9f9;
 }
 
 .Recent {
-	background-color: #332A40;
+	background-color: #332a40;
 }
 
 .Recent .heading {
-	color: #FAF9F9;
+	color: #faf9f9;
 }
 
 .Changelog.Card.Read {
-	color: #a078d4
+	color: #a078d4;
 }
 
 .Footer {
 	background-color: #1e142c;
-	color: #FAF9F9;
+	color: #faf9f9;
 }
 
 .Footer .Social.Item {
-	color: #FAF9F9;
+	color: #faf9f9;
 }
 
 .Subscribe {
-	color: #a078d4
+	color: #a078d4;
 }

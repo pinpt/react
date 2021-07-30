@@ -26,7 +26,7 @@ const IMAGE_URL =
 
 export const Full_Page: React.VFC<{}> = () => (
 	<Page
-		latest={(
+		latest={
 			<Latest>
 				<Card.Container
 					imageUrl="https://cdn.pinpoint.com/card.png"
@@ -45,8 +45,8 @@ export const Full_Page: React.VFC<{}> = () => (
 					button={<Card.ReadButton />}
 				/>
 			</Latest>
-		)}
-		recent={(
+		}
+		recent={
 			<Recent>
 				<Card.Container
 					imageUrl="https://cdn.pinpoint.com/card.png"
@@ -81,8 +81,8 @@ export const Full_Page: React.VFC<{}> = () => (
 					button={<Card.ReadButton />}
 				/>
 			</Recent>
-		)}
-		footer={(
+		}
+		footer={
 			<Footer
 				social={
 					<Social.Bar>
@@ -97,6 +97,6 @@ export const Full_Page: React.VFC<{}> = () => (
 				copyright={<Copyright text="2021 by Pinpoint Software, Inc." logo={<Logo src={IMAGE_URL} />} />}
 				subscribe={<Subscribe href="https://pinpoint.com" />}
 			/>
-		)}
+		}
 	/>
 );
