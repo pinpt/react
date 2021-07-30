@@ -13,7 +13,8 @@
 		"test:ci": "jest --ci --reporters='default' --reporters='./.github/github-actions-reporter'",
 		"storybook": "start-storybook -p 6006",
 		"build-storybook": "npm run test:generate-output && build-storybook -o docs-build",
-		"postinstall": "npm run test:generate-output"
+		"postinstall": "npm run test:generate-output",
+		"prepublishOnly": "npm run build"
 	},
 	"license": "MIT",
 	"dependencies": {
