@@ -1,12 +1,18 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
 import Logo from '../';
+const { default: readme } = require('../README.md');
 
 export default {
 	component: Logo,
 	title: 'Components/Logo',
 	parameters: {
 		jest: ['Logo.test.tsx'],
+		docs: {
+			description: {
+				component: readme,
+			},
+		},
 	},
 } as Meta;
 

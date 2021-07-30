@@ -24,3 +24,7 @@
 -  [x] Header
 -  [ ] Search Filters
 -  [ ] Search Results
+
+## TODO
+- [ ] Support for Media Queries (i.e. grid layout on 'Recent' section)
+- [ ] More fully built out defaul theme

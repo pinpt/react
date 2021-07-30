@@ -3,12 +3,18 @@ import { Meta } from '@storybook/react';
 import Latest from '..';
 import Card from '../../ChangelogCard';
 import Statistic from '../../Statistic';
+const { default: readme } = require('../README.md');
 
 export default {
 	component: Latest,
 	title: 'Components/Latest',
 	parameters: {
 		jest: ['Latest.test.tsx'],
+		docs: {
+			description: {
+				component: readme,
+			},
+		},
 	},
 } as Meta;
 

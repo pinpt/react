@@ -37,16 +37,9 @@ The parent className for styling this component is `.Header`
 	<summary>Additional Styles in This Demo</summary>
 
 ```css
-.Clap.icon {
-	color: gray;
-}
-
-.Clap.icon.active {
-	color: purple;
-}
-
-.Clap.counter {
-	color: gray;
+.Header {
+	background-color: #332a40;
+	color: #faf9f9;
 }
 ```
 

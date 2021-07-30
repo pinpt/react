@@ -11,12 +11,18 @@ import Copyright from '../../Copyright';
 import Logo from '../../Logo';
 import Subscribe from '../../Subscribe';
 import Header from '../../Header';
+const { default: readme } = require('../README.md');
 
 export default {
 	component: Page,
 	title: 'Components/Page',
 	parameters: {
 		jest: ['Page.test.tsx'],
+		docs: {
+			description: {
+				component: readme,
+			},
+		},
 	},
 } as Meta;
 
