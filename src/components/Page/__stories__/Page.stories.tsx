@@ -10,6 +10,7 @@ import Social from '../../Social';
 import Copyright from '../../Copyright';
 import Logo from '../../Logo';
 import Subscribe from '../../Subscribe';
+import Header from '../../Header';
 
 export default {
 	component: Page,
@@ -26,6 +27,13 @@ const IMAGE_URL =
 
 export const Full_Page: React.VFC<{}> = () => (
 	<Page
+		header={
+			<Header
+				subscribe={<Subscribe href="https://pinpoint.com" />}
+				title="Pinpoint Demo Changelog"
+				description="See what's new in the Pinpoint Demo."
+			/>
+		}
 		latest={
 			<Latest>
 				<Card.Container

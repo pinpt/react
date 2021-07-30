@@ -12,6 +12,8 @@ const {
 	Footer,
 	Latest,
 	Recent,
+	Page,
+	Header,
 
 	emptyDoc,
 	getEnv,
@@ -69,6 +71,8 @@ test('Test component exports', () => {
 	expect(Footer).toBeTruthy();
 	expect(Latest).toBeTruthy();
 	expect(Recent).toBeTruthy();
+	expect(Page).toBeTruthy();
+	expect(Header).toBeTruthy();
 });
 
 test('Test util exports', () => {

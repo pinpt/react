@@ -267,6 +267,28 @@
 }
 
 /*
+ * Styles for the header component
+ */
+.Header {
+	display: flex;
+}
+
+.Header .title {
+	font-weight: 600;
+}
+
+.Header .center {
+	flex-grow: 1;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.Header .action {
+	margin: 2rem auto;
+}
+/*
  * Styles for the link component
  */
 .Link.clickable {

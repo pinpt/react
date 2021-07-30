@@ -10,3 +10,5 @@ export { default as Social } from './components/Social';
 export { default as Footer } from './components/Footer';
 export { default as Latest } from './components/Latest';
 export { default as Recent } from './components/Recent';
+export { default as Page } from './components/Page';
+export { default as Header } from './components/Header';
