@@ -71,6 +71,9 @@
 
 .Changelog.Card.Container.wrapper .cover {
 	width: 100%;
+	object-fit: cover;
+	object-position: center;
+	height: 12rem;
 }
 
 .Changelog.Card.Container.wrapper .content {

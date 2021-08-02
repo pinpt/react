@@ -26,6 +26,8 @@ const {
 	getFileUrl,
 	slugifyContent,
 	slugifyString,
+	fetchSite,
+	splitEntries,
 
 	...otherExports
 } = Exports;
@@ -87,6 +89,8 @@ test('Test util exports', () => {
 	expect(getFileUrl).toBeTruthy();
 	expect(slugifyContent).toBeTruthy();
 	expect(slugifyString).toBeTruthy();
+	expect(fetchSite).toBeTruthy();
+	expect(splitEntries).toBeTruthy();
 });
 
 test('Test for unexpected exports', () => {

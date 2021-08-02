@@ -23,7 +23,7 @@ export interface ChangelogCoverMedia {
 	metadata?: Record<string, any>;
 }
 
-export interface Content {
+export interface Entry {
 	id: string;
 	content: any;
 	url: string;
