@@ -110,9 +110,9 @@ exports[`Test full page 1`] = `
                   fill="none"
                   height={16}
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   viewBox="0 0 24 24"
                   width={16}
                 >
@@ -277,9 +277,9 @@ exports[`Test full page 1`] = `
                   fill="none"
                   height={16}
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   viewBox="0 0 24 24"
                   width={16}
                 >
@@ -457,9 +457,9 @@ exports[`Test full page 1`] = `
                   fill="none"
                   height={16}
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   viewBox="0 0 24 24"
                   width={16}
                 >
@@ -624,9 +624,9 @@ exports[`Test full page 1`] = `
                   fill="none"
                   height={16}
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   viewBox="0 0 24 24"
                   width={16}
                 >
@@ -791,9 +791,9 @@ exports[`Test full page 1`] = `
                   fill="none"
                   height={16}
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   viewBox="0 0 24 24"
                   width={16}
                 >
@@ -958,9 +958,9 @@ exports[`Test full page 1`] = `
                   fill="none"
                   height={16}
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   viewBox="0 0 24 24"
                   width={16}
                 >
@@ -1110,7 +1110,6 @@ exports[`Test full page 1`] = `
           <span
             className="text"
           >
-            Copyright © 
             2021 by Pinpoint Software, Inc.
           </span>
         </div>
@@ -1397,9 +1396,9 @@ exports[`Test no footer 1`] = `
                   fill="none"
                   height={16}
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   viewBox="0 0 24 24"
                   width={16}
                 >
@@ -1564,9 +1563,9 @@ exports[`Test no footer 1`] = `
                   fill="none"
                   height={16}
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   viewBox="0 0 24 24"
                   width={16}
                 >
@@ -1744,9 +1743,9 @@ exports[`Test no footer 1`] = `
                   fill="none"
                   height={16}
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   viewBox="0 0 24 24"
                   width={16}
                 >
@@ -1911,9 +1910,9 @@ exports[`Test no footer 1`] = `
                   fill="none"
                   height={16}
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   viewBox="0 0 24 24"
                   width={16}
                 >
@@ -2078,9 +2077,9 @@ exports[`Test no footer 1`] = `
                   fill="none"
                   height={16}
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   viewBox="0 0 24 24"
                   width={16}
                 >
@@ -2245,9 +2244,9 @@ exports[`Test no footer 1`] = `
                   fill="none"
                   height={16}
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   viewBox="0 0 24 24"
                   width={16}
                 >
@@ -2432,9 +2431,9 @@ exports[`Test no header 1`] = `
                   fill="none"
                   height={16}
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   viewBox="0 0 24 24"
                   width={16}
                 >
@@ -2599,9 +2598,9 @@ exports[`Test no header 1`] = `
                   fill="none"
                   height={16}
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   viewBox="0 0 24 24"
                   width={16}
                 >
@@ -2779,9 +2778,9 @@ exports[`Test no header 1`] = `
                   fill="none"
                   height={16}
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   viewBox="0 0 24 24"
                   width={16}
                 >
@@ -2946,9 +2945,9 @@ exports[`Test no header 1`] = `
                   fill="none"
                   height={16}
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   viewBox="0 0 24 24"
                   width={16}
                 >
@@ -3113,9 +3112,9 @@ exports[`Test no header 1`] = `
                   fill="none"
                   height={16}
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   viewBox="0 0 24 24"
                   width={16}
                 >
@@ -3280,9 +3279,9 @@ exports[`Test no header 1`] = `
                   fill="none"
                   height={16}
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   viewBox="0 0 24 24"
                   width={16}
                 >
@@ -3432,7 +3431,6 @@ exports[`Test no header 1`] = `
           <span
             className="text"
           >
-            Copyright © 
             2021 by Pinpoint Software, Inc.
           </span>
         </div>
@@ -3719,9 +3717,9 @@ exports[`Test no latest 1`] = `
                   fill="none"
                   height={16}
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   viewBox="0 0 24 24"
                   width={16}
                 >
@@ -3886,9 +3884,9 @@ exports[`Test no latest 1`] = `
                   fill="none"
                   height={16}
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   viewBox="0 0 24 24"
                   width={16}
                 >
@@ -4053,9 +4051,9 @@ exports[`Test no latest 1`] = `
                   fill="none"
                   height={16}
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   viewBox="0 0 24 24"
                   width={16}
                 >
@@ -4220,9 +4218,9 @@ exports[`Test no latest 1`] = `
                   fill="none"
                   height={16}
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   viewBox="0 0 24 24"
                   width={16}
                 >
@@ -4372,7 +4370,6 @@ exports[`Test no latest 1`] = `
           <span
             className="text"
           >
-            Copyright © 
             2021 by Pinpoint Software, Inc.
           </span>
         </div>
@@ -4659,9 +4656,9 @@ exports[`Test no recent 1`] = `
                   fill="none"
                   height={16}
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   viewBox="0 0 24 24"
                   width={16}
                 >
@@ -4826,9 +4823,9 @@ exports[`Test no recent 1`] = `
                   fill="none"
                   height={16}
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   viewBox="0 0 24 24"
                   width={16}
                 >
@@ -4978,7 +4975,6 @@ exports[`Test no recent 1`] = `
           <span
             className="text"
           >
-            Copyright © 
             2021 by Pinpoint Software, Inc.
           </span>
         </div>

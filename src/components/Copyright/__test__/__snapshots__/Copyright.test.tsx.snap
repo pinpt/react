@@ -16,8 +16,7 @@ exports[`Test with clickable logo 1`] = `
   <span
     className="text"
   >
-    Copyright © 
-    2021 by Pinpoint Software, Inc.
+    Copyright © 2021 by Pinpoint Software, Inc.
   </span>
 </div>
 `;
@@ -37,8 +36,7 @@ exports[`Test with custom className 1`] = `
   <span
     className="text"
   >
-    Copyright © 
-    2021 by Pinpoint Software, Inc.
+    Copyright © 2021 by Pinpoint Software, Inc.
   </span>
 </div>
 `;
@@ -59,8 +57,7 @@ exports[`Test with linked logo 1`] = `
   <span
     className="text"
   >
-    Copyright © 
-    2021 by Pinpoint Software, Inc.
+    Copyright © 2021 by Pinpoint Software, Inc.
   </span>
 </div>
 `;
@@ -80,8 +77,7 @@ exports[`Test with logo 1`] = `
   <span
     className="text"
   >
-    Copyright © 
-    2021 by Pinpoint Software, Inc.
+    Copyright © 2021 by Pinpoint Software, Inc.
   </span>
 </div>
 `;
@@ -93,8 +89,7 @@ exports[`Test without logo 1`] = `
   <span
     className="text"
   >
-    Copyright © 
-    2021 by Pinpoint Software, Inc.
+    Copyright © 2021 by Pinpoint Software, Inc.
   </span>
 </div>
 `;

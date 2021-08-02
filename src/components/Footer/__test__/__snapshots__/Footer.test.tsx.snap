@@ -24,7 +24,6 @@ exports[`Test complete 1`] = `
         <span
           className="text"
         >
-          Copyright © 
           2021 by Pinpoint Software, Inc.
         </span>
       </div>
@@ -279,7 +278,6 @@ exports[`Test no custom class 1`] = `
         <span
           className="text"
         >
-          Copyright © 
           2021 by Pinpoint Software, Inc.
         </span>
       </div>
@@ -364,7 +362,6 @@ exports[`Test no social 1`] = `
         <span
           className="text"
         >
-          Copyright © 
           2021 by Pinpoint Software, Inc.
         </span>
       </div>
@@ -477,7 +474,6 @@ exports[`Test no subscribe 1`] = `
         <span
           className="text"
         >
-          Copyright © 
           2021 by Pinpoint Software, Inc.
         </span>
       </div>

@@ -7,14 +7,14 @@ const IMAGE_URL =
 
 test('Test with logo', () => {
 	const component = renderer.create(
-		<Copyright text="2021 by Pinpoint Software, Inc." logo={<Logo src={IMAGE_URL} />} />
+		<Copyright text="Copyright © 2021 by Pinpoint Software, Inc." logo={<Logo src={IMAGE_URL} />} />
 	);
 	const tree = component.toJSON();
 	expect(tree).toMatchSnapshot();
 });
 
 test('Test without logo', () => {
-	const component = renderer.create(<Copyright text="2021 by Pinpoint Software, Inc." />);
+	const component = renderer.create(<Copyright text="Copyright © 2021 by Pinpoint Software, Inc." />);
 	const tree = component.toJSON();
 	expect(tree).toMatchSnapshot();
 });
@@ -22,7 +22,7 @@ test('Test without logo', () => {
 test('Test with clickable logo', () => {
 	const component = renderer.create(
 		<Copyright
-			text="2021 by Pinpoint Software, Inc."
+			text="Copyright © 2021 by Pinpoint Software, Inc."
 			logo={<Logo src={IMAGE_URL} onClick={() => console.log('click!')} />}
 		/>
 	);
@@ -32,7 +32,10 @@ test('Test with clickable logo', () => {
 
 test('Test with linked logo', () => {
 	const component = renderer.create(
-		<Copyright text="2021 by Pinpoint Software, Inc." logo={<Logo src={IMAGE_URL} href="https://pinpoint.com" />} />
+		<Copyright
+			text="Copyright © 2021 by Pinpoint Software, Inc."
+			logo={<Logo src={IMAGE_URL} href="https://pinpoint.com" />}
+		/>
 	);
 	const tree = component.toJSON();
 	expect(tree).toMatchSnapshot();
@@ -40,7 +43,11 @@ test('Test with linked logo', () => {
 
 test('Test with custom className', () => {
 	const component = renderer.create(
-		<Copyright text="2021 by Pinpoint Software, Inc." logo={<Logo src={IMAGE_URL} />} className="test-custom" />
+		<Copyright
+			text="Copyright © 2021 by Pinpoint Software, Inc."
+			logo={<Logo src={IMAGE_URL} />}
+			className="test-custom"
+		/>
 	);
 	const tree = component.toJSON();
 	expect(tree).toMatchSnapshot();
