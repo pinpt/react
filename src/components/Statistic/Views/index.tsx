@@ -8,10 +8,10 @@ const Views = (props: IStatisticProps) => {
 				width={16}
 				height={16}
 				stroke="currentColor"
-				stroke-width="2"
+				strokeWidth="2"
 				fill="none"
-				stroke-linecap="round"
-				stroke-linejoin="round"
+				strokeLinecap="round"
+				strokeLinejoin="round"
 				viewBox="0 0 24 24"
 			>
 				<path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
