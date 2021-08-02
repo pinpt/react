@@ -72,7 +72,6 @@ export const Full_Page: React.VFC<{}> = () => (
 					button={<Card.ReadButton />}
 				/>
 				<Card.Container
-					imageUrl="https://cdn.pinpoint.com/card.png"
 					title={<Card.Title title={TEST_TITLE} />}
 					date={<Card.Date />}
 					description={<Card.Description description={TEST_DESCRIPTION} />}
@@ -83,7 +82,7 @@ export const Full_Page: React.VFC<{}> = () => (
 					imageUrl="https://cdn.pinpoint.com/card.png"
 					title={<Card.Title title={TEST_TITLE} />}
 					date={<Card.Date />}
-					description={<Card.Description description={TEST_DESCRIPTION} />}
+					description={<Card.Description description={`${TEST_DESCRIPTION} ${TEST_DESCRIPTION} ${TEST_DESCRIPTION}`} />}
 					statistics={<Statistic.Bar claps={22} views={135} />}
 					button={<Card.ReadButton />}
 				/>

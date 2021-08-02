@@ -68,6 +68,9 @@
 	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 	background: white;
 	margin-top: auto;
+	display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .Changelog.Card.Container.wrapper .cover {
@@ -86,11 +89,15 @@
 
 .Changelog.Card.Container.wrapper .footer {
 	display: flex;
-	margin-top: 1rem;
+	margin-top: auto;
 }
 
 .Changelog.Card.Container.wrapper .statistics {
 	margin-left: auto;
+}
+
+.Changelog.Card.Description {
+	margin-bottom: 2rem;
 }
 
 .Changelog.Card.Date {
