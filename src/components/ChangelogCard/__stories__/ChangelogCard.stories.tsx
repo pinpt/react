@@ -6,6 +6,7 @@ import Description from '../Description';
 import StatisticsBar from '../../Statistic/Bar';
 import ChangelogDate from '../Date';
 import ChangelogReadButton from '../ReadButton';
+const { default: readme } = require('../Container/README.md');
 
 export default {
 	component: ChangelogContainer,
@@ -13,6 +14,11 @@ export default {
 	parameters: {
 		jest: ['ChangelogCardContainer.test.tsx'],
 		controls: { hideNoControlsWarning: true },
+		docs: {
+			description: {
+				component: readme,
+			},
+		},
 	},
 } as Meta;
 
