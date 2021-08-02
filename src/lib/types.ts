@@ -1,12 +1,18 @@
 export interface Site {
 	id: string;
+	logoUrl?: string;
+	mailingAddress?: string;
 	slug: string;
 	name: string;
 	theme: {
 		title: string;
+		tosLink?: string;
+		social?: Record<string, string>;
 		description: string;
 		copyright: string;
 		logoLink: string;
+		generatorVersion?: string;
+		eulaLink?: string;
 	};
 }
 

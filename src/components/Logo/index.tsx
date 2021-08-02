@@ -2,7 +2,7 @@ import ActionLink from '../Internal/ActionLink';
 
 export interface ILogoProps {
 	className?: string;
-	src: string;
+	src?: string;
 	href?: string;
 	newTab?: boolean;
 	size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl';

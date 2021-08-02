@@ -12,7 +12,7 @@ const Copyright = (props: ICopyrightProps) => {
 	return (
 		<div className={`Pinpoint Copyright ${className}`}>
 			{logo}
-			<span className="text">Copyright © {text}</span>
+			<span className="text">{text}</span>
 		</div>
 	);
 };

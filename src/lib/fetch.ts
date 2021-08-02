@@ -24,13 +24,12 @@ export const fetchContent = async (id: string, options?: FetchOptions): Promise<
 	throw new Error('internal server error');
 };
 
-export const fetchSite = async (slug: string, options?: FetchOptions): Promise<{ changelogs: Entry[], site: Site }> => {
+export const fetchSite = async (slug: string, options?: FetchOptions): Promise<{ changelogs: Entry[]; site: Site }> => {
 	const { apiUrl = defaultUrl } = options || {};
 	const url = `${apiUrl}/changelog/list/${slug}/slug`;
 	const res = await fetch(url);
 	if (res.ok) {
 		const resdata = await res.json();
-		console.log('res', resdata);
 		if (resdata.success) {
 			const { changelogs, site } = resdata;
 			return { changelogs, site };

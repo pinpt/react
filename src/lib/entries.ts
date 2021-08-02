@@ -5,4 +5,4 @@ export const splitEntries = (entries: Entry[] = [], latestCount = 1) => {
 	const recent = entries.slice(latestCount, entries.length);
 
 	return { latest, recent };
-}
+};
