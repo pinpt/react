@@ -13,3 +13,4 @@ export { default as Recent } from './components/Recent';
 export { default as Page } from './components/Page';
 export { default as Header } from './components/Header';
 export { default as Prebuilt } from './components/Prebuilt';
+export { default as Tags } from './components/Tags';

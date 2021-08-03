@@ -6,6 +6,7 @@ import Description from '../Description';
 import StatisticsBar from '../../Statistic/Bar';
 import ChangelogDate from '../Date';
 import ChangelogReadButton from '../ReadButton';
+import Tags from '../../Tags';
 const { default: readme } = require('../Container/README.md');
 
 export default {
@@ -33,6 +34,7 @@ export const Full_Card: React.VFC<{}> = () => (
 		description={<Description description={TEST_DESCRIPTION} />}
 		statistics={<StatisticsBar claps={22} views={135} />}
 		button={<ChangelogReadButton />}
+		tags={<Tags.Bar tags={['feature', 'improvement']} />}
 	/>
 );
 

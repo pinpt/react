@@ -18,6 +18,8 @@ import { ISocialBarProps } from '../../Social/Bar';
 import Copyright, { ICopyrightProps } from '../../Copyright';
 import Logo, { ILogoProps } from '../../Logo';
 import Social from '../../Social';
+import { ITagBarProps } from '../../Tags/Bar';
+import Tags from '../../Tags';
 
 export interface IPrebuiltHomeProps {
 	className?: string;
@@ -37,6 +39,7 @@ export interface IPrebuiltHomeProps {
 	renderSocial?: (site: Site) => ReactElement<ISocialBarProps>;
 	renderCopyright?: (site: Site) => ReactElement<ICopyrightProps>;
 	renderLogo?: (site: Site) => ReactElement<ILogoProps>;
+	renderTags?: (entry: Entry) => ReactElement<ITagBarProps>;
 	latestCount?: number;
 }
 
@@ -60,6 +63,7 @@ const PrebuiltHome = (props: IPrebuiltHomeProps) => {
 		renderSocial,
 		renderCopyright,
 		renderLogo,
+		renderTags,
 	} = props;
 	const { latest, recent } = splitEntries(entries, latestCount);
 	return (
@@ -106,6 +110,7 @@ const PrebuiltHome = (props: IPrebuiltHomeProps) => {
 											)
 										}
 										button={renderCardButton?.(entry) ?? <Card.ReadButton className="Prebuilt" />}
+										tags={renderTags?.(entry) ?? <Tags.Bar tags={entry.tags ?? []} />}
 									/>
 								)
 							);
@@ -140,6 +145,7 @@ const PrebuiltHome = (props: IPrebuiltHomeProps) => {
 											)
 										}
 										button={renderCardButton?.(entry) ?? <Card.ReadButton className="Prebuilt" />}
+										tags={renderTags?.(entry) ?? <Tags.Bar tags={entry.tags ?? []} />}
 									/>
 								)
 							);

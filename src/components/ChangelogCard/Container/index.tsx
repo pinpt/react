@@ -1,3 +1,5 @@
+import React from 'react';
+import { ITagBarProps } from '../../Tags/Bar';
 import { IStatisticsBarProps } from '../../Statistic/Bar';
 import { IChangelogDateProps } from '../Date';
 import { IChangelogDescriptionProps } from '../Description';
@@ -10,13 +12,14 @@ export interface IChangelogCardContainerProps {
 	statistics?: React.ReactElement<IStatisticsBarProps>;
 	date?: React.ReactElement<IChangelogDateProps>;
 	button?: React.ReactElement<IChangelogReadButtonProps>;
+	tags?: React.ReactElement<ITagBarProps>;
 	imageUrl?: string;
 	alt?: string;
 	className?: string;
 }
 
 const Container = (props: IChangelogCardContainerProps) => {
-	const { title, description, imageUrl, alt, className, statistics, date, button } = props;
+	const { title, description, imageUrl, alt, className, statistics, date, button, tags } = props;
 
 	return (
 		<div className={`Pinpoint Changelog Card Container wrapper ${className ?? ''}`}>
@@ -24,6 +27,7 @@ const Container = (props: IChangelogCardContainerProps) => {
 			<div className="content">
 				{title}
 				{date}
+				{tags}
 				{description}
 				<div className="footer">
 					{button && <div className="button">{button}</div>}

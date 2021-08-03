@@ -21,6 +21,36 @@ exports[`Test full card 1`] = `
     >
       12/31/1969
     </span>
+    <div
+      className="Pinpoint Tag Bar "
+    >
+      <div
+        className="Pinpoint Tag Item "
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
+            "border": "1px solid var(--tag-bcolor, #3f7a4333)",
+            "color": "var(--tag-fgcolor, #27632e)",
+          }
+        }
+      >
+        feature
+      </div>
+      <div
+        className="Pinpoint Tag Item "
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
+            "border": "1px solid var(--tag-bcolor, #23747633)",
+            "color": "var(--tag-fgcolor, #005e5f)",
+          }
+        }
+      >
+        improvement
+      </div>
+    </div>
     <p
       className="Pinpoint Changelog Card Description "
     >

@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test 1 1`] = `
+<div
+  className="Pinpoint Tag Item "
+  style={
+    Object {
+      "backgroundColor": "#a1ffa9",
+      "border": "1px solid var(--tag-bcolor, #1e823633)",
+      "color": "var(--tag-fgcolor, #006b21)",
+    }
+  }
+>
+  test-1
+</div>
+`;
+
+exports[`Test 2 1`] = `
+<div
+  className="Pinpoint Tag Item "
+  style={
+    Object {
+      "backgroundColor": "#79e7f2",
+      "border": "1px solid var(--tag-bcolor, #006d7833)",
+      "color": "var(--tag-fgcolor, #ffffff)",
+    }
+  }
+>
+  test-2
+</div>
+`;
+
+exports[`Test 3 1`] = `
+<div
+  className="Pinpoint Tag Item "
+  style={
+    Object {
+      "backgroundColor": "#6149c5",
+      "border": "1px solid var(--tag-bcolor, #00004f33)",
+      "color": "var(--tag-fgcolor, #ffffff)",
+    }
+  }
+>
+  test-3
+</div>
+`;
+
+exports[`Test 4 1`] = `
+<div
+  className="Pinpoint Tag Item "
+  style={
+    Object {
+      "backgroundColor": "#ff9eff",
+      "border": "1px solid var(--tag-bcolor, #7f258333)",
+      "color": "var(--tag-fgcolor, #ffffff)",
+    }
+  }
+>
+  test-4
+</div>
+`;

@@ -72,7 +72,7 @@
 }
 
 .Changelog.Card.Date {
-	@apply mt-0.5 text-xs;
+	@apply mt-0.5 text-xs mb-2;
 }
 
 .Changelog.Card.Read {
@@ -83,6 +83,9 @@
 	@apply ml-2;
 }
 
+.Changelog.Card .Tag.Bar {
+	@apply mb-4;
+}
 /*
  * Styles for the logo component
  */
@@ -250,4 +253,15 @@
  */
 .Link.clickable {
 	@apply cursor-pointer;
+}
+
+/*
+ * Styles for the tag component
+ */
+.Tag.Item {
+	@apply inline-flex items-center rounded-full bg-blue-500 text-xs px-1.5 py-0.5;
+}
+
+.Tag.Bar {
+	@apply flex gap-x-2;
 }

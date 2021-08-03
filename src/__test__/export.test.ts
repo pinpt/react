@@ -15,6 +15,7 @@ const {
 	Page,
 	Header,
 	Prebuilt,
+	Tags,
 
 	emptyDoc,
 	getEnv,
@@ -70,6 +71,13 @@ test('Test component exports', () => {
 	expect(Dashboard).toBeTruthy();
 	expect(Entry).toBeTruthy();
 	expect(Object.keys(otherPage).length).toEqual(0);
+
+	// Test Tags Exports
+	expect(Tags).toBeTruthy();
+	const { Bar: TagBar, Item: TagItem, ...otherTags } = Tags;
+	expect(TagBar).toBeTruthy();
+	expect(TagItem).toBeTruthy();
+	expect(Object.keys(otherTags).length).toEqual(0);
 
 	// Test Prebuilt Exports
 	expect(Prebuilt).toBeTruthy();

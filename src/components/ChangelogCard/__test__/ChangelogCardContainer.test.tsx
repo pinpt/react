@@ -5,6 +5,7 @@ import Description from '../Description';
 import Title from '../Title';
 import ChangelogDate from '../Date';
 import ReadButton from '../ReadButton';
+import Tags from '../../Tags';
 
 const TEST_TITLE = 'Test Title';
 const TEST_DESCRIPTION = 'Test Description';
@@ -18,6 +19,7 @@ test('Test full card', () => {
 			description={<Description description={TEST_DESCRIPTION} />}
 			statistics={<StatisticsBar claps={22} views={135} />}
 			button={<ReadButton />}
+			tags={<Tags.Bar tags={['feature', 'improvement']} />}
 		/>
 	);
 	const tree = component.toJSON();

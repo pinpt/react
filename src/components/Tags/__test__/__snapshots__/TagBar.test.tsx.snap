@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test One Tag 1`] = `
+<div
+  className="Pinpoint Tag Bar "
+>
+  <div
+    className="Pinpoint Tag Item "
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#a1ffa9",
+        "border": "1px solid var(--tag-bcolor, #1e823633)",
+        "color": "var(--tag-fgcolor, #006b21)",
+      }
+    }
+  >
+    test-1
+  </div>
+</div>
+`;
+
+exports[`Test Three Tags 1`] = `
+<div
+  className="Pinpoint Tag Bar "
+>
+  <div
+    className="Pinpoint Tag Item "
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#a1ffa9",
+        "border": "1px solid var(--tag-bcolor, #1e823633)",
+        "color": "var(--tag-fgcolor, #006b21)",
+      }
+    }
+  >
+    test-1
+  </div>
+  <div
+    className="Pinpoint Tag Item "
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#79e7f2",
+        "border": "1px solid var(--tag-bcolor, #006d7833)",
+        "color": "var(--tag-fgcolor, #ffffff)",
+      }
+    }
+  >
+    test-2
+  </div>
+  <div
+    className="Pinpoint Tag Item "
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#6149c5",
+        "border": "1px solid var(--tag-bcolor, #00004f33)",
+        "color": "var(--tag-fgcolor, #ffffff)",
+      }
+    }
+  >
+    test-3
+  </div>
+</div>
+`;
+
+exports[`Test Two Tags 1`] = `
+<div
+  className="Pinpoint Tag Bar "
+>
+  <div
+    className="Pinpoint Tag Item "
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#a1ffa9",
+        "border": "1px solid var(--tag-bcolor, #1e823633)",
+        "color": "var(--tag-fgcolor, #006b21)",
+      }
+    }
+  >
+    test-1
+  </div>
+  <div
+    className="Pinpoint Tag Item "
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#79e7f2",
+        "border": "1px solid var(--tag-bcolor, #006d7833)",
+        "color": "var(--tag-fgcolor, #ffffff)",
+      }
+    }
+  >
+    test-2
+  </div>
+</div>
+`;
