@@ -270,9 +270,9 @@
 }
 
 /*
- * Styles for the page component
+ * Styles for the page (dashboard) component
  */
-.Page {
+.Page.Dashboard {
 	display: flex;
 	flex-direction: column;
 }
@@ -301,18 +301,18 @@
 }
 
 /*
- * Styles for the entry component
+ * Styles for the page (entry) component
  */
 
-.Entry {
+.Page.Entry {
 	display: column;
 	flex-direction: row;
- }
+}
 
-.Entry .body {
-	 display: flex;
-	 flex-direction: row;
- }
+.Page.Entry .body {
+	display: flex;
+	flex-direction: row;
+}
 
 /*
  * Styles for the link component

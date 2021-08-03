@@ -12,21 +12,17 @@ const PageEntry = (props: IPageEntryProps) => {
 	const { className = '', header, renderer, coverImage } = props;
 
 	return (
-		<div className={`Pinpoint PageEntry ${className}`}>
+		<div className={`Pinpoint Page Entry ${className}`}>
 			{header}
 			<div className="body">
-				<div className="sidebar">
-					Sidebar
-				</div>
+				<div className="sidebar">Sidebar</div>
 				<div className="content">
 					{coverImage && (
 						<div className="cover">
 							<img src={coverImage} />
 						</div>
 					)}
-					<div className="renderer">
-						{renderer}
-					</div>
+					<div className="renderer">{renderer}</div>
 				</div>
 			</div>
 		</div>

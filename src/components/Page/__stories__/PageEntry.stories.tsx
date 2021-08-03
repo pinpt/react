@@ -24,16 +24,14 @@ export default {
 export const Default: React.VFC<{}> = () => {
 	return (
 		<Entry
-			header={(
+			header={
 				<Header
 					subscribe={<Subscribe href="https://pinpoint.com" />}
 					title="Pinpoint Demo Changelog"
 					description="See what's new in the Pinpoint Demo."
 				/>
-			)}
-			renderer={(
-				<Content node={testDoc} />
-			)}
+			}
+			renderer={<Content node={testDoc} />}
 		/>
-	);	
+	);
 };

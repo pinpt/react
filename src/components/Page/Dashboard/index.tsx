@@ -15,7 +15,7 @@ export interface IPageDashboardProps {
 const PageDashboard = (props: IPageDashboardProps) => {
 	const { className = '', footer, latest, recent, header } = props;
 	return (
-		<div className={`Pinpoint Page ${className}`}>
+		<div className={`Pinpoint Page Dashboard ${className}`}>
 			{header}
 			{latest}
 			{recent}

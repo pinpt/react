@@ -4,4 +4,4 @@ import Entry from './Entry';
 export default {
 	Dashboard,
 	Entry,
-}
+};
