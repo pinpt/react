@@ -1,6 +1,6 @@
 ### The statistic component contains a number of sub-components for rendering clap counts and pageview counts.
 
-[Full Docs](pinpt.github.io/react/?path=/docs/components-statistic) | [Github](https://github.com/pinpt/react/tree/master/src/components/Statistic)
+[Full Docs](react.preview.pinpoint.com/?path=/docs/components-statistic) | [Github](https://github.com/pinpt/react/tree/master/src/components/Statistic)
 
 #### Theming
 

@@ -1,6 +1,6 @@
 ### A component to render your enitire homepage - including the header, recent, latest, and footer components.
 
-[Full Docs](pinpt.github.io/react/?path=/docs/components-page) | [Github](https://github.com/pinpt/react/tree/master/src/components/Page)
+[Full Docs](react.preview.pinpoint.com/?path=/docs/components-page) | [Github](https://github.com/pinpt/react/tree/master/src/components/Page)
 
 #### Theming
 

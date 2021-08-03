@@ -1,6 +1,6 @@
 ### Displays copyright text for your site, either with or without a logo
 
-[Full Docs](pinpt.github.io/react/?path=/docs/components-copyright) | [Github](https://github.com/pinpt/react/tree/master/src/components/Copyright)
+[Full Docs](react.preview.pinpoint.com/?path=/docs/components-copyright) | [Github](https://github.com/pinpt/react/tree/master/src/components/Copyright)
 
 #### Theming
 

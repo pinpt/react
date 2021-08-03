@@ -1,6 +1,6 @@
 ### Displays your site's logo. Can be made into a link or an onClick handler can be attached.
 
-[Full Docs](pinpt.github.io/react/?path=/docs/components-logo) | [Github](https://github.com/pinpt/react/tree/master/src/components/Logo)
+[Full Docs](react.preview.pinpoint.com/?path=/docs/components-logo) | [Github](https://github.com/pinpt/react/tree/master/src/components/Logo)
 
 #### Theming
 

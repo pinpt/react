@@ -2,7 +2,7 @@
 
 > _Tip:_ This section should begin with the first document that wasn't included in the 'Latest' section.
 
-[Full Docs](pinpt.github.io/react/?path=/docs/components-recent) | [Github](https://github.com/pinpt/react/tree/master/src/components/Recent)
+[Full Docs](react.preview.pinpoint.com/?path=/docs/components-recent) | [Github](https://github.com/pinpt/react/tree/master/src/components/Recent)
 
 #### Theming
 

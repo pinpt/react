@@ -1,6 +1,6 @@
 ### An interactive clap button that users can press to clap on a changelog
 
-[Full Docs](pinpt.github.io/react/?path=/docs/components-clap) | [Github](https://github.com/pinpt/react/tree/master/src/components/Clap)
+[Full Docs](react.preview.pinpoint.com/?path=/docs/components-clap) | [Github](https://github.com/pinpt/react/tree/master/src/components/Clap)
 
 #### Theming
 

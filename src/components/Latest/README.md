@@ -2,7 +2,7 @@
 
 > _Tip:_ This section should begin with the most recently published changelog and ideally will display 1-3 entries. It may be omitted if you wish every entry to be under the 'recent' section.
 
-[Full Docs](pinpt.github.io/react/?path=/docs/components-latest) | [Github](https://github.com/pinpt/react/tree/master/src/components/Latest)
+[Full Docs](react.preview.pinpoint.com/?path=/docs/components-latest) | [Github](https://github.com/pinpt/react/tree/master/src/components/Latest)
 
 #### Theming
 

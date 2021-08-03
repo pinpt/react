@@ -1,6 +1,6 @@
 ### A container used to compose a changelog card from smaller card components
 
-[Full Docs](pinpt.github.io/react/?path=/docs/components-changelog-card-container) | [Github](https://github.com/pinpt/react/tree/master/src/components/ChangelogCard/Container)
+[Full Docs](react.preview.pinpoint.com/?path=/docs/components-changelog-card-container) | [Github](https://github.com/pinpt/react/tree/master/src/components/ChangelogCard/Container)
 
 #### Theming
 
