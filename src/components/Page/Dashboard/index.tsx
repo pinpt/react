@@ -1,10 +1,10 @@
 import { ReactElement } from 'react';
-import { IFooterProps } from '../Footer';
-import { IHeaderProps } from '../Header';
-import { ILatestProps } from '../Latest';
-import { IRecentProps } from '../Recent';
+import { IFooterProps } from '../../Footer';
+import { IHeaderProps } from '../../Header';
+import { ILatestProps } from '../../Latest';
+import { IRecentProps } from '../../Recent';
 
-export interface IPageProps {
+export interface IPageDashboardProps {
 	className?: string;
 	header?: ReactElement<IHeaderProps>;
 	latest?: ReactElement<ILatestProps>;
@@ -12,7 +12,7 @@ export interface IPageProps {
 	footer?: ReactElement<IFooterProps>;
 }
 
-const Page = (props: IPageProps) => {
+const PageDashboard = (props: IPageDashboardProps) => {
 	const { className = '', footer, latest, recent, header } = props;
 	return (
 		<div className={`Pinpoint Page ${className}`}>
@@ -24,4 +24,4 @@ const Page = (props: IPageProps) => {
 	);
 };
 
-export default Page;
+export default PageDashboard;

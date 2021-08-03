@@ -1,17 +1,17 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
-import Entry from '..';
+import Entry from '../Entry';
 import { Content } from '../../Renderer';
 import Subscribe from '../../Subscribe';
 import Header from '../../Header';
-import testDoc from '../__data__/testDoc.json';
-const { default: readme } = require('../README.md');
+import testDoc from '../Entry/__data__/testDoc.json';
+const { default: readme } = require('../Entry/README.md');
 
 export default {
 	component: Entry,
-	title: 'Components/Entry',
+	title: 'Components/Page/Entry',
 	parameters: {
-		jest: ['Entry.test.tsx'],
+		jest: ['PageEntry.test.tsx'],
 		docs: {
 			description: {
 				component: readme,

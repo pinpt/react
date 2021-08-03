@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
-import Page from '..';
+import Page from '../Dashboard';
 import Latest from '../../Latest';
 import Recent from '../../Recent';
 import Card from '../../ChangelogCard';
@@ -11,13 +11,13 @@ import Copyright from '../../Copyright';
 import Logo from '../../Logo';
 import Subscribe from '../../Subscribe';
 import Header from '../../Header';
-const { default: readme } = require('../README.md');
+const { default: readme } = require('../Dashboard/README.md');
 
 export default {
 	component: Page,
-	title: 'Components/Page',
+	title: 'Components/Page/Dashboard',
 	parameters: {
-		jest: ['Page.test.tsx'],
+		jest: ['PageDashboard.test.tsx'],
 		docs: {
 			description: {
 				component: readme,

@@ -63,6 +63,13 @@ test('Test component exports', () => {
 	expect(Twitter).toBeTruthy();
 	expect(Object.keys(otherSocial).length).toEqual(0);
 
+	// Test Page Exports
+	expect(Page).toBeTruthy();
+	const { Dashboard, Entry, ...otherPage } = Page;
+	expect(Dashboard).toBeTruthy();
+	expect(Entry).toBeTruthy();
+	expect(Object.keys(otherPage).length).toEqual(0);
+
 	// Test other component exports
 	expect(Clap).toBeTruthy();
 	expect(Content).toBeTruthy();
@@ -73,7 +80,6 @@ test('Test component exports', () => {
 	expect(Footer).toBeTruthy();
 	expect(Latest).toBeTruthy();
 	expect(Recent).toBeTruthy();
-	expect(Page).toBeTruthy();
 	expect(Header).toBeTruthy();
 });
 

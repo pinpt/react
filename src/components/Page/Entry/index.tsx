@@ -1,18 +1,18 @@
 import { ReactElement } from 'react';
-import { IHeaderProps } from '../Header';
+import { IHeaderProps } from '../../Header';
 
-export interface IEntryProps {
+export interface IPageEntryProps {
 	className?: string;
 	header?: ReactElement<IHeaderProps>;
 	renderer?: ReactElement;
 	coverImage?: string;
 }
 
-const Entry = (props: IEntryProps) => {
+const PageEntry = (props: IPageEntryProps) => {
 	const { className = '', header, renderer, coverImage } = props;
 
 	return (
-		<div className={`Pinpoint Entry ${className}`}>
+		<div className={`Pinpoint PageEntry ${className}`}>
 			{header}
 			<div className="body">
 				<div className="sidebar">
@@ -33,4 +33,4 @@ const Entry = (props: IEntryProps) => {
 	);
 };
 
-export default Entry;
+export default PageEntry;
