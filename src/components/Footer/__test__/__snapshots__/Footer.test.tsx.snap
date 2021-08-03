@@ -206,7 +206,7 @@ exports[`Test complete 1`] = `
     className="powered"
   >
     <a
-      href="https://pinpoint.com/?utm_source=referral&utm_campaign="
+      href="https://pinpoint.com/?utm_source=referral&utm_medium=web&utm_campaign="
       style={
         Object {
           "alignItems": "center",
@@ -225,7 +225,7 @@ exports[`Test complete 1`] = `
           }
         }
       >
-        Powered by
+        We run on
       </span>
       <svg
         fill="none"
@@ -290,7 +290,7 @@ exports[`Test no custom class 1`] = `
     className="powered"
   >
     <a
-      href="https://pinpoint.com/?utm_source=referral&utm_campaign="
+      href="https://pinpoint.com/?utm_source=referral&utm_medium=web&utm_campaign="
       style={
         Object {
           "alignItems": "center",
@@ -309,7 +309,7 @@ exports[`Test no custom class 1`] = `
           }
         }
       >
-        Powered by
+        We run on
       </span>
       <svg
         fill="none"
@@ -402,7 +402,7 @@ exports[`Test no social 1`] = `
     className="powered"
   >
     <a
-      href="https://pinpoint.com/?utm_source=referral&utm_campaign="
+      href="https://pinpoint.com/?utm_source=referral&utm_medium=web&utm_campaign="
       style={
         Object {
           "alignItems": "center",
@@ -421,7 +421,7 @@ exports[`Test no social 1`] = `
           }
         }
       >
-        Powered by
+        We run on
       </span>
       <svg
         fill="none"
@@ -486,7 +486,7 @@ exports[`Test no subscribe 1`] = `
     className="powered"
   >
     <a
-      href="https://pinpoint.com/?utm_source=referral&utm_campaign="
+      href="https://pinpoint.com/?utm_source=referral&utm_medium=web&utm_campaign="
       style={
         Object {
           "alignItems": "center",
@@ -505,7 +505,7 @@ exports[`Test no subscribe 1`] = `
           }
         }
       >
-        Powered by
+        We run on
       </span>
       <svg
         fill="none"
@@ -695,7 +695,7 @@ exports[`Test social only 1`] = `
     className="powered"
   >
     <a
-      href="https://pinpoint.com/?utm_source=referral&utm_campaign="
+      href="https://pinpoint.com/?utm_source=referral&utm_medium=web&utm_campaign="
       style={
         Object {
           "alignItems": "center",
@@ -714,7 +714,7 @@ exports[`Test social only 1`] = `
           }
         }
       >
-        Powered by
+        We run on
       </span>
       <svg
         fill="none"
