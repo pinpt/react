@@ -67,6 +67,9 @@
 			"tsx",
 			"js"
 		],
-		"globalSetup": "./jest-setup.js"
+		"globalSetup": "./jest-setup.js",
+		"transformIgnorePatterns": [
+			"json"
+		]
 	}
 }

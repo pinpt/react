@@ -1,2 +1,3 @@
 /dist
 /docs
+.jest-test-results.json
