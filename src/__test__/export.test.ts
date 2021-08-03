@@ -30,6 +30,8 @@ const {
 	slugifyString,
 	fetchSite,
 	splitEntries,
+	getTagColorStyles,
+	colorForString,
 
 	...otherExports
 } = Exports;
@@ -112,6 +114,8 @@ test('Test util exports', () => {
 	expect(slugifyString).toBeTruthy();
 	expect(fetchSite).toBeTruthy();
 	expect(splitEntries).toBeTruthy();
+	expect(getTagColorStyles).toBeTruthy();
+	expect(colorForString).toBeTruthy();
 });
 
 test('Test for unexpected exports', () => {

@@ -4,3 +4,4 @@ export * from './types';
 export * from './file_metadata';
 export * from './string';
 export * from './entries';
+export * from './color';

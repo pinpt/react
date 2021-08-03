@@ -25,8 +25,7 @@ exports[`Test full card 1`] = `
       className="Pinpoint Tag Bar "
     >
       <div
-        className="Pinpoint Tag Item "
-        onClick={[Function]}
+        className="Pinpoint Tag Item  "
         style={
           Object {
             "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
@@ -38,8 +37,7 @@ exports[`Test full card 1`] = `
         feature
       </div>
       <div
-        className="Pinpoint Tag Item "
-        onClick={[Function]}
+        className="Pinpoint Tag Item  "
         style={
           Object {
             "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
