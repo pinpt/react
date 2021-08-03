@@ -1,10 +1,10 @@
 const PoweredByPinpoint = ({ campaign }: { campaign: string }) => {
 	return (
 		<a
-			href={`https://pinpoint.com/?utm_source=referral&utm_campaign=${campaign}`}
+			href={`https://pinpoint.com/?utm_source=referral&utm_medium=web&utm_campaign=${campaign}`}
 			style={{ display: 'flex', alignItems: 'center', margin: 'auto', textDecoration: 'none', color: 'inherit' }}
 		>
-			<span style={{ fontSize: '0.75rem', lineHeight: '1rem' }}>Powered by</span>
+			<span style={{ fontSize: '0.75rem', lineHeight: '1rem' }}>We run on</span>
 			<svg
 				style={{ margin: '0 4px', color: 'rgba(55,48,163, 1)' }}
 				width="22"

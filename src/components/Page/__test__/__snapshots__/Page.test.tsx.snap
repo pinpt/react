@@ -1292,7 +1292,7 @@ exports[`Test full page 1`] = `
       className="powered"
     >
       <a
-        href="https://pinpoint.com/?utm_source=referral&utm_campaign="
+        href="https://pinpoint.com/?utm_source=referral&utm_medium=web&utm_campaign="
         style={
           Object {
             "alignItems": "center",
@@ -1311,7 +1311,7 @@ exports[`Test full page 1`] = `
             }
           }
         >
-          Powered by
+          We run on
         </span>
         <svg
           fill="none"
@@ -3613,7 +3613,7 @@ exports[`Test no header 1`] = `
       className="powered"
     >
       <a
-        href="https://pinpoint.com/?utm_source=referral&utm_campaign="
+        href="https://pinpoint.com/?utm_source=referral&utm_medium=web&utm_campaign="
         style={
           Object {
             "alignItems": "center",
@@ -3632,7 +3632,7 @@ exports[`Test no header 1`] = `
             }
           }
         >
-          Powered by
+          We run on
         </span>
         <svg
           fill="none"
@@ -4552,7 +4552,7 @@ exports[`Test no latest 1`] = `
       className="powered"
     >
       <a
-        href="https://pinpoint.com/?utm_source=referral&utm_campaign="
+        href="https://pinpoint.com/?utm_source=referral&utm_medium=web&utm_campaign="
         style={
           Object {
             "alignItems": "center",
@@ -4571,7 +4571,7 @@ exports[`Test no latest 1`] = `
             }
           }
         >
-          Powered by
+          We run on
         </span>
         <svg
           fill="none"
@@ -5157,7 +5157,7 @@ exports[`Test no recent 1`] = `
       className="powered"
     >
       <a
-        href="https://pinpoint.com/?utm_source=referral&utm_campaign="
+        href="https://pinpoint.com/?utm_source=referral&utm_medium=web&utm_campaign="
         style={
           Object {
             "alignItems": "center",
@@ -5176,7 +5176,7 @@ exports[`Test no recent 1`] = `
             }
           }
         >
-          Powered by
+          We run on
         </span>
         <svg
           fill="none"
