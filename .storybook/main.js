@@ -1,4 +1,4 @@
-const path = require('path')
+const path = require('path');
 
 module.exports = {
 	stories: ['../**/*.stories.mdx', '../**/*.stories.@(js|jsx|ts|tsx)'],
@@ -8,17 +8,17 @@ module.exports = {
 			test: /\.css$/,
 			use: [
 				{
-					loader: "postcss-loader",
+					loader: 'postcss-loader',
 					options: {
 						// HERE: OPTIONS
 						postcssOptions: {
-							plugins: [require("tailwindcss"), require("autoprefixer")],
+							plugins: [require('tailwindcss'), require('autoprefixer')],
 						},
 					},
 				},
 			],
-			include: path.resolve(__dirname, "../"),
-		})
-		return config
-	}
+			include: path.resolve(__dirname, '../'),
+		});
+		return config;
+	},
 };
