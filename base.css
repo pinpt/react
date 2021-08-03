@@ -1,128 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /*
  * Styles for the interactive clap component
  */
 .Clap.wrapper {
-	position: relative;
-	cursor: pointer;
-	display: flex;
-	align-items: center;
+	@apply relative cursor-pointer flex items-center;
 }
 
 .Clap.icon {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	transition: color 0.2s;
+	@apply inline-flex items-center content-center transition-all;
 }
 
 .Clap.counter {
-	opacity: 0;
-	margin-left: 1rem;
-	transition: opacity 0.2s;
+	@apply opacity-0 ml-1 transition-all;
 }
 
 .Clap.counter.active {
-	opacity: 1;
+	@apply opacity-100;
 }
 
 .Clap.notice {
-	opacity: 0;
-	position: absolute;
-	background-color: black;
-	border-radius: 20px;
-	color: white;
-	user-select: none;
-	transition: all 0.2s;
-	left: 0rem;
-	padding: 2px 10px;
+	@apply rounded-full opacity-0 absolute bg-black text-white select-none transition-all left-0 px-2 py-0.5;
 }
 
 .Clap.notice.active {
-	opacity: 1;
-	left: 3rem;
+	@apply opacity-100 left-12;
 }
 
 /*
  * Styles for the statistic components
  */
 .Statistic.wrapper {
-	display: flex;
-	align-items: center;
+	@apply flex items-center;
 }
 
 .Statistic .count {
-	margin-left: 5px;
+	@apply ml-2;
 }
 
 .Statistic.Bar .Statistic.Views.wrapper {
-	margin-right: 20px;
+	@apply mr-4;
 }
 
 /*
  * Styles for the changelog card components
  */
 .Changelog.Card.Container.wrapper {
-	width: 100%;
-	border-radius: 0.5rem;
-	overflow: hidden;
-	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-	background: white;
-	margin-top: auto;
-	display: flex;
-	flex-direction: column;
-	height: 100%;
+	@apply w-full rounded-md overflow-hidden shadow bg-white mt-auto flex flex-col h-full;
 }
 
 .Changelog.Card.Container.wrapper .cover {
-	width: 100%;
-	object-fit: cover;
-	object-position: center;
-	height: 12rem;
+	@apply w-full h-80 object-cover object-center;
 }
 
 .Changelog.Card.Container.wrapper .content {
-	display: flex;
-	flex: 1 1 0%;
-	flex-direction: column;
-	padding: 1.5rem;
+	@apply flex flex-col p-6 flex-grow flex-shrink;
 }
 
 .Changelog.Card.Container.wrapper .footer {
-	display: flex;
-	margin-top: auto;
+	@apply flex mt-auto;
 }
 
 .Changelog.Card.Container.wrapper .statistics {
-	margin-left: auto;
+	@apply ml-auto;
 }
 
 .Changelog.Card.Description {
-	margin-bottom: 2rem;
+	@apply mb-4;
 }
 
 .Changelog.Card.Date {
-	margin-top: 0.5rem;
-	font-size: 0.75rem;
-	line-height: 1rem;
+	@apply mt-0.5 text-xs;
 }
 
 .Changelog.Card.Read {
-	display: flex;
-	align-items: center;
-	cursor: pointer;
-	text-decoration: none;
+	@apply flex items-center cursor-pointer no-underline;
 }
 
 .Changelog.Card.Read .arrow {
-	margin-left: 4px;
+	@apply ml-2;
 }
 
 /*
  * Styles for the logo component
  */
 .Logo {
-	border-radius: 100%;
-	display: block;
+	@apply block rounded-full;
 }
 
 .Logo.xs {
@@ -158,91 +123,70 @@
 /*
  * Styles for the copyright component
  */
-.Copyright {
-	line-height: 1.5;
-}
 
 .Copyright .text {
-	margin-top: 1rem;
-	font-size: 0.875rem;
+	@apply mt-1 text-sm;
 }
 
 /*
  * Styles for the subscribe component
  */
 .Subscribe {
-	display: flex;
-	align-items: center;
-	cursor: pointer;
-	text-decoration: none;
+	@apply flex items-center cursor-pointer no-underline;
 }
 
 .Subscribe .text {
-	font-size: 0.875rem;
-	line-height: 1.25rem;
-	margin-left: 0.75rem;
+	@apply ml-1 text-sm;
 }
 
 /*
  * Styles for the social components
  */
 .Social {
-	text-decoration: none;
-	transition: color 0.2s;
+	@apply no-underline transition-all;
 }
 
 .Social.Bar {
-	display: flex;
-	column-gap: 0.5rem;
+	@apply flex gap-x-2;
 }
 
 /*
  * Styles for the footer component
  */
 .Footer {
-	display: flex;
-	flex-direction: column;
-	padding: 4rem 2rem 0 4rem;
+	@apply flex flex-col px-6 py-12;
 }
 
 .Footer .content {
-	display: flex;
-	align-items: flex-end;
+	@apply flex items-end;
 }
 
 .Footer .powered {
-	display: flex;
-	padding: 2rem 0;
+	@apply flex py-2;
 }
 
 .Footer .right {
-	margin-left: auto;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
+	@apply ml-auto flex flex-col items-end;
 }
 
 .Footer .Social {
-	margin-top: 0.2rem;
+	@apply mt-1;
 }
 
 /*
  * Styles for the latest component
  */
 .Latest {
-	display: flex;
-	padding: 4rem;
+	@apply flex p-12;
 }
 
 .Latest .heading {
-	margin-bottom: 0;
-	margin-right: 3rem;
+	@apply mb-2 mr-6;
 	flex-basis: 25%;
 }
 
 .Latest .container {
-	display: flex;
-	column-gap: 1rem;
+	@apply flex gap-x-8;
 	flex-basis: 75%;
 }
 
@@ -250,22 +194,16 @@
  * Styles for the recent component
  */
 .Recent {
-	display: flex;
-	padding: 4rem;
+	@apply flex p-12;
 }
 
 .Recent .heading {
-	margin-bottom: 0;
-	margin-right: 3rem;
+	@apply mb-2 mr-6;
 	flex-basis: 25%;
 }
 
 .Recent .container {
-	display: flex;
-	display: grid;
-	grid-auto-flow: row;
-	grid-template-columns: repeat(2, minmax(0, 1fr));
-	gap: 1rem;
+	@apply grid grid-flow-row grid-cols-2 gap-8;
 	flex-basis: 75%;
 }
 
@@ -273,31 +211,26 @@
  * Styles for the page (dashboard) component
  */
 .Page.Dashboard {
-	display: flex;
-	flex-direction: column;
+	@apply flex flex-col;
 }
 
 /*
  * Styles for the header component
  */
 .Header {
-	display: flex;
+	@apply flex py-6;
 }
 
 .Header .title {
-	font-weight: 600;
+	@apply font-semibold text-5xl py-6;
 }
 
 .Header .center {
-	flex-grow: 1;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	@apply flex flex-grow text-center flex-col content-center;
 }
 
 .Header .action {
-	margin: 2rem auto;
+	@apply my-2 mx-auto py-4;
 }
 
 /*
@@ -305,18 +238,16 @@
  */
 
 .Page.Entry {
-	display: column;
-	flex-direction: row;
+	@apply flex flex-col;
 }
 
 .Page.Entry .body {
-	display: flex;
-	flex-direction: row;
+	@apply flex flex-row;
 }
 
 /*
  * Styles for the link component
  */
 .Link.clickable {
-	cursor: pointer;
+	@apply cursor-pointer;
 }
