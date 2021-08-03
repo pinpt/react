@@ -299,6 +299,21 @@
 .Header .action {
 	margin: 2rem auto;
 }
+
+/*
+ * Styles for the entry component
+ */
+
+.Entry {
+	display: column;
+	flex-direction: row;
+ }
+
+.Entry .body {
+	 display: flex;
+	 flex-direction: row;
+ }
+
 /*
  * Styles for the link component
  */

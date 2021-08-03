@@ -1,0 +1,226 @@
+{
+	"type": "doc",
+	"content": [
+		{
+			"type": "heading",
+			"attrs": {
+				"updated_ts": 1627380221792,
+				"editor_id": "sVuB6FVSWcczkiwI3Md3En6Gttz1",
+				"dueDateHasTime": false,
+				"completed": false,
+				"level": 1,
+				"align": "left",
+				"selectionName": "h1",
+				"placeholder": ""
+			},
+			"content": [
+				{
+					"type": "text",
+					"text": "Linked Content Blocks",
+					"_path": "doc.0.heading.0.text"
+				}
+			],
+			"_path": "doc.0.heading"
+		},
+		{
+			"type": "paragraph",
+			"attrs": {
+				"updated_ts": 1627380758687,
+				"editor_id": "sVuB6FVSWcczkiwI3Md3En6Gttz1",
+				"dueDateHasTime": false,
+				"completed": false,
+				"align": "left"
+			},
+			"content": [
+				{
+					"type": "text",
+					"text": "Linked content blocks allow you to quickly populate your changelog from the recently completed work. Annotations show you which issues and pull requests are linked to features. There are blocks for showing rich content about a new feature, and for quickly building a list of small improvements and bug fixes.",
+					"_path": "doc.1.paragraph.0.text"
+				}
+			],
+			"_path": "doc.1.paragraph"
+		},
+		{
+			"type": "image_block",
+			"attrs": {
+				"id": "ied8mmchtlxn",
+				"created_ts": 1627634681502,
+				"creator_id": "sVuB6FVSWcczkiwI3Md3En6Gttz1",
+				"updated_ts": 1627661559846,
+				"editor_id": "usCMWZ7xVAREEeuvl5ucfrwXz3Q2",
+				"dueDateHasTime": false,
+				"completed": false,
+				"src": "https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png",
+				"scale": 0.52,
+				"align": "center",
+				"publicUrl": "https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
+			},
+			"_path": "doc.2.image_block"
+		},
+		{
+			"type": "paragraph",
+			"attrs": {
+				"created_ts": 1627380760610,
+				"creator_id": "sVuB6FVSWcczkiwI3Md3En6Gttz1",
+				"updated_ts": 1627634443393,
+				"editor_id": "sVuB6FVSWcczkiwI3Md3En6Gttz1",
+				"dueDateHasTime": false,
+				"completed": false,
+				"align": "left"
+			},
+			"content": [
+				{
+					"type": "text",
+					"text": "Linked content blocks can be created while in the editor, or better, by using our new and improved ",
+					"_path": "doc.3.paragraph.0.text"
+				},
+				{
+					"type": "text",
+					"text": "Planning",
+					"marks": [
+						{
+							"type": "strong",
+							"attrs": {}
+						}
+					],
+					"_path": "doc.3.paragraph.1.text"
+				},
+				{
+					"type": "text",
+					"text": " tool.",
+					"_path": "doc.3.paragraph.2.text"
+				}
+			],
+			"_path": "doc.3.paragraph"
+		},
+		{
+			"type": "heading",
+			"attrs": {
+				"updated_ts": 1627634821277,
+				"editor_id": "sVuB6FVSWcczkiwI3Md3En6Gttz1",
+				"dueDateHasTime": false,
+				"completed": false,
+				"level": 1,
+				"align": "left",
+				"selectionName": "h1",
+				"placeholder": ""
+			},
+			"content": [
+				{
+					"type": "text",
+					"text": "Grouping in Planning",
+					"_path": "doc.4.heading.0.text"
+				}
+			],
+			"_path": "doc.4.heading"
+		},
+		{
+			"type": "image_block",
+			"attrs": {
+				"id": "iuc1gsbiest8",
+				"created_ts": 1627634907244,
+				"creator_id": "sVuB6FVSWcczkiwI3Md3En6Gttz1",
+				"updated_ts": 1627661553634,
+				"editor_id": "usCMWZ7xVAREEeuvl5ucfrwXz3Q2",
+				"dueDateHasTime": false,
+				"completed": false,
+				"src": "https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png",
+				"scale": 0.36,
+				"align": "center",
+				"publicUrl": "https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
+			},
+			"_path": "doc.5.image_block"
+		},
+		{
+			"type": "paragraph",
+			"attrs": {
+				"created_ts": 1627379934969,
+				"creator_id": "sVuB6FVSWcczkiwI3Md3En6Gttz1",
+				"updated_ts": 1627913645278,
+				"editor_id": "WFGPP3hjYaXkGJYtw0roEbCCHMG2",
+				"dueDateHasTime": false,
+				"completed": false,
+				"align": "left"
+			},
+			"content": [
+				{
+					"type": "text",
+					"text": "You can now group related issues and pull requests and link them to the same content in your changelog. This is really handy when you have multiple pieces of work which contributed to a new feature. ",
+					"_path": "doc.6.paragraph.0.text"
+				}
+			],
+			"_path": "doc.6.paragraph"
+		},
+		{
+			"type": "paragraph",
+			"attrs": {
+				"created_ts": 1627634916871,
+				"creator_id": "sVuB6FVSWcczkiwI3Md3En6Gttz1",
+				"updated_ts": 1627635101084,
+				"editor_id": "sVuB6FVSWcczkiwI3Md3En6Gttz1",
+				"dueDateHasTime": false,
+				"completed": false,
+				"align": "left"
+			},
+			"content": [
+				{
+					"type": "text",
+					"text": "We’re working on some great new features around planning and populating your changelogs, ",
+					"_path": "doc.7.paragraph.0.text"
+				},
+				{
+					"type": "text",
+					"text": "subscribe to ",
+					"marks": [
+						{
+							"type": "link",
+							"attrs": {
+								"href": "https://changelog.pinpoint.com/subscription/subscribe/PirxVTE94u3YmGNOySRY",
+								"linked": false
+							}
+						}
+					],
+					"_path": "doc.7.paragraph.1.text"
+				},
+				{
+					"type": "text",
+					"text": "our",
+					"marks": [
+						{
+							"type": "link",
+							"attrs": {
+								"href": "https://changelog.pinpoint.com/subscription/subscribe/PirxVTE94u3YmGNOySRY",
+								"linked": false
+							}
+						},
+						{
+							"type": "em",
+							"attrs": {}
+						}
+					],
+					"_path": "doc.7.paragraph.2.text"
+				},
+				{
+					"type": "text",
+					"text": " changelog",
+					"marks": [
+						{
+							"type": "link",
+							"attrs": {
+								"href": "https://changelog.pinpoint.com/subscription/subscribe/PirxVTE94u3YmGNOySRY",
+								"linked": false
+							}
+						}
+					],
+					"_path": "doc.7.paragraph.3.text"
+				},
+				{
+					"type": "text",
+					"text": " to stay up to date with the latest.",
+					"_path": "doc.7.paragraph.4.text"
+				}
+			],
+			"_path": "doc.7.paragraph"
+		}
+	]
+}
