@@ -8,9 +8,9 @@ const { default: readme } = require('../Home/README.md');
 
 export default {
 	component: Home,
-	title: 'Smart Components/Home',
+	title: 'Prebuilt Components/Home',
 	parameters: {
-		jest: ['SmartHome.test.tsx'],
+		jest: ['PrebuiltHome.test.tsx'],
 		docs: {
 			description: {
 				component: readme,

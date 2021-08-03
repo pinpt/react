@@ -14,7 +14,7 @@ import { IChangelogReadButtonProps } from '../../ChangelogCard/ReadButton';
 import Statistic from '../../Statistic';
 import Recent, { IRecentProps } from '../../Recent';
 
-export interface ISmartHomeProps {
+export interface IPrebuiltHomeProps {
 	className?: string;
 	site: Site;
 	entries?: Entry[];
@@ -31,7 +31,7 @@ export interface ISmartHomeProps {
 	latestCount?: number;
 }
 
-const SmartHome = (props: ISmartHomeProps) => {
+const PrebuiltHome = (props: IPrebuiltHomeProps) => {
 	const {
 		site,
 		className = '',
@@ -51,16 +51,16 @@ const SmartHome = (props: ISmartHomeProps) => {
 	const { latest, recent } = splitEntries(entries, latestCount);
 	return (
 		<Page.Dashboard
-			className={`Smart ${className}`}
+			className={`Prebuilt ${className}`}
 			header={
 				renderHeader?.(site) ?? (
 					<Header
-						className="Smart"
+						className="Prebuilt"
 						title={`${site.name} Changelog`}
 						description={site.theme.description}
 						subscribe={
 							renderSubscribe?.(site) ?? (
-								<Subscribe className="Smart" href={`https://${site.slug}.pinpoint.com/subscribe`} />
+								<Subscribe className="Prebuilt" href={`https://${site.slug}.pinpoint.com/subscribe`} />
 							)
 						}
 					/>
@@ -68,27 +68,27 @@ const SmartHome = (props: ISmartHomeProps) => {
 			}
 			latest={
 				renderLatest?.(latest) ?? (
-					<Latest className="Smart">
+					<Latest className="Prebuilt">
 						{latest.map((entry) => {
 							return (
 								renderCard?.(entry) ?? (
 									<Card.Container
 										key={entry.id}
-										className="Smart"
+										className="Prebuilt"
 										imageUrl={entry.cover_image}
-										title={renderCardTitle?.(entry) ?? <Card.Title className="Smart" title={entry.title} />}
-										date={renderCardDate?.(entry) ?? <Card.Date className="Smart" ts={entry.publishedAt} />}
+										title={renderCardTitle?.(entry) ?? <Card.Title className="Prebuilt" title={entry.title} />}
+										date={renderCardDate?.(entry) ?? <Card.Date className="Prebuilt" ts={entry.publishedAt} />}
 										description={
 											renderCardDescription?.(entry) ?? (
-												<Card.Description className="Smart" description={entry.headline} />
+												<Card.Description className="Prebuilt" description={entry.headline} />
 											)
 										}
 										statistics={
 											renderCardStatistics?.(entry) ?? (
-												<Statistic.Bar className="Smart" claps={0} views={0} />
+												<Statistic.Bar className="Prebuilt" claps={0} views={0} />
 											)
 										}
-										button={renderCardButton?.(entry) ?? <Card.ReadButton className="Smart" />}
+										button={renderCardButton?.(entry) ?? <Card.ReadButton className="Prebuilt" />}
 									/>
 								)
 							);
@@ -98,27 +98,27 @@ const SmartHome = (props: ISmartHomeProps) => {
 			}
 			recent={
 				renderRecent?.(recent) ?? (
-					<Recent className="Smart">
+					<Recent className="Prebuilt">
 						{recent.map((entry) => {
 							return (
 								renderCard?.(entry) ?? (
 									<Card.Container
 										key={entry.id}
-										className="Smart"
+										className="Prebuilt"
 										imageUrl={entry.cover_image}
-										title={renderCardTitle?.(entry) ?? <Card.Title className="Smart" title={entry.title} />}
-										date={renderCardDate?.(entry) ?? <Card.Date className="Smart" ts={entry.publishedAt} />}
+										title={renderCardTitle?.(entry) ?? <Card.Title className="Prebuilt" title={entry.title} />}
+										date={renderCardDate?.(entry) ?? <Card.Date className="Prebuilt" ts={entry.publishedAt} />}
 										description={
 											renderCardDescription?.(entry) ?? (
-												<Card.Description className="Smart" description={entry.headline} />
+												<Card.Description className="Prebuilt" description={entry.headline} />
 											)
 										}
 										statistics={
 											renderCardStatistics?.(entry) ?? (
-												<Statistic.Bar className="Smart" claps={0} views={0} />
+												<Statistic.Bar className="Prebuilt" claps={0} views={0} />
 											)
 										}
-										button={renderCardButton?.(entry) ?? <Card.ReadButton className="Smart" />}
+										button={renderCardButton?.(entry) ?? <Card.ReadButton className="Prebuilt" />}
 									/>
 								)
 							);
@@ -130,4 +130,4 @@ const SmartHome = (props: ISmartHomeProps) => {
 	);
 };
 
-export default SmartHome;
+export default PrebuiltHome;

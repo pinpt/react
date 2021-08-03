@@ -14,6 +14,7 @@ const {
 	Recent,
 	Page,
 	Header,
+	Prebuilt,
 
 	emptyDoc,
 	getEnv,
@@ -69,6 +70,12 @@ test('Test component exports', () => {
 	expect(Dashboard).toBeTruthy();
 	expect(Entry).toBeTruthy();
 	expect(Object.keys(otherPage).length).toEqual(0);
+
+	// Test Prebuilt Exports
+	expect(Prebuilt).toBeTruthy();
+	const { Home, ...otherPrebuilt } = Prebuilt;
+	expect(Home).toBeTruthy();
+	expect(Object.keys(otherPrebuilt).length).toEqual(0);
 
 	// Test other component exports
 	expect(Clap).toBeTruthy();

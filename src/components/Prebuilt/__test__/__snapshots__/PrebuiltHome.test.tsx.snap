@@ -2,10 +2,10 @@
 
 exports[`Hidden stats 1`] = `
 <div
-  className="Pinpoint Page Dashboard Smart "
+  className="Pinpoint Page Dashboard Prebuilt "
 >
   <div
-    className="Pinpoint Header Smart"
+    className="Pinpoint Header Prebuilt"
   >
     <div
       className="left"
@@ -27,7 +27,7 @@ exports[`Hidden stats 1`] = `
         className="action"
       >
         <a
-          className="Pinpoint Internal Link Subscribe Smart"
+          className="Pinpoint Internal Link Subscribe Prebuilt"
           href="https://pinpoint.pinpoint.com/subscribe"
         >
           <svg
@@ -60,7 +60,7 @@ exports[`Hidden stats 1`] = `
     />
   </div>
   <div
-    className="Pinpoint Latest Smart"
+    className="Pinpoint Latest Prebuilt"
   >
     <h1
       className="heading"
@@ -71,7 +71,7 @@ exports[`Hidden stats 1`] = `
       className="container"
     >
       <div
-        className="Pinpoint Changelog Card Container wrapper Smart"
+        className="Pinpoint Changelog Card Container wrapper Prebuilt"
       >
         <img
           className="cover"
@@ -81,17 +81,17 @@ exports[`Hidden stats 1`] = `
           className="content"
         >
           <h2
-            className="Pinpoint Changelog Card Title Smart"
+            className="Pinpoint Changelog Card Title Prebuilt"
           >
             Linked Content Blocks
           </h2>
           <span
-            className="Pinpoint Changelog Card Date Smart"
+            className="Pinpoint Changelog Card Date Prebuilt"
           >
             8/2/2021
           </span>
           <p
-            className="Pinpoint Changelog Card Description Smart"
+            className="Pinpoint Changelog Card Description Prebuilt"
           >
             Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.
           </p>
@@ -102,7 +102,7 @@ exports[`Hidden stats 1`] = `
               className="button"
             >
               <span
-                className="Pinpoint Internal Link  Changelog Card Read Smart"
+                className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
               >
                 Read
                 <svg
@@ -134,7 +134,7 @@ exports[`Hidden stats 1`] = `
     </div>
   </div>
   <div
-    className="Pinpoint Recent Smart"
+    className="Pinpoint Recent Prebuilt"
   >
     <h1
       className="heading"
@@ -145,7 +145,7 @@ exports[`Hidden stats 1`] = `
       className="container"
     >
       <div
-        className="Pinpoint Changelog Card Container wrapper Smart"
+        className="Pinpoint Changelog Card Container wrapper Prebuilt"
       >
         <img
           className="cover"
@@ -155,17 +155,17 @@ exports[`Hidden stats 1`] = `
           className="content"
         >
           <h2
-            className="Pinpoint Changelog Card Title Smart"
+            className="Pinpoint Changelog Card Title Prebuilt"
           >
             Publishing Controls and Social Posting
           </h2>
           <span
-            className="Pinpoint Changelog Card Date Smart"
+            className="Pinpoint Changelog Card Date Prebuilt"
           >
             7/30/2021
           </span>
           <p
-            className="Pinpoint Changelog Card Description Smart"
+            className="Pinpoint Changelog Card Description Prebuilt"
           >
             When you publish a changelog you will now see a new Publish dialog which grants finer control over when you want to notify your subscribers.
           </p>
@@ -176,7 +176,7 @@ exports[`Hidden stats 1`] = `
               className="button"
             >
               <span
-                className="Pinpoint Internal Link  Changelog Card Read Smart"
+                className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
               >
                 Read
                 <svg
@@ -206,7 +206,7 @@ exports[`Hidden stats 1`] = `
         </div>
       </div>
       <div
-        className="Pinpoint Changelog Card Container wrapper Smart"
+        className="Pinpoint Changelog Card Container wrapper Prebuilt"
       >
         <img
           className="cover"
@@ -216,17 +216,17 @@ exports[`Hidden stats 1`] = `
           className="content"
         >
           <h2
-            className="Pinpoint Changelog Card Title Smart"
+            className="Pinpoint Changelog Card Title Prebuilt"
           >
             Changelog planning just got way simpler!
           </h2>
           <span
-            className="Pinpoint Changelog Card Date Smart"
+            className="Pinpoint Changelog Card Date Prebuilt"
           >
             7/21/2021
           </span>
           <p
-            className="Pinpoint Changelog Card Description Smart"
+            className="Pinpoint Changelog Card Description Prebuilt"
           >
             We could not be more excited to announce this feature 📣  This was born through our own use of the product after we integrated with GitHub.  Once you integrate an issue or code system you will see 
 Planning 
@@ -239,7 +239,7 @@ populated with your recently completed...
               className="button"
             >
               <span
-                className="Pinpoint Internal Link  Changelog Card Read Smart"
+                className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
               >
                 Read
                 <svg
@@ -269,7 +269,7 @@ populated with your recently completed...
         </div>
       </div>
       <div
-        className="Pinpoint Changelog Card Container wrapper Smart"
+        className="Pinpoint Changelog Card Container wrapper Prebuilt"
       >
         <img
           className="cover"
@@ -279,17 +279,17 @@ populated with your recently completed...
           className="content"
         >
           <h2
-            className="Pinpoint Changelog Card Title Smart"
+            className="Pinpoint Changelog Card Title Prebuilt"
           >
             Email validation, filtering, and subscriber search 🔍
           </h2>
           <span
-            className="Pinpoint Changelog Card Date Smart"
+            className="Pinpoint Changelog Card Date Prebuilt"
           >
             7/19/2021
           </span>
           <p
-            className="Pinpoint Changelog Card Description Smart"
+            className="Pinpoint Changelog Card Description Prebuilt"
           >
             As new users subscribe to your changelog you will be able to quickly see if they have verified and validated their email addresses with you.  Along with this you also now have the ability to search your subscriber list.  This will help you ensure...
           </p>
@@ -300,7 +300,7 @@ populated with your recently completed...
               className="button"
             >
               <span
-                className="Pinpoint Internal Link  Changelog Card Read Smart"
+                className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
               >
                 Read
                 <svg
@@ -330,7 +330,7 @@ populated with your recently completed...
         </div>
       </div>
       <div
-        className="Pinpoint Changelog Card Container wrapper Smart"
+        className="Pinpoint Changelog Card Container wrapper Prebuilt"
       >
         <img
           className="cover"
@@ -340,17 +340,17 @@ populated with your recently completed...
           className="content"
         >
           <h2
-            className="Pinpoint Changelog Card Title Smart"
+            className="Pinpoint Changelog Card Title Prebuilt"
           >
             Analytics Drill-Down and Localization
           </h2>
           <span
-            className="Pinpoint Changelog Card Date Smart"
+            className="Pinpoint Changelog Card Date Prebuilt"
           >
             7/12/2021
           </span>
           <p
-            className="Pinpoint Changelog Card Description Smart"
+            className="Pinpoint Changelog Card Description Prebuilt"
           >
             We have now added drill-down analytics to give you even deeper insight into where your changelogs are having the most impact.  Check out the video below to lear
           </p>
@@ -361,7 +361,7 @@ populated with your recently completed...
               className="button"
             >
               <span
-                className="Pinpoint Internal Link  Changelog Card Read Smart"
+                className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
               >
                 Read
                 <svg
@@ -391,24 +391,24 @@ populated with your recently completed...
         </div>
       </div>
       <div
-        className="Pinpoint Changelog Card Container wrapper Smart"
+        className="Pinpoint Changelog Card Container wrapper Prebuilt"
       >
         
         <div
           className="content"
         >
           <h2
-            className="Pinpoint Changelog Card Title Smart"
+            className="Pinpoint Changelog Card Title Prebuilt"
           >
             Already mentioned notice
           </h2>
           <span
-            className="Pinpoint Changelog Card Date Smart"
+            className="Pinpoint Changelog Card Date Prebuilt"
           >
             7/14/2021
           </span>
           <p
-            className="Pinpoint Changelog Card Description Smart"
+            className="Pinpoint Changelog Card Description Prebuilt"
           >
             If you are lucky 🍀 enough to have tried our integrations we will now identify a PR or issue that has previously been mentioned in a changelog entry.  Maybe you want to mention it again, your call but we wanted to make sure you knew 😉...
           </p>
@@ -419,7 +419,7 @@ populated with your recently completed...
               className="button"
             >
               <span
-                className="Pinpoint Internal Link  Changelog Card Read Smart"
+                className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
               >
                 Read
                 <svg
@@ -449,7 +449,7 @@ populated with your recently completed...
         </div>
       </div>
       <div
-        className="Pinpoint Changelog Card Container wrapper Smart"
+        className="Pinpoint Changelog Card Container wrapper Prebuilt"
       >
         <img
           className="cover"
@@ -459,17 +459,17 @@ populated with your recently completed...
           className="content"
         >
           <h2
-            className="Pinpoint Changelog Card Title Smart"
+            className="Pinpoint Changelog Card Title Prebuilt"
           >
             Published Page Search and Filtering
           </h2>
           <span
-            className="Pinpoint Changelog Card Date Smart"
+            className="Pinpoint Changelog Card Date Prebuilt"
           >
             7/1/2021
           </span>
           <p
-            className="Pinpoint Changelog Card Description Smart"
+            className="Pinpoint Changelog Card Description Prebuilt"
           >
             Users can now search your public changelog with ease.  Searches are lightning quick ⚡️ too! 
           </p>
@@ -480,7 +480,7 @@ populated with your recently completed...
               className="button"
             >
               <span
-                className="Pinpoint Internal Link  Changelog Card Read Smart"
+                className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
               >
                 Read
                 <svg
@@ -510,7 +510,7 @@ populated with your recently completed...
         </div>
       </div>
       <div
-        className="Pinpoint Changelog Card Container wrapper Smart"
+        className="Pinpoint Changelog Card Container wrapper Prebuilt"
       >
         <img
           className="cover"
@@ -520,17 +520,17 @@ populated with your recently completed...
           className="content"
         >
           <h2
-            className="Pinpoint Changelog Card Title Smart"
+            className="Pinpoint Changelog Card Title Prebuilt"
           >
             Improved Analytics Accessibility
           </h2>
           <span
-            className="Pinpoint Changelog Card Date Smart"
+            className="Pinpoint Changelog Card Date Prebuilt"
           >
             7/9/2021
           </span>
           <p
-            className="Pinpoint Changelog Card Description Smart"
+            className="Pinpoint Changelog Card Description Prebuilt"
           >
             To make it easier to navigate you are now able to click on the analytics icon in several places to give you direct access to your analytics information for your site or a specific changelog post.  Changelog analytics gives you insights into what ...
           </p>
@@ -541,7 +541,7 @@ populated with your recently completed...
               className="button"
             >
               <span
-                className="Pinpoint Internal Link  Changelog Card Read Smart"
+                className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
               >
                 Read
                 <svg
@@ -571,7 +571,7 @@ populated with your recently completed...
         </div>
       </div>
       <div
-        className="Pinpoint Changelog Card Container wrapper Smart"
+        className="Pinpoint Changelog Card Container wrapper Prebuilt"
       >
         <img
           className="cover"
@@ -581,17 +581,17 @@ populated with your recently completed...
           className="content"
         >
           <h2
-            className="Pinpoint Changelog Card Title Smart"
+            className="Pinpoint Changelog Card Title Prebuilt"
           >
             Tables, tables, tables
           </h2>
           <span
-            className="Pinpoint Changelog Card Date Smart"
+            className="Pinpoint Changelog Card Date Prebuilt"
           >
             7/1/2021
           </span>
           <p
-            className="Pinpoint Changelog Card Description Smart"
+            className="Pinpoint Changelog Card Description Prebuilt"
           >
             Tables, tables, tables The changelog list is now sporting a bit of a new look.  You now see more info about what’s in the changelog along with improved visibility for analytics columns inline.  You can also see this new table on our subscriber’s ...
           </p>
@@ -602,7 +602,7 @@ populated with your recently completed...
               className="button"
             >
               <span
-                className="Pinpoint Internal Link  Changelog Card Read Smart"
+                className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
               >
                 Read
                 <svg
@@ -638,10 +638,10 @@ populated with your recently completed...
 
 exports[`Test custom latest length 1`] = `
 <div
-  className="Pinpoint Page Dashboard Smart "
+  className="Pinpoint Page Dashboard Prebuilt "
 >
   <div
-    className="Pinpoint Header Smart"
+    className="Pinpoint Header Prebuilt"
   >
     <div
       className="left"
@@ -663,7 +663,7 @@ exports[`Test custom latest length 1`] = `
         className="action"
       >
         <a
-          className="Pinpoint Internal Link Subscribe Smart"
+          className="Pinpoint Internal Link Subscribe Prebuilt"
           href="https://pinpoint.pinpoint.com/subscribe"
         >
           <svg
@@ -696,7 +696,7 @@ exports[`Test custom latest length 1`] = `
     />
   </div>
   <div
-    className="Pinpoint Latest Smart"
+    className="Pinpoint Latest Prebuilt"
   >
     <h1
       className="heading"
@@ -707,7 +707,7 @@ exports[`Test custom latest length 1`] = `
       className="container"
     >
       <div
-        className="Pinpoint Changelog Card Container wrapper Smart"
+        className="Pinpoint Changelog Card Container wrapper Prebuilt"
       >
         <img
           className="cover"
@@ -717,17 +717,17 @@ exports[`Test custom latest length 1`] = `
           className="content"
         >
           <h2
-            className="Pinpoint Changelog Card Title Smart"
+            className="Pinpoint Changelog Card Title Prebuilt"
           >
             Linked Content Blocks
           </h2>
           <span
-            className="Pinpoint Changelog Card Date Smart"
+            className="Pinpoint Changelog Card Date Prebuilt"
           >
             8/2/2021
           </span>
           <p
-            className="Pinpoint Changelog Card Description Smart"
+            className="Pinpoint Changelog Card Description Prebuilt"
           >
             Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.
           </p>
@@ -738,7 +738,7 @@ exports[`Test custom latest length 1`] = `
               className="button"
             >
               <span
-                className="Pinpoint Internal Link  Changelog Card Read Smart"
+                className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
               >
                 Read
                 <svg
@@ -765,7 +765,7 @@ exports[`Test custom latest length 1`] = `
               className="statistics"
             >
               <div
-                className="Pinpoint Statistic Bar wrapper Smart"
+                className="Pinpoint Statistic Bar wrapper Prebuilt"
               >
                 <div
                   className="Pinpoint Statistic Views wrapper "
@@ -874,7 +874,7 @@ exports[`Test custom latest length 1`] = `
         </div>
       </div>
       <div
-        className="Pinpoint Changelog Card Container wrapper Smart"
+        className="Pinpoint Changelog Card Container wrapper Prebuilt"
       >
         <img
           className="cover"
@@ -884,17 +884,17 @@ exports[`Test custom latest length 1`] = `
           className="content"
         >
           <h2
-            className="Pinpoint Changelog Card Title Smart"
+            className="Pinpoint Changelog Card Title Prebuilt"
           >
             Publishing Controls and Social Posting
           </h2>
           <span
-            className="Pinpoint Changelog Card Date Smart"
+            className="Pinpoint Changelog Card Date Prebuilt"
           >
             7/30/2021
           </span>
           <p
-            className="Pinpoint Changelog Card Description Smart"
+            className="Pinpoint Changelog Card Description Prebuilt"
           >
             When you publish a changelog you will now see a new Publish dialog which grants finer control over when you want to notify your subscribers.
           </p>
@@ -905,7 +905,7 @@ exports[`Test custom latest length 1`] = `
               className="button"
             >
               <span
-                className="Pinpoint Internal Link  Changelog Card Read Smart"
+                className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
               >
                 Read
                 <svg
@@ -932,7 +932,7 @@ exports[`Test custom latest length 1`] = `
               className="statistics"
             >
               <div
-                className="Pinpoint Statistic Bar wrapper Smart"
+                className="Pinpoint Statistic Bar wrapper Prebuilt"
               >
                 <div
                   className="Pinpoint Statistic Views wrapper "
@@ -1043,7 +1043,7 @@ exports[`Test custom latest length 1`] = `
     </div>
   </div>
   <div
-    className="Pinpoint Recent Smart"
+    className="Pinpoint Recent Prebuilt"
   >
     <h1
       className="heading"
@@ -1054,7 +1054,7 @@ exports[`Test custom latest length 1`] = `
       className="container"
     >
       <div
-        className="Pinpoint Changelog Card Container wrapper Smart"
+        className="Pinpoint Changelog Card Container wrapper Prebuilt"
       >
         <img
           className="cover"
@@ -1064,17 +1064,17 @@ exports[`Test custom latest length 1`] = `
           className="content"
         >
           <h2
-            className="Pinpoint Changelog Card Title Smart"
+            className="Pinpoint Changelog Card Title Prebuilt"
           >
             Changelog planning just got way simpler!
           </h2>
           <span
-            className="Pinpoint Changelog Card Date Smart"
+            className="Pinpoint Changelog Card Date Prebuilt"
           >
             7/21/2021
           </span>
           <p
-            className="Pinpoint Changelog Card Description Smart"
+            className="Pinpoint Changelog Card Description Prebuilt"
           >
             We could not be more excited to announce this feature 📣  This was born through our own use of the product after we integrated with GitHub.  Once you integrate an issue or code system you will see 
 Planning 
@@ -1087,7 +1087,7 @@ populated with your recently completed...
               className="button"
             >
               <span
-                className="Pinpoint Internal Link  Changelog Card Read Smart"
+                className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
               >
                 Read
                 <svg
@@ -1114,7 +1114,7 @@ populated with your recently completed...
               className="statistics"
             >
               <div
-                className="Pinpoint Statistic Bar wrapper Smart"
+                className="Pinpoint Statistic Bar wrapper Prebuilt"
               >
                 <div
                   className="Pinpoint Statistic Views wrapper "
@@ -1223,7 +1223,7 @@ populated with your recently completed...
         </div>
       </div>
       <div
-        className="Pinpoint Changelog Card Container wrapper Smart"
+        className="Pinpoint Changelog Card Container wrapper Prebuilt"
       >
         <img
           className="cover"
@@ -1233,17 +1233,17 @@ populated with your recently completed...
           className="content"
         >
           <h2
-            className="Pinpoint Changelog Card Title Smart"
+            className="Pinpoint Changelog Card Title Prebuilt"
           >
             Email validation, filtering, and subscriber search 🔍
           </h2>
           <span
-            className="Pinpoint Changelog Card Date Smart"
+            className="Pinpoint Changelog Card Date Prebuilt"
           >
             7/19/2021
           </span>
           <p
-            className="Pinpoint Changelog Card Description Smart"
+            className="Pinpoint Changelog Card Description Prebuilt"
           >
             As new users subscribe to your changelog you will be able to quickly see if they have verified and validated their email addresses with you.  Along with this you also now have the ability to search your subscriber list.  This will help you ensure...
           </p>
@@ -1254,7 +1254,7 @@ populated with your recently completed...
               className="button"
             >
               <span
-                className="Pinpoint Internal Link  Changelog Card Read Smart"
+                className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
               >
                 Read
                 <svg
@@ -1281,7 +1281,7 @@ populated with your recently completed...
               className="statistics"
             >
               <div
-                className="Pinpoint Statistic Bar wrapper Smart"
+                className="Pinpoint Statistic Bar wrapper Prebuilt"
               >
                 <div
                   className="Pinpoint Statistic Views wrapper "
@@ -1390,7 +1390,7 @@ populated with your recently completed...
         </div>
       </div>
       <div
-        className="Pinpoint Changelog Card Container wrapper Smart"
+        className="Pinpoint Changelog Card Container wrapper Prebuilt"
       >
         <img
           className="cover"
@@ -1400,17 +1400,17 @@ populated with your recently completed...
           className="content"
         >
           <h2
-            className="Pinpoint Changelog Card Title Smart"
+            className="Pinpoint Changelog Card Title Prebuilt"
           >
             Analytics Drill-Down and Localization
           </h2>
           <span
-            className="Pinpoint Changelog Card Date Smart"
+            className="Pinpoint Changelog Card Date Prebuilt"
           >
             7/12/2021
           </span>
           <p
-            className="Pinpoint Changelog Card Description Smart"
+            className="Pinpoint Changelog Card Description Prebuilt"
           >
             We have now added drill-down analytics to give you even deeper insight into where your changelogs are having the most impact.  Check out the video below to lear
           </p>
@@ -1421,7 +1421,7 @@ populated with your recently completed...
               className="button"
             >
               <span
-                className="Pinpoint Internal Link  Changelog Card Read Smart"
+                className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
               >
                 Read
                 <svg
@@ -1448,7 +1448,7 @@ populated with your recently completed...
               className="statistics"
             >
               <div
-                className="Pinpoint Statistic Bar wrapper Smart"
+                className="Pinpoint Statistic Bar wrapper Prebuilt"
               >
                 <div
                   className="Pinpoint Statistic Views wrapper "
@@ -1557,24 +1557,24 @@ populated with your recently completed...
         </div>
       </div>
       <div
-        className="Pinpoint Changelog Card Container wrapper Smart"
+        className="Pinpoint Changelog Card Container wrapper Prebuilt"
       >
         
         <div
           className="content"
         >
           <h2
-            className="Pinpoint Changelog Card Title Smart"
+            className="Pinpoint Changelog Card Title Prebuilt"
           >
             Already mentioned notice
           </h2>
           <span
-            className="Pinpoint Changelog Card Date Smart"
+            className="Pinpoint Changelog Card Date Prebuilt"
           >
             7/14/2021
           </span>
           <p
-            className="Pinpoint Changelog Card Description Smart"
+            className="Pinpoint Changelog Card Description Prebuilt"
           >
             If you are lucky 🍀 enough to have tried our integrations we will now identify a PR or issue that has previously been mentioned in a changelog entry.  Maybe you want to mention it again, your call but we wanted to make sure you knew 😉...
           </p>
@@ -1585,7 +1585,7 @@ populated with your recently completed...
               className="button"
             >
               <span
-                className="Pinpoint Internal Link  Changelog Card Read Smart"
+                className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
               >
                 Read
                 <svg
@@ -1612,7 +1612,7 @@ populated with your recently completed...
               className="statistics"
             >
               <div
-                className="Pinpoint Statistic Bar wrapper Smart"
+                className="Pinpoint Statistic Bar wrapper Prebuilt"
               >
                 <div
                   className="Pinpoint Statistic Views wrapper "
@@ -1721,7 +1721,7 @@ populated with your recently completed...
         </div>
       </div>
       <div
-        className="Pinpoint Changelog Card Container wrapper Smart"
+        className="Pinpoint Changelog Card Container wrapper Prebuilt"
       >
         <img
           className="cover"
@@ -1731,17 +1731,17 @@ populated with your recently completed...
           className="content"
         >
           <h2
-            className="Pinpoint Changelog Card Title Smart"
+            className="Pinpoint Changelog Card Title Prebuilt"
           >
             Published Page Search and Filtering
           </h2>
           <span
-            className="Pinpoint Changelog Card Date Smart"
+            className="Pinpoint Changelog Card Date Prebuilt"
           >
             7/1/2021
           </span>
           <p
-            className="Pinpoint Changelog Card Description Smart"
+            className="Pinpoint Changelog Card Description Prebuilt"
           >
             Users can now search your public changelog with ease.  Searches are lightning quick ⚡️ too! 
           </p>
@@ -1752,7 +1752,7 @@ populated with your recently completed...
               className="button"
             >
               <span
-                className="Pinpoint Internal Link  Changelog Card Read Smart"
+                className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
               >
                 Read
                 <svg
@@ -1779,7 +1779,7 @@ populated with your recently completed...
               className="statistics"
             >
               <div
-                className="Pinpoint Statistic Bar wrapper Smart"
+                className="Pinpoint Statistic Bar wrapper Prebuilt"
               >
                 <div
                   className="Pinpoint Statistic Views wrapper "
@@ -1888,7 +1888,7 @@ populated with your recently completed...
         </div>
       </div>
       <div
-        className="Pinpoint Changelog Card Container wrapper Smart"
+        className="Pinpoint Changelog Card Container wrapper Prebuilt"
       >
         <img
           className="cover"
@@ -1898,17 +1898,17 @@ populated with your recently completed...
           className="content"
         >
           <h2
-            className="Pinpoint Changelog Card Title Smart"
+            className="Pinpoint Changelog Card Title Prebuilt"
           >
             Improved Analytics Accessibility
           </h2>
           <span
-            className="Pinpoint Changelog Card Date Smart"
+            className="Pinpoint Changelog Card Date Prebuilt"
           >
             7/9/2021
           </span>
           <p
-            className="Pinpoint Changelog Card Description Smart"
+            className="Pinpoint Changelog Card Description Prebuilt"
           >
             To make it easier to navigate you are now able to click on the analytics icon in several places to give you direct access to your analytics information for your site or a specific changelog post.  Changelog analytics gives you insights into what ...
           </p>
@@ -1919,7 +1919,7 @@ populated with your recently completed...
               className="button"
             >
               <span
-                className="Pinpoint Internal Link  Changelog Card Read Smart"
+                className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
               >
                 Read
                 <svg
@@ -1946,7 +1946,7 @@ populated with your recently completed...
               className="statistics"
             >
               <div
-                className="Pinpoint Statistic Bar wrapper Smart"
+                className="Pinpoint Statistic Bar wrapper Prebuilt"
               >
                 <div
                   className="Pinpoint Statistic Views wrapper "
@@ -2055,7 +2055,7 @@ populated with your recently completed...
         </div>
       </div>
       <div
-        className="Pinpoint Changelog Card Container wrapper Smart"
+        className="Pinpoint Changelog Card Container wrapper Prebuilt"
       >
         <img
           className="cover"
@@ -2065,17 +2065,17 @@ populated with your recently completed...
           className="content"
         >
           <h2
-            className="Pinpoint Changelog Card Title Smart"
+            className="Pinpoint Changelog Card Title Prebuilt"
           >
             Tables, tables, tables
           </h2>
           <span
-            className="Pinpoint Changelog Card Date Smart"
+            className="Pinpoint Changelog Card Date Prebuilt"
           >
             7/1/2021
           </span>
           <p
-            className="Pinpoint Changelog Card Description Smart"
+            className="Pinpoint Changelog Card Description Prebuilt"
           >
             Tables, tables, tables The changelog list is now sporting a bit of a new look.  You now see more info about what’s in the changelog along with improved visibility for analytics columns inline.  You can also see this new table on our subscriber’s ...
           </p>
@@ -2086,7 +2086,7 @@ populated with your recently completed...
               className="button"
             >
               <span
-                className="Pinpoint Internal Link  Changelog Card Read Smart"
+                className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
               >
                 Read
                 <svg
@@ -2113,7 +2113,7 @@ populated with your recently completed...
               className="statistics"
             >
               <div
-                className="Pinpoint Statistic Bar wrapper Smart"
+                className="Pinpoint Statistic Bar wrapper Prebuilt"
               >
                 <div
                   className="Pinpoint Statistic Views wrapper "
@@ -2228,10 +2228,10 @@ populated with your recently completed...
 
 exports[`Test default state 1`] = `
 <div
-  className="Pinpoint Page Dashboard Smart "
+  className="Pinpoint Page Dashboard Prebuilt "
 >
   <div
-    className="Pinpoint Header Smart"
+    className="Pinpoint Header Prebuilt"
   >
     <div
       className="left"
@@ -2253,7 +2253,7 @@ exports[`Test default state 1`] = `
         className="action"
       >
         <a
-          className="Pinpoint Internal Link Subscribe Smart"
+          className="Pinpoint Internal Link Subscribe Prebuilt"
           href="https://pinpoint.pinpoint.com/subscribe"
         >
           <svg
@@ -2286,7 +2286,7 @@ exports[`Test default state 1`] = `
     />
   </div>
   <div
-    className="Pinpoint Latest Smart"
+    className="Pinpoint Latest Prebuilt"
   >
     <h1
       className="heading"
@@ -2297,7 +2297,7 @@ exports[`Test default state 1`] = `
       className="container"
     >
       <div
-        className="Pinpoint Changelog Card Container wrapper Smart"
+        className="Pinpoint Changelog Card Container wrapper Prebuilt"
       >
         <img
           className="cover"
@@ -2307,17 +2307,17 @@ exports[`Test default state 1`] = `
           className="content"
         >
           <h2
-            className="Pinpoint Changelog Card Title Smart"
+            className="Pinpoint Changelog Card Title Prebuilt"
           >
             Linked Content Blocks
           </h2>
           <span
-            className="Pinpoint Changelog Card Date Smart"
+            className="Pinpoint Changelog Card Date Prebuilt"
           >
             8/2/2021
           </span>
           <p
-            className="Pinpoint Changelog Card Description Smart"
+            className="Pinpoint Changelog Card Description Prebuilt"
           >
             Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.
           </p>
@@ -2328,7 +2328,7 @@ exports[`Test default state 1`] = `
               className="button"
             >
               <span
-                className="Pinpoint Internal Link  Changelog Card Read Smart"
+                className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
               >
                 Read
                 <svg
@@ -2355,7 +2355,7 @@ exports[`Test default state 1`] = `
               className="statistics"
             >
               <div
-                className="Pinpoint Statistic Bar wrapper Smart"
+                className="Pinpoint Statistic Bar wrapper Prebuilt"
               >
                 <div
                   className="Pinpoint Statistic Views wrapper "
@@ -2466,7 +2466,7 @@ exports[`Test default state 1`] = `
     </div>
   </div>
   <div
-    className="Pinpoint Recent Smart"
+    className="Pinpoint Recent Prebuilt"
   >
     <h1
       className="heading"
@@ -2477,7 +2477,7 @@ exports[`Test default state 1`] = `
       className="container"
     >
       <div
-        className="Pinpoint Changelog Card Container wrapper Smart"
+        className="Pinpoint Changelog Card Container wrapper Prebuilt"
       >
         <img
           className="cover"
@@ -2487,17 +2487,17 @@ exports[`Test default state 1`] = `
           className="content"
         >
           <h2
-            className="Pinpoint Changelog Card Title Smart"
+            className="Pinpoint Changelog Card Title Prebuilt"
           >
             Publishing Controls and Social Posting
           </h2>
           <span
-            className="Pinpoint Changelog Card Date Smart"
+            className="Pinpoint Changelog Card Date Prebuilt"
           >
             7/30/2021
           </span>
           <p
-            className="Pinpoint Changelog Card Description Smart"
+            className="Pinpoint Changelog Card Description Prebuilt"
           >
             When you publish a changelog you will now see a new Publish dialog which grants finer control over when you want to notify your subscribers.
           </p>
@@ -2508,7 +2508,7 @@ exports[`Test default state 1`] = `
               className="button"
             >
               <span
-                className="Pinpoint Internal Link  Changelog Card Read Smart"
+                className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
               >
                 Read
                 <svg
@@ -2535,7 +2535,7 @@ exports[`Test default state 1`] = `
               className="statistics"
             >
               <div
-                className="Pinpoint Statistic Bar wrapper Smart"
+                className="Pinpoint Statistic Bar wrapper Prebuilt"
               >
                 <div
                   className="Pinpoint Statistic Views wrapper "
@@ -2644,7 +2644,7 @@ exports[`Test default state 1`] = `
         </div>
       </div>
       <div
-        className="Pinpoint Changelog Card Container wrapper Smart"
+        className="Pinpoint Changelog Card Container wrapper Prebuilt"
       >
         <img
           className="cover"
@@ -2654,17 +2654,17 @@ exports[`Test default state 1`] = `
           className="content"
         >
           <h2
-            className="Pinpoint Changelog Card Title Smart"
+            className="Pinpoint Changelog Card Title Prebuilt"
           >
             Changelog planning just got way simpler!
           </h2>
           <span
-            className="Pinpoint Changelog Card Date Smart"
+            className="Pinpoint Changelog Card Date Prebuilt"
           >
             7/21/2021
           </span>
           <p
-            className="Pinpoint Changelog Card Description Smart"
+            className="Pinpoint Changelog Card Description Prebuilt"
           >
             We could not be more excited to announce this feature 📣  This was born through our own use of the product after we integrated with GitHub.  Once you integrate an issue or code system you will see 
 Planning 
@@ -2677,7 +2677,7 @@ populated with your recently completed...
               className="button"
             >
               <span
-                className="Pinpoint Internal Link  Changelog Card Read Smart"
+                className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
               >
                 Read
                 <svg
@@ -2704,7 +2704,7 @@ populated with your recently completed...
               className="statistics"
             >
               <div
-                className="Pinpoint Statistic Bar wrapper Smart"
+                className="Pinpoint Statistic Bar wrapper Prebuilt"
               >
                 <div
                   className="Pinpoint Statistic Views wrapper "
@@ -2813,7 +2813,7 @@ populated with your recently completed...
         </div>
       </div>
       <div
-        className="Pinpoint Changelog Card Container wrapper Smart"
+        className="Pinpoint Changelog Card Container wrapper Prebuilt"
       >
         <img
           className="cover"
@@ -2823,17 +2823,17 @@ populated with your recently completed...
           className="content"
         >
           <h2
-            className="Pinpoint Changelog Card Title Smart"
+            className="Pinpoint Changelog Card Title Prebuilt"
           >
             Email validation, filtering, and subscriber search 🔍
           </h2>
           <span
-            className="Pinpoint Changelog Card Date Smart"
+            className="Pinpoint Changelog Card Date Prebuilt"
           >
             7/19/2021
           </span>
           <p
-            className="Pinpoint Changelog Card Description Smart"
+            className="Pinpoint Changelog Card Description Prebuilt"
           >
             As new users subscribe to your changelog you will be able to quickly see if they have verified and validated their email addresses with you.  Along with this you also now have the ability to search your subscriber list.  This will help you ensure...
           </p>
@@ -2844,7 +2844,7 @@ populated with your recently completed...
               className="button"
             >
               <span
-                className="Pinpoint Internal Link  Changelog Card Read Smart"
+                className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
               >
                 Read
                 <svg
@@ -2871,7 +2871,7 @@ populated with your recently completed...
               className="statistics"
             >
               <div
-                className="Pinpoint Statistic Bar wrapper Smart"
+                className="Pinpoint Statistic Bar wrapper Prebuilt"
               >
                 <div
                   className="Pinpoint Statistic Views wrapper "
@@ -2980,7 +2980,7 @@ populated with your recently completed...
         </div>
       </div>
       <div
-        className="Pinpoint Changelog Card Container wrapper Smart"
+        className="Pinpoint Changelog Card Container wrapper Prebuilt"
       >
         <img
           className="cover"
@@ -2990,17 +2990,17 @@ populated with your recently completed...
           className="content"
         >
           <h2
-            className="Pinpoint Changelog Card Title Smart"
+            className="Pinpoint Changelog Card Title Prebuilt"
           >
             Analytics Drill-Down and Localization
           </h2>
           <span
-            className="Pinpoint Changelog Card Date Smart"
+            className="Pinpoint Changelog Card Date Prebuilt"
           >
             7/12/2021
           </span>
           <p
-            className="Pinpoint Changelog Card Description Smart"
+            className="Pinpoint Changelog Card Description Prebuilt"
           >
             We have now added drill-down analytics to give you even deeper insight into where your changelogs are having the most impact.  Check out the video below to lear
           </p>
@@ -3011,7 +3011,7 @@ populated with your recently completed...
               className="button"
             >
               <span
-                className="Pinpoint Internal Link  Changelog Card Read Smart"
+                className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
               >
                 Read
                 <svg
@@ -3038,7 +3038,7 @@ populated with your recently completed...
               className="statistics"
             >
               <div
-                className="Pinpoint Statistic Bar wrapper Smart"
+                className="Pinpoint Statistic Bar wrapper Prebuilt"
               >
                 <div
                   className="Pinpoint Statistic Views wrapper "
@@ -3147,24 +3147,24 @@ populated with your recently completed...
         </div>
       </div>
       <div
-        className="Pinpoint Changelog Card Container wrapper Smart"
+        className="Pinpoint Changelog Card Container wrapper Prebuilt"
       >
         
         <div
           className="content"
         >
           <h2
-            className="Pinpoint Changelog Card Title Smart"
+            className="Pinpoint Changelog Card Title Prebuilt"
           >
             Already mentioned notice
           </h2>
           <span
-            className="Pinpoint Changelog Card Date Smart"
+            className="Pinpoint Changelog Card Date Prebuilt"
           >
             7/14/2021
           </span>
           <p
-            className="Pinpoint Changelog Card Description Smart"
+            className="Pinpoint Changelog Card Description Prebuilt"
           >
             If you are lucky 🍀 enough to have tried our integrations we will now identify a PR or issue that has previously been mentioned in a changelog entry.  Maybe you want to mention it again, your call but we wanted to make sure you knew 😉...
           </p>
@@ -3175,7 +3175,7 @@ populated with your recently completed...
               className="button"
             >
               <span
-                className="Pinpoint Internal Link  Changelog Card Read Smart"
+                className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
               >
                 Read
                 <svg
@@ -3202,7 +3202,7 @@ populated with your recently completed...
               className="statistics"
             >
               <div
-                className="Pinpoint Statistic Bar wrapper Smart"
+                className="Pinpoint Statistic Bar wrapper Prebuilt"
               >
                 <div
                   className="Pinpoint Statistic Views wrapper "
@@ -3311,7 +3311,7 @@ populated with your recently completed...
         </div>
       </div>
       <div
-        className="Pinpoint Changelog Card Container wrapper Smart"
+        className="Pinpoint Changelog Card Container wrapper Prebuilt"
       >
         <img
           className="cover"
@@ -3321,17 +3321,17 @@ populated with your recently completed...
           className="content"
         >
           <h2
-            className="Pinpoint Changelog Card Title Smart"
+            className="Pinpoint Changelog Card Title Prebuilt"
           >
             Published Page Search and Filtering
           </h2>
           <span
-            className="Pinpoint Changelog Card Date Smart"
+            className="Pinpoint Changelog Card Date Prebuilt"
           >
             7/1/2021
           </span>
           <p
-            className="Pinpoint Changelog Card Description Smart"
+            className="Pinpoint Changelog Card Description Prebuilt"
           >
             Users can now search your public changelog with ease.  Searches are lightning quick ⚡️ too! 
           </p>
@@ -3342,7 +3342,7 @@ populated with your recently completed...
               className="button"
             >
               <span
-                className="Pinpoint Internal Link  Changelog Card Read Smart"
+                className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
               >
                 Read
                 <svg
@@ -3369,7 +3369,7 @@ populated with your recently completed...
               className="statistics"
             >
               <div
-                className="Pinpoint Statistic Bar wrapper Smart"
+                className="Pinpoint Statistic Bar wrapper Prebuilt"
               >
                 <div
                   className="Pinpoint Statistic Views wrapper "
@@ -3478,7 +3478,7 @@ populated with your recently completed...
         </div>
       </div>
       <div
-        className="Pinpoint Changelog Card Container wrapper Smart"
+        className="Pinpoint Changelog Card Container wrapper Prebuilt"
       >
         <img
           className="cover"
@@ -3488,17 +3488,17 @@ populated with your recently completed...
           className="content"
         >
           <h2
-            className="Pinpoint Changelog Card Title Smart"
+            className="Pinpoint Changelog Card Title Prebuilt"
           >
             Improved Analytics Accessibility
           </h2>
           <span
-            className="Pinpoint Changelog Card Date Smart"
+            className="Pinpoint Changelog Card Date Prebuilt"
           >
             7/9/2021
           </span>
           <p
-            className="Pinpoint Changelog Card Description Smart"
+            className="Pinpoint Changelog Card Description Prebuilt"
           >
             To make it easier to navigate you are now able to click on the analytics icon in several places to give you direct access to your analytics information for your site or a specific changelog post.  Changelog analytics gives you insights into what ...
           </p>
@@ -3509,7 +3509,7 @@ populated with your recently completed...
               className="button"
             >
               <span
-                className="Pinpoint Internal Link  Changelog Card Read Smart"
+                className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
               >
                 Read
                 <svg
@@ -3536,7 +3536,7 @@ populated with your recently completed...
               className="statistics"
             >
               <div
-                className="Pinpoint Statistic Bar wrapper Smart"
+                className="Pinpoint Statistic Bar wrapper Prebuilt"
               >
                 <div
                   className="Pinpoint Statistic Views wrapper "
@@ -3645,7 +3645,7 @@ populated with your recently completed...
         </div>
       </div>
       <div
-        className="Pinpoint Changelog Card Container wrapper Smart"
+        className="Pinpoint Changelog Card Container wrapper Prebuilt"
       >
         <img
           className="cover"
@@ -3655,17 +3655,17 @@ populated with your recently completed...
           className="content"
         >
           <h2
-            className="Pinpoint Changelog Card Title Smart"
+            className="Pinpoint Changelog Card Title Prebuilt"
           >
             Tables, tables, tables
           </h2>
           <span
-            className="Pinpoint Changelog Card Date Smart"
+            className="Pinpoint Changelog Card Date Prebuilt"
           >
             7/1/2021
           </span>
           <p
-            className="Pinpoint Changelog Card Description Smart"
+            className="Pinpoint Changelog Card Description Prebuilt"
           >
             Tables, tables, tables The changelog list is now sporting a bit of a new look.  You now see more info about what’s in the changelog along with improved visibility for analytics columns inline.  You can also see this new table on our subscriber’s ...
           </p>
@@ -3676,7 +3676,7 @@ populated with your recently completed...
               className="button"
             >
               <span
-                className="Pinpoint Internal Link  Changelog Card Read Smart"
+                className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
               >
                 Read
                 <svg
@@ -3703,7 +3703,7 @@ populated with your recently completed...
               className="statistics"
             >
               <div
-                className="Pinpoint Statistic Bar wrapper Smart"
+                className="Pinpoint Statistic Bar wrapper Prebuilt"
               >
                 <div
                   className="Pinpoint Statistic Views wrapper "
