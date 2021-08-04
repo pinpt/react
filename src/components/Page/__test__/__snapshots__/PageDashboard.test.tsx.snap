@@ -8,8 +8,15 @@ exports[`Test full page 1`] = `
     className="Pinpoint Header "
   >
     <div
-      className="left"
-    />
+      className="top"
+    >
+      <div
+        className="left"
+      />
+      <div
+        className="right"
+      />
+    </div>
     <div
       className="center"
     >
@@ -55,9 +62,6 @@ exports[`Test full page 1`] = `
         </a>
       </div>
     </div>
-    <div
-      className="right"
-    />
   </div>
   <div
     className="Pinpoint Latest "

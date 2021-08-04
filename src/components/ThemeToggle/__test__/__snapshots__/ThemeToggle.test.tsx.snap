@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test default 1`] = `
+<div
+  className="Pinpoint ThemeToggle "
+>
+  <button
+    className="mode"
+    onClick={[Function]}
+  />
+</div>
+`;
+
+exports[`Test theme change listener 1`] = `
+<div
+  className="Pinpoint ThemeToggle "
+>
+  <button
+    className="mode"
+    onClick={[Function]}
+  />
+</div>
+`;

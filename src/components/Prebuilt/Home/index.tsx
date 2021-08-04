@@ -20,6 +20,7 @@ import Logo, { ILogoProps } from '../../Logo';
 import Social from '../../Social';
 import { ITagBarProps } from '../../Tags/Bar';
 import Tags from '../../Tags';
+import ThemeToggle, { IThemeToggleProps } from '../../ThemeToggle';
 
 export interface IPrebuiltHomeProps {
 	className?: string;
@@ -40,6 +41,7 @@ export interface IPrebuiltHomeProps {
 	renderCopyright?: (site: Site) => ReactElement<ICopyrightProps>;
 	renderLogo?: (site: Site) => ReactElement<ILogoProps>;
 	renderTags?: (entry: Entry) => ReactElement<ITagBarProps>;
+	renderThemeToggle?: (site: Site) => ReactElement<IThemeToggleProps>;
 	latestCount?: number;
 }
 
@@ -64,6 +66,7 @@ const PrebuiltHome = (props: IPrebuiltHomeProps) => {
 		renderCopyright,
 		renderLogo,
 		renderTags,
+		renderThemeToggle,
 	} = props;
 	const { latest, recent } = splitEntries(entries, latestCount);
 	return (
@@ -80,6 +83,7 @@ const PrebuiltHome = (props: IPrebuiltHomeProps) => {
 								<Subscribe className="Prebuilt" href={`https://${site.slug}.pinpoint.com/subscribe`} />
 							)
 						}
+						themeToggle={renderThemeToggle?.(site) ?? <ThemeToggle />}
 					/>
 				)
 			}

@@ -2,6 +2,7 @@ import React from 'react';
 import { Meta } from '@storybook/react';
 import Header from '..';
 import Subscribe from '../../Subscribe';
+import ThemeToggle from '../../ThemeToggle';
 const { default: readme } = require('../README.md');
 
 export default {
@@ -23,10 +24,13 @@ export const Complete: React.VFC<{}> = () => (
 		subscribe={<Subscribe href="https://pinpoint.com" />}
 		title="Pinpoint Demo Changelog"
 		description="See what's new in the Pinpoint Demo."
+		themeToggle={<ThemeToggle />}
 	/>
 );
 
 export const Empty: React.VFC<{}> = () => <Header />;
+
+export const Theme_Toggle_Only: React.VFC<{}> = () => <Header themeToggle={<ThemeToggle />} />;
 
 export const Title_Only: React.VFC<{}> = () => <Header title="Pinpoint Demo Changelog" />;
 

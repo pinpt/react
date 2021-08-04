@@ -1,0 +1,1 @@
+The theme toggle toggles between light and dark themes. It does this by applying a class `dark` to the `html` element in the document. This can be used in your own custom theme, or if you're using tailwindcss you can use the `dark:` class prefix.

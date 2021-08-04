@@ -5,8 +5,15 @@ exports[`Test complete 1`] = `
   className="Pinpoint Header "
 >
   <div
-    className="left"
-  />
+    className="top"
+  >
+    <div
+      className="left"
+    />
+    <div
+      className="right"
+    />
+  </div>
   <div
     className="center"
   >
@@ -52,9 +59,6 @@ exports[`Test complete 1`] = `
       </a>
     </div>
   </div>
-  <div
-    className="right"
-  />
 </div>
 `;
 
@@ -63,13 +67,17 @@ exports[`Test empty 1`] = `
   className="Pinpoint Header "
 >
   <div
-    className="left"
-  />
+    className="top"
+  >
+    <div
+      className="left"
+    />
+    <div
+      className="right"
+    />
+  </div>
   <div
     className="center"
-  />
-  <div
-    className="right"
   />
 </div>
 `;
@@ -79,8 +87,15 @@ exports[`Test no description 1`] = `
   className="Pinpoint Header "
 >
   <div
-    className="left"
-  />
+    className="top"
+  >
+    <div
+      className="left"
+    />
+    <div
+      className="right"
+    />
+  </div>
   <div
     className="center"
   >
@@ -121,9 +136,6 @@ exports[`Test no description 1`] = `
       </a>
     </div>
   </div>
-  <div
-    className="right"
-  />
 </div>
 `;
 
@@ -132,8 +144,15 @@ exports[`Test no subscribe 1`] = `
   className="Pinpoint Header "
 >
   <div
-    className="left"
-  />
+    className="top"
+  >
+    <div
+      className="left"
+    />
+    <div
+      className="right"
+    />
+  </div>
   <div
     className="center"
   >
@@ -148,9 +167,6 @@ exports[`Test no subscribe 1`] = `
       See what's new in the Pinpoint Demo.
     </div>
   </div>
-  <div
-    className="right"
-  />
 </div>
 `;
 
@@ -159,8 +175,15 @@ exports[`Test title only 1`] = `
   className="Pinpoint Header "
 >
   <div
-    className="left"
-  />
+    className="top"
+  >
+    <div
+      className="left"
+    />
+    <div
+      className="right"
+    />
+  </div>
   <div
     className="center"
   >
@@ -170,8 +193,5 @@ exports[`Test title only 1`] = `
       Pinpoint Demo Changelog
     </h1>
   </div>
-  <div
-    className="right"
-  />
 </div>
 `;

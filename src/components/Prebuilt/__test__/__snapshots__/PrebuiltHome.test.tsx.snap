@@ -8,8 +8,24 @@ exports[`Hidden stats 1`] = `
     className="Pinpoint Header Prebuilt"
   >
     <div
-      className="left"
-    />
+      className="top"
+    >
+      <div
+        className="left"
+      />
+      <div
+        className="right"
+      >
+        <div
+          className="Pinpoint ThemeToggle "
+        >
+          <button
+            className="mode"
+            onClick={[Function]}
+          />
+        </div>
+      </div>
+    </div>
     <div
       className="center"
     >
@@ -55,9 +71,6 @@ exports[`Hidden stats 1`] = `
         </a>
       </div>
     </div>
-    <div
-      className="right"
-    />
   </div>
   <div
     className="Pinpoint Latest Prebuilt"
@@ -1101,8 +1114,24 @@ exports[`Test custom latest length 1`] = `
     className="Pinpoint Header Prebuilt"
   >
     <div
-      className="left"
-    />
+      className="top"
+    >
+      <div
+        className="left"
+      />
+      <div
+        className="right"
+      >
+        <div
+          className="Pinpoint ThemeToggle "
+        >
+          <button
+            className="mode"
+            onClick={[Function]}
+          />
+        </div>
+      </div>
+    </div>
     <div
       className="center"
     >
@@ -1148,9 +1177,6 @@ exports[`Test custom latest length 1`] = `
         </a>
       </div>
     </div>
-    <div
-      className="right"
-    />
   </div>
   <div
     className="Pinpoint Latest Prebuilt"
@@ -3148,8 +3174,24 @@ exports[`Test default state 1`] = `
     className="Pinpoint Header Prebuilt"
   >
     <div
-      className="left"
-    />
+      className="top"
+    >
+      <div
+        className="left"
+      />
+      <div
+        className="right"
+      >
+        <div
+          className="Pinpoint ThemeToggle "
+        >
+          <button
+            className="mode"
+            onClick={[Function]}
+          />
+        </div>
+      </div>
+    </div>
     <div
       className="center"
     >
@@ -3195,9 +3237,6 @@ exports[`Test default state 1`] = `
         </a>
       </div>
     </div>
-    <div
-      className="right"
-    />
   </div>
   <div
     className="Pinpoint Latest Prebuilt"
