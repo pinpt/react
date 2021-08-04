@@ -83,7 +83,7 @@ const PrebuiltHome = (props: IPrebuiltHomeProps) => {
 								<Subscribe className="Prebuilt" href={`https://${site.slug}.pinpoint.com/subscribe`} />
 							)
 						}
-						themeToggle={renderThemeToggle?.(site) ?? <ThemeToggle />}
+						themeToggle={renderThemeToggle?.(site) ?? <ThemeToggle className="Prebuilt" />}
 					/>
 				)
 			}
@@ -114,7 +114,7 @@ const PrebuiltHome = (props: IPrebuiltHomeProps) => {
 											)
 										}
 										button={renderCardButton?.(entry) ?? <Card.ReadButton className="Prebuilt" />}
-										tags={renderTags?.(entry) ?? <Tags.Bar tags={entry.tags ?? []} />}
+										tags={renderTags?.(entry) ?? <Tags.Bar className="Prebuilt" tags={entry.tags ?? []} />}
 									/>
 								)
 							);
@@ -149,7 +149,7 @@ const PrebuiltHome = (props: IPrebuiltHomeProps) => {
 											)
 										}
 										button={renderCardButton?.(entry) ?? <Card.ReadButton className="Prebuilt" />}
-										tags={renderTags?.(entry) ?? <Tags.Bar tags={entry.tags ?? []} />}
+										tags={renderTags?.(entry) ?? <Tags.Bar className="Prebuilt" tags={entry.tags ?? []} />}
 									/>
 								)
 							);

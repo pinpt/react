@@ -1,4 +1,4 @@
-# Prebuilt Components
+# Prebuilt Home
 
 The prebuilt components are the easiest to use since they work right out of the box, but provide super simple customization options. As its simplest, a prebuilt component can be rendered as such:
 

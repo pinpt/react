@@ -260,6 +260,10 @@
 	@apply flex flex-row;
 }
 
+.Page.Entry .sidebar {
+	@apply mr-16 ml-8 mt-4;
+}
+
 /*
  * Styles for the link component
  */

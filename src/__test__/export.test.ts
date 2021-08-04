@@ -86,8 +86,9 @@ test('Test component exports', () => {
 
 	// Test Prebuilt Exports
 	expect(Prebuilt).toBeTruthy();
-	const { Home, ...otherPrebuilt } = Prebuilt;
+	const { Home, Entry: PrebuiltEntry, ...otherPrebuilt } = Prebuilt;
 	expect(Home).toBeTruthy();
+	expect(PrebuiltEntry).toBeTruthy();
 	expect(Object.keys(otherPrebuilt).length).toEqual(0);
 
 	// Test other component exports
