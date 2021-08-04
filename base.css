@@ -161,26 +161,30 @@
 }
 
 .Footer .content {
-	@apply flex items-end;
+	@apply flex flex-col sm:items-end sm:flex-row  items-center;
 }
 
 .Footer .powered {
-	@apply flex py-2;
+	@apply flex pt-8;
 }
 
 .Footer .right {
-	@apply ml-auto flex flex-col items-end;
+	@apply sm:ml-auto py-6 sm:py-0 flex flex-col items-center sm:items-end;
 }
 
 .Footer .Social {
-	@apply mt-1;
+	@apply mt-4 sm:mt-1;
+}
+
+.Footer .Copyright {
+	@apply flex flex-col items-center sm:items-start;
 }
 
 /*
  * Styles for the latest component
  */
 .Latest {
-	@apply flex p-12;
+	@apply flex p-2 sm:p-12 flex-col sm:flex-row;
 }
 
 .Latest .heading {
@@ -197,7 +201,7 @@
  * Styles for the recent component
  */
 .Recent {
-	@apply flex p-12;
+	@apply flex p-2 sm:p-12 flex-col sm:flex-row;
 }
 
 .Recent .heading {
@@ -206,7 +210,7 @@
 }
 
 .Recent .container {
-	@apply grid grid-flow-row grid-cols-2 gap-8;
+	@apply grid grid-flow-row grid-cols-1 sm:grid-cols-2 gap-8;
 	flex-basis: 75%;
 }
 
