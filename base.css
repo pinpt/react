@@ -326,3 +326,15 @@ html.dark .ThemeToggle .mode::after {
 	background-color: initial;
 	opacity: 0.5;
 }
+
+.Author {
+	@apply flex items-center;
+}
+
+.Author .avatar {
+	@apply rounded-full w-8 h-8;
+}
+
+.Author .name {
+	@apply ml-2;
+}

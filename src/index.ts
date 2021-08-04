@@ -14,3 +14,5 @@ export { default as Page } from './components/Page';
 export { default as Header } from './components/Header';
 export { default as Prebuilt } from './components/Prebuilt';
 export { default as Tags } from './components/Tags';
+export { default as ThemeToggle } from './components/ThemeToggle';
+export { default as Author } from './components/Author';

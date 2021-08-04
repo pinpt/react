@@ -16,6 +16,8 @@ const {
 	Header,
 	Prebuilt,
 	Tags,
+	ThemeToggle,
+	Author,
 
 	emptyDoc,
 	getEnv,
@@ -98,6 +100,8 @@ test('Test component exports', () => {
 	expect(Latest).toBeTruthy();
 	expect(Recent).toBeTruthy();
 	expect(Header).toBeTruthy();
+	expect(ThemeToggle).toBeTruthy();
+	expect(Author).toBeTruthy();
 });
 
 test('Test util exports', () => {
