@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Meta } from '@storybook/react';
 import Clap from '..';
 const { default: readme } = require('../README.md');
@@ -17,10 +17,22 @@ export default {
 	},
 } as Meta;
 
-export const No_Claps: React.VFC<{}> = () => <Clap handleClap={() => console.log('click')} clapCount={0} />;
+export const No_Claps: React.VFC<{}> = () => {
+	const [count, setCount] = useState(0);
+	return <Clap clapCount={count} handleClap={() => setCount((c) => c + 1)} />;
+};
 
-export const Small_Count: React.VFC<{}> = () => <Clap handleClap={() => console.log('click')} clapCount={2} />;
+export const Small_Count: React.VFC<{}> = () => {
+	const [count, setCount] = useState(2);
+	return <Clap clapCount={count} handleClap={() => setCount((c) => c + 1)} />;
+};
 
-export const Medium_Count: React.VFC<{}> = () => <Clap handleClap={() => console.log('click')} clapCount={22} />;
+export const Medium_Count: React.VFC<{}> = () => {
+	const [count, setCount] = useState(22);
+	return <Clap clapCount={count} handleClap={() => setCount((c) => c + 1)} />;
+};
 
-export const Large_Count: React.VFC<{}> = () => <Clap handleClap={() => console.log('click')} clapCount={22222} />;
+export const Large_Count: React.VFC<{}> = () => {
+	const [count, setCount] = useState(2222);
+	return <Clap clapCount={count} handleClap={() => setCount((c) => c + 1)} />;
+};
