@@ -1,0 +1,4 @@
+#root,
+.docs-story {
+	@apply dark:bg-gray-900;
+}

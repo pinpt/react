@@ -23,7 +23,6 @@ test('Test complete', () => {
 			}
 			copyright={<Copyright text="2021 by Pinpoint Software, Inc." logo={<Logo src={IMAGE_URL} />} />}
 			subscribe={<Subscribe href="https://pinpoint.com" />}
-			className="Box-Shadow"
 		/>
 	);
 	const tree = component.toJSON();
@@ -35,7 +34,6 @@ test('Test no social', () => {
 		<Footer
 			copyright={<Copyright text="2021 by Pinpoint Software, Inc." logo={<Logo src={IMAGE_URL} />} />}
 			subscribe={<Subscribe href="https://pinpoint.com" />}
-			className="Box-Shadow"
 		/>
 	);
 	const tree = component.toJSON();
@@ -44,10 +42,7 @@ test('Test no social', () => {
 
 test('Test no subscribe', () => {
 	const component = renderer.create(
-		<Footer
-			copyright={<Copyright text="2021 by Pinpoint Software, Inc." logo={<Logo src={IMAGE_URL} />} />}
-			className="Box-Shadow"
-		/>
+		<Footer copyright={<Copyright text="2021 by Pinpoint Software, Inc." logo={<Logo src={IMAGE_URL} />} />} />
 	);
 	const tree = component.toJSON();
 	expect(tree).toMatchSnapshot();
@@ -66,7 +61,6 @@ test('Test social only', () => {
 					<Social.RSS href="https://api.pinpoint.com.so/rss/PirxVTE94u3YmGNOySRY" newTab />
 				</Social.Bar>
 			}
-			className="Box-Shadow"
 		/>
 	);
 	const tree = component.toJSON();

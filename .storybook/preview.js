@@ -1,5 +1,6 @@
 import '../base.css';
-import './demo_dark.css';
+import '../defaultTheme.css';
+import './storybookOnly.css';
 
 import { addDecorator } from '@storybook/react'; // <- or your view layer
 import { withTests } from '@storybook/addon-jest';

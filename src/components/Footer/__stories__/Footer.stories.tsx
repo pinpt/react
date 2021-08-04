@@ -38,7 +38,6 @@ export const Complete: React.VFC<{}> = () => (
 		}
 		copyright={<Copyright text="2021 by Pinpoint Software, Inc." logo={<Logo src={IMAGE_URL} />} />}
 		subscribe={<Subscribe href="https://pinpoint.com" />}
-		className="Box-Shadow"
 	/>
 );
 
@@ -46,15 +45,11 @@ export const No_Social: React.VFC<{}> = () => (
 	<Footer
 		copyright={<Copyright text="2021 by Pinpoint Software, Inc." logo={<Logo src={IMAGE_URL} />} />}
 		subscribe={<Subscribe href="https://pinpoint.com" />}
-		className="Box-Shadow"
 	/>
 );
 
 export const No_Subscribe: React.VFC<{}> = () => (
-	<Footer
-		copyright={<Copyright text="2021 by Pinpoint Software, Inc." logo={<Logo src={IMAGE_URL} />} />}
-		className="Box-Shadow"
-	/>
+	<Footer copyright={<Copyright text="2021 by Pinpoint Software, Inc." logo={<Logo src={IMAGE_URL} />} />} />
 );
 
 export const Social_Only: React.VFC<{}> = () => (
@@ -69,6 +64,5 @@ export const Social_Only: React.VFC<{}> = () => (
 				<Social.RSS href="https://api.pinpoint.com.so/rss/PirxVTE94u3YmGNOySRY" newTab />
 			</Social.Bar>
 		}
-		className="Box-Shadow"
 	/>
 );

@@ -2,7 +2,7 @@
 
 exports[`Test complete 1`] = `
 <div
-  className="Pinpoint Footer Box-Shadow"
+  className="Pinpoint Footer "
 >
   <div
     className="content"
@@ -340,7 +340,7 @@ exports[`Test no custom class 1`] = `
 
 exports[`Test no social 1`] = `
 <div
-  className="Pinpoint Footer Box-Shadow"
+  className="Pinpoint Footer "
 >
   <div
     className="content"
@@ -452,7 +452,7 @@ exports[`Test no social 1`] = `
 
 exports[`Test no subscribe 1`] = `
 <div
-  className="Pinpoint Footer Box-Shadow"
+  className="Pinpoint Footer "
 >
   <div
     className="content"
@@ -536,7 +536,7 @@ exports[`Test no subscribe 1`] = `
 
 exports[`Test social only 1`] = `
 <div
-  className="Pinpoint Footer Box-Shadow"
+  className="Pinpoint Footer "
 >
   <div
     className="content"
