@@ -4,7 +4,7 @@ import PrebuiltEntry from '../Entry';
 import { Entry } from '../../../lib';
 import entries from '../__data__/testEntries.json';
 import site from '../__data__/testSite.json';
-const { default: readme } = require('../Home/README.md');
+const { default: readme } = require('../Entry/README.md');
 
 export default {
 	component: PrebuiltEntry,
