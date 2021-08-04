@@ -16,3 +16,4 @@ export { default as Prebuilt } from './components/Prebuilt';
 export { default as Tags } from './components/Tags';
 export { default as ThemeToggle } from './components/ThemeToggle';
 export { default as Author } from './components/Author';
+export { default as Sidebar } from './components/Sidebar';

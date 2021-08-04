@@ -338,3 +338,7 @@ html.dark .ThemeToggle .mode::after {
 .Author .name {
 	@apply ml-2;
 }
+
+.Sidebar {
+	@apply flex flex-col gap-y-8;
+}

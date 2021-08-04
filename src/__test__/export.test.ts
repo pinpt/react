@@ -18,6 +18,7 @@ const {
 	Tags,
 	ThemeToggle,
 	Author,
+	Sidebar,
 
 	emptyDoc,
 	getEnv,
@@ -102,6 +103,7 @@ test('Test component exports', () => {
 	expect(Header).toBeTruthy();
 	expect(ThemeToggle).toBeTruthy();
 	expect(Author).toBeTruthy();
+	expect(Sidebar).toBeTruthy();
 });
 
 test('Test util exports', () => {
