@@ -38,7 +38,7 @@ const component = () => <Statistic.Bar claps={21} views={5} />;
 -  [x] Changelog Title
 -  [x] Changelog Date
 -  [x] Logo
--  [ ] Changelog Body
+-  [X] Changelog Body
 -  [x] Latest Section
 -  [x] Recent Section
 -  [x] Copyright
@@ -46,14 +46,19 @@ const component = () => <Statistic.Bar claps={21} views={5} />;
 -  [x] Social Links
 -  [x] Footer
 -  [x] Page
--  [ ] Search Field
--  [ ] Tag
--  [ ] Tag Group
+-  [X] Search Field
+-  [X] Tag
+-  [X] Tag Group
 -  [x] Header
 -  [ ] Search Filters
--  [ ] Search Results
+-  [X] Search Results
 
 ## TODO
 
 -  [ ] Support for Media Queries (i.e. grid layout on 'Recent' section)
--  [ ] More fully built out defaul theme
+-  [ ] Finish default theme
+-  [ ] Support for cover media other than images 
+-  [ ] Empty cover media state
+-  [ ] Wire up claps
+-  [ ] Pagination
+-  [ ] Tag Filtering
