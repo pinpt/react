@@ -170,7 +170,14 @@ const Home = (props: IPrebuiltHomeProps) => {
 												<Statistic.Bar className="Prebuilt" claps={0} views={0} />
 											)
 										}
-										button={renderCardButton?.(entry) ?? <Card.ReadButton className="Prebuilt" />}
+										button={
+											renderCardButton?.(entry) ?? (
+												<Card.ReadButton
+													onClick={() => handleSelectEntry?.(entry.id)}
+													className="Prebuilt"
+												/>
+											)
+										}
 										tags={renderTags?.(entry) ?? <Tags.Bar className="Prebuilt" tags={entry.tags ?? []} />}
 									/>
 								)

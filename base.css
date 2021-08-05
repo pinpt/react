@@ -264,15 +264,15 @@
 }
 
 .Page.Entry .body {
-	@apply flex flex-row;
+	@apply flex flex-col sm:flex-row;
 }
 
 .Page.Entry .sidebar {
-	@apply mr-16 ml-8 mt-4;
+	@apply mr-16 ml-8 mt-4 min-w-1/4 mb-4 sm:mb-0;
 }
 
 .Page.Entry .renderer {
-	@apply mb-12 mr-6;
+	@apply mb-12;
 }
 
 /*
@@ -346,7 +346,7 @@ html.dark .ThemeToggle .mode::after {
  * Styles for the author component
  */
 .Author {
-	@apply flex items-center;
+	@apply flex items-center mr-auto;
 }
 
 .Author .avatar {
@@ -361,7 +361,7 @@ html.dark .ThemeToggle .mode::after {
  * Styles for the sidebar component
  */
 .Sidebar {
-	@apply flex flex-col gap-y-8;
+	@apply flex flex-row sm:flex-col gap-y-8;
 }
 
 /*

@@ -107,6 +107,13 @@ module.exports = {
 			serif: ['Podkova', 'ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
 		},
 		maxHeight: (theme) => ({ ...defaultTheme.maxHeight(theme), 100: '26rem' }),
+		minWidth: {
+			0: '0',
+			'1/4': '25%',
+			'1/2': '50%',
+			'3/4': '75%',
+			full: '100%',
+		},
 	},
 	variants: {
 		extend: {
