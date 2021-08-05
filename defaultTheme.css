@@ -89,3 +89,7 @@ body {
 .Loader .inner {
 	@apply border-gray-500 dark:border-gray-300;
 }
+
+.Page .loadingWrapper {
+	@apply bg-white dark:bg-gray-800;
+}
