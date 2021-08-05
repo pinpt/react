@@ -93,3 +93,20 @@ body {
 .Page .loadingWrapper {
 	@apply bg-white dark:bg-gray-800 h-128;
 }
+
+.Page .body {
+	@apply bg-white dark:bg-gray-800;
+}
+
+/**
+ * article
+ */
+.covermedia .image {
+	@apply rounded-lg shadow-lg overflow-hidden border mb-6;
+	border-color: var(--article-border-color);
+}
+
+.image_block > img {
+	@apply rounded-lg shadow-lg border;
+	border-color: var(--article-border-color);
+}

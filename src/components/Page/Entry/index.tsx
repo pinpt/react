@@ -22,11 +22,15 @@ const Entry = (props: IPageEntryProps) => {
 				<div className="sidebar">{sidebar}</div>
 				<div className="content">
 					{coverImage && (
-						<div className="cover">
-							<img src={coverImage} />
+						<div className="cover covermedia">
+							<img className="image" src={coverImage} />
 						</div>
 					)}
-					<div className="renderer">{renderer}</div>
+					<div className="renderer">
+						<article className="changelog notebook-editor read-only">
+							<section className="ProseMirror">{renderer}</section>
+						</article>
+					</div>
 				</div>
 			</div>
 			{footer}

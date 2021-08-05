@@ -271,6 +271,10 @@
 	@apply mr-16 ml-8 mt-4;
 }
 
+.Page.Entry .renderer {
+	@apply mb-12 mr-6;
+}
+
 /*
  * Styles for the link component
  */

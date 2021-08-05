@@ -1,0 +1,1405 @@
+/**  notebook **/
+
+/**
+ * Notebook Editor Container
+ */
+.notebook-editor-container {
+	@apply flex flex-col items-start max-w-4xl w-full min-h-screen mx-auto;
+	text-rendering: optimizeLegibility;
+}
+
+/**
+ * Notebook Editor
+ */
+.notebook-editor,
+.notebook-editor > .ProseMirror {
+	@apply w-full min-h-screen overflow-x-visible;
+}
+.notebook-editor > .ProseMirror {
+	@apply relative w-full px-6 sm:px-24 overflow-visible outline-none break-words whitespace-pre-wrap leading-8 text-gray-700 dark:text-gray-300; /* room for yjs cursor */
+}
+
+.ProseMirror > strong,
+.ProseMirror > b {
+	@apply font-semibold;
+}
+
+.ProseMirror a[href],
+.ProseMirror .link {
+	@apply cursor-pointer;
+}
+/**
+ * Pass through mark color if set
+ */
+.ProseMirror mark a[href],
+.dark .ProseMirror mark a[href] {
+	color: unset;
+}
+/**
+ * Placeholder link should look like text selection while link editor is focussed
+ **/
+.ProseMirror a[href=''] {
+	@apply cursor-text text-gray-700 dark:text-gray-300 bg-blue-200;
+}
+.dark .ProseMirror a[href=''] {
+	background-color: #37455b;
+}
+.ProseMirror a:hover:not([href='']) {
+	@apply underline;
+}
+
+/**
+ * Basic styles
+ **/
+.ProseMirror > p {
+	@apply relative w-full; /* ensure we can click on anywhere within the block to edit */
+}
+.ProseMirror > * + *,
+.ProseMirror > * + .toggle,
+.ProseMirror .toggle > .content > * + * {
+	@apply mt-10;
+}
+.ProseMirror blockquote > * + *,
+.ProseMirror .notice > .content > * + * {
+	@apply mt-4;
+}
+
+/**
+ * Headings
+ */
+.ProseMirror h1,
+.ProseMirror h2,
+.ProseMirror h3,
+.ProseMirror .heading {
+	@apply text-gray-800 dark:text-gray-200 font-semibold;
+}
+.ProseMirror .heading .anchor {
+	@apply absolute right-full mt-1.5 pr-2 invisible opacity-50 text-base;
+}
+.ProseMirror .heading:hover .anchor {
+	@apply visible;
+}
+
+.ProseMirror h1 {
+	@apply mb-6 text-3xl;
+}
+.ProseMirror h2 {
+	@apply mb-5 text-2xl;
+}
+.ProseMirror h3 {
+	@apply mb-4 text-xl leading-8;
+}
+.ProseMirror h4 {
+	@apply mb-4 text-lg leading-8;
+}
+
+.ProseMirror *:not(.metadata-container) + h1,
+.ProseMirror * + .h1 {
+	@apply mt-10;
+}
+.ProseMirror *:not(.metadata-container) + h2,
+.ProseMirror * + .h2 {
+	@apply mt-9;
+}
+.ProseMirror *:not(.metadata-container) + h3,
+.ProseMirror * + .h3 {
+	@apply mt-8;
+}
+.ProseMirror *:not(.metadata-container) + h4,
+.ProseMirror * + .h4 {
+	@apply mt-7;
+}
+
+/**
+ * Highlight
+ **/
+.ProseMirror mark,
+.ProseMirror mark a[href],
+.Markup .yellow {
+	@apply rounded-sm;
+	color: unset;
+	background-color: unset;
+	text-decoration: unset;
+}
+.ProseMirror a.mark-color {
+	text-decoration: unset;
+	text-decoration-color: unset;
+}
+.dark .ProseMirror mark,
+.dark .ProseMirror mark a[href],
+.dark .Markup {
+	color: unset;
+	background-color: unset;
+	text-decoration: unset;
+}
+/* background */
+.ProseMirror mark.bg-gray,
+.Markup .bg-gray {
+	@apply bg-gray-200 dark:bg-gray-700;
+}
+.ProseMirror mark.bg-red,
+.Markup .bg-red {
+	@apply bg-red-200 dark:bg-red-800;
+}
+.ProseMirror mark.bg-green,
+.Markup .bg-green {
+	@apply bg-green-200 dark:bg-green-800;
+}
+.ProseMirror mark.bg-blue,
+.Markup .bg-blue {
+	@apply bg-blue-200 dark:bg-blue-800;
+}
+.ProseMirror mark.bg-purple,
+.Markup .bg-purple {
+	@apply bg-purple-200 dark:bg-purple-900;
+}
+.ProseMirror mark.bg-pink,
+.Markup .bg-pink {
+	@apply bg-pink-200 dark:bg-pink-900;
+}
+.ProseMirror mark.bg-orange,
+.Markup .bg-orange {
+	@apply bg-orange-200 dark:bg-orange-900;
+}
+.ProseMirror mark.bg-yellow,
+.Markup .bg-yellow {
+	@apply bg-yellow-200 dark:bg-yellow-900;
+}
+/* color */
+.ProseMirror mark.gray,
+.Markup .gray {
+	@apply text-gray-400 dark:text-gray-500;
+}
+.ProseMirror mark.red,
+.Markup .red {
+	@apply text-red-500 dark:text-red-500;
+}
+.ProseMirror mark.green,
+.Markup .green {
+	@apply text-green-500 dark:text-green-500;
+}
+.ProseMirror mark.blue,
+.Markup .blue {
+	@apply text-blue-500 dark:text-blue-500;
+}
+.ProseMirror mark.purple,
+.Markup .purple {
+	@apply text-purple-500 dark:text-purple-500;
+}
+.ProseMirror mark.pink,
+.Markup .pink {
+	@apply text-pink-500 dark:text-pink-500;
+}
+.ProseMirror mark.orange,
+.Markup .orange {
+	@apply text-orange-500 dark:text-orange-500;
+}
+.ProseMirror mark.yellow,
+.Markup .yellow {
+	@apply text-yellow-500 dark:text-yellow-500;
+}
+
+/**
+ * lists
+ **/
+.ProseMirror ul:not(.checkbox_list),
+.ProseMirror ol {
+	@apply ml-0 pl-0;
+}
+.ProseMirror ul:not(.checkbox_list) {
+	@apply list-none;
+}
+.ProseMirror ol {
+	@apply list-none;
+	counter-reset: ol-counter;
+}
+.ProseMirror ul:not(.checkbox_list) > li,
+.ProseMirror ul:not(.checkbox_list) > .node.list_item > li,
+.ProseMirror ol > li,
+.ProseMirror ol > .node.list_item > li {
+	@apply m-0 pl-6;
+	counter-increment: ol-counter;
+}
+.ProseMirror ul:not(.checkbox_list) > li::before,
+.ProseMirror ul:not(.checkbox_list) > .node.list_item > li::before {
+	@apply text-gray-400 dark:text-gray-600 absolute top-0 left-1;
+	content: '\2022';
+}
+.ProseMirror ol > li::before,
+.ProseMirror ol > .node.list_item > li::before {
+	@apply text-gray-400 dark:text-gray-600 absolute top-0 -left-12 text-right w-16;
+	content: counter(ol-counter) '.';
+}
+.ProseMirror ul:not(.checkbox_list) li.ProseMirror-selectednode::before,
+.ProseMirror ul:not(.checkbox_list) .ProseMirror-selectednode li::before,
+.ProseMirror ol li.ProseMirror-selectednode::before,
+.ProseMirror ol .ProseMirror-selectednode li::before {
+	@apply text-gray-500 dark:text-gray-500;
+}
+.ProseMirror li {
+	@apply relative;
+}
+.ProseMirror li > div {
+	@apply w-full;
+	min-height: 2rem;
+}
+
+/**
+ * Code / Code Block
+**/
+.ProseMirror code {
+	@apply p-1 rounded-sm bg-trueGray-100 dark:bg-trueGray-800 dark:text-trueGray-300 border border-trueGray-200 dark:border-trueGray-700 font-mono text-sm leading-8;
+}
+.Markup .code_inline {
+	@apply rounded-sm bg-trueGray-100 dark:bg-trueGray-800 dark:text-trueGray-300 border border-trueGray-200 dark:border-trueGray-700 font-mono text-sm leading-5;
+}
+.ProseMirror .node.code_block > .metadata-container,
+.ProseMirror .node.notice > .metadata-container {
+	top: -0.25rem;
+}
+.ProseMirror .code_block:not(.node),
+.ProseMirror .notice:not(.node) {
+	@apply relative shadow-lg;
+}
+.ProseMirror *:not(.metadata-container) + .code_block,
+.ProseMirror * + .node.code_block,
+.ProseMirror *:not(.metadata-container) + .notice,
+.ProseMirror * + .node.notice {
+	@apply my-4;
+}
+.ProseMirror .code_block > .options,
+.ProseMirror .notice:not(.node) > .options {
+	@apply absolute opacity-0 transition-opacity delay-200 duration-100 rounded overflow-hidden top-1 right-1 z-10 flex items-center select-none;
+}
+.ProseMirror .code_block:hover > .options,
+.ProseMirror .notice:not(.node):hover > .options {
+	@apply opacity-100;
+}
+.ProseMirror .code_block > .options select,
+.ProseMirror .code_block > .options button,
+.ProseMirror .notice:not(.node) > .options select,
+.ProseMirror .notice:not(.node) > .options button {
+	@apply last:mr-0 px-2 h-6 bg-gray-800 hover:bg-gray-900 text-gray-300 hover:text-white text-xs focus:ring-0 cursor-pointer;
+	margin-right: 1px;
+}
+.ProseMirror .code_block > .options select,
+.ProseMirror .notice:not(.node) > .options select {
+	@apply py-0 pr-8 appearance-none border-0 bg-no-repeat;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background-image: linear-gradient(45deg, transparent 50%, #d4d4d4 50%),
+		linear-gradient(135deg, #d4d4d4 50%, transparent 50%);
+	background-position: calc(100% - 15px) calc(50%), calc(100% - 10px) calc(50%);
+	background-size: 5px 5px, 5px 5px;
+}
+.ProseMirror .code_block > .options select:hover,
+.ProseMirror .notice:not(.node) > .options select:hover {
+	background-image: linear-gradient(45deg, transparent 50%, white 50%),
+		linear-gradient(135deg, white 50%, transparent 50%);
+}
+.ProseMirror .code_block > .options button svg,
+.ProseMirror .notice:not(.node) > .options button svg {
+	@apply mr-2;
+}
+.ProseMirror pre {
+	@apply block relative rounded overflow-x-auto px-6 py-4 leading-5 font-mono whitespace-pre overflow-scroll bg-black text-trueGray-300;
+}
+.ProseMirror pre code {
+	@apply block p-0 leading-5 bg-black dark:bg-black border-0;
+}
+.notebook-editor:not(.read-only) .ProseMirror .notice:not(.node).ProseMirror-selectednode,
+.dark .notebook-editor:not(.read-only) .ProseMirror .notice:not(.node).ProseMirror-selectednode,
+.notebook-editor:not(.read-only) .ProseMirror .code_block.ProseMirror-selectednode,
+.dark .notebook-editor:not(.read-only) .ProseMirror .code_block.ProseMirror-selectednode {
+	@apply shadow-none;
+}
+.notebook-editor:not(.read-only) .ProseMirror .notice:not(.node).error.ProseMirror-selectednode {
+	@apply bg-red-500;
+	box-shadow: 0 0 0 2px #71717a;
+}
+.dark .notebook-editor:not(.read-only) .ProseMirror .notice:not(.node).error.ProseMirror-selectednode {
+	@apply bg-red-700;
+	box-shadow: 0 0 0 2px #a1a1aa;
+}
+.notebook-editor:not(.read-only) .ProseMirror .notice:not(.node).warning.ProseMirror-selectednode {
+	@apply bg-yellow-400;
+	box-shadow: 0 0 0 2px #71717a;
+}
+.dark .notebook-editor:not(.read-only) .ProseMirror .notice:not(.node).warning.ProseMirror-selectednode {
+	@apply bg-yellow-500;
+	box-shadow: 0 0 0 2px #a1a1aa;
+}
+.notebook-editor:not(.read-only) .ProseMirror .notice:not(.node).info.ProseMirror-selectednode {
+	@apply bg-green-500;
+	box-shadow: 0 0 0 2px #71717a;
+}
+.dark .notebook-editor:not(.read-only) .ProseMirror .notice:not(.node).info.ProseMirror-selectednode {
+	@apply bg-green-700;
+	box-shadow: 0 0 0 2px #a1a1aa;
+}
+.ProseMirror .code_block.ProseMirror-selectednode pre,
+.ProseMirror .code_block.ProseMirror-selectednode pre code {
+	@apply bg-black;
+}
+.ProseMirror .notice:not(.node) {
+	@apply flex items-center rounded px-5 py-4;
+}
+.ProseMirror .notice:not(.node).error {
+	@apply bg-red-600 dark:bg-red-700 text-white;
+}
+.ProseMirror .notice:not(.node).warning {
+	@apply bg-yellow-400 dark:bg-yellow-500 dark:text-gray-800;
+}
+.ProseMirror .notice:not(.node).warning a {
+	@apply text-gray-800 underline;
+}
+.ProseMirror .notice:not(.node).info {
+	@apply bg-green-600 dark:bg-green-700 text-white;
+}
+.ProseMirror .notice:not(.node).info h1,
+.ProseMirror .notice:not(.node).error h1,
+.ProseMirror .notice:not(.node).info h2,
+.ProseMirror .notice:not(.node).error h2,
+.ProseMirror .notice:not(.node).info h3,
+.ProseMirror .notice:not(.node).error h3,
+.ProseMirror .notice:not(.node).info h4,
+.ProseMirror .notice:not(.node).error h4 {
+	@apply text-white;
+}
+.ProseMirror .notice:not(.node).info a,
+.ProseMirror .notice:not(.node).error a {
+	@apply text-white underline;
+}
+.ProseMirror .notice:not(.node).info code,
+.ProseMirror .notice:not(.node).error code {
+	@apply bg-black text-trueGray-300 border-trueGray-700;
+}
+.ProseMirror .notice:not(.node).warning hr {
+	@apply border-gray-400;
+}
+.ProseMirror .notice:not(.node) > .icon {
+	@apply flex-shrink-0 w-8 h-8 self-start;
+}
+.ProseMirror .notice:not(.node) > .content {
+	@apply flex-grow min-w-0;
+	padding-top: 2px;
+}
+.ProseMirror .notice:not(.node) > .content .code_block {
+	@apply shadow-none;
+}
+.ProseMirror .notice:not(.node) select {
+	@apply top-2 right-4;
+}
+/* element tokens */
+.ProseMirror .token.comment,
+.ProseMirror .token.prolog,
+.ProseMirror .token.doctype,
+.ProseMirror .token.cdata {
+	@apply text-gray-400 italic;
+}
+.ProseMirror text-gray-500.token.punctuation {
+	@apply text-purple-100;
+}
+.ProseMirror .token.namespace {
+	@apply opacity-70;
+}
+.ProseMirror .token.operator,
+.ProseMirror .token.boolean,
+.ProseMirror.token.number {
+	@apply text-red-500;
+}
+.ProseMirror .token.property {
+	@apply text-yellow-200;
+}
+.ProseMirror .token.tag {
+	@apply text-blue-500;
+}
+.ProseMirror .token.string {
+	@apply text-blue-100;
+}
+.ProseMirror .token.selector {
+	@apply text-blueGray-500;
+}
+.ProseMirror .token.attr-name {
+	@apply text-orange-100;
+}
+.ProseMirror .token.entity,
+.ProseMirror .token.url,
+.ProseMirror .language-css .token.string,
+.ProseMirror .style .token.string {
+	@apply text-blue-600;
+}
+.ProseMirror .token.attr-value,
+.ProseMirror .token.keyword,
+.ProseMirror .token.control,
+.ProseMirror .token.directive,
+.ProseMirror .token.unit {
+	@apply text-red-400;
+}
+.ProseMirror .token.function {
+	@apply text-purple-400;
+}
+.ProseMirror .token.builtin {
+	@apply text-yellow-400;
+}
+.ProseMirror .token.statement,
+.ProseMirror .token.regex,
+.ProseMirror .token.atrule {
+	@apply text-blue-600;
+}
+.ProseMirror .token.placeholder,
+.ProseMirror .token.variable {
+	@apply text-blue-500;
+}
+.ProseMirror .token.deleted {
+	@apply line-through;
+}
+.ProseMirror .token.inserted {
+	@apply border-b border-dotted border-gray-300;
+}
+.ProseMirror .token.important,
+.ProseMirror .token.bold {
+	@apply font-semibold;
+}
+.ProseMirror .token.important {
+	@apply text-red-500;
+}
+.ProseMirror .token.entity {
+	cursor: help;
+}
+
+/**
+ * Blockquote
+ **/
+.ProseMirror blockquote {
+	@apply p-4 bg-sky-100 dark:bg-sky-900 text-gray-600 dark:text-gray-300 border-l-4 border-sky-300 dark:border-sky-600 rounded-r;
+}
+.ProseMirror *:not(.metadata-container) + blockquote,
+.ProseMirror * + .blockquote {
+	@apply my-4;
+}
+.ProseMirror blockquote .placeholder:before {
+	@apply text-sky-300 dark:text-sky-700;
+}
+
+/**
+ * Horizontal Rule
+ **/
+.ProseMirror .hr > div {
+	@apply pt-4;
+}
+.ProseMirror .hr > div > hr {
+	@apply h-0 pb-4 border-t border-gray-300 dark:border-gray-700;
+}
+
+/**
+ * Toggle
+ **/
+.ProseMirror .toggle {
+	@apply pl-4 border-l-4 border-gray-200 dark:border-gray-800;
+	min-height: 1rem;
+}
+/* .ProseMirror .toggle:not(.collapsed).ProseMirror-selectednode {
+	@apply bg-white dark:bg-gray-900 shadow-none;
+} */
+.notebook-editor:not(.read-only) .ProseMirror .toggle.ProseMirror-selectednode,
+.notebook-editor:not(.read-only) .ProseMirror-selectednode .toggle {
+	@apply border-gray-300 dark:border-gray-700;
+	box-shadow: -0.5rem 0 0 0 #f4f4f5;
+}
+.dark .notebook-editor:not(.read-only) .toggle.ProseMirror-selectednode,
+.dark .notebook-editor:not(.read-only) .ProseMirror-selectednode .toggle {
+	box-shadow: -0.5rem 0 0 0 black;
+}
+
+.ProseMirror .toggle > .options {
+	@apply relative flex items-center text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 leading-3 cursor-pointer;
+}
+.ProseMirror .toggle > .options .icon {
+	@apply absolute w-7 h-8 top-0 -left-8 ml-1 py-0 bg-white dark:bg-gray-900 rounded;
+}
+.ProseMirror .toggle.ProseMirror-selectednode > .options .icon,
+.ProseMirror-selectednode .toggle > .options .icon {
+	@apply bg-gray-100 dark:bg-black;
+}
+.ProseMirror .toggle > .options > .title {
+	@apply hidden max-w-full pr-4 text-gray-600 dark:text-gray-400 leading-8 overflow-x-hidden overflow-ellipsis whitespace-nowrap;
+}
+.ProseMirror .toggle.collapsed > .options > .title {
+	@apply block select-none;
+}
+.ProseMirror .toggle.collapsed > .options > .metadata-hint {
+	@apply absolute left-full text-gray-400 dark:text-gray-600;
+}
+.ProseMirror .toggle:not(.collapsed) > .options > .metadata-hint {
+	@apply hidden;
+}
+.ProseMirror .toggle.collapsed > .content {
+	@apply hidden;
+}
+
+/**
+ * Table
+ **/
+.ProseMirror .scrollable-wrapper {
+	@apply relative;
+	scrollbar-width: thin;
+	scrollbar-color: transparent transparent;
+}
+
+/* .ProseMirror .scrollable-wrapper:hover {
+} */
+.ProseMirror .scrollable-wrapper ::-webkit-scrollbar {
+	@apply w-3 h-3 cursor-pointer;
+	background-color: transparent;
+}
+.ProseMirror .scrollable-wrapper:hover ::-webkit-scrollbar {
+	@apply bg-gray-100 dark:bg-gray-800;
+}
+.ProseMirror .scrollable-wrapper ::-webkit-scrollbar-thumb {
+	background-color: transparent;
+	@apply rounded-lg cursor-pointer;
+}
+.ProseMirror .scrollable-wrapper:hover ::-webkit-scrollbar-thumb {
+	@apply bg-gray-400 dark:bg-gray-600 border-gray-100 dark:border-gray-800;
+}
+
+.ProseMirror .scrollable {
+	@apply overflow-x-auto overflow-y-hidden pl-4 -ml-4;
+	/* border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	transition: border 250ms ease-in-out 0s; */
+}
+
+/* .ProseMirror .scrollable-shadow {
+	@apply absolute top-0 bottom-0 -left-4 w-8 border-0 pointer-events-none;
+	transition: box-shadow 250ms ease-in-out;
+	border: 0px solid transparent;
+	border-left-width: 1em;
+}
+.ProseMirror .scrollable-shadow.left {
+	box-shadow: 16px 0 16px -16px inset rgba(0, 0, 0, 0.25);
+}
+.ProseMirror .scrollable-shadow.right {
+	@apply left-auto right-0;
+	box-shadow: -16px 0 16px -16px inset rgba(0, 0, 0, 0.25);
+} */
+
+.ProseMirror .node.table-node > .metadata-container {
+	top: 0.75rem;
+}
+.ProseMirror table {
+	@apply my-4 overflow-visible border-collapse rounded;
+}
+.ProseMirror table.table-stretch {
+	@apply w-full;
+}
+.ProseMirror table.table-manual {
+	@apply table-fixed;
+}
+.ProseMirror table th {
+	@apply bg-gray-100 dark:bg-gray-800 font-semibold;
+}
+
+.ProseMirror table td,
+.ProseMirror table th {
+	@apply relative align-top border border-gray-300 dark:border-gray-600 text-left;
+	min-width: 5rem;
+}
+.ProseMirror table.table-fit th,
+.ProseMirror table.table-fit td {
+	@apply whitespace-nowrap;
+}
+
+.ProseMirror table th .resize {
+	@apply absolute z-40 top-0 -right-1 h-full w-2;
+	cursor: ew-resize;
+}
+.ProseMirror table tr:not(:first-of-type) th .resize {
+	@apply hidden;
+}
+.resize-handle {
+	@apply absolute w-1 h-10 bg-blue-500 dark:bg-indigo-500;
+	cursor: ew-resize;
+}
+/* keep legacy styling */
+.ProseMirror table.table-stretch th,
+.ProseMirror table.table-stretch td {
+	@apply max-w-md;
+}
+.ProseMirror table th .content,
+.ProseMirror table td {
+	@apply px-4 py-2;
+}
+
+.ProseMirror table th.selectedCell {
+	@apply bg-blue-200 dark:bg-indigo-800;
+}
+.ProseMirror table td.selectedCell {
+	@apply bg-blue-100 dark:bg-indigo-900;
+}
+
+.ProseMirror .grip-column,
+.ProseMirror .grip-row,
+.ProseMirror .grip-table {
+	@apply block absolute bg-gray-300 dark:bg-gray-700 cursor-pointer;
+}
+.ProseMirror .grip-column:hover,
+.ProseMirror .grip-row:hover,
+.ProseMirror .grip-table:hover {
+	@apply bg-gray-400 dark:bg-gray-500;
+}
+.ProseMirror .grip-column.selected,
+.ProseMirror .grip-row.selected,
+.ProseMirror .grip-table.selected {
+	@apply bg-blue-500 dark:bg-indigo-800;
+}
+
+.ProseMirror .grip-column {
+	@apply left-0 w-full;
+	top: -9px;
+	height: 6px;
+}
+.ProseMirror .grip-column.native-mobile {
+	height: 10px;
+	top: -13px;
+}
+.ProseMirror .grip-column.first {
+	@apply rounded-l-lg;
+}
+.ProseMirror .grip-column.last {
+	@apply rounded-r-lg;
+}
+
+.ProseMirror .grip-row {
+	@apply top-0 h-full;
+	left: -9px;
+	width: 6px;
+}
+.ProseMirror .grip-row.native-mobile {
+	width: 10px;
+	left: -13px;
+}
+.ProseMirror .grip-row.first {
+	@apply rounded-t-sm;
+}
+.ProseMirror .grip-row.last {
+	@apply rounded-b-sm;
+}
+
+.ProseMirror .grip-table {
+	@apply rounded-sm;
+	top: -9px;
+	left: -9px;
+	width: 6px;
+	height: 6px;
+}
+
+.ProseMirror .grip-table.native-mobile {
+	width: 10px;
+	left: -13px;
+	height: 10px;
+	top: -13px;
+}
+.ProseMirror .grip-table:hover {
+	@apply bg-gray-500 dark:bg-gray-100;
+}
+
+/**
+ * Mention
+ **/
+.mention {
+	@apply text-blue-700 dark:text-blue-400 whitespace-nowrap;
+}
+.mention.me {
+	@apply text-orange-600 dark:text-orange-400;
+}
+
+/**
+ * Image
+ **/
+.ProseMirror .image .container,
+.ProseMirror .image .content {
+	@apply relative;
+}
+/* .ProseMirror .image .container {
+	@apply w-full;
+} */
+.ProseMirror .image .options {
+	@apply absolute z-10 top-1 flex flex-grow justify-end items-center rounded overflow-hidden;
+}
+.ProseMirror .image .narrow .options {
+	@apply -top-7 left-0 right-auto;
+}
+.ProseMirror .image .content.narrow .options.right {
+	@apply left-auto right-0;
+}
+.ProseMirror .image .content:not(.narrow) .options.left {
+	@apply left-1;
+}
+.ProseMirror .image .content:not(.narrow) .options:not(.left) {
+	@apply right-1;
+}
+.ProseMirror .image .options .option {
+	@apply opacity-0 transition-opacity delay-200 duration-100 h-6 px-2 flex items-center bg-gray-800 hover:bg-gray-900 text-gray-300 hover:text-white cursor-pointer text-xs select-none;
+	margin-left: 1px;
+}
+.ProseMirror .image:hover .options:not(.hide) .option,
+.ProseMirror .image:hover .resize,
+.ProseMirror .image .resize.resizing {
+	@apply opacity-100;
+}
+.ProseMirror .image .options .option:first-of-type {
+	@apply ml-0;
+}
+.ProseMirror .image .options .option.selected {
+	@apply bg-gray-600 hover:bg-gray-700 text-white;
+}
+.ProseMirror .image .options .option span {
+	@apply ml-2 flex-shrink-0 flex-grow whitespace-nowrap;
+}
+.ProseMirror .image .options .option span.mobile {
+	@apply block sm:hidden;
+}
+.ProseMirror .image .options .option span.sm {
+	@apply hidden sm:block;
+}
+.ProseMirror .image .resize {
+	@apply absolute h-1/4 w-2 opacity-0 transition-opacity delay-200 duration-100 border border-gray-400 bg-gray-800 rounded-full;
+	top: 37.5%;
+}
+.ProseMirror .image .short .resize {
+	@apply h-5;
+	top: calc(50% - 10px);
+}
+.ProseMirror .image .resize.left {
+	@apply left-2;
+}
+.ProseMirror .image .resize.right {
+	@apply right-2;
+}
+.ProseMirror .image .caption {
+	@apply px-1 text-gray-400 dark:text-gray-600 italic;
+}
+.ProseMirror .image .blurhash {
+	@apply absolute top-0 left-0;
+}
+.ProseMirror .image .error {
+	@apply absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-white;
+	text-shadow: 0 0 1px black;
+}
+.ProseMirror .image .error svg {
+	@apply text-4xl mb-2;
+}
+.ProseMirror .image div[data-rmiz-wrap] {
+	@apply flex;
+}
+/* .ProseMirror .image.ProseMirror-selectednode {
+	background-color: transparent !important; /* JGH: seems like it won't let me set it in apply
+	@apply ring-4 ring-blue-500 dark:ring-indigo-800 !important;
+} */
+.ProseMirror .image.ProseMirror-selectednode .content {
+	@apply ring-4 ring-blue-500 dark:ring-indigo-800 !important;
+}
+
+.edit-text-container {
+	@apply absolute z-100 top-0 left-0 w-full h-full;
+	background-color: transparent;
+}
+.edit-text-container .background {
+	@apply absolute top-0 left-0 w-full h-full bg-gray-100 dark:bg-gray-900 opacity-20;
+}
+.edit-text-wrapper {
+	@apply absolute flex flex-col justify-end items-center;
+}
+.edit-text {
+	@apply w-11/12 sm:w-128 mb-4 p-2 rounded bg-gray-100 dark:bg-gray-800 shadow-lg;
+}
+.edit-text input {
+	@apply w-full p-2 rounded border dark:border-gray-700 dark:bg-gray-900 dark:text-gray-200;
+}
+.edit-text .buttons {
+	@apply mt-2 flex;
+}
+.edit-text button {
+	@apply rounded py-1 px-2;
+}
+.edit-text button.clear {
+	@apply bg-red-500 dark:bg-red-700 text-white;
+}
+.edit-text button.cancel {
+	@apply ml-auto bg-gray-200 dark:bg-gray-700;
+}
+.edit-text button.save {
+	@apply ml-2 bg-green-500 text-white;
+}
+
+/**
+ * File
+ **/
+.file .container {
+	@apply relative flex p-3 rounded border bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-700;
+}
+.file .container > svg {
+	@apply mt-px mr-3 text-4xl text-gray-300 dark:text-gray-600;
+}
+.file .details {
+	@apply leading-5 flex-grow;
+}
+.file .details .filename,
+.file .details a.filename {
+	@apply font-semibold text-gray-700 dark:text-gray-300;
+}
+.file .details .description {
+	@apply mt-1 text-sm text-gray-700 dark:text-gray-300;
+}
+.file .details .size {
+	@apply mt-1 text-xs text-gray-400 dark:text-gray-500;
+}
+.file .options {
+	@apply absolute z-10 top-1 right-1 flex flex-grow justify-end items-center rounded overflow-hidden;
+}
+.file .options .option {
+	@apply opacity-0 transition-opacity delay-200 duration-100 h-6 px-2 flex items-center bg-gray-800 hover:bg-gray-900 text-gray-300 hover:text-white cursor-pointer text-xs hover:no-underline select-none;
+	margin-left: 1px;
+}
+.file .options .option span {
+	color: inherit;
+}
+.file:hover .options .option {
+	@apply opacity-100;
+}
+.file .options .option:first-of-type {
+	@apply ml-0;
+}
+.file .options .option span {
+	@apply ml-2;
+}
+.file .options .option span.mobile {
+	@apply block sm:hidden;
+}
+.file .options .option span.sm {
+	@apply hidden sm:block;
+}
+.file.placeholder .details {
+	@apply opacity-50;
+}
+.file.placeholder .loader {
+	@apply flex-shrink-0;
+}
+.notebook-editor:not(.read-only) .ProseMirror .file_node.ProseMirror-selectednode,
+.dark .notebook-editor:not(.read-only) .ProseMirror .file_node.ProseMirror-selectednode {
+	@apply shadow-none;
+}
+
+/**
+ * Embed
+ **/
+.notebook-editor:not(.read-only) > .ProseMirror .iframe.ProseMirror-selectednode {
+	@apply rounded bg-gray-100 dark:bg-black ring-gray-100 dark:ring-black ring-4;
+}
+.ProseMirror .iframe.selected .link {
+	@apply text-gray-800 dark:text-gray-200;
+}
+.ProseMirror .iframe .options {
+	@apply relative;
+}
+.ProseMirror .iframe .options .style-options {
+	@apply absolute z-10 top-1 right-1 flex flex-grow justify-end items-center rounded overflow-hidden;
+}
+.ProseMirror .iframe:hover .options .style-option {
+	@apply opacity-100;
+}
+
+.ProseMirror .iframe .options .style-option {
+	@apply opacity-0 transition-opacity delay-200 duration-100 h-6 px-2 flex items-center bg-gray-800 hover:bg-gray-900 text-gray-300 hover:text-white cursor-pointer text-xs select-none;
+	margin-left: 1px;
+}
+.dark .ProseMirror .iframe .options .style-option {
+	@apply text-gray-300 hover:text-white;
+}
+.ProseMirror .iframe .options .style-option.overlay {
+	@apply absolute z-10 right-1 rounded;
+	top: calc(1.75rem + 1px);
+}
+.ProseMirror .iframe .options .style-option:first {
+	@apply ml-0;
+}
+.ProseMirror .iframe .options .style-option.selected {
+	@apply bg-gray-600 hover:bg-gray-700 text-white;
+}
+.ProseMirror .iframe .options .style-option span:last-child {
+	@apply ml-2;
+}
+.ProseMirror .iframe .link {
+	@apply cursor-pointer overflow-hidden overflow-ellipsis whitespace-nowrap;
+}
+.ProseMirror .iframe .toggle {
+	@apply cursor-pointer;
+}
+.ProseMirror .iframe .toggle > span {
+	@apply flex;
+}
+.ProseMirror .iframe .toggle svg {
+	@apply text-gray-600 dark:text-gray-400;
+}
+.ProseMirror .iframe .content {
+	@apply relative rounded overflow-hidden; /* do this here so its consistent */
+}
+.ProseMirror .iframe .content .th {
+	@apply dark:text-gray-200;
+}
+.ProseMirror .iframe .content .preview.small {
+	@apply flex flex-row-reverse items-start;
+}
+.ProseMirror .iframe .content .preview.small .thumbnail {
+	@apply sm:max-w-xs max-h-16 sm:max-h-24 rounded;
+}
+.ProseMirror .iframe .content .preview.small .info {
+	@apply mr-2 flex-grow min-w-0;
+}
+.ProseMirror .iframe .content .preview .site {
+	@apply mb-1 flex items-center font-semibold leading-4;
+}
+.ProseMirror .iframe .content .preview .site .icon {
+	@apply h-5 w-5 mr-2;
+}
+.ProseMirror .iframe .content .preview .title {
+	@apply font-bold leading-6 truncate;
+}
+.ProseMirror .iframe .content .preview .description {
+	@apply text-gray-500 dark:text-gray-400 leading-6;
+}
+.ProseMirror .iframe .content .preview.small .description {
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+.ProseMirror .iframe .content .preview.large .thumbnail {
+	@apply w-full max-h-128 object-center object-cover rounded;
+}
+.ProseMirror .iframe .content .preview.large .info {
+	@apply mt-2;
+}
+.ProseMirror .iframe .content .overlay {
+	@apply absolute top-0 left-0 h-1/4 w-full;
+	z-index: 2;
+	background-image: linear-gradient(#00000066, #00000000);
+}
+.ProseMirror .iframe .overlay .info {
+	@apply m-3 flex items-center;
+}
+.ProseMirror .iframe .overlay .icon {
+	@apply h-5 w-5 mr-2;
+}
+.ProseMirror .iframe .overlay .title {
+	@apply block min-w-0 truncate font-bold leading-5 text-white;
+	text-shadow: 0 0 2px black;
+}
+
+/**
+ * YouTube embed
+ **/
+.yt {
+	@apply relative bg-cover bg-center cursor-pointer bg-black;
+}
+/* gradient */
+.yt::before {
+	@apply block absolute top-0 w-full bg-top bg-repeat-x;
+	content: '';
+	height: 60px;
+	padding-bottom: 50px;
+	transition: all 0.2s cubic-bezier(0, 0, 0.2, 1);
+}
+/* responsive iframe with a 16:9 aspect ratio (https://css-tricks.com/responsive-iframes */
+.yt::after {
+	@apply block;
+	content: '';
+	padding-bottom: calc(100% / (16 / 9));
+}
+.yt > iframe {
+	@apply absolute top-0 left-0 w-full h-full border-0;
+}
+.yt > .play-button {
+	@apply absolute cursor-pointer top-1/2 left-1/2 border-none ring-0;
+	width: 68px;
+	height: 48px;
+	transform: translate3d(-50%, -50%, 0);
+	z-index: 1;
+	background-color: transparent;
+	/* YT's actual play button svg */
+	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 68 48"><path fill="%23f00" fill-opacity="0.8" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"></path><path d="M 45,24 27,14 27,34" fill="%23fff"></path></svg>');
+	filter: grayscale(100%);
+	transition: filter 0.1s cubic-bezier(0, 0, 0.2, 1);
+}
+.yt:hover > .play-button,
+.yt .play-button:focus {
+	@apply ring-0;
+	filter: none;
+}
+/* Post-click styles */
+.yt.activated {
+	cursor: unset;
+}
+.yt.activated::before,
+.yt.activated > .play-button {
+	opacity: 0;
+	pointer-events: none;
+}
+
+/**
+ * Placeholder
+ **/
+.ProseMirror .placeholder:before {
+	@apply block h-0 pointer-events-none text-gray-300 dark:text-gray-600;
+	content: attr(data-empty-text);
+}
+
+.visuallyHidden {
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
+.ProseMirror .inline-image {
+	@apply relative inline-block align-middle;
+}
+
+.ProseMirror .inline-image .options {
+	@apply -top-6;
+}
+
+.ProseMirror span.emoji {
+	font-family: Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol !important;
+	font-size: 1em !important;
+	font-style: normal !important;
+	font-weight: 400 !important;
+	line-height: 1 !important;
+	vertical-align: -0.075em !important;
+	margin-right: 0.25em !important;
+}
+
+/**
+ * template placeholder
+ **/
+.template-placeholder {
+	@apply text-gray-400;
+}
+.notebook-editor:not(.read-only) .template-placeholder {
+	@apply hover:text-gray-500 hover:bg-gray-100 hover:-my-1 hover:-mx-2 hover:py-1 hover:px-2 rounded cursor-pointer;
+}
+
+/** changelog override **/
+
+.notebook-editor-container {
+	@apply max-w-full;
+}
+
+.notebook-editor > .ProseMirror {
+	@apply sm:pl-10 sm:pr-0 sm:overflow-x-visible;
+}
+
+.notebook-editor.node-attributes-1 > .ProseMirror {
+	@apply pr-10 sm:pl-10 sm:pr-0;
+}
+.notebook-editor.node-attributes-2 > .ProseMirror {
+	@apply pr-14 sm:pl-10 sm:pr-0;
+}
+.notebook-editor.node-attributes-3 > .ProseMirror {
+	@apply pr-16 sm:pl-10 sm:pr-0;
+}
+
+.node-options {
+	@apply sm:ml-0;
+}
+
+.ryt-lite:before {
+	display: none !important; /* REMOVE THE SHADING FOR THE TITLE AREA ON YOUTUBE VIDEO */
+}
+
+/* GitHub */
+.gh-description * {
+	@apply my-1;
+}
+
+.gh-description b {
+	@apply font-semibold;
+}
+
+.gh-description em {
+	@apply italic;
+}
+
+.gh-description tt,
+code {
+	@apply p-1 bg-gray-100 font-mono;
+}
+.gh-description pre {
+	@apply p-1 bg-gray-100 font-mono whitespace-pre-wrap;
+}
+.gh-description ul {
+	@apply my-1 list-disc list-inside;
+}
+.gh-description ol {
+	@apply list-decimal list-inside;
+}
+.gh-description ul ul,
+.gh-description ol ul {
+	@apply ml-2 list-disc list-inside;
+}
+.gh-description ol ol,
+.gh-description ul ol {
+	@apply ml-2 list-decimal list-inside;
+}
+.gh-description p {
+	@apply block my-2 mx-0;
+}
+.gh-description li > p {
+	@apply inline;
+}
+.gh-description blockquote {
+	@apply block my-1 pl-2 border-l-3 border-gray-200 bg-gray-100;
+}
+.gh-description a {
+	@apply text-blue-500;
+}
+.gh-description a:hover {
+	@apply underline;
+}
+.gh-description h1 {
+	@apply text-2xl font-semibold;
+}
+.gh-description h2 {
+	@apply text-xl font-semibold;
+}
+.gh-description h3,
+.gh-description h4,
+.gh-description h5,
+.gh-description h6 {
+	@apply text-lg font-semibold;
+}
+.gh-description h4,
+.gh-description h5,
+.gh-description h6 {
+	@apply font-semibold;
+}
+.gh-description hr {
+	@apply my-2;
+}
+.gh-description:first-child {
+	margin-top: 0;
+}
+
+/* local */
+:root {
+	font-family: 'Inter', sans-serif;
+}
+
+.avatar {
+	@apply w-8 h-8 text-base relative flex flex-shrink-0 justify-center items-center overflow-hidden select-none rounded-full border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900;
+}
+
+main > .container > section {
+	@apply flex-grow;
+}
+
+article.changelog {
+	@apply w-full;
+}
+
+article hr.divider {
+	@apply border-b mb-24;
+}
+
+.covermedia > .video {
+	@apply aspect-w-16 aspect-h-9;
+}
+
+.covermedia > .media-container,
+.covermedia > .video > video {
+	@apply w-full;
+}
+
+/* youtube lite styles (cover media only) */
+
+.embed-responsive {
+	position: relative !important;
+	display: block !important;
+	height: 0 !important;
+	padding: 0 !important;
+	overflow: hidden !important;
+}
+
+.embed-responsive .embed-responsive-item,
+.embed-responsive iframe,
+.embed-responsive embed,
+.embed-responsive object,
+.embed-responsive video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	border: 0;
+}
+
+.aspect-ratio-16\/9 {
+	padding-bottom: 56.25% !important;
+}
+
+.ryt-lite {
+	background-color: #000;
+	position: relative;
+	display: block;
+	contain: content;
+	background-position: center center;
+	background-size: cover;
+	cursor: pointer;
+}
+
+/* responsive iframe with a 16:9 aspect ratio
+    thanks https://css-tricks.com/responsive-iframes/
+*/
+.ryt-lite::after {
+	content: '';
+	display: block;
+	padding-bottom: calc(100% / (16 / 9));
+}
+
+.ryt-lite > iframe {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* play button */
+.ryt-lite > .lty-playbtn {
+	width: 70px;
+	height: 46px;
+	background-color: #212121;
+	z-index: 1;
+	opacity: 0.8;
+	border-radius: 14%; /* TODO: Consider replacing this with YT's actual svg. Eh. */
+	transition: all 0.2s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.ryt-lite:hover > .lty-playbtn {
+	background-color: #f00;
+	opacity: 1;
+}
+
+/* play button triangle */
+.ryt-lite > .lty-playbtn::before {
+	content: '';
+	border-style: solid;
+	border-width: 11px 0 11px 19px;
+	border-color: transparent transparent transparent #fff;
+}
+
+.ryt-lite > .lty-playbtn,
+.ryt-lite > .lty-playbtn::before {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%, -50%, 0);
+}
+
+/* Post-click styles */
+.ryt-lite.lyt-activated {
+	cursor: unset;
+}
+
+.ryt-lite.lyt-activated::before,
+.ryt-lite.lyt-activated > .lty-playbtn {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.mode {
+	border-radius: 30px;
+	width: 58px;
+	outline-width: 0;
+	outline-offset: 0;
+	@apply block relative h-8 border border-gray-300 dark:border-gray-600 text-gray-300 dark:text-gray-600 ring-0 focus:ring-0;
+}
+
+.mode:focus {
+	outline-width: 0;
+	outline-offset: 0;
+}
+
+.mode::before {
+	height: 100%;
+	content: '';
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' stroke='#999' stroke-width='2.4' fill='none' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='5'/%3E%3Cpath d='M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42'/%3E%3C/svg%3E");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-size: 50%;
+	transition: 0.3s;
+	background-position: center;
+	@apply absolute top-0 left-0 w-8 bg-transparent opacity-50;
+}
+
+.mode::after {
+	right: 6px;
+	top: 5px;
+	content: '';
+	border-radius: 50%;
+	transition: transform 0.3s;
+	@apply absolute h-5 w-5 bg-gray-300 dark:bg-gray-600;
+}
+
+html.dark .mode::after {
+	transform: translateX(-24px);
+}
+
+html.dark .mode::before {
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' stroke='#999' stroke-width='2' fill='#999' stroke-linecap='round' stroke-linejoin='round' class='css-i6dzq1' viewBox='0 0 24 24'%3E%3Cpath d='M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z'/%3E%3C/svg%3E");
+	transform: translateX(26px);
+}
+
+body > div.preview_banner {
+	@apply bg-yellow-500 text-center;
+}
+
+body > div.preview_banner > div {
+	@apply w-full mx-auto py-3 px-3 sm:px-6 lg:px-12 flex items-center justify-between flex-wrap;
+}
+
+body > div.preview_banner > div > div {
+	@apply w-0 flex-1 flex items-center;
+}
+
+body > div.preview_banner > div > div > p {
+	@apply ml-3 font-medium text-yellow-900;
+}
+
+.ProseMirror {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+div.home main.changelogs-0 {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+.preload,
+.preload * {
+	@apply !transition-none;
+}
+
+#hidden_focus {
+	position: absolute;
+	z-index: 9000;
+	left: -9999px;
+	top: -9999px;
+}
