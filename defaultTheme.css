@@ -91,5 +91,5 @@ body {
 }
 
 .Page .loadingWrapper {
-	@apply bg-white dark:bg-gray-800;
+	@apply bg-white dark:bg-gray-800 h-128;
 }
