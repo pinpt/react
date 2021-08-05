@@ -36,6 +36,7 @@ const {
 	splitEntries,
 	getTagColorStyles,
 	colorForString,
+	useSearch,
 
 	...otherExports
 } = Exports;
@@ -131,6 +132,7 @@ test('Test util exports', () => {
 	expect(splitEntries).toBeTruthy();
 	expect(getTagColorStyles).toBeTruthy();
 	expect(colorForString).toBeTruthy();
+	expect(useSearch).toBeTruthy();
 });
 
 test('Test for unexpected exports', () => {
