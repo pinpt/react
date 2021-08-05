@@ -20,6 +20,7 @@ const {
 	Author,
 	Sidebar,
 	Search,
+	Loader,
 
 	emptyDoc,
 	getEnv,
@@ -114,6 +115,7 @@ test('Test component exports', () => {
 	expect(ThemeToggle).toBeTruthy();
 	expect(Author).toBeTruthy();
 	expect(Sidebar).toBeTruthy();
+	expect(Loader).toBeTruthy();
 });
 
 test('Test util exports', () => {

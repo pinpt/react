@@ -105,6 +105,63 @@ test('Test full page', () => {
 	expect(tree).toMatchSnapshot();
 });
 
+test('Test loading', () => {
+	const component = renderer.create(
+		<Page
+			loading
+			header={
+				<Header
+					subscribe={<Subscribe href="https://pinpoint.com" />}
+					title="Pinpoint Demo Changelog"
+					description="See what's new in the Pinpoint Demo."
+				/>
+			}
+			latest={
+				<Latest>
+					<Card.Container
+						imageUrl={TEST_IMAGE}
+						title={<Card.Title title={TEST_TITLE} />}
+						date={<Card.Date />}
+						description={<Card.Description description={TEST_DESCRIPTION} />}
+						statistics={<Statistic.Bar claps={22} views={135} />}
+						button={<Card.ReadButton />}
+					/>
+				</Latest>
+			}
+			recent={
+				<Recent>
+					<Card.Container
+						imageUrl={TEST_IMAGE}
+						title={<Card.Title title={TEST_TITLE} />}
+						date={<Card.Date />}
+						description={<Card.Description description={TEST_DESCRIPTION} />}
+						statistics={<Statistic.Bar claps={22} views={135} />}
+						button={<Card.ReadButton />}
+					/>
+				</Recent>
+			}
+			footer={
+				<Footer
+					social={
+						<Social.Bar>
+							<Social.Facebook href="https://www.facebook.com/Pinpoint.Engineering" newTab />
+							<Social.Instagram href="https://www.instagram.com/pinpoint_sw/" newTab />
+							<Social.Twitter href="https://twitter.com/pinpoint_sw" newTab />
+							<Social.Github href="https://github.com/pinpt" newTab />
+							<Social.LinkedIn href="https://linkedin.com/company/pinpoint-software" newTab />
+							<Social.RSS href="https://api.pinpoint.com.so/rss/PirxVTE94u3YmGNOySRY" newTab />
+						</Social.Bar>
+					}
+					copyright={<Copyright text="2021 by Pinpoint Software, Inc." logo={<Logo src={IMAGE_URL} />} />}
+					subscribe={<Subscribe href="https://pinpoint.com" />}
+				/>
+			}
+		/>
+	);
+	const tree = component.toJSON();
+	expect(tree).toMatchSnapshot();
+});
+
 test('Test no header', () => {
 	const component = renderer.create(
 		<Page

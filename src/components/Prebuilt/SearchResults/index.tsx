@@ -22,6 +22,7 @@ import ThemeToggle, { IThemeToggleProps } from '../../ThemeToggle';
 import { ISearchResultsProps } from '../../Search/Results';
 import { ISearchBarProps } from '../../Search/Bar';
 import Search from '../../Search';
+import Loader from '../../Loader';
 export interface IPrebuiltSearchResultsProps {
 	className?: string;
 	site: Site;
@@ -45,6 +46,7 @@ export interface IPrebuiltSearchResultsProps {
 	searchTerm?: string;
 	handleSearch?: (value: string) => void;
 	handleSelectEntry?: (id: string) => void;
+	loading?: boolean;
 }
 
 const SearchResults = (props: IPrebuiltSearchResultsProps) => {
@@ -71,10 +73,12 @@ const SearchResults = (props: IPrebuiltSearchResultsProps) => {
 		searchTerm,
 		handleSearch,
 		handleSelectEntry,
+		loading,
 	} = props;
 	return (
 		<Page.Dashboard
 			className={`Prebuilt ${className}`}
+			loading={loading}
 			header={
 				renderHeader?.(site) ?? (
 					<Header

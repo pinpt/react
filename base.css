@@ -224,6 +224,10 @@
 	@apply flex flex-col;
 }
 
+.Page .loadingWrapper {
+	@apply relative h-64;
+}
+
 /*
  * Styles for the header component
  */
@@ -370,4 +374,12 @@ html.dark .ThemeToggle .mode::after {
 
 .Search.Bar .input {
 	@apply w-full border-0 py-1 pr-2 outline-none;
+}
+
+.Loader {
+	@apply absolute left-0 top-0 right-0 bottom-0 flex items-center content-center justify-center;
+}
+
+.Loader .inner {
+	@apply w-12 h-12 rounded-full border-3 animate-ping border-gray-900 m-6;
 }

@@ -85,3 +85,7 @@ body {
 .Search.Bar .input {
 	@apply bg-white dark:bg-gray-800;
 }
+
+.Loader .inner {
+	@apply border-gray-500 dark:border-gray-300;
+}

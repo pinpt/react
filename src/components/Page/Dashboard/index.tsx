@@ -4,6 +4,7 @@ import { IFooterProps } from '../../Footer';
 import { IHeaderProps } from '../../Header';
 import { ILatestProps } from '../../Latest';
 import { IRecentProps } from '../../Recent';
+import Loader from '../../Loader';
 
 export interface IPageDashboardProps {
 	className?: string;
@@ -12,16 +13,25 @@ export interface IPageDashboardProps {
 	latest?: ReactElement<ILatestProps>;
 	recent?: ReactElement<IRecentProps>;
 	footer?: ReactElement<IFooterProps>;
+	loading?: boolean;
 }
 
 const Dashboard = (props: IPageDashboardProps) => {
-	const { className = '', footer, latest, recent, header, searchResults } = props;
+	const { className = '', footer, latest, recent, header, searchResults, loading } = props;
 	return (
 		<div className={`Pinpoint Page Dashboard ${className}`}>
 			{header}
-			{searchResults}
-			{latest}
-			{recent}
+			{loading ? (
+				<div className="loadingWrapper">
+					<Loader />
+				</div>
+			) : (
+				<>
+					{searchResults}
+					{latest}
+					{recent}
+				</>
+			)}
 			{footer}
 		</div>
 	);

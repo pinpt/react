@@ -4,6 +4,7 @@ import PrebuiltSearchResults from '../SearchResults';
 import { Entry, useSearch } from '../../../lib';
 import entries from '../__data__/testEntries.json';
 import site from '../__data__/testSite.json';
+import Loader from '../../Loader';
 const { default: readme } = require('../SearchResults/README.md');
 
 export default {
@@ -23,9 +24,13 @@ export default {
 export const Default: React.VFC<{}> = () => <PrebuiltSearchResults entries={entries as Entry[]} site={site} />;
 
 export const Dynamic_Results: React.VFC<{}> = () => {
-	const { results } = useSearch('publish', 'PirxVTE94u3YmGNOySRY');
-	return <PrebuiltSearchResults entries={results} site={site} />;
+	const { results, loading } = useSearch('publish', 'PirxVTE94u3YmGNOySRY');
+	return <PrebuiltSearchResults entries={results} site={site} loading={loading} />;
 };
+
+export const Loading: React.VFC<{}> = () => (
+	<PrebuiltSearchResults loading entries={entries as Entry[]} site={site} renderCardStatistics={() => <></>} />
+);
 
 export const No_Stats: React.VFC<{}> = () => (
 	<PrebuiltSearchResults entries={entries as Entry[]} site={site} renderCardStatistics={() => <></>} />
