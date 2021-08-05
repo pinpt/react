@@ -1,6 +1,7 @@
 body {
 	font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial,
 		Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+	@apply bg-white dark:bg-gray-800;
 }
 
 .Clap.icon {
@@ -96,6 +97,11 @@ body {
 
 .Page .body {
 	@apply bg-white dark:bg-gray-800;
+}
+
+.Page .constraint {
+	@apply ml-auto mr-auto w-full;
+	max-width: 80rem;
 }
 
 /**

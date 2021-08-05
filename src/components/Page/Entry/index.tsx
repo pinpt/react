@@ -17,19 +17,21 @@ const Entry = (props: IPageEntryProps) => {
 
 	return (
 		<div className={`Pinpoint Page Entry ${className}`}>
-			{header}
-			<div className="body">
-				<div className="sidebar">{sidebar}</div>
-				<div className="content">
-					{coverImage && (
-						<div className="cover covermedia">
-							<img className="image" src={coverImage} />
+			<div className="constraint">
+				{header}
+				<div className="body">
+					<div className="sidebar">{sidebar}</div>
+					<div className="content">
+						{coverImage && (
+							<div className="cover covermedia">
+								<img className="image" src={coverImage} />
+							</div>
+						)}
+						<div className="renderer">
+							<article className="changelog notebook-editor read-only">
+								<section className="ProseMirror">{renderer}</section>
+							</article>
 						</div>
-					)}
-					<div className="renderer">
-						<article className="changelog notebook-editor read-only">
-							<section className="ProseMirror">{renderer}</section>
-						</article>
 					</div>
 				</div>
 			</div>

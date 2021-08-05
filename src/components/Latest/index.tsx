@@ -10,8 +10,10 @@ const Latest = (props: ILatestProps) => {
 	const { className = '', children } = props;
 	return (
 		<div className={`Pinpoint Latest ${className}`}>
-			<h1 className="heading">Latest</h1>
-			<div className="container">{children}</div>
+			<div className="constraint Latest">
+				<h1 className="heading">Latest</h1>
+				<div className="container">{children}</div>
+			</div>
 		</div>
 	);
 };

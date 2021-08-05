@@ -10,8 +10,10 @@ const Results = (props: ISearchResultsProps) => {
 	const { className = '', children } = props;
 	return (
 		<div className={`Pinpoint Search Results ${className}`}>
-			<h1 className="heading">Search Results</h1>
-			<div className="container">{children}</div>
+			<div className="constraint Search Results">
+				<h1 className="heading">Search Results</h1>
+				<div className="container">{children}</div>
+			</div>
 		</div>
 	);
 };

@@ -20,7 +20,7 @@ const Dashboard = (props: IPageDashboardProps) => {
 	const { className = '', footer, latest, recent, header, searchResults, loading } = props;
 	return (
 		<div className={`Pinpoint Page Dashboard ${className}`}>
-			{header}
+			<section className="constraint">{header}</section>
 			{loading ? (
 				<div className="loadingWrapper">
 					<Loader />

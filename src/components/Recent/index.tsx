@@ -10,8 +10,10 @@ const Recent = (props: IRecentProps) => {
 	const { className = '', children } = props;
 	return (
 		<div className={`Pinpoint Recent ${className}`}>
-			<h1 className="heading">Recent</h1>
-			<div className="container">{children}</div>
+			<div className="constraint Recent">
+				<h1 className="heading">Recent</h1>
+				<div className="container">{children}</div>
+			</div>
 		</div>
 	);
 };
