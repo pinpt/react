@@ -19,6 +19,7 @@ const {
 	ThemeToggle,
 	Author,
 	Sidebar,
+	Search,
 
 	emptyDoc,
 	getEnv,
@@ -90,6 +91,12 @@ test('Test component exports', () => {
 	expect(Home).toBeTruthy();
 	expect(PrebuiltEntry).toBeTruthy();
 	expect(Object.keys(otherPrebuilt).length).toEqual(0);
+
+	// Test Search Exports
+	expect(Search).toBeTruthy();
+	const { Results: SearchResults, ...otherSearch } = Search;
+	expect(SearchResults).toBeTruthy();
+	expect(Object.keys(otherSearch).length).toEqual(0);
 
 	// Test other component exports
 	expect(Clap).toBeTruthy();
