@@ -1,10 +1,9 @@
 import { ReactElement } from 'react';
 import { IChangelogCardContainerProps } from '../../ChangelogCard/Container';
 import Header, { IHeaderProps } from '../../Header';
-import Latest, { ILatestProps } from '../../Latest';
 import Subscribe, { ISubscribeProps } from '../../Subscribe';
 import Card from '../../ChangelogCard';
-import { Entry, Site, splitEntries } from '../../../lib';
+import { Entry, Site } from '../../../lib';
 import Page from '../../Page';
 import { IChangelogTitleProps } from '../../ChangelogCard/Title';
 import { IChangelogDateProps } from '../../ChangelogCard/Date';
@@ -12,7 +11,6 @@ import { IChangelogDescriptionProps } from '../../ChangelogCard/Description';
 import { IStatisticsBarProps } from '../../Statistic/Bar';
 import { IChangelogReadButtonProps } from '../../ChangelogCard/ReadButton';
 import Statistic from '../../Statistic';
-import Recent, { IRecentProps } from '../../Recent';
 import Footer, { IFooterProps } from '../../Footer';
 import { ISocialBarProps } from '../../Social/Bar';
 import Copyright, { ICopyrightProps } from '../../Copyright';
@@ -21,15 +19,16 @@ import Social from '../../Social';
 import { ITagBarProps } from '../../Tags/Bar';
 import Tags from '../../Tags';
 import ThemeToggle, { IThemeToggleProps } from '../../ThemeToggle';
+import Search from '../../Search';
+import { ISearchResultsProps } from '../../Search/Results';
 
-export interface IPrebuiltHomeProps {
+export interface IPrebuiltSearchResultsProps {
 	className?: string;
 	site: Site;
 	entries?: Entry[];
 	renderHeader?: (site: Site) => ReactElement<IHeaderProps>;
 	renderSubscribe?: (site: Site) => ReactElement<ISubscribeProps>;
-	renderLatest?: (entries: Entry[]) => ReactElement<ILatestProps>;
-	renderRecent?: (entries: Entry[]) => ReactElement<IRecentProps>;
+	renderSearchResults?: (entries: Entry[]) => ReactElement<ISearchResultsProps>;
 	renderCard?: (entry: Entry) => ReactElement<IChangelogCardContainerProps>;
 	renderCardTitle?: (entry: Entry) => ReactElement<IChangelogTitleProps>;
 	renderCardDate?: (entry: Entry) => ReactElement<IChangelogDateProps>;
@@ -42,19 +41,16 @@ export interface IPrebuiltHomeProps {
 	renderLogo?: (site: Site) => ReactElement<ILogoProps>;
 	renderTags?: (entry: Entry) => ReactElement<ITagBarProps>;
 	renderThemeToggle?: (site: Site) => ReactElement<IThemeToggleProps>;
-	latestCount?: number;
 }
 
-const Home = (props: IPrebuiltHomeProps) => {
+const SearchResults = (props: IPrebuiltSearchResultsProps) => {
 	const {
 		site,
 		className = '',
 		renderHeader,
 		renderSubscribe,
-		renderLatest,
-		renderRecent,
+		renderSearchResults,
 		entries = [],
-		latestCount = 1,
 		renderCard,
 		renderCardTitle,
 		renderCardDate,
@@ -68,7 +64,6 @@ const Home = (props: IPrebuiltHomeProps) => {
 		renderTags,
 		renderThemeToggle,
 	} = props;
-	const { latest, recent } = splitEntries(entries, latestCount);
 	return (
 		<Page.Dashboard
 			className={`Prebuilt ${className}`}
@@ -87,10 +82,10 @@ const Home = (props: IPrebuiltHomeProps) => {
 					/>
 				)
 			}
-			latest={
-				renderLatest?.(latest) ?? (
-					<Latest className="Prebuilt">
-						{latest.map((entry) => {
+			searchResults={
+				renderSearchResults?.(entries) ?? (
+					<Search.Results className="Prebuilt">
+						{entries.map((entry) => {
 							return (
 								renderCard?.(entry) ?? (
 									<Card.Container
@@ -119,42 +114,7 @@ const Home = (props: IPrebuiltHomeProps) => {
 								)
 							);
 						})}
-					</Latest>
-				)
-			}
-			recent={
-				renderRecent?.(recent) ?? (
-					<Recent className="Prebuilt">
-						{recent.map((entry) => {
-							return (
-								renderCard?.(entry) ?? (
-									<Card.Container
-										key={entry.id}
-										className="Prebuilt"
-										imageUrl={entry.cover_image}
-										title={
-											renderCardTitle?.(entry) ?? <Card.Title className="Prebuilt" title={entry.title} />
-										}
-										date={
-											renderCardDate?.(entry) ?? <Card.Date className="Prebuilt" ts={entry.publishedAt} />
-										}
-										description={
-											renderCardDescription?.(entry) ?? (
-												<Card.Description className="Prebuilt" description={entry.headline} />
-											)
-										}
-										statistics={
-											renderCardStatistics?.(entry) ?? (
-												<Statistic.Bar className="Prebuilt" claps={0} views={0} />
-											)
-										}
-										button={renderCardButton?.(entry) ?? <Card.ReadButton className="Prebuilt" />}
-										tags={renderTags?.(entry) ?? <Tags.Bar className="Prebuilt" tags={entry.tags ?? []} />}
-									/>
-								)
-							);
-						})}
-					</Recent>
+					</Search.Results>
 				)
 			}
 			footer={
@@ -210,4 +170,4 @@ const Home = (props: IPrebuiltHomeProps) => {
 	);
 };
 
-export default Home;
+export default SearchResults;

@@ -1,6 +1,6 @@
 import renderer from 'react-test-renderer';
 import PrebuiltEntry from '../Entry';
-import { Entry, Site } from '../../../lib';
+import { Entry } from '../../../lib';
 import entries from '../__data__/testEntries.json';
 import site from '../__data__/testSite.json';
 

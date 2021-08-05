@@ -1,5 +1,5 @@
 import Page from '../../Page';
-import { Entry, Site } from '../../../lib';
+import { Entry as IEntry, Site } from '../../../lib';
 import { Content } from '../../Renderer';
 import Header, { IHeaderProps } from '../../Header';
 
@@ -19,7 +19,7 @@ import Clap, { IClapProps } from '../../Clap';
 
 export interface IPrebuiltEntryProps {
 	className?: string;
-	renderContent?: (entry: Entry) => ReactElement;
+	renderContent?: (entry: IEntry) => ReactElement;
 	renderHeader?: (site: Site) => ReactElement<IHeaderProps>;
 	renderSubscribe?: (site: Site) => ReactElement<ISubscribeProps>;
 	renderThemeToggle?: (site: Site) => ReactElement<IThemeToggleProps>;
@@ -27,17 +27,17 @@ export interface IPrebuiltEntryProps {
 	renderSocial?: (site: Site) => ReactElement<ISocialBarProps>;
 	renderCopyright?: (site: Site) => ReactElement<ICopyrightProps>;
 	renderLogo?: (site: Site) => ReactElement<ILogoProps>;
-	renderSidebar?: (entry: Entry) => ReactElement<ISidebarProps>;
-	renderAuthor?: (entry: Entry) => ReactElement<IAuthorProps>;
-	renderTags?: (entry: Entry) => ReactElement<ITagBarProps>;
-	renderClap?: (entry: Entry) => ReactElement<IClapProps>;
+	renderSidebar?: (entry: IEntry) => ReactElement<ISidebarProps>;
+	renderAuthor?: (entry: IEntry) => ReactElement<IAuthorProps>;
+	renderTags?: (entry: IEntry) => ReactElement<ITagBarProps>;
+	renderClap?: (entry: IEntry) => ReactElement<IClapProps>;
 	clapCount?: number;
 	onClap?: () => void;
 	site: Site;
-	entry: Entry;
+	entry: IEntry;
 }
 
-const PrebuiltEntry = (props: IPrebuiltEntryProps) => {
+const Entry = (props: IPrebuiltEntryProps) => {
 	const {
 		className = '',
 		entry,
@@ -151,4 +151,4 @@ const PrebuiltEntry = (props: IPrebuiltEntryProps) => {
 	);
 };
 
-export default PrebuiltEntry;
+export default Entry;

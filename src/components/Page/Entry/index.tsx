@@ -12,7 +12,7 @@ export interface IPageEntryProps {
 	footer?: ReactElement<IFooterProps>;
 }
 
-const PageEntry = (props: IPageEntryProps) => {
+const Entry = (props: IPageEntryProps) => {
 	const { className = '', header, renderer, coverImage, sidebar, footer } = props;
 
 	return (
@@ -34,4 +34,4 @@ const PageEntry = (props: IPageEntryProps) => {
 	);
 };
 
-export default PageEntry;
+export default Entry;
