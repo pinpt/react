@@ -96,7 +96,7 @@ test('Test component exports', () => {
 
 	// Test Search Exports
 	expect(Search).toBeTruthy();
-	const { Results: SearchResults, ...otherSearch } = Search;
+	const { Results: SearchResults, Bar: SearchBar, ...otherSearch } = Search;
 	expect(SearchResults).toBeTruthy();
 	expect(Object.keys(otherSearch).length).toEqual(0);
 

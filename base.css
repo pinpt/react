@@ -244,7 +244,7 @@
 }
 
 .Header .right {
-	@apply mr-4 ml-auto;
+	@apply mr-4 ml-auto flex gap-x-4;
 }
 
 .Header .action {
@@ -334,6 +334,9 @@ html.dark .ThemeToggle .mode::after {
 	opacity: 0.5;
 }
 
+/*
+ * Styles for the author component
+ */
 .Author {
 	@apply flex items-center;
 }
@@ -346,6 +349,25 @@ html.dark .ThemeToggle .mode::after {
 	@apply ml-2;
 }
 
+/*
+ * Styles for the sidebar component
+ */
 .Sidebar {
 	@apply flex flex-col gap-y-8;
+}
+
+/*
+ * Styles for the search bar component
+ */
+
+.Search.Bar {
+	@apply border rounded-full flex items-center w-48 h-8 overflow-hidden;
+}
+
+.Search.Bar .icon {
+	@apply mx-2;
+}
+
+.Search.Bar .input {
+	@apply w-full border-0 py-1 pr-2 outline-none;
 }

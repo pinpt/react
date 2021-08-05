@@ -21,6 +21,8 @@ import Social from '../../Social';
 import { ITagBarProps } from '../../Tags/Bar';
 import Tags from '../../Tags';
 import ThemeToggle, { IThemeToggleProps } from '../../ThemeToggle';
+import { ISearchBarProps } from '../../Search/Bar';
+import Search from '../../Search';
 
 export interface IPrebuiltHomeProps {
 	className?: string;
@@ -42,7 +44,11 @@ export interface IPrebuiltHomeProps {
 	renderLogo?: (site: Site) => ReactElement<ILogoProps>;
 	renderTags?: (entry: Entry) => ReactElement<ITagBarProps>;
 	renderThemeToggle?: (site: Site) => ReactElement<IThemeToggleProps>;
+	renderSearch?: (site: Site) => ReactElement<ISearchBarProps>;
 	latestCount?: number;
+	searchTerm?: string;
+	handleSearch?: (value: string) => void;
+	handleSelectEntry?: (id: string) => void;
 }
 
 const Home = (props: IPrebuiltHomeProps) => {
@@ -67,6 +73,10 @@ const Home = (props: IPrebuiltHomeProps) => {
 		renderLogo,
 		renderTags,
 		renderThemeToggle,
+		renderSearch,
+		searchTerm,
+		handleSearch,
+		handleSelectEntry,
 	} = props;
 	const { latest, recent } = splitEntries(entries, latestCount);
 	return (
@@ -84,6 +94,11 @@ const Home = (props: IPrebuiltHomeProps) => {
 							)
 						}
 						themeToggle={renderThemeToggle?.(site) ?? <ThemeToggle className="Prebuilt" />}
+						search={
+							renderSearch?.(site) ?? (
+								<Search.Bar defaultValue={searchTerm} onSubmit={handleSearch} className="Prebuilt" />
+							)
+						}
 					/>
 				)
 			}
@@ -113,7 +128,14 @@ const Home = (props: IPrebuiltHomeProps) => {
 												<Statistic.Bar className="Prebuilt" claps={0} views={0} />
 											)
 										}
-										button={renderCardButton?.(entry) ?? <Card.ReadButton className="Prebuilt" />}
+										button={
+											renderCardButton?.(entry) ?? (
+												<Card.ReadButton
+													onClick={() => handleSelectEntry?.(entry.id)}
+													className="Prebuilt"
+												/>
+											)
+										}
 										tags={renderTags?.(entry) ?? <Tags.Bar className="Prebuilt" tags={entry.tags ?? []} />}
 									/>
 								)

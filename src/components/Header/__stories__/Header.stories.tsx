@@ -3,6 +3,7 @@ import { Meta } from '@storybook/react';
 import Header from '..';
 import Subscribe from '../../Subscribe';
 import ThemeToggle from '../../ThemeToggle';
+import Search from '../../Search';
 const { default: readme } = require('../README.md');
 
 export default {
@@ -25,6 +26,7 @@ export const Complete: React.VFC<{}> = () => (
 		title="Pinpoint Demo Changelog"
 		description="See what's new in the Pinpoint Demo."
 		themeToggle={<ThemeToggle />}
+		search={<Search.Bar />}
 	/>
 );
 

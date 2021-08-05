@@ -1,6 +1,8 @@
 import renderer from 'react-test-renderer';
 import Header from '..';
 import Subscribe from '../../Subscribe';
+import ThemeToggle from '../../ThemeToggle';
+import Search from '../../Search';
 
 test('Test complete', () => {
 	const component = renderer.create(
@@ -8,6 +10,8 @@ test('Test complete', () => {
 			subscribe={<Subscribe href="https://pinpoint.com" />}
 			title="Pinpoint Demo Changelog"
 			description="See what's new in the Pinpoint Demo."
+			themeToggle={<ThemeToggle />}
+			search={<Search.Bar />}
 		/>
 	);
 	const tree = component.toJSON();
@@ -16,6 +20,32 @@ test('Test complete', () => {
 
 test('Test empty', () => {
 	const component = renderer.create(<Header />);
+	const tree = component.toJSON();
+	expect(tree).toMatchSnapshot();
+});
+
+test('Test no search', () => {
+	const component = renderer.create(
+		<Header
+			subscribe={<Subscribe href="https://pinpoint.com" />}
+			title="Pinpoint Demo Changelog"
+			description="See what's new in the Pinpoint Demo."
+			themeToggle={<ThemeToggle />}
+		/>
+	);
+	const tree = component.toJSON();
+	expect(tree).toMatchSnapshot();
+});
+
+test('Test no theme', () => {
+	const component = renderer.create(
+		<Header
+			subscribe={<Subscribe href="https://pinpoint.com" />}
+			title="Pinpoint Demo Changelog"
+			description="See what's new in the Pinpoint Demo."
+			search={<Search.Bar />}
+		/>
+	);
 	const tree = component.toJSON();
 	expect(tree).toMatchSnapshot();
 });

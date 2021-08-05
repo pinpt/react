@@ -19,9 +19,9 @@ import Social from '../../Social';
 import { ITagBarProps } from '../../Tags/Bar';
 import Tags from '../../Tags';
 import ThemeToggle, { IThemeToggleProps } from '../../ThemeToggle';
-import Search from '../../Search';
 import { ISearchResultsProps } from '../../Search/Results';
-
+import { ISearchBarProps } from '../../Search/Bar';
+import Search from '../../Search';
 export interface IPrebuiltSearchResultsProps {
 	className?: string;
 	site: Site;
@@ -41,6 +41,10 @@ export interface IPrebuiltSearchResultsProps {
 	renderLogo?: (site: Site) => ReactElement<ILogoProps>;
 	renderTags?: (entry: Entry) => ReactElement<ITagBarProps>;
 	renderThemeToggle?: (site: Site) => ReactElement<IThemeToggleProps>;
+	renderSearch?: (site: Site) => ReactElement<ISearchBarProps>;
+	searchTerm?: string;
+	handleSearch?: (value: string) => void;
+	handleSelectEntry?: (id: string) => void;
 }
 
 const SearchResults = (props: IPrebuiltSearchResultsProps) => {
@@ -63,6 +67,10 @@ const SearchResults = (props: IPrebuiltSearchResultsProps) => {
 		renderLogo,
 		renderTags,
 		renderThemeToggle,
+		renderSearch,
+		searchTerm,
+		handleSearch,
+		handleSelectEntry,
 	} = props;
 	return (
 		<Page.Dashboard
@@ -79,6 +87,11 @@ const SearchResults = (props: IPrebuiltSearchResultsProps) => {
 							)
 						}
 						themeToggle={renderThemeToggle?.(site) ?? <ThemeToggle className="Prebuilt" />}
+						search={
+							renderSearch?.(site) ?? (
+								<Search.Bar defaultValue={searchTerm} onSubmit={handleSearch} className="Prebuilt" />
+							)
+						}
 					/>
 				)
 			}
@@ -108,7 +121,14 @@ const SearchResults = (props: IPrebuiltSearchResultsProps) => {
 												<Statistic.Bar className="Prebuilt" claps={0} views={0} />
 											)
 										}
-										button={renderCardButton?.(entry) ?? <Card.ReadButton className="Prebuilt" />}
+										button={
+											renderCardButton?.(entry) ?? (
+												<Card.ReadButton
+													onClick={() => handleSelectEntry?.(entry.id)}
+													className="Prebuilt"
+												/>
+											)
+										}
 										tags={renderTags?.(entry) ?? <Tags.Bar className="Prebuilt" tags={entry.tags ?? []} />}
 									/>
 								)
