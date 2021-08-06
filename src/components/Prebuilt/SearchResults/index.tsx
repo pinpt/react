@@ -131,7 +131,7 @@ const SearchResults = (props: IPrebuiltSearchResultsProps) => {
 			}
 			searchResults={
 				renderSearchResults?.(entries) ?? (
-					<Search.Results className="Prebuilt">
+					<Search.Results className="Prebuilt" clearQuery={() => handleRemoveFromQuery?.('', true)}>
 						{entries.map((entry) => {
 							return (
 								renderCard?.(entry) ?? (

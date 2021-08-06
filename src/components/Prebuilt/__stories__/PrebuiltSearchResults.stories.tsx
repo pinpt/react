@@ -21,7 +21,9 @@ export default {
 	},
 } as Meta;
 
-export const Default: React.VFC<{}> = () => <PrebuiltSearchResults entries={entries as Entry[]} site={site} />;
+export const Default: React.VFC<{}> = () => (
+	<PrebuiltSearchResults entries={entries.slice(0, 2) as Entry[]} site={site} />
+);
 
 export const Dynamic_Results: React.VFC<{}> = () => {
 	const [term, setTerm] = useState('publish');
@@ -36,6 +38,8 @@ export const Dynamic_Results: React.VFC<{}> = () => {
 		/>
 	);
 };
+
+export const Empty: React.VFC<{}> = () => <PrebuiltSearchResults entries={[]} site={site} />;
 
 export const Loading: React.VFC<{}> = () => (
 	<PrebuiltSearchResults loading entries={entries as Entry[]} site={site} renderCardStatistics={() => <></>} />

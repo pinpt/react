@@ -208,6 +208,18 @@
 .Search.Query .container {
 	@apply flex;
 }
+
+.Search.Results .empty {
+	@apply text-3xl font-bold text-center flex-grow;
+}
+
+.Search.Results .back {
+	@apply flex items-center justify-center text-gray-500 text-xl mt-6 font-normal cursor-pointer;
+}
+
+.Search.Results .back .icon {
+	@apply mr-2;
+}
 /*
  * Styles for the recent component
  */

@@ -34,3 +34,5 @@ export const Single: React.VFC<{}> = () => (
 		/>
 	</Results>
 );
+
+export const Empty: React.VFC<{}> = () => <Results />;
