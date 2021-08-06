@@ -54,6 +54,8 @@ export interface IPrebuiltHomeProps {
 	handleAddTagToQuery?: (value: string) => void;
 	pageForward?: () => void;
 	pageBack?: () => void;
+	pageNumber?: number;
+	pageCount?: number;
 }
 
 const Home = (props: IPrebuiltHomeProps) => {
@@ -86,6 +88,8 @@ const Home = (props: IPrebuiltHomeProps) => {
 		handleAddTagToQuery,
 		pageForward,
 		pageBack,
+		pageNumber,
+		pageCount,
 	} = props;
 	const { latest, recent } = splitEntries(entries, latestCount);
 	return (
@@ -163,7 +167,7 @@ const Home = (props: IPrebuiltHomeProps) => {
 			}
 			recent={
 				renderRecent?.(recent) ?? (
-					<Recent className="Prebuilt">
+					<Recent className="Prebuilt" pageNumber={pageNumber} pageCount={pageCount}>
 						{recent.map((entry) => {
 							return (
 								renderCard?.(entry) ?? (
