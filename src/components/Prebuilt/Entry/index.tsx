@@ -32,6 +32,7 @@ export interface IPrebuiltEntryProps {
 	renderTags?: (entry: IEntry) => ReactElement<ITagBarProps>;
 	renderClap?: (entry: IEntry) => ReactElement<IClapProps>;
 	clapCount?: number;
+	sessionClapCount?: number;
 	onClap?: (siteId: string, entryId: string) => void;
 	site: Site;
 	entry: IEntry;
@@ -56,6 +57,7 @@ const Entry = (props: IPrebuiltEntryProps) => {
 		renderClap,
 		clapCount = 0,
 		onClap,
+		sessionClapCount = 0,
 	} = props;
 
 	return (
@@ -79,7 +81,12 @@ const Entry = (props: IPrebuiltEntryProps) => {
 						clap={
 							renderClap?.(entry) ??
 							(onClap ? (
-								<Clap clapCount={clapCount} handleClap={() => onClap(site.id, entry.id)} className="Prebuilt" />
+								<Clap
+									clapCount={clapCount}
+									sessionClapCount={sessionClapCount}
+									handleClap={() => onClap(site.id, entry.id)}
+									className="Prebuilt"
+								/>
 							) : undefined)
 						}
 					/>

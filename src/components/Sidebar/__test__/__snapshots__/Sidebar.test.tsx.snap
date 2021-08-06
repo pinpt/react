@@ -138,7 +138,7 @@ exports[`Test custom className 1`] = `
       className="Clap notice "
     >
       +
-      22
+      0
     </div>
   </div>
 </div>
@@ -282,7 +282,7 @@ exports[`Test default 1`] = `
       className="Clap notice "
     >
       +
-      22
+      0
     </div>
   </div>
 </div>
@@ -413,7 +413,7 @@ exports[`Test no author 1`] = `
       className="Clap notice "
     >
       +
-      22
+      0
     </div>
   </div>
 </div>
@@ -544,7 +544,7 @@ exports[`clap only 1`] = `
       className="Clap notice "
     >
       +
-      22
+      0
     </div>
   </div>
 </div>

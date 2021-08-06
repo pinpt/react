@@ -209,7 +209,7 @@ exports[`Test full entry 1`] = `
               className="Clap notice "
             >
               +
-              22
+              0
             </div>
           </div>
         </div>
@@ -818,7 +818,7 @@ exports[`Test no footer 1`] = `
               className="Clap notice "
             >
               +
-              22
+              0
             </div>
           </div>
         </div>

@@ -4,10 +4,11 @@ export interface IClapProps {
 	className?: string;
 	handleClap: () => void;
 	clapCount: number;
+	sessionClapCount?: number;
 }
 
 const Clap = (props: IClapProps) => {
-	const { className, handleClap, clapCount } = props;
+	const { className, handleClap, clapCount, sessionClapCount = 0 } = props;
 	const timer = useRef<NodeJS.Timeout>();
 	const [noticeVisible, setNoticeVisible] = useState<boolean>(false);
 
@@ -85,7 +86,7 @@ const Clap = (props: IClapProps) => {
 				</svg>
 			</div>
 			<div className={`Clap counter ${noticeVisible ? '' : 'active'}`}>{clapCount > 0 ? clapCount : undefined}</div>
-			<div className={`Clap notice ${noticeVisible ? 'active' : ''}`}>+{clapCount}</div>
+			<div className={`Clap notice ${noticeVisible ? 'active' : ''}`}>+{sessionClapCount}</div>
 		</div>
 	);
 };

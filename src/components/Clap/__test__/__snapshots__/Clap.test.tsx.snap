@@ -167,7 +167,7 @@ exports[`Test custom class with large number 1`] = `
     className="Clap notice "
   >
     +
-    2222
+    0
   </div>
 </div>
 `;
@@ -339,7 +339,7 @@ exports[`Test large number 1`] = `
     className="Clap notice "
   >
     +
-    2222
+    0
   </div>
 </div>
 `;
