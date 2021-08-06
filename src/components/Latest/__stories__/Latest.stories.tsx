@@ -84,3 +84,5 @@ export const Triple: React.VFC<{}> = () => (
 		/>
 	</Latest>
 );
+
+export const Empty: React.VFC<{}> = () => <Latest />;

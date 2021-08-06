@@ -541,6 +541,8 @@ exports[`Test double 1`] = `
 </div>
 `;
 
+exports[`Test empty 1`] = `null`;
+
 exports[`Test single 1`] = `
 <div
   className="Pinpoint Latest "

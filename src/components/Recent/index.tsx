@@ -1,4 +1,4 @@
-import { ReactElement } from 'react';
+import { Children, ReactElement } from 'react';
 import { IChangelogCardContainerProps } from '../ChangelogCard/Container';
 
 export interface IRecentProps {
@@ -8,6 +8,9 @@ export interface IRecentProps {
 
 const Recent = (props: IRecentProps) => {
 	const { className = '', children } = props;
+	if (!Children.toArray(children).length) {
+		return <></>;
+	}
 	return (
 		<div className={`Pinpoint Recent ${className}`}>
 			<div className="constraint Recent">

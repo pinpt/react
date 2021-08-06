@@ -277,7 +277,8 @@ exports[`Hidden stats 1`] = `
                 className="button"
               >
                 <span
-                  className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
+                  className="Pinpoint Internal Link clickable Changelog Card Read Prebuilt"
+                  onClick={[Function]}
                 >
                   Read
                   <svg
@@ -356,7 +357,8 @@ populated with your recently completed...
                 className="button"
               >
                 <span
-                  className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
+                  className="Pinpoint Internal Link clickable Changelog Card Read Prebuilt"
+                  onClick={[Function]}
                 >
                   Read
                   <svg
@@ -445,7 +447,8 @@ populated with your recently completed...
                 className="button"
               >
                 <span
-                  className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
+                  className="Pinpoint Internal Link clickable Changelog Card Read Prebuilt"
+                  onClick={[Function]}
                 >
                   Read
                   <svg
@@ -546,7 +549,8 @@ populated with your recently completed...
                 className="button"
               >
                 <span
-                  className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
+                  className="Pinpoint Internal Link clickable Changelog Card Read Prebuilt"
+                  onClick={[Function]}
                 >
                   Read
                   <svg
@@ -632,7 +636,8 @@ populated with your recently completed...
                 className="button"
               >
                 <span
-                  className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
+                  className="Pinpoint Internal Link clickable Changelog Card Read Prebuilt"
+                  onClick={[Function]}
                 >
                   Read
                   <svg
@@ -721,7 +726,8 @@ populated with your recently completed...
                 className="button"
               >
                 <span
-                  className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
+                  className="Pinpoint Internal Link clickable Changelog Card Read Prebuilt"
+                  onClick={[Function]}
                 >
                   Read
                   <svg
@@ -798,7 +804,8 @@ populated with your recently completed...
                 className="button"
               >
                 <span
-                  className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
+                  className="Pinpoint Internal Link clickable Changelog Card Read Prebuilt"
+                  onClick={[Function]}
                 >
                   Read
                   <svg
@@ -887,7 +894,8 @@ populated with your recently completed...
                 className="button"
               >
                 <span
-                  className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
+                  className="Pinpoint Internal Link clickable Changelog Card Read Prebuilt"
+                  onClick={[Function]}
                 >
                   Read
                   <svg
@@ -1534,7 +1542,8 @@ exports[`Test custom className 1`] = `
                 className="button"
               >
                 <span
-                  className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
+                  className="Pinpoint Internal Link clickable Changelog Card Read Prebuilt"
+                  onClick={[Function]}
                 >
                   Read
                   <svg
@@ -1719,7 +1728,8 @@ populated with your recently completed...
                 className="button"
               >
                 <span
-                  className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
+                  className="Pinpoint Internal Link clickable Changelog Card Read Prebuilt"
+                  onClick={[Function]}
                 >
                   Read
                   <svg
@@ -1914,7 +1924,8 @@ populated with your recently completed...
                 className="button"
               >
                 <span
-                  className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
+                  className="Pinpoint Internal Link clickable Changelog Card Read Prebuilt"
+                  onClick={[Function]}
                 >
                   Read
                   <svg
@@ -2121,7 +2132,8 @@ populated with your recently completed...
                 className="button"
               >
                 <span
-                  className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
+                  className="Pinpoint Internal Link clickable Changelog Card Read Prebuilt"
+                  onClick={[Function]}
                 >
                   Read
                   <svg
@@ -2313,7 +2325,8 @@ populated with your recently completed...
                 className="button"
               >
                 <span
-                  className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
+                  className="Pinpoint Internal Link clickable Changelog Card Read Prebuilt"
+                  onClick={[Function]}
                 >
                   Read
                   <svg
@@ -2508,7 +2521,8 @@ populated with your recently completed...
                 className="button"
               >
                 <span
-                  className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
+                  className="Pinpoint Internal Link clickable Changelog Card Read Prebuilt"
+                  onClick={[Function]}
                 >
                   Read
                   <svg
@@ -2691,7 +2705,8 @@ populated with your recently completed...
                 className="button"
               >
                 <span
-                  className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
+                  className="Pinpoint Internal Link clickable Changelog Card Read Prebuilt"
+                  onClick={[Function]}
                 >
                   Read
                   <svg
@@ -2886,7 +2901,8 @@ populated with your recently completed...
                 className="button"
               >
                 <span
-                  className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
+                  className="Pinpoint Internal Link clickable Changelog Card Read Prebuilt"
+                  onClick={[Function]}
                 >
                   Read
                   <svg
@@ -3825,7 +3841,8 @@ populated with your recently completed...
                 className="button"
               >
                 <span
-                  className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
+                  className="Pinpoint Internal Link clickable Changelog Card Read Prebuilt"
+                  onClick={[Function]}
                 >
                   Read
                   <svg
@@ -4020,7 +4037,8 @@ populated with your recently completed...
                 className="button"
               >
                 <span
-                  className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
+                  className="Pinpoint Internal Link clickable Changelog Card Read Prebuilt"
+                  onClick={[Function]}
                 >
                   Read
                   <svg
@@ -4227,7 +4245,8 @@ populated with your recently completed...
                 className="button"
               >
                 <span
-                  className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
+                  className="Pinpoint Internal Link clickable Changelog Card Read Prebuilt"
+                  onClick={[Function]}
                 >
                   Read
                   <svg
@@ -4419,7 +4438,8 @@ populated with your recently completed...
                 className="button"
               >
                 <span
-                  className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
+                  className="Pinpoint Internal Link clickable Changelog Card Read Prebuilt"
+                  onClick={[Function]}
                 >
                   Read
                   <svg
@@ -4614,7 +4634,8 @@ populated with your recently completed...
                 className="button"
               >
                 <span
-                  className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
+                  className="Pinpoint Internal Link clickable Changelog Card Read Prebuilt"
+                  onClick={[Function]}
                 >
                   Read
                   <svg
@@ -4797,7 +4818,8 @@ populated with your recently completed...
                 className="button"
               >
                 <span
-                  className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
+                  className="Pinpoint Internal Link clickable Changelog Card Read Prebuilt"
+                  onClick={[Function]}
                 >
                   Read
                   <svg
@@ -4992,7 +5014,8 @@ populated with your recently completed...
                 className="button"
               >
                 <span
-                  className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
+                  className="Pinpoint Internal Link clickable Changelog Card Read Prebuilt"
+                  onClick={[Function]}
                 >
                   Read
                   <svg
@@ -5745,7 +5768,8 @@ exports[`Test default state 1`] = `
                 className="button"
               >
                 <span
-                  className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
+                  className="Pinpoint Internal Link clickable Changelog Card Read Prebuilt"
+                  onClick={[Function]}
                 >
                   Read
                   <svg
@@ -5930,7 +5954,8 @@ populated with your recently completed...
                 className="button"
               >
                 <span
-                  className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
+                  className="Pinpoint Internal Link clickable Changelog Card Read Prebuilt"
+                  onClick={[Function]}
                 >
                   Read
                   <svg
@@ -6125,7 +6150,8 @@ populated with your recently completed...
                 className="button"
               >
                 <span
-                  className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
+                  className="Pinpoint Internal Link clickable Changelog Card Read Prebuilt"
+                  onClick={[Function]}
                 >
                   Read
                   <svg
@@ -6332,7 +6358,8 @@ populated with your recently completed...
                 className="button"
               >
                 <span
-                  className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
+                  className="Pinpoint Internal Link clickable Changelog Card Read Prebuilt"
+                  onClick={[Function]}
                 >
                   Read
                   <svg
@@ -6524,7 +6551,8 @@ populated with your recently completed...
                 className="button"
               >
                 <span
-                  className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
+                  className="Pinpoint Internal Link clickable Changelog Card Read Prebuilt"
+                  onClick={[Function]}
                 >
                   Read
                   <svg
@@ -6719,7 +6747,8 @@ populated with your recently completed...
                 className="button"
               >
                 <span
-                  className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
+                  className="Pinpoint Internal Link clickable Changelog Card Read Prebuilt"
+                  onClick={[Function]}
                 >
                   Read
                   <svg
@@ -6902,7 +6931,8 @@ populated with your recently completed...
                 className="button"
               >
                 <span
-                  className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
+                  className="Pinpoint Internal Link clickable Changelog Card Read Prebuilt"
+                  onClick={[Function]}
                 >
                   Read
                   <svg
@@ -7097,7 +7127,8 @@ populated with your recently completed...
                 className="button"
               >
                 <span
-                  className="Pinpoint Internal Link  Changelog Card Read Prebuilt"
+                  className="Pinpoint Internal Link clickable Changelog Card Read Prebuilt"
+                  onClick={[Function]}
                 >
                   Read
                   <svg

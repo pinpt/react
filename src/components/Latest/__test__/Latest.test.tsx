@@ -97,3 +97,9 @@ test('Test custom className', () => {
 	const tree = component.toJSON();
 	expect(tree).toMatchSnapshot();
 });
+
+test('Test empty', () => {
+	const component = renderer.create(<Latest />);
+	const tree = component.toJSON();
+	expect(tree).toMatchSnapshot();
+});

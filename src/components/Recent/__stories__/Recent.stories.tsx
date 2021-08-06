@@ -121,3 +121,5 @@ export const Quadruple: React.VFC<{}> = () => (
 		/>
 	</Recent>
 );
+
+export const Empty: React.VFC<{}> = () => <Recent />;
