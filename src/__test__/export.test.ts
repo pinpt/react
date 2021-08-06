@@ -39,6 +39,7 @@ const {
 	getTagColorStyles,
 	colorForString,
 	useSearch,
+	fetchAnalytics,
 
 	...otherExports
 } = Exports;
@@ -139,6 +140,7 @@ test('Test util exports', () => {
 	expect(getTagColorStyles).toBeTruthy();
 	expect(colorForString).toBeTruthy();
 	expect(useSearch).toBeTruthy();
+	expect(fetchAnalytics).toBeTruthy();
 });
 
 test('Test for unexpected exports', () => {

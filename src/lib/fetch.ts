@@ -9,6 +9,14 @@ interface FetchOptions {
 	apiUrl?: string;
 }
 
+export const fetchAnalytics = async (siteId: string, changelogIds: string[], options?: FetchOptions): Promise<any> => {
+	const { apiUrl = defaultUrl } = options || {};
+	const url = `${apiUrl}/site/${siteId}/analytics?changelogIds=${encodeURIComponent(JSON.stringify(changelogIds))}`;
+	const res = await fetch(url);
+	const json = await res.json();
+	return json?.data;
+};
+
 export const fetchContent = async (id: string, options?: FetchOptions): Promise<Entry> => {
 	const { apiUrl = defaultUrl } = options || {};
 	const url = `${apiUrl}/changelog/${id}/public/metadata`;
