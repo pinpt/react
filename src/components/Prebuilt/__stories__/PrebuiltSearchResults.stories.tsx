@@ -26,9 +26,9 @@ export const Default: React.VFC<{}> = () => (
 	<PrebuiltSearchResults entries={entries.slice(0, 2) as Entry[]} site={site} />
 );
 
-export const Dynamic_Results: React.VFC<{}> = () => {
+export const Dynamic_Results_Term: React.VFC<{}> = () => {
 	const [term, setTerm] = useState('publish');
-	const { results, loading } = useSearch(term, 'PirxVTE94u3YmGNOySRY');
+	const { results, loading } = useSearch(term, [], 'PirxVTE94u3YmGNOySRY');
 	return (
 		<PrebuiltSearchResults
 			entries={results}
@@ -38,6 +38,11 @@ export const Dynamic_Results: React.VFC<{}> = () => {
 			handleRemoveFromQuery={() => setTerm('')}
 		/>
 	);
+};
+
+export const Dynamic_Results_Tags: React.VFC<{}> = () => {
+	const { results, loading } = useSearch('', ['bug'], 'PirxVTE94u3YmGNOySRY');
+	return <PrebuiltSearchResults entries={results} site={site} loading={loading} searchTags={['bug']} />;
 };
 
 export const Clickable_Tags: React.VFC<{}> = () => {

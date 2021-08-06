@@ -6,13 +6,15 @@ import { Entry } from '../types';
 const client = algoliasearch(algolia.appId, algolia.apiKey);
 const index = client.initIndex('changelog');
 
-const useSearch = (term: string, siteId: string) => {
+const useSearch = (term: string, tags: string[], siteId: string) => {
 	const [loading, setLoading] = useState(() => !!term);
 	const [results, setResults] = useState<Entry[]>([]);
 
 	const query = useMemo(() => {
-		return `site_id:"${siteId}"`;
-	}, [siteId]);
+		return `site_id:"${siteId}" ${
+			(tags && tags.length > 0 && ` AND ${tags.map((t) => `tags:"${t}"`).join(' AND ')}`) || ''
+		}`;
+	}, [siteId, tags]);
 
 	const handleFetchForTerm = useCallback(async () => {
 		setLoading(true);
