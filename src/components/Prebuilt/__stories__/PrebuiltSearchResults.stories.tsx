@@ -5,6 +5,7 @@ import { Entry, useSearch } from '../../../lib';
 import entries from '../__data__/testEntries.json';
 import site from '../__data__/testSite.json';
 import Loader from '../../Loader';
+import { useCallback } from 'react';
 const { default: readme } = require('../SearchResults/README.md');
 
 export default {
@@ -39,6 +40,40 @@ export const Dynamic_Results: React.VFC<{}> = () => {
 	);
 };
 
+export const Clickable_Tags: React.VFC<{}> = () => {
+	const [tags, setTags] = useState([]);
+
+	const handleAddTag = useCallback((value: string) => {
+		setTags((prev) => {
+			if (!prev.includes(value)) {
+				return [...prev, value];
+			}
+			return prev;
+		});
+	}, []);
+
+	const handleRemoveTag = useCallback((value: string) => {
+		setTags((prev) => {
+			const idx = prev.indexOf(value);
+			if (idx >= 0) {
+				const res = [...prev];
+				res.splice(idx, 1);
+				return res;
+			}
+			return prev;
+		});
+	}, []);
+
+	return (
+		<PrebuiltSearchResults
+			entries={entries as Entry[]}
+			searchTags={tags}
+			site={site}
+			handleRemoveFromQuery={(value: string) => handleRemoveTag(value)}
+			handleAddTagToQuery={(value: string) => handleAddTag(value)}
+		/>
+	);
+};
 export const Empty: React.VFC<{}> = () => <PrebuiltSearchResults entries={[]} site={site} />;
 
 export const Loading: React.VFC<{}> = () => (

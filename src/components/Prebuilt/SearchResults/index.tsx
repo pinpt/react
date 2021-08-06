@@ -49,6 +49,7 @@ export interface IPrebuiltSearchResultsProps {
 	handleSearch?: (value: string) => void;
 	handleSelectEntry?: (id: string) => void;
 	handleRemoveFromQuery?: (value: string, clear: boolean) => void;
+	handleAddTagToQuery?: (value: string) => void;
 	loading?: boolean;
 }
 
@@ -79,6 +80,7 @@ const SearchResults = (props: IPrebuiltSearchResultsProps) => {
 		handleSearch,
 		handleSelectEntry,
 		handleRemoveFromQuery,
+		handleAddTagToQuery,
 		loading,
 	} = props;
 	return (
@@ -163,7 +165,15 @@ const SearchResults = (props: IPrebuiltSearchResultsProps) => {
 												/>
 											)
 										}
-										tags={renderTags?.(entry) ?? <Tags.Bar className="Prebuilt" tags={entry.tags ?? []} />}
+										tags={
+											renderTags?.(entry) ?? (
+												<Tags.Bar
+													className="Prebuilt"
+													tags={entry.tags ?? []}
+													onClick={(tag: string) => handleAddTagToQuery?.(tag)}
+												/>
+											)
+										}
 									/>
 								)
 							);

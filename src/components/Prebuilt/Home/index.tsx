@@ -49,6 +49,7 @@ export interface IPrebuiltHomeProps {
 	searchTerm?: string;
 	handleSearch?: (value: string) => void;
 	handleSelectEntry?: (id: string) => void;
+	handleAddTagToQuery?: (value: string) => void;
 }
 
 const Home = (props: IPrebuiltHomeProps) => {
@@ -77,6 +78,7 @@ const Home = (props: IPrebuiltHomeProps) => {
 		searchTerm,
 		handleSearch,
 		handleSelectEntry,
+		handleAddTagToQuery,
 	} = props;
 	const { latest, recent } = splitEntries(entries, latestCount);
 	return (
@@ -136,7 +138,15 @@ const Home = (props: IPrebuiltHomeProps) => {
 												/>
 											)
 										}
-										tags={renderTags?.(entry) ?? <Tags.Bar className="Prebuilt" tags={entry.tags ?? []} />}
+										tags={
+											renderTags?.(entry) ?? (
+												<Tags.Bar
+													className="Prebuilt"
+													tags={entry.tags ?? []}
+													onClick={(tag: string) => handleAddTagToQuery?.(tag)}
+												/>
+											)
+										}
 									/>
 								)
 							);

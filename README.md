@@ -50,7 +50,7 @@ const component = () => <Statistic.Bar claps={21} views={5} />;
 -  [x] Tag
 -  [x] Tag Group
 -  [x] Header
--  [ ] Search Filters
+-  [x] Search Filters
 -  [x] Search Results
 
 ## TODO
