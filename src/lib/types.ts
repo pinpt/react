@@ -54,3 +54,9 @@ export interface SearchTerm {
 }
 
 export type Analytics = Record<string, { claps: number; pageviews: number }>;
+
+export interface ClapResponse {
+	count: number;
+	sessionCount: number;
+	max: boolean;
+}

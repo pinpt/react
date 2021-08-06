@@ -32,7 +32,7 @@ export interface IPrebuiltEntryProps {
 	renderTags?: (entry: IEntry) => ReactElement<ITagBarProps>;
 	renderClap?: (entry: IEntry) => ReactElement<IClapProps>;
 	clapCount?: number;
-	onClap?: () => void;
+	onClap?: (siteId: string, entryId: string) => void;
 	site: Site;
 	entry: IEntry;
 }
@@ -78,7 +78,9 @@ const Entry = (props: IPrebuiltEntryProps) => {
 						tags={renderTags?.(entry) ?? <Tags.Bar className="Prebuilt" tags={entry.tags ?? []} />}
 						clap={
 							renderClap?.(entry) ??
-							(onClap ? <Clap clapCount={clapCount} handleClap={onClap} className="Prebuilt" /> : undefined)
+							(onClap ? (
+								<Clap clapCount={clapCount} handleClap={() => onClap(site.id, entry.id)} className="Prebuilt" />
+							) : undefined)
 						}
 					/>
 				)

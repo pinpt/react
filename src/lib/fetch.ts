@@ -1,13 +1,37 @@
 import fetch from 'isomorphic-unfetch';
 import { getAPIUrl } from './env';
 
-import type { Analytics, Entry, Site } from './types';
+import type { Analytics, ClapResponse, Entry, Site } from './types';
 
 const defaultUrl = getAPIUrl();
 
 interface FetchOptions {
 	apiUrl?: string;
 }
+
+export const createClap = async (
+	siteId: string,
+	changelogId: string,
+	deviceId?: string,
+	options?: FetchOptions
+): Promise<ClapResponse> => {
+	const { apiUrl = defaultUrl } = options || {};
+	const url = `${apiUrl}/changelog/clap`;
+	const res = await fetch(url, {
+		method: 'POST',
+		body: JSON.stringify({
+			siteId,
+			changelogId,
+			deviceId,
+		}),
+		headers: {
+			'Content-Type': 'application/json',
+		},
+	});
+
+	const json = await res.json();
+	return json.counts;
+};
 
 export const fetchAnalytics = async (
 	siteId: string,

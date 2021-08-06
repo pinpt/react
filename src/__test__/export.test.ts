@@ -40,6 +40,7 @@ const {
 	colorForString,
 	useSearch,
 	fetchAnalytics,
+	createClap,
 
 	...otherExports
 } = Exports;
@@ -141,6 +142,7 @@ test('Test util exports', () => {
 	expect(colorForString).toBeTruthy();
 	expect(useSearch).toBeTruthy();
 	expect(fetchAnalytics).toBeTruthy();
+	expect(createClap).toBeTruthy();
 });
 
 test('Test for unexpected exports', () => {
