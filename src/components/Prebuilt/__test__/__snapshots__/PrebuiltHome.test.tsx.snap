@@ -226,7 +226,8 @@ exports[`Hidden stats 1`] = `
       <h1
         className="heading"
       >
-        Recent 
+        Recent
+         
       </h1>
       <div
         className="container"
@@ -255,7 +256,8 @@ exports[`Hidden stats 1`] = `
               className="Pinpoint Tag Bar Prebuilt"
             >
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
@@ -333,7 +335,8 @@ exports[`Hidden stats 1`] = `
               className="Pinpoint Tag Bar Prebuilt"
             >
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
@@ -413,7 +416,8 @@ populated with your recently completed...
               className="Pinpoint Tag Bar Prebuilt"
             >
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
@@ -425,7 +429,8 @@ populated with your recently completed...
                 improvement
               </div>
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
@@ -503,7 +508,8 @@ populated with your recently completed...
               className="Pinpoint Tag Bar Prebuilt"
             >
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
@@ -515,7 +521,8 @@ populated with your recently completed...
                 feature
               </div>
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-bug-bgcolor,#d73a4a)",
@@ -527,7 +534,8 @@ populated with your recently completed...
                 bug
               </div>
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
@@ -602,7 +610,8 @@ populated with your recently completed...
               className="Pinpoint Tag Bar Prebuilt"
             >
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
@@ -614,7 +623,8 @@ populated with your recently completed...
                 improvement
               </div>
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-bug-bgcolor,#d73a4a)",
@@ -692,7 +702,8 @@ populated with your recently completed...
               className="Pinpoint Tag Bar Prebuilt"
             >
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
@@ -704,7 +715,8 @@ populated with your recently completed...
                 feature
               </div>
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
@@ -782,7 +794,8 @@ populated with your recently completed...
               className="Pinpoint Tag Bar Prebuilt"
             >
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
@@ -860,7 +873,8 @@ populated with your recently completed...
               className="Pinpoint Tag Bar Prebuilt"
             >
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
@@ -872,7 +886,8 @@ populated with your recently completed...
                 feature
               </div>
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
@@ -1500,7 +1515,8 @@ exports[`Test custom className 1`] = `
       <h1
         className="heading"
       >
-        Recent 
+        Recent
+         
       </h1>
       <div
         className="container"
@@ -1529,7 +1545,8 @@ exports[`Test custom className 1`] = `
               className="Pinpoint Tag Bar Prebuilt"
             >
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
@@ -1713,7 +1730,8 @@ exports[`Test custom className 1`] = `
               className="Pinpoint Tag Bar Prebuilt"
             >
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
@@ -1899,7 +1917,8 @@ populated with your recently completed...
               className="Pinpoint Tag Bar Prebuilt"
             >
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
@@ -1911,7 +1930,8 @@ populated with your recently completed...
                 improvement
               </div>
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
@@ -2095,7 +2115,8 @@ populated with your recently completed...
               className="Pinpoint Tag Bar Prebuilt"
             >
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
@@ -2107,7 +2128,8 @@ populated with your recently completed...
                 feature
               </div>
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-bug-bgcolor,#d73a4a)",
@@ -2119,7 +2141,8 @@ populated with your recently completed...
                 bug
               </div>
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
@@ -2300,7 +2323,8 @@ populated with your recently completed...
               className="Pinpoint Tag Bar Prebuilt"
             >
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
@@ -2312,7 +2336,8 @@ populated with your recently completed...
                 improvement
               </div>
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-bug-bgcolor,#d73a4a)",
@@ -2496,7 +2521,8 @@ populated with your recently completed...
               className="Pinpoint Tag Bar Prebuilt"
             >
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
@@ -2508,7 +2534,8 @@ populated with your recently completed...
                 feature
               </div>
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
@@ -2692,7 +2719,8 @@ populated with your recently completed...
               className="Pinpoint Tag Bar Prebuilt"
             >
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
@@ -2876,7 +2904,8 @@ populated with your recently completed...
               className="Pinpoint Tag Bar Prebuilt"
             >
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
@@ -2888,7 +2917,8 @@ populated with your recently completed...
                 feature
               </div>
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
@@ -3807,7 +3837,8 @@ exports[`Test custom latest length 1`] = `
       <h1
         className="heading"
       >
-        Recent 
+        Recent
+         
       </h1>
       <div
         className="container"
@@ -3836,7 +3867,8 @@ exports[`Test custom latest length 1`] = `
               className="Pinpoint Tag Bar Prebuilt"
             >
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
@@ -4022,7 +4054,8 @@ populated with your recently completed...
               className="Pinpoint Tag Bar Prebuilt"
             >
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
@@ -4034,7 +4067,8 @@ populated with your recently completed...
                 improvement
               </div>
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
@@ -4218,7 +4252,8 @@ populated with your recently completed...
               className="Pinpoint Tag Bar Prebuilt"
             >
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
@@ -4230,7 +4265,8 @@ populated with your recently completed...
                 feature
               </div>
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-bug-bgcolor,#d73a4a)",
@@ -4242,7 +4278,8 @@ populated with your recently completed...
                 bug
               </div>
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
@@ -4423,7 +4460,8 @@ populated with your recently completed...
               className="Pinpoint Tag Bar Prebuilt"
             >
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
@@ -4435,7 +4473,8 @@ populated with your recently completed...
                 improvement
               </div>
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-bug-bgcolor,#d73a4a)",
@@ -4619,7 +4658,8 @@ populated with your recently completed...
               className="Pinpoint Tag Bar Prebuilt"
             >
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
@@ -4631,7 +4671,8 @@ populated with your recently completed...
                 feature
               </div>
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
@@ -4815,7 +4856,8 @@ populated with your recently completed...
               className="Pinpoint Tag Bar Prebuilt"
             >
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
@@ -4999,7 +5041,8 @@ populated with your recently completed...
               className="Pinpoint Tag Bar Prebuilt"
             >
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
@@ -5011,7 +5054,8 @@ populated with your recently completed...
                 feature
               </div>
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
@@ -5745,7 +5789,8 @@ exports[`Test default state 1`] = `
       <h1
         className="heading"
       >
-        Recent 
+        Recent
+         
       </h1>
       <div
         className="container"
@@ -5774,7 +5819,8 @@ exports[`Test default state 1`] = `
               className="Pinpoint Tag Bar Prebuilt"
             >
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
@@ -5958,7 +6004,8 @@ exports[`Test default state 1`] = `
               className="Pinpoint Tag Bar Prebuilt"
             >
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
@@ -6144,7 +6191,8 @@ populated with your recently completed...
               className="Pinpoint Tag Bar Prebuilt"
             >
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
@@ -6156,7 +6204,8 @@ populated with your recently completed...
                 improvement
               </div>
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
@@ -6340,7 +6389,8 @@ populated with your recently completed...
               className="Pinpoint Tag Bar Prebuilt"
             >
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
@@ -6352,7 +6402,8 @@ populated with your recently completed...
                 feature
               </div>
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-bug-bgcolor,#d73a4a)",
@@ -6364,7 +6415,8 @@ populated with your recently completed...
                 bug
               </div>
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
@@ -6545,7 +6597,8 @@ populated with your recently completed...
               className="Pinpoint Tag Bar Prebuilt"
             >
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
@@ -6557,7 +6610,8 @@ populated with your recently completed...
                 improvement
               </div>
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-bug-bgcolor,#d73a4a)",
@@ -6741,7 +6795,8 @@ populated with your recently completed...
               className="Pinpoint Tag Bar Prebuilt"
             >
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
@@ -6753,7 +6808,8 @@ populated with your recently completed...
                 feature
               </div>
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
@@ -6937,7 +6993,8 @@ populated with your recently completed...
               className="Pinpoint Tag Bar Prebuilt"
             >
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
@@ -7121,7 +7178,8 @@ populated with your recently completed...
               className="Pinpoint Tag Bar Prebuilt"
             >
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
@@ -7133,7 +7191,8 @@ populated with your recently completed...
                 feature
               </div>
               <div
-                className="Pinpoint Tag Item   "
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
                 style={
                   Object {
                     "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",

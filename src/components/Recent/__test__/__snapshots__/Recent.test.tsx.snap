@@ -10,7 +10,8 @@ exports[`Test custom className 1`] = `
     <h1
       className="heading"
     >
-      Recent 
+      Recent
+       
     </h1>
     <div
       className="container"
@@ -197,7 +198,8 @@ exports[`Test double 1`] = `
     <h1
       className="heading"
     >
-      Recent 
+      Recent
+       
     </h1>
     <div
       className="container"
@@ -553,7 +555,8 @@ exports[`Test page counts 1`] = `
     <h1
       className="heading"
     >
-      Recent 
+      Recent
+       
       <span
         className="pageIndicator"
       >
@@ -914,7 +917,8 @@ exports[`Test single 1`] = `
     <h1
       className="heading"
     >
-      Recent 
+      Recent
+       
     </h1>
     <div
       className="container"
@@ -1101,7 +1105,8 @@ exports[`Test triple 1`] = `
     <h1
       className="heading"
     >
-      Recent 
+      Recent
+       
     </h1>
     <div
       className="container"

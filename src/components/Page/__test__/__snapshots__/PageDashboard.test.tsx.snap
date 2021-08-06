@@ -427,7 +427,8 @@ exports[`Test full page 1`] = `
       <h1
         className="heading"
       >
-        Recent 
+        Recent
+         
       </h1>
       <div
         className="container"
@@ -2062,7 +2063,8 @@ exports[`Test no footer 1`] = `
       <h1
         className="heading"
       >
-        Recent 
+        Recent
+         
       </h1>
       <div
         className="container"
@@ -3111,7 +3113,8 @@ exports[`Test no header 1`] = `
       <h1
         className="heading"
       >
-        Recent 
+        Recent
+         
       </h1>
       <div
         className="container"
@@ -4060,7 +4063,8 @@ exports[`Test no latest 1`] = `
       <h1
         className="heading"
       >
-        Recent 
+        Recent
+         
       </h1>
       <div
         className="container"
