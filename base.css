@@ -418,3 +418,23 @@ html.dark .ThemeToggle .mode::after {
 .Loader .inner {
 	@apply w-12 h-12 rounded-full border-3 animate-ping border-gray-900 m-6;
 }
+
+.Pagination {
+	@apply flex;
+}
+
+.Pagination .back {
+	@apply mr-auto flex items-center cursor-pointer;
+}
+
+.Pagination .forward {
+	@apply ml-auto flex items-center cursor-pointer;
+}
+
+.Pagination .forward .icon {
+	@apply ml-2;
+}
+
+.Pagination .back .icon {
+	@apply mr-2;
+}

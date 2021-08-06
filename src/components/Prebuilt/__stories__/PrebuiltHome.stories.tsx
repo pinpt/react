@@ -29,3 +29,12 @@ export const Custom_Latest_Length: React.VFC<{}> = () => (
 export const No_Stats: React.VFC<{}> = () => (
 	<Home entries={entries as Entry[]} site={site} renderCardStatistics={() => <></>} />
 );
+
+export const Pagination: React.VFC<{}> = () => (
+	<Home
+		entries={entries.slice(0, 6) as Entry[]}
+		site={site}
+		pageForward={() => alert('forward!')}
+		pageBack={() => alert('back!')}
+	/>
+);

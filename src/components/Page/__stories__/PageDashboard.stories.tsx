@@ -11,6 +11,7 @@ import Copyright from '../../Copyright';
 import Logo from '../../Logo';
 import Subscribe from '../../Subscribe';
 import Header from '../../Header';
+import Pagination from '../../Pagination';
 const { default: readme } = require('../Dashboard/README.md');
 
 export default {
@@ -114,5 +115,6 @@ export const Full_Page: React.VFC<{}> = () => (
 				subscribe={<Subscribe href="https://pinpoint.com" />}
 			/>
 		}
+		pagination={<Pagination goBack={() => alert('back!')} goForward={() => alert('forward!')} />}
 	/>
 );

@@ -108,6 +108,10 @@ body {
 	max-width: 80rem;
 }
 
+.Page .Pagination {
+	@apply px-12 pb-6 text-indigo-500 dark:text-indigo-400;
+}
+
 /**
  * article
  */

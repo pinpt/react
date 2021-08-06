@@ -21,6 +21,7 @@ const {
 	Sidebar,
 	Search,
 	Loader,
+	Pagination,
 
 	emptyDoc,
 	getEnv,
@@ -118,6 +119,7 @@ test('Test component exports', () => {
 	expect(Author).toBeTruthy();
 	expect(Sidebar).toBeTruthy();
 	expect(Loader).toBeTruthy();
+	expect(Pagination).toBeTruthy();
 });
 
 test('Test util exports', () => {

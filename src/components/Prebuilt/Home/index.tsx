@@ -23,6 +23,7 @@ import Tags from '../../Tags';
 import ThemeToggle, { IThemeToggleProps } from '../../ThemeToggle';
 import { ISearchBarProps } from '../../Search/Bar';
 import Search from '../../Search';
+import Pagination, { IPaginationProps } from '../../Pagination';
 
 export interface IPrebuiltHomeProps {
 	className?: string;
@@ -45,11 +46,14 @@ export interface IPrebuiltHomeProps {
 	renderTags?: (entry: Entry) => ReactElement<ITagBarProps>;
 	renderThemeToggle?: (site: Site) => ReactElement<IThemeToggleProps>;
 	renderSearch?: (site: Site) => ReactElement<ISearchBarProps>;
+	renderPagination?: (site: Site) => ReactElement<IPaginationProps>;
 	latestCount?: number;
 	searchTerm?: string;
 	handleSearch?: (value: string) => void;
 	handleSelectEntry?: (id: string) => void;
 	handleAddTagToQuery?: (value: string) => void;
+	pageForward?: () => void;
+	pageBack?: () => void;
 }
 
 const Home = (props: IPrebuiltHomeProps) => {
@@ -75,10 +79,13 @@ const Home = (props: IPrebuiltHomeProps) => {
 		renderTags,
 		renderThemeToggle,
 		renderSearch,
+		renderPagination,
 		searchTerm,
 		handleSearch,
 		handleSelectEntry,
 		handleAddTagToQuery,
+		pageForward,
+		pageBack,
 	} = props;
 	const { latest, recent } = splitEntries(entries, latestCount);
 	return (
@@ -245,6 +252,7 @@ const Home = (props: IPrebuiltHomeProps) => {
 					/>
 				)
 			}
+			pagination={renderPagination?.(site) ?? <Pagination goForward={pageForward} goBack={pageBack} />}
 		/>
 	);
 };

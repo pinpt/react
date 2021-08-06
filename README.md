@@ -60,5 +60,5 @@ const component = () => <Statistic.Bar claps={21} views={5} />;
 -  [ ] Support for cover media other than images
 -  [ ] Empty cover media state
 -  [ ] Wire up claps
--  [ ] Pagination
--  [X] Tag Filtering
+-  [x] Pagination
+-  [x] Tag Filtering
