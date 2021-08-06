@@ -4,7 +4,7 @@ import Header, { IHeaderProps } from '../../Header';
 import Latest, { ILatestProps } from '../../Latest';
 import Subscribe, { ISubscribeProps } from '../../Subscribe';
 import Card from '../../ChangelogCard';
-import { Entry, Site, splitEntries } from '../../../lib';
+import { Analytics, Entry, Site, splitEntries } from '../../../lib';
 import Page from '../../Page';
 import { IChangelogTitleProps } from '../../ChangelogCard/Title';
 import { IChangelogDateProps } from '../../ChangelogCard/Date';
@@ -37,7 +37,10 @@ export interface IPrebuiltHomeProps {
 	renderCardTitle?: (entry: Entry) => ReactElement<IChangelogTitleProps>;
 	renderCardDate?: (entry: Entry) => ReactElement<IChangelogDateProps>;
 	renderCardDescription?: (entry: Entry) => ReactElement<IChangelogDescriptionProps>;
-	renderCardStatistics?: (entry: Entry) => ReactElement<IStatisticsBarProps>;
+	renderCardStatistics?: (
+		entry: Entry,
+		analytics?: { claps: number; pageviews: number }
+	) => ReactElement<IStatisticsBarProps>;
 	renderCardButton?: (entry: Entry) => ReactElement<IChangelogReadButtonProps>;
 	renderFooter?: (site: Site) => ReactElement<IFooterProps>;
 	renderSocial?: (site: Site) => ReactElement<ISocialBarProps>;
@@ -56,6 +59,7 @@ export interface IPrebuiltHomeProps {
 	pageBack?: () => void;
 	pageNumber?: number;
 	pageCount?: number;
+	analytics?: Analytics;
 }
 
 const Home = (props: IPrebuiltHomeProps) => {
@@ -90,6 +94,7 @@ const Home = (props: IPrebuiltHomeProps) => {
 		pageBack,
 		pageNumber,
 		pageCount,
+		analytics,
 	} = props;
 	const { latest, recent } = splitEntries(entries, latestCount);
 	return (
@@ -137,8 +142,12 @@ const Home = (props: IPrebuiltHomeProps) => {
 											)
 										}
 										statistics={
-											renderCardStatistics?.(entry) ?? (
-												<Statistic.Bar className="Prebuilt" claps={0} views={0} />
+											renderCardStatistics?.(entry, analytics?.[entry.id]) ?? (
+												<Statistic.Bar
+													className="Prebuilt"
+													claps={analytics?.[entry.id]?.claps ?? 0}
+													views={analytics?.[entry.id]?.pageviews ?? 0}
+												/>
 											)
 										}
 										button={
@@ -187,8 +196,12 @@ const Home = (props: IPrebuiltHomeProps) => {
 											)
 										}
 										statistics={
-											renderCardStatistics?.(entry) ?? (
-												<Statistic.Bar className="Prebuilt" claps={0} views={0} />
+											renderCardStatistics?.(entry, analytics?.[entry.id]) ?? (
+												<Statistic.Bar
+													className="Prebuilt"
+													claps={analytics?.[entry.id]?.claps ?? 0}
+													views={analytics?.[entry.id]?.pageviews ?? 0}
+												/>
 											)
 										}
 										button={

@@ -4,6 +4,7 @@ import Home from '../Home';
 import { Entry } from '../../../lib';
 import entries from '../__data__/testEntries.json';
 import site from '../__data__/testSite.json';
+import analytics from '../__data__/testAnalytics.json';
 const { default: readme } = require('../Home/README.md');
 
 export default {
@@ -20,7 +21,7 @@ export default {
 	},
 } as Meta;
 
-export const Default: React.VFC<{}> = () => <Home entries={entries as Entry[]} site={site} />;
+export const Default: React.VFC<{}> = () => <Home entries={entries as Entry[]} analytics={analytics} site={site} />;
 
 export const Custom_Latest_Length: React.VFC<{}> = () => (
 	<Home entries={entries as Entry[]} site={site} latestCount={2} />

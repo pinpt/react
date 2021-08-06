@@ -7593,3 +7593,2140 @@ populated with your recently completed...
   </div>
 </div>
 `;
+
+exports[`Test default state with partial analytics 1`] = `
+<div
+  className="Pinpoint Page Dashboard Prebuilt "
+>
+  <section
+    className="constraint"
+  >
+    <div
+      className="Pinpoint Header Prebuilt"
+    >
+      <div
+        className="top"
+      >
+        <div
+          className="left"
+        />
+        <div
+          className="right"
+        >
+          <div
+            className="Pinpoint Search Bar Prebuilt"
+          >
+            <svg
+              aria-hidden="true"
+              className="icon"
+              data-icon="search"
+              data-prefix="fas"
+              focusable="false"
+              height={16}
+              role="img"
+              viewBox="0 0 512 512"
+              width={16}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
+                fill="currentColor"
+              />
+            </svg>
+            <form
+              className="form"
+              onSubmit={[Function]}
+            >
+              <input
+                className="input"
+                onChange={[Function]}
+                placeholder="Search"
+                value=""
+              />
+            </form>
+          </div>
+          <div
+            className="Pinpoint ThemeToggle Prebuilt"
+          >
+            <button
+              className="mode"
+              onClick={[Function]}
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="center"
+      >
+        <h1
+          className="title"
+        >
+          Pinpoint Changelog
+        </h1>
+        <div
+          className="description"
+        >
+          New updates and improvements to Pinpoint
+        </div>
+        <div
+          className="action"
+        >
+          <a
+            className="Pinpoint Internal Link Subscribe Prebuilt"
+            href="https://pinpoint.pinpoint.com/subscribe"
+          >
+            <svg
+              aria-hidden="true"
+              className="icon"
+              data-icon="envelope"
+              data-prefix="fas"
+              focusable="false"
+              height={14}
+              role="img"
+              viewBox="0 0 512 512"
+              width={14}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"
+                fill="currentColor"
+              />
+            </svg>
+            <span
+              className="text"
+            >
+              Subscribe to Updates
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div
+    className="Pinpoint Latest Prebuilt"
+  >
+    <div
+      className="constraint Latest"
+    >
+      <h1
+        className="heading"
+      >
+        Latest
+      </h1>
+      <div
+        className="container"
+      >
+        <div
+          className="Pinpoint Changelog Card Container wrapper Prebuilt"
+        >
+          <img
+            className="cover"
+            src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
+          />
+          <div
+            className="content"
+          >
+            <h2
+              className="Pinpoint Changelog Card Title Prebuilt"
+            >
+              Linked Content Blocks
+            </h2>
+            <span
+              className="Pinpoint Changelog Card Date Prebuilt"
+            >
+              8/2/2021
+            </span>
+            <div
+              className="Pinpoint Tag Bar Prebuilt"
+            >
+              <div
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
+                    "border": "1px solid var(--tag-bcolor, #3f7a4333)",
+                    "color": "var(--tag-fgcolor, #27632e)",
+                  }
+                }
+              >
+                feature
+              </div>
+              <div
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
+                    "border": "1px solid var(--tag-bcolor, #23747633)",
+                    "color": "var(--tag-fgcolor, #005e5f)",
+                  }
+                }
+              >
+                improvement
+              </div>
+            </div>
+            <p
+              className="Pinpoint Changelog Card Description Prebuilt"
+            >
+              Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.
+            </p>
+            <div
+              className="footer"
+            >
+              <div
+                className="button"
+              >
+                <span
+                  className="Pinpoint Internal Link clickable Changelog Card Read Prebuilt"
+                  onClick={[Function]}
+                >
+                  Read
+                  <svg
+                    className="arrow"
+                    fill="none"
+                    height={16}
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                    width={16}
+                  >
+                    <path
+                      d="M5 12h14"
+                    />
+                    <path
+                      d="M12 5l7 7-7 7"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div
+                className="statistics"
+              >
+                <div
+                  className="Pinpoint Statistic Bar wrapper Prebuilt"
+                >
+                  <div
+                    className="Pinpoint Statistic Views wrapper "
+                  >
+                    <svg
+                      fill="none"
+                      height={16}
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      viewBox="0 0 24 24"
+                      width={16}
+                    >
+                      <path
+                        d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
+                      />
+                      <circle
+                        cx="12"
+                        cy="12"
+                        r="3"
+                      />
+                    </svg>
+                    <span
+                      className="Statistic Views count"
+                    >
+                      0
+                    </span>
+                  </div>
+                  <div
+                    className="Pinpoint Statistic Claps wrapper "
+                  >
+                    <svg
+                      fill="none"
+                      height="22"
+                      viewBox="0 0 985 997"
+                      width="22"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M384.602 300.771L374.481 280.34C355.482 241.988 303.813 234.105 275.654 266.246C233.852 226.468 167.893 261.376 175.201 316.902C133.778 319.79 107.584 364.684 126.716 403.304L191.394 533.862C167.122 530.597 142.57 542.537 130.768 565.569C115.633 594.94 127.083 631.118 156.274 646.565L345.7 747.352C352.529 750.999 360.713 751.074 367.613 747.656L575.681 644.581C585.717 639.609 590.991 628.403 588.392 617.526L556.335 482.08C552.812 467.309 547.677 452.89 540.885 439.18L480.381 317.045C461.959 279.858 412.882 272.253 384.602 300.771ZM512.211 453.385C517.893 464.855 522.231 476.99 525.137 489.389L555.696 618.658L357.037 717.072L171.27 618.267C157.613 610.972 152.13 593.823 159.202 580.164C166.184 566.55 182.885 561.29 196.543 568.585L239.392 591.328C246.221 594.975 253.761 587.669 250.298 580.679L155.391 389.099C138.522 355.048 188.653 331.442 205.344 365.134L275.836 507.43C277.79 511.373 282.614 513.001 286.556 511.048L292.918 507.896C296.861 505.943 298.489 501.119 296.536 497.176L209.619 321.725C192.75 287.674 242.881 264.067 259.572 297.76L346.134 472.494C348.087 476.437 352.911 478.064 356.854 476.111L363.216 472.959C367.158 471.006 368.786 466.182 366.833 462.24L295.675 318.599C278.806 284.548 328.937 260.942 345.628 294.634L416.52 437.737C418.473 441.679 423.297 443.307 427.24 441.354L433.602 438.202C437.545 436.249 439.172 431.425 437.219 427.482L402.15 356.693C385.459 323 434.569 297.333 451.482 331.473L511.942 453.518L512.211 453.385Z"
+                        fill="gray"
+                      />
+                      <path
+                        d="M600.843 300.62L610.964 280.189C629.963 241.837 681.632 233.954 709.791 266.095C751.593 226.317 817.553 261.225 810.244 316.751C851.667 319.639 877.861 364.532 858.729 403.153L794.051 533.711C818.323 530.446 842.875 542.386 854.677 565.418C869.812 594.789 858.362 630.967 829.171 646.414L639.745 747.201C632.916 750.848 624.732 750.923 617.832 747.505L473.503 677C463.467 672.028 573.316 628.993 575.914 618.116L548.226 487C551.749 472.229 475.208 378.693 482 364.983L505.064 316.894C523.486 279.707 572.563 272.102 600.843 300.62ZM505.064 388.948C499.382 400.418 580.906 616.601 578 629L505.064 657L628.408 716.921L814.175 618.116C827.833 610.821 833.315 593.672 826.243 580.013C819.261 566.399 802.56 561.139 788.902 568.434L746.053 591.177C739.225 594.824 731.684 587.518 735.147 580.528L830.054 388.948C846.923 354.897 796.792 331.291 780.101 364.983L709.609 507.279C707.655 511.222 702.831 512.85 698.889 510.897L692.527 507.745C688.584 505.792 686.956 500.968 688.909 497.025L775.826 321.574C792.695 287.523 742.564 263.916 725.873 297.609L639.311 472.343C637.358 476.286 632.534 477.913 628.591 475.96L622.229 472.808C618.287 470.855 616.659 466.031 618.612 462.089L689.77 318.448C706.639 284.397 656.508 260.791 639.817 294.483L568.925 437.586C566.972 441.528 562.148 443.156 558.205 441.203L551.843 438.051C547.901 436.098 546.273 431.274 548.226 427.331L583.295 356.542C599.986 322.849 550.876 297.182 533.963 331.322L505.064 388.948Z"
+                        fill="gray"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="rotate(54.7453 269.491 33)"
+                        width="150"
+                        x="269.491"
+                        y="33"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="matrix(-0.577211 0.816595 0.816595 0.577211 763 33)"
+                        width="150"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="matrix(-4.37114e-08 1 1 4.37114e-08 502 0)"
+                        width="150"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="matrix(0.577211 -0.816595 -0.816595 -0.577211 269.491 963.924)"
+                        width="150"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="rotate(-125.255 763 963.924)"
+                        width="150"
+                        x="763"
+                        y="963.924"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="rotate(-90 502 996.924)"
+                        width="150"
+                        x="502"
+                        y="996.924"
+                      />
+                    </svg>
+                    <span
+                      className="Statistic Claps count"
+                    >
+                      0
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="Pinpoint Recent Prebuilt"
+  >
+    <div
+      className="constraint Recent"
+    >
+      <h1
+        className="heading"
+      >
+        Recent
+         
+      </h1>
+      <div
+        className="container"
+      >
+        <div
+          className="Pinpoint Changelog Card Container wrapper Prebuilt"
+        >
+          <img
+            className="cover"
+            src="https://file.pinpoint.com/7120741f0e5051b632fdd356fc1cdb16;U40m~QcbVUiFkafladjFUbiZk%5BcbZ%23jEkYbw;1600x900.png"
+          />
+          <div
+            className="content"
+          >
+            <h2
+              className="Pinpoint Changelog Card Title Prebuilt"
+            >
+              Publishing Controls and Social Posting
+            </h2>
+            <span
+              className="Pinpoint Changelog Card Date Prebuilt"
+            >
+              7/30/2021
+            </span>
+            <div
+              className="Pinpoint Tag Bar Prebuilt"
+            >
+              <div
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
+                    "border": "1px solid var(--tag-bcolor, #3f7a4333)",
+                    "color": "var(--tag-fgcolor, #27632e)",
+                  }
+                }
+              >
+                feature
+              </div>
+            </div>
+            <p
+              className="Pinpoint Changelog Card Description Prebuilt"
+            >
+              When you publish a changelog you will now see a new Publish dialog which grants finer control over when you want to notify your subscribers.
+            </p>
+            <div
+              className="footer"
+            >
+              <div
+                className="button"
+              >
+                <span
+                  className="Pinpoint Internal Link clickable Changelog Card Read Prebuilt"
+                  onClick={[Function]}
+                >
+                  Read
+                  <svg
+                    className="arrow"
+                    fill="none"
+                    height={16}
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                    width={16}
+                  >
+                    <path
+                      d="M5 12h14"
+                    />
+                    <path
+                      d="M12 5l7 7-7 7"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div
+                className="statistics"
+              >
+                <div
+                  className="Pinpoint Statistic Bar wrapper Prebuilt"
+                >
+                  <div
+                    className="Pinpoint Statistic Views wrapper "
+                  >
+                    <svg
+                      fill="none"
+                      height={16}
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      viewBox="0 0 24 24"
+                      width={16}
+                    >
+                      <path
+                        d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
+                      />
+                      <circle
+                        cx="12"
+                        cy="12"
+                        r="3"
+                      />
+                    </svg>
+                    <span
+                      className="Statistic Views count"
+                    >
+                      0
+                    </span>
+                  </div>
+                  <div
+                    className="Pinpoint Statistic Claps wrapper "
+                  >
+                    <svg
+                      fill="none"
+                      height="22"
+                      viewBox="0 0 985 997"
+                      width="22"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M384.602 300.771L374.481 280.34C355.482 241.988 303.813 234.105 275.654 266.246C233.852 226.468 167.893 261.376 175.201 316.902C133.778 319.79 107.584 364.684 126.716 403.304L191.394 533.862C167.122 530.597 142.57 542.537 130.768 565.569C115.633 594.94 127.083 631.118 156.274 646.565L345.7 747.352C352.529 750.999 360.713 751.074 367.613 747.656L575.681 644.581C585.717 639.609 590.991 628.403 588.392 617.526L556.335 482.08C552.812 467.309 547.677 452.89 540.885 439.18L480.381 317.045C461.959 279.858 412.882 272.253 384.602 300.771ZM512.211 453.385C517.893 464.855 522.231 476.99 525.137 489.389L555.696 618.658L357.037 717.072L171.27 618.267C157.613 610.972 152.13 593.823 159.202 580.164C166.184 566.55 182.885 561.29 196.543 568.585L239.392 591.328C246.221 594.975 253.761 587.669 250.298 580.679L155.391 389.099C138.522 355.048 188.653 331.442 205.344 365.134L275.836 507.43C277.79 511.373 282.614 513.001 286.556 511.048L292.918 507.896C296.861 505.943 298.489 501.119 296.536 497.176L209.619 321.725C192.75 287.674 242.881 264.067 259.572 297.76L346.134 472.494C348.087 476.437 352.911 478.064 356.854 476.111L363.216 472.959C367.158 471.006 368.786 466.182 366.833 462.24L295.675 318.599C278.806 284.548 328.937 260.942 345.628 294.634L416.52 437.737C418.473 441.679 423.297 443.307 427.24 441.354L433.602 438.202C437.545 436.249 439.172 431.425 437.219 427.482L402.15 356.693C385.459 323 434.569 297.333 451.482 331.473L511.942 453.518L512.211 453.385Z"
+                        fill="gray"
+                      />
+                      <path
+                        d="M600.843 300.62L610.964 280.189C629.963 241.837 681.632 233.954 709.791 266.095C751.593 226.317 817.553 261.225 810.244 316.751C851.667 319.639 877.861 364.532 858.729 403.153L794.051 533.711C818.323 530.446 842.875 542.386 854.677 565.418C869.812 594.789 858.362 630.967 829.171 646.414L639.745 747.201C632.916 750.848 624.732 750.923 617.832 747.505L473.503 677C463.467 672.028 573.316 628.993 575.914 618.116L548.226 487C551.749 472.229 475.208 378.693 482 364.983L505.064 316.894C523.486 279.707 572.563 272.102 600.843 300.62ZM505.064 388.948C499.382 400.418 580.906 616.601 578 629L505.064 657L628.408 716.921L814.175 618.116C827.833 610.821 833.315 593.672 826.243 580.013C819.261 566.399 802.56 561.139 788.902 568.434L746.053 591.177C739.225 594.824 731.684 587.518 735.147 580.528L830.054 388.948C846.923 354.897 796.792 331.291 780.101 364.983L709.609 507.279C707.655 511.222 702.831 512.85 698.889 510.897L692.527 507.745C688.584 505.792 686.956 500.968 688.909 497.025L775.826 321.574C792.695 287.523 742.564 263.916 725.873 297.609L639.311 472.343C637.358 476.286 632.534 477.913 628.591 475.96L622.229 472.808C618.287 470.855 616.659 466.031 618.612 462.089L689.77 318.448C706.639 284.397 656.508 260.791 639.817 294.483L568.925 437.586C566.972 441.528 562.148 443.156 558.205 441.203L551.843 438.051C547.901 436.098 546.273 431.274 548.226 427.331L583.295 356.542C599.986 322.849 550.876 297.182 533.963 331.322L505.064 388.948Z"
+                        fill="gray"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="rotate(54.7453 269.491 33)"
+                        width="150"
+                        x="269.491"
+                        y="33"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="matrix(-0.577211 0.816595 0.816595 0.577211 763 33)"
+                        width="150"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="matrix(-4.37114e-08 1 1 4.37114e-08 502 0)"
+                        width="150"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="matrix(0.577211 -0.816595 -0.816595 -0.577211 269.491 963.924)"
+                        width="150"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="rotate(-125.255 763 963.924)"
+                        width="150"
+                        x="763"
+                        y="963.924"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="rotate(-90 502 996.924)"
+                        width="150"
+                        x="502"
+                        y="996.924"
+                      />
+                    </svg>
+                    <span
+                      className="Statistic Claps count"
+                    >
+                      0
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="Pinpoint Changelog Card Container wrapper Prebuilt"
+        >
+          <img
+            className="cover"
+            src="https://file.pinpoint.com/0b30097a5ab0b70f79d8659a43a06dc2;UAQ%2CL3~qIB_2IUt6IUs%3A00k9M%7CWCogRjWUtR;2428x1616.png"
+          />
+          <div
+            className="content"
+          >
+            <h2
+              className="Pinpoint Changelog Card Title Prebuilt"
+            >
+              Changelog planning just got way simpler!
+            </h2>
+            <span
+              className="Pinpoint Changelog Card Date Prebuilt"
+            >
+              7/21/2021
+            </span>
+            <div
+              className="Pinpoint Tag Bar Prebuilt"
+            >
+              <div
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
+                    "border": "1px solid var(--tag-bcolor, #3f7a4333)",
+                    "color": "var(--tag-fgcolor, #27632e)",
+                  }
+                }
+              >
+                feature
+              </div>
+            </div>
+            <p
+              className="Pinpoint Changelog Card Description Prebuilt"
+            >
+              We could not be more excited to announce this feature 📣  This was born through our own use of the product after we integrated with GitHub.  Once you integrate an issue or code system you will see 
+Planning 
+populated with your recently completed...
+            </p>
+            <div
+              className="footer"
+            >
+              <div
+                className="button"
+              >
+                <span
+                  className="Pinpoint Internal Link clickable Changelog Card Read Prebuilt"
+                  onClick={[Function]}
+                >
+                  Read
+                  <svg
+                    className="arrow"
+                    fill="none"
+                    height={16}
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                    width={16}
+                  >
+                    <path
+                      d="M5 12h14"
+                    />
+                    <path
+                      d="M12 5l7 7-7 7"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div
+                className="statistics"
+              >
+                <div
+                  className="Pinpoint Statistic Bar wrapper Prebuilt"
+                >
+                  <div
+                    className="Pinpoint Statistic Views wrapper "
+                  >
+                    <svg
+                      fill="none"
+                      height={16}
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      viewBox="0 0 24 24"
+                      width={16}
+                    >
+                      <path
+                        d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
+                      />
+                      <circle
+                        cx="12"
+                        cy="12"
+                        r="3"
+                      />
+                    </svg>
+                    <span
+                      className="Statistic Views count"
+                    >
+                      0
+                    </span>
+                  </div>
+                  <div
+                    className="Pinpoint Statistic Claps wrapper "
+                  >
+                    <svg
+                      fill="none"
+                      height="22"
+                      viewBox="0 0 985 997"
+                      width="22"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M384.602 300.771L374.481 280.34C355.482 241.988 303.813 234.105 275.654 266.246C233.852 226.468 167.893 261.376 175.201 316.902C133.778 319.79 107.584 364.684 126.716 403.304L191.394 533.862C167.122 530.597 142.57 542.537 130.768 565.569C115.633 594.94 127.083 631.118 156.274 646.565L345.7 747.352C352.529 750.999 360.713 751.074 367.613 747.656L575.681 644.581C585.717 639.609 590.991 628.403 588.392 617.526L556.335 482.08C552.812 467.309 547.677 452.89 540.885 439.18L480.381 317.045C461.959 279.858 412.882 272.253 384.602 300.771ZM512.211 453.385C517.893 464.855 522.231 476.99 525.137 489.389L555.696 618.658L357.037 717.072L171.27 618.267C157.613 610.972 152.13 593.823 159.202 580.164C166.184 566.55 182.885 561.29 196.543 568.585L239.392 591.328C246.221 594.975 253.761 587.669 250.298 580.679L155.391 389.099C138.522 355.048 188.653 331.442 205.344 365.134L275.836 507.43C277.79 511.373 282.614 513.001 286.556 511.048L292.918 507.896C296.861 505.943 298.489 501.119 296.536 497.176L209.619 321.725C192.75 287.674 242.881 264.067 259.572 297.76L346.134 472.494C348.087 476.437 352.911 478.064 356.854 476.111L363.216 472.959C367.158 471.006 368.786 466.182 366.833 462.24L295.675 318.599C278.806 284.548 328.937 260.942 345.628 294.634L416.52 437.737C418.473 441.679 423.297 443.307 427.24 441.354L433.602 438.202C437.545 436.249 439.172 431.425 437.219 427.482L402.15 356.693C385.459 323 434.569 297.333 451.482 331.473L511.942 453.518L512.211 453.385Z"
+                        fill="gray"
+                      />
+                      <path
+                        d="M600.843 300.62L610.964 280.189C629.963 241.837 681.632 233.954 709.791 266.095C751.593 226.317 817.553 261.225 810.244 316.751C851.667 319.639 877.861 364.532 858.729 403.153L794.051 533.711C818.323 530.446 842.875 542.386 854.677 565.418C869.812 594.789 858.362 630.967 829.171 646.414L639.745 747.201C632.916 750.848 624.732 750.923 617.832 747.505L473.503 677C463.467 672.028 573.316 628.993 575.914 618.116L548.226 487C551.749 472.229 475.208 378.693 482 364.983L505.064 316.894C523.486 279.707 572.563 272.102 600.843 300.62ZM505.064 388.948C499.382 400.418 580.906 616.601 578 629L505.064 657L628.408 716.921L814.175 618.116C827.833 610.821 833.315 593.672 826.243 580.013C819.261 566.399 802.56 561.139 788.902 568.434L746.053 591.177C739.225 594.824 731.684 587.518 735.147 580.528L830.054 388.948C846.923 354.897 796.792 331.291 780.101 364.983L709.609 507.279C707.655 511.222 702.831 512.85 698.889 510.897L692.527 507.745C688.584 505.792 686.956 500.968 688.909 497.025L775.826 321.574C792.695 287.523 742.564 263.916 725.873 297.609L639.311 472.343C637.358 476.286 632.534 477.913 628.591 475.96L622.229 472.808C618.287 470.855 616.659 466.031 618.612 462.089L689.77 318.448C706.639 284.397 656.508 260.791 639.817 294.483L568.925 437.586C566.972 441.528 562.148 443.156 558.205 441.203L551.843 438.051C547.901 436.098 546.273 431.274 548.226 427.331L583.295 356.542C599.986 322.849 550.876 297.182 533.963 331.322L505.064 388.948Z"
+                        fill="gray"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="rotate(54.7453 269.491 33)"
+                        width="150"
+                        x="269.491"
+                        y="33"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="matrix(-0.577211 0.816595 0.816595 0.577211 763 33)"
+                        width="150"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="matrix(-4.37114e-08 1 1 4.37114e-08 502 0)"
+                        width="150"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="matrix(0.577211 -0.816595 -0.816595 -0.577211 269.491 963.924)"
+                        width="150"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="rotate(-125.255 763 963.924)"
+                        width="150"
+                        x="763"
+                        y="963.924"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="rotate(-90 502 996.924)"
+                        width="150"
+                        x="502"
+                        y="996.924"
+                      />
+                    </svg>
+                    <span
+                      className="Statistic Claps count"
+                    >
+                      0
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="Pinpoint Changelog Card Container wrapper Prebuilt"
+        >
+          <img
+            className="cover"
+            src="https://file.pinpoint.com/bb92450c0c434e40c7e4b759787f871f;U7QS%7D7%3Fa00~X00ITRies00Ri%25MRQ4T%25Lt7Rk;1590x1167.png"
+          />
+          <div
+            className="content"
+          >
+            <h2
+              className="Pinpoint Changelog Card Title Prebuilt"
+            >
+              Email validation, filtering, and subscriber search 🔍
+            </h2>
+            <span
+              className="Pinpoint Changelog Card Date Prebuilt"
+            >
+              7/19/2021
+            </span>
+            <div
+              className="Pinpoint Tag Bar Prebuilt"
+            >
+              <div
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
+                    "border": "1px solid var(--tag-bcolor, #23747633)",
+                    "color": "var(--tag-fgcolor, #005e5f)",
+                  }
+                }
+              >
+                improvement
+              </div>
+              <div
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
+                    "border": "1px solid var(--tag-bcolor, #3f7a4333)",
+                    "color": "var(--tag-fgcolor, #27632e)",
+                  }
+                }
+              >
+                feature
+              </div>
+            </div>
+            <p
+              className="Pinpoint Changelog Card Description Prebuilt"
+            >
+              As new users subscribe to your changelog you will be able to quickly see if they have verified and validated their email addresses with you.  Along with this you also now have the ability to search your subscriber list.  This will help you ensure...
+            </p>
+            <div
+              className="footer"
+            >
+              <div
+                className="button"
+              >
+                <span
+                  className="Pinpoint Internal Link clickable Changelog Card Read Prebuilt"
+                  onClick={[Function]}
+                >
+                  Read
+                  <svg
+                    className="arrow"
+                    fill="none"
+                    height={16}
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                    width={16}
+                  >
+                    <path
+                      d="M5 12h14"
+                    />
+                    <path
+                      d="M12 5l7 7-7 7"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div
+                className="statistics"
+              >
+                <div
+                  className="Pinpoint Statistic Bar wrapper Prebuilt"
+                >
+                  <div
+                    className="Pinpoint Statistic Views wrapper "
+                  >
+                    <svg
+                      fill="none"
+                      height={16}
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      viewBox="0 0 24 24"
+                      width={16}
+                    >
+                      <path
+                        d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
+                      />
+                      <circle
+                        cx="12"
+                        cy="12"
+                        r="3"
+                      />
+                    </svg>
+                    <span
+                      className="Statistic Views count"
+                    >
+                      0
+                    </span>
+                  </div>
+                  <div
+                    className="Pinpoint Statistic Claps wrapper "
+                  >
+                    <svg
+                      fill="none"
+                      height="22"
+                      viewBox="0 0 985 997"
+                      width="22"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M384.602 300.771L374.481 280.34C355.482 241.988 303.813 234.105 275.654 266.246C233.852 226.468 167.893 261.376 175.201 316.902C133.778 319.79 107.584 364.684 126.716 403.304L191.394 533.862C167.122 530.597 142.57 542.537 130.768 565.569C115.633 594.94 127.083 631.118 156.274 646.565L345.7 747.352C352.529 750.999 360.713 751.074 367.613 747.656L575.681 644.581C585.717 639.609 590.991 628.403 588.392 617.526L556.335 482.08C552.812 467.309 547.677 452.89 540.885 439.18L480.381 317.045C461.959 279.858 412.882 272.253 384.602 300.771ZM512.211 453.385C517.893 464.855 522.231 476.99 525.137 489.389L555.696 618.658L357.037 717.072L171.27 618.267C157.613 610.972 152.13 593.823 159.202 580.164C166.184 566.55 182.885 561.29 196.543 568.585L239.392 591.328C246.221 594.975 253.761 587.669 250.298 580.679L155.391 389.099C138.522 355.048 188.653 331.442 205.344 365.134L275.836 507.43C277.79 511.373 282.614 513.001 286.556 511.048L292.918 507.896C296.861 505.943 298.489 501.119 296.536 497.176L209.619 321.725C192.75 287.674 242.881 264.067 259.572 297.76L346.134 472.494C348.087 476.437 352.911 478.064 356.854 476.111L363.216 472.959C367.158 471.006 368.786 466.182 366.833 462.24L295.675 318.599C278.806 284.548 328.937 260.942 345.628 294.634L416.52 437.737C418.473 441.679 423.297 443.307 427.24 441.354L433.602 438.202C437.545 436.249 439.172 431.425 437.219 427.482L402.15 356.693C385.459 323 434.569 297.333 451.482 331.473L511.942 453.518L512.211 453.385Z"
+                        fill="gray"
+                      />
+                      <path
+                        d="M600.843 300.62L610.964 280.189C629.963 241.837 681.632 233.954 709.791 266.095C751.593 226.317 817.553 261.225 810.244 316.751C851.667 319.639 877.861 364.532 858.729 403.153L794.051 533.711C818.323 530.446 842.875 542.386 854.677 565.418C869.812 594.789 858.362 630.967 829.171 646.414L639.745 747.201C632.916 750.848 624.732 750.923 617.832 747.505L473.503 677C463.467 672.028 573.316 628.993 575.914 618.116L548.226 487C551.749 472.229 475.208 378.693 482 364.983L505.064 316.894C523.486 279.707 572.563 272.102 600.843 300.62ZM505.064 388.948C499.382 400.418 580.906 616.601 578 629L505.064 657L628.408 716.921L814.175 618.116C827.833 610.821 833.315 593.672 826.243 580.013C819.261 566.399 802.56 561.139 788.902 568.434L746.053 591.177C739.225 594.824 731.684 587.518 735.147 580.528L830.054 388.948C846.923 354.897 796.792 331.291 780.101 364.983L709.609 507.279C707.655 511.222 702.831 512.85 698.889 510.897L692.527 507.745C688.584 505.792 686.956 500.968 688.909 497.025L775.826 321.574C792.695 287.523 742.564 263.916 725.873 297.609L639.311 472.343C637.358 476.286 632.534 477.913 628.591 475.96L622.229 472.808C618.287 470.855 616.659 466.031 618.612 462.089L689.77 318.448C706.639 284.397 656.508 260.791 639.817 294.483L568.925 437.586C566.972 441.528 562.148 443.156 558.205 441.203L551.843 438.051C547.901 436.098 546.273 431.274 548.226 427.331L583.295 356.542C599.986 322.849 550.876 297.182 533.963 331.322L505.064 388.948Z"
+                        fill="gray"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="rotate(54.7453 269.491 33)"
+                        width="150"
+                        x="269.491"
+                        y="33"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="matrix(-0.577211 0.816595 0.816595 0.577211 763 33)"
+                        width="150"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="matrix(-4.37114e-08 1 1 4.37114e-08 502 0)"
+                        width="150"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="matrix(0.577211 -0.816595 -0.816595 -0.577211 269.491 963.924)"
+                        width="150"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="rotate(-125.255 763 963.924)"
+                        width="150"
+                        x="763"
+                        y="963.924"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="rotate(-90 502 996.924)"
+                        width="150"
+                        x="502"
+                        y="996.924"
+                      />
+                    </svg>
+                    <span
+                      className="Statistic Claps count"
+                    >
+                      0
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="Pinpoint Changelog Card Container wrapper Prebuilt"
+        >
+          <img
+            className="cover"
+            src="https://file.pinpoint.com/427af3d4092966d96238e7f95f41c3a6;UfS%3FANxuf7xu~qj%5BfQj%5BayfjfQj%5B~qoffQkC;2870x701.png"
+          />
+          <div
+            className="content"
+          >
+            <h2
+              className="Pinpoint Changelog Card Title Prebuilt"
+            >
+              Analytics Drill-Down and Localization
+            </h2>
+            <span
+              className="Pinpoint Changelog Card Date Prebuilt"
+            >
+              7/12/2021
+            </span>
+            <div
+              className="Pinpoint Tag Bar Prebuilt"
+            >
+              <div
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
+                    "border": "1px solid var(--tag-bcolor, #3f7a4333)",
+                    "color": "var(--tag-fgcolor, #27632e)",
+                  }
+                }
+              >
+                feature
+              </div>
+              <div
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "var(--tag-bug-bgcolor,#d73a4a)",
+                    "border": "1px solid var(--tag-bcolor, #51000033)",
+                    "color": "var(--tag-fgcolor, #ffffff)",
+                  }
+                }
+              >
+                bug
+              </div>
+              <div
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
+                    "border": "1px solid var(--tag-bcolor, #23747633)",
+                    "color": "var(--tag-fgcolor, #005e5f)",
+                  }
+                }
+              >
+                improvement
+              </div>
+            </div>
+            <p
+              className="Pinpoint Changelog Card Description Prebuilt"
+            >
+              We have now added drill-down analytics to give you even deeper insight into where your changelogs are having the most impact.  Check out the video below to lear
+            </p>
+            <div
+              className="footer"
+            >
+              <div
+                className="button"
+              >
+                <span
+                  className="Pinpoint Internal Link clickable Changelog Card Read Prebuilt"
+                  onClick={[Function]}
+                >
+                  Read
+                  <svg
+                    className="arrow"
+                    fill="none"
+                    height={16}
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                    width={16}
+                  >
+                    <path
+                      d="M5 12h14"
+                    />
+                    <path
+                      d="M12 5l7 7-7 7"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div
+                className="statistics"
+              >
+                <div
+                  className="Pinpoint Statistic Bar wrapper Prebuilt"
+                >
+                  <div
+                    className="Pinpoint Statistic Views wrapper "
+                  >
+                    <svg
+                      fill="none"
+                      height={16}
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      viewBox="0 0 24 24"
+                      width={16}
+                    >
+                      <path
+                        d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
+                      />
+                      <circle
+                        cx="12"
+                        cy="12"
+                        r="3"
+                      />
+                    </svg>
+                    <span
+                      className="Statistic Views count"
+                    >
+                      0
+                    </span>
+                  </div>
+                  <div
+                    className="Pinpoint Statistic Claps wrapper "
+                  >
+                    <svg
+                      fill="none"
+                      height="22"
+                      viewBox="0 0 985 997"
+                      width="22"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M384.602 300.771L374.481 280.34C355.482 241.988 303.813 234.105 275.654 266.246C233.852 226.468 167.893 261.376 175.201 316.902C133.778 319.79 107.584 364.684 126.716 403.304L191.394 533.862C167.122 530.597 142.57 542.537 130.768 565.569C115.633 594.94 127.083 631.118 156.274 646.565L345.7 747.352C352.529 750.999 360.713 751.074 367.613 747.656L575.681 644.581C585.717 639.609 590.991 628.403 588.392 617.526L556.335 482.08C552.812 467.309 547.677 452.89 540.885 439.18L480.381 317.045C461.959 279.858 412.882 272.253 384.602 300.771ZM512.211 453.385C517.893 464.855 522.231 476.99 525.137 489.389L555.696 618.658L357.037 717.072L171.27 618.267C157.613 610.972 152.13 593.823 159.202 580.164C166.184 566.55 182.885 561.29 196.543 568.585L239.392 591.328C246.221 594.975 253.761 587.669 250.298 580.679L155.391 389.099C138.522 355.048 188.653 331.442 205.344 365.134L275.836 507.43C277.79 511.373 282.614 513.001 286.556 511.048L292.918 507.896C296.861 505.943 298.489 501.119 296.536 497.176L209.619 321.725C192.75 287.674 242.881 264.067 259.572 297.76L346.134 472.494C348.087 476.437 352.911 478.064 356.854 476.111L363.216 472.959C367.158 471.006 368.786 466.182 366.833 462.24L295.675 318.599C278.806 284.548 328.937 260.942 345.628 294.634L416.52 437.737C418.473 441.679 423.297 443.307 427.24 441.354L433.602 438.202C437.545 436.249 439.172 431.425 437.219 427.482L402.15 356.693C385.459 323 434.569 297.333 451.482 331.473L511.942 453.518L512.211 453.385Z"
+                        fill="gray"
+                      />
+                      <path
+                        d="M600.843 300.62L610.964 280.189C629.963 241.837 681.632 233.954 709.791 266.095C751.593 226.317 817.553 261.225 810.244 316.751C851.667 319.639 877.861 364.532 858.729 403.153L794.051 533.711C818.323 530.446 842.875 542.386 854.677 565.418C869.812 594.789 858.362 630.967 829.171 646.414L639.745 747.201C632.916 750.848 624.732 750.923 617.832 747.505L473.503 677C463.467 672.028 573.316 628.993 575.914 618.116L548.226 487C551.749 472.229 475.208 378.693 482 364.983L505.064 316.894C523.486 279.707 572.563 272.102 600.843 300.62ZM505.064 388.948C499.382 400.418 580.906 616.601 578 629L505.064 657L628.408 716.921L814.175 618.116C827.833 610.821 833.315 593.672 826.243 580.013C819.261 566.399 802.56 561.139 788.902 568.434L746.053 591.177C739.225 594.824 731.684 587.518 735.147 580.528L830.054 388.948C846.923 354.897 796.792 331.291 780.101 364.983L709.609 507.279C707.655 511.222 702.831 512.85 698.889 510.897L692.527 507.745C688.584 505.792 686.956 500.968 688.909 497.025L775.826 321.574C792.695 287.523 742.564 263.916 725.873 297.609L639.311 472.343C637.358 476.286 632.534 477.913 628.591 475.96L622.229 472.808C618.287 470.855 616.659 466.031 618.612 462.089L689.77 318.448C706.639 284.397 656.508 260.791 639.817 294.483L568.925 437.586C566.972 441.528 562.148 443.156 558.205 441.203L551.843 438.051C547.901 436.098 546.273 431.274 548.226 427.331L583.295 356.542C599.986 322.849 550.876 297.182 533.963 331.322L505.064 388.948Z"
+                        fill="gray"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="rotate(54.7453 269.491 33)"
+                        width="150"
+                        x="269.491"
+                        y="33"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="matrix(-0.577211 0.816595 0.816595 0.577211 763 33)"
+                        width="150"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="matrix(-4.37114e-08 1 1 4.37114e-08 502 0)"
+                        width="150"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="matrix(0.577211 -0.816595 -0.816595 -0.577211 269.491 963.924)"
+                        width="150"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="rotate(-125.255 763 963.924)"
+                        width="150"
+                        x="763"
+                        y="963.924"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="rotate(-90 502 996.924)"
+                        width="150"
+                        x="502"
+                        y="996.924"
+                      />
+                    </svg>
+                    <span
+                      className="Statistic Claps count"
+                    >
+                      0
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="Pinpoint Changelog Card Container wrapper Prebuilt"
+        >
+          
+          <div
+            className="content"
+          >
+            <h2
+              className="Pinpoint Changelog Card Title Prebuilt"
+            >
+              Already mentioned notice
+            </h2>
+            <span
+              className="Pinpoint Changelog Card Date Prebuilt"
+            >
+              7/14/2021
+            </span>
+            <div
+              className="Pinpoint Tag Bar Prebuilt"
+            >
+              <div
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
+                    "border": "1px solid var(--tag-bcolor, #23747633)",
+                    "color": "var(--tag-fgcolor, #005e5f)",
+                  }
+                }
+              >
+                improvement
+              </div>
+              <div
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "var(--tag-bug-bgcolor,#d73a4a)",
+                    "border": "1px solid var(--tag-bcolor, #51000033)",
+                    "color": "var(--tag-fgcolor, #ffffff)",
+                  }
+                }
+              >
+                bug
+              </div>
+            </div>
+            <p
+              className="Pinpoint Changelog Card Description Prebuilt"
+            >
+              If you are lucky 🍀 enough to have tried our integrations we will now identify a PR or issue that has previously been mentioned in a changelog entry.  Maybe you want to mention it again, your call but we wanted to make sure you knew 😉...
+            </p>
+            <div
+              className="footer"
+            >
+              <div
+                className="button"
+              >
+                <span
+                  className="Pinpoint Internal Link clickable Changelog Card Read Prebuilt"
+                  onClick={[Function]}
+                >
+                  Read
+                  <svg
+                    className="arrow"
+                    fill="none"
+                    height={16}
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                    width={16}
+                  >
+                    <path
+                      d="M5 12h14"
+                    />
+                    <path
+                      d="M12 5l7 7-7 7"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div
+                className="statistics"
+              >
+                <div
+                  className="Pinpoint Statistic Bar wrapper Prebuilt"
+                >
+                  <div
+                    className="Pinpoint Statistic Views wrapper "
+                  >
+                    <svg
+                      fill="none"
+                      height={16}
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      viewBox="0 0 24 24"
+                      width={16}
+                    >
+                      <path
+                        d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
+                      />
+                      <circle
+                        cx="12"
+                        cy="12"
+                        r="3"
+                      />
+                    </svg>
+                    <span
+                      className="Statistic Views count"
+                    >
+                      0
+                    </span>
+                  </div>
+                  <div
+                    className="Pinpoint Statistic Claps wrapper "
+                  >
+                    <svg
+                      fill="none"
+                      height="22"
+                      viewBox="0 0 985 997"
+                      width="22"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M384.602 300.771L374.481 280.34C355.482 241.988 303.813 234.105 275.654 266.246C233.852 226.468 167.893 261.376 175.201 316.902C133.778 319.79 107.584 364.684 126.716 403.304L191.394 533.862C167.122 530.597 142.57 542.537 130.768 565.569C115.633 594.94 127.083 631.118 156.274 646.565L345.7 747.352C352.529 750.999 360.713 751.074 367.613 747.656L575.681 644.581C585.717 639.609 590.991 628.403 588.392 617.526L556.335 482.08C552.812 467.309 547.677 452.89 540.885 439.18L480.381 317.045C461.959 279.858 412.882 272.253 384.602 300.771ZM512.211 453.385C517.893 464.855 522.231 476.99 525.137 489.389L555.696 618.658L357.037 717.072L171.27 618.267C157.613 610.972 152.13 593.823 159.202 580.164C166.184 566.55 182.885 561.29 196.543 568.585L239.392 591.328C246.221 594.975 253.761 587.669 250.298 580.679L155.391 389.099C138.522 355.048 188.653 331.442 205.344 365.134L275.836 507.43C277.79 511.373 282.614 513.001 286.556 511.048L292.918 507.896C296.861 505.943 298.489 501.119 296.536 497.176L209.619 321.725C192.75 287.674 242.881 264.067 259.572 297.76L346.134 472.494C348.087 476.437 352.911 478.064 356.854 476.111L363.216 472.959C367.158 471.006 368.786 466.182 366.833 462.24L295.675 318.599C278.806 284.548 328.937 260.942 345.628 294.634L416.52 437.737C418.473 441.679 423.297 443.307 427.24 441.354L433.602 438.202C437.545 436.249 439.172 431.425 437.219 427.482L402.15 356.693C385.459 323 434.569 297.333 451.482 331.473L511.942 453.518L512.211 453.385Z"
+                        fill="gray"
+                      />
+                      <path
+                        d="M600.843 300.62L610.964 280.189C629.963 241.837 681.632 233.954 709.791 266.095C751.593 226.317 817.553 261.225 810.244 316.751C851.667 319.639 877.861 364.532 858.729 403.153L794.051 533.711C818.323 530.446 842.875 542.386 854.677 565.418C869.812 594.789 858.362 630.967 829.171 646.414L639.745 747.201C632.916 750.848 624.732 750.923 617.832 747.505L473.503 677C463.467 672.028 573.316 628.993 575.914 618.116L548.226 487C551.749 472.229 475.208 378.693 482 364.983L505.064 316.894C523.486 279.707 572.563 272.102 600.843 300.62ZM505.064 388.948C499.382 400.418 580.906 616.601 578 629L505.064 657L628.408 716.921L814.175 618.116C827.833 610.821 833.315 593.672 826.243 580.013C819.261 566.399 802.56 561.139 788.902 568.434L746.053 591.177C739.225 594.824 731.684 587.518 735.147 580.528L830.054 388.948C846.923 354.897 796.792 331.291 780.101 364.983L709.609 507.279C707.655 511.222 702.831 512.85 698.889 510.897L692.527 507.745C688.584 505.792 686.956 500.968 688.909 497.025L775.826 321.574C792.695 287.523 742.564 263.916 725.873 297.609L639.311 472.343C637.358 476.286 632.534 477.913 628.591 475.96L622.229 472.808C618.287 470.855 616.659 466.031 618.612 462.089L689.77 318.448C706.639 284.397 656.508 260.791 639.817 294.483L568.925 437.586C566.972 441.528 562.148 443.156 558.205 441.203L551.843 438.051C547.901 436.098 546.273 431.274 548.226 427.331L583.295 356.542C599.986 322.849 550.876 297.182 533.963 331.322L505.064 388.948Z"
+                        fill="gray"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="rotate(54.7453 269.491 33)"
+                        width="150"
+                        x="269.491"
+                        y="33"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="matrix(-0.577211 0.816595 0.816595 0.577211 763 33)"
+                        width="150"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="matrix(-4.37114e-08 1 1 4.37114e-08 502 0)"
+                        width="150"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="matrix(0.577211 -0.816595 -0.816595 -0.577211 269.491 963.924)"
+                        width="150"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="rotate(-125.255 763 963.924)"
+                        width="150"
+                        x="763"
+                        y="963.924"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="rotate(-90 502 996.924)"
+                        width="150"
+                        x="502"
+                        y="996.924"
+                      />
+                    </svg>
+                    <span
+                      className="Statistic Claps count"
+                    >
+                      0
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="Pinpoint Changelog Card Container wrapper Prebuilt"
+        >
+          <img
+            className="cover"
+            src="https://file.pinpoint.com/5b306ad32dc7f8735503e0d260ffc944;UcL%3Bmf00ay~q%25MM%7BWBofM%7BM%7BRiWB%25MRjofof;2795x1108.png"
+          />
+          <div
+            className="content"
+          >
+            <h2
+              className="Pinpoint Changelog Card Title Prebuilt"
+            >
+              Published Page Search and Filtering
+            </h2>
+            <span
+              className="Pinpoint Changelog Card Date Prebuilt"
+            >
+              7/1/2021
+            </span>
+            <div
+              className="Pinpoint Tag Bar Prebuilt"
+            >
+              <div
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
+                    "border": "1px solid var(--tag-bcolor, #3f7a4333)",
+                    "color": "var(--tag-fgcolor, #27632e)",
+                  }
+                }
+              >
+                feature
+              </div>
+              <div
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
+                    "border": "1px solid var(--tag-bcolor, #23747633)",
+                    "color": "var(--tag-fgcolor, #005e5f)",
+                  }
+                }
+              >
+                improvement
+              </div>
+            </div>
+            <p
+              className="Pinpoint Changelog Card Description Prebuilt"
+            >
+              Users can now search your public changelog with ease.  Searches are lightning quick ⚡️ too! 
+            </p>
+            <div
+              className="footer"
+            >
+              <div
+                className="button"
+              >
+                <span
+                  className="Pinpoint Internal Link clickable Changelog Card Read Prebuilt"
+                  onClick={[Function]}
+                >
+                  Read
+                  <svg
+                    className="arrow"
+                    fill="none"
+                    height={16}
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                    width={16}
+                  >
+                    <path
+                      d="M5 12h14"
+                    />
+                    <path
+                      d="M12 5l7 7-7 7"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div
+                className="statistics"
+              >
+                <div
+                  className="Pinpoint Statistic Bar wrapper Prebuilt"
+                >
+                  <div
+                    className="Pinpoint Statistic Views wrapper "
+                  >
+                    <svg
+                      fill="none"
+                      height={16}
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      viewBox="0 0 24 24"
+                      width={16}
+                    >
+                      <path
+                        d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
+                      />
+                      <circle
+                        cx="12"
+                        cy="12"
+                        r="3"
+                      />
+                    </svg>
+                    <span
+                      className="Statistic Views count"
+                    >
+                      25
+                    </span>
+                  </div>
+                  <div
+                    className="Pinpoint Statistic Claps wrapper "
+                  >
+                    <svg
+                      fill="none"
+                      height="22"
+                      viewBox="0 0 985 997"
+                      width="22"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M384.602 300.771L374.481 280.34C355.482 241.988 303.813 234.105 275.654 266.246C233.852 226.468 167.893 261.376 175.201 316.902C133.778 319.79 107.584 364.684 126.716 403.304L191.394 533.862C167.122 530.597 142.57 542.537 130.768 565.569C115.633 594.94 127.083 631.118 156.274 646.565L345.7 747.352C352.529 750.999 360.713 751.074 367.613 747.656L575.681 644.581C585.717 639.609 590.991 628.403 588.392 617.526L556.335 482.08C552.812 467.309 547.677 452.89 540.885 439.18L480.381 317.045C461.959 279.858 412.882 272.253 384.602 300.771ZM512.211 453.385C517.893 464.855 522.231 476.99 525.137 489.389L555.696 618.658L357.037 717.072L171.27 618.267C157.613 610.972 152.13 593.823 159.202 580.164C166.184 566.55 182.885 561.29 196.543 568.585L239.392 591.328C246.221 594.975 253.761 587.669 250.298 580.679L155.391 389.099C138.522 355.048 188.653 331.442 205.344 365.134L275.836 507.43C277.79 511.373 282.614 513.001 286.556 511.048L292.918 507.896C296.861 505.943 298.489 501.119 296.536 497.176L209.619 321.725C192.75 287.674 242.881 264.067 259.572 297.76L346.134 472.494C348.087 476.437 352.911 478.064 356.854 476.111L363.216 472.959C367.158 471.006 368.786 466.182 366.833 462.24L295.675 318.599C278.806 284.548 328.937 260.942 345.628 294.634L416.52 437.737C418.473 441.679 423.297 443.307 427.24 441.354L433.602 438.202C437.545 436.249 439.172 431.425 437.219 427.482L402.15 356.693C385.459 323 434.569 297.333 451.482 331.473L511.942 453.518L512.211 453.385Z"
+                        fill="gray"
+                      />
+                      <path
+                        d="M600.843 300.62L610.964 280.189C629.963 241.837 681.632 233.954 709.791 266.095C751.593 226.317 817.553 261.225 810.244 316.751C851.667 319.639 877.861 364.532 858.729 403.153L794.051 533.711C818.323 530.446 842.875 542.386 854.677 565.418C869.812 594.789 858.362 630.967 829.171 646.414L639.745 747.201C632.916 750.848 624.732 750.923 617.832 747.505L473.503 677C463.467 672.028 573.316 628.993 575.914 618.116L548.226 487C551.749 472.229 475.208 378.693 482 364.983L505.064 316.894C523.486 279.707 572.563 272.102 600.843 300.62ZM505.064 388.948C499.382 400.418 580.906 616.601 578 629L505.064 657L628.408 716.921L814.175 618.116C827.833 610.821 833.315 593.672 826.243 580.013C819.261 566.399 802.56 561.139 788.902 568.434L746.053 591.177C739.225 594.824 731.684 587.518 735.147 580.528L830.054 388.948C846.923 354.897 796.792 331.291 780.101 364.983L709.609 507.279C707.655 511.222 702.831 512.85 698.889 510.897L692.527 507.745C688.584 505.792 686.956 500.968 688.909 497.025L775.826 321.574C792.695 287.523 742.564 263.916 725.873 297.609L639.311 472.343C637.358 476.286 632.534 477.913 628.591 475.96L622.229 472.808C618.287 470.855 616.659 466.031 618.612 462.089L689.77 318.448C706.639 284.397 656.508 260.791 639.817 294.483L568.925 437.586C566.972 441.528 562.148 443.156 558.205 441.203L551.843 438.051C547.901 436.098 546.273 431.274 548.226 427.331L583.295 356.542C599.986 322.849 550.876 297.182 533.963 331.322L505.064 388.948Z"
+                        fill="gray"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="rotate(54.7453 269.491 33)"
+                        width="150"
+                        x="269.491"
+                        y="33"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="matrix(-0.577211 0.816595 0.816595 0.577211 763 33)"
+                        width="150"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="matrix(-4.37114e-08 1 1 4.37114e-08 502 0)"
+                        width="150"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="matrix(0.577211 -0.816595 -0.816595 -0.577211 269.491 963.924)"
+                        width="150"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="rotate(-125.255 763 963.924)"
+                        width="150"
+                        x="763"
+                        y="963.924"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="rotate(-90 502 996.924)"
+                        width="150"
+                        x="502"
+                        y="996.924"
+                      />
+                    </svg>
+                    <span
+                      className="Statistic Claps count"
+                    >
+                      7
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="Pinpoint Changelog Card Container wrapper Prebuilt"
+        >
+          <img
+            className="cover"
+            src="https://file.pinpoint.com/46da8f9cce9e73b44e4c4fe7dfbfb8e7;UeS~x5tQR%25xu~qofafj%5BofofazfQ~qj%5Bayj%5B;1740x439.png"
+          />
+          <div
+            className="content"
+          >
+            <h2
+              className="Pinpoint Changelog Card Title Prebuilt"
+            >
+              Improved Analytics Accessibility
+            </h2>
+            <span
+              className="Pinpoint Changelog Card Date Prebuilt"
+            >
+              7/9/2021
+            </span>
+            <div
+              className="Pinpoint Tag Bar Prebuilt"
+            >
+              <div
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
+                    "border": "1px solid var(--tag-bcolor, #23747633)",
+                    "color": "var(--tag-fgcolor, #005e5f)",
+                  }
+                }
+              >
+                improvement
+              </div>
+            </div>
+            <p
+              className="Pinpoint Changelog Card Description Prebuilt"
+            >
+              To make it easier to navigate you are now able to click on the analytics icon in several places to give you direct access to your analytics information for your site or a specific changelog post.  Changelog analytics gives you insights into what ...
+            </p>
+            <div
+              className="footer"
+            >
+              <div
+                className="button"
+              >
+                <span
+                  className="Pinpoint Internal Link clickable Changelog Card Read Prebuilt"
+                  onClick={[Function]}
+                >
+                  Read
+                  <svg
+                    className="arrow"
+                    fill="none"
+                    height={16}
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                    width={16}
+                  >
+                    <path
+                      d="M5 12h14"
+                    />
+                    <path
+                      d="M12 5l7 7-7 7"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div
+                className="statistics"
+              >
+                <div
+                  className="Pinpoint Statistic Bar wrapper Prebuilt"
+                >
+                  <div
+                    className="Pinpoint Statistic Views wrapper "
+                  >
+                    <svg
+                      fill="none"
+                      height={16}
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      viewBox="0 0 24 24"
+                      width={16}
+                    >
+                      <path
+                        d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
+                      />
+                      <circle
+                        cx="12"
+                        cy="12"
+                        r="3"
+                      />
+                    </svg>
+                    <span
+                      className="Statistic Views count"
+                    >
+                      8
+                    </span>
+                  </div>
+                  <div
+                    className="Pinpoint Statistic Claps wrapper "
+                  >
+                    <svg
+                      fill="none"
+                      height="22"
+                      viewBox="0 0 985 997"
+                      width="22"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M384.602 300.771L374.481 280.34C355.482 241.988 303.813 234.105 275.654 266.246C233.852 226.468 167.893 261.376 175.201 316.902C133.778 319.79 107.584 364.684 126.716 403.304L191.394 533.862C167.122 530.597 142.57 542.537 130.768 565.569C115.633 594.94 127.083 631.118 156.274 646.565L345.7 747.352C352.529 750.999 360.713 751.074 367.613 747.656L575.681 644.581C585.717 639.609 590.991 628.403 588.392 617.526L556.335 482.08C552.812 467.309 547.677 452.89 540.885 439.18L480.381 317.045C461.959 279.858 412.882 272.253 384.602 300.771ZM512.211 453.385C517.893 464.855 522.231 476.99 525.137 489.389L555.696 618.658L357.037 717.072L171.27 618.267C157.613 610.972 152.13 593.823 159.202 580.164C166.184 566.55 182.885 561.29 196.543 568.585L239.392 591.328C246.221 594.975 253.761 587.669 250.298 580.679L155.391 389.099C138.522 355.048 188.653 331.442 205.344 365.134L275.836 507.43C277.79 511.373 282.614 513.001 286.556 511.048L292.918 507.896C296.861 505.943 298.489 501.119 296.536 497.176L209.619 321.725C192.75 287.674 242.881 264.067 259.572 297.76L346.134 472.494C348.087 476.437 352.911 478.064 356.854 476.111L363.216 472.959C367.158 471.006 368.786 466.182 366.833 462.24L295.675 318.599C278.806 284.548 328.937 260.942 345.628 294.634L416.52 437.737C418.473 441.679 423.297 443.307 427.24 441.354L433.602 438.202C437.545 436.249 439.172 431.425 437.219 427.482L402.15 356.693C385.459 323 434.569 297.333 451.482 331.473L511.942 453.518L512.211 453.385Z"
+                        fill="gray"
+                      />
+                      <path
+                        d="M600.843 300.62L610.964 280.189C629.963 241.837 681.632 233.954 709.791 266.095C751.593 226.317 817.553 261.225 810.244 316.751C851.667 319.639 877.861 364.532 858.729 403.153L794.051 533.711C818.323 530.446 842.875 542.386 854.677 565.418C869.812 594.789 858.362 630.967 829.171 646.414L639.745 747.201C632.916 750.848 624.732 750.923 617.832 747.505L473.503 677C463.467 672.028 573.316 628.993 575.914 618.116L548.226 487C551.749 472.229 475.208 378.693 482 364.983L505.064 316.894C523.486 279.707 572.563 272.102 600.843 300.62ZM505.064 388.948C499.382 400.418 580.906 616.601 578 629L505.064 657L628.408 716.921L814.175 618.116C827.833 610.821 833.315 593.672 826.243 580.013C819.261 566.399 802.56 561.139 788.902 568.434L746.053 591.177C739.225 594.824 731.684 587.518 735.147 580.528L830.054 388.948C846.923 354.897 796.792 331.291 780.101 364.983L709.609 507.279C707.655 511.222 702.831 512.85 698.889 510.897L692.527 507.745C688.584 505.792 686.956 500.968 688.909 497.025L775.826 321.574C792.695 287.523 742.564 263.916 725.873 297.609L639.311 472.343C637.358 476.286 632.534 477.913 628.591 475.96L622.229 472.808C618.287 470.855 616.659 466.031 618.612 462.089L689.77 318.448C706.639 284.397 656.508 260.791 639.817 294.483L568.925 437.586C566.972 441.528 562.148 443.156 558.205 441.203L551.843 438.051C547.901 436.098 546.273 431.274 548.226 427.331L583.295 356.542C599.986 322.849 550.876 297.182 533.963 331.322L505.064 388.948Z"
+                        fill="gray"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="rotate(54.7453 269.491 33)"
+                        width="150"
+                        x="269.491"
+                        y="33"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="matrix(-0.577211 0.816595 0.816595 0.577211 763 33)"
+                        width="150"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="matrix(-4.37114e-08 1 1 4.37114e-08 502 0)"
+                        width="150"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="matrix(0.577211 -0.816595 -0.816595 -0.577211 269.491 963.924)"
+                        width="150"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="rotate(-125.255 763 963.924)"
+                        width="150"
+                        x="763"
+                        y="963.924"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="rotate(-90 502 996.924)"
+                        width="150"
+                        x="502"
+                        y="996.924"
+                      />
+                    </svg>
+                    <span
+                      className="Statistic Claps count"
+                    >
+                      0
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="Pinpoint Changelog Card Container wrapper Prebuilt"
+        >
+          <img
+            className="cover"
+            src="https://file.pinpoint.com/4e00510e123db827caf3da0196504a5c;UDRMb%24xtWU~q00aeRQj%4000NFRkt600RPWBt7;3264x1694.png"
+          />
+          <div
+            className="content"
+          >
+            <h2
+              className="Pinpoint Changelog Card Title Prebuilt"
+            >
+              Tables, tables, tables
+            </h2>
+            <span
+              className="Pinpoint Changelog Card Date Prebuilt"
+            >
+              7/1/2021
+            </span>
+            <div
+              className="Pinpoint Tag Bar Prebuilt"
+            >
+              <div
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
+                    "border": "1px solid var(--tag-bcolor, #3f7a4333)",
+                    "color": "var(--tag-fgcolor, #27632e)",
+                  }
+                }
+              >
+                feature
+              </div>
+              <div
+                className="Pinpoint Tag Item Link clickable  "
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
+                    "border": "1px solid var(--tag-bcolor, #23747633)",
+                    "color": "var(--tag-fgcolor, #005e5f)",
+                  }
+                }
+              >
+                improvement
+              </div>
+            </div>
+            <p
+              className="Pinpoint Changelog Card Description Prebuilt"
+            >
+              Tables, tables, tables The changelog list is now sporting a bit of a new look.  You now see more info about what’s in the changelog along with improved visibility for analytics columns inline.  You can also see this new table on our subscriber’s ...
+            </p>
+            <div
+              className="footer"
+            >
+              <div
+                className="button"
+              >
+                <span
+                  className="Pinpoint Internal Link clickable Changelog Card Read Prebuilt"
+                  onClick={[Function]}
+                >
+                  Read
+                  <svg
+                    className="arrow"
+                    fill="none"
+                    height={16}
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                    width={16}
+                  >
+                    <path
+                      d="M5 12h14"
+                    />
+                    <path
+                      d="M12 5l7 7-7 7"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div
+                className="statistics"
+              >
+                <div
+                  className="Pinpoint Statistic Bar wrapper Prebuilt"
+                >
+                  <div
+                    className="Pinpoint Statistic Views wrapper "
+                  >
+                    <svg
+                      fill="none"
+                      height={16}
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      viewBox="0 0 24 24"
+                      width={16}
+                    >
+                      <path
+                        d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
+                      />
+                      <circle
+                        cx="12"
+                        cy="12"
+                        r="3"
+                      />
+                    </svg>
+                    <span
+                      className="Statistic Views count"
+                    >
+                      3
+                    </span>
+                  </div>
+                  <div
+                    className="Pinpoint Statistic Claps wrapper "
+                  >
+                    <svg
+                      fill="none"
+                      height="22"
+                      viewBox="0 0 985 997"
+                      width="22"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M384.602 300.771L374.481 280.34C355.482 241.988 303.813 234.105 275.654 266.246C233.852 226.468 167.893 261.376 175.201 316.902C133.778 319.79 107.584 364.684 126.716 403.304L191.394 533.862C167.122 530.597 142.57 542.537 130.768 565.569C115.633 594.94 127.083 631.118 156.274 646.565L345.7 747.352C352.529 750.999 360.713 751.074 367.613 747.656L575.681 644.581C585.717 639.609 590.991 628.403 588.392 617.526L556.335 482.08C552.812 467.309 547.677 452.89 540.885 439.18L480.381 317.045C461.959 279.858 412.882 272.253 384.602 300.771ZM512.211 453.385C517.893 464.855 522.231 476.99 525.137 489.389L555.696 618.658L357.037 717.072L171.27 618.267C157.613 610.972 152.13 593.823 159.202 580.164C166.184 566.55 182.885 561.29 196.543 568.585L239.392 591.328C246.221 594.975 253.761 587.669 250.298 580.679L155.391 389.099C138.522 355.048 188.653 331.442 205.344 365.134L275.836 507.43C277.79 511.373 282.614 513.001 286.556 511.048L292.918 507.896C296.861 505.943 298.489 501.119 296.536 497.176L209.619 321.725C192.75 287.674 242.881 264.067 259.572 297.76L346.134 472.494C348.087 476.437 352.911 478.064 356.854 476.111L363.216 472.959C367.158 471.006 368.786 466.182 366.833 462.24L295.675 318.599C278.806 284.548 328.937 260.942 345.628 294.634L416.52 437.737C418.473 441.679 423.297 443.307 427.24 441.354L433.602 438.202C437.545 436.249 439.172 431.425 437.219 427.482L402.15 356.693C385.459 323 434.569 297.333 451.482 331.473L511.942 453.518L512.211 453.385Z"
+                        fill="gray"
+                      />
+                      <path
+                        d="M600.843 300.62L610.964 280.189C629.963 241.837 681.632 233.954 709.791 266.095C751.593 226.317 817.553 261.225 810.244 316.751C851.667 319.639 877.861 364.532 858.729 403.153L794.051 533.711C818.323 530.446 842.875 542.386 854.677 565.418C869.812 594.789 858.362 630.967 829.171 646.414L639.745 747.201C632.916 750.848 624.732 750.923 617.832 747.505L473.503 677C463.467 672.028 573.316 628.993 575.914 618.116L548.226 487C551.749 472.229 475.208 378.693 482 364.983L505.064 316.894C523.486 279.707 572.563 272.102 600.843 300.62ZM505.064 388.948C499.382 400.418 580.906 616.601 578 629L505.064 657L628.408 716.921L814.175 618.116C827.833 610.821 833.315 593.672 826.243 580.013C819.261 566.399 802.56 561.139 788.902 568.434L746.053 591.177C739.225 594.824 731.684 587.518 735.147 580.528L830.054 388.948C846.923 354.897 796.792 331.291 780.101 364.983L709.609 507.279C707.655 511.222 702.831 512.85 698.889 510.897L692.527 507.745C688.584 505.792 686.956 500.968 688.909 497.025L775.826 321.574C792.695 287.523 742.564 263.916 725.873 297.609L639.311 472.343C637.358 476.286 632.534 477.913 628.591 475.96L622.229 472.808C618.287 470.855 616.659 466.031 618.612 462.089L689.77 318.448C706.639 284.397 656.508 260.791 639.817 294.483L568.925 437.586C566.972 441.528 562.148 443.156 558.205 441.203L551.843 438.051C547.901 436.098 546.273 431.274 548.226 427.331L583.295 356.542C599.986 322.849 550.876 297.182 533.963 331.322L505.064 388.948Z"
+                        fill="gray"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="rotate(54.7453 269.491 33)"
+                        width="150"
+                        x="269.491"
+                        y="33"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="matrix(-0.577211 0.816595 0.816595 0.577211 763 33)"
+                        width="150"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="matrix(-4.37114e-08 1 1 4.37114e-08 502 0)"
+                        width="150"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="matrix(0.577211 -0.816595 -0.816595 -0.577211 269.491 963.924)"
+                        width="150"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="rotate(-125.255 763 963.924)"
+                        width="150"
+                        x="763"
+                        y="963.924"
+                      />
+                      <rect
+                        fill="currentColor"
+                        height="28.7675"
+                        rx="14.3837"
+                        transform="rotate(-90 502 996.924)"
+                        width="150"
+                        x="502"
+                        y="996.924"
+                      />
+                    </svg>
+                    <span
+                      className="Statistic Claps count"
+                    >
+                      1
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section
+    className="constraint"
+  >
+    <div
+      className="Pinpoint Pagination "
+    />
+  </section>
+  <div
+    className="Pinpoint Footer Prebuilt"
+  >
+    <div
+      className="content"
+    >
+      <div
+        className="left"
+      >
+        <div
+          className="Pinpoint Copyright Prebuilt"
+        >
+          <a
+            className="Pinpoint Internal Link Logo sm Prebuilt"
+            href="https://pinpoint.com"
+          >
+            <img
+              className="image"
+              src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+            />
+          </a>
+          <span
+            className="text"
+          >
+            Copyright © 2021 by Pinpoint Software, Inc.
+          </span>
+        </div>
+      </div>
+      <div
+        className="right"
+      >
+        <a
+          className="Pinpoint Internal Link Subscribe Prebuilt"
+          href="https://pinpoint.pinpoint.com/subscribe"
+        >
+          <svg
+            aria-hidden="true"
+            className="icon"
+            data-icon="envelope"
+            data-prefix="fas"
+            focusable="false"
+            height={14}
+            role="img"
+            viewBox="0 0 512 512"
+            width={14}
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"
+              fill="currentColor"
+            />
+          </svg>
+          <span
+            className="text"
+          >
+            Subscribe to Updates
+          </span>
+        </a>
+        <div
+          className="Pinpoint Social Bar Prebuilt"
+        >
+          <a
+            className="Pinpoint Internal Link Social Item Facebook Prebuilt"
+            href="https://www.facebook.com/Pinpoint.Engineering"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="facebook"
+              data-prefix="fab"
+              focusable="false"
+              height={14}
+              role="img"
+              viewBox="0 0 512 512"
+              width={14}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+          <a
+            className="Pinpoint Internal Link Social Item Instagram Prebuilt"
+            href="https://www.instagram.com/pinpoint_sw/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="instagram"
+              data-prefix="fab"
+              focusable="false"
+              height={14}
+              role="img"
+              viewBox="0 0 448 512"
+              width={12.25}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+          <a
+            className="Pinpoint Internal Link Social Item Twitter Prebuilt"
+            href="https://twitter.com/pinpoint_sw"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="twitter"
+              data-prefix="fab"
+              focusable="false"
+              height={14}
+              role="img"
+              viewBox="0 0 512 512"
+              width={14}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+          <a
+            className="Pinpoint Internal Link Social Item Github Prebuilt"
+            href="https://github.com/pinpt"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="github"
+              data-prefix="fab"
+              focusable="false"
+              height={14}
+              role="img"
+              viewBox="0 0 496 512"
+              width={14}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+          <a
+            className="Pinpoint Internal Link Social Item LinkedIn Prebuilt"
+            href="https://linkedin.com/company/pinpoint-software"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="linkedin"
+              data-prefix="fab"
+              focusable="false"
+              height={14}
+              role="img"
+              viewBox="0 0 448 512"
+              width={12.25}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      className="powered"
+    >
+      <a
+        href="https://pinpoint.com/?utm_source=referral&utm_medium=web&utm_campaign="
+        style={
+          Object {
+            "alignItems": "center",
+            "color": "inherit",
+            "display": "flex",
+            "margin": "auto",
+            "textDecoration": "none",
+          }
+        }
+      >
+        <span
+          style={
+            Object {
+              "fontSize": "0.75rem",
+              "lineHeight": "1rem",
+            }
+          }
+        >
+          We run on
+        </span>
+        <svg
+          fill="none"
+          height="21"
+          role="img"
+          style={
+            Object {
+              "color": "rgba(55,48,163, 1)",
+              "margin": "0 4px",
+            }
+          }
+          viewBox="0 0 277 297"
+          width="22"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            clipRule="evenodd"
+            d="M95.7878 296.635H128.664V296.654C210 296.654 276.157 230.116 276.157 148.332C276.157 66.5476 210 0.00958123 128.659 0H128.483L118.744 0.114995C53.2636 0.1677 0 53.7546 0 119.617C0.000695153 144.543 7.7522 168.845 22.1694 189.121C36.5867 209.397 56.9479 224.632 80.4028 232.694L80.541 232.732V281.302C80.541 285.369 82.1474 289.269 85.0067 292.144C87.866 295.019 91.7441 296.635 95.7878 296.635ZM118.996 31.8291L128.749 31.7141C193.243 31.762 245.702 84.5199 245.702 149.414C245.702 214.309 193.196 267.105 128.664 267.105H110.996V237.495H130.698C175.266 237.495 211.525 201.032 211.525 156.213V150.272C211.525 111.011 179.759 79.0673 140.718 79.0673H95.783C91.7393 79.0673 87.8612 80.6827 85.0019 83.5581C82.1426 86.4335 80.5362 90.3333 80.5362 94.3998V175.312C85.8678 181.89 96.8264 186.687 106.832 186.96H110.996V109.713H140.704C151.401 109.724 161.658 114.003 169.222 121.609C176.787 129.215 181.043 139.529 181.055 150.286V156.213C181.04 169.647 175.726 182.525 166.278 192.022C156.831 201.518 144.023 206.858 130.665 206.868H103.773C94.9191 206.378 86.2752 203.967 78.435 199.801C49.3804 184.943 30.4411 154.886 30.4411 120.704C30.4411 71.6982 70.0874 31.8291 118.82 31.8291H118.996Z"
+            fill="currentColor"
+            fillRule="evenodd"
+          />
+        </svg>
+        Pinpoint
+      </a>
+    </div>
+  </div>
+</div>
+`;

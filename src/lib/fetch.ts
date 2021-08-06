@@ -1,7 +1,7 @@
 import fetch from 'isomorphic-unfetch';
 import { getAPIUrl } from './env';
 
-import type { Entry, Site } from './types';
+import type { Analytics, Entry, Site } from './types';
 
 const defaultUrl = getAPIUrl();
 
@@ -9,7 +9,11 @@ interface FetchOptions {
 	apiUrl?: string;
 }
 
-export const fetchAnalytics = async (siteId: string, changelogIds: string[], options?: FetchOptions): Promise<any> => {
+export const fetchAnalytics = async (
+	siteId: string,
+	changelogIds: string[],
+	options?: FetchOptions
+): Promise<Analytics> => {
 	const { apiUrl = defaultUrl } = options || {};
 	const url = `${apiUrl}/site/${siteId}/analytics?changelogIds=${encodeURIComponent(JSON.stringify(changelogIds))}`;
 	const res = await fetch(url);

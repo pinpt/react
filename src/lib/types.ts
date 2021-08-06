@@ -52,3 +52,5 @@ export interface SearchTerm {
 	value: string;
 	type: 'text' | 'tag';
 }
+
+export type Analytics = Record<string, { claps: number; pageviews: number }>;
