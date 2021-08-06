@@ -5,10 +5,12 @@ import { IHeaderProps } from '../../Header';
 import { ILatestProps } from '../../Latest';
 import { IRecentProps } from '../../Recent';
 import Loader from '../../Loader';
+import { IQueryProps } from '../../Search/Query';
 
 export interface IPageDashboardProps {
 	className?: string;
 	header?: ReactElement<IHeaderProps>;
+	searchQuery?: ReactElement<IQueryProps>;
 	searchResults?: ReactElement<ISearchResultsProps>;
 	latest?: ReactElement<ILatestProps>;
 	recent?: ReactElement<IRecentProps>;
@@ -17,7 +19,7 @@ export interface IPageDashboardProps {
 }
 
 const Dashboard = (props: IPageDashboardProps) => {
-	const { className = '', footer, latest, recent, header, searchResults, loading } = props;
+	const { className = '', footer, latest, recent, header, searchResults, loading, searchQuery } = props;
 	return (
 		<div className={`Pinpoint Page Dashboard ${className}`}>
 			<section className="constraint">{header}</section>
@@ -27,6 +29,7 @@ const Dashboard = (props: IPageDashboardProps) => {
 				</div>
 			) : (
 				<>
+					{searchQuery}
 					{searchResults}
 					{latest}
 					{recent}

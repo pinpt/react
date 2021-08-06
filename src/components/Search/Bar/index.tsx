@@ -1,4 +1,4 @@
-import { ChangeEvent, FormEvent, useCallback, useState } from 'react';
+import { ChangeEvent, FormEvent, useCallback, useEffect, useState } from 'react';
 
 export interface ISearchBarProps {
 	className?: string;
@@ -10,6 +10,15 @@ export interface ISearchBarProps {
 const Bar = (props: ISearchBarProps) => {
 	const { className = '', onChange, onSubmit, defaultValue = '' } = props;
 	const [value, setValue] = useState(() => defaultValue);
+
+	useEffect(() => {
+		setValue((val) => {
+			if (defaultValue !== val) {
+				return defaultValue;
+			}
+			return val;
+		});
+	}, [defaultValue]);
 
 	const handleInputChange = useCallback(
 		(e: ChangeEvent<HTMLInputElement>) => {

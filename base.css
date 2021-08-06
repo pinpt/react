@@ -197,6 +197,17 @@
 	flex-basis: 75%;
 }
 
+.Search.Query {
+	@apply flex p-2 sm:p-12 sm:pb-4 flex-col;
+}
+
+.Search.Query .heading {
+	@apply mb-2 mr-6;
+}
+
+.Search.Query .container {
+	@apply flex;
+}
 /*
  * Styles for the recent component
  */
@@ -287,6 +298,14 @@
  */
 .Tag.Item {
 	@apply inline-flex items-center rounded-full bg-blue-500 text-xs px-1.5 py-0.5;
+}
+
+.Tag.Item.nocolor {
+	@apply text-gray-600 bg-gray-300 border border-gray-500;
+}
+
+.Tag.Item .icon {
+	@apply ml-1;
 }
 
 .Tag.Bar {

@@ -18,3 +18,9 @@ test('Test Three Tags', () => {
 	const tree = component.toJSON();
 	expect(tree).toMatchSnapshot();
 });
+
+test('Test Removable', () => {
+	const component = renderer.create(<TagBar removable tags={['test-1', 'test-2', 'test-3']} />);
+	const tree = component.toJSON();
+	expect(tree).toMatchSnapshot();
+});

@@ -24,3 +24,15 @@ test('Test 4', () => {
 	const tree = component.toJSON();
 	expect(tree).toMatchSnapshot();
 });
+
+test('Test removable', () => {
+	const component = renderer.create(<TagItem removable tag="test-4" />);
+	const tree = component.toJSON();
+	expect(tree).toMatchSnapshot();
+});
+
+test('Test noColor', () => {
+	const component = renderer.create(<TagItem removable noColor tag="test-4" />);
+	const tree = component.toJSON();
+	expect(tree).toMatchSnapshot();
+});

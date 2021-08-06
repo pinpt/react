@@ -22,3 +22,5 @@ export const Single_Tag: React.VFC<{}> = () => <Bar tags={['feature']} />;
 export const Two_Tags: React.VFC<{}> = () => <Bar tags={['feature', 'improvement']} />;
 
 export const Three_Tags: React.VFC<{}> = () => <Bar tags={['feature', 'improvement', 'bug']} />;
+
+export const Removable: React.VFC<{}> = () => <Bar removable tags={['feature', 'improvement', 'bug']} />;

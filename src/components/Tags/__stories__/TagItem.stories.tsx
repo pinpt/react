@@ -22,3 +22,7 @@ export const Test: React.VFC<{}> = () => <Item tag="test" />;
 export const Another_Test: React.VFC<{}> = () => <Item tag="another-test" />;
 
 export const Third_Test: React.VFC<{}> = () => <Item tag="third-test" />;
+
+export const Removable: React.VFC<{}> = () => <Item tag="remove me!" removable />;
+
+export const No_Color: React.VFC<{}> = () => <Item noColor tag="remove me!" removable />;

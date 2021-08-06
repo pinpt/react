@@ -24,8 +24,17 @@ export default {
 export const Default: React.VFC<{}> = () => <PrebuiltSearchResults entries={entries as Entry[]} site={site} />;
 
 export const Dynamic_Results: React.VFC<{}> = () => {
-	const { results, loading } = useSearch('publish', 'PirxVTE94u3YmGNOySRY');
-	return <PrebuiltSearchResults entries={results} site={site} loading={loading} />;
+	const [term, setTerm] = useState('publish');
+	const { results, loading } = useSearch(term, 'PirxVTE94u3YmGNOySRY');
+	return (
+		<PrebuiltSearchResults
+			entries={results}
+			site={site}
+			loading={loading}
+			searchTerm={term}
+			handleRemoveFromQuery={() => setTerm('')}
+		/>
+	);
 };
 
 export const Loading: React.VFC<{}> = () => (

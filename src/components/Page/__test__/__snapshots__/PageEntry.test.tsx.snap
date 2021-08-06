@@ -92,7 +92,7 @@ exports[`Test full entry 1`] = `
             className="Pinpoint Tag Bar "
           >
             <div
-              className="Pinpoint Tag Item  "
+              className="Pinpoint Tag Item   "
               style={
                 Object {
                   "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
@@ -104,7 +104,7 @@ exports[`Test full entry 1`] = `
               feature
             </div>
             <div
-              className="Pinpoint Tag Item  "
+              className="Pinpoint Tag Item   "
               style={
                 Object {
                   "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
@@ -116,7 +116,7 @@ exports[`Test full entry 1`] = `
               improvement
             </div>
             <div
-              className="Pinpoint Tag Item  "
+              className="Pinpoint Tag Item   "
               style={
                 Object {
                   "backgroundColor": "#f473da",
@@ -701,7 +701,7 @@ exports[`Test no footer 1`] = `
             className="Pinpoint Tag Bar "
           >
             <div
-              className="Pinpoint Tag Item  "
+              className="Pinpoint Tag Item   "
               style={
                 Object {
                   "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
@@ -713,7 +713,7 @@ exports[`Test no footer 1`] = `
               feature
             </div>
             <div
-              className="Pinpoint Tag Item  "
+              className="Pinpoint Tag Item   "
               style={
                 Object {
                   "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
@@ -725,7 +725,7 @@ exports[`Test no footer 1`] = `
               improvement
             </div>
             <div
-              className="Pinpoint Tag Item  "
+              className="Pinpoint Tag Item   "
               style={
                 Object {
                   "backgroundColor": "#f473da",

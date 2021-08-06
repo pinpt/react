@@ -2,7 +2,7 @@
 
 exports[`Test 1 1`] = `
 <div
-  className="Pinpoint Tag Item  "
+  className="Pinpoint Tag Item   "
   style={
     Object {
       "backgroundColor": "#a1ffa9",
@@ -17,7 +17,7 @@ exports[`Test 1 1`] = `
 
 exports[`Test 2 1`] = `
 <div
-  className="Pinpoint Tag Item  "
+  className="Pinpoint Tag Item   "
   style={
     Object {
       "backgroundColor": "#79e7f2",
@@ -32,7 +32,7 @@ exports[`Test 2 1`] = `
 
 exports[`Test 3 1`] = `
 <div
-  className="Pinpoint Tag Item  "
+  className="Pinpoint Tag Item   "
   style={
     Object {
       "backgroundColor": "#6149c5",
@@ -47,7 +47,7 @@ exports[`Test 3 1`] = `
 
 exports[`Test 4 1`] = `
 <div
-  className="Pinpoint Tag Item  "
+  className="Pinpoint Tag Item   "
   style={
     Object {
       "backgroundColor": "#ff9eff",
@@ -57,5 +57,68 @@ exports[`Test 4 1`] = `
   }
 >
   test-4
+</div>
+`;
+
+exports[`Test noColor 1`] = `
+<div
+  className="Pinpoint Tag Item  nocolor "
+>
+  test-4
+  <span
+    className="icon"
+  >
+    <svg
+      aria-hidden="true"
+      data-icon="times"
+      data-prefix="far"
+      focusable="false"
+      height={12}
+      role="img"
+      viewBox="0 0 320 512"
+      width={7.5}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z"
+        fill="currentColor"
+      />
+    </svg>
+  </span>
+</div>
+`;
+
+exports[`Test removable 1`] = `
+<div
+  className="Pinpoint Tag Item   "
+  style={
+    Object {
+      "backgroundColor": "#ff9eff",
+      "border": "1px solid var(--tag-bcolor, #7f258333)",
+      "color": "var(--tag-fgcolor, #ffffff)",
+    }
+  }
+>
+  test-4
+  <span
+    className="icon"
+  >
+    <svg
+      aria-hidden="true"
+      data-icon="times"
+      data-prefix="far"
+      focusable="false"
+      height={12}
+      role="img"
+      viewBox="0 0 320 512"
+      width={7.5}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z"
+        fill="currentColor"
+      />
+    </svg>
+  </span>
 </div>
 `;

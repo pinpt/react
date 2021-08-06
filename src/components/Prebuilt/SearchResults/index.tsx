@@ -3,7 +3,7 @@ import { IChangelogCardContainerProps } from '../../ChangelogCard/Container';
 import Header, { IHeaderProps } from '../../Header';
 import Subscribe, { ISubscribeProps } from '../../Subscribe';
 import Card from '../../ChangelogCard';
-import { Entry, Site } from '../../../lib';
+import { Entry, SearchTerm, Site } from '../../../lib';
 import Page from '../../Page';
 import { IChangelogTitleProps } from '../../ChangelogCard/Title';
 import { IChangelogDateProps } from '../../ChangelogCard/Date';
@@ -22,7 +22,7 @@ import ThemeToggle, { IThemeToggleProps } from '../../ThemeToggle';
 import { ISearchResultsProps } from '../../Search/Results';
 import { ISearchBarProps } from '../../Search/Bar';
 import Search from '../../Search';
-import Loader from '../../Loader';
+import { IQueryProps } from '../../Search/Query';
 export interface IPrebuiltSearchResultsProps {
 	className?: string;
 	site: Site;
@@ -43,9 +43,12 @@ export interface IPrebuiltSearchResultsProps {
 	renderTags?: (entry: Entry) => ReactElement<ITagBarProps>;
 	renderThemeToggle?: (site: Site) => ReactElement<IThemeToggleProps>;
 	renderSearch?: (site: Site) => ReactElement<ISearchBarProps>;
+	renderSearchQuery?: (site: Site) => ReactElement<IQueryProps>;
 	searchTerm?: string;
+	searchTags?: string[];
 	handleSearch?: (value: string) => void;
 	handleSelectEntry?: (id: string) => void;
+	handleRemoveFromQuery?: (value: string, clear: boolean) => void;
 	loading?: boolean;
 }
 
@@ -70,9 +73,12 @@ const SearchResults = (props: IPrebuiltSearchResultsProps) => {
 		renderTags,
 		renderThemeToggle,
 		renderSearch,
-		searchTerm,
+		renderSearchQuery,
+		searchTerm = '',
+		searchTags = [],
 		handleSearch,
 		handleSelectEntry,
+		handleRemoveFromQuery,
 		loading,
 	} = props;
 	return (
@@ -96,6 +102,30 @@ const SearchResults = (props: IPrebuiltSearchResultsProps) => {
 								<Search.Bar defaultValue={searchTerm} onSubmit={handleSearch} className="Prebuilt" />
 							)
 						}
+					/>
+				)
+			}
+			searchQuery={
+				renderSearchQuery?.(site) ?? (
+					<Search.Query
+						className="Prebuilt"
+						terms={[
+							...searchTags.map((t) => {
+								return {
+									type: 'tag',
+									value: t,
+								} as SearchTerm;
+							}),
+							...(searchTerm
+								? [
+										{
+											type: 'text',
+											value: searchTerm,
+										} as SearchTerm,
+								  ]
+								: []),
+						]}
+						onRemoveTerm={handleRemoveFromQuery}
 					/>
 				)
 			}
