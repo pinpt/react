@@ -199,7 +199,15 @@ const Home = (props: IPrebuiltHomeProps) => {
 												/>
 											)
 										}
-										tags={renderTags?.(entry) ?? <Tags.Bar className="Prebuilt" tags={entry.tags ?? []} />}
+										tags={
+											renderTags?.(entry) ?? (
+												<Tags.Bar
+													className="Prebuilt"
+													tags={entry.tags ?? []}
+													onClick={(tag: string) => handleAddTagToQuery?.(tag)}
+												/>
+											)
+										}
 									/>
 								)
 							);
