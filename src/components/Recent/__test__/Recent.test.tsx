@@ -99,6 +99,31 @@ test('Test custom className', () => {
 	expect(tree).toMatchSnapshot();
 });
 
+test('Test page counts', () => {
+	const component = renderer.create(
+		<Recent pageNumber={1} pageCount={2}>
+			<Card.Container
+				imageUrl="https://cdn.pinpoint.com/card.png"
+				title={<Card.Title title={TEST_TITLE} />}
+				date={<Card.Date />}
+				description={<Card.Description description={TEST_DESCRIPTION} />}
+				statistics={<Statistic.Bar claps={22} views={135} />}
+				button={<Card.ReadButton />}
+			/>
+			<Card.Container
+				imageUrl="https://cdn.pinpoint.com/card.png"
+				title={<Card.Title title={TEST_TITLE} />}
+				date={<Card.Date />}
+				description={<Card.Description description={TEST_DESCRIPTION} />}
+				statistics={<Statistic.Bar claps={22} views={135} />}
+				button={<Card.ReadButton />}
+			/>
+		</Recent>
+	);
+	const tree = component.toJSON();
+	expect(tree).toMatchSnapshot();
+});
+
 test('Test empty', () => {
 	const component = renderer.create(<Recent />);
 	const tree = component.toJSON();

@@ -226,7 +226,7 @@ exports[`Hidden stats 1`] = `
       <h1
         className="heading"
       >
-        Recent
+        Recent 
       </h1>
       <div
         className="container"
@@ -1500,7 +1500,7 @@ exports[`Test custom className 1`] = `
       <h1
         className="heading"
       >
-        Recent
+        Recent 
       </h1>
       <div
         className="container"
@@ -3807,7 +3807,7 @@ exports[`Test custom latest length 1`] = `
       <h1
         className="heading"
       >
-        Recent
+        Recent 
       </h1>
       <div
         className="container"
@@ -5745,7 +5745,7 @@ exports[`Test default state 1`] = `
       <h1
         className="heading"
       >
-        Recent
+        Recent 
       </h1>
       <div
         className="container"
