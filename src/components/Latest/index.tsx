@@ -1,9 +1,9 @@
 import React, { Children, ReactElement } from 'react';
-import { IChangelogCardContainerProps } from '../ChangelogCard/Container';
+import { ICardContainerProps } from '../Card/Container';
 
 export interface ILatestProps {
 	className?: string;
-	children?: ReactElement<IChangelogCardContainerProps>[] | ReactElement<IChangelogCardContainerProps>;
+	children?: ReactElement<ICardContainerProps>[] | ReactElement<ICardContainerProps>;
 }
 
 const Latest = (props: ILatestProps) => {

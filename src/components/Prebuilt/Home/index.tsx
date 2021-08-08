@@ -1,59 +1,60 @@
 import { ReactElement } from 'react';
-import { IChangelogCardContainerProps } from '../../ChangelogCard/Container';
+import { splitEntries } from '../../../lib';
+import Card from '../../Card';
+import { ICardContainerProps } from '../../Card/Container';
+import { ICardDateProps } from '../../Card/Date';
+import { ICardDescriptionProps } from '../../Card/Description';
+import { ICardReadButtonProps } from '../../Card/ReadButton';
+import { ICardTitleProps } from '../../Card/Title';
+import Copyright, { ICopyrightProps } from '../../Copyright';
+import Footer, { IFooterProps } from '../../Footer';
 import Header, { IHeaderProps } from '../../Header';
 import Latest, { ILatestProps } from '../../Latest';
-import Subscribe, { ISubscribeProps } from '../../Subscribe';
-import Card from '../../ChangelogCard';
-import { Analytics, Entry, Site, splitEntries } from '../../../lib';
-import Page from '../../Page';
-import { IChangelogTitleProps } from '../../ChangelogCard/Title';
-import { IChangelogDateProps } from '../../ChangelogCard/Date';
-import { IChangelogDescriptionProps } from '../../ChangelogCard/Description';
-import { IStatisticsBarProps } from '../../Statistic/Bar';
-import { IChangelogReadButtonProps } from '../../ChangelogCard/ReadButton';
-import Statistic from '../../Statistic';
-import Recent, { IRecentProps } from '../../Recent';
-import Footer, { IFooterProps } from '../../Footer';
-import { ISocialBarProps } from '../../Social/Bar';
-import Copyright, { ICopyrightProps } from '../../Copyright';
 import Logo, { ILogoProps } from '../../Logo';
-import Social from '../../Social';
-import { ITagBarProps } from '../../Tags/Bar';
-import Tags from '../../Tags';
-import ThemeToggle, { IThemeToggleProps } from '../../ThemeToggle';
-import { ISearchBarProps } from '../../Search/Bar';
-import Search from '../../Search';
+import Page from '../../Page';
 import Pagination, { IPaginationProps } from '../../Pagination';
+import Recent, { IRecentProps } from '../../Recent';
+import Search from '../../Search';
+import { ISearchBarProps } from '../../Search/Bar';
+import Social from '../../Social';
+import { ISocialBarProps } from '../../Social/Bar';
+import Statistic from '../../Statistic';
+import { IStatisticsBarProps } from '../../Statistic/Bar';
+import Subscribe, { ISubscribeProps } from '../../Subscribe';
+import Tags from '../../Tags';
+import { ITagBarProps } from '../../Tags/Bar';
+import ThemeToggle, { IThemeToggleProps } from '../../ThemeToggle';
 
+import type { Analytics, Content, Site } from '../../../lib/types';
 export interface IPrebuiltHomeProps {
 	className?: string;
 	site: Site;
-	entries?: Entry[];
+	entries?: Content[];
 	renderHeader?: (site: Site) => ReactElement<IHeaderProps>;
 	renderSubscribe?: (site: Site) => ReactElement<ISubscribeProps>;
-	renderLatest?: (entries: Entry[]) => ReactElement<ILatestProps>;
-	renderRecent?: (entries: Entry[]) => ReactElement<IRecentProps>;
-	renderCard?: (entry: Entry) => ReactElement<IChangelogCardContainerProps>;
-	renderCardTitle?: (entry: Entry) => ReactElement<IChangelogTitleProps>;
-	renderCardDate?: (entry: Entry) => ReactElement<IChangelogDateProps>;
-	renderCardDescription?: (entry: Entry) => ReactElement<IChangelogDescriptionProps>;
+	renderLatest?: (entries: Content[]) => ReactElement<ILatestProps>;
+	renderRecent?: (entries: Content[]) => ReactElement<IRecentProps>;
+	renderCard?: (Content: Content) => ReactElement<ICardContainerProps>;
+	renderCardTitle?: (Content: Content) => ReactElement<ICardTitleProps>;
+	renderCardDate?: (Content: Content) => ReactElement<ICardDateProps>;
+	renderCardDescription?: (Content: Content) => ReactElement<ICardDescriptionProps>;
 	renderCardStatistics?: (
-		entry: Entry,
+		Content: Content,
 		analytics?: { claps: number; pageviews: number }
 	) => ReactElement<IStatisticsBarProps>;
-	renderCardButton?: (entry: Entry) => ReactElement<IChangelogReadButtonProps>;
+	renderCardButton?: (Content: Content) => ReactElement<ICardReadButtonProps>;
 	renderFooter?: (site: Site) => ReactElement<IFooterProps>;
 	renderSocial?: (site: Site) => ReactElement<ISocialBarProps>;
 	renderCopyright?: (site: Site) => ReactElement<ICopyrightProps>;
 	renderLogo?: (site: Site) => ReactElement<ILogoProps>;
-	renderTags?: (entry: Entry) => ReactElement<ITagBarProps>;
+	renderTags?: (Content: Content) => ReactElement<ITagBarProps>;
 	renderThemeToggle?: (site: Site) => ReactElement<IThemeToggleProps>;
 	renderSearch?: (site: Site) => ReactElement<ISearchBarProps>;
 	renderPagination?: (site: Site) => ReactElement<IPaginationProps>;
 	latestCount?: number;
 	searchTerm?: string;
 	handleSearch?: (value: string) => void;
-	handleSelectEntry?: (id: string) => void;
+	handleSelectContent?: (id: string) => void;
 	handleAddTagToQuery?: (value: string) => void;
 	pageForward?: () => void;
 	pageBack?: () => void;
@@ -88,7 +89,7 @@ const Home = (props: IPrebuiltHomeProps) => {
 		renderPagination,
 		searchTerm,
 		handleSearch,
-		handleSelectEntry,
+		handleSelectContent,
 		handleAddTagToQuery,
 		pageForward,
 		pageBack,
@@ -104,8 +105,8 @@ const Home = (props: IPrebuiltHomeProps) => {
 				renderHeader?.(site) ?? (
 					<Header
 						className="Prebuilt"
-						title={`${site.name} Changelog`}
-						description={site.theme.description}
+						title={`${site.name}`}
+						description={site.theme?.description ?? site.name}
 						subscribe={
 							renderSubscribe?.(site) ?? (
 								<Subscribe className="Prebuilt" href={`https://${site.slug}.pinpoint.com/subscribe`} />
@@ -123,46 +124,48 @@ const Home = (props: IPrebuiltHomeProps) => {
 			latest={
 				renderLatest?.(latest) ?? (
 					<Latest className="Prebuilt">
-						{latest.map((entry) => {
+						{latest.map((Content) => {
 							return (
-								renderCard?.(entry) ?? (
+								renderCard?.(Content) ?? (
 									<Card.Container
-										key={entry.id}
+										key={Content.id}
 										className="Prebuilt"
-										imageUrl={entry.cover_image}
+										imageUrl={Content.coverMedia?.placeholderImage}
 										title={
-											renderCardTitle?.(entry) ?? <Card.Title className="Prebuilt" title={entry.title} />
+											renderCardTitle?.(Content) ?? <Card.Title className="Prebuilt" title={Content.title} />
 										}
 										date={
-											renderCardDate?.(entry) ?? <Card.Date className="Prebuilt" ts={entry.publishedAt} />
+											renderCardDate?.(Content) ?? (
+												<Card.Date className="Prebuilt" ts={Content.publishedAt} />
+											)
 										}
 										description={
-											renderCardDescription?.(entry) ?? (
-												<Card.Description className="Prebuilt" description={entry.headline} />
+											renderCardDescription?.(Content) ?? (
+												<Card.Description className="Prebuilt" description={Content.headline} />
 											)
 										}
 										statistics={
-											renderCardStatistics?.(entry, analytics?.[entry.id]) ?? (
+											renderCardStatistics?.(Content, analytics?.[Content.id]) ?? (
 												<Statistic.Bar
 													className="Prebuilt"
-													claps={analytics?.[entry.id]?.claps ?? 0}
-													views={analytics?.[entry.id]?.pageviews ?? 0}
+													claps={analytics?.[Content.id]?.claps ?? 0}
+													views={analytics?.[Content.id]?.pageviews ?? 0}
 												/>
 											)
 										}
 										button={
-											renderCardButton?.(entry) ?? (
+											renderCardButton?.(Content) ?? (
 												<Card.ReadButton
-													onClick={() => handleSelectEntry?.(entry.id)}
+													onClick={() => handleSelectContent?.(Content.id)}
 													className="Prebuilt"
 												/>
 											)
 										}
 										tags={
-											renderTags?.(entry) ?? (
+											renderTags?.(Content) ?? (
 												<Tags.Bar
 													className="Prebuilt"
-													tags={entry.tags ?? []}
+													tags={Content.tags ?? []}
 													onClick={(tag: string) => handleAddTagToQuery?.(tag)}
 												/>
 											)
@@ -177,46 +180,48 @@ const Home = (props: IPrebuiltHomeProps) => {
 			recent={
 				renderRecent?.(recent) ?? (
 					<Recent className="Prebuilt" pageNumber={pageNumber} pageCount={pageCount}>
-						{recent.map((entry) => {
+						{recent.map((Content) => {
 							return (
-								renderCard?.(entry) ?? (
+								renderCard?.(Content) ?? (
 									<Card.Container
-										key={entry.id}
+										key={Content.id}
 										className="Prebuilt"
-										imageUrl={entry.cover_image}
+										imageUrl={Content.coverMedia?.placeholderImage}
 										title={
-											renderCardTitle?.(entry) ?? <Card.Title className="Prebuilt" title={entry.title} />
+											renderCardTitle?.(Content) ?? <Card.Title className="Prebuilt" title={Content.title} />
 										}
 										date={
-											renderCardDate?.(entry) ?? <Card.Date className="Prebuilt" ts={entry.publishedAt} />
+											renderCardDate?.(Content) ?? (
+												<Card.Date className="Prebuilt" ts={Content.publishedAt} />
+											)
 										}
 										description={
-											renderCardDescription?.(entry) ?? (
-												<Card.Description className="Prebuilt" description={entry.headline} />
+											renderCardDescription?.(Content) ?? (
+												<Card.Description className="Prebuilt" description={Content.headline} />
 											)
 										}
 										statistics={
-											renderCardStatistics?.(entry, analytics?.[entry.id]) ?? (
+											renderCardStatistics?.(Content, analytics?.[Content.id]) ?? (
 												<Statistic.Bar
 													className="Prebuilt"
-													claps={analytics?.[entry.id]?.claps ?? 0}
-													views={analytics?.[entry.id]?.pageviews ?? 0}
+													claps={analytics?.[Content.id]?.claps ?? 0}
+													views={analytics?.[Content.id]?.pageviews ?? 0}
 												/>
 											)
 										}
 										button={
-											renderCardButton?.(entry) ?? (
+											renderCardButton?.(Content) ?? (
 												<Card.ReadButton
-													onClick={() => handleSelectEntry?.(entry.id)}
+													onClick={() => handleSelectContent?.(Content.id)}
 													className="Prebuilt"
 												/>
 											)
 										}
 										tags={
-											renderTags?.(entry) ?? (
+											renderTags?.(Content) ?? (
 												<Tags.Bar
 													className="Prebuilt"
-													tags={entry.tags ?? []}
+													tags={Content.tags ?? []}
 													onClick={(tag: string) => handleAddTagToQuery?.(tag)}
 												/>
 											)
@@ -235,22 +240,22 @@ const Home = (props: IPrebuiltHomeProps) => {
 						social={
 							renderSocial?.(site) ?? (
 								<Social.Bar className="Prebuilt">
-									{site.theme.social?.facebook && (
+									{site.theme?.social?.facebook && (
 										<Social.Facebook className="Prebuilt" href={site.theme.social?.facebook} newTab />
 									)}
-									{site.theme.social?.instagram && (
+									{site.theme?.social?.instagram && (
 										<Social.Instagram className="Prebuilt" href={site.theme.social?.instagram} newTab />
 									)}
-									{site.theme.social?.twitter && (
+									{site.theme?.social?.twitter && (
 										<Social.Twitter className="Prebuilt" href={site.theme.social?.twitter} newTab />
 									)}
-									{site.theme.social?.github && (
+									{site.theme?.social?.github && (
 										<Social.Github className="Prebuilt" href={site.theme.social?.github} newTab />
 									)}
-									{site.theme.social?.linkedin && (
+									{site.theme?.social?.linkedin && (
 										<Social.LinkedIn className="Prebuilt" href={site.theme.social?.linkedin} newTab />
 									)}
-									{site.theme.social?.rss && (
+									{site.theme?.social?.rss && (
 										<Social.RSS className="Prebuilt" href={site.theme.social?.rss} newTab />
 									)}
 								</Social.Bar>
@@ -260,10 +265,10 @@ const Home = (props: IPrebuiltHomeProps) => {
 							renderCopyright?.(site) ?? (
 								<Copyright
 									className="Prebuilt"
-									text={site.theme.copyright}
+									text={site.theme?.copyright ?? ''}
 									logo={
 										renderLogo?.(site) ?? (
-											<Logo className="Prebuilt" src={site.logoUrl} href={site.theme.logoLink} />
+											<Logo className="Prebuilt" src={site.logoUrl} href={site.theme?.logoLink} />
 										)
 									}
 								/>

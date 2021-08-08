@@ -1,9 +1,9 @@
 import { Children, ReactElement } from 'react';
-import { IChangelogCardContainerProps } from '../ChangelogCard/Container';
+import { ICardContainerProps } from '../Card/Container';
 
 export interface IRecentProps {
 	className?: string;
-	children?: ReactElement<IChangelogCardContainerProps>[] | ReactElement<IChangelogCardContainerProps>;
+	children?: ReactElement<ICardContainerProps>[] | ReactElement<ICardContainerProps>;
 	pageNumber?: number;
 	pageCount?: number;
 }

@@ -1,17 +1,18 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
-import Page from '../Dashboard';
-import Latest from '../../Latest';
-import Recent from '../../Recent';
-import Card from '../../ChangelogCard';
-import Statistic from '../../Statistic';
-import Footer from '../../Footer';
-import Social from '../../Social';
+import Card from '../../Card';
 import Copyright from '../../Copyright';
-import Logo from '../../Logo';
-import Subscribe from '../../Subscribe';
+import Footer from '../../Footer';
 import Header from '../../Header';
+import Latest from '../../Latest';
+import Logo from '../../Logo';
 import Pagination from '../../Pagination';
+import Recent from '../../Recent';
+import Social from '../../Social';
+import Statistic from '../../Statistic';
+import Subscribe from '../../Subscribe';
+import Page from '../Dashboard';
+
 const { default: readme } = require('../Dashboard/README.md');
 
 export default {

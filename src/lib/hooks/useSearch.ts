@@ -1,14 +1,22 @@
-import { useCallback, useEffect, useMemo, useState } from 'react';
 import algoliasearch from 'algoliasearch';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import { algolia } from '../../config';
-import { Entry } from '../types';
 
 const client = algoliasearch(algolia.appId, algolia.apiKey);
-const index = client.initIndex('changelog');
+const index = client.initIndex(algolia.index);
+
+interface SearchResult {
+	id: string;
+	title: string;
+	cover_image: string;
+	publishedAt: number;
+	headline: string;
+	tags: string[];
+}
 
 const useSearch = (term: string, tags: string[], siteId: string) => {
 	const [loading, setLoading] = useState(() => !!term);
-	const [results, setResults] = useState<Entry[]>([]);
+	const [results, setResults] = useState<SearchResult[]>([]);
 
 	const query = useMemo(() => {
 		return `site_id:"${siteId}" ${
@@ -30,7 +38,7 @@ const useSearch = (term: string, tags: string[], siteId: string) => {
 							publishedAt: hit.createdAt,
 							headline: hit.headline,
 							tags: hit.tags,
-						} as Entry;
+						} as SearchResult;
 					})
 					.sort((a, b) => b.publishedAt - a.publishedAt)
 			);

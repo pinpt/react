@@ -1,15 +1,15 @@
 import renderer from 'react-test-renderer';
-import Page from '../Dashboard';
-import Latest from '../../Latest';
-import Recent from '../../Recent';
-import Card from '../../ChangelogCard';
-import Statistic from '../../Statistic';
-import Footer from '../../Footer';
-import Social from '../../Social';
+import Card from '../../Card';
 import Copyright from '../../Copyright';
-import Logo from '../../Logo';
-import Subscribe from '../../Subscribe';
+import Footer from '../../Footer';
 import Header from '../../Header';
+import Latest from '../../Latest';
+import Logo from '../../Logo';
+import Recent from '../../Recent';
+import Social from '../../Social';
+import Statistic from '../../Statistic';
+import Subscribe from '../../Subscribe';
+import Page from '../Dashboard';
 
 const TEST_TITLE = 'Test Title';
 const TEST_DESCRIPTION = 'Test Description';

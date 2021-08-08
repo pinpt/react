@@ -1,17 +1,17 @@
 import renderer from 'react-test-renderer';
-import Page from '../Entry';
-import Footer from '../../Footer';
-import Social from '../../Social';
-import Copyright from '../../Copyright';
-import Logo from '../../Logo';
-import Subscribe from '../../Subscribe';
-import Header from '../../Header';
-import testDoc from '../Entry/__data__/testDoc.json';
-import { Content } from '../../Renderer';
-import Sidebar from '../../Sidebar';
 import Author from '../../Author';
-import Tags from '../../Tags';
 import Clap from '../../Clap';
+import Copyright from '../../Copyright';
+import Footer from '../../Footer';
+import Header from '../../Header';
+import Logo from '../../Logo';
+import { Document } from '../../Renderer';
+import Sidebar from '../../Sidebar';
+import Social from '../../Social';
+import Subscribe from '../../Subscribe';
+import Tags from '../../Tags';
+import Page from '../Entry';
+import testDoc from '../Entry/__data__/testDoc.json';
 
 const IMAGE_URL =
 	'https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png';
@@ -28,7 +28,7 @@ test('Test full entry', () => {
 					description="See what's new in the Pinpoint Demo."
 				/>
 			}
-			renderer={<Content node={testDoc} />}
+			renderer={<Document node={testDoc} />}
 			sidebar={
 				<Sidebar
 					author={<Author avatarUrl={AVATAR} name="Keegan" />}
@@ -68,7 +68,7 @@ test('Test no footer', () => {
 					description="See what's new in the Pinpoint Demo."
 				/>
 			}
-			renderer={<Content node={testDoc} />}
+			renderer={<Document node={testDoc} />}
 			sidebar={
 				<Sidebar
 					author={<Author avatarUrl={AVATAR} name="Keegan" />}
@@ -92,7 +92,7 @@ test('Test no sidebar', () => {
 					description="See what's new in the Pinpoint Demo."
 				/>
 			}
-			renderer={<Content node={testDoc} />}
+			renderer={<Document node={testDoc} />}
 			footer={
 				<Footer
 					social={

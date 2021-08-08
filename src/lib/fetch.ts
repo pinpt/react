@@ -1,76 +1,38 @@
 import fetch from 'isomorphic-unfetch';
-import { getAPIUrl } from './env';
 
-import type { Analytics, ClapResponse, Entry, Site } from './types';
+let baseURL: string = '';
 
-const defaultUrl = getAPIUrl();
+export const setBaseURL = (base: string) => {
+	baseURL = base;
+};
 
-interface FetchOptions {
-	apiUrl?: string;
+class FetchError extends Error {
+	public code: number;
+	public headers: any;
+	constructor(msg, code, headers) {
+		super(msg);
+		this.code = code;
+		this.headers = headers;
+	}
 }
 
-export const createClap = async (
-	siteId: string,
-	changelogId: string,
-	deviceId?: string,
-	options?: FetchOptions
-): Promise<ClapResponse> => {
-	const { apiUrl = defaultUrl } = options || {};
-	const url = `${apiUrl}/changelog/clap`;
-	const res = await fetch(url, {
-		method: 'POST',
-		body: JSON.stringify({
-			siteId,
-			changelogId,
-			deviceId,
-		}),
-		headers: {
-			'Content-Type': 'application/json',
-		},
+export const executeAPI = async (relpath: string, method = 'GET', data?: any) => {
+	const headers: any = {};
+	if (data) {
+		headers['Content-Type'] = 'application/json';
+	}
+	const res = await fetch(baseURL + relpath, {
+		method,
+		headers,
+		body: data ? JSON.stringify(data) : undefined,
 	});
-
-	const json = await res.json();
-	return json.counts;
-};
-
-export const fetchAnalytics = async (
-	siteId: string,
-	changelogIds: string[],
-	options?: FetchOptions
-): Promise<Analytics> => {
-	const { apiUrl = defaultUrl } = options || {};
-	const url = `${apiUrl}/site/${siteId}/analytics?changelogIds=${encodeURIComponent(JSON.stringify(changelogIds))}`;
-	const res = await fetch(url);
-	const json = await res.json();
-	return json?.data;
-};
-
-export const fetchContent = async (id: string, options?: FetchOptions): Promise<Entry> => {
-	const { apiUrl = defaultUrl } = options || {};
-	const url = `${apiUrl}/changelog/${id}/public/metadata`;
-	const res = await fetch(url);
 	if (res.ok) {
 		const resdata = await res.json();
+		const { success, ...rest } = resdata;
 		if (resdata.success) {
-			const { metadata } = resdata;
-			return metadata as Entry;
+			return rest;
 		}
-		throw new Error(resdata.message);
+		throw new FetchError(resdata.message, res.status, res.headers);
 	}
-	throw new Error('internal server error');
-};
-
-export const fetchSite = async (slug: string, options?: FetchOptions): Promise<{ changelogs: Entry[]; site: Site }> => {
-	const { apiUrl = defaultUrl } = options || {};
-	const url = `${apiUrl}/changelog/list/${slug}/slug`;
-	const res = await fetch(url);
-	if (res.ok) {
-		const resdata = await res.json();
-		if (resdata.success) {
-			const { changelogs, site } = resdata;
-			return { changelogs, site };
-		}
-		throw new Error(resdata.message);
-	}
-	throw new Error('internal server error');
+	throw new FetchError('internal server error', res.status, res.headers);
 };

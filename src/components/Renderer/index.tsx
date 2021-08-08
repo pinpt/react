@@ -24,13 +24,13 @@ import './table_header';
 import './table_row';
 import './table';
 import './toggle';
-import Changelog from './changelog';
+import Content from './content';
 import { DocOpts, NodeProps, recurseIntoChildren } from './register';
 
-const Content = ({ node, limit, opts }: NodeProps & { limit?: number; opts?: DocOpts }) => (
+const Document = ({ node, limit, opts }: NodeProps & { limit?: number; opts?: DocOpts }) => (
 	<>{recurseIntoChildren({ ...node, _path: 'doc', _opts: opts }, limit)}</>
 );
 
 export const emptyDoc = () => ({ type: 'doc', content: [{ type: 'paragraph', content: [] }] });
 
-export { Content, Changelog };
+export { Document, Content };

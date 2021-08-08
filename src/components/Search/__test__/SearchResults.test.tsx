@@ -1,7 +1,7 @@
 import renderer from 'react-test-renderer';
-import Results from '../Results';
-import Card from '../../ChangelogCard';
+import Card from '../../Card';
 import Statistic from '../../Statistic';
+import Results from '../Results';
 
 const TEST_TITLE = 'Test Title';
 const TEST_DESCRIPTION = 'Test Description';

@@ -1,21 +1,20 @@
-import Page from '../../Page';
-import { Entry as IEntry, Site } from '../../../lib';
-import { Content } from '../../Renderer';
-import Header, { IHeaderProps } from '../../Header';
-
 import { ReactElement } from 'react';
-import Subscribe, { ISubscribeProps } from '../../Subscribe';
-import ThemeToggle, { IThemeToggleProps } from '../../ThemeToggle';
-import Footer, { IFooterProps } from '../../Footer';
-import Social from '../../Social';
-import Copyright, { ICopyrightProps } from '../../Copyright';
-import Logo, { ILogoProps } from '../../Logo';
-import { ISocialBarProps } from '../../Social/Bar';
-import Sidebar, { ISidebarProps } from '../../Sidebar';
+import { Content as IEntry, Site } from '../../../lib/types';
 import Author, { IAuthorProps } from '../../Author';
-import { ITagBarProps } from '../../Tags/Bar';
-import Tags from '../../Tags';
 import Clap, { IClapProps } from '../../Clap';
+import Copyright, { ICopyrightProps } from '../../Copyright';
+import Footer, { IFooterProps } from '../../Footer';
+import Header, { IHeaderProps } from '../../Header';
+import Logo, { ILogoProps } from '../../Logo';
+import Page from '../../Page';
+import { Document } from '../../Renderer';
+import Sidebar, { ISidebarProps } from '../../Sidebar';
+import Social from '../../Social';
+import { ISocialBarProps } from '../../Social/Bar';
+import Subscribe, { ISubscribeProps } from '../../Subscribe';
+import Tags from '../../Tags';
+import { ITagBarProps } from '../../Tags/Bar';
+import ThemeToggle, { IThemeToggleProps } from '../../ThemeToggle';
 
 export interface IPrebuiltEntryProps {
 	className?: string;
@@ -63,8 +62,8 @@ const Entry = (props: IPrebuiltEntryProps) => {
 	return (
 		<Page.Entry
 			className={`Prebuilt ${className}`}
-			coverImage={entry.cover_image}
-			renderer={renderContent?.(entry) ?? <Content node={entry.content} />}
+			coverImage={entry.coverMedia?.placeholderImage}
+			renderer={renderContent?.(entry) ?? <Document node={entry.document} />}
 			sidebar={
 				renderSidebar?.(entry) ?? (
 					<Sidebar
@@ -96,8 +95,8 @@ const Entry = (props: IPrebuiltEntryProps) => {
 				renderHeader?.(site) ?? (
 					<Header
 						className="Prebuilt"
-						title={`${site.name} Changelog`}
-						description={site.theme.description}
+						title={`${site.name}`}
+						description={site.theme?.description ?? site.name}
 						subscribe={
 							renderSubscribe?.(site) ?? (
 								<Subscribe className="Prebuilt" href={`https://${site.slug}.pinpoint.com/subscribe`} />
@@ -114,22 +113,22 @@ const Entry = (props: IPrebuiltEntryProps) => {
 						social={
 							renderSocial?.(site) ?? (
 								<Social.Bar className="Prebuilt">
-									{site.theme.social?.facebook && (
+									{site.theme?.social?.facebook && (
 										<Social.Facebook className="Prebuilt" href={site.theme.social?.facebook} newTab />
 									)}
-									{site.theme.social?.instagram && (
+									{site.theme?.social?.instagram && (
 										<Social.Instagram className="Prebuilt" href={site.theme.social?.instagram} newTab />
 									)}
-									{site.theme.social?.twitter && (
+									{site.theme?.social?.twitter && (
 										<Social.Twitter className="Prebuilt" href={site.theme.social?.twitter} newTab />
 									)}
-									{site.theme.social?.github && (
+									{site.theme?.social?.github && (
 										<Social.Github className="Prebuilt" href={site.theme.social?.github} newTab />
 									)}
-									{site.theme.social?.linkedin && (
+									{site.theme?.social?.linkedin && (
 										<Social.LinkedIn className="Prebuilt" href={site.theme.social?.linkedin} newTab />
 									)}
-									{site.theme.social?.rss && (
+									{site.theme?.social?.rss && (
 										<Social.RSS className="Prebuilt" href={site.theme.social?.rss} newTab />
 									)}
 								</Social.Bar>
@@ -139,10 +138,10 @@ const Entry = (props: IPrebuiltEntryProps) => {
 							renderCopyright?.(site) ?? (
 								<Copyright
 									className="Prebuilt"
-									text={site.theme.copyright}
+									text={site.theme?.copyright ?? ''}
 									logo={
 										renderLogo?.(site) ?? (
-											<Logo className="Prebuilt" src={site.logoUrl} href={site.theme.logoLink} />
+											<Logo className="Prebuilt" src={site.logoUrl} href={site.theme?.logoLink} />
 										)
 									}
 								/>

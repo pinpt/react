@@ -1,8 +1,9 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
-import Recent from '..';
-import Card from '../../ChangelogCard';
+import Recent from '../';
+import Card from '../../Card';
 import Statistic from '../../Statistic';
+
 const { default: readme } = require('../README.md');
 
 export default {

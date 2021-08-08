@@ -1,38 +1,39 @@
 import renderer from 'react-test-renderer';
-import Home from '../Home';
-import { Entry } from '../../../lib';
+import analytics from '../__data__/testAnalytics.json';
 import entries from '../__data__/testEntries.json';
 import site from '../__data__/testSite.json';
-import analytics from '../__data__/testAnalytics.json';
+import Home from '../Home';
+
+import type { Content } from '../../../lib/types/content';
 
 test('Test default state', () => {
-	const component = renderer.create(<Home entries={entries as Entry[]} site={site} />);
+	const component = renderer.create(<Home entries={entries as Content[]} site={site} />);
 	const tree = component.toJSON();
 	expect(tree).toMatchSnapshot();
 });
 
 test('Test default state with partial analytics', () => {
-	const component = renderer.create(<Home entries={entries as Entry[]} site={site} analytics={analytics} />);
+	const component = renderer.create(<Home entries={entries as Content[]} site={site} analytics={analytics} />);
 	const tree = component.toJSON();
 	expect(tree).toMatchSnapshot();
 });
 
 test('Test custom latest length', () => {
-	const component = renderer.create(<Home entries={entries as Entry[]} site={site} latestCount={2} />);
+	const component = renderer.create(<Home entries={entries as Content[]} site={site} latestCount={2} />);
 	const tree = component.toJSON();
 	expect(tree).toMatchSnapshot();
 });
 
 test('Hidden stats', () => {
 	const component = renderer.create(
-		<Home entries={entries as Entry[]} site={site} renderCardStatistics={() => <></>} />
+		<Home entries={entries as Content[]} site={site} renderCardStatistics={() => <></>} />
 	);
 	const tree = component.toJSON();
 	expect(tree).toMatchSnapshot();
 });
 
 test('Test custom className', () => {
-	const component = renderer.create(<Home className="test-custom" entries={entries as Entry[]} site={site} />);
+	const component = renderer.create(<Home className="test-custom" entries={entries as Content[]} site={site} />);
 	const tree = component.toJSON();
 	expect(tree).toMatchSnapshot();
 });

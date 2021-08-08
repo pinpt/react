@@ -45,45 +45,45 @@
 }
 
 /*
- * Styles for the changelog card components
+ * Styles for the card components
  */
-.Changelog.Card.Container.wrapper {
+.Content.Card.Container.wrapper {
 	@apply w-full rounded-md overflow-hidden shadow bg-white mt-auto flex flex-col h-full;
 }
 
-.Changelog.Card.Container.wrapper .cover {
+.Content.Card.Container.wrapper .cover {
 	@apply w-full h-80 object-cover object-center;
 }
 
-.Changelog.Card.Container.wrapper .content {
+.Content.Card.Container.wrapper .content {
 	@apply flex flex-col p-6 flex-grow flex-shrink;
 }
 
-.Changelog.Card.Container.wrapper .footer {
+.Content.Card.Container.wrapper .footer {
 	@apply flex mt-auto;
 }
 
-.Changelog.Card.Container.wrapper .statistics {
+.Content.Card.Container.wrapper .statistics {
 	@apply ml-auto;
 }
 
-.Changelog.Card.Description {
+.Content.Card.Description {
 	@apply mb-4;
 }
 
-.Changelog.Card.Date {
+.Content.Card.Date {
 	@apply mt-0.5 text-xs mb-2;
 }
 
-.Changelog.Card.Read {
+.Content.Card.Read {
 	@apply flex items-center cursor-pointer no-underline;
 }
 
-.Changelog.Card.Read .arrow {
+.Content.Card.Read .arrow {
 	@apply ml-2;
 }
 
-.Changelog.Card .Tag.Bar {
+.Content.Card .Tag.Bar {
 	@apply mb-4;
 }
 /*

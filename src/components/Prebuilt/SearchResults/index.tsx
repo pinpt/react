@@ -1,53 +1,54 @@
 import { ReactElement } from 'react';
-import { IChangelogCardContainerProps } from '../../ChangelogCard/Container';
-import Header, { IHeaderProps } from '../../Header';
-import Subscribe, { ISubscribeProps } from '../../Subscribe';
-import Card from '../../ChangelogCard';
-import { Entry, SearchTerm, Site } from '../../../lib';
-import Page from '../../Page';
-import { IChangelogTitleProps } from '../../ChangelogCard/Title';
-import { IChangelogDateProps } from '../../ChangelogCard/Date';
-import { IChangelogDescriptionProps } from '../../ChangelogCard/Description';
-import { IStatisticsBarProps } from '../../Statistic/Bar';
-import { IChangelogReadButtonProps } from '../../ChangelogCard/ReadButton';
-import Statistic from '../../Statistic';
-import Footer, { IFooterProps } from '../../Footer';
-import { ISocialBarProps } from '../../Social/Bar';
+import Card from '../../Card';
+import { ICardContainerProps } from '../../Card/Container';
+import { ICardDateProps } from '../../Card/Date';
+import { ICardDescriptionProps } from '../../Card/Description';
+import { ICardReadButtonProps } from '../../Card/ReadButton';
+import { ICardTitleProps } from '../../Card/Title';
 import Copyright, { ICopyrightProps } from '../../Copyright';
+import Footer, { IFooterProps } from '../../Footer';
+import Header, { IHeaderProps } from '../../Header';
 import Logo, { ILogoProps } from '../../Logo';
-import Social from '../../Social';
-import { ITagBarProps } from '../../Tags/Bar';
-import Tags from '../../Tags';
-import ThemeToggle, { IThemeToggleProps } from '../../ThemeToggle';
-import { ISearchResultsProps } from '../../Search/Results';
-import { ISearchBarProps } from '../../Search/Bar';
+import Page from '../../Page';
 import Search from '../../Search';
+import { ISearchBarProps } from '../../Search/Bar';
 import { IQueryProps } from '../../Search/Query';
+import { ISearchResultsProps } from '../../Search/Results';
+import Social from '../../Social';
+import { ISocialBarProps } from '../../Social/Bar';
+import Statistic from '../../Statistic';
+import { IStatisticsBarProps } from '../../Statistic/Bar';
+import Subscribe, { ISubscribeProps } from '../../Subscribe';
+import Tags from '../../Tags';
+import { ITagBarProps } from '../../Tags/Bar';
+import ThemeToggle, { IThemeToggleProps } from '../../ThemeToggle';
+
+import type { Content, SearchTerm, Site } from '../../../lib/types';
 export interface IPrebuiltSearchResultsProps {
 	className?: string;
 	site: Site;
-	entries?: Entry[];
+	entries?: Content[];
 	renderHeader?: (site: Site) => ReactElement<IHeaderProps>;
 	renderSubscribe?: (site: Site) => ReactElement<ISubscribeProps>;
-	renderSearchResults?: (entries: Entry[]) => ReactElement<ISearchResultsProps>;
-	renderCard?: (entry: Entry) => ReactElement<IChangelogCardContainerProps>;
-	renderCardTitle?: (entry: Entry) => ReactElement<IChangelogTitleProps>;
-	renderCardDate?: (entry: Entry) => ReactElement<IChangelogDateProps>;
-	renderCardDescription?: (entry: Entry) => ReactElement<IChangelogDescriptionProps>;
-	renderCardStatistics?: (entry: Entry) => ReactElement<IStatisticsBarProps>;
-	renderCardButton?: (entry: Entry) => ReactElement<IChangelogReadButtonProps>;
+	renderSearchResults?: (entries: Content[]) => ReactElement<ISearchResultsProps>;
+	renderCard?: (Content: Content) => ReactElement<ICardContainerProps>;
+	renderCardTitle?: (Content: Content) => ReactElement<ICardTitleProps>;
+	renderCardDate?: (Content: Content) => ReactElement<ICardDateProps>;
+	renderCardDescription?: (Content: Content) => ReactElement<ICardDescriptionProps>;
+	renderCardStatistics?: (Content: Content) => ReactElement<IStatisticsBarProps>;
+	renderCardButton?: (Content: Content) => ReactElement<ICardReadButtonProps>;
 	renderFooter?: (site: Site) => ReactElement<IFooterProps>;
 	renderSocial?: (site: Site) => ReactElement<ISocialBarProps>;
 	renderCopyright?: (site: Site) => ReactElement<ICopyrightProps>;
 	renderLogo?: (site: Site) => ReactElement<ILogoProps>;
-	renderTags?: (entry: Entry) => ReactElement<ITagBarProps>;
+	renderTags?: (Content: Content) => ReactElement<ITagBarProps>;
 	renderThemeToggle?: (site: Site) => ReactElement<IThemeToggleProps>;
 	renderSearch?: (site: Site) => ReactElement<ISearchBarProps>;
 	renderSearchQuery?: (site: Site) => ReactElement<IQueryProps>;
 	searchTerm?: string;
 	searchTags?: string[];
 	handleSearch?: (value: string) => void;
-	handleSelectEntry?: (id: string) => void;
+	handleSelectContent?: (id: string) => void;
 	handleRemoveFromQuery?: (value: string, clear: boolean) => void;
 	handleAddTagToQuery?: (value: string) => void;
 	loading?: boolean;
@@ -78,7 +79,7 @@ const SearchResults = (props: IPrebuiltSearchResultsProps) => {
 		searchTerm = '',
 		searchTags = [],
 		handleSearch,
-		handleSelectEntry,
+		handleSelectContent,
 		handleRemoveFromQuery,
 		handleAddTagToQuery,
 		loading,
@@ -91,8 +92,8 @@ const SearchResults = (props: IPrebuiltSearchResultsProps) => {
 				renderHeader?.(site) ?? (
 					<Header
 						className="Prebuilt"
-						title={`${site.name} Changelog`}
-						description={site.theme.description}
+						title={`${site.name}`}
+						description={site.theme?.description ?? site.name}
 						subscribe={
 							renderSubscribe?.(site) ?? (
 								<Subscribe className="Prebuilt" href={`https://${site.slug}.pinpoint.com/subscribe`} />
@@ -134,42 +135,44 @@ const SearchResults = (props: IPrebuiltSearchResultsProps) => {
 			searchResults={
 				renderSearchResults?.(entries) ?? (
 					<Search.Results className="Prebuilt" clearQuery={() => handleRemoveFromQuery?.('', true)}>
-						{entries.map((entry) => {
+						{entries.map((Content) => {
 							return (
-								renderCard?.(entry) ?? (
+								renderCard?.(Content) ?? (
 									<Card.Container
-										key={entry.id}
+										key={Content.id}
 										className="Prebuilt"
-										imageUrl={entry.cover_image}
+										imageUrl={Content.coverMedia?.placeholderImage}
 										title={
-											renderCardTitle?.(entry) ?? <Card.Title className="Prebuilt" title={entry.title} />
+											renderCardTitle?.(Content) ?? <Card.Title className="Prebuilt" title={Content.title} />
 										}
 										date={
-											renderCardDate?.(entry) ?? <Card.Date className="Prebuilt" ts={entry.publishedAt} />
+											renderCardDate?.(Content) ?? (
+												<Card.Date className="Prebuilt" ts={Content.publishedAt} />
+											)
 										}
 										description={
-											renderCardDescription?.(entry) ?? (
-												<Card.Description className="Prebuilt" description={entry.headline} />
+											renderCardDescription?.(Content) ?? (
+												<Card.Description className="Prebuilt" description={Content.headline} />
 											)
 										}
 										statistics={
-											renderCardStatistics?.(entry) ?? (
+											renderCardStatistics?.(Content) ?? (
 												<Statistic.Bar className="Prebuilt" claps={0} views={0} />
 											)
 										}
 										button={
-											renderCardButton?.(entry) ?? (
+											renderCardButton?.(Content) ?? (
 												<Card.ReadButton
-													onClick={() => handleSelectEntry?.(entry.id)}
+													onClick={() => handleSelectContent?.(Content.id)}
 													className="Prebuilt"
 												/>
 											)
 										}
 										tags={
-											renderTags?.(entry) ?? (
+											renderTags?.(Content) ?? (
 												<Tags.Bar
 													className="Prebuilt"
-													tags={entry.tags ?? []}
+													tags={Content.tags ?? []}
 													onClick={(tag: string) => handleAddTagToQuery?.(tag)}
 												/>
 											)
@@ -188,22 +191,22 @@ const SearchResults = (props: IPrebuiltSearchResultsProps) => {
 						social={
 							renderSocial?.(site) ?? (
 								<Social.Bar className="Prebuilt">
-									{site.theme.social?.facebook && (
+									{site.theme?.social?.facebook && (
 										<Social.Facebook className="Prebuilt" href={site.theme.social?.facebook} newTab />
 									)}
-									{site.theme.social?.instagram && (
+									{site.theme?.social?.instagram && (
 										<Social.Instagram className="Prebuilt" href={site.theme.social?.instagram} newTab />
 									)}
-									{site.theme.social?.twitter && (
+									{site.theme?.social?.twitter && (
 										<Social.Twitter className="Prebuilt" href={site.theme.social?.twitter} newTab />
 									)}
-									{site.theme.social?.github && (
+									{site.theme?.social?.github && (
 										<Social.Github className="Prebuilt" href={site.theme.social?.github} newTab />
 									)}
-									{site.theme.social?.linkedin && (
+									{site.theme?.social?.linkedin && (
 										<Social.LinkedIn className="Prebuilt" href={site.theme.social?.linkedin} newTab />
 									)}
-									{site.theme.social?.rss && (
+									{site.theme?.social?.rss && (
 										<Social.RSS className="Prebuilt" href={site.theme.social?.rss} newTab />
 									)}
 								</Social.Bar>
@@ -213,10 +216,10 @@ const SearchResults = (props: IPrebuiltSearchResultsProps) => {
 							renderCopyright?.(site) ?? (
 								<Copyright
 									className="Prebuilt"
-									text={site.theme.copyright}
+									text={site.theme?.copyright ?? ''}
 									logo={
 										renderLogo?.(site) ?? (
-											<Logo className="Prebuilt" src={site.logoUrl} href={site.theme.logoLink} />
+											<Logo className="Prebuilt" src={site.logoUrl} href={site.theme?.logoLink} />
 										)
 									}
 								/>

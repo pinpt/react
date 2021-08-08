@@ -16,7 +16,7 @@ exports[`Test custom className 1`] = `
       className="container"
     >
       <div
-        className="Pinpoint Changelog Card Container wrapper "
+        className="Pinpoint Content Card Container wrapper "
       >
         <img
           className="cover"
@@ -26,17 +26,17 @@ exports[`Test custom className 1`] = `
           className="content"
         >
           <h2
-            className="Pinpoint Changelog Card Title "
+            className="Pinpoint Content Card Title "
           >
             Test Title
           </h2>
           <span
-            className="Pinpoint Changelog Card Date "
+            className="Pinpoint Content Card Date "
           >
             12/31/1969
           </span>
           <p
-            className="Pinpoint Changelog Card Description "
+            className="Pinpoint Content Card Description "
           >
             Test Description
           </p>
@@ -47,7 +47,7 @@ exports[`Test custom className 1`] = `
               className="button"
             >
               <span
-                className="Pinpoint Internal Link  Changelog Card Read "
+                className="Pinpoint Internal Link  Content Card Read "
               >
                 Read
                 <svg
@@ -203,7 +203,7 @@ exports[`Test double 1`] = `
       className="container"
     >
       <div
-        className="Pinpoint Changelog Card Container wrapper "
+        className="Pinpoint Content Card Container wrapper "
       >
         <img
           className="cover"
@@ -213,17 +213,17 @@ exports[`Test double 1`] = `
           className="content"
         >
           <h2
-            className="Pinpoint Changelog Card Title "
+            className="Pinpoint Content Card Title "
           >
             Test Title
           </h2>
           <span
-            className="Pinpoint Changelog Card Date "
+            className="Pinpoint Content Card Date "
           >
             12/31/1969
           </span>
           <p
-            className="Pinpoint Changelog Card Description "
+            className="Pinpoint Content Card Description "
           >
             Test Description
           </p>
@@ -234,7 +234,7 @@ exports[`Test double 1`] = `
               className="button"
             >
               <span
-                className="Pinpoint Internal Link  Changelog Card Read "
+                className="Pinpoint Internal Link  Content Card Read "
               >
                 Read
                 <svg
@@ -370,7 +370,7 @@ exports[`Test double 1`] = `
         </div>
       </div>
       <div
-        className="Pinpoint Changelog Card Container wrapper "
+        className="Pinpoint Content Card Container wrapper "
       >
         <img
           className="cover"
@@ -380,17 +380,17 @@ exports[`Test double 1`] = `
           className="content"
         >
           <h2
-            className="Pinpoint Changelog Card Title "
+            className="Pinpoint Content Card Title "
           >
             Test Title
           </h2>
           <span
-            className="Pinpoint Changelog Card Date "
+            className="Pinpoint Content Card Date "
           >
             12/31/1969
           </span>
           <p
-            className="Pinpoint Changelog Card Description "
+            className="Pinpoint Content Card Description "
           >
             Test Description
           </p>
@@ -401,7 +401,7 @@ exports[`Test double 1`] = `
               className="button"
             >
               <span
-                className="Pinpoint Internal Link  Changelog Card Read "
+                className="Pinpoint Internal Link  Content Card Read "
               >
                 Read
                 <svg
@@ -559,7 +559,7 @@ exports[`Test single 1`] = `
       className="container"
     >
       <div
-        className="Pinpoint Changelog Card Container wrapper "
+        className="Pinpoint Content Card Container wrapper "
       >
         <img
           className="cover"
@@ -569,17 +569,17 @@ exports[`Test single 1`] = `
           className="content"
         >
           <h2
-            className="Pinpoint Changelog Card Title "
+            className="Pinpoint Content Card Title "
           >
             Test Title
           </h2>
           <span
-            className="Pinpoint Changelog Card Date "
+            className="Pinpoint Content Card Date "
           >
             12/31/1969
           </span>
           <p
-            className="Pinpoint Changelog Card Description "
+            className="Pinpoint Content Card Description "
           >
             Test Description
           </p>
@@ -590,7 +590,7 @@ exports[`Test single 1`] = `
               className="button"
             >
               <span
-                className="Pinpoint Internal Link  Changelog Card Read "
+                className="Pinpoint Internal Link  Content Card Read "
               >
                 Read
                 <svg
@@ -746,7 +746,7 @@ exports[`Test triple 1`] = `
       className="container"
     >
       <div
-        className="Pinpoint Changelog Card Container wrapper "
+        className="Pinpoint Content Card Container wrapper "
       >
         <img
           className="cover"
@@ -756,17 +756,17 @@ exports[`Test triple 1`] = `
           className="content"
         >
           <h2
-            className="Pinpoint Changelog Card Title "
+            className="Pinpoint Content Card Title "
           >
             Test Title
           </h2>
           <span
-            className="Pinpoint Changelog Card Date "
+            className="Pinpoint Content Card Date "
           >
             12/31/1969
           </span>
           <p
-            className="Pinpoint Changelog Card Description "
+            className="Pinpoint Content Card Description "
           >
             Test Description
           </p>
@@ -777,7 +777,7 @@ exports[`Test triple 1`] = `
               className="button"
             >
               <span
-                className="Pinpoint Internal Link  Changelog Card Read "
+                className="Pinpoint Internal Link  Content Card Read "
               >
                 Read
                 <svg
@@ -913,7 +913,7 @@ exports[`Test triple 1`] = `
         </div>
       </div>
       <div
-        className="Pinpoint Changelog Card Container wrapper "
+        className="Pinpoint Content Card Container wrapper "
       >
         <img
           className="cover"
@@ -923,17 +923,17 @@ exports[`Test triple 1`] = `
           className="content"
         >
           <h2
-            className="Pinpoint Changelog Card Title "
+            className="Pinpoint Content Card Title "
           >
             Test Title
           </h2>
           <span
-            className="Pinpoint Changelog Card Date "
+            className="Pinpoint Content Card Date "
           >
             12/31/1969
           </span>
           <p
-            className="Pinpoint Changelog Card Description "
+            className="Pinpoint Content Card Description "
           >
             Test Description
           </p>
@@ -944,7 +944,7 @@ exports[`Test triple 1`] = `
               className="button"
             >
               <span
-                className="Pinpoint Internal Link  Changelog Card Read "
+                className="Pinpoint Internal Link  Content Card Read "
               >
                 Read
                 <svg
@@ -1080,7 +1080,7 @@ exports[`Test triple 1`] = `
         </div>
       </div>
       <div
-        className="Pinpoint Changelog Card Container wrapper "
+        className="Pinpoint Content Card Container wrapper "
       >
         <img
           className="cover"
@@ -1090,17 +1090,17 @@ exports[`Test triple 1`] = `
           className="content"
         >
           <h2
-            className="Pinpoint Changelog Card Title "
+            className="Pinpoint Content Card Title "
           >
             Test Title
           </h2>
           <span
-            className="Pinpoint Changelog Card Date "
+            className="Pinpoint Content Card Date "
           >
             12/31/1969
           </span>
           <p
-            className="Pinpoint Changelog Card Description "
+            className="Pinpoint Content Card Description "
           >
             Test Description
           </p>
@@ -1111,7 +1111,7 @@ exports[`Test triple 1`] = `
               className="button"
             >
               <span
-                className="Pinpoint Internal Link  Changelog Card Read "
+                className="Pinpoint Internal Link  Content Card Read "
               >
                 Read
                 <svg
