@@ -1,6 +1,6 @@
 import { MouseEventHandler } from 'react';
 
-interface IActionLinkProps {
+export interface IActionLinkProps {
 	className?: string;
 	href?: string;
 	onClick?: MouseEventHandler<HTMLSpanElement>;

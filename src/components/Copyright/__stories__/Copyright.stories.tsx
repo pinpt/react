@@ -1,7 +1,9 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
 import Copyright from '../';
+import ActionLink from '../../Internal/ActionLink';
 import Logo from '../../Logo';
+
 const { default: readme } = require('../README.md');
 
 export default {
@@ -26,3 +28,14 @@ export const With_Logo: React.VFC<{}> = () => (
 );
 
 export const Without_Logo: React.VFC<{}> = () => <Copyright text="Copyright © 2021 by Pinpoint Software, Inc." />;
+
+export const With_LogoAndLink: React.VFC<{}> = () => (
+	<Copyright
+		text="Copyright © 2021 by Pinpoint Software, Inc."
+		logo={
+			<ActionLink href="https://pinpoint.com">
+				<Logo src={IMAGE_URL} />
+			</ActionLink>
+		}
+	/>
+);
