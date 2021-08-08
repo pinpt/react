@@ -1,7 +1,3 @@
-import { getFileAPIUrl } from './env';
-
-const fileApi = getFileAPIUrl();
-
 const looksLikeURL = /^(https|fileid):/;
 /**
  * format is:
@@ -59,26 +55,4 @@ export const extractImageMetadataFromFileID = (fileid: string) => {
 		};
 	}
 	return { ext };
-};
-
-// getFileUrl will return a full file-api url for a srcUrl, if
-// srcUrl scheme is not `fileid:` then it returns srcUrl
-export const getFileUrl = (srcUrl: string): string => {
-	// srcUrl looks like 'fileid:abcdefg1234'
-	if (srcUrl) {
-		const i = srcUrl.indexOf('fileid:');
-		if (i === 0) {
-			const fileId = srcUrl.substr('fileid:'.length);
-			return `${fileApi}/${fileId}`;
-		}
-		// if we have an existing url to the fileapi check that the token is not invalid
-		if (srcUrl.indexOf(fileApi) === 0) {
-			const u = new URL(srcUrl);
-			if (u.searchParams.get('idToken')) {
-				u.searchParams.delete('idToken');
-				return u.toString();
-			}
-		}
-	}
-	return srcUrl;
 };

@@ -1,10 +1,6 @@
 import fetch from 'isomorphic-unfetch';
 
-let baseURL: string = '';
-
-export const setBaseURL = (base: string) => {
-	baseURL = base;
-};
+import type { IPinpointConfig } from './types';
 
 class FetchError extends Error {
 	public code: number;
@@ -16,12 +12,26 @@ class FetchError extends Error {
 	}
 }
 
-export const executeAPI = async (relpath: string, method = 'GET', data?: any) => {
+const getBaseURL = (config: IPinpointConfig) => {
+	// server side
+	if (typeof window === 'undefined') {
+		if (config.apihost?.includes('.edge.')) {
+			return `https://${config.slug}.edge.changelog.so`;
+		}
+		return `https://${config.slug}.changelog.so`;
+	}
+	// client side, relative to the window origin
+	return window.location.origin;
+};
+
+export const executeAPI = async (config: IPinpointConfig, relpath: string, method = 'GET', data?: any) => {
 	const headers: any = {};
 	if (data) {
 		headers['Content-Type'] = 'application/json';
 	}
-	const res = await fetch(baseURL + relpath, {
+	const u = new URL(getBaseURL(config));
+	u.pathname = relpath;
+	const res = await fetch(u.toString(), {
 		method,
 		headers,
 		body: data ? JSON.stringify(data) : undefined,

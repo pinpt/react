@@ -1,4 +1,4 @@
-export interface Site {
+export interface ISite {
 	id: string;
 	logoUrl?: string;
 	mailingAddress?: string;

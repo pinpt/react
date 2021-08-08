@@ -1,5 +1,4 @@
 import { ReactElement } from 'react';
-import { Content as IEntry, Site } from '../../../lib/types';
 import Author, { IAuthorProps } from '../../Author';
 import Clap, { IClapProps } from '../../Clap';
 import Copyright, { ICopyrightProps } from '../../Copyright';
@@ -16,31 +15,33 @@ import Tags from '../../Tags';
 import { ITagBarProps } from '../../Tags/Bar';
 import ThemeToggle, { IThemeToggleProps } from '../../ThemeToggle';
 
+import type { IContent, ISite } from '../../../lib/types';
+
 export interface IPrebuiltEntryProps {
 	className?: string;
-	renderContent?: (entry: IEntry) => ReactElement;
-	renderHeader?: (site: Site) => ReactElement<IHeaderProps>;
-	renderSubscribe?: (site: Site) => ReactElement<ISubscribeProps>;
-	renderThemeToggle?: (site: Site) => ReactElement<IThemeToggleProps>;
-	renderFooter?: (site: Site) => ReactElement<IFooterProps>;
-	renderSocial?: (site: Site) => ReactElement<ISocialBarProps>;
-	renderCopyright?: (site: Site) => ReactElement<ICopyrightProps>;
-	renderLogo?: (site: Site) => ReactElement<ILogoProps>;
-	renderSidebar?: (entry: IEntry) => ReactElement<ISidebarProps>;
-	renderAuthor?: (entry: IEntry) => ReactElement<IAuthorProps>;
-	renderTags?: (entry: IEntry) => ReactElement<ITagBarProps>;
-	renderClap?: (entry: IEntry) => ReactElement<IClapProps>;
+	renderContent?: (content: IContent) => ReactElement;
+	renderHeader?: (site: ISite) => ReactElement<IHeaderProps>;
+	renderSubscribe?: (site: ISite) => ReactElement<ISubscribeProps>;
+	renderThemeToggle?: (site: ISite) => ReactElement<IThemeToggleProps>;
+	renderFooter?: (site: ISite) => ReactElement<IFooterProps>;
+	renderSocial?: (site: ISite) => ReactElement<ISocialBarProps>;
+	renderCopyright?: (site: ISite) => ReactElement<ICopyrightProps>;
+	renderLogo?: (site: ISite) => ReactElement<ILogoProps>;
+	renderSidebar?: (content: IContent) => ReactElement<ISidebarProps>;
+	renderAuthor?: (content: IContent) => ReactElement<IAuthorProps>;
+	renderTags?: (content: IContent) => ReactElement<ITagBarProps>;
+	renderClap?: (content: IContent) => ReactElement<IClapProps>;
 	clapCount?: number;
 	sessionClapCount?: number;
-	onClap?: (siteId: string, entryId: string) => void;
-	site: Site;
-	entry: IEntry;
+	onClap?: (contentId: string) => void;
+	site: ISite;
+	content: IContent;
 }
 
 const Entry = (props: IPrebuiltEntryProps) => {
 	const {
 		className = '',
-		entry,
+		content,
 		renderContent,
 		renderHeader,
 		site,
@@ -62,28 +63,28 @@ const Entry = (props: IPrebuiltEntryProps) => {
 	return (
 		<Page.Entry
 			className={`Prebuilt ${className}`}
-			coverImage={entry.coverMedia?.placeholderImage}
-			renderer={renderContent?.(entry) ?? <Document node={entry.document} />}
+			coverImage={content.coverMedia?.placeholderImage}
+			renderer={renderContent?.(content) ?? <Document node={content.document} />}
 			sidebar={
-				renderSidebar?.(entry) ?? (
+				renderSidebar?.(content) ?? (
 					<Sidebar
 						author={
-							renderAuthor?.(entry) ?? (
+							renderAuthor?.(content) ?? (
 								<Author
 									className="Prebuilt"
-									avatarUrl={entry.authors?.[0]?.avatarUrl ?? ''}
-									name={`${entry.authors?.[0]?.firstName} ${entry.authors?.[0]?.lastName}`}
+									avatarUrl={content.authors?.[0]?.avatarUrl ?? ''}
+									name={`${content.authors?.[0]?.firstName} ${content.authors?.[0]?.lastName}`}
 								/>
 							)
 						}
-						tags={renderTags?.(entry) ?? <Tags.Bar className="Prebuilt" tags={entry.tags ?? []} />}
+						tags={renderTags?.(content) ?? <Tags.Bar className="Prebuilt" tags={content.tags ?? []} />}
 						clap={
-							renderClap?.(entry) ??
+							renderClap?.(content) ??
 							(onClap ? (
 								<Clap
 									clapCount={clapCount}
 									sessionClapCount={sessionClapCount}
-									handleClap={() => onClap(site.id, entry.id)}
+									handleClap={() => onClap(content.id)}
 									className="Prebuilt"
 								/>
 							) : undefined)
@@ -98,9 +99,7 @@ const Entry = (props: IPrebuiltEntryProps) => {
 						title={`${site.name}`}
 						description={site.theme?.description ?? site.name}
 						subscribe={
-							renderSubscribe?.(site) ?? (
-								<Subscribe className="Prebuilt" href={`https://${site.slug}.pinpoint.com/subscribe`} />
-							)
+							renderSubscribe?.(site) ?? <Subscribe className="Prebuilt" href={`${site.url}/subscribe`} />
 						}
 						themeToggle={renderThemeToggle?.(site) ?? <ThemeToggle className="Prebuilt" />}
 					/>
@@ -148,9 +147,7 @@ const Entry = (props: IPrebuiltEntryProps) => {
 							)
 						}
 						subscribe={
-							renderSubscribe?.(site) ?? (
-								<Subscribe className="Prebuilt" href={`https://${site.slug}.pinpoint.com/subscribe`} />
-							)
+							renderSubscribe?.(site) ?? <Subscribe className="Prebuilt" href={`${site.url}/subscribe`} />
 						}
 					/>
 				)

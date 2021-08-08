@@ -1,4 +1,4 @@
-export interface SearchTerm {
+export interface ISearchTerm {
 	value: string;
 	type: 'text' | 'tag';
 }

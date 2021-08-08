@@ -1,8 +1,9 @@
 import { ReactYouTubeLite as Youtube } from 'react-youtube-lite';
-import { getFileUrl } from '../../lib/file_metadata';
 import { slugifyContent } from '../../lib/string';
-import { CoverMedia, CoverMediaType } from '../../lib/types/content';
+import { CoverMediaType } from '../../lib/types/content';
 import { Document } from './';
+
+import type { ICoverMedia } from '../../lib/types/content';
 
 const ImageMedia = ({ src, title = '' }: { src: string; title?: string }) => {
 	return (
@@ -56,7 +57,7 @@ const YoutubeMedia = ({
 	);
 };
 
-const Media = ({ media, title, staticMode }: { media?: CoverMedia; title?: string; staticMode?: true }) => {
+const Media = ({ media, title, staticMode }: { media?: ICoverMedia; title?: string; staticMode?: true }) => {
 	if (!media) {
 		return <></>;
 	}
@@ -66,11 +67,11 @@ const Media = ({ media, title, staticMode }: { media?: CoverMedia; title?: strin
 			return <></>;
 		}
 		case CoverMediaType.Image: {
-			content = <ImageMedia src={getFileUrl(media.value)} title={title} />;
+			content = <ImageMedia src={media.value} title={title} />;
 			break;
 		}
 		case CoverMediaType.Video: {
-			content = <VideoMedia src={getFileUrl(media.value)} />;
+			content = <VideoMedia src={media.value} />;
 			break;
 		}
 		case CoverMediaType.Youtube: {
@@ -85,7 +86,7 @@ interface ContentProps {
 	id: string;
 	title?: string;
 	document?: any;
-	coverMedia?: CoverMedia;
+	coverMedia?: ICoverMedia;
 	limit?: number;
 	divider?: boolean;
 	staticMode?: true;

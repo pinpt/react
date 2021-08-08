@@ -23,28 +23,28 @@ import Tags from '../../Tags';
 import { ITagBarProps } from '../../Tags/Bar';
 import ThemeToggle, { IThemeToggleProps } from '../../ThemeToggle';
 
-import type { Content, SearchTerm, Site } from '../../../lib/types';
+import type { IContent, ISearchTerm, ISite } from '../../../lib/types';
 export interface IPrebuiltSearchResultsProps {
 	className?: string;
-	site: Site;
-	entries?: Content[];
-	renderHeader?: (site: Site) => ReactElement<IHeaderProps>;
-	renderSubscribe?: (site: Site) => ReactElement<ISubscribeProps>;
-	renderSearchResults?: (entries: Content[]) => ReactElement<ISearchResultsProps>;
-	renderCard?: (Content: Content) => ReactElement<ICardContainerProps>;
-	renderCardTitle?: (Content: Content) => ReactElement<ICardTitleProps>;
-	renderCardDate?: (Content: Content) => ReactElement<ICardDateProps>;
-	renderCardDescription?: (Content: Content) => ReactElement<ICardDescriptionProps>;
-	renderCardStatistics?: (Content: Content) => ReactElement<IStatisticsBarProps>;
-	renderCardButton?: (Content: Content) => ReactElement<ICardReadButtonProps>;
-	renderFooter?: (site: Site) => ReactElement<IFooterProps>;
-	renderSocial?: (site: Site) => ReactElement<ISocialBarProps>;
-	renderCopyright?: (site: Site) => ReactElement<ICopyrightProps>;
-	renderLogo?: (site: Site) => ReactElement<ILogoProps>;
-	renderTags?: (Content: Content) => ReactElement<ITagBarProps>;
-	renderThemeToggle?: (site: Site) => ReactElement<IThemeToggleProps>;
-	renderSearch?: (site: Site) => ReactElement<ISearchBarProps>;
-	renderSearchQuery?: (site: Site) => ReactElement<IQueryProps>;
+	site: ISite;
+	entries?: IContent[];
+	renderHeader?: (site: ISite) => ReactElement<IHeaderProps>;
+	renderSubscribe?: (site: ISite) => ReactElement<ISubscribeProps>;
+	renderSearchResults?: (entries: IContent[]) => ReactElement<ISearchResultsProps>;
+	renderCard?: (Content: IContent) => ReactElement<ICardContainerProps>;
+	renderCardTitle?: (Content: IContent) => ReactElement<ICardTitleProps>;
+	renderCardDate?: (Content: IContent) => ReactElement<ICardDateProps>;
+	renderCardDescription?: (Content: IContent) => ReactElement<ICardDescriptionProps>;
+	renderCardStatistics?: (Content: IContent) => ReactElement<IStatisticsBarProps>;
+	renderCardButton?: (Content: IContent) => ReactElement<ICardReadButtonProps>;
+	renderFooter?: (site: ISite) => ReactElement<IFooterProps>;
+	renderSocial?: (site: ISite) => ReactElement<ISocialBarProps>;
+	renderCopyright?: (site: ISite) => ReactElement<ICopyrightProps>;
+	renderLogo?: (site: ISite) => ReactElement<ILogoProps>;
+	renderTags?: (Content: IContent) => ReactElement<ITagBarProps>;
+	renderThemeToggle?: (site: ISite) => ReactElement<IThemeToggleProps>;
+	renderSearch?: (site: ISite) => ReactElement<ISearchBarProps>;
+	renderSearchQuery?: (site: ISite) => ReactElement<IQueryProps>;
 	searchTerm?: string;
 	searchTags?: string[];
 	handleSearch?: (value: string) => void;
@@ -95,9 +95,7 @@ const SearchResults = (props: IPrebuiltSearchResultsProps) => {
 						title={`${site.name}`}
 						description={site.theme?.description ?? site.name}
 						subscribe={
-							renderSubscribe?.(site) ?? (
-								<Subscribe className="Prebuilt" href={`https://${site.slug}.pinpoint.com/subscribe`} />
-							)
+							renderSubscribe?.(site) ?? <Subscribe className="Prebuilt" href={`${site.url}/subscribe`} />
 						}
 						themeToggle={renderThemeToggle?.(site) ?? <ThemeToggle className="Prebuilt" />}
 						search={
@@ -117,14 +115,14 @@ const SearchResults = (props: IPrebuiltSearchResultsProps) => {
 								return {
 									type: 'tag',
 									value: t,
-								} as SearchTerm;
+								} as ISearchTerm;
 							}),
 							...(searchTerm
 								? [
 										{
 											type: 'text',
 											value: searchTerm,
-										} as SearchTerm,
+										} as ISearchTerm,
 								  ]
 								: []),
 						]}
@@ -226,9 +224,7 @@ const SearchResults = (props: IPrebuiltSearchResultsProps) => {
 							)
 						}
 						subscribe={
-							renderSubscribe?.(site) ?? (
-								<Subscribe className="Prebuilt" href={`https://${site.slug}.pinpoint.com/subscribe`} />
-							)
+							renderSubscribe?.(site) ?? <Subscribe className="Prebuilt" href={`${site.url}/subscribe`} />
 						}
 					/>
 				)

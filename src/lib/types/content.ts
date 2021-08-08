@@ -5,7 +5,7 @@ export enum CoverMediaType {
 	Youtube = 'youtube',
 }
 
-export interface CoverMedia {
+export interface ICoverMedia {
 	type: CoverMediaType;
 	placeholderImage: string;
 	value: string;
@@ -18,14 +18,14 @@ export enum ContentTemplateType {
 
 type ContentDocument = any;
 
-export interface User {
+export interface IUser {
 	id: string;
 	firstName: string;
 	lastName: string;
 	avatarUrl?: string;
 }
 
-export interface Content {
+export interface IContent {
 	id: string;
 	type: ContentTemplateType; // the type of content
 	commit: string; // the commit for the content
@@ -35,6 +35,6 @@ export interface Content {
 	tags?: string[];
 	title: string;
 	headline: string;
-	authors: User[];
-	coverMedia?: CoverMedia;
+	authors: IUser[];
+	coverMedia?: ICoverMedia;
 }

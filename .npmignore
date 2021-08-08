@@ -1,0 +1,5 @@
+node_modules
+.github
+.storybook
+**/__tests__/**
+**/docs-build/**

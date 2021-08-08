@@ -25,15 +25,9 @@ const {
 	Pagination,
 
 	emptyDoc,
-	getEnv,
-	getAPIUrl,
-	getFileAPIUrl,
 	fetchContent,
 	CoverMediaType,
 	ContentTemplateType,
-	extractFileDataFromFileID,
-	extractImageMetadataFromFileID,
-	getFileUrl,
 	slugifyContent,
 	slugifyString,
 	fetchSite,
@@ -42,10 +36,10 @@ const {
 	colorForString,
 	useSearch,
 	fetchAnalytics,
+	fetchContentAnalytics,
 	fetchContentPaginated,
 	fetchClaps,
 	createClap,
-	setBaseURL,
 	executeAPI,
 
 	...otherExports
@@ -132,15 +126,9 @@ test('Test component exports', () => {
 
 test('Test util exports', () => {
 	expect(emptyDoc).toBeTruthy();
-	expect(getEnv).toBeTruthy();
-	expect(getAPIUrl).toBeTruthy();
-	expect(getFileAPIUrl).toBeTruthy();
 	expect(fetchContent).toBeTruthy();
 	expect(CoverMediaType).toBeTruthy();
 	expect(ContentTemplateType).toBeTruthy();
-	expect(extractFileDataFromFileID).toBeTruthy();
-	expect(extractImageMetadataFromFileID).toBeTruthy();
-	expect(getFileUrl).toBeTruthy();
 	expect(slugifyContent).toBeTruthy();
 	expect(slugifyString).toBeTruthy();
 	expect(fetchSite).toBeTruthy();
@@ -149,9 +137,11 @@ test('Test util exports', () => {
 	expect(colorForString).toBeTruthy();
 	expect(useSearch).toBeTruthy();
 	expect(fetchAnalytics).toBeTruthy();
+	expect(fetchContentAnalytics).toBeTruthy();
 	expect(createClap).toBeTruthy();
 });
 
 test('Test for unexpected exports', () => {
+	// console.log(Object.keys(otherExports));
 	expect(Object.keys(otherExports).length).toEqual(0);
 });
