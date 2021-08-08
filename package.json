@@ -1,8 +1,8 @@
 {
 	"name": "@pinpt/react",
-	"version": "0.3.27",
+	"version": "0.4.0",
 	"description": "The Pinpoint UI Library for React",
-	"main": "dist/src/index.js",
+	"main": "dist/index.js",
 	"files": [
 		"dist/**/*",
 		"themes/**/*"
@@ -33,6 +33,7 @@
 		"algoliasearch": "^4.10.3",
 		"chroma-js": "^2.1.2",
 		"color-hash": "^2.0.1",
+		"debug": "^4.3.2",
 		"isomorphic-unfetch": "^3.1.0",
 		"luxon": "^2.0.1",
 		"react-syntax-highlighter": "^15.4.4",
@@ -83,5 +84,9 @@
 		"transformIgnorePatterns": [
 			"json"
 		]
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/pinpt/react.git"
 	}
 }

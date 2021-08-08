@@ -1,10 +1,11 @@
 import * as Exports from '../';
+
 const {
 	Statistic,
 	Clap,
 	Content,
-	Changelog,
-	ChangelogCard,
+	Card,
+	Document,
 	Logo,
 	Copyright,
 	Subscribe,
@@ -24,14 +25,9 @@ const {
 	Pagination,
 
 	emptyDoc,
-	getEnv,
-	getAPIUrl,
-	getFileAPIUrl,
 	fetchContent,
-	ChangelogMediaType,
-	extractFileDataFromFileID,
-	extractImageMetadataFromFileID,
-	getFileUrl,
+	CoverMediaType,
+	ContentTemplateType,
 	slugifyContent,
 	slugifyString,
 	fetchSite,
@@ -40,7 +36,11 @@ const {
 	colorForString,
 	useSearch,
 	fetchAnalytics,
+	fetchContentAnalytics,
+	fetchContentPaginated,
+	fetchClaps,
 	createClap,
+	executeAPI,
 
 	...otherExports
 } = Exports;
@@ -54,15 +54,15 @@ test('Test component exports', () => {
 	expect(Views).toBeTruthy();
 	expect(Object.keys(otherStatistic).length).toEqual(0);
 
-	// Test Changelog Card exports
-	expect(ChangelogCard).toBeTruthy();
-	const { Title, Description, Container, Date, ReadButton, ...otherChangelogCard } = ChangelogCard;
+	// Test Card exports
+	expect(Card).toBeTruthy();
+	const { Title, Description, Container, Date, ReadButton, ...otherCard } = Card;
 	expect(Title).toBeTruthy();
 	expect(Description).toBeTruthy();
 	expect(Container).toBeTruthy();
 	expect(Date).toBeTruthy();
 	expect(ReadButton).toBeTruthy();
-	expect(Object.keys(otherChangelogCard).length).toEqual(0);
+	expect(Object.keys(otherCard).length).toEqual(0);
 
 	// Test Social exports
 	expect(Social).toBeTruthy();
@@ -109,7 +109,7 @@ test('Test component exports', () => {
 	// Test other component exports
 	expect(Clap).toBeTruthy();
 	expect(Content).toBeTruthy();
-	expect(Changelog).toBeTruthy();
+	expect(Document).toBeTruthy();
 	expect(Logo).toBeTruthy();
 	expect(Copyright).toBeTruthy();
 	expect(Subscribe).toBeTruthy();
@@ -126,14 +126,9 @@ test('Test component exports', () => {
 
 test('Test util exports', () => {
 	expect(emptyDoc).toBeTruthy();
-	expect(getEnv).toBeTruthy();
-	expect(getAPIUrl).toBeTruthy();
-	expect(getFileAPIUrl).toBeTruthy();
 	expect(fetchContent).toBeTruthy();
-	expect(ChangelogMediaType).toBeTruthy();
-	expect(extractFileDataFromFileID).toBeTruthy();
-	expect(extractImageMetadataFromFileID).toBeTruthy();
-	expect(getFileUrl).toBeTruthy();
+	expect(CoverMediaType).toBeTruthy();
+	expect(ContentTemplateType).toBeTruthy();
 	expect(slugifyContent).toBeTruthy();
 	expect(slugifyString).toBeTruthy();
 	expect(fetchSite).toBeTruthy();
@@ -142,9 +137,11 @@ test('Test util exports', () => {
 	expect(colorForString).toBeTruthy();
 	expect(useSearch).toBeTruthy();
 	expect(fetchAnalytics).toBeTruthy();
+	expect(fetchContentAnalytics).toBeTruthy();
 	expect(createClap).toBeTruthy();
 });
 
 test('Test for unexpected exports', () => {
+	// console.log(Object.keys(otherExports));
 	expect(Object.keys(otherExports).length).toEqual(0);
 });

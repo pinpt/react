@@ -1,7 +1,7 @@
-const PoweredByPinpoint = ({ campaign }: { campaign: string }) => {
+const PoweredByPinpoint = ({ siteId }: { siteId?: string }) => {
 	return (
 		<a
-			href={`https://pinpoint.com/?utm_source=referral&utm_medium=web&utm_campaign=${campaign}`}
+			href={`https://pinpoint.com/?utm_source=referral&utm_medium=web&utm_campaign=${siteId}`}
 			style={{ display: 'flex', alignItems: 'center', margin: 'auto', textDecoration: 'none', color: 'inherit' }}
 		>
 			<span style={{ fontSize: '0.75rem', lineHeight: '1rem' }}>We run on</span>

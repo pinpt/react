@@ -1,26 +1,27 @@
 import renderer from 'react-test-renderer';
-import PrebuiltEntry from '../Entry';
-import { Entry } from '../../../lib';
 import entries from '../__data__/testEntries.json';
 import site from '../__data__/testSite.json';
+import PrebuiltEntry from '../Entry';
+
+import type { IContent } from '../../../lib/types';
 
 test('Test default state', () => {
 	const component = renderer.create(
-		<PrebuiltEntry clapCount={22} onClap={() => console.log('clap!')} entry={entries[0] as Entry} site={site} />
+		<PrebuiltEntry clapCount={22} onClap={() => console.log('clap!')} content={entries[0] as IContent} site={site} />
 	);
 	const tree = component.toJSON();
 	expect(tree).toMatchSnapshot();
 });
 
 test('Test no claps', () => {
-	const component = renderer.create(<PrebuiltEntry entry={entries[0] as Entry} site={site} />);
+	const component = renderer.create(<PrebuiltEntry content={entries[0] as IContent} site={site} />);
 	const tree = component.toJSON();
 	expect(tree).toMatchSnapshot();
 });
 
 test('Test no author', () => {
 	const component = renderer.create(
-		<PrebuiltEntry entry={entries[0] as Entry} site={site} renderAuthor={() => <></>} />
+		<PrebuiltEntry content={entries[0] as IContent} site={site} renderAuthor={() => <></>} />
 	);
 	const tree = component.toJSON();
 	expect(tree).toMatchSnapshot();
@@ -32,7 +33,7 @@ test('Test custom className', () => {
 			className="test-custom"
 			clapCount={22}
 			onClap={() => console.log('clap!')}
-			entry={entries[0] as Entry}
+			content={entries[0] as IContent}
 			site={site}
 		/>
 	);

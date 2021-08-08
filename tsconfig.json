@@ -19,5 +19,15 @@
 		"skipLibCheck": true,
 		"baseUrl": "./"
 	},
-	"exclude": ["dist", "node_modules", "**/__stories__", "**/__test__", "**/__data__", "docs"]
+	"exclude": [
+		"dist",
+		"node_modules",
+		"**/__stories__",
+		"**/__test__",
+		"**/__data__",
+		"docs",
+		"prettier.config.js",
+		"tailwind.config.js",
+		"jest-setup.js"
+	]
 }

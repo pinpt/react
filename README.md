@@ -59,6 +59,8 @@ const component = () => <Statistic.Bar claps={21} views={5} />;
 -  [ ] Finish default theme
 -  [ ] Support for cover media other than images
 -  [ ] Empty cover media state
--  [X] Wire up claps
+-  [ ] Fix subscriber links to go through site vs direct to pinpoint
+-  [ ] Re-generate test files against production once PR is merged
+-  [x] Wire up claps
 -  [x] Pagination
 -  [x] Tag Filtering

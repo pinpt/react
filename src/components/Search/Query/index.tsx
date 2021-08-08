@@ -1,10 +1,11 @@
-import Tags from '../../Tags';
-import { SearchTerm } from '../../../lib';
 import { useMemo } from 'react';
+import Tags from '../../Tags';
+
+import type { ISearchTerm } from '../../../lib/types';
 
 export interface IQueryProps {
 	className?: string;
-	terms?: SearchTerm[];
+	terms?: ISearchTerm[];
 	onRemoveTerm?: (value: string, clear: boolean) => void;
 }
 

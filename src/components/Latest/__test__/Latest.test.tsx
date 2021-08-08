@@ -1,6 +1,6 @@
 import renderer from 'react-test-renderer';
-import Latest from '..';
-import Card from '../../ChangelogCard';
+import Latest from '../';
+import Card from '../../Card';
 import Statistic from '../../Statistic';
 
 const TEST_TITLE = 'Test Title';

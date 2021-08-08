@@ -1,43 +1,24 @@
 {
-	"id": "PirxVTE94u3YmGNOySRY",
-	"slug": "pinpoint",
-	"name": "Pinpoint",
-	"logoUrl": "https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png",
-	"mailingAddress": "3131 McKinney Ave Ste 502 PMB 98116 Dallas, Texas 75204-2426 US",
+	"id": "X0iheYf0hUUTRed9KVfv",
+	"logoUrl": "https://file.edge.pinpoint.com/b24dabeec1f19705f31ed39278729729;UgK7%23L%2C-n%25ay%7D7bbR-aft2J-Naa%23%23rW-NwWW;128x129.png",
+	"url": "https://jeff.pinpoint.com",
+	"slug": "jeff",
+	"name": "Jeff's Testing Site -- NONE OF THIS INFO IS REAL",
+	"mailingAddress": "Austin, Texas",
 	"theme": {
+		"title": "Changelog",
+		"tosLink": "https://pinpoint.com/terms",
 		"social": {
+			"facebook": "",
+			"instagram": "https://instagram.com/jhaynie",
+			"github": "https://github.com/jhaynie",
 			"blog": "",
-			"linkedin": "https://linkedin.com/company/pinpoint-software",
-			"twitter": "https://twitter.com/pinpoint_sw",
-			"facebook": "https://www.facebook.com/Pinpoint.Engineering",
-			"github": "https://github.com/pinpt",
-			"instagram": "https://www.instagram.com/pinpoint_sw/"
+			"linkedin": "https://www.linkedin.com/in/jhaynie/",
+			"twitter": "https://twitter.com/jhaynie"
 		},
-		"custom": {
-			"file": "879431468306.zip",
-			"lastDeployedAt": 1627969427466,
-			"createdAt": 1626100844188,
-			"lastDeployment": "nHDiiS2uCBQA1rdc1IqT",
-			"userId": "sVuB6FVSWcczkiwI3Md3En6Gttz1",
-			"error": "",
-			"theme": ""
-		},
-		"title": "Pinpoint Changelog",
-		"generatorVersion": "2.0.25",
-		"logoLink": "https://pinpoint.com",
-		"tosLink": "https://home.pinpoint.com/legal/terms",
-		"description": "New updates and improvements to Pinpoint",
-		"privacyLink": "https://home.pinpoint.com/legal/privacy",
-		"eulaLink": "https://home.pinpoint.com/legal/eula",
-		"copyright": "Copyright © 2021 by Pinpoint Software, Inc."
-	},
-	"hostname": {
-		"validated": true,
-		"createdBy": {
-			"id": "iO51IMmrobRhG1r4ptVXtkdTgBZ2"
-		},
-		"dateAt": 1627918986709,
-		"token": "\"token=1816069405\"",
-		"value": "changelog.pinpoint.com"
+		"description": "New updates and improvements to Jeff's Cool Test Product",
+		"copyright": "Copyright © 2021 by Jeff's Cool Test Product",
+		"logoLink": "https://changelog.so",
+		"eulaLink": "https://pinpoint.com/eula"
 	}
 }
