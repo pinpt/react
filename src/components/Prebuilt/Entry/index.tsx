@@ -99,7 +99,9 @@ const Entry = (props: IPrebuiltEntryProps) => {
 						title={`${site.name}`}
 						description={site.theme?.description ?? site.name}
 						subscribe={
-							renderSubscribe?.(site) ?? <Subscribe className="Prebuilt" href={`${site.url}/subscribe`} />
+							renderSubscribe?.(site) ?? (
+								<Subscribe className="Prebuilt" href={`${site.url}/subscription/subscribe`} />
+							)
 						}
 						themeToggle={renderThemeToggle?.(site) ?? <ThemeToggle className="Prebuilt" />}
 					/>
@@ -109,6 +111,7 @@ const Entry = (props: IPrebuiltEntryProps) => {
 				renderFooter?.(site) ?? (
 					<Footer
 						className="Prebuilt"
+						siteId={site?.id}
 						social={
 							renderSocial?.(site) ?? (
 								<Social.Bar className="Prebuilt">
@@ -147,7 +150,9 @@ const Entry = (props: IPrebuiltEntryProps) => {
 							)
 						}
 						subscribe={
-							renderSubscribe?.(site) ?? <Subscribe className="Prebuilt" href={`${site.url}/subscribe`} />
+							renderSubscribe?.(site) ?? (
+								<Subscribe className="Prebuilt" href={`${site.url}/subscription/subscribe`} />
+							)
 						}
 					/>
 				)

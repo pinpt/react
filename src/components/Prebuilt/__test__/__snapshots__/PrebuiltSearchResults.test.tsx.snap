@@ -79,7 +79,7 @@ exports[`Hidden stats 1`] = `
         >
           <a
             className="Pinpoint Internal Link Subscribe Prebuilt"
-            href="https://jeff.pinpoint.com/subscribe"
+            href="https://jeff.pinpoint.com/subscription/subscribe"
           >
             <svg
               aria-hidden="true"
@@ -236,7 +236,7 @@ exports[`Hidden stats 1`] = `
       >
         <a
           className="Pinpoint Internal Link Subscribe Prebuilt"
-          href="https://jeff.pinpoint.com/subscribe"
+          href="https://jeff.pinpoint.com/subscription/subscribe"
         >
           <svg
             aria-hidden="true"
@@ -364,7 +364,7 @@ exports[`Hidden stats 1`] = `
       className="powered"
     >
       <a
-        href="https://pinpoint.com/?utm_source=referral&utm_medium=web&utm_campaign="
+        href="https://pinpoint.com/?utm_source=referral&utm_medium=web&utm_campaign=X0iheYf0hUUTRed9KVfv"
         style={
           Object {
             "alignItems": "center",
@@ -492,7 +492,7 @@ exports[`Test custom className 1`] = `
         >
           <a
             className="Pinpoint Internal Link Subscribe Prebuilt"
-            href="https://jeff.pinpoint.com/subscribe"
+            href="https://jeff.pinpoint.com/subscription/subscribe"
           >
             <svg
               aria-hidden="true"
@@ -755,7 +755,7 @@ exports[`Test custom className 1`] = `
       >
         <a
           className="Pinpoint Internal Link Subscribe Prebuilt"
-          href="https://jeff.pinpoint.com/subscribe"
+          href="https://jeff.pinpoint.com/subscription/subscribe"
         >
           <svg
             aria-hidden="true"
@@ -883,7 +883,7 @@ exports[`Test custom className 1`] = `
       className="powered"
     >
       <a
-        href="https://pinpoint.com/?utm_source=referral&utm_medium=web&utm_campaign="
+        href="https://pinpoint.com/?utm_source=referral&utm_medium=web&utm_campaign=X0iheYf0hUUTRed9KVfv"
         style={
           Object {
             "alignItems": "center",
@@ -1011,7 +1011,7 @@ exports[`Test default state 1`] = `
         >
           <a
             className="Pinpoint Internal Link Subscribe Prebuilt"
-            href="https://jeff.pinpoint.com/subscribe"
+            href="https://jeff.pinpoint.com/subscription/subscribe"
           >
             <svg
               aria-hidden="true"
@@ -1274,7 +1274,7 @@ exports[`Test default state 1`] = `
       >
         <a
           className="Pinpoint Internal Link Subscribe Prebuilt"
-          href="https://jeff.pinpoint.com/subscribe"
+          href="https://jeff.pinpoint.com/subscription/subscribe"
         >
           <svg
             aria-hidden="true"
@@ -1402,7 +1402,7 @@ exports[`Test default state 1`] = `
       className="powered"
     >
       <a
-        href="https://pinpoint.com/?utm_source=referral&utm_medium=web&utm_campaign="
+        href="https://pinpoint.com/?utm_source=referral&utm_medium=web&utm_campaign=X0iheYf0hUUTRed9KVfv"
         style={
           Object {
             "alignItems": "center",

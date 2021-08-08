@@ -6,13 +6,14 @@ import { ISubscribeProps } from '../Subscribe';
 
 export interface IFooterProps {
 	className?: string;
+	siteId?: string;
 	social?: ReactElement<ISocialBarProps>;
 	copyright?: ReactElement<ICopyrightProps>;
 	subscribe?: ReactElement<ISubscribeProps>;
 }
 
 const Footer = (props: IFooterProps) => {
-	const { className = '', social, copyright, subscribe } = props;
+	const { className = '', siteId, social, copyright, subscribe } = props;
 
 	return (
 		<div className={`Pinpoint Footer ${className}`}>
@@ -24,7 +25,7 @@ const Footer = (props: IFooterProps) => {
 				</div>
 			</div>
 			<div className="powered">
-				<PoweredByPinpoint campaign="" />
+				<PoweredByPinpoint siteId={siteId} />
 			</div>
 		</div>
 	);

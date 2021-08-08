@@ -108,7 +108,9 @@ const Home = (props: IPrebuiltHomeProps) => {
 						title={`${site.name}`}
 						description={site.theme?.description ?? site.name}
 						subscribe={
-							renderSubscribe?.(site) ?? <Subscribe className="Prebuilt" href={`${site.url}/subscribe`} />
+							renderSubscribe?.(site) ?? (
+								<Subscribe className="Prebuilt" href={`${site.url}/subscription/subscribe`} />
+							)
 						}
 						themeToggle={renderThemeToggle?.(site) ?? <ThemeToggle className="Prebuilt" />}
 						search={
@@ -235,6 +237,7 @@ const Home = (props: IPrebuiltHomeProps) => {
 				renderFooter?.(site) ?? (
 					<Footer
 						className="Prebuilt"
+						siteId={site?.id}
 						social={
 							renderSocial?.(site) ?? (
 								<Social.Bar className="Prebuilt">
@@ -273,7 +276,9 @@ const Home = (props: IPrebuiltHomeProps) => {
 							)
 						}
 						subscribe={
-							renderSubscribe?.(site) ?? <Subscribe className="Prebuilt" href={`${site.url}/subscribe`} />
+							renderSubscribe?.(site) ?? (
+								<Subscribe className="Prebuilt" href={`${site.url}/subscription/subscribe`} />
+							)
 						}
 					/>
 				)
