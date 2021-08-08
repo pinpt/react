@@ -384,7 +384,7 @@ exports[`Test custom className 1`] = `
     className="Pinpoint Footer Prebuilt"
   >
     <div
-      className="content"
+      className="content constraint"
     >
       <div
         className="left"
@@ -997,7 +997,7 @@ exports[`Test default state 1`] = `
     className="Pinpoint Footer Prebuilt"
   >
     <div
-      className="content"
+      className="content constraint"
     >
       <div
         className="left"
@@ -1509,7 +1509,7 @@ exports[`Test no author 1`] = `
     className="Pinpoint Footer Prebuilt"
   >
     <div
-      className="content"
+      className="content constraint"
     >
       <div
         className="left"
@@ -2038,7 +2038,7 @@ exports[`Test no claps 1`] = `
     className="Pinpoint Footer Prebuilt"
   >
     <div
-      className="content"
+      className="content constraint"
     >
       <div
         className="left"

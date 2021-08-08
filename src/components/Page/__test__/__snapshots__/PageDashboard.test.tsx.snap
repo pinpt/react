@@ -1115,7 +1115,7 @@ exports[`Test full page 1`] = `
     className="Pinpoint Footer "
   >
     <div
-      className="content"
+      className="content constraint"
     >
       <div
         className="left"
@@ -1454,7 +1454,7 @@ exports[`Test loading 1`] = `
     className="Pinpoint Footer "
   >
     <div
-      className="content"
+      className="content constraint"
     >
       <div
         className="left"
@@ -3805,7 +3805,7 @@ exports[`Test no header 1`] = `
     className="Pinpoint Footer "
   >
     <div
-      className="content"
+      className="content constraint"
     >
       <div
         className="left"
@@ -4755,7 +4755,7 @@ exports[`Test no latest 1`] = `
     className="Pinpoint Footer "
   >
     <div
-      className="content"
+      className="content constraint"
     >
       <div
         className="left"
@@ -5370,7 +5370,7 @@ exports[`Test no recent 1`] = `
     className="Pinpoint Footer "
   >
     <div
-      className="content"
+      className="content constraint"
     >
       <div
         className="left"

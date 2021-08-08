@@ -140,6 +140,7 @@ const Home = (props: IPrebuiltHomeProps) => {
 										key={Content.id}
 										className="Prebuilt"
 										imageUrl={Content.coverMedia?.placeholderImage}
+										onClick={() => handleSelectContent?.(Content)}
 										title={
 											renderCardTitle?.(Content) ?? <Card.Title className="Prebuilt" title={Content.title} />
 										}

@@ -17,7 +17,7 @@ const Footer = (props: IFooterProps) => {
 
 	return (
 		<div className={`Pinpoint Footer ${className}`}>
-			<div className="content">
+			<div className="content constraint">
 				<div className="left">{copyright}</div>
 				<div className="right">
 					{subscribe}
