@@ -7,6 +7,11 @@ export const fetchSite = async (config: IPinpointConfig): Promise<ISite> => {
 	return site;
 };
 
+export const fetchSiteWithContentCount = async (config: IPinpointConfig): Promise<{ site: ISite; count: number }> => {
+	const { site, count } = await executeAPI(config, `/site-api/v1/site?count=true`);
+	return { site, count };
+};
+
 interface IContentAnalytics {
 	claps: number;
 	pageviews: number;
