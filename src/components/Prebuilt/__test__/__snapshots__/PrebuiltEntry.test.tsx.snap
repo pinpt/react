@@ -44,6 +44,7 @@ exports[`Test custom className 1`] = `
         className="center"
       >
         <a
+          className="cursor-pointer"
           onClick={[Function]}
           title="Pinpoint"
         >
@@ -665,6 +666,7 @@ exports[`Test default state 1`] = `
         className="center"
       >
         <a
+          className="cursor-pointer"
           onClick={[Function]}
           title="Pinpoint"
         >
@@ -1286,6 +1288,7 @@ exports[`Test no author 1`] = `
         className="center"
       >
         <a
+          className="cursor-pointer"
           onClick={[Function]}
           title="Pinpoint"
         >
@@ -1806,6 +1809,7 @@ exports[`Test no claps 1`] = `
         className="center"
       >
         <a
+          className="cursor-pointer"
           onClick={[Function]}
           title="Pinpoint"
         >

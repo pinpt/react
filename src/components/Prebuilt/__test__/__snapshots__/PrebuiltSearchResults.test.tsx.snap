@@ -76,6 +76,7 @@ exports[`Hidden stats 1`] = `
         className="center"
       >
         <a
+          className="cursor-pointer"
           onClick={[Function]}
           title="Pinpoint"
         >
@@ -1346,6 +1347,7 @@ exports[`Test custom className 1`] = `
         className="center"
       >
         <a
+          className="cursor-pointer"
           onClick={[Function]}
           title="Pinpoint"
         >
@@ -3676,6 +3678,7 @@ exports[`Test default state 1`] = `
         className="center"
       >
         <a
+          className="cursor-pointer"
           onClick={[Function]}
           title="Pinpoint"
         >
