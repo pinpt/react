@@ -367,7 +367,7 @@ exports[`Test full entry 1`] = `
     className="Pinpoint Footer "
   >
     <div
-      className="content"
+      className="content constraint"
     >
       <div
         className="left"
@@ -1204,7 +1204,7 @@ exports[`Test no sidebar 1`] = `
     className="Pinpoint Footer "
   >
     <div
-      className="content"
+      className="content constraint"
     >
       <div
         className="left"

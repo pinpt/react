@@ -1041,7 +1041,7 @@ populated with your recently completed...
     className="Pinpoint Footer Prebuilt"
   >
     <div
-      className="content"
+      className="content constraint"
     >
       <div
         className="left"
@@ -3371,7 +3371,7 @@ populated with your recently completed...
     className="Pinpoint Footer Prebuilt"
   >
     <div
-      className="content"
+      className="content constraint"
     >
       <div
         className="left"
@@ -5701,7 +5701,7 @@ populated with your recently completed...
     className="Pinpoint Footer Prebuilt"
   >
     <div
-      className="content"
+      className="content constraint"
     >
       <div
         className="left"

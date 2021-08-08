@@ -16,13 +16,14 @@ export interface ICardContainerProps {
 	imageUrl?: string;
 	alt?: string;
 	className?: string;
+	onClick?: () => void;
 }
 
 const Container = (props: ICardContainerProps) => {
-	const { title, description, imageUrl, alt, className, statistics, date, button, tags } = props;
+	const { title, description, imageUrl, alt, className, statistics, date, button, tags, onClick } = props;
 
 	return (
-		<div className={`Pinpoint Content Card Container wrapper ${className ?? ''}`}>
+		<div className={`Pinpoint Content Card Container wrapper ${className ?? ''}`} onClick={onClick}>
 			{imageUrl && <img className="cover" src={imageUrl} alt={alt} />}
 			<div className="content">
 				{title}

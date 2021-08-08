@@ -48,11 +48,11 @@
  * Styles for the card components
  */
 .Content.Card.Container.wrapper {
-	@apply w-full rounded-md overflow-hidden shadow bg-white mt-auto flex flex-col h-full;
+	@apply w-full rounded-md overflow-hidden shadow bg-white mt-auto flex flex-col h-full cursor-pointer;
 }
 
 .Content.Card.Container.wrapper .cover {
-	@apply w-full h-80 object-cover object-center;
+	@apply lg:h-48 md:h-36 w-full object-cover object-center;
 }
 
 .Content.Card.Container.wrapper .content {

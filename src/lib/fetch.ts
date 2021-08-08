@@ -51,5 +51,28 @@ export const executeAPI = async (config: IPinpointConfig, relpath: string, metho
 		throw new FetchError(resdata.message, res.status, res.headers, url);
 	}
 	debug('fetched error %d (%s)', res.status, url);
-	throw new FetchError('internal server error', res.status, res.headers, url);
+	let message = '';
+	switch (res.status) {
+		case 400: {
+			message = 'Bad Request';
+			break;
+		}
+		case 401: {
+			message = 'Unauthorized';
+			break;
+		}
+		case 404: {
+			message = 'Not Found';
+			break;
+		}
+		case 500: {
+			message = `Internal Server Error`;
+			break;
+		}
+		default: {
+			message = `Unexpected Error (${res.status})`;
+			break;
+		}
+	}
+	throw new FetchError(message, res.status, res.headers, url);
 };
