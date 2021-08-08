@@ -60,3 +60,11 @@ export const LogoWithLink: React.VFC<{}> = () => (
 		}
 	/>
 );
+
+export const HeaderWithHref: React.VFC<{}> = () => (
+	<Header
+		title="Pinpoint Demo Changelog"
+		description="See what's new in the Pinpoint Demo."
+		href="https://pinpoint.com"
+	/>
+);

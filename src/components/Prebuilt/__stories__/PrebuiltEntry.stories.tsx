@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { Meta } from '@storybook/react';
-import PrebuiltEntry from '../Entry';
-import { Entry } from '../../../lib';
 import entries from '../__data__/testEntries.json';
 import site from '../__data__/testSite.json';
+import PrebuiltEntry from '../Entry';
+
 const { default: readme } = require('../Entry/README.md');
+
+import type { IContent } from '../../../lib/types';
 
 export default {
 	component: PrebuiltEntry,
@@ -23,14 +25,19 @@ export default {
 export const Default: React.VFC<{}> = () => {
 	const [claps, setClaps] = useState(0);
 	return (
-		<PrebuiltEntry clapCount={claps} onClap={() => setClaps((c) => c + 1)} entry={entries[0] as Entry} site={site} />
+		<PrebuiltEntry
+			clapCount={claps}
+			onClap={() => setClaps((c) => c + 1)}
+			content={entries[0] as IContent}
+			site={site}
+		/>
 	);
 };
 
 export const No_Claps: React.VFC<{}> = () => {
-	return <PrebuiltEntry entry={entries[0] as Entry} site={site} />;
+	return <PrebuiltEntry content={entries[0] as IContent} site={site} />;
 };
 
 export const No_Author: React.VFC<{}> = () => {
-	return <PrebuiltEntry entry={entries[0] as Entry} site={site} renderAuthor={() => <></>} />;
+	return <PrebuiltEntry content={entries[0] as IContent} site={site} renderAuthor={() => <></>} />;
 };

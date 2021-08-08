@@ -15,10 +15,11 @@ export interface IHeaderProps {
 	subscribe?: ReactElement<ISubscribeProps>;
 	themeToggle?: ReactElement<IThemeToggleProps>;
 	search?: ReactElement<ISearchBarProps>;
+	href?: string;
 }
 
 const Header = (props: IHeaderProps) => {
-	const { className = '', title, description, subscribe, themeToggle, search, logo } = props;
+	const { className = '', title, description, subscribe, themeToggle, search, logo, href } = props;
 
 	return (
 		<div className={`Pinpoint Header ${className}`}>
@@ -30,7 +31,11 @@ const Header = (props: IHeaderProps) => {
 				</div>
 			</div>
 			<div className="center">
-				{title && <h1 className="title">{title}</h1>}
+				{title && (
+					<a href={href} title={title}>
+						<h1 className="title">{title}</h1>
+					</a>
+				)}
 				{description && <div className="description">{description}</div>}
 				{subscribe && <div className="action">{subscribe}</div>}
 			</div>

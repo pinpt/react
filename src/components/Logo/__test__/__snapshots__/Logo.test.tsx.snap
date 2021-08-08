@@ -16,6 +16,7 @@ exports[`Test click handler and link 1`] = `
 <a
   className="Pinpoint Internal Link Logo sm "
   href="https://pinpoint.com"
+  title="Logo"
 >
   <img
     className="image"
@@ -74,6 +75,7 @@ exports[`Test link (new tab) 1`] = `
   href="https://pinpoint.com"
   rel="noopener noreferrer"
   target="_blank"
+  title="Logo"
 >
   <img
     className="image"
@@ -86,6 +88,7 @@ exports[`Test link 1`] = `
 <a
   className="Pinpoint Internal Link Logo sm "
   href="https://pinpoint.com"
+  title="Logo"
 >
   <img
     className="image"

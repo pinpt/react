@@ -58,11 +58,15 @@ exports[`Test complete 1`] = `
   <div
     className="center"
   >
-    <h1
-      className="title"
+    <a
+      title="Pinpoint Demo Changelog"
     >
-      Pinpoint Demo Changelog
-    </h1>
+      <h1
+        className="title"
+      >
+        Pinpoint Demo Changelog
+      </h1>
+    </a>
     <div
       className="description"
     >
@@ -140,11 +144,15 @@ exports[`Test no description 1`] = `
   <div
     className="center"
   >
-    <h1
-      className="title"
+    <a
+      title="Pinpoint Demo Changelog"
     >
-      Pinpoint Demo Changelog
-    </h1>
+      <h1
+        className="title"
+      >
+        Pinpoint Demo Changelog
+      </h1>
+    </a>
     <div
       className="action"
     >
@@ -206,11 +214,15 @@ exports[`Test no search 1`] = `
   <div
     className="center"
   >
-    <h1
-      className="title"
+    <a
+      title="Pinpoint Demo Changelog"
     >
-      Pinpoint Demo Changelog
-    </h1>
+      <h1
+        className="title"
+      >
+        Pinpoint Demo Changelog
+      </h1>
+    </a>
     <div
       className="description"
     >
@@ -268,11 +280,15 @@ exports[`Test no subscribe 1`] = `
   <div
     className="center"
   >
-    <h1
-      className="title"
+    <a
+      title="Pinpoint Demo Changelog"
     >
-      Pinpoint Demo Changelog
-    </h1>
+      <h1
+        className="title"
+      >
+        Pinpoint Demo Changelog
+      </h1>
+    </a>
     <div
       className="description"
     >
@@ -332,11 +348,15 @@ exports[`Test no theme 1`] = `
   <div
     className="center"
   >
-    <h1
-      className="title"
+    <a
+      title="Pinpoint Demo Changelog"
     >
-      Pinpoint Demo Changelog
-    </h1>
+      <h1
+        className="title"
+      >
+        Pinpoint Demo Changelog
+      </h1>
+    </a>
     <div
       className="description"
     >
@@ -394,11 +414,15 @@ exports[`Test title only 1`] = `
   <div
     className="center"
   >
-    <h1
-      className="title"
+    <a
+      title="Pinpoint Demo Changelog"
     >
-      Pinpoint Demo Changelog
-    </h1>
+      <h1
+        className="title"
+      >
+        Pinpoint Demo Changelog
+      </h1>
+    </a>
   </div>
 </div>
 `;

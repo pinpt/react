@@ -1,24 +1,24 @@
 {
-	"id": "X0iheYf0hUUTRed9KVfv",
-	"logoUrl": "https://file.edge.pinpoint.com/b24dabeec1f19705f31ed39278729729;UgK7%23L%2C-n%25ay%7D7bbR-aft2J-Naa%23%23rW-NwWW;128x129.png",
-	"url": "https://jeff.pinpoint.com",
-	"slug": "jeff",
-	"name": "Jeff's Testing Site -- NONE OF THIS INFO IS REAL",
-	"mailingAddress": "Austin, Texas",
+	"id": "PirxVTE94u3YmGNOySRY",
+	"logoUrl": "https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png",
+	"url": "https://changelog.pinpoint.com",
+	"slug": "pinpoint",
+	"name": "Pinpoint",
+	"mailingAddress": "3131 McKinney Ave Ste 502 PMB 98116 Dallas, Texas 75204-2426 US",
 	"theme": {
-		"title": "Changelog",
-		"tosLink": "https://pinpoint.com/terms",
+		"title": "Pinpoint Changelog",
+		"tosLink": "https://home.pinpoint.com/legal/terms",
 		"social": {
-			"facebook": "",
-			"instagram": "https://instagram.com/jhaynie",
-			"github": "https://github.com/jhaynie",
+			"linkedin": "https://linkedin.com/company/pinpoint-software",
+			"facebook": "https://www.facebook.com/Pinpoint.Engineering",
+			"instagram": "https://www.instagram.com/pinpoint_sw/",
+			"twitter": "https://twitter.com/pinpoint_sw",
 			"blog": "",
-			"linkedin": "https://www.linkedin.com/in/jhaynie/",
-			"twitter": "https://twitter.com/jhaynie"
+			"github": "https://github.com/pinpt"
 		},
-		"description": "New updates and improvements to Jeff's Cool Test Product",
-		"copyright": "Copyright © 2021 by Jeff's Cool Test Product",
-		"logoLink": "https://changelog.so",
-		"eulaLink": "https://pinpoint.com/eula"
+		"description": "New updates and improvements to Pinpoint",
+		"copyright": "Copyright © 2021 by Pinpoint Software, Inc.",
+		"logoLink": "https://pinpoint.com",
+		"eulaLink": "https://home.pinpoint.com/legal/eula"
 	}
 }

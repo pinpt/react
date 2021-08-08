@@ -15,7 +15,18 @@ exports[`Test custom className 1`] = `
       >
         <div
           className="left"
-        />
+        >
+          <a
+            className="Pinpoint Internal Link Logo sm Prebuilt"
+            href="https://pinpoint.com"
+            title="Header Logo Content Page"
+          >
+            <img
+              className="image"
+              src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+            />
+          </a>
+        </div>
         <div
           className="right"
         >
@@ -32,22 +43,27 @@ exports[`Test custom className 1`] = `
       <div
         className="center"
       >
-        <h1
-          className="title"
+        <a
+          href="https://changelog.pinpoint.com"
+          title="Pinpoint"
         >
-          Jeff's Testing Site -- NONE OF THIS INFO IS REAL
-        </h1>
+          <h1
+            className="title"
+          >
+            Pinpoint
+          </h1>
+        </a>
         <div
           className="description"
         >
-          New updates and improvements to Jeff's Cool Test Product
+          New updates and improvements to Pinpoint
         </div>
         <div
           className="action"
         >
           <a
             className="Pinpoint Internal Link Subscribe Prebuilt"
-            href="https://jeff.pinpoint.com/subscription/subscribe"
+            href="/subscription/subscribe"
           >
             <svg
               aria-hidden="true"
@@ -88,16 +104,16 @@ exports[`Test custom className 1`] = `
             className="Pinpoint Author Prebuilt"
           >
             <a
-              title="Jeff Haynie avatar"
+              title="Chris Bowley avatar"
             >
               <img
                 className="avatar"
-                src="https://file.edge.pinpoint.com/avatar/SmVmZiBIYXluaWU%3D?s=128"
+                src="https://lh3.googleusercontent.com/a-/AOh14GjYVVdtI8V5EAYfRDxOHzuSGul5Sdl01MfGGN9K=s96-c?rw=128&rh=128"
               />
               <span
                 className="name"
               >
-                Jeff Haynie
+                Chris Bowley
               </span>
             </a>
           </div>
@@ -115,6 +131,18 @@ exports[`Test custom className 1`] = `
               }
             >
               feature
+            </div>
+            <div
+              className="Pinpoint Tag Item   "
+              style={
+                Object {
+                  "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
+                  "border": "1px solid var(--tag-bcolor, #23747633)",
+                  "color": "var(--tag-fgcolor, #005e5f)",
+                }
+              }
+            >
+              improvement
             </div>
           </div>
           <div
@@ -207,6 +235,14 @@ exports[`Test custom className 1`] = `
         className="content"
       >
         <div
+          className="cover covermedia"
+        >
+          <img
+            className="image"
+            src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
+          />
+        </div>
+        <div
           className="renderer"
         >
           <article
@@ -221,8 +257,8 @@ exports[`Test custom className 1`] = `
                 <a
                   aria-hidden="true"
                   className="anchor"
-                  href="#Test"
-                  id="Test"
+                  href="#Linked-Content-Blocks"
+                  id="Linked-Content-Blocks"
                 >
                   <svg
                     aria-hidden="true"
@@ -242,10 +278,101 @@ exports[`Test custom className 1`] = `
                     />
                   </svg>
                 </a>
-                Test
+                Linked Content Blocks
               </h1>
               <p>
-                Hi there. What’s happening? Just testing some stuff here.
+                Linked content blocks allow you to quickly populate your changelog from the recently completed work. Annotations show you which issues and pull requests are linked to features. There are blocks for showing rich content about a new feature, and for quickly building a list of small improvements and bug fixes.
+              </p>
+              <div>
+                <div
+                  className="image_block flex justify-center"
+                >
+                  <img
+                    height={980}
+                    src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
+                    width={1086}
+                  />
+                </div>
+              </div>
+              <p>
+                Linked content blocks can be created while in the editor, or better, by using our new and improved 
+                <strong>
+                  Planning
+                </strong>
+                 tool.
+              </p>
+              <h1
+                className="heading"
+              >
+                <a
+                  aria-hidden="true"
+                  className="anchor"
+                  href="#Grouping-in-Planning"
+                  id="Grouping-in-Planning"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-link fa-w-16 "
+                    data-icon="link"
+                    data-prefix="fas"
+                    focusable="false"
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 512 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
+                </a>
+                Grouping in Planning
+              </h1>
+              <div>
+                <div
+                  className="image_block flex justify-center"
+                >
+                  <img
+                    height={1000}
+                    src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
+                    width={1500}
+                  />
+                </div>
+              </div>
+              <p>
+                You can now group related issues and pull requests and link them to the same content in your changelog. This is really handy when you have multiple pieces of work which contributed to a new feature. 
+              </p>
+              <p>
+                We’re working on some great new features around planning and populating your changelogs, 
+                <a
+                  className=""
+                  href="https://changelog.pinpoint.com/subscription/subscribe/PirxVTE94u3YmGNOySRY"
+                  id=""
+                  title=""
+                >
+                  subscribe to 
+                </a>
+                <em>
+                  <a
+                    className=""
+                    href="https://changelog.pinpoint.com/subscription/subscribe/PirxVTE94u3YmGNOySRY"
+                    id=""
+                    title=""
+                  >
+                    our
+                  </a>
+                </em>
+                <a
+                  className=""
+                  href="https://changelog.pinpoint.com/subscription/subscribe/PirxVTE94u3YmGNOySRY"
+                  id=""
+                  title=""
+                >
+                   changelog
+                </a>
+                 to stay up to date with the latest.
               </p>
             </section>
           </article>
@@ -267,17 +394,18 @@ exports[`Test custom className 1`] = `
         >
           <a
             className="Pinpoint Internal Link Logo sm Prebuilt"
-            href="https://changelog.so"
+            href="https://pinpoint.com"
+            title="Footer Logo Content Page"
           >
             <img
               className="image"
-              src="https://file.edge.pinpoint.com/b24dabeec1f19705f31ed39278729729;UgK7%23L%2C-n%25ay%7D7bbR-aft2J-Naa%23%23rW-NwWW;128x129.png"
+              src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
             />
           </a>
           <span
             className="text"
           >
-            Copyright © 2021 by Jeff's Cool Test Product
+            Copyright © 2021 by Pinpoint Software, Inc.
           </span>
         </div>
       </div>
@@ -286,7 +414,7 @@ exports[`Test custom className 1`] = `
       >
         <a
           className="Pinpoint Internal Link Subscribe Prebuilt"
-          href="https://jeff.pinpoint.com/subscription/subscribe"
+          href="/subscription/subscribe"
         >
           <svg
             aria-hidden="true"
@@ -314,10 +442,32 @@ exports[`Test custom className 1`] = `
         <div
           className="Pinpoint Social Bar Prebuilt"
         >
-          
+          <a
+            className="Pinpoint Internal Link Social Item Facebook Prebuilt"
+            href="https://www.facebook.com/Pinpoint.Engineering"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="facebook"
+              data-prefix="fab"
+              focusable="false"
+              height={14}
+              role="img"
+              viewBox="0 0 512 512"
+              width={14}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
           <a
             className="Pinpoint Internal Link Social Item Instagram Prebuilt"
-            href="https://instagram.com/jhaynie"
+            href="https://www.instagram.com/pinpoint_sw/"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -340,7 +490,7 @@ exports[`Test custom className 1`] = `
           </a>
           <a
             className="Pinpoint Internal Link Social Item Twitter Prebuilt"
-            href="https://twitter.com/jhaynie"
+            href="https://twitter.com/pinpoint_sw"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -363,7 +513,7 @@ exports[`Test custom className 1`] = `
           </a>
           <a
             className="Pinpoint Internal Link Social Item Github Prebuilt"
-            href="https://github.com/jhaynie"
+            href="https://github.com/pinpt"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -386,7 +536,7 @@ exports[`Test custom className 1`] = `
           </a>
           <a
             className="Pinpoint Internal Link Social Item LinkedIn Prebuilt"
-            href="https://www.linkedin.com/in/jhaynie/"
+            href="https://linkedin.com/company/pinpoint-software"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -414,7 +564,7 @@ exports[`Test custom className 1`] = `
       className="powered"
     >
       <a
-        href="https://pinpoint.com/?utm_source=referral&utm_medium=web&utm_campaign=X0iheYf0hUUTRed9KVfv"
+        href="https://pinpoint.com/?utm_source=referral&utm_medium=web&utm_campaign=PirxVTE94u3YmGNOySRY"
         style={
           Object {
             "alignItems": "center",
@@ -478,7 +628,18 @@ exports[`Test default state 1`] = `
       >
         <div
           className="left"
-        />
+        >
+          <a
+            className="Pinpoint Internal Link Logo sm Prebuilt"
+            href="https://pinpoint.com"
+            title="Header Logo Content Page"
+          >
+            <img
+              className="image"
+              src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+            />
+          </a>
+        </div>
         <div
           className="right"
         >
@@ -495,22 +656,27 @@ exports[`Test default state 1`] = `
       <div
         className="center"
       >
-        <h1
-          className="title"
+        <a
+          href="https://changelog.pinpoint.com"
+          title="Pinpoint"
         >
-          Jeff's Testing Site -- NONE OF THIS INFO IS REAL
-        </h1>
+          <h1
+            className="title"
+          >
+            Pinpoint
+          </h1>
+        </a>
         <div
           className="description"
         >
-          New updates and improvements to Jeff's Cool Test Product
+          New updates and improvements to Pinpoint
         </div>
         <div
           className="action"
         >
           <a
             className="Pinpoint Internal Link Subscribe Prebuilt"
-            href="https://jeff.pinpoint.com/subscription/subscribe"
+            href="/subscription/subscribe"
           >
             <svg
               aria-hidden="true"
@@ -551,16 +717,16 @@ exports[`Test default state 1`] = `
             className="Pinpoint Author Prebuilt"
           >
             <a
-              title="Jeff Haynie avatar"
+              title="Chris Bowley avatar"
             >
               <img
                 className="avatar"
-                src="https://file.edge.pinpoint.com/avatar/SmVmZiBIYXluaWU%3D?s=128"
+                src="https://lh3.googleusercontent.com/a-/AOh14GjYVVdtI8V5EAYfRDxOHzuSGul5Sdl01MfGGN9K=s96-c?rw=128&rh=128"
               />
               <span
                 className="name"
               >
-                Jeff Haynie
+                Chris Bowley
               </span>
             </a>
           </div>
@@ -578,6 +744,18 @@ exports[`Test default state 1`] = `
               }
             >
               feature
+            </div>
+            <div
+              className="Pinpoint Tag Item   "
+              style={
+                Object {
+                  "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
+                  "border": "1px solid var(--tag-bcolor, #23747633)",
+                  "color": "var(--tag-fgcolor, #005e5f)",
+                }
+              }
+            >
+              improvement
             </div>
           </div>
           <div
@@ -670,6 +848,14 @@ exports[`Test default state 1`] = `
         className="content"
       >
         <div
+          className="cover covermedia"
+        >
+          <img
+            className="image"
+            src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
+          />
+        </div>
+        <div
           className="renderer"
         >
           <article
@@ -684,8 +870,8 @@ exports[`Test default state 1`] = `
                 <a
                   aria-hidden="true"
                   className="anchor"
-                  href="#Test"
-                  id="Test"
+                  href="#Linked-Content-Blocks"
+                  id="Linked-Content-Blocks"
                 >
                   <svg
                     aria-hidden="true"
@@ -705,10 +891,101 @@ exports[`Test default state 1`] = `
                     />
                   </svg>
                 </a>
-                Test
+                Linked Content Blocks
               </h1>
               <p>
-                Hi there. What’s happening? Just testing some stuff here.
+                Linked content blocks allow you to quickly populate your changelog from the recently completed work. Annotations show you which issues and pull requests are linked to features. There are blocks for showing rich content about a new feature, and for quickly building a list of small improvements and bug fixes.
+              </p>
+              <div>
+                <div
+                  className="image_block flex justify-center"
+                >
+                  <img
+                    height={980}
+                    src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
+                    width={1086}
+                  />
+                </div>
+              </div>
+              <p>
+                Linked content blocks can be created while in the editor, or better, by using our new and improved 
+                <strong>
+                  Planning
+                </strong>
+                 tool.
+              </p>
+              <h1
+                className="heading"
+              >
+                <a
+                  aria-hidden="true"
+                  className="anchor"
+                  href="#Grouping-in-Planning"
+                  id="Grouping-in-Planning"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-link fa-w-16 "
+                    data-icon="link"
+                    data-prefix="fas"
+                    focusable="false"
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 512 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
+                </a>
+                Grouping in Planning
+              </h1>
+              <div>
+                <div
+                  className="image_block flex justify-center"
+                >
+                  <img
+                    height={1000}
+                    src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
+                    width={1500}
+                  />
+                </div>
+              </div>
+              <p>
+                You can now group related issues and pull requests and link them to the same content in your changelog. This is really handy when you have multiple pieces of work which contributed to a new feature. 
+              </p>
+              <p>
+                We’re working on some great new features around planning and populating your changelogs, 
+                <a
+                  className=""
+                  href="https://changelog.pinpoint.com/subscription/subscribe/PirxVTE94u3YmGNOySRY"
+                  id=""
+                  title=""
+                >
+                  subscribe to 
+                </a>
+                <em>
+                  <a
+                    className=""
+                    href="https://changelog.pinpoint.com/subscription/subscribe/PirxVTE94u3YmGNOySRY"
+                    id=""
+                    title=""
+                  >
+                    our
+                  </a>
+                </em>
+                <a
+                  className=""
+                  href="https://changelog.pinpoint.com/subscription/subscribe/PirxVTE94u3YmGNOySRY"
+                  id=""
+                  title=""
+                >
+                   changelog
+                </a>
+                 to stay up to date with the latest.
               </p>
             </section>
           </article>
@@ -730,17 +1007,18 @@ exports[`Test default state 1`] = `
         >
           <a
             className="Pinpoint Internal Link Logo sm Prebuilt"
-            href="https://changelog.so"
+            href="https://pinpoint.com"
+            title="Footer Logo Content Page"
           >
             <img
               className="image"
-              src="https://file.edge.pinpoint.com/b24dabeec1f19705f31ed39278729729;UgK7%23L%2C-n%25ay%7D7bbR-aft2J-Naa%23%23rW-NwWW;128x129.png"
+              src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
             />
           </a>
           <span
             className="text"
           >
-            Copyright © 2021 by Jeff's Cool Test Product
+            Copyright © 2021 by Pinpoint Software, Inc.
           </span>
         </div>
       </div>
@@ -749,7 +1027,7 @@ exports[`Test default state 1`] = `
       >
         <a
           className="Pinpoint Internal Link Subscribe Prebuilt"
-          href="https://jeff.pinpoint.com/subscription/subscribe"
+          href="/subscription/subscribe"
         >
           <svg
             aria-hidden="true"
@@ -777,10 +1055,32 @@ exports[`Test default state 1`] = `
         <div
           className="Pinpoint Social Bar Prebuilt"
         >
-          
+          <a
+            className="Pinpoint Internal Link Social Item Facebook Prebuilt"
+            href="https://www.facebook.com/Pinpoint.Engineering"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="facebook"
+              data-prefix="fab"
+              focusable="false"
+              height={14}
+              role="img"
+              viewBox="0 0 512 512"
+              width={14}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
           <a
             className="Pinpoint Internal Link Social Item Instagram Prebuilt"
-            href="https://instagram.com/jhaynie"
+            href="https://www.instagram.com/pinpoint_sw/"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -803,7 +1103,7 @@ exports[`Test default state 1`] = `
           </a>
           <a
             className="Pinpoint Internal Link Social Item Twitter Prebuilt"
-            href="https://twitter.com/jhaynie"
+            href="https://twitter.com/pinpoint_sw"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -826,7 +1126,7 @@ exports[`Test default state 1`] = `
           </a>
           <a
             className="Pinpoint Internal Link Social Item Github Prebuilt"
-            href="https://github.com/jhaynie"
+            href="https://github.com/pinpt"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -849,7 +1149,7 @@ exports[`Test default state 1`] = `
           </a>
           <a
             className="Pinpoint Internal Link Social Item LinkedIn Prebuilt"
-            href="https://www.linkedin.com/in/jhaynie/"
+            href="https://linkedin.com/company/pinpoint-software"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -877,7 +1177,7 @@ exports[`Test default state 1`] = `
       className="powered"
     >
       <a
-        href="https://pinpoint.com/?utm_source=referral&utm_medium=web&utm_campaign=X0iheYf0hUUTRed9KVfv"
+        href="https://pinpoint.com/?utm_source=referral&utm_medium=web&utm_campaign=PirxVTE94u3YmGNOySRY"
         style={
           Object {
             "alignItems": "center",
@@ -941,7 +1241,18 @@ exports[`Test no author 1`] = `
       >
         <div
           className="left"
-        />
+        >
+          <a
+            className="Pinpoint Internal Link Logo sm Prebuilt"
+            href="https://pinpoint.com"
+            title="Header Logo Content Page"
+          >
+            <img
+              className="image"
+              src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+            />
+          </a>
+        </div>
         <div
           className="right"
         >
@@ -958,22 +1269,27 @@ exports[`Test no author 1`] = `
       <div
         className="center"
       >
-        <h1
-          className="title"
+        <a
+          href="https://changelog.pinpoint.com"
+          title="Pinpoint"
         >
-          Jeff's Testing Site -- NONE OF THIS INFO IS REAL
-        </h1>
+          <h1
+            className="title"
+          >
+            Pinpoint
+          </h1>
+        </a>
         <div
           className="description"
         >
-          New updates and improvements to Jeff's Cool Test Product
+          New updates and improvements to Pinpoint
         </div>
         <div
           className="action"
         >
           <a
             className="Pinpoint Internal Link Subscribe Prebuilt"
-            href="https://jeff.pinpoint.com/subscription/subscribe"
+            href="/subscription/subscribe"
           >
             <svg
               aria-hidden="true"
@@ -1025,12 +1341,32 @@ exports[`Test no author 1`] = `
             >
               feature
             </div>
+            <div
+              className="Pinpoint Tag Item   "
+              style={
+                Object {
+                  "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
+                  "border": "1px solid var(--tag-bcolor, #23747633)",
+                  "color": "var(--tag-fgcolor, #005e5f)",
+                }
+              }
+            >
+              improvement
+            </div>
           </div>
         </div>
       </div>
       <div
         className="content"
       >
+        <div
+          className="cover covermedia"
+        >
+          <img
+            className="image"
+            src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
+          />
+        </div>
         <div
           className="renderer"
         >
@@ -1046,8 +1382,8 @@ exports[`Test no author 1`] = `
                 <a
                   aria-hidden="true"
                   className="anchor"
-                  href="#Test"
-                  id="Test"
+                  href="#Linked-Content-Blocks"
+                  id="Linked-Content-Blocks"
                 >
                   <svg
                     aria-hidden="true"
@@ -1067,10 +1403,101 @@ exports[`Test no author 1`] = `
                     />
                   </svg>
                 </a>
-                Test
+                Linked Content Blocks
               </h1>
               <p>
-                Hi there. What’s happening? Just testing some stuff here.
+                Linked content blocks allow you to quickly populate your changelog from the recently completed work. Annotations show you which issues and pull requests are linked to features. There are blocks for showing rich content about a new feature, and for quickly building a list of small improvements and bug fixes.
+              </p>
+              <div>
+                <div
+                  className="image_block flex justify-center"
+                >
+                  <img
+                    height={980}
+                    src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
+                    width={1086}
+                  />
+                </div>
+              </div>
+              <p>
+                Linked content blocks can be created while in the editor, or better, by using our new and improved 
+                <strong>
+                  Planning
+                </strong>
+                 tool.
+              </p>
+              <h1
+                className="heading"
+              >
+                <a
+                  aria-hidden="true"
+                  className="anchor"
+                  href="#Grouping-in-Planning"
+                  id="Grouping-in-Planning"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-link fa-w-16 "
+                    data-icon="link"
+                    data-prefix="fas"
+                    focusable="false"
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 512 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
+                </a>
+                Grouping in Planning
+              </h1>
+              <div>
+                <div
+                  className="image_block flex justify-center"
+                >
+                  <img
+                    height={1000}
+                    src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
+                    width={1500}
+                  />
+                </div>
+              </div>
+              <p>
+                You can now group related issues and pull requests and link them to the same content in your changelog. This is really handy when you have multiple pieces of work which contributed to a new feature. 
+              </p>
+              <p>
+                We’re working on some great new features around planning and populating your changelogs, 
+                <a
+                  className=""
+                  href="https://changelog.pinpoint.com/subscription/subscribe/PirxVTE94u3YmGNOySRY"
+                  id=""
+                  title=""
+                >
+                  subscribe to 
+                </a>
+                <em>
+                  <a
+                    className=""
+                    href="https://changelog.pinpoint.com/subscription/subscribe/PirxVTE94u3YmGNOySRY"
+                    id=""
+                    title=""
+                  >
+                    our
+                  </a>
+                </em>
+                <a
+                  className=""
+                  href="https://changelog.pinpoint.com/subscription/subscribe/PirxVTE94u3YmGNOySRY"
+                  id=""
+                  title=""
+                >
+                   changelog
+                </a>
+                 to stay up to date with the latest.
               </p>
             </section>
           </article>
@@ -1092,17 +1519,18 @@ exports[`Test no author 1`] = `
         >
           <a
             className="Pinpoint Internal Link Logo sm Prebuilt"
-            href="https://changelog.so"
+            href="https://pinpoint.com"
+            title="Footer Logo Content Page"
           >
             <img
               className="image"
-              src="https://file.edge.pinpoint.com/b24dabeec1f19705f31ed39278729729;UgK7%23L%2C-n%25ay%7D7bbR-aft2J-Naa%23%23rW-NwWW;128x129.png"
+              src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
             />
           </a>
           <span
             className="text"
           >
-            Copyright © 2021 by Jeff's Cool Test Product
+            Copyright © 2021 by Pinpoint Software, Inc.
           </span>
         </div>
       </div>
@@ -1111,7 +1539,7 @@ exports[`Test no author 1`] = `
       >
         <a
           className="Pinpoint Internal Link Subscribe Prebuilt"
-          href="https://jeff.pinpoint.com/subscription/subscribe"
+          href="/subscription/subscribe"
         >
           <svg
             aria-hidden="true"
@@ -1139,10 +1567,32 @@ exports[`Test no author 1`] = `
         <div
           className="Pinpoint Social Bar Prebuilt"
         >
-          
+          <a
+            className="Pinpoint Internal Link Social Item Facebook Prebuilt"
+            href="https://www.facebook.com/Pinpoint.Engineering"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="facebook"
+              data-prefix="fab"
+              focusable="false"
+              height={14}
+              role="img"
+              viewBox="0 0 512 512"
+              width={14}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
           <a
             className="Pinpoint Internal Link Social Item Instagram Prebuilt"
-            href="https://instagram.com/jhaynie"
+            href="https://www.instagram.com/pinpoint_sw/"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -1165,7 +1615,7 @@ exports[`Test no author 1`] = `
           </a>
           <a
             className="Pinpoint Internal Link Social Item Twitter Prebuilt"
-            href="https://twitter.com/jhaynie"
+            href="https://twitter.com/pinpoint_sw"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -1188,7 +1638,7 @@ exports[`Test no author 1`] = `
           </a>
           <a
             className="Pinpoint Internal Link Social Item Github Prebuilt"
-            href="https://github.com/jhaynie"
+            href="https://github.com/pinpt"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -1211,7 +1661,7 @@ exports[`Test no author 1`] = `
           </a>
           <a
             className="Pinpoint Internal Link Social Item LinkedIn Prebuilt"
-            href="https://www.linkedin.com/in/jhaynie/"
+            href="https://linkedin.com/company/pinpoint-software"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -1239,7 +1689,7 @@ exports[`Test no author 1`] = `
       className="powered"
     >
       <a
-        href="https://pinpoint.com/?utm_source=referral&utm_medium=web&utm_campaign=X0iheYf0hUUTRed9KVfv"
+        href="https://pinpoint.com/?utm_source=referral&utm_medium=web&utm_campaign=PirxVTE94u3YmGNOySRY"
         style={
           Object {
             "alignItems": "center",
@@ -1303,7 +1753,18 @@ exports[`Test no claps 1`] = `
       >
         <div
           className="left"
-        />
+        >
+          <a
+            className="Pinpoint Internal Link Logo sm Prebuilt"
+            href="https://pinpoint.com"
+            title="Header Logo Content Page"
+          >
+            <img
+              className="image"
+              src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+            />
+          </a>
+        </div>
         <div
           className="right"
         >
@@ -1320,22 +1781,27 @@ exports[`Test no claps 1`] = `
       <div
         className="center"
       >
-        <h1
-          className="title"
+        <a
+          href="https://changelog.pinpoint.com"
+          title="Pinpoint"
         >
-          Jeff's Testing Site -- NONE OF THIS INFO IS REAL
-        </h1>
+          <h1
+            className="title"
+          >
+            Pinpoint
+          </h1>
+        </a>
         <div
           className="description"
         >
-          New updates and improvements to Jeff's Cool Test Product
+          New updates and improvements to Pinpoint
         </div>
         <div
           className="action"
         >
           <a
             className="Pinpoint Internal Link Subscribe Prebuilt"
-            href="https://jeff.pinpoint.com/subscription/subscribe"
+            href="/subscription/subscribe"
           >
             <svg
               aria-hidden="true"
@@ -1376,16 +1842,16 @@ exports[`Test no claps 1`] = `
             className="Pinpoint Author Prebuilt"
           >
             <a
-              title="Jeff Haynie avatar"
+              title="Chris Bowley avatar"
             >
               <img
                 className="avatar"
-                src="https://file.edge.pinpoint.com/avatar/SmVmZiBIYXluaWU%3D?s=128"
+                src="https://lh3.googleusercontent.com/a-/AOh14GjYVVdtI8V5EAYfRDxOHzuSGul5Sdl01MfGGN9K=s96-c?rw=128&rh=128"
               />
               <span
                 className="name"
               >
-                Jeff Haynie
+                Chris Bowley
               </span>
             </a>
           </div>
@@ -1404,12 +1870,32 @@ exports[`Test no claps 1`] = `
             >
               feature
             </div>
+            <div
+              className="Pinpoint Tag Item   "
+              style={
+                Object {
+                  "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
+                  "border": "1px solid var(--tag-bcolor, #23747633)",
+                  "color": "var(--tag-fgcolor, #005e5f)",
+                }
+              }
+            >
+              improvement
+            </div>
           </div>
         </div>
       </div>
       <div
         className="content"
       >
+        <div
+          className="cover covermedia"
+        >
+          <img
+            className="image"
+            src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
+          />
+        </div>
         <div
           className="renderer"
         >
@@ -1425,8 +1911,8 @@ exports[`Test no claps 1`] = `
                 <a
                   aria-hidden="true"
                   className="anchor"
-                  href="#Test"
-                  id="Test"
+                  href="#Linked-Content-Blocks"
+                  id="Linked-Content-Blocks"
                 >
                   <svg
                     aria-hidden="true"
@@ -1446,10 +1932,101 @@ exports[`Test no claps 1`] = `
                     />
                   </svg>
                 </a>
-                Test
+                Linked Content Blocks
               </h1>
               <p>
-                Hi there. What’s happening? Just testing some stuff here.
+                Linked content blocks allow you to quickly populate your changelog from the recently completed work. Annotations show you which issues and pull requests are linked to features. There are blocks for showing rich content about a new feature, and for quickly building a list of small improvements and bug fixes.
+              </p>
+              <div>
+                <div
+                  className="image_block flex justify-center"
+                >
+                  <img
+                    height={980}
+                    src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
+                    width={1086}
+                  />
+                </div>
+              </div>
+              <p>
+                Linked content blocks can be created while in the editor, or better, by using our new and improved 
+                <strong>
+                  Planning
+                </strong>
+                 tool.
+              </p>
+              <h1
+                className="heading"
+              >
+                <a
+                  aria-hidden="true"
+                  className="anchor"
+                  href="#Grouping-in-Planning"
+                  id="Grouping-in-Planning"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-link fa-w-16 "
+                    data-icon="link"
+                    data-prefix="fas"
+                    focusable="false"
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 512 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
+                </a>
+                Grouping in Planning
+              </h1>
+              <div>
+                <div
+                  className="image_block flex justify-center"
+                >
+                  <img
+                    height={1000}
+                    src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
+                    width={1500}
+                  />
+                </div>
+              </div>
+              <p>
+                You can now group related issues and pull requests and link them to the same content in your changelog. This is really handy when you have multiple pieces of work which contributed to a new feature. 
+              </p>
+              <p>
+                We’re working on some great new features around planning and populating your changelogs, 
+                <a
+                  className=""
+                  href="https://changelog.pinpoint.com/subscription/subscribe/PirxVTE94u3YmGNOySRY"
+                  id=""
+                  title=""
+                >
+                  subscribe to 
+                </a>
+                <em>
+                  <a
+                    className=""
+                    href="https://changelog.pinpoint.com/subscription/subscribe/PirxVTE94u3YmGNOySRY"
+                    id=""
+                    title=""
+                  >
+                    our
+                  </a>
+                </em>
+                <a
+                  className=""
+                  href="https://changelog.pinpoint.com/subscription/subscribe/PirxVTE94u3YmGNOySRY"
+                  id=""
+                  title=""
+                >
+                   changelog
+                </a>
+                 to stay up to date with the latest.
               </p>
             </section>
           </article>
@@ -1471,17 +2048,18 @@ exports[`Test no claps 1`] = `
         >
           <a
             className="Pinpoint Internal Link Logo sm Prebuilt"
-            href="https://changelog.so"
+            href="https://pinpoint.com"
+            title="Footer Logo Content Page"
           >
             <img
               className="image"
-              src="https://file.edge.pinpoint.com/b24dabeec1f19705f31ed39278729729;UgK7%23L%2C-n%25ay%7D7bbR-aft2J-Naa%23%23rW-NwWW;128x129.png"
+              src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
             />
           </a>
           <span
             className="text"
           >
-            Copyright © 2021 by Jeff's Cool Test Product
+            Copyright © 2021 by Pinpoint Software, Inc.
           </span>
         </div>
       </div>
@@ -1490,7 +2068,7 @@ exports[`Test no claps 1`] = `
       >
         <a
           className="Pinpoint Internal Link Subscribe Prebuilt"
-          href="https://jeff.pinpoint.com/subscription/subscribe"
+          href="/subscription/subscribe"
         >
           <svg
             aria-hidden="true"
@@ -1518,10 +2096,32 @@ exports[`Test no claps 1`] = `
         <div
           className="Pinpoint Social Bar Prebuilt"
         >
-          
+          <a
+            className="Pinpoint Internal Link Social Item Facebook Prebuilt"
+            href="https://www.facebook.com/Pinpoint.Engineering"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="facebook"
+              data-prefix="fab"
+              focusable="false"
+              height={14}
+              role="img"
+              viewBox="0 0 512 512"
+              width={14}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
           <a
             className="Pinpoint Internal Link Social Item Instagram Prebuilt"
-            href="https://instagram.com/jhaynie"
+            href="https://www.instagram.com/pinpoint_sw/"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -1544,7 +2144,7 @@ exports[`Test no claps 1`] = `
           </a>
           <a
             className="Pinpoint Internal Link Social Item Twitter Prebuilt"
-            href="https://twitter.com/jhaynie"
+            href="https://twitter.com/pinpoint_sw"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -1567,7 +2167,7 @@ exports[`Test no claps 1`] = `
           </a>
           <a
             className="Pinpoint Internal Link Social Item Github Prebuilt"
-            href="https://github.com/jhaynie"
+            href="https://github.com/pinpt"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -1590,7 +2190,7 @@ exports[`Test no claps 1`] = `
           </a>
           <a
             className="Pinpoint Internal Link Social Item LinkedIn Prebuilt"
-            href="https://www.linkedin.com/in/jhaynie/"
+            href="https://linkedin.com/company/pinpoint-software"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -1618,7 +2218,7 @@ exports[`Test no claps 1`] = `
       className="powered"
     >
       <a
-        href="https://pinpoint.com/?utm_source=referral&utm_medium=web&utm_campaign=X0iheYf0hUUTRed9KVfv"
+        href="https://pinpoint.com/?utm_source=referral&utm_medium=web&utm_campaign=PirxVTE94u3YmGNOySRY"
         style={
           Object {
             "alignItems": "center",

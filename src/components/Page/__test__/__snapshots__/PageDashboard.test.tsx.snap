@@ -23,11 +23,15 @@ exports[`Test full page 1`] = `
       <div
         className="center"
       >
-        <h1
-          className="title"
+        <a
+          title="Pinpoint Demo Changelog"
         >
-          Pinpoint Demo Changelog
-        </h1>
+          <h1
+            className="title"
+          >
+            Pinpoint Demo Changelog
+          </h1>
+        </a>
         <div
           className="description"
         >
@@ -1384,11 +1388,15 @@ exports[`Test loading 1`] = `
       <div
         className="center"
       >
-        <h1
-          className="title"
+        <a
+          title="Pinpoint Demo Changelog"
         >
-          Pinpoint Demo Changelog
-        </h1>
+          <h1
+            className="title"
+          >
+            Pinpoint Demo Changelog
+          </h1>
+        </a>
         <div
           className="description"
         >
