@@ -376,7 +376,8 @@ html.dark .ThemeToggle .mode::after {
 /*
  * Styles for the author component
  */
-.Author {
+.Author,
+.Author a {
 	@apply flex items-center mr-auto;
 }
 
@@ -437,4 +438,114 @@ html.dark .ThemeToggle .mode::after {
 
 .Pagination .back .icon {
 	@apply mr-2;
+}
+
+/** COVER MEDIA **/
+
+.covermedia > .video,
+.covermedia > .media-container > .video {
+	@apply aspect-w-16 aspect-h-9;
+}
+
+.covermedia > .media-container > video,
+.covermedia > .video > video {
+	@apply w-full;
+}
+
+/* youtube lite styles (cover media only) */
+
+.embed-responsive {
+	position: relative !important;
+	display: block !important;
+	height: 0 !important;
+	padding: 0 !important;
+	overflow: hidden !important;
+}
+
+.embed-responsive .embed-responsive-item,
+.embed-responsive iframe,
+.embed-responsive embed,
+.embed-responsive object,
+.embed-responsive video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	border: 0;
+}
+
+.aspect-ratio-16\/9 {
+	padding-bottom: 56.25% !important;
+}
+
+.ryt-lite {
+	background-color: #000;
+	position: relative;
+	display: block;
+	contain: content;
+	background-position: center center;
+	background-size: cover;
+	cursor: pointer;
+}
+
+/* responsive iframe with a 16:9 aspect ratio
+	  thanks https://css-tricks.com/responsive-iframes/
+ */
+.ryt-lite::after {
+	content: '';
+	display: block;
+	padding-bottom: calc(100% / (16 / 9));
+}
+
+.ryt-lite > iframe {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* play button */
+.ryt-lite > .lty-playbtn {
+	width: 70px;
+	height: 46px;
+	background-color: #212121;
+	z-index: 1;
+	opacity: 0.8;
+	border-radius: 14%; /* TODO: Consider replacing this with YT's actual svg. Eh. */
+	transition: all 0.2s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.ryt-lite:hover > .lty-playbtn {
+	background-color: #f00;
+	opacity: 1;
+}
+
+/* play button triangle */
+.ryt-lite > .lty-playbtn::before {
+	content: '';
+	border-style: solid;
+	border-width: 11px 0 11px 19px;
+	border-color: transparent transparent transparent #fff;
+}
+
+.ryt-lite > .lty-playbtn,
+.ryt-lite > .lty-playbtn::before {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%, -50%, 0);
+}
+
+/* Post-click styles */
+.ryt-lite.lyt-activated {
+	cursor: unset;
+}
+
+.ryt-lite.lyt-activated::before,
+.ryt-lite.lyt-activated > .lty-playbtn {
+	opacity: 0;
+	pointer-events: none;
 }

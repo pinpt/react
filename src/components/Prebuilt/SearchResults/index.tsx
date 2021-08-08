@@ -51,6 +51,7 @@ export interface IPrebuiltSearchResultsProps {
 	handleSelectContent?: (content: IContent) => void;
 	handleRemoveFromQuery?: (value: string, clear: boolean) => void;
 	handleAddTagToQuery?: (value: string) => void;
+	handleSelectHome?: () => void;
 	loading?: boolean;
 }
 
@@ -82,6 +83,7 @@ const SearchResults = (props: IPrebuiltSearchResultsProps) => {
 		handleSelectContent,
 		handleRemoveFromQuery,
 		handleAddTagToQuery,
+		handleSelectHome,
 		loading,
 	} = props;
 	return (
@@ -93,7 +95,7 @@ const SearchResults = (props: IPrebuiltSearchResultsProps) => {
 					<Header
 						className="Prebuilt"
 						title={`${site.name}`}
-						href={site.url}
+						onClick={() => handleSelectHome?.()}
 						description={site.theme?.description ?? site.name}
 						subscribe={
 							renderSubscribe?.(site) ?? <Subscribe className="Prebuilt" href="/subscription/subscribe" />

@@ -16,10 +16,11 @@ export interface IHeaderProps {
 	themeToggle?: ReactElement<IThemeToggleProps>;
 	search?: ReactElement<ISearchBarProps>;
 	href?: string;
+	onClick?: () => void;
 }
 
 const Header = (props: IHeaderProps) => {
-	const { className = '', title, description, subscribe, themeToggle, search, logo, href } = props;
+	const { className = '', title, description, subscribe, themeToggle, search, logo, href, onClick } = props;
 
 	return (
 		<div className={`Pinpoint Header ${className}`}>
@@ -32,7 +33,7 @@ const Header = (props: IHeaderProps) => {
 			</div>
 			<div className="center">
 				{title && (
-					<a href={href} title={title}>
+					<a href={href} title={title} onClick={onClick}>
 						<h1 className="title">{title}</h1>
 					</a>
 				)}

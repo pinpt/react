@@ -1,5 +1,6 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
+import { CoverMediaType } from '../../../lib/types';
 import StatisticsBar from '../../Statistic/Bar';
 import Tags from '../../Tags';
 import Container from '../Container';
@@ -88,4 +89,57 @@ export const Multiple_Cards: React.VFC<{}> = () => (
 			button={<ReadButton />}
 		/>
 	</div>
+);
+
+const youtubeCoverMedia = {
+	type: CoverMediaType.Youtube,
+	value: 'RGw6fXprV9U',
+	metadata: {
+		poster: 'maxresdefault',
+	},
+	placeholderImage: 'https://i.ytimg.com/vi/RGw6fXprV9U/maxresdefault.jpg',
+};
+
+const videoCoverMedia = {
+	type: CoverMediaType.Video,
+	value: 'https://file.edge.changelog.so/f5a905e00c493f4e5b625c83ff445bef',
+	metadata: {
+		poster: 'maxresdefault',
+	},
+	placeholderImage: 'https://file.edge.changelog.so/f5a905e00c493f4e5b625c83ff445bef/thumbnail',
+};
+
+const imageCoverMedia = {
+	type: CoverMediaType.Image,
+	value:
+		'https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png',
+	placeholderImage:
+		'https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png',
+};
+
+export const CoverImage_Youtube: React.VFC<{}> = () => (
+	<Container
+		title={<Title title={TEST_TITLE} />}
+		description={<Description description={TEST_DESCRIPTION} />}
+		statistics={<StatisticsBar claps={22} views={135} />}
+		coverMedia={youtubeCoverMedia}
+	/>
+);
+
+export const CoverImage_Video: React.VFC<{}> = () => (
+	<Container
+		title={<Title title={TEST_TITLE} />}
+		description={<Description description={TEST_DESCRIPTION} />}
+		statistics={<StatisticsBar claps={22} views={135} />}
+		coverMedia={videoCoverMedia}
+	/>
+);
+
+export const CoverImage_Image: React.VFC<{}> = () => (
+	<Container
+		title={<Title title={TEST_TITLE} />}
+		description={<Description description={TEST_DESCRIPTION} />}
+		statistics={<StatisticsBar claps={22} views={135} />}
+		coverMedia={imageCoverMedia}
+	/>
 );

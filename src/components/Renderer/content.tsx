@@ -57,7 +57,15 @@ const YoutubeMedia = ({
 	);
 };
 
-const Media = ({ media, title, staticMode }: { media?: ICoverMedia; title?: string; staticMode?: true }) => {
+export const CoverMedia = ({
+	media,
+	title,
+	staticMode,
+}: {
+	media?: ICoverMedia;
+	title?: string;
+	staticMode?: true;
+}) => {
 	if (!media) {
 		return <></>;
 	}
@@ -67,7 +75,7 @@ const Media = ({ media, title, staticMode }: { media?: ICoverMedia; title?: stri
 			return <></>;
 		}
 		case CoverMediaType.Image: {
-			content = <ImageMedia src={media.value} title={title} />;
+			content = <ImageMedia src={media.value ?? media.placeholderImage} title={title} />;
 			break;
 		}
 		case CoverMediaType.Video: {
@@ -79,7 +87,11 @@ const Media = ({ media, title, staticMode }: { media?: ICoverMedia; title?: stri
 			break;
 		}
 	}
-	return <div className="media-container">{content}</div>;
+	return (
+		<section className="cover covermedia">
+			<div className="media-container">{content}</div>
+		</section>
+	);
 };
 
 interface ContentProps {
@@ -95,11 +107,7 @@ interface ContentProps {
 const Content = (props: ContentProps) => {
 	return (
 		<article className="changelog notebook-editor read-only">
-			{props.coverMedia && (
-				<section className="covermedia">
-					<Media media={props.coverMedia} title={props.title} staticMode={props.staticMode} />
-				</section>
-			)}
+			{props.coverMedia && <CoverMedia media={props.coverMedia} title={props.title} staticMode={props.staticMode} />}
 			<section className="ProseMirror">
 				<Document node={props.document} limit={props.limit} />
 				{props.limit && props.document.content?.length > props.limit && (

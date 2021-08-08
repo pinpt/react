@@ -76,7 +76,7 @@ exports[`Hidden stats 1`] = `
         className="center"
       >
         <a
-          href="https://changelog.pinpoint.com"
+          onClick={[Function]}
           title="Pinpoint"
         >
           <h1
@@ -1346,7 +1346,7 @@ exports[`Test custom className 1`] = `
         className="center"
       >
         <a
-          href="https://changelog.pinpoint.com"
+          onClick={[Function]}
           title="Pinpoint"
         >
           <h1
@@ -3676,7 +3676,7 @@ exports[`Test default state 1`] = `
         className="center"
       >
         <a
-          href="https://changelog.pinpoint.com"
+          onClick={[Function]}
           title="Pinpoint"
         >
           <h1

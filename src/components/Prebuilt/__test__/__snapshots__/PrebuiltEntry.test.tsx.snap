@@ -44,7 +44,7 @@ exports[`Test custom className 1`] = `
         className="center"
       >
         <a
-          href="https://changelog.pinpoint.com"
+          onClick={[Function]}
           title="Pinpoint"
         >
           <h1
@@ -234,14 +234,22 @@ exports[`Test custom className 1`] = `
       <div
         className="content"
       >
-        <div
+        <section
           className="cover covermedia"
         >
-          <img
-            className="image"
-            src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
-          />
-        </div>
+          <div
+            className="media-container"
+          >
+            <div
+              className="image"
+            >
+              <img
+                alt="Linked Content Blocks"
+                src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
+              />
+            </div>
+          </div>
+        </section>
         <div
           className="renderer"
         >
@@ -657,7 +665,7 @@ exports[`Test default state 1`] = `
         className="center"
       >
         <a
-          href="https://changelog.pinpoint.com"
+          onClick={[Function]}
           title="Pinpoint"
         >
           <h1
@@ -847,14 +855,22 @@ exports[`Test default state 1`] = `
       <div
         className="content"
       >
-        <div
+        <section
           className="cover covermedia"
         >
-          <img
-            className="image"
-            src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
-          />
-        </div>
+          <div
+            className="media-container"
+          >
+            <div
+              className="image"
+            >
+              <img
+                alt="Linked Content Blocks"
+                src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
+              />
+            </div>
+          </div>
+        </section>
         <div
           className="renderer"
         >
@@ -1270,7 +1286,7 @@ exports[`Test no author 1`] = `
         className="center"
       >
         <a
-          href="https://changelog.pinpoint.com"
+          onClick={[Function]}
           title="Pinpoint"
         >
           <h1
@@ -1359,14 +1375,22 @@ exports[`Test no author 1`] = `
       <div
         className="content"
       >
-        <div
+        <section
           className="cover covermedia"
         >
-          <img
-            className="image"
-            src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
-          />
-        </div>
+          <div
+            className="media-container"
+          >
+            <div
+              className="image"
+            >
+              <img
+                alt="Linked Content Blocks"
+                src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
+              />
+            </div>
+          </div>
+        </section>
         <div
           className="renderer"
         >
@@ -1782,7 +1806,7 @@ exports[`Test no claps 1`] = `
         className="center"
       >
         <a
-          href="https://changelog.pinpoint.com"
+          onClick={[Function]}
           title="Pinpoint"
         >
           <h1
@@ -1888,14 +1912,22 @@ exports[`Test no claps 1`] = `
       <div
         className="content"
       >
-        <div
+        <section
           className="cover covermedia"
         >
-          <img
-            className="image"
-            src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
-          />
-        </div>
+          <div
+            className="media-container"
+          >
+            <div
+              className="image"
+            >
+              <img
+                alt="Linked Content Blocks"
+                src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
+              />
+            </div>
+          </div>
+        </section>
         <div
           className="renderer"
         >

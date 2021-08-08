@@ -24,7 +24,7 @@ import './table_header';
 import './table_row';
 import './table';
 import './toggle';
-import Content from './content';
+import Content, { CoverMedia } from './content';
 import { DocOpts, NodeProps, recurseIntoChildren } from './register';
 
 const Document = ({ node, limit, opts }: NodeProps & { limit?: number; opts?: DocOpts }) => (
@@ -33,4 +33,4 @@ const Document = ({ node, limit, opts }: NodeProps & { limit?: number; opts?: Do
 
 export const emptyDoc = () => ({ type: 'doc', content: [{ type: 'paragraph', content: [] }] });
 
-export { Document, Content };
+export { Document, Content, CoverMedia };
