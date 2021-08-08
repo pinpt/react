@@ -1,0 +1,228 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test default render for Content 1`] = `
+Array [
+  <meta
+    charSet="utf-8"
+  />,
+  <meta
+    content="ie=edge"
+    httpEquiv="x-ua-compatible"
+  />,
+  <meta
+    content="width=device-width"
+    name="viewport"
+  />,
+  <script
+    async={true}
+    data-id="y6iuMannUQ7Pb9tVcHiZ"
+    data-site-id="X0iheYf0hUUTRed9KVfv"
+    defer={true}
+    src="/a.js"
+  />,
+  <script
+    async={true}
+    crossOrigin="anonymous"
+    defer={true}
+    referrerPolicy="no-referrer"
+    src="https://cdn.iframe.ly/embed.js?api_key=ab49ad398c6f631ab44eca&origin=X0iheYf0hUUTRed9KVfv"
+  />,
+  <meta
+    content="pinpoint.com"
+    name="generator"
+  />,
+  <title>
+    Test
+     - 
+    Jeff's Testing Site -- NONE OF THIS INFO IS REAL
+  </title>,
+  "",
+  <meta
+    content="article"
+    name="type"
+    property="og:type"
+  />,
+  <meta
+    content="Jeff Haynie"
+    property="author"
+  />,
+  <meta
+    content="Jeff Haynie"
+    name="author"
+    property="og:author"
+  />,
+  <meta
+    content="2021-08-03T21:47:06.965Z"
+    property="article:published_time"
+  />,
+  <meta
+    content="Test"
+    name="title"
+    property="og:title"
+  />,
+  <meta
+    content="Test"
+    name="twitter:title"
+  />,
+  <meta
+    content="Hi there. What’s happening? Just testing some stuff here."
+    name="description"
+    property="og:description"
+  />,
+  <meta
+    content="Hi there. What’s happening? Just testing some stuff here."
+    name="twitter:description"
+  />,
+  <link
+    href="https://file.edge.pinpoint.com/b24dabeec1f19705f31ed39278729729;UgK7%23L%2C-n%25ay%7D7bbR-aft2J-Naa%23%23rW-NwWW;128x129.png"
+    rel="icon"
+  />,
+  <link
+    href="https://file.edge.pinpoint.com/b24dabeec1f19705f31ed39278729729;UgK7%23L%2C-n%25ay%7D7bbR-aft2J-Naa%23%23rW-NwWW;128x129.png"
+    rel="shortcut icon"
+  />,
+  <link
+    href="/rss"
+    rel="alternate"
+    title="Jeff's Testing Site -- NONE OF THIS INFO IS REAL RSS Feed"
+    type="application/rss+xml"
+  />,
+  <meta
+    content="Jeff's Testing Site -- NONE OF THIS INFO IS REAL"
+    property="og:site_name"
+  />,
+  <meta
+    content="index, follow"
+    name="robots"
+  />,
+  <meta
+    content="summary_large_image"
+    name="twitter:card"
+  />,
+  <meta
+    content="https://jeff.pinpoint.com/entry/14Y3mpvdnQKf45Wtue0t/Test"
+    property="og:url"
+  />,
+  <meta
+    content="https://jeff.pinpoint.com/entry/14Y3mpvdnQKf45Wtue0t/Test"
+    property="twitter:url"
+  />,
+  <link
+    href="https://jeff.pinpoint.com/entry/14Y3mpvdnQKf45Wtue0t/Test"
+    rel="canonical"
+  />,
+  <meta
+    content="@jhaynie"
+    name="twitter:creator"
+  />,
+  <meta
+    content="@jhaynie"
+    name="twitter:site"
+  />,
+]
+`;
+
+exports[`Test default render for Site 1`] = `
+Array [
+  <meta
+    charSet="utf-8"
+  />,
+  <meta
+    content="ie=edge"
+    httpEquiv="x-ua-compatible"
+  />,
+  <meta
+    content="width=device-width"
+    name="viewport"
+  />,
+  <script
+    async={true}
+    data-site-id="X0iheYf0hUUTRed9KVfv"
+    defer={true}
+    src="/a.js"
+  />,
+  <script
+    async={true}
+    crossOrigin="anonymous"
+    defer={true}
+    referrerPolicy="no-referrer"
+    src="https://cdn.iframe.ly/embed.js?api_key=ab49ad398c6f631ab44eca&origin=X0iheYf0hUUTRed9KVfv"
+  />,
+  <meta
+    content="pinpoint.com"
+    name="generator"
+  />,
+  <title>
+    New updates and improvements to Jeff's Cool Test Product - Jeff's Testing Site -- NONE OF THIS INFO IS REAL
+  </title>,
+  <meta
+    content="website"
+    name="type"
+    property="og:type"
+  />,
+  <meta
+    content="New updates and improvements to Jeff's Cool Test Product - Jeff's Testing Site -- NONE OF THIS INFO IS REAL"
+    name="title"
+    property="og:title"
+  />,
+  <meta
+    content="New updates and improvements to Jeff's Cool Test Product - Jeff's Testing Site -- NONE OF THIS INFO IS REAL"
+    name="twitter:title"
+  />,
+  <meta
+    content="New updates and improvements to Jeff's Cool Test Product"
+    name="description"
+    property="og:description"
+  />,
+  <meta
+    content="New updates and improvements to Jeff's Cool Test Product"
+    name="twitter:description"
+  />,
+  <link
+    href="https://file.edge.pinpoint.com/b24dabeec1f19705f31ed39278729729;UgK7%23L%2C-n%25ay%7D7bbR-aft2J-Naa%23%23rW-NwWW;128x129.png"
+    rel="icon"
+  />,
+  <link
+    href="https://file.edge.pinpoint.com/b24dabeec1f19705f31ed39278729729;UgK7%23L%2C-n%25ay%7D7bbR-aft2J-Naa%23%23rW-NwWW;128x129.png"
+    rel="shortcut icon"
+  />,
+  <link
+    href="/rss"
+    rel="alternate"
+    title="Jeff's Testing Site -- NONE OF THIS INFO IS REAL RSS Feed"
+    type="application/rss+xml"
+  />,
+  <meta
+    content="Jeff's Testing Site -- NONE OF THIS INFO IS REAL"
+    property="og:site_name"
+  />,
+  <meta
+    content="index, follow"
+    name="robots"
+  />,
+  <meta
+    content="summary_large_image"
+    name="twitter:card"
+  />,
+  <meta
+    content="https://jeff.pinpoint.com"
+    property="og:url"
+  />,
+  <meta
+    content="https://jeff.pinpoint.com"
+    property="twitter:url"
+  />,
+  <link
+    href="https://jeff.pinpoint.com"
+    rel="canonical"
+  />,
+  <meta
+    content="@jhaynie"
+    name="twitter:creator"
+  />,
+  <meta
+    content="@jhaynie"
+    name="twitter:site"
+  />,
+]
+`;

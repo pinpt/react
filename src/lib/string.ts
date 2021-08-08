@@ -71,3 +71,16 @@ export const compactNumber = (value: number, decimals = 0) => {
 	}
 	return output;
 };
+
+export const getTwitterProfileFromURL = (url?: string) => {
+	if (url) {
+		if (url.startsWith('@')) {
+			return url;
+		} else if (url.includes('twitter.com/')) {
+			const u = new URL(url);
+			const tok = u.pathname.substring(1).split('/');
+			return `@${tok[0]}`;
+		}
+	}
+	return undefined;
+};

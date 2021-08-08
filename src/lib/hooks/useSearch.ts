@@ -1,7 +1,8 @@
 import algoliasearch from 'algoliasearch';
 import { useCallback, useEffect, useMemo, useState } from 'react';
-import { algolia } from '../../config';
+import config from '../../config';
 
+const { algolia } = config;
 const client = algoliasearch(algolia.appId, algolia.apiKey);
 const index = client.initIndex(algolia.index);
 
