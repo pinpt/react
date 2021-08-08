@@ -106,7 +106,6 @@ const Home = (props: IPrebuiltHomeProps) => {
 					<Header
 						className="Prebuilt"
 						title={`${site.name}`}
-						href={site.url}
 						description={site.theme?.description ?? site.name}
 						subscribe={
 							renderSubscribe?.(site) ?? <Subscribe className="Prebuilt" href="/subscription/subscribe" />

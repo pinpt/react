@@ -1,10 +1,13 @@
 import React from 'react';
-import { IStatisticsBarProps } from '../../Statistic/Bar';
-import { ITagBarProps } from '../../Tags/Bar';
-import { ICardDateProps } from '../Date';
-import { ICardDescriptionProps } from '../Description';
-import { ICardReadButtonProps } from '../ReadButton';
-import { ICardTitleProps } from '../Title';
+import { CoverMedia } from '../../Renderer';
+
+import type { IStatisticsBarProps } from '../../Statistic/Bar';
+import type { ITagBarProps } from '../../Tags/Bar';
+import type { ICardDateProps } from '../Date';
+import type { ICardDescriptionProps } from '../Description';
+import type { ICardReadButtonProps } from '../ReadButton';
+import type { ICardTitleProps } from '../Title';
+import type { ICoverMedia } from '../../../lib/types';
 
 export interface ICardContainerProps {
 	title?: React.ReactElement<ICardTitleProps>;
@@ -14,17 +17,19 @@ export interface ICardContainerProps {
 	button?: React.ReactElement<ICardReadButtonProps>;
 	tags?: React.ReactElement<ITagBarProps>;
 	imageUrl?: string;
+	coverMedia?: ICoverMedia;
 	alt?: string;
 	className?: string;
 	onClick?: () => void;
 }
 
 const Container = (props: ICardContainerProps) => {
-	const { title, description, imageUrl, alt, className, statistics, date, button, tags, onClick } = props;
+	const { title, description, imageUrl, alt, className, statistics, date, button, tags, coverMedia, onClick } = props;
 
 	return (
 		<div className={`Pinpoint Content Card Container wrapper ${className ?? ''}`} onClick={onClick}>
 			{imageUrl && <img className="cover" src={imageUrl} alt={alt} />}
+			{coverMedia && <CoverMedia media={coverMedia} />}
 			<div className="content">
 				{title}
 				{date}

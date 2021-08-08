@@ -1,19 +1,22 @@
 import { ReactElement } from 'react';
-import { IFooterProps } from '../../Footer';
-import { ISidebarProps } from '../../Sidebar';
-import { IHeaderProps } from '../../Header';
+import { CoverMedia } from '../../Renderer';
 
+import type { IFooterProps } from '../../Footer';
+import type { ISidebarProps } from '../../Sidebar';
+import type { IHeaderProps } from '../../Header';
+import type { ICoverMedia } from '../../../lib/types';
 export interface IPageEntryProps {
 	className?: string;
 	header?: ReactElement<IHeaderProps>;
 	renderer?: ReactElement;
 	sidebar?: ReactElement<ISidebarProps>;
-	coverImage?: string;
+	coverMedia?: ICoverMedia;
 	footer?: ReactElement<IFooterProps>;
+	title?: string;
 }
 
 const Entry = (props: IPageEntryProps) => {
-	const { className = '', header, renderer, coverImage, sidebar, footer } = props;
+	const { className = '', header, renderer, sidebar, footer, coverMedia, title } = props;
 
 	return (
 		<div className={`Pinpoint Page Entry ${className}`}>
@@ -22,11 +25,7 @@ const Entry = (props: IPageEntryProps) => {
 				<div className="body">
 					<div className="sidebar">{sidebar}</div>
 					<div className="content">
-						{coverImage && (
-							<div className="cover covermedia">
-								<img className="image" src={coverImage} />
-							</div>
-						)}
+						{coverMedia && <CoverMedia media={coverMedia} title={title} />}
 						<div className="renderer">
 							<article className="changelog notebook-editor read-only">
 								<section className="ProseMirror">{renderer}</section>

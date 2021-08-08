@@ -31,6 +31,7 @@ export interface IPrebuiltEntryProps {
 	renderAuthor?: (content: IContent) => ReactElement<IAuthorProps>;
 	renderTags?: (content: IContent) => ReactElement<ITagBarProps>;
 	renderClap?: (content: IContent) => ReactElement<IClapProps>;
+	handleSelectHome?: () => void;
 	clapCount?: number;
 	sessionClapCount?: number;
 	onClap?: (content: IContent) => void;
@@ -58,12 +59,14 @@ const Entry = (props: IPrebuiltEntryProps) => {
 		clapCount = 0,
 		onClap,
 		sessionClapCount = 0,
+		handleSelectHome,
 	} = props;
 
 	return (
 		<Page.Entry
 			className={`Prebuilt ${className}`}
-			coverImage={content.coverMedia?.placeholderImage}
+			coverMedia={content.coverMedia}
+			title={content.title}
 			renderer={renderContent?.(content) ?? <Document node={content.document} />}
 			sidebar={
 				renderSidebar?.(content) ?? (
@@ -97,7 +100,7 @@ const Entry = (props: IPrebuiltEntryProps) => {
 					<Header
 						className="Prebuilt"
 						title={`${site.name}`}
-						href={site.url}
+						onClick={() => handleSelectHome?.()}
 						description={site.theme?.description ?? site.name}
 						subscribe={
 							renderSubscribe?.(site) ?? <Subscribe className="Prebuilt" href="/subscription/subscribe" />
