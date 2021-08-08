@@ -33,7 +33,7 @@ export interface IPrebuiltEntryProps {
 	renderClap?: (content: IContent) => ReactElement<IClapProps>;
 	clapCount?: number;
 	sessionClapCount?: number;
-	onClap?: (contentId: string) => void;
+	onClap?: (content: IContent) => void;
 	site: ISite;
 	content: IContent;
 }
@@ -84,7 +84,7 @@ const Entry = (props: IPrebuiltEntryProps) => {
 								<Clap
 									clapCount={clapCount}
 									sessionClapCount={sessionClapCount}
-									handleClap={() => onClap(content.id)}
+									handleClap={() => onClap(content)}
 									className="Prebuilt"
 								/>
 							) : undefined)
