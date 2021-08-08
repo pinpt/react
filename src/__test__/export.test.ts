@@ -32,6 +32,7 @@ const {
 	slugifyContent,
 	slugifyString,
 	fetchSite,
+	fetchSiteWithContentCount,
 	splitEntries,
 	getTagColorStyles,
 	colorForString,
@@ -137,6 +138,7 @@ test('Test util exports', () => {
 	expect(slugifyContent).toBeTruthy();
 	expect(slugifyString).toBeTruthy();
 	expect(fetchSite).toBeTruthy();
+	expect(fetchSiteWithContentCount).toBeTruthy();
 	expect(splitEntries).toBeTruthy();
 	expect(getTagColorStyles).toBeTruthy();
 	expect(colorForString).toBeTruthy();
