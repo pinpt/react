@@ -19,7 +19,7 @@ jobs:
               node-version: 14
          - run: npm install
          - run: npm run build
-         - run: npm test
+         - run: npm run test:ci
          - name: Publish
            run: |
               npm config set //registry.npmjs.org/:_authToken ${NPM_TOKEN}
