@@ -94,7 +94,7 @@ const SearchResults = (props: IPrebuiltSearchResultsProps) => {
 				renderHeader?.(site) ?? (
 					<Header
 						className="Prebuilt"
-						title={`${site.name}`}
+						title={site.name}
 						onClick={() => handleSelectHome?.()}
 						description={site.theme?.description ?? site.name}
 						subscribe={
