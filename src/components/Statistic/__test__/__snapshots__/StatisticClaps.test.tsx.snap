@@ -147,7 +147,7 @@ exports[`Test custom class with large number 1`] = `
   <span
     className="Statistic Claps count"
   >
-    2222
+    2k
   </span>
 </div>
 `;
@@ -299,7 +299,7 @@ exports[`Test large number 1`] = `
   <span
     className="Statistic Claps count"
   >
-    2222
+    2k
   </span>
 </div>
 `;

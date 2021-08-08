@@ -41,6 +41,8 @@ const {
 	fetchClaps,
 	createClap,
 	executeAPI,
+	formatNumber,
+	compactNumber,
 
 	...otherExports
 } = Exports;
@@ -139,6 +141,8 @@ test('Test util exports', () => {
 	expect(fetchAnalytics).toBeTruthy();
 	expect(fetchContentAnalytics).toBeTruthy();
 	expect(createClap).toBeTruthy();
+	expect(formatNumber).toBeTruthy();
+	expect(compactNumber).toBeTruthy();
 });
 
 test('Test for unexpected exports', () => {

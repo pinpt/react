@@ -161,7 +161,7 @@ exports[`Test custom class with large number 1`] = `
   <div
     className="Clap counter active"
   >
-    2222
+    2k
   </div>
   <div
     className="Clap notice "
@@ -333,7 +333,7 @@ exports[`Test large number 1`] = `
   <div
     className="Clap counter active"
   >
-    2222
+    2k
   </div>
   <div
     className="Clap notice "
