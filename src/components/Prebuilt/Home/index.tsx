@@ -54,7 +54,7 @@ export interface IPrebuiltHomeProps {
 	latestCount?: number;
 	searchTerm?: string;
 	handleSearch?: (value: string) => void;
-	handleSelectContent?: (id: string) => void;
+	handleSelectContent?: (content: IContent) => void;
 	handleAddTagToQuery?: (value: string) => void;
 	pageForward?: () => void;
 	pageBack?: () => void;
@@ -156,7 +156,7 @@ const Home = (props: IPrebuiltHomeProps) => {
 										button={
 											renderCardButton?.(Content) ?? (
 												<Card.ReadButton
-													onClick={() => handleSelectContent?.(Content.id)}
+													onClick={() => handleSelectContent?.(Content)}
 													className="Prebuilt"
 												/>
 											)
@@ -180,48 +180,48 @@ const Home = (props: IPrebuiltHomeProps) => {
 			recent={
 				renderRecent?.(recent) ?? (
 					<Recent className="Prebuilt" pageNumber={pageNumber} pageCount={pageCount}>
-						{recent.map((Content) => {
+						{recent.map((content) => {
 							return (
-								renderCard?.(Content) ?? (
+								renderCard?.(content) ?? (
 									<Card.Container
-										key={Content.id}
+										key={content.id}
 										className="Prebuilt"
-										imageUrl={Content.coverMedia?.placeholderImage}
+										imageUrl={content.coverMedia?.placeholderImage}
 										title={
-											renderCardTitle?.(Content) ?? <Card.Title className="Prebuilt" title={Content.title} />
+											renderCardTitle?.(content) ?? <Card.Title className="Prebuilt" title={content.title} />
 										}
 										date={
-											renderCardDate?.(Content) ?? (
-												<Card.Date className="Prebuilt" ts={Content.publishedAt} />
+											renderCardDate?.(content) ?? (
+												<Card.Date className="Prebuilt" ts={content.publishedAt} />
 											)
 										}
 										description={
-											renderCardDescription?.(Content) ?? (
-												<Card.Description className="Prebuilt" description={Content.headline} />
+											renderCardDescription?.(content) ?? (
+												<Card.Description className="Prebuilt" description={content.headline} />
 											)
 										}
 										statistics={
-											renderCardStatistics?.(Content, analytics?.[Content.id]) ?? (
+											renderCardStatistics?.(content, analytics?.[content.id]) ?? (
 												<Statistic.Bar
 													className="Prebuilt"
-													claps={analytics?.[Content.id]?.claps ?? 0}
-													views={analytics?.[Content.id]?.pageviews ?? 0}
+													claps={analytics?.[content.id]?.claps ?? 0}
+													views={analytics?.[content.id]?.pageviews ?? 0}
 												/>
 											)
 										}
 										button={
-											renderCardButton?.(Content) ?? (
+											renderCardButton?.(content) ?? (
 												<Card.ReadButton
-													onClick={() => handleSelectContent?.(Content.id)}
+													onClick={() => handleSelectContent?.(content)}
 													className="Prebuilt"
 												/>
 											)
 										}
 										tags={
-											renderTags?.(Content) ?? (
+											renderTags?.(content) ?? (
 												<Tags.Bar
 													className="Prebuilt"
-													tags={Content.tags ?? []}
+													tags={content.tags ?? []}
 													onClick={(tag: string) => handleAddTagToQuery?.(tag)}
 												/>
 											)

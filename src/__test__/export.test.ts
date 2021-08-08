@@ -23,6 +23,7 @@ const {
 	Search,
 	Loader,
 	Pagination,
+	Head,
 
 	emptyDoc,
 	fetchContent,
@@ -41,6 +42,9 @@ const {
 	fetchClaps,
 	createClap,
 	executeAPI,
+	formatNumber,
+	compactNumber,
+	getTwitterProfileFromURL,
 
 	...otherExports
 } = Exports;
@@ -116,6 +120,7 @@ test('Test component exports', () => {
 	expect(Footer).toBeTruthy();
 	expect(Latest).toBeTruthy();
 	expect(Recent).toBeTruthy();
+	expect(Head).toBeTruthy();
 	expect(Header).toBeTruthy();
 	expect(ThemeToggle).toBeTruthy();
 	expect(Author).toBeTruthy();
@@ -139,6 +144,9 @@ test('Test util exports', () => {
 	expect(fetchAnalytics).toBeTruthy();
 	expect(fetchContentAnalytics).toBeTruthy();
 	expect(createClap).toBeTruthy();
+	expect(formatNumber).toBeTruthy();
+	expect(compactNumber).toBeTruthy();
+	expect(getTwitterProfileFromURL).toBeTruthy();
 });
 
 test('Test for unexpected exports', () => {

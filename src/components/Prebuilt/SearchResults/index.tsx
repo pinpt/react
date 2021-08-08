@@ -31,24 +31,24 @@ export interface IPrebuiltSearchResultsProps {
 	renderHeader?: (site: ISite) => ReactElement<IHeaderProps>;
 	renderSubscribe?: (site: ISite) => ReactElement<ISubscribeProps>;
 	renderSearchResults?: (entries: IContent[]) => ReactElement<ISearchResultsProps>;
-	renderCard?: (Content: IContent) => ReactElement<ICardContainerProps>;
-	renderCardTitle?: (Content: IContent) => ReactElement<ICardTitleProps>;
-	renderCardDate?: (Content: IContent) => ReactElement<ICardDateProps>;
-	renderCardDescription?: (Content: IContent) => ReactElement<ICardDescriptionProps>;
-	renderCardStatistics?: (Content: IContent) => ReactElement<IStatisticsBarProps>;
-	renderCardButton?: (Content: IContent) => ReactElement<ICardReadButtonProps>;
+	renderCard?: (content: IContent) => ReactElement<ICardContainerProps>;
+	renderCardTitle?: (content: IContent) => ReactElement<ICardTitleProps>;
+	renderCardDate?: (content: IContent) => ReactElement<ICardDateProps>;
+	renderCardDescription?: (content: IContent) => ReactElement<ICardDescriptionProps>;
+	renderCardStatistics?: (content: IContent) => ReactElement<IStatisticsBarProps>;
+	renderCardButton?: (content: IContent) => ReactElement<ICardReadButtonProps>;
 	renderFooter?: (site: ISite) => ReactElement<IFooterProps>;
 	renderSocial?: (site: ISite) => ReactElement<ISocialBarProps>;
 	renderCopyright?: (site: ISite) => ReactElement<ICopyrightProps>;
 	renderLogo?: (site: ISite) => ReactElement<ILogoProps>;
-	renderTags?: (Content: IContent) => ReactElement<ITagBarProps>;
+	renderTags?: (content: IContent) => ReactElement<ITagBarProps>;
 	renderThemeToggle?: (site: ISite) => ReactElement<IThemeToggleProps>;
 	renderSearch?: (site: ISite) => ReactElement<ISearchBarProps>;
 	renderSearchQuery?: (site: ISite) => ReactElement<IQueryProps>;
 	searchTerm?: string;
 	searchTags?: string[];
 	handleSearch?: (value: string) => void;
-	handleSelectContent?: (id: string) => void;
+	handleSelectContent?: (content: IContent) => void;
 	handleRemoveFromQuery?: (value: string, clear: boolean) => void;
 	handleAddTagToQuery?: (value: string) => void;
 	loading?: boolean;
@@ -135,44 +135,44 @@ const SearchResults = (props: IPrebuiltSearchResultsProps) => {
 			searchResults={
 				renderSearchResults?.(entries) ?? (
 					<Search.Results className="Prebuilt" clearQuery={() => handleRemoveFromQuery?.('', true)}>
-						{entries.map((Content) => {
+						{entries.map((content) => {
 							return (
-								renderCard?.(Content) ?? (
+								renderCard?.(content) ?? (
 									<Card.Container
-										key={Content.id}
+										key={content.id}
 										className="Prebuilt"
-										imageUrl={Content.coverMedia?.placeholderImage}
+										imageUrl={content.coverMedia?.placeholderImage}
 										title={
-											renderCardTitle?.(Content) ?? <Card.Title className="Prebuilt" title={Content.title} />
+											renderCardTitle?.(content) ?? <Card.Title className="Prebuilt" title={content.title} />
 										}
 										date={
-											renderCardDate?.(Content) ?? (
-												<Card.Date className="Prebuilt" ts={Content.publishedAt} />
+											renderCardDate?.(content) ?? (
+												<Card.Date className="Prebuilt" ts={content.publishedAt} />
 											)
 										}
 										description={
-											renderCardDescription?.(Content) ?? (
-												<Card.Description className="Prebuilt" description={Content.headline} />
+											renderCardDescription?.(content) ?? (
+												<Card.Description className="Prebuilt" description={content.headline} />
 											)
 										}
 										statistics={
-											renderCardStatistics?.(Content) ?? (
+											renderCardStatistics?.(content) ?? (
 												<Statistic.Bar className="Prebuilt" claps={0} views={0} />
 											)
 										}
 										button={
-											renderCardButton?.(Content) ?? (
+											renderCardButton?.(content) ?? (
 												<Card.ReadButton
-													onClick={() => handleSelectContent?.(Content.id)}
+													onClick={() => handleSelectContent?.(content)}
 													className="Prebuilt"
 												/>
 											)
 										}
 										tags={
-											renderTags?.(Content) ?? (
+											renderTags?.(content) ?? (
 												<Tags.Bar
 													className="Prebuilt"
-													tags={Content.tags ?? []}
+													tags={content.tags ?? []}
 													onClick={(tag: string) => handleAddTagToQuery?.(tag)}
 												/>
 											)

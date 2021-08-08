@@ -1,4 +1,5 @@
-import { IStatisticProps } from '../types';
+import type { IStatisticProps } from '../types';
+import { compactNumber } from '../../../lib/string';
 
 const Views = (props: IStatisticProps) => {
 	const { count, className } = props;
@@ -17,7 +18,7 @@ const Views = (props: IStatisticProps) => {
 				<path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
 				<circle cx="12" cy="12" r="3"></circle>
 			</svg>
-			<span className="Statistic Views count">{count}</span>
+			<span className="Statistic Views count">{compactNumber(count)}</span>
 		</div>
 	);
 };

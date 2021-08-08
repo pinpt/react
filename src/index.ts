@@ -11,6 +11,7 @@ export { default as Footer } from './components/Footer';
 export { default as Latest } from './components/Latest';
 export { default as Recent } from './components/Recent';
 export { default as Page } from './components/Page';
+export { default as Head } from './components/Head';
 export { default as Header } from './components/Header';
 export { default as Prebuilt } from './components/Prebuilt';
 export { default as Tags } from './components/Tags';

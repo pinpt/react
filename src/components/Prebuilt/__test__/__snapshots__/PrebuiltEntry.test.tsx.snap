@@ -87,15 +87,19 @@ exports[`Test custom className 1`] = `
           <div
             className="Pinpoint Author Prebuilt"
           >
-            <img
-              className="avatar"
-              src="https://file.edge.pinpoint.com/avatar/SmVmZiBIYXluaWU%3D?s=128"
-            />
-            <span
-              className="name"
+            <a
+              title="Jeff Haynie avatar"
             >
-              Jeff Haynie
-            </span>
+              <img
+                className="avatar"
+                src="https://file.edge.pinpoint.com/avatar/SmVmZiBIYXluaWU%3D?s=128"
+              />
+              <span
+                className="name"
+              >
+                Jeff Haynie
+              </span>
+            </a>
           </div>
           <div
             className="Pinpoint Tag Bar Prebuilt"
@@ -546,15 +550,19 @@ exports[`Test default state 1`] = `
           <div
             className="Pinpoint Author Prebuilt"
           >
-            <img
-              className="avatar"
-              src="https://file.edge.pinpoint.com/avatar/SmVmZiBIYXluaWU%3D?s=128"
-            />
-            <span
-              className="name"
+            <a
+              title="Jeff Haynie avatar"
             >
-              Jeff Haynie
-            </span>
+              <img
+                className="avatar"
+                src="https://file.edge.pinpoint.com/avatar/SmVmZiBIYXluaWU%3D?s=128"
+              />
+              <span
+                className="name"
+              >
+                Jeff Haynie
+              </span>
+            </a>
           </div>
           <div
             className="Pinpoint Tag Bar Prebuilt"
@@ -1367,15 +1375,19 @@ exports[`Test no claps 1`] = `
           <div
             className="Pinpoint Author Prebuilt"
           >
-            <img
-              className="avatar"
-              src="https://file.edge.pinpoint.com/avatar/SmVmZiBIYXluaWU%3D?s=128"
-            />
-            <span
-              className="name"
+            <a
+              title="Jeff Haynie avatar"
             >
-              Jeff Haynie
-            </span>
+              <img
+                className="avatar"
+                src="https://file.edge.pinpoint.com/avatar/SmVmZiBIYXluaWU%3D?s=128"
+              />
+              <span
+                className="name"
+              >
+                Jeff Haynie
+              </span>
+            </a>
           </div>
           <div
             className="Pinpoint Tag Bar Prebuilt"

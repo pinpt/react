@@ -1,3 +1,4 @@
+import { compactNumber } from '../../../lib/string';
 import { IStatisticProps } from '../types';
 
 const Claps = (props: IStatisticProps) => {
@@ -62,7 +63,7 @@ const Claps = (props: IStatisticProps) => {
 					fill="currentColor"
 				/>
 			</svg>
-			<span className="Statistic Claps count">{count}</span>
+			<span className="Statistic Claps count">{compactNumber(count)}</span>
 		</div>
 	);
 };

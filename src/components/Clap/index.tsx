@@ -1,4 +1,5 @@
 import { useCallback, useRef, useState } from 'react';
+import { compactNumber } from '../../lib/string';
 
 export interface IClapProps {
 	className?: string;
@@ -85,7 +86,9 @@ const Clap = (props: IClapProps) => {
 					/>
 				</svg>
 			</div>
-			<div className={`Clap counter ${noticeVisible ? '' : 'active'}`}>{clapCount > 0 ? clapCount : undefined}</div>
+			<div className={`Clap counter ${noticeVisible ? '' : 'active'}`}>
+				{clapCount > 0 ? compactNumber(clapCount) : undefined}
+			</div>
 			<div className={`Clap notice ${noticeVisible ? 'active' : ''}`}>+{sessionClapCount}</div>
 		</div>
 	);
