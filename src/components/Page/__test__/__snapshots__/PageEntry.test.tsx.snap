@@ -560,7 +560,7 @@ exports[`Test full entry 1`] = `
       className="powered"
     >
       <a
-        href="https://pinpoint.com/?utm_source=referral&utm_medium=web&utm_campaign=undefined"
+        href="https://pinpoint.com/?utm_source=referral&utm_medium=web&utm_campaign="
         style={
           Object {
             "alignItems": "center",
@@ -1385,7 +1385,7 @@ exports[`Test no sidebar 1`] = `
       className="powered"
     >
       <a
-        href="https://pinpoint.com/?utm_source=referral&utm_medium=web&utm_campaign=undefined"
+        href="https://pinpoint.com/?utm_source=referral&utm_medium=web&utm_campaign="
         style={
           Object {
             "alignItems": "center",

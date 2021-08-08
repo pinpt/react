@@ -13,7 +13,7 @@ export interface IFooterProps {
 }
 
 const Footer = (props: IFooterProps) => {
-	const { className = '', siteId, social, copyright, subscribe } = props;
+	const { className = '', siteId = '', social, copyright, subscribe } = props;
 
 	return (
 		<div className={`Pinpoint Footer ${className}`}>
