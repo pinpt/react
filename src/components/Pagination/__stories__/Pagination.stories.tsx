@@ -1,6 +1,7 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
 import Pagination from '../';
+
 const { default: readme } = require('../README.md');
 
 export default {
@@ -26,3 +27,11 @@ export const Back_Only: React.VFC<{}> = () => <Pagination goBack={() => alert('b
 export const Forward_Only: React.VFC<{}> = () => <Pagination goForward={() => alert('forward!')} />;
 
 export const No_Pagination: React.VFC<{}> = () => <Pagination />;
+
+export const Back_WithTextOverride: React.VFC<{}> = () => (
+	<Pagination goBack={() => alert('back!')} goBackText={'Go Back Dude!'} />
+);
+
+export const Back_WithComponentOverride: React.VFC<{}> = () => (
+	<Pagination goBack={() => alert('back!')} goBackText={<Pagination.GoBackWithArrow text="Yeah, back" />} />
+);

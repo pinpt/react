@@ -6,10 +6,10 @@ export interface IPaginationProps {
 	goBack?: () => void;
 }
 
-const defaultGoForward = () => {
+const GoForwardWithArrow = ({ text = 'Next' }: { text?: React.ReactNode }) => {
 	return (
 		<span>
-			Next
+			{text}
 			<svg
 				className="icon"
 				width={15.75}
@@ -31,7 +31,7 @@ const defaultGoForward = () => {
 	);
 };
 
-const defaultGoBack = () => {
+const GoBackWithArrow = ({ text = 'Back' }: { text?: React.ReactNode }) => {
 	return (
 		<span>
 			<svg
@@ -51,7 +51,7 @@ const defaultGoBack = () => {
 					d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"
 				></path>
 			</svg>
-			Back
+			{text}
 		</span>
 	);
 };
@@ -63,16 +63,20 @@ const Pagination = (props: IPaginationProps) => {
 		<div className={`Pinpoint Pagination ${className}`}>
 			{goBack && (
 				<div className="back" onClick={goBack}>
-					{goBackText ?? defaultGoBack()}
+					{goBackText ?? <GoBackWithArrow />}
 				</div>
 			)}
 			{goForward && (
 				<div className="forward" onClick={goForward}>
-					{goForwardText ?? defaultGoForward()}
+					{goForwardText ?? <GoForwardWithArrow />}
 				</div>
 			)}
 		</div>
 	);
 };
+
+// export these so they can be used in the <Pagination /> component
+Pagination.GoBackWithArrow = GoBackWithArrow;
+Pagination.GoForwardWithArrow = GoForwardWithArrow;
 
 export default Pagination;
