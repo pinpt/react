@@ -1,10 +1,11 @@
 import { ReactElement } from 'react';
+import { IActionLinkProps } from '../Internal/ActionLink';
 import { ILogoProps } from '../Logo';
 
 export interface ICopyrightProps {
 	className?: string;
 	text: string;
-	logo?: ReactElement<ILogoProps>;
+	logo?: ReactElement<ILogoProps | IActionLinkProps>;
 }
 
 const Copyright = (props: ICopyrightProps) => {

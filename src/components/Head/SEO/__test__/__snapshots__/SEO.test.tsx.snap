@@ -3,63 +3,75 @@
 exports[`Test default render 1`] = `
 Array [
   <title>
-    Test
+    Linked Content Blocks
      - 
-    Jeff's Testing Site -- NONE OF THIS INFO IS REAL
+    Pinpoint
   </title>,
-  "",
+  <meta
+    content="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png?rw=1200&rh=628"
+    name="image"
+    property="og:image"
+  />,
+  <meta
+    content="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png?rw=1200&rh=628"
+    name="twitter:image"
+  />,
+  <meta
+    content="Linked Content Blocks"
+    name="twitter:image:alt"
+  />,
   <meta
     content="article"
     name="type"
     property="og:type"
   />,
   <meta
-    content="Jeff Haynie"
+    content="Chris Bowley"
     property="author"
   />,
   <meta
-    content="Jeff Haynie"
+    content="Chris Bowley"
     name="author"
     property="og:author"
   />,
   <meta
-    content="2021-08-03T21:47:06.965Z"
+    content="2021-08-02T14:16:50.147Z"
     property="article:published_time"
   />,
   <meta
-    content="Test"
+    content="Linked Content Blocks"
     name="title"
     property="og:title"
   />,
   <meta
-    content="Test"
+    content="Linked Content Blocks"
     name="twitter:title"
   />,
   <meta
-    content="Hi there. What’s happening? Just testing some stuff here."
+    content="Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked."
     name="description"
     property="og:description"
   />,
   <meta
-    content="Hi there. What’s happening? Just testing some stuff here."
+    content="Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked."
     name="twitter:description"
   />,
   <link
-    href="https://file.edge.pinpoint.com/b24dabeec1f19705f31ed39278729729;UgK7%23L%2C-n%25ay%7D7bbR-aft2J-Naa%23%23rW-NwWW;128x129.png"
+    href="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
     rel="icon"
   />,
   <link
-    href="https://file.edge.pinpoint.com/b24dabeec1f19705f31ed39278729729;UgK7%23L%2C-n%25ay%7D7bbR-aft2J-Naa%23%23rW-NwWW;128x129.png"
+    href="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
     rel="shortcut icon"
   />,
   <link
     href="/rss"
     rel="alternate"
-    title="Jeff's Testing Site -- NONE OF THIS INFO IS REAL RSS Feed"
+    title="Pinpoint RSS Feed"
     type="application/rss+xml"
   />,
   <meta
-    content="Jeff's Testing Site -- NONE OF THIS INFO IS REAL"
+    content="Pinpoint"
     property="og:site_name"
   />,
   <meta
@@ -71,23 +83,23 @@ Array [
     name="twitter:card"
   />,
   <meta
-    content="https://jeff.pinpoint.com/entry/14Y3mpvdnQKf45Wtue0t/Test"
+    content="https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
     property="og:url"
   />,
   <meta
-    content="https://jeff.pinpoint.com/entry/14Y3mpvdnQKf45Wtue0t/Test"
+    content="https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
     property="twitter:url"
   />,
   <link
-    href="https://jeff.pinpoint.com/entry/14Y3mpvdnQKf45Wtue0t/Test"
+    href="https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
     rel="canonical"
   />,
   <meta
-    content="@jhaynie"
+    content="@pinpoint_sw"
     name="twitter:creator"
   />,
   <meta
-    content="@jhaynie"
+    content="@pinpoint_sw"
     name="twitter:site"
   />,
 ]

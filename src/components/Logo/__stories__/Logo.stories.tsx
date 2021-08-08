@@ -1,6 +1,7 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
 import Logo from '../';
+
 const { default: readme } = require('../README.md');
 
 export default {
@@ -37,3 +38,7 @@ export const Link: React.VFC<{}> = () => <Logo src={IMAGE_URL} href="https://pin
 export const Link_New_Tab: React.VFC<{}> = () => <Logo src={IMAGE_URL} href="https://pinpoint.com" newTab />;
 
 export const Click_Handler: React.VFC<{}> = () => <Logo src={IMAGE_URL} onClick={() => alert('clicked!')} />;
+
+export const Rounded: React.VFC<{}> = () => (
+	<Logo src="https://file.edge.pinpoint.com/7e3ad32160424e35d55a541f8be3dbab;UEB5_%7CbDs%3A%25K%3F%3DNZWDtQyAk8jIs%3AcAX4ovoe;445x252.jpeg" />
+);

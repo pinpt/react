@@ -1,15 +1,16 @@
 import { MouseEventHandler } from 'react';
 
-interface IActionLinkProps {
+export interface IActionLinkProps {
 	className?: string;
 	href?: string;
 	onClick?: MouseEventHandler<HTMLSpanElement>;
 	newTab?: boolean;
 	children: any;
+	title?: string;
 }
 
 const ActionLink = (props: IActionLinkProps) => {
-	const { className = '', href, onClick, newTab, children } = props;
+	const { className = '', href, onClick, newTab, children, title } = props;
 
 	if (href) {
 		return (
@@ -18,6 +19,7 @@ const ActionLink = (props: IActionLinkProps) => {
 				className={`Pinpoint Internal Link ${className}`}
 				target={newTab ? '_blank' : undefined}
 				rel={newTab ? 'noopener noreferrer' : undefined}
+				title={title}
 			>
 				{children}
 			</a>

@@ -7,13 +7,14 @@ export interface ILogoProps {
 	newTab?: boolean;
 	size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
 	onClick?: () => void;
+	title?: string;
 }
 
 const Logo = (props: ILogoProps) => {
-	const { className = '', src, href, newTab, size = 'sm', onClick } = props;
+	const { className = '', src, href, newTab, size = 'sm', onClick, title = 'Logo' } = props;
 
 	return (
-		<ActionLink className={`Logo ${size} ${className}`} href={href} newTab={newTab} onClick={onClick}>
+		<ActionLink className={`Logo ${size} ${className}`} href={href} newTab={newTab} onClick={onClick} title={title}>
 			<img className="image" src={src} />
 		</ActionLink>
 	);

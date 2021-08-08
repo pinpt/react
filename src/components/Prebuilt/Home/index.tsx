@@ -106,16 +106,25 @@ const Home = (props: IPrebuiltHomeProps) => {
 					<Header
 						className="Prebuilt"
 						title={`${site.name}`}
+						href={site.url}
 						description={site.theme?.description ?? site.name}
 						subscribe={
-							renderSubscribe?.(site) ?? (
-								<Subscribe className="Prebuilt" href={`${site.url}/subscription/subscribe`} />
-							)
+							renderSubscribe?.(site) ?? <Subscribe className="Prebuilt" href="/subscription/subscribe" />
 						}
 						themeToggle={renderThemeToggle?.(site) ?? <ThemeToggle className="Prebuilt" />}
 						search={
 							renderSearch?.(site) ?? (
 								<Search.Bar defaultValue={searchTerm} onSubmit={handleSearch} className="Prebuilt" />
+							)
+						}
+						logo={
+							renderLogo?.(site) ?? (
+								<Logo
+									src={site.logoUrl}
+									className="Prebuilt"
+									href={site.theme?.logoLink ?? site.url}
+									title="Header Logo Home Page"
+								/>
 							)
 						}
 					/>
@@ -257,7 +266,7 @@ const Home = (props: IPrebuiltHomeProps) => {
 										<Social.LinkedIn className="Prebuilt" href={site.theme.social?.linkedin} newTab />
 									)}
 									{site.theme?.social?.rss && (
-										<Social.RSS className="Prebuilt" href={site.theme.social?.rss} newTab />
+										<Social.RSS className="Prebuilt" href={site.theme.social?.rss ?? '/rss'} newTab />
 									)}
 								</Social.Bar>
 							)
@@ -269,16 +278,19 @@ const Home = (props: IPrebuiltHomeProps) => {
 									text={site.theme?.copyright ?? ''}
 									logo={
 										renderLogo?.(site) ?? (
-											<Logo className="Prebuilt" src={site.logoUrl} href={site.theme?.logoLink} />
+											<Logo
+												className="Prebuilt"
+												src={site.logoUrl}
+												href={site.theme?.logoLink ?? site.url}
+												title="Footer Logo Home Page"
+											/>
 										)
 									}
 								/>
 							)
 						}
 						subscribe={
-							renderSubscribe?.(site) ?? (
-								<Subscribe className="Prebuilt" href={`${site.url}/subscription/subscribe`} />
-							)
+							renderSubscribe?.(site) ?? <Subscribe className="Prebuilt" href="/subscription/subscribe" />
 						}
 					/>
 				)

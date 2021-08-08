@@ -90,7 +90,7 @@
  * Styles for the logo component
  */
 .Logo {
-	@apply block rounded-full;
+	@apply block rounded-full border border-transparent overflow-hidden;
 }
 
 .Logo.xs {

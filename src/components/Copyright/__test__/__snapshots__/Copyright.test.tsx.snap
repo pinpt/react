@@ -48,6 +48,7 @@ exports[`Test with linked logo 1`] = `
   <a
     className="Pinpoint Internal Link Logo sm "
     href="https://pinpoint.com"
+    title="Logo"
   >
     <img
       className="image"

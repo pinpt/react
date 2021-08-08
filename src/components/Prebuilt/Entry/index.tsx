@@ -97,13 +97,22 @@ const Entry = (props: IPrebuiltEntryProps) => {
 					<Header
 						className="Prebuilt"
 						title={`${site.name}`}
+						href={site.url}
 						description={site.theme?.description ?? site.name}
 						subscribe={
-							renderSubscribe?.(site) ?? (
-								<Subscribe className="Prebuilt" href={`${site.url}/subscription/subscribe`} />
-							)
+							renderSubscribe?.(site) ?? <Subscribe className="Prebuilt" href="/subscription/subscribe" />
 						}
 						themeToggle={renderThemeToggle?.(site) ?? <ThemeToggle className="Prebuilt" />}
+						logo={
+							renderLogo?.(site) ?? (
+								<Logo
+									className="Prebuilt"
+									title="Header Logo Content Page"
+									src={site.logoUrl}
+									href={site.theme?.logoLink ?? site.url}
+								/>
+							)
+						}
 					/>
 				)
 			}
@@ -131,7 +140,7 @@ const Entry = (props: IPrebuiltEntryProps) => {
 										<Social.LinkedIn className="Prebuilt" href={site.theme.social?.linkedin} newTab />
 									)}
 									{site.theme?.social?.rss && (
-										<Social.RSS className="Prebuilt" href={site.theme.social?.rss} newTab />
+										<Social.RSS className="Prebuilt" href={site.theme.social?.rss ?? '/rss'} newTab />
 									)}
 								</Social.Bar>
 							)
@@ -143,16 +152,19 @@ const Entry = (props: IPrebuiltEntryProps) => {
 									text={site.theme?.copyright ?? ''}
 									logo={
 										renderLogo?.(site) ?? (
-											<Logo className="Prebuilt" src={site.logoUrl} href={site.theme?.logoLink} />
+											<Logo
+												className="Prebuilt"
+												src={site.logoUrl}
+												href={site.theme?.logoLink ?? site.url}
+												title="Footer Logo Content Page"
+											/>
 										)
 									}
 								/>
 							)
 						}
 						subscribe={
-							renderSubscribe?.(site) ?? (
-								<Subscribe className="Prebuilt" href={`${site.url}/subscription/subscribe`} />
-							)
+							renderSubscribe?.(site) ?? <Subscribe className="Prebuilt" href="/subscription/subscribe" />
 						}
 					/>
 				)

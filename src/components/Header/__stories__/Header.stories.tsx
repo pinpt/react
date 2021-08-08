@@ -1,9 +1,12 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
-import Header from '..';
+import Header from '../';
+import ActionLink from '../../Internal/ActionLink';
+import Logo from '../../Logo';
+import Search from '../../Search';
 import Subscribe from '../../Subscribe';
 import ThemeToggle from '../../ThemeToggle';
-import Search from '../../Search';
+
 const { default: readme } = require('../README.md');
 
 export default {
@@ -27,6 +30,9 @@ export const Complete: React.VFC<{}> = () => (
 		description="See what's new in the Pinpoint Demo."
 		themeToggle={<ThemeToggle />}
 		search={<Search.Bar />}
+		logo={
+			<Logo src="https://file.edge.pinpoint.com/7e3ad32160424e35d55a541f8be3dbab;UEB5_%7CbDs%3A%25K%3F%3DNZWDtQyAk8jIs%3AcAX4ovoe;445x252.jpeg" />
+		}
 	/>
 );
 
@@ -38,4 +44,27 @@ export const Title_Only: React.VFC<{}> = () => <Header title="Pinpoint Demo Chan
 
 export const No_Description: React.VFC<{}> = () => (
 	<Header title="Pinpoint Demo Changelog" subscribe={<Subscribe href="https://pinpoint.com" />} />
+);
+
+export const LogoWithLink: React.VFC<{}> = () => (
+	<Header
+		subscribe={<Subscribe href="https://pinpoint.com" />}
+		title="Pinpoint Demo Changelog"
+		description="See what's new in the Pinpoint Demo."
+		themeToggle={<ThemeToggle />}
+		search={<Search.Bar />}
+		logo={
+			<ActionLink href="https://pinpoint.com">
+				<Logo src="https://file.edge.pinpoint.com/7e3ad32160424e35d55a541f8be3dbab;UEB5_%7CbDs%3A%25K%3F%3DNZWDtQyAk8jIs%3AcAX4ovoe;445x252.jpeg" />
+			</ActionLink>
+		}
+	/>
+);
+
+export const HeaderWithHref: React.VFC<{}> = () => (
+	<Header
+		title="Pinpoint Demo Changelog"
+		description="See what's new in the Pinpoint Demo."
+		href="https://pinpoint.com"
+	/>
 );
