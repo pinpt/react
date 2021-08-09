@@ -152,7 +152,7 @@ const SearchResults = (props: IPrebuiltSearchResultsProps) => {
 									<Card.Container
 										key={content.id}
 										className="Prebuilt"
-										imageUrl={content.coverMedia?.placeholderImage}
+										coverMedia={content.coverMedia}
 										title={
 											renderCardTitle?.(content) ?? <Card.Title className="Prebuilt" title={content.title} />
 										}
