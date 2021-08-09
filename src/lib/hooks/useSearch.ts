@@ -38,13 +38,14 @@ const useSearch = (term: string, tags: string[], siteId: string) => {
 							return {
 								id: hit.objectID,
 								title: hit.title,
-								coverMedia:
-									hit.coverMedia ?? hit.cover_image
-										? {
-												type: CoverMediaType.Image,
-												value: hit.cover_image,
-										  }
-										: undefined,
+								coverMedia: hit.coverMedia
+									? hit.coverMedia
+									: hit.cover_image
+									? {
+											type: CoverMediaType.Image,
+											value: hit.cover_image,
+									  }
+									: undefined,
 								publishedAt: hit.createdAt,
 								headline: hit.headline,
 								tags: hit.tags,
@@ -52,6 +53,8 @@ const useSearch = (term: string, tags: string[], siteId: string) => {
 						})
 						.sort((a, b) => b.publishedAt - a.publishedAt)
 				);
+			} else {
+				setResults([]);
 			}
 			setLoading(false);
 		}
