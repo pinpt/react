@@ -1,4 +1,4 @@
-/* regular / light theme */
+/* regular theme */
 :root {
 	/* page */
 	--page-bg-color: white;
@@ -11,6 +11,7 @@
 	--header-title-color: var(--page-text-color);
 	--header-description-color: var(--page-secondary-text-color);
 	--header-subscribe-color: var(--page-highlight-color);
+	--header-control-color: #D4D4D8; /* gray-300 */
 
 	/* content */
 	--section-bg-color: #FAFAFA; /* gray-50 */
@@ -27,7 +28,7 @@
 	--article-text-color: var(--page-text-color);
 	--article-info-color: #71717A; /* gray-500 */
 	--article-link-color: var(--page-highlight-color);
-	--article-border-color: var(--section-border-color);
+	--article-border-color: transparent;
 	--article-block-bg-color: var(--section-bg-color);
 
 	/* footer */
@@ -43,6 +44,9 @@
 	--page-secondary-text-color: #A1A1AA; /* gray-400 */
 	--page-highlight-color: #818CF8; /* indigo-400 */
 
+	/* header */
+	--header-control-color: #71717A; /* gray-500 */
+
 	/* content */
 	--section-bg-color: #202023; /* gray-850 */
 	--section-border-color: #3F3F46; /* gray-700 */
@@ -54,137 +58,4 @@
 
 	/* footer */
 	--footer-bg-color: black;
-}
-
-.Clap.icon {
-	@apply text-gray-500;
-}
-
-.Clap.icon.active {
-	@apply text-purple-700;
-}
-
-.Clap.counter {
-	@apply text-gray-500;
-}
-
-.Content.Card.Date {
-	color: var(--tile-date-color);
-}
-
-.Content.Card.Title {
-	@apply text-lg font-semibold transition-colors duration-200;
-	color: var(--tile-title-color);
-}
-.Content.Card:hover .Title {
-	color: var(--tile-link-color);
-  }
-
-.Content.Card.Description {
-	color: var(--tile-summary-color);
-}
-
-.Content.Card.Container.wrapper {
-	background-color: var(--tile-bg-color);
-	color: var(--tile-bg-color);
-}
-
-.Latest {
-	background-color: var(--section-bg-color);
-}
-
-.Latest .heading,
-.Recent .heading,
-.Search.Results .heading {
-	@apply text-2xl font-semibold;
-}
-
-.Search.Query .heading {
-	@apply text-2xl font-semibold;
-}
-
-/* .Recent,
-.Search.Results {
-	@apply bg-white dark:bg-gray-800;
-} */
-
-.Recent .pageIndicator {
-	@apply font-normal text-base ml-2;
-	color: var(--page-secondary-text-color);
-}
-
-/* .Recent .heading,
-.Search.Results .heading {
-	@apply text-2xl font-semibold;
-} */
-
-.Content.Card.Read {
-	color: var(--tile-link-color);
-}
-
-
-
-.Subscribe {
-	color: var(--header-subscribe-color);
-}
-
-/* .Header {
-	@apply dark:bg-gray-800 dark:text-gray-100;
-} */
-
-/* .Statistic.Bar {
-	@apply text-black dark:text-gray-100;
-} */
-
-.Author .avatar {
-	@apply border-2 border-gray-300 dark:border-gray-500;
-	border-color: var(--page-secondary-text-color);
-}
-
-/* .Author {
-	@apply text-gray-500 dark:text-gray-100;
-} */
-
-/* .Search.Bar,
-.Search.Bar .input {
-	@apply bg-white dark:bg-gray-800;
-} */
-
-.Search.Bar {
-	@apply border-gray-300 dark:border-gray-600;
-}
-
-
-.Loader .inner {
-	@apply border-gray-500 dark:border-gray-300;
-}
-
-.Page .loadingWrapper {
-	@apply bg-white dark:bg-gray-800 h-128;
-}
-
-/* .Page .body {
-	@apply bg-white dark:bg-gray-800;
-} */
-
-.Page .constraint {
-	@apply mx-auto px-4 sm:px-10 w-full;
-	max-width: 80rem;
-}
-
-.Page .Pagination {
-	@apply px-12 pb-6 text-indigo-500 dark:text-indigo-400;
-}
-
-/**
- * article
- */
-.covermedia .image {
-	@apply rounded-lg shadow-lg overflow-hidden border mb-6;
-	border-color: var(--article-border-color);
-}
-
-.image_block > img {
-	@apply rounded-lg shadow-lg border;
-	border-color: var(--article-border-color);
 }

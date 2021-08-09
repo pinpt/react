@@ -1,3 +1,4 @@
-.sb-main-padded {
-	@apply !p-0;
+#root,
+.docs-story {
+	@apply dark:bg-gray-900 transition-all duration-200;
 }

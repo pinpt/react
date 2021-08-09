@@ -1322,49 +1322,6 @@ article hr.divider {
 	pointer-events: none;
 }
 
-.mode {
-	border-radius: 30px;
-	width: 58px;
-	outline-width: 0;
-	outline-offset: 0;
-	@apply block relative h-8 border border-gray-300 dark:border-gray-600 text-gray-300 dark:text-gray-600 ring-0 focus:ring-0;
-}
-
-.mode:focus {
-	outline-width: 0;
-	outline-offset: 0;
-}
-
-.mode::before {
-	height: 100%;
-	content: '';
-	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' stroke='#999' stroke-width='2.4' fill='none' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='5'/%3E%3Cpath d='M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42'/%3E%3C/svg%3E");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-size: 50%;
-	transition: 0.3s;
-	background-position: center;
-	@apply absolute top-0 left-0 w-8 bg-transparent opacity-50;
-}
-
-.mode::after {
-	right: 6px;
-	top: 5px;
-	content: '';
-	border-radius: 50%;
-	transition: transform 0.3s;
-	@apply absolute h-5 w-5 bg-gray-300 dark:bg-gray-600;
-}
-
-html.dark .mode::after {
-	transform: translateX(-24px);
-}
-
-html.dark .mode::before {
-	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' stroke='#999' stroke-width='2' fill='#999' stroke-linecap='round' stroke-linejoin='round' class='css-i6dzq1' viewBox='0 0 24 24'%3E%3Cpath d='M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z'/%3E%3C/svg%3E");
-	transform: translateX(26px);
-}
-
 body > div.preview_banner {
 	@apply bg-yellow-500 text-center;
 }
@@ -1402,4 +1359,195 @@ div.home main.changelogs-0 {
 	z-index: 9000;
 	left: -9999px;
 	top: -9999px;
+}
+
+
+/**
+ * article
+ */ 
+
+.covermedia:not(:empty) {
+	@apply mb-10 relative flex justify-center;
+}
+
+.covermedia .image {
+	@apply rounded-lg shadow-lg overflow-hidden;
+	border-color: var(--article-border-color);
+}
+
+.covermedia .image > img {
+	@apply object-cover object-center;
+}
+
+.image_block > img {
+	@apply rounded-lg shadow-lg border;
+	border-color: var(--article-border-color);
+}
+
+article.changelog {
+	min-height: 500px;
+}
+
+.ProseMirror * {
+	@apply leading-loose;
+}
+
+.ProseMirror .heading,
+.ProseMirror h1,
+.ProseMirror h2,
+.ProseMirror h3,
+.ProseMirror h4 {
+	color: var(--article-text-color);
+}
+
+.ProseMirror p,
+.ProseMirror li {
+	@apply text-lg leading-loose;
+	color: var(--article-text-color);
+}
+
+article div.iframe_node {
+	@apply my-8 p-3 border rounded;
+	background-color: var(--article-block-bg-color);
+	border-color: var(--article-border-color);
+}
+  
+article .ProseMirror .hr > div > hr {
+	border-color: var(--article-border-color);
+}
+  
+article .ProseMirror .toggle > .options > .icon {
+	background-color: var(--article-bg-color);
+}
+  
+article p > a[href]:not(.mark-color) {
+	@apply underline;
+	color: var(--article-link-color);
+}
+  
+article > section mark a[href],
+.dark article > section mark a[href] {
+	color: unset;
+}
+  
+article .linked-data-list-item {
+	@apply relative pl-6;
+}
+
+article .linked-data-list-item::before {
+	@apply text-gray-400 dark:text-gray-600 absolute top-0 left-1;
+	content: "\2022";
+}
+
+
+
+
+/** COVER MEDIA **/
+
+.covermedia > .video,
+.covermedia > .media-container > .video {
+	@apply aspect-w-16 aspect-h-9;
+}
+
+.covermedia > .media-container > video,
+.covermedia > .video > video {
+	@apply w-full;
+}
+
+/* youtube lite styles (cover media only) */
+
+.embed-responsive {
+	position: relative !important;
+	display: block !important;
+	height: 0 !important;
+	padding: 0 !important;
+	overflow: hidden !important;
+}
+
+.embed-responsive .embed-responsive-item,
+.embed-responsive iframe,
+.embed-responsive embed,
+.embed-responsive object,
+.embed-responsive video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	border: 0;
+}
+
+.aspect-ratio-16\/9 {
+	padding-bottom: 56.25% !important;
+}
+
+.ryt-lite {
+	background-color: #000;
+	position: relative;
+	display: block;
+	contain: content;
+	background-position: center center;
+	background-size: cover;
+	cursor: pointer;
+}
+
+/* responsive iframe with a 16:9 aspect ratio
+	  thanks https://css-tricks.com/responsive-iframes/
+ */
+.ryt-lite::after {
+	content: '';
+	display: block;
+	padding-bottom: calc(100% / (16 / 9));
+}
+
+.ryt-lite > iframe {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* play button */
+.ryt-lite > .lty-playbtn {
+	width: 70px;
+	height: 46px;
+	background-color: #212121;
+	z-index: 1;
+	opacity: 0.8;
+	border-radius: 14%; /* TODO: Consider replacing this with YT's actual svg. Eh. */
+	transition: all 0.2s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.ryt-lite:hover > .lty-playbtn {
+	background-color: #f00;
+	opacity: 1;
+}
+
+/* play button triangle */
+.ryt-lite > .lty-playbtn::before {
+	content: '';
+	border-style: solid;
+	border-width: 11px 0 11px 19px;
+	border-color: transparent transparent transparent #fff;
+}
+
+.ryt-lite > .lty-playbtn,
+.ryt-lite > .lty-playbtn::before {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%, -50%, 0);
+}
+
+/* Post-click styles */
+.ryt-lite.lyt-activated {
+	cursor: unset;
+}
+
+.ryt-lite.lyt-activated::before,
+.ryt-lite.lyt-activated > .lty-playbtn {
+	opacity: 0;
+	pointer-events: none;
 }
