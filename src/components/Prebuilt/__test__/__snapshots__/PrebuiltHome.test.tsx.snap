@@ -78,12 +78,12 @@ exports[`Hidden stats 1`] = `
         <a
           className="cursor-pointer"
           onClick={[Function]}
-          title="Pinpoint"
+          title="Pinpoint Changelog"
         >
           <h1
             className="title"
           >
-            Pinpoint
+            Pinpoint Changelog
           </h1>
         </a>
         <div
@@ -1372,12 +1372,12 @@ exports[`Test custom className 1`] = `
         <a
           className="cursor-pointer"
           onClick={[Function]}
-          title="Pinpoint"
+          title="Pinpoint Changelog"
         >
           <h1
             className="title"
           >
-            Pinpoint
+            Pinpoint Changelog
           </h1>
         </a>
         <div
@@ -3726,12 +3726,12 @@ exports[`Test custom latest length 1`] = `
         <a
           className="cursor-pointer"
           onClick={[Function]}
-          title="Pinpoint"
+          title="Pinpoint Changelog"
         >
           <h1
             className="title"
           >
-            Pinpoint
+            Pinpoint Changelog
           </h1>
         </a>
         <div
@@ -6081,12 +6081,12 @@ exports[`Test default state 1`] = `
         <a
           className="cursor-pointer"
           onClick={[Function]}
-          title="Pinpoint"
+          title="Pinpoint Changelog"
         >
           <h1
             className="title"
           >
-            Pinpoint
+            Pinpoint Changelog
           </h1>
         </a>
         <div
@@ -8435,12 +8435,12 @@ exports[`Test default state with partial analytics 1`] = `
         <a
           className="cursor-pointer"
           onClick={[Function]}
-          title="Pinpoint"
+          title="Pinpoint Changelog"
         >
           <h1
             className="title"
           >
-            Pinpoint
+            Pinpoint Changelog
           </h1>
         </a>
         <div

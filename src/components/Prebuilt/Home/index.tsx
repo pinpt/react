@@ -107,7 +107,7 @@ const Home = (props: IPrebuiltHomeProps) => {
 				renderHeader?.(site) ?? (
 					<Header
 						className="Prebuilt"
-						title={site.name}
+						title={site.theme?.title ?? site.name}
 						description={site.theme?.description ?? site.name}
 						onClick={() => handleSelectHome?.()}
 						subscribe={
