@@ -290,7 +290,7 @@ exports[`Test custom className 1`] = `
             </a>
             <a
               className="Pinpoint Internal Link Social Item Twitter sharing "
-              href="https://twitter.com/intent/tweet/?text=Pinpoint - Linked Content Blocks&url=https://changelog.pinpoint.com/entry/oroH8YQr4vufOiVTRND4"
+              href="https://twitter.com/intent/tweet/?text=Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.&url=https://changelog.pinpoint.com/entry/oroH8YQr4vufOiVTRND4"
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -1038,7 +1038,7 @@ exports[`Test default state 1`] = `
             </a>
             <a
               className="Pinpoint Internal Link Social Item Twitter sharing "
-              href="https://twitter.com/intent/tweet/?text=Pinpoint - Linked Content Blocks&url=https://changelog.pinpoint.com/entry/oroH8YQr4vufOiVTRND4"
+              href="https://twitter.com/intent/tweet/?text=Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.&url=https://changelog.pinpoint.com/entry/oroH8YQr4vufOiVTRND4"
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -1685,7 +1685,7 @@ exports[`Test no author 1`] = `
             </a>
             <a
               className="Pinpoint Internal Link Social Item Twitter sharing "
-              href="https://twitter.com/intent/tweet/?text=Pinpoint - Linked Content Blocks&url=https://changelog.pinpoint.com/entry/oroH8YQr4vufOiVTRND4"
+              href="https://twitter.com/intent/tweet/?text=Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.&url=https://changelog.pinpoint.com/entry/oroH8YQr4vufOiVTRND4"
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -2349,7 +2349,7 @@ exports[`Test no claps 1`] = `
             </a>
             <a
               className="Pinpoint Internal Link Social Item Twitter sharing "
-              href="https://twitter.com/intent/tweet/?text=Pinpoint - Linked Content Blocks&url=https://changelog.pinpoint.com/entry/oroH8YQr4vufOiVTRND4"
+              href="https://twitter.com/intent/tweet/?text=Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.&url=https://changelog.pinpoint.com/entry/oroH8YQr4vufOiVTRND4"
               rel="noopener noreferrer"
               target="_blank"
             >
