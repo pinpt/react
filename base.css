@@ -159,22 +159,22 @@
 
 .Social.sharing.Twitter {
 	--tw-bg-opacity: 1;
-    background-color: rgba(85,172,238,var(--tw-bg-opacity));
+	background-color: rgba(85, 172, 238, var(--tw-bg-opacity));
 }
 
 .Social.sharing.Facebook {
 	--tw-bg-opacity: 1;
-    background-color: rgba(59,89,152,var(--tw-bg-opacity));
+	background-color: rgba(59, 89, 152, var(--tw-bg-opacity));
 }
 
 .Social.sharing.LinkedIn {
 	--tw-bg-opacity: 1;
-    background-color: rgba(0,119,181,var(--tw-bg-opacity));
+	background-color: rgba(0, 119, 181, var(--tw-bg-opacity));
 }
 
 .Social.sharing.Email {
 	--tw-bg-opacity: 1;
-    background-color: rgba(113,113,122,var(--tw-bg-opacity));
+	background-color: rgba(113, 113, 122, var(--tw-bg-opacity));
 }
 
 /*

@@ -1101,7 +1101,7 @@ populated with your recently completed...
           className="Pinpoint Social Bar Prebuilt"
         >
           <a
-            className="Pinpoint Internal Link Social Item Facebook Prebuilt"
+            className="Pinpoint Internal Link Social Item Facebook  Prebuilt"
             href="https://www.facebook.com/Pinpoint.Engineering"
             rel="noopener noreferrer"
             target="_blank"
@@ -1124,7 +1124,7 @@ populated with your recently completed...
             </svg>
           </a>
           <a
-            className="Pinpoint Internal Link Social Item Instagram Prebuilt"
+            className="Pinpoint Internal Link Social Item Instagram  Prebuilt"
             href="https://www.instagram.com/pinpoint_sw/"
             rel="noopener noreferrer"
             target="_blank"
@@ -1147,7 +1147,7 @@ populated with your recently completed...
             </svg>
           </a>
           <a
-            className="Pinpoint Internal Link Social Item Twitter Prebuilt"
+            className="Pinpoint Internal Link Social Item Twitter  Prebuilt"
             href="https://twitter.com/pinpoint_sw"
             rel="noopener noreferrer"
             target="_blank"
@@ -1170,7 +1170,7 @@ populated with your recently completed...
             </svg>
           </a>
           <a
-            className="Pinpoint Internal Link Social Item Github Prebuilt"
+            className="Pinpoint Internal Link Social Item Github  Prebuilt"
             href="https://github.com/pinpt"
             rel="noopener noreferrer"
             target="_blank"
@@ -1193,7 +1193,7 @@ populated with your recently completed...
             </svg>
           </a>
           <a
-            className="Pinpoint Internal Link Social Item LinkedIn Prebuilt"
+            className="Pinpoint Internal Link Social Item LinkedIn  Prebuilt"
             href="https://linkedin.com/company/pinpoint-software"
             rel="noopener noreferrer"
             target="_blank"
@@ -3432,7 +3432,7 @@ populated with your recently completed...
           className="Pinpoint Social Bar Prebuilt"
         >
           <a
-            className="Pinpoint Internal Link Social Item Facebook Prebuilt"
+            className="Pinpoint Internal Link Social Item Facebook  Prebuilt"
             href="https://www.facebook.com/Pinpoint.Engineering"
             rel="noopener noreferrer"
             target="_blank"
@@ -3455,7 +3455,7 @@ populated with your recently completed...
             </svg>
           </a>
           <a
-            className="Pinpoint Internal Link Social Item Instagram Prebuilt"
+            className="Pinpoint Internal Link Social Item Instagram  Prebuilt"
             href="https://www.instagram.com/pinpoint_sw/"
             rel="noopener noreferrer"
             target="_blank"
@@ -3478,7 +3478,7 @@ populated with your recently completed...
             </svg>
           </a>
           <a
-            className="Pinpoint Internal Link Social Item Twitter Prebuilt"
+            className="Pinpoint Internal Link Social Item Twitter  Prebuilt"
             href="https://twitter.com/pinpoint_sw"
             rel="noopener noreferrer"
             target="_blank"
@@ -3501,7 +3501,7 @@ populated with your recently completed...
             </svg>
           </a>
           <a
-            className="Pinpoint Internal Link Social Item Github Prebuilt"
+            className="Pinpoint Internal Link Social Item Github  Prebuilt"
             href="https://github.com/pinpt"
             rel="noopener noreferrer"
             target="_blank"
@@ -3524,7 +3524,7 @@ populated with your recently completed...
             </svg>
           </a>
           <a
-            className="Pinpoint Internal Link Social Item LinkedIn Prebuilt"
+            className="Pinpoint Internal Link Social Item LinkedIn  Prebuilt"
             href="https://linkedin.com/company/pinpoint-software"
             rel="noopener noreferrer"
             target="_blank"
@@ -5763,7 +5763,7 @@ populated with your recently completed...
           className="Pinpoint Social Bar Prebuilt"
         >
           <a
-            className="Pinpoint Internal Link Social Item Facebook Prebuilt"
+            className="Pinpoint Internal Link Social Item Facebook  Prebuilt"
             href="https://www.facebook.com/Pinpoint.Engineering"
             rel="noopener noreferrer"
             target="_blank"
@@ -5786,7 +5786,7 @@ populated with your recently completed...
             </svg>
           </a>
           <a
-            className="Pinpoint Internal Link Social Item Instagram Prebuilt"
+            className="Pinpoint Internal Link Social Item Instagram  Prebuilt"
             href="https://www.instagram.com/pinpoint_sw/"
             rel="noopener noreferrer"
             target="_blank"
@@ -5809,7 +5809,7 @@ populated with your recently completed...
             </svg>
           </a>
           <a
-            className="Pinpoint Internal Link Social Item Twitter Prebuilt"
+            className="Pinpoint Internal Link Social Item Twitter  Prebuilt"
             href="https://twitter.com/pinpoint_sw"
             rel="noopener noreferrer"
             target="_blank"
@@ -5832,7 +5832,7 @@ populated with your recently completed...
             </svg>
           </a>
           <a
-            className="Pinpoint Internal Link Social Item Github Prebuilt"
+            className="Pinpoint Internal Link Social Item Github  Prebuilt"
             href="https://github.com/pinpt"
             rel="noopener noreferrer"
             target="_blank"
@@ -5855,7 +5855,7 @@ populated with your recently completed...
             </svg>
           </a>
           <a
-            className="Pinpoint Internal Link Social Item LinkedIn Prebuilt"
+            className="Pinpoint Internal Link Social Item LinkedIn  Prebuilt"
             href="https://linkedin.com/company/pinpoint-software"
             rel="noopener noreferrer"
             target="_blank"
