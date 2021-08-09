@@ -99,7 +99,7 @@ const Entry = (props: IPrebuiltEntryProps) => {
 				renderHeader?.(site) ?? (
 					<Header
 						className="Prebuilt"
-						title={site.name}
+						title={site.theme?.title ?? site.name}
 						onClick={() => handleSelectHome?.()}
 						description={site.theme?.description ?? site.name}
 						subscribe={
