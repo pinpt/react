@@ -31,6 +31,7 @@ export interface IContent {
 	commit: string; // the commit for the content
 	document: ContentDocument;
 	url: string; // the canonical url to the content
+	dateAt: number; // the date used for purposes of sorting
 	publishedAt: number;
 	tags?: string[];
 	title: string;
