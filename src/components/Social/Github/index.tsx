@@ -2,10 +2,10 @@ import ActionLink from '../../Internal/ActionLink';
 import { ISocialProps } from '../types';
 
 const Github = (props: ISocialProps) => {
-	const { className = '', ...rest } = props;
+	const { className = '', sharing, ...rest } = props;
 
 	return (
-		<ActionLink className={`Social Item Github ${className}`} {...rest}>
+		<ActionLink className={`Social Item Github ${sharing ? 'sharing' : ''} ${className}`} {...rest}>
 			<svg
 				width={14}
 				height={14}
