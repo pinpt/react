@@ -20,7 +20,6 @@ body {
 	max-width: 80rem;
 }
 
-
 /*
  * Styles for the header component
  */
@@ -48,7 +47,6 @@ body {
 	@apply mt-6 mx-auto;
 }
 
-
 /*
  * Styles for the search bar component
  */
@@ -72,7 +70,6 @@ body {
 	@apply opacity-30 transition-colors duration-200;
 	color: var(--page-text-color);
 }
-
 
 /*
  * Styles for the theme toggle component
@@ -120,7 +117,6 @@ html.dark .ThemeToggle .mode::after {
 	opacity: 0.5;
 }
 
-
 /*
  * Styles for the subscribe component
  */
@@ -132,7 +128,6 @@ html.dark .ThemeToggle .mode::after {
 .Subscribe .text {
 	@apply ml-1 text-sm;
 }
-
 
 /*
  * Styles for the footer component
@@ -163,14 +158,12 @@ html.dark .ThemeToggle .mode::after {
 	@apply flex flex-col items-center md:items-start;
 }
 
-
 /*
  * Styles for the copyright component
  */
 .Copyright .text {
 	@apply mt-1;
 }
-
 
 /*
  * Styles for the social components
@@ -187,6 +180,29 @@ html.dark .ThemeToggle .mode::after {
 	filter: brightness(1.5);
 }
 
+.Social.sharing {
+	@apply flex flex-col items-center content-center justify-center rounded-lg w-8 h-8 text-white;
+}
+
+.Social.sharing.Twitter {
+	--tw-bg-opacity: 1;
+	background-color: rgba(85, 172, 238, var(--tw-bg-opacity));
+}
+
+.Social.sharing.Facebook {
+	--tw-bg-opacity: 1;
+	background-color: rgba(59, 89, 152, var(--tw-bg-opacity));
+}
+
+.Social.sharing.LinkedIn {
+	--tw-bg-opacity: 1;
+	background-color: rgba(0, 119, 181, var(--tw-bg-opacity));
+}
+
+.Social.sharing.Email {
+	--tw-bg-opacity: 1;
+	background-color: rgba(113, 113, 122, var(--tw-bg-opacity));
+}
 
 /*
  * Styles for the card components
@@ -244,7 +260,6 @@ html.dark .ThemeToggle .mode::after {
 	@apply mb-4;
 }
 
-
 /*
  * Styles for the statistic components
  */
@@ -260,7 +275,6 @@ html.dark .ThemeToggle .mode::after {
 .Statistic.Bar .Statistic.Views.wrapper {
 	@apply mr-4;
 }
-
 
 /*
  * Styles for the dashboard and search components
@@ -350,7 +364,7 @@ html.dark .ThemeToggle .mode::after {
 
 .Pagination .content.forwardOnly {
 	@apply justify-end;
-  }
+}
 
 .Pagination .back,
 .Pagination .forward {
@@ -370,7 +384,6 @@ html.dark .ThemeToggle .mode::after {
 	@apply mr-2;
 }
 
-
 /*
  * Styles for the page (dashboard) component
  */
@@ -381,7 +394,6 @@ html.dark .ThemeToggle .mode::after {
 .Page .loadingWrapper {
 	@apply relative h-128;
 }
-
 
 /*
  * Styles for the page (entry) component
@@ -408,14 +420,12 @@ html.dark .ThemeToggle .mode::after {
 	@apply mb-12;
 }
 
-
 /*
  * Styles for the sidebar component
  */
 .Sidebar {
 	@apply flex flex-row md:flex-col items-center md:items-start gap-y-8;
 }
-
 
 /*
  * Styles for the author component
@@ -434,11 +444,10 @@ html.dark .ThemeToggle .mode::after {
 	@apply whitespace-nowrap;
 }
 
-
 /*
  * Styles for the interactive clap component
  */
- .Clap.wrapper {
+.Clap.wrapper {
 	@apply relative cursor-pointer flex items-center;
 }
 
@@ -468,7 +477,6 @@ html.dark .ThemeToggle .mode::after {
 	@apply opacity-100 left-12;
 }
 
-
 /*
  * Styles for the tag component
  */
@@ -488,7 +496,6 @@ html.dark .ThemeToggle .mode::after {
 	@apply flex flex-wrap gap-x-2 gap-y-2;
 }
 
-
 /*
  * Loader
  */
@@ -501,11 +508,10 @@ html.dark .ThemeToggle .mode::after {
 	border-color: var(--page-secondary-text-color);
 }
 
-
 /*
  * Styles for the logo component
  */
- .Logo {
+.Logo {
 	@apply block rounded-full overflow-hidden;
 }
 
@@ -539,14 +545,9 @@ html.dark .ThemeToggle .mode::after {
 	height: 100%;
 }
 
-
 /*
  * Styles for the link component
  */
 .Link.clickable {
 	@apply cursor-pointer;
 }
-
-
-
-

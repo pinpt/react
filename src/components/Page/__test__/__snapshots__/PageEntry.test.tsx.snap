@@ -428,7 +428,7 @@ exports[`Test full entry 1`] = `
           className="Pinpoint Social Bar "
         >
           <a
-            className="Pinpoint Internal Link Social Item Facebook "
+            className="Pinpoint Internal Link Social Item Facebook  "
             href="https://www.facebook.com/Pinpoint.Engineering"
             rel="noopener noreferrer"
             target="_blank"
@@ -451,7 +451,7 @@ exports[`Test full entry 1`] = `
             </svg>
           </a>
           <a
-            className="Pinpoint Internal Link Social Item Instagram "
+            className="Pinpoint Internal Link Social Item Instagram  "
             href="https://www.instagram.com/pinpoint_sw/"
             rel="noopener noreferrer"
             target="_blank"
@@ -474,7 +474,7 @@ exports[`Test full entry 1`] = `
             </svg>
           </a>
           <a
-            className="Pinpoint Internal Link Social Item Twitter "
+            className="Pinpoint Internal Link Social Item Twitter  "
             href="https://twitter.com/pinpoint_sw"
             rel="noopener noreferrer"
             target="_blank"
@@ -497,7 +497,7 @@ exports[`Test full entry 1`] = `
             </svg>
           </a>
           <a
-            className="Pinpoint Internal Link Social Item Github "
+            className="Pinpoint Internal Link Social Item Github  "
             href="https://github.com/pinpt"
             rel="noopener noreferrer"
             target="_blank"
@@ -520,7 +520,7 @@ exports[`Test full entry 1`] = `
             </svg>
           </a>
           <a
-            className="Pinpoint Internal Link Social Item LinkedIn "
+            className="Pinpoint Internal Link Social Item LinkedIn  "
             href="https://linkedin.com/company/pinpoint-software"
             rel="noopener noreferrer"
             target="_blank"
@@ -1275,7 +1275,7 @@ exports[`Test no sidebar 1`] = `
           className="Pinpoint Social Bar "
         >
           <a
-            className="Pinpoint Internal Link Social Item Facebook "
+            className="Pinpoint Internal Link Social Item Facebook  "
             href="https://www.facebook.com/Pinpoint.Engineering"
             rel="noopener noreferrer"
             target="_blank"
@@ -1298,7 +1298,7 @@ exports[`Test no sidebar 1`] = `
             </svg>
           </a>
           <a
-            className="Pinpoint Internal Link Social Item Instagram "
+            className="Pinpoint Internal Link Social Item Instagram  "
             href="https://www.instagram.com/pinpoint_sw/"
             rel="noopener noreferrer"
             target="_blank"
@@ -1321,7 +1321,7 @@ exports[`Test no sidebar 1`] = `
             </svg>
           </a>
           <a
-            className="Pinpoint Internal Link Social Item Twitter "
+            className="Pinpoint Internal Link Social Item Twitter  "
             href="https://twitter.com/pinpoint_sw"
             rel="noopener noreferrer"
             target="_blank"
@@ -1344,7 +1344,7 @@ exports[`Test no sidebar 1`] = `
             </svg>
           </a>
           <a
-            className="Pinpoint Internal Link Social Item Github "
+            className="Pinpoint Internal Link Social Item Github  "
             href="https://github.com/pinpt"
             rel="noopener noreferrer"
             target="_blank"
@@ -1367,7 +1367,7 @@ exports[`Test no sidebar 1`] = `
             </svg>
           </a>
           <a
-            className="Pinpoint Internal Link Social Item LinkedIn "
+            className="Pinpoint Internal Link Social Item LinkedIn  "
             href="https://linkedin.com/company/pinpoint-software"
             rel="noopener noreferrer"
             target="_blank"

@@ -71,7 +71,7 @@ test('Test component exports', () => {
 
 	// Test Social exports
 	expect(Social).toBeTruthy();
-	const { Bar: SocialBar, Facebook, Github, Instagram, LinkedIn, RSS, Twitter, ...otherSocial } = Social;
+	const { Bar: SocialBar, Facebook, Github, Instagram, LinkedIn, RSS, Twitter, Email, ...otherSocial } = Social;
 	expect(SocialBar).toBeTruthy();
 	expect(Facebook).toBeTruthy();
 	expect(Github).toBeTruthy();
@@ -79,6 +79,7 @@ test('Test component exports', () => {
 	expect(LinkedIn).toBeTruthy();
 	expect(RSS).toBeTruthy();
 	expect(Twitter).toBeTruthy();
+	expect(Email).toBeTruthy();
 	expect(Object.keys(otherSocial).length).toEqual(0);
 
 	// Test Page Exports

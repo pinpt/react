@@ -5,6 +5,7 @@ import Twitter from './Twitter';
 import Github from './Github';
 import LinkedIn from './LinkedIn';
 import RSS from './RSS';
+import Email from './Email';
 
 export default {
 	Bar,
@@ -14,4 +15,5 @@ export default {
 	Github,
 	LinkedIn,
 	RSS,
+	Email,
 };

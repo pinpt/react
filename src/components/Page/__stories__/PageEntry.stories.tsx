@@ -45,12 +45,20 @@ export const Default: React.VFC<{}> = () => {
 					description="See what's new in the Pinpoint Demo."
 				/>
 			}
-			renderer={<Content node={testDoc} />}
+			renderer={<Content document={testDoc} id="1234" />}
 			sidebar={
 				<Sidebar
 					author={<Author avatarUrl={AVATAR} name="Keegan" />}
 					tags={<Tags.Bar tags={['feature', 'improvement', 'mobile']} />}
 					clap={<Clap clapCount={count} handleClap={() => setCount((c) => c + 1)} />}
+					sharing={
+						<Social.Bar>
+							<Social.Facebook sharing href="https://www.facebook.com/Pinpoint.Engineering" newTab />
+							<Social.Twitter sharing href="https://twitter.com/pinpoint_sw" newTab />
+							<Social.LinkedIn sharing href="https://linkedin.com/company/pinpoint-software" newTab />
+							<Social.Email sharing href="mailto:hello@pinpoint.com" />
+						</Social.Bar>
+					}
 				/>
 			}
 			footer={
