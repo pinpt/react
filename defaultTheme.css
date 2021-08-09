@@ -2,59 +2,59 @@
 :root {
 	/* page */
 	--page-bg-color: white;
-	--page-text-color: #3F3F46; /* gray-700 */
-	--page-secondary-text-color: #A1A1AA; /* gray-400 */
-	--page-highlight-color: #6366F1; /* indigo-500 */
+	--page-text-color: #3f3f46; /* gray-700 */
+	--page-secondary-text-color: #a1a1aa; /* gray-400 */
+	--page-highlight-color: #6366f1; /* indigo-500 */
 
 	/* header */
 	--header-bg-color: var(--page-bg-color);
 	--header-title-color: var(--page-text-color);
 	--header-description-color: var(--page-secondary-text-color);
 	--header-subscribe-color: var(--page-highlight-color);
-	--header-control-color: #D4D4D8; /* gray-300 */
+	--header-control-color: #d4d4d8; /* gray-300 */
 
 	/* content */
-	--section-bg-color: #FAFAFA; /* gray-50 */
-	--section-border-color: #E4E4E7; /* gray-200 */
+	--section-bg-color: #fafafa; /* gray-50 */
+	--section-border-color: #e4e4e7; /* gray-200 */
 
 	--tile-bg-color: white;
 	--tile-title-color: var(--page-text-color);
 	--tile-date-color: var(--page-secondary-text-color);
-	--tile-summary-color: #71717A; /* gray-500 */
+	--tile-summary-color: #71717a; /* gray-500 */
 	--tile-info-color: var(--page-secondary-text-color);
 	--tile-link-color: var(--page-highlight-color);
 
 	--article-bg-color: var(--page-bg-color);
 	--article-text-color: var(--page-text-color);
-	--article-info-color: #71717A; /* gray-500 */
+	--article-info-color: #71717a; /* gray-500 */
 	--article-link-color: var(--page-highlight-color);
 	--article-border-color: transparent;
 	--article-block-bg-color: var(--section-bg-color);
 
 	/* footer */
-	--footer-bg-color: #18181B; /* gray-900 */
-	--footer-text-color: #71717A; /* gray-500 */
+	--footer-bg-color: #18181b; /* gray-900 */
+	--footer-text-color: #71717a; /* gray-500 */
 }
 
 /* dark theme override */
 .dark:root {
 	/* page */
-	--page-bg-color: #18181B; /* gray-900 */
-	--page-text-color: #F4F4F5; /* gray-100 */
-	--page-secondary-text-color: #A1A1AA; /* gray-400 */
-	--page-highlight-color: #818CF8; /* indigo-400 */
+	--page-bg-color: #18181b; /* gray-900 */
+	--page-text-color: #f4f4f5; /* gray-100 */
+	--page-secondary-text-color: #a1a1aa; /* gray-400 */
+	--page-highlight-color: #818cf8; /* indigo-400 */
 
 	/* header */
-	--header-control-color: #71717A; /* gray-500 */
+	--header-control-color: #71717a; /* gray-500 */
 
 	/* content */
 	--section-bg-color: #202023; /* gray-850 */
-	--section-border-color: #3F3F46; /* gray-700 */
+	--section-border-color: #3f3f46; /* gray-700 */
 
-	--tile-bg-color: #27272A; /* gray-800 */
-	--tile-summary-color: #D4D4D8; /* gray-300 */
+	--tile-bg-color: #27272a; /* gray-800 */
+	--tile-summary-color: #d4d4d8; /* gray-300 */
 
-	--article-info-color: #D4D4D8; /* gray-300 */
+	--article-info-color: #d4d4d8; /* gray-300 */
 
 	/* footer */
 	--footer-bg-color: black;

@@ -24,7 +24,7 @@ body {
  * Styles for the header component
  */
 .Header {
-	@apply flex py-5 flex-col;
+	@apply flex py-5 flex-col border-b border-gray-300 dark:border-gray-700;
 }
 
 .Header .top {
