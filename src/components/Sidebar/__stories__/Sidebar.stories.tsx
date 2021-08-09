@@ -4,6 +4,8 @@ import Sidebar from '..';
 import Author from '../../Author';
 import Tags from '../../Tags';
 import Clap from '../../Clap';
+import Social from '../../Social';
+
 const { default: readme } = require('../README.md');
 
 export default {
@@ -30,6 +32,14 @@ export const Full: React.VFC<{}> = () => {
 			author={<Author avatarUrl={AVATAR} name="Keegan" />}
 			tags={<Tags.Bar tags={['feature', 'improvement', 'mobile']} />}
 			clap={<Clap clapCount={count} handleClap={() => setCount((c) => c + 1)} />}
+			sharing={
+				<Social.Bar>
+					<Social.Facebook sharing href="https://www.facebook.com/Pinpoint.Engineering" newTab />
+					<Social.Twitter sharing href="https://twitter.com/pinpoint_sw" newTab />
+					<Social.LinkedIn sharing href="https://linkedin.com/company/pinpoint-software" newTab />
+					<Social.Email sharing href="mailto:hello@pinpoint.com" />
+				</Social.Bar>
+			}
 		/>
 	);
 };
