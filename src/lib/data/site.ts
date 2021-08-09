@@ -3,12 +3,12 @@ import type { IPinpointConfig } from '../types/config';
 import { executeAPI } from '../fetch';
 
 export const fetchSite = async (config: IPinpointConfig): Promise<ISite> => {
-	const { site } = await executeAPI(config, `/site-api/v1/site`);
-	return site;
+	const { data } = await executeAPI(config, `/site-api/v1/site`);
+	return data;
 };
 
 export const fetchSiteWithContentCount = async (config: IPinpointConfig): Promise<{ site: ISite; count: number }> => {
-	const { site, count } = await executeAPI(config, `/site-api/v1/site?count=true`);
+	const { data: site, count } = await executeAPI(config, `/site-api/v1/site?count=true`);
 	return { site, count };
 };
 

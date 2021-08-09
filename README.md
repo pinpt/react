@@ -28,39 +28,23 @@ const component = () => <Statistic.Bar claps={21} views={5} />;
 
 [Check out the docs](react.preview.pinpoint.com/) for detailed implementation guides.
 
-## Components to Build
+## Local Dev
 
--  [x] View Count
--  [x] Clap Count
--  [x] Clap Button
--  [x] Changelog Card
--  [x] Read More Button
--  [x] Changelog Title
--  [x] Changelog Date
--  [x] Logo
--  [x] Changelog Body
--  [x] Latest Section
--  [x] Recent Section
--  [x] Copyright
--  [x] Subscribe to Updates
--  [x] Social Links
--  [x] Footer
--  [x] Page
--  [x] Search Field
--  [x] Tag
--  [x] Tag Group
--  [x] Header
--  [x] Search Filters
--  [x] Search Results
+If you want to do local dev with the [App Template](https://github.com/pinpt/app-template) you can use the following:
 
-## TODO
+In this folder, cd into `node_modules` and then:
 
--  [ ] Support for Media Queries (i.e. grid layout on 'Recent' section)
--  [ ] Finish default theme
--  [ ] Support for cover media other than images
--  [ ] Empty cover media state
--  [ ] Fix subscriber links to go through site vs direct to pinpoint
--  [ ] Re-generate test files against production once PR is merged
--  [x] Wire up claps
--  [x] Pagination
--  [x] Tag Filtering
+```bash
+cd react && npm link
+cd react-dom && npm link
+```
+
+This will link te react and react-dom libraries so they can be used by the other project.
+
+Then, in the app-template folder, run:
+
+```bash
+npm link react react-dom
+```
+
+This will then link those library into the node_modules for app-template and then allow you to make changes to this project and then test them live in the other. You'll still need to run `npm run build` with each change to make sure those changes are compiled and then `npm run dev` in the app-template to pick them up.
