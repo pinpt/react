@@ -76,6 +76,8 @@ exports[`Hidden stats 1`] = `
         className="center"
       >
         <a
+          className="cursor-pointer"
+          onClick={[Function]}
           title="Pinpoint"
         >
           <h1
@@ -1368,6 +1370,8 @@ exports[`Test custom className 1`] = `
         className="center"
       >
         <a
+          className="cursor-pointer"
+          onClick={[Function]}
           title="Pinpoint"
         >
           <h1
@@ -3720,6 +3724,8 @@ exports[`Test custom latest length 1`] = `
         className="center"
       >
         <a
+          className="cursor-pointer"
+          onClick={[Function]}
           title="Pinpoint"
         >
           <h1
@@ -6073,6 +6079,8 @@ exports[`Test default state 1`] = `
         className="center"
       >
         <a
+          className="cursor-pointer"
+          onClick={[Function]}
           title="Pinpoint"
         >
           <h1
@@ -8425,6 +8433,8 @@ exports[`Test default state with partial analytics 1`] = `
         className="center"
       >
         <a
+          className="cursor-pointer"
+          onClick={[Function]}
           title="Pinpoint"
         >
           <h1

@@ -56,6 +56,7 @@ export interface IPrebuiltHomeProps {
 	handleSearch?: (value: string) => void;
 	handleSelectContent?: (content: IContent) => void;
 	handleAddTagToQuery?: (value: string) => void;
+	handleSelectHome?: () => void;
 	pageForward?: () => void;
 	pageBack?: () => void;
 	pageNumber?: number;
@@ -91,6 +92,7 @@ const Home = (props: IPrebuiltHomeProps) => {
 		handleSearch,
 		handleSelectContent,
 		handleAddTagToQuery,
+		handleSelectHome,
 		pageForward,
 		pageBack,
 		pageNumber,
@@ -107,6 +109,7 @@ const Home = (props: IPrebuiltHomeProps) => {
 						className="Prebuilt"
 						title={site.name}
 						description={site.theme?.description ?? site.name}
+						onClick={() => handleSelectHome?.()}
 						subscribe={
 							renderSubscribe?.(site) ?? <Subscribe className="Prebuilt" href="/subscription/subscribe" />
 						}
