@@ -30,7 +30,7 @@ const Container = (props: ICardContainerProps) => {
 		<div className={`Pinpoint Content Card Container wrapper ${className ?? ''}`} onClick={onClick}>
 			{imageUrl && <img className="cover" src={imageUrl} alt={alt} />}
 			{coverMedia && <CoverMedia media={coverMedia} />}
-			{(!coverMedia && !imageUrl) && <div className="empty-cover" />}
+			{!coverMedia && !imageUrl && <div className="empty-cover" />}
 			<div className="content">
 				{title}
 				{date}

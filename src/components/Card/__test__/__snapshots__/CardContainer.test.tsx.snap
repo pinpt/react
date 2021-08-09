@@ -825,6 +825,9 @@ exports[`Test no image 1`] = `
   className="Pinpoint Content Card Container wrapper "
 >
   <div
+    className="empty-cover"
+  />
+  <div
     className="content"
   >
     <h2

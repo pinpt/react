@@ -219,7 +219,7 @@ html.dark .ThemeToggle .mode::after {
 
 .Content.Card.Container.wrapper .empty-cover {
 	@apply h-32 lg:h-48 md:h-36 w-full object-cover object-center;
-	background-image: linear-gradient(to right,var(--tw-gradient-stops));
+	background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
 .Content.Card.Container.wrapper .content {
