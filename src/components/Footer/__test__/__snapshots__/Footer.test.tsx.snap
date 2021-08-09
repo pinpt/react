@@ -217,14 +217,7 @@ exports[`Test complete 1`] = `
         }
       }
     >
-      <span
-        style={
-          Object {
-            "fontSize": "0.75rem",
-            "lineHeight": "1rem",
-          }
-        }
-      >
+      <span>
         We run on
       </span>
       <svg
@@ -248,7 +241,16 @@ exports[`Test complete 1`] = `
           fillRule="evenodd"
         />
       </svg>
-      Pinpoint
+      <span
+        style={
+          Object {
+            "color": "white",
+            "mixBlendMode": "difference",
+          }
+        }
+      >
+        Pinpoint
+      </span>
     </a>
   </div>
 </div>
@@ -301,14 +303,7 @@ exports[`Test no custom class 1`] = `
         }
       }
     >
-      <span
-        style={
-          Object {
-            "fontSize": "0.75rem",
-            "lineHeight": "1rem",
-          }
-        }
-      >
+      <span>
         We run on
       </span>
       <svg
@@ -332,7 +327,16 @@ exports[`Test no custom class 1`] = `
           fillRule="evenodd"
         />
       </svg>
-      Pinpoint
+      <span
+        style={
+          Object {
+            "color": "white",
+            "mixBlendMode": "difference",
+          }
+        }
+      >
+        Pinpoint
+      </span>
     </a>
   </div>
 </div>
@@ -413,14 +417,7 @@ exports[`Test no social 1`] = `
         }
       }
     >
-      <span
-        style={
-          Object {
-            "fontSize": "0.75rem",
-            "lineHeight": "1rem",
-          }
-        }
-      >
+      <span>
         We run on
       </span>
       <svg
@@ -444,7 +441,16 @@ exports[`Test no social 1`] = `
           fillRule="evenodd"
         />
       </svg>
-      Pinpoint
+      <span
+        style={
+          Object {
+            "color": "white",
+            "mixBlendMode": "difference",
+          }
+        }
+      >
+        Pinpoint
+      </span>
     </a>
   </div>
 </div>
@@ -497,14 +503,7 @@ exports[`Test no subscribe 1`] = `
         }
       }
     >
-      <span
-        style={
-          Object {
-            "fontSize": "0.75rem",
-            "lineHeight": "1rem",
-          }
-        }
-      >
+      <span>
         We run on
       </span>
       <svg
@@ -528,7 +527,16 @@ exports[`Test no subscribe 1`] = `
           fillRule="evenodd"
         />
       </svg>
-      Pinpoint
+      <span
+        style={
+          Object {
+            "color": "white",
+            "mixBlendMode": "difference",
+          }
+        }
+      >
+        Pinpoint
+      </span>
     </a>
   </div>
 </div>
@@ -706,14 +714,7 @@ exports[`Test social only 1`] = `
         }
       }
     >
-      <span
-        style={
-          Object {
-            "fontSize": "0.75rem",
-            "lineHeight": "1rem",
-          }
-        }
-      >
+      <span>
         We run on
       </span>
       <svg
@@ -737,7 +738,16 @@ exports[`Test social only 1`] = `
           fillRule="evenodd"
         />
       </svg>
-      Pinpoint
+      <span
+        style={
+          Object {
+            "color": "white",
+            "mixBlendMode": "difference",
+          }
+        }
+      >
+        Pinpoint
+      </span>
     </a>
   </div>
 </div>

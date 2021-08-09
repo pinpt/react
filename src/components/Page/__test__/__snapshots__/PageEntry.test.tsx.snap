@@ -5,10 +5,10 @@ exports[`Test full entry 1`] = `
   className="Pinpoint Page Entry "
 >
   <div
-    className="constraint"
+    className="Pinpoint Header "
   >
     <div
-      className="Pinpoint Header "
+      className="constraint"
     >
       <div
         className="top"
@@ -70,8 +70,12 @@ exports[`Test full entry 1`] = `
         </div>
       </div>
     </div>
+  </div>
+  <div
+    className="body"
+  >
     <div
-      className="body"
+      className="constraint content"
     >
       <div
         className="sidebar"
@@ -579,14 +583,7 @@ exports[`Test full entry 1`] = `
           }
         }
       >
-        <span
-          style={
-            Object {
-              "fontSize": "0.75rem",
-              "lineHeight": "1rem",
-            }
-          }
-        >
+        <span>
           We run on
         </span>
         <svg
@@ -610,7 +607,16 @@ exports[`Test full entry 1`] = `
             fillRule="evenodd"
           />
         </svg>
-        Pinpoint
+        <span
+          style={
+            Object {
+              "color": "white",
+              "mixBlendMode": "difference",
+            }
+          }
+        >
+          Pinpoint
+        </span>
       </a>
     </div>
   </div>
@@ -622,10 +628,10 @@ exports[`Test no footer 1`] = `
   className="Pinpoint Page Entry "
 >
   <div
-    className="constraint"
+    className="Pinpoint Header "
   >
     <div
-      className="Pinpoint Header "
+      className="constraint"
     >
       <div
         className="top"
@@ -687,8 +693,12 @@ exports[`Test no footer 1`] = `
         </div>
       </div>
     </div>
+  </div>
+  <div
+    className="body"
+  >
     <div
-      className="body"
+      className="constraint content"
     >
       <div
         className="sidebar"
@@ -988,10 +998,10 @@ exports[`Test no sidebar 1`] = `
   className="Pinpoint Page Entry "
 >
   <div
-    className="constraint"
+    className="Pinpoint Header "
   >
     <div
-      className="Pinpoint Header "
+      className="constraint"
     >
       <div
         className="top"
@@ -1053,8 +1063,12 @@ exports[`Test no sidebar 1`] = `
         </div>
       </div>
     </div>
+  </div>
+  <div
+    className="body"
+  >
     <div
-      className="body"
+      className="constraint content"
     >
       <div
         className="sidebar"
@@ -1416,14 +1430,7 @@ exports[`Test no sidebar 1`] = `
           }
         }
       >
-        <span
-          style={
-            Object {
-              "fontSize": "0.75rem",
-              "lineHeight": "1rem",
-            }
-          }
-        >
+        <span>
           We run on
         </span>
         <svg
@@ -1447,7 +1454,16 @@ exports[`Test no sidebar 1`] = `
             fillRule="evenodd"
           />
         </svg>
-        Pinpoint
+        <span
+          style={
+            Object {
+              "color": "white",
+              "mixBlendMode": "difference",
+            }
+          }
+        >
+          Pinpoint
+        </span>
       </a>
     </div>
   </div>
