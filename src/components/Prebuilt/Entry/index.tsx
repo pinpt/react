@@ -107,22 +107,22 @@ const Entry = (props: IPrebuiltEntryProps) => {
 								<Social.Bar>
 									<Social.Facebook
 										sharing
-										href={`https://facebook.com/sharer/sharer.php?u=${site.url}/entry/${content.id}`}
+										href={`https://facebook.com/sharer/sharer.php?u=${content.url}`}
 										newTab
 									/>
 									<Social.Twitter
 										sharing
-										href={`https://twitter.com/intent/tweet/?text=${content.headline}&url=${site.url}/entry/${content.id}`}
+										href={`https://twitter.com/intent/tweet/?text=${content.headline}&url=${content.url}`}
 										newTab
 									/>
 									<Social.LinkedIn
 										sharing
-										href={`https://www.linkedin.com/shareArticle?mini=true&url=${site.url}/entry/${content.id}&title=${site.name} - ${content.title}&summary=${content.headline}`}
+										href={`https://www.linkedin.com/shareArticle?mini=true&url=${content.url}&title=${site.name} - ${content.title}&summary=${content.headline}`}
 										newTab
 									/>
 									<Social.Email
 										sharing
-										href={`mailto:?subject=${site.name} - ${content.title}&body=${site.name} - ${content.title}%0D%0A${content.headline}%0D%0A${site.url}/entry/${content.id}`}
+										href={`mailto:?subject=${site.name} - ${content.title}&body=${site.name} - ${content.title}%0D%0A${content.headline}%0D%0A${content.url}`}
 									/>
 								</Social.Bar>
 							)
