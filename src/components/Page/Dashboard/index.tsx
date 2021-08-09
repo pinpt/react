@@ -24,7 +24,7 @@ const Dashboard = (props: IPageDashboardProps) => {
 	const { className = '', footer, latest, recent, header, searchResults, loading, searchQuery, pagination } = props;
 	return (
 		<div className={`Pinpoint Page Dashboard ${className}`}>
-			<section className="constraint">{header}</section>
+			{header}
 			{loading ? (
 				<div className="loadingWrapper">
 					<Loader />
@@ -37,7 +37,7 @@ const Dashboard = (props: IPageDashboardProps) => {
 					{recent}
 				</>
 			)}
-			<section className="constraint">{pagination}</section>
+			{pagination}
 			{footer}
 		</div>
 	);

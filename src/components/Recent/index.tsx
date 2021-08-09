@@ -15,7 +15,7 @@ const Recent = (props: IRecentProps) => {
 	}
 	return (
 		<div className={`Pinpoint Recent ${className}`}>
-			<div className="constraint Recent">
+			<div className="constraint content">
 				<h1 className="heading">
 					Recent{' '}
 					{typeof pageNumber !== 'undefined' ? (

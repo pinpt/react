@@ -5,10 +5,10 @@ exports[`Test custom className 1`] = `
   className="Pinpoint Page Entry Prebuilt test-custom"
 >
   <div
-    className="constraint"
+    className="Pinpoint Header Prebuilt"
   >
     <div
-      className="Pinpoint Header Prebuilt"
+      className="constraint"
     >
       <div
         className="top"
@@ -124,8 +124,12 @@ exports[`Test custom className 1`] = `
         </div>
       </div>
     </div>
+  </div>
+  <div
+    className="body"
+  >
     <div
-      className="body"
+      className="constraint content"
     >
       <div
         className="sidebar"
@@ -710,14 +714,7 @@ exports[`Test custom className 1`] = `
           }
         }
       >
-        <span
-          style={
-            Object {
-              "fontSize": "0.75rem",
-              "lineHeight": "1rem",
-            }
-          }
-        >
+        <span>
           We run on
         </span>
         <svg
@@ -741,7 +738,16 @@ exports[`Test custom className 1`] = `
             fillRule="evenodd"
           />
         </svg>
-        Pinpoint
+        <span
+          style={
+            Object {
+              "color": "white",
+              "mixBlendMode": "difference",
+            }
+          }
+        >
+          Pinpoint
+        </span>
       </a>
     </div>
   </div>
@@ -753,10 +759,10 @@ exports[`Test default state 1`] = `
   className="Pinpoint Page Entry Prebuilt "
 >
   <div
-    className="constraint"
+    className="Pinpoint Header Prebuilt"
   >
     <div
-      className="Pinpoint Header Prebuilt"
+      className="constraint"
     >
       <div
         className="top"
@@ -872,8 +878,12 @@ exports[`Test default state 1`] = `
         </div>
       </div>
     </div>
+  </div>
+  <div
+    className="body"
+  >
     <div
-      className="body"
+      className="constraint content"
     >
       <div
         className="sidebar"
@@ -1458,14 +1468,7 @@ exports[`Test default state 1`] = `
           }
         }
       >
-        <span
-          style={
-            Object {
-              "fontSize": "0.75rem",
-              "lineHeight": "1rem",
-            }
-          }
-        >
+        <span>
           We run on
         </span>
         <svg
@@ -1489,7 +1492,16 @@ exports[`Test default state 1`] = `
             fillRule="evenodd"
           />
         </svg>
-        Pinpoint
+        <span
+          style={
+            Object {
+              "color": "white",
+              "mixBlendMode": "difference",
+            }
+          }
+        >
+          Pinpoint
+        </span>
       </a>
     </div>
   </div>
@@ -1501,10 +1513,10 @@ exports[`Test no author 1`] = `
   className="Pinpoint Page Entry Prebuilt "
 >
   <div
-    className="constraint"
+    className="Pinpoint Header Prebuilt"
   >
     <div
-      className="Pinpoint Header Prebuilt"
+      className="constraint"
     >
       <div
         className="top"
@@ -1620,8 +1632,12 @@ exports[`Test no author 1`] = `
         </div>
       </div>
     </div>
+  </div>
+  <div
+    className="body"
+  >
     <div
-      className="body"
+      className="constraint content"
     >
       <div
         className="sidebar"
@@ -2105,14 +2121,7 @@ exports[`Test no author 1`] = `
           }
         }
       >
-        <span
-          style={
-            Object {
-              "fontSize": "0.75rem",
-              "lineHeight": "1rem",
-            }
-          }
-        >
+        <span>
           We run on
         </span>
         <svg
@@ -2136,7 +2145,16 @@ exports[`Test no author 1`] = `
             fillRule="evenodd"
           />
         </svg>
-        Pinpoint
+        <span
+          style={
+            Object {
+              "color": "white",
+              "mixBlendMode": "difference",
+            }
+          }
+        >
+          Pinpoint
+        </span>
       </a>
     </div>
   </div>
@@ -2148,10 +2166,10 @@ exports[`Test no claps 1`] = `
   className="Pinpoint Page Entry Prebuilt "
 >
   <div
-    className="constraint"
+    className="Pinpoint Header Prebuilt"
   >
     <div
-      className="Pinpoint Header Prebuilt"
+      className="constraint"
     >
       <div
         className="top"
@@ -2267,8 +2285,12 @@ exports[`Test no claps 1`] = `
         </div>
       </div>
     </div>
+  </div>
+  <div
+    className="body"
+  >
     <div
-      className="body"
+      className="constraint content"
     >
       <div
         className="sidebar"
@@ -2769,14 +2791,7 @@ exports[`Test no claps 1`] = `
           }
         }
       >
-        <span
-          style={
-            Object {
-              "fontSize": "0.75rem",
-              "lineHeight": "1rem",
-            }
-          }
-        >
+        <span>
           We run on
         </span>
         <svg
@@ -2800,7 +2815,16 @@ exports[`Test no claps 1`] = `
             fillRule="evenodd"
           />
         </svg>
-        Pinpoint
+        <span
+          style={
+            Object {
+              "color": "white",
+              "mixBlendMode": "difference",
+            }
+          }
+        >
+          Pinpoint
+        </span>
       </a>
     </div>
   </div>

@@ -13,14 +13,7 @@ exports[`Test powered by footer 1`] = `
     }
   }
 >
-  <span
-    style={
-      Object {
-        "fontSize": "0.75rem",
-        "lineHeight": "1rem",
-      }
-    }
-  >
+  <span>
     We run on
   </span>
   <svg
@@ -44,6 +37,15 @@ exports[`Test powered by footer 1`] = `
       fillRule="evenodd"
     />
   </svg>
-  Pinpoint
+  <span
+    style={
+      Object {
+        "color": "white",
+        "mixBlendMode": "difference",
+      }
+    }
+  >
+    Pinpoint
+  </span>
 </a>
 `;

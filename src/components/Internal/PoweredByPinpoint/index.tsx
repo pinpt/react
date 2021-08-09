@@ -4,7 +4,7 @@ const PoweredByPinpoint = ({ siteId }: { siteId?: string }) => {
 			href={`https://pinpoint.com/?utm_source=referral&utm_medium=web&utm_campaign=${siteId}`}
 			style={{ display: 'flex', alignItems: 'center', margin: 'auto', textDecoration: 'none', color: 'inherit' }}
 		>
-			<span style={{ fontSize: '0.75rem', lineHeight: '1rem' }}>We run on</span>
+			<span>We run on</span>
 			<svg
 				style={{ margin: '0 4px', color: 'rgba(55,48,163, 1)' }}
 				width="22"
@@ -21,7 +21,7 @@ const PoweredByPinpoint = ({ siteId }: { siteId?: string }) => {
 					fill="currentColor"
 				></path>
 			</svg>
-			Pinpoint
+			<span style={{ color: 'white', mixBlendMode: 'difference' }}>Pinpoint</span>
 		</a>
 	);
 };

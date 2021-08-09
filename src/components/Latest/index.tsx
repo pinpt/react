@@ -13,7 +13,7 @@ const Latest = (props: ILatestProps) => {
 	}
 	return (
 		<div className={`Pinpoint Latest ${className}`}>
-			<div className="constraint Latest">
+			<div className="constraint content">
 				<h1 className="heading">Latest</h1>
 				<div className="container">{children}</div>
 			</div>
