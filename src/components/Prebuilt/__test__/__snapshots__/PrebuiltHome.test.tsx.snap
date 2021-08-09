@@ -612,6 +612,9 @@ populated with your recently completed...
         >
           
           <div
+            className="empty-cover"
+          />
+          <div
             className="content"
           >
             <h2
@@ -2446,6 +2449,9 @@ populated with your recently completed...
           className="Pinpoint Content Card Container wrapper Prebuilt"
         >
           
+          <div
+            className="empty-cover"
+          />
           <div
             className="content"
           >
@@ -4818,6 +4824,9 @@ populated with your recently completed...
         >
           
           <div
+            className="empty-cover"
+          />
+          <div
             className="content"
           >
             <h2
@@ -7188,6 +7197,9 @@ populated with your recently completed...
         >
           
           <div
+            className="empty-cover"
+          />
+          <div
             className="content"
           >
             <h2
@@ -9557,6 +9569,9 @@ populated with your recently completed...
           className="Pinpoint Content Card Container wrapper Prebuilt"
         >
           
+          <div
+            className="empty-cover"
+          />
           <div
             className="content"
           >

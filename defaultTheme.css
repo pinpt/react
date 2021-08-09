@@ -34,6 +34,11 @@
 	/* footer */
 	--footer-bg-color: #18181b; /* gray-900 */
 	--footer-text-color: #71717a; /* gray-500 */
+
+	/* empty cover image */
+	--tw-gradient-from: #d946ef;
+	--tw-gradient-to: #fb923c;
+	--tw-gradient-stops: var(--tw-gradient-from), #dc2626, var(--tw-gradient-to, rgba(220, 38, 38, 0));
 }
 
 /* dark theme override */
