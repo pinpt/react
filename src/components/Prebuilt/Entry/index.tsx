@@ -112,7 +112,7 @@ const Entry = (props: IPrebuiltEntryProps) => {
 									/>
 									<Social.Twitter
 										sharing
-										href={`https://twitter.com/intent/tweet/?text=${site.name} - ${content.title}&url=${site.url}/entry/${content.id}`}
+										href={`https://twitter.com/intent/tweet/?text=${content.headline}&url=${site.url}/entry/${content.id}`}
 										newTab
 									/>
 									<Social.LinkedIn
