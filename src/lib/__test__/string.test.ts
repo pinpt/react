@@ -1,6 +1,4 @@
-import {
-	compactNumber, formatNumber, getTwitterProfileFromURL, slugifyContent, slugifyString
-} from '../';
+import { compactNumber, formatNumber, getTwitterProfileFromURL, slugifyContent, slugifyString } from '../';
 
 test('Test slugify', () => {
 	const res = slugifyString('123 456');
