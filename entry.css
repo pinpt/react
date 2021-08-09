@@ -1361,10 +1361,9 @@ div.home main.changelogs-0 {
 	top: -9999px;
 }
 
-
 /**
  * article
- */ 
+ */
 
 .covermedia:not(:empty) {
 	@apply mb-10 relative flex justify-center;
@@ -1411,36 +1410,33 @@ article div.iframe_node {
 	background-color: var(--article-block-bg-color);
 	border-color: var(--article-border-color);
 }
-  
+
 article .ProseMirror .hr > div > hr {
 	border-color: var(--article-border-color);
 }
-  
+
 article .ProseMirror .toggle > .options > .icon {
 	background-color: var(--article-bg-color);
 }
-  
+
 article p > a[href]:not(.mark-color) {
 	@apply underline;
 	color: var(--article-link-color);
 }
-  
+
 article > section mark a[href],
 .dark article > section mark a[href] {
 	color: unset;
 }
-  
+
 article .linked-data-list-item {
 	@apply relative pl-6;
 }
 
 article .linked-data-list-item::before {
 	@apply text-gray-400 dark:text-gray-600 absolute top-0 left-1;
-	content: "\2022";
+	content: '\2022';
 }
-
-
-
 
 /** COVER MEDIA **/
 
