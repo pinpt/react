@@ -14,8 +14,10 @@ import Subscribe, { ISubscribeProps } from '../../Subscribe';
 import Tags from '../../Tags';
 import { ITagBarProps } from '../../Tags/Bar';
 import ThemeToggle, { IThemeToggleProps } from '../../ThemeToggle';
+import Search from '../../Search';
 
 import type { IContent, ISite } from '../../../lib/types';
+import { ISearchBarProps } from '../../Search/Bar';
 
 export interface IPrebuiltEntryProps {
 	className?: string;
@@ -32,11 +34,14 @@ export interface IPrebuiltEntryProps {
 	renderTags?: (content: IContent) => ReactElement<ITagBarProps>;
 	renderClap?: (content: IContent) => ReactElement<IClapProps>;
 	handleSelectHome?: () => void;
+	renderSearch?: (site: ISite) => ReactElement<ISearchBarProps>;
 	clapCount?: number;
 	sessionClapCount?: number;
 	onClap?: (content: IContent) => void;
 	site: ISite;
 	content: IContent;
+	searchTerm?: string;
+	handleSearch?: (value: string) => void;
 }
 
 const Entry = (props: IPrebuiltEntryProps) => {
@@ -60,6 +65,9 @@ const Entry = (props: IPrebuiltEntryProps) => {
 		onClap,
 		sessionClapCount = 0,
 		handleSelectHome,
+		searchTerm,
+		handleSearch,
+		renderSearch,
 	} = props;
 
 	return (
@@ -106,6 +114,11 @@ const Entry = (props: IPrebuiltEntryProps) => {
 							renderSubscribe?.(site) ?? <Subscribe className="Prebuilt" href="/subscription/subscribe" />
 						}
 						themeToggle={renderThemeToggle?.(site) ?? <ThemeToggle className="Prebuilt" />}
+						search={
+							renderSearch?.(site) ?? (
+								<Search.Bar defaultValue={searchTerm} onSubmit={handleSearch} className="Prebuilt" />
+							)
+						}
 						logo={
 							renderLogo?.(site) ?? (
 								<Logo
