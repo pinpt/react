@@ -46,12 +46,12 @@ exports[`Test custom className 1`] = `
         <a
           className="cursor-pointer"
           onClick={[Function]}
-          title="Pinpoint"
+          title="Pinpoint Changelog"
         >
           <h1
             className="title"
           >
-            Pinpoint
+            Pinpoint Changelog
           </h1>
         </a>
         <div
@@ -668,12 +668,12 @@ exports[`Test default state 1`] = `
         <a
           className="cursor-pointer"
           onClick={[Function]}
-          title="Pinpoint"
+          title="Pinpoint Changelog"
         >
           <h1
             className="title"
           >
-            Pinpoint
+            Pinpoint Changelog
           </h1>
         </a>
         <div
@@ -1290,12 +1290,12 @@ exports[`Test no author 1`] = `
         <a
           className="cursor-pointer"
           onClick={[Function]}
-          title="Pinpoint"
+          title="Pinpoint Changelog"
         >
           <h1
             className="title"
           >
-            Pinpoint
+            Pinpoint Changelog
           </h1>
         </a>
         <div
@@ -1811,12 +1811,12 @@ exports[`Test no claps 1`] = `
         <a
           className="cursor-pointer"
           onClick={[Function]}
-          title="Pinpoint"
+          title="Pinpoint Changelog"
         >
           <h1
             className="title"
           >
-            Pinpoint
+            Pinpoint Changelog
           </h1>
         </a>
         <div
