@@ -24,26 +24,28 @@ const Header = (props: IHeaderProps) => {
 
 	return (
 		<div className={`Pinpoint Header ${className}`}>
-			<div className="top">
-				<div className="left">{logo}</div>
-				<div className="right">
-					{search}
-					{themeToggle}
+			<div className="constraint">
+				<div className="top">
+					<div className="left">{logo}</div>
+					<div className="right">
+						{search}
+						{themeToggle}
+					</div>
 				</div>
-			</div>
-			<div className="center">
-				{title && (
-					<a
-						href={href}
-						title={title}
-						onClick={onClick}
-						className={href || onClick ? 'cursor-pointer' : undefined}
-					>
-						<h1 className="title">{title}</h1>
-					</a>
-				)}
-				{description && <div className="description">{description}</div>}
-				{subscribe && <div className="action">{subscribe}</div>}
+				<div className="center">
+					{title && (
+						<a
+							href={href}
+							title={title}
+							onClick={onClick}
+							className={href || onClick ? 'cursor-pointer' : undefined}
+						>
+							<h1 className="title">{title}</h1>
+						</a>
+					)}
+					{description && <div className="description">{description}</div>}
+					{subscribe && <div className="action">{subscribe}</div>}
+				</div>
 			</div>
 		</div>
 	);

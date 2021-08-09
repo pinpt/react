@@ -21,7 +21,7 @@ const PoweredByPinpoint = ({ siteId }: { siteId?: string }) => {
 					fill="currentColor"
 				></path>
 			</svg>
-			Pinpoint
+			<span style={{ color: 'white', mixBlendMode: 'difference' }}>Pinpoint</span>
 		</a>
 	);
 };

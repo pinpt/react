@@ -1,4 +1,3 @@
-#root,
-.docs-story {
-	@apply dark:bg-gray-800;
+.sb-main-padded {
+	@apply !p-0;
 }

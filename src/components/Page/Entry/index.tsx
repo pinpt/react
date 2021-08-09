@@ -20,9 +20,9 @@ const Entry = (props: IPageEntryProps) => {
 
 	return (
 		<div className={`Pinpoint Page Entry ${className}`}>
-			<div className="constraint">
-				{header}
-				<div className="body">
+			{header}
+			<div className="body">
+				<div className="constraint content">
 					<div className="sidebar">{sidebar}</div>
 					<div className="content">
 						{coverMedia && <CoverMedia media={coverMedia} title={title} />}
