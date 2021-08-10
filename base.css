@@ -181,32 +181,32 @@ html.dark .ThemeToggle .mode::after {
 	@apply flex gap-x-4;
 }
 
-.Social a:hover {
+.Social.Bar a:hover {
 	filter: brightness(1.5);
 }
 
-.Social.sharing {
-	@apply flex flex-col items-center content-center justify-center rounded-lg w-8 h-8 text-white;
+.Social.Bar.sharing {
+	@apply flex gap-x-2;
+}
+
+.Social.Item.sharing {
+	@apply flex flex-col items-center content-center justify-center rounded-lg w-8 h-8 text-white hover:filter-none;
 }
 
 .Social.sharing.Twitter {
-	--tw-bg-opacity: 1;
-	background-color: rgba(85, 172, 238, var(--tw-bg-opacity));
+	@apply bg-[#55acee] hover:bg-[#2795e9];
 }
 
 .Social.sharing.Facebook {
-	--tw-bg-opacity: 1;
-	background-color: rgba(59, 89, 152, var(--tw-bg-opacity));
+	@apply bg-[#3b5998] hover:bg-[#2d4373];
 }
 
 .Social.sharing.LinkedIn {
-	--tw-bg-opacity: 1;
-	background-color: rgba(0, 119, 181, var(--tw-bg-opacity));
+	@apply bg-[#0077b5] hover:bg-[#046293];
 }
 
 .Social.sharing.Email {
-	--tw-bg-opacity: 1;
-	background-color: rgba(113, 113, 122, var(--tw-bg-opacity));
+	@apply bg-gray-500 hover:bg-gray-600;
 }
 
 /*
@@ -346,7 +346,7 @@ html.dark .ThemeToggle .mode::after {
 }
 
 .Search.Query .heading {
-	@apply mb-2 mr-6;
+	@apply mb-4;
 }
 
 .Search.Query .container {
@@ -370,7 +370,7 @@ html.dark .ThemeToggle .mode::after {
  * Pagination
  */
 .paginationWrapper {
-	@apply pb-6;
+	@apply pb-10 md:pb-14;
 }
 
 .paginationWrapper .Pagination {
@@ -429,19 +429,44 @@ html.dark .ThemeToggle .mode::after {
 }
 
 .Page.Entry .sidebar {
-	@apply mr-4 min-w-1/4 mb-4 md:mb-0;
 	color: var(--article-info-color);
 }
 
+.Page.Entry .sidebar.before {
+	@apply md:mr-4 mb-8 md:mb-0 min-w-1/4;
+}
+
+.Page.Entry .sidebar.before .Sidebar {
+	@apply flex-shrink-0 flex-wrap;
+}
+
+.Page.Entry .sidebar.before .Clap,
+.Page.Entry .sidebar.before .Social.Bar {
+	@apply hidden md:flex;
+}
+
+.Page.Entry .sidebar.after {
+	@apply md:hidden;
+}
+
+.Page.Entry .sidebar.after .Sidebar {
+	@apply justify-between;
+}
+
+.Page.Entry .sidebar.after .Author,
+.Page.Entry .sidebar.after .Tag.Bar {
+	@apply hidden;
+}
+
 .Page.Entry .renderer {
-	@apply mb-12;
+	@apply mb-10 md:mb-14;
 }
 
 /*
  * Styles for the sidebar component
  */
 .Sidebar {
-	@apply flex flex-row md:flex-col items-center md:items-start gap-y-8;
+	@apply flex flex-row md:flex-col items-center md:items-start gap-y-4 md:gap-y-8;
 }
 
 /*

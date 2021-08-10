@@ -24,7 +24,7 @@ const Entry = (props: IPageEntryProps) => {
 			{withWrapper(header, 'header')}
 			{withWrapper(
 				<div className="container">
-					<div className="sidebar">{sidebar}</div>
+					<div className="sidebar before">{sidebar}</div>
 					<div className="content">
 						{coverMedia && <CoverMedia media={coverMedia} title={title} />}
 						<div className="renderer">
@@ -33,6 +33,7 @@ const Entry = (props: IPageEntryProps) => {
 							</article>
 						</div>
 					</div>
+					<div className="sidebar after">{sidebar}</div>
 				</div>,
 			'entry')}
 			{withWrapper(footer, 'footer')}

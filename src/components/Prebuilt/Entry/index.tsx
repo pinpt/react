@@ -104,7 +104,7 @@ const Entry = (props: IPrebuiltEntryProps) => {
 						}
 						sharing={
 							renderSocialSharing?.(site) ?? (
-								<Social.Bar>
+								<Social.Bar className="sharing">
 									<Social.Facebook
 										sharing
 										href={`https://facebook.com/sharer/sharer.php?u=${content.url}`}
