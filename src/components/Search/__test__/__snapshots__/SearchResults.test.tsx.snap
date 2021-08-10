@@ -28,7 +28,7 @@ exports[`Test custom className 1`] = `
           Test Title
         </h2>
         <span
-          className="Pinpoint Content Card Date "
+          className="Pinpoint Date "
         >
           12/31/1969
         </span>
@@ -212,7 +212,7 @@ exports[`Test double 1`] = `
           Test Title
         </h2>
         <span
-          className="Pinpoint Content Card Date "
+          className="Pinpoint Date "
         >
           12/31/1969
         </span>
@@ -380,7 +380,7 @@ exports[`Test double 1`] = `
           Test Title
         </h2>
         <span
-          className="Pinpoint Content Card Date "
+          className="Pinpoint Date "
         >
           12/31/1969
         </span>
@@ -598,7 +598,7 @@ exports[`Test single 1`] = `
           Test Title
         </h2>
         <span
-          className="Pinpoint Content Card Date "
+          className="Pinpoint Date "
         >
           12/31/1969
         </span>
@@ -782,7 +782,7 @@ exports[`Test triple 1`] = `
           Test Title
         </h2>
         <span
-          className="Pinpoint Content Card Date "
+          className="Pinpoint Date "
         >
           12/31/1969
         </span>
@@ -950,7 +950,7 @@ exports[`Test triple 1`] = `
           Test Title
         </h2>
         <span
-          className="Pinpoint Content Card Date "
+          className="Pinpoint Date "
         >
           12/31/1969
         </span>
@@ -1118,7 +1118,7 @@ exports[`Test triple 1`] = `
           Test Title
         </h2>
         <span
-          className="Pinpoint Content Card Date "
+          className="Pinpoint Date "
         >
           12/31/1969
         </span>

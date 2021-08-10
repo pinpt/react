@@ -240,7 +240,7 @@ html.dark .ThemeToggle .mode::after {
 	@apply ml-auto;
 }
 
-.Content.Card.Date {
+.Content.Card .Date {
 	@apply mt-0.5 text-xs mb-2;
 	color: var(--card-date-color);
 }
@@ -461,6 +461,7 @@ html.dark .ThemeToggle .mode::after {
 	@apply justify-between;
 }
 
+.entryWrapper .sidebarWrapper.after .Date,
 .entryWrapper .sidebarWrapper.after .Author,
 .entryWrapper .sidebarWrapper.after .Tag.Bar {
 	@apply hidden;
@@ -476,6 +477,13 @@ html.dark .ThemeToggle .mode::after {
 .Sidebar {
 	@apply flex flex-row md:flex-col items-center md:items-start gap-y-4 md:gap-y-8;
 }
+
+/*
+ * Date
+ */
+.entryWrapper .Date {
+	@apply font-semibold flex-grow md:flex-initial flex-shrink-0 w-full md:w-auto;
+  }
 
 /*
  * Styles for the author component

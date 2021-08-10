@@ -2,6 +2,7 @@ import React from 'react';
 import { Meta } from '@storybook/react';
 import Latest from '../';
 import Card from '../../Card';
+import DateLabel from '../../DateLabel';
 import Statistic from '../../Statistic';
 
 const { default: readme } = require('../README.md');
@@ -28,7 +29,7 @@ export const Single: React.VFC<{}> = () => (
 		<Card.Container
 			imageUrl="https://cdn.pinpoint.com/card.png"
 			title={<Card.Title title={TEST_TITLE} />}
-			date={<Card.Date />}
+			date={<DateLabel />}
 			description={<Card.Description description={TEST_DESCRIPTION} />}
 			statistics={<Statistic.Bar claps={22} views={135} />}
 			button={<Card.ReadButton />}
@@ -41,7 +42,7 @@ export const Double: React.VFC<{}> = () => (
 		<Card.Container
 			imageUrl="https://cdn.pinpoint.com/card.png"
 			title={<Card.Title title={TEST_TITLE} />}
-			date={<Card.Date />}
+			date={<DateLabel />}
 			description={<Card.Description description={TEST_DESCRIPTION} />}
 			statistics={<Statistic.Bar claps={22} views={135} />}
 			button={<Card.ReadButton />}
@@ -49,7 +50,7 @@ export const Double: React.VFC<{}> = () => (
 		<Card.Container
 			imageUrl="https://cdn.pinpoint.com/card.png"
 			title={<Card.Title title={TEST_TITLE} />}
-			date={<Card.Date />}
+			date={<DateLabel />}
 			description={<Card.Description description={TEST_DESCRIPTION} />}
 			statistics={<Statistic.Bar claps={22} views={135} />}
 			button={<Card.ReadButton />}
@@ -62,7 +63,7 @@ export const Triple: React.VFC<{}> = () => (
 		<Card.Container
 			imageUrl="https://cdn.pinpoint.com/card.png"
 			title={<Card.Title title={TEST_TITLE} />}
-			date={<Card.Date />}
+			date={<DateLabel />}
 			description={<Card.Description description={TEST_DESCRIPTION} />}
 			statistics={<Statistic.Bar claps={22} views={135} />}
 			button={<Card.ReadButton />}
@@ -70,7 +71,7 @@ export const Triple: React.VFC<{}> = () => (
 		<Card.Container
 			imageUrl="https://cdn.pinpoint.com/card.png"
 			title={<Card.Title title={TEST_TITLE} />}
-			date={<Card.Date />}
+			date={<DateLabel />}
 			description={<Card.Description description={TEST_DESCRIPTION} />}
 			statistics={<Statistic.Bar claps={22} views={135} />}
 			button={<Card.ReadButton />}
@@ -78,7 +79,7 @@ export const Triple: React.VFC<{}> = () => (
 		<Card.Container
 			imageUrl="https://cdn.pinpoint.com/card.png"
 			title={<Card.Title title={TEST_TITLE} />}
-			date={<Card.Date />}
+			date={<DateLabel />}
 			description={<Card.Description description={TEST_DESCRIPTION} />}
 			statistics={<Statistic.Bar claps={22} views={135} />}
 			button={<Card.ReadButton />}

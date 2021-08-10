@@ -2,7 +2,7 @@ import { ReactElement } from 'react';
 import { splitEntries } from '../../../lib';
 import Card from '../../Card';
 import { ICardContainerProps } from '../../Card/Container';
-import { ICardDateProps } from '../../Card/Date';
+import DateLabel, { IDateProps } from '../../DateLabel';
 import { ICardDescriptionProps } from '../../Card/Description';
 import { ICardReadButtonProps } from '../../Card/ReadButton';
 import { ICardTitleProps } from '../../Card/Title';
@@ -36,7 +36,7 @@ export interface IPrebuiltHomeProps {
 	renderRecent?: (entries: IContent[]) => ReactElement<IRecentProps>;
 	renderCard?: (Content: IContent) => ReactElement<ICardContainerProps>;
 	renderCardTitle?: (Content: IContent) => ReactElement<ICardTitleProps>;
-	renderCardDate?: (Content: IContent) => ReactElement<ICardDateProps>;
+	renderCardDate?: (Content: IContent) => ReactElement<IDateProps>;
 	renderCardDescription?: (Content: IContent) => ReactElement<ICardDescriptionProps>;
 	renderCardStatistics?: (
 		Content: IContent,
@@ -148,7 +148,7 @@ const Home = (props: IPrebuiltHomeProps) => {
 										}
 										date={
 											renderCardDate?.(Content) ?? (
-												<Card.Date className="Prebuilt" ts={Content.publishedAt} />
+												<DateLabel className="Prebuilt" ts={Content.publishedAt} />
 											)
 										}
 										description={
@@ -204,7 +204,7 @@ const Home = (props: IPrebuiltHomeProps) => {
 										}
 										date={
 											renderCardDate?.(content) ?? (
-												<Card.Date className="Prebuilt" ts={content.publishedAt} />
+												<DateLabel className="Prebuilt" ts={content.publishedAt} />
 											)
 										}
 										description={

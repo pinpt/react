@@ -144,6 +144,11 @@ exports[`Test custom className 1`] = `
           <div
             className="Pinpoint Sidebar "
           >
+            <span
+              className="Pinpoint Date "
+            >
+              8/2/2021
+            </span>
             <div
               className="Pinpoint Author Prebuilt"
             >
@@ -530,6 +535,11 @@ exports[`Test custom className 1`] = `
           <div
             className="Pinpoint Sidebar "
           >
+            <span
+              className="Pinpoint Date "
+            >
+              8/2/2021
+            </span>
             <div
               className="Pinpoint Author Prebuilt"
             >
@@ -1145,6 +1155,11 @@ exports[`Test default state 1`] = `
           <div
             className="Pinpoint Sidebar "
           >
+            <span
+              className="Pinpoint Date "
+            >
+              8/2/2021
+            </span>
             <div
               className="Pinpoint Author Prebuilt"
             >
@@ -1531,6 +1546,11 @@ exports[`Test default state 1`] = `
           <div
             className="Pinpoint Sidebar "
           >
+            <span
+              className="Pinpoint Date "
+            >
+              8/2/2021
+            </span>
             <div
               className="Pinpoint Author Prebuilt"
             >
@@ -2146,6 +2166,11 @@ exports[`Test no author 1`] = `
           <div
             className="Pinpoint Sidebar "
           >
+            <span
+              className="Pinpoint Date "
+            >
+              8/2/2021
+            </span>
             <div
               className="Pinpoint Tag Bar Prebuilt"
             >
@@ -2431,6 +2456,11 @@ exports[`Test no author 1`] = `
           <div
             className="Pinpoint Sidebar "
           >
+            <span
+              className="Pinpoint Date "
+            >
+              8/2/2021
+            </span>
             <div
               className="Pinpoint Tag Bar Prebuilt"
             >
@@ -2945,6 +2975,11 @@ exports[`Test no claps 1`] = `
           <div
             className="Pinpoint Sidebar "
           >
+            <span
+              className="Pinpoint Date "
+            >
+              8/2/2021
+            </span>
             <div
               className="Pinpoint Author Prebuilt"
             >
@@ -3247,6 +3282,11 @@ exports[`Test no claps 1`] = `
           <div
             className="Pinpoint Sidebar "
           >
+            <span
+              className="Pinpoint Date "
+            >
+              8/2/2021
+            </span>
             <div
               className="Pinpoint Author Prebuilt"
             >

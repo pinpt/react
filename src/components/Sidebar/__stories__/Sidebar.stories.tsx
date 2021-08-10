@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Meta } from '@storybook/react';
 import Sidebar from '..';
+import DateLabel from '../../DateLabel';
 import Author from '../../Author';
 import Tags from '../../Tags';
 import Clap from '../../Clap';
@@ -29,6 +30,26 @@ export const Full: React.VFC<{}> = () => {
 	const [count, setCount] = useState(20);
 	return (
 		<Sidebar
+			date={<DateLabel />}
+			author={<Author avatarUrl={AVATAR} name="Keegan" />}
+			tags={<Tags.Bar tags={['feature', 'improvement', 'mobile']} />}
+			clap={<Clap clapCount={count} handleClap={() => setCount((c) => c + 1)} />}
+			sharing={
+				<Social.Bar>
+					<Social.Facebook sharing href="https://www.facebook.com/Pinpoint.Engineering" newTab />
+					<Social.Twitter sharing href="https://twitter.com/pinpoint_sw" newTab />
+					<Social.LinkedIn sharing href="https://linkedin.com/company/pinpoint-software" newTab />
+					<Social.Email sharing href="mailto:hello@pinpoint.com" />
+				</Social.Bar>
+			}
+		/>
+	);
+};
+
+export const No_Date: React.VFC<{}> = () => {
+	const [count, setCount] = useState(20);
+	return (
+		<Sidebar
 			author={<Author avatarUrl={AVATAR} name="Keegan" />}
 			tags={<Tags.Bar tags={['feature', 'improvement', 'mobile']} />}
 			clap={<Clap clapCount={count} handleClap={() => setCount((c) => c + 1)} />}
@@ -48,6 +69,7 @@ export const No_Author: React.VFC<{}> = () => {
 	const [count, setCount] = useState(20);
 	return (
 		<Sidebar
+			date={<DateLabel />}
 			tags={<Tags.Bar tags={['feature', 'improvement', 'mobile']} />}
 			clap={<Clap clapCount={count} handleClap={() => setCount((c) => c + 1)} />}
 		/>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
 import Card from '../../Card';
+import DateLabel from '../../DateLabel';
 import Statistic from '../../Statistic';
 import Results from '../Results';
 
@@ -28,7 +29,7 @@ export const Single: React.VFC<{}> = () => (
 		<Card.Container
 			imageUrl="https://cdn.pinpoint.com/card.png"
 			title={<Card.Title title={TEST_TITLE} />}
-			date={<Card.Date />}
+			date={<DateLabel />}
 			description={<Card.Description description={TEST_DESCRIPTION} />}
 			statistics={<Statistic.Bar claps={22} views={135} />}
 			button={<Card.ReadButton />}

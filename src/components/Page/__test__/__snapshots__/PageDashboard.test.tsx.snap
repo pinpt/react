@@ -108,7 +108,7 @@ exports[`Test full page 1`] = `
                 Test Title
               </h2>
               <span
-                className="Pinpoint Content Card Date "
+                className="Pinpoint Date "
               >
                 12/31/1969
               </span>
@@ -276,7 +276,7 @@ exports[`Test full page 1`] = `
                 Test Title
               </h2>
               <span
-                className="Pinpoint Content Card Date "
+                className="Pinpoint Date "
               >
                 12/31/1969
               </span>
@@ -466,7 +466,7 @@ exports[`Test full page 1`] = `
                 Test Title
               </h2>
               <span
-                className="Pinpoint Content Card Date "
+                className="Pinpoint Date "
               >
                 12/31/1969
               </span>
@@ -634,7 +634,7 @@ exports[`Test full page 1`] = `
                 Test Title
               </h2>
               <span
-                className="Pinpoint Content Card Date "
+                className="Pinpoint Date "
               >
                 12/31/1969
               </span>
@@ -802,7 +802,7 @@ exports[`Test full page 1`] = `
                 Test Title
               </h2>
               <span
-                className="Pinpoint Content Card Date "
+                className="Pinpoint Date "
               >
                 12/31/1969
               </span>
@@ -970,7 +970,7 @@ exports[`Test full page 1`] = `
                 Test Title
               </h2>
               <span
-                className="Pinpoint Content Card Date "
+                className="Pinpoint Date "
               >
                 12/31/1969
               </span>
@@ -1777,7 +1777,7 @@ exports[`Test no footer 1`] = `
                 Test Title
               </h2>
               <span
-                className="Pinpoint Content Card Date "
+                className="Pinpoint Date "
               >
                 12/31/1969
               </span>
@@ -1945,7 +1945,7 @@ exports[`Test no footer 1`] = `
                 Test Title
               </h2>
               <span
-                className="Pinpoint Content Card Date "
+                className="Pinpoint Date "
               >
                 12/31/1969
               </span>
@@ -2135,7 +2135,7 @@ exports[`Test no footer 1`] = `
                 Test Title
               </h2>
               <span
-                className="Pinpoint Content Card Date "
+                className="Pinpoint Date "
               >
                 12/31/1969
               </span>
@@ -2303,7 +2303,7 @@ exports[`Test no footer 1`] = `
                 Test Title
               </h2>
               <span
-                className="Pinpoint Content Card Date "
+                className="Pinpoint Date "
               >
                 12/31/1969
               </span>
@@ -2471,7 +2471,7 @@ exports[`Test no footer 1`] = `
                 Test Title
               </h2>
               <span
-                className="Pinpoint Content Card Date "
+                className="Pinpoint Date "
               >
                 12/31/1969
               </span>
@@ -2639,7 +2639,7 @@ exports[`Test no footer 1`] = `
                 Test Title
               </h2>
               <span
-                className="Pinpoint Content Card Date "
+                className="Pinpoint Date "
               >
                 12/31/1969
               </span>
@@ -2835,7 +2835,7 @@ exports[`Test no header 1`] = `
                 Test Title
               </h2>
               <span
-                className="Pinpoint Content Card Date "
+                className="Pinpoint Date "
               >
                 12/31/1969
               </span>
@@ -3003,7 +3003,7 @@ exports[`Test no header 1`] = `
                 Test Title
               </h2>
               <span
-                className="Pinpoint Content Card Date "
+                className="Pinpoint Date "
               >
                 12/31/1969
               </span>
@@ -3193,7 +3193,7 @@ exports[`Test no header 1`] = `
                 Test Title
               </h2>
               <span
-                className="Pinpoint Content Card Date "
+                className="Pinpoint Date "
               >
                 12/31/1969
               </span>
@@ -3361,7 +3361,7 @@ exports[`Test no header 1`] = `
                 Test Title
               </h2>
               <span
-                className="Pinpoint Content Card Date "
+                className="Pinpoint Date "
               >
                 12/31/1969
               </span>
@@ -3529,7 +3529,7 @@ exports[`Test no header 1`] = `
                 Test Title
               </h2>
               <span
-                className="Pinpoint Content Card Date "
+                className="Pinpoint Date "
               >
                 12/31/1969
               </span>
@@ -3697,7 +3697,7 @@ exports[`Test no header 1`] = `
                 Test Title
               </h2>
               <span
-                className="Pinpoint Content Card Date "
+                className="Pinpoint Date "
               >
                 12/31/1969
               </span>
@@ -4155,7 +4155,7 @@ exports[`Test no latest 1`] = `
                 Test Title
               </h2>
               <span
-                className="Pinpoint Content Card Date "
+                className="Pinpoint Date "
               >
                 12/31/1969
               </span>
@@ -4323,7 +4323,7 @@ exports[`Test no latest 1`] = `
                 Test Title
               </h2>
               <span
-                className="Pinpoint Content Card Date "
+                className="Pinpoint Date "
               >
                 12/31/1969
               </span>
@@ -4491,7 +4491,7 @@ exports[`Test no latest 1`] = `
                 Test Title
               </h2>
               <span
-                className="Pinpoint Content Card Date "
+                className="Pinpoint Date "
               >
                 12/31/1969
               </span>
@@ -4659,7 +4659,7 @@ exports[`Test no latest 1`] = `
                 Test Title
               </h2>
               <span
-                className="Pinpoint Content Card Date "
+                className="Pinpoint Date "
               >
                 12/31/1969
               </span>
@@ -5116,7 +5116,7 @@ exports[`Test no recent 1`] = `
                 Test Title
               </h2>
               <span
-                className="Pinpoint Content Card Date "
+                className="Pinpoint Date "
               >
                 12/31/1969
               </span>
@@ -5284,7 +5284,7 @@ exports[`Test no recent 1`] = `
                 Test Title
               </h2>
               <span
-                className="Pinpoint Content Card Date "
+                className="Pinpoint Date "
               >
                 12/31/1969
               </span>

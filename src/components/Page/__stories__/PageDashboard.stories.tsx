@@ -2,6 +2,7 @@ import React from 'react';
 import { Meta } from '@storybook/react';
 import Card from '../../Card';
 import Copyright from '../../Copyright';
+import DateLabel from '../../DateLabel';
 import Footer from '../../Footer';
 import Header from '../../Header';
 import Latest from '../../Latest';
@@ -48,7 +49,7 @@ export const Full_Page: React.VFC<{}> = () => (
 				<Card.Container
 					imageUrl="https://cdn.pinpoint.com/card.png"
 					title={<Card.Title title={TEST_TITLE} />}
-					date={<Card.Date />}
+					date={<DateLabel />}
 					description={<Card.Description description={TEST_DESCRIPTION} />}
 					statistics={<Statistic.Bar claps={22} views={135} />}
 					button={<Card.ReadButton />}
@@ -56,7 +57,7 @@ export const Full_Page: React.VFC<{}> = () => (
 				<Card.Container
 					imageUrl="https://cdn.pinpoint.com/card.png"
 					title={<Card.Title title={TEST_TITLE} />}
-					date={<Card.Date />}
+					date={<DateLabel />}
 					description={<Card.Description description={TEST_DESCRIPTION} />}
 					statistics={<Statistic.Bar claps={22} views={135} />}
 					button={<Card.ReadButton />}
@@ -68,14 +69,14 @@ export const Full_Page: React.VFC<{}> = () => (
 				<Card.Container
 					imageUrl="https://cdn.pinpoint.com/card.png"
 					title={<Card.Title title={TEST_TITLE} />}
-					date={<Card.Date />}
+					date={<DateLabel />}
 					description={<Card.Description description={TEST_DESCRIPTION} />}
 					statistics={<Statistic.Bar claps={22} views={135} />}
 					button={<Card.ReadButton />}
 				/>
 				<Card.Container
 					title={<Card.Title title={TEST_TITLE} />}
-					date={<Card.Date />}
+					date={<DateLabel />}
 					description={<Card.Description description={TEST_DESCRIPTION} />}
 					statistics={<Statistic.Bar claps={22} views={135} />}
 					button={<Card.ReadButton />}
@@ -83,7 +84,7 @@ export const Full_Page: React.VFC<{}> = () => (
 				<Card.Container
 					imageUrl="https://cdn.pinpoint.com/card.png"
 					title={<Card.Title title={TEST_TITLE} />}
-					date={<Card.Date />}
+					date={<DateLabel />}
 					description={
 						<Card.Description description={`${TEST_DESCRIPTION} ${TEST_DESCRIPTION} ${TEST_DESCRIPTION}`} />
 					}
@@ -93,7 +94,7 @@ export const Full_Page: React.VFC<{}> = () => (
 				<Card.Container
 					imageUrl="https://cdn.pinpoint.com/card.png"
 					title={<Card.Title title={TEST_TITLE} />}
-					date={<Card.Date />}
+					date={<DateLabel />}
 					description={<Card.Description description={TEST_DESCRIPTION} />}
 					statistics={<Statistic.Bar claps={22} views={135} />}
 					button={<Card.ReadButton />}

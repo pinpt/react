@@ -2,7 +2,7 @@ import renderer from 'react-test-renderer';
 import StatisticsBar from '../../Statistic/Bar';
 import Tags from '../../Tags';
 import ContentContainer from '../Container';
-import CardDate from '../Date';
+import DateLabel from '../../DateLabel';
 import Description from '../Description';
 import ReadButton from '../ReadButton';
 import Title from '../Title';
@@ -14,7 +14,7 @@ test('Test full card', () => {
 	const component = renderer.create(
 		<ContentContainer
 			imageUrl="https://cdn.pinpoint.com/card.png"
-			date={<CardDate />}
+			date={<DateLabel />}
 			title={<Title title={TEST_TITLE} />}
 			description={<Description description={TEST_DESCRIPTION} />}
 			statistics={<StatisticsBar claps={22} views={135} />}
@@ -93,7 +93,7 @@ test('Test multiple cards', () => {
 		<div style={{ display: 'flex', columnGap: '20px' }}>
 			<ContentContainer
 				imageUrl="https://cdn.pinpoint.com/card.png"
-				date={<CardDate />}
+				date={<DateLabel />}
 				title={<Title title={TEST_TITLE} />}
 				description={<Description description={TEST_DESCRIPTION} />}
 				statistics={<StatisticsBar claps={22} views={135} />}
@@ -101,7 +101,7 @@ test('Test multiple cards', () => {
 			/>
 			<ContentContainer
 				imageUrl="https://cdn.pinpoint.com/card.png"
-				date={<CardDate />}
+				date={<DateLabel />}
 				title={<Title title={TEST_TITLE} />}
 				description={<Description description={TEST_DESCRIPTION} />}
 				statistics={<StatisticsBar claps={22} views={135} />}

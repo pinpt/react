@@ -1,6 +1,7 @@
 import renderer from 'react-test-renderer';
 import Recent from '../';
 import Card from '../../Card';
+import DateLabel from '../../DateLabel';
 import Statistic from '../../Statistic';
 
 const TEST_TITLE = 'Test Title';
@@ -13,7 +14,7 @@ test('Test single', () => {
 			<Card.Container
 				imageUrl={TEST_IMAGE}
 				title={<Card.Title title={TEST_TITLE} />}
-				date={<Card.Date />}
+				date={<DateLabel />}
 				description={<Card.Description description={TEST_DESCRIPTION} />}
 				statistics={<Statistic.Bar claps={22} views={135} />}
 				button={<Card.ReadButton />}
@@ -30,7 +31,7 @@ test('Test double', () => {
 			<Card.Container
 				imageUrl={TEST_IMAGE}
 				title={<Card.Title title={TEST_TITLE} />}
-				date={<Card.Date />}
+				date={<DateLabel />}
 				description={<Card.Description description={TEST_DESCRIPTION} />}
 				statistics={<Statistic.Bar claps={22} views={135} />}
 				button={<Card.ReadButton />}
@@ -38,7 +39,7 @@ test('Test double', () => {
 			<Card.Container
 				imageUrl={TEST_IMAGE}
 				title={<Card.Title title={TEST_TITLE} />}
-				date={<Card.Date />}
+				date={<DateLabel />}
 				description={<Card.Description description={TEST_DESCRIPTION} />}
 				statistics={<Statistic.Bar claps={22} views={135} />}
 				button={<Card.ReadButton />}
@@ -55,7 +56,7 @@ test('Test triple', () => {
 			<Card.Container
 				imageUrl={TEST_IMAGE}
 				title={<Card.Title title={TEST_TITLE} />}
-				date={<Card.Date />}
+				date={<DateLabel />}
 				description={<Card.Description description={TEST_DESCRIPTION} />}
 				statistics={<Statistic.Bar claps={22} views={135} />}
 				button={<Card.ReadButton />}
@@ -63,7 +64,7 @@ test('Test triple', () => {
 			<Card.Container
 				imageUrl={TEST_IMAGE}
 				title={<Card.Title title={TEST_TITLE} />}
-				date={<Card.Date />}
+				date={<DateLabel />}
 				description={<Card.Description description={TEST_DESCRIPTION} />}
 				statistics={<Statistic.Bar claps={22} views={135} />}
 				button={<Card.ReadButton />}
@@ -71,7 +72,7 @@ test('Test triple', () => {
 			<Card.Container
 				imageUrl={TEST_IMAGE}
 				title={<Card.Title title={TEST_TITLE} />}
-				date={<Card.Date />}
+				date={<DateLabel />}
 				description={<Card.Description description={TEST_DESCRIPTION} />}
 				statistics={<Statistic.Bar claps={22} views={135} />}
 				button={<Card.ReadButton />}
@@ -88,7 +89,7 @@ test('Test custom className', () => {
 			<Card.Container
 				imageUrl={TEST_IMAGE}
 				title={<Card.Title title={TEST_TITLE} />}
-				date={<Card.Date />}
+				date={<DateLabel />}
 				description={<Card.Description description={TEST_DESCRIPTION} />}
 				statistics={<Statistic.Bar claps={22} views={135} />}
 				button={<Card.ReadButton />}
@@ -105,7 +106,7 @@ test('Test page counts', () => {
 			<Card.Container
 				imageUrl="https://cdn.pinpoint.com/card.png"
 				title={<Card.Title title={TEST_TITLE} />}
-				date={<Card.Date />}
+				date={<DateLabel />}
 				description={<Card.Description description={TEST_DESCRIPTION} />}
 				statistics={<Statistic.Bar claps={22} views={135} />}
 				button={<Card.ReadButton />}
@@ -113,7 +114,7 @@ test('Test page counts', () => {
 			<Card.Container
 				imageUrl="https://cdn.pinpoint.com/card.png"
 				title={<Card.Title title={TEST_TITLE} />}
-				date={<Card.Date />}
+				date={<DateLabel />}
 				description={<Card.Description description={TEST_DESCRIPTION} />}
 				statistics={<Statistic.Bar claps={22} views={135} />}
 				button={<Card.ReadButton />}

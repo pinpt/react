@@ -181,7 +181,7 @@ exports[`Hidden stats 1`] = `
                 Linked Content Blocks
               </h2>
               <span
-                className="Pinpoint Content Card Date Prebuilt"
+                className="Pinpoint Date Prebuilt"
               >
                 8/2/2021
               </span>
@@ -285,7 +285,7 @@ exports[`Hidden stats 1`] = `
                 Publishing Controls and Social Posting
               </h2>
               <span
-                className="Pinpoint Content Card Date Prebuilt"
+                className="Pinpoint Date Prebuilt"
               >
                 7/30/2021
               </span>
@@ -376,7 +376,7 @@ exports[`Hidden stats 1`] = `
                 Changelog planning just got way simpler!
               </h2>
               <span
-                className="Pinpoint Content Card Date Prebuilt"
+                className="Pinpoint Date Prebuilt"
               >
                 7/21/2021
               </span>
@@ -469,7 +469,7 @@ populated with your recently completed...
                 Email validation, filtering, and subscriber search 🔍
               </h2>
               <span
-                className="Pinpoint Content Card Date Prebuilt"
+                className="Pinpoint Date Prebuilt"
               >
                 7/19/2021
               </span>
@@ -573,7 +573,7 @@ populated with your recently completed...
                 Analytics Drill-Down and Localization
               </h2>
               <span
-                className="Pinpoint Content Card Date Prebuilt"
+                className="Pinpoint Date Prebuilt"
               >
                 7/12/2021
               </span>
@@ -677,7 +677,7 @@ populated with your recently completed...
                 Already mentioned notice
               </h2>
               <span
-                className="Pinpoint Content Card Date Prebuilt"
+                className="Pinpoint Date Prebuilt"
               >
                 7/14/2021
               </span>
@@ -781,7 +781,7 @@ populated with your recently completed...
                 Published Page Search and Filtering
               </h2>
               <span
-                className="Pinpoint Content Card Date Prebuilt"
+                className="Pinpoint Date Prebuilt"
               >
                 7/1/2021
               </span>
@@ -885,7 +885,7 @@ populated with your recently completed...
                 Improved Analytics Accessibility
               </h2>
               <span
-                className="Pinpoint Content Card Date Prebuilt"
+                className="Pinpoint Date Prebuilt"
               >
                 7/9/2021
               </span>
@@ -976,7 +976,7 @@ populated with your recently completed...
                 Tables, tables, tables
               </h2>
               <span
-                className="Pinpoint Content Card Date Prebuilt"
+                className="Pinpoint Date Prebuilt"
               >
                 7/1/2021
               </span>
@@ -1080,7 +1080,7 @@ populated with your recently completed...
                 Analytics Drilldown + Changelog Generator Styling
               </h2>
               <span
-                className="Pinpoint Content Card Date Prebuilt"
+                className="Pinpoint Date Prebuilt"
               >
                 6/25/2021
               </span>
@@ -1584,7 +1584,7 @@ exports[`Test custom className 1`] = `
                 Linked Content Blocks
               </h2>
               <span
-                className="Pinpoint Content Card Date Prebuilt"
+                className="Pinpoint Date Prebuilt"
               >
                 8/2/2021
               </span>
@@ -1795,7 +1795,7 @@ exports[`Test custom className 1`] = `
                 Publishing Controls and Social Posting
               </h2>
               <span
-                className="Pinpoint Content Card Date Prebuilt"
+                className="Pinpoint Date Prebuilt"
               >
                 7/30/2021
               </span>
@@ -1993,7 +1993,7 @@ exports[`Test custom className 1`] = `
                 Changelog planning just got way simpler!
               </h2>
               <span
-                className="Pinpoint Content Card Date Prebuilt"
+                className="Pinpoint Date Prebuilt"
               >
                 7/21/2021
               </span>
@@ -2193,7 +2193,7 @@ populated with your recently completed...
                 Email validation, filtering, and subscriber search 🔍
               </h2>
               <span
-                className="Pinpoint Content Card Date Prebuilt"
+                className="Pinpoint Date Prebuilt"
               >
                 7/19/2021
               </span>
@@ -2404,7 +2404,7 @@ populated with your recently completed...
                 Analytics Drill-Down and Localization
               </h2>
               <span
-                className="Pinpoint Content Card Date Prebuilt"
+                className="Pinpoint Date Prebuilt"
               >
                 7/12/2021
               </span>
@@ -2615,7 +2615,7 @@ populated with your recently completed...
                 Already mentioned notice
               </h2>
               <span
-                className="Pinpoint Content Card Date Prebuilt"
+                className="Pinpoint Date Prebuilt"
               >
                 7/14/2021
               </span>
@@ -2826,7 +2826,7 @@ populated with your recently completed...
                 Published Page Search and Filtering
               </h2>
               <span
-                className="Pinpoint Content Card Date Prebuilt"
+                className="Pinpoint Date Prebuilt"
               >
                 7/1/2021
               </span>
@@ -3037,7 +3037,7 @@ populated with your recently completed...
                 Improved Analytics Accessibility
               </h2>
               <span
-                className="Pinpoint Content Card Date Prebuilt"
+                className="Pinpoint Date Prebuilt"
               >
                 7/9/2021
               </span>
@@ -3235,7 +3235,7 @@ populated with your recently completed...
                 Tables, tables, tables
               </h2>
               <span
-                className="Pinpoint Content Card Date Prebuilt"
+                className="Pinpoint Date Prebuilt"
               >
                 7/1/2021
               </span>
@@ -3446,7 +3446,7 @@ populated with your recently completed...
                 Analytics Drilldown + Changelog Generator Styling
               </h2>
               <span
-                className="Pinpoint Content Card Date Prebuilt"
+                className="Pinpoint Date Prebuilt"
               >
                 6/25/2021
               </span>
@@ -4057,7 +4057,7 @@ exports[`Test default state 1`] = `
                 Linked Content Blocks
               </h2>
               <span
-                className="Pinpoint Content Card Date Prebuilt"
+                className="Pinpoint Date Prebuilt"
               >
                 8/2/2021
               </span>
@@ -4268,7 +4268,7 @@ exports[`Test default state 1`] = `
                 Publishing Controls and Social Posting
               </h2>
               <span
-                className="Pinpoint Content Card Date Prebuilt"
+                className="Pinpoint Date Prebuilt"
               >
                 7/30/2021
               </span>
@@ -4466,7 +4466,7 @@ exports[`Test default state 1`] = `
                 Changelog planning just got way simpler!
               </h2>
               <span
-                className="Pinpoint Content Card Date Prebuilt"
+                className="Pinpoint Date Prebuilt"
               >
                 7/21/2021
               </span>
@@ -4666,7 +4666,7 @@ populated with your recently completed...
                 Email validation, filtering, and subscriber search 🔍
               </h2>
               <span
-                className="Pinpoint Content Card Date Prebuilt"
+                className="Pinpoint Date Prebuilt"
               >
                 7/19/2021
               </span>
@@ -4877,7 +4877,7 @@ populated with your recently completed...
                 Analytics Drill-Down and Localization
               </h2>
               <span
-                className="Pinpoint Content Card Date Prebuilt"
+                className="Pinpoint Date Prebuilt"
               >
                 7/12/2021
               </span>
@@ -5088,7 +5088,7 @@ populated with your recently completed...
                 Already mentioned notice
               </h2>
               <span
-                className="Pinpoint Content Card Date Prebuilt"
+                className="Pinpoint Date Prebuilt"
               >
                 7/14/2021
               </span>
@@ -5299,7 +5299,7 @@ populated with your recently completed...
                 Published Page Search and Filtering
               </h2>
               <span
-                className="Pinpoint Content Card Date Prebuilt"
+                className="Pinpoint Date Prebuilt"
               >
                 7/1/2021
               </span>
@@ -5510,7 +5510,7 @@ populated with your recently completed...
                 Improved Analytics Accessibility
               </h2>
               <span
-                className="Pinpoint Content Card Date Prebuilt"
+                className="Pinpoint Date Prebuilt"
               >
                 7/9/2021
               </span>
@@ -5708,7 +5708,7 @@ populated with your recently completed...
                 Tables, tables, tables
               </h2>
               <span
-                className="Pinpoint Content Card Date Prebuilt"
+                className="Pinpoint Date Prebuilt"
               >
                 7/1/2021
               </span>
@@ -5919,7 +5919,7 @@ populated with your recently completed...
                 Analytics Drilldown + Changelog Generator Styling
               </h2>
               <span
-                className="Pinpoint Content Card Date Prebuilt"
+                className="Pinpoint Date Prebuilt"
               >
                 6/25/2021
               </span>

@@ -3,7 +3,7 @@ import { CoverMedia } from '../../Renderer';
 
 import type { IStatisticsBarProps } from '../../Statistic/Bar';
 import type { ITagBarProps } from '../../Tags/Bar';
-import type { ICardDateProps } from '../Date';
+import type { IDateProps } from '../../DateLabel';
 import type { ICardDescriptionProps } from '../Description';
 import type { ICardReadButtonProps } from '../ReadButton';
 import type { ICardTitleProps } from '../Title';
@@ -13,7 +13,7 @@ export interface ICardContainerProps {
 	title?: React.ReactElement<ICardTitleProps>;
 	description?: React.ReactElement<ICardDescriptionProps>;
 	statistics?: React.ReactElement<IStatisticsBarProps>;
-	date?: React.ReactElement<ICardDateProps>;
+	date?: React.ReactElement<IDateProps>;
 	button?: React.ReactElement<ICardReadButtonProps>;
 	tags?: React.ReactElement<ITagBarProps>;
 	imageUrl?: string;
