@@ -214,8 +214,8 @@ html.dark .ThemeToggle .mode::after {
  */
 .Content.Card.Container.wrapper {
 	@apply w-full rounded-md overflow-hidden mt-auto flex flex-col h-full cursor-pointer shadow-md hover:shadow-lg transition-all duration-200;
-	background-color: var(--tile-bg-color);
-	color: var(--tile-bg-color);
+	background-color: var(--card-bg-color);
+	color: var(--card-bg-color);
 }
 
 .Content.Card.Container.wrapper .cover.
@@ -224,8 +224,8 @@ html.dark .ThemeToggle .mode::after {
 }
 
 .Content.Card.Container.wrapper .empty-cover {
-	@apply lg:h-48 md:h-36 w-full bg-gradient-to-r from-fuchsia-500 via-red-600 to-orange-400;
-	/* background-image: linear-gradient(to right, var(--tw-gradient-stops)); */
+	@apply lg:h-48 md:h-36 w-full;
+	background-image: linear-gradient(to right, var(--card-empty-gradient-from), var(--card-empty-gradient-to));
 }
 
 .Content.Card.Container.wrapper .content {
@@ -242,26 +242,26 @@ html.dark .ThemeToggle .mode::after {
 
 .Content.Card.Date {
 	@apply mt-0.5 text-xs mb-2;
-	color: var(--tile-date-color);
+	color: var(--card-date-color);
 }
 
 .Content.Card.Title {
 	@apply text-lg font-semibold transition-colors duration-200;
-	color: var(--tile-title-color);
+	color: var(--card-title-color);
 }
 
 .Content.Card:hover .Title {
-	color: var(--tile-link-color);
+	color: var(--card-link-color);
 }
 
 .Content.Card.Description {
 	@apply mb-4;
-	color: var(--tile-summary-color);
+	color: var(--card-summary-color);
 }
 
 .Content.Card.Read {
 	@apply flex items-center cursor-pointer no-underline;
-	color: var(--tile-link-color);
+	color: var(--card-link-color);
 }
 
 .Content.Card.Read .arrow {
@@ -277,7 +277,7 @@ html.dark .ThemeToggle .mode::after {
  */
 .Statistic.wrapper {
 	@apply flex items-center;
-	color: var(--tile-info-color);
+	color: var(--card-info-color);
 }
 
 .Statistic .count {
