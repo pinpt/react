@@ -28,7 +28,7 @@ const Entry = (props: IPageEntryProps) => {
 				<div className="container">
 					<div className="sidebarWrapper before">{sidebar}</div>
 					<div className="content">
-						{coverMedia && <CoverMedia media={coverMedia} title={title} />}
+						{coverMedia && <CoverMedia media={coverMedia} title={title} zoomable />}
 						<div className="renderer">
 							<article className="changelog notebook-editor read-only">
 								<section className="ProseMirror">{renderer}</section>

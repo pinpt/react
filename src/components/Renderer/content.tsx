@@ -2,13 +2,19 @@ import { ReactYouTubeLite as Youtube } from 'react-youtube-lite';
 import { slugifyContent } from '../../lib/string';
 import { CoverMediaType } from '../../lib/types/content';
 import { Document } from './';
+import mediumZoom from 'medium-zoom';
 
 import type { ICoverMedia } from '../../lib/types/content';
+import { useEffect } from 'react';
 
-const ImageMedia = ({ src, title = '' }: { src: string; title?: string }) => {
+const ImageMedia = ({ src, title = '', zoomable = false }: { src: string; title?: string; zoomable?: boolean }) => {
+	useEffect(() => {
+		mediumZoom('.medium-zoom-image');
+	}, []);
+
 	return (
-		<div className="image">
-			<img src={src} alt={title} />
+		<div className={`image `}>
+			<img src={src} alt={title} className={`${zoomable ? 'medium-zoom-image' : ''}`} />
 		</div>
 	);
 };
@@ -61,10 +67,12 @@ export const CoverMedia = ({
 	media,
 	title,
 	staticMode,
+	zoomable,
 }: {
 	media?: ICoverMedia;
 	title?: string;
 	staticMode?: true;
+	zoomable?: boolean;
 }) => {
 	if (!media) {
 		return <></>;
@@ -75,7 +83,7 @@ export const CoverMedia = ({
 			return <></>;
 		}
 		case CoverMediaType.Image: {
-			content = <ImageMedia src={media.value ?? media.placeholderImage} title={title} />;
+			content = <ImageMedia src={media.value ?? media.placeholderImage} title={title} zoomable={zoomable} />;
 			break;
 		}
 		case CoverMediaType.Video: {
