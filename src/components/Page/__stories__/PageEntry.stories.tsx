@@ -13,8 +13,10 @@ import Social from '../../Social';
 import Copyright from '../../Copyright';
 import Logo from '../../Logo';
 import testDoc from '../Entry/__data__/testDoc.json';
+import testCoverMedia from '../Entry/__data__/testCoverMedia.json';
 import DateLabel from '../../DateLabel';
 import Pagination from '../../Pagination';
+import { ICoverMedia } from '../../../lib/types';
 const { default: readme } = require('../Entry/README.md');
 
 export default {
@@ -47,6 +49,7 @@ export const Default: React.VFC<{}> = () => {
 					description="See what's new in the Pinpoint Demo."
 				/>
 			}
+			coverMedia={testCoverMedia as ICoverMedia}
 			renderer={<Content document={testDoc} id="1234" />}
 			sidebar={
 				<Sidebar
@@ -95,6 +98,7 @@ export const With_Pagination: React.VFC<{}> = () => {
 					description="See what's new in the Pinpoint Demo."
 				/>
 			}
+			coverMedia={testCoverMedia as ICoverMedia}
 			renderer={<Content document={testDoc} id="1234" />}
 			sidebar={
 				<Sidebar
@@ -136,6 +140,56 @@ export const With_Pagination: React.VFC<{}> = () => {
 					goForward={() => alert('forward!')}
 				/>
 			}
+		/>
+	);
+};
+
+export const Not_Zoomable: React.VFC<{}> = () => {
+	const [count, setCount] = useState(12);
+	return (
+		<Entry
+			header={
+				<Header
+					subscribe={<Subscribe href="https://pinpoint.com" />}
+					title="Pinpoint Demo Changelog"
+					description="See what's new in the Pinpoint Demo."
+				/>
+			}
+			coverMedia={testCoverMedia as ICoverMedia}
+			renderer={<Content document={testDoc} id="1234" />}
+			sidebar={
+				<Sidebar
+					date={<DateLabel />}
+					author={<Author avatarUrl={AVATAR} name="Keegan" />}
+					tags={<Tags.Bar tags={['feature', 'improvement', 'mobile']} />}
+					clap={<Clap clapCount={count} handleClap={() => setCount((c) => c + 1)} />}
+					sharing={
+						<Social.Bar>
+							<Social.Facebook sharing href="https://www.facebook.com/Pinpoint.Engineering" newTab />
+							<Social.Twitter sharing href="https://twitter.com/pinpoint_sw" newTab />
+							<Social.LinkedIn sharing href="https://linkedin.com/company/pinpoint-software" newTab />
+							<Social.Email sharing href="mailto:hello@pinpoint.com" />
+						</Social.Bar>
+					}
+				/>
+			}
+			footer={
+				<Footer
+					social={
+						<Social.Bar>
+							<Social.Facebook href="https://www.facebook.com/Pinpoint.Engineering" newTab />
+							<Social.Instagram href="https://www.instagram.com/pinpoint_sw/" newTab />
+							<Social.Twitter href="https://twitter.com/pinpoint_sw" newTab />
+							<Social.Github href="https://github.com/pinpt" newTab />
+							<Social.LinkedIn href="https://linkedin.com/company/pinpoint-software" newTab />
+							<Social.RSS href="https://api.pinpoint.com.so/rss/PirxVTE94u3YmGNOySRY" newTab />
+						</Social.Bar>
+					}
+					copyright={<Copyright text="2021 by Pinpoint Software, Inc." logo={<Logo src={IMAGE_URL} />} />}
+					subscribe={<Subscribe href="https://pinpoint.com" />}
+				/>
+			}
+			zoomable={false}
 		/>
 	);
 };

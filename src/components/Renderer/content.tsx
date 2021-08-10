@@ -9,7 +9,9 @@ import { useEffect } from 'react';
 
 const ImageMedia = ({ src, title = '', zoomable = false }: { src: string; title?: string; zoomable?: boolean }) => {
 	useEffect(() => {
-		mediumZoom('.medium-zoom-image');
+		if (typeof window !== 'undefined') {
+			mediumZoom('.medium-zoom-image');
+		}
 	}, []);
 
 	return (
