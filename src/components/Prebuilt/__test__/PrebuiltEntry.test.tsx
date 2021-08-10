@@ -54,3 +54,17 @@ test('Test with pagination', () => {
 	const tree = component.toJSON();
 	expect(tree).toMatchSnapshot();
 });
+
+test('Test not zoomable', () => {
+	const component = renderer.create(
+		<PrebuiltEntry
+			zoomable={false}
+			clapCount={22}
+			onClap={() => console.log('clap!')}
+			content={entries[0] as IContent}
+			site={site}
+		/>
+	);
+	const tree = component.toJSON();
+	expect(tree).toMatchSnapshot();
+});

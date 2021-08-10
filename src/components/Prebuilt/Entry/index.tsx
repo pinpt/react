@@ -50,6 +50,7 @@ export interface IPrebuiltEntryProps {
 	nextEntry?: IContent;
 	previousEntry?: IContent;
 	handleSelectEntry?: (entry: IContent) => void;
+	zoomable?: boolean;
 }
 
 const Entry = (props: IPrebuiltEntryProps) => {
@@ -82,10 +83,12 @@ const Entry = (props: IPrebuiltEntryProps) => {
 		nextEntry,
 		previousEntry,
 		handleSelectEntry,
+		zoomable,
 	} = props;
 
 	return (
 		<Page.Entry
+			zoomable={zoomable}
 			className={`Prebuilt ${className}`}
 			coverMedia={content.coverMedia}
 			title={content.title}

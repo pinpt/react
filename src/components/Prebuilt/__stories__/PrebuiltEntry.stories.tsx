@@ -56,3 +56,16 @@ export const With_Pagination: React.VFC<{}> = () => {
 		/>
 	);
 };
+
+export const Not_Zoomable: React.VFC<{}> = () => {
+	const [claps, setClaps] = useState(0);
+	return (
+		<PrebuiltEntry
+			clapCount={claps}
+			onClap={() => setClaps((c) => c + 1)}
+			content={entries[0] as IContent}
+			site={site}
+			zoomable={false}
+		/>
+	);
+};

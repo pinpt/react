@@ -16,10 +16,11 @@ export interface IPageEntryProps {
 	footer?: ReactElement<IFooterProps>;
 	pagination?: ReactElement<IPaginationProps>;
 	title?: string;
+	zoomable?: boolean;
 }
 
 const Entry = (props: IPageEntryProps) => {
-	const { className = '', header, renderer, sidebar, footer, coverMedia, title, pagination } = props;
+	const { className = '', header, renderer, sidebar, footer, coverMedia, title, pagination, zoomable } = props;
 
 	return (
 		<div className={`Pinpoint Page Entry ${className}`}>
@@ -28,7 +29,7 @@ const Entry = (props: IPageEntryProps) => {
 				<div className="container">
 					<div className="sidebarWrapper before">{sidebar}</div>
 					<div className="content">
-						{coverMedia && <CoverMedia media={coverMedia} title={title} />}
+						{coverMedia && <CoverMedia media={coverMedia} title={title} zoomable={zoomable ?? true} />}
 						<div className="renderer">
 							<article className="changelog notebook-editor read-only">
 								<section className="ProseMirror">{renderer}</section>
