@@ -9,11 +9,7 @@ export interface IDateProps {
 const Date = (props: IDateProps) => {
 	const { className, ts = 0, format = DateTime.DATE_SHORT } = props;
 
-	return (
-		<span className={`Pinpoint Date ${className ?? ''}`}>
-			{DateTime.fromMillis(ts).toLocaleString(format)}
-		</span>
-	);
+	return <span className={`Pinpoint Date ${className ?? ''}`}>{DateTime.fromMillis(ts).toLocaleString(format)}</span>;
 };
 
 export default Date;

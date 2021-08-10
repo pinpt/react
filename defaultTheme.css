@@ -23,8 +23,8 @@
 	--card-summary-color: #71717a; /* gray-500 */
 	--card-info-color: var(--page-secondary-text-color);
 	--card-link-color: var(--page-highlight-color);
-	--card-empty-gradient-from: #4338CA;
-	--card-empty-gradient-to: #6366F1;
+	--card-empty-gradient-from: #4338ca;
+	--card-empty-gradient-to: #6366f1;
 
 	--article-bg-color: var(--page-bg-color);
 	--article-text-color: var(--page-text-color);

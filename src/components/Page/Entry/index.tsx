@@ -6,6 +6,7 @@ import type { IFooterProps } from '../../Footer';
 import type { ISidebarProps } from '../../Sidebar';
 import type { IHeaderProps } from '../../Header';
 import type { ICoverMedia } from '../../../lib/types';
+import { IPaginationProps } from '../../Pagination';
 export interface IPageEntryProps {
 	className?: string;
 	header?: ReactElement<IHeaderProps>;
@@ -13,11 +14,12 @@ export interface IPageEntryProps {
 	sidebar?: ReactElement<ISidebarProps>;
 	coverMedia?: ICoverMedia;
 	footer?: ReactElement<IFooterProps>;
+	pagination?: ReactElement<IPaginationProps>;
 	title?: string;
 }
 
 const Entry = (props: IPageEntryProps) => {
-	const { className = '', header, renderer, sidebar, footer, coverMedia, title } = props;
+	const { className = '', header, renderer, sidebar, footer, coverMedia, title, pagination } = props;
 
 	return (
 		<div className={`Pinpoint Page Entry ${className}`}>
@@ -35,7 +37,9 @@ const Entry = (props: IPageEntryProps) => {
 					</div>
 					<div className="sidebarWrapper after">{sidebar}</div>
 				</div>,
-			'entry')}
+				'entry'
+			)}
+			{withWrapper(pagination, 'pagination')}
 			{withWrapper(footer, 'footer')}
 		</div>
 	);

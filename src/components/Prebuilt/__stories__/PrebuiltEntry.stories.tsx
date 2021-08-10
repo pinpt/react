@@ -41,3 +41,18 @@ export const No_Claps: React.VFC<{}> = () => {
 export const No_Author: React.VFC<{}> = () => {
 	return <PrebuiltEntry content={entries[0] as IContent} site={site} renderAuthor={() => <></>} />;
 };
+
+export const With_Pagination: React.VFC<{}> = () => {
+	const [claps, setClaps] = useState(0);
+	return (
+		<PrebuiltEntry
+			clapCount={claps}
+			onClap={() => setClaps((c) => c + 1)}
+			content={entries[1] as IContent}
+			site={site}
+			previousEntry={entries[0] as IContent}
+			nextEntry={entries[2] as IContent}
+			handleSelectEntry={(entry: IContent) => alert(`${entry.title} selected!`)}
+		/>
+	);
+};
