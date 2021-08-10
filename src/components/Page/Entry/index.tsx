@@ -35,7 +35,8 @@ const Entry = (props: IPageEntryProps) => {
 					</div>
 					<div className="sidebarWrapper after">{sidebar}</div>
 				</div>,
-			'entry')}
+				'entry'
+			)}
 			{withWrapper(footer, 'footer')}
 		</div>
 	);

@@ -84,11 +84,7 @@ const Entry = (props: IPrebuiltEntryProps) => {
 			sidebar={
 				renderSidebar?.(content) ?? (
 					<Sidebar
-						date={
-							renderDate?.(content) ?? (
-								<DateLabel ts={content.publishedAt} /> 
-							)
-						}
+						date={renderDate?.(content) ?? <DateLabel ts={content.publishedAt} />}
 						author={
 							renderAuthor?.(content) ?? (
 								<Author
