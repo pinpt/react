@@ -60,21 +60,17 @@ const Pagination = (props: IPaginationProps) => {
 	const { className = '', goForward, goBack, goBackText, goForwardText } = props;
 
 	return (
-		<div className={`Pinpoint Pagination ${className}`}>
-			<div className="constraint">
-				<div className={`content ${!goBack && goForward ? 'forwardOnly' : ''}`}>
-					{goBack && (
-						<div className="back" onClick={goBack}>
-							{goBackText ?? <GoBackWithArrow />}
-						</div>
-					)}
-					{goForward && (
-						<div className="forward" onClick={goForward}>
-							{goForwardText ?? <GoForwardWithArrow />}
-						</div>
-					)}
+		<div className={`Pinpoint Pagination ${!goBack && goForward ? 'forwardOnly' : ''} ${className}`}>
+			{goBack && (
+				<div className="back" onClick={goBack}>
+					{goBackText ?? <GoBackWithArrow />}
 				</div>
-			</div>
+			)}
+			{goForward && (
+				<div className="forward" onClick={goForward}>
+					{goForwardText ?? <GoForwardWithArrow />}
+				</div>
+			)}
 		</div>
 	);
 };

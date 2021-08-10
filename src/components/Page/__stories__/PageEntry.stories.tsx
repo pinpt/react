@@ -13,6 +13,7 @@ import Social from '../../Social';
 import Copyright from '../../Copyright';
 import Logo from '../../Logo';
 import testDoc from '../Entry/__data__/testDoc.json';
+import DateLabel from '../../DateLabel';
 const { default: readme } = require('../Entry/README.md');
 
 export default {
@@ -48,6 +49,7 @@ export const Default: React.VFC<{}> = () => {
 			renderer={<Content document={testDoc} id="1234" />}
 			sidebar={
 				<Sidebar
+					date={<DateLabel />}
 					author={<Author avatarUrl={AVATAR} name="Keegan" />}
 					tags={<Tags.Bar tags={['feature', 'improvement', 'mobile']} />}
 					clap={<Clap clapCount={count} handleClap={() => setCount((c) => c + 1)} />}

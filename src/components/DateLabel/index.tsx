@@ -1,16 +1,16 @@
 import { DateTime, DateTimeFormatOptions } from 'luxon';
 
-export interface ICardDateProps {
+export interface IDateProps {
 	className?: string;
 	ts?: number;
 	format?: DateTimeFormatOptions;
 }
 
-const Date = (props: ICardDateProps) => {
+const Date = (props: IDateProps) => {
 	const { className, ts = 0, format = DateTime.DATE_SHORT } = props;
 
 	return (
-		<span className={`Pinpoint Content Card Date ${className ?? ''}`}>
+		<span className={`Pinpoint Date ${className ?? ''}`}>
 			{DateTime.fromMillis(ts).toLocaleString(format)}
 		</span>
 	);

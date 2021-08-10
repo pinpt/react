@@ -1,7 +1,7 @@
 import { ReactElement } from 'react';
 import Card from '../../Card';
 import { ICardContainerProps } from '../../Card/Container';
-import { ICardDateProps } from '../../Card/Date';
+import DateLabel, { IDateProps } from '../../DateLabel';
 import { ICardDescriptionProps } from '../../Card/Description';
 import { ICardReadButtonProps } from '../../Card/ReadButton';
 import { ICardTitleProps } from '../../Card/Title';
@@ -33,7 +33,7 @@ export interface IPrebuiltSearchResultsProps {
 	renderSearchResults?: (entries: IContent[]) => ReactElement<ISearchResultsProps>;
 	renderCard?: (content: IContent) => ReactElement<ICardContainerProps>;
 	renderCardTitle?: (content: IContent) => ReactElement<ICardTitleProps>;
-	renderCardDate?: (content: IContent) => ReactElement<ICardDateProps>;
+	renderCardDate?: (content: IContent) => ReactElement<IDateProps>;
 	renderCardDescription?: (content: IContent) => ReactElement<ICardDescriptionProps>;
 	renderCardStatistics?: (content: IContent) => ReactElement<IStatisticsBarProps>;
 	renderCardButton?: (content: IContent) => ReactElement<ICardReadButtonProps>;
@@ -158,7 +158,7 @@ const SearchResults = (props: IPrebuiltSearchResultsProps) => {
 										}
 										date={
 											renderCardDate?.(content) ?? (
-												<Card.Date className="Prebuilt" ts={content.publishedAt} />
+												<DateLabel className="Prebuilt" ts={content.publishedAt} />
 											)
 										}
 										description={

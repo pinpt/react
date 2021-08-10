@@ -2,6 +2,7 @@ import { ReactElement } from 'react';
 import Author, { IAuthorProps } from '../../Author';
 import Clap, { IClapProps } from '../../Clap';
 import Copyright, { ICopyrightProps } from '../../Copyright';
+import DateLabel, { IDateProps } from '../../DateLabel';
 import Footer, { IFooterProps } from '../../Footer';
 import Header, { IHeaderProps } from '../../Header';
 import Logo, { ILogoProps } from '../../Logo';
@@ -30,6 +31,7 @@ export interface IPrebuiltEntryProps {
 	renderCopyright?: (site: ISite) => ReactElement<ICopyrightProps>;
 	renderLogo?: (site: ISite) => ReactElement<ILogoProps>;
 	renderSidebar?: (content: IContent) => ReactElement<ISidebarProps>;
+	renderDate?: (content: IContent) => ReactElement<IDateProps>;
 	renderAuthor?: (content: IContent) => ReactElement<IAuthorProps>;
 	renderTags?: (content: IContent) => ReactElement<ITagBarProps>;
 	renderClap?: (content: IContent) => ReactElement<IClapProps>;
@@ -59,6 +61,7 @@ const Entry = (props: IPrebuiltEntryProps) => {
 		renderLogo,
 		renderSocial,
 		renderSidebar,
+		renderDate,
 		renderAuthor,
 		renderTags,
 		renderClap,
@@ -81,6 +84,11 @@ const Entry = (props: IPrebuiltEntryProps) => {
 			sidebar={
 				renderSidebar?.(content) ?? (
 					<Sidebar
+						date={
+							renderDate?.(content) ?? (
+								<DateLabel ts={content.publishedAt} /> 
+							)
+						}
 						author={
 							renderAuthor?.(content) ?? (
 								<Author
@@ -104,7 +112,7 @@ const Entry = (props: IPrebuiltEntryProps) => {
 						}
 						sharing={
 							renderSocialSharing?.(site) ?? (
-								<Social.Bar>
+								<Social.Bar className="sharing">
 									<Social.Facebook
 										sharing
 										href={`https://facebook.com/sharer/sharer.php?u=${content.url}`}

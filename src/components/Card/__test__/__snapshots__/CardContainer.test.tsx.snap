@@ -17,7 +17,7 @@ exports[`Test full card 1`] = `
       Test Title
     </h2>
     <span
-      className="Pinpoint Content Card Date "
+      className="Pinpoint Date "
     >
       12/31/1969
     </span>
@@ -363,7 +363,7 @@ exports[`Test multiple cards 1`] = `
         Test Title
       </h2>
       <span
-        className="Pinpoint Content Card Date "
+        className="Pinpoint Date "
       >
         12/31/1969
       </span>
@@ -531,7 +531,7 @@ exports[`Test multiple cards 1`] = `
         Test Title
       </h2>
       <span
-        className="Pinpoint Content Card Date "
+        className="Pinpoint Date "
       >
         12/31/1969
       </span>

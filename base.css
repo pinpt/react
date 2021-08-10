@@ -24,7 +24,7 @@ body {
  * Styles for the header component
  */
 .Header {
-	@apply flex py-5 flex-col border-b border-gray-300 dark:border-gray-700;
+	@apply flex py-5 flex-col;
 }
 
 .Header .top {
@@ -132,8 +132,13 @@ html.dark .ThemeToggle .mode::after {
 /*
  * Styles for the footer component
  */
+.footerWrapper {
+	background-color: var(--footer-bg-color);
+	color: var(--footer-text-color);
+}
+
 .Footer {
-	@apply flex flex-col py-14 text-sm;
+	@apply py-14 text-sm;
 	background-color: var(--footer-bg-color);
 	color: var(--footer-text-color);
 }
@@ -176,32 +181,32 @@ html.dark .ThemeToggle .mode::after {
 	@apply flex gap-x-4;
 }
 
-.Social a:hover {
+.Social.Bar a:hover {
 	filter: brightness(1.5);
 }
 
-.Social.sharing {
-	@apply flex flex-col items-center content-center justify-center rounded-lg w-8 h-8 text-white;
+.Social.Bar.sharing {
+	@apply flex gap-x-2;
+}
+
+.Social.Item.sharing {
+	@apply flex flex-col items-center content-center justify-center rounded-lg w-8 h-8 text-white hover:filter-none;
 }
 
 .Social.sharing.Twitter {
-	--tw-bg-opacity: 1;
-	background-color: rgba(85, 172, 238, var(--tw-bg-opacity));
+	@apply bg-[#55acee] hover:bg-[#2795e9];
 }
 
 .Social.sharing.Facebook {
-	--tw-bg-opacity: 1;
-	background-color: rgba(59, 89, 152, var(--tw-bg-opacity));
+	@apply bg-[#3b5998] hover:bg-[#2d4373];
 }
 
 .Social.sharing.LinkedIn {
-	--tw-bg-opacity: 1;
-	background-color: rgba(0, 119, 181, var(--tw-bg-opacity));
+	@apply bg-[#0077b5] hover:bg-[#046293];
 }
 
 .Social.sharing.Email {
-	--tw-bg-opacity: 1;
-	background-color: rgba(113, 113, 122, var(--tw-bg-opacity));
+	@apply bg-gray-500 hover:bg-gray-600;
 }
 
 /*
@@ -209,17 +214,18 @@ html.dark .ThemeToggle .mode::after {
  */
 .Content.Card.Container.wrapper {
 	@apply w-full rounded-md overflow-hidden mt-auto flex flex-col h-full cursor-pointer shadow-md hover:shadow-lg transition-all duration-200;
-	background-color: var(--tile-bg-color);
-	color: var(--tile-bg-color);
+	background-color: var(--card-bg-color);
+	color: var(--card-bg-color);
 }
 
-.Content.Card.Container.wrapper .cover {
+.Content.Card.Container.wrapper .cover.
+.Content.Card.Container.wrapper .covermedia .media-container img {
 	@apply lg:h-48 md:h-36 w-full object-cover object-center;
 }
 
 .Content.Card.Container.wrapper .empty-cover {
-	@apply h-32 lg:h-48 md:h-36 w-full object-cover object-center;
-	background-image: linear-gradient(to right, var(--tw-gradient-stops));
+	@apply lg:h-48 md:h-36 w-full;
+	background-image: linear-gradient(to right, var(--card-empty-gradient-from), var(--card-empty-gradient-to));
 }
 
 .Content.Card.Container.wrapper .content {
@@ -234,28 +240,28 @@ html.dark .ThemeToggle .mode::after {
 	@apply ml-auto;
 }
 
-.Content.Card.Date {
+.Content.Card .Date {
 	@apply mt-0.5 text-xs mb-2;
-	color: var(--tile-date-color);
+	color: var(--card-date-color);
 }
 
 .Content.Card.Title {
 	@apply text-lg font-semibold transition-colors duration-200;
-	color: var(--tile-title-color);
+	color: var(--card-title-color);
 }
 
 .Content.Card:hover .Title {
-	color: var(--tile-link-color);
+	color: var(--card-link-color);
 }
 
 .Content.Card.Description {
 	@apply mb-4;
-	color: var(--tile-summary-color);
+	color: var(--card-summary-color);
 }
 
 .Content.Card.Read {
 	@apply flex items-center cursor-pointer no-underline;
-	color: var(--tile-link-color);
+	color: var(--card-link-color);
 }
 
 .Content.Card.Read .arrow {
@@ -271,7 +277,7 @@ html.dark .ThemeToggle .mode::after {
  */
 .Statistic.wrapper {
 	@apply flex items-center;
-	color: var(--tile-info-color);
+	color: var(--card-info-color);
 }
 
 .Statistic .count {
@@ -285,9 +291,8 @@ html.dark .ThemeToggle .mode::after {
 /*
  * Styles for the dashboard and search components
  */
-
-.Latest {
-	@apply transition-colors duration-200;
+.latestWrapper {
+	@apply py-10 md:py-14 transition-colors duration-200;
 	background-color: var(--section-bg-color);
 }
 
@@ -298,8 +303,8 @@ html.dark .ThemeToggle .mode::after {
 	@apply text-2xl font-semibold;
 }
 
-.Latest .content {
-	@apply flex py-10 md:py-14 flex-col md:flex-row;
+.Latest {
+	@apply flex flex-col md:flex-row;
 }
 
 .Latest .heading,
@@ -314,17 +319,34 @@ html.dark .ThemeToggle .mode::after {
 	flex-basis: 75%;
 }
 
+.recentWrapper,
+.searchResultsWrapper {
+	@apply py-10 md:py-14;
+}
+
+.Recent,
+.Search.Results {
+	@apply flex flex-col md:flex-row;
+}
+
+.Recent .container,
+.Search.Results .container {
+	@apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 grid-flow-row;
+	flex-basis: 75%;
+}
+
 .Recent .pageIndicator {
 	@apply font-normal text-base ml-2;
 	color: var(--page-secondary-text-color);
 }
 
-.Search.Query {
-	@apply flex p-2 md:p-12 md:pb-4 flex-col;
+.searchQueryWrapper {
+	@apply py-10 md:py-14 transition-colors duration-200;
+	background-color: var(--section-bg-color);
 }
 
 .Search.Query .heading {
-	@apply mb-2 mr-6;
+	@apply mb-4;
 }
 
 .Search.Query .container {
@@ -332,7 +354,11 @@ html.dark .ThemeToggle .mode::after {
 }
 
 .Search.Results .empty {
-	@apply text-3xl font-bold text-center flex-grow;
+	@apply text-3xl font-bold text-center;
+}
+
+.searchResultsWrapper .empty {
+	@apply mt-[5vh];
 }
 
 .Search.Results .back {
@@ -342,33 +368,25 @@ html.dark .ThemeToggle .mode::after {
 .Search.Results .back .icon {
 	@apply mr-2;
 }
-/*
- * Styles for the recent component
- */
-.Recent .content,
-.Search.Results {
-	@apply flex-grow flex py-10 md:py-14 flex-col md:flex-row;
-}
 
-.Recent .container,
-.Search.Results .container {
-	@apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 grid-flow-row;
-	flex-basis: 75%;
-}
 
 /*
  * Pagination
  */
-.Page .Pagination {
-	@apply px-12 pb-6;
+.paginationWrapper {
+	@apply pb-10 md:pb-14 flex-grow;
+}
+
+.paginationWrapper .Pagination {
+	@apply md:ml-[calc(25%+1rem)];
+}
+
+.Pagination {
+	@apply flex justify-between items-center space-x-10;
 	color: var(--page-highlight-color);
 }
 
-.Pagination .content {
-	@apply md:ml-[calc(25%+1rem)] flex-grow flex justify-between items-center space-x-10;
-}
-
-.Pagination .content.forwardOnly {
+.Pagination.forwardOnly {
 	@apply justify-end;
 }
 
@@ -397,8 +415,8 @@ html.dark .ThemeToggle .mode::after {
 	@apply flex flex-col h-screen;
 }
 
-.Page .loadingWrapper {
-	@apply relative h-128;
+.Page .loaderWrapper {
+	@apply relative flex-grow;
 }
 
 /*
@@ -406,32 +424,66 @@ html.dark .ThemeToggle .mode::after {
  */
 
 .Page.Entry {
-	@apply flex flex-col;
+	@apply flex flex-col h-screen;
 }
 
-.Page.Entry .body {
-	@apply my-14;
+.entryWrapper {
+	@apply flex-grow;
 }
 
-.Page.Entry .body > .content {
-	@apply flex flex-col md:flex-row;
+.entryWrapper .container {
+	@apply py-10 md:py-14 flex flex-col md:flex-row border-t;
+	border-color: var(--section-border-color);
 }
 
-.Page.Entry .sidebar {
-	@apply mr-4 min-w-1/4 mb-4 md:mb-0;
+.entryWrapper .sidebarWrapper {
 	color: var(--article-info-color);
 }
 
-.Page.Entry .renderer {
-	@apply mb-12;
+.entryWrapper .sidebarWrapper.before {
+	@apply md:mr-4 mb-8 md:mb-0 min-w-1/4;
+}
+
+.entryWrapper .sidebarWrapper.before .Sidebar {
+	@apply flex-shrink-0 flex-wrap;
+}
+
+.entryWrapper .sidebarWrapper.before .Clap,
+.entryWrapper .sidebarWrapper.before .Social.Bar {
+	@apply hidden md:flex;
+}
+
+.entryWrapper .sidebarWrapper.after {
+	@apply md:hidden;
+}
+
+.entryWrapper .sidebarWrapper.after .Sidebar {
+	@apply justify-between;
+}
+
+.entryWrapper .sidebarWrapper.after .Date,
+.entryWrapper .sidebarWrapper.after .Author,
+.entryWrapper .sidebarWrapper.after .Tag.Bar {
+	@apply hidden;
+}
+
+.entryWrapper .renderer {
+	@apply mb-10 md:mb-14;
 }
 
 /*
  * Styles for the sidebar component
  */
 .Sidebar {
-	@apply flex flex-row md:flex-col items-center md:items-start gap-y-8;
+	@apply flex flex-row md:flex-col items-center md:items-start gap-y-4 md:gap-y-8;
 }
+
+/*
+ * Date
+ */
+.entryWrapper .Date {
+	@apply font-semibold flex-grow md:flex-initial flex-shrink-0 w-full md:w-auto;
+  }
 
 /*
  * Styles for the author component

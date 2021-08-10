@@ -1,5 +1,6 @@
 import { ReactElement } from 'react';
 import { CoverMedia } from '../../Renderer';
+import withWrapper from '../../Internal/withWrapper';
 
 import type { IFooterProps } from '../../Footer';
 import type { ISidebarProps } from '../../Sidebar';
@@ -20,10 +21,10 @@ const Entry = (props: IPageEntryProps) => {
 
 	return (
 		<div className={`Pinpoint Page Entry ${className}`}>
-			{header}
-			<div className="body">
-				<div className="constraint content">
-					<div className="sidebar">{sidebar}</div>
+			{withWrapper(header, 'header')}
+			{withWrapper(
+				<div className="container">
+					<div className="sidebarWrapper before">{sidebar}</div>
 					<div className="content">
 						{coverMedia && <CoverMedia media={coverMedia} title={title} />}
 						<div className="renderer">
@@ -32,9 +33,10 @@ const Entry = (props: IPageEntryProps) => {
 							</article>
 						</div>
 					</div>
-				</div>
-			</div>
-			{footer}
+					<div className="sidebarWrapper after">{sidebar}</div>
+				</div>,
+			'entry')}
+			{withWrapper(footer, 'footer')}
 		</div>
 	);
 };

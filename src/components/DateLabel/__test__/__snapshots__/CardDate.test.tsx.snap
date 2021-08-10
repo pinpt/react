@@ -2,7 +2,7 @@
 
 exports[`Test custom class 1`] = `
 <span
-  className="Pinpoint Content Card Date test-custom"
+  className="Pinpoint Date test-custom"
 >
   12/31/1969
 </span>
@@ -10,7 +10,7 @@ exports[`Test custom class 1`] = `
 
 exports[`Test default state 1`] = `
 <span
-  className="Pinpoint Content Card Date "
+  className="Pinpoint Date "
 >
   12/31/1969
 </span>
@@ -18,7 +18,7 @@ exports[`Test default state 1`] = `
 
 exports[`Test default state with custom timestamp 1`] = `
 <span
-  className="Pinpoint Content Card Date "
+  className="Pinpoint Date "
 >
   7/29/2021
 </span>
@@ -26,7 +26,7 @@ exports[`Test default state with custom timestamp 1`] = `
 
 exports[`Test full format 1`] = `
 <span
-  className="Pinpoint Content Card Date "
+  className="Pinpoint Date "
 >
   December 31, 1969
 </span>
@@ -34,7 +34,7 @@ exports[`Test full format 1`] = `
 
 exports[`Test full format with custom timestamp 1`] = `
 <span
-  className="Pinpoint Content Card Date "
+  className="Pinpoint Date "
 >
   July 29, 2021
 </span>
@@ -42,7 +42,7 @@ exports[`Test full format with custom timestamp 1`] = `
 
 exports[`Test huge format 1`] = `
 <span
-  className="Pinpoint Content Card Date "
+  className="Pinpoint Date "
 >
   Wednesday, December 31, 1969, 6:00:00 PM Central Standard Time
 </span>
@@ -50,7 +50,7 @@ exports[`Test huge format 1`] = `
 
 exports[`Test huge format with custom timestamp 1`] = `
 <span
-  className="Pinpoint Content Card Date "
+  className="Pinpoint Date "
 >
   Thursday, July 29, 2021, 11:10:55 AM Central Daylight Time
 </span>
@@ -58,7 +58,7 @@ exports[`Test huge format with custom timestamp 1`] = `
 
 exports[`Test time format 1`] = `
 <span
-  className="Pinpoint Content Card Date "
+  className="Pinpoint Date "
 >
   12/31/1969, 6:00 PM
 </span>
@@ -66,7 +66,7 @@ exports[`Test time format 1`] = `
 
 exports[`Test time format with custom timestamp 1`] = `
 <span
-  className="Pinpoint Content Card Date "
+  className="Pinpoint Date "
 >
   7/29/2021, 11:10 AM
 </span>

@@ -4,7 +4,7 @@ import { CoverMediaType } from '../../../lib/types';
 import StatisticsBar from '../../Statistic/Bar';
 import Tags from '../../Tags';
 import Container from '../Container';
-import Date from '../Date';
+import DateLabel from '../../DateLabel';
 import Description from '../Description';
 import ReadButton from '../ReadButton';
 import Title from '../Title';
@@ -32,7 +32,7 @@ export const Full_Card: React.VFC<{}> = () => (
 	<Container
 		imageUrl="https://cdn.pinpoint.com/card.png"
 		title={<Title title={TEST_TITLE} />}
-		date={<Date />}
+		date={<DateLabel />}
 		description={<Description description={TEST_DESCRIPTION} />}
 		statistics={<StatisticsBar claps={22} views={135} />}
 		button={<ReadButton />}

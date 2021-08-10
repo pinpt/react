@@ -61,7 +61,7 @@ test('Test component exports', () => {
 
 	// Test Card exports
 	expect(Card).toBeTruthy();
-	const { Title, Description, Container, Date, ReadButton, ...otherCard } = Card;
+	const { Title, Description, Container, ReadButton, ...otherCard } = Card;
 	expect(Title).toBeTruthy();
 	expect(Description).toBeTruthy();
 	expect(Container).toBeTruthy();
