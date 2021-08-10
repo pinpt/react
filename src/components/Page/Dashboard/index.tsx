@@ -28,7 +28,7 @@ const Dashboard = (props: IPageDashboardProps) => {
 		<div className={`Pinpoint Page Dashboard ${className}`}>
 			{withWrapper(header, 'header')}
 			{loading ? (
-				<div className="loadingWrapper">
+				<div className="loaderWrapper">
 					<Loader />
 				</div>
 			) : (
