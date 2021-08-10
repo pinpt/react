@@ -7,7 +7,7 @@ import type { ICardDateProps } from '../Date';
 import type { ICardDescriptionProps } from '../Description';
 import type { ICardReadButtonProps } from '../ReadButton';
 import type { ICardTitleProps } from '../Title';
-import type { ICoverMedia } from '../../../lib/types';
+import { CoverMediaType, ICoverMedia } from '../../../lib/types';
 
 export interface ICardContainerProps {
 	title?: React.ReactElement<ICardTitleProps>;
@@ -25,12 +25,13 @@ export interface ICardContainerProps {
 
 const Container = (props: ICardContainerProps) => {
 	const { title, description, imageUrl, alt, className, statistics, date, button, tags, coverMedia, onClick } = props;
+	const hasCoverMedia = coverMedia && coverMedia.type !== CoverMediaType.None;
 
 	return (
 		<div className={`Pinpoint Content Card Container wrapper ${className ?? ''}`} onClick={onClick}>
 			{imageUrl && <img className="cover" src={imageUrl} alt={alt} />}
-			{coverMedia && <CoverMedia media={coverMedia} />}
-			{!coverMedia && !imageUrl && <div className="empty-cover" />}
+			{hasCoverMedia && <CoverMedia media={coverMedia} />}
+			{!hasCoverMedia && !imageUrl && <div className="empty-cover" />}
 			<div className="content">
 				{title}
 				{date}

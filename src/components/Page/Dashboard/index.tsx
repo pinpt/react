@@ -7,6 +7,7 @@ import { IRecentProps } from '../../Recent';
 import Loader from '../../Loader';
 import { IQueryProps } from '../../Search/Query';
 import { IPaginationProps } from '../../Pagination';
+import withWrapper from '../../Internal/withWrapper';
 
 export interface IPageDashboardProps {
 	className?: string;
@@ -22,23 +23,24 @@ export interface IPageDashboardProps {
 
 const Dashboard = (props: IPageDashboardProps) => {
 	const { className = '', footer, latest, recent, header, searchResults, loading, searchQuery, pagination } = props;
+
 	return (
 		<div className={`Pinpoint Page Dashboard ${className}`}>
-			{header}
+			{withWrapper(header, 'header')}
 			{loading ? (
 				<div className="loadingWrapper">
 					<Loader />
 				</div>
 			) : (
 				<>
-					{searchQuery}
-					{searchResults}
-					{latest}
-					{recent}
+					{withWrapper(searchQuery, 'searchQuery')}
+					{withWrapper(searchResults, 'searchResults')}
+					{withWrapper(latest, 'latest')}
+					{withWrapper(recent, 'recent')}
 				</>
 			)}
-			{pagination}
-			{footer}
+			{withWrapper(pagination, 'pagination')}
+			{withWrapper(footer, 'footer')}
 		</div>
 	);
 };

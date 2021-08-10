@@ -1365,16 +1365,16 @@ div.home main.changelogs-0 {
  * article
  */
 
-.covermedia:not(:empty) {
+.entryWrapper .covermedia:not(:empty) {
 	@apply mb-10 relative flex justify-center;
 }
 
-.covermedia .image {
+.entryWrapper .covermedia .image {
 	@apply rounded-lg shadow-lg overflow-hidden;
 	border-color: var(--article-border-color);
 }
 
-.covermedia .image > img {
+.entryWrapper .covermedia .image > img {
 	@apply object-cover object-center;
 }
 
@@ -1383,7 +1383,7 @@ div.home main.changelogs-0 {
 	border-color: var(--article-border-color);
 }
 
-article.changelog {
+article {
 	min-height: 500px;
 }
 
