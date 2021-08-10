@@ -19,6 +19,7 @@ import Search from '../../Search';
 
 import type { IContent, ISite } from '../../../lib/types';
 import { ISearchBarProps } from '../../Search/Bar';
+import Pagination from '../../Pagination';
 
 export interface IPrebuiltEntryProps {
 	className?: string;
@@ -38,6 +39,7 @@ export interface IPrebuiltEntryProps {
 	handleSelectHome?: () => void;
 	renderSearch?: (site: ISite) => ReactElement<ISearchBarProps>;
 	renderSocialSharing?: (site: ISite) => ReactElement<ISocialBarProps>;
+	renderPagination?: (site: ISite, next?: IContent, previous?: IContent) => void;
 	clapCount?: number;
 	sessionClapCount?: number;
 	onClap?: (content: IContent) => void;
@@ -45,6 +47,9 @@ export interface IPrebuiltEntryProps {
 	content: IContent;
 	searchTerm?: string;
 	handleSearch?: (value: string) => void;
+	nextEntry?: IContent;
+	previousEntry?: IContent;
+	handleSelectEntry?: (entry: IContent) => void;
 }
 
 const Entry = (props: IPrebuiltEntryProps) => {
@@ -73,6 +78,10 @@ const Entry = (props: IPrebuiltEntryProps) => {
 		handleSearch,
 		renderSearch,
 		renderSocialSharing,
+		renderPagination,
+		nextEntry,
+		previousEntry,
+		handleSelectEntry,
 	} = props;
 
 	return (
@@ -162,6 +171,17 @@ const Entry = (props: IPrebuiltEntryProps) => {
 						}
 					/>
 				)
+			}
+			pagination={
+				renderPagination?.(site, nextEntry, previousEntry) ??
+				(nextEntry || previousEntry ? (
+					<Pagination
+						goBackText={<Pagination.GoBackWithArrow text={previousEntry?.title} />}
+						goBack={previousEntry && handleSelectEntry ? () => handleSelectEntry(previousEntry) : undefined}
+						goForwardText={<Pagination.GoForwardWithArrow text={nextEntry?.title} />}
+						goForward={nextEntry && handleSelectEntry ? () => handleSelectEntry(nextEntry) : undefined}
+					/>
+				) : undefined)
 			}
 			footer={
 				renderFooter?.(site) ?? (

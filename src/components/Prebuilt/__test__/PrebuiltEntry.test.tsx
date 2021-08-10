@@ -40,3 +40,17 @@ test('Test custom className', () => {
 	const tree = component.toJSON();
 	expect(tree).toMatchSnapshot();
 });
+
+test('Test with pagination', () => {
+	const component = renderer.create(
+		<PrebuiltEntry
+			content={entries[1] as IContent}
+			site={site}
+			previousEntry={entries[0] as IContent}
+			nextEntry={entries[2] as IContent}
+			handleSelectEntry={(entry: IContent) => console.log(`${entry.title} selected!`)}
+		/>
+	);
+	const tree = component.toJSON();
+	expect(tree).toMatchSnapshot();
+});
