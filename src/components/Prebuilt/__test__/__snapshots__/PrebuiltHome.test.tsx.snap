@@ -263,6 +263,7 @@ exports[`Hidden stats 1`] = `
         >
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <img
               className="cover"
@@ -342,6 +343,7 @@ exports[`Hidden stats 1`] = `
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <img
               className="cover"
@@ -423,6 +425,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <img
               className="cover"
@@ -515,6 +518,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <img
               className="cover"
@@ -620,6 +624,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             
             <div
@@ -712,6 +717,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <img
               className="cover"
@@ -804,6 +810,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <img
               className="cover"
@@ -883,6 +890,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <img
               className="cover"
@@ -975,6 +983,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <img
               className="cover"
@@ -1693,6 +1702,7 @@ exports[`Test custom className 1`] = `
         >
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <img
               className="cover"
@@ -1879,6 +1889,7 @@ exports[`Test custom className 1`] = `
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <img
               className="cover"
@@ -2067,6 +2078,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <img
               className="cover"
@@ -2266,6 +2278,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <img
               className="cover"
@@ -2478,6 +2491,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             
             <div
@@ -2677,6 +2691,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <img
               className="cover"
@@ -2876,6 +2891,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <img
               className="cover"
@@ -3062,6 +3078,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <img
               className="cover"
@@ -3261,6 +3278,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <img
               className="cover"
@@ -4273,6 +4291,7 @@ exports[`Test custom latest length 1`] = `
         >
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <img
               className="cover"
@@ -4461,6 +4480,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <img
               className="cover"
@@ -4660,6 +4680,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <img
               className="cover"
@@ -4872,6 +4893,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             
             <div
@@ -5071,6 +5093,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <img
               className="cover"
@@ -5270,6 +5293,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <img
               className="cover"
@@ -5456,6 +5480,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <img
               className="cover"
@@ -5655,6 +5680,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <img
               className="cover"
@@ -6480,6 +6506,7 @@ exports[`Test default state 1`] = `
         >
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <img
               className="cover"
@@ -6666,6 +6693,7 @@ exports[`Test default state 1`] = `
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <img
               className="cover"
@@ -6854,6 +6882,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <img
               className="cover"
@@ -7053,6 +7082,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <img
               className="cover"
@@ -7265,6 +7295,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             
             <div
@@ -7464,6 +7495,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <img
               className="cover"
@@ -7663,6 +7695,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <img
               className="cover"
@@ -7849,6 +7882,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <img
               className="cover"
@@ -8048,6 +8082,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <img
               className="cover"
@@ -8873,6 +8908,7 @@ exports[`Test default state with partial analytics 1`] = `
         >
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <img
               className="cover"
@@ -9059,6 +9095,7 @@ exports[`Test default state with partial analytics 1`] = `
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <img
               className="cover"
@@ -9247,6 +9284,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <img
               className="cover"
@@ -9446,6 +9484,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <img
               className="cover"
@@ -9658,6 +9697,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             
             <div
@@ -9857,6 +9897,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <img
               className="cover"
@@ -10056,6 +10097,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <img
               className="cover"
@@ -10242,6 +10284,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <img
               className="cover"
@@ -10441,6 +10484,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <img
               className="cover"

@@ -2,11 +2,11 @@ import { ReactElement } from 'react';
 import { splitEntries } from '../../../lib';
 import Card from '../../Card';
 import { ICardContainerProps } from '../../Card/Container';
-import DateLabel, { IDateProps } from '../../DateLabel';
 import { ICardDescriptionProps } from '../../Card/Description';
 import { ICardReadButtonProps } from '../../Card/ReadButton';
 import { ICardTitleProps } from '../../Card/Title';
 import Copyright, { ICopyrightProps } from '../../Copyright';
+import DateLabel, { IDateProps } from '../../DateLabel';
 import Footer, { IFooterProps } from '../../Footer';
 import Header, { IHeaderProps } from '../../Header';
 import Latest, { ILatestProps } from '../../Latest';
@@ -135,49 +135,49 @@ const Home = (props: IPrebuiltHomeProps) => {
 			latest={
 				renderLatest?.(latest) ?? (
 					<Latest className="Prebuilt">
-						{latest.map((Content) => {
+						{latest.map((content) => {
 							return (
-								renderCard?.(Content) ?? (
+								renderCard?.(content) ?? (
 									<Card.Container
-										key={Content.id}
+										key={content.id}
 										className="Prebuilt"
-										imageUrl={Content.coverMedia?.placeholderImage}
-										onClick={() => handleSelectContent?.(Content)}
+										imageUrl={content.coverMedia?.placeholderImage}
+										onClick={() => handleSelectContent?.(content)}
 										title={
-											renderCardTitle?.(Content) ?? <Card.Title className="Prebuilt" title={Content.title} />
+											renderCardTitle?.(content) ?? <Card.Title className="Prebuilt" title={content.title} />
 										}
 										date={
-											renderCardDate?.(Content) ?? (
-												<DateLabel className="Prebuilt" ts={Content.publishedAt} />
+											renderCardDate?.(content) ?? (
+												<DateLabel className="Prebuilt" ts={content.publishedAt} />
 											)
 										}
 										description={
-											renderCardDescription?.(Content) ?? (
-												<Card.Description className="Prebuilt" description={Content.headline} />
+											renderCardDescription?.(content) ?? (
+												<Card.Description className="Prebuilt" description={content.headline} />
 											)
 										}
 										statistics={
-											renderCardStatistics?.(Content, analytics?.[Content.id]) ?? (
+											renderCardStatistics?.(content, analytics?.[content.id]) ?? (
 												<Statistic.Bar
 													className="Prebuilt"
-													claps={analytics?.[Content.id]?.claps ?? 0}
-													views={analytics?.[Content.id]?.pageviews ?? 0}
+													claps={analytics?.[content.id]?.claps ?? 0}
+													views={analytics?.[content.id]?.pageviews ?? 0}
 												/>
 											)
 										}
 										button={
-											renderCardButton?.(Content) ?? (
+											renderCardButton?.(content) ?? (
 												<Card.ReadButton
-													onClick={() => handleSelectContent?.(Content)}
+													onClick={() => handleSelectContent?.(content)}
 													className="Prebuilt"
 												/>
 											)
 										}
 										tags={
-											renderTags?.(Content) ?? (
+											renderTags?.(content) ?? (
 												<Tags.Bar
 													className="Prebuilt"
-													tags={Content.tags ?? []}
+													tags={content.tags ?? []}
 													onClick={(tag: string) => handleAddTagToQuery?.(tag)}
 												/>
 											)
@@ -198,6 +198,7 @@ const Home = (props: IPrebuiltHomeProps) => {
 									<Card.Container
 										key={content.id}
 										className="Prebuilt"
+										onClick={() => handleSelectContent?.(content)}
 										imageUrl={content.coverMedia?.placeholderImage}
 										title={
 											renderCardTitle?.(content) ?? <Card.Title className="Prebuilt" title={content.title} />
