@@ -411,7 +411,6 @@ html.dark .ThemeToggle .mode::after {
 	@apply truncate;
 }
 
-
 /*
  * Styles for the page (dashboard) component
  */
