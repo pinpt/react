@@ -399,12 +399,18 @@ html.dark .ThemeToggle .mode::after {
 }
 
 .Pagination .forward .icon {
-	@apply ml-2;
+	@apply ml-2 flex-shrink-0;
 }
 
 .Pagination .back .icon {
-	@apply mr-2;
+	@apply mr-2 flex-shrink-0;
 }
+
+.Pagination .back .text,
+.Pagination .forward .text {
+	@apply truncate;
+}
+
 
 /*
  * Styles for the page (dashboard) component

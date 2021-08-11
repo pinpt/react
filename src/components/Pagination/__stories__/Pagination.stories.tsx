@@ -35,3 +35,21 @@ export const Back_WithTextOverride: React.VFC<{}> = () => (
 export const Back_WithComponentOverride: React.VFC<{}> = () => (
 	<Pagination goBack={() => alert('back!')} goBackText={<Pagination.GoBackWithArrow text="Yeah, back" />} />
 );
+
+export const LongTitles: React.VFC<{}> = () => (
+	<Pagination
+		goBack={() => alert('back!')}
+		goBackText="Title Of Previous Entry Which Is A Long One No Longer Than That"
+		goForward={() => alert('forward!')}
+		goForwardText="Title Of Next Entry Which Is Also A Long One No Longer Than Than"
+	/>
+);
+
+export const LongTitlesWithArrows: React.VFC<{}> = () => (
+	<Pagination
+		goBack={() => alert('back!')}
+		goBackText={<Pagination.GoBackWithArrow text="Title Of Previous Entry Which Is A Long One No Longer Than That" />}
+		goForward={() => alert('forward!')}
+		goForwardText={<Pagination.GoForwardWithArrow text="Title Of Next Entry Which Is Also A Long One No Longer Than That" />}
+	/>
+);

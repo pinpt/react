@@ -5242,13 +5242,21 @@ exports[`Test with pagination 1`] = `
               fill="currentColor"
             />
           </svg>
-          Linked Content Blocks
+          <span
+            className="text"
+          >
+            Linked Content Blocks
+          </span>
         </div>
         <div
           className="forward"
           onClick={[Function]}
         >
-          Changelog planning just got way simpler!
+          <span
+            className="text"
+          >
+            Changelog planning just got way simpler!
+          </span>
           <svg
             aria-hidden="true"
             className="icon"
