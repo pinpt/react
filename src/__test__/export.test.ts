@@ -24,6 +24,7 @@ const {
 	Loader,
 	Pagination,
 	Head,
+	PoweredByPinpoint,
 
 	emptyDoc,
 	fetchContent,
@@ -129,6 +130,7 @@ test('Test component exports', () => {
 	expect(Sidebar).toBeTruthy();
 	expect(Loader).toBeTruthy();
 	expect(Pagination).toBeTruthy();
+	expect(PoweredByPinpoint).toBeTruthy();
 });
 
 test('Test util exports', () => {

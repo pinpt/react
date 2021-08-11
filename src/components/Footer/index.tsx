@@ -1,6 +1,6 @@
 import { ReactElement } from 'react';
 import { ICopyrightProps } from '../Copyright';
-import PoweredByPinpoint from '../Internal/PoweredByPinpoint';
+import PoweredByPinpoint from '../PoweredByPinpoint';
 import { ISocialBarProps } from '../Social/Bar';
 import { ISubscribeProps } from '../Subscribe';
 

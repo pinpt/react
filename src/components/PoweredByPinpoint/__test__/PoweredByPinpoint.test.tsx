@@ -1,5 +1,5 @@
 import renderer from 'react-test-renderer';
-import PoweredByPinpoint from '../PoweredByPinpoint';
+import PoweredByPinpoint from '../';
 
 test('Test powered by footer', () => {
 	const component = renderer.create(<PoweredByPinpoint siteId="test-site-id" />);
