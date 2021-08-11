@@ -3268,13 +3268,21 @@ exports[`Test with pagination 1`] = `
               fill="currentColor"
             />
           </svg>
-          Previous Entry
+          <span
+            className="text"
+          >
+            Previous Entry
+          </span>
         </div>
         <div
           className="forward"
           onClick={[Function]}
         >
-          Next Entry
+          <span
+            className="text"
+          >
+            Next Entry
+          </span>
           <svg
             aria-hidden="true"
             className="icon"

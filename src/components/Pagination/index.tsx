@@ -9,7 +9,7 @@ export interface IPaginationProps {
 const GoForwardWithArrow = ({ text = 'Next' }: { text?: React.ReactNode }) => {
 	return (
 		<>
-			{text}
+			<span className="text">{text}</span>
 			<svg
 				className="icon"
 				width={15.75}
@@ -31,7 +31,7 @@ const GoForwardWithArrow = ({ text = 'Next' }: { text?: React.ReactNode }) => {
 	);
 };
 
-const GoBackWithArrow = ({ text = 'Back' }: { text?: React.ReactNode }) => {
+const GoBackWithArrow = ({ text = 'Previous' }: { text?: React.ReactNode }) => {
 	return (
 		<>
 			<svg
@@ -51,7 +51,7 @@ const GoBackWithArrow = ({ text = 'Back' }: { text?: React.ReactNode }) => {
 					d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"
 				></path>
 			</svg>
-			{text}
+			<span className="text">{text}</span>
 		</>
 	);
 };
@@ -63,12 +63,12 @@ const Pagination = (props: IPaginationProps) => {
 		<div className={`Pinpoint Pagination ${!goBack && goForward ? 'forwardOnly' : ''} ${className}`}>
 			{goBack && (
 				<div className="back" onClick={goBack}>
-					{goBackText ?? <GoBackWithArrow />}
+					{typeof goBackText === 'string' ? <span className="text">{goBackText}</span> : goBackText ?? <GoBackWithArrow />}
 				</div>
 			)}
 			{goForward && (
 				<div className="forward" onClick={goForward}>
-					{goForwardText ?? <GoForwardWithArrow />}
+					{typeof goForwardText === 'string' ? <span className="text">{goForwardText}</span> : goForwardText ?? <GoForwardWithArrow />}
 				</div>
 			)}
 		</div>

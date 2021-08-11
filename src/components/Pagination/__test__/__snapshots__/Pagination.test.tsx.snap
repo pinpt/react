@@ -25,7 +25,11 @@ exports[`Test back only 1`] = `
         fill="currentColor"
       />
     </svg>
-    Back
+    <span
+      className="text"
+    >
+      Previous
+    </span>
   </div>
 </div>
 `;
@@ -55,13 +59,21 @@ exports[`Test both directions 1`] = `
         fill="currentColor"
       />
     </svg>
-    Back
+    <span
+      className="text"
+    >
+      Previous
+    </span>
   </div>
   <div
     className="forward"
     onClick={[Function]}
   >
-    Next
+    <span
+      className="text"
+    >
+      Next
+    </span>
     <svg
       aria-hidden="true"
       className="icon"
@@ -97,7 +109,11 @@ exports[`Test forward only 1`] = `
     className="forward"
     onClick={[Function]}
   >
-    Next
+    <span
+      className="text"
+    >
+      Next
+    </span>
     <svg
       aria-hidden="true"
       className="icon"
@@ -127,7 +143,11 @@ exports[`Test override the go back component 1`] = `
     className="forward"
     onClick={[Function]}
   >
-    Next
+    <span
+      className="text"
+    >
+      Next
+    </span>
     <svg
       aria-hidden="true"
       className="icon"
@@ -157,7 +177,11 @@ exports[`Test override the go back component using default component 1`] = `
     className="forward"
     onClick={[Function]}
   >
-    Next
+    <span
+      className="text"
+    >
+      Next
+    </span>
     <svg
       aria-hidden="true"
       className="icon"
@@ -187,7 +211,11 @@ exports[`Test override the go forward component 1`] = `
     className="forward"
     onClick={[Function]}
   >
-    Next
+    <span
+      className="text"
+    >
+      Next
+    </span>
     <svg
       aria-hidden="true"
       className="icon"
@@ -217,7 +245,11 @@ exports[`Test override the go forward component using default component 1`] = `
     className="forward"
     onClick={[Function]}
   >
-    Go Forward With Arrow
+    <span
+      className="text"
+    >
+      Go Forward With Arrow
+    </span>
     <svg
       aria-hidden="true"
       className="icon"
