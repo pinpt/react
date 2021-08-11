@@ -1,9 +1,10 @@
+import React from 'react';
 import { getTagColorStyles } from '../../../lib/color';
 
 export interface IItemProps {
 	className?: string;
 	tag: string;
-	onClick?: () => void;
+	onClick?: (e: React.MouseEvent<HTMLDivElement>) => void;
 	noColor?: boolean;
 	removable?: boolean;
 }
