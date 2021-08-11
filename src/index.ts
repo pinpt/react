@@ -21,3 +21,4 @@ export { default as Sidebar } from './components/Sidebar';
 export { default as Search } from './components/Search';
 export { default as Loader } from './components/Loader';
 export { default as Pagination } from './components/Pagination';
+export { default as PoweredByPinpoint } from './components/PoweredByPinpoint';

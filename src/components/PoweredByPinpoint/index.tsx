@@ -1,4 +1,10 @@
-const PoweredByPinpoint = ({ siteId }: { siteId?: string }) => {
+export interface IPoweredByPinpointProps {
+	siteId?: string;
+}
+
+const PoweredByPinpoint = (props: IPoweredByPinpointProps) => {
+	const { siteId } = props;
+
 	return (
 		<a
 			href={`https://pinpoint.com/?utm_source=referral&utm_medium=web&utm_campaign=${siteId}`}

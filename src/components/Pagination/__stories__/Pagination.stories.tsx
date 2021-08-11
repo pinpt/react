@@ -50,6 +50,8 @@ export const LongTitlesWithArrows: React.VFC<{}> = () => (
 		goBack={() => alert('back!')}
 		goBackText={<Pagination.GoBackWithArrow text="Title Of Previous Entry Which Is A Long One No Longer Than That" />}
 		goForward={() => alert('forward!')}
-		goForwardText={<Pagination.GoForwardWithArrow text="Title Of Next Entry Which Is Also A Long One No Longer Than That" />}
+		goForwardText={
+			<Pagination.GoForwardWithArrow text="Title Of Next Entry Which Is Also A Long One No Longer Than That" />
+		}
 	/>
 );
