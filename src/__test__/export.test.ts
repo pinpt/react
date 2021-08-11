@@ -47,6 +47,7 @@ const {
 	formatNumber,
 	compactNumber,
 	getTwitterProfileFromURL,
+	cancelEvent,
 
 	...otherExports
 } = Exports;
@@ -152,6 +153,7 @@ test('Test util exports', () => {
 	expect(formatNumber).toBeTruthy();
 	expect(compactNumber).toBeTruthy();
 	expect(getTwitterProfileFromURL).toBeTruthy();
+	expect(cancelEvent).toBeTruthy();
 });
 
 test('Test for unexpected exports', () => {

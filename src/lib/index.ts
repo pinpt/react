@@ -5,3 +5,4 @@ export * from './entries';
 export * from './color';
 export * from './hooks';
 export * from './data';
+export * from './event';
