@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import { cancelEvent } from '../../../lib';
 import Item from '../Item';
 
 export interface ITagBarProps {
@@ -11,16 +11,6 @@ export interface ITagBarProps {
 const Bar = (props: ITagBarProps) => {
 	const { className = '', tags, onClick, removable } = props;
 
-	const handleClick = useCallback(
-		(event: React.MouseEvent<HTMLDivElement>, tag: string) => {
-			event.preventDefault();
-			event.stopPropagation();
-			onClick?.(tag);
-			return false;
-		},
-		[onClick]
-	);
-
 	return (
 		<div className={`Pinpoint Tag Bar ${className}`}>
 			{tags.map((tag) => {
@@ -29,7 +19,7 @@ const Bar = (props: ITagBarProps) => {
 						removable={removable}
 						key={tag}
 						tag={tag}
-						onClick={onClick ? (e) => handleClick(e, tag) : undefined}
+						onClick={onClick ? (e) => cancelEvent(e, () => onClick(tag)) : undefined}
 					/>
 				);
 			})}
