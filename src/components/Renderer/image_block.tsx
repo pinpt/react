@@ -6,8 +6,6 @@ const ImageBlock = ({ node }: NodeProps) => {
 	const scaledWidth = (size?.width ?? 0) * node.attrs.scale;
 	const scaledHeight = (size?.height ?? 0) * node.attrs.scale;
 
-	console.log(size, node.attrs.scale, scaledWidth, scaledHeight);
-
 	const image = (
 		<div className="image">
 			<img src={node.attrs.src} width={scaledWidth} height={scaledHeight} alt={node.attrs.alt} />

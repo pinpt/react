@@ -491,73 +491,10 @@ exports[`Test custom className 1`] = `
                     className="image"
                   >
                     <img
-                      alt="Hello World"
                       height={360}
                       src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
                       width={540}
                     />
-                  </div>
-                  <div
-                    className="alt"
-                  >
-                    Hello World
-                  </div>
-                </div>
-                <div
-                  className="image_block left"
-                >
-                  <div
-                    className="image"
-                  >
-                    <img
-                      alt="Hello World"
-                      height={200}
-                      src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
-                      width={300}
-                    />
-                  </div>
-                  <div
-                    className="alt"
-                  >
-                    Hello World
-                  </div>
-                </div>
-                <div
-                  className="image_block right"
-                >
-                  <div
-                    className="image"
-                  >
-                    <img
-                      alt="Hello World"
-                      height={200}
-                      src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
-                      width={300}
-                    />
-                  </div>
-                  <div
-                    className="alt"
-                  >
-                    Hello World
-                  </div>
-                </div>
-                <div
-                  className="image_block center"
-                >
-                  <div
-                    className="image"
-                  >
-                    <img
-                      alt="Hello World"
-                      height={2000}
-                      src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
-                      width={3000}
-                    />
-                  </div>
-                  <div
-                    className="alt"
-                  >
-                    Hello World
                   </div>
                 </div>
                 <p>
@@ -1570,73 +1507,10 @@ exports[`Test default state 1`] = `
                     className="image"
                   >
                     <img
-                      alt="Hello World"
                       height={360}
                       src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
                       width={540}
                     />
-                  </div>
-                  <div
-                    className="alt"
-                  >
-                    Hello World
-                  </div>
-                </div>
-                <div
-                  className="image_block left"
-                >
-                  <div
-                    className="image"
-                  >
-                    <img
-                      alt="Hello World"
-                      height={200}
-                      src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
-                      width={300}
-                    />
-                  </div>
-                  <div
-                    className="alt"
-                  >
-                    Hello World
-                  </div>
-                </div>
-                <div
-                  className="image_block right"
-                >
-                  <div
-                    className="image"
-                  >
-                    <img
-                      alt="Hello World"
-                      height={200}
-                      src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
-                      width={300}
-                    />
-                  </div>
-                  <div
-                    className="alt"
-                  >
-                    Hello World
-                  </div>
-                </div>
-                <div
-                  className="image_block center"
-                >
-                  <div
-                    className="image"
-                  >
-                    <img
-                      alt="Hello World"
-                      height={2000}
-                      src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
-                      width={3000}
-                    />
-                  </div>
-                  <div
-                    className="alt"
-                  >
-                    Hello World
                   </div>
                 </div>
                 <p>
@@ -2548,73 +2422,10 @@ exports[`Test no author 1`] = `
                     className="image"
                   >
                     <img
-                      alt="Hello World"
                       height={360}
                       src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
                       width={540}
                     />
-                  </div>
-                  <div
-                    className="alt"
-                  >
-                    Hello World
-                  </div>
-                </div>
-                <div
-                  className="image_block left"
-                >
-                  <div
-                    className="image"
-                  >
-                    <img
-                      alt="Hello World"
-                      height={200}
-                      src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
-                      width={300}
-                    />
-                  </div>
-                  <div
-                    className="alt"
-                  >
-                    Hello World
-                  </div>
-                </div>
-                <div
-                  className="image_block right"
-                >
-                  <div
-                    className="image"
-                  >
-                    <img
-                      alt="Hello World"
-                      height={200}
-                      src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
-                      width={300}
-                    />
-                  </div>
-                  <div
-                    className="alt"
-                  >
-                    Hello World
-                  </div>
-                </div>
-                <div
-                  className="image_block center"
-                >
-                  <div
-                    className="image"
-                  >
-                    <img
-                      alt="Hello World"
-                      height={2000}
-                      src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
-                      width={3000}
-                    />
-                  </div>
-                  <div
-                    className="alt"
-                  >
-                    Hello World
                   </div>
                 </div>
                 <p>
@@ -3442,73 +3253,10 @@ exports[`Test no claps 1`] = `
                     className="image"
                   >
                     <img
-                      alt="Hello World"
                       height={360}
                       src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
                       width={540}
                     />
-                  </div>
-                  <div
-                    className="alt"
-                  >
-                    Hello World
-                  </div>
-                </div>
-                <div
-                  className="image_block left"
-                >
-                  <div
-                    className="image"
-                  >
-                    <img
-                      alt="Hello World"
-                      height={200}
-                      src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
-                      width={300}
-                    />
-                  </div>
-                  <div
-                    className="alt"
-                  >
-                    Hello World
-                  </div>
-                </div>
-                <div
-                  className="image_block right"
-                >
-                  <div
-                    className="image"
-                  >
-                    <img
-                      alt="Hello World"
-                      height={200}
-                      src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
-                      width={300}
-                    />
-                  </div>
-                  <div
-                    className="alt"
-                  >
-                    Hello World
-                  </div>
-                </div>
-                <div
-                  className="image_block center"
-                >
-                  <div
-                    className="image"
-                  >
-                    <img
-                      alt="Hello World"
-                      height={2000}
-                      src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
-                      width={3000}
-                    />
-                  </div>
-                  <div
-                    className="alt"
-                  >
-                    Hello World
                   </div>
                 </div>
                 <p>
@@ -4437,73 +4185,10 @@ exports[`Test not zoomable 1`] = `
                     className="image"
                   >
                     <img
-                      alt="Hello World"
                       height={360}
                       src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
                       width={540}
                     />
-                  </div>
-                  <div
-                    className="alt"
-                  >
-                    Hello World
-                  </div>
-                </div>
-                <div
-                  className="image_block left"
-                >
-                  <div
-                    className="image"
-                  >
-                    <img
-                      alt="Hello World"
-                      height={200}
-                      src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
-                      width={300}
-                    />
-                  </div>
-                  <div
-                    className="alt"
-                  >
-                    Hello World
-                  </div>
-                </div>
-                <div
-                  className="image_block right"
-                >
-                  <div
-                    className="image"
-                  >
-                    <img
-                      alt="Hello World"
-                      height={200}
-                      src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
-                      width={300}
-                    />
-                  </div>
-                  <div
-                    className="alt"
-                  >
-                    Hello World
-                  </div>
-                </div>
-                <div
-                  className="image_block center"
-                >
-                  <div
-                    className="image"
-                  >
-                    <img
-                      alt="Hello World"
-                      height={2000}
-                      src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
-                      width={3000}
-                    />
-                  </div>
-                  <div
-                    className="alt"
-                  >
-                    Hello World
                   </div>
                 </div>
                 <p>
