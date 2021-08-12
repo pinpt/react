@@ -5,15 +5,9 @@ export default {
 			type: 'image_block',
 			attrs: {
 				src: 'https://cdn.pinpoint.com/card.png',
-				alt: 'card',
+				alt: 'Image Caption',
 				href: 'https://pinpoint.com',
 			},
-			content: [
-				{
-					type: 'text',
-					text: 'hi',
-				},
-			],
 		},
 	],
 };

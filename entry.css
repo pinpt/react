@@ -1378,9 +1378,34 @@ div.home main.changelogs-0 {
 	@apply object-cover object-center;
 }
 
-.image_block > img {
-	@apply rounded-lg shadow-lg border;
-	border-color: var(--article-border-color);
+.image_block .image {
+	@apply flex justify-center;
+}
+.image_block.left .image {
+	@apply justify-start;
+}
+.image_block.center .image {
+	@apply justify-center;
+}
+.image_block.right .image {
+	@apply justify-end;
+}
+
+.image_block .alt {
+	@apply mt-2 opacity-80 text-center italic;
+}
+.image_block.left .alt {
+	@apply text-left;
+}
+.image_block.center .alt {
+	@apply text-center;
+}
+.image_block.right .alt {
+	@apply text-right;
+}
+
+.image_block .image img {
+	@apply rounded-lg shadow-lg;
 }
 
 article {
