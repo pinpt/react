@@ -230,37 +230,41 @@ exports[`Test simple hr 1`] = `
 `;
 
 exports[`Test simple image block 1`] = `
-<div>
+<div
+  className="image_block undefined"
+>
   <div
-    className="image_block flex justify-start"
+    className="image"
   >
     <img
-      alt="card"
+      alt="Image Caption"
       height={NaN}
       src="https://cdn.pinpoint.com/card.png"
       width={NaN}
     />
   </div>
   <div
-    className="text-center italic text-gray-400"
+    className="alt"
   >
-    card
+    Image Caption
   </div>
 </div>
 `;
 
 exports[`Test simple image block with link 1`] = `
-<div>
+<div
+  className="image_block undefined"
+>
   <a
     href="https://pinpoint.com"
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="image_block flex justify-start"
+      className="image"
     >
       <img
-        alt="card"
+        alt="Image Caption"
         height={NaN}
         src="https://cdn.pinpoint.com/card.png"
         width={NaN}
@@ -268,9 +272,9 @@ exports[`Test simple image block with link 1`] = `
     </div>
   </a>
   <div
-    className="text-center italic text-gray-400"
+    className="alt"
   >
-    card
+    Image Caption
   </div>
 </div>
 `;

@@ -14,6 +14,7 @@ import simple_h4 from '../__data__/simple_h4';
 import simple_hr from '../__data__/simple_hr';
 import simple_image_block from '../__data__/simple_image_block';
 import simple_image_block_with_link from '../__data__/simple_image_block_with_link';
+import image_block_position_and_scale from '../__data__/image_block_position_and_scale';
 import simple_info_notice from '../__data__/simple_info_notice';
 import simple_inline_image from '../__data__/simple_inline_image';
 import simple_inline_image_with_link from '../__data__/simple_inline_image_with_link';
@@ -72,3 +73,5 @@ export const Simple_Inline_Image_With_Link: React.VFC<{}> = () => <Document node
 export const Simple_Image_Block: React.VFC<{}> = () => <Document node={simple_image_block} />;
 
 export const Simple_Image_Block_With_Link: React.VFC<{}> = () => <Document node={simple_image_block_with_link} />;
+
+export const Image_Block_Position_And_Scale: React.VFC<{}> = () => <Document node={image_block_position_and_scale} />;
