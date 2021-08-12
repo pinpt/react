@@ -13,7 +13,7 @@
  */
 .notebook-editor,
 .notebook-editor > .ProseMirror {
-	@apply w-full min-h-screen overflow-x-visible;
+	@apply w-full overflow-x-visible;
 }
 .notebook-editor > .ProseMirror {
 	@apply relative w-full px-6 sm:px-24 overflow-visible outline-none break-words whitespace-pre-wrap leading-8 text-gray-700 dark:text-gray-300; /* room for yjs cursor */

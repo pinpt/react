@@ -41,6 +41,11 @@ body {
 
 .Header .title {
 	@apply font-semibold text-4xl md:text-5xl py-6 transition-colors duration-200;
+	color: var(--page-title-color);
+}
+
+.Header .description {
+	color: var(--page-secondary-text-color);
 }
 
 .Header .action {
@@ -58,7 +63,7 @@ body {
 }
 
 .Search.Bar .icon {
-	@apply mx-2;
+	@apply ml-3 mr-2;
 }
 
 .Search.Bar .input {
