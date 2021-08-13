@@ -6,10 +6,10 @@ export interface IDateProps {
 	format?: DateTimeFormatOptions;
 }
 
-const Date = (props: IDateProps) => {
+const DateLabel = (props: IDateProps) => {
 	const { className, ts = 0, format = DateTime.DATE_SHORT } = props;
 
 	return <span className={`Pinpoint Date ${className ?? ''}`}>{DateTime.fromMillis(ts).toLocaleString(format)}</span>;
 };
 
-export default Date;
+export default DateLabel;
