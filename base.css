@@ -617,3 +617,43 @@ html.dark .ThemeToggle .mode::after {
 .Link.clickable {
 	@apply cursor-pointer;
 }
+
+
+/*
+ * Error
+ */
+.Page.Error {
+	@apply min-h-screen flex flex-col justify-center items-center;
+}
+
+.Error {
+	@apply flex flex-col justify-center items-center text-center;
+}
+
+.Error .logo {
+	@apply mb-10;
+}
+
+.Error .error {
+	@apply uppercase;
+	color: var(--page-highlight-color);
+}
+
+.Error .title {
+	@apply my-4 text-4xl md:text-5xl font-semibold;
+	color: var(--page-title-color);
+}
+
+.Error .description {
+	@apply text-lg;
+	color: var(--page-secondary-text-color);
+}
+
+.Error .link {
+	@apply mt-10 flex items-center;
+	color: var(--page-highlight-color);
+}
+
+.Error .link span {
+	@apply ml-2;
+}
