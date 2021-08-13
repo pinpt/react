@@ -66,16 +66,16 @@ export const fetchContentPaginated = async (
 		projection = [],
 	} = options ?? {};
 
-	const params = new URLSearchParams();
-	params.set('offset', String(offset));
-	params.set('limit', String(limit));
-	params.set('before', String(includeBefore));
-	params.set('after', String(includeAfter));
-	params.set('site', String(includeSite));
+	const params = {} as Record<string, string>;
+	params.offset = String(offset);
+	params.limit = String(limit);
+	params.before = String(includeBefore);
+	params.after = String(includeAfter);
+	params.site = String(includeSite);
 	if (projection.length) {
-		params.set('projection', projection.join(','));
+		params.projection = projection.join(',');
 	}
-	const qs = params.toString();
+	const qs = getQueryString(params);
 	const { data: content, before, after, site } = await executeAPI(config, `/site-api/v1/content?${qs}`);
 	return { content, before, after, site };
 };
