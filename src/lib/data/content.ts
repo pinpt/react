@@ -1,7 +1,6 @@
 import type { IContent } from '../types/content';
 import type { ISite } from '../types/site';
 import type { IPinpointConfig } from '../types/config';
-import { URLSearchParams } from 'url';
 import { executeAPI } from '../fetch';
 
 interface FetchContentResult {
