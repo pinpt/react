@@ -13,11 +13,7 @@ const IMAGE_URL =
 test('Test full error', () => {
 	const component = renderer.create(
 		<Page
-			error={
-				<Error
-
-				/>
-			}
+			error={<Error />}
 			footer={
 				<Footer
 					social={
@@ -41,15 +37,7 @@ test('Test full error', () => {
 });
 
 test('Test no footer', () => {
-	const component = renderer.create(
-		<Page
-			error={
-				<Error
-
-				/>
-			}
-		/>
-	);
+	const component = renderer.create(<Page error={<Error />} />);
 	const tree = component.toJSON();
 	expect(tree).toMatchSnapshot();
 });

@@ -84,3 +84,9 @@ export const getTwitterProfileFromURL = (url?: string) => {
 	}
 	return undefined;
 };
+
+export const getQueryString = (params: Record<string, string> = {}) => {
+	return Object.keys(params)
+		.map((key) => `${key}=${encodeURIComponent(params[key])}`)
+		.join('&');
+};

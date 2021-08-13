@@ -22,11 +22,7 @@ const NotFound = ({
 				className="Prebuild 404"
 				logo={
 					renderLogo?.(site) ?? (
-						<Logo
-							className="Prebuilt"
-							src={site.logoUrl}
-							href={site.theme?.logoLink ?? site.url}
-						/>
+						<Logo className="Prebuilt" src={site.logoUrl} href={site.theme?.logoLink ?? site.url} />
 					)
 				}
 				error="404 Error"
@@ -81,9 +77,7 @@ const NotFound = ({
 							/>
 						)
 					}
-					subscribe={
-						renderSubscribe?.(site) ?? <Subscribe className="Prebuilt" href="/subscription/subscribe" />
-					}
+					subscribe={renderSubscribe?.(site) ?? <Subscribe className="Prebuilt" href="/subscription/subscribe" />}
 				/>
 			)
 		}

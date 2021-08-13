@@ -1,8 +1,8 @@
 import type { IContent } from '../types/content';
 import type { ISite } from '../types/site';
 import type { IPinpointConfig } from '../types/config';
-import { URLSearchParams } from 'url';
 import { executeAPI } from '../fetch';
+import { getQueryString } from '../string';
 
 interface FetchContentResult {
 	content: IContent;
@@ -25,14 +25,14 @@ export const fetchContent = async (
 ): Promise<FetchContentResult> => {
 	const { before: includeBefore = false, after: includeAfter = false, site: includeSite = false, projection = [] } =
 		options ?? {};
-	const params = new URLSearchParams();
-	params.set('before', String(includeBefore));
-	params.set('after', String(includeAfter));
-	params.set('site', String(includeSite));
+	const params = {} as Record<string, string>;
+	params.before = String(includeBefore);
+	params.after = String(includeAfter);
+	params.site = String(includeSite);
 	if (projection.length) {
-		params.set('projection', projection.join(','));
+		params.projection = projection.join(',');
 	}
-	const qs = params.toString();
+	const qs = getQueryString(params);
 	const { data: content, site, before, after } = await executeAPI(config, `/site-api/v1/content/${contentId}?${qs}`);
 	return { content, site, before, after };
 };
