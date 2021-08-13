@@ -617,3 +617,47 @@ html.dark .ThemeToggle .mode::after {
 .Link.clickable {
 	@apply cursor-pointer;
 }
+
+
+/*
+ * Error
+ */
+.Page.ErrorPage {
+	@apply h-screen w-full flex flex-col justify-between items-stretch;
+}
+
+.errorWrapper {
+	@apply flex-grow py-10 flex flex-col justify-center;
+}
+
+.Error {
+	@apply flex flex-col justify-center items-center text-center;
+}
+
+.Error .logo {
+	@apply mb-10 md:mb-14;
+}
+
+.Error .error {
+	@apply uppercase font-medium;
+	color: var(--page-error-color);
+}
+
+.Error .title {
+	@apply my-4 text-4xl md:text-5xl font-semibold;
+	color: var(--page-title-color);
+}
+
+.Error .description {
+	@apply text-lg;
+	color: var(--page-secondary-text-color);
+}
+
+.Error .link {
+	@apply mt-10 flex text-xl items-center;
+	color: var(--page-highlight-color);
+}
+
+.Error .link .icon {
+	@apply ml-2;
+}

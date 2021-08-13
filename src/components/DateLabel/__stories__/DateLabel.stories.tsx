@@ -1,13 +1,13 @@
 import { DateTime } from 'luxon';
 import React from 'react';
 import { Meta } from '@storybook/react';
-import DateLabel from '..';
+import DateLabel from '../';
 
 export default {
 	component: DateLabel,
-	title: 'Components/Date',
+	title: 'Components/DateLabel',
 	parameters: {
-		jest: ['Date.test.tsx'],
+		jest: ['DateLabel.test.tsx'],
 		controls: { hideNoControlsWarning: true },
 	},
 } as Meta;

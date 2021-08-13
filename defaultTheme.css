@@ -5,6 +5,7 @@
 	--page-text-color: #3f3f46; /* gray-700 */
 	--page-secondary-text-color: #a1a1aa; /* gray-400 */
 	--page-highlight-color: #6366f1; /* indigo-500 */
+	--page-error-color: #DC2626; /* red-600 */
 
 	/* header */
 	--header-bg-color: var(--page-bg-color);
