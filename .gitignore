@@ -3,3 +3,4 @@ node_modules
 docs-build
 themes
 apiTest.ts
+.vscode
