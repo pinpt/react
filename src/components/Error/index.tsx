@@ -1,8 +1,8 @@
-import { ReactElement, ReactNode } from "react";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { ILogoProps } from "../Logo";
-import { IActionLinkProps } from "../Internal/ActionLink";
+import { ReactElement, ReactNode } from 'react';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { ILogoProps } from '../Logo';
+import { IActionLinkProps } from '../Internal/ActionLink';
 
 export interface IErrorProps {
 	className?: string;
@@ -20,16 +20,14 @@ const Error = (props: IErrorProps) => {
 		error = 'Error',
 		title = 'Something Went Wrong',
 		description = 'Sorry, an unexpected error occurred.',
-		link
+		link,
 	} = props;
 
 	return (
 		<div className={`Pinpoint Error ${className}`}>
 			<div className="logo">{logo}</div>
 			<div className="error">{error}</div>
-			<h1 className="title">
-				{title}
-			</h1>
+			<h1 className="title">{title}</h1>
 			<div className="description">{description}</div>
 			<div className="link">
 				{link ?? (
@@ -40,7 +38,7 @@ const Error = (props: IErrorProps) => {
 				)}
 			</div>
 		</div>
-	)
-}
+	);
+};
 
 export default Error;

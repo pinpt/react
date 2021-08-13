@@ -32,10 +32,12 @@ test('Test for extracting twitter profile from url', () => {
 });
 
 test('Test get query string', () => {
-	expect(getQueryString({
-		before: String(false),
-		after: String(false),
-		site: String(true),
-		projection: [].join(',')
-	})).toEqual('before=false&after=false&site=true&projection=');
+	expect(
+		getQueryString({
+			before: String(false),
+			after: String(false),
+			site: String(true),
+			projection: [].join(','),
+		})
+	).toEqual('before=false&after=false&site=true&projection=');
 });

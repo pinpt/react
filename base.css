@@ -618,7 +618,6 @@ html.dark .ThemeToggle .mode::after {
 	@apply cursor-pointer;
 }
 
-
 /*
  * Error
  */

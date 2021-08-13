@@ -22,11 +22,7 @@ const InternalServerError = ({
 				className="Prebuild 500"
 				logo={
 					renderLogo?.(site) ?? (
-						<Logo
-							className="Prebuilt"
-							src={site.logoUrl}
-							href={site.theme?.logoLink ?? site.url}
-						/>
+						<Logo className="Prebuilt" src={site.logoUrl} href={site.theme?.logoLink ?? site.url} />
 					)
 				}
 				error="500 Error"
@@ -80,9 +76,7 @@ const InternalServerError = ({
 							/>
 						)
 					}
-					subscribe={
-						renderSubscribe?.(site) ?? <Subscribe className="Prebuilt" href="/subscription/subscribe" />
-					}
+					subscribe={renderSubscribe?.(site) ?? <Subscribe className="Prebuilt" href="/subscription/subscribe" />}
 				/>
 			)
 		}

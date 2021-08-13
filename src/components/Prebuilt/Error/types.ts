@@ -13,4 +13,4 @@ export interface IPrebuiltErrorProps {
 	renderSocial?: (site: ISite) => ReactElement<ISocialBarProps>;
 	renderSubscribe?: (site: ISite) => ReactElement<ISubscribeProps>;
 	site: ISite;
-};
+}
