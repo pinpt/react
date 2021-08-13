@@ -5,7 +5,9 @@ const {
 	Clap,
 	Content,
 	Card,
+	DateLabel,
 	Document,
+	Error,
 	Logo,
 	Copyright,
 	Subscribe,
@@ -86,9 +88,10 @@ test('Test component exports', () => {
 
 	// Test Page Exports
 	expect(Page).toBeTruthy();
-	const { Dashboard, Entry, ...otherPage } = Page;
+	const { Dashboard, Entry, Error, ...otherPage } = Page;
 	expect(Dashboard).toBeTruthy();
 	expect(Entry).toBeTruthy();
+	expect(Error).toBeTruthy();
 	expect(Object.keys(otherPage).length).toEqual(0);
 
 	// Test Tags Exports
@@ -120,6 +123,8 @@ test('Test component exports', () => {
 	expect(Document).toBeTruthy();
 	expect(Logo).toBeTruthy();
 	expect(Copyright).toBeTruthy();
+	expect(DateLabel).toBeTruthy();
+	expect(Error).toBeTruthy();
 	expect(Subscribe).toBeTruthy();
 	expect(Footer).toBeTruthy();
 	expect(Latest).toBeTruthy();

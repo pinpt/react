@@ -3,6 +3,8 @@ export { Content, Document, emptyDoc } from './components/Renderer';
 export { default as Clap } from './components/Clap';
 export { default as Statistic } from './components/Statistic';
 export { default as Card } from './components/Card';
+export { default as DateLabel } from './components/DateLabel';
+export { default as Error } from './components/Error';
 export { default as Logo } from './components/Logo';
 export { default as Copyright } from './components/Copyright';
 export { default as Subscribe } from './components/Subscribe';

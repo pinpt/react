@@ -6,12 +6,12 @@ export default {
 	component: Error,
 	title: 'Components/Error',
 	parameters: {
-		// jest: ['Date.test.tsx'],
-		// controls: { hideNoControlsWarning: true },
+		jest: ['Error.test.tsx'],
+		controls: { hideNoControlsWarning: true },
 	},
 } as Meta;
 
-const logo = <Logo size="lg" src="https://file.edge.pinpoint.com/7e3ad32160424e35d55a541f8be3dbab;UEB5_%7CbDs%3A%25K%3F%3DNZWDtQyAk8jIs%3AcAX4ovoe;445x252.jpeg" />;
+const logo = <Logo src="https://file.edge.pinpoint.com/7e3ad32160424e35d55a541f8be3dbab;UEB5_%7CbDs%3A%25K%3F%3DNZWDtQyAk8jIs%3AcAX4ovoe;445x252.jpeg" />;
 
 export const Default: React.VFC<{}> = () => (
 	<Error logo={logo} />
@@ -32,4 +32,12 @@ export const Internal_Server_Error: React.VFC<{}> = () => (
 		error="500 Error"
 		title="Internal Server Error"
 	/>
+);
+
+export const No_Link: React.VFC<{}> = () => (
+	<Error logo={logo} link={<></>} />
+);
+
+export const Custom_Link: React.VFC<{}> = () => (
+	<Error logo={logo} link={<a href="https://www.google.com/search?q=help">Ask Google for help</a>} />
 );

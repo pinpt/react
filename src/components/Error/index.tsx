@@ -1,5 +1,5 @@
 import { ReactElement, ReactNode } from "react";
-import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ILogoProps } from "../Logo";
 import { IActionLinkProps } from "../Internal/ActionLink";
@@ -24,7 +24,7 @@ const Error = (props: IErrorProps) => {
 	} = props;
 
 	return (
-		<div className={`Pinpoint Error NotFound ${className}`}>
+		<div className={`Pinpoint Error ${className}`}>
 			<div className="logo">{logo}</div>
 			<div className="error">{error}</div>
 			<h1 className="title">
@@ -34,8 +34,8 @@ const Error = (props: IErrorProps) => {
 			<div className="link">
 				{link ?? (
 					<>
-						<FontAwesomeIcon icon={faArrowLeft} />
-						<span>All Posts</span>
+						<span className="text">Go to all posts</span>
+						<FontAwesomeIcon icon={faArrowRight} className="icon" />
 					</>
 				)}
 			</div>

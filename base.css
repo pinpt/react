@@ -622,8 +622,12 @@ html.dark .ThemeToggle .mode::after {
 /*
  * Error
  */
-.Page.Error {
-	@apply min-h-screen flex flex-col justify-center items-center;
+.Page.ErrorPage {
+	@apply h-screen w-full flex flex-col justify-between items-stretch;
+}
+
+.errorWrapper {
+	@apply flex-grow py-10 flex flex-col justify-center;
 }
 
 .Error {
@@ -631,12 +635,12 @@ html.dark .ThemeToggle .mode::after {
 }
 
 .Error .logo {
-	@apply mb-10;
+	@apply mb-10 md:mb-14;
 }
 
 .Error .error {
-	@apply uppercase;
-	color: var(--page-highlight-color);
+	@apply uppercase font-medium;
+	color: var(--page-error-color);
 }
 
 .Error .title {
@@ -650,10 +654,10 @@ html.dark .ThemeToggle .mode::after {
 }
 
 .Error .link {
-	@apply mt-10 flex items-center;
+	@apply mt-10 flex text-xl items-center;
 	color: var(--page-highlight-color);
 }
 
-.Error .link span {
+.Error .link .icon {
 	@apply ml-2;
 }
