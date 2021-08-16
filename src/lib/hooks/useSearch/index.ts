@@ -1,9 +1,9 @@
 import algoliasearch from 'algoliasearch';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import config from '../../config';
-import { CoverMediaType } from '../../lib/types';
+import config from '../../../config';
+import { CoverMediaType } from '../../../lib/types';
 
-import type { IContent } from '../../lib/types';
+import type { IContent } from '../../../lib/types';
 
 const { algolia } = config;
 const client = algoliasearch(algolia.appId, algolia.apiKey);
