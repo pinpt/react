@@ -26,7 +26,7 @@ const getBaseURL = (config: IPinpointConfig) => {
 		return `https://${config.slug}.changelog.so`;
 	}
 	// client side, relative to the window origin
-	return window.location.origin;
+	return config.siteUrl || window.location.origin;
 };
 
 export const executeAPI = async (config: IPinpointConfig, relpath: string, method = 'GET', data?: any) => {
