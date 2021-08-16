@@ -231,12 +231,13 @@ html.dark .ThemeToggle .mode::after {
 	background-color: var(--card-bg-color);
 }
 
-.Content.Card.Container.wrapper .cover. .Content.Card.Container.wrapper .covermedia .media-container img {
-	@apply lg:h-48 md:h-36 w-full object-cover object-center;
+.Content.Card.Container.wrapper .cover,
+.Content.Card.Container.wrapper .covermedia .media-container img {
+	@apply md:h-36 lg:h-48 w-full object-cover object-center;
 }
 
 .Content.Card.Container.wrapper .empty-cover {
-	@apply lg:h-48 md:h-36 w-full;
+	@apply md:h-36 lg:h-48 w-full;
 	background-image: linear-gradient(to right, var(--card-empty-gradient-from), var(--card-empty-gradient-to));
 }
 
@@ -329,6 +330,12 @@ html.dark .ThemeToggle .mode::after {
 .Latest .container {
 	@apply flex gap-x-8;
 	flex-basis: 75%;
+}
+
+.Latest .Content.Card.Container.wrapper .cover,
+.Latest .Content.Card.Container.wrapper .covermedia .media-container img,
+.Latest .Content.Card.Container.wrapper .empty-cover {
+	@apply md:h-64 lg:h-80;
 }
 
 .recentWrapper,
