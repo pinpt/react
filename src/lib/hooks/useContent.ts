@@ -8,12 +8,15 @@ const useContent = (slug: string, siteId: string, contentId: string, siteUrl: st
 	const [content, setContent] = useState<IContent>();
 	const fetch = useCallback(async () => {
 		try {
-			setLoading(true)
-			const res = await fetchContent({
-				slug,
-				siteId,
-				siteUrl,
-			}, contentId);
+			setLoading(true);
+			const res = await fetchContent(
+				{
+					slug,
+					siteId,
+					siteUrl,
+				},
+				contentId
+			);
 			setContent(res.content);
 		} catch (ex) {
 			setError(ex.message);
@@ -30,7 +33,7 @@ const useContent = (slug: string, siteId: string, contentId: string, siteUrl: st
 		loading,
 		error,
 		content,
-	}
+	};
 };
 
 export default useContent;
