@@ -51,6 +51,7 @@ const {
 	getTwitterProfileFromURL,
 	cancelEvent,
 	getQueryString,
+	useContent,
 
 	...otherExports
 } = Exports;
@@ -161,6 +162,7 @@ test('Test util exports', () => {
 	expect(getTwitterProfileFromURL).toBeTruthy();
 	expect(cancelEvent).toBeTruthy();
 	expect(getQueryString).toBeTruthy();
+	expect(useContent).toBeTruthy();
 });
 
 test('Test for unexpected exports', () => {
