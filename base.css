@@ -23,6 +23,10 @@ body {
 /*
  * Styles for the header component
  */
+.headerWrapper {
+	background-color: var(--header-bg-color);
+}
+
 .Header {
 	@apply flex py-5 flex-col;
 }
@@ -41,16 +45,21 @@ body {
 
 .Header .title {
 	@apply font-semibold text-4xl md:text-5xl py-6 transition-colors duration-200;
-	color: var(--page-title-color);
+	color: var(--header-title-color);
 }
 
 .Header .description {
-	color: var(--page-secondary-text-color);
+	color: var(--header-description-color);
 }
 
 .Header .action {
 	@apply mt-6 mx-auto;
 }
+
+.Header .Subscribe {
+	color: var(--header-subscribe-color);
+}
+
 
 /*
  * Styles for the search bar component
@@ -220,7 +229,6 @@ html.dark .ThemeToggle .mode::after {
 .Content.Card.Container.wrapper {
 	@apply w-full rounded-md overflow-hidden mt-auto flex flex-col h-full cursor-pointer shadow-md hover:shadow-lg transition-all duration-200;
 	background-color: var(--card-bg-color);
-	color: var(--card-bg-color);
 }
 
 .Content.Card.Container.wrapper .cover. .Content.Card.Container.wrapper .covermedia .media-container img {
@@ -437,6 +445,7 @@ html.dark .ThemeToggle .mode::after {
 
 .entryWrapper {
 	@apply flex-grow;
+	background-color: var(--article-bg-color);
 }
 
 .entryWrapper .container {
@@ -477,6 +486,7 @@ html.dark .ThemeToggle .mode::after {
 
 .entryWrapper .renderer {
 	@apply mb-10 md:mb-14;
+	color: var(--article-text-color);
 }
 
 /*
