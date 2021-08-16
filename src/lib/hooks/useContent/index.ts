@@ -9,6 +9,7 @@ const useContent = (slug: string, siteId: string, contentId: string, siteUrl: st
 	const fetch = useCallback(async () => {
 		try {
 			setLoading(true);
+			setError('');
 			const res = await fetchContent(
 				{
 					slug,
