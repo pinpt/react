@@ -10,7 +10,7 @@ exports[`Test custom className 1`] = `
     Latest
   </h1>
   <div
-    className="container"
+    className="cards"
   >
     <div
       className="Pinpoint Content Card Container wrapper "
@@ -194,7 +194,7 @@ exports[`Test double 1`] = `
     Latest
   </h1>
   <div
-    className="container"
+    className="cards"
   >
     <div
       className="Pinpoint Content Card Container wrapper "
@@ -548,7 +548,7 @@ exports[`Test single 1`] = `
     Latest
   </h1>
   <div
-    className="container"
+    className="cards"
   >
     <div
       className="Pinpoint Content Card Container wrapper "
@@ -732,7 +732,7 @@ exports[`Test triple 1`] = `
     Latest
   </h1>
   <div
-    className="container"
+    className="cards"
   >
     <div
       className="Pinpoint Content Card Container wrapper "

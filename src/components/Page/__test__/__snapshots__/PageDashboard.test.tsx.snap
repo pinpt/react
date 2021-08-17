@@ -90,7 +90,7 @@ exports[`Test full page 1`] = `
           Latest
         </h1>
         <div
-          className="container"
+          className="cards"
         >
           <div
             className="Pinpoint Content Card Container wrapper "
@@ -448,7 +448,7 @@ exports[`Test full page 1`] = `
            
         </h1>
         <div
-          className="container"
+          className="cards"
         >
           <div
             className="Pinpoint Content Card Container wrapper "
@@ -1759,7 +1759,7 @@ exports[`Test no footer 1`] = `
           Latest
         </h1>
         <div
-          className="container"
+          className="cards"
         >
           <div
             className="Pinpoint Content Card Container wrapper "
@@ -2117,7 +2117,7 @@ exports[`Test no footer 1`] = `
            
         </h1>
         <div
-          className="container"
+          className="cards"
         >
           <div
             className="Pinpoint Content Card Container wrapper "
@@ -2817,7 +2817,7 @@ exports[`Test no header 1`] = `
           Latest
         </h1>
         <div
-          className="container"
+          className="cards"
         >
           <div
             className="Pinpoint Content Card Container wrapper "
@@ -3175,7 +3175,7 @@ exports[`Test no header 1`] = `
            
         </h1>
         <div
-          className="container"
+          className="cards"
         >
           <div
             className="Pinpoint Content Card Container wrapper "
@@ -4137,7 +4137,7 @@ exports[`Test no latest 1`] = `
            
         </h1>
         <div
-          className="container"
+          className="cards"
         >
           <div
             className="Pinpoint Content Card Container wrapper "
@@ -5098,7 +5098,7 @@ exports[`Test no recent 1`] = `
           Latest
         </h1>
         <div
-          className="container"
+          className="cards"
         >
           <div
             className="Pinpoint Content Card Container wrapper "

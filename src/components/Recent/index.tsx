@@ -23,7 +23,7 @@ const Recent = (props: IRecentProps) => {
 					</span>
 				) : undefined}
 			</h1>
-			<div className="container">{children}</div>
+			<div className="cards">{children}</div>
 		</div>
 	);
 };

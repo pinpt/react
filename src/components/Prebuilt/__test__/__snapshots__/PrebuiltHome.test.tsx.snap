@@ -144,7 +144,7 @@ exports[`Hidden stats 1`] = `
           Latest
         </h1>
         <div
-          className="container"
+          className="cards"
         >
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
@@ -259,7 +259,7 @@ exports[`Hidden stats 1`] = `
            
         </h1>
         <div
-          className="container"
+          className="cards"
         >
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
@@ -1476,7 +1476,7 @@ exports[`Test custom className 1`] = `
           Latest
         </h1>
         <div
-          className="container"
+          className="cards"
         >
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
@@ -1698,7 +1698,7 @@ exports[`Test custom className 1`] = `
            
         </h1>
         <div
-          className="container"
+          className="cards"
         >
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
@@ -3878,7 +3878,7 @@ exports[`Test custom latest length 1`] = `
           Latest
         </h1>
         <div
-          className="container"
+          className="cards"
         >
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
@@ -4287,7 +4287,7 @@ exports[`Test custom latest length 1`] = `
            
         </h1>
         <div
-          className="container"
+          className="cards"
         >
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
@@ -6280,7 +6280,7 @@ exports[`Test default state 1`] = `
           Latest
         </h1>
         <div
-          className="container"
+          className="cards"
         >
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
@@ -6502,7 +6502,7 @@ exports[`Test default state 1`] = `
            
         </h1>
         <div
-          className="container"
+          className="cards"
         >
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
@@ -8682,7 +8682,7 @@ exports[`Test default state with partial analytics 1`] = `
           Latest
         </h1>
         <div
-          className="container"
+          className="cards"
         >
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
@@ -8904,7 +8904,7 @@ exports[`Test default state with partial analytics 1`] = `
            
         </h1>
         <div
-          className="container"
+          className="cards"
         >
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"

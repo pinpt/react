@@ -11,7 +11,7 @@ exports[`Test custom className 1`] = `
      
   </h1>
   <div
-    className="container"
+    className="cards"
   >
     <div
       className="Pinpoint Content Card Container wrapper "
@@ -196,7 +196,7 @@ exports[`Test double 1`] = `
      
   </h1>
   <div
-    className="container"
+    className="cards"
   >
     <div
       className="Pinpoint Content Card Container wrapper "
@@ -558,7 +558,7 @@ exports[`Test page counts 1`] = `
     </span>
   </h1>
   <div
-    className="container"
+    className="cards"
   >
     <div
       className="Pinpoint Content Card Container wrapper "
@@ -911,7 +911,7 @@ exports[`Test single 1`] = `
      
   </h1>
   <div
-    className="container"
+    className="cards"
   >
     <div
       className="Pinpoint Content Card Container wrapper "
@@ -1096,7 +1096,7 @@ exports[`Test triple 1`] = `
      
   </h1>
   <div
-    className="container"
+    className="cards"
   >
     <div
       className="Pinpoint Content Card Container wrapper "
