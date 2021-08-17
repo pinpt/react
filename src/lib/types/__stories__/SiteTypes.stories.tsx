@@ -4,6 +4,7 @@ import useEntries from '../../hooks/useEntries';
 const { default: readme } = require('./Site.README.md');
 import Loader from '../../../components/Loader';
 import Prebuilt from '../../../components/Prebuilt';
+import { Title, Subtitle, Description, Primary, Stories } from '@storybook/addon-docs';
 
 export default {
 	title: 'Types/Site Types',
@@ -12,6 +13,15 @@ export default {
 			description: {
 				component: readme,
 			},
+			page: () => (
+				<>
+					<Title />
+					<Subtitle />
+					<Description />
+					<Primary />
+					<Stories />
+				</>
+			),
 		},
 		controls: { hideNoControlsWarning: true },
 		previewTabs: {

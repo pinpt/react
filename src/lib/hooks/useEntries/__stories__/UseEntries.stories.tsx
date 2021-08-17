@@ -5,6 +5,7 @@ import Prebuilt from '../../../../components/Prebuilt';
 import { IPinpointConfig } from '../../../types';
 import Loader from '../../../../components/Loader';
 const { default: readme } = require('../README.md');
+import { Title, Subtitle, Description, Primary, Stories } from '@storybook/addon-docs';
 
 export default {
 	title: 'Hooks/useEntries',
@@ -13,6 +14,15 @@ export default {
 			description: {
 				component: readme,
 			},
+			page: () => (
+				<>
+					<Title />
+					<Subtitle />
+					<Description />
+					<Primary />
+					<Stories />
+				</>
+			),
 		},
 		controls: { hideNoControlsWarning: true },
 	},

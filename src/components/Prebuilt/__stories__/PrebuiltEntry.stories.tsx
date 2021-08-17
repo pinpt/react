@@ -3,7 +3,7 @@ import { Meta } from '@storybook/react';
 import entries from '../__data__/testEntries.json';
 import site from '../__data__/testSite.json';
 import PrebuiltEntry from '../Entry';
-
+import { Subtitle, Description, Primary, Stories, ArgsTable, PRIMARY_STORY } from '@storybook/addon-docs';
 const { default: readme } = require('../Entry/README.md');
 
 import type { IContent } from '../../../lib/types';
@@ -17,6 +17,15 @@ export default {
 			description: {
 				component: readme,
 			},
+			page: () => (
+				<>
+					<Subtitle />
+					<Description />
+					<Primary />
+					<ArgsTable story={PRIMARY_STORY} />
+					<Stories />
+				</>
+			),
 		},
 		controls: { hideNoControlsWarning: true },
 	},

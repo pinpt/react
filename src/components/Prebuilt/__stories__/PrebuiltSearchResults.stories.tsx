@@ -4,7 +4,7 @@ import { useSearch } from '../../../lib';
 import entries from '../__data__/testEntries.json';
 import site from '../__data__/testSite.json';
 import PrebuiltSearchResults from '../SearchResults';
-
+import { Subtitle, Description, Primary, Stories, ArgsTable, PRIMARY_STORY } from '@storybook/addon-docs';
 const { default: readme } = require('../SearchResults/README.md');
 
 import type { IContent } from '../../../lib/types';
@@ -18,6 +18,15 @@ export default {
 			description: {
 				component: readme,
 			},
+			page: () => (
+				<>
+					<Subtitle />
+					<Description />
+					<Primary />
+					<ArgsTable story={PRIMARY_STORY} />
+					<Stories />
+				</>
+			),
 		},
 		controls: { hideNoControlsWarning: true },
 	},

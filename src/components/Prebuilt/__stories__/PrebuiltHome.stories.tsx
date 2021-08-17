@@ -4,7 +4,7 @@ import analytics from '../__data__/testAnalytics.json';
 import entries from '../__data__/testEntries.json';
 import site from '../__data__/testSite.json';
 import Home from '../Home';
-
+import { Subtitle, Description, Primary, Stories, ArgsTable, PRIMARY_STORY } from '@storybook/addon-docs';
 import type { IContent } from '../../../lib/types';
 const { default: readme } = require('../Home/README.md');
 
@@ -17,6 +17,15 @@ export default {
 			description: {
 				component: readme,
 			},
+			page: () => (
+				<>
+					<Subtitle />
+					<Description />
+					<Primary />
+					<ArgsTable story={PRIMARY_STORY} />
+					<Stories />
+				</>
+			),
 		},
 		controls: { hideNoControlsWarning: true },
 	},

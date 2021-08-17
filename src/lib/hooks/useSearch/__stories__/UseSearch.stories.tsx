@@ -4,6 +4,7 @@ import useSearch from '../';
 import PrebuiltSearchResults from '../../../../components/Prebuilt/SearchResults';
 const { default: readme } = require('../README.md');
 import site from '../../../../components/Prebuilt/__data__/testSite.json';
+import { Title, Subtitle, Description, Primary, Stories } from '@storybook/addon-docs';
 
 export default {
 	title: 'Hooks/useSearch',
@@ -12,6 +13,15 @@ export default {
 			description: {
 				component: readme,
 			},
+			page: () => (
+				<>
+					<Title />
+					<Subtitle />
+					<Description />
+					<Primary />
+					<Stories />
+				</>
+			),
 		},
 		controls: { hideNoControlsWarning: true },
 	},

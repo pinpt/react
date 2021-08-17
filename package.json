@@ -23,6 +23,7 @@
 		"storybook": "start-storybook -p 6006",
 		"storybook-docs": "start-storybook --docs --no-manager-cache",
 		"build-storybook": "npm run test:generate-output && build-storybook -o docs-build",
+		"build-storybook:docs": "build-storybook --docs",
 		"prepublishOnly": "npm run build"
 	},
 	"license": "MIT",

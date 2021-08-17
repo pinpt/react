@@ -4,6 +4,7 @@ import useContent from '..';
 import { Content } from '../../../../components/Renderer';
 import { IPinpointConfig } from '../../../types';
 const { default: readme } = require('../README.md');
+import { Title, Subtitle, Description, Primary, Stories } from '@storybook/addon-docs';
 
 export default {
 	title: 'Hooks/useContent',
@@ -12,6 +13,15 @@ export default {
 			description: {
 				component: readme,
 			},
+			page: () => (
+				<>
+					<Title />
+					<Subtitle />
+					<Description />
+					<Primary />
+					<Stories />
+				</>
+			),
 		},
 		controls: { hideNoControlsWarning: true },
 	},
