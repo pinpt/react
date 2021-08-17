@@ -22,11 +22,7 @@ export default {
 export const Simple_Test: React.VFC<{}> = () => (
 	<Pinpoint siteId="testing">
 		{(ready) => {
-			return (
-				<div>
-					{ready ? 'scripts ready' : 'scripts loading'}
-				</div>
-			);
+			return <div>{ready ? 'scripts ready' : 'scripts loading'}</div>;
 		}}
 	</Pinpoint>
 );
@@ -37,9 +33,7 @@ export const Test_Iframely: React.VFC<{}> = () => (
 			if (!ready) {
 				return <Loader />;
 			}
-			return (
-				<Document node={entry} />
-			);
+			return <Document node={entry} />;
 		}}
 	</Pinpoint>
 );
