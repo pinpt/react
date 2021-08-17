@@ -326,7 +326,7 @@ html.dark .ThemeToggle .mode::after {
 	flex-basis: 25%;
 }
 
-.Latest .container {
+.Latest .cards {
 	@apply flex gap-x-8;
 	flex-basis: 75%;
 }
@@ -347,8 +347,8 @@ html.dark .ThemeToggle .mode::after {
 	@apply flex flex-col md:flex-row;
 }
 
-.Recent .container,
-.Search.Results .container {
+.Recent .cards,
+.Search.Results .cards {
 	@apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 grid-flow-row;
 	flex-basis: 75%;
 }
@@ -367,7 +367,7 @@ html.dark .ThemeToggle .mode::after {
 	@apply mb-4;
 }
 
-.Search.Query .container {
+.Search.Query .query {
 	@apply flex;
 }
 
@@ -454,7 +454,7 @@ html.dark .ThemeToggle .mode::after {
 	background-color: var(--article-bg-color);
 }
 
-.entryWrapper .container {
+.entryWrapper .entry {
 	@apply py-10 md:py-14 flex flex-col md:flex-row border-t;
 	border-color: var(--section-border-color);
 }

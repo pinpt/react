@@ -26,7 +26,7 @@ const Query = (props: IQueryProps) => {
 	return (
 		<div className={`Pinpoint Search Query ${className}`}>
 			<h1 className="heading">Filtering Entries by</h1>
-			<div className="container">
+			<div className="query">
 				<Tags.Bar tags={tags} onClick={(tag) => onRemoveTerm?.(tag, false)} removable />
 				{text && <Tags.Item tag={text} noColor removable onClick={() => onRemoveTerm?.(text, true)} />}
 			</div>

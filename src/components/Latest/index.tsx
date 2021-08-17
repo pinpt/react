@@ -14,7 +14,7 @@ const Latest = (props: ILatestProps) => {
 	return (
 		<div className={`Pinpoint Latest ${className}`}>
 			<h1 className="heading">Latest</h1>
-			<div className="container">{children}</div>
+			<div className="cards">{children}</div>
 		</div>
 	);
 };

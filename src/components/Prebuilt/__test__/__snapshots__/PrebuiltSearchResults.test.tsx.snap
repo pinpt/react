@@ -151,7 +151,7 @@ exports[`Hidden stats 1`] = `
           Search Results
         </h1>
         <div
-          className="container"
+          className="cards"
         >
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
@@ -1563,7 +1563,7 @@ exports[`Test custom className 1`] = `
           Search Results
         </h1>
         <div
-          className="container"
+          className="cards"
         >
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
@@ -4045,7 +4045,7 @@ exports[`Test default state 1`] = `
           Search Results
         </h1>
         <div
-          className="container"
+          className="cards"
         >
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"

@@ -26,7 +26,7 @@ const Entry = (props: IPageEntryProps) => {
 		<div className={`Pinpoint Page Entry ${className}`}>
 			{withWrapper(header, 'header')}
 			{withWrapper(
-				<div className="container">
+				<div className="entry">
 					<div className="sidebarWrapper before">{sidebar}</div>
 					<div className="content">
 						{coverMedia && <CoverMedia media={coverMedia} title={title} zoomable={zoomable ?? true} />}

@@ -136,7 +136,7 @@ exports[`Test custom className 1`] = `
       className="constraint"
     >
       <div
-        className="container"
+        className="entry"
       >
         <div
           className="sidebarWrapper before"
@@ -1152,7 +1152,7 @@ exports[`Test default state 1`] = `
       className="constraint"
     >
       <div
-        className="container"
+        className="entry"
       >
         <div
           className="sidebarWrapper before"
@@ -2168,7 +2168,7 @@ exports[`Test no author 1`] = `
       className="constraint"
     >
       <div
-        className="container"
+        className="entry"
       >
         <div
           className="sidebarWrapper before"
@@ -2982,7 +2982,7 @@ exports[`Test no claps 1`] = `
       className="constraint"
     >
       <div
-        className="container"
+        className="entry"
       >
         <div
           className="sidebarWrapper before"
@@ -3830,7 +3830,7 @@ exports[`Test not zoomable 1`] = `
       className="constraint"
     >
       <div
-        className="container"
+        className="entry"
       >
         <div
           className="sidebarWrapper before"
@@ -4846,7 +4846,7 @@ exports[`Test with pagination 1`] = `
       className="constraint"
     >
       <div
-        className="container"
+        className="entry"
       >
         <div
           className="sidebarWrapper before"
