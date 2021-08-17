@@ -2,3 +2,7 @@
 .docs-story {
 	@apply dark:bg-gray-900 transition-all duration-200;
 }
+
+.prismjs code {
+	@apply bg-gray-700;
+}
