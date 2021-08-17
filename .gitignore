@@ -4,3 +4,4 @@ docs-build
 themes
 apiTest.ts
 .vscode
+.DS_Store
