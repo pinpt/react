@@ -27,6 +27,7 @@ const {
 	Pagination,
 	Head,
 	PoweredByPinpoint,
+	Pinpoint,
 	emptyDoc,
 	fetchContent,
 	CoverMediaType,
@@ -138,6 +139,7 @@ test('Test component exports', () => {
 	expect(Loader).toBeTruthy();
 	expect(Pagination).toBeTruthy();
 	expect(PoweredByPinpoint).toBeTruthy();
+	expect(Pinpoint).toBeTruthy();
 });
 
 test('Test util exports', () => {
