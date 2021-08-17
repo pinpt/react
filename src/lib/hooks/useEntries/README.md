@@ -28,7 +28,7 @@ export default () => {
 
 | Name   | Type              | Description                         |
 | ------ | ----------------- | ----------------------------------- |
-| config | `IPinpointConfig` | The config for your site            |
+| Config | `IPinpointConfig` | The config for your site            |
 | Offset | `Number`          | The offset to use in the pagination |
 
 ## Returns

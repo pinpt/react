@@ -19,12 +19,10 @@ export default () => {
 
 ## Arguments
 
-| Name       | Type     | Description                                |
-| ---------- | -------- | ------------------------------------------ |
-| Slug       | `String` | The slug for your site                     |
-| Site ID    | `String` | The id for your site                       |
-| Content ID | `String` | The id for the content entry to be fetched |
-| Site URL   | `String` | The url your site is running at            |
+| Name       | Type              | Description                                |
+| ---------- | ----------------- | ------------------------------------------ |
+| Config     | `IPinpointConfig` | The config for your site                   |
+| Content ID | `String`          | The id for the content entry to be fetched |
 
 ## Returns
 

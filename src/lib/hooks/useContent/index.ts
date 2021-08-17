@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useState } from 'react';
 import { fetchContent } from '../../data';
-import { IContent } from '../../types';
+import { IContent, IPinpointConfig } from '../../types';
 
-const useContent = (slug: string, siteId: string, contentId: string, siteUrl: string) => {
+const useContent = (config: IPinpointConfig, contentId: string) => {
 	const [loading, setLoading] = useState(true);
 	const [error, setError] = useState('');
 	const [content, setContent] = useState<IContent>();
@@ -10,21 +10,14 @@ const useContent = (slug: string, siteId: string, contentId: string, siteUrl: st
 		try {
 			setLoading(true);
 			setError('');
-			const res = await fetchContent(
-				{
-					slug,
-					siteId,
-					siteUrl,
-				},
-				contentId
-			);
+			const res = await fetchContent(config, contentId);
 			setContent(res.content);
 		} catch (ex) {
 			setError(ex.message);
 		} finally {
 			setLoading(false);
 		}
-	}, [contentId, slug, siteId, siteUrl]);
+	}, [contentId, config]);
 
 	useEffect(() => {
 		fetch();
