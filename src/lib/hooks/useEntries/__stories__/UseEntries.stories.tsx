@@ -1,12 +1,13 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
-import useContent from '..';
-import { Content } from '../../../../components/Renderer';
+import useEntries from '..';
+import Prebuilt from '../../../../components/Prebuilt';
 import { IPinpointConfig } from '../../../types';
+import Loader from '../../../../components/Loader';
 const { default: readme } = require('../README.md');
 
 export default {
-	title: 'Hooks/useContent',
+	title: 'Hooks/useEntries',
 	parameters: {
 		docs: {
 			description: {
@@ -26,7 +27,11 @@ const config = {
 } as IPinpointConfig;
 
 export const Hook: React.VFC<{}> = () => {
-	const { content } = useContent(config, 'U359ytO97WPbOeLpTtlE');
+	const { content, site, loading } = useEntries(config, 0);
 
-	return <Content {...content} />;
+	if (loading) {
+		return <Loader />;
+	}
+
+	return <Prebuilt.Home entries={content} site={site} />;
 };

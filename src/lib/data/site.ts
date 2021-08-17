@@ -17,7 +17,7 @@ interface IContentAnalytics {
 	pageviews: number;
 }
 
-type AnalyticsResult = Record<string, IContentAnalytics>;
+export type AnalyticsResult = Record<string, IContentAnalytics>;
 
 export const fetchAnalytics = async (config: IPinpointConfig, ids?: string[]): Promise<AnalyticsResult> => {
 	const params = new URLSearchParams();

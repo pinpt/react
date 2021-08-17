@@ -1,6 +1,6 @@
 {
 	"name": "@pinpt/react",
-	"version": "0.4.41",
+	"version": "0.5.0",
 	"description": "The Pinpoint UI Library for React",
 	"main": "dist/index.js",
 	"files": [
@@ -21,6 +21,7 @@
 		"format": "prettier --write .",
 		"test:ci": "jest --ci --reporters='default' --reporters='./.github/github-actions-reporter'",
 		"storybook": "start-storybook -p 6006",
+		"storybook-docs": "start-storybook --docs --no-manager-cache",
 		"build-storybook": "npm run test:generate-output && build-storybook -o docs-build",
 		"prepublishOnly": "npm run build"
 	},

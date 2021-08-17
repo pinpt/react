@@ -27,7 +27,6 @@ const {
 	Pagination,
 	Head,
 	PoweredByPinpoint,
-
 	emptyDoc,
 	fetchContent,
 	CoverMediaType,
@@ -52,7 +51,7 @@ const {
 	cancelEvent,
 	getQueryString,
 	useContent,
-
+	useEntries,
 	...otherExports
 } = Exports;
 
@@ -153,7 +152,6 @@ test('Test util exports', () => {
 	expect(splitEntries).toBeTruthy();
 	expect(getTagColorStyles).toBeTruthy();
 	expect(colorForString).toBeTruthy();
-	expect(useSearch).toBeTruthy();
 	expect(fetchAnalytics).toBeTruthy();
 	expect(fetchContentAnalytics).toBeTruthy();
 	expect(createClap).toBeTruthy();
@@ -162,7 +160,12 @@ test('Test util exports', () => {
 	expect(getTwitterProfileFromURL).toBeTruthy();
 	expect(cancelEvent).toBeTruthy();
 	expect(getQueryString).toBeTruthy();
+});
+
+test('Test hook exports', () => {
 	expect(useContent).toBeTruthy();
+	expect(useEntries).toBeTruthy();
+	expect(useSearch).toBeTruthy();
 });
 
 test('Test for unexpected exports', () => {
