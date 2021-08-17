@@ -1366,16 +1366,16 @@ div.home main.changelogs-0 {
  */
 
 .entryWrapper .covermedia:not(:empty) {
-	@apply mb-10 relative flex justify-center;
+	@apply mb-10 relative;
 }
 
 .entryWrapper .covermedia .image {
-	@apply rounded-lg shadow-lg overflow-hidden;
+	@apply rounded-lg overflow-hidden flex justify-center;
 	border-color: var(--article-border-color);
 }
 
 .entryWrapper .covermedia .image > img {
-	@apply object-cover object-center;
+	@apply object-cover object-center rounded-lg shadow-lg;
 }
 
 .image_block .image {
