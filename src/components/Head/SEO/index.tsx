@@ -22,7 +22,7 @@ const SiteSEO = ({ site }: { site: ISite }) => {
 };
 
 const formatAuthors = (content: IContent): string => {
-	const authors = content.authors?.map((author) => `${author.firstName} ${author.lastName}`) ?? [];
+	const authors = content.authors?.filter((author) => !!author).map((author) => `${author.firstName} ${author.lastName}`) ?? [];
 	return authors.join(', ');
 };
 
