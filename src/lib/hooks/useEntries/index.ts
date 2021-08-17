@@ -21,7 +21,6 @@ const useEntries = (config: IPinpointConfig, offset?: number) => {
 				site: true,
 			});
 			setRes(res);
-			console.log(res);
 
 			const analyticsResult = await fetchAnalytics(
 				config,
@@ -30,7 +29,6 @@ const useEntries = (config: IPinpointConfig, offset?: number) => {
 			setAnalytics(analyticsResult);
 		} catch (ex) {
 			setError(ex.message);
-			console.error(ex);
 		} finally {
 			setLoading(false);
 		}
