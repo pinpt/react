@@ -1370,12 +1370,12 @@ div.home main.changelogs-0 {
 }
 
 .entryWrapper .covermedia .image {
-	@apply rounded-lg overflow-hidden flex justify-center;
+	@apply rounded-lg shadow-lg overflow-hidden flex flex-col;
 	border-color: var(--article-border-color);
 }
 
 .entryWrapper .covermedia .image > img {
-	@apply object-cover object-center rounded-lg shadow-lg;
+	@apply object-cover object-center;
 }
 
 .image_block .image {
