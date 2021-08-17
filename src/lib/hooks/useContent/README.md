@@ -5,13 +5,16 @@
 ```jsx
 import { useContent, Content } from '@pinpt/react';
 
+const config = {
+	slug: 'pinpoint',
+	siteId: 'PirxVTE94u3YmGNOySRY',
+	apihost: 'api.pinpoint.com',
+	pageSize: 11,
+	siteUrl: 'https://changelog.pinpoint.com',
+} as IPinpointConfig;
+
 export default () => {
-	const { loading, error, content } = useContent(
-		'pinpoint',
-		'PirxVTE94u3YmGNOySRY',
-		'U359ytO97WPbOeLpTtlE',
-		'https://changelog.pinpoint.com'
-	);
+	const { loading, error, content } = useContent(config, 'U359ytO97WPbOeLpTtlE');
 
 	return <Content {...content} />;
 };
@@ -19,10 +22,10 @@ export default () => {
 
 ## Arguments
 
-| Name       | Type              | Description                                |
-| ---------- | ----------------- | ------------------------------------------ |
-| Config     | `IPinpointConfig` | The config for your site                   |
-| Content ID | `String`          | The id for the content entry to be fetched |
+| Name       | Type                                | Description                                |
+| ---------- | ----------------------------------- | ------------------------------------------ |
+| Config     | `Omit<IPinpointConfig, 'pageSize'>` | The config for your site                   |
+| Content ID | `String`                            | The id for the content entry to be fetched |
 
 ## Returns
 

@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from 'react';
 import { fetchContent } from '../../data';
 import { IContent, IPinpointConfig } from '../../types';
 
-const useContent = (config: IPinpointConfig, contentId: string) => {
+const useContent = (config: Omit<IPinpointConfig, 'pageSize'>, contentId: string) => {
 	const [loading, setLoading] = useState(true);
 	const [error, setError] = useState('');
 	const [content, setContent] = useState<IContent>();
