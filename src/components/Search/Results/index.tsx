@@ -15,7 +15,7 @@ const Results = (props: ISearchResultsProps) => {
 			{childCount > 0 ? (
 				<>
 					<h1 className="heading">Search Results</h1>
-					<div className="container">{children}</div>
+					<div className="cards">{children}</div>
 				</>
 			) : (
 				<div className="empty">

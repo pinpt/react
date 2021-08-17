@@ -24,7 +24,7 @@ The parent className for styling this component is `.Latest`
 	min-width: 150px;
 }
 
-.Latest .container {
+.Latest .cards {
 	display: flex;
 	column-gap: 1rem;
 }
