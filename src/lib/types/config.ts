@@ -3,4 +3,5 @@ export interface IPinpointConfig {
 	siteId: string;
 	apihost?: string;
 	siteUrl?: string;
+	pageSize: number;
 }

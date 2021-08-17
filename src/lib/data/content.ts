@@ -4,14 +4,14 @@ import type { IPinpointConfig } from '../types/config';
 import { executeAPI } from '../fetch';
 import { getQueryString } from '../string';
 
-interface FetchContentResult {
+export interface FetchContentResult {
 	content: IContent;
 	before?: IContent;
 	after?: IContent;
 	site?: ISite;
 }
 
-interface FetchContentOptions {
+export interface FetchContentOptions {
 	site?: true;
 	before?: true;
 	after?: true;
@@ -19,7 +19,7 @@ interface FetchContentOptions {
 }
 
 export const fetchContent = async (
-	config: IPinpointConfig,
+	config: Omit<IPinpointConfig, 'pageSize'>,
 	contentId: string,
 	options?: FetchContentOptions
 ): Promise<FetchContentResult> => {
@@ -37,14 +37,14 @@ export const fetchContent = async (
 	return { content, site, before, after };
 };
 
-interface FetchContentPaginatedResult {
+export interface FetchContentPaginatedResult {
 	content: IContent[];
 	before?: IContent;
 	after?: IContent;
 	site?: ISite;
 }
 
-interface FetchContentPaginationOptions {
+export interface FetchContentPaginationOptions {
 	offset?: number;
 	limit?: number;
 	before?: true;
@@ -80,7 +80,7 @@ export const fetchContentPaginated = async (
 	return { content, before, after, site };
 };
 
-interface FetchClapResult {
+export interface FetchClapResult {
 	count: number;
 	deviceCount: number;
 }

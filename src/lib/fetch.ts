@@ -17,7 +17,7 @@ class FetchError extends Error {
 	}
 }
 
-const getBaseURL = (config: IPinpointConfig) => {
+const getBaseURL = (config: Omit<IPinpointConfig, 'pageSize'>) => {
 	// server side
 	if (typeof window === 'undefined') {
 		if (config.apihost?.includes('.edge.')) {
@@ -29,7 +29,12 @@ const getBaseURL = (config: IPinpointConfig) => {
 	return config.siteUrl || window.location.origin;
 };
 
-export const executeAPI = async (config: IPinpointConfig, relpath: string, method = 'GET', data?: any) => {
+export const executeAPI = async (
+	config: Omit<IPinpointConfig, 'pageSize'>,
+	relpath: string,
+	method = 'GET',
+	data?: any
+) => {
 	const headers: any = {};
 	if (data) {
 		headers['Content-Type'] = 'application/json';
