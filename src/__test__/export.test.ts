@@ -53,6 +53,8 @@ const {
 	getQueryString,
 	useContent,
 	useEntries,
+	useScriptLoader,
+	useBackground,
 	...otherExports
 } = Exports;
 
@@ -168,6 +170,8 @@ test('Test hook exports', () => {
 	expect(useContent).toBeTruthy();
 	expect(useEntries).toBeTruthy();
 	expect(useSearch).toBeTruthy();
+	expect(useScriptLoader).toBeTruthy();
+	expect(useBackground).toBeTruthy();
 });
 
 test('Test for unexpected exports', () => {
