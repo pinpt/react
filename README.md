@@ -26,7 +26,7 @@ const component = () => <Statistic.Bar claps={21} views={5} />;
 
 ## Read the docs
 
-[Check out the docs](react.preview.pinpoint.com/) for detailed implementation guides.
+[Check out the docs](https://react-docs.preview.pinpoint.com/) for detailed implementation guides. You can also play with the [Interactive Storybook](https://react.preview.pinpoint.com/)
 
 ## Local Dev
 
