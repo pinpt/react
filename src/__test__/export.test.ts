@@ -27,6 +27,7 @@ const {
 	Pagination,
 	Head,
 	PoweredByPinpoint,
+	Pinpoint,
 	emptyDoc,
 	fetchContent,
 	CoverMediaType,
@@ -52,6 +53,8 @@ const {
 	getQueryString,
 	useContent,
 	useEntries,
+	useScriptLoader,
+	useBackground,
 	...otherExports
 } = Exports;
 
@@ -138,6 +141,7 @@ test('Test component exports', () => {
 	expect(Loader).toBeTruthy();
 	expect(Pagination).toBeTruthy();
 	expect(PoweredByPinpoint).toBeTruthy();
+	expect(Pinpoint).toBeTruthy();
 });
 
 test('Test util exports', () => {
@@ -166,6 +170,8 @@ test('Test hook exports', () => {
 	expect(useContent).toBeTruthy();
 	expect(useEntries).toBeTruthy();
 	expect(useSearch).toBeTruthy();
+	expect(useScriptLoader).toBeTruthy();
+	expect(useBackground).toBeTruthy();
 });
 
 test('Test for unexpected exports', () => {

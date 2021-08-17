@@ -18,6 +18,12 @@ export default {
 			},
 		},
 		controls: { hideNoControlsWarning: true },
+		previewTabs: {
+			canvas: {
+				hidden: true,
+			},
+		},
+		viewMode: 'docs',
 	},
 } as Meta;
 
