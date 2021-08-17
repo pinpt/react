@@ -33,6 +33,7 @@ const config = {
 	apihost: 'api.pinpoint.com',
 	pageSize: 11,
 	siteUrl: 'https://changelog.pinpoint.com',
+	apiKey: '1234',
 } as IPinpointConfig;
 
 export const Hook: React.VFC<{}> = () => {

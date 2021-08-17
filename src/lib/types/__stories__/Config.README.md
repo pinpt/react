@@ -5,7 +5,7 @@
 
 ### `IPinpointConfig`
 
-The mapping between a content entry id, and the clap counts and pageviews.
+The configuration for your site.
 
 ```ts
 interface IPinpointConfig {
@@ -13,6 +13,7 @@ interface IPinpointConfig {
 	siteId: string;
 	apihost?: string;
 	siteUrl?: string;
+	apiKey?: string;
 	pageSize: number;
 }
 ```

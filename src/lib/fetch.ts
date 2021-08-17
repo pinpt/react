@@ -39,6 +39,9 @@ export const executeAPI = async (
 	if (data) {
 		headers['Content-Type'] = 'application/json';
 	}
+	if (config.apiKey) {
+		headers.Authorization = `Bearer ${config.apiKey}`;
+	}
 	const url = getBaseURL(config) + relpath;
 	debug('fetching %s', url);
 	const res = await fetch(url, {
