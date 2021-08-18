@@ -403,133 +403,135 @@ exports[`Test custom className 1`] = `
               <section
                 className="ProseMirror"
               >
-                <h1
-                  className="heading"
-                >
-                  <a
-                    aria-hidden="true"
-                    className="anchor"
-                    href="#Linked-Content-Blocks"
-                    id="Linked-Content-Blocks"
+                <div>
+                  <h1
+                    className="heading"
                   >
-                    <svg
+                    <a
                       aria-hidden="true"
-                      className="svg-inline--fa fa-link fa-w-16 "
-                      data-icon="link"
-                      data-prefix="fas"
-                      focusable="false"
-                      role="img"
-                      style={Object {}}
-                      viewBox="0 0 512 512"
-                      xmlns="http://www.w3.org/2000/svg"
+                      className="anchor"
+                      href="#Linked-Content-Blocks"
+                      id="Linked-Content-Blocks"
                     >
-                      <path
-                        d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
-                        fill="currentColor"
+                      <svg
+                        aria-hidden="true"
+                        className="svg-inline--fa fa-link fa-w-16 "
+                        data-icon="link"
+                        data-prefix="fas"
+                        focusable="false"
+                        role="img"
                         style={Object {}}
-                      />
-                    </svg>
-                  </a>
-                  Linked Content Blocks
-                </h1>
-                <p>
-                  Linked content blocks allow you to quickly populate your changelog from the recently completed work. Annotations show you which issues and pull requests are linked to features. There are blocks for showing rich content about a new feature, and for quickly building a list of small improvements and bug fixes.
-                </p>
-                <div
-                  className="image_block center"
-                >
+                        viewBox="0 0 512 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
+                          fill="currentColor"
+                          style={Object {}}
+                        />
+                      </svg>
+                    </a>
+                    Linked Content Blocks
+                  </h1>
+                  <p>
+                    Linked content blocks allow you to quickly populate your changelog from the recently completed work. Annotations show you which issues and pull requests are linked to features. There are blocks for showing rich content about a new feature, and for quickly building a list of small improvements and bug fixes.
+                  </p>
                   <div
-                    className="image"
+                    className="image_block center"
                   >
-                    <img
-                      height={509.6}
-                      src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
-                      width={564.72}
-                    />
+                    <div
+                      className="image"
+                    >
+                      <img
+                        height={509.6}
+                        src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
+                        width={564.72}
+                      />
+                    </div>
                   </div>
-                </div>
-                <p>
-                  Linked content blocks can be created while in the editor, or better, by using our new and improved 
-                  <strong>
-                    Planning
-                  </strong>
-                   tool.
-                </p>
-                <h1
-                  className="heading"
-                >
-                  <a
-                    aria-hidden="true"
-                    className="anchor"
-                    href="#Grouping-in-Planning"
-                    id="Grouping-in-Planning"
+                  <p>
+                    Linked content blocks can be created while in the editor, or better, by using our new and improved 
+                    <strong>
+                      Planning
+                    </strong>
+                     tool.
+                  </p>
+                  <h1
+                    className="heading"
                   >
-                    <svg
+                    <a
                       aria-hidden="true"
-                      className="svg-inline--fa fa-link fa-w-16 "
-                      data-icon="link"
-                      data-prefix="fas"
-                      focusable="false"
-                      role="img"
-                      style={Object {}}
-                      viewBox="0 0 512 512"
-                      xmlns="http://www.w3.org/2000/svg"
+                      className="anchor"
+                      href="#Grouping-in-Planning"
+                      id="Grouping-in-Planning"
                     >
-                      <path
-                        d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
-                        fill="currentColor"
+                      <svg
+                        aria-hidden="true"
+                        className="svg-inline--fa fa-link fa-w-16 "
+                        data-icon="link"
+                        data-prefix="fas"
+                        focusable="false"
+                        role="img"
                         style={Object {}}
-                      />
-                    </svg>
-                  </a>
-                  Grouping in Planning
-                </h1>
-                <div
-                  className="image_block center"
-                >
+                        viewBox="0 0 512 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
+                          fill="currentColor"
+                          style={Object {}}
+                        />
+                      </svg>
+                    </a>
+                    Grouping in Planning
+                  </h1>
                   <div
-                    className="image"
+                    className="image_block center"
                   >
-                    <img
-                      height={360}
-                      src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
-                      width={540}
-                    />
+                    <div
+                      className="image"
+                    >
+                      <img
+                        height={360}
+                        src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
+                        width={540}
+                      />
+                    </div>
                   </div>
-                </div>
-                <p>
-                  You can now group related issues and pull requests and link them to the same content in your changelog. This is really handy when you have multiple pieces of work which contributed to a new feature. 
-                </p>
-                <p>
-                  We’re working on some great new features around planning and populating your changelogs, 
-                  <a
-                    className=""
-                    href="https://changelog.pinpoint.com/subscription/subscribe/PirxVTE94u3YmGNOySRY"
-                    id=""
-                    title=""
-                  >
-                    subscribe to 
-                  </a>
-                  <em>
+                  <p>
+                    You can now group related issues and pull requests and link them to the same content in your changelog. This is really handy when you have multiple pieces of work which contributed to a new feature. 
+                  </p>
+                  <p>
+                    We’re working on some great new features around planning and populating your changelogs, 
                     <a
                       className=""
                       href="https://changelog.pinpoint.com/subscription/subscribe/PirxVTE94u3YmGNOySRY"
                       id=""
                       title=""
                     >
-                      our
+                      subscribe to 
                     </a>
-                  </em>
-                  <a
-                    className=""
-                    href="https://changelog.pinpoint.com/subscription/subscribe/PirxVTE94u3YmGNOySRY"
-                    id=""
-                    title=""
-                  >
-                     changelog
-                  </a>
-                   to stay up to date with the latest.
-                </p>
+                    <em>
+                      <a
+                        className=""
+                        href="https://changelog.pinpoint.com/subscription/subscribe/PirxVTE94u3YmGNOySRY"
+                        id=""
+                        title=""
+                      >
+                        our
+                      </a>
+                    </em>
+                    <a
+                      className=""
+                      href="https://changelog.pinpoint.com/subscription/subscribe/PirxVTE94u3YmGNOySRY"
+                      id=""
+                      title=""
+                    >
+                       changelog
+                    </a>
+                     to stay up to date with the latest.
+                  </p>
+                </div>
               </section>
             </article>
           </div>
@@ -1442,133 +1444,135 @@ exports[`Test default state 1`] = `
               <section
                 className="ProseMirror"
               >
-                <h1
-                  className="heading"
-                >
-                  <a
-                    aria-hidden="true"
-                    className="anchor"
-                    href="#Linked-Content-Blocks"
-                    id="Linked-Content-Blocks"
+                <div>
+                  <h1
+                    className="heading"
                   >
-                    <svg
+                    <a
                       aria-hidden="true"
-                      className="svg-inline--fa fa-link fa-w-16 "
-                      data-icon="link"
-                      data-prefix="fas"
-                      focusable="false"
-                      role="img"
-                      style={Object {}}
-                      viewBox="0 0 512 512"
-                      xmlns="http://www.w3.org/2000/svg"
+                      className="anchor"
+                      href="#Linked-Content-Blocks"
+                      id="Linked-Content-Blocks"
                     >
-                      <path
-                        d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
-                        fill="currentColor"
+                      <svg
+                        aria-hidden="true"
+                        className="svg-inline--fa fa-link fa-w-16 "
+                        data-icon="link"
+                        data-prefix="fas"
+                        focusable="false"
+                        role="img"
                         style={Object {}}
-                      />
-                    </svg>
-                  </a>
-                  Linked Content Blocks
-                </h1>
-                <p>
-                  Linked content blocks allow you to quickly populate your changelog from the recently completed work. Annotations show you which issues and pull requests are linked to features. There are blocks for showing rich content about a new feature, and for quickly building a list of small improvements and bug fixes.
-                </p>
-                <div
-                  className="image_block center"
-                >
+                        viewBox="0 0 512 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
+                          fill="currentColor"
+                          style={Object {}}
+                        />
+                      </svg>
+                    </a>
+                    Linked Content Blocks
+                  </h1>
+                  <p>
+                    Linked content blocks allow you to quickly populate your changelog from the recently completed work. Annotations show you which issues and pull requests are linked to features. There are blocks for showing rich content about a new feature, and for quickly building a list of small improvements and bug fixes.
+                  </p>
                   <div
-                    className="image"
+                    className="image_block center"
                   >
-                    <img
-                      height={509.6}
-                      src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
-                      width={564.72}
-                    />
+                    <div
+                      className="image"
+                    >
+                      <img
+                        height={509.6}
+                        src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
+                        width={564.72}
+                      />
+                    </div>
                   </div>
-                </div>
-                <p>
-                  Linked content blocks can be created while in the editor, or better, by using our new and improved 
-                  <strong>
-                    Planning
-                  </strong>
-                   tool.
-                </p>
-                <h1
-                  className="heading"
-                >
-                  <a
-                    aria-hidden="true"
-                    className="anchor"
-                    href="#Grouping-in-Planning"
-                    id="Grouping-in-Planning"
+                  <p>
+                    Linked content blocks can be created while in the editor, or better, by using our new and improved 
+                    <strong>
+                      Planning
+                    </strong>
+                     tool.
+                  </p>
+                  <h1
+                    className="heading"
                   >
-                    <svg
+                    <a
                       aria-hidden="true"
-                      className="svg-inline--fa fa-link fa-w-16 "
-                      data-icon="link"
-                      data-prefix="fas"
-                      focusable="false"
-                      role="img"
-                      style={Object {}}
-                      viewBox="0 0 512 512"
-                      xmlns="http://www.w3.org/2000/svg"
+                      className="anchor"
+                      href="#Grouping-in-Planning"
+                      id="Grouping-in-Planning"
                     >
-                      <path
-                        d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
-                        fill="currentColor"
+                      <svg
+                        aria-hidden="true"
+                        className="svg-inline--fa fa-link fa-w-16 "
+                        data-icon="link"
+                        data-prefix="fas"
+                        focusable="false"
+                        role="img"
                         style={Object {}}
-                      />
-                    </svg>
-                  </a>
-                  Grouping in Planning
-                </h1>
-                <div
-                  className="image_block center"
-                >
+                        viewBox="0 0 512 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
+                          fill="currentColor"
+                          style={Object {}}
+                        />
+                      </svg>
+                    </a>
+                    Grouping in Planning
+                  </h1>
                   <div
-                    className="image"
+                    className="image_block center"
                   >
-                    <img
-                      height={360}
-                      src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
-                      width={540}
-                    />
+                    <div
+                      className="image"
+                    >
+                      <img
+                        height={360}
+                        src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
+                        width={540}
+                      />
+                    </div>
                   </div>
-                </div>
-                <p>
-                  You can now group related issues and pull requests and link them to the same content in your changelog. This is really handy when you have multiple pieces of work which contributed to a new feature. 
-                </p>
-                <p>
-                  We’re working on some great new features around planning and populating your changelogs, 
-                  <a
-                    className=""
-                    href="https://changelog.pinpoint.com/subscription/subscribe/PirxVTE94u3YmGNOySRY"
-                    id=""
-                    title=""
-                  >
-                    subscribe to 
-                  </a>
-                  <em>
+                  <p>
+                    You can now group related issues and pull requests and link them to the same content in your changelog. This is really handy when you have multiple pieces of work which contributed to a new feature. 
+                  </p>
+                  <p>
+                    We’re working on some great new features around planning and populating your changelogs, 
                     <a
                       className=""
                       href="https://changelog.pinpoint.com/subscription/subscribe/PirxVTE94u3YmGNOySRY"
                       id=""
                       title=""
                     >
-                      our
+                      subscribe to 
                     </a>
-                  </em>
-                  <a
-                    className=""
-                    href="https://changelog.pinpoint.com/subscription/subscribe/PirxVTE94u3YmGNOySRY"
-                    id=""
-                    title=""
-                  >
-                     changelog
-                  </a>
-                   to stay up to date with the latest.
-                </p>
+                    <em>
+                      <a
+                        className=""
+                        href="https://changelog.pinpoint.com/subscription/subscribe/PirxVTE94u3YmGNOySRY"
+                        id=""
+                        title=""
+                      >
+                        our
+                      </a>
+                    </em>
+                    <a
+                      className=""
+                      href="https://changelog.pinpoint.com/subscription/subscribe/PirxVTE94u3YmGNOySRY"
+                      id=""
+                      title=""
+                    >
+                       changelog
+                    </a>
+                     to stay up to date with the latest.
+                  </p>
+                </div>
               </section>
             </article>
           </div>
@@ -2380,133 +2384,135 @@ exports[`Test no author 1`] = `
               <section
                 className="ProseMirror"
               >
-                <h1
-                  className="heading"
-                >
-                  <a
-                    aria-hidden="true"
-                    className="anchor"
-                    href="#Linked-Content-Blocks"
-                    id="Linked-Content-Blocks"
+                <div>
+                  <h1
+                    className="heading"
                   >
-                    <svg
+                    <a
                       aria-hidden="true"
-                      className="svg-inline--fa fa-link fa-w-16 "
-                      data-icon="link"
-                      data-prefix="fas"
-                      focusable="false"
-                      role="img"
-                      style={Object {}}
-                      viewBox="0 0 512 512"
-                      xmlns="http://www.w3.org/2000/svg"
+                      className="anchor"
+                      href="#Linked-Content-Blocks"
+                      id="Linked-Content-Blocks"
                     >
-                      <path
-                        d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
-                        fill="currentColor"
+                      <svg
+                        aria-hidden="true"
+                        className="svg-inline--fa fa-link fa-w-16 "
+                        data-icon="link"
+                        data-prefix="fas"
+                        focusable="false"
+                        role="img"
                         style={Object {}}
-                      />
-                    </svg>
-                  </a>
-                  Linked Content Blocks
-                </h1>
-                <p>
-                  Linked content blocks allow you to quickly populate your changelog from the recently completed work. Annotations show you which issues and pull requests are linked to features. There are blocks for showing rich content about a new feature, and for quickly building a list of small improvements and bug fixes.
-                </p>
-                <div
-                  className="image_block center"
-                >
+                        viewBox="0 0 512 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
+                          fill="currentColor"
+                          style={Object {}}
+                        />
+                      </svg>
+                    </a>
+                    Linked Content Blocks
+                  </h1>
+                  <p>
+                    Linked content blocks allow you to quickly populate your changelog from the recently completed work. Annotations show you which issues and pull requests are linked to features. There are blocks for showing rich content about a new feature, and for quickly building a list of small improvements and bug fixes.
+                  </p>
                   <div
-                    className="image"
+                    className="image_block center"
                   >
-                    <img
-                      height={509.6}
-                      src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
-                      width={564.72}
-                    />
+                    <div
+                      className="image"
+                    >
+                      <img
+                        height={509.6}
+                        src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
+                        width={564.72}
+                      />
+                    </div>
                   </div>
-                </div>
-                <p>
-                  Linked content blocks can be created while in the editor, or better, by using our new and improved 
-                  <strong>
-                    Planning
-                  </strong>
-                   tool.
-                </p>
-                <h1
-                  className="heading"
-                >
-                  <a
-                    aria-hidden="true"
-                    className="anchor"
-                    href="#Grouping-in-Planning"
-                    id="Grouping-in-Planning"
+                  <p>
+                    Linked content blocks can be created while in the editor, or better, by using our new and improved 
+                    <strong>
+                      Planning
+                    </strong>
+                     tool.
+                  </p>
+                  <h1
+                    className="heading"
                   >
-                    <svg
+                    <a
                       aria-hidden="true"
-                      className="svg-inline--fa fa-link fa-w-16 "
-                      data-icon="link"
-                      data-prefix="fas"
-                      focusable="false"
-                      role="img"
-                      style={Object {}}
-                      viewBox="0 0 512 512"
-                      xmlns="http://www.w3.org/2000/svg"
+                      className="anchor"
+                      href="#Grouping-in-Planning"
+                      id="Grouping-in-Planning"
                     >
-                      <path
-                        d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
-                        fill="currentColor"
+                      <svg
+                        aria-hidden="true"
+                        className="svg-inline--fa fa-link fa-w-16 "
+                        data-icon="link"
+                        data-prefix="fas"
+                        focusable="false"
+                        role="img"
                         style={Object {}}
-                      />
-                    </svg>
-                  </a>
-                  Grouping in Planning
-                </h1>
-                <div
-                  className="image_block center"
-                >
+                        viewBox="0 0 512 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
+                          fill="currentColor"
+                          style={Object {}}
+                        />
+                      </svg>
+                    </a>
+                    Grouping in Planning
+                  </h1>
                   <div
-                    className="image"
+                    className="image_block center"
                   >
-                    <img
-                      height={360}
-                      src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
-                      width={540}
-                    />
+                    <div
+                      className="image"
+                    >
+                      <img
+                        height={360}
+                        src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
+                        width={540}
+                      />
+                    </div>
                   </div>
-                </div>
-                <p>
-                  You can now group related issues and pull requests and link them to the same content in your changelog. This is really handy when you have multiple pieces of work which contributed to a new feature. 
-                </p>
-                <p>
-                  We’re working on some great new features around planning and populating your changelogs, 
-                  <a
-                    className=""
-                    href="https://changelog.pinpoint.com/subscription/subscribe/PirxVTE94u3YmGNOySRY"
-                    id=""
-                    title=""
-                  >
-                    subscribe to 
-                  </a>
-                  <em>
+                  <p>
+                    You can now group related issues and pull requests and link them to the same content in your changelog. This is really handy when you have multiple pieces of work which contributed to a new feature. 
+                  </p>
+                  <p>
+                    We’re working on some great new features around planning and populating your changelogs, 
                     <a
                       className=""
                       href="https://changelog.pinpoint.com/subscription/subscribe/PirxVTE94u3YmGNOySRY"
                       id=""
                       title=""
                     >
-                      our
+                      subscribe to 
                     </a>
-                  </em>
-                  <a
-                    className=""
-                    href="https://changelog.pinpoint.com/subscription/subscribe/PirxVTE94u3YmGNOySRY"
-                    id=""
-                    title=""
-                  >
-                     changelog
-                  </a>
-                   to stay up to date with the latest.
-                </p>
+                    <em>
+                      <a
+                        className=""
+                        href="https://changelog.pinpoint.com/subscription/subscribe/PirxVTE94u3YmGNOySRY"
+                        id=""
+                        title=""
+                      >
+                        our
+                      </a>
+                    </em>
+                    <a
+                      className=""
+                      href="https://changelog.pinpoint.com/subscription/subscribe/PirxVTE94u3YmGNOySRY"
+                      id=""
+                      title=""
+                    >
+                       changelog
+                    </a>
+                     to stay up to date with the latest.
+                  </p>
+                </div>
               </section>
             </article>
           </div>
@@ -3234,133 +3240,135 @@ exports[`Test no claps 1`] = `
               <section
                 className="ProseMirror"
               >
-                <h1
-                  className="heading"
-                >
-                  <a
-                    aria-hidden="true"
-                    className="anchor"
-                    href="#Linked-Content-Blocks"
-                    id="Linked-Content-Blocks"
+                <div>
+                  <h1
+                    className="heading"
                   >
-                    <svg
+                    <a
                       aria-hidden="true"
-                      className="svg-inline--fa fa-link fa-w-16 "
-                      data-icon="link"
-                      data-prefix="fas"
-                      focusable="false"
-                      role="img"
-                      style={Object {}}
-                      viewBox="0 0 512 512"
-                      xmlns="http://www.w3.org/2000/svg"
+                      className="anchor"
+                      href="#Linked-Content-Blocks"
+                      id="Linked-Content-Blocks"
                     >
-                      <path
-                        d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
-                        fill="currentColor"
+                      <svg
+                        aria-hidden="true"
+                        className="svg-inline--fa fa-link fa-w-16 "
+                        data-icon="link"
+                        data-prefix="fas"
+                        focusable="false"
+                        role="img"
                         style={Object {}}
-                      />
-                    </svg>
-                  </a>
-                  Linked Content Blocks
-                </h1>
-                <p>
-                  Linked content blocks allow you to quickly populate your changelog from the recently completed work. Annotations show you which issues and pull requests are linked to features. There are blocks for showing rich content about a new feature, and for quickly building a list of small improvements and bug fixes.
-                </p>
-                <div
-                  className="image_block center"
-                >
+                        viewBox="0 0 512 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
+                          fill="currentColor"
+                          style={Object {}}
+                        />
+                      </svg>
+                    </a>
+                    Linked Content Blocks
+                  </h1>
+                  <p>
+                    Linked content blocks allow you to quickly populate your changelog from the recently completed work. Annotations show you which issues and pull requests are linked to features. There are blocks for showing rich content about a new feature, and for quickly building a list of small improvements and bug fixes.
+                  </p>
                   <div
-                    className="image"
+                    className="image_block center"
                   >
-                    <img
-                      height={509.6}
-                      src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
-                      width={564.72}
-                    />
+                    <div
+                      className="image"
+                    >
+                      <img
+                        height={509.6}
+                        src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
+                        width={564.72}
+                      />
+                    </div>
                   </div>
-                </div>
-                <p>
-                  Linked content blocks can be created while in the editor, or better, by using our new and improved 
-                  <strong>
-                    Planning
-                  </strong>
-                   tool.
-                </p>
-                <h1
-                  className="heading"
-                >
-                  <a
-                    aria-hidden="true"
-                    className="anchor"
-                    href="#Grouping-in-Planning"
-                    id="Grouping-in-Planning"
+                  <p>
+                    Linked content blocks can be created while in the editor, or better, by using our new and improved 
+                    <strong>
+                      Planning
+                    </strong>
+                     tool.
+                  </p>
+                  <h1
+                    className="heading"
                   >
-                    <svg
+                    <a
                       aria-hidden="true"
-                      className="svg-inline--fa fa-link fa-w-16 "
-                      data-icon="link"
-                      data-prefix="fas"
-                      focusable="false"
-                      role="img"
-                      style={Object {}}
-                      viewBox="0 0 512 512"
-                      xmlns="http://www.w3.org/2000/svg"
+                      className="anchor"
+                      href="#Grouping-in-Planning"
+                      id="Grouping-in-Planning"
                     >
-                      <path
-                        d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
-                        fill="currentColor"
+                      <svg
+                        aria-hidden="true"
+                        className="svg-inline--fa fa-link fa-w-16 "
+                        data-icon="link"
+                        data-prefix="fas"
+                        focusable="false"
+                        role="img"
                         style={Object {}}
-                      />
-                    </svg>
-                  </a>
-                  Grouping in Planning
-                </h1>
-                <div
-                  className="image_block center"
-                >
+                        viewBox="0 0 512 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
+                          fill="currentColor"
+                          style={Object {}}
+                        />
+                      </svg>
+                    </a>
+                    Grouping in Planning
+                  </h1>
                   <div
-                    className="image"
+                    className="image_block center"
                   >
-                    <img
-                      height={360}
-                      src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
-                      width={540}
-                    />
+                    <div
+                      className="image"
+                    >
+                      <img
+                        height={360}
+                        src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
+                        width={540}
+                      />
+                    </div>
                   </div>
-                </div>
-                <p>
-                  You can now group related issues and pull requests and link them to the same content in your changelog. This is really handy when you have multiple pieces of work which contributed to a new feature. 
-                </p>
-                <p>
-                  We’re working on some great new features around planning and populating your changelogs, 
-                  <a
-                    className=""
-                    href="https://changelog.pinpoint.com/subscription/subscribe/PirxVTE94u3YmGNOySRY"
-                    id=""
-                    title=""
-                  >
-                    subscribe to 
-                  </a>
-                  <em>
+                  <p>
+                    You can now group related issues and pull requests and link them to the same content in your changelog. This is really handy when you have multiple pieces of work which contributed to a new feature. 
+                  </p>
+                  <p>
+                    We’re working on some great new features around planning and populating your changelogs, 
                     <a
                       className=""
                       href="https://changelog.pinpoint.com/subscription/subscribe/PirxVTE94u3YmGNOySRY"
                       id=""
                       title=""
                     >
-                      our
+                      subscribe to 
                     </a>
-                  </em>
-                  <a
-                    className=""
-                    href="https://changelog.pinpoint.com/subscription/subscribe/PirxVTE94u3YmGNOySRY"
-                    id=""
-                    title=""
-                  >
-                     changelog
-                  </a>
-                   to stay up to date with the latest.
-                </p>
+                    <em>
+                      <a
+                        className=""
+                        href="https://changelog.pinpoint.com/subscription/subscribe/PirxVTE94u3YmGNOySRY"
+                        id=""
+                        title=""
+                      >
+                        our
+                      </a>
+                    </em>
+                    <a
+                      className=""
+                      href="https://changelog.pinpoint.com/subscription/subscribe/PirxVTE94u3YmGNOySRY"
+                      id=""
+                      title=""
+                    >
+                       changelog
+                    </a>
+                     to stay up to date with the latest.
+                  </p>
+                </div>
               </section>
             </article>
           </div>
@@ -4189,133 +4197,135 @@ exports[`Test not zoomable 1`] = `
               <section
                 className="ProseMirror"
               >
-                <h1
-                  className="heading"
-                >
-                  <a
-                    aria-hidden="true"
-                    className="anchor"
-                    href="#Linked-Content-Blocks"
-                    id="Linked-Content-Blocks"
+                <div>
+                  <h1
+                    className="heading"
                   >
-                    <svg
+                    <a
                       aria-hidden="true"
-                      className="svg-inline--fa fa-link fa-w-16 "
-                      data-icon="link"
-                      data-prefix="fas"
-                      focusable="false"
-                      role="img"
-                      style={Object {}}
-                      viewBox="0 0 512 512"
-                      xmlns="http://www.w3.org/2000/svg"
+                      className="anchor"
+                      href="#Linked-Content-Blocks"
+                      id="Linked-Content-Blocks"
                     >
-                      <path
-                        d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
-                        fill="currentColor"
+                      <svg
+                        aria-hidden="true"
+                        className="svg-inline--fa fa-link fa-w-16 "
+                        data-icon="link"
+                        data-prefix="fas"
+                        focusable="false"
+                        role="img"
                         style={Object {}}
-                      />
-                    </svg>
-                  </a>
-                  Linked Content Blocks
-                </h1>
-                <p>
-                  Linked content blocks allow you to quickly populate your changelog from the recently completed work. Annotations show you which issues and pull requests are linked to features. There are blocks for showing rich content about a new feature, and for quickly building a list of small improvements and bug fixes.
-                </p>
-                <div
-                  className="image_block center"
-                >
+                        viewBox="0 0 512 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
+                          fill="currentColor"
+                          style={Object {}}
+                        />
+                      </svg>
+                    </a>
+                    Linked Content Blocks
+                  </h1>
+                  <p>
+                    Linked content blocks allow you to quickly populate your changelog from the recently completed work. Annotations show you which issues and pull requests are linked to features. There are blocks for showing rich content about a new feature, and for quickly building a list of small improvements and bug fixes.
+                  </p>
                   <div
-                    className="image"
+                    className="image_block center"
                   >
-                    <img
-                      height={509.6}
-                      src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
-                      width={564.72}
-                    />
+                    <div
+                      className="image"
+                    >
+                      <img
+                        height={509.6}
+                        src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
+                        width={564.72}
+                      />
+                    </div>
                   </div>
-                </div>
-                <p>
-                  Linked content blocks can be created while in the editor, or better, by using our new and improved 
-                  <strong>
-                    Planning
-                  </strong>
-                   tool.
-                </p>
-                <h1
-                  className="heading"
-                >
-                  <a
-                    aria-hidden="true"
-                    className="anchor"
-                    href="#Grouping-in-Planning"
-                    id="Grouping-in-Planning"
+                  <p>
+                    Linked content blocks can be created while in the editor, or better, by using our new and improved 
+                    <strong>
+                      Planning
+                    </strong>
+                     tool.
+                  </p>
+                  <h1
+                    className="heading"
                   >
-                    <svg
+                    <a
                       aria-hidden="true"
-                      className="svg-inline--fa fa-link fa-w-16 "
-                      data-icon="link"
-                      data-prefix="fas"
-                      focusable="false"
-                      role="img"
-                      style={Object {}}
-                      viewBox="0 0 512 512"
-                      xmlns="http://www.w3.org/2000/svg"
+                      className="anchor"
+                      href="#Grouping-in-Planning"
+                      id="Grouping-in-Planning"
                     >
-                      <path
-                        d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
-                        fill="currentColor"
+                      <svg
+                        aria-hidden="true"
+                        className="svg-inline--fa fa-link fa-w-16 "
+                        data-icon="link"
+                        data-prefix="fas"
+                        focusable="false"
+                        role="img"
                         style={Object {}}
-                      />
-                    </svg>
-                  </a>
-                  Grouping in Planning
-                </h1>
-                <div
-                  className="image_block center"
-                >
+                        viewBox="0 0 512 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
+                          fill="currentColor"
+                          style={Object {}}
+                        />
+                      </svg>
+                    </a>
+                    Grouping in Planning
+                  </h1>
                   <div
-                    className="image"
+                    className="image_block center"
                   >
-                    <img
-                      height={360}
-                      src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
-                      width={540}
-                    />
+                    <div
+                      className="image"
+                    >
+                      <img
+                        height={360}
+                        src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
+                        width={540}
+                      />
+                    </div>
                   </div>
-                </div>
-                <p>
-                  You can now group related issues and pull requests and link them to the same content in your changelog. This is really handy when you have multiple pieces of work which contributed to a new feature. 
-                </p>
-                <p>
-                  We’re working on some great new features around planning and populating your changelogs, 
-                  <a
-                    className=""
-                    href="https://changelog.pinpoint.com/subscription/subscribe/PirxVTE94u3YmGNOySRY"
-                    id=""
-                    title=""
-                  >
-                    subscribe to 
-                  </a>
-                  <em>
+                  <p>
+                    You can now group related issues and pull requests and link them to the same content in your changelog. This is really handy when you have multiple pieces of work which contributed to a new feature. 
+                  </p>
+                  <p>
+                    We’re working on some great new features around planning and populating your changelogs, 
                     <a
                       className=""
                       href="https://changelog.pinpoint.com/subscription/subscribe/PirxVTE94u3YmGNOySRY"
                       id=""
                       title=""
                     >
-                      our
+                      subscribe to 
                     </a>
-                  </em>
-                  <a
-                    className=""
-                    href="https://changelog.pinpoint.com/subscription/subscribe/PirxVTE94u3YmGNOySRY"
-                    id=""
-                    title=""
-                  >
-                     changelog
-                  </a>
-                   to stay up to date with the latest.
-                </p>
+                    <em>
+                      <a
+                        className=""
+                        href="https://changelog.pinpoint.com/subscription/subscribe/PirxVTE94u3YmGNOySRY"
+                        id=""
+                        title=""
+                      >
+                        our
+                      </a>
+                    </em>
+                    <a
+                      className=""
+                      href="https://changelog.pinpoint.com/subscription/subscribe/PirxVTE94u3YmGNOySRY"
+                      id=""
+                      title=""
+                    >
+                       changelog
+                    </a>
+                     to stay up to date with the latest.
+                  </p>
+                </div>
               </section>
             </article>
           </div>
@@ -5132,76 +5142,78 @@ exports[`Test with pagination 1`] = `
               <section
                 className="ProseMirror"
               >
-                <h1
-                  className="heading"
-                >
-                  <a
-                    aria-hidden="true"
-                    className="anchor"
-                    href="#Publishing-Controls-and-Social-Posting"
-                    id="Publishing-Controls-and-Social-Posting"
+                <div>
+                  <h1
+                    className="heading"
                   >
-                    <svg
+                    <a
                       aria-hidden="true"
-                      className="svg-inline--fa fa-link fa-w-16 "
-                      data-icon="link"
-                      data-prefix="fas"
-                      focusable="false"
-                      role="img"
-                      style={Object {}}
-                      viewBox="0 0 512 512"
-                      xmlns="http://www.w3.org/2000/svg"
+                      className="anchor"
+                      href="#Publishing-Controls-and-Social-Posting"
+                      id="Publishing-Controls-and-Social-Posting"
                     >
-                      <path
-                        d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
-                        fill="currentColor"
+                      <svg
+                        aria-hidden="true"
+                        className="svg-inline--fa fa-link fa-w-16 "
+                        data-icon="link"
+                        data-prefix="fas"
+                        focusable="false"
+                        role="img"
                         style={Object {}}
-                      />
-                    </svg>
-                  </a>
-                  Publishing Controls and Social Posting
-                </h1>
-                <p>
-                  When you publish a changelog you will now see a new Publish dialog which grants finer control over when you want to notify your subscribers.
-                </p>
-                <div
-                  className="image_block center"
-                >
+                        viewBox="0 0 512 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
+                          fill="currentColor"
+                          style={Object {}}
+                        />
+                      </svg>
+                    </a>
+                    Publishing Controls and Social Posting
+                  </h1>
+                  <p>
+                    When you publish a changelog you will now see a new Publish dialog which grants finer control over when you want to notify your subscribers.
+                  </p>
                   <div
-                    className="image"
+                    className="image_block center"
                   >
-                    <img
-                      height={540}
-                      src="https://file.pinpoint.com/bab9656158820022a480aea23dce8a39;UDP6~%24-%3B00-%3D~XIoV%5Bt700xa%25fRi-%3Bs-aeof;1500x1000.png"
-                      width={810}
-                    />
+                    <div
+                      className="image"
+                    >
+                      <img
+                        height={540}
+                        src="https://file.pinpoint.com/bab9656158820022a480aea23dce8a39;UDP6~%24-%3B00-%3D~XIoV%5Bt700xa%25fRi-%3Bs-aeof;1500x1000.png"
+                        width={810}
+                      />
+                    </div>
                   </div>
-                </div>
-                <p>
-                  In addition, you can now post directly to 
-                  <strong>
-                    Twitter
-                  </strong>
-                   and 
-                  <strong>
-                    LinkedIn
-                  </strong>
-                   when you publish your changelog.  
-                </p>
-                <p>
-                  To set up the Twitter integration simply click 
-                  <a
-                    className=""
-                    href="https://home.pinpoint.com/pinpoint/settings/integrations"
-                    id=""
-                    title=""
-                  >
+                  <p>
+                    In addition, you can now post directly to 
                     <strong>
-                      Settings→Integrations
+                      Twitter
                     </strong>
-                  </a>
-                  .
-                </p>
+                     and 
+                    <strong>
+                      LinkedIn
+                    </strong>
+                     when you publish your changelog.  
+                  </p>
+                  <p>
+                    To set up the Twitter integration simply click 
+                    <a
+                      className=""
+                      href="https://home.pinpoint.com/pinpoint/settings/integrations"
+                      id=""
+                      title=""
+                    >
+                      <strong>
+                        Settings→Integrations
+                      </strong>
+                    </a>
+                    .
+                  </p>
+                </div>
               </section>
             </article>
           </div>

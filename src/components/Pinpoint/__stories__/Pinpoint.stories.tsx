@@ -3,7 +3,7 @@ import { Meta } from '@storybook/react';
 import Pinpoint from '../';
 import Loader from '../../Loader';
 import entry from '../__data__/testDocumentIFramely.json';
-import { Document } from '../../Renderer';
+import { Document, Content } from '../../Renderer';
 const { default: readme } = require('../README.md');
 
 export default {
@@ -29,11 +29,22 @@ export const Simple_Test: React.VFC<{}> = () => (
 
 export const Test_Iframely: React.VFC<{}> = () => (
 	<Pinpoint siteId="testing">
-		{(ready) => {
+		{(ready, ref) => {
 			if (!ready) {
 				return <Loader />;
 			}
-			return <Document node={entry} />;
+			return <Document ref={ref} node={entry} />;
+		}}
+	</Pinpoint>
+);
+
+export const Test_Iframely_Content: React.VFC<{}> = () => (
+	<Pinpoint siteId="testing">
+		{(ready, ref) => {
+			if (!ready) {
+				return <Loader />;
+			}
+			return <Content ref={ref} document={{ type: 'document', content: entry.content }} id="1234" />;
 		}}
 	</Pinpoint>
 );
