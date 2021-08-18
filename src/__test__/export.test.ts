@@ -2,6 +2,7 @@ import * as Exports from '../';
 
 const {
 	Statistic,
+	Banner,
 	Clap,
 	Content,
 	Card,
@@ -151,6 +152,7 @@ test('Test component exports', () => {
 	expect(Pagination).toBeTruthy();
 	expect(PoweredByPinpoint).toBeTruthy();
 	expect(Pinpoint).toBeTruthy();
+	expect(Banner).toBeTruthy();
 });
 
 test('Test util exports', () => {
