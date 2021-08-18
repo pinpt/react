@@ -24,6 +24,8 @@ const { Header } = Prebuilt;
 const MySiteHeader = () => {
 	const site = useSite();
 
-	return <Header site={site} renderLogo={() => <img src="path/to/my/awesome/logo" />} renderThemeToggler={() => <></>} />;
+	return (
+		<Header site={site} renderLogo={() => <img src="path/to/my/awesome/logo" />} renderThemeToggler={() => <></>} />
+	);
 };
 ```

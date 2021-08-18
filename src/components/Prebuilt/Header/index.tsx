@@ -5,7 +5,7 @@ import { ISearchBarProps } from '../../Search/Bar';
 import Subscribe, { ISubscribeProps } from '../../Subscribe';
 import ThemeToggle, { IThemeToggleProps } from '../../ThemeToggle';
 import { ISite } from '../../../lib';
-import Header from '../../Header';
+import BaseHeader from '../../Header';
 
 export interface IPrebuiltHeaderProps {
 	className?: string;
@@ -19,7 +19,7 @@ export interface IPrebuiltHeaderProps {
 	renderThemeToggle?: (site: ISite) => ReactElement<IThemeToggleProps>;
 }
 
-const PrebuiltHeader = (props: IPrebuiltHeaderProps) => {
+const Header = (props: IPrebuiltHeaderProps) => {
 	const {
 		className = '',
 		searchTerm,
@@ -33,14 +33,12 @@ const PrebuiltHeader = (props: IPrebuiltHeaderProps) => {
 	} = props;
 
 	return (
-		<Header
+		<BaseHeader
 			className={`Prebuilt ${className}`}
 			title={site.theme?.title ?? site.name}
 			description={site.theme?.description ?? site.name}
 			onClick={() => handleSelectHome?.()}
-			subscribe={
-				renderSubscribe?.(site) ?? <Subscribe className="Prebuilt" href="/subscription/subscribe" />
-			}
+			subscribe={renderSubscribe?.(site) ?? <Subscribe className="Prebuilt" href="/subscription/subscribe" />}
 			themeToggle={renderThemeToggle?.(site) ?? <ThemeToggle className="Prebuilt" />}
 			search={
 				renderSearch?.(site) ?? (
@@ -61,4 +59,4 @@ const PrebuiltHeader = (props: IPrebuiltHeaderProps) => {
 	);
 };
 
-export default PrebuiltHeader;
+export default Header;
