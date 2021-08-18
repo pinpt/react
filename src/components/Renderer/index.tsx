@@ -26,10 +26,11 @@ import './table';
 import './toggle';
 import Content, { CoverMedia } from './content';
 import { DocOpts, NodeProps, recurseIntoChildren } from './register';
+import { forwardRef } from 'react';
 
-const Document = ({ node, limit, opts }: NodeProps & { limit?: number; opts?: DocOpts }) => (
-	<>{recurseIntoChildren({ ...node, _path: 'doc', _opts: opts }, limit)}</>
-);
+const Document = forwardRef(({ node, limit, opts }: NodeProps & { limit?: number; opts?: DocOpts }, ref: any) => (
+	<div ref={ref}>{recurseIntoChildren({ ...node, _path: 'doc', _opts: opts }, limit)}</div>
+));
 
 export const emptyDoc = () => ({ type: 'doc', content: [{ type: 'paragraph', content: [] }] });
 

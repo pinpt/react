@@ -29,11 +29,11 @@ export const Simple_Test: React.VFC<{}> = () => (
 
 export const Test_Iframely: React.VFC<{}> = () => (
 	<Pinpoint siteId="testing">
-		{(ready) => {
+		{(ready, ref) => {
 			if (!ready) {
 				return <Loader />;
 			}
-			return <Document node={entry} />;
+			return <Document ref={ref} node={entry} />;
 		}}
 	</Pinpoint>
 );
