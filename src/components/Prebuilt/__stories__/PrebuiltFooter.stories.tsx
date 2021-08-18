@@ -1,15 +1,15 @@
+import React from 'react';
 import { Meta } from '@storybook/react';
-import PrebuiltError from '../Error';
 import site from '../__data__/testSite.json';
-const { default: readme } = require('../Error/README.md');
+import Footer from '../Footer';
 import { Subtitle, Description, Primary, Stories, ArgsTable, PRIMARY_STORY } from '@storybook/addon-docs';
+const { default: readme } = require('../Footer/README.md');
 
 export default {
-	component: PrebuiltError.NotFound,
-	title: 'Prebuilt Components/Error',
+	component: Footer,
+	title: 'Prebuilt Components/Footer',
 	parameters: {
-		jest: ['PrebuiltError.test.tsx'],
-		controls: { hideNoControlsWarning: true },
+		jest: ['PrebuiltFooter.test.tsx'],
 		docs: {
 			description: {
 				component: readme,
@@ -24,9 +24,8 @@ export default {
 				</>
 			),
 		},
+		controls: { hideNoControlsWarning: true },
 	},
 } as Meta;
 
-export const NotFound: React.VFC<{}> = () => <PrebuiltError.NotFound site={site} />;
-
-export const InternalServerError: React.VFC<{}> = () => <PrebuiltError.InternalServerError site={site} />;
+export const Default: React.VFC<{}> = () => <Footer site={site} />;

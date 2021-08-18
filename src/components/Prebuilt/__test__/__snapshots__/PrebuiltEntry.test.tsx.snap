@@ -11,7 +11,7 @@ exports[`Test custom className 1`] = `
       className="constraint"
     >
       <div
-        className="Pinpoint Header Prebuilt"
+        className="Pinpoint Header Prebuilt "
       >
         <div
           className="top"
@@ -22,7 +22,7 @@ exports[`Test custom className 1`] = `
             <a
               className="Pinpoint Internal Link Logo sm Prebuilt"
               href="https://pinpoint.com"
-              title="Header Logo Content Page"
+              title="Header Logo Home Page"
             >
               <img
                 className="image"
@@ -780,7 +780,7 @@ exports[`Test custom className 1`] = `
       className="constraint"
     >
       <div
-        className="Pinpoint Footer Prebuilt"
+        className="Pinpoint Footer Prebuilt undefined"
       >
         <div
           className="content"
@@ -794,7 +794,7 @@ exports[`Test custom className 1`] = `
               <a
                 className="Pinpoint Internal Link Logo sm Prebuilt"
                 href="https://pinpoint.com"
-                title="Footer Logo Content Page"
+                title="Footer Logo Home Page"
               >
                 <img
                   className="image"
@@ -952,6 +952,29 @@ exports[`Test custom className 1`] = `
                 >
                   <path
                     d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+              <a
+                className="Pinpoint Internal Link Social Item RSS Prebuilt"
+                href="/rss"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <svg
+                  aria-hidden="true"
+                  data-icon="rss"
+                  data-prefix="fas"
+                  focusable="false"
+                  height={14}
+                  role="img"
+                  viewBox="0 0 448 512"
+                  width={12.25}
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M128.081 415.959c0 35.369-28.672 64.041-64.041 64.041S0 451.328 0 415.959s28.672-64.041 64.041-64.041 64.04 28.673 64.04 64.041zm175.66 47.25c-8.354-154.6-132.185-278.587-286.95-286.95C7.656 175.765 0 183.105 0 192.253v48.069c0 8.415 6.49 15.472 14.887 16.018 111.832 7.284 201.473 96.702 208.772 208.772.547 8.397 7.604 14.887 16.018 14.887h48.069c9.149.001 16.489-7.655 15.995-16.79zm144.249.288C439.596 229.677 251.465 40.445 16.503 32.01 7.473 31.686 0 38.981 0 48.016v48.068c0 8.625 6.835 15.645 15.453 15.999 191.179 7.839 344.627 161.316 352.465 352.465.353 8.618 7.373 15.453 15.999 15.453h48.068c9.034-.001 16.329-7.474 16.005-16.504z"
                     fill="currentColor"
                   />
                 </svg>
@@ -1027,7 +1050,7 @@ exports[`Test default state 1`] = `
       className="constraint"
     >
       <div
-        className="Pinpoint Header Prebuilt"
+        className="Pinpoint Header Prebuilt "
       >
         <div
           className="top"
@@ -1038,7 +1061,7 @@ exports[`Test default state 1`] = `
             <a
               className="Pinpoint Internal Link Logo sm Prebuilt"
               href="https://pinpoint.com"
-              title="Header Logo Content Page"
+              title="Header Logo Home Page"
             >
               <img
                 className="image"
@@ -1796,7 +1819,7 @@ exports[`Test default state 1`] = `
       className="constraint"
     >
       <div
-        className="Pinpoint Footer Prebuilt"
+        className="Pinpoint Footer Prebuilt undefined"
       >
         <div
           className="content"
@@ -1810,7 +1833,7 @@ exports[`Test default state 1`] = `
               <a
                 className="Pinpoint Internal Link Logo sm Prebuilt"
                 href="https://pinpoint.com"
-                title="Footer Logo Content Page"
+                title="Footer Logo Home Page"
               >
                 <img
                   className="image"
@@ -1968,6 +1991,29 @@ exports[`Test default state 1`] = `
                 >
                   <path
                     d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+              <a
+                className="Pinpoint Internal Link Social Item RSS Prebuilt"
+                href="/rss"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <svg
+                  aria-hidden="true"
+                  data-icon="rss"
+                  data-prefix="fas"
+                  focusable="false"
+                  height={14}
+                  role="img"
+                  viewBox="0 0 448 512"
+                  width={12.25}
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M128.081 415.959c0 35.369-28.672 64.041-64.041 64.041S0 451.328 0 415.959s28.672-64.041 64.041-64.041 64.04 28.673 64.04 64.041zm175.66 47.25c-8.354-154.6-132.185-278.587-286.95-286.95C7.656 175.765 0 183.105 0 192.253v48.069c0 8.415 6.49 15.472 14.887 16.018 111.832 7.284 201.473 96.702 208.772 208.772.547 8.397 7.604 14.887 16.018 14.887h48.069c9.149.001 16.489-7.655 15.995-16.79zm144.249.288C439.596 229.677 251.465 40.445 16.503 32.01 7.473 31.686 0 38.981 0 48.016v48.068c0 8.625 6.835 15.645 15.453 15.999 191.179 7.839 344.627 161.316 352.465 352.465.353 8.618 7.373 15.453 15.999 15.453h48.068c9.034-.001 16.329-7.474 16.005-16.504z"
                     fill="currentColor"
                   />
                 </svg>
@@ -2043,7 +2089,7 @@ exports[`Test no author 1`] = `
       className="constraint"
     >
       <div
-        className="Pinpoint Header Prebuilt"
+        className="Pinpoint Header Prebuilt "
       >
         <div
           className="top"
@@ -2054,7 +2100,7 @@ exports[`Test no author 1`] = `
             <a
               className="Pinpoint Internal Link Logo sm Prebuilt"
               href="https://pinpoint.com"
-              title="Header Logo Content Page"
+              title="Header Logo Home Page"
             >
               <img
                 className="image"
@@ -2610,7 +2656,7 @@ exports[`Test no author 1`] = `
       className="constraint"
     >
       <div
-        className="Pinpoint Footer Prebuilt"
+        className="Pinpoint Footer Prebuilt undefined"
       >
         <div
           className="content"
@@ -2624,7 +2670,7 @@ exports[`Test no author 1`] = `
               <a
                 className="Pinpoint Internal Link Logo sm Prebuilt"
                 href="https://pinpoint.com"
-                title="Footer Logo Content Page"
+                title="Footer Logo Home Page"
               >
                 <img
                   className="image"
@@ -2782,6 +2828,29 @@ exports[`Test no author 1`] = `
                 >
                   <path
                     d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+              <a
+                className="Pinpoint Internal Link Social Item RSS Prebuilt"
+                href="/rss"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <svg
+                  aria-hidden="true"
+                  data-icon="rss"
+                  data-prefix="fas"
+                  focusable="false"
+                  height={14}
+                  role="img"
+                  viewBox="0 0 448 512"
+                  width={12.25}
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M128.081 415.959c0 35.369-28.672 64.041-64.041 64.041S0 451.328 0 415.959s28.672-64.041 64.041-64.041 64.04 28.673 64.04 64.041zm175.66 47.25c-8.354-154.6-132.185-278.587-286.95-286.95C7.656 175.765 0 183.105 0 192.253v48.069c0 8.415 6.49 15.472 14.887 16.018 111.832 7.284 201.473 96.702 208.772 208.772.547 8.397 7.604 14.887 16.018 14.887h48.069c9.149.001 16.489-7.655 15.995-16.79zm144.249.288C439.596 229.677 251.465 40.445 16.503 32.01 7.473 31.686 0 38.981 0 48.016v48.068c0 8.625 6.835 15.645 15.453 15.999 191.179 7.839 344.627 161.316 352.465 352.465.353 8.618 7.373 15.453 15.999 15.453h48.068c9.034-.001 16.329-7.474 16.005-16.504z"
                     fill="currentColor"
                   />
                 </svg>
@@ -2857,7 +2926,7 @@ exports[`Test no claps 1`] = `
       className="constraint"
     >
       <div
-        className="Pinpoint Header Prebuilt"
+        className="Pinpoint Header Prebuilt "
       >
         <div
           className="top"
@@ -2868,7 +2937,7 @@ exports[`Test no claps 1`] = `
             <a
               className="Pinpoint Internal Link Logo sm Prebuilt"
               href="https://pinpoint.com"
-              title="Header Logo Content Page"
+              title="Header Logo Home Page"
             >
               <img
                 className="image"
@@ -3458,7 +3527,7 @@ exports[`Test no claps 1`] = `
       className="constraint"
     >
       <div
-        className="Pinpoint Footer Prebuilt"
+        className="Pinpoint Footer Prebuilt undefined"
       >
         <div
           className="content"
@@ -3472,7 +3541,7 @@ exports[`Test no claps 1`] = `
               <a
                 className="Pinpoint Internal Link Logo sm Prebuilt"
                 href="https://pinpoint.com"
-                title="Footer Logo Content Page"
+                title="Footer Logo Home Page"
               >
                 <img
                   className="image"
@@ -3634,6 +3703,29 @@ exports[`Test no claps 1`] = `
                   />
                 </svg>
               </a>
+              <a
+                className="Pinpoint Internal Link Social Item RSS Prebuilt"
+                href="/rss"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <svg
+                  aria-hidden="true"
+                  data-icon="rss"
+                  data-prefix="fas"
+                  focusable="false"
+                  height={14}
+                  role="img"
+                  viewBox="0 0 448 512"
+                  width={12.25}
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M128.081 415.959c0 35.369-28.672 64.041-64.041 64.041S0 451.328 0 415.959s28.672-64.041 64.041-64.041 64.04 28.673 64.04 64.041zm175.66 47.25c-8.354-154.6-132.185-278.587-286.95-286.95C7.656 175.765 0 183.105 0 192.253v48.069c0 8.415 6.49 15.472 14.887 16.018 111.832 7.284 201.473 96.702 208.772 208.772.547 8.397 7.604 14.887 16.018 14.887h48.069c9.149.001 16.489-7.655 15.995-16.79zm144.249.288C439.596 229.677 251.465 40.445 16.503 32.01 7.473 31.686 0 38.981 0 48.016v48.068c0 8.625 6.835 15.645 15.453 15.999 191.179 7.839 344.627 161.316 352.465 352.465.353 8.618 7.373 15.453 15.999 15.453h48.068c9.034-.001 16.329-7.474 16.005-16.504z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
             </div>
           </div>
         </div>
@@ -3705,7 +3797,7 @@ exports[`Test not zoomable 1`] = `
       className="constraint"
     >
       <div
-        className="Pinpoint Header Prebuilt"
+        className="Pinpoint Header Prebuilt "
       >
         <div
           className="top"
@@ -3716,7 +3808,7 @@ exports[`Test not zoomable 1`] = `
             <a
               className="Pinpoint Internal Link Logo sm Prebuilt"
               href="https://pinpoint.com"
-              title="Header Logo Content Page"
+              title="Header Logo Home Page"
             >
               <img
                 className="image"
@@ -4474,7 +4566,7 @@ exports[`Test not zoomable 1`] = `
       className="constraint"
     >
       <div
-        className="Pinpoint Footer Prebuilt"
+        className="Pinpoint Footer Prebuilt undefined"
       >
         <div
           className="content"
@@ -4488,7 +4580,7 @@ exports[`Test not zoomable 1`] = `
               <a
                 className="Pinpoint Internal Link Logo sm Prebuilt"
                 href="https://pinpoint.com"
-                title="Footer Logo Content Page"
+                title="Footer Logo Home Page"
               >
                 <img
                   className="image"
@@ -4650,6 +4742,29 @@ exports[`Test not zoomable 1`] = `
                   />
                 </svg>
               </a>
+              <a
+                className="Pinpoint Internal Link Social Item RSS Prebuilt"
+                href="/rss"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <svg
+                  aria-hidden="true"
+                  data-icon="rss"
+                  data-prefix="fas"
+                  focusable="false"
+                  height={14}
+                  role="img"
+                  viewBox="0 0 448 512"
+                  width={12.25}
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M128.081 415.959c0 35.369-28.672 64.041-64.041 64.041S0 451.328 0 415.959s28.672-64.041 64.041-64.041 64.04 28.673 64.04 64.041zm175.66 47.25c-8.354-154.6-132.185-278.587-286.95-286.95C7.656 175.765 0 183.105 0 192.253v48.069c0 8.415 6.49 15.472 14.887 16.018 111.832 7.284 201.473 96.702 208.772 208.772.547 8.397 7.604 14.887 16.018 14.887h48.069c9.149.001 16.489-7.655 15.995-16.79zm144.249.288C439.596 229.677 251.465 40.445 16.503 32.01 7.473 31.686 0 38.981 0 48.016v48.068c0 8.625 6.835 15.645 15.453 15.999 191.179 7.839 344.627 161.316 352.465 352.465.353 8.618 7.373 15.453 15.999 15.453h48.068c9.034-.001 16.329-7.474 16.005-16.504z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
             </div>
           </div>
         </div>
@@ -4721,7 +4836,7 @@ exports[`Test with pagination 1`] = `
       className="constraint"
     >
       <div
-        className="Pinpoint Header Prebuilt"
+        className="Pinpoint Header Prebuilt "
       >
         <div
           className="top"
@@ -4732,7 +4847,7 @@ exports[`Test with pagination 1`] = `
             <a
               className="Pinpoint Internal Link Logo sm Prebuilt"
               href="https://pinpoint.com"
-              title="Header Logo Content Page"
+              title="Header Logo Home Page"
             >
               <img
                 className="image"
@@ -5307,7 +5422,7 @@ exports[`Test with pagination 1`] = `
       className="constraint"
     >
       <div
-        className="Pinpoint Footer Prebuilt"
+        className="Pinpoint Footer Prebuilt undefined"
       >
         <div
           className="content"
@@ -5321,7 +5436,7 @@ exports[`Test with pagination 1`] = `
               <a
                 className="Pinpoint Internal Link Logo sm Prebuilt"
                 href="https://pinpoint.com"
-                title="Footer Logo Content Page"
+                title="Footer Logo Home Page"
               >
                 <img
                   className="image"
@@ -5479,6 +5594,29 @@ exports[`Test with pagination 1`] = `
                 >
                   <path
                     d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+              <a
+                className="Pinpoint Internal Link Social Item RSS Prebuilt"
+                href="/rss"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <svg
+                  aria-hidden="true"
+                  data-icon="rss"
+                  data-prefix="fas"
+                  focusable="false"
+                  height={14}
+                  role="img"
+                  viewBox="0 0 448 512"
+                  width={12.25}
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M128.081 415.959c0 35.369-28.672 64.041-64.041 64.041S0 451.328 0 415.959s28.672-64.041 64.041-64.041 64.04 28.673 64.04 64.041zm175.66 47.25c-8.354-154.6-132.185-278.587-286.95-286.95C7.656 175.765 0 183.105 0 192.253v48.069c0 8.415 6.49 15.472 14.887 16.018 111.832 7.284 201.473 96.702 208.772 208.772.547 8.397 7.604 14.887 16.018 14.887h48.069c9.149.001 16.489-7.655 15.995-16.79zm144.249.288C439.596 229.677 251.465 40.445 16.503 32.01 7.473 31.686 0 38.981 0 48.016v48.068c0 8.625 6.835 15.645 15.453 15.999 191.179 7.839 344.627 161.316 352.465 352.465.353 8.618 7.373 15.453 15.999 15.453h48.068c9.034-.001 16.329-7.474 16.005-16.504z"
                     fill="currentColor"
                   />
                 </svg>
