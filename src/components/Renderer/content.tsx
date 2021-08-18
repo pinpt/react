@@ -5,7 +5,7 @@ import { Document } from './';
 import mediumZoom from 'medium-zoom';
 
 import type { ICoverMedia } from '../../lib/types/content';
-import { useEffect } from 'react';
+import { forwardRef, useEffect } from 'react';
 
 const ImageMedia = ({ src, title = '', zoomable = false }: { src: string; title?: string; zoomable?: boolean }) => {
 	useEffect(() => {
@@ -114,9 +114,9 @@ interface ContentProps {
 	staticMode?: true;
 }
 
-const Content = (props: ContentProps) => {
+const Content = forwardRef((props: ContentProps, ref: any) => {
 	return (
-		<article className="changelog notebook-editor read-only">
+		<article className="changelog notebook-editor read-only" ref={ref}>
 			{props.coverMedia && <CoverMedia media={props.coverMedia} title={props.title} staticMode={props.staticMode} />}
 			<section className="ProseMirror">
 				<Document node={props.document} limit={props.limit} />
@@ -129,6 +129,6 @@ const Content = (props: ContentProps) => {
 			{props.divider && <hr className="divider" />}
 		</article>
 	);
-};
+});
 
 export default Content;
