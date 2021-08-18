@@ -127,7 +127,7 @@ const useBackground = () => {
 				}
 				schedule(true, () => null); // schedule any mandatory tasks to run immediately
 			};
-			w.addEventListener('beforeunload', shutdown);
+			w.addEventListener?.('beforeunload', shutdown);
 			shutdownInstalled = true;
 		}
 	}, []);

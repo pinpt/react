@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import { Meta } from '@storybook/react';
 import entries from '../__data__/testEntries.json';
 import site from '../__data__/testSite.json';
+import content from '../../Pinpoint/__data__/testDocumentIFramely.json';
 import PrebuiltEntry from '../Entry';
 import { Subtitle, Description, Primary, Stories, ArgsTable, PRIMARY_STORY } from '@storybook/addon-docs';
 const { default: readme } = require('../Entry/README.md');
 
-import type { IContent } from '../../../lib/types';
+import { ContentTemplateType, IContent } from '../../../lib/types';
 
 export default {
 	component: PrebuiltEntry,
@@ -73,6 +74,30 @@ export const Not_Zoomable: React.VFC<{}> = () => {
 			clapCount={claps}
 			onClap={() => setClaps((c) => c + 1)}
 			content={entries[0] as IContent}
+			site={site}
+			zoomable={false}
+		/>
+	);
+};
+
+export const With_Iframely: React.VFC<{}> = () => {
+	const [claps, setClaps] = useState(0);
+	return (
+		<PrebuiltEntry
+			clapCount={claps}
+			onClap={() => setClaps((c) => c + 1)}
+			content={{
+				id: '1234',
+				type: ContentTemplateType.Changelog,
+				document: content,
+				commit: '',
+				url: '',
+				dateAt: 0,
+				publishedAt: 0,
+				authors: [{ firstName: 'Test', lastName: 'Test', id: 'test' }],
+				title: 'Test',
+				headline: 'testing',
+			}}
 			site={site}
 			zoomable={false}
 		/>

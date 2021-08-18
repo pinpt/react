@@ -459,6 +459,10 @@ html.dark .ThemeToggle .mode::after {
 	border-color: var(--section-border-color);
 }
 
+.entryWrapper .entry .content {
+	@apply flex-grow;
+}
+
 .entryWrapper .sidebarWrapper {
 	color: var(--article-info-color);
 }

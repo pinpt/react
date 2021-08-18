@@ -12,7 +12,7 @@ const Pinpoint = (props: IPinpointProps) => {
 	]);
 
 	const ref = () => {
-		if (ready) {
+		if (ready && typeof window !== 'undefined') {
 			(window as any).iframely && (window as any).iframely.load();
 		}
 	};

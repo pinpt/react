@@ -1,4 +1,4 @@
-import { ReactElement } from 'react';
+import { forwardRef, ReactElement } from 'react';
 import { CoverMedia } from '../../Renderer';
 import withWrapper from '../../Internal/withWrapper';
 
@@ -19,11 +19,11 @@ export interface IPageEntryProps {
 	zoomable?: boolean;
 }
 
-const Entry = (props: IPageEntryProps) => {
+const Entry = forwardRef((props: IPageEntryProps, ref: any) => {
 	const { className = '', header, renderer, sidebar, footer, coverMedia, title, pagination, zoomable } = props;
 
 	return (
-		<div className={`Pinpoint Page Entry ${className}`}>
+		<div className={`Pinpoint Page Entry ${className}`} ref={ref}>
 			{withWrapper(header, 'header')}
 			{withWrapper(
 				<div className="entry">
@@ -44,6 +44,6 @@ const Entry = (props: IPageEntryProps) => {
 			{withWrapper(footer, 'footer')}
 		</div>
 	);
-};
+});
 
 export default Entry;
