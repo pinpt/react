@@ -5,23 +5,24 @@ import DateLabel, { IDateProps } from '../../DateLabel';
 import { ICardDescriptionProps } from '../../Card/Description';
 import { ICardReadButtonProps } from '../../Card/ReadButton';
 import { ICardTitleProps } from '../../Card/Title';
-import Copyright, { ICopyrightProps } from '../../Copyright';
-import Footer, { IFooterProps } from '../../Footer';
-import Header, { IHeaderProps } from '../../Header';
-import Logo, { ILogoProps } from '../../Logo';
+import { ICopyrightProps } from '../../Copyright';
+import Footer from '../Footer';
+import Header from '../Header';
+import { IFooterProps } from '../../Footer';
+import { IHeaderProps } from '../../Header';
+import { ILogoProps } from '../../Logo';
 import Page from '../../Page';
 import Search from '../../Search';
 import { ISearchBarProps } from '../../Search/Bar';
 import { IQueryProps } from '../../Search/Query';
 import { ISearchResultsProps } from '../../Search/Results';
-import Social from '../../Social';
 import { ISocialBarProps } from '../../Social/Bar';
 import Statistic from '../../Statistic';
 import { IStatisticsBarProps } from '../../Statistic/Bar';
-import Subscribe, { ISubscribeProps } from '../../Subscribe';
+import { ISubscribeProps } from '../../Subscribe';
 import Tags from '../../Tags';
 import { ITagBarProps } from '../../Tags/Bar';
-import ThemeToggle, { IThemeToggleProps } from '../../ThemeToggle';
+import { IThemeToggleProps } from '../../ThemeToggle';
 
 import type { IContent, ISearchTerm, ISite } from '../../../lib/types';
 export interface IPrebuiltSearchResultsProps {
@@ -93,29 +94,14 @@ const SearchResults = (props: IPrebuiltSearchResultsProps) => {
 			header={
 				renderHeader?.(site) ?? (
 					<Header
-						className="Prebuilt"
-						title={site.theme?.title ?? site.name}
-						onClick={() => handleSelectHome?.()}
-						description={site.theme?.description ?? site.name}
-						subscribe={
-							renderSubscribe?.(site) ?? <Subscribe className="Prebuilt" href="/subscription/subscribe" />
-						}
-						themeToggle={renderThemeToggle?.(site) ?? <ThemeToggle className="Prebuilt" />}
-						search={
-							renderSearch?.(site) ?? (
-								<Search.Bar defaultValue={searchTerm} onSubmit={handleSearch} className="Prebuilt" />
-							)
-						}
-						logo={
-							renderLogo?.(site) ?? (
-								<Logo
-									className="Prebuilt"
-									src={site.logoUrl}
-									href={site.theme?.logoLink ?? site.url}
-									title="Header Logo Search Page"
-								/>
-							)
-						}
+						site={site}
+						searchTerm={searchTerm}
+						handleSearch={handleSearch}
+						handleSelectHome={handleSelectHome}
+						renderLogo={renderLogo}
+						renderSearch={renderSearch}
+						renderSubscribe={renderSubscribe}
+						renderThemeToggle={renderThemeToggle}
 					/>
 				)
 			}
@@ -198,53 +184,11 @@ const SearchResults = (props: IPrebuiltSearchResultsProps) => {
 			footer={
 				renderFooter?.(site) ?? (
 					<Footer
-						className="Prebuilt"
-						siteId={site?.id}
-						social={
-							renderSocial?.(site) ?? (
-								<Social.Bar className="Prebuilt">
-									{site.theme?.social?.facebook && (
-										<Social.Facebook className="Prebuilt" href={site.theme.social?.facebook} newTab />
-									)}
-									{site.theme?.social?.instagram && (
-										<Social.Instagram className="Prebuilt" href={site.theme.social?.instagram} newTab />
-									)}
-									{site.theme?.social?.twitter && (
-										<Social.Twitter className="Prebuilt" href={site.theme.social?.twitter} newTab />
-									)}
-									{site.theme?.social?.github && (
-										<Social.Github className="Prebuilt" href={site.theme.social?.github} newTab />
-									)}
-									{site.theme?.social?.linkedin && (
-										<Social.LinkedIn className="Prebuilt" href={site.theme.social?.linkedin} newTab />
-									)}
-									{site.theme?.social?.rss && (
-										<Social.RSS className="Prebuilt" href={site.theme.social?.rss ?? '/rss'} newTab />
-									)}
-								</Social.Bar>
-							)
-						}
-						copyright={
-							renderCopyright?.(site) ?? (
-								<Copyright
-									className="Prebuilt"
-									text={site.theme?.copyright ?? ''}
-									logo={
-										renderLogo?.(site) ?? (
-											<Logo
-												className="Prebuilt"
-												src={site.logoUrl}
-												href={site.theme?.logoLink ?? site.url}
-												title="Footer Logo Search Page"
-											/>
-										)
-									}
-								/>
-							)
-						}
-						subscribe={
-							renderSubscribe?.(site) ?? <Subscribe className="Prebuilt" href="/subscription/subscribe" />
-						}
+						site={site}
+						renderCopyright={renderCopyright}
+						renderLogo={renderLogo}
+						renderSocial={renderSocial}
+						renderSubscribe={renderSubscribe}
 					/>
 				)
 			}
