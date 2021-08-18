@@ -47,7 +47,7 @@ const useScriptLoader = (
 		}
 	};
 	useEffect(() => {
-		if (!loaded.current) {
+		if (!loaded.current && typeof document !== 'undefined') {
 			const load = () => {
 				const head = document.getElementsByTagName('head')[0];
 				let toload: string[] | undefined;
