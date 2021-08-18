@@ -6,3 +6,7 @@
 .prismjs code {
 	@apply bg-gray-700;
 }
+
+.sbdocs-pre .prismjs code {
+	@apply bg-white;
+}

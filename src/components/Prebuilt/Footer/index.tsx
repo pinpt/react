@@ -1,4 +1,4 @@
-import Footer from '../../Footer';
+import BaseFooter from '../../Footer';
 import { ISite } from '../../../lib';
 import Social from '../../Social';
 import Copyright, { ICopyrightProps } from '../../Copyright';
@@ -16,19 +16,11 @@ export interface IPrebuiltFooterProps {
 	renderSubscribe?: (site: ISite) => ReactElement<ISubscribeProps>;
 }
 
-
-const PrebuiltFooter = (props: IPrebuiltFooterProps) => {
-	const {
-		className,
-		site,
-		renderCopyright,
-		renderLogo,
-		renderSocial,
-		renderSubscribe,
-	} = props;
+const Footer = (props: IPrebuiltFooterProps) => {
+	const { className, site, renderCopyright, renderLogo, renderSocial, renderSubscribe } = props;
 
 	return (
-		<Footer
+		<BaseFooter
 			className={`Prebuilt ${className}`}
 			siteId={site?.id}
 			social={
@@ -71,11 +63,9 @@ const PrebuiltFooter = (props: IPrebuiltFooterProps) => {
 					/>
 				)
 			}
-			subscribe={
-				renderSubscribe?.(site) ?? <Subscribe className="Prebuilt" href="/subscription/subscribe" />
-			}
+			subscribe={renderSubscribe?.(site) ?? <Subscribe className="Prebuilt" href="/subscription/subscribe" />}
 		/>
 	);
 };
 
-export default PrebuiltFooter;
+export default Footer;
