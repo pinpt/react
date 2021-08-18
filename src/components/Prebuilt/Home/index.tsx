@@ -1,29 +1,29 @@
 import { ReactElement } from 'react';
 import { splitEntries } from '../../../lib';
+import Header from '../Header';
+import Footer from '../Footer';
 import Card from '../../Card';
 import { ICardContainerProps } from '../../Card/Container';
 import { ICardDescriptionProps } from '../../Card/Description';
 import { ICardReadButtonProps } from '../../Card/ReadButton';
 import { ICardTitleProps } from '../../Card/Title';
-import Copyright, { ICopyrightProps } from '../../Copyright';
+import { ICopyrightProps } from '../../Copyright';
 import DateLabel, { IDateProps } from '../../DateLabel';
-import Footer, { IFooterProps } from '../../Footer';
-import Header, { IHeaderProps } from '../../Header';
+import { IFooterProps } from '../../Footer';
+import { IHeaderProps } from '../../Header';
 import Latest, { ILatestProps } from '../../Latest';
-import Logo, { ILogoProps } from '../../Logo';
+import { ILogoProps } from '../../Logo';
 import Page from '../../Page';
 import Pagination, { IPaginationProps } from '../../Pagination';
 import Recent, { IRecentProps } from '../../Recent';
-import Search from '../../Search';
 import { ISearchBarProps } from '../../Search/Bar';
-import Social from '../../Social';
 import { ISocialBarProps } from '../../Social/Bar';
 import Statistic from '../../Statistic';
 import { IStatisticsBarProps } from '../../Statistic/Bar';
-import Subscribe, { ISubscribeProps } from '../../Subscribe';
+import { ISubscribeProps } from '../../Subscribe';
 import Tags from '../../Tags';
 import { ITagBarProps } from '../../Tags/Bar';
-import ThemeToggle, { IThemeToggleProps } from '../../ThemeToggle';
+import { IThemeToggleProps } from '../../ThemeToggle';
 
 import type { Analytics, IContent, ISite } from '../../../lib/types';
 export interface IPrebuiltHomeProps {
@@ -106,29 +106,14 @@ const Home = (props: IPrebuiltHomeProps) => {
 			header={
 				renderHeader?.(site) ?? (
 					<Header
-						className="Prebuilt"
-						title={site.theme?.title ?? site.name}
-						description={site.theme?.description ?? site.name}
-						onClick={() => handleSelectHome?.()}
-						subscribe={
-							renderSubscribe?.(site) ?? <Subscribe className="Prebuilt" href="/subscription/subscribe" />
-						}
-						themeToggle={renderThemeToggle?.(site) ?? <ThemeToggle className="Prebuilt" />}
-						search={
-							renderSearch?.(site) ?? (
-								<Search.Bar defaultValue={searchTerm} onSubmit={handleSearch} className="Prebuilt" />
-							)
-						}
-						logo={
-							renderLogo?.(site) ?? (
-								<Logo
-									src={site.logoUrl}
-									className="Prebuilt"
-									href={site.theme?.logoLink ?? site.url}
-									title="Header Logo Home Page"
-								/>
-							)
-						}
+						site={site}
+						searchTerm={searchTerm}
+						handleSearch={handleSearch}
+						handleSelectHome={handleSelectHome}
+						renderLogo={renderLogo}
+						renderSearch={renderSearch}
+						renderSubscribe={renderSubscribe}
+						renderThemeToggle={renderThemeToggle}
 					/>
 				)
 			}
@@ -249,53 +234,11 @@ const Home = (props: IPrebuiltHomeProps) => {
 			footer={
 				renderFooter?.(site) ?? (
 					<Footer
-						className="Prebuilt"
-						siteId={site?.id}
-						social={
-							renderSocial?.(site) ?? (
-								<Social.Bar className="Prebuilt">
-									{site.theme?.social?.facebook && (
-										<Social.Facebook className="Prebuilt" href={site.theme.social?.facebook} newTab />
-									)}
-									{site.theme?.social?.instagram && (
-										<Social.Instagram className="Prebuilt" href={site.theme.social?.instagram} newTab />
-									)}
-									{site.theme?.social?.twitter && (
-										<Social.Twitter className="Prebuilt" href={site.theme.social?.twitter} newTab />
-									)}
-									{site.theme?.social?.github && (
-										<Social.Github className="Prebuilt" href={site.theme.social?.github} newTab />
-									)}
-									{site.theme?.social?.linkedin && (
-										<Social.LinkedIn className="Prebuilt" href={site.theme.social?.linkedin} newTab />
-									)}
-									{site.theme?.social?.rss && (
-										<Social.RSS className="Prebuilt" href={site.theme.social?.rss ?? '/rss'} newTab />
-									)}
-								</Social.Bar>
-							)
-						}
-						copyright={
-							renderCopyright?.(site) ?? (
-								<Copyright
-									className="Prebuilt"
-									text={site.theme?.copyright ?? ''}
-									logo={
-										renderLogo?.(site) ?? (
-											<Logo
-												className="Prebuilt"
-												src={site.logoUrl}
-												href={site.theme?.logoLink ?? site.url}
-												title="Footer Logo Home Page"
-											/>
-										)
-									}
-								/>
-							)
-						}
-						subscribe={
-							renderSubscribe?.(site) ?? <Subscribe className="Prebuilt" href="/subscription/subscribe" />
-						}
+						site={site}
+						renderCopyright={renderCopyright}
+						renderLogo={renderLogo}
+						renderSocial={renderSocial}
+						renderSubscribe={renderSubscribe}
 					/>
 				)
 			}
