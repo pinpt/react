@@ -16,6 +16,7 @@ export interface FetchContentOptions {
 	before?: true;
 	after?: true;
 	projection?: string[];
+	commit?: string; // fetch a specific commit
 }
 
 export const fetchContent = async (
@@ -33,7 +34,11 @@ export const fetchContent = async (
 		params.projection = projection.join(',');
 	}
 	const qs = getQueryString(params);
-	const { data: content, site, before, after } = await executeAPI(config, `/site-api/v1/content/${contentId}?${qs}`);
+	const commit = options?.commit ? `/${options.commit}` : '';
+	const { data: content, site, before, after } = await executeAPI(
+		config,
+		`/site-api/v1/content/${contentId}${commit}?${qs}`
+	);
 	return { content, site, before, after };
 };
 
