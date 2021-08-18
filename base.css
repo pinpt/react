@@ -680,3 +680,15 @@ html.dark .ThemeToggle .mode::after {
 .Error .link .icon {
 	@apply ml-2;
 }
+
+.Banner.wrapper {
+	@apply w-full flex items-center justify-center p-4 bg-yellow-500 text-yellow-900;
+}
+
+.Banner .inner {
+	@apply flex items-center flex-row w-full max-w-7xl;
+}
+
+.Banner .icon {
+	@apply mr-2;
+}
