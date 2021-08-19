@@ -41,20 +41,19 @@ const Container = (props: ICardContainerProps) => {
 		zoomable = true,
 	} = props;
 	const hasCoverMedia = coverMedia && coverMedia.type !== CoverMediaType.None;
-	const id = useMemo(() => `${Math.random()}-${Date.now()}`.replace('.', '-'), []);
 
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
-			mediumZoom(`.zoom-${id}`);
+			mediumZoom('.medium-zoom-image');
 		}
-	}, [id]);
+	}, []);
 
 	return (
 		<div
 			className={`Pinpoint Content Card Container wrapper ${className ?? ''}`}
 			onClick={zoomable ? undefined : onClick}
 		>
-			{imageUrl && <img className={`cover ${zoomable ? `zoom-${id}` : ''}`} src={imageUrl} alt={alt} />}
+			{imageUrl && <img className={`cover ${zoomable ? `medium-zoom-image` : ''}`} src={imageUrl} alt={alt} />}
 			{hasCoverMedia && <CoverMedia media={coverMedia} zoomable={zoomable} />}
 			{!hasCoverMedia && !imageUrl && <div className="empty-cover" />}
 			<div className="content" onClick={zoomable ? onClick : undefined}>
