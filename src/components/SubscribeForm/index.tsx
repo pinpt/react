@@ -90,7 +90,7 @@ const SubscribeForm = (props: SubscribeFormProps) => {
 			setSaving(false);
 		}
 	}, [email]);
-	if (isSubscriberCookieSet()) {
+	if (!success && isSubscriberCookieSet()) {
 		return null;
 	}
 	return (
