@@ -8,5 +8,11 @@
 The mapping between a content entry id, and the clap counts and pageviews.
 
 ```ts
-type Analytics = Record<string, { claps: number; pageviews: number }>;
+type Analytics = Record<
+	string,
+	{
+		claps: number;
+		pageviews: number;
+	}
+>;
 ```
