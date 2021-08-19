@@ -155,6 +155,7 @@ exports[`Hidden stats 1`] = `
         >
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <section
               className="cover covermedia"
@@ -260,6 +261,7 @@ exports[`Hidden stats 1`] = `
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <section
               className="cover covermedia"
@@ -352,6 +354,7 @@ exports[`Hidden stats 1`] = `
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <section
               className="cover covermedia"
@@ -446,6 +449,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <section
               className="cover covermedia"
@@ -551,6 +555,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <section
               className="cover covermedia"
@@ -669,6 +674,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <div
               className="empty-cover"
@@ -760,6 +766,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <section
               className="cover covermedia"
@@ -865,6 +872,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <section
               className="cover covermedia"
@@ -957,6 +965,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <section
               className="cover covermedia"
@@ -1062,6 +1071,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <section
               className="cover covermedia"
@@ -1590,6 +1600,7 @@ exports[`Test custom className 1`] = `
         >
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <section
               className="cover covermedia"
@@ -1802,6 +1813,7 @@ exports[`Test custom className 1`] = `
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <section
               className="cover covermedia"
@@ -2001,6 +2013,7 @@ exports[`Test custom className 1`] = `
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <section
               className="cover covermedia"
@@ -2202,6 +2215,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <section
               className="cover covermedia"
@@ -2414,6 +2428,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <section
               className="cover covermedia"
@@ -2639,6 +2654,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <div
               className="empty-cover"
@@ -2837,6 +2853,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <section
               className="cover covermedia"
@@ -3049,6 +3066,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <section
               className="cover covermedia"
@@ -3248,6 +3266,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <section
               className="cover covermedia"
@@ -3460,6 +3479,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <section
               className="cover covermedia"
@@ -4095,6 +4115,7 @@ exports[`Test default state 1`] = `
         >
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <section
               className="cover covermedia"
@@ -4307,6 +4328,7 @@ exports[`Test default state 1`] = `
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <section
               className="cover covermedia"
@@ -4506,6 +4528,7 @@ exports[`Test default state 1`] = `
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <section
               className="cover covermedia"
@@ -4707,6 +4730,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <section
               className="cover covermedia"
@@ -4919,6 +4943,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <section
               className="cover covermedia"
@@ -5144,6 +5169,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <div
               className="empty-cover"
@@ -5342,6 +5368,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <section
               className="cover covermedia"
@@ -5554,6 +5581,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <section
               className="cover covermedia"
@@ -5753,6 +5781,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <section
               className="cover covermedia"
@@ -5965,6 +5994,7 @@ populated with your recently completed...
           </div>
           <div
             className="Pinpoint Content Card Container wrapper Prebuilt"
+            onClick={[Function]}
           >
             <section
               className="cover covermedia"
