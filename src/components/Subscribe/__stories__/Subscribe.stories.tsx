@@ -1,6 +1,7 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
 import Subscribe from '../';
+const { default: readme } = require('../README.md');
 
 export default {
 	component: Subscribe,
@@ -8,6 +9,11 @@ export default {
 	parameters: {
 		jest: ['Subscribe.test.tsx'],
 		controls: { hideNoControlsWarning: true },
+		docs: {
+			description: {
+				component: readme,
+			},
+		},
 	},
 } as Meta;
 

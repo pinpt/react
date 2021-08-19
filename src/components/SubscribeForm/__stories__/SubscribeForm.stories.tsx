@@ -1,7 +1,7 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
 import SubscribeForm from '../';
-
+const { default: readme } = require('../README.md');
 import type { IPinpointConfig } from '../../../lib/types';
 
 const config = {
@@ -19,6 +19,11 @@ export default {
 	parameters: {
 		jest: ['SubscribeForm.test.tsx'],
 		controls: { hideNoControlsWarning: true },
+		docs: {
+			description: {
+				component: readme,
+			},
+		},
 	},
 } as Meta;
 

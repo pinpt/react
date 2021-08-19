@@ -1,6 +1,7 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
 import CardDescription from '../Description';
+const { default: readme } = require('../Description/README.md');
 
 export default {
 	component: CardDescription,
@@ -8,6 +9,11 @@ export default {
 	parameters: {
 		jest: ['CardDescription.test.tsx'],
 		controls: { hideNoControlsWarning: true },
+		docs: {
+			description: {
+				component: readme,
+			},
+		},
 	},
 } as Meta;
 

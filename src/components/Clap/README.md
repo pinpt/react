@@ -1,6 +1,6 @@
 ### An interactive clap button that users can press to clap on a changelog
 
-[Full Docs](react.preview.pinpoint.com/?path=/docs/components-clap) | [Github](https://github.com/pinpt/react/tree/master/src/components/Clap)
+[Full Docs](https://react.preview.pinpoint.com/?path=/docs/components-clap) | [Github](https://github.com/pinpt/react/tree/master/src/components/Clap)
 
 #### Theming
 
@@ -11,63 +11,38 @@ The parent className for styling this component is `.Clap`
 
 ```css
 .Clap.wrapper {
-	position: relative;
-	cursor: pointer;
-	display: flex;
-	align-items: center;
+	@apply relative cursor-pointer flex items-center;
 }
 
 .Clap.icon {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	transition: color 0.2s;
-}
-
-.Clap.counter {
-	opacity: 0;
-	margin-left: 1rem;
-	transition: opacity 0.2s;
-}
-
-.Clap.counter.active {
-	opacity: 1;
-}
-
-.Clap.notice {
-	opacity: 0;
-	position: absolute;
-	background-color: black;
-	border-radius: 20px;
-	color: white;
-	user-select: none;
-	transition: all 0.2s;
-	left: 0rem;
-	padding: 2px 10px;
-}
-
-.Clap.notice.active {
-	opacity: 1;
-	left: 3rem;
-}
-```
-
-</details>
-
-<details>
-	<summary>Additional Styles in This Demo</summary>
-
-```css
-.Clap.icon {
-	color: gray;
+	@apply inline-flex items-center content-center transition-all;
+	color: var(--page-secondary-text-color);
 }
 
 .Clap.icon.active {
-	color: purple;
+	color: var(--page-highlight-color);
 }
 
 .Clap.counter {
-	color: gray;
+	@apply opacity-0 ml-1 transition-all;
+	color: var(--page-secondary-text-color);
+}
+
+.Clap.counter.active {
+	@apply opacity-100;
+}
+
+.Clap.notice {
+	@apply rounded-full opacity-0 absolute bg-black text-white select-none transition-all left-0 px-2 py-0.5;
+}
+
+.Clap.notice.active {
+	@apply opacity-100 left-12;
+}
+
+.entryWrapper .sidebarWrapper.before .Clap,
+.entryWrapper .sidebarWrapper.before .Social.Bar {
+	@apply hidden md:flex;
 }
 ```
 

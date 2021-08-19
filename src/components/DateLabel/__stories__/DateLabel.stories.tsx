@@ -2,6 +2,7 @@ import { DateTime } from 'luxon';
 import React from 'react';
 import { Meta } from '@storybook/react';
 import DateLabel from '../';
+const { default: readme } = require('../README.md');
 
 export default {
 	component: DateLabel,
@@ -9,6 +10,11 @@ export default {
 	parameters: {
 		jest: ['DateLabel.test.tsx'],
 		controls: { hideNoControlsWarning: true },
+		docs: {
+			description: {
+				component: readme,
+			},
+		},
 	},
 } as Meta;
 

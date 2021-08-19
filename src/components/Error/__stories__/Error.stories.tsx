@@ -1,6 +1,7 @@
 import Error from '..';
 import { Meta } from '@storybook/react';
 import Logo from '../../Logo';
+const { default: readme } = require('../README.md');
 
 export default {
 	component: Error,
@@ -8,6 +9,11 @@ export default {
 	parameters: {
 		jest: ['Error.test.tsx'],
 		controls: { hideNoControlsWarning: true },
+		docs: {
+			description: {
+				component: readme,
+			},
+		},
 	},
 } as Meta;
 

@@ -1,6 +1,6 @@
 ### A footer element to display social links, the copyright notice, and a subscribe button, as well as the powered by Pinpoint badge
 
-[Full Docs](react.preview.pinpoint.com/?path=/docs/components-footer) | [Github](https://github.com/pinpt/react/tree/master/src/components/Footer)
+[Full Docs](https://react.preview.pinpoint.com/?path=/docs/components-footer) | [Github](https://github.com/pinpt/react/tree/master/src/components/Footer)
 
 #### Theming
 
@@ -10,47 +10,35 @@ The parent className for styling this component is `.Footer`
 	<summary>Base Theme Styles</summary>
 
 ```css
+.footerWrapper {
+	background-color: var(--footer-bg-color);
+	color: var(--footer-text-color);
+}
+
 .Footer {
-	display: flex;
-	flex-direction: column;
-	padding: 4rem 2rem 0 4rem;
+	@apply py-14 text-sm;
+	background-color: var(--footer-bg-color);
+	color: var(--footer-text-color);
 }
 
 .Footer .content {
-	display: flex;
-	align-items: flex-end;
+	@apply flex flex-col md:items-end md:flex-row items-center;
 }
 
 .Footer .powered {
-	display: flex;
-	padding: 2rem 0;
+	@apply flex pt-8;
 }
 
 .Footer .right {
-	margin-left: auto;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
+	@apply md:ml-auto py-6 md:py-0 flex flex-col items-center md:items-end;
 }
 
 .Footer .Social {
-	margin-top: 0.2rem;
-}
-```
-
-</details>
-
-<details>
-	<summary>Additional Styles in This Demo</summary>
-
-```css
-.Footer {
-	background-color: #1e142c;
-	color: #faf9f9;
+	@apply mt-4 md:mt-1;
 }
 
-.Footer .Social.Item {
-	color: #faf9f9;
+.Footer .Copyright {
+	@apply flex flex-col items-center md:items-start;
 }
 ```
 
