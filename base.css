@@ -236,7 +236,7 @@ html.dark .ThemeToggle .mode::after {
 
 .Content.Card.Container.wrapper .cover,
 .Content.Card.Container.wrapper .covermedia .media-container img {
-	@apply md:h-36 lg:h-48 w-full object-cover object-center self-start;
+	@apply md:h-36 lg:h-48 w-full object-cover object-center;
 }
 
 .Content.Card.Container.wrapper .empty-cover {
