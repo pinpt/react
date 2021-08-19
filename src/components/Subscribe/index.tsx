@@ -1,3 +1,4 @@
+import { isSubscriberCookieSet } from '../../lib/subscription';
 import ActionLink from '../Internal/ActionLink';
 
 export interface ISubscribeProps {
@@ -10,6 +11,10 @@ export interface ISubscribeProps {
 
 const Subscribe = (props: ISubscribeProps) => {
 	const { className = '', href, newTab, onClick, text } = props;
+
+	if (isSubscriberCookieSet()) {
+		return null;
+	}
 
 	return (
 		<ActionLink className={`Subscribe ${className}`} href={href} newTab={newTab} onClick={onClick}>

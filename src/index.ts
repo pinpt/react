@@ -8,6 +8,7 @@ export { default as Error } from './components/Error';
 export { default as Logo } from './components/Logo';
 export { default as Copyright } from './components/Copyright';
 export { default as Subscribe } from './components/Subscribe';
+export { default as SubscribeForm } from './components/SubscribeForm';
 export { default as Social } from './components/Social';
 export { default as Footer } from './components/Footer';
 export { default as Latest } from './components/Latest';
