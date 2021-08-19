@@ -1,6 +1,6 @@
 ### Displays the title of your site, the description, and a subscribe button, and can contain search and your logo (coming soon)
 
-[Full Docs](react.preview.pinpoint.com/?path=/docs/components-header) | [Github](https://github.com/pinpt/react/tree/master/src/components/Header)
+[Full Docs](https://react.preview.pinpoint.com/?path=/docs/components-header) | [Github](https://github.com/pinpt/react/tree/master/src/components/Header)
 
 #### Theming
 
@@ -10,36 +10,41 @@ The parent className for styling this component is `.Header`
 	<summary>Base Theme Styles</summary>
 
 ```css
-.Header {
-	display: flex;
+.headerWrapper {
+	background-color: var(--header-bg-color);
 }
 
-.Header .title {
-	font-weight: 600;
+.Header {
+	@apply flex py-5 flex-col;
+}
+
+.Header .top {
+	@apply flex justify-between;
+}
+
+.Header .right {
+	@apply flex gap-x-4;
 }
 
 .Header .center {
-	flex-grow: 1;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	@apply py-8 flex flex-col content-center text-center;
+}
+
+.Header .title {
+	@apply font-semibold text-4xl md:text-5xl py-6 transition-colors duration-200;
+	color: var(--header-title-color);
+}
+
+.Header .description {
+	color: var(--header-description-color);
 }
 
 .Header .action {
-	margin: 2rem auto;
+	@apply mt-6 mx-auto;
 }
-```
 
-</details>
-
-<details>
-	<summary>Additional Styles in This Demo</summary>
-
-```css
-.Header {
-	background-color: #332a40;
-	color: #faf9f9;
+.Header .Subscribe {
+	color: var(--header-subscribe-color);
 }
 ```
 

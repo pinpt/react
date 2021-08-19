@@ -1,6 +1,6 @@
 ### A simple notice banner
 
-[Full Docs](react.preview.pinpoint.com/?path=/docs/components-banner) | [Github](https://github.com/pinpt/react/tree/master/src/components/Banner)
+[Full Docs](https://react.preview.pinpoint.com/?path=/docs/components-banner) | [Github](https://github.com/pinpt/react/tree/master/src/components/Banner)
 
 #### Theming
 

@@ -1,6 +1,6 @@
 ### The statistic component contains a number of sub-components for rendering clap counts and pageview counts.
 
-[Full Docs](react.preview.pinpoint.com/?path=/docs/components-statistic) | [Github](https://github.com/pinpt/react/tree/master/src/components/Statistic)
+[Full Docs](https://react.preview.pinpoint.com/?path=/docs/components-statistic) | [Github](https://github.com/pinpt/react/tree/master/src/components/Statistic)
 
 #### Theming
 
@@ -13,16 +13,16 @@ Each sub-component has its own class as well, `.Views`, `.Claps`, and `.Bar`
 
 ```css
 .Statistic.wrapper {
-	display: flex;
-	align-items: center;
+	@apply flex items-center;
+	color: var(--card-info-color);
 }
 
 .Statistic .count {
-	margin-left: 5px;
+	@apply ml-2;
 }
 
 .Statistic.Bar .Statistic.Views.wrapper {
-	margin-right: 20px;
+	@apply mr-4;
 }
 ```
 

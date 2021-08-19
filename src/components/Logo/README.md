@@ -1,6 +1,6 @@
 ### Displays your site's logo. Can be made into a link or an onClick handler can be attached.
 
-[Full Docs](react.preview.pinpoint.com/?path=/docs/components-logo) | [Github](https://github.com/pinpt/react/tree/master/src/components/Logo)
+[Full Docs](https://react.preview.pinpoint.com/?path=/docs/components-logo) | [Github](https://github.com/pinpt/react/tree/master/src/components/Logo)
 
 #### Theming
 
@@ -11,8 +11,7 @@ The parent className for styling this component is `.Logo`
 
 ```css
 .Logo {
-	border-radius: 100%;
-	display: block;
+	@apply block rounded-full overflow-hidden;
 }
 
 .Logo.xs {
