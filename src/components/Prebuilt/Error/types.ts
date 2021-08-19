@@ -7,6 +7,7 @@ import { ICopyrightProps } from 'src/components/Copyright';
 import { ISocialBarProps } from 'src/components/Social/Bar';
 
 export interface IPrebuiltErrorProps {
+	handleLinkClick?: () => void; 
 	renderCopyright?: (site: ISite) => ReactElement<ICopyrightProps>;
 	renderFooter?: (site: ISite) => ReactElement<IFooterProps>;
 	renderLogo?: (site: ISite) => ReactElement<ILogoProps>;

@@ -79,7 +79,7 @@ exports[`Test custom className 1`] = `
           className="center"
         >
           <a
-            className="cursor-pointer"
+            className="link"
             onClick={[Function]}
             title="Pinpoint Changelog"
           >
@@ -1120,7 +1120,7 @@ exports[`Test default state 1`] = `
           className="center"
         >
           <a
-            className="cursor-pointer"
+            className="link"
             onClick={[Function]}
             title="Pinpoint Changelog"
           >
@@ -2161,7 +2161,7 @@ exports[`Test no author 1`] = `
           className="center"
         >
           <a
-            className="cursor-pointer"
+            className="link"
             onClick={[Function]}
             title="Pinpoint Changelog"
           >
@@ -3000,7 +3000,7 @@ exports[`Test no claps 1`] = `
           className="center"
         >
           <a
-            className="cursor-pointer"
+            className="link"
             onClick={[Function]}
             title="Pinpoint Changelog"
           >
@@ -3873,7 +3873,7 @@ exports[`Test not zoomable 1`] = `
           className="center"
         >
           <a
-            className="cursor-pointer"
+            className="link"
             onClick={[Function]}
             title="Pinpoint Changelog"
           >
@@ -4914,7 +4914,7 @@ exports[`Test with pagination 1`] = `
           className="center"
         >
           <a
-            className="cursor-pointer"
+            className="link"
             onClick={[Function]}
             title="Pinpoint Changelog"
           >

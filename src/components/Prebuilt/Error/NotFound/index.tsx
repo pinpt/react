@@ -6,6 +6,7 @@ import PageError from '../../../Page/Error';
 import { IPrebuiltErrorProps } from '../types';
 
 const NotFound = ({
+	handleLinkClick,
 	renderCopyright,
 	renderFooter,
 	renderLogo,
@@ -16,7 +17,7 @@ const NotFound = ({
 	<PageError
 		error={
 			<Error
-				className="Prebuild 404"
+				className="Prebuilt 404"
 				logo={
 					renderLogo?.(site) ?? (
 						<Logo className="Prebuilt" src={site.logoUrl} href={site.theme?.logoLink ?? site.url} />
@@ -25,6 +26,7 @@ const NotFound = ({
 				error="404 Error"
 				title="Page Not Found"
 				description="Sorry, we couldn’t find the page you’re looking for."
+				onClick={handleLinkClick}
 			/>
 		}
 		footer={

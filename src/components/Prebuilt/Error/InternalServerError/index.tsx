@@ -6,6 +6,7 @@ import PageError from '../../../Page/Error';
 import { IPrebuiltErrorProps } from '../types';
 
 const InternalServerError = ({
+	handleLinkClick,
 	renderCopyright,
 	renderFooter,
 	renderLogo,
@@ -16,7 +17,7 @@ const InternalServerError = ({
 	<PageError
 		error={
 			<Error
-				className="Prebuild 500"
+				className="Prebuilt 500"
 				logo={
 					renderLogo?.(site) ?? (
 						<Logo className="Prebuilt" src={site.logoUrl} href={site.theme?.logoLink ?? site.url} />
@@ -24,6 +25,7 @@ const InternalServerError = ({
 				}
 				error="500 Error"
 				title="Internal Server Error"
+				onClick={handleLinkClick}
 			/>
 		}
 		footer={

@@ -114,6 +114,7 @@ test('Test component exports', () => {
 	const {
 		Home,
 		Entry: PrebuiltEntry,
+		Error: PrebuiltError,
 		Footer: PrebuiltFooter,
 		Header: PrebuiltHeader,
 		SearchResults: PrebuiltSearchResults,
@@ -121,6 +122,7 @@ test('Test component exports', () => {
 	} = Prebuilt;
 	expect(Home).toBeTruthy();
 	expect(PrebuiltEntry).toBeTruthy();
+	expect(PrebuiltError).toBeTruthy();
 	expect(PrebuiltFooter).toBeTruthy();
 	expect(PrebuiltHeader).toBeTruthy();
 	expect(PrebuiltSearchResults).toBeTruthy();
