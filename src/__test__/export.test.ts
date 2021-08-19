@@ -12,6 +12,7 @@ const {
 	Logo,
 	Copyright,
 	Subscribe,
+	SubscribeForm,
 	Social,
 	Footer,
 	Latest,
@@ -52,6 +53,8 @@ const {
 	getTwitterProfileFromURL,
 	cancelEvent,
 	getQueryString,
+	isSubscriberCookieSet,
+	subscribe,
 	useContent,
 	useEntries,
 	useScriptLoader,
@@ -153,6 +156,8 @@ test('Test component exports', () => {
 	expect(PoweredByPinpoint).toBeTruthy();
 	expect(Pinpoint).toBeTruthy();
 	expect(Banner).toBeTruthy();
+	expect(isSubscriberCookieSet).toBeTruthy();
+	expect(subscribe).toBeTruthy();
 });
 
 test('Test util exports', () => {
