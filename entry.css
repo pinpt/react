@@ -32,8 +32,7 @@
 	@apply underline cursor-pointer;
 }
 
-.document p > a[href]:not(.mark-color) {
-	@apply underline;
+.document p a[href]:not(.mark-color) {
 	color: var(--article-link-color);
 }
 
