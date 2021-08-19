@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { isSubscriberCookieSet } from '../../lib/subscription';
 import ActionLink from '../Internal/ActionLink';
 
@@ -11,8 +12,13 @@ export interface ISubscribeProps {
 
 const Subscribe = (props: ISubscribeProps) => {
 	const { className = '', href, newTab, onClick, text } = props;
+	const [hidden, setHidden] = useState(false);
 
-	if (isSubscriberCookieSet()) {
+	useEffect(() => {
+		setHidden(isSubscriberCookieSet());
+	}, []);
+
+	if (hidden) {
 		return null;
 	}
 

@@ -70,6 +70,10 @@ const SubscribeForm = (props: SubscribeFormProps) => {
 	const [saving, setSaving] = useState(false);
 	const [success, setSuccess] = useState(false);
 	const [error, setError] = useState('');
+	const [hidden, setHidden] = useState(false);
+	useEffect(() => {
+		setHidden(isSubscriberCookieSet());
+	}, []);
 	useEffect(() => {
 		setDisabled(!validateEmail(email));
 		if (!email) {
@@ -90,7 +94,7 @@ const SubscribeForm = (props: SubscribeFormProps) => {
 			setSaving(false);
 		}
 	}, [email]);
-	if (!success && isSubscriberCookieSet()) {
+	if (!success && hidden) {
 		return null;
 	}
 	return (
