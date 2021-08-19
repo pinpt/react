@@ -34,17 +34,15 @@ const Error = (props: IErrorProps) => {
 			<h1 className="title">{title}</h1>
 			<div className="description">{description}</div>
 			<div className="link">
-				{link ?? ((href || onClick) ? (
-					<a
-						className="link"
-						href={href}
-						onClick={onClick}
-						title="Go to all posts"
-					>
-						<span className="text">Go to all posts</span>
-						<FontAwesomeIcon icon={faArrowRight} className="icon" />
-					</a>
-				) : <></>)}
+				{link ??
+					(href || onClick ? (
+						<a className="link" href={href} onClick={onClick} title="Go to all posts">
+							<span className="text">Go to all posts</span>
+							<FontAwesomeIcon icon={faArrowRight} className="icon" />
+						</a>
+					) : (
+						<></>
+					))}
 			</div>
 		</div>
 	);

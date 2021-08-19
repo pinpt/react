@@ -33,12 +33,7 @@ const Header = (props: IHeaderProps) => {
 			</div>
 			<div className="center">
 				{title && (
-					<a
-						href={href}
-						title={title}
-						onClick={onClick}
-						className={(href || onClick) ? 'link' : undefined}
-					>
+					<a href={href} title={title} onClick={onClick} className={href || onClick ? 'link' : undefined}>
 						<h1 className="title">{title}</h1>
 					</a>
 				)}

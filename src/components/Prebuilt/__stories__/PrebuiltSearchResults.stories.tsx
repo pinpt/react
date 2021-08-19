@@ -41,7 +41,7 @@ export const Dynamic_Results_Term: React.VFC<{}> = () => {
 	const { results, loading } = useSearch(term, [], 'PirxVTE94u3YmGNOySRY');
 	return (
 		<PrebuiltSearchResults
-			entries={results as any}
+			entries={results}
 			site={site}
 			loading={loading}
 			searchTerm={term}
@@ -52,7 +52,7 @@ export const Dynamic_Results_Term: React.VFC<{}> = () => {
 
 export const Dynamic_Results_Tags: React.VFC<{}> = () => {
 	const { results, loading } = useSearch('', ['bug'], 'PirxVTE94u3YmGNOySRY');
-	return <PrebuiltSearchResults entries={results as any} site={site} loading={loading} searchTags={['bug']} />;
+	return <PrebuiltSearchResults entries={results} site={site} loading={loading} searchTags={['bug']} />;
 };
 
 export const Clickable_Tags: React.VFC<{}> = () => {
