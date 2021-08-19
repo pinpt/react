@@ -239,6 +239,10 @@ html.dark .ThemeToggle .mode::after {
 	@apply md:h-36 lg:h-48 w-full object-cover object-center;
 }
 
+.medium-zoom-image--opened {
+	@apply object-contain;
+}
+
 .Content.Card.Container.wrapper .empty-cover {
 	@apply md:h-36 lg:h-48 w-full;
 	background-image: linear-gradient(to right, var(--card-empty-gradient-from), var(--card-empty-gradient-to));
