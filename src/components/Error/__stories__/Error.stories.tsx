@@ -30,7 +30,9 @@ export const Internal_Server_Error: React.VFC<{}> = () => (
 	<Error logo={logo} error="500 Error" title="Internal Server Error" />
 );
 
-export const No_Link: React.VFC<{}> = () => <Error logo={logo} link={<></>} />;
+export const Include_Link_Href: React.VFC<{}> = () => <Error logo={logo} href="/" />;
+
+export const Include_Link_OnClick: React.VFC<{}> = () => <Error logo={logo} onClick={() => alert('Go to all posts')} />;
 
 export const Custom_Link: React.VFC<{}> = () => (
 	<Error logo={logo} link={<a href="https://www.google.com/search?q=help">Ask Google for help</a>} />

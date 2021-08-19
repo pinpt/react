@@ -27,6 +27,6 @@ export default {
 	},
 } as Meta;
 
-export const NotFound: React.VFC<{}> = () => <PrebuiltError.NotFound site={site} />;
+export const NotFound: React.VFC<{}> = () => <PrebuiltError.NotFound site={site} handleLinkClick={() => alert('Go to all posts')} />;
 
-export const InternalServerError: React.VFC<{}> = () => <PrebuiltError.InternalServerError site={site} />;
+export const InternalServerError: React.VFC<{}> = () => <PrebuiltError.InternalServerError site={site} handleLinkClick={() => alert('Go to all posts')} />;

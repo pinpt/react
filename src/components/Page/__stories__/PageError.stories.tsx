@@ -44,7 +44,7 @@ const footer = (
 
 const logo = <Logo src={IMAGE_URL} />;
 
-export const Default: React.VFC<{}> = () => <ErrorPage error={<Error logo={logo} />} footer={footer} />;
+export const Default: React.VFC<{}> = () => <ErrorPage error={<Error logo={logo} href="/" />} footer={footer} />;
 
 export const Not_Found: React.VFC<{}> = () => (
 	<ErrorPage
@@ -54,6 +54,7 @@ export const Not_Found: React.VFC<{}> = () => (
 				error="404 Error"
 				title="Page Not Found"
 				description="Sorry, we couldn’t find the page you’re looking for."
+				href="/"
 			/>
 		}
 		footer={footer}
@@ -61,5 +62,15 @@ export const Not_Found: React.VFC<{}> = () => (
 );
 
 export const Internal_Server_Error: React.VFC<{}> = () => (
-	<ErrorPage error={<Error logo={logo} error="500 Error" title="Internal Server Error" />} footer={footer} />
+	<ErrorPage
+		error={
+			<Error
+				logo={logo}
+				error="500 Error"
+				title="Internal Server Error"
+				href="/"
+			/>
+		}
+		footer={footer}
+	/>
 );

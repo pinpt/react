@@ -79,7 +79,7 @@ exports[`Hidden stats 1`] = `
           className="center"
         >
           <a
-            className="cursor-pointer"
+            className="link"
             onClick={[Function]}
             title="Pinpoint Changelog"
           >
@@ -1434,7 +1434,7 @@ exports[`Test custom className 1`] = `
           className="center"
         >
           <a
-            className="cursor-pointer"
+            className="link"
             onClick={[Function]}
             title="Pinpoint Changelog"
           >
@@ -3859,7 +3859,7 @@ exports[`Test custom latest length 1`] = `
           className="center"
         >
           <a
-            className="cursor-pointer"
+            className="link"
             onClick={[Function]}
             title="Pinpoint Changelog"
           >
@@ -6284,7 +6284,7 @@ exports[`Test default state 1`] = `
           className="center"
         >
           <a
-            className="cursor-pointer"
+            className="link"
             onClick={[Function]}
             title="Pinpoint Changelog"
           >
@@ -8709,7 +8709,7 @@ exports[`Test default state with partial analytics 1`] = `
           className="center"
         >
           <a
-            className="cursor-pointer"
+            className="link"
             onClick={[Function]}
             title="Pinpoint Changelog"
           >

@@ -15,6 +15,10 @@ body {
 	@apply !transition-none;
 }
 
+a.link {
+	@apply cursor-pointer;
+}
+
 .Page .constraint {
 	@apply mx-auto px-4 md:px-10 w-full;
 	max-width: 80rem;
