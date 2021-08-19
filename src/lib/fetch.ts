@@ -42,7 +42,14 @@ export const executeAPI = async (
 	if (config.apiKey) {
 		headers.Authorization = `Bearer ${config.apiKey}`;
 	}
-	const url = getBaseURL(config) + relpath;
+	let url = getBaseURL(config) + relpath;
+	if (config.apihostParams) {
+		url +=
+			'?' +
+			Object.keys(config.apihostParams)
+				.map((key) => `${key}=${encodeURIComponent(config.apihostParams![key])}`)
+				.join('&');
+	}
 	debug('fetching %s', url);
 	const res = await fetch(url, {
 		method,
