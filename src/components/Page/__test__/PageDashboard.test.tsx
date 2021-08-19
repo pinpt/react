@@ -18,6 +18,9 @@ const TEST_IMAGE = 'https://cdn.pinpoint.com/card.png';
 const IMAGE_URL =
 	'https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png';
 
+jest.spyOn(global.Date, 'now').mockImplementation(() => 1629397284980);
+jest.spyOn(global.Math, 'random').mockImplementation(() => 0.6782784632508998);
+
 test('Test full page', () => {
 	const component = renderer.create(
 		<Page

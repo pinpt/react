@@ -10,6 +10,9 @@ import Title from '../Title';
 const TEST_TITLE = 'Test Title';
 const TEST_DESCRIPTION = 'Test Description';
 
+jest.spyOn(global.Date, 'now').mockImplementation(() => 1629397284980);
+jest.spyOn(global.Math, 'random').mockImplementation(() => 0.6782784632508998);
+
 test('Test full card', () => {
 	const component = renderer.create(
 		<ContentContainer
@@ -20,6 +23,23 @@ test('Test full card', () => {
 			statistics={<StatisticsBar claps={22} views={135} />}
 			button={<ReadButton />}
 			tags={<Tags.Bar tags={['feature', 'improvement']} />}
+		/>
+	);
+	const tree = component.toJSON();
+	expect(tree).toMatchSnapshot();
+});
+
+test('Test not zoomable', () => {
+	const component = renderer.create(
+		<ContentContainer
+			imageUrl="https://cdn.pinpoint.com/card.png"
+			date={<DateLabel />}
+			title={<Title title={TEST_TITLE} />}
+			description={<Description description={TEST_DESCRIPTION} />}
+			statistics={<StatisticsBar claps={22} views={135} />}
+			button={<ReadButton />}
+			tags={<Tags.Bar tags={['feature', 'improvement']} />}
+			zoomable={false}
 		/>
 	);
 	const tree = component.toJSON();
