@@ -463,6 +463,10 @@ html.dark .ThemeToggle .mode::after {
 	border-color: var(--section-border-color);
 }
 
+.entryWrapper .entry article {
+	@apply flex-grow;
+}
+
 .entryWrapper .entry .content {
 	@apply flex-grow;
 }
