@@ -694,7 +694,7 @@ html.dark .ThemeToggle .mode::after {
 }
 
 .Banner .inner {
-	@apply flex items-center flex-row w-full max-w-7xl;
+	@apply flex items-center flex-row w-full max-w-[75rem];
 }
 
 .Banner .icon {
