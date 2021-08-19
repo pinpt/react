@@ -5,6 +5,9 @@ import SearchResults from '../SearchResults';
 
 import type { IContent } from '../../../lib/types/content';
 
+jest.spyOn(global.Date, 'now').mockImplementation(() => 1629397284980);
+jest.spyOn(global.Math, 'random').mockImplementation(() => 0.6782784632508998);
+
 test('Test default state', () => {
 	const component = renderer.create(<SearchResults entries={entries as IContent[]} site={site} />);
 	const tree = component.toJSON();

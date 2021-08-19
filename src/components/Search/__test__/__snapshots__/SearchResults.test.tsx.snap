@@ -16,7 +16,7 @@ exports[`Test custom className 1`] = `
       className="Pinpoint Content Card Container wrapper "
     >
       <img
-        className="cover"
+        className="cover zoom-0-6782784632508998-1629397284980"
         src="https://cdn.pinpoint.com/card.png"
       />
       <div
@@ -200,7 +200,7 @@ exports[`Test double 1`] = `
       className="Pinpoint Content Card Container wrapper "
     >
       <img
-        className="cover"
+        className="cover zoom-0-6782784632508998-1629397284980"
         src="https://cdn.pinpoint.com/card.png"
       />
       <div
@@ -368,7 +368,7 @@ exports[`Test double 1`] = `
       className="Pinpoint Content Card Container wrapper "
     >
       <img
-        className="cover"
+        className="cover zoom-0-6782784632508998-1629397284980"
         src="https://cdn.pinpoint.com/card.png"
       />
       <div
@@ -586,7 +586,7 @@ exports[`Test single 1`] = `
       className="Pinpoint Content Card Container wrapper "
     >
       <img
-        className="cover"
+        className="cover zoom-0-6782784632508998-1629397284980"
         src="https://cdn.pinpoint.com/card.png"
       />
       <div
@@ -770,7 +770,7 @@ exports[`Test triple 1`] = `
       className="Pinpoint Content Card Container wrapper "
     >
       <img
-        className="cover"
+        className="cover zoom-0-6782784632508998-1629397284980"
         src="https://cdn.pinpoint.com/card.png"
       />
       <div
@@ -938,7 +938,7 @@ exports[`Test triple 1`] = `
       className="Pinpoint Content Card Container wrapper "
     >
       <img
-        className="cover"
+        className="cover zoom-0-6782784632508998-1629397284980"
         src="https://cdn.pinpoint.com/card.png"
       />
       <div
@@ -1106,7 +1106,7 @@ exports[`Test triple 1`] = `
       className="Pinpoint Content Card Container wrapper "
     >
       <img
-        className="cover"
+        className="cover zoom-0-6782784632508998-1629397284980"
         src="https://cdn.pinpoint.com/card.png"
       />
       <div

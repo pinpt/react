@@ -6,6 +6,4 @@ module.exports = async () => {
 	Luxon.Settings.defaultLocale = 'en-US';
 	Luxon.Settings.defaultZoneName = 'America/Chicago';
 	process.env.TZ = 'America/Chicago';
-	global.Date.now = () => 1629396899679;
-	global.Math.random = () => 0.17291363259385983;
 };
