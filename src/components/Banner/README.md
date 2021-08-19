@@ -30,6 +30,8 @@ The parent className for styling this component is `.Banner`
 
 .Banner.icon {
 	margin-right: 0.5rem;
+	width: 1rem;
+	height: 1rem;
 }
 ```
 
