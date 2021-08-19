@@ -76,10 +76,8 @@ const Iframe = ({ node }: NodeProps) => {
 	}
 
 	return (
-		<div className={`node iframe_node ${embedStyle} ${node.attrs?.type}`}>
-			<div className="iframe">
-				<div className="content">{component}</div>
-			</div>
+		<div className={`node iframe ${embedStyle} ${node.attrs?.type}`}>
+			<div className="content">{component}</div>
 		</div>
 	);
 };

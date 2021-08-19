@@ -116,9 +116,9 @@ interface ContentProps {
 
 const Content = forwardRef((props: ContentProps, ref: any) => {
 	return (
-		<article className="changelog notebook-editor read-only" ref={ref}>
+		<article ref={ref}>
 			{props.coverMedia && <CoverMedia media={props.coverMedia} title={props.title} staticMode={props.staticMode} />}
-			<section className="ProseMirror">
+			<section className="content">
 				<Document node={props.document} limit={props.limit} />
 				{props.limit && props.document.content?.length > props.limit && (
 					<div className="continue">
