@@ -8,9 +8,6 @@ const TEST_TITLE = 'Test Title';
 const TEST_DESCRIPTION = 'Test Description';
 const TEST_IMAGE = 'https://cdn.pinpoint.com/card.png';
 
-jest.spyOn(global.Date, 'now').mockImplementation(() => 1629397284980);
-jest.spyOn(global.Math, 'random').mockImplementation(() => 0.6782784632508998);
-
 test('Test single', () => {
 	const component = renderer.create(
 		<Results>
