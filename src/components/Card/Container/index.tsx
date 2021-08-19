@@ -1,6 +1,5 @@
 import React, { useEffect, useMemo } from 'react';
 import { CoverMedia } from '../../Renderer';
-import mediumZoom from 'medium-zoom';
 import type { IStatisticsBarProps } from '../../Statistic/Bar';
 import type { ITagBarProps } from '../../Tags/Bar';
 import type { IDateProps } from '../../DateLabel';
@@ -8,7 +7,6 @@ import type { ICardDescriptionProps } from '../Description';
 import type { ICardReadButtonProps } from '../ReadButton';
 import type { ICardTitleProps } from '../Title';
 import { CoverMediaType, ICoverMedia } from '../../../lib/types';
-import { cancelEvent } from '../../../lib';
 
 export interface ICardContainerProps {
 	title?: React.ReactElement<ICardTitleProps>;
@@ -41,12 +39,6 @@ const Container = (props: ICardContainerProps) => {
 		zoomable = true,
 	} = props;
 	const hasCoverMedia = coverMedia && coverMedia.type !== CoverMediaType.None;
-
-	useEffect(() => {
-		if (typeof window !== 'undefined') {
-			mediumZoom('.medium-zoom-image');
-		}
-	}, []);
 
 	return (
 		<div
