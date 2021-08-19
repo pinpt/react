@@ -32,6 +32,10 @@ The parent className for styling this component is `.Page.Entry`
 	@apply flex-grow;
 }
 
+.entryWrapper .entry article {
+	@apply flex-grow;
+}
+
 .entryWrapper .sidebarWrapper {
 	color: var(--article-info-color);
 }
