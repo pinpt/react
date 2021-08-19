@@ -29,6 +29,23 @@ test('Test full card', () => {
 	expect(tree).toMatchSnapshot();
 });
 
+test('Test not zoomable', () => {
+	const component = renderer.create(
+		<ContentContainer
+			imageUrl="https://cdn.pinpoint.com/card.png"
+			date={<DateLabel />}
+			title={<Title title={TEST_TITLE} />}
+			description={<Description description={TEST_DESCRIPTION} />}
+			statistics={<StatisticsBar claps={22} views={135} />}
+			button={<ReadButton />}
+			tags={<Tags.Bar tags={['feature', 'improvement']} />}
+			zoomable={false}
+		/>
+	);
+	const tree = component.toJSON();
+	expect(tree).toMatchSnapshot();
+});
+
 test('Test no statistics', () => {
 	const component = renderer.create(
 		<ContentContainer
