@@ -139,6 +139,7 @@ const SearchResults = (props: IPrebuiltSearchResultsProps) => {
 										key={content.id}
 										className="Prebuilt"
 										coverMedia={content.coverMedia}
+										onClick={() => handleSelectContent?.(content)}
 										title={
 											renderCardTitle?.(content) ?? <Card.Title className="Prebuilt" title={content.title} />
 										}
