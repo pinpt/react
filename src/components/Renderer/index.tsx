@@ -29,7 +29,7 @@ import { DocOpts, NodeProps, recurseIntoChildren } from './register';
 import { forwardRef } from 'react';
 
 const Document = forwardRef(({ node, limit, opts }: NodeProps & { limit?: number; opts?: DocOpts }, ref: any) => (
-	<div ref={ref}>{recurseIntoChildren({ ...node, _path: 'doc', _opts: opts }, limit)}</div>
+	<div ref={ref} className="document">{recurseIntoChildren({ ...node, _path: 'doc', _opts: opts }, limit)}</div>
 ));
 
 export const emptyDoc = () => ({ type: 'doc', content: [{ type: 'paragraph', content: [] }] });

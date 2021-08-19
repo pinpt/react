@@ -1,13 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Test empty doc 1`] = `
-<div>
+<div
+  className="document"
+>
   <p />
 </div>
 `;
 
 exports[`Test simple H1 1`] = `
-<div>
+<div
+  className="document"
+>
   <h1
     className="heading"
   >
@@ -41,7 +45,9 @@ exports[`Test simple H1 1`] = `
 `;
 
 exports[`Test simple H2 1`] = `
-<div>
+<div
+  className="document"
+>
   <h2>
     Heading
   </h2>
@@ -49,7 +55,9 @@ exports[`Test simple H2 1`] = `
 `;
 
 exports[`Test simple H3 1`] = `
-<div>
+<div
+  className="document"
+>
   <h3>
     Heading
   </h3>
@@ -57,7 +65,9 @@ exports[`Test simple H3 1`] = `
 `;
 
 exports[`Test simple H4 1`] = `
-<div>
+<div
+  className="document"
+>
   <h4>
     Heading
   </h4>
@@ -65,7 +75,9 @@ exports[`Test simple H4 1`] = `
 `;
 
 exports[`Test simple blockquote 1`] = `
-<div>
+<div
+  className="document"
+>
   <blockquote>
     Hi
   </blockquote>
@@ -73,13 +85,17 @@ exports[`Test simple blockquote 1`] = `
 `;
 
 exports[`Test simple break 1`] = `
-<div>
+<div
+  className="document"
+>
   <br />
 </div>
 `;
 
 exports[`Test simple bullet list 1`] = `
-<div>
+<div
+  className="document"
+>
   <ul>
     <li>
       Hi
@@ -89,7 +105,9 @@ exports[`Test simple bullet list 1`] = `
 `;
 
 exports[`Test simple code block 1`] = `
-<div>
+<div
+  className="document"
+>
   <pre
     style={
       Object {
@@ -202,7 +220,9 @@ exports[`Test simple code block 1`] = `
 `;
 
 exports[`Test simple emoji 1`] = `
-<div>
+<div
+  className="document"
+>
   <span
     className="emoji"
     data-markup="heart"
@@ -213,7 +233,9 @@ exports[`Test simple emoji 1`] = `
 `;
 
 exports[`Test simple error notice 1`] = `
-<div>
+<div
+  className="document"
+>
   <div
     className="notice error"
   >
@@ -246,7 +268,9 @@ exports[`Test simple error notice 1`] = `
 `;
 
 exports[`Test simple hr 1`] = `
-<div>
+<div
+  className="document"
+>
   <div
     className="hr"
   >
@@ -258,7 +282,9 @@ exports[`Test simple hr 1`] = `
 `;
 
 exports[`Test simple image block 1`] = `
-<div>
+<div
+  className="document"
+>
   <div
     className="image_block undefined"
   >
@@ -282,7 +308,9 @@ exports[`Test simple image block 1`] = `
 `;
 
 exports[`Test simple image block with link 1`] = `
-<div>
+<div
+  className="document"
+>
   <div
     className="image_block undefined"
   >
@@ -312,7 +340,9 @@ exports[`Test simple image block with link 1`] = `
 `;
 
 exports[`Test simple info notice 1`] = `
-<div>
+<div
+  className="document"
+>
   <div
     className="notice info"
   >
@@ -345,7 +375,9 @@ exports[`Test simple info notice 1`] = `
 `;
 
 exports[`Test simple inline image 1`] = `
-<div>
+<div
+  className="document"
+>
   <div>
     <img
       alt="card"
@@ -357,7 +389,9 @@ exports[`Test simple inline image 1`] = `
 `;
 
 exports[`Test simple inline image with link 1`] = `
-<div>
+<div
+  className="document"
+>
   <div>
     <a
       href="https://pinpoint.com"
@@ -375,7 +409,9 @@ exports[`Test simple inline image with link 1`] = `
 `;
 
 exports[`Test simple ordered list 1`] = `
-<div>
+<div
+  className="document"
+>
   <ol>
     <li>
       Hi
@@ -385,7 +421,9 @@ exports[`Test simple ordered list 1`] = `
 `;
 
 exports[`Test simple paragraph 1`] = `
-<div>
+<div
+  className="document"
+>
   <p>
     Hi
   </p>
@@ -393,13 +431,17 @@ exports[`Test simple paragraph 1`] = `
 `;
 
 exports[`Test simple text 1`] = `
-<div>
+<div
+  className="document"
+>
   Hi
 </div>
 `;
 
 exports[`Test simple warning notice 1`] = `
-<div>
+<div
+  className="document"
+>
   <div
     className="notice warning"
   >

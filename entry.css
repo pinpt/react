@@ -1,200 +1,181 @@
-/**  notebook **/
 
 /**
- * Notebook Editor Container
- */
-.notebook-editor-container {
-	@apply flex flex-col items-start max-w-4xl w-full min-h-screen mx-auto;
-	text-rendering: optimizeLegibility;
+ * Basic styles and default margins
+ **/
+.document * {
+	@apply leading-loose;
 }
 
-/**
- * Notebook Editor
- */
-.notebook-editor,
-.notebook-editor > .ProseMirror {
-	@apply w-full overflow-x-visible;
-}
-.notebook-editor > .ProseMirror {
-	@apply relative w-full px-6 sm:px-24 overflow-visible outline-none break-words whitespace-pre-wrap leading-8 text-gray-700 dark:text-gray-300; /* room for yjs cursor */
+.document p,
+.document li {
+	@apply text-lg leading-loose;
+	color: var(--article-text-color);
 }
 
-.ProseMirror > strong,
-.ProseMirror > b {
+.document > * + *,
+.document > * + .toggle,
+.document .toggle > .content > * + * {
+	@apply mt-10;
+}
+.document blockquote > * + *,
+.document .notice > .content > * + * {
+	@apply mt-4;
+}
+
+.document > strong,
+.document > b {
 	@apply font-semibold;
 }
 
-.ProseMirror a[href],
-.ProseMirror .link {
-	@apply cursor-pointer;
-}
-/**
- * Pass through mark color if set
- */
-.ProseMirror mark a[href],
-.dark .ProseMirror mark a[href] {
-	color: unset;
-}
-/**
- * Placeholder link should look like text selection while link editor is focussed
- **/
-.ProseMirror a[href=''] {
-	@apply cursor-text text-gray-700 dark:text-gray-300 bg-blue-200;
-}
-.dark .ProseMirror a[href=''] {
-	background-color: #37455b;
-}
-.ProseMirror a:hover:not([href='']) {
-	@apply underline;
+.document a[href],
+.document .link {
+	@apply underline cursor-pointer;
 }
 
-/**
- * Basic styles
- **/
-.ProseMirror > p {
-	@apply relative w-full; /* ensure we can click on anywhere within the block to edit */
+.document p a[href]:not(.mark-color) {
+	color: var(--article-link-color);
 }
-.ProseMirror > * + *,
-.ProseMirror > * + .toggle,
-.ProseMirror .toggle > .content > * + * {
-	@apply mt-10;
+
+/* Pass through mark color if set */
+.document mark a[href],
+.dark .document mark a[href] {
+	color: unset;
 }
-.ProseMirror blockquote > * + *,
-.ProseMirror .notice > .content > * + * {
-	@apply mt-4;
-}
+
+
 
 /**
  * Headings
  */
-.ProseMirror h1,
-.ProseMirror h2,
-.ProseMirror h3,
-.ProseMirror .heading {
-	@apply text-gray-800 dark:text-gray-200 font-semibold;
+.document h1,
+.document h2,
+.document h3,
+.document .heading {
+	@apply font-semibold;
+	color: var(--article-text-color);
 }
-.ProseMirror .heading .anchor {
+.document .heading .anchor {
 	@apply absolute right-full mt-1.5 pr-2 invisible opacity-50 text-base;
 }
-.ProseMirror .heading:hover .anchor {
+.document .heading:hover .anchor {
 	@apply visible;
 }
 
-.ProseMirror h1 {
+.document h1 {
 	@apply mb-6 text-3xl;
 }
-.ProseMirror h2 {
+.document h2 {
 	@apply mb-5 text-2xl;
 }
-.ProseMirror h3 {
+.document h3 {
 	@apply mb-4 text-xl leading-8;
 }
-.ProseMirror h4 {
+.document h4 {
 	@apply mb-4 text-lg leading-8;
 }
 
-.ProseMirror *:not(.metadata-container) + h1,
-.ProseMirror * + .h1 {
+.document * + h1,
+.document * + .h1 {
 	@apply mt-10;
 }
-.ProseMirror *:not(.metadata-container) + h2,
-.ProseMirror * + .h2 {
+.document * + h2,
+.document * + .h2 {
 	@apply mt-9;
 }
-.ProseMirror *:not(.metadata-container) + h3,
-.ProseMirror * + .h3 {
+.document * + h3,
+.document * + .h3 {
 	@apply mt-8;
 }
-.ProseMirror *:not(.metadata-container) + h4,
-.ProseMirror * + .h4 {
+.document * + h4,
+.document * + .h4 {
 	@apply mt-7;
 }
 
 /**
  * Highlight
  **/
-.ProseMirror mark,
-.ProseMirror mark a[href],
+.document mark,
+.document mark a[href],
 .Markup .yellow {
 	@apply rounded-sm;
 	color: unset;
 	background-color: unset;
 	text-decoration: unset;
 }
-.ProseMirror a.mark-color {
+.document a.mark-color {
 	text-decoration: unset;
 	text-decoration-color: unset;
 }
-.dark .ProseMirror mark,
-.dark .ProseMirror mark a[href],
+.dark .document mark,
+.dark .document mark a[href],
 .dark .Markup {
 	color: unset;
 	background-color: unset;
 	text-decoration: unset;
 }
 /* background */
-.ProseMirror mark.bg-gray,
+.document mark.bg-gray,
 .Markup .bg-gray {
 	@apply bg-gray-200 dark:bg-gray-700;
 }
-.ProseMirror mark.bg-red,
+.document mark.bg-red,
 .Markup .bg-red {
 	@apply bg-red-200 dark:bg-red-800;
 }
-.ProseMirror mark.bg-green,
+.document mark.bg-green,
 .Markup .bg-green {
 	@apply bg-green-200 dark:bg-green-800;
 }
-.ProseMirror mark.bg-blue,
+.document mark.bg-blue,
 .Markup .bg-blue {
 	@apply bg-blue-200 dark:bg-blue-800;
 }
-.ProseMirror mark.bg-purple,
+.document mark.bg-purple,
 .Markup .bg-purple {
 	@apply bg-purple-200 dark:bg-purple-900;
 }
-.ProseMirror mark.bg-pink,
+.document mark.bg-pink,
 .Markup .bg-pink {
 	@apply bg-pink-200 dark:bg-pink-900;
 }
-.ProseMirror mark.bg-orange,
+.document mark.bg-orange,
 .Markup .bg-orange {
 	@apply bg-orange-200 dark:bg-orange-900;
 }
-.ProseMirror mark.bg-yellow,
+.document mark.bg-yellow,
 .Markup .bg-yellow {
 	@apply bg-yellow-200 dark:bg-yellow-900;
 }
 /* color */
-.ProseMirror mark.gray,
+.document mark.gray,
 .Markup .gray {
 	@apply text-gray-400 dark:text-gray-500;
 }
-.ProseMirror mark.red,
+.document mark.red,
 .Markup .red {
 	@apply text-red-500 dark:text-red-500;
 }
-.ProseMirror mark.green,
+.document mark.green,
 .Markup .green {
 	@apply text-green-500 dark:text-green-500;
 }
-.ProseMirror mark.blue,
+.document mark.blue,
 .Markup .blue {
 	@apply text-blue-500 dark:text-blue-500;
 }
-.ProseMirror mark.purple,
+.document mark.purple,
 .Markup .purple {
 	@apply text-purple-500 dark:text-purple-500;
 }
-.ProseMirror mark.pink,
+.document mark.pink,
 .Markup .pink {
 	@apply text-pink-500 dark:text-pink-500;
 }
-.ProseMirror mark.orange,
+.document mark.orange,
 .Markup .orange {
 	@apply text-orange-500 dark:text-orange-500;
 }
-.ProseMirror mark.yellow,
+.document mark.yellow,
 .Markup .yellow {
 	@apply text-yellow-500 dark:text-yellow-500;
 }
@@ -202,44 +183,34 @@
 /**
  * lists
  **/
-.ProseMirror ul:not(.checkbox_list),
-.ProseMirror ol {
+.document ul:not(.checkbox_list),
+.document ol {
 	@apply ml-0 pl-0;
 }
-.ProseMirror ul:not(.checkbox_list) {
+.document ul:not(.checkbox_list) {
 	@apply list-none;
 }
-.ProseMirror ol {
+.document ol {
 	@apply list-none;
 	counter-reset: ol-counter;
 }
-.ProseMirror ul:not(.checkbox_list) > li,
-.ProseMirror ul:not(.checkbox_list) > .node.list_item > li,
-.ProseMirror ol > li,
-.ProseMirror ol > .node.list_item > li {
+.document ul:not(.checkbox_list) > li,
+.document ol > li {
 	@apply m-0 pl-6;
 	counter-increment: ol-counter;
 }
-.ProseMirror ul:not(.checkbox_list) > li::before,
-.ProseMirror ul:not(.checkbox_list) > .node.list_item > li::before {
+.document ul:not(.checkbox_list) > li::before {
 	@apply text-gray-400 dark:text-gray-600 absolute top-0 left-1;
 	content: '\2022';
 }
-.ProseMirror ol > li::before,
-.ProseMirror ol > .node.list_item > li::before {
+.document ol > li::before {
 	@apply text-gray-400 dark:text-gray-600 absolute top-0 -left-12 text-right w-16;
 	content: counter(ol-counter) '.';
 }
-.ProseMirror ul:not(.checkbox_list) li.ProseMirror-selectednode::before,
-.ProseMirror ul:not(.checkbox_list) .ProseMirror-selectednode li::before,
-.ProseMirror ol li.ProseMirror-selectednode::before,
-.ProseMirror ol .ProseMirror-selectednode li::before {
-	@apply text-gray-500 dark:text-gray-500;
-}
-.ProseMirror li {
+.document li {
 	@apply relative;
 }
-.ProseMirror li > div {
+.document li > div {
 	@apply w-full;
 	min-height: 2rem;
 }
@@ -247,43 +218,37 @@
 /**
  * Code / Code Block
 **/
-.ProseMirror code {
+.document code {
 	@apply p-1 rounded-sm bg-trueGray-100 dark:bg-trueGray-800 dark:text-trueGray-300 border border-trueGray-200 dark:border-trueGray-700 font-mono text-sm leading-8;
 }
 .Markup .code_inline {
 	@apply rounded-sm bg-trueGray-100 dark:bg-trueGray-800 dark:text-trueGray-300 border border-trueGray-200 dark:border-trueGray-700 font-mono text-sm leading-5;
 }
-.ProseMirror .node.code_block > .metadata-container,
-.ProseMirror .node.notice > .metadata-container {
-	top: -0.25rem;
-}
-.ProseMirror .code_block:not(.node),
-.ProseMirror .notice:not(.node) {
+.document .code_block,
+.document .notice {
 	@apply relative shadow-lg;
 }
-.ProseMirror *:not(.metadata-container) + .code_block,
-.ProseMirror * + .node.code_block,
-.ProseMirror *:not(.metadata-container) + .notice,
-.ProseMirror * + .node.notice {
+.document * + .code_block,
+.document * + .notice {
 	@apply my-4;
 }
-.ProseMirror .code_block > .options,
-.ProseMirror .notice:not(.node) > .options {
+.document .code_block > .options,
+.document .notice > .options {
 	@apply absolute opacity-0 transition-opacity delay-200 duration-100 rounded overflow-hidden top-1 right-1 z-10 flex items-center select-none;
 }
-.ProseMirror .code_block:hover > .options,
-.ProseMirror .notice:not(.node):hover > .options {
+.document .code_block:hover > .options,
+.document .notice:hover > .options {
 	@apply opacity-100;
 }
-.ProseMirror .code_block > .options select,
-.ProseMirror .code_block > .options button,
-.ProseMirror .notice:not(.node) > .options select,
-.ProseMirror .notice:not(.node) > .options button {
+.document .code_block > .options select,
+.document .code_block > .options button,
+.document .notice > .options select,
+.document .notice > .options button {
 	@apply last:mr-0 px-2 h-6 bg-gray-800 hover:bg-gray-900 text-gray-300 hover:text-white text-xs focus:ring-0 cursor-pointer;
 	margin-right: 1px;
 }
-.ProseMirror .code_block > .options select,
-.ProseMirror .notice:not(.node) > .options select {
+.document .code_block > .options select,
+.document .notice > .options select {
 	@apply py-0 pr-8 appearance-none border-0 bg-no-repeat;
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -292,330 +257,256 @@
 	background-position: calc(100% - 15px) calc(50%), calc(100% - 10px) calc(50%);
 	background-size: 5px 5px, 5px 5px;
 }
-.ProseMirror .code_block > .options select:hover,
-.ProseMirror .notice:not(.node) > .options select:hover {
+.document .code_block > .options select:hover,
+.document .notice > .options select:hover {
 	background-image: linear-gradient(45deg, transparent 50%, white 50%),
 		linear-gradient(135deg, white 50%, transparent 50%);
 }
-.ProseMirror .code_block > .options button svg,
-.ProseMirror .notice:not(.node) > .options button svg {
+.document .code_block > .options button svg,
+.document .notice > .options button svg {
 	@apply mr-2;
 }
-.ProseMirror pre {
+.document pre {
 	@apply block relative rounded overflow-x-auto px-6 py-4 leading-5 font-mono whitespace-pre overflow-scroll bg-black text-trueGray-300;
 }
-.ProseMirror pre code {
+.document pre code {
 	@apply block p-0 leading-5 bg-black dark:bg-black border-0;
 }
-.notebook-editor:not(.read-only) .ProseMirror .notice:not(.node).ProseMirror-selectednode,
-.dark .notebook-editor:not(.read-only) .ProseMirror .notice:not(.node).ProseMirror-selectednode,
-.notebook-editor:not(.read-only) .ProseMirror .code_block.ProseMirror-selectednode,
-.dark .notebook-editor:not(.read-only) .ProseMirror .code_block.ProseMirror-selectednode {
-	@apply shadow-none;
-}
-.notebook-editor:not(.read-only) .ProseMirror .notice:not(.node).error.ProseMirror-selectednode {
-	@apply bg-red-500;
-	box-shadow: 0 0 0 2px #71717a;
-}
-.dark .notebook-editor:not(.read-only) .ProseMirror .notice:not(.node).error.ProseMirror-selectednode {
-	@apply bg-red-700;
-	box-shadow: 0 0 0 2px #a1a1aa;
-}
-.notebook-editor:not(.read-only) .ProseMirror .notice:not(.node).warning.ProseMirror-selectednode {
-	@apply bg-yellow-400;
-	box-shadow: 0 0 0 2px #71717a;
-}
-.dark .notebook-editor:not(.read-only) .ProseMirror .notice:not(.node).warning.ProseMirror-selectednode {
-	@apply bg-yellow-500;
-	box-shadow: 0 0 0 2px #a1a1aa;
-}
-.notebook-editor:not(.read-only) .ProseMirror .notice:not(.node).info.ProseMirror-selectednode {
-	@apply bg-green-500;
-	box-shadow: 0 0 0 2px #71717a;
-}
-.dark .notebook-editor:not(.read-only) .ProseMirror .notice:not(.node).info.ProseMirror-selectednode {
-	@apply bg-green-700;
-	box-shadow: 0 0 0 2px #a1a1aa;
-}
-.ProseMirror .code_block.ProseMirror-selectednode pre,
-.ProseMirror .code_block.ProseMirror-selectednode pre code {
-	@apply bg-black;
-}
-.ProseMirror .notice:not(.node) {
+
+.document .notice {
 	@apply flex items-center rounded px-5 py-4;
 }
-.ProseMirror .notice:not(.node).error {
+.document .notice.error {
 	@apply bg-red-600 dark:bg-red-700 text-white;
 }
-.ProseMirror .notice:not(.node).warning {
+.document .notice.warning {
 	@apply bg-yellow-400 dark:bg-yellow-500 dark:text-gray-800;
 }
-.ProseMirror .notice:not(.node).warning a {
+.document .notice.warning a {
 	@apply text-gray-800 underline;
 }
-.ProseMirror .notice:not(.node).info {
+.document .notice.info {
 	@apply bg-green-600 dark:bg-green-700 text-white;
 }
-.ProseMirror .notice:not(.node).info h1,
-.ProseMirror .notice:not(.node).error h1,
-.ProseMirror .notice:not(.node).info h2,
-.ProseMirror .notice:not(.node).error h2,
-.ProseMirror .notice:not(.node).info h3,
-.ProseMirror .notice:not(.node).error h3,
-.ProseMirror .notice:not(.node).info h4,
-.ProseMirror .notice:not(.node).error h4 {
+.document .notice.info h1,
+.document .notice.error h1,
+.document .notice.info h2,
+.document .notice.error h2,
+.document .notice.info h3,
+.document .notice.error h3,
+.document .notice.info h4,
+.document .notice.error h4 {
 	@apply text-white;
 }
-.ProseMirror .notice:not(.node).info a,
-.ProseMirror .notice:not(.node).error a {
+.document .notice.info a,
+.document .notice.error a {
 	@apply text-white underline;
 }
-.ProseMirror .notice:not(.node).info code,
-.ProseMirror .notice:not(.node).error code {
+.document .notice.info code,
+.document .notice.error code {
 	@apply bg-black text-trueGray-300 border-trueGray-700;
 }
-.ProseMirror .notice:not(.node).warning hr {
+.document .notice.warning hr {
 	@apply border-gray-400;
 }
-.ProseMirror .notice:not(.node) > .icon {
+.document .notice > .icon {
 	@apply flex-shrink-0 w-8 h-8 self-start;
 }
-.ProseMirror .notice:not(.node) > .content {
+.document .notice > .content {
 	@apply flex-grow min-w-0;
 	padding-top: 2px;
 }
-.ProseMirror .notice:not(.node) > .content .code_block {
+.document .notice > .content .code_block {
 	@apply shadow-none;
 }
-.ProseMirror .notice:not(.node) select {
+.document .notice select {
 	@apply top-2 right-4;
 }
 /* element tokens */
-.ProseMirror .token.comment,
-.ProseMirror .token.prolog,
-.ProseMirror .token.doctype,
-.ProseMirror .token.cdata {
+.document .token.comment,
+.document .token.prolog,
+.document .token.doctype,
+.document .token.cdata {
 	@apply text-gray-400 italic;
 }
-.ProseMirror text-gray-500.token.punctuation {
+.document text-gray-500.token.punctuation {
 	@apply text-purple-100;
 }
-.ProseMirror .token.namespace {
+.document .token.namespace {
 	@apply opacity-70;
 }
-.ProseMirror .token.operator,
-.ProseMirror .token.boolean,
-.ProseMirror.token.number {
+.document .token.operator,
+.document .token.boolean,
+.document.token.number {
 	@apply text-red-500;
 }
-.ProseMirror .token.property {
+.document .token.property {
 	@apply text-yellow-200;
 }
-.ProseMirror .token.tag {
+.document .token.tag {
 	@apply text-blue-500;
 }
-.ProseMirror .token.string {
+.document .token.string {
 	@apply text-blue-100;
 }
-.ProseMirror .token.selector {
+.document .token.selector {
 	@apply text-blueGray-500;
 }
-.ProseMirror .token.attr-name {
+.document .token.attr-name {
 	@apply text-orange-100;
 }
-.ProseMirror .token.entity,
-.ProseMirror .token.url,
-.ProseMirror .language-css .token.string,
-.ProseMirror .style .token.string {
+.document .token.entity,
+.document .token.url,
+.document .language-css .token.string,
+.document .style .token.string {
 	@apply text-blue-600;
 }
-.ProseMirror .token.attr-value,
-.ProseMirror .token.keyword,
-.ProseMirror .token.control,
-.ProseMirror .token.directive,
-.ProseMirror .token.unit {
+.document .token.attr-value,
+.document .token.keyword,
+.document .token.control,
+.document .token.directive,
+.document .token.unit {
 	@apply text-red-400;
 }
-.ProseMirror .token.function {
+.document .token.function {
 	@apply text-purple-400;
 }
-.ProseMirror .token.builtin {
+.document .token.builtin {
 	@apply text-yellow-400;
 }
-.ProseMirror .token.statement,
-.ProseMirror .token.regex,
-.ProseMirror .token.atrule {
+.document .token.statement,
+.document .token.regex,
+.document .token.atrule {
 	@apply text-blue-600;
 }
-.ProseMirror .token.placeholder,
-.ProseMirror .token.variable {
+.document .token.placeholder,
+.document .token.variable {
 	@apply text-blue-500;
 }
-.ProseMirror .token.deleted {
+.document .token.deleted {
 	@apply line-through;
 }
-.ProseMirror .token.inserted {
+.document .token.inserted {
 	@apply border-b border-dotted border-gray-300;
 }
-.ProseMirror .token.important,
-.ProseMirror .token.bold {
+.document .token.important,
+.document .token.bold {
 	@apply font-semibold;
 }
-.ProseMirror .token.important {
+.document .token.important {
 	@apply text-red-500;
 }
-.ProseMirror .token.entity {
+.document .token.entity {
 	cursor: help;
 }
 
 /**
  * Blockquote
  **/
-.ProseMirror blockquote {
+.document blockquote {
 	@apply p-4 bg-sky-100 dark:bg-sky-900 text-gray-600 dark:text-gray-300 border-l-4 border-sky-300 dark:border-sky-600 rounded-r;
 }
-.ProseMirror *:not(.metadata-container) + blockquote,
-.ProseMirror * + .blockquote {
+.document * + blockquote,
+.document * + .blockquote {
 	@apply my-4;
 }
-.ProseMirror blockquote .placeholder:before {
+.document blockquote .placeholder:before {
 	@apply text-sky-300 dark:text-sky-700;
 }
 
 /**
  * Horizontal Rule
  **/
-.ProseMirror .hr > div {
+.document .hr > div {
 	@apply pt-4;
 }
-.ProseMirror .hr > div > hr {
-	@apply h-0 pb-4 border-t border-gray-300 dark:border-gray-700;
+.document .hr > div > hr {
+	@apply h-0 pb-4 border-t;
+	border-color: var(--article-border-color);
 }
 
 /**
  * Toggle
  **/
-.ProseMirror .toggle {
+.document .toggle {
 	@apply pl-4 border-l-4 border-gray-200 dark:border-gray-800;
 	min-height: 1rem;
 }
-/* .ProseMirror .toggle:not(.collapsed).ProseMirror-selectednode {
-	@apply bg-white dark:bg-gray-900 shadow-none;
-} */
-.notebook-editor:not(.read-only) .ProseMirror .toggle.ProseMirror-selectednode,
-.notebook-editor:not(.read-only) .ProseMirror-selectednode .toggle {
-	@apply border-gray-300 dark:border-gray-700;
-	box-shadow: -0.5rem 0 0 0 #f4f4f5;
-}
-.dark .notebook-editor:not(.read-only) .toggle.ProseMirror-selectednode,
-.dark .notebook-editor:not(.read-only) .ProseMirror-selectednode .toggle {
-	box-shadow: -0.5rem 0 0 0 black;
-}
-
-.ProseMirror .toggle > .options {
+.document .toggle > .options {
 	@apply relative flex items-center text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 leading-3 cursor-pointer;
 }
-.ProseMirror .toggle > .options .icon {
-	@apply absolute w-7 h-8 top-0 -left-8 ml-1 py-0 bg-white dark:bg-gray-900 rounded;
+.document .toggle > .options .icon {
+	@apply absolute w-7 h-8 top-0 -left-8 ml-1 py-0 rounded;
+	background-color: var(--article-bg-color);
 }
-.ProseMirror .toggle.ProseMirror-selectednode > .options .icon,
-.ProseMirror-selectednode .toggle > .options .icon {
-	@apply bg-gray-100 dark:bg-black;
-}
-.ProseMirror .toggle > .options > .title {
+.document .toggle > .options > .title {
 	@apply hidden max-w-full pr-4 text-gray-600 dark:text-gray-400 leading-8 overflow-x-hidden overflow-ellipsis whitespace-nowrap;
 }
-.ProseMirror .toggle.collapsed > .options > .title {
+.document .toggle.collapsed > .options > .title {
 	@apply block select-none;
 }
-.ProseMirror .toggle.collapsed > .options > .metadata-hint {
-	@apply absolute left-full text-gray-400 dark:text-gray-600;
-}
-.ProseMirror .toggle:not(.collapsed) > .options > .metadata-hint {
-	@apply hidden;
-}
-.ProseMirror .toggle.collapsed > .content {
+.document .toggle.collapsed > .content {
 	@apply hidden;
 }
 
 /**
  * Table
  **/
-.ProseMirror .scrollable-wrapper {
+.document .scrollable-wrapper {
 	@apply relative;
 	scrollbar-width: thin;
 	scrollbar-color: transparent transparent;
 }
 
-/* .ProseMirror .scrollable-wrapper:hover {
+/* .document .scrollable-wrapper:hover {
 } */
-.ProseMirror .scrollable-wrapper ::-webkit-scrollbar {
+.document .scrollable-wrapper ::-webkit-scrollbar {
 	@apply w-3 h-3 cursor-pointer;
 	background-color: transparent;
 }
-.ProseMirror .scrollable-wrapper:hover ::-webkit-scrollbar {
+.document .scrollable-wrapper:hover ::-webkit-scrollbar {
 	@apply bg-gray-100 dark:bg-gray-800;
 }
-.ProseMirror .scrollable-wrapper ::-webkit-scrollbar-thumb {
+.document .scrollable-wrapper ::-webkit-scrollbar-thumb {
 	background-color: transparent;
 	@apply rounded-lg cursor-pointer;
 }
-.ProseMirror .scrollable-wrapper:hover ::-webkit-scrollbar-thumb {
+.document .scrollable-wrapper:hover ::-webkit-scrollbar-thumb {
 	@apply bg-gray-400 dark:bg-gray-600 border-gray-100 dark:border-gray-800;
 }
 
-.ProseMirror .scrollable {
+.document .scrollable {
 	@apply overflow-x-auto overflow-y-hidden pl-4 -ml-4;
-	/* border-left: 1px solid transparent;
-	border-right: 1px solid transparent;
-	transition: border 250ms ease-in-out 0s; */
 }
 
-/* .ProseMirror .scrollable-shadow {
-	@apply absolute top-0 bottom-0 -left-4 w-8 border-0 pointer-events-none;
-	transition: box-shadow 250ms ease-in-out;
-	border: 0px solid transparent;
-	border-left-width: 1em;
-}
-.ProseMirror .scrollable-shadow.left {
-	box-shadow: 16px 0 16px -16px inset rgba(0, 0, 0, 0.25);
-}
-.ProseMirror .scrollable-shadow.right {
-	@apply left-auto right-0;
-	box-shadow: -16px 0 16px -16px inset rgba(0, 0, 0, 0.25);
-} */
-
-.ProseMirror .node.table-node > .metadata-container {
-	top: 0.75rem;
-}
-.ProseMirror table {
+.document table {
 	@apply my-4 overflow-visible border-collapse rounded;
 }
-.ProseMirror table.table-stretch {
+.document table.table-stretch {
 	@apply w-full;
 }
-.ProseMirror table.table-manual {
+.document table.table-manual {
 	@apply table-fixed;
 }
-.ProseMirror table th {
+.document table th {
 	@apply bg-gray-100 dark:bg-gray-800 font-semibold;
 }
 
-.ProseMirror table td,
-.ProseMirror table th {
+.document table td,
+.document table th {
 	@apply relative align-top border border-gray-300 dark:border-gray-600 text-left;
 	min-width: 5rem;
 }
-.ProseMirror table.table-fit th,
-.ProseMirror table.table-fit td {
+.document table.table-fit th,
+.document table.table-fit td {
 	@apply whitespace-nowrap;
 }
 
-.ProseMirror table th .resize {
+.document table th .resize {
 	@apply absolute z-40 top-0 -right-1 h-full w-2;
 	cursor: ew-resize;
 }
-.ProseMirror table tr:not(:first-of-type) th .resize {
+.document table tr:not(:first-of-type) th .resize {
 	@apply hidden;
 }
 .resize-handle {
@@ -623,216 +514,58 @@
 	cursor: ew-resize;
 }
 /* keep legacy styling */
-.ProseMirror table.table-stretch th,
-.ProseMirror table.table-stretch td {
+.document table.table-stretch th,
+.document table.table-stretch td {
 	@apply max-w-md;
 }
-.ProseMirror table th .content,
-.ProseMirror table td {
+.document table th .content,
+.document table td {
 	@apply px-4 py-2;
 }
 
-.ProseMirror table th.selectedCell {
-	@apply bg-blue-200 dark:bg-indigo-800;
-}
-.ProseMirror table td.selectedCell {
-	@apply bg-blue-100 dark:bg-indigo-900;
-}
-
-.ProseMirror .grip-column,
-.ProseMirror .grip-row,
-.ProseMirror .grip-table {
-	@apply block absolute bg-gray-300 dark:bg-gray-700 cursor-pointer;
-}
-.ProseMirror .grip-column:hover,
-.ProseMirror .grip-row:hover,
-.ProseMirror .grip-table:hover {
-	@apply bg-gray-400 dark:bg-gray-500;
-}
-.ProseMirror .grip-column.selected,
-.ProseMirror .grip-row.selected,
-.ProseMirror .grip-table.selected {
-	@apply bg-blue-500 dark:bg-indigo-800;
-}
-
-.ProseMirror .grip-column {
-	@apply left-0 w-full;
-	top: -9px;
-	height: 6px;
-}
-.ProseMirror .grip-column.native-mobile {
-	height: 10px;
-	top: -13px;
-}
-.ProseMirror .grip-column.first {
-	@apply rounded-l-lg;
-}
-.ProseMirror .grip-column.last {
-	@apply rounded-r-lg;
-}
-
-.ProseMirror .grip-row {
-	@apply top-0 h-full;
-	left: -9px;
-	width: 6px;
-}
-.ProseMirror .grip-row.native-mobile {
-	width: 10px;
-	left: -13px;
-}
-.ProseMirror .grip-row.first {
-	@apply rounded-t-sm;
-}
-.ProseMirror .grip-row.last {
-	@apply rounded-b-sm;
-}
-
-.ProseMirror .grip-table {
-	@apply rounded-sm;
-	top: -9px;
-	left: -9px;
-	width: 6px;
-	height: 6px;
-}
-
-.ProseMirror .grip-table.native-mobile {
-	width: 10px;
-	left: -13px;
-	height: 10px;
-	top: -13px;
-}
-.ProseMirror .grip-table:hover {
-	@apply bg-gray-500 dark:bg-gray-100;
-}
-
-/**
- * Mention
- **/
-.mention {
-	@apply text-blue-700 dark:text-blue-400 whitespace-nowrap;
-}
-.mention.me {
-	@apply text-orange-600 dark:text-orange-400;
-}
 
 /**
  * Image
  **/
-.ProseMirror .image .container,
-.ProseMirror .image .content {
-	@apply relative;
+.document .image_block .image {
+	@apply flex justify-center;
 }
-/* .ProseMirror .image .container {
-	@apply w-full;
-} */
-.ProseMirror .image .options {
-	@apply absolute z-10 top-1 flex flex-grow justify-end items-center rounded overflow-hidden;
+.document .image_block.left .image {
+	@apply justify-start;
 }
-.ProseMirror .image .narrow .options {
-	@apply -top-7 left-0 right-auto;
+.document .image_block.center .image {
+	@apply justify-center;
 }
-.ProseMirror .image .content.narrow .options.right {
-	@apply left-auto right-0;
+.document .image_block.right .image {
+	@apply justify-end;
 }
-.ProseMirror .image .content:not(.narrow) .options.left {
-	@apply left-1;
+.document .image_block .alt {
+	@apply mt-2 opacity-80 text-center italic;
 }
-.ProseMirror .image .content:not(.narrow) .options:not(.left) {
-	@apply right-1;
+.document .image_block.left .alt {
+	@apply text-left;
 }
-.ProseMirror .image .options .option {
-	@apply opacity-0 transition-opacity delay-200 duration-100 h-6 px-2 flex items-center bg-gray-800 hover:bg-gray-900 text-gray-300 hover:text-white cursor-pointer text-xs select-none;
-	margin-left: 1px;
+.document .image_block.center .alt {
+	@apply text-center;
 }
-.ProseMirror .image:hover .options:not(.hide) .option,
-.ProseMirror .image:hover .resize,
-.ProseMirror .image .resize.resizing {
-	@apply opacity-100;
+.document .image_block.right .alt {
+	@apply text-right;
 }
-.ProseMirror .image .options .option:first-of-type {
-	@apply ml-0;
-}
-.ProseMirror .image .options .option.selected {
-	@apply bg-gray-600 hover:bg-gray-700 text-white;
-}
-.ProseMirror .image .options .option span {
-	@apply ml-2 flex-shrink-0 flex-grow whitespace-nowrap;
-}
-.ProseMirror .image .options .option span.mobile {
-	@apply block sm:hidden;
-}
-.ProseMirror .image .options .option span.sm {
-	@apply hidden sm:block;
-}
-.ProseMirror .image .resize {
-	@apply absolute h-1/4 w-2 opacity-0 transition-opacity delay-200 duration-100 border border-gray-400 bg-gray-800 rounded-full;
-	top: 37.5%;
-}
-.ProseMirror .image .short .resize {
-	@apply h-5;
-	top: calc(50% - 10px);
-}
-.ProseMirror .image .resize.left {
-	@apply left-2;
-}
-.ProseMirror .image .resize.right {
-	@apply right-2;
-}
-.ProseMirror .image .caption {
-	@apply px-1 text-gray-400 dark:text-gray-600 italic;
-}
-.ProseMirror .image .blurhash {
-	@apply absolute top-0 left-0;
-}
-.ProseMirror .image .error {
-	@apply absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-white;
-	text-shadow: 0 0 1px black;
-}
-.ProseMirror .image .error svg {
-	@apply text-4xl mb-2;
-}
-.ProseMirror .image div[data-rmiz-wrap] {
-	@apply flex;
-}
-/* .ProseMirror .image.ProseMirror-selectednode {
-	background-color: transparent !important; /* JGH: seems like it won't let me set it in apply
-	@apply ring-4 ring-blue-500 dark:ring-indigo-800 !important;
-} */
-.ProseMirror .image.ProseMirror-selectednode .content {
-	@apply ring-4 ring-blue-500 dark:ring-indigo-800 !important;
+.document .image_block .image img {
+	@apply rounded-lg;
 }
 
-.edit-text-container {
-	@apply absolute z-100 top-0 left-0 w-full h-full;
-	background-color: transparent;
+
+/**
+ * Inline image
+ */
+.document .inline-image {
+	@apply relative inline-block align-middle;
 }
-.edit-text-container .background {
-	@apply absolute top-0 left-0 w-full h-full bg-gray-100 dark:bg-gray-900 opacity-20;
+.document .inline-image .options {
+	@apply -top-6;
 }
-.edit-text-wrapper {
-	@apply absolute flex flex-col justify-end items-center;
-}
-.edit-text {
-	@apply w-11/12 sm:w-128 mb-4 p-2 rounded bg-gray-100 dark:bg-gray-800 shadow-lg;
-}
-.edit-text input {
-	@apply w-full p-2 rounded border dark:border-gray-700 dark:bg-gray-900 dark:text-gray-200;
-}
-.edit-text .buttons {
-	@apply mt-2 flex;
-}
-.edit-text button {
-	@apply rounded py-1 px-2;
-}
-.edit-text button.clear {
-	@apply bg-red-500 dark:bg-red-700 text-white;
-}
-.edit-text button.cancel {
-	@apply ml-auto bg-gray-200 dark:bg-gray-700;
-}
-.edit-text button.save {
-	@apply ml-2 bg-green-500 text-white;
-}
+
 
 /**
  * File
@@ -887,116 +620,125 @@
 .file.placeholder .loader {
 	@apply flex-shrink-0;
 }
-.notebook-editor:not(.read-only) .ProseMirror .file_node.ProseMirror-selectednode,
-.dark .notebook-editor:not(.read-only) .ProseMirror .file_node.ProseMirror-selectednode {
-	@apply shadow-none;
-}
 
 /**
  * Embed
  **/
-.notebook-editor:not(.read-only) > .ProseMirror .iframe.ProseMirror-selectednode {
-	@apply rounded bg-gray-100 dark:bg-black ring-gray-100 dark:ring-black ring-4;
+.document .iframe {
+	@apply my-8 p-3 border rounded;
+	background-color: var(--article-block-bg-color);
+	border-color: var(--article-border-color);
 }
-.ProseMirror .iframe.selected .link {
-	@apply text-gray-800 dark:text-gray-200;
-}
-.ProseMirror .iframe .options {
+.document .iframe .options {
 	@apply relative;
 }
-.ProseMirror .iframe .options .style-options {
+.document .iframe .options .style-options {
 	@apply absolute z-10 top-1 right-1 flex flex-grow justify-end items-center rounded overflow-hidden;
 }
-.ProseMirror .iframe:hover .options .style-option {
+.document .iframe:hover .options .style-option {
 	@apply opacity-100;
 }
 
-.ProseMirror .iframe .options .style-option {
+.document .iframe .options .style-option {
 	@apply opacity-0 transition-opacity delay-200 duration-100 h-6 px-2 flex items-center bg-gray-800 hover:bg-gray-900 text-gray-300 hover:text-white cursor-pointer text-xs select-none;
 	margin-left: 1px;
 }
-.dark .ProseMirror .iframe .options .style-option {
+.dark .document .iframe .options .style-option {
 	@apply text-gray-300 hover:text-white;
 }
-.ProseMirror .iframe .options .style-option.overlay {
+.document .iframe .options .style-option.overlay {
 	@apply absolute z-10 right-1 rounded;
 	top: calc(1.75rem + 1px);
 }
-.ProseMirror .iframe .options .style-option:first {
+.document .iframe .options .style-option:first {
 	@apply ml-0;
 }
-.ProseMirror .iframe .options .style-option.selected {
+.document .iframe .options .style-option.selected {
 	@apply bg-gray-600 hover:bg-gray-700 text-white;
 }
-.ProseMirror .iframe .options .style-option span:last-child {
+.document .iframe .options .style-option span:last-child {
 	@apply ml-2;
 }
-.ProseMirror .iframe .link {
+.document .iframe .link {
 	@apply cursor-pointer overflow-hidden overflow-ellipsis whitespace-nowrap;
 }
-.ProseMirror .iframe .toggle {
+.document .iframe .toggle {
 	@apply cursor-pointer;
 }
-.ProseMirror .iframe .toggle > span {
+.document .iframe .toggle > span {
 	@apply flex;
 }
-.ProseMirror .iframe .toggle svg {
+.document .iframe .toggle svg {
 	@apply text-gray-600 dark:text-gray-400;
 }
-.ProseMirror .iframe .content {
+.document .iframe .content {
 	@apply relative rounded overflow-hidden; /* do this here so its consistent */
 }
-.ProseMirror .iframe .content .th {
+.document .iframe .content .th {
 	@apply dark:text-gray-200;
 }
-.ProseMirror .iframe .content .preview.small {
+.document .iframe .content .preview.small {
 	@apply flex flex-row-reverse items-start;
 }
-.ProseMirror .iframe .content .preview.small .thumbnail {
+.document .iframe .content .preview.small .thumbnail {
 	@apply sm:max-w-xs max-h-16 sm:max-h-24 rounded;
 }
-.ProseMirror .iframe .content .preview.small .info {
+.document .iframe .content .preview.small .info {
 	@apply mr-2 flex-grow min-w-0;
 }
-.ProseMirror .iframe .content .preview .site {
+.document .iframe .content .preview .site {
 	@apply mb-1 flex items-center font-semibold leading-4;
 }
-.ProseMirror .iframe .content .preview .site .icon {
+.document .iframe .content .preview .site .icon {
 	@apply h-5 w-5 mr-2;
 }
-.ProseMirror .iframe .content .preview .title {
+.document .iframe .content .preview .title {
 	@apply font-bold leading-6 truncate;
 }
-.ProseMirror .iframe .content .preview .description {
+.document .iframe .content .preview .description {
 	@apply text-gray-500 dark:text-gray-400 leading-6;
 }
-.ProseMirror .iframe .content .preview.small .description {
+.document .iframe .content .preview.small .description {
 	display: -webkit-box;
 	-webkit-line-clamp: 2;
 	-webkit-box-orient: vertical;
 	overflow: hidden;
 }
-.ProseMirror .iframe .content .preview.large .thumbnail {
+.document .iframe .content .preview.large .thumbnail {
 	@apply w-full max-h-128 object-center object-cover rounded;
 }
-.ProseMirror .iframe .content .preview.large .info {
+.document .iframe .content .preview.large .info {
 	@apply mt-2;
 }
-.ProseMirror .iframe .content .overlay {
+.document .iframe .content .overlay {
 	@apply absolute top-0 left-0 h-1/4 w-full;
 	z-index: 2;
 	background-image: linear-gradient(#00000066, #00000000);
 }
-.ProseMirror .iframe .overlay .info {
+.document .iframe .overlay .info {
 	@apply m-3 flex items-center;
 }
-.ProseMirror .iframe .overlay .icon {
+.document .iframe .overlay .icon {
 	@apply h-5 w-5 mr-2;
 }
-.ProseMirror .iframe .overlay .title {
+.document .iframe .overlay .title {
 	@apply block min-w-0 truncate font-bold leading-5 text-white;
 	text-shadow: 0 0 2px black;
 }
+
+
+/**
+ * Linked data
+ */
+.document .linked-data-list-item {
+	@apply relative pl-6;
+}
+
+.document .linked-data-list-item::before {
+	@apply text-gray-400 dark:text-gray-600 absolute top-0 left-1;
+	content: '\2022';
+}
+
 
 /**
  * YouTube embed
@@ -1048,32 +790,11 @@
 	pointer-events: none;
 }
 
+
 /**
- * Placeholder
- **/
-.ProseMirror .placeholder:before {
-	@apply block h-0 pointer-events-none text-gray-300 dark:text-gray-600;
-	content: attr(data-empty-text);
-}
-
-.visuallyHidden {
-	position: absolute !important;
-	height: 1px;
-	width: 1px;
-	overflow: hidden;
-	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-	clip: rect(1px, 1px, 1px, 1px);
-}
-
-.ProseMirror .inline-image {
-	@apply relative inline-block align-middle;
-}
-
-.ProseMirror .inline-image .options {
-	@apply -top-6;
-}
-
-.ProseMirror span.emoji {
+ * Emoji
+ */
+.document span.emoji {
 	font-family: Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol !important;
 	font-size: 1em !important;
 	font-style: normal !important;
@@ -1083,395 +804,33 @@
 	margin-right: 0.25em !important;
 }
 
-/**
- * template placeholder
- **/
-.template-placeholder {
-	@apply text-gray-400;
-}
-.notebook-editor:not(.read-only) .template-placeholder {
-	@apply hover:text-gray-500 hover:bg-gray-100 hover:-my-1 hover:-mx-2 hover:py-1 hover:px-2 rounded cursor-pointer;
-}
 
-/** changelog override **/
 
-.notebook-editor-container {
-	@apply max-w-full;
-}
 
-.notebook-editor > .ProseMirror {
-	@apply sm:pl-10 sm:pr-0 sm:overflow-x-visible;
-}
-
-.notebook-editor.node-attributes-1 > .ProseMirror {
-	@apply pr-10 sm:pl-10 sm:pr-0;
-}
-.notebook-editor.node-attributes-2 > .ProseMirror {
-	@apply pr-14 sm:pl-10 sm:pr-0;
-}
-.notebook-editor.node-attributes-3 > .ProseMirror {
-	@apply pr-16 sm:pl-10 sm:pr-0;
-}
-
-.node-options {
-	@apply sm:ml-0;
-}
-
-.ryt-lite:before {
-	display: none !important; /* REMOVE THE SHADING FOR THE TITLE AREA ON YOUTUBE VIDEO */
-}
-
-/* GitHub */
-.gh-description * {
-	@apply my-1;
-}
-
-.gh-description b {
-	@apply font-semibold;
-}
-
-.gh-description em {
-	@apply italic;
-}
-
-.gh-description tt,
-code {
-	@apply p-1 bg-gray-100 font-mono;
-}
-.gh-description pre {
-	@apply p-1 bg-gray-100 font-mono whitespace-pre-wrap;
-}
-.gh-description ul {
-	@apply my-1 list-disc list-inside;
-}
-.gh-description ol {
-	@apply list-decimal list-inside;
-}
-.gh-description ul ul,
-.gh-description ol ul {
-	@apply ml-2 list-disc list-inside;
-}
-.gh-description ol ol,
-.gh-description ul ol {
-	@apply ml-2 list-decimal list-inside;
-}
-.gh-description p {
-	@apply block my-2 mx-0;
-}
-.gh-description li > p {
-	@apply inline;
-}
-.gh-description blockquote {
-	@apply block my-1 pl-2 border-l-3 border-gray-200 bg-gray-100;
-}
-.gh-description a {
-	@apply text-blue-500;
-}
-.gh-description a:hover {
-	@apply underline;
-}
-.gh-description h1 {
-	@apply text-2xl font-semibold;
-}
-.gh-description h2 {
-	@apply text-xl font-semibold;
-}
-.gh-description h3,
-.gh-description h4,
-.gh-description h5,
-.gh-description h6 {
-	@apply text-lg font-semibold;
-}
-.gh-description h4,
-.gh-description h5,
-.gh-description h6 {
-	@apply font-semibold;
-}
-.gh-description hr {
-	@apply my-2;
-}
-.gh-description:first-child {
-	margin-top: 0;
-}
-
-/* local */
-:root {
-	font-family: 'Inter', sans-serif;
-}
-
-.avatar {
-	@apply w-8 h-8 text-base relative flex flex-shrink-0 justify-center items-center overflow-hidden select-none rounded-full border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900;
-}
-
-main > .container > section {
-	@apply flex-grow;
-}
-
-article.changelog {
-	@apply w-full;
-}
-
-article hr.divider {
-	@apply border-b mb-24;
-}
-
-.covermedia > .video {
-	@apply aspect-w-16 aspect-h-9;
-}
-
-.covermedia > .media-container,
-.covermedia > .video > video {
-	@apply w-full;
-}
-
-/* youtube lite styles (cover media only) */
-
-.embed-responsive {
-	position: relative !important;
-	display: block !important;
-	height: 0 !important;
-	padding: 0 !important;
-	overflow: hidden !important;
-}
-
-.embed-responsive .embed-responsive-item,
-.embed-responsive iframe,
-.embed-responsive embed,
-.embed-responsive object,
-.embed-responsive video {
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	height: 100%;
-	width: 100%;
-	border: 0;
-}
-
-.aspect-ratio-16\/9 {
-	padding-bottom: 56.25% !important;
-}
-
-.ryt-lite {
-	background-color: #000;
-	position: relative;
-	display: block;
-	contain: content;
-	background-position: center center;
-	background-size: cover;
-	cursor: pointer;
-}
-
-/* responsive iframe with a 16:9 aspect ratio
-    thanks https://css-tricks.com/responsive-iframes/
-*/
-.ryt-lite::after {
-	content: '';
-	display: block;
-	padding-bottom: calc(100% / (16 / 9));
-}
-
-.ryt-lite > iframe {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-
-/* play button */
-.ryt-lite > .lty-playbtn {
-	width: 70px;
-	height: 46px;
-	background-color: #212121;
-	z-index: 1;
-	opacity: 0.8;
-	border-radius: 14%; /* TODO: Consider replacing this with YT's actual svg. Eh. */
-	transition: all 0.2s cubic-bezier(0, 0, 0.2, 1);
-}
-
-.ryt-lite:hover > .lty-playbtn {
-	background-color: #f00;
-	opacity: 1;
-}
-
-/* play button triangle */
-.ryt-lite > .lty-playbtn::before {
-	content: '';
-	border-style: solid;
-	border-width: 11px 0 11px 19px;
-	border-color: transparent transparent transparent #fff;
-}
-
-.ryt-lite > .lty-playbtn,
-.ryt-lite > .lty-playbtn::before {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate3d(-50%, -50%, 0);
-}
-
-/* Post-click styles */
-.ryt-lite.lyt-activated {
-	cursor: unset;
-}
-
-.ryt-lite.lyt-activated::before,
-.ryt-lite.lyt-activated > .lty-playbtn {
-	opacity: 0;
-	pointer-events: none;
-}
-
-body > div.preview_banner {
-	@apply bg-yellow-500 text-center;
-}
-
-body > div.preview_banner > div {
-	@apply w-full mx-auto py-3 px-3 sm:px-6 lg:px-12 flex items-center justify-between flex-wrap;
-}
-
-body > div.preview_banner > div > div {
-	@apply w-0 flex-1 flex items-center;
-}
-
-body > div.preview_banner > div > div > p {
-	@apply ml-3 font-medium text-yellow-900;
-}
-
-.ProseMirror {
-	padding-left: 0 !important;
-	padding-right: 0 !important;
-}
-
-div.home main.changelogs-0 {
-	border: none;
-	margin: 0;
-	padding: 0;
-}
-
-.preload,
-.preload * {
-	@apply !transition-none;
-}
-
-#hidden_focus {
-	position: absolute;
-	z-index: 9000;
-	left: -9999px;
-	top: -9999px;
-}
 
 /**
- * article
+ * Cover media
  */
-
-.entryWrapper .covermedia:not(:empty) {
+article .covermedia:not(:empty) {
 	@apply mb-10 relative;
 }
 
-.entryWrapper .covermedia .image {
+article .covermedia .image {
 	@apply rounded-lg overflow-hidden flex flex-col;
 	border-color: var(--article-border-color);
 }
 
-.entryWrapper .covermedia .image > img {
+article .covermedia .image > img {
 	@apply object-cover object-center;
 }
 
-.image_block .image {
-	@apply flex justify-center;
-}
-.image_block.left .image {
-	@apply justify-start;
-}
-.image_block.center .image {
-	@apply justify-center;
-}
-.image_block.right .image {
-	@apply justify-end;
-}
-
-.image_block .alt {
-	@apply mt-2 opacity-80 text-center italic;
-}
-.image_block.left .alt {
-	@apply text-left;
-}
-.image_block.center .alt {
-	@apply text-center;
-}
-.image_block.right .alt {
-	@apply text-right;
-}
-
-.image_block .image img {
-	@apply rounded-lg;
-}
-
-article {
-	min-height: 500px;
-}
-
-.ProseMirror * {
-	@apply leading-loose;
-}
-
-.ProseMirror .heading,
-.ProseMirror h1,
-.ProseMirror h2,
-.ProseMirror h3,
-.ProseMirror h4 {
-	color: var(--article-text-color);
-}
-
-.ProseMirror p,
-.ProseMirror li {
-	@apply text-lg leading-loose;
-	color: var(--article-text-color);
-}
-
-article div.iframe_node {
-	@apply my-8 p-3 border rounded;
-	background-color: var(--article-block-bg-color);
-	border-color: var(--article-border-color);
-}
-
-article .ProseMirror .hr > div > hr {
-	border-color: var(--article-border-color);
-}
-
-article .ProseMirror .toggle > .options > .icon {
-	background-color: var(--article-bg-color);
-}
-
-article p > a[href]:not(.mark-color) {
-	@apply underline;
-	color: var(--article-link-color);
-}
-
-article > section mark a[href],
-.dark article > section mark a[href] {
-	color: unset;
-}
-
-article .linked-data-list-item {
-	@apply relative pl-6;
-}
-
-article .linked-data-list-item::before {
-	@apply text-gray-400 dark:text-gray-600 absolute top-0 left-1;
-	content: '\2022';
-}
-
-/** COVER MEDIA **/
-
-.covermedia > .video,
-.covermedia > .media-container > .video {
+article .covermedia > .video,
+article .covermedia > .media-container > .video {
 	@apply aspect-w-16 aspect-h-9;
 }
 
-.covermedia > .media-container > video,
-.covermedia > .video > video {
+article .covermedia > .media-container > video,
+article .covermedia > .video > video {
 	@apply w-full;
 }
 
@@ -1516,6 +875,10 @@ article .linked-data-list-item::before {
 /* responsive iframe with a 16:9 aspect ratio
 	  thanks https://css-tricks.com/responsive-iframes/
  */
+ .ryt-lite:before {
+	display: none !important; /* REMOVE THE SHADING FOR THE TITLE AREA ON YOUTUBE VIDEO */
+}
+
 .ryt-lite::after {
 	content: '';
 	display: block;
