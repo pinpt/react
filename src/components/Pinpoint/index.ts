@@ -6,6 +6,14 @@ export interface IPinpointProps {
 	children: (ready: boolean, ref: any) => ReactElement;
 }
 
+declare global {
+	interface Window {
+		iframely?: {
+			load: (elem?: HTMLElement, url?: string) => void;
+		};
+	}
+}
+
 const Pinpoint = (props: IPinpointProps) => {
 	const [ready] = useScriptLoader([
 		`https://cdn.iframe.ly/embed.js?api_key=ab49ad398c6f631ab44eca&origin=${props.siteId}`,
@@ -13,7 +21,7 @@ const Pinpoint = (props: IPinpointProps) => {
 
 	const ref = () => {
 		if (ready && typeof window !== 'undefined') {
-			(window as any).iframely && (window as any).iframely.load();
+			window.iframely?.load?.();
 		}
 	};
 

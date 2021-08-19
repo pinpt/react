@@ -12,7 +12,7 @@ export default () => {
 
 	return (
 		<Prebuilt.SearchResults
-			entries={results as any}
+			entries={results}
 			site={site}
 			loading={loading}
 			searchTerm={term}

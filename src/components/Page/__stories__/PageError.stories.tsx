@@ -62,15 +62,5 @@ export const Not_Found: React.VFC<{}> = () => (
 );
 
 export const Internal_Server_Error: React.VFC<{}> = () => (
-	<ErrorPage
-		error={
-			<Error
-				logo={logo}
-				error="500 Error"
-				title="Internal Server Error"
-				href="/"
-			/>
-		}
-		footer={footer}
-	/>
+	<ErrorPage error={<Error logo={logo} error="500 Error" title="Internal Server Error" href="/" />} footer={footer} />
 );

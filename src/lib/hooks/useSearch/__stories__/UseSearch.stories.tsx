@@ -32,7 +32,7 @@ export const Hook: React.VFC<{}> = () => {
 	const { results, loading } = useSearch(term, [], 'PirxVTE94u3YmGNOySRY');
 	return (
 		<PrebuiltSearchResults
-			entries={results as any}
+			entries={results}
 			site={site}
 			loading={loading}
 			searchTerm={term}
