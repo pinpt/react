@@ -13,7 +13,7 @@ After installation, import the base styles. This is similar to a style reset and
 The library is designed to be easily themable with CSS.
 
 ```jsx
-import '@pinpt/react/base.css';
+import '@pinpt/react/dist/base.css';
 ```
 
 Components can be imported as so:

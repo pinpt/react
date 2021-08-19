@@ -690,5 +690,5 @@ html.dark .ThemeToggle .mode::after {
 }
 
 .Banner .icon {
-	@apply mr-2;
+	@apply mr-2 w-4 h-4;
 }
