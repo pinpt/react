@@ -22,6 +22,7 @@ import simple_ordered_list from '../__data__/simple_ordered_list';
 import simple_paragraph from '../__data__/simple_paragraph';
 import simple_text from '../__data__/simple_text';
 import simple_warning_notice from '../__data__/simple_warning_notice';
+const { default: readme } = require('../README.md');
 
 export default {
 	component: Document,
@@ -29,12 +30,17 @@ export default {
 	parameters: {
 		jest: ['RendererContent.test.tsx'],
 		controls: { hideNoControlsWarning: true },
+		docs: {
+			description: {
+				component: readme,
+			},
+		},
 	},
 } as Meta;
 
-export const Empty: React.VFC<{}> = () => <Document node={emptyDoc()} />;
-
 export const Simple_Text: React.VFC<{}> = () => <Document node={simple_text} />;
+
+export const Empty: React.VFC<{}> = () => <Document node={emptyDoc()} />;
 
 export const Simple_Paragraph: React.VFC<{}> = () => <Document node={simple_paragraph} />;
 
