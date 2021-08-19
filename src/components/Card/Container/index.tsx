@@ -47,7 +47,7 @@ const Container = (props: ICardContainerProps) => {
 		if (typeof window !== 'undefined') {
 			mediumZoom(`.zoom-${id}`);
 		}
-	}, []);
+	}, [id]);
 
 	return (
 		<div
