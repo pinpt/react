@@ -28,14 +28,10 @@ const Entry = forwardRef((props: IPageEntryProps, ref: any) => {
 			{withWrapper(
 				<div className="entry">
 					<div className="sidebarWrapper before">{sidebar}</div>
-					<div className="content">
+					<article>
 						{coverMedia && <CoverMedia media={coverMedia} title={title} zoomable={zoomable ?? true} />}
-						<div className="renderer">
-							<article className="changelog notebook-editor read-only">
-								<section className="ProseMirror">{renderer}</section>
-							</article>
-						</div>
-					</div>
+						<section className="content">{renderer}</section>
+					</article>
 					<div className="sidebarWrapper after">{sidebar}</div>
 				</div>,
 				'entry'
