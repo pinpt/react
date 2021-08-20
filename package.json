@@ -20,10 +20,10 @@
 		"test:write:generate-output": "npm run test -- --updateSnapshot --json --outputFile=.jest-test-results.json",
 		"format": "prettier --write .",
 		"test:ci": "jest --ci --reporters='default' --reporters='./.github/github-actions-reporter'",
-		"storybook": "start-storybook -p 6006",
+		"storybook": "start-storybook -s ./.storybook/public -p 6006",
 		"storybook-docs": "start-storybook --docs --no-manager-cache",
-		"build-storybook": "npm run test:generate-output && build-storybook -o docs-build",
-		"build-storybook:docs": "npm run test:generate-output && build-storybook --docs -o docs-build",
+		"build-storybook": "npm run test:generate-output && build-storybook -s ./.storybook/public -o docs-build",
+		"build-storybook:docs": "npm run test:generate-output && build-storybook --docs -s ./.storybook/public -o docs-build",
 		"prepublishOnly": "npm run build"
 	},
 	"license": "MIT",

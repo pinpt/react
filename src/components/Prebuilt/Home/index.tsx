@@ -24,8 +24,8 @@ import { ISubscribeProps } from '../../Subscribe';
 import Tags from '../../Tags';
 import { ITagBarProps } from '../../Tags/Bar';
 import { IThemeToggleProps } from '../../ThemeToggle';
-
 import type { Analytics, IContent, ISite } from '../../../lib/types';
+import Pinpoint from '../../Pinpoint';
 export interface IPrebuiltHomeProps {
 	className?: string;
 	site: ISite;
@@ -101,149 +101,159 @@ const Home = (props: IPrebuiltHomeProps) => {
 	} = props;
 	const { latest, recent } = splitEntries(entries, latestCount);
 	return (
-		<Page.Dashboard
-			className={`Prebuilt ${className}`}
-			header={
-				renderHeader?.(site) ?? (
-					<Header
-						site={site}
-						searchTerm={searchTerm}
-						handleSearch={handleSearch}
-						handleSelectHome={handleSelectHome}
-						renderLogo={renderLogo}
-						renderSearch={renderSearch}
-						renderSubscribe={renderSubscribe}
-						renderThemeToggle={renderThemeToggle}
-					/>
-				)
-			}
-			latest={
-				renderLatest?.(latest) ?? (
-					<Latest className="Prebuilt">
-						{latest.map((content) => {
-							return (
-								renderCard?.(content) ?? (
-									<Card.Container
-										key={content.id}
-										className="Prebuilt"
-										imageUrl={content.coverMedia?.placeholderImage}
-										onClick={() => handleSelectContent?.(content)}
-										title={
-											renderCardTitle?.(content) ?? <Card.Title className="Prebuilt" title={content.title} />
-										}
-										date={
-											renderCardDate?.(content) ?? (
-												<DateLabel className="Prebuilt" ts={content.publishedAt} />
-											)
-										}
-										description={
-											renderCardDescription?.(content) ?? (
-												<Card.Description className="Prebuilt" description={content.headline} />
-											)
-										}
-										statistics={
-											renderCardStatistics?.(content, analytics?.[content.id]) ?? (
-												<Statistic.Bar
+		<Pinpoint siteId={site.id}>
+			{() => {
+				return (
+					<Page.Dashboard
+						className={`Prebuilt ${className}`}
+						header={
+							renderHeader?.(site) ?? (
+								<Header
+									site={site}
+									searchTerm={searchTerm}
+									handleSearch={handleSearch}
+									handleSelectHome={handleSelectHome}
+									renderLogo={renderLogo}
+									renderSearch={renderSearch}
+									renderSubscribe={renderSubscribe}
+									renderThemeToggle={renderThemeToggle}
+								/>
+							)
+						}
+						latest={
+							renderLatest?.(latest) ?? (
+								<Latest className="Prebuilt">
+									{latest.map((content) => {
+										return (
+											renderCard?.(content) ?? (
+												<Card.Container
+													key={content.id}
 													className="Prebuilt"
-													claps={analytics?.[content.id]?.claps ?? 0}
-													views={analytics?.[content.id]?.pageviews ?? 0}
-												/>
-											)
-										}
-										button={
-											renderCardButton?.(content) ?? (
-												<Card.ReadButton
+													imageUrl={content.coverMedia?.placeholderImage}
 													onClick={() => handleSelectContent?.(content)}
-													className="Prebuilt"
+													title={
+														renderCardTitle?.(content) ?? (
+															<Card.Title className="Prebuilt" title={content.title} />
+														)
+													}
+													date={
+														renderCardDate?.(content) ?? (
+															<DateLabel className="Prebuilt" ts={content.publishedAt} />
+														)
+													}
+													description={
+														renderCardDescription?.(content) ?? (
+															<Card.Description className="Prebuilt" description={content.headline} />
+														)
+													}
+													statistics={
+														renderCardStatistics?.(content, analytics?.[content.id]) ?? (
+															<Statistic.Bar
+																className="Prebuilt"
+																claps={analytics?.[content.id]?.claps ?? 0}
+																views={analytics?.[content.id]?.pageviews ?? 0}
+															/>
+														)
+													}
+													button={
+														renderCardButton?.(content) ?? (
+															<Card.ReadButton
+																onClick={() => handleSelectContent?.(content)}
+																className="Prebuilt"
+															/>
+														)
+													}
+													tags={
+														renderTags?.(content) ?? (
+															<Tags.Bar
+																className="Prebuilt"
+																tags={content.tags ?? []}
+																onClick={(tag: string) => handleAddTagToQuery?.(tag)}
+															/>
+														)
+													}
 												/>
 											)
-										}
-										tags={
-											renderTags?.(content) ?? (
-												<Tags.Bar
+										);
+									})}
+								</Latest>
+							)
+						}
+						recent={
+							renderRecent?.(recent) ?? (
+								<Recent className="Prebuilt" pageNumber={pageNumber} pageCount={pageCount}>
+									{recent.map((content) => {
+										return (
+											renderCard?.(content) ?? (
+												<Card.Container
+													key={content.id}
 													className="Prebuilt"
-													tags={content.tags ?? []}
-													onClick={(tag: string) => handleAddTagToQuery?.(tag)}
-												/>
-											)
-										}
-									/>
-								)
-							);
-						})}
-					</Latest>
-				)
-			}
-			recent={
-				renderRecent?.(recent) ?? (
-					<Recent className="Prebuilt" pageNumber={pageNumber} pageCount={pageCount}>
-						{recent.map((content) => {
-							return (
-								renderCard?.(content) ?? (
-									<Card.Container
-										key={content.id}
-										className="Prebuilt"
-										onClick={() => handleSelectContent?.(content)}
-										imageUrl={content.coverMedia?.placeholderImage}
-										title={
-											renderCardTitle?.(content) ?? <Card.Title className="Prebuilt" title={content.title} />
-										}
-										date={
-											renderCardDate?.(content) ?? (
-												<DateLabel className="Prebuilt" ts={content.publishedAt} />
-											)
-										}
-										description={
-											renderCardDescription?.(content) ?? (
-												<Card.Description className="Prebuilt" description={content.headline} />
-											)
-										}
-										statistics={
-											renderCardStatistics?.(content, analytics?.[content.id]) ?? (
-												<Statistic.Bar
-													className="Prebuilt"
-													claps={analytics?.[content.id]?.claps ?? 0}
-													views={analytics?.[content.id]?.pageviews ?? 0}
-												/>
-											)
-										}
-										button={
-											renderCardButton?.(content) ?? (
-												<Card.ReadButton
 													onClick={() => handleSelectContent?.(content)}
-													className="Prebuilt"
+													imageUrl={content.coverMedia?.placeholderImage}
+													title={
+														renderCardTitle?.(content) ?? (
+															<Card.Title className="Prebuilt" title={content.title} />
+														)
+													}
+													date={
+														renderCardDate?.(content) ?? (
+															<DateLabel className="Prebuilt" ts={content.publishedAt} />
+														)
+													}
+													description={
+														renderCardDescription?.(content) ?? (
+															<Card.Description className="Prebuilt" description={content.headline} />
+														)
+													}
+													statistics={
+														renderCardStatistics?.(content, analytics?.[content.id]) ?? (
+															<Statistic.Bar
+																className="Prebuilt"
+																claps={analytics?.[content.id]?.claps ?? 0}
+																views={analytics?.[content.id]?.pageviews ?? 0}
+															/>
+														)
+													}
+													button={
+														renderCardButton?.(content) ?? (
+															<Card.ReadButton
+																onClick={() => handleSelectContent?.(content)}
+																className="Prebuilt"
+															/>
+														)
+													}
+													tags={
+														renderTags?.(content) ?? (
+															<Tags.Bar
+																className="Prebuilt"
+																tags={content.tags ?? []}
+																onClick={(tag: string) => handleAddTagToQuery?.(tag)}
+															/>
+														)
+													}
 												/>
 											)
-										}
-										tags={
-											renderTags?.(content) ?? (
-												<Tags.Bar
-													className="Prebuilt"
-													tags={content.tags ?? []}
-													onClick={(tag: string) => handleAddTagToQuery?.(tag)}
-												/>
-											)
-										}
-									/>
-								)
-							);
-						})}
-					</Recent>
-				)
-			}
-			footer={
-				renderFooter?.(site) ?? (
-					<Footer
-						site={site}
-						renderCopyright={renderCopyright}
-						renderLogo={renderLogo}
-						renderSocial={renderSocial}
-						renderSubscribe={renderSubscribe}
+										);
+									})}
+								</Recent>
+							)
+						}
+						footer={
+							renderFooter?.(site) ?? (
+								<Footer
+									site={site}
+									renderCopyright={renderCopyright}
+									renderLogo={renderLogo}
+									renderSocial={renderSocial}
+									renderSubscribe={renderSubscribe}
+								/>
+							)
+						}
+						pagination={renderPagination?.(site) ?? <Pagination goForward={pageForward} goBack={pageBack} />}
 					/>
-				)
-			}
-			pagination={renderPagination?.(site) ?? <Pagination goForward={pageForward} goBack={pageBack} />}
-		/>
+				);
+			}}
+		</Pinpoint>
 	);
 };
 

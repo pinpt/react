@@ -4,6 +4,7 @@ import Logo from '../../../Logo';
 import PageError from '../../../Page/Error';
 
 import { IPrebuiltErrorProps } from '../types';
+import Pinpoint from '../../../Pinpoint';
 
 const InternalServerError = ({
 	handleLinkClick,
@@ -14,32 +15,38 @@ const InternalServerError = ({
 	renderSubscribe,
 	site,
 }: IPrebuiltErrorProps) => (
-	<PageError
-		error={
-			<Error
-				className="Prebuilt 500"
-				logo={
-					renderLogo?.(site) ?? (
-						<Logo className="Prebuilt" src={site.logoUrl} href={site.theme?.logoLink ?? site.url} />
-					)
-				}
-				error="500 Error"
-				title="Internal Server Error"
-				onClick={handleLinkClick}
-			/>
-		}
-		footer={
-			renderFooter?.(site) ?? (
-				<Footer
-					site={site}
-					renderCopyright={renderCopyright}
-					renderLogo={renderLogo}
-					renderSocial={renderSocial}
-					renderSubscribe={renderSubscribe}
+	<Pinpoint siteId={site.id}>
+		{() => {
+			return (
+				<PageError
+					error={
+						<Error
+							className="Prebuilt 500"
+							logo={
+								renderLogo?.(site) ?? (
+									<Logo className="Prebuilt" src={site.logoUrl} href={site.theme?.logoLink ?? site.url} />
+								)
+							}
+							error="500 Error"
+							title="Internal Server Error"
+							onClick={handleLinkClick}
+						/>
+					}
+					footer={
+						renderFooter?.(site) ?? (
+							<Footer
+								site={site}
+								renderCopyright={renderCopyright}
+								renderLogo={renderLogo}
+								renderSocial={renderSocial}
+								renderSubscribe={renderSubscribe}
+							/>
+						)
+					}
 				/>
-			)
-		}
-	/>
+			);
+		}}
+	</Pinpoint>
 );
 
 export default InternalServerError;

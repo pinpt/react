@@ -4,11 +4,12 @@ import sleep from '../../sleep';
 
 const loadScript = (
 	head: HTMLElement,
-	src: string,
+	scriptObject: string | scriptWithOptions,
 	increment: () => void,
 	setError: (err: Error) => void,
 	count = 1
 ) => {
+	const src: string = typeof scriptObject === 'string' ? scriptObject : scriptObject.src;
 	const script = document.createElement('script');
 	script.src = src;
 	script.async = true;
@@ -21,13 +22,24 @@ const loadScript = (
 			setError(new Error(`error loading ${src}`));
 		}
 	};
+	if (typeof scriptObject !== 'string' && scriptObject.options) {
+		Object.keys(scriptObject.options).forEach((option) => {
+			if (scriptObject.options[option]) {
+				script.setAttribute(option, scriptObject.options[option] as string);
+			}
+		});
+	}
 	head.appendChild(script);
 };
 
-type scriptLoadCallback = () => string | string[] | undefined;
+type scriptLoadCallback = () => string | string[] | scriptWithOptions | scriptWithOptions[] | undefined;
+interface scriptWithOptions {
+	src: string;
+	options: Record<string, string | undefined>;
+}
 
 const useScriptLoader = (
-	scripts: scriptLoadCallback | string | string[],
+	scripts: scriptLoadCallback | string | (string | scriptWithOptions)[] | scriptWithOptions,
 	retry = true,
 	idlePeriod = 0,
 	dependencies: any[] = []
@@ -50,7 +62,7 @@ const useScriptLoader = (
 		if (!loaded.current && typeof document !== 'undefined') {
 			const load = () => {
 				const head = document.getElementsByTagName('head')[0];
-				let toload: string[] | undefined;
+				let toload: (string | scriptWithOptions)[] | undefined;
 				if (typeof scripts === 'function') {
 					const res = scripts();
 					if (res) {
@@ -61,7 +73,9 @@ const useScriptLoader = (
 				}
 				if (toload?.length) {
 					scriptCount.current = toload.length;
-					toload.forEach((src: string) => loadScript(head, src, () => increment(), setError, retry ? 1 : 5));
+					toload.forEach((script: string | scriptWithOptions) =>
+						loadScript(head, script, () => increment(), setError, retry ? 1 : 5)
+					);
 				}
 			};
 			if (idlePeriod > 0) {
