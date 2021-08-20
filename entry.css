@@ -73,19 +73,11 @@
 
 .document * + h1,
 .document * + .h1 {
-	@apply mt-10;
+	@apply mt-16;
 }
 .document * + h2,
 .document * + .h2 {
-	@apply mt-9;
-}
-.document * + h3,
-.document * + .h3 {
-	@apply mt-8;
-}
-.document * + h4,
-.document * + .h4 {
-	@apply mt-7;
+	@apply mt-14;
 }
 
 /**
