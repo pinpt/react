@@ -4,5 +4,5 @@ export const isSubscriberCookieSet = () => {
 	if (typeof window === 'undefined') {
 		return false;
 	}
-	return document.cookie.split(';').some((c) => c.startsWith(`${cookieName}=`));
+	return document.cookie.split('; ').some((c) => c.startsWith(`${cookieName}=`));
 };
