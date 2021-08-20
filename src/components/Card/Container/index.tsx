@@ -23,26 +23,11 @@ export interface ICardContainerProps {
 }
 
 const Container = (props: ICardContainerProps) => {
-	const {
-		title,
-		description,
-		imageUrl,
-		alt,
-		className,
-		statistics,
-		date,
-		button,
-		tags,
-		coverMedia,
-		onClick,
-	} = props;
+	const { title, description, imageUrl, alt, className, statistics, date, button, tags, coverMedia, onClick } = props;
 	const hasCoverMedia = coverMedia && coverMedia.type !== CoverMediaType.None;
 
 	return (
-		<div
-			className={`Pinpoint Content Card Container wrapper ${className ?? ''}`}
-			onClick={onClick}
-		>
+		<div className={`Pinpoint Content Card Container wrapper ${className ?? ''}`} onClick={onClick}>
 			{imageUrl && <img className="cover" src={imageUrl} alt={alt} />}
 			{hasCoverMedia && <CoverMedia media={coverMedia} />}
 			{!hasCoverMedia && !imageUrl && <div className="empty-cover" />}

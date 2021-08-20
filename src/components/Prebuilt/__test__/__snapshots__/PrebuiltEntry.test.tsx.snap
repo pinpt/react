@@ -386,7 +386,7 @@ exports[`Test custom className 1`] = `
               >
                 <img
                   alt="Linked Content Blocks"
-                  className="medium-zoom-image"
+                  className="medium-zoom-cover"
                   src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
                 />
               </div>
@@ -433,15 +433,18 @@ exports[`Test custom className 1`] = `
               <div
                 className="image_block center"
               >
-                <div
-                  className="image"
-                >
-                  <img
-                    height={509.6}
-                    src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
-                    width={564.72}
-                  />
-                </div>
+                <span>
+                  <div
+                    className="image"
+                  >
+                    <img
+                      className="medium-zoom-body"
+                      height={509.6}
+                      src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
+                      width={564.72}
+                    />
+                  </div>
+                </span>
               </div>
               <p>
                 Linked content blocks can be created while in the editor, or better, by using our new and improved 
@@ -482,15 +485,18 @@ exports[`Test custom className 1`] = `
               <div
                 className="image_block center"
               >
-                <div
-                  className="image"
-                >
-                  <img
-                    height={360}
-                    src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
-                    width={540}
-                  />
-                </div>
+                <span>
+                  <div
+                    className="image"
+                  >
+                    <img
+                      className="medium-zoom-body"
+                      height={360}
+                      src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
+                      width={540}
+                    />
+                  </div>
+                </span>
               </div>
               <p>
                 You can now group related issues and pull requests and link them to the same content in your changelog. This is really handy when you have multiple pieces of work which contributed to a new feature. 
@@ -1419,7 +1425,7 @@ exports[`Test default state 1`] = `
               >
                 <img
                   alt="Linked Content Blocks"
-                  className="medium-zoom-image"
+                  className="medium-zoom-cover"
                   src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
                 />
               </div>
@@ -1466,15 +1472,18 @@ exports[`Test default state 1`] = `
               <div
                 className="image_block center"
               >
-                <div
-                  className="image"
-                >
-                  <img
-                    height={509.6}
-                    src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
-                    width={564.72}
-                  />
-                </div>
+                <span>
+                  <div
+                    className="image"
+                  >
+                    <img
+                      className="medium-zoom-body"
+                      height={509.6}
+                      src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
+                      width={564.72}
+                    />
+                  </div>
+                </span>
               </div>
               <p>
                 Linked content blocks can be created while in the editor, or better, by using our new and improved 
@@ -1515,15 +1524,18 @@ exports[`Test default state 1`] = `
               <div
                 className="image_block center"
               >
-                <div
-                  className="image"
-                >
-                  <img
-                    height={360}
-                    src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
-                    width={540}
-                  />
-                </div>
+                <span>
+                  <div
+                    className="image"
+                  >
+                    <img
+                      className="medium-zoom-body"
+                      height={360}
+                      src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
+                      width={540}
+                    />
+                  </div>
+                </span>
               </div>
               <p>
                 You can now group related issues and pull requests and link them to the same content in your changelog. This is really handy when you have multiple pieces of work which contributed to a new feature. 
@@ -2351,7 +2363,7 @@ exports[`Test no author 1`] = `
               >
                 <img
                   alt="Linked Content Blocks"
-                  className="medium-zoom-image"
+                  className="medium-zoom-cover"
                   src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
                 />
               </div>
@@ -2398,15 +2410,18 @@ exports[`Test no author 1`] = `
               <div
                 className="image_block center"
               >
-                <div
-                  className="image"
-                >
-                  <img
-                    height={509.6}
-                    src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
-                    width={564.72}
-                  />
-                </div>
+                <span>
+                  <div
+                    className="image"
+                  >
+                    <img
+                      className="medium-zoom-body"
+                      height={509.6}
+                      src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
+                      width={564.72}
+                    />
+                  </div>
+                </span>
               </div>
               <p>
                 Linked content blocks can be created while in the editor, or better, by using our new and improved 
@@ -2447,15 +2462,18 @@ exports[`Test no author 1`] = `
               <div
                 className="image_block center"
               >
-                <div
-                  className="image"
-                >
-                  <img
-                    height={360}
-                    src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
-                    width={540}
-                  />
-                </div>
+                <span>
+                  <div
+                    className="image"
+                  >
+                    <img
+                      className="medium-zoom-body"
+                      height={360}
+                      src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
+                      width={540}
+                    />
+                  </div>
+                </span>
               </div>
               <p>
                 You can now group related issues and pull requests and link them to the same content in your changelog. This is really handy when you have multiple pieces of work which contributed to a new feature. 
@@ -3199,7 +3217,7 @@ exports[`Test no claps 1`] = `
               >
                 <img
                   alt="Linked Content Blocks"
-                  className="medium-zoom-image"
+                  className="medium-zoom-cover"
                   src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
                 />
               </div>
@@ -3246,15 +3264,18 @@ exports[`Test no claps 1`] = `
               <div
                 className="image_block center"
               >
-                <div
-                  className="image"
-                >
-                  <img
-                    height={509.6}
-                    src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
-                    width={564.72}
-                  />
-                </div>
+                <span>
+                  <div
+                    className="image"
+                  >
+                    <img
+                      className="medium-zoom-body"
+                      height={509.6}
+                      src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
+                      width={564.72}
+                    />
+                  </div>
+                </span>
               </div>
               <p>
                 Linked content blocks can be created while in the editor, or better, by using our new and improved 
@@ -3295,15 +3316,18 @@ exports[`Test no claps 1`] = `
               <div
                 className="image_block center"
               >
-                <div
-                  className="image"
-                >
-                  <img
-                    height={360}
-                    src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
-                    width={540}
-                  />
-                </div>
+                <span>
+                  <div
+                    className="image"
+                  >
+                    <img
+                      className="medium-zoom-body"
+                      height={360}
+                      src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
+                      width={540}
+                    />
+                  </div>
+                </span>
               </div>
               <p>
                 You can now group related issues and pull requests and link them to the same content in your changelog. This is really handy when you have multiple pieces of work which contributed to a new feature. 
@@ -4195,15 +4219,18 @@ exports[`Test not zoomable 1`] = `
               <div
                 className="image_block center"
               >
-                <div
-                  className="image"
-                >
-                  <img
-                    height={509.6}
-                    src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
-                    width={564.72}
-                  />
-                </div>
+                <span>
+                  <div
+                    className="image"
+                  >
+                    <img
+                      className="medium-zoom-body"
+                      height={509.6}
+                      src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
+                      width={564.72}
+                    />
+                  </div>
+                </span>
               </div>
               <p>
                 Linked content blocks can be created while in the editor, or better, by using our new and improved 
@@ -4244,15 +4271,18 @@ exports[`Test not zoomable 1`] = `
               <div
                 className="image_block center"
               >
-                <div
-                  className="image"
-                >
-                  <img
-                    height={360}
-                    src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
-                    width={540}
-                  />
-                </div>
+                <span>
+                  <div
+                    className="image"
+                  >
+                    <img
+                      className="medium-zoom-body"
+                      height={360}
+                      src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
+                      width={540}
+                    />
+                  </div>
+                </span>
               </div>
               <p>
                 You can now group related issues and pull requests and link them to the same content in your changelog. This is really handy when you have multiple pieces of work which contributed to a new feature. 
@@ -5085,7 +5115,7 @@ exports[`Test with pagination 1`] = `
               >
                 <img
                   alt="Publishing Controls and Social Posting"
-                  className="medium-zoom-image"
+                  className="medium-zoom-cover"
                   src="https://file.pinpoint.com/7120741f0e5051b632fdd356fc1cdb16;U40m~QcbVUiFkafladjFUbiZk%5BcbZ%23jEkYbw;1600x900.png"
                 />
               </div>
@@ -5132,15 +5162,18 @@ exports[`Test with pagination 1`] = `
               <div
                 className="image_block center"
               >
-                <div
-                  className="image"
-                >
-                  <img
-                    height={540}
-                    src="https://file.pinpoint.com/bab9656158820022a480aea23dce8a39;UDP6~%24-%3B00-%3D~XIoV%5Bt700xa%25fRi-%3Bs-aeof;1500x1000.png"
-                    width={810}
-                  />
-                </div>
+                <span>
+                  <div
+                    className="image"
+                  >
+                    <img
+                      className="medium-zoom-body"
+                      height={540}
+                      src="https://file.pinpoint.com/bab9656158820022a480aea23dce8a39;UDP6~%24-%3B00-%3D~XIoV%5Bt700xa%25fRi-%3Bs-aeof;1500x1000.png"
+                      width={810}
+                    />
+                  </div>
+                </span>
               </div>
               <p>
                 In addition, you can now post directly to 

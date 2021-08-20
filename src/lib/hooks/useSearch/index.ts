@@ -42,7 +42,7 @@ const getCoverMediaForHit = (hit) => {
 			type: CoverMediaType.Image,
 			value: hit.cover_image,
 			placeholderImage: hit.cover_image,
-		}
+		};
 	}
 };
 
