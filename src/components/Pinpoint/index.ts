@@ -24,9 +24,11 @@ const Pinpoint = (props: IPinpointProps) => {
 	const [ready] = useScriptLoader([`https://cdn.iframe.ly/embed.js?api_key=ab49ad398c6f631ab44eca&origin=${siteId}`]);
 
 	useEffect(() => {
-		const clear = window.Pinpoint?.startTracking(siteId, contentId);
+		if (typeof window !== 'undefined') {
+			const clear = window.Pinpoint?.startTracking(siteId, contentId);
 
-		return () => clear?.();
+			return () => clear?.();
+		}
 	}, [siteId, contentId]);
 
 	const ref = () => {
