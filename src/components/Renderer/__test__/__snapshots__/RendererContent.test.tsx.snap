@@ -288,19 +288,17 @@ exports[`Test simple image block 1`] = `
   <div
     className="image_block undefined"
   >
-    <span>
-      <div
-        className="image"
-      >
-        <img
-          alt="Image Caption"
-          className="medium-zoom-body"
-          height={NaN}
-          src="https://cdn.pinpoint.com/card.png"
-          width={NaN}
-        />
-      </div>
-    </span>
+    <div
+      className="image"
+    >
+      <img
+        alt="Image Caption"
+        className="medium-zoom-body"
+        height={NaN}
+        src="https://cdn.pinpoint.com/card.png"
+        width={NaN}
+      />
+    </div>
     <div
       className="alt"
     >

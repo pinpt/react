@@ -297,18 +297,16 @@ exports[`Test full entry 1`] = `
               <div
                 className="image_block center"
               >
-                <span>
-                  <div
-                    className="image"
-                  >
-                    <img
-                      className="medium-zoom-body"
-                      height={509.6}
-                      src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
-                      width={564.72}
-                    />
-                  </div>
-                </span>
+                <div
+                  className="image"
+                >
+                  <img
+                    className="medium-zoom-body"
+                    height={509.6}
+                    src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
+                    width={564.72}
+                  />
+                </div>
               </div>
               <p>
                 Linked content blocks can be created while in the editor, or better, by using our new and improved 
@@ -349,18 +347,16 @@ exports[`Test full entry 1`] = `
               <div
                 className="image_block center"
               >
-                <span>
-                  <div
-                    className="image"
-                  >
-                    <img
-                      className="medium-zoom-body"
-                      height={360}
-                      src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
-                      width={540}
-                    />
-                  </div>
-                </span>
+                <div
+                  className="image"
+                >
+                  <img
+                    className="medium-zoom-body"
+                    height={360}
+                    src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
+                    width={540}
+                  />
+                </div>
               </div>
               <p>
                 You can now group related issues and pull requests and link them to the same content in your changelog. This is really handy when you have multiple pieces of work which contributed to a new feature. 
@@ -1111,18 +1107,16 @@ exports[`Test no footer 1`] = `
               <div
                 className="image_block center"
               >
-                <span>
-                  <div
-                    className="image"
-                  >
-                    <img
-                      className="medium-zoom-body"
-                      height={509.6}
-                      src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
-                      width={564.72}
-                    />
-                  </div>
-                </span>
+                <div
+                  className="image"
+                >
+                  <img
+                    className="medium-zoom-body"
+                    height={509.6}
+                    src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
+                    width={564.72}
+                  />
+                </div>
               </div>
               <p>
                 Linked content blocks can be created while in the editor, or better, by using our new and improved 
@@ -1163,18 +1157,16 @@ exports[`Test no footer 1`] = `
               <div
                 className="image_block center"
               >
-                <span>
-                  <div
-                    className="image"
-                  >
-                    <img
-                      className="medium-zoom-body"
-                      height={360}
-                      src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
-                      width={540}
-                    />
-                  </div>
-                </span>
+                <div
+                  className="image"
+                >
+                  <img
+                    className="medium-zoom-body"
+                    height={360}
+                    src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
+                    width={540}
+                  />
+                </div>
               </div>
               <p>
                 You can now group related issues and pull requests and link them to the same content in your changelog. This is really handy when you have multiple pieces of work which contributed to a new feature. 
@@ -1513,18 +1505,16 @@ exports[`Test no sidebar 1`] = `
               <div
                 className="image_block center"
               >
-                <span>
-                  <div
-                    className="image"
-                  >
-                    <img
-                      className="medium-zoom-body"
-                      height={509.6}
-                      src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
-                      width={564.72}
-                    />
-                  </div>
-                </span>
+                <div
+                  className="image"
+                >
+                  <img
+                    className="medium-zoom-body"
+                    height={509.6}
+                    src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
+                    width={564.72}
+                  />
+                </div>
               </div>
               <p>
                 Linked content blocks can be created while in the editor, or better, by using our new and improved 
@@ -1565,18 +1555,16 @@ exports[`Test no sidebar 1`] = `
               <div
                 className="image_block center"
               >
-                <span>
-                  <div
-                    className="image"
-                  >
-                    <img
-                      className="medium-zoom-body"
-                      height={360}
-                      src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
-                      width={540}
-                    />
-                  </div>
-                </span>
+                <div
+                  className="image"
+                >
+                  <img
+                    className="medium-zoom-body"
+                    height={360}
+                    src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
+                    width={540}
+                  />
+                </div>
               </div>
               <p>
                 You can now group related issues and pull requests and link them to the same content in your changelog. This is really handy when you have multiple pieces of work which contributed to a new feature. 
@@ -2181,18 +2169,16 @@ exports[`Test not zoomable entry 1`] = `
               <div
                 className="image_block center"
               >
-                <span>
-                  <div
-                    className="image"
-                  >
-                    <img
-                      className="medium-zoom-body"
-                      height={509.6}
-                      src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
-                      width={564.72}
-                    />
-                  </div>
-                </span>
+                <div
+                  className="image"
+                >
+                  <img
+                    className="medium-zoom-body"
+                    height={509.6}
+                    src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
+                    width={564.72}
+                  />
+                </div>
               </div>
               <p>
                 Linked content blocks can be created while in the editor, or better, by using our new and improved 
@@ -2233,18 +2219,16 @@ exports[`Test not zoomable entry 1`] = `
               <div
                 className="image_block center"
               >
-                <span>
-                  <div
-                    className="image"
-                  >
-                    <img
-                      className="medium-zoom-body"
-                      height={360}
-                      src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
-                      width={540}
-                    />
-                  </div>
-                </span>
+                <div
+                  className="image"
+                >
+                  <img
+                    className="medium-zoom-body"
+                    height={360}
+                    src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
+                    width={540}
+                  />
+                </div>
               </div>
               <p>
                 You can now group related issues and pull requests and link them to the same content in your changelog. This is really handy when you have multiple pieces of work which contributed to a new feature. 
@@ -3000,18 +2984,16 @@ exports[`Test with pagination 1`] = `
               <div
                 className="image_block center"
               >
-                <span>
-                  <div
-                    className="image"
-                  >
-                    <img
-                      className="medium-zoom-body"
-                      height={509.6}
-                      src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
-                      width={564.72}
-                    />
-                  </div>
-                </span>
+                <div
+                  className="image"
+                >
+                  <img
+                    className="medium-zoom-body"
+                    height={509.6}
+                    src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
+                    width={564.72}
+                  />
+                </div>
               </div>
               <p>
                 Linked content blocks can be created while in the editor, or better, by using our new and improved 
@@ -3052,18 +3034,16 @@ exports[`Test with pagination 1`] = `
               <div
                 className="image_block center"
               >
-                <span>
-                  <div
-                    className="image"
-                  >
-                    <img
-                      className="medium-zoom-body"
-                      height={360}
-                      src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
-                      width={540}
-                    />
-                  </div>
-                </span>
+                <div
+                  className="image"
+                >
+                  <img
+                    className="medium-zoom-body"
+                    height={360}
+                    src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
+                    width={540}
+                  />
+                </div>
               </div>
               <p>
                 You can now group related issues and pull requests and link them to the same content in your changelog. This is really handy when you have multiple pieces of work which contributed to a new feature. 

@@ -25,7 +25,7 @@ const ImageBlock = ({ node }: NodeProps) => {
 					{image(false)}
 				</a>
 			) : (
-				<span>{image(true)}</span>
+				<>{image(true)}</>
 			)}
 			{node.attrs.alt && <div className="alt">{node.attrs.alt}</div>}
 		</div>
