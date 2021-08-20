@@ -25,7 +25,7 @@ const Pinpoint = (props: IPinpointProps) => {
 
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
-			const clear = window.Pinpoint?.startTracking(siteId, contentId);
+			const clear = window.Pinpoint?.startTracking?.(siteId, contentId);
 
 			return () => clear?.();
 		}
