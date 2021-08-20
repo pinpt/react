@@ -238,7 +238,7 @@ html.dark .ThemeToggle .mode::after {
  * Styles for the card components
  */
 .Content.Card.Container.wrapper {
-	@apply w-full rounded-md overflow-hidden mt-auto flex flex-col h-full cursor-pointer shadow-md hover:shadow-lg transition-all duration-200;
+	@apply w-full rounded-md overflow-hidden flex flex-col cursor-pointer shadow-md hover:shadow-lg transition-all duration-200;
 	background-color: var(--card-bg-color);
 }
 
