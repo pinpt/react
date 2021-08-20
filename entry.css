@@ -14,7 +14,7 @@
 .document > * + *,
 .document > * + .toggle,
 .document .toggle > .content > * + * {
-	@apply mt-10;
+	@apply mt-8;
 }
 .document blockquote > * + *,
 .document .notice > .content > * + * {
@@ -59,18 +59,17 @@
 }
 
 .document h1 {
-	@apply mb-6 text-3xl;
+	@apply text-3xl;
 }
 .document h2 {
-	@apply mb-5 text-2xl;
+	@apply text-2xl;
 }
 .document h3 {
-	@apply mb-4 text-xl leading-8;
+	@apply text-xl leading-loose;
 }
 .document h4 {
-	@apply mb-4 text-lg leading-8;
+	@apply text-lg leading-loose;
 }
-
 .document * + h1,
 .document * + .h1 {
 	@apply mt-16;
