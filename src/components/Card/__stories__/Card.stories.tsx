@@ -143,16 +143,3 @@ export const CoverImage_Image: React.VFC<{}> = () => (
 		coverMedia={imageCoverMedia}
 	/>
 );
-
-export const Not_Zoomable: React.VFC<{}> = () => (
-	<Container
-		imageUrl="https://cdn.pinpoint.com/card.png"
-		title={<Title title={TEST_TITLE} />}
-		date={<DateLabel />}
-		description={<Description description={TEST_DESCRIPTION} />}
-		statistics={<StatisticsBar claps={22} views={135} />}
-		button={<ReadButton />}
-		tags={<Tags.Bar tags={['feature', 'improvement']} />}
-		zoomable={false}
-	/>
-);
