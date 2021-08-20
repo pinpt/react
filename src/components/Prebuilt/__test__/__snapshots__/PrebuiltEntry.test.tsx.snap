@@ -98,7 +98,7 @@ exports[`Test custom className 1`] = `
             className="action"
           >
             <a
-              className="Pinpoint Internal Link Subscribe Prebuilt"
+              className="Pinpoint Internal Link Subscribe visible Prebuilt"
               href="/subscription/subscribe"
             >
               <svg
@@ -806,7 +806,7 @@ exports[`Test custom className 1`] = `
             className="right"
           >
             <a
-              className="Pinpoint Internal Link Subscribe Prebuilt"
+              className="Pinpoint Internal Link Subscribe visible Prebuilt"
               href="/subscription/subscribe"
             >
               <svg
@@ -1131,7 +1131,7 @@ exports[`Test default state 1`] = `
             className="action"
           >
             <a
-              className="Pinpoint Internal Link Subscribe Prebuilt"
+              className="Pinpoint Internal Link Subscribe invisible Prebuilt"
               href="/subscription/subscribe"
             >
               <svg
@@ -1839,7 +1839,7 @@ exports[`Test default state 1`] = `
             className="right"
           >
             <a
-              className="Pinpoint Internal Link Subscribe Prebuilt"
+              className="Pinpoint Internal Link Subscribe invisible Prebuilt"
               href="/subscription/subscribe"
             >
               <svg
@@ -2164,7 +2164,7 @@ exports[`Test no author 1`] = `
             className="action"
           >
             <a
-              className="Pinpoint Internal Link Subscribe Prebuilt"
+              className="Pinpoint Internal Link Subscribe invisible Prebuilt"
               href="/subscription/subscribe"
             >
               <svg
@@ -2670,7 +2670,7 @@ exports[`Test no author 1`] = `
             className="right"
           >
             <a
-              className="Pinpoint Internal Link Subscribe Prebuilt"
+              className="Pinpoint Internal Link Subscribe invisible Prebuilt"
               href="/subscription/subscribe"
             >
               <svg
@@ -2995,7 +2995,7 @@ exports[`Test no claps 1`] = `
             className="action"
           >
             <a
-              className="Pinpoint Internal Link Subscribe Prebuilt"
+              className="Pinpoint Internal Link Subscribe visible Prebuilt"
               href="/subscription/subscribe"
             >
               <svg
@@ -3535,7 +3535,7 @@ exports[`Test no claps 1`] = `
             className="right"
           >
             <a
-              className="Pinpoint Internal Link Subscribe Prebuilt"
+              className="Pinpoint Internal Link Subscribe visible Prebuilt"
               href="/subscription/subscribe"
             >
               <svg
@@ -3860,7 +3860,7 @@ exports[`Test not zoomable 1`] = `
             className="action"
           >
             <a
-              className="Pinpoint Internal Link Subscribe Prebuilt"
+              className="Pinpoint Internal Link Subscribe visible Prebuilt"
               href="/subscription/subscribe"
             >
               <svg
@@ -4568,7 +4568,7 @@ exports[`Test not zoomable 1`] = `
             className="right"
           >
             <a
-              className="Pinpoint Internal Link Subscribe Prebuilt"
+              className="Pinpoint Internal Link Subscribe visible Prebuilt"
               href="/subscription/subscribe"
             >
               <svg
@@ -4893,7 +4893,7 @@ exports[`Test with pagination 1`] = `
             className="action"
           >
             <a
-              className="Pinpoint Internal Link Subscribe Prebuilt"
+              className="Pinpoint Internal Link Subscribe invisible Prebuilt"
               href="/subscription/subscribe"
             >
               <svg
@@ -5418,7 +5418,7 @@ exports[`Test with pagination 1`] = `
             className="right"
           >
             <a
-              className="Pinpoint Internal Link Subscribe Prebuilt"
+              className="Pinpoint Internal Link Subscribe invisible Prebuilt"
               href="/subscription/subscribe"
             >
               <svg

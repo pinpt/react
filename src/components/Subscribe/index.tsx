@@ -13,17 +13,20 @@ export interface ISubscribeProps {
 const Subscribe = (props: ISubscribeProps) => {
 	const { className = '', href, newTab, onClick, text } = props;
 	const [hidden, setHidden] = useState(false);
+	const [ready, setReady] = useState(false);
 
 	useEffect(() => {
 		setHidden(isSubscriberCookieSet());
+		setReady(true);
 	}, []);
 
-	if (hidden) {
-		return null;
-	}
-
 	return (
-		<ActionLink className={`Subscribe ${className}`} href={href} newTab={newTab} onClick={onClick}>
+		<ActionLink
+			className={`Subscribe ${!ready || hidden ? 'invisible' : 'visible'} ${className}`}
+			href={href}
+			newTab={newTab}
+			onClick={onClick}
+		>
 			<svg
 				className="icon"
 				width={14}

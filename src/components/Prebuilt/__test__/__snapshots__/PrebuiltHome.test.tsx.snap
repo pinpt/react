@@ -98,7 +98,7 @@ exports[`Hidden stats 1`] = `
             className="action"
           >
             <a
-              className="Pinpoint Internal Link Subscribe Prebuilt"
+              className="Pinpoint Internal Link Subscribe visible Prebuilt"
               href="/subscription/subscribe"
             >
               <svg
@@ -1128,7 +1128,7 @@ populated with your recently completed...
             className="right"
           >
             <a
-              className="Pinpoint Internal Link Subscribe Prebuilt"
+              className="Pinpoint Internal Link Subscribe visible Prebuilt"
               href="/subscription/subscribe"
             >
               <svg
@@ -1453,7 +1453,7 @@ exports[`Test custom className 1`] = `
             className="action"
           >
             <a
-              className="Pinpoint Internal Link Subscribe Prebuilt"
+              className="Pinpoint Internal Link Subscribe invisible Prebuilt"
               href="/subscription/subscribe"
             >
               <svg
@@ -3553,7 +3553,7 @@ populated with your recently completed...
             className="right"
           >
             <a
-              className="Pinpoint Internal Link Subscribe Prebuilt"
+              className="Pinpoint Internal Link Subscribe invisible Prebuilt"
               href="/subscription/subscribe"
             >
               <svg
@@ -3878,7 +3878,7 @@ exports[`Test custom latest length 1`] = `
             className="action"
           >
             <a
-              className="Pinpoint Internal Link Subscribe Prebuilt"
+              className="Pinpoint Internal Link Subscribe invisible Prebuilt"
               href="/subscription/subscribe"
             >
               <svg
@@ -5978,7 +5978,7 @@ populated with your recently completed...
             className="right"
           >
             <a
-              className="Pinpoint Internal Link Subscribe Prebuilt"
+              className="Pinpoint Internal Link Subscribe invisible Prebuilt"
               href="/subscription/subscribe"
             >
               <svg
@@ -6303,7 +6303,7 @@ exports[`Test default state 1`] = `
             className="action"
           >
             <a
-              className="Pinpoint Internal Link Subscribe Prebuilt"
+              className="Pinpoint Internal Link Subscribe invisible Prebuilt"
               href="/subscription/subscribe"
             >
               <svg
@@ -8403,7 +8403,7 @@ populated with your recently completed...
             className="right"
           >
             <a
-              className="Pinpoint Internal Link Subscribe Prebuilt"
+              className="Pinpoint Internal Link Subscribe invisible Prebuilt"
               href="/subscription/subscribe"
             >
               <svg
@@ -8728,7 +8728,7 @@ exports[`Test default state with partial analytics 1`] = `
             className="action"
           >
             <a
-              className="Pinpoint Internal Link Subscribe Prebuilt"
+              className="Pinpoint Internal Link Subscribe visible Prebuilt"
               href="/subscription/subscribe"
             >
               <svg
@@ -10828,7 +10828,7 @@ populated with your recently completed...
             className="right"
           >
             <a
-              className="Pinpoint Internal Link Subscribe Prebuilt"
+              className="Pinpoint Internal Link Subscribe visible Prebuilt"
               href="/subscription/subscribe"
             >
               <svg

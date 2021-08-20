@@ -142,6 +142,14 @@ html.dark .ThemeToggle .mode::after {
 	color: var(--page-highlight-color);
 }
 
+.Subscribe.invisible {
+	@apply invisible;
+}
+
+.Subscribe.visible {
+	@apply visible;
+}
+
 .Subscribe .text {
 	@apply ml-1 text-sm;
 }
@@ -707,6 +715,14 @@ html.dark .ThemeToggle .mode::after {
 
 .SubscribeForm.wrapper {
 	@apply block;
+}
+
+.SubscribeForm.invisible {
+	@apply invisible;
+}
+
+.SubscribeForm.visible {
+	@apply visible;
 }
 
 .SubscribeForm .inner {

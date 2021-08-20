@@ -89,7 +89,7 @@ exports[`Test custom className 1`] = `
       className="action"
     >
       <a
-        className="Pinpoint Internal Link Subscribe Prebuilt"
+        className="Pinpoint Internal Link Subscribe visible Prebuilt"
         href="/subscription/subscribe"
       >
         <svg
@@ -209,7 +209,7 @@ exports[`Test default state 1`] = `
       className="action"
     >
       <a
-        className="Pinpoint Internal Link Subscribe Prebuilt"
+        className="Pinpoint Internal Link Subscribe invisible Prebuilt"
         href="/subscription/subscribe"
       >
         <svg

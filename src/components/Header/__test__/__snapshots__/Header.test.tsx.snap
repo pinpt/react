@@ -76,7 +76,7 @@ exports[`Test complete 1`] = `
       className="action"
     >
       <a
-        className="Pinpoint Internal Link Subscribe "
+        className="Pinpoint Internal Link Subscribe invisible "
         href="https://pinpoint.com"
       >
         <svg
@@ -157,7 +157,7 @@ exports[`Test no description 1`] = `
       className="action"
     >
       <a
-        className="Pinpoint Internal Link Subscribe "
+        className="Pinpoint Internal Link Subscribe invisible "
         href="https://pinpoint.com"
       >
         <svg
@@ -232,7 +232,7 @@ exports[`Test no search 1`] = `
       className="action"
     >
       <a
-        className="Pinpoint Internal Link Subscribe "
+        className="Pinpoint Internal Link Subscribe invisible "
         href="https://pinpoint.com"
       >
         <svg
@@ -366,7 +366,7 @@ exports[`Test no theme 1`] = `
       className="action"
     >
       <a
-        className="Pinpoint Internal Link Subscribe "
+        className="Pinpoint Internal Link Subscribe visible "
         href="https://pinpoint.com"
       >
         <svg
