@@ -1,13 +1,50 @@
 import algoliasearch from 'algoliasearch';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import config from '../../../config';
-import { CoverMediaType } from '../../../lib/types';
+import { CoverMediaType, ICoverMedia } from '../../../lib/types';
 
 import type { IContent } from '../../../lib/types';
 
 const { algolia } = config;
 const client = algoliasearch(algolia.appId, algolia.apiKey);
 const index = client.initIndex(algolia.index);
+
+export const getPlaceholderImageUrl = (media?: ICoverMedia) => {
+	if (!media) {
+		return '';
+	}
+	switch (media.type) {
+		case CoverMediaType.Youtube: {
+			return `https://i.ytimg.com/vi/${media.value}/${media.metadata?.poster ?? 'hqdefault'}.jpg`;
+		}
+		case CoverMediaType.Video: {
+			return `${media.value}/thumbnail`;
+		}
+		case CoverMediaType.Image: {
+			return media.value;
+		}
+		default:
+			break;
+	}
+	return '';
+};
+
+const getCoverMediaForHit = (hit) => {
+	if (hit.coverMedia) {
+		return {
+			...hit.coverMedia,
+			placeholderImage: getPlaceholderImageUrl(hit.coverMedia),
+		};
+	}
+
+	if (hit.cover_image) {
+		return {
+			type: CoverMediaType.Image,
+			value: hit.cover_image,
+			placeholderImage: hit.cover_image,
+		}
+	}
+};
 
 const useSearch = (term: string, tags: string[], siteId: string) => {
 	const [loading, setLoading] = useState(() => !!term);
@@ -38,17 +75,11 @@ const useSearch = (term: string, tags: string[], siteId: string) => {
 							return {
 								id: hit.objectID,
 								title: hit.title,
-								coverMedia: hit.coverMedia
-									? hit.coverMedia
-									: hit.cover_image
-									? {
-											type: CoverMediaType.Image,
-											value: hit.cover_image,
-									  }
-									: undefined,
+								coverMedia: getCoverMediaForHit(hit),
 								publishedAt: hit.createdAt,
 								headline: hit.headline,
 								tags: hit.tags,
+								url: hit.url,
 							} as IContent;
 						})
 						.sort((a, b) => b.publishedAt - a.publishedAt)
