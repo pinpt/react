@@ -88,7 +88,7 @@ const Entry = (props: IPrebuiltEntryProps) => {
 	} = props;
 
 	return (
-		<Pinpoint siteId={site.id} contentId={content.id}>
+		<Pinpoint siteId={site.id}>
 			{(_ready, ref) => (
 				<Page.Entry
 					ref={ref}
