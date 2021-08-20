@@ -501,7 +501,7 @@ html.dark .ThemeToggle .mode::after {
 }
 
 .entryWrapper .sidebarWrapper.after {
-	@apply md:hidden;
+	@apply md:hidden mt-8;
 }
 
 .entryWrapper .sidebarWrapper.after .Sidebar {
