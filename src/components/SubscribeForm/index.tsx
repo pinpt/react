@@ -71,8 +71,10 @@ const SubscribeForm = (props: SubscribeFormProps) => {
 	const [success, setSuccess] = useState(false);
 	const [error, setError] = useState('');
 	const [hidden, setHidden] = useState(false);
+	const [ready, setReady] = useState(false);
 	useEffect(() => {
 		setHidden(isSubscriberCookieSet());
+		setReady(true);
 	}, []);
 	useEffect(() => {
 		setDisabled(!validateEmail(email));
@@ -94,11 +96,9 @@ const SubscribeForm = (props: SubscribeFormProps) => {
 			setSaving(false);
 		}
 	}, [email]);
-	if (!success && hidden) {
-		return null;
-	}
+	const _hidden = ready ? !success && hidden : true;
 	return (
-		<div className={`SubscribeForm wrapper ${className}`}>
+		<div className={`SubscribeForm wrapper ${_hidden ? 'invisible' : 'visible'} ${className}`}>
 			<div className="inner">
 				<div className="input">
 					<input

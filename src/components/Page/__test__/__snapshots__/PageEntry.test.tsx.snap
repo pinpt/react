@@ -44,7 +44,7 @@ exports[`Test full entry 1`] = `
             className="action"
           >
             <a
-              className="Pinpoint Internal Link Subscribe "
+              className="Pinpoint Internal Link Subscribe invisible "
               href="https://pinpoint.com"
             >
               <svg
@@ -586,7 +586,7 @@ exports[`Test full entry 1`] = `
             className="right"
           >
             <a
-              className="Pinpoint Internal Link Subscribe "
+              className="Pinpoint Internal Link Subscribe invisible "
               href="https://pinpoint.com"
             >
               <svg
@@ -857,7 +857,7 @@ exports[`Test no footer 1`] = `
             className="action"
           >
             <a
-              className="Pinpoint Internal Link Subscribe "
+              className="Pinpoint Internal Link Subscribe visible "
               href="https://pinpoint.com"
             >
               <svg
@@ -1399,7 +1399,7 @@ exports[`Test no sidebar 1`] = `
             className="action"
           >
             <a
-              className="Pinpoint Internal Link Subscribe "
+              className="Pinpoint Internal Link Subscribe invisible "
               href="https://pinpoint.com"
             >
               <svg
@@ -1639,7 +1639,7 @@ exports[`Test no sidebar 1`] = `
             className="right"
           >
             <a
-              className="Pinpoint Internal Link Subscribe "
+              className="Pinpoint Internal Link Subscribe invisible "
               href="https://pinpoint.com"
             >
               <svg
@@ -1910,7 +1910,7 @@ exports[`Test not zoomable entry 1`] = `
             className="action"
           >
             <a
-              className="Pinpoint Internal Link Subscribe "
+              className="Pinpoint Internal Link Subscribe invisible "
               href="https://pinpoint.com"
             >
               <svg
@@ -2452,7 +2452,7 @@ exports[`Test not zoomable entry 1`] = `
             className="right"
           >
             <a
-              className="Pinpoint Internal Link Subscribe "
+              className="Pinpoint Internal Link Subscribe invisible "
               href="https://pinpoint.com"
             >
               <svg
@@ -2723,7 +2723,7 @@ exports[`Test with pagination 1`] = `
             className="action"
           >
             <a
-              className="Pinpoint Internal Link Subscribe "
+              className="Pinpoint Internal Link Subscribe visible "
               href="https://pinpoint.com"
             >
               <svg
@@ -3331,7 +3331,7 @@ exports[`Test with pagination 1`] = `
             className="right"
           >
             <a
-              className="Pinpoint Internal Link Subscribe "
+              className="Pinpoint Internal Link Subscribe visible "
               href="https://pinpoint.com"
             >
               <svg

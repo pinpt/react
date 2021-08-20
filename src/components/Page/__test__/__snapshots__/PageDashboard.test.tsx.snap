@@ -44,7 +44,7 @@ exports[`Test full page 1`] = `
             className="action"
           >
             <a
-              className="Pinpoint Internal Link Subscribe "
+              className="Pinpoint Internal Link Subscribe invisible "
               href="https://pinpoint.com"
             >
               <svg
@@ -1163,7 +1163,7 @@ exports[`Test full page 1`] = `
             className="right"
           >
             <a
-              className="Pinpoint Internal Link Subscribe "
+              className="Pinpoint Internal Link Subscribe invisible "
               href="https://pinpoint.com"
             >
               <svg
@@ -1434,7 +1434,7 @@ exports[`Test loading 1`] = `
             className="action"
           >
             <a
-              className="Pinpoint Internal Link Subscribe "
+              className="Pinpoint Internal Link Subscribe visible "
               href="https://pinpoint.com"
             >
               <svg
@@ -1513,7 +1513,7 @@ exports[`Test loading 1`] = `
             className="right"
           >
             <a
-              className="Pinpoint Internal Link Subscribe "
+              className="Pinpoint Internal Link Subscribe visible "
               href="https://pinpoint.com"
             >
               <svg
@@ -3890,7 +3890,7 @@ exports[`Test no header 1`] = `
             className="right"
           >
             <a
-              className="Pinpoint Internal Link Subscribe "
+              className="Pinpoint Internal Link Subscribe invisible "
               href="https://pinpoint.com"
             >
               <svg
@@ -4852,7 +4852,7 @@ exports[`Test no latest 1`] = `
             className="right"
           >
             <a
-              className="Pinpoint Internal Link Subscribe "
+              className="Pinpoint Internal Link Subscribe visible "
               href="https://pinpoint.com"
             >
               <svg
@@ -5477,7 +5477,7 @@ exports[`Test no recent 1`] = `
             className="right"
           >
             <a
-              className="Pinpoint Internal Link Subscribe "
+              className="Pinpoint Internal Link Subscribe invisible "
               href="https://pinpoint.com"
             >
               <svg
