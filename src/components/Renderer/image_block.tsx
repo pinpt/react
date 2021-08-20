@@ -6,9 +6,15 @@ const ImageBlock = ({ node }: NodeProps) => {
 	const scaledWidth = (size?.width ?? 0) * node.attrs.scale;
 	const scaledHeight = (size?.height ?? 0) * node.attrs.scale;
 
-	const image = (
+	const image = (zoom?: boolean) => (
 		<div className="image">
-			<img src={node.attrs.src} width={scaledWidth} height={scaledHeight} alt={node.attrs.alt} />
+			<img
+				className={zoom ? 'medium-zoom-body' : ''}
+				src={node.attrs.src}
+				width={scaledWidth}
+				height={scaledHeight}
+				alt={node.attrs.alt}
+			/>
 		</div>
 	);
 
@@ -16,10 +22,10 @@ const ImageBlock = ({ node }: NodeProps) => {
 		<div className={`image_block ${node.attrs.align}`}>
 			{node.attrs.href ? (
 				<a href={node.attrs.href} target="_blank" rel="noopener noreferrer">
-					{image}
+					{image(false)}
 				</a>
 			) : (
-				<>{image}</>
+				<>{image(true)}</>
 			)}
 			{node.attrs.alt && <div className="alt">{node.attrs.alt}</div>}
 		</div>

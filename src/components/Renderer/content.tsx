@@ -10,13 +10,13 @@ import { forwardRef, useEffect } from 'react';
 const ImageMedia = ({ src, title = '', zoomable = false }: { src: string; title?: string; zoomable?: boolean }) => {
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
-			mediumZoom('.medium-zoom-image');
+			mediumZoom('.medium-zoom-cover');
 		}
 	}, []);
 
 	return (
 		<div className={`image `}>
-			<img src={src} alt={title} className={`${zoomable ? 'medium-zoom-image' : ''}`} />
+			<img src={src} alt={title} className={`${zoomable ? 'medium-zoom-cover' : ''}`} />
 		</div>
 	);
 };

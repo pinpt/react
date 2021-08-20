@@ -1,4 +1,4 @@
-import { ReactElement, useEffect } from 'react';
+import { ReactElement } from 'react';
 import { ISearchResultsProps } from '../../Search/Results';
 import { IFooterProps } from '../../Footer';
 import { IHeaderProps } from '../../Header';
@@ -8,7 +8,6 @@ import Loader from '../../Loader';
 import { IQueryProps } from '../../Search/Query';
 import { IPaginationProps } from '../../Pagination';
 import withWrapper from '../../Internal/withWrapper';
-import mediumZoom from 'medium-zoom';
 export interface IPageDashboardProps {
 	className?: string;
 	header?: ReactElement<IHeaderProps>;
@@ -23,12 +22,6 @@ export interface IPageDashboardProps {
 
 const Dashboard = (props: IPageDashboardProps) => {
 	const { className = '', footer, latest, recent, header, searchResults, loading, searchQuery, pagination } = props;
-
-	useEffect(() => {
-		if (typeof window !== 'undefined') {
-			mediumZoom('.medium-zoom-image');
-		}
-	}, []);
 
 	return (
 		<div className={`Pinpoint Page Dashboard ${className}`}>

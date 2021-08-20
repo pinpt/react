@@ -293,6 +293,7 @@ exports[`Test simple image block 1`] = `
     >
       <img
         alt="Image Caption"
+        className="medium-zoom-body"
         height={NaN}
         src="https://cdn.pinpoint.com/card.png"
         width={NaN}
@@ -324,6 +325,7 @@ exports[`Test simple image block with link 1`] = `
       >
         <img
           alt="Image Caption"
+          className=""
           height={NaN}
           src="https://cdn.pinpoint.com/card.png"
           width={NaN}

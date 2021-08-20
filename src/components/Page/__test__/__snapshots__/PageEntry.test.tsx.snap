@@ -250,7 +250,7 @@ exports[`Test full entry 1`] = `
               >
                 <img
                   alt=""
-                  className="medium-zoom-image"
+                  className="medium-zoom-cover"
                   src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
                 />
               </div>
@@ -301,6 +301,7 @@ exports[`Test full entry 1`] = `
                   className="image"
                 >
                   <img
+                    className="medium-zoom-body"
                     height={509.6}
                     src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
                     width={564.72}
@@ -350,6 +351,7 @@ exports[`Test full entry 1`] = `
                   className="image"
                 >
                   <img
+                    className="medium-zoom-body"
                     height={360}
                     src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
                     width={540}
@@ -1058,7 +1060,7 @@ exports[`Test no footer 1`] = `
               >
                 <img
                   alt=""
-                  className="medium-zoom-image"
+                  className="medium-zoom-cover"
                   src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
                 />
               </div>
@@ -1109,6 +1111,7 @@ exports[`Test no footer 1`] = `
                   className="image"
                 >
                   <img
+                    className="medium-zoom-body"
                     height={509.6}
                     src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
                     width={564.72}
@@ -1158,6 +1161,7 @@ exports[`Test no footer 1`] = `
                   className="image"
                 >
                   <img
+                    className="medium-zoom-body"
                     height={360}
                     src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
                     width={540}
@@ -1454,7 +1458,7 @@ exports[`Test no sidebar 1`] = `
               >
                 <img
                   alt=""
-                  className="medium-zoom-image"
+                  className="medium-zoom-cover"
                   src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
                 />
               </div>
@@ -1505,6 +1509,7 @@ exports[`Test no sidebar 1`] = `
                   className="image"
                 >
                   <img
+                    className="medium-zoom-body"
                     height={509.6}
                     src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
                     width={564.72}
@@ -1554,6 +1559,7 @@ exports[`Test no sidebar 1`] = `
                   className="image"
                 >
                   <img
+                    className="medium-zoom-body"
                     height={360}
                     src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
                     width={540}
@@ -2167,6 +2173,7 @@ exports[`Test not zoomable entry 1`] = `
                   className="image"
                 >
                   <img
+                    className="medium-zoom-body"
                     height={509.6}
                     src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
                     width={564.72}
@@ -2216,6 +2223,7 @@ exports[`Test not zoomable entry 1`] = `
                   className="image"
                 >
                   <img
+                    className="medium-zoom-body"
                     height={360}
                     src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
                     width={540}
@@ -2929,7 +2937,7 @@ exports[`Test with pagination 1`] = `
               >
                 <img
                   alt=""
-                  className="medium-zoom-image"
+                  className="medium-zoom-cover"
                   src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
                 />
               </div>
@@ -2980,6 +2988,7 @@ exports[`Test with pagination 1`] = `
                   className="image"
                 >
                   <img
+                    className="medium-zoom-body"
                     height={509.6}
                     src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
                     width={564.72}
@@ -3029,6 +3038,7 @@ exports[`Test with pagination 1`] = `
                   className="image"
                 >
                   <img
+                    className="medium-zoom-body"
                     height={360}
                     src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
                     width={540}

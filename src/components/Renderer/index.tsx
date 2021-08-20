@@ -26,13 +26,22 @@ import './table';
 import './toggle';
 import Content, { CoverMedia } from './content';
 import { DocOpts, NodeProps, recurseIntoChildren } from './register';
-import { forwardRef } from 'react';
+import { forwardRef, useEffect } from 'react';
+import mediumZoom from 'medium-zoom';
 
-const Document = forwardRef(({ node, limit, opts }: NodeProps & { limit?: number; opts?: DocOpts }, ref: any) => (
-	<div ref={ref} className="document">
-		{recurseIntoChildren({ ...node, _path: 'doc', _opts: opts }, limit)}
-	</div>
-));
+const Document = forwardRef(({ node, limit, opts }: NodeProps & { limit?: number; opts?: DocOpts }, ref: any) => {
+	useEffect(() => {
+		if (typeof window !== 'undefined') {
+			mediumZoom('.medium-zoom-body');
+		}
+	}, []);
+
+	return (
+		<div ref={ref} className="document">
+			{recurseIntoChildren({ ...node, _path: 'doc', _opts: opts }, limit)}
+		</div>
+	);
+});
 
 export const emptyDoc = () => ({ type: 'doc', content: [{ type: 'paragraph', content: [] }] });
 

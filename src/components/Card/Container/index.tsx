@@ -20,35 +20,18 @@ export interface ICardContainerProps {
 	alt?: string;
 	className?: string;
 	onClick?: () => void;
-	zoomable?: boolean;
 }
 
 const Container = (props: ICardContainerProps) => {
-	const {
-		title,
-		description,
-		imageUrl,
-		alt,
-		className,
-		statistics,
-		date,
-		button,
-		tags,
-		coverMedia,
-		onClick,
-		zoomable = true,
-	} = props;
+	const { title, description, imageUrl, alt, className, statistics, date, button, tags, coverMedia, onClick } = props;
 	const hasCoverMedia = coverMedia && coverMedia.type !== CoverMediaType.None;
 
 	return (
-		<div
-			className={`Pinpoint Content Card Container wrapper ${className ?? ''}`}
-			onClick={zoomable ? undefined : onClick}
-		>
-			{imageUrl && <img className={`cover ${zoomable ? `medium-zoom-image` : ''}`} src={imageUrl} alt={alt} />}
-			{hasCoverMedia && <CoverMedia media={coverMedia} zoomable={zoomable} />}
+		<div className={`Pinpoint Content Card Container wrapper ${className ?? ''}`} onClick={onClick}>
+			{imageUrl && <img className="cover" src={imageUrl} alt={alt} />}
+			{hasCoverMedia && <CoverMedia media={coverMedia} />}
 			{!hasCoverMedia && !imageUrl && <div className="empty-cover" />}
-			<div className="content" onClick={zoomable ? onClick : undefined}>
+			<div className="content">
 				{title}
 				{date}
 				{tags}
