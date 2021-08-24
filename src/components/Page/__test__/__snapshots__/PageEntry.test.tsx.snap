@@ -157,7 +157,7 @@ exports[`Test full entry 1`] = `
               onClick={[Function]}
             >
               <div
-                className="Clap icon "
+                className="Pinpoint Clap icon "
               >
                 <svg
                   fill="none"
@@ -225,12 +225,12 @@ exports[`Test full entry 1`] = `
                 </svg>
               </div>
               <div
-                className="Clap counter active"
+                className="Pinpoint Clap counter active"
               >
                 22
               </div>
               <div
-                className="Clap notice "
+                className="Pinpoint Clap notice "
               >
                 +
                 0
@@ -467,7 +467,7 @@ exports[`Test full entry 1`] = `
               onClick={[Function]}
             >
               <div
-                className="Clap icon "
+                className="Pinpoint Clap icon "
               >
                 <svg
                   fill="none"
@@ -535,12 +535,12 @@ exports[`Test full entry 1`] = `
                 </svg>
               </div>
               <div
-                className="Clap counter active"
+                className="Pinpoint Clap counter active"
               >
                 22
               </div>
               <div
-                className="Clap notice "
+                className="Pinpoint Clap notice "
               >
                 +
                 0
@@ -968,7 +968,7 @@ exports[`Test no footer 1`] = `
               onClick={[Function]}
             >
               <div
-                className="Clap icon "
+                className="Pinpoint Clap icon "
               >
                 <svg
                   fill="none"
@@ -1036,12 +1036,12 @@ exports[`Test no footer 1`] = `
                 </svg>
               </div>
               <div
-                className="Clap counter active"
+                className="Pinpoint Clap counter active"
               >
                 22
               </div>
               <div
-                className="Clap notice "
+                className="Pinpoint Clap notice "
               >
                 +
                 0
@@ -1273,7 +1273,7 @@ exports[`Test no footer 1`] = `
               onClick={[Function]}
             >
               <div
-                className="Clap icon "
+                className="Pinpoint Clap icon "
               >
                 <svg
                   fill="none"
@@ -1341,12 +1341,12 @@ exports[`Test no footer 1`] = `
                 </svg>
               </div>
               <div
-                className="Clap counter active"
+                className="Pinpoint Clap counter active"
               >
                 22
               </div>
               <div
-                className="Clap notice "
+                className="Pinpoint Clap notice "
               >
                 +
                 0
@@ -2031,7 +2031,7 @@ exports[`Test not zoomable entry 1`] = `
               onClick={[Function]}
             >
               <div
-                className="Clap icon "
+                className="Pinpoint Clap icon "
               >
                 <svg
                   fill="none"
@@ -2099,12 +2099,12 @@ exports[`Test not zoomable entry 1`] = `
                 </svg>
               </div>
               <div
-                className="Clap counter active"
+                className="Pinpoint Clap counter active"
               >
                 22
               </div>
               <div
-                className="Clap notice "
+                className="Pinpoint Clap notice "
               >
                 +
                 0
@@ -2341,7 +2341,7 @@ exports[`Test not zoomable entry 1`] = `
               onClick={[Function]}
             >
               <div
-                className="Clap icon "
+                className="Pinpoint Clap icon "
               >
                 <svg
                   fill="none"
@@ -2409,12 +2409,12 @@ exports[`Test not zoomable entry 1`] = `
                 </svg>
               </div>
               <div
-                className="Clap counter active"
+                className="Pinpoint Clap counter active"
               >
                 22
               </div>
               <div
-                className="Clap notice "
+                className="Pinpoint Clap notice "
               >
                 +
                 0
@@ -2847,7 +2847,7 @@ exports[`Test with pagination 1`] = `
               onClick={[Function]}
             >
               <div
-                className="Clap icon "
+                className="Pinpoint Clap icon "
               >
                 <svg
                   fill="none"
@@ -2915,12 +2915,12 @@ exports[`Test with pagination 1`] = `
                 </svg>
               </div>
               <div
-                className="Clap counter active"
+                className="Pinpoint Clap counter active"
               >
                 22
               </div>
               <div
-                className="Clap notice "
+                className="Pinpoint Clap notice "
               >
                 +
                 0
@@ -3157,7 +3157,7 @@ exports[`Test with pagination 1`] = `
               onClick={[Function]}
             >
               <div
-                className="Clap icon "
+                className="Pinpoint Clap icon "
               >
                 <svg
                   fill="none"
@@ -3225,12 +3225,12 @@ exports[`Test with pagination 1`] = `
                 </svg>
               </div>
               <div
-                className="Clap counter active"
+                className="Pinpoint Clap counter active"
               >
                 22
               </div>
               <div
-                className="Clap notice "
+                className="Pinpoint Clap notice "
               >
                 +
                 0

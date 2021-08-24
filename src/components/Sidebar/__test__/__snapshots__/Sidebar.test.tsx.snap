@@ -66,7 +66,7 @@ exports[`Test custom className 1`] = `
     onClick={[Function]}
   >
     <div
-      className="Clap icon "
+      className="Pinpoint Clap icon "
     >
       <svg
         fill="none"
@@ -134,12 +134,12 @@ exports[`Test custom className 1`] = `
       </svg>
     </div>
     <div
-      className="Clap counter active"
+      className="Pinpoint Clap counter active"
     >
       22
     </div>
     <div
-      className="Clap notice "
+      className="Pinpoint Clap notice "
     >
       +
       0
@@ -214,7 +214,7 @@ exports[`Test default 1`] = `
     onClick={[Function]}
   >
     <div
-      className="Clap icon "
+      className="Pinpoint Clap icon "
     >
       <svg
         fill="none"
@@ -282,12 +282,12 @@ exports[`Test default 1`] = `
       </svg>
     </div>
     <div
-      className="Clap counter active"
+      className="Pinpoint Clap counter active"
     >
       22
     </div>
     <div
-      className="Clap notice "
+      className="Pinpoint Clap notice "
     >
       +
       0
@@ -439,7 +439,7 @@ exports[`Test no author 1`] = `
     onClick={[Function]}
   >
     <div
-      className="Clap icon "
+      className="Pinpoint Clap icon "
     >
       <svg
         fill="none"
@@ -507,12 +507,12 @@ exports[`Test no author 1`] = `
       </svg>
     </div>
     <div
-      className="Clap counter active"
+      className="Pinpoint Clap counter active"
     >
       22
     </div>
     <div
-      className="Clap notice "
+      className="Pinpoint Clap notice "
     >
       +
       0
@@ -570,7 +570,7 @@ exports[`clap only 1`] = `
     onClick={[Function]}
   >
     <div
-      className="Clap icon "
+      className="Pinpoint Clap icon "
     >
       <svg
         fill="none"
@@ -638,12 +638,12 @@ exports[`clap only 1`] = `
       </svg>
     </div>
     <div
-      className="Clap counter active"
+      className="Pinpoint Clap counter active"
     >
       22
     </div>
     <div
-      className="Clap notice "
+      className="Pinpoint Clap notice "
     >
       +
       0
