@@ -24,10 +24,10 @@ import './table_header';
 import './table_row';
 import './table';
 import './toggle';
+import mediumZoom from 'medium-zoom';
+import { forwardRef, useEffect } from 'react';
 import Content, { CoverMedia } from './content';
 import { DocOpts, NodeProps, recurseIntoChildren } from './register';
-import { forwardRef, useEffect } from 'react';
-import mediumZoom from 'medium-zoom';
 
 const Document = forwardRef(({ node, limit, opts }: NodeProps & { limit?: number; opts?: DocOpts }, ref: any) => {
 	useEffect(() => {
@@ -37,7 +37,7 @@ const Document = forwardRef(({ node, limit, opts }: NodeProps & { limit?: number
 	}, []);
 
 	return (
-		<div ref={ref} className="document">
+		<div ref={ref} className="Pinpoint document">
 			{recurseIntoChildren({ ...node, _path: 'doc', _opts: opts }, limit)}
 		</div>
 	);

@@ -5,7 +5,7 @@ const LinkedIn = (props: ISocialProps) => {
 	const { className = '', sharing, ...rest } = props;
 
 	return (
-		<ActionLink className={`Social Item LinkedIn ${sharing ? 'sharing' : ''} ${className}`} {...rest}>
+		<ActionLink className={`Pinpoint Social Item LinkedIn ${sharing ? 'sharing' : ''} ${className}`} {...rest}>
 			{sharing ? (
 				<svg
 					width={14}

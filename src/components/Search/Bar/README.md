@@ -6,28 +6,28 @@ The search component can use either a change handler or a submit handler (or bot
 
 #### Theming
 
-The parent className for styling this component is `.Search.Bar`
+The parent className for styling this component is `.Pinpoint.Search.Bar`
 
 <details>
 	<summary>Base Theme Styles</summary>
 
 ```css
-.Search.Bar {
+.Pinpoint.Search.Bar {
 	@apply border rounded-full flex items-center w-48 h-8 overflow-hidden transition-colors duration-200;
 	border-color: var(--header-control-color);
 	color: var(--header-control-color);
 }
 
-.Search.Bar .icon {
+.Pinpoint.Search.Bar .icon {
 	@apply ml-3 mr-2;
 }
 
-.Search.Bar .input {
+.Pinpoint.Search.Bar .input {
 	@apply w-full border-0 py-1 pr-2 outline-none bg-transparent;
 	color: var(--page-text-color);
 }
 
-.Search.Bar .input::placeholder {
+.Pinpoint.Search.Bar .input::placeholder {
 	@apply opacity-30 transition-colors duration-200;
 	color: var(--page-text-color);
 }

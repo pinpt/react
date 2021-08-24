@@ -8,13 +8,13 @@ _If you are using the prebuilt components, this is done for you._
 
 #### Theming
 
-The parent className for styling this component is `.document`
+The parent className for styling this component is `.Pinpoint.document`
 
 <details>
 	<summary>Base Theme Styles</summary>
 
 ```css
-.entryWrapper .renderer {
+.Pinpoint.entryWrapper .renderer {
 	@apply mb-10 md:mb-14;
 	color: var(--article-text-color);
 }

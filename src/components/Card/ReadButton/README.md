@@ -4,18 +4,18 @@
 
 #### Theming
 
-The parent className for styling this component is `.Content.Card.Read`
+The parent className for styling this component is `.Pinpoint.Content.Card.Read`
 
 <details>
 	<summary>Base Theme Styles</summary>
 
 ```css
-.Content.Card.Read {
+.Pinpoint.Content.Card.Read {
 	@apply flex items-center cursor-pointer no-underline;
 	color: var(--card-link-color);
 }
 
-.Content.Card.Read .arrow {
+.Pinpoint.Content.Card.Read .arrow {
 	@apply ml-2;
 }
 ```

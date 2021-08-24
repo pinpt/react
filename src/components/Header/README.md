@@ -4,46 +4,46 @@
 
 #### Theming
 
-The parent className for styling this component is `.Header`
+The parent className for styling this component is `.Pinpoint.Header`
 
 <details>
 	<summary>Base Theme Styles</summary>
 
 ```css
-.headerWrapper {
+.Pinpoint.headerWrapper {
 	background-color: var(--header-bg-color);
 }
 
-.Header {
+.Pinpoint.Header {
 	@apply flex py-5 flex-col;
 }
 
-.Header .top {
+.Pinpoint.Header .top {
 	@apply flex justify-between;
 }
 
-.Header .right {
+.Pinpoint.Header .right {
 	@apply flex gap-x-4;
 }
 
-.Header .center {
+.Pinpoint.Header .center {
 	@apply py-8 flex flex-col content-center text-center;
 }
 
-.Header .title {
+.Pinpoint.Header .title {
 	@apply font-semibold text-4xl md:text-5xl py-6 transition-colors duration-200;
 	color: var(--header-title-color);
 }
 
-.Header .description {
+.Pinpoint.Header .description {
 	color: var(--header-description-color);
 }
 
-.Header .action {
+.Pinpoint.Header .action {
 	@apply mt-6 mx-auto;
 }
 
-.Header .Subscribe {
+.Pinpoint.Header .Subscribe {
 	color: var(--header-subscribe-color);
 }
 ```

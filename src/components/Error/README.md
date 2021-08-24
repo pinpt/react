@@ -4,49 +4,49 @@
 
 #### Theming
 
-The parent className for styling this component is `.Error`
+The parent className for styling this component is `.Pinpoint.Error`
 
 <details>
 	<summary>Base Theme Styles</summary>
 
 ```css
-.Page.ErrorPage {
+.Pinpoint .Page.ErrorPage {
 	@apply h-screen w-full flex flex-col justify-between items-stretch;
 }
 
-.errorWrapper {
+.Pinpoint .errorWrapper {
 	@apply flex-grow py-10 flex flex-col justify-center;
 }
 
-.Error {
+.Pinpoint.Error {
 	@apply flex flex-col justify-center items-center text-center;
 }
 
-.Error .logo {
+.Pinpoint.Error .logo {
 	@apply mb-10 md:mb-14;
 }
 
-.Error .error {
+.Pinpoint.Error .error {
 	@apply uppercase font-medium;
 	color: var(--page-error-color);
 }
 
-.Error .title {
+.Pinpoint.Error .title {
 	@apply my-4 text-4xl md:text-5xl font-semibold;
 	color: var(--page-title-color);
 }
 
-.Error .description {
+.Pinpoint.Error .description {
 	@apply text-lg;
 	color: var(--page-secondary-text-color);
 }
 
-.Error .link {
+.Pinpoint.Error .link {
 	@apply mt-10 flex text-xl items-center;
 	color: var(--page-highlight-color);
 }
 
-.Error .link .icon {
+.Pinpoint.Error .link .icon {
 	@apply ml-2;
 }
 ```

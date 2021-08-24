@@ -5,7 +5,7 @@ exports[`Custom className 1`] = `
   className="Pinpoint Social Bar custom-test"
 >
   <a
-    className="Pinpoint Internal Link Social Item Twitter sharing custom-test"
+    className="Pinpoint Internal Link Pinpoint Social Item Twitter sharing custom-test"
     href="https://twitter.com/pinpoint_sw"
     rel="noopener noreferrer"
     target="_blank"
@@ -35,7 +35,7 @@ exports[`Test all 1`] = `
   className="Pinpoint Social Bar "
 >
   <a
-    className="Pinpoint Internal Link Social Item Facebook sharing "
+    className="Pinpoint Internal Link Pinpoint Social Item Facebook sharing "
     href="https://www.facebook.com/Pinpoint.Engineering"
     rel="noopener noreferrer"
     target="_blank"
@@ -58,7 +58,7 @@ exports[`Test all 1`] = `
     </svg>
   </a>
   <a
-    className="Pinpoint Internal Link Social Item Twitter sharing "
+    className="Pinpoint Internal Link Pinpoint Social Item Twitter sharing "
     href="https://twitter.com/pinpoint_sw"
     rel="noopener noreferrer"
     target="_blank"
@@ -81,7 +81,7 @@ exports[`Test all 1`] = `
     </svg>
   </a>
   <a
-    className="Pinpoint Internal Link Social Item LinkedIn sharing "
+    className="Pinpoint Internal Link Pinpoint Social Item LinkedIn sharing "
     href="https://linkedin.com/company/pinpoint-software"
     rel="noopener noreferrer"
     target="_blank"
@@ -104,7 +104,7 @@ exports[`Test all 1`] = `
     </svg>
   </a>
   <a
-    className="Pinpoint Internal Link Social Item Email sharing "
+    className="Pinpoint Internal Link Pinpoint Social Item Email sharing "
     href="mailto:hello@pinpoint.com"
   >
     <svg
@@ -132,7 +132,7 @@ exports[`Test short 1`] = `
   className="Pinpoint Social Bar "
 >
   <a
-    className="Pinpoint Internal Link Social Item Twitter sharing "
+    className="Pinpoint Internal Link Pinpoint Social Item Twitter sharing "
     href="https://twitter.com/pinpoint_sw"
     rel="noopener noreferrer"
     target="_blank"
@@ -155,7 +155,7 @@ exports[`Test short 1`] = `
     </svg>
   </a>
   <a
-    className="Pinpoint Internal Link Social Item LinkedIn sharing "
+    className="Pinpoint Internal Link Pinpoint Social Item LinkedIn sharing "
     href="https://linkedin.com/company/pinpoint-software"
     rel="noopener noreferrer"
     target="_blank"
@@ -185,7 +185,7 @@ exports[`Test single 1`] = `
   className="Pinpoint Social Bar "
 >
   <a
-    className="Pinpoint Internal Link Social Item Twitter sharing "
+    className="Pinpoint Internal Link Pinpoint Social Item Twitter sharing "
     href="https://twitter.com/pinpoint_sw"
     rel="noopener noreferrer"
     target="_blank"

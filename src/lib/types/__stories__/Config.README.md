@@ -14,6 +14,6 @@ interface IPinpointConfig {
 	apihost?: string;
 	siteUrl?: string;
 	apiKey?: string;
-	pageSize: number;
+	pageSize?: number;
 }
 ```

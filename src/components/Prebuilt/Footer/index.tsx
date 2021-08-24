@@ -1,11 +1,11 @@
-import BaseFooter from '../../Footer';
-import { ISite } from '../../../lib';
-import Social from '../../Social';
-import Copyright, { ICopyrightProps } from '../../Copyright';
-import Logo, { ILogoProps } from '../../Logo';
-import Subscribe, { ISubscribeProps } from '../../Subscribe';
 import { ReactElement } from 'react';
+import { ISite } from '../../../lib';
+import Copyright, { ICopyrightProps } from '../../Copyright';
+import BaseFooter from '../../Footer';
+import Logo, { ILogoProps } from '../../Logo';
+import Social from '../../Social';
 import { ISocialBarProps } from '../../Social/Bar';
+import Subscribe, { ISubscribeProps } from '../../Subscribe';
 
 export interface IPrebuiltFooterProps {
 	className?: string;

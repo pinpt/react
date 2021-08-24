@@ -5,10 +5,10 @@ exports[`Test full page 1`] = `
   className="Pinpoint Page Dashboard "
 >
   <div
-    className="headerWrapper"
+    className="Pinpoint headerWrapper"
   >
     <div
-      className="constraint"
+      className="Pinpoint constraint"
     >
       <div
         className="Pinpoint Header "
@@ -44,7 +44,7 @@ exports[`Test full page 1`] = `
             className="action"
           >
             <a
-              className="Pinpoint Internal Link Subscribe invisible "
+              className="Pinpoint Internal Link Pinpoint Subscribe invisible "
               href="https://pinpoint.com"
             >
               <svg
@@ -76,10 +76,10 @@ exports[`Test full page 1`] = `
     </div>
   </div>
   <div
-    className="latestWrapper"
+    className="Pinpoint latestWrapper"
   >
     <div
-      className="constraint"
+      className="Pinpoint constraint"
     >
       <div
         className="Pinpoint Latest "
@@ -124,7 +124,7 @@ exports[`Test full page 1`] = `
                   className="button"
                 >
                   <span
-                    className="Pinpoint Internal Link  Content Card Read "
+                    className="Pinpoint Internal Link  Pinpoint Content Card Read "
                   >
                     Read
                     <svg
@@ -292,7 +292,7 @@ exports[`Test full page 1`] = `
                   className="button"
                 >
                   <span
-                    className="Pinpoint Internal Link  Content Card Read "
+                    className="Pinpoint Internal Link  Pinpoint Content Card Read "
                   >
                     Read
                     <svg
@@ -433,10 +433,10 @@ exports[`Test full page 1`] = `
     </div>
   </div>
   <div
-    className="recentWrapper"
+    className="Pinpoint recentWrapper"
   >
     <div
-      className="constraint"
+      className="Pinpoint constraint"
     >
       <div
         className="Pinpoint Recent "
@@ -482,7 +482,7 @@ exports[`Test full page 1`] = `
                   className="button"
                 >
                   <span
-                    className="Pinpoint Internal Link  Content Card Read "
+                    className="Pinpoint Internal Link  Pinpoint Content Card Read "
                   >
                     Read
                     <svg
@@ -650,7 +650,7 @@ exports[`Test full page 1`] = `
                   className="button"
                 >
                   <span
-                    className="Pinpoint Internal Link  Content Card Read "
+                    className="Pinpoint Internal Link  Pinpoint Content Card Read "
                   >
                     Read
                     <svg
@@ -818,7 +818,7 @@ exports[`Test full page 1`] = `
                   className="button"
                 >
                   <span
-                    className="Pinpoint Internal Link  Content Card Read "
+                    className="Pinpoint Internal Link  Pinpoint Content Card Read "
                   >
                     Read
                     <svg
@@ -986,7 +986,7 @@ exports[`Test full page 1`] = `
                   className="button"
                 >
                   <span
-                    className="Pinpoint Internal Link  Content Card Read "
+                    className="Pinpoint Internal Link  Pinpoint Content Card Read "
                   >
                     Read
                     <svg
@@ -1127,10 +1127,10 @@ exports[`Test full page 1`] = `
     </div>
   </div>
   <div
-    className="footerWrapper"
+    className="Pinpoint footerWrapper"
   >
     <div
-      className="constraint"
+      className="Pinpoint constraint"
     >
       <div
         className="Pinpoint Footer "
@@ -1145,7 +1145,7 @@ exports[`Test full page 1`] = `
               className="Pinpoint Copyright "
             >
               <span
-                className="Pinpoint Internal Link  Logo sm "
+                className="Pinpoint Internal Link  Pinpoint Logo sm "
               >
                 <img
                   className="image"
@@ -1163,7 +1163,7 @@ exports[`Test full page 1`] = `
             className="right"
           >
             <a
-              className="Pinpoint Internal Link Subscribe invisible "
+              className="Pinpoint Internal Link Pinpoint Subscribe invisible "
               href="https://pinpoint.com"
             >
               <svg
@@ -1193,7 +1193,7 @@ exports[`Test full page 1`] = `
               className="Pinpoint Social Bar "
             >
               <a
-                className="Pinpoint Internal Link Social Item Facebook  "
+                className="Pinpoint Internal Link Pinpoint Social Item Facebook  "
                 href="https://www.facebook.com/Pinpoint.Engineering"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -1216,7 +1216,7 @@ exports[`Test full page 1`] = `
                 </svg>
               </a>
               <a
-                className="Pinpoint Internal Link Social Item Instagram  "
+                className="Pinpoint Internal Link Pinpoint Social Item Instagram  "
                 href="https://www.instagram.com/pinpoint_sw/"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -1239,7 +1239,7 @@ exports[`Test full page 1`] = `
                 </svg>
               </a>
               <a
-                className="Pinpoint Internal Link Social Item Twitter  "
+                className="Pinpoint Internal Link Pinpoint Social Item Twitter  "
                 href="https://twitter.com/pinpoint_sw"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -1262,7 +1262,7 @@ exports[`Test full page 1`] = `
                 </svg>
               </a>
               <a
-                className="Pinpoint Internal Link Social Item Github  "
+                className="Pinpoint Internal Link Pinpoint Social Item Github  "
                 href="https://github.com/pinpt"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -1285,7 +1285,7 @@ exports[`Test full page 1`] = `
                 </svg>
               </a>
               <a
-                className="Pinpoint Internal Link Social Item LinkedIn  "
+                className="Pinpoint Internal Link Pinpoint Social Item LinkedIn  "
                 href="https://linkedin.com/company/pinpoint-software"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -1308,7 +1308,7 @@ exports[`Test full page 1`] = `
                 </svg>
               </a>
               <a
-                className="Pinpoint Internal Link Social Item RSS "
+                className="Pinpoint Internal Link Pinpoint Social Item RSS "
                 href="https://api.pinpoint.com.so/rss/PirxVTE94u3YmGNOySRY"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -1337,6 +1337,7 @@ exports[`Test full page 1`] = `
           className="powered"
         >
           <a
+            className="Pinpoint PoweredByPinpoint"
             href="https://pinpoint.com/?utm_source=referral&utm_medium=web&utm_campaign="
             style={
               Object {
@@ -1395,10 +1396,10 @@ exports[`Test loading 1`] = `
   className="Pinpoint Page Dashboard "
 >
   <div
-    className="headerWrapper"
+    className="Pinpoint headerWrapper"
   >
     <div
-      className="constraint"
+      className="Pinpoint constraint"
     >
       <div
         className="Pinpoint Header "
@@ -1434,7 +1435,7 @@ exports[`Test loading 1`] = `
             className="action"
           >
             <a
-              className="Pinpoint Internal Link Subscribe visible "
+              className="Pinpoint Internal Link Pinpoint Subscribe visible "
               href="https://pinpoint.com"
             >
               <svg
@@ -1477,10 +1478,10 @@ exports[`Test loading 1`] = `
     </div>
   </div>
   <div
-    className="footerWrapper"
+    className="Pinpoint footerWrapper"
   >
     <div
-      className="constraint"
+      className="Pinpoint constraint"
     >
       <div
         className="Pinpoint Footer "
@@ -1495,7 +1496,7 @@ exports[`Test loading 1`] = `
               className="Pinpoint Copyright "
             >
               <span
-                className="Pinpoint Internal Link  Logo sm "
+                className="Pinpoint Internal Link  Pinpoint Logo sm "
               >
                 <img
                   className="image"
@@ -1513,7 +1514,7 @@ exports[`Test loading 1`] = `
             className="right"
           >
             <a
-              className="Pinpoint Internal Link Subscribe visible "
+              className="Pinpoint Internal Link Pinpoint Subscribe visible "
               href="https://pinpoint.com"
             >
               <svg
@@ -1543,7 +1544,7 @@ exports[`Test loading 1`] = `
               className="Pinpoint Social Bar "
             >
               <a
-                className="Pinpoint Internal Link Social Item Facebook  "
+                className="Pinpoint Internal Link Pinpoint Social Item Facebook  "
                 href="https://www.facebook.com/Pinpoint.Engineering"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -1566,7 +1567,7 @@ exports[`Test loading 1`] = `
                 </svg>
               </a>
               <a
-                className="Pinpoint Internal Link Social Item Instagram  "
+                className="Pinpoint Internal Link Pinpoint Social Item Instagram  "
                 href="https://www.instagram.com/pinpoint_sw/"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -1589,7 +1590,7 @@ exports[`Test loading 1`] = `
                 </svg>
               </a>
               <a
-                className="Pinpoint Internal Link Social Item Twitter  "
+                className="Pinpoint Internal Link Pinpoint Social Item Twitter  "
                 href="https://twitter.com/pinpoint_sw"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -1612,7 +1613,7 @@ exports[`Test loading 1`] = `
                 </svg>
               </a>
               <a
-                className="Pinpoint Internal Link Social Item Github  "
+                className="Pinpoint Internal Link Pinpoint Social Item Github  "
                 href="https://github.com/pinpt"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -1635,7 +1636,7 @@ exports[`Test loading 1`] = `
                 </svg>
               </a>
               <a
-                className="Pinpoint Internal Link Social Item LinkedIn  "
+                className="Pinpoint Internal Link Pinpoint Social Item LinkedIn  "
                 href="https://linkedin.com/company/pinpoint-software"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -1658,7 +1659,7 @@ exports[`Test loading 1`] = `
                 </svg>
               </a>
               <a
-                className="Pinpoint Internal Link Social Item RSS "
+                className="Pinpoint Internal Link Pinpoint Social Item RSS "
                 href="https://api.pinpoint.com.so/rss/PirxVTE94u3YmGNOySRY"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -1687,6 +1688,7 @@ exports[`Test loading 1`] = `
           className="powered"
         >
           <a
+            className="Pinpoint PoweredByPinpoint"
             href="https://pinpoint.com/?utm_source=referral&utm_medium=web&utm_campaign="
             style={
               Object {
@@ -1745,10 +1747,10 @@ exports[`Test no footer 1`] = `
   className="Pinpoint Page Dashboard "
 >
   <div
-    className="latestWrapper"
+    className="Pinpoint latestWrapper"
   >
     <div
-      className="constraint"
+      className="Pinpoint constraint"
     >
       <div
         className="Pinpoint Latest "
@@ -1793,7 +1795,7 @@ exports[`Test no footer 1`] = `
                   className="button"
                 >
                   <span
-                    className="Pinpoint Internal Link  Content Card Read "
+                    className="Pinpoint Internal Link  Pinpoint Content Card Read "
                   >
                     Read
                     <svg
@@ -1961,7 +1963,7 @@ exports[`Test no footer 1`] = `
                   className="button"
                 >
                   <span
-                    className="Pinpoint Internal Link  Content Card Read "
+                    className="Pinpoint Internal Link  Pinpoint Content Card Read "
                   >
                     Read
                     <svg
@@ -2102,10 +2104,10 @@ exports[`Test no footer 1`] = `
     </div>
   </div>
   <div
-    className="recentWrapper"
+    className="Pinpoint recentWrapper"
   >
     <div
-      className="constraint"
+      className="Pinpoint constraint"
     >
       <div
         className="Pinpoint Recent "
@@ -2151,7 +2153,7 @@ exports[`Test no footer 1`] = `
                   className="button"
                 >
                   <span
-                    className="Pinpoint Internal Link  Content Card Read "
+                    className="Pinpoint Internal Link  Pinpoint Content Card Read "
                   >
                     Read
                     <svg
@@ -2319,7 +2321,7 @@ exports[`Test no footer 1`] = `
                   className="button"
                 >
                   <span
-                    className="Pinpoint Internal Link  Content Card Read "
+                    className="Pinpoint Internal Link  Pinpoint Content Card Read "
                   >
                     Read
                     <svg
@@ -2487,7 +2489,7 @@ exports[`Test no footer 1`] = `
                   className="button"
                 >
                   <span
-                    className="Pinpoint Internal Link  Content Card Read "
+                    className="Pinpoint Internal Link  Pinpoint Content Card Read "
                   >
                     Read
                     <svg
@@ -2655,7 +2657,7 @@ exports[`Test no footer 1`] = `
                   className="button"
                 >
                   <span
-                    className="Pinpoint Internal Link  Content Card Read "
+                    className="Pinpoint Internal Link  Pinpoint Content Card Read "
                   >
                     Read
                     <svg
@@ -2803,10 +2805,10 @@ exports[`Test no header 1`] = `
   className="Pinpoint Page Dashboard "
 >
   <div
-    className="latestWrapper"
+    className="Pinpoint latestWrapper"
   >
     <div
-      className="constraint"
+      className="Pinpoint constraint"
     >
       <div
         className="Pinpoint Latest "
@@ -2851,7 +2853,7 @@ exports[`Test no header 1`] = `
                   className="button"
                 >
                   <span
-                    className="Pinpoint Internal Link  Content Card Read "
+                    className="Pinpoint Internal Link  Pinpoint Content Card Read "
                   >
                     Read
                     <svg
@@ -3019,7 +3021,7 @@ exports[`Test no header 1`] = `
                   className="button"
                 >
                   <span
-                    className="Pinpoint Internal Link  Content Card Read "
+                    className="Pinpoint Internal Link  Pinpoint Content Card Read "
                   >
                     Read
                     <svg
@@ -3160,10 +3162,10 @@ exports[`Test no header 1`] = `
     </div>
   </div>
   <div
-    className="recentWrapper"
+    className="Pinpoint recentWrapper"
   >
     <div
-      className="constraint"
+      className="Pinpoint constraint"
     >
       <div
         className="Pinpoint Recent "
@@ -3209,7 +3211,7 @@ exports[`Test no header 1`] = `
                   className="button"
                 >
                   <span
-                    className="Pinpoint Internal Link  Content Card Read "
+                    className="Pinpoint Internal Link  Pinpoint Content Card Read "
                   >
                     Read
                     <svg
@@ -3377,7 +3379,7 @@ exports[`Test no header 1`] = `
                   className="button"
                 >
                   <span
-                    className="Pinpoint Internal Link  Content Card Read "
+                    className="Pinpoint Internal Link  Pinpoint Content Card Read "
                   >
                     Read
                     <svg
@@ -3545,7 +3547,7 @@ exports[`Test no header 1`] = `
                   className="button"
                 >
                   <span
-                    className="Pinpoint Internal Link  Content Card Read "
+                    className="Pinpoint Internal Link  Pinpoint Content Card Read "
                   >
                     Read
                     <svg
@@ -3713,7 +3715,7 @@ exports[`Test no header 1`] = `
                   className="button"
                 >
                   <span
-                    className="Pinpoint Internal Link  Content Card Read "
+                    className="Pinpoint Internal Link  Pinpoint Content Card Read "
                   >
                     Read
                     <svg
@@ -3854,10 +3856,10 @@ exports[`Test no header 1`] = `
     </div>
   </div>
   <div
-    className="footerWrapper"
+    className="Pinpoint footerWrapper"
   >
     <div
-      className="constraint"
+      className="Pinpoint constraint"
     >
       <div
         className="Pinpoint Footer "
@@ -3872,7 +3874,7 @@ exports[`Test no header 1`] = `
               className="Pinpoint Copyright "
             >
               <span
-                className="Pinpoint Internal Link  Logo sm "
+                className="Pinpoint Internal Link  Pinpoint Logo sm "
               >
                 <img
                   className="image"
@@ -3890,7 +3892,7 @@ exports[`Test no header 1`] = `
             className="right"
           >
             <a
-              className="Pinpoint Internal Link Subscribe invisible "
+              className="Pinpoint Internal Link Pinpoint Subscribe invisible "
               href="https://pinpoint.com"
             >
               <svg
@@ -3920,7 +3922,7 @@ exports[`Test no header 1`] = `
               className="Pinpoint Social Bar "
             >
               <a
-                className="Pinpoint Internal Link Social Item Facebook  "
+                className="Pinpoint Internal Link Pinpoint Social Item Facebook  "
                 href="https://www.facebook.com/Pinpoint.Engineering"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -3943,7 +3945,7 @@ exports[`Test no header 1`] = `
                 </svg>
               </a>
               <a
-                className="Pinpoint Internal Link Social Item Instagram  "
+                className="Pinpoint Internal Link Pinpoint Social Item Instagram  "
                 href="https://www.instagram.com/pinpoint_sw/"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -3966,7 +3968,7 @@ exports[`Test no header 1`] = `
                 </svg>
               </a>
               <a
-                className="Pinpoint Internal Link Social Item Twitter  "
+                className="Pinpoint Internal Link Pinpoint Social Item Twitter  "
                 href="https://twitter.com/pinpoint_sw"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -3989,7 +3991,7 @@ exports[`Test no header 1`] = `
                 </svg>
               </a>
               <a
-                className="Pinpoint Internal Link Social Item Github  "
+                className="Pinpoint Internal Link Pinpoint Social Item Github  "
                 href="https://github.com/pinpt"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -4012,7 +4014,7 @@ exports[`Test no header 1`] = `
                 </svg>
               </a>
               <a
-                className="Pinpoint Internal Link Social Item LinkedIn  "
+                className="Pinpoint Internal Link Pinpoint Social Item LinkedIn  "
                 href="https://linkedin.com/company/pinpoint-software"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -4035,7 +4037,7 @@ exports[`Test no header 1`] = `
                 </svg>
               </a>
               <a
-                className="Pinpoint Internal Link Social Item RSS "
+                className="Pinpoint Internal Link Pinpoint Social Item RSS "
                 href="https://api.pinpoint.com.so/rss/PirxVTE94u3YmGNOySRY"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -4064,6 +4066,7 @@ exports[`Test no header 1`] = `
           className="powered"
         >
           <a
+            className="Pinpoint PoweredByPinpoint"
             href="https://pinpoint.com/?utm_source=referral&utm_medium=web&utm_campaign="
             style={
               Object {
@@ -4122,10 +4125,10 @@ exports[`Test no latest 1`] = `
   className="Pinpoint Page Dashboard "
 >
   <div
-    className="recentWrapper"
+    className="Pinpoint recentWrapper"
   >
     <div
-      className="constraint"
+      className="Pinpoint constraint"
     >
       <div
         className="Pinpoint Recent "
@@ -4171,7 +4174,7 @@ exports[`Test no latest 1`] = `
                   className="button"
                 >
                   <span
-                    className="Pinpoint Internal Link  Content Card Read "
+                    className="Pinpoint Internal Link  Pinpoint Content Card Read "
                   >
                     Read
                     <svg
@@ -4339,7 +4342,7 @@ exports[`Test no latest 1`] = `
                   className="button"
                 >
                   <span
-                    className="Pinpoint Internal Link  Content Card Read "
+                    className="Pinpoint Internal Link  Pinpoint Content Card Read "
                   >
                     Read
                     <svg
@@ -4507,7 +4510,7 @@ exports[`Test no latest 1`] = `
                   className="button"
                 >
                   <span
-                    className="Pinpoint Internal Link  Content Card Read "
+                    className="Pinpoint Internal Link  Pinpoint Content Card Read "
                   >
                     Read
                     <svg
@@ -4675,7 +4678,7 @@ exports[`Test no latest 1`] = `
                   className="button"
                 >
                   <span
-                    className="Pinpoint Internal Link  Content Card Read "
+                    className="Pinpoint Internal Link  Pinpoint Content Card Read "
                   >
                     Read
                     <svg
@@ -4816,10 +4819,10 @@ exports[`Test no latest 1`] = `
     </div>
   </div>
   <div
-    className="footerWrapper"
+    className="Pinpoint footerWrapper"
   >
     <div
-      className="constraint"
+      className="Pinpoint constraint"
     >
       <div
         className="Pinpoint Footer "
@@ -4834,7 +4837,7 @@ exports[`Test no latest 1`] = `
               className="Pinpoint Copyright "
             >
               <span
-                className="Pinpoint Internal Link  Logo sm "
+                className="Pinpoint Internal Link  Pinpoint Logo sm "
               >
                 <img
                   className="image"
@@ -4852,7 +4855,7 @@ exports[`Test no latest 1`] = `
             className="right"
           >
             <a
-              className="Pinpoint Internal Link Subscribe visible "
+              className="Pinpoint Internal Link Pinpoint Subscribe visible "
               href="https://pinpoint.com"
             >
               <svg
@@ -4882,7 +4885,7 @@ exports[`Test no latest 1`] = `
               className="Pinpoint Social Bar "
             >
               <a
-                className="Pinpoint Internal Link Social Item Facebook  "
+                className="Pinpoint Internal Link Pinpoint Social Item Facebook  "
                 href="https://www.facebook.com/Pinpoint.Engineering"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -4905,7 +4908,7 @@ exports[`Test no latest 1`] = `
                 </svg>
               </a>
               <a
-                className="Pinpoint Internal Link Social Item Instagram  "
+                className="Pinpoint Internal Link Pinpoint Social Item Instagram  "
                 href="https://www.instagram.com/pinpoint_sw/"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -4928,7 +4931,7 @@ exports[`Test no latest 1`] = `
                 </svg>
               </a>
               <a
-                className="Pinpoint Internal Link Social Item Twitter  "
+                className="Pinpoint Internal Link Pinpoint Social Item Twitter  "
                 href="https://twitter.com/pinpoint_sw"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -4951,7 +4954,7 @@ exports[`Test no latest 1`] = `
                 </svg>
               </a>
               <a
-                className="Pinpoint Internal Link Social Item Github  "
+                className="Pinpoint Internal Link Pinpoint Social Item Github  "
                 href="https://github.com/pinpt"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -4974,7 +4977,7 @@ exports[`Test no latest 1`] = `
                 </svg>
               </a>
               <a
-                className="Pinpoint Internal Link Social Item LinkedIn  "
+                className="Pinpoint Internal Link Pinpoint Social Item LinkedIn  "
                 href="https://linkedin.com/company/pinpoint-software"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -4997,7 +5000,7 @@ exports[`Test no latest 1`] = `
                 </svg>
               </a>
               <a
-                className="Pinpoint Internal Link Social Item RSS "
+                className="Pinpoint Internal Link Pinpoint Social Item RSS "
                 href="https://api.pinpoint.com.so/rss/PirxVTE94u3YmGNOySRY"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -5026,6 +5029,7 @@ exports[`Test no latest 1`] = `
           className="powered"
         >
           <a
+            className="Pinpoint PoweredByPinpoint"
             href="https://pinpoint.com/?utm_source=referral&utm_medium=web&utm_campaign="
             style={
               Object {
@@ -5084,10 +5088,10 @@ exports[`Test no recent 1`] = `
   className="Pinpoint Page Dashboard "
 >
   <div
-    className="latestWrapper"
+    className="Pinpoint latestWrapper"
   >
     <div
-      className="constraint"
+      className="Pinpoint constraint"
     >
       <div
         className="Pinpoint Latest "
@@ -5132,7 +5136,7 @@ exports[`Test no recent 1`] = `
                   className="button"
                 >
                   <span
-                    className="Pinpoint Internal Link  Content Card Read "
+                    className="Pinpoint Internal Link  Pinpoint Content Card Read "
                   >
                     Read
                     <svg
@@ -5300,7 +5304,7 @@ exports[`Test no recent 1`] = `
                   className="button"
                 >
                   <span
-                    className="Pinpoint Internal Link  Content Card Read "
+                    className="Pinpoint Internal Link  Pinpoint Content Card Read "
                   >
                     Read
                     <svg
@@ -5441,10 +5445,10 @@ exports[`Test no recent 1`] = `
     </div>
   </div>
   <div
-    className="footerWrapper"
+    className="Pinpoint footerWrapper"
   >
     <div
-      className="constraint"
+      className="Pinpoint constraint"
     >
       <div
         className="Pinpoint Footer "
@@ -5459,7 +5463,7 @@ exports[`Test no recent 1`] = `
               className="Pinpoint Copyright "
             >
               <span
-                className="Pinpoint Internal Link  Logo sm "
+                className="Pinpoint Internal Link  Pinpoint Logo sm "
               >
                 <img
                   className="image"
@@ -5477,7 +5481,7 @@ exports[`Test no recent 1`] = `
             className="right"
           >
             <a
-              className="Pinpoint Internal Link Subscribe invisible "
+              className="Pinpoint Internal Link Pinpoint Subscribe invisible "
               href="https://pinpoint.com"
             >
               <svg
@@ -5507,7 +5511,7 @@ exports[`Test no recent 1`] = `
               className="Pinpoint Social Bar "
             >
               <a
-                className="Pinpoint Internal Link Social Item Facebook  "
+                className="Pinpoint Internal Link Pinpoint Social Item Facebook  "
                 href="https://www.facebook.com/Pinpoint.Engineering"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -5530,7 +5534,7 @@ exports[`Test no recent 1`] = `
                 </svg>
               </a>
               <a
-                className="Pinpoint Internal Link Social Item Instagram  "
+                className="Pinpoint Internal Link Pinpoint Social Item Instagram  "
                 href="https://www.instagram.com/pinpoint_sw/"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -5553,7 +5557,7 @@ exports[`Test no recent 1`] = `
                 </svg>
               </a>
               <a
-                className="Pinpoint Internal Link Social Item Twitter  "
+                className="Pinpoint Internal Link Pinpoint Social Item Twitter  "
                 href="https://twitter.com/pinpoint_sw"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -5576,7 +5580,7 @@ exports[`Test no recent 1`] = `
                 </svg>
               </a>
               <a
-                className="Pinpoint Internal Link Social Item Github  "
+                className="Pinpoint Internal Link Pinpoint Social Item Github  "
                 href="https://github.com/pinpt"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -5599,7 +5603,7 @@ exports[`Test no recent 1`] = `
                 </svg>
               </a>
               <a
-                className="Pinpoint Internal Link Social Item LinkedIn  "
+                className="Pinpoint Internal Link Pinpoint Social Item LinkedIn  "
                 href="https://linkedin.com/company/pinpoint-software"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -5622,7 +5626,7 @@ exports[`Test no recent 1`] = `
                 </svg>
               </a>
               <a
-                className="Pinpoint Internal Link Social Item RSS "
+                className="Pinpoint Internal Link Pinpoint Social Item RSS "
                 href="https://api.pinpoint.com.so/rss/PirxVTE94u3YmGNOySRY"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -5651,6 +5655,7 @@ exports[`Test no recent 1`] = `
           className="powered"
         >
           <a
+            className="Pinpoint PoweredByPinpoint"
             href="https://pinpoint.com/?utm_source=referral&utm_medium=web&utm_campaign="
             style={
               Object {

@@ -4,24 +4,24 @@
 
 #### Theming
 
-The parent className for styling this component is `.Statistic`
+The parent className for styling this component is `.Pinpoint.Statistic`
 
-Each sub-component has its own class as well, `.Views`, `.Claps`, and `.Bar`
+Each sub-component has its own class as well, `.Pinpoint.Views`, `.Pinpoint.Claps`, and `.Pinpoint.Bar`
 
 <details>
 	<summary>Base Theme Styles</summary>
 
 ```css
-.Statistic.wrapper {
+.Pinpoint.Statistic.wrapper {
 	@apply flex items-center;
 	color: var(--card-info-color);
 }
 
-.Statistic .count {
+.Pinpoint.Statistic .count {
 	@apply ml-2;
 }
 
-.Statistic.Bar .Statistic.Views.wrapper {
+.Pinpoint.Statistic.Bar .Statistic.Views.wrapper {
 	@apply mr-4;
 }
 ```

@@ -98,7 +98,7 @@ const SubscribeForm = (props: SubscribeFormProps) => {
 	}, [email]);
 	const _hidden = ready ? !success && hidden : true;
 	return (
-		<div className={`SubscribeForm wrapper ${_hidden ? 'invisible' : 'visible'} ${className}`}>
+		<div className={`Pinpoint SubscribeForm wrapper ${_hidden ? 'invisible' : 'visible'} ${className}`}>
 			<div className="inner">
 				<div className="input">
 					<input

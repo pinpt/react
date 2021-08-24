@@ -1,7 +1,5 @@
 import { ReactElement } from 'react';
 import { splitEntries } from '../../../lib';
-import Header from '../Header';
-import Footer from '../Footer';
 import Card from '../../Card';
 import { ICardContainerProps } from '../../Card/Container';
 import { ICardDescriptionProps } from '../../Card/Description';
@@ -24,6 +22,8 @@ import { ISubscribeProps } from '../../Subscribe';
 import Tags from '../../Tags';
 import { ITagBarProps } from '../../Tags/Bar';
 import { IThemeToggleProps } from '../../ThemeToggle';
+import Footer from '../Footer';
+import Header from '../Header';
 
 import type { Analytics, IContent, ISite } from '../../../lib/types';
 export interface IPrebuiltHomeProps {

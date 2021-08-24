@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from 'react';
+import { fetchContentPaginated, FetchContentPaginatedResult } from '../../data/content';
 import { AnalyticsResult, fetchAnalytics } from '../../data/site';
 import { IPinpointConfig } from '../../types';
-import { fetchContentPaginated, FetchContentPaginatedResult } from '../../data/content';
 
 const useEntries = (config: IPinpointConfig, offset?: number) => {
 	const [loading, setLoading] = useState(true);
@@ -15,7 +15,7 @@ const useEntries = (config: IPinpointConfig, offset?: number) => {
 			setError('');
 			const res = await fetchContentPaginated(config, {
 				offset,
-				limit: config.pageSize,
+				limit: config.pageSize ?? 11,
 				before: true,
 				after: true,
 				site: true,

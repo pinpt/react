@@ -11,7 +11,7 @@ exports[`Test custom className 1`] = `
       className="left"
     >
       <a
-        className="Pinpoint Internal Link Logo sm Prebuilt"
+        className="Pinpoint Internal Link Pinpoint Logo sm Prebuilt"
         href="https://pinpoint.com"
         title="Header Logo Home Page"
       >
@@ -89,7 +89,7 @@ exports[`Test custom className 1`] = `
       className="action"
     >
       <a
-        className="Pinpoint Internal Link Subscribe visible Prebuilt"
+        className="Pinpoint Internal Link Pinpoint Subscribe visible Prebuilt"
         href="/subscription/subscribe"
       >
         <svg
@@ -131,7 +131,7 @@ exports[`Test default state 1`] = `
       className="left"
     >
       <a
-        className="Pinpoint Internal Link Logo sm Prebuilt"
+        className="Pinpoint Internal Link Pinpoint Logo sm Prebuilt"
         href="https://pinpoint.com"
         title="Header Logo Home Page"
       >
@@ -209,7 +209,7 @@ exports[`Test default state 1`] = `
       className="action"
     >
       <a
-        className="Pinpoint Internal Link Subscribe invisible Prebuilt"
+        className="Pinpoint Internal Link Pinpoint Subscribe invisible Prebuilt"
         href="/subscription/subscribe"
       >
         <svg

@@ -2,7 +2,7 @@
 
 exports[`Test click handler 1`] = `
 <span
-  className="Pinpoint Internal Link clickable Social Item Github  "
+  className="Pinpoint Internal Link clickable Pinpoint Social Item Github  "
   onClick={[Function]}
 >
   <svg
@@ -26,7 +26,7 @@ exports[`Test click handler 1`] = `
 
 exports[`Test custom className 1`] = `
 <span
-  className="Pinpoint Internal Link  Social Item Github  custom-test"
+  className="Pinpoint Internal Link  Pinpoint Social Item Github  custom-test"
 >
   <svg
     aria-hidden="true"
@@ -49,7 +49,7 @@ exports[`Test custom className 1`] = `
 
 exports[`Test default state 1`] = `
 <span
-  className="Pinpoint Internal Link  Social Item Github  "
+  className="Pinpoint Internal Link  Pinpoint Social Item Github  "
 >
   <svg
     aria-hidden="true"
@@ -72,7 +72,7 @@ exports[`Test default state 1`] = `
 
 exports[`Test link (new tab) 1`] = `
 <a
-  className="Pinpoint Internal Link Social Item Github  "
+  className="Pinpoint Internal Link Pinpoint Social Item Github  "
   href="https://github.com/pinpt"
   rel="noopener noreferrer"
   target="_blank"
@@ -98,7 +98,7 @@ exports[`Test link (new tab) 1`] = `
 
 exports[`Test link 1`] = `
 <a
-  className="Pinpoint Internal Link Social Item Github  "
+  className="Pinpoint Internal Link Pinpoint Social Item Github  "
   href="https://github.com/pinpt"
 >
   <svg

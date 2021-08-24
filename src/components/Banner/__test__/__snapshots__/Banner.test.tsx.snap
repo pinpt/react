@@ -2,7 +2,7 @@
 
 exports[`Test empty state 1`] = `
 <div
-  className="Banner wrapper bg-yellow-500 text-yellow-900"
+  className="Pinpoint Banner wrapper bg-yellow-500 text-yellow-900"
 >
   <div
     className="inner"
@@ -12,7 +12,7 @@ exports[`Test empty state 1`] = `
 
 exports[`Test with children 1`] = `
 <div
-  className="Banner wrapper bg-yellow-500 text-yellow-900"
+  className="Pinpoint Banner wrapper bg-yellow-500 text-yellow-900"
 >
   <div
     className="inner"
@@ -24,7 +24,7 @@ exports[`Test with children 1`] = `
 
 exports[`Test with className 1`] = `
 <div
-  className="Banner wrapper bg-red-500 text-white"
+  className="Pinpoint Banner wrapper bg-red-500 text-white"
 >
   <div
     className="inner"
@@ -36,7 +36,7 @@ exports[`Test with className 1`] = `
 
 exports[`Test with message 1`] = `
 <div
-  className="Banner wrapper bg-yellow-500 text-yellow-900"
+  className="Pinpoint Banner wrapper bg-yellow-500 text-yellow-900"
 >
   <div
     className="inner"
@@ -67,7 +67,7 @@ exports[`Test with message 1`] = `
 
 exports[`Test with message and icon 1`] = `
 <div
-  className="Banner wrapper bg-yellow-500 text-yellow-900"
+  className="Pinpoint Banner wrapper bg-yellow-500 text-yellow-900"
 >
   <div
     className="inner"

@@ -4,42 +4,42 @@
 
 #### Theming
 
-The parent className for styling this component is `.Logo`
+The parent className for styling this component is `.Pinpoint.Logo`
 
 <details>
 	<summary>Base Theme Styles</summary>
 
 ```css
-.Logo {
+.Pinpoint.Logo {
 	@apply block rounded-full overflow-hidden;
 }
 
-.Logo.xs {
+.Pinpoint.Logo.xs {
 	width: 22px;
 	height: 22px;
 }
 
-.Logo.sm {
+.Pinpoint.Logo.sm {
 	width: 32px;
 	height: 32px;
 }
 
-.Logo.md {
+.Pinpoint.Logo.md {
 	width: 42px;
 	height: 42px;
 }
 
-.Logo.lg {
+.Pinpoint.Logo.lg {
 	width: 52px;
 	height: 52px;
 }
 
-.Logo.xl {
+.Pinpoint.Logo.xl {
 	width: 62px;
 	height: 62px;
 }
 
-.Logo .image {
+.Pinpoint.Logo .image {
 	width: 100%;
 	height: 100%;
 }

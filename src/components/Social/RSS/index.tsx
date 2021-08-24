@@ -5,7 +5,7 @@ const RSS = (props: ISocialProps) => {
 	const { className = '', ...rest } = props;
 
 	return (
-		<ActionLink className={`Social Item RSS ${className}`} {...rest}>
+		<ActionLink className={`Pinpoint Social Item RSS ${className}`} {...rest}>
 			<svg
 				width={12.25}
 				height={14}

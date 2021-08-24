@@ -4,13 +4,13 @@
 
 #### Theming
 
-The parent className for styling this component is `.Banner`
+The parent className for styling this component is `.Pinpoint.Banner`
 
 <details>
 	<summary>Base Theme Styles</summary>
 
 ```css
-.Banner.wrapper {
+.Pinpoint.Banner.wrapper {
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -20,7 +20,7 @@ The parent className for styling this component is `.Banner`
 	color: rgb(120, 53, 15);
 }
 
-.Banner .inner {
+.Pinpoint.Banner .inner {
 	display: flex;
 	align-items: center;
 	flex-direction: row;
@@ -28,7 +28,7 @@ The parent className for styling this component is `.Banner`
 	max-width: 80rem;
 }
 
-.Banner.icon {
+.Pinpoint.Banner.icon {
 	margin-right: 0.5rem;
 	width: 1rem;
 	height: 1rem;

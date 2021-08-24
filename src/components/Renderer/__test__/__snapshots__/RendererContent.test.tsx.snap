@@ -2,7 +2,7 @@
 
 exports[`Test empty doc 1`] = `
 <div
-  className="document"
+  className="Pinpoint document"
 >
   <p />
 </div>
@@ -10,7 +10,7 @@ exports[`Test empty doc 1`] = `
 
 exports[`Test simple H1 1`] = `
 <div
-  className="document"
+  className="Pinpoint document"
 >
   <h1
     className="heading"
@@ -46,7 +46,7 @@ exports[`Test simple H1 1`] = `
 
 exports[`Test simple H2 1`] = `
 <div
-  className="document"
+  className="Pinpoint document"
 >
   <h2>
     Heading
@@ -56,7 +56,7 @@ exports[`Test simple H2 1`] = `
 
 exports[`Test simple H3 1`] = `
 <div
-  className="document"
+  className="Pinpoint document"
 >
   <h3>
     Heading
@@ -66,7 +66,7 @@ exports[`Test simple H3 1`] = `
 
 exports[`Test simple H4 1`] = `
 <div
-  className="document"
+  className="Pinpoint document"
 >
   <h4>
     Heading
@@ -76,7 +76,7 @@ exports[`Test simple H4 1`] = `
 
 exports[`Test simple blockquote 1`] = `
 <div
-  className="document"
+  className="Pinpoint document"
 >
   <blockquote>
     Hi
@@ -86,7 +86,7 @@ exports[`Test simple blockquote 1`] = `
 
 exports[`Test simple break 1`] = `
 <div
-  className="document"
+  className="Pinpoint document"
 >
   <br />
 </div>
@@ -94,7 +94,7 @@ exports[`Test simple break 1`] = `
 
 exports[`Test simple bullet list 1`] = `
 <div
-  className="document"
+  className="Pinpoint document"
 >
   <ul>
     <li>
@@ -106,7 +106,7 @@ exports[`Test simple bullet list 1`] = `
 
 exports[`Test simple code block 1`] = `
 <div
-  className="document"
+  className="Pinpoint document"
 >
   <pre
     style={
@@ -221,7 +221,7 @@ exports[`Test simple code block 1`] = `
 
 exports[`Test simple emoji 1`] = `
 <div
-  className="document"
+  className="Pinpoint document"
 >
   <span
     className="emoji"
@@ -234,7 +234,7 @@ exports[`Test simple emoji 1`] = `
 
 exports[`Test simple error notice 1`] = `
 <div
-  className="document"
+  className="Pinpoint document"
 >
   <div
     className="notice error"
@@ -269,7 +269,7 @@ exports[`Test simple error notice 1`] = `
 
 exports[`Test simple hr 1`] = `
 <div
-  className="document"
+  className="Pinpoint document"
 >
   <div
     className="hr"
@@ -283,7 +283,7 @@ exports[`Test simple hr 1`] = `
 
 exports[`Test simple image block 1`] = `
 <div
-  className="document"
+  className="Pinpoint document"
 >
   <div
     className="image_block undefined"
@@ -310,7 +310,7 @@ exports[`Test simple image block 1`] = `
 
 exports[`Test simple image block with link 1`] = `
 <div
-  className="document"
+  className="Pinpoint document"
 >
   <div
     className="image_block undefined"
@@ -343,7 +343,7 @@ exports[`Test simple image block with link 1`] = `
 
 exports[`Test simple info notice 1`] = `
 <div
-  className="document"
+  className="Pinpoint document"
 >
   <div
     className="notice info"
@@ -378,7 +378,7 @@ exports[`Test simple info notice 1`] = `
 
 exports[`Test simple inline image 1`] = `
 <div
-  className="document"
+  className="Pinpoint document"
 >
   <div>
     <img
@@ -392,7 +392,7 @@ exports[`Test simple inline image 1`] = `
 
 exports[`Test simple inline image with link 1`] = `
 <div
-  className="document"
+  className="Pinpoint document"
 >
   <div>
     <a
@@ -412,7 +412,7 @@ exports[`Test simple inline image with link 1`] = `
 
 exports[`Test simple ordered list 1`] = `
 <div
-  className="document"
+  className="Pinpoint document"
 >
   <ol>
     <li>
@@ -424,7 +424,7 @@ exports[`Test simple ordered list 1`] = `
 
 exports[`Test simple paragraph 1`] = `
 <div
-  className="document"
+  className="Pinpoint document"
 >
   <p>
     Hi
@@ -434,7 +434,7 @@ exports[`Test simple paragraph 1`] = `
 
 exports[`Test simple text 1`] = `
 <div
-  className="document"
+  className="Pinpoint document"
 >
   Hi
 </div>
@@ -442,7 +442,7 @@ exports[`Test simple text 1`] = `
 
 exports[`Test simple warning notice 1`] = `
 <div
-  className="document"
+  className="Pinpoint document"
 >
   <div
     className="notice warning"

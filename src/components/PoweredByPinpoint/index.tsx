@@ -7,6 +7,7 @@ const PoweredByPinpoint = (props: IPoweredByPinpointProps) => {
 
 	return (
 		<a
+			className="Pinpoint PoweredByPinpoint"
 			href={`https://pinpoint.com/?utm_source=referral&utm_medium=web&utm_campaign=${siteId}`}
 			style={{ display: 'flex', alignItems: 'center', margin: 'auto', textDecoration: 'none', color: 'inherit' }}
 		>

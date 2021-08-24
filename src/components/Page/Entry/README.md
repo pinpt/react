@@ -8,66 +8,66 @@ _If you are using the prebuilt components, this is done for you._
 
 #### Theming
 
-The parent className for styling this component is `.Page.Entry`
+The parent className for styling this component is `.Pinpoint.Page.Entry`
 
 <details>
 	<summary>Base Theme Styles</summary>
 
 ```css
-.Page.Entry {
+.Pinpoint.Page.Entry {
 	@apply flex flex-col h-screen;
 }
 
-.entryWrapper {
+.Pinpoint.entryWrapper {
 	@apply flex-grow;
 	background-color: var(--article-bg-color);
 }
 
-.entryWrapper .entry {
+.Pinpoint.entryWrapper .entry {
 	@apply py-10 md:py-14 flex flex-col md:flex-row border-t;
 	border-color: var(--section-border-color);
 }
 
-.entryWrapper .entry .content {
+.Pinpoint.entryWrapper .entry .content {
 	@apply flex-grow;
 }
 
-.entryWrapper .entry article {
+.Pinpoint.entryWrapper .entry article {
 	@apply flex-grow;
 }
 
-.entryWrapper .sidebarWrapper {
+.Pinpoint.entryWrapper .sidebarWrapper {
 	color: var(--article-info-color);
 }
 
-.entryWrapper .sidebarWrapper.before {
+.Pinpoint.entryWrapper .sidebarWrapper.before {
 	@apply md:mr-4 mb-8 md:mb-0 min-w-1/4;
 }
 
-.entryWrapper .sidebarWrapper.before .Sidebar {
+.Pinpoint.entryWrapper .sidebarWrapper.before .Sidebar {
 	@apply flex-shrink-0 flex-wrap;
 }
 
-.entryWrapper .sidebarWrapper.before .Clap,
-.entryWrapper .sidebarWrapper.before .Social.Bar {
+.Pinpoint.entryWrapper .sidebarWrapper.before .Clap,
+.Pinpoint.entryWrapper .sidebarWrapper.before .Social.Bar {
 	@apply hidden md:flex;
 }
 
-.entryWrapper .sidebarWrapper.after {
+.Pinpoint.entryWrapper .sidebarWrapper.after {
 	@apply md:hidden;
 }
 
-.entryWrapper .sidebarWrapper.after .Sidebar {
+.Pinpoint.entryWrapper .sidebarWrapper.after .Sidebar {
 	@apply justify-between;
 }
 
-.entryWrapper .sidebarWrapper.after .Date,
-.entryWrapper .sidebarWrapper.after .Author,
-.entryWrapper .sidebarWrapper.after .Tag.Bar {
+.Pinpoint.entryWrapper .sidebarWrapper.after .Date,
+.Pinpoint.entryWrapper .sidebarWrapper.after .Author,
+.Pinpoint.entryWrapper .sidebarWrapper.after .Tag.Bar {
 	@apply hidden;
 }
 
-.entryWrapper .renderer {
+.Pinpoint.entryWrapper .renderer {
 	@apply mb-10 md:mb-14;
 	color: var(--article-text-color);
 }
