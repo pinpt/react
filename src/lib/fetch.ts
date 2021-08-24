@@ -33,7 +33,8 @@ export const executeAPI = async (
 	config: Omit<IPinpointConfig, 'pageSize'>,
 	relpath: string,
 	method = 'GET',
-	data?: any
+	data?: any,
+	cors?: boolean
 ) => {
 	const headers: any = {};
 	if (data) {
@@ -55,6 +56,7 @@ export const executeAPI = async (
 		method,
 		headers,
 		body: data ? JSON.stringify(data) : undefined,
+		credentials: cors ? 'include' : undefined,
 	});
 	if (res.ok) {
 		const resdata = await res.json();
