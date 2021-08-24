@@ -6,7 +6,7 @@ exports[`Test custom class with empty state 1`] = `
   onClick={[Function]}
 >
   <div
-    className="Clap icon "
+    className="Pinpoint Clap icon "
   >
     <svg
       fill="none"
@@ -74,10 +74,10 @@ exports[`Test custom class with empty state 1`] = `
     </svg>
   </div>
   <div
-    className="Clap counter active"
+    className="Pinpoint Clap counter active"
   />
   <div
-    className="Clap notice "
+    className="Pinpoint Clap notice "
   >
     +
     0
@@ -91,7 +91,7 @@ exports[`Test custom class with large number 1`] = `
   onClick={[Function]}
 >
   <div
-    className="Clap icon "
+    className="Pinpoint Clap icon "
   >
     <svg
       fill="none"
@@ -159,12 +159,12 @@ exports[`Test custom class with large number 1`] = `
     </svg>
   </div>
   <div
-    className="Clap counter active"
+    className="Pinpoint Clap counter active"
   >
     2k
   </div>
   <div
-    className="Clap notice "
+    className="Pinpoint Clap notice "
   >
     +
     0
@@ -178,7 +178,7 @@ exports[`Test empty state 1`] = `
   onClick={[Function]}
 >
   <div
-    className="Clap icon "
+    className="Pinpoint Clap icon "
   >
     <svg
       fill="none"
@@ -246,10 +246,10 @@ exports[`Test empty state 1`] = `
     </svg>
   </div>
   <div
-    className="Clap counter active"
+    className="Pinpoint Clap counter active"
   />
   <div
-    className="Clap notice "
+    className="Pinpoint Clap notice "
   >
     +
     0
@@ -263,7 +263,7 @@ exports[`Test large number 1`] = `
   onClick={[Function]}
 >
   <div
-    className="Clap icon "
+    className="Pinpoint Clap icon "
   >
     <svg
       fill="none"
@@ -331,12 +331,12 @@ exports[`Test large number 1`] = `
     </svg>
   </div>
   <div
-    className="Clap counter active"
+    className="Pinpoint Clap counter active"
   >
     2k
   </div>
   <div
-    className="Clap notice "
+    className="Pinpoint Clap notice "
   >
     +
     0
