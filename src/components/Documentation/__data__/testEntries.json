@@ -1,0 +1,1043 @@
+[
+	{
+		"id": "oroH8YQr4vufOiVTRND4",
+		"type": "changelog",
+		"commit": "2379f5f0-34af-4a1d-a813-ef79ee7d7793",
+		"document": {
+			"type": "doc",
+			"content": [
+				{
+					"type": "heading",
+					"attrs": {
+						"level": 1,
+						"align": "left",
+						"selectionName": "h1",
+						"placeholder": ""
+					},
+					"content": [
+						{
+							"type": "text",
+							"text": "Linked Content Blocks"
+						}
+					]
+				},
+				{
+					"type": "paragraph",
+					"attrs": {
+						"align": "left"
+					},
+					"content": [
+						{
+							"type": "text",
+							"text": "Linked content blocks allow you to quickly populate your changelog from the recently completed work. Annotations show you which issues and pull requests are linked to features. There are blocks for showing rich content about a new feature, and for quickly building a list of small improvements and bug fixes."
+						}
+					]
+				},
+				{
+					"type": "image_block",
+					"attrs": {
+						"src": "https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png",
+						"scale": 0.52,
+						"align": "center"
+					}
+				},
+				{
+					"type": "paragraph",
+					"attrs": {
+						"align": "left"
+					},
+					"content": [
+						{
+							"type": "text",
+							"text": "Linked content blocks can be created while in the editor, or better, by using our new and improved "
+						},
+						{
+							"type": "text",
+							"text": "Planning",
+							"marks": [
+								{
+									"type": "strong",
+									"attrs": {}
+								}
+							]
+						},
+						{
+							"type": "text",
+							"text": " tool."
+						}
+					]
+				},
+				{
+					"type": "heading",
+					"attrs": {
+						"level": 1,
+						"align": "left",
+						"selectionName": "h1",
+						"placeholder": ""
+					},
+					"content": [
+						{
+							"type": "text",
+							"text": "Grouping in Planning"
+						}
+					]
+				},
+				{
+					"type": "image_block",
+					"attrs": {
+						"src": "https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png",
+						"scale": 0.36,
+						"align": "center"
+					}
+				},
+				{
+					"type": "paragraph",
+					"attrs": {
+						"align": "left"
+					},
+					"content": [
+						{
+							"type": "text",
+							"text": "You can now group related issues and pull requests and link them to the same content in your changelog. This is really handy when you have multiple pieces of work which contributed to a new feature. "
+						}
+					]
+				},
+				{
+					"type": "paragraph",
+					"attrs": {
+						"align": "left"
+					},
+					"content": [
+						{
+							"type": "text",
+							"text": "We’re working on some great new features around planning and populating your changelogs, "
+						},
+						{
+							"type": "text",
+							"text": "subscribe to ",
+							"marks": [
+								{
+									"type": "link",
+									"attrs": {
+										"href": "https://changelog.pinpoint.com/subscription/subscribe/PirxVTE94u3YmGNOySRY",
+										"linked": false
+									}
+								}
+							]
+						},
+						{
+							"type": "text",
+							"text": "our",
+							"marks": [
+								{
+									"type": "link",
+									"attrs": {
+										"href": "https://changelog.pinpoint.com/subscription/subscribe/PirxVTE94u3YmGNOySRY",
+										"linked": false
+									}
+								},
+								{
+									"type": "em",
+									"attrs": {}
+								}
+							]
+						},
+						{
+							"type": "text",
+							"text": " changelog",
+							"marks": [
+								{
+									"type": "link",
+									"attrs": {
+										"href": "https://changelog.pinpoint.com/subscription/subscribe/PirxVTE94u3YmGNOySRY",
+										"linked": false
+									}
+								}
+							]
+						},
+						{
+							"type": "text",
+							"text": " to stay up to date with the latest."
+						}
+					]
+				}
+			]
+		},
+		"url": "https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks",
+		"publishedAt": 1627913810147,
+		"tags": ["feature", "improvement"],
+		"title": "🔗 Linked Content Blocks",
+		"headline": "Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.",
+		"authors": [
+			{
+				"id": "sVuB6FVSWcczkiwI3Md3En6Gttz1",
+				"firstName": "Chris",
+				"lastName": "Bowley",
+				"avatarUrl": "https://lh3.googleusercontent.com/a-/AOh14GjYVVdtI8V5EAYfRDxOHzuSGul5Sdl01MfGGN9K=s96-c?rw=128&rh=128"
+			}
+		]
+	},
+	{
+		"id": "XDF0NAdmohIPYGW0EABP",
+		"type": "changelog",
+		"commit": "f8ae0af0-400a-44c2-922d-8e9bfc0973a7",
+		"document": {
+			"type": "doc",
+			"content": [
+				{
+					"type": "heading",
+					"attrs": {
+						"level": 1,
+						"align": "left",
+						"selectionName": "h1",
+						"placeholder": ""
+					},
+					"content": [
+						{
+							"type": "text",
+							"text": "Publishing Controls"
+						}
+					]
+				},
+				{
+					"type": "paragraph",
+					"attrs": {
+						"align": "left"
+					},
+					"content": [
+						{
+							"type": "text",
+							"text": "When you publish a changelog you will now see a new Publish dialog which grants finer control over when you want to notify your subscribers."
+						}
+					]
+				},
+				{
+					"type": "image_block",
+					"attrs": {
+						"src": "https://file.pinpoint.com/bab9656158820022a480aea23dce8a39;UDP6~%24-%3B00-%3D~XIoV%5Bt700xa%25fRi-%3Bs-aeof;1500x1000.png",
+						"scale": 0.54,
+						"align": "center"
+					}
+				},
+				{
+					"type": "paragraph",
+					"attrs": {
+						"align": "left"
+					},
+					"content": [
+						{
+							"type": "text",
+							"text": "In addition, you can now post directly to "
+						},
+						{
+							"type": "text",
+							"text": "Twitter",
+							"marks": [
+								{
+									"type": "strong",
+									"attrs": {}
+								}
+							]
+						},
+						{
+							"type": "text",
+							"text": " and "
+						},
+						{
+							"type": "text",
+							"text": "LinkedIn",
+							"marks": [
+								{
+									"type": "strong",
+									"attrs": {}
+								}
+							]
+						},
+						{
+							"type": "text",
+							"text": " when you publish your changelog.  "
+						}
+					]
+				},
+				{
+					"type": "paragraph",
+					"attrs": {
+						"align": "left"
+					},
+					"content": [
+						{
+							"type": "text",
+							"text": "To set up the Twitter integration simply click "
+						},
+						{
+							"type": "text",
+							"text": "Settings→Integrations",
+							"marks": [
+								{
+									"type": "strong",
+									"attrs": {}
+								},
+								{
+									"type": "link",
+									"attrs": {
+										"href": "https://home.pinpoint.com/pinpoint/settings/integrations",
+										"linked": false
+									}
+								}
+							]
+						},
+						{
+							"type": "text",
+							"text": "."
+						}
+					]
+				}
+			]
+		},
+		"url": "https://changelog.pinpoint.com/entry/9gOsjHBg7tHtNllBWrY8/Publishing-Controls-and-Social-Posting",
+		"publishedAt": 1627632876480,
+		"tags": ["feature"],
+		"title": "📢 Publishing Controls",
+		"headline": "When you publish a changelog you will now see a new Publish dialog which grants finer control over when you want to notify your subscribers.",
+		"authors": [
+			{
+				"id": "sVuB6FVSWcczkiwI3Md3En6Gttz1",
+				"firstName": "Chris",
+				"lastName": "Bowley",
+				"avatarUrl": "https://lh3.googleusercontent.com/a-/AOh14GjYVVdtI8V5EAYfRDxOHzuSGul5Sdl01MfGGN9K=s96-c?rw=128&rh=128"
+			}
+		]
+	},
+	{
+		"id": "Cq4Ong4PJwMYygleMjvk",
+		"type": "changelog",
+		"commit": "d37d495d-d279-4237-8963-578e63931108",
+		"document": {
+			"type": "doc",
+			"content": [
+				{
+					"type": "heading",
+					"attrs": {
+						"level": 1,
+						"align": "left",
+						"selectionName": "h1",
+						"placeholder": ""
+					},
+					"content": [
+						{
+							"type": "text",
+							"text": "Changelog Planning"
+						}
+					]
+				},
+				{
+					"type": "paragraph",
+					"attrs": {
+						"align": "left"
+					},
+					"content": [
+						{
+							"type": "text",
+							"text": "We could not be more excited to announce this feature 📣  This was born through our own use of the product after we integrated with GitHub.  Once you integrate an issue or code system you will see "
+						},
+						{
+							"type": "text",
+							"text": "Planning ",
+							"marks": [
+								{
+									"type": "strong",
+									"attrs": {}
+								}
+							]
+						},
+						{
+							"type": "text",
+							"text": "populated with your recently completed issues or closed PRs.  The idea 💡 here is pretty simple, and fun 🕺🏻, any item that is completed will show up for a decision.  Is this "
+						},
+						{
+							"type": "text",
+							"text": "For Consideration",
+							"marks": [
+								{
+									"type": "strong",
+									"attrs": {}
+								}
+							]
+						},
+						{
+							"type": "text",
+							"text": " ( should be included at some point ) or "
+						},
+						{
+							"type": "text",
+							"text": "Excluded ",
+							"marks": [
+								{
+									"type": "strong",
+									"attrs": {}
+								}
+							]
+						},
+						{
+							"type": "text",
+							"text": "( doesn’t need to be announced ), that’s it.  Once you do that you can begin grouping items and moving them to "
+						},
+						{
+							"type": "text",
+							"text": "Ready",
+							"marks": [
+								{
+									"type": "strong",
+									"attrs": {}
+								}
+							]
+						},
+						{
+							"type": "text",
+							"text": " ✅."
+						}
+					]
+				},
+				{
+					"type": "paragraph",
+					"attrs": {
+						"align": "left"
+					},
+					"content": [
+						{
+							"type": "text",
+							"text": "While you are moving things around you can have discussions with your teams about certain items by using comments.  Simply click the "
+						},
+						{
+							"type": "text",
+							"text": "Comment",
+							"marks": [
+								{
+									"type": "strong",
+									"attrs": {}
+								}
+							]
+						},
+						{
+							"type": "text",
+							"text": " 💬 icon to start a dialogue and that conversation will follow the card throughout the app.  Once you are ready to "
+						},
+						{
+							"type": "text",
+							"text": "Publish",
+							"marks": [
+								{
+									"type": "strong",
+									"attrs": {}
+								}
+							]
+						},
+						{
+							"type": "text",
+							"text": " the changelog simply click the "
+						},
+						{
+							"type": "text",
+							"text": "+ ",
+							"marks": [
+								{
+									"type": "strong",
+									"attrs": {}
+								},
+								{
+									"type": "mark",
+									"attrs": {
+										"style": "",
+										"color": "green"
+									}
+								}
+							]
+						},
+						{
+							"type": "text",
+							"text": "at the top of the "
+						},
+						{
+							"type": "text",
+							"text": "Ready",
+							"marks": [
+								{
+									"type": "strong",
+									"attrs": {}
+								}
+							]
+						},
+						{
+							"type": "text",
+							"text": " column and a new changelog will be created and is ready for you to update and publish.  "
+						}
+					]
+				},
+				{
+					"type": "image_block",
+					"attrs": {
+						"src": "https://file.changelog.so/d5e05915885dd5f587a2b68b7cbff545;UFQvzXt.%3AT*Gs8aJTJt901V%40XQw%7BWEM%7BNFVt;3264x1649.gif",
+						"scale": 0.24816176470588236,
+						"align": "center"
+					}
+				},
+				{
+					"type": "paragraph",
+					"attrs": {
+						"align": "left"
+					},
+					"content": [
+						{
+							"type": "text",
+							"text": "If you return to "
+						},
+						{
+							"type": "text",
+							"text": "Planning",
+							"marks": [
+								{
+									"type": "strong",
+									"attrs": {}
+								}
+							]
+						},
+						{
+							"type": "text",
+							"text": " you will now see that there is nothing under "
+						},
+						{
+							"type": "text",
+							"text": "Ready",
+							"marks": [
+								{
+									"type": "strong",
+									"attrs": {}
+								}
+							]
+						},
+						{
+							"type": "text",
+							"text": " or "
+						},
+						{
+							"type": "text",
+							"text": "Excluded",
+							"marks": [
+								{
+									"type": "strong",
+									"attrs": {}
+								}
+							]
+						},
+						{
+							"type": "text",
+							"text": " which is by design.  "
+						},
+						{
+							"type": "text",
+							"text": "Excluded",
+							"marks": [
+								{
+									"type": "strong",
+									"attrs": {}
+								}
+							]
+						},
+						{
+							"type": "text",
+							"text": " items are flagged and hidden upon creation of a new changelog and if an item is added to a changelog it is now linked to it.  Don’t worry if you end up removing a linked item it will move back to the appropriate column when you return to "
+						},
+						{
+							"type": "text",
+							"text": "Planning",
+							"marks": [
+								{
+									"type": "strong",
+									"attrs": {}
+								}
+							]
+						},
+						{
+							"type": "text",
+							"text": "."
+						}
+					]
+				},
+				{
+					"type": "paragraph",
+					"attrs": {
+						"align": "left"
+					},
+					"content": [
+						{
+							"type": "text",
+							"text": "Give it a shot and let us know what you think, it’s been a gamechanger for us and we are excited to see how it helps you build beautiful changelogs in less time."
+						}
+					]
+				}
+			]
+		},
+		"url": "https://changelog.pinpoint.com/entry/StE5jjCjm9Yc0asGFGLZ/Changelog-planning-just-got-way-simpler",
+		"publishedAt": 1626889309758,
+		"tags": ["feature"],
+		"title": "🧭 Changelog planning",
+		"headline": "We could not be more excited to announce this feature 📣  This was born through our own use of the product after we integrated with GitHub.  Once you integrate an issue or code system you will see \nPlanning \npopulated with your recently completed...",
+		"authors": [
+			{
+				"id": "usCMWZ7xVAREEeuvl5ucfrwXz3Q2",
+				"firstName": "Scott",
+				"lastName": "Davenport",
+				"avatarUrl": "https://lh3.googleusercontent.com/a-/AOh14GimoF4Ch_ezE7YfILafD1Ilw551yHz7R5sDbQMAQA=s96-c?rw=128&rh=128"
+			}
+		]
+	},
+	{
+		"id": "CbenrdtHI5j23nXmv5bs",
+		"type": "changelog",
+		"commit": "a25dfa60-d9ec-4bf4-b83b-bb28d40618b6",
+		"document": {
+			"type": "doc",
+			"content": [
+				{
+					"type": "heading",
+					"attrs": {
+						"level": 1,
+						"align": "left",
+						"selectionName": "h1",
+						"placeholder": ""
+					},
+					"content": [
+						{
+							"type": "text",
+							"text": "Email Validation 🔍"
+						}
+					]
+				},
+				{
+					"type": "paragraph",
+					"attrs": {
+						"align": "left"
+					},
+					"content": [
+						{
+							"type": "text",
+							"text": "As new users subscribe to your changelog you will be able to quickly see if they have verified and validated their email addresses with you.  Along with this you also now have the ability to search your subscriber list.  This will help you ensure your list data stays clean.  If you are a Mailchimp user you can also sync any list you’d like to Changelog and we will keep everything in sync for you.  A more detailed changelog to come for this amazing capability!"
+						}
+					]
+				},
+				{
+					"type": "image_block",
+					"attrs": {
+						"src": "https://file.changelog.so/551e4efb87940ec855caefcbb25973ea;UMSs53%25gxo-%3B~Xt5W.RRVvoxkAM%23_4t6t5RS;1159x497.png",
+						"scale": 0.6988783433994823,
+						"align": "center"
+					}
+				},
+				{
+					"type": "heading",
+					"attrs": {
+						"level": 2,
+						"align": "left",
+						"selectionName": "h1",
+						"placeholder": ""
+					},
+					"content": [
+						{
+							"type": "text",
+							"text": "Advanced Publish Dialogue"
+						}
+					]
+				},
+				{
+					"type": "paragraph",
+					"attrs": {
+						"align": "left"
+					},
+					"content": [
+						{
+							"type": "text",
+							"text": "In the first small step to improved publishing, you can now decide if you want to notify your subscribers on publishing.  This will give you the ability to publish silently and notify on your own timing.  Lots more planned for the publishing dialogue with things like scheduled publishing and automated summary notifications and more."
+						}
+					]
+				},
+				{
+					"type": "image_block",
+					"attrs": {
+						"src": "https://file.changelog.so/6dc892b734b40232871f3a0130cc674d;U5NK9l_300%3Fb00NFxuae00R%25~qxa00WBogRP;1699x1167.png",
+						"scale": 0.47675103001765745,
+						"align": "center"
+					}
+				},
+				{
+					"type": "heading",
+					"attrs": {
+						"level": 1,
+						"align": "left",
+						"selectionName": "h1",
+						"placeholder": ""
+					},
+					"content": [
+						{
+							"type": "text",
+							"text": "Improvements"
+						}
+					]
+				},
+				{
+					"type": "bullet_list",
+					"attrs": {},
+					"content": [
+						{
+							"type": "list_item",
+							"attrs": {
+								"updated_ts": 1626295073706,
+								"editor_id": "usCMWZ7xVAREEeuvl5ucfrwXz3Q2",
+								"dueDateHasTime": false,
+								"completed": false
+							},
+							"content": [
+								{
+									"type": "paragraph",
+									"attrs": {
+										"updated_ts": 1626295073706,
+										"editor_id": "usCMWZ7xVAREEeuvl5ucfrwXz3Q2",
+										"dueDateHasTime": false,
+										"completed": false,
+										"linkedDataId": "MDExOlB1bGxSZXF1ZXN0Njg5ODg0Njgw",
+										"linkedDataType": "pullrequest",
+										"align": "left"
+									},
+									"content": [
+										{
+											"type": "text",
+											"text": "Improve item editor in Planning",
+											"marks": [
+												{
+													"type": "linked_data",
+													"attrs": {
+														"id": "MDExOlB1bGxSZXF1ZXN0Njg5ODg0Njgw",
+														"type": "pullrequest"
+													}
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "list_item",
+							"attrs": {
+								"updated_ts": 1626295095254,
+								"editor_id": "usCMWZ7xVAREEeuvl5ucfrwXz3Q2",
+								"dueDateHasTime": false,
+								"completed": false
+							},
+							"content": [
+								{
+									"type": "paragraph",
+									"attrs": {
+										"updated_ts": 1626295095254,
+										"editor_id": "usCMWZ7xVAREEeuvl5ucfrwXz3Q2",
+										"dueDateHasTime": false,
+										"completed": false,
+										"linkedDataId": "MDExOlB1bGxSZXF1ZXN0Njg5MjI0NzMw",
+										"linkedDataType": "pullrequest",
+										"align": "left"
+									},
+									"content": [
+										{
+											"type": "text",
+											"text": "Fixes the breadcrumb so clicking on steps in the map filter is more intuitive"
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "list_item",
+							"attrs": {
+								"updated_ts": 1626295117444,
+								"editor_id": "usCMWZ7xVAREEeuvl5ucfrwXz3Q2",
+								"dueDateHasTime": false,
+								"completed": false
+							},
+							"content": [
+								{
+									"type": "paragraph",
+									"attrs": {
+										"updated_ts": 1626295117444,
+										"editor_id": "usCMWZ7xVAREEeuvl5ucfrwXz3Q2",
+										"dueDateHasTime": false,
+										"completed": false,
+										"linkedDataId": "MDExOlB1bGxSZXF1ZXN0Njg5MDE2ODYy",
+										"linkedDataType": "pullrequest",
+										"align": "left"
+									},
+									"content": [
+										{
+											"type": "text",
+											"text": "Use query params for pagination to improve SEO",
+											"marks": [
+												{
+													"type": "linked_data",
+													"attrs": {
+														"id": "MDExOlB1bGxSZXF1ZXN0Njg5MDE2ODYy",
+														"type": "pullrequest"
+													}
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "list_item",
+							"attrs": {
+								"updated_ts": 1626295189534,
+								"editor_id": "usCMWZ7xVAREEeuvl5ucfrwXz3Q2",
+								"dueDateHasTime": false,
+								"completed": false
+							},
+							"content": [
+								{
+									"type": "paragraph",
+									"attrs": {
+										"updated_ts": 1626295189534,
+										"editor_id": "usCMWZ7xVAREEeuvl5ucfrwXz3Q2",
+										"dueDateHasTime": false,
+										"completed": false,
+										"linkedDataId": "MDExOlB1bGxSZXF1ZXN0Njg5MTI3NTU3",
+										"linkedDataType": "pullrequest",
+										"align": "left"
+									},
+									"content": [
+										{
+											"type": "text",
+											"text": "Ensure analytics map stays centered",
+											"marks": [
+												{
+													"type": "linked_data",
+													"attrs": {
+														"id": "MDExOlB1bGxSZXF1ZXN0Njg5MTI3NTU3",
+														"type": "pullrequest"
+													}
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "paragraph",
+					"attrs": {
+						"align": "left"
+					}
+				}
+			]
+		},
+		"url": "https://changelog.pinpoint.com/entry/pgY2n6NhbmClO0flS126/Email-validation-filtering-and-subscriber-search",
+		"publishedAt": 1626707703919,
+		"tags": ["improvement", "feature"],
+		"title": "📨 Email validation",
+		"headline": "As new users subscribe to your changelog you will be able to quickly see if they have verified and validated their email addresses with you.  Along with this you also now have the ability to search your subscriber list.  This will help you ensure...",
+		"authors": [
+			{
+				"id": "usCMWZ7xVAREEeuvl5ucfrwXz3Q2",
+				"firstName": "Scott",
+				"lastName": "Davenport",
+				"avatarUrl": "https://lh3.googleusercontent.com/a-/AOh14GimoF4Ch_ezE7YfILafD1Ilw551yHz7R5sDbQMAQA=s96-c?rw=128&rh=128"
+			}
+		]
+	},
+	{
+		"id": "rBqjJKPrnGpgztbUed5x",
+		"type": "changelog",
+		"commit": "d6b3d51b-ca14-4041-ae38-e54d4b0fbcaa",
+		"document": {
+			"type": "doc",
+			"content": [
+				{
+					"type": "heading",
+					"attrs": {
+						"level": 1,
+						"align": "left",
+						"selectionName": "h1",
+						"placeholder": ""
+					},
+					"content": [
+						{
+							"type": "text",
+							"text": "Analytics Drill-Down"
+						}
+					]
+				},
+				{
+					"type": "paragraph",
+					"attrs": {
+						"linkedDataId": "MDExOlB1bGxSZXF1ZXN0Njg3OTk3NzE1",
+						"linkedDataType": "pullrequest",
+						"align": "left"
+					},
+					"content": [
+						{
+							"type": "text",
+							"text": "We have now added drill-down analytics to give you even deeper insight into where your changelogs are having the most impact.  Check out the video below to learn more, or better yet sign up for your own changelog site and start letting people know what you are up to!",
+							"marks": [
+								{
+									"type": "linked_data",
+									"attrs": {
+										"id": "MDExOlB1bGxSZXF1ZXN0Njg3OTk3NzE1",
+										"type": "pullrequest"
+									}
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "iframe",
+					"attrs": {
+						"href": "https://www.loom.com/share/a054ce0791e942378051cfaf42c26420",
+						"iframe": false,
+						"type": "player",
+						"thumbnail": "https://cdn.loom.com/sessions/thumbnails/a054ce0791e942378051cfaf42c26420-00001.gif",
+						"icon": "https://cdn.loom.com/assets/favicons-loom/android-chrome-192x192.png",
+						"title": "12 July, 2021 - DrillDownAnalytics",
+						"site": "Loom",
+						"style": "overlay"
+					}
+				},
+				{
+					"type": "heading",
+					"attrs": {
+						"level": 2,
+						"align": "left",
+						"selectionName": "h1",
+						"placeholder": ""
+					},
+					"content": [
+						{
+							"type": "text",
+							"text": "Dates and times localized to you!"
+						}
+					]
+				},
+				{
+					"type": "paragraph",
+					"attrs": {
+						"align": "left"
+					},
+					"content": [
+						{
+							"type": "text",
+							"text": "Timezones and dates, in general, can be tricky to work with but we think we have it figured out now and you are the beneficiary 🙂 as you can see below Chicago (left) vs London (right) shows the same time frame but the days are labeled differently"
+						}
+					]
+				},
+				{
+					"type": "paragraph",
+					"attrs": {
+						"align": "left"
+					},
+					"content": [
+						{
+							"type": "inline-image",
+							"attrs": {
+								"dueDateHasTime": false,
+								"completed": false,
+								"src": "https://user-images.githubusercontent.com/12700819/125129723-833e2800-e0c5-11eb-8e05-fbd203fc7ea8.png",
+								"alt": "7days",
+								"title": ""
+							}
+						}
+					]
+				},
+				{
+					"type": "paragraph",
+					"attrs": {
+						"align": "left"
+					},
+					"content": [
+						{
+							"type": "text",
+							"text": "and the same for 2 weeks, etc:"
+						},
+						{
+							"type": "br",
+							"attrs": {
+								"dueDateHasTime": false,
+								"completed": false
+							}
+						},
+						{
+							"type": "inline-image",
+							"attrs": {
+								"dueDateHasTime": false,
+								"completed": false,
+								"src": "https://user-images.githubusercontent.com/12700819/125129831-a5d04100-e0c5-11eb-8da4-f69297b747e9.png",
+								"alt": "14days",
+								"title": ""
+							}
+						}
+					]
+				},
+				{
+					"type": "heading",
+					"attrs": {
+						"level": 1,
+						"align": "left",
+						"selectionName": "h1",
+						"placeholder": ""
+					},
+					"content": [
+						{
+							"type": "text",
+							"text": "Bug Fixes"
+						}
+					]
+				},
+				{
+					"type": "paragraph",
+					"attrs": {
+						"linkedDataId": "MDExOlB1bGxSZXF1ZXN0Njg3MTAzMjg1",
+						"linkedDataType": "pullrequest",
+						"align": "left"
+					},
+					"content": [
+						{
+							"type": "text",
+							"text": "Support rewriting URLs when you change the site slug or if you go to the site slug and you have a hostname configured",
+							"marks": [
+								{
+									"type": "linked_data",
+									"attrs": {
+										"id": "MDExOlB1bGxSZXF1ZXN0Njg3MTAzMjg1",
+										"type": "pullrequest"
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"url": "https://changelog.pinpoint.com/entry/LMsqt0J1ZENnDGXj2cMt/Analytics-Drill-Down-and-Localization",
+		"publishedAt": 1626114083105,
+		"tags": ["feature", "bug", "improvement"],
+		"title": "🧪 Analytics Drill-Down",
+		"headline": "We have now added drill-down analytics to give you even deeper insight into where your changelogs are having the most impact.  Check out the video below to lear",
+		"authors": [
+			{
+				"id": "usCMWZ7xVAREEeuvl5ucfrwXz3Q2",
+				"firstName": "Scott",
+				"lastName": "Davenport",
+				"avatarUrl": "https://lh3.googleusercontent.com/a-/AOh14GimoF4Ch_ezE7YfILafD1Ilw551yHz7R5sDbQMAQA=s96-c?rw=128&rh=128"
+			}
+		]
+	}
+]

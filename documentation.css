@@ -9,3 +9,15 @@
 .Pinpoint.Documentation.Outline.active {
 	@apply font-bold;
 }
+
+.Pinpoint.Documentation.Page.Home .Pinpoint.Documentation.Page.Content {
+	@apply flex w-full;
+}
+
+.Pinpoint.Documentation.Page.Home .Pinpoint.Documentation.Outline.Wrapper {
+	@apply mr-24 ml-4;
+}
+
+.Pinpoint.Documentation.Page.Home .Pinpoint.Documentation.Outline.Item {
+	@apply whitespace-nowrap w-1/3;
+}
