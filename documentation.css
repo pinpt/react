@@ -1,0 +1,11 @@
+.Pinpoint.Documentation.Outline.Wrapper {
+	@apply flex flex-col space-y-2;
+}
+
+.Pinpoint.Documentation.Outline.Item {
+	@apply text-base;
+}
+
+.Pinpoint.Documentation.Outline.active {
+	@apply font-bold;
+}

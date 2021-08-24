@@ -1,0 +1,345 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test default state 1`] = `
+<div
+  className="Pinpoint Documentation Outline Wrapper "
+>
+  <span
+    className="Pinpoint Internal Link  Pinpoint Documentation Outline Item  "
+  >
+    Linked Content Blocks
+  </span>
+  <span
+    className="Pinpoint Internal Link  Pinpoint Documentation Outline Item  "
+  >
+    Publishing Controls and Social Posting
+  </span>
+  <span
+    className="Pinpoint Internal Link  Pinpoint Documentation Outline Item  "
+  >
+    Changelog planning just got way simpler!
+  </span>
+  <span
+    className="Pinpoint Internal Link  Pinpoint Documentation Outline Item  "
+  >
+    Email validation, filtering, and subscriber search 🔍
+  </span>
+  <span
+    className="Pinpoint Internal Link  Pinpoint Documentation Outline Item  "
+  >
+    Analytics Drill-Down and Localization
+  </span>
+  <span
+    className="Pinpoint Internal Link  Pinpoint Documentation Outline Item  "
+  >
+    Already mentioned notice
+  </span>
+  <span
+    className="Pinpoint Internal Link  Pinpoint Documentation Outline Item  "
+  >
+    Published Page Search and Filtering
+  </span>
+  <span
+    className="Pinpoint Internal Link  Pinpoint Documentation Outline Item  "
+  >
+    Improved Analytics Accessibility
+  </span>
+  <span
+    className="Pinpoint Internal Link  Pinpoint Documentation Outline Item  "
+  >
+    Tables, tables, tables
+  </span>
+  <span
+    className="Pinpoint Internal Link  Pinpoint Documentation Outline Item  "
+  >
+    Analytics Drilldown + Changelog Generator Styling
+  </span>
+</div>
+`;
+
+exports[`Test with active 1`] = `
+<div
+  className="Pinpoint Documentation Outline Wrapper "
+>
+  <span
+    className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+    onClick={[Function]}
+  >
+    Linked Content Blocks
+  </span>
+  <span
+    className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+    onClick={[Function]}
+  >
+    Publishing Controls and Social Posting
+  </span>
+  <span
+    className="Pinpoint Internal Link  Pinpoint Documentation Outline Item active "
+  >
+    Changelog planning just got way simpler!
+  </span>
+  <span
+    className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+    onClick={[Function]}
+  >
+    Email validation, filtering, and subscriber search 🔍
+  </span>
+  <span
+    className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+    onClick={[Function]}
+  >
+    Analytics Drill-Down and Localization
+  </span>
+  <span
+    className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+    onClick={[Function]}
+  >
+    Already mentioned notice
+  </span>
+  <span
+    className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+    onClick={[Function]}
+  >
+    Published Page Search and Filtering
+  </span>
+  <span
+    className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+    onClick={[Function]}
+  >
+    Improved Analytics Accessibility
+  </span>
+  <span
+    className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+    onClick={[Function]}
+  >
+    Tables, tables, tables
+  </span>
+  <span
+    className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+    onClick={[Function]}
+  >
+    Analytics Drilldown + Changelog Generator Styling
+  </span>
+</div>
+`;
+
+exports[`Test with click handler 1`] = `
+<div
+  className="Pinpoint Documentation Outline Wrapper "
+>
+  <span
+    className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+    onClick={[Function]}
+  >
+    Linked Content Blocks
+  </span>
+  <span
+    className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+    onClick={[Function]}
+  >
+    Publishing Controls and Social Posting
+  </span>
+  <span
+    className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+    onClick={[Function]}
+  >
+    Changelog planning just got way simpler!
+  </span>
+  <span
+    className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+    onClick={[Function]}
+  >
+    Email validation, filtering, and subscriber search 🔍
+  </span>
+  <span
+    className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+    onClick={[Function]}
+  >
+    Analytics Drill-Down and Localization
+  </span>
+  <span
+    className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+    onClick={[Function]}
+  >
+    Already mentioned notice
+  </span>
+  <span
+    className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+    onClick={[Function]}
+  >
+    Published Page Search and Filtering
+  </span>
+  <span
+    className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+    onClick={[Function]}
+  >
+    Improved Analytics Accessibility
+  </span>
+  <span
+    className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+    onClick={[Function]}
+  >
+    Tables, tables, tables
+  </span>
+  <span
+    className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+    onClick={[Function]}
+  >
+    Analytics Drilldown + Changelog Generator Styling
+  </span>
+</div>
+`;
+
+exports[`Test with link (current tab) 1`] = `
+<div
+  className="Pinpoint Documentation Outline Wrapper "
+>
+  <a
+    className="Pinpoint Internal Link Pinpoint Documentation Outline Item  "
+    href="#oroH8YQr4vufOiVTRND4"
+  >
+    Linked Content Blocks
+  </a>
+  <a
+    className="Pinpoint Internal Link Pinpoint Documentation Outline Item  "
+    href="#XDF0NAdmohIPYGW0EABP"
+  >
+    Publishing Controls and Social Posting
+  </a>
+  <a
+    className="Pinpoint Internal Link Pinpoint Documentation Outline Item  "
+    href="#Cq4Ong4PJwMYygleMjvk"
+  >
+    Changelog planning just got way simpler!
+  </a>
+  <a
+    className="Pinpoint Internal Link Pinpoint Documentation Outline Item  "
+    href="#CbenrdtHI5j23nXmv5bs"
+  >
+    Email validation, filtering, and subscriber search 🔍
+  </a>
+  <a
+    className="Pinpoint Internal Link Pinpoint Documentation Outline Item  "
+    href="#rBqjJKPrnGpgztbUed5x"
+  >
+    Analytics Drill-Down and Localization
+  </a>
+  <a
+    className="Pinpoint Internal Link Pinpoint Documentation Outline Item  "
+    href="#6Lnjaer8Pywx3Xz4FQAp"
+  >
+    Already mentioned notice
+  </a>
+  <a
+    className="Pinpoint Internal Link Pinpoint Documentation Outline Item  "
+    href="#g4OAy7NHSY4U8ADt62gl"
+  >
+    Published Page Search and Filtering
+  </a>
+  <a
+    className="Pinpoint Internal Link Pinpoint Documentation Outline Item  "
+    href="#HDN9aHy7tP70MtEUPx4c"
+  >
+    Improved Analytics Accessibility
+  </a>
+  <a
+    className="Pinpoint Internal Link Pinpoint Documentation Outline Item  "
+    href="#1iVzyyvqjM0eq0gy7sOq"
+  >
+    Tables, tables, tables
+  </a>
+  <a
+    className="Pinpoint Internal Link Pinpoint Documentation Outline Item  "
+    href="#K9W0A6riW4qmlPMYqbTN"
+  >
+    Analytics Drilldown + Changelog Generator Styling
+  </a>
+</div>
+`;
+
+exports[`Test with link (new tab) 1`] = `
+<div
+  className="Pinpoint Documentation Outline Wrapper "
+>
+  <a
+    className="Pinpoint Internal Link Pinpoint Documentation Outline Item  "
+    href="#oroH8YQr4vufOiVTRND4"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Linked Content Blocks
+  </a>
+  <a
+    className="Pinpoint Internal Link Pinpoint Documentation Outline Item  "
+    href="#XDF0NAdmohIPYGW0EABP"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Publishing Controls and Social Posting
+  </a>
+  <a
+    className="Pinpoint Internal Link Pinpoint Documentation Outline Item  "
+    href="#Cq4Ong4PJwMYygleMjvk"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Changelog planning just got way simpler!
+  </a>
+  <a
+    className="Pinpoint Internal Link Pinpoint Documentation Outline Item  "
+    href="#CbenrdtHI5j23nXmv5bs"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Email validation, filtering, and subscriber search 🔍
+  </a>
+  <a
+    className="Pinpoint Internal Link Pinpoint Documentation Outline Item  "
+    href="#rBqjJKPrnGpgztbUed5x"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Analytics Drill-Down and Localization
+  </a>
+  <a
+    className="Pinpoint Internal Link Pinpoint Documentation Outline Item  "
+    href="#6Lnjaer8Pywx3Xz4FQAp"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Already mentioned notice
+  </a>
+  <a
+    className="Pinpoint Internal Link Pinpoint Documentation Outline Item  "
+    href="#g4OAy7NHSY4U8ADt62gl"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Published Page Search and Filtering
+  </a>
+  <a
+    className="Pinpoint Internal Link Pinpoint Documentation Outline Item  "
+    href="#HDN9aHy7tP70MtEUPx4c"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Improved Analytics Accessibility
+  </a>
+  <a
+    className="Pinpoint Internal Link Pinpoint Documentation Outline Item  "
+    href="#1iVzyyvqjM0eq0gy7sOq"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Tables, tables, tables
+  </a>
+  <a
+    className="Pinpoint Internal Link Pinpoint Documentation Outline Item  "
+    href="#K9W0A6riW4qmlPMYqbTN"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Analytics Drilldown + Changelog Generator Styling
+  </a>
+</div>
+`;
