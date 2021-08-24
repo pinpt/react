@@ -4,44 +4,44 @@
 
 #### Theming
 
-The parent className for styling this component is `.Clap`
+The parent className for styling this component is `.Pinpoint.Clap`
 
 <details>
 	<summary>Base Theme Styles</summary>
 
 ```css
-.Clap.wrapper {
+.Pinpoint.Clap.wrapper {
 	@apply relative cursor-pointer flex items-center;
 }
 
-.Clap.icon {
+.Pinpoint.Clap.icon {
 	@apply inline-flex items-center content-center transition-all;
 	color: var(--page-secondary-text-color);
 }
 
-.Clap.icon.active {
+.Pinpoint.Clap.icon.active {
 	color: var(--page-highlight-color);
 }
 
-.Clap.counter {
+.Pinpoint.Clap.counter {
 	@apply opacity-0 ml-1 transition-all;
 	color: var(--page-secondary-text-color);
 }
 
-.Clap.counter.active {
+.Pinpoint.Clap.counter.active {
 	@apply opacity-100;
 }
 
-.Clap.notice {
+.Pinpoint.Clap.notice {
 	@apply rounded-full opacity-0 absolute bg-black text-white select-none transition-all left-0 px-2 py-0.5;
 }
 
-.Clap.notice.active {
+.Pinpoint.Clap.notice.active {
 	@apply opacity-100 left-12;
 }
 
-.entryWrapper .sidebarWrapper.before .Clap,
-.entryWrapper .sidebarWrapper.before .Social.Bar {
+.Pinpoint .entryWrapper .sidebarWrapper.before .Clap,
+.Pinpoint .entryWrapper .sidebarWrapper.before .Social.Bar {
 	@apply hidden md:flex;
 }
 ```

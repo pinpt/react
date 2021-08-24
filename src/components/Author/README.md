@@ -4,23 +4,23 @@
 
 #### Theming
 
-The parent className for styling this component is `.Author`
+The parent className for styling this component is `.Pinpoint.Author`
 
 <details>
 	<summary>Base Theme Styles</summary>
 
 ```css
-.Author,
-.Author a {
+.Pinpoint.Author,
+.Pinpoint.Author a {
 	@apply flex items-center mr-auto;
 }
 
-.Author .avatar {
+.Pinpoint.Author .avatar {
 	@apply rounded-full mr-2 w-8 h-8 border-2;
 	border-color: var(--page-secondary-text-color);
 }
 
-.Author .name {
+.Pinpoint.Author .name {
 	@apply whitespace-nowrap;
 }
 ```

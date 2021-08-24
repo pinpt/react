@@ -4,18 +4,18 @@
 
 #### Theming
 
-The parent className for styling this component is `.Content.Card.Title`
+The parent className for styling this component is `.Pinpoint.Content.Card.Title`
 
 <details>
 	<summary>Base Theme Styles</summary>
 
 ```css
-.Content.Card.Title {
+.Pinpoint.Content.Card.Title {
 	@apply text-lg font-semibold transition-colors duration-200;
 	color: var(--card-title-color);
 }
 
-.Content.Card:hover .Title {
+.Pinpoint.Content.Card:hover .Title {
 	color: var(--card-link-color);
 }
 ```

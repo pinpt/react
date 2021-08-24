@@ -2,7 +2,7 @@
 
 exports[`Test click handler 1`] = `
 <span
-  className="Pinpoint Internal Link clickable Logo sm "
+  className="Pinpoint Internal Link clickable Pinpoint Logo sm "
   onClick={[Function]}
 >
   <img
@@ -14,7 +14,7 @@ exports[`Test click handler 1`] = `
 
 exports[`Test click handler and link 1`] = `
 <a
-  className="Pinpoint Internal Link Logo sm "
+  className="Pinpoint Internal Link Pinpoint Logo sm "
   href="https://pinpoint.com"
   title="Logo"
 >
@@ -27,7 +27,7 @@ exports[`Test click handler and link 1`] = `
 
 exports[`Test default state 1`] = `
 <span
-  className="Pinpoint Internal Link  Logo sm "
+  className="Pinpoint Internal Link  Pinpoint Logo sm "
 >
   <img
     className="image"
@@ -38,7 +38,7 @@ exports[`Test default state 1`] = `
 
 exports[`Test extra large 1`] = `
 <span
-  className="Pinpoint Internal Link  Logo xl "
+  className="Pinpoint Internal Link  Pinpoint Logo xl "
 >
   <img
     className="image"
@@ -49,7 +49,7 @@ exports[`Test extra large 1`] = `
 
 exports[`Test extra small 1`] = `
 <span
-  className="Pinpoint Internal Link  Logo xs "
+  className="Pinpoint Internal Link  Pinpoint Logo xs "
 >
   <img
     className="image"
@@ -60,7 +60,7 @@ exports[`Test extra small 1`] = `
 
 exports[`Test large 1`] = `
 <span
-  className="Pinpoint Internal Link  Logo lg "
+  className="Pinpoint Internal Link  Pinpoint Logo lg "
 >
   <img
     className="image"
@@ -71,7 +71,7 @@ exports[`Test large 1`] = `
 
 exports[`Test link (new tab) 1`] = `
 <a
-  className="Pinpoint Internal Link Logo sm "
+  className="Pinpoint Internal Link Pinpoint Logo sm "
   href="https://pinpoint.com"
   rel="noopener noreferrer"
   target="_blank"
@@ -86,7 +86,7 @@ exports[`Test link (new tab) 1`] = `
 
 exports[`Test link 1`] = `
 <a
-  className="Pinpoint Internal Link Logo sm "
+  className="Pinpoint Internal Link Pinpoint Logo sm "
   href="https://pinpoint.com"
   title="Logo"
 >
@@ -99,7 +99,7 @@ exports[`Test link 1`] = `
 
 exports[`Test medium 1`] = `
 <span
-  className="Pinpoint Internal Link  Logo md "
+  className="Pinpoint Internal Link  Pinpoint Logo md "
 >
   <img
     className="image"
@@ -110,7 +110,7 @@ exports[`Test medium 1`] = `
 
 exports[`Test small 1`] = `
 <span
-  className="Pinpoint Internal Link  Logo sm "
+  className="Pinpoint Internal Link  Pinpoint Logo sm "
 >
   <img
     className="image"

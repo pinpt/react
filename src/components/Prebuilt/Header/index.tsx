@@ -1,11 +1,11 @@
 import { ReactElement } from 'react';
+import { ISite } from '../../../lib';
+import BaseHeader from '../../Header';
 import Logo, { ILogoProps } from '../../Logo';
 import Search from '../../Search';
 import { ISearchBarProps } from '../../Search/Bar';
 import Subscribe, { ISubscribeProps } from '../../Subscribe';
 import ThemeToggle, { IThemeToggleProps } from '../../ThemeToggle';
-import { ISite } from '../../../lib';
-import BaseHeader from '../../Header';
 
 export interface IPrebuiltHeaderProps {
 	className?: string;

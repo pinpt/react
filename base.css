@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+body.Pinpoint {
 	@apply transition-colors duration-200;
 	font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial,
 		Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
@@ -10,16 +10,16 @@ body {
 	color: var(--page-text-color);
 }
 
-.preload,
-.preload * {
+.Pinpoint .preload,
+.Pinpoint .preload * {
 	@apply !transition-none;
 }
 
-a.link {
+.Pinpoint a.link {
 	@apply cursor-pointer;
 }
 
-.Page .constraint {
+.Pinpoint.Page .Pinpoint.constraint {
 	@apply mx-auto px-4 md:px-10 w-full;
 	max-width: 80rem;
 }
@@ -27,40 +27,40 @@ a.link {
 /*
  * Styles for the header component
  */
-.headerWrapper {
+.Pinpoint .headerWrapper {
 	background-color: var(--header-bg-color);
 }
 
-.Header {
+.Pinpoint.Header {
 	@apply flex py-5 flex-col;
 }
 
-.Header .top {
+.Pinpoint.Header .top {
 	@apply flex justify-between;
 }
 
-.Header .right {
+.Pinpoint.Header .right {
 	@apply flex gap-x-4;
 }
 
-.Header .center {
+.Pinpoint.Header .center {
 	@apply py-8 flex flex-col content-center text-center;
 }
 
-.Header .title {
+.Pinpoint.Header .title {
 	@apply font-semibold text-4xl md:text-5xl py-6 transition-colors duration-200;
 	color: var(--header-title-color);
 }
 
-.Header .description {
+.Pinpoint.Header .description {
 	color: var(--header-description-color);
 }
 
-.Header .action {
+.Pinpoint.Header .action {
 	@apply mt-6 mx-auto;
 }
 
-.Header .Subscribe {
+.Pinpoint.Header .Subscribe {
 	color: var(--header-subscribe-color);
 }
 
@@ -68,22 +68,22 @@ a.link {
  * Styles for the search bar component
  */
 
-.Search.Bar {
+.Pinpoint.Search.Bar {
 	@apply border rounded-full flex items-center w-48 h-8 overflow-hidden transition-colors duration-200;
 	border-color: var(--header-control-color);
 	color: var(--header-control-color);
 }
 
-.Search.Bar .icon {
+.Pinpoint.Search.Bar .icon {
 	@apply ml-3 mr-2;
 }
 
-.Search.Bar .input {
+.Pinpoint.Search.Bar .input {
 	@apply w-full border-0 py-1 pr-2 outline-none bg-transparent;
 	color: var(--page-text-color);
 }
 
-.Search.Bar .input::placeholder {
+.Pinpoint.Search.Bar .input::placeholder {
 	@apply opacity-30 transition-colors duration-200;
 	color: var(--page-text-color);
 }
@@ -92,7 +92,7 @@ a.link {
  * Styles for the theme toggle component
  */
 
-.ThemeToggle .mode {
+.Pinpoint.ThemeToggle .mode {
 	@apply relative block h-8 border;
 	border-radius: 30px;
 	width: 58px;
@@ -102,7 +102,7 @@ a.link {
 	color: var(--header-control-color);
 }
 
-.ThemeToggle .mode::after {
+.Pinpoint.ThemeToggle .mode::after {
 	content: '';
 	position: absolute;
 	right: 6px;
@@ -114,16 +114,16 @@ a.link {
 	background-color: var(--header-control-color);
 }
 
-html.dark .ThemeToggle .mode::before {
+html.dark .Pinpoint.ThemeToggle .mode::before {
 	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' stroke='%23999' stroke-width='2' fill='%23999' stroke-linecap='round' stroke-linejoin='round' class='css-i6dzq1' viewBox='0 0 24 24'%3E%3Cpath d='M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z'/%3E%3C/svg%3E");
 	transform: translateX(26px);
 }
 
-html.dark .ThemeToggle .mode::after {
+html.dark .Pinpoint.ThemeToggle .mode::after {
 	transform: translateX(-24px);
 }
 
-.ThemeToggle .mode::before {
+.Pinpoint.ThemeToggle .mode::before {
 	@apply absolute h-full bg-cover bg-no-repeat top-0 left-0 w-8;
 	content: '';
 	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' stroke='%23999' stroke-width='2.4' fill='none' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='5'/%3E%3Cpath d='M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72 1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42'/%3E%3C/svg%3E");
@@ -137,178 +137,178 @@ html.dark .ThemeToggle .mode::after {
 /*
  * Styles for the subscribe component
  */
-.Subscribe {
+.Pinpoint.Subscribe {
 	@apply flex items-center cursor-pointer no-underline;
 	color: var(--page-highlight-color);
 }
 
-.Subscribe.invisible {
+.Pinpoint.Subscribe.invisible {
 	@apply invisible;
 }
 
-.Subscribe.visible {
+.Pinpoint.Subscribe.visible {
 	@apply visible;
 }
 
-.Subscribe .text {
+.Pinpoint.Subscribe .text {
 	@apply ml-1 text-sm;
 }
 
 /*
  * Styles for the footer component
  */
-.footerWrapper {
+.Pinpoint .footerWrapper {
 	background-color: var(--footer-bg-color);
 	color: var(--footer-text-color);
 }
 
-.Footer {
+.Pinpoint.Footer {
 	@apply py-14 text-sm;
 	background-color: var(--footer-bg-color);
 	color: var(--footer-text-color);
 }
 
-.Footer .content {
+.Pinpoint.Footer .content {
 	@apply flex flex-col md:items-end md:flex-row items-center;
 }
 
-.Footer .powered {
+.Pinpoint.Footer .powered {
 	@apply flex pt-8;
 }
 
-.Footer .right {
+.Pinpoint.Footer .right {
 	@apply md:ml-auto py-6 md:py-0 flex flex-col items-center md:items-end;
 }
 
-.Footer .Social {
+.Pinpoint.Footer .Social {
 	@apply mt-4 md:mt-1;
 }
 
-.Footer .Copyright {
+.Pinpoint.Footer .Copyright {
 	@apply flex flex-col items-center md:items-start;
 }
 
 /*
  * Styles for the copyright component
  */
-.Copyright .text {
+.Pinpoint.Copyright .text {
 	@apply mt-1;
 }
 
 /*
  * Styles for the social components
  */
-.Social {
+.Pinpoint.Social {
 	@apply no-underline transition-all duration-200;
 }
 
-.Social.Bar {
+.Pinpoint.Social.Bar {
 	@apply flex gap-x-4;
 }
 
-.Social.Bar a:hover {
+.Pinpoint.Social.Bar a:hover {
 	filter: brightness(1.5);
 }
 
-.Social.Bar.sharing {
+.Pinpoint.Social.Bar.sharing {
 	@apply flex gap-x-2;
 }
 
-.Social.Item.sharing {
+.Pinpoint.Social.Item.sharing {
 	@apply flex flex-col items-center content-center justify-center rounded-lg w-8 h-8 text-white hover:filter-none;
 }
 
-.Social.sharing.Twitter {
+.Pinpoint.Social.sharing.Twitter {
 	@apply bg-[#55acee] hover:bg-[#2795e9];
 }
 
-.Social.sharing.Facebook {
+.Pinpoint.Social.sharing.Facebook {
 	@apply bg-[#3b5998] hover:bg-[#2d4373];
 }
 
-.Social.sharing.LinkedIn {
+.Pinpoint.Social.sharing.LinkedIn {
 	@apply bg-[#0077b5] hover:bg-[#046293];
 }
 
-.Social.sharing.Email {
+.Pinpoint.Social.sharing.Email {
 	@apply bg-gray-500 hover:bg-gray-600;
 }
 
 /*
  * Styles for the card components
  */
-.Content.Card.Container.wrapper {
+.Pinpoint.Content.Card.Container.wrapper {
 	@apply w-full rounded-md overflow-hidden flex flex-col cursor-pointer shadow-md hover:shadow-lg transition-all duration-200;
 	background-color: var(--card-bg-color);
 }
 
-.Content.Card.Container.wrapper .cover,
-.Content.Card.Container.wrapper .covermedia .media-container img {
+.Pinpoint.Content.Card.Container.wrapper .cover,
+.Pinpoint.Content.Card.Container.wrapper .covermedia .media-container img {
 	@apply md:h-36 lg:h-48 w-full object-cover object-center;
 }
 
-.Content.Card.Container.wrapper .empty-cover {
+.Pinpoint.Content.Card.Container.wrapper .empty-cover {
 	@apply md:h-36 lg:h-48 w-full;
 	background-image: linear-gradient(to right, var(--card-empty-gradient-from), var(--card-empty-gradient-to));
 }
 
-.Content.Card.Container.wrapper .content {
+.Pinpoint.Content.Card.Container.wrapper .content {
 	@apply flex flex-col p-6 flex-grow flex-shrink;
 }
 
-.Content.Card.Container.wrapper .footer {
+.Pinpoint.Content.Card.Container.wrapper .footer {
 	@apply flex mt-auto;
 }
 
-.Content.Card.Container.wrapper .statistics {
+.Pinpoint.Content.Card.Container.wrapper .statistics {
 	@apply ml-auto;
 }
 
-.Content.Card .Date {
+.Pinpoint.Content.Card .Date {
 	@apply mt-0.5 text-xs mb-2;
 	color: var(--card-date-color);
 }
 
-.Content.Card.Title {
+.Pinpoint.Content.Card.Title {
 	@apply text-lg font-semibold transition-colors duration-200;
 	color: var(--card-title-color);
 }
 
-.Content.Card:hover .Title {
+.Pinpoint.Content.Card:hover .Title {
 	color: var(--card-link-color);
 }
 
-.Content.Card.Description {
+.Pinpoint.Content.Card.Description {
 	@apply mb-4;
 	color: var(--card-summary-color);
 }
 
-.Content.Card.Read {
+.Pinpoint.Content.Card.Read {
 	@apply flex items-center cursor-pointer no-underline;
 	color: var(--card-link-color);
 }
 
-.Content.Card.Read .arrow {
+.Pinpoint.Content.Card.Read .arrow {
 	@apply ml-2;
 }
 
-.Content.Card .Tag.Bar {
+.Pinpoint.Content.Card .Tag.Bar {
 	@apply mb-4;
 }
 
 /*
  * Styles for the statistic components
  */
-.Statistic.wrapper {
+.Pinpoint.Statistic.wrapper {
 	@apply flex items-center;
 	color: var(--card-info-color);
 }
 
-.Statistic .count {
+.Pinpoint.Statistic .count {
 	@apply ml-2;
 }
 
-.Statistic.Bar .Statistic.Views.wrapper {
+.Pinpoint.Statistic.Bar .Statistic.Views.wrapper {
 	@apply mr-4;
 }
 
@@ -320,32 +320,32 @@ html.dark .ThemeToggle .mode::after {
 	background-color: var(--section-bg-color);
 }
 
-.Latest .heading,
-.Recent .heading,
-.Search.Query .heading,
-.Search.Results .heading {
+.Pinpoint.Latest .heading,
+.Pinpoint.Recent .heading,
+.Pinpoint.Search.Query .heading,
+.Pinpoint.Search.Results .heading {
 	@apply text-2xl font-semibold;
 }
 
-.Latest {
+.Pinpoint.Latest {
 	@apply flex flex-col md:flex-row;
 }
 
-.Latest .heading,
-.Recent .heading,
-.Search.Results .heading {
+.Pinpoint.Latest .heading,
+.Pinpoint.Recent .heading,
+.Pinpoint.Search.Results .heading {
 	@apply mb-10 md:mb-0 md:mr-4;
 	flex-basis: 25%;
 }
 
-.Latest .cards {
+.Pinpoint.Latest .cards {
 	@apply flex gap-x-8;
 	flex-basis: 75%;
 }
 
-.Latest .Content.Card.Container.wrapper .cover,
-.Latest .Content.Card.Container.wrapper .covermedia .media-container img,
-.Latest .Content.Card.Container.wrapper .empty-cover {
+.Pinpoint.Latest .Content.Card.Container.wrapper .cover,
+.Pinpoint.Latest .Content.Card.Container.wrapper .covermedia .media-container img,
+.Pinpoint.Latest .Content.Card.Container.wrapper .empty-cover {
 	@apply md:h-64 lg:h-80;
 }
 
@@ -354,102 +354,102 @@ html.dark .ThemeToggle .mode::after {
 	@apply py-10 md:py-14;
 }
 
-.Recent,
-.Search.Results {
+.Pinpoint.Recent,
+.Pinpoint.Search.Results {
 	@apply flex flex-col md:flex-row;
 }
 
-.Recent .cards,
-.Search.Results .cards {
+.Pinpoint.Recent .cards,
+.Pinpoint.Search.Results .cards {
 	@apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 grid-flow-row;
 	flex-basis: 75%;
 }
 
-.Recent .pageIndicator {
+.Pinpoint.Recent .pageIndicator {
 	@apply font-normal text-base ml-2;
 	color: var(--page-secondary-text-color);
 }
 
-.searchQueryWrapper {
+.Pinpoint .searchQueryWrapper {
 	@apply py-10 md:py-14 transition-colors duration-200;
 	background-color: var(--section-bg-color);
 }
 
-.Search.Query .heading {
+.Pinpoint.Search.Query .heading {
 	@apply mb-4;
 }
 
-.Search.Query .query {
+.Pinpoint.Search.Query .query {
 	@apply flex;
 }
 
-.Search.Results .empty {
+.Pinpoint.Search.Results .empty {
 	@apply text-3xl font-bold text-center;
 }
 
-.searchResultsWrapper .empty {
+.Pinpoint .searchResultsWrapper .empty {
 	@apply mt-[5vh];
 }
 
-.Search.Results .back {
+.Pinpoint.Search.Results .back {
 	@apply flex items-center justify-center text-gray-500 text-xl mt-6 font-normal cursor-pointer;
 }
 
-.Search.Results .back .icon {
+.Pinpoint.Search.Results .back .icon {
 	@apply mr-2;
 }
 
 /*
  * Pagination
  */
-.paginationWrapper {
+.Pinpoint .paginationWrapper {
 	@apply pb-10 md:pb-14 flex-grow;
 }
 
-.paginationWrapper .Pagination {
+.Pinpoint .paginationWrapper .Pagination {
 	@apply md:ml-[calc(25%+1rem)];
 }
 
-.Pagination {
+.Pinpoint.Pagination {
 	@apply flex justify-between items-center space-x-10;
 	color: var(--page-highlight-color);
 }
 
-.Pagination.forwardOnly {
+.Pinpoint.Pagination.forwardOnly {
 	@apply justify-end;
 }
 
-.Pagination .back,
-.Pagination .forward {
+.Pinpoint.Pagination .back,
+.Pinpoint.Pagination .forward {
 	@apply min-w-0 flex items-center cursor-pointer;
 	flex: 1 1 50%;
 }
 
-.Pagination .forward {
+.Pinpoint.Pagination .forward {
 	@apply justify-end;
 }
 
-.Pagination .forward .icon {
+.Pinpoint.Pagination .forward .icon {
 	@apply ml-2 flex-shrink-0;
 }
 
-.Pagination .back .icon {
+.Pinpoint.Pagination .back .icon {
 	@apply mr-2 flex-shrink-0;
 }
 
-.Pagination .back .text,
-.Pagination .forward .text {
+.Pinpoint.Pagination .back .text,
+.Pinpoint.Pagination .forward .text {
 	@apply truncate;
 }
 
 /*
  * Styles for the page (dashboard) component
  */
-.Page.Dashboard {
+.Pinpoint.Page.Dashboard {
 	@apply flex flex-col h-screen;
 }
 
-.Page .loaderWrapper {
+.Pinpoint.Page .loaderWrapper {
 	@apply relative flex-grow;
 }
 
@@ -457,60 +457,60 @@ html.dark .ThemeToggle .mode::after {
  * Styles for the page (entry) component
  */
 
-.Page.Entry {
+.Pinpoint.Page.Entry {
 	@apply flex flex-col h-screen;
 }
 
-.entryWrapper {
+.Pinpoint .entryWrapper {
 	@apply flex-grow;
 	background-color: var(--article-bg-color);
 }
 
-.entryWrapper .entry {
+.Pinpoint .entryWrapper .entry {
 	@apply py-10 md:py-14 flex flex-col md:flex-row border-t;
 	border-color: var(--section-border-color);
 }
 
-.entryWrapper .entry article {
+.Pinpoint .entryWrapper .entry article {
 	@apply flex-grow;
 }
 
-.entryWrapper .entry .content {
+.Pinpoint .entryWrapper .entry .content {
 	@apply flex-grow;
 }
 
-.entryWrapper .sidebarWrapper {
+.Pinpoint .entryWrapper .sidebarWrapper {
 	color: var(--article-info-color);
 }
 
-.entryWrapper .sidebarWrapper.before {
+.Pinpoint .entryWrapper .sidebarWrapper.before {
 	@apply md:mr-4 mb-8 md:mb-0 min-w-1/4;
 }
 
-.entryWrapper .sidebarWrapper.before .Sidebar {
+.Pinpoint .entryWrapper .sidebarWrapper.before .Sidebar {
 	@apply flex-shrink-0 flex-wrap;
 }
 
-.entryWrapper .sidebarWrapper.before .Clap,
-.entryWrapper .sidebarWrapper.before .Social.Bar {
+.Pinpoint .entryWrapper .sidebarWrapper.before .Clap,
+.Pinpoint .entryWrapper .sidebarWrapper.before .Social.Bar {
 	@apply hidden md:flex;
 }
 
-.entryWrapper .sidebarWrapper.after {
+.Pinpoint .entryWrapper .sidebarWrapper.after {
 	@apply md:hidden mt-8;
 }
 
-.entryWrapper .sidebarWrapper.after .Sidebar {
+.Pinpoint .entryWrapper .sidebarWrapper.after .Sidebar {
 	@apply justify-between;
 }
 
-.entryWrapper .sidebarWrapper.after .Date,
-.entryWrapper .sidebarWrapper.after .Author,
-.entryWrapper .sidebarWrapper.after .Tag.Bar {
+.Pinpoint .entryWrapper .sidebarWrapper.after .Date,
+.Pinpoint .entryWrapper .sidebarWrapper.after .Author,
+.Pinpoint .entryWrapper .sidebarWrapper.after .Tag.Bar {
 	@apply hidden;
 }
 
-.entryWrapper .renderer {
+.Pinpoint .entryWrapper .renderer {
 	@apply mb-10 md:mb-14;
 	color: var(--article-text-color);
 }
@@ -518,94 +518,94 @@ html.dark .ThemeToggle .mode::after {
 /*
  * Styles for the sidebar component
  */
-.Sidebar {
+.Pinpoint.Sidebar {
 	@apply flex flex-row md:flex-col items-center md:items-start gap-y-4 md:gap-y-8;
 }
 
 /*
  * Date
  */
-.entryWrapper .Date {
+.Pinpoint .entryWrapper .Date {
 	@apply font-semibold flex-grow md:flex-initial flex-shrink-0 w-full md:w-auto;
 }
 
 /*
  * Styles for the author component
  */
-.Author,
-.Author a {
+.Pinpoint.Author,
+.Pinpoint.Author a {
 	@apply flex items-center mr-auto;
 }
 
-.Author .avatar {
+.Pinpoint.Author .avatar {
 	@apply rounded-full mr-2 w-8 h-8 border-2;
 	border-color: var(--page-secondary-text-color);
 }
 
-.Author .name {
+.Pinpoint.Author .name {
 	@apply whitespace-nowrap;
 }
 
 /*
  * Styles for the interactive clap component
  */
-.Clap.wrapper {
+.Pinpoint.Clap.wrapper {
 	@apply relative cursor-pointer flex items-center;
 }
 
-.Clap.icon {
+.Pinpoint.Clap.icon {
 	@apply inline-flex items-center content-center transition-all;
 	color: var(--page-secondary-text-color);
 }
 
-.Clap.icon.active {
+.Pinpoint.Clap.icon.active {
 	color: var(--page-highlight-color);
 }
 
-.Clap.counter {
+.Pinpoint.Clap.counter {
 	@apply opacity-0 ml-1 transition-all;
 	color: var(--page-secondary-text-color);
 }
 
-.Clap.counter.active {
+.Pinpoint.Clap.counter.active {
 	@apply opacity-100;
 }
 
-.Clap.notice {
+.Pinpoint.Clap.notice {
 	@apply rounded-full opacity-0 absolute bg-black text-white select-none transition-all left-0 px-2 py-0.5;
 }
 
-.Clap.notice.active {
+.Pinpoint.Clap.notice.active {
 	@apply opacity-100 left-12;
 }
 
 /*
  * Styles for the tag component
  */
-.Tag.Item {
+.Pinpoint.Tag.Item {
 	@apply inline-flex items-center rounded-full text-xs px-1.5 py-0.5;
 }
 
-.Tag.Item.nocolor {
+.Pinpoint.Tag.Item.nocolor {
 	@apply text-gray-600 bg-gray-300 border border-gray-500;
 }
 
-.Tag.Item .icon {
+.Pinpoint.Tag.Item .icon {
 	@apply ml-1;
 }
 
-.Tag.Bar {
+.Pinpoint.Tag.Bar {
 	@apply flex flex-wrap gap-x-2 gap-y-2;
 }
 
 /*
  * Loader
  */
-.Loader {
+.Pinpoint.Loader {
 	@apply absolute left-0 top-0 right-0 bottom-0 flex items-center content-center justify-center;
 }
 
-.Loader .inner {
+.Pinpoint.Loader .inner {
 	@apply w-12 h-12 rounded-full border-3 animate-ping border-gray-900 m-6;
 	border-color: var(--page-secondary-text-color);
 }
@@ -613,36 +613,36 @@ html.dark .ThemeToggle .mode::after {
 /*
  * Styles for the logo component
  */
-.Logo {
+.Pinpoint.Logo {
 	@apply block rounded-full overflow-hidden;
 }
 
-.Logo.xs {
+.Pinpoint.Logo.xs {
 	width: 22px;
 	height: 22px;
 }
 
-.Logo.sm {
+.Pinpoint.Logo.sm {
 	width: 32px;
 	height: 32px;
 }
 
-.Logo.md {
+.Pinpoint.Logo.md {
 	width: 42px;
 	height: 42px;
 }
 
-.Logo.lg {
+.Pinpoint.Logo.lg {
 	width: 52px;
 	height: 52px;
 }
 
-.Logo.xl {
+.Pinpoint.Logo.xl {
 	width: 62px;
 	height: 62px;
 }
 
-.Logo .image {
+.Pinpoint.Logo .image {
 	width: 100%;
 	height: 100%;
 }
@@ -650,122 +650,122 @@ html.dark .ThemeToggle .mode::after {
 /*
  * Styles for the link component
  */
-.Link.clickable {
+.Pinpoint.Link.clickable {
 	@apply cursor-pointer;
 }
 
 /*
  * Error
  */
-.Page.ErrorPage {
+.Pinpoint.Page.ErrorPage {
 	@apply h-screen w-full flex flex-col justify-between items-stretch;
 }
 
-.errorWrapper {
+.Pinpoint .errorWrapper {
 	@apply flex-grow py-10 flex flex-col justify-center;
 }
 
-.Error {
+.Pinpoint.Error {
 	@apply flex flex-col justify-center items-center text-center;
 }
 
-.Error .logo {
+.Pinpoint.Error .logo {
 	@apply mb-10 md:mb-14;
 }
 
-.Error .error {
+.Pinpoint.Error .error {
 	@apply uppercase font-medium;
 	color: var(--page-error-color);
 }
 
-.Error .title {
+.Pinpoint.Error .title {
 	@apply my-4 text-4xl md:text-5xl font-semibold;
 	color: var(--page-title-color);
 }
 
-.Error .description {
+.Pinpoint.Error .description {
 	@apply text-lg;
 	color: var(--page-secondary-text-color);
 }
 
-.Error .link {
+.Pinpoint.Error .link {
 	@apply mt-10 flex text-xl items-center;
 	color: var(--page-highlight-color);
 }
 
-.Error .link .icon {
+.Pinpoint.Error .link .icon {
 	@apply ml-2;
 }
 
-.Banner.wrapper {
+.Pinpoint.Banner.wrapper {
 	@apply w-full flex items-center justify-center p-4 bg-yellow-500 text-yellow-900;
 }
 
-.Banner .inner {
+.Pinpoint.Banner .inner {
 	@apply flex items-center flex-row w-full max-w-[75rem];
 }
 
-.Banner .icon {
+.Pinpoint.Banner .icon {
 	@apply mr-2 w-4 h-4;
 }
 
-.SubscribeForm.wrapper {
+.Pinpoint.SubscribeForm.wrapper {
 	@apply block;
 }
 
-.SubscribeForm.invisible {
+.Pinpoint.SubscribeForm.invisible {
 	@apply invisible;
 }
 
-.SubscribeForm.visible {
+.Pinpoint.SubscribeForm.visible {
 	@apply visible;
 }
 
-.SubscribeForm .inner {
+.Pinpoint.SubscribeForm .inner {
 	@apply flex flex-row;
 }
 
-.SubscribeForm .inner .input {
+.Pinpoint.SubscribeForm .inner .input {
 	@apply relative border-2 mr-2 focus-within:border-blue-500 disabled:focus-within:border-gray-500;
 }
 
-.SubscribeForm .spinner {
+.Pinpoint.SubscribeForm .spinner {
 	@apply absolute top-2 right-1 text-indigo-500 z-10;
 }
 
-.SubscribeForm .spinner.visible {
+.Pinpoint.SubscribeForm .spinner.visible {
 	@apply visible;
 }
 
-.SubscribeForm .spinner.invisible {
+.Pinpoint.SubscribeForm .spinner.invisible {
 	@apply invisible;
 }
 
-.SubscribeForm input {
+.Pinpoint.SubscribeForm input {
 	@apply p-1 focus:outline-none pr-4 bg-white disabled:text-gray-400 disabled:bg-white disabled:cursor-not-allowed;
 }
 
-.SubscribeForm button {
+.Pinpoint.SubscribeForm button {
 	@apply border rounded text-gray-700 bg-gray-100 px-2 py-1 disabled:bg-gray-50 disabled:text-gray-400 disabled:cursor-not-allowed;
 }
 
-.SubscribeForm .success {
+.Pinpoint.SubscribeForm .success {
 	@apply text-green-600 dark:text-green-500 text-sm text-left mt-1;
 }
 
-.SubscribeForm .error {
+.Pinpoint.SubscribeForm .error {
 	@apply text-red-500 text-sm text-left mt-1;
 }
 
-.SubscribeForm .error .icon,
-.SubscribeForm .success .icon {
+.Pinpoint.SubscribeForm .error .icon,
+.Pinpoint.SubscribeForm .success .icon {
 	@apply mr-1;
 }
 
-.SubscribeForm .error.visible {
+.Pinpoint.SubscribeForm .error.visible {
 	@apply visible;
 }
 
-.SubscribeForm .error.invisible {
+.Pinpoint.SubscribeForm .error.invisible {
 	@apply invisible;
 }

@@ -5,5 +5,5 @@ export interface IPinpointConfig {
 	apihostParams?: Record<string, string>;
 	siteUrl?: string;
 	apiKey?: string;
-	pageSize: number;
+	pageSize?: number;
 }

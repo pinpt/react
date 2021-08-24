@@ -15,7 +15,7 @@ const Banner = ({
 	className = 'bg-yellow-500 text-yellow-900',
 }: BannerProps) => {
 	return (
-		<div className={`Banner wrapper ${className}`}>
+		<div className={`Pinpoint Banner wrapper ${className}`}>
 			<div className="inner">
 				{message ? (
 					<>

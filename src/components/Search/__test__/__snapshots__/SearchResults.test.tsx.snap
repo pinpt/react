@@ -44,7 +44,7 @@ exports[`Test custom className 1`] = `
             className="button"
           >
             <span
-              className="Pinpoint Internal Link  Content Card Read "
+              className="Pinpoint Internal Link  Pinpoint Content Card Read "
             >
               Read
               <svg
@@ -228,7 +228,7 @@ exports[`Test double 1`] = `
             className="button"
           >
             <span
-              className="Pinpoint Internal Link  Content Card Read "
+              className="Pinpoint Internal Link  Pinpoint Content Card Read "
             >
               Read
               <svg
@@ -396,7 +396,7 @@ exports[`Test double 1`] = `
             className="button"
           >
             <span
-              className="Pinpoint Internal Link  Content Card Read "
+              className="Pinpoint Internal Link  Pinpoint Content Card Read "
             >
               Read
               <svg
@@ -614,7 +614,7 @@ exports[`Test single 1`] = `
             className="button"
           >
             <span
-              className="Pinpoint Internal Link  Content Card Read "
+              className="Pinpoint Internal Link  Pinpoint Content Card Read "
             >
               Read
               <svg
@@ -798,7 +798,7 @@ exports[`Test triple 1`] = `
             className="button"
           >
             <span
-              className="Pinpoint Internal Link  Content Card Read "
+              className="Pinpoint Internal Link  Pinpoint Content Card Read "
             >
               Read
               <svg
@@ -966,7 +966,7 @@ exports[`Test triple 1`] = `
             className="button"
           >
             <span
-              className="Pinpoint Internal Link  Content Card Read "
+              className="Pinpoint Internal Link  Pinpoint Content Card Read "
             >
               Read
               <svg
@@ -1134,7 +1134,7 @@ exports[`Test triple 1`] = `
             className="button"
           >
             <span
-              className="Pinpoint Internal Link  Content Card Read "
+              className="Pinpoint Internal Link  Pinpoint Content Card Read "
             >
               Read
               <svg

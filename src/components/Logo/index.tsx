@@ -14,7 +14,13 @@ const Logo = (props: ILogoProps) => {
 	const { className = '', src, href, newTab, size = 'sm', onClick, title = 'Logo' } = props;
 
 	return (
-		<ActionLink className={`Logo ${size} ${className}`} href={href} newTab={newTab} onClick={onClick} title={title}>
+		<ActionLink
+			className={`Pinpoint Logo ${size} ${className}`}
+			href={href}
+			newTab={newTab}
+			onClick={onClick}
+			title={title}
+		>
 			<img className="image" src={src} />
 		</ActionLink>
 	);

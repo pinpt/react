@@ -4,13 +4,13 @@
 
 #### Theming
 
-The parent className for styling this component is `.Page.Dashboard`
+The parent className for styling this component is `.Pinpoint.Page.Dashboard`
 
 <details>
 	<summary>Base Theme Styles</summary>
 
 ```css
-.Page.Dashboard {
+.Pinpoint.Page.Dashboard {
 	@apply flex flex-col h-screen;
 }
 ```

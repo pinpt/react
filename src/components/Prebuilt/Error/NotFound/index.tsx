@@ -1,8 +1,7 @@
 import Error from '../../../Error';
-import Footer from '../../Footer';
 import Logo from '../../../Logo';
 import PageError from '../../../Page/Error';
-
+import Footer from '../../Footer';
 import { IPrebuiltErrorProps } from '../types';
 
 const NotFound = ({

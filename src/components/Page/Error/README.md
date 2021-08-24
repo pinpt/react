@@ -4,17 +4,17 @@
 
 #### Theming
 
-The parent className for styling this component is `.Page.Error`
+The parent className for styling this component is `.Pinpoint.Page.Error`
 
 <details>
 	<summary>Base Theme Styles</summary>
 
 ```css
-.Page.ErrorPage {
+.Pinpoint.Page.ErrorPage {
 	@apply h-screen w-full flex flex-col justify-between items-stretch;
 }
 
-.errorWrapper {
+.Pinpoint.errorWrapper {
 	@apply flex-grow py-10 flex flex-col justify-center;
 }
 ```

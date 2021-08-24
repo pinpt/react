@@ -5,7 +5,7 @@ const Instagram = (props: ISocialProps) => {
 	const { className = '', sharing, ...rest } = props;
 
 	return (
-		<ActionLink className={`Social Item Instagram ${sharing ? 'sharing' : ''} ${className}`} {...rest}>
+		<ActionLink className={`Pinpoint Social Item Instagram ${sharing ? 'sharing' : ''} ${className}`} {...rest}>
 			<svg
 				width={12.25}
 				height={14}

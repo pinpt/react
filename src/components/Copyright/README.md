@@ -4,17 +4,17 @@
 
 #### Theming
 
-The parent className for styling this component is `.Copyright`
+The parent className for styling this component is `.Pinpoint.Copyright`
 
 <details>
 	<summary>Base Theme Styles</summary>
 
 ```css
-.Copyright .text {
+.Pinpoint.Copyright .text {
 	@apply mt-1;
 }
 
-.Footer .Copyright {
+.Pinpoint.Footer .Pinpoint.Copyright {
 	@apply flex flex-col items-center md:items-start;
 }
 ```

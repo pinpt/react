@@ -4,40 +4,40 @@
 
 #### Theming
 
-The parent className for styling this component is `.Sidebar`
+The parent className for styling this component is `.Pinpoint.Sidebar`
 
 <details>
 	<summary>Base Theme Styles</summary>
 
 ```css
-.entryWrapper .sidebarWrapper {
+.Pinpoint.entryWrapper .sidebarWrapper {
 	color: var(--article-info-color);
 }
 
-.entryWrapper .sidebarWrapper.before {
+.Pinpoint.entryWrapper .sidebarWrapper.before {
 	@apply md:mr-4 mb-8 md:mb-0 min-w-1/4;
 }
 
-.entryWrapper .sidebarWrapper.before .Sidebar {
+.Pinpoint.entryWrapper .sidebarWrapper.before .Sidebar {
 	@apply flex-shrink-0 flex-wrap;
 }
 
-.entryWrapper .sidebarWrapper.before .Clap,
-.entryWrapper .sidebarWrapper.before .Social.Bar {
+.Pinpoint.entryWrapper .sidebarWrapper.before .Clap,
+.Pinpoint.entryWrapper .sidebarWrapper.before .Social.Bar {
 	@apply hidden md:flex;
 }
 
-.entryWrapper .sidebarWrapper.after {
+.Pinpoint.entryWrapper .sidebarWrapper.after {
 	@apply md:hidden;
 }
 
-.entryWrapper .sidebarWrapper.after .Sidebar {
+.Pinpoint.entryWrapper .sidebarWrapper.after .Sidebar {
 	@apply justify-between;
 }
 
-.entryWrapper .sidebarWrapper.after .Date,
-.entryWrapper .sidebarWrapper.after .Author,
-.entryWrapper .sidebarWrapper.after .Tag.Bar {
+.Pinpoint.entryWrapper .sidebarWrapper.after .Date,
+.Pinpoint.entryWrapper .sidebarWrapper.after .Author,
+.Pinpoint.entryWrapper .sidebarWrapper.after .Tag.Bar {
 	@apply hidden;
 }
 ```

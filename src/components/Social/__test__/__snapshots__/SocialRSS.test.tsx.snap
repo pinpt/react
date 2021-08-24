@@ -2,7 +2,7 @@
 
 exports[`Test click handler 1`] = `
 <span
-  className="Pinpoint Internal Link clickable Social Item RSS "
+  className="Pinpoint Internal Link clickable Pinpoint Social Item RSS "
   onClick={[Function]}
 >
   <svg
@@ -26,7 +26,7 @@ exports[`Test click handler 1`] = `
 
 exports[`Test custom className 1`] = `
 <span
-  className="Pinpoint Internal Link  Social Item RSS custom-test"
+  className="Pinpoint Internal Link  Pinpoint Social Item RSS custom-test"
 >
   <svg
     aria-hidden="true"
@@ -49,7 +49,7 @@ exports[`Test custom className 1`] = `
 
 exports[`Test default state 1`] = `
 <span
-  className="Pinpoint Internal Link  Social Item RSS "
+  className="Pinpoint Internal Link  Pinpoint Social Item RSS "
 >
   <svg
     aria-hidden="true"
@@ -72,7 +72,7 @@ exports[`Test default state 1`] = `
 
 exports[`Test link (new tab) 1`] = `
 <a
-  className="Pinpoint Internal Link Social Item RSS "
+  className="Pinpoint Internal Link Pinpoint Social Item RSS "
   href="https://api.pinpoint.com.so/rss/PirxVTE94u3YmGNOySRY"
   rel="noopener noreferrer"
   target="_blank"
@@ -98,7 +98,7 @@ exports[`Test link (new tab) 1`] = `
 
 exports[`Test link 1`] = `
 <a
-  className="Pinpoint Internal Link Social Item RSS "
+  className="Pinpoint Internal Link Pinpoint Social Item RSS "
   href="https://api.pinpoint.com.so/rss/PirxVTE94u3YmGNOySRY"
 >
   <svg

@@ -5,7 +5,7 @@ const Twitter = (props: ISocialProps) => {
 	const { className = '', sharing, ...rest } = props;
 
 	return (
-		<ActionLink className={`Social Item Twitter ${sharing ? 'sharing' : ''} ${className}`} {...rest}>
+		<ActionLink className={`Pinpoint Social Item Twitter ${sharing ? 'sharing' : ''} ${className}`} {...rest}>
 			<svg
 				width={14}
 				height={14}

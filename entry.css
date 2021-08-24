@@ -1,204 +1,204 @@
 /**
  * Basic styles and default margins
  **/
-.document * {
+.Pinpoint.document * {
 	@apply leading-loose;
 }
 
-.document p,
-.document li {
+.Pinpoint.document p,
+.Pinpoint.document li {
 	@apply text-lg leading-loose;
 	color: var(--article-text-color);
 }
 
-.document > * + *,
-.document > * + .toggle,
-.document .toggle > .content > * + * {
+.Pinpoint.document > * + *,
+.Pinpoint.document > * + .toggle,
+.Pinpoint.document .toggle > .content > * + * {
 	@apply mt-8;
 }
-.document blockquote > * + *,
-.document .notice > .content > * + * {
+.Pinpoint.document blockquote > * + *,
+.Pinpoint.document .notice > .content > * + * {
 	@apply mt-4;
 }
 
-.document > strong,
-.document > b {
+.Pinpoint.document > strong,
+.Pinpoint.document > b {
 	@apply font-semibold;
 }
 
-.document a[href],
-.document .link {
+.Pinpoint.document a[href],
+.Pinpoint.document .link {
 	@apply underline cursor-pointer;
 }
 
-.document p a[href]:not(.mark-color) {
+.Pinpoint.document p a[href]:not(.mark-color) {
 	color: var(--article-link-color);
 }
 
 /* Pass through mark color if set */
-.document mark a[href],
-.dark .document mark a[href] {
+.Pinpoint.document mark a[href],
+.dark .Pinpoint.document mark a[href] {
 	color: unset;
 }
 
 /**
  * Headings
  */
-.document h1,
-.document h2,
-.document h3,
-.document .heading {
+.Pinpoint.document h1,
+.Pinpoint.document h2,
+.Pinpoint.document h3,
+.Pinpoint.document .heading {
 	@apply font-semibold;
 	color: var(--article-text-color);
 }
-.document .heading .anchor {
+.Pinpoint.document .heading .anchor {
 	@apply absolute right-full mt-1.5 pr-2 invisible opacity-50 text-base;
 }
-.document .heading:hover .anchor {
+.Pinpoint.document .heading:hover .anchor {
 	@apply visible;
 }
 
-.document h1 {
+.Pinpoint.document h1 {
 	@apply text-3xl;
 }
-.document h2 {
+.Pinpoint.document h2 {
 	@apply text-2xl;
 }
-.document h3 {
+.Pinpoint.document h3 {
 	@apply text-xl leading-loose;
 }
-.document h4 {
+.Pinpoint.document h4 {
 	@apply text-lg leading-loose;
 }
-.document * + h1,
-.document * + .h1 {
+.Pinpoint.document * + h1,
+.Pinpoint.document * + .h1 {
 	@apply mt-16;
 }
-.document * + h2,
-.document * + .h2 {
+.Pinpoint.document * + h2,
+.Pinpoint.document * + .h2 {
 	@apply mt-14;
 }
 
 /**
  * Highlight
  **/
-.document mark,
-.document mark a[href],
-.Markup .yellow {
+.Pinpoint.document mark,
+.Pinpoint.document mark a[href],
+.Pinpoint .Markup .yellow {
 	@apply rounded-sm;
 	color: unset;
 	background-color: unset;
 	text-decoration: unset;
 }
-.document a.mark-color {
+.Pinpoint.document a.mark-color {
 	text-decoration: unset;
 	text-decoration-color: unset;
 }
-.dark .document mark,
-.dark .document mark a[href],
-.dark .Markup {
+.dark .Pinpoint.document mark,
+.dark .Pinpoint.document mark a[href],
+.dark .Pinpoint .Markup {
 	color: unset;
 	background-color: unset;
 	text-decoration: unset;
 }
 /* background */
-.document mark.bg-gray,
-.Markup .bg-gray {
+.Pinpoint.document mark.bg-gray,
+.Pinpoint .Markup .bg-gray {
 	@apply bg-gray-200 dark:bg-gray-700;
 }
-.document mark.bg-red,
-.Markup .bg-red {
+.Pinpoint.document mark.bg-red,
+.Pinpoint .Markup .bg-red {
 	@apply bg-red-200 dark:bg-red-800;
 }
-.document mark.bg-green,
-.Markup .bg-green {
+.Pinpoint.document mark.bg-green,
+.Pinpoint .Markup .bg-green {
 	@apply bg-green-200 dark:bg-green-800;
 }
-.document mark.bg-blue,
-.Markup .bg-blue {
+.Pinpoint.document mark.bg-blue,
+.Pinpoint .Markup .bg-blue {
 	@apply bg-blue-200 dark:bg-blue-800;
 }
-.document mark.bg-purple,
-.Markup .bg-purple {
+.Pinpoint.document mark.bg-purple,
+.Pinpoint .Markup .bg-purple {
 	@apply bg-purple-200 dark:bg-purple-900;
 }
-.document mark.bg-pink,
-.Markup .bg-pink {
+.Pinpoint.document mark.bg-pink,
+.Pinpoint .Markup .bg-pink {
 	@apply bg-pink-200 dark:bg-pink-900;
 }
-.document mark.bg-orange,
-.Markup .bg-orange {
+.Pinpoint.document mark.bg-orange,
+.Pinpoint .Markup .bg-orange {
 	@apply bg-orange-200 dark:bg-orange-900;
 }
-.document mark.bg-yellow,
-.Markup .bg-yellow {
+.Pinpoint.document mark.bg-yellow,
+.Pinpoint .Markup .bg-yellow {
 	@apply bg-yellow-200 dark:bg-yellow-900;
 }
 /* color */
-.document mark.gray,
-.Markup .gray {
+.Pinpoint.document mark.gray,
+.Pinpoint .Markup .gray {
 	@apply text-gray-400 dark:text-gray-500;
 }
-.document mark.red,
-.Markup .red {
+.Pinpoint.document mark.red,
+.Pinpoint .Markup .red {
 	@apply text-red-500 dark:text-red-500;
 }
-.document mark.green,
-.Markup .green {
+.Pinpoint.document mark.green,
+.Pinpoint .Markup .green {
 	@apply text-green-500 dark:text-green-500;
 }
-.document mark.blue,
-.Markup .blue {
+.Pinpoint.document mark.blue,
+.Pinpoint .Markup .blue {
 	@apply text-blue-500 dark:text-blue-500;
 }
-.document mark.purple,
-.Markup .purple {
+.Pinpoint.document mark.purple,
+.Pinpoint .Markup .purple {
 	@apply text-purple-500 dark:text-purple-500;
 }
-.document mark.pink,
-.Markup .pink {
+.Pinpoint.document mark.pink,
+.Pinpoint .Markup .pink {
 	@apply text-pink-500 dark:text-pink-500;
 }
-.document mark.orange,
-.Markup .orange {
+.Pinpoint.document mark.orange,
+.Pinpoint .Markup .orange {
 	@apply text-orange-500 dark:text-orange-500;
 }
-.document mark.yellow,
-.Markup .yellow {
+.Pinpoint.document mark.yellow,
+.Pinpoint .Markup .yellow {
 	@apply text-yellow-500 dark:text-yellow-500;
 }
 
 /**
  * lists
  **/
-.document ul:not(.checkbox_list),
-.document ol {
+.Pinpoint.document ul:not(.checkbox_list),
+.Pinpoint.document ol {
 	@apply ml-0 pl-0;
 }
-.document ul:not(.checkbox_list) {
+.Pinpoint.document ul:not(.checkbox_list) {
 	@apply list-none;
 }
-.document ol {
+.Pinpoint.document ol {
 	@apply list-none;
 	counter-reset: ol-counter;
 }
-.document ul:not(.checkbox_list) > li,
-.document ol > li {
+.Pinpoint.document ul:not(.checkbox_list) > li,
+.Pinpoint.document ol > li {
 	@apply m-0 pl-6;
 	counter-increment: ol-counter;
 }
-.document ul:not(.checkbox_list) > li::before {
+.Pinpoint.document ul:not(.checkbox_list) > li::before {
 	@apply text-gray-400 dark:text-gray-600 absolute top-0 left-1;
 	content: '\2022';
 }
-.document ol > li::before {
+.Pinpoint.document ol > li::before {
 	@apply text-gray-400 dark:text-gray-600 absolute top-0 -left-12 text-right w-16;
 	content: counter(ol-counter) '.';
 }
-.document li {
+.Pinpoint.document li {
 	@apply relative;
 }
-.document li > div {
+.Pinpoint.document li > div {
 	@apply w-full;
 	min-height: 2rem;
 }
@@ -206,37 +206,37 @@
 /**
  * Code / Code Block
 **/
-.document code {
+.Pinpoint.document code {
 	@apply p-1 rounded-sm bg-trueGray-100 dark:bg-trueGray-800 dark:text-trueGray-300 border border-trueGray-200 dark:border-trueGray-700 font-mono text-sm leading-8;
 }
-.Markup .code_inline {
+.Pinpoint .Markup .code_inline {
 	@apply rounded-sm bg-trueGray-100 dark:bg-trueGray-800 dark:text-trueGray-300 border border-trueGray-200 dark:border-trueGray-700 font-mono text-sm leading-5;
 }
-.document .code_block,
-.document .notice {
+.Pinpoint.document .code_block,
+.Pinpoint.document .notice {
 	@apply relative shadow-lg;
 }
-.document * + .code_block,
-.document * + .notice {
+.Pinpoint.document * + .code_block,
+.Pinpoint.document * + .notice {
 	@apply my-4;
 }
-.document .code_block > .options,
-.document .notice > .options {
+.Pinpoint.document .code_block > .options,
+.Pinpoint.document .notice > .options {
 	@apply absolute opacity-0 transition-opacity delay-200 duration-100 rounded overflow-hidden top-1 right-1 z-10 flex items-center select-none;
 }
-.document .code_block:hover > .options,
-.document .notice:hover > .options {
+.Pinpoint.document .code_block:hover > .options,
+.Pinpoint.document .notice:hover > .options {
 	@apply opacity-100;
 }
-.document .code_block > .options select,
-.document .code_block > .options button,
-.document .notice > .options select,
-.document .notice > .options button {
+.Pinpoint.document .code_block > .options select,
+.Pinpoint.document .code_block > .options button,
+.Pinpoint.document .notice > .options select,
+.Pinpoint.document .notice > .options button {
 	@apply last:mr-0 px-2 h-6 bg-gray-800 hover:bg-gray-900 text-gray-300 hover:text-white text-xs focus:ring-0 cursor-pointer;
 	margin-right: 1px;
 }
-.document .code_block > .options select,
-.document .notice > .options select {
+.Pinpoint.document .code_block > .options select,
+.Pinpoint.document .notice > .options select {
 	@apply py-0 pr-8 appearance-none border-0 bg-no-repeat;
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -245,170 +245,170 @@
 	background-position: calc(100% - 15px) calc(50%), calc(100% - 10px) calc(50%);
 	background-size: 5px 5px, 5px 5px;
 }
-.document .code_block > .options select:hover,
-.document .notice > .options select:hover {
+.Pinpoint.document .code_block > .options select:hover,
+.Pinpoint.document .notice > .options select:hover {
 	background-image: linear-gradient(45deg, transparent 50%, white 50%),
 		linear-gradient(135deg, white 50%, transparent 50%);
 }
-.document .code_block > .options button svg,
-.document .notice > .options button svg {
+.Pinpoint.document .code_block > .options button svg,
+.Pinpoint.document .notice > .options button svg {
 	@apply mr-2;
 }
-.document pre {
+.Pinpoint.document pre {
 	@apply block relative rounded overflow-x-auto px-6 py-4 leading-5 font-mono whitespace-pre overflow-scroll bg-black text-trueGray-300;
 }
-.document pre code {
+.Pinpoint.document pre code {
 	@apply block p-0 leading-5 bg-black dark:bg-black border-0;
 }
 
-.document .notice {
+.Pinpoint.document .notice {
 	@apply flex items-center rounded px-5 py-4;
 }
-.document .notice.error {
+.Pinpoint.document .notice.error {
 	@apply bg-red-600 dark:bg-red-700 text-white;
 }
-.document .notice.warning {
+.Pinpoint.document .notice.warning {
 	@apply bg-yellow-400 dark:bg-yellow-500 dark:text-gray-800;
 }
-.document .notice.warning a {
+.Pinpoint.document .notice.warning a {
 	@apply text-gray-800 underline;
 }
-.document .notice.info {
+.Pinpoint.document .notice.info {
 	@apply bg-green-600 dark:bg-green-700 text-white;
 }
-.document .notice.info h1,
-.document .notice.error h1,
-.document .notice.info h2,
-.document .notice.error h2,
-.document .notice.info h3,
-.document .notice.error h3,
-.document .notice.info h4,
-.document .notice.error h4 {
+.Pinpoint.document .notice.info h1,
+.Pinpoint.document .notice.error h1,
+.Pinpoint.document .notice.info h2,
+.Pinpoint.document .notice.error h2,
+.Pinpoint.document .notice.info h3,
+.Pinpoint.document .notice.error h3,
+.Pinpoint.document .notice.info h4,
+.Pinpoint.document .notice.error h4 {
 	@apply text-white;
 }
-.document .notice.info a,
-.document .notice.error a {
+.Pinpoint.document .notice.info a,
+.Pinpoint.document .notice.error a {
 	@apply text-white underline;
 }
-.document .notice.info code,
-.document .notice.error code {
+.Pinpoint.document .notice.info code,
+.Pinpoint.document .notice.error code {
 	@apply bg-black text-trueGray-300 border-trueGray-700;
 }
-.document .notice.warning hr {
+.Pinpoint.document .notice.warning hr {
 	@apply border-gray-400;
 }
-.document .notice > .icon {
+.Pinpoint.document .notice > .icon {
 	@apply flex-shrink-0 w-8 h-8 self-start;
 }
-.document .notice > .content {
+.Pinpoint.document .notice > .content {
 	@apply flex-grow min-w-0;
 	padding-top: 2px;
 }
-.document .notice > .content .code_block {
+.Pinpoint.document .notice > .content .code_block {
 	@apply shadow-none;
 }
-.document .notice select {
+.Pinpoint.document .notice select {
 	@apply top-2 right-4;
 }
 /* element tokens */
-.document .token.comment,
-.document .token.prolog,
-.document .token.doctype,
-.document .token.cdata {
+.Pinpoint.document .token.comment,
+.Pinpoint.document .token.prolog,
+.Pinpoint.document .token.doctype,
+.Pinpoint.document .token.cdata {
 	@apply text-gray-400 italic;
 }
-.document text-gray-500.token.punctuation {
+.Pinpoint.document text-gray-500.token.punctuation {
 	@apply text-purple-100;
 }
-.document .token.namespace {
+.Pinpoint.document .token.namespace {
 	@apply opacity-70;
 }
-.document .token.operator,
-.document .token.boolean,
-.document.token.number {
+.Pinpoint.document .token.operator,
+.Pinpoint.document .token.boolean,
+.Pinpoint.document.token.number {
 	@apply text-red-500;
 }
-.document .token.property {
+.Pinpoint.document .token.property {
 	@apply text-yellow-200;
 }
-.document .token.tag {
+.Pinpoint.document .token.tag {
 	@apply text-blue-500;
 }
-.document .token.string {
+.Pinpoint.document .token.string {
 	@apply text-blue-100;
 }
-.document .token.selector {
+.Pinpoint.document .token.selector {
 	@apply text-blueGray-500;
 }
-.document .token.attr-name {
+.Pinpoint.document .token.attr-name {
 	@apply text-orange-100;
 }
-.document .token.entity,
-.document .token.url,
-.document .language-css .token.string,
-.document .style .token.string {
+.Pinpoint.document .token.entity,
+.Pinpoint.document .token.url,
+.Pinpoint.document .language-css .token.string,
+.Pinpoint.document .style .token.string {
 	@apply text-blue-600;
 }
-.document .token.attr-value,
-.document .token.keyword,
-.document .token.control,
-.document .token.directive,
-.document .token.unit {
+.Pinpoint.document .token.attr-value,
+.Pinpoint.document .token.keyword,
+.Pinpoint.document .token.control,
+.Pinpoint.document .token.directive,
+.Pinpoint.document .token.unit {
 	@apply text-red-400;
 }
-.document .token.function {
+.Pinpoint.document .token.function {
 	@apply text-purple-400;
 }
-.document .token.builtin {
+.Pinpoint.document .token.builtin {
 	@apply text-yellow-400;
 }
-.document .token.statement,
-.document .token.regex,
-.document .token.atrule {
+.Pinpoint.document .token.statement,
+.Pinpoint.document .token.regex,
+.Pinpoint.document .token.atrule {
 	@apply text-blue-600;
 }
-.document .token.placeholder,
-.document .token.variable {
+.Pinpoint.document .token.placeholder,
+.Pinpoint.document .token.variable {
 	@apply text-blue-500;
 }
-.document .token.deleted {
+.Pinpoint.document .token.deleted {
 	@apply line-through;
 }
-.document .token.inserted {
+.Pinpoint.document .token.inserted {
 	@apply border-b border-dotted border-gray-300;
 }
-.document .token.important,
-.document .token.bold {
+.Pinpoint.document .token.important,
+.Pinpoint.document .token.bold {
 	@apply font-semibold;
 }
-.document .token.important {
+.Pinpoint.document .token.important {
 	@apply text-red-500;
 }
-.document .token.entity {
+.Pinpoint.document .token.entity {
 	cursor: help;
 }
 
 /**
  * Blockquote
  **/
-.document blockquote {
+.Pinpoint.document blockquote {
 	@apply p-4 bg-sky-100 dark:bg-sky-900 text-gray-600 dark:text-gray-300 border-l-4 border-sky-300 dark:border-sky-600 rounded-r;
 }
-.document * + blockquote,
-.document * + .blockquote {
+.Pinpoint.document * + blockquote,
+.Pinpoint.document * + .blockquote {
 	@apply my-4;
 }
-.document blockquote .placeholder:before {
+.Pinpoint.document blockquote .placeholder:before {
 	@apply text-sky-300 dark:text-sky-700;
 }
 
 /**
  * Horizontal Rule
  **/
-.document .hr > div {
+.Pinpoint.document .hr > div {
 	@apply pt-4;
 }
-.document .hr > div > hr {
+.Pinpoint.document .hr > div > hr {
 	@apply h-0 pb-4 border-t;
 	border-color: var(--article-border-color);
 }
@@ -416,31 +416,31 @@
 /**
  * Toggle
  **/
-.document .toggle {
+.Pinpoint.document .toggle {
 	@apply pl-4 border-l-4 border-gray-200 dark:border-gray-800;
 	min-height: 1rem;
 }
-.document .toggle > .options {
+.Pinpoint.document .toggle > .options {
 	@apply relative flex items-center text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 leading-3 cursor-pointer;
 }
-.document .toggle > .options .icon {
+.Pinpoint.document .toggle > .options .icon {
 	@apply absolute w-7 h-8 top-0 -left-8 ml-1 py-0 rounded;
 	background-color: var(--article-bg-color);
 }
-.document .toggle > .options > .title {
+.Pinpoint.document .toggle > .options > .title {
 	@apply hidden max-w-full pr-4 text-gray-600 dark:text-gray-400 leading-8 overflow-x-hidden overflow-ellipsis whitespace-nowrap;
 }
-.document .toggle.collapsed > .options > .title {
+.Pinpoint.document .toggle.collapsed > .options > .title {
 	@apply block select-none;
 }
-.document .toggle.collapsed > .content {
+.Pinpoint.document .toggle.collapsed > .content {
 	@apply hidden;
 }
 
 /**
  * Table
  **/
-.document .scrollable-wrapper {
+.Pinpoint.document .scrollable-wrapper {
 	@apply relative;
 	scrollbar-width: thin;
 	scrollbar-color: transparent transparent;
@@ -448,53 +448,53 @@
 
 /* .document .scrollable-wrapper:hover {
 } */
-.document .scrollable-wrapper ::-webkit-scrollbar {
+.Pinpoint.document .scrollable-wrapper ::-webkit-scrollbar {
 	@apply w-3 h-3 cursor-pointer;
 	background-color: transparent;
 }
-.document .scrollable-wrapper:hover ::-webkit-scrollbar {
+.Pinpoint.document .scrollable-wrapper:hover ::-webkit-scrollbar {
 	@apply bg-gray-100 dark:bg-gray-800;
 }
-.document .scrollable-wrapper ::-webkit-scrollbar-thumb {
+.Pinpoint.document .scrollable-wrapper ::-webkit-scrollbar-thumb {
 	background-color: transparent;
 	@apply rounded-lg cursor-pointer;
 }
-.document .scrollable-wrapper:hover ::-webkit-scrollbar-thumb {
+.Pinpoint.document .scrollable-wrapper:hover ::-webkit-scrollbar-thumb {
 	@apply bg-gray-400 dark:bg-gray-600 border-gray-100 dark:border-gray-800;
 }
 
-.document .scrollable {
+.Pinpoint.document .scrollable {
 	@apply overflow-x-auto overflow-y-hidden pl-4 -ml-4;
 }
 
-.document table {
+.Pinpoint.document table {
 	@apply my-4 overflow-visible border-collapse rounded;
 }
-.document table.table-stretch {
+.Pinpoint.document table.table-stretch {
 	@apply w-full;
 }
-.document table.table-manual {
+.Pinpoint.document table.table-manual {
 	@apply table-fixed;
 }
-.document table th {
+.Pinpoint.document table th {
 	@apply bg-gray-100 dark:bg-gray-800 font-semibold;
 }
 
-.document table td,
-.document table th {
+.Pinpoint.document table td,
+.Pinpoint.document table th {
 	@apply relative align-top border border-gray-300 dark:border-gray-600 text-left;
 	min-width: 5rem;
 }
-.document table.table-fit th,
-.document table.table-fit td {
+.Pinpoint.document table.table-fit th,
+.Pinpoint.document table.table-fit td {
 	@apply whitespace-nowrap;
 }
 
-.document table th .resize {
+.Pinpoint.document table th .resize {
 	@apply absolute z-40 top-0 -right-1 h-full w-2;
 	cursor: ew-resize;
 }
-.document table tr:not(:first-of-type) th .resize {
+.Pinpoint.document table tr:not(:first-of-type) th .resize {
 	@apply hidden;
 }
 .resize-handle {
@@ -502,53 +502,53 @@
 	cursor: ew-resize;
 }
 /* keep legacy styling */
-.document table.table-stretch th,
-.document table.table-stretch td {
+.Pinpoint.document table.table-stretch th,
+.Pinpoint.document table.table-stretch td {
 	@apply max-w-md;
 }
-.document table th .content,
-.document table td {
+.Pinpoint.document table th .content,
+.Pinpoint.document table td {
 	@apply px-4 py-2;
 }
 
 /**
  * Image
  **/
-.document .image_block .image {
+.Pinpoint.document .image_block .image {
 	@apply flex justify-center;
 }
-.document .image_block.left .image {
+.Pinpoint.document .image_block.left .image {
 	@apply justify-start;
 }
-.document .image_block.center .image {
+.Pinpoint.document .image_block.center .image {
 	@apply justify-center;
 }
-.document .image_block.right .image {
+.Pinpoint.document .image_block.right .image {
 	@apply justify-end;
 }
-.document .image_block .alt {
+.Pinpoint.document .image_block .alt {
 	@apply mt-2 opacity-80 text-center italic;
 }
-.document .image_block.left .alt {
+.Pinpoint.document .image_block.left .alt {
 	@apply text-left;
 }
-.document .image_block.center .alt {
+.Pinpoint.document .image_block.center .alt {
 	@apply text-center;
 }
-.document .image_block.right .alt {
+.Pinpoint.document .image_block.right .alt {
 	@apply text-right;
 }
-.document .image_block .image img {
+.Pinpoint.document .image_block .image img {
 	@apply rounded-lg;
 }
 
 /**
  * Inline image
  */
-.document .inline-image {
+.Pinpoint.document .inline-image {
 	@apply relative inline-block align-middle;
 }
-.document .inline-image .options {
+.Pinpoint.document .inline-image .options {
 	@apply -top-6;
 }
 
@@ -609,104 +609,104 @@
 /**
  * Embed
  **/
-.document .iframe {
+.Pinpoint.document .iframe {
 	@apply my-8 p-3 border rounded;
 	background-color: var(--article-block-bg-color);
 	border-color: var(--article-border-color);
 }
-.document .iframe .options {
+.Pinpoint.document .iframe .options {
 	@apply relative;
 }
-.document .iframe .options .style-options {
+.Pinpoint.document .iframe .options .style-options {
 	@apply absolute z-10 top-1 right-1 flex flex-grow justify-end items-center rounded overflow-hidden;
 }
-.document .iframe:hover .options .style-option {
+.Pinpoint.document .iframe:hover .options .style-option {
 	@apply opacity-100;
 }
 
-.document .iframe .options .style-option {
+.Pinpoint.document .iframe .options .style-option {
 	@apply opacity-0 transition-opacity delay-200 duration-100 h-6 px-2 flex items-center bg-gray-800 hover:bg-gray-900 text-gray-300 hover:text-white cursor-pointer text-xs select-none;
 	margin-left: 1px;
 }
 .dark .document .iframe .options .style-option {
 	@apply text-gray-300 hover:text-white;
 }
-.document .iframe .options .style-option.overlay {
+.Pinpoint.document .iframe .options .style-option.overlay {
 	@apply absolute z-10 right-1 rounded;
 	top: calc(1.75rem + 1px);
 }
-.document .iframe .options .style-option:first {
+.Pinpoint.document .iframe .options .style-option:first {
 	@apply ml-0;
 }
-.document .iframe .options .style-option.selected {
+.Pinpoint.document .iframe .options .style-option.selected {
 	@apply bg-gray-600 hover:bg-gray-700 text-white;
 }
-.document .iframe .options .style-option span:last-child {
+.Pinpoint.document .iframe .options .style-option span:last-child {
 	@apply ml-2;
 }
-.document .iframe .link {
+.Pinpoint.document .iframe .link {
 	@apply cursor-pointer overflow-hidden overflow-ellipsis whitespace-nowrap;
 }
-.document .iframe .toggle {
+.Pinpoint.document .iframe .toggle {
 	@apply cursor-pointer;
 }
-.document .iframe .toggle > span {
+.Pinpoint.document .iframe .toggle > span {
 	@apply flex;
 }
-.document .iframe .toggle svg {
+.Pinpoint.document .iframe .toggle svg {
 	@apply text-gray-600 dark:text-gray-400;
 }
-.document .iframe .content {
+.Pinpoint.document .iframe .content {
 	@apply relative rounded overflow-hidden; /* do this here so its consistent */
 }
-.document .iframe .content .th {
+.Pinpoint.document .iframe .content .th {
 	@apply dark:text-gray-200;
 }
-.document .iframe .content .preview.small {
+.Pinpoint.document .iframe .content .preview.small {
 	@apply flex flex-row-reverse items-start;
 }
-.document .iframe .content .preview.small .thumbnail {
+.Pinpoint.document .iframe .content .preview.small .thumbnail {
 	@apply sm:max-w-xs max-h-16 sm:max-h-24 rounded;
 }
-.document .iframe .content .preview.small .info {
+.Pinpoint.document .iframe .content .preview.small .info {
 	@apply mr-2 flex-grow min-w-0;
 }
-.document .iframe .content .preview .site {
+.Pinpoint.document .iframe .content .preview .site {
 	@apply mb-1 flex items-center font-semibold leading-4;
 }
-.document .iframe .content .preview .site .icon {
+.Pinpoint.document .iframe .content .preview .site .icon {
 	@apply h-5 w-5 mr-2;
 }
-.document .iframe .content .preview .title {
+.Pinpoint.document .iframe .content .preview .title {
 	@apply font-bold leading-6 truncate;
 }
-.document .iframe .content .preview .description {
+.Pinpoint.document .iframe .content .preview .description {
 	@apply text-gray-500 dark:text-gray-400 leading-6;
 }
-.document .iframe .content .preview.small .description {
+.Pinpoint.document .iframe .content .preview.small .description {
 	display: -webkit-box;
 	-webkit-line-clamp: 2;
 	-webkit-box-orient: vertical;
 	overflow: hidden;
 }
-.document .iframe .content .preview.large .thumbnail {
+.Pinpoint.document .iframe .content .preview.large .thumbnail {
 	@apply w-full max-h-128 object-center object-cover rounded;
 }
-.document .iframe .content .preview.large .info {
+.Pinpoint.document .iframe .content .preview.large .info {
 	@apply mt-2;
 }
-.document .iframe .content .overlay {
+.Pinpoint.document .iframe .content .overlay {
 	@apply absolute top-0 left-0 h-1/4 w-full;
 	z-index: 2;
 	background-image: linear-gradient(#00000066, #00000000);
 }
-.document .iframe .overlay .info {
+.Pinpoint.document .iframe .overlay .info {
 	@apply m-3 flex items-center;
 }
-.document .iframe .overlay .icon {
+.Pinpoint.document .iframe .overlay .icon {
 	@apply h-5 w-5 mr-2;
 }
-.document .iframe .overlay .title {
+.Pinpoint.document .iframe .overlay .title {
 	@apply block min-w-0 truncate font-bold leading-5 text-white;
 	text-shadow: 0 0 2px black;
 }
@@ -714,11 +714,11 @@
 /**
  * Linked data
  */
-.document .linked-data-list-item {
+.Pinpoint.document .linked-data-list-item {
 	@apply relative pl-6;
 }
 
-.document .linked-data-list-item::before {
+.Pinpoint.document .linked-data-list-item::before {
 	@apply text-gray-400 dark:text-gray-600 absolute top-0 left-1;
 	content: '\2022';
 }
@@ -776,7 +776,7 @@
 /**
  * Emoji
  */
-.document span.emoji {
+.Pinpoint.document span.emoji {
 	font-family: Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol !important;
 	font-size: 1em !important;
 	font-style: normal !important;
@@ -789,32 +789,32 @@
 /**
  * Cover media
  */
-article .covermedia:not(:empty) {
+article .Pinpoint .covermedia:not(:empty) {
 	@apply mb-10 relative;
 }
 
-article .covermedia .image {
+article .Pinpoint .covermedia .image {
 	@apply rounded-lg overflow-hidden flex flex-col;
 	border-color: var(--article-border-color);
 }
 
-article .covermedia .image > img {
+article .Pinpoint .covermedia .image > img {
 	@apply object-cover object-center;
 }
 
-article .covermedia > .video,
-article .covermedia > .media-container > .video {
+article .Pinpoint .covermedia > .video,
+article .Pinpoint .covermedia > .media-container > .video {
 	@apply aspect-w-16 aspect-h-9;
 }
 
-article .covermedia > .media-container > video,
-article .covermedia > .video > video {
+article .Pinpoint .covermedia > .media-container > video,
+article .Pinpoint .covermedia > .video > video {
 	@apply w-full;
 }
 
 /* youtube lite styles (cover media only) */
 
-.embed-responsive {
+.Pinpoint .embed-responsive {
 	position: relative !important;
 	display: block !important;
 	height: 0 !important;
@@ -822,11 +822,11 @@ article .covermedia > .video > video {
 	overflow: hidden !important;
 }
 
-.embed-responsive .embed-responsive-item,
-.embed-responsive iframe,
-.embed-responsive embed,
-.embed-responsive object,
-.embed-responsive video {
+.Pinpoint .embed-responsive .embed-responsive-item,
+.Pinpoint .embed-responsive iframe,
+.Pinpoint .embed-responsive embed,
+.Pinpoint .embed-responsive object,
+.Pinpoint .embed-responsive video {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -836,11 +836,11 @@ article .covermedia > .video > video {
 	border: 0;
 }
 
-.aspect-ratio-16\/9 {
+.Pinpoint .aspect-ratio-16\/9 {
 	padding-bottom: 56.25% !important;
 }
 
-.ryt-lite {
+.Pinpoint .ryt-lite {
 	background-color: #000;
 	position: relative;
 	display: block;
@@ -853,17 +853,17 @@ article .covermedia > .video > video {
 /* responsive iframe with a 16:9 aspect ratio
 	  thanks https://css-tricks.com/responsive-iframes/
  */
-.ryt-lite:before {
+.Pinpoint .ryt-lite:before {
 	display: none !important; /* REMOVE THE SHADING FOR THE TITLE AREA ON YOUTUBE VIDEO */
 }
 
-.ryt-lite::after {
+.Pinpoint .ryt-lite::after {
 	content: '';
 	display: block;
 	padding-bottom: calc(100% / (16 / 9));
 }
 
-.ryt-lite > iframe {
+.Pinpoint .ryt-lite > iframe {
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -872,7 +872,7 @@ article .covermedia > .video > video {
 }
 
 /* play button */
-.ryt-lite > .lty-playbtn {
+.Pinpoint .ryt-lite > .lty-playbtn {
 	width: 70px;
 	height: 46px;
 	background-color: #212121;
@@ -882,21 +882,21 @@ article .covermedia > .video > video {
 	transition: all 0.2s cubic-bezier(0, 0, 0.2, 1);
 }
 
-.ryt-lite:hover > .lty-playbtn {
+.Pinpoint .ryt-lite:hover > .lty-playbtn {
 	background-color: #f00;
 	opacity: 1;
 }
 
 /* play button triangle */
-.ryt-lite > .lty-playbtn::before {
+.Pinpoint .ryt-lite > .lty-playbtn::before {
 	content: '';
 	border-style: solid;
 	border-width: 11px 0 11px 19px;
 	border-color: transparent transparent transparent #fff;
 }
 
-.ryt-lite > .lty-playbtn,
-.ryt-lite > .lty-playbtn::before {
+.Pinpoint .ryt-lite > .lty-playbtn,
+.Pinpoint .ryt-lite > .lty-playbtn::before {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -904,12 +904,12 @@ article .covermedia > .video > video {
 }
 
 /* Post-click styles */
-.ryt-lite.lyt-activated {
+.Pinpoint .ryt-lite.lyt-activated {
 	cursor: unset;
 }
 
-.ryt-lite.lyt-activated::before,
-.ryt-lite.lyt-activated > .lty-playbtn {
+.Pinpoint .ryt-lite.lyt-activated::before,
+.Pinpoint .ryt-lite.lyt-activated > .lty-playbtn {
 	opacity: 0;
 	pointer-events: none;
 }

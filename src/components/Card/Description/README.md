@@ -4,13 +4,13 @@
 
 #### Theming
 
-The parent className for styling this component is `.Content.Card.Description`
+The parent className for styling this component is `.Pinpoint.Content.Card.Description`
 
 <details>
 	<summary>Base Theme Styles</summary>
 
 ```css
-.Content.Card.Description {
+.Pinpoint.Content.Card.Description {
 	@apply mb-4;
 	color: var(--card-summary-color);
 }

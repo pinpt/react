@@ -11,7 +11,12 @@ const ReadButton = (props: ICardReadButtonProps) => {
 	const { className, href, newTab, onClick } = props;
 
 	return (
-		<ActionLink className={`Content Card Read ${className ?? ''}`} onClick={onClick} href={href} newTab={newTab}>
+		<ActionLink
+			className={`Pinpoint Content Card Read ${className ?? ''}`}
+			onClick={onClick}
+			href={href}
+			newTab={newTab}
+		>
 			Read
 			<svg
 				className="arrow"

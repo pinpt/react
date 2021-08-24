@@ -6,43 +6,43 @@
 
 #### Theming
 
-The parent className for styling this component is `.Latest`
+The parent className for styling this component is `.Pinpoint.Latest`
 
 <details>
 	<summary>Base Theme Styles</summary>
 
 ```css
-.latestWrapper {
+.Pinpoint.latestWrapper {
 	@apply py-10 md:py-14 transition-colors duration-200;
 	background-color: var(--section-bg-color);
 }
 
-.Latest .heading,
-.Recent .heading,
-.Search.Query .heading,
-.Search.Results .heading {
+.Pinpoint.Latest .heading,
+.Pinpoint.Recent .heading,
+.Pinpoint.Search.Query .heading,
+.Pinpoint.Search.Results .heading {
 	@apply text-2xl font-semibold;
 }
 
-.Latest {
+.Pinpoint.Latest {
 	@apply flex flex-col md:flex-row;
 }
 
-.Latest .heading,
-.Recent .heading,
-.Search.Results .heading {
+.Pinpoint.Latest .heading,
+.Pinpoint.Recent .heading,
+.Pinpoint.Search.Results .heading {
 	@apply mb-10 md:mb-0 md:mr-4;
 	flex-basis: 25%;
 }
 
-.Latest .cards {
+.Pinpoint.Latest .cards {
 	@apply flex gap-x-8;
 	flex-basis: 75%;
 }
 
-.Latest .Content.Card.Container.wrapper .cover,
-.Latest .Content.Card.Container.wrapper .covermedia .media-container img,
-.Latest .Content.Card.Container.wrapper .empty-cover {
+.Pinpoint.Latest .Content.Card.Container.wrapper .cover,
+.Pinpoint.Latest .Content.Card.Container.wrapper .covermedia .media-container img,
+.Pinpoint.Latest .Content.Card.Container.wrapper .empty-cover {
 	@apply md:h-64 lg:h-80;
 }
 ```

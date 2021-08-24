@@ -5,7 +5,7 @@ exports[`Test with clickable logo 1`] = `
   className="Pinpoint Copyright "
 >
   <span
-    className="Pinpoint Internal Link clickable Logo sm "
+    className="Pinpoint Internal Link clickable Pinpoint Logo sm "
     onClick={[Function]}
   >
     <img
@@ -26,7 +26,7 @@ exports[`Test with custom className 1`] = `
   className="Pinpoint Copyright test-custom"
 >
   <span
-    className="Pinpoint Internal Link  Logo sm "
+    className="Pinpoint Internal Link  Pinpoint Logo sm "
   >
     <img
       className="image"
@@ -46,7 +46,7 @@ exports[`Test with linked logo 1`] = `
   className="Pinpoint Copyright "
 >
   <a
-    className="Pinpoint Internal Link Logo sm "
+    className="Pinpoint Internal Link Pinpoint Logo sm "
     href="https://pinpoint.com"
     title="Logo"
   >
@@ -68,7 +68,7 @@ exports[`Test with logo 1`] = `
   className="Pinpoint Copyright "
 >
   <span
-    className="Pinpoint Internal Link  Logo sm "
+    className="Pinpoint Internal Link  Pinpoint Logo sm "
   >
     <img
       className="image"

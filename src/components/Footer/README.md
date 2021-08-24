@@ -4,40 +4,40 @@
 
 #### Theming
 
-The parent className for styling this component is `.Footer`
+The parent className for styling this component is `.Pinpoint.Footer`
 
 <details>
 	<summary>Base Theme Styles</summary>
 
 ```css
-.footerWrapper {
+.Pinpoint .footerWrapper {
 	background-color: var(--footer-bg-color);
 	color: var(--footer-text-color);
 }
 
-.Footer {
+.Pinpoint.Footer {
 	@apply py-14 text-sm;
 	background-color: var(--footer-bg-color);
 	color: var(--footer-text-color);
 }
 
-.Footer .content {
+.Pinpoint.Footer .content {
 	@apply flex flex-col md:items-end md:flex-row items-center;
 }
 
-.Footer .powered {
+.Pinpoint.Footer .powered {
 	@apply flex pt-8;
 }
 
-.Footer .right {
+.Pinpoint.Footer .right {
 	@apply md:ml-auto py-6 md:py-0 flex flex-col items-center md:items-end;
 }
 
-.Footer .Social {
+.Pinpoint.Footer .Social {
 	@apply mt-4 md:mt-1;
 }
 
-.Footer .Copyright {
+.Pinpoint.Footer .Copyright {
 	@apply flex flex-col items-center md:items-start;
 }
 ```

@@ -4,49 +4,49 @@
 
 #### Theming
 
-The parent className for styling this component is `.Pagination`
+The parent className for styling this component is `.Pinpoint.Pagination`
 
 <details>
 	<summary>Base Theme Styles</summary>
 
 ```css
-.paginationWrapper {
+.Pinpoint.paginationWrapper {
 	@apply pb-10 md:pb-14 flex-grow;
 }
 
-.paginationWrapper .Pagination {
+.Pinpoint.paginationWrapper .Pagination {
 	@apply md:ml-[calc(25%+1rem)];
 }
 
-.Pagination {
+.Pinpoint.Pagination {
 	@apply flex justify-between items-center space-x-10;
 	color: var(--page-highlight-color);
 }
 
-.Pagination.forwardOnly {
+.Pinpoint.Pagination.forwardOnly {
 	@apply justify-end;
 }
 
-.Pagination .back,
-.Pagination .forward {
+.Pinpoint.Pagination .back,
+.Pinpoint.Pagination .forward {
 	@apply min-w-0 flex items-center cursor-pointer;
 	flex: 1 1 50%;
 }
 
-.Pagination .forward {
+.Pinpoint.Pagination .forward {
 	@apply justify-end;
 }
 
-.Pagination .forward .icon {
+.Pinpoint.Pagination .forward .icon {
 	@apply ml-2 flex-shrink-0;
 }
 
-.Pagination .back .icon {
+.Pinpoint.Pagination .back .icon {
 	@apply mr-2 flex-shrink-0;
 }
 
-.Pagination .back .text,
-.Pagination .forward .text {
+.Pinpoint.Pagination .back .text,
+.Pinpoint.Pagination .forward .text {
 	@apply truncate;
 }
 ```

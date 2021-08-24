@@ -2,7 +2,7 @@
 
 exports[`Test click handler 1`] = `
 <span
-  className="Pinpoint Internal Link clickable Content Card Read "
+  className="Pinpoint Internal Link clickable Pinpoint Content Card Read "
   onClick={[Function]}
 >
   Read
@@ -29,7 +29,7 @@ exports[`Test click handler 1`] = `
 
 exports[`Test custom className 1`] = `
 <span
-  className="Pinpoint Internal Link  Content Card Read test-custom"
+  className="Pinpoint Internal Link  Pinpoint Content Card Read test-custom"
 >
   Read
   <svg
@@ -55,7 +55,7 @@ exports[`Test custom className 1`] = `
 
 exports[`Test default state 1`] = `
 <span
-  className="Pinpoint Internal Link  Content Card Read "
+  className="Pinpoint Internal Link  Pinpoint Content Card Read "
 >
   Read
   <svg
@@ -81,7 +81,7 @@ exports[`Test default state 1`] = `
 
 exports[`Test link (new tab) 1`] = `
 <a
-  className="Pinpoint Internal Link Content Card Read "
+  className="Pinpoint Internal Link Pinpoint Content Card Read "
   href="https://pinpoint.com"
   rel="noopener noreferrer"
   target="_blank"
@@ -110,7 +110,7 @@ exports[`Test link (new tab) 1`] = `
 
 exports[`Test link 1`] = `
 <a
-  className="Pinpoint Internal Link Content Card Read "
+  className="Pinpoint Internal Link Pinpoint Content Card Read "
   href="https://pinpoint.com"
 >
   Read
@@ -137,7 +137,7 @@ exports[`Test link 1`] = `
 
 exports[`Test link and click handler 1`] = `
 <a
-  className="Pinpoint Internal Link Content Card Read "
+  className="Pinpoint Internal Link Pinpoint Content Card Read "
   href="https://pinpoint.com"
 >
   Read

@@ -22,7 +22,7 @@ const Subscribe = (props: ISubscribeProps) => {
 
 	return (
 		<ActionLink
-			className={`Subscribe ${!ready || hidden ? 'invisible' : 'visible'} ${className}`}
+			className={`Pinpoint Subscribe ${!ready || hidden ? 'invisible' : 'visible'} ${className}`}
 			href={href}
 			newTab={newTab}
 			onClick={onClick}

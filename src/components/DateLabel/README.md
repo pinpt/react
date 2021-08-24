@@ -4,7 +4,7 @@
 
 #### Theming
 
-The parent className for styling this component is `.Date`
+The parent className for styling this component is `.Pinpoint.Date`
 
 <details>
 	<summary>Base Theme Styles</summary>
