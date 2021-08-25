@@ -6,6 +6,7 @@ import { CoverMediaType } from '../../lib/types/content';
 import { Document } from './';
 
 import type { ICoverMedia } from '../../lib/types/content';
+
 const ImageMedia = ({ src, title = '', zoomable = false }: { src: string; title?: string; zoomable?: boolean }) => {
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
@@ -14,7 +15,7 @@ const ImageMedia = ({ src, title = '', zoomable = false }: { src: string; title?
 	}, []);
 
 	return (
-		<div className={`image `}>
+		<div className="Pinpoint image">
 			<img src={src} alt={title} className={`${zoomable ? 'medium-zoom-cover' : ''}`} />
 		</div>
 	);
@@ -22,7 +23,7 @@ const ImageMedia = ({ src, title = '', zoomable = false }: { src: string; title?
 
 const VideoMedia = ({ src }: { src: string }) => {
 	return (
-		<div className="video">
+		<div className="Pinpoint video">
 			<video controls src={src} />
 		</div>
 	);
@@ -35,7 +36,7 @@ const YoutubeMediaSSR = ({ id, poster = 'hqdefault' }: { id: string; poster?: st
 		<>
 			{poster && <link rel="preload" href={posterUrl} as="image" />}
 			<div
-				className="youtube ryt-lite embed-responsive aspect-ratio-16/9"
+				className="Pinpoint youtube ryt-lite embed-responsive aspect-ratio-16/9"
 				style={{ backgroundImage: `url(${posterUrl})` }}
 			>
 				<div className="lty-playbtn" data-url={`https://www.youtube-nocookie.com/embed/${id}?autoplay=1`} />
@@ -54,7 +55,7 @@ const YoutubeMedia = ({
 	staticMode?: true;
 }) => {
 	return (
-		<div className="youtube">
+		<div className="Pinpoint youtube">
 			{!staticMode ? (
 				<Youtube url={`https://www.youtube.com/watch?v=${id}`} poster={metadata?.poster} />
 			) : (
@@ -97,8 +98,8 @@ export const CoverMedia = ({
 		}
 	}
 	return (
-		<section className="cover covermedia">
-			<div className="media-container">{content}</div>
+		<section className="Pinpoint cover covermedia">
+			<div className="Pinpoint media-container">{content}</div>
 		</section>
 	);
 };
@@ -117,15 +118,15 @@ const Content = forwardRef((props: ContentProps, ref: any) => {
 	return (
 		<article ref={ref}>
 			{props.coverMedia && <CoverMedia media={props.coverMedia} title={props.title} staticMode={props.staticMode} />}
-			<section className="content">
+			<section className="Pinpoint content">
 				<Document node={props.document} limit={props.limit} />
 				{props.limit && props.document.content?.length > props.limit && (
-					<div className="continue">
+					<div className="Pinpoint continue">
 						<a href={slugifyContent(props.id, props.title)}>Continue Reading →</a>
 					</div>
 				)}
 			</section>
-			{props.divider && <hr className="divider" />}
+			{props.divider && <hr className="Pinpoint divider" />}
 		</article>
 	);
 });
