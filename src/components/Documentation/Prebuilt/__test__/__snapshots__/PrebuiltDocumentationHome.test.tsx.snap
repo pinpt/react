@@ -145,7 +145,7 @@ exports[`Test custom className 1`] = `
         </div>
         <article>
           <section
-            className="content"
+            className="Pinpoint content"
           >
             <div
               className="Pinpoint document"
@@ -670,7 +670,7 @@ exports[`Test custom metadata 1`] = `
         </div>
         <article>
           <section
-            className="content"
+            className="Pinpoint content"
           >
             <div
               className="Pinpoint document"
@@ -1195,7 +1195,7 @@ exports[`Test default state 1`] = `
         </div>
         <article>
           <section
-            className="content"
+            className="Pinpoint content"
           >
             <div
               className="Pinpoint document"
