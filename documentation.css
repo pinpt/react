@@ -19,5 +19,5 @@
 }
 
 .Pinpoint.Documentation.Page.Home .Pinpoint.Documentation.Outline.Item {
-	@apply whitespace-nowrap w-1/3;
+	@apply whitespace-nowrap w-1/3 text-black dark:text-white;
 }

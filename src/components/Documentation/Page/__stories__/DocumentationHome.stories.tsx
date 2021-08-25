@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
 import { Meta } from '@storybook/react';
-import Home from '..';
-import entries from '../../../__data__/testEntries.json';
-import site from '../../../../Prebuilt/__data__/testSite.json';
-const { default: readme } = require('../README.md');
-import Header from '../../../../Header';
-import Outline from '../../../Outline';
-import { IContent } from '../../../../../lib';
-import { Content } from '../../../../Renderer';
-import Footer from '../../../../Footer';
-import Social from '../../../../Social';
-import Subscribe from '../../../../Subscribe';
-import Copyright from '../../../../Copyright';
-import Logo from '../../../../Logo';
+import Home from '../Home';
+import entries from '../../__data__/testEntries.json';
+import site from '../../../Prebuilt/__data__/testSite.json';
+const { default: readme } = require('../Home/README.md');
+import Header from '../../../Header';
+import Outline from '../../Outline';
+import { IContent } from '../../../../lib';
+import { Content } from '../../../Renderer';
+import Footer from '../../../Footer';
+import Social from '../../../Social';
+import Subscribe from '../../../Subscribe';
+import Copyright from '../../../Copyright';
+import Logo from '../../../Logo';
 
 const IMAGE_URL =
 	'https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png';
