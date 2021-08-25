@@ -17,6 +17,8 @@ export interface IPrebuiltHeaderProps {
 	renderSearch?: (site: ISite) => ReactElement<ISearchBarProps>;
 	renderSubscribe?: (site: ISite) => ReactElement<ISubscribeProps>;
 	renderThemeToggle?: (site: ISite) => ReactElement<IThemeToggleProps>;
+	title?: string;
+	description?: string;
 }
 
 const Header = (props: IPrebuiltHeaderProps) => {
@@ -30,13 +32,15 @@ const Header = (props: IPrebuiltHeaderProps) => {
 		renderSearch,
 		renderSubscribe,
 		renderThemeToggle,
+		title,
+		description,
 	} = props;
 
 	return (
 		<BaseHeader
 			className={`Prebuilt ${className}`}
-			title={site.theme?.title ?? site.name}
-			description={site.theme?.description ?? site.name}
+			title={title ?? site.theme?.title ?? site.name}
+			description={description ?? site.theme?.description ?? site.name}
 			onClick={() => handleSelectHome?.()}
 			subscribe={renderSubscribe?.(site) ?? <Subscribe className="Prebuilt" href="/subscription/subscribe" />}
 			themeToggle={renderThemeToggle?.(site) ?? <ThemeToggle className="Prebuilt" />}

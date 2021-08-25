@@ -1,6 +1,7 @@
 import '../base.css';
 import '../defaultTheme.css';
 import '../entry.css';
+import '../documentation.css';
 import './storybookOnly.css';
 
 import { addDecorator } from '@storybook/react'; // <- or your view layer

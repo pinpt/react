@@ -1,6 +1,7 @@
 import * as Exports from '../';
 
 const {
+	Documentation,
 	Statistic,
 	Banner,
 	Clap,
@@ -135,6 +136,19 @@ test('Test component exports', () => {
 	expect(SearchBar).toBeTruthy();
 	expect(Query).toBeTruthy();
 	expect(Object.keys(otherSearch).length).toEqual(0);
+
+	// Test Documentation Exports
+	expect(Documentation).toBeTruthy();
+	const { Outline, Page: PageDocumentation, Prebuilt: PrebuiltDocumentation, ...otherDocumentation } = Documentation;
+	expect(Outline).toBeTruthy();
+	expect(Object.keys(otherDocumentation).length).toEqual(0);
+	expect(PageDocumentation).toBeTruthy();
+	const { Home: HomePageDoc, ...otherPageDoc } = PageDocumentation;
+	expect(HomePageDoc).toBeTruthy();
+	expect(Object.keys(otherPageDoc).length).toEqual(0);
+	const { Home: HomePrebuiltDoc, ...otherPrebuiltDoc } = PrebuiltDocumentation;
+	expect(HomePrebuiltDoc).toBeTruthy();
+	expect(Object.keys(otherPrebuiltDoc).length).toEqual(0);
 
 	// Test other component exports
 	expect(Clap).toBeTruthy();
