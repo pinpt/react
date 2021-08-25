@@ -13,6 +13,11 @@ export const getPlaceholderImageUrl = (media?: ICoverMedia) => {
 	if (!media) {
 		return '';
 	}
+
+	if (media.placeholderImage) {
+		return media.placeholderImage;
+	}
+
 	switch (media.type) {
 		case CoverMediaType.Youtube: {
 			return `https://i.ytimg.com/vi/${media.value}/${media.metadata?.poster ?? 'hqdefault'}.jpg`;
