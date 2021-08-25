@@ -38,4 +38,5 @@ export interface IContent {
 	headline: string;
 	authors: IUser[];
 	coverMedia?: ICoverMedia;
+	order?: number;
 }
