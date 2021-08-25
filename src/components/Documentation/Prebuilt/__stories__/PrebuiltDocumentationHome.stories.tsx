@@ -7,9 +7,6 @@ const { default: readme } = require('../README.md');
 import Prebuilt from '..';
 import { IContent } from '../../../../lib';
 
-const IMAGE_URL =
-	'https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png';
-
 export default {
 	component: Home,
 	title: 'Components/Documentation Site/Prebuilt/Home',
