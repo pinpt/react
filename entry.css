@@ -789,32 +789,32 @@
 /**
  * Cover media
  */
-article .Pinpoint .covermedia:not(:empty) {
+article .Pinpoint.covermedia:not(:empty) {
 	@apply mb-10 relative;
 }
 
-article .Pinpoint .covermedia .image {
+article .Pinpoint.covermedia .image {
 	@apply rounded-lg overflow-hidden flex flex-col;
 	border-color: var(--article-border-color);
 }
 
-article .Pinpoint .covermedia .image > img {
+article .Pinpoint.covermedia .image > img {
 	@apply object-cover object-center;
 }
 
-article .Pinpoint .covermedia > .video,
-article .Pinpoint .covermedia > .media-container > .video {
+article .Pinpoint.covermedia > .video,
+article .Pinpoint.covermedia > .media-container > .video {
 	@apply aspect-w-16 aspect-h-9;
 }
 
-article .Pinpoint .covermedia > .media-container > video,
-article .Pinpoint .covermedia > .video > video {
+article .Pinpoint.covermedia > .media-container > video,
+article .Pinpoint.covermedia > .video > video {
 	@apply w-full;
 }
 
 /* youtube lite styles (cover media only) */
 
-.Pinpoint .embed-responsive {
+.Pinpoint.embed-responsive {
 	position: relative !important;
 	display: block !important;
 	height: 0 !important;
@@ -822,11 +822,11 @@ article .Pinpoint .covermedia > .video > video {
 	overflow: hidden !important;
 }
 
-.Pinpoint .embed-responsive .embed-responsive-item,
-.Pinpoint .embed-responsive iframe,
-.Pinpoint .embed-responsive embed,
-.Pinpoint .embed-responsive object,
-.Pinpoint .embed-responsive video {
+.Pinpoint.embed-responsive .embed-responsive-item,
+.Pinpoint.embed-responsive iframe,
+.Pinpoint.embed-responsive embed,
+.Pinpoint.embed-responsive object,
+.Pinpoint.embed-responsive video {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -836,11 +836,11 @@ article .Pinpoint .covermedia > .video > video {
 	border: 0;
 }
 
-.Pinpoint .aspect-ratio-16\/9 {
+.Pinpoint.aspect-ratio-16\/9 {
 	padding-bottom: 56.25% !important;
 }
 
-.Pinpoint .ryt-lite {
+.Pinpoint.ryt-lite {
 	background-color: #000;
 	position: relative;
 	display: block;
@@ -853,17 +853,17 @@ article .Pinpoint .covermedia > .video > video {
 /* responsive iframe with a 16:9 aspect ratio
 	  thanks https://css-tricks.com/responsive-iframes/
  */
-.Pinpoint .ryt-lite:before {
+.Pinpoint.ryt-lite:before {
 	display: none !important; /* REMOVE THE SHADING FOR THE TITLE AREA ON YOUTUBE VIDEO */
 }
 
-.Pinpoint .ryt-lite::after {
+.Pinpoint.ryt-lite::after {
 	content: '';
 	display: block;
 	padding-bottom: calc(100% / (16 / 9));
 }
 
-.Pinpoint .ryt-lite > iframe {
+.Pinpoint.ryt-lite > iframe {
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -872,7 +872,7 @@ article .Pinpoint .covermedia > .video > video {
 }
 
 /* play button */
-.Pinpoint .ryt-lite > .lty-playbtn {
+.Pinpoint.ryt-lite > .lty-playbtn {
 	width: 70px;
 	height: 46px;
 	background-color: #212121;
@@ -882,21 +882,21 @@ article .Pinpoint .covermedia > .video > video {
 	transition: all 0.2s cubic-bezier(0, 0, 0.2, 1);
 }
 
-.Pinpoint .ryt-lite:hover > .lty-playbtn {
+.Pinpoint.ryt-lite:hover > .lty-playbtn {
 	background-color: #f00;
 	opacity: 1;
 }
 
 /* play button triangle */
-.Pinpoint .ryt-lite > .lty-playbtn::before {
+.Pinpoint.ryt-lite > .lty-playbtn::before {
 	content: '';
 	border-style: solid;
 	border-width: 11px 0 11px 19px;
 	border-color: transparent transparent transparent #fff;
 }
 
-.Pinpoint .ryt-lite > .lty-playbtn,
-.Pinpoint .ryt-lite > .lty-playbtn::before {
+.Pinpoint.ryt-lite > .lty-playbtn,
+.Pinpoint.ryt-lite > .lty-playbtn::before {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -904,12 +904,12 @@ article .Pinpoint .covermedia > .video > video {
 }
 
 /* Post-click styles */
-.Pinpoint .ryt-lite.lyt-activated {
+.Pinpoint.ryt-lite.lyt-activated {
 	cursor: unset;
 }
 
-.Pinpoint .ryt-lite.lyt-activated::before,
-.Pinpoint .ryt-lite.lyt-activated > .lty-playbtn {
+.Pinpoint.ryt-lite.lyt-activated::before,
+.Pinpoint.ryt-lite.lyt-activated > .lty-playbtn {
 	opacity: 0;
 	pointer-events: none;
 }
