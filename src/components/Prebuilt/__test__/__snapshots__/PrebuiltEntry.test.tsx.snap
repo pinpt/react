@@ -376,13 +376,13 @@ exports[`Test custom className 1`] = `
         </div>
         <article>
           <section
-            className="cover covermedia"
+            className="Pinpoint cover covermedia"
           >
             <div
-              className="media-container"
+              className="Pinpoint media-container"
             >
               <div
-                className="image "
+                className="Pinpoint image"
               >
                 <img
                   alt="Linked Content Blocks"
@@ -1412,13 +1412,13 @@ exports[`Test default state 1`] = `
         </div>
         <article>
           <section
-            className="cover covermedia"
+            className="Pinpoint cover covermedia"
           >
             <div
-              className="media-container"
+              className="Pinpoint media-container"
             >
               <div
-                className="image "
+                className="Pinpoint image"
               >
                 <img
                   alt="Linked Content Blocks"
@@ -2347,13 +2347,13 @@ exports[`Test no author 1`] = `
         </div>
         <article>
           <section
-            className="cover covermedia"
+            className="Pinpoint cover covermedia"
           >
             <div
-              className="media-container"
+              className="Pinpoint media-container"
             >
               <div
-                className="image "
+                className="Pinpoint image"
               >
                 <img
                   alt="Linked Content Blocks"
@@ -3198,13 +3198,13 @@ exports[`Test no claps 1`] = `
         </div>
         <article>
           <section
-            className="cover covermedia"
+            className="Pinpoint cover covermedia"
           >
             <div
-              className="media-container"
+              className="Pinpoint media-container"
             >
               <div
-                className="image "
+                className="Pinpoint image"
               >
                 <img
                   alt="Linked Content Blocks"
@@ -4150,13 +4150,13 @@ exports[`Test not zoomable 1`] = `
         </div>
         <article>
           <section
-            className="cover covermedia"
+            className="Pinpoint cover covermedia"
           >
             <div
-              className="media-container"
+              className="Pinpoint media-container"
             >
               <div
-                className="image "
+                className="Pinpoint image"
               >
                 <img
                   alt="Linked Content Blocks"
@@ -5090,13 +5090,13 @@ exports[`Test with pagination 1`] = `
         </div>
         <article>
           <section
-            className="cover covermedia"
+            className="Pinpoint cover covermedia"
           >
             <div
-              className="media-container"
+              className="Pinpoint media-container"
             >
               <div
-                className="image "
+                className="Pinpoint image"
               >
                 <img
                   alt="Publishing Controls and Social Posting"
