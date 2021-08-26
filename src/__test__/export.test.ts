@@ -60,6 +60,7 @@ const {
 	useEntries,
 	useScriptLoader,
 	useBackground,
+	getDocumentHeadings,
 	...otherExports
 } = Exports;
 
@@ -196,6 +197,7 @@ test('Test util exports', () => {
 	expect(getTwitterProfileFromURL).toBeTruthy();
 	expect(cancelEvent).toBeTruthy();
 	expect(getQueryString).toBeTruthy();
+	expect(getDocumentHeadings).toBeTruthy();
 });
 
 test('Test hook exports', () => {

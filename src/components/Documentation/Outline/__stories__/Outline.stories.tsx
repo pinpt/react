@@ -22,19 +22,29 @@ export default {
 
 export const Default: React.VFC<{}> = () => <Outline site={site} entries={entries as IContent[]} />;
 
-export const With_Link: React.VFC<{}> = () => (
-	<Outline site={site} entries={entries as IContent[]} href={(entry) => `#${entry.id}`} newTab />
-);
-
 export const With_Click: React.VFC<{}> = () => (
-	<Outline site={site} entries={entries as IContent[]} onClick={(entry) => alert(entry.title)} />
+	<Outline
+		site={site}
+		entries={entries as IContent[]}
+		onClick={(entry, hash) => alert(`${entry.title}${hash ? ` #${hash}` : ''}`)}
+	/>
 );
 
 export const With_Active: React.VFC<{}> = () => (
 	<Outline
 		site={site}
 		entries={entries as IContent[]}
-		onClick={(entry) => alert(entry.title)}
-		active="Cq4Ong4PJwMYygleMjvk"
+		onClick={(entry, hash) => alert(`${entry.title}${hash ? ` #${hash}` : ''}`)}
+		active="oroH8YQr4vufOiVTRND4"
+	/>
+);
+
+export const With_Active_and_Anchor: React.VFC<{}> = () => (
+	<Outline
+		site={site}
+		entries={entries as IContent[]}
+		onClick={(entry, hash) => alert(`${entry.title}${hash ? ` #${hash}` : ''}`)}
+		active="oroH8YQr4vufOiVTRND4"
+		activeAnchor="Grouping-in-Planning"
 	/>
 );

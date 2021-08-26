@@ -27,13 +27,14 @@ export interface IPrebuiltDocumentationHomeProps {
 	renderThemeToggle?: (site: ISite) => ReactElement<IThemeToggleProps>;
 	renderOutline?: (entries: IContent[]) => ReactElement<IOutlineProps>;
 	currentEntry: string;
-	setCurrentEntry: (entry: IContent) => void;
+	setCurrentEntry: (entry: IContent, anchor?: string) => void;
 	renderContent?: (entry?: IContent, currentEntry?: string, entries?: IContent[]) => ReactElement;
 	renderFooter?: (site: ISite) => ReactElement<IPrebuiltFooterProps>;
 	renderSocial?: (site: ISite) => ReactElement<ISocialBarProps>;
 	renderCopyright?: (site: ISite) => ReactElement<ICopyrightProps>;
 	title?: string;
 	description?: string;
+	currentAnchor?: string;
 }
 
 const Home = (props: IPrebuiltDocumentationHomeProps) => {
@@ -58,6 +59,7 @@ const Home = (props: IPrebuiltDocumentationHomeProps) => {
 		renderSocial,
 		title,
 		description,
+		currentAnchor,
 	} = props;
 
 	const entry = useMemo(() => {
@@ -92,6 +94,7 @@ const Home = (props: IPrebuiltDocumentationHomeProps) => {
 						site={site}
 						active={currentEntry}
 						onClick={setCurrentEntry}
+						activeAnchor={currentAnchor}
 					/>
 				)
 			}

@@ -11,25 +11,22 @@ test('Test default state', () => {
 	expect(tree).toMatchSnapshot();
 });
 
-test('Test with link (new tab)', () => {
-	const component = renderer.create(
-		<Outline site={site} entries={entries as IContent[]} href={(entry) => `#${entry?.id}`} newTab />
-	);
-	const tree = component.toJSON();
-	expect(tree).toMatchSnapshot();
-});
-
-test('Test with link (current tab)', () => {
-	const component = renderer.create(
-		<Outline site={site} entries={entries as IContent[]} href={(entry) => `#${entry?.id}`} />
-	);
-	const tree = component.toJSON();
-	expect(tree).toMatchSnapshot();
-});
-
 test('Test with click handler', () => {
 	const component = renderer.create(
-		<Outline site={site} entries={entries as IContent[]} onClick={(entry) => console.log(entry.title)} />
+		<Outline site={site} entries={entries as IContent[]} onClick={(entry, hash) => console.log(entry.title, hash)} />
+	);
+	const tree = component.toJSON();
+	expect(tree).toMatchSnapshot();
+});
+
+test('Test with active', () => {
+	const component = renderer.create(
+		<Outline
+			site={site}
+			entries={entries as IContent[]}
+			onClick={(entry) => console.log(entry.title)}
+			active="Cq4Ong4PJwMYygleMjvk"
+		/>
 	);
 	const tree = component.toJSON();
 	expect(tree).toMatchSnapshot();
