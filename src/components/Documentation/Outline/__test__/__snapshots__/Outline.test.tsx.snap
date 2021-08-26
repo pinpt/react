@@ -4,56 +4,254 @@ exports[`Test default state 1`] = `
 <div
   className="Pinpoint Documentation Outline Wrapper "
 >
-  <span
-    className="Pinpoint Internal Link  Pinpoint Documentation Outline Item  "
+  <div
+    className="Parent"
   >
-    Linked Content Blocks
-  </span>
-  <span
-    className="Pinpoint Internal Link  Pinpoint Documentation Outline Item  "
+    <div
+      className="Top"
+    >
+      <svg
+        aria-hidden="true"
+        className="toggleControl"
+        data-icon="chevron-right"
+        data-prefix="fas"
+        focusable="false"
+        onClick={[Function]}
+        role="img"
+        viewBox="0 0 320 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+          fill="currentColor"
+        />
+      </svg>
+      <span
+        className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+        onClick={[Function]}
+      >
+        Linked Content Blocks
+      </span>
+    </div>
+  </div>
+  <div
+    className="Parent"
   >
-    Publishing Controls and Social Posting
-  </span>
-  <span
-    className="Pinpoint Internal Link  Pinpoint Documentation Outline Item  "
+    <div
+      className="Top"
+    >
+      <div
+        className="spacer"
+      />
+      <span
+        className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+        onClick={[Function]}
+      >
+        Publishing Controls and Social Posting
+      </span>
+    </div>
+  </div>
+  <div
+    className="Parent"
   >
-    Changelog planning just got way simpler!
-  </span>
-  <span
-    className="Pinpoint Internal Link  Pinpoint Documentation Outline Item  "
+    <div
+      className="Top"
+    >
+      <div
+        className="spacer"
+      />
+      <span
+        className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+        onClick={[Function]}
+      >
+        Changelog planning just got way simpler!
+      </span>
+    </div>
+  </div>
+  <div
+    className="Parent"
   >
-    Email validation, filtering, and subscriber search 🔍
-  </span>
-  <span
-    className="Pinpoint Internal Link  Pinpoint Documentation Outline Item  "
+    <div
+      className="Top"
+    >
+      <svg
+        aria-hidden="true"
+        className="toggleControl"
+        data-icon="chevron-right"
+        data-prefix="fas"
+        focusable="false"
+        onClick={[Function]}
+        role="img"
+        viewBox="0 0 320 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+          fill="currentColor"
+        />
+      </svg>
+      <span
+        className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+        onClick={[Function]}
+      >
+        Email validation, filtering, and subscriber search 🔍
+      </span>
+    </div>
+  </div>
+  <div
+    className="Parent"
   >
-    Analytics Drill-Down and Localization
-  </span>
-  <span
-    className="Pinpoint Internal Link  Pinpoint Documentation Outline Item  "
+    <div
+      className="Top"
+    >
+      <svg
+        aria-hidden="true"
+        className="toggleControl"
+        data-icon="chevron-right"
+        data-prefix="fas"
+        focusable="false"
+        onClick={[Function]}
+        role="img"
+        viewBox="0 0 320 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+          fill="currentColor"
+        />
+      </svg>
+      <span
+        className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+        onClick={[Function]}
+      >
+        Analytics Drill-Down and Localization
+      </span>
+    </div>
+  </div>
+  <div
+    className="Parent"
   >
-    Already mentioned notice
-  </span>
-  <span
-    className="Pinpoint Internal Link  Pinpoint Documentation Outline Item  "
+    <div
+      className="Top"
+    >
+      <svg
+        aria-hidden="true"
+        className="toggleControl"
+        data-icon="chevron-right"
+        data-prefix="fas"
+        focusable="false"
+        onClick={[Function]}
+        role="img"
+        viewBox="0 0 320 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+          fill="currentColor"
+        />
+      </svg>
+      <span
+        className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+        onClick={[Function]}
+      >
+        Already mentioned notice
+      </span>
+    </div>
+  </div>
+  <div
+    className="Parent"
   >
-    Published Page Search and Filtering
-  </span>
-  <span
-    className="Pinpoint Internal Link  Pinpoint Documentation Outline Item  "
+    <div
+      className="Top"
+    >
+      <div
+        className="spacer"
+      />
+      <span
+        className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+        onClick={[Function]}
+      >
+        Published Page Search and Filtering
+      </span>
+    </div>
+  </div>
+  <div
+    className="Parent"
   >
-    Improved Analytics Accessibility
-  </span>
-  <span
-    className="Pinpoint Internal Link  Pinpoint Documentation Outline Item  "
+    <div
+      className="Top"
+    >
+      <div
+        className="spacer"
+      />
+      <span
+        className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+        onClick={[Function]}
+      >
+        Improved Analytics Accessibility
+      </span>
+    </div>
+  </div>
+  <div
+    className="Parent"
   >
-    Tables, tables, tables
-  </span>
-  <span
-    className="Pinpoint Internal Link  Pinpoint Documentation Outline Item  "
+    <div
+      className="Top"
+    >
+      <svg
+        aria-hidden="true"
+        className="toggleControl"
+        data-icon="chevron-right"
+        data-prefix="fas"
+        focusable="false"
+        onClick={[Function]}
+        role="img"
+        viewBox="0 0 320 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+          fill="currentColor"
+        />
+      </svg>
+      <span
+        className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+        onClick={[Function]}
+      >
+        Tables, tables, tables
+      </span>
+    </div>
+  </div>
+  <div
+    className="Parent"
   >
-    Analytics Drilldown + Changelog Generator Styling
-  </span>
+    <div
+      className="Top"
+    >
+      <svg
+        aria-hidden="true"
+        className="toggleControl"
+        data-icon="chevron-right"
+        data-prefix="fas"
+        focusable="false"
+        onClick={[Function]}
+        role="img"
+        viewBox="0 0 320 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+          fill="currentColor"
+        />
+      </svg>
+      <span
+        className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+        onClick={[Function]}
+      >
+        Analytics Drilldown + Changelog Generator Styling
+      </span>
+    </div>
+  </div>
 </div>
 `;
 
@@ -61,65 +259,254 @@ exports[`Test with active 1`] = `
 <div
   className="Pinpoint Documentation Outline Wrapper "
 >
-  <span
-    className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
-    onClick={[Function]}
+  <div
+    className="Parent"
   >
-    Linked Content Blocks
-  </span>
-  <span
-    className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
-    onClick={[Function]}
+    <div
+      className="Top"
+    >
+      <svg
+        aria-hidden="true"
+        className="toggleControl"
+        data-icon="chevron-right"
+        data-prefix="fas"
+        focusable="false"
+        onClick={[Function]}
+        role="img"
+        viewBox="0 0 320 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+          fill="currentColor"
+        />
+      </svg>
+      <span
+        className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+        onClick={[Function]}
+      >
+        Linked Content Blocks
+      </span>
+    </div>
+  </div>
+  <div
+    className="Parent"
   >
-    Publishing Controls and Social Posting
-  </span>
-  <span
-    className="Pinpoint Internal Link  Pinpoint Documentation Outline Item active "
+    <div
+      className="Top"
+    >
+      <div
+        className="spacer"
+      />
+      <span
+        className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+        onClick={[Function]}
+      >
+        Publishing Controls and Social Posting
+      </span>
+    </div>
+  </div>
+  <div
+    className="Parent"
   >
-    Changelog planning just got way simpler!
-  </span>
-  <span
-    className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
-    onClick={[Function]}
+    <div
+      className="Top"
+    >
+      <div
+        className="spacer"
+      />
+      <span
+        className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item active "
+        onClick={[Function]}
+      >
+        Changelog planning just got way simpler!
+      </span>
+    </div>
+  </div>
+  <div
+    className="Parent"
   >
-    Email validation, filtering, and subscriber search 🔍
-  </span>
-  <span
-    className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
-    onClick={[Function]}
+    <div
+      className="Top"
+    >
+      <svg
+        aria-hidden="true"
+        className="toggleControl"
+        data-icon="chevron-right"
+        data-prefix="fas"
+        focusable="false"
+        onClick={[Function]}
+        role="img"
+        viewBox="0 0 320 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+          fill="currentColor"
+        />
+      </svg>
+      <span
+        className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+        onClick={[Function]}
+      >
+        Email validation, filtering, and subscriber search 🔍
+      </span>
+    </div>
+  </div>
+  <div
+    className="Parent"
   >
-    Analytics Drill-Down and Localization
-  </span>
-  <span
-    className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
-    onClick={[Function]}
+    <div
+      className="Top"
+    >
+      <svg
+        aria-hidden="true"
+        className="toggleControl"
+        data-icon="chevron-right"
+        data-prefix="fas"
+        focusable="false"
+        onClick={[Function]}
+        role="img"
+        viewBox="0 0 320 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+          fill="currentColor"
+        />
+      </svg>
+      <span
+        className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+        onClick={[Function]}
+      >
+        Analytics Drill-Down and Localization
+      </span>
+    </div>
+  </div>
+  <div
+    className="Parent"
   >
-    Already mentioned notice
-  </span>
-  <span
-    className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
-    onClick={[Function]}
+    <div
+      className="Top"
+    >
+      <svg
+        aria-hidden="true"
+        className="toggleControl"
+        data-icon="chevron-right"
+        data-prefix="fas"
+        focusable="false"
+        onClick={[Function]}
+        role="img"
+        viewBox="0 0 320 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+          fill="currentColor"
+        />
+      </svg>
+      <span
+        className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+        onClick={[Function]}
+      >
+        Already mentioned notice
+      </span>
+    </div>
+  </div>
+  <div
+    className="Parent"
   >
-    Published Page Search and Filtering
-  </span>
-  <span
-    className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
-    onClick={[Function]}
+    <div
+      className="Top"
+    >
+      <div
+        className="spacer"
+      />
+      <span
+        className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+        onClick={[Function]}
+      >
+        Published Page Search and Filtering
+      </span>
+    </div>
+  </div>
+  <div
+    className="Parent"
   >
-    Improved Analytics Accessibility
-  </span>
-  <span
-    className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
-    onClick={[Function]}
+    <div
+      className="Top"
+    >
+      <div
+        className="spacer"
+      />
+      <span
+        className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+        onClick={[Function]}
+      >
+        Improved Analytics Accessibility
+      </span>
+    </div>
+  </div>
+  <div
+    className="Parent"
   >
-    Tables, tables, tables
-  </span>
-  <span
-    className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
-    onClick={[Function]}
+    <div
+      className="Top"
+    >
+      <svg
+        aria-hidden="true"
+        className="toggleControl"
+        data-icon="chevron-right"
+        data-prefix="fas"
+        focusable="false"
+        onClick={[Function]}
+        role="img"
+        viewBox="0 0 320 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+          fill="currentColor"
+        />
+      </svg>
+      <span
+        className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+        onClick={[Function]}
+      >
+        Tables, tables, tables
+      </span>
+    </div>
+  </div>
+  <div
+    className="Parent"
   >
-    Analytics Drilldown + Changelog Generator Styling
-  </span>
+    <div
+      className="Top"
+    >
+      <svg
+        aria-hidden="true"
+        className="toggleControl"
+        data-icon="chevron-right"
+        data-prefix="fas"
+        focusable="false"
+        onClick={[Function]}
+        role="img"
+        viewBox="0 0 320 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+          fill="currentColor"
+        />
+      </svg>
+      <span
+        className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+        onClick={[Function]}
+      >
+        Analytics Drilldown + Changelog Generator Styling
+      </span>
+    </div>
+  </div>
 </div>
 `;
 
@@ -127,219 +514,253 @@ exports[`Test with click handler 1`] = `
 <div
   className="Pinpoint Documentation Outline Wrapper "
 >
-  <span
-    className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
-    onClick={[Function]}
+  <div
+    className="Parent"
   >
-    Linked Content Blocks
-  </span>
-  <span
-    className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
-    onClick={[Function]}
+    <div
+      className="Top"
+    >
+      <svg
+        aria-hidden="true"
+        className="toggleControl"
+        data-icon="chevron-right"
+        data-prefix="fas"
+        focusable="false"
+        onClick={[Function]}
+        role="img"
+        viewBox="0 0 320 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+          fill="currentColor"
+        />
+      </svg>
+      <span
+        className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+        onClick={[Function]}
+      >
+        Linked Content Blocks
+      </span>
+    </div>
+  </div>
+  <div
+    className="Parent"
   >
-    Publishing Controls and Social Posting
-  </span>
-  <span
-    className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
-    onClick={[Function]}
+    <div
+      className="Top"
+    >
+      <div
+        className="spacer"
+      />
+      <span
+        className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+        onClick={[Function]}
+      >
+        Publishing Controls and Social Posting
+      </span>
+    </div>
+  </div>
+  <div
+    className="Parent"
   >
-    Changelog planning just got way simpler!
-  </span>
-  <span
-    className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
-    onClick={[Function]}
+    <div
+      className="Top"
+    >
+      <div
+        className="spacer"
+      />
+      <span
+        className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+        onClick={[Function]}
+      >
+        Changelog planning just got way simpler!
+      </span>
+    </div>
+  </div>
+  <div
+    className="Parent"
   >
-    Email validation, filtering, and subscriber search 🔍
-  </span>
-  <span
-    className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
-    onClick={[Function]}
+    <div
+      className="Top"
+    >
+      <svg
+        aria-hidden="true"
+        className="toggleControl"
+        data-icon="chevron-right"
+        data-prefix="fas"
+        focusable="false"
+        onClick={[Function]}
+        role="img"
+        viewBox="0 0 320 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+          fill="currentColor"
+        />
+      </svg>
+      <span
+        className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+        onClick={[Function]}
+      >
+        Email validation, filtering, and subscriber search 🔍
+      </span>
+    </div>
+  </div>
+  <div
+    className="Parent"
   >
-    Analytics Drill-Down and Localization
-  </span>
-  <span
-    className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
-    onClick={[Function]}
+    <div
+      className="Top"
+    >
+      <svg
+        aria-hidden="true"
+        className="toggleControl"
+        data-icon="chevron-right"
+        data-prefix="fas"
+        focusable="false"
+        onClick={[Function]}
+        role="img"
+        viewBox="0 0 320 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+          fill="currentColor"
+        />
+      </svg>
+      <span
+        className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+        onClick={[Function]}
+      >
+        Analytics Drill-Down and Localization
+      </span>
+    </div>
+  </div>
+  <div
+    className="Parent"
   >
-    Already mentioned notice
-  </span>
-  <span
-    className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
-    onClick={[Function]}
+    <div
+      className="Top"
+    >
+      <svg
+        aria-hidden="true"
+        className="toggleControl"
+        data-icon="chevron-right"
+        data-prefix="fas"
+        focusable="false"
+        onClick={[Function]}
+        role="img"
+        viewBox="0 0 320 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+          fill="currentColor"
+        />
+      </svg>
+      <span
+        className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+        onClick={[Function]}
+      >
+        Already mentioned notice
+      </span>
+    </div>
+  </div>
+  <div
+    className="Parent"
   >
-    Published Page Search and Filtering
-  </span>
-  <span
-    className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
-    onClick={[Function]}
+    <div
+      className="Top"
+    >
+      <div
+        className="spacer"
+      />
+      <span
+        className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+        onClick={[Function]}
+      >
+        Published Page Search and Filtering
+      </span>
+    </div>
+  </div>
+  <div
+    className="Parent"
   >
-    Improved Analytics Accessibility
-  </span>
-  <span
-    className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
-    onClick={[Function]}
+    <div
+      className="Top"
+    >
+      <div
+        className="spacer"
+      />
+      <span
+        className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+        onClick={[Function]}
+      >
+        Improved Analytics Accessibility
+      </span>
+    </div>
+  </div>
+  <div
+    className="Parent"
   >
-    Tables, tables, tables
-  </span>
-  <span
-    className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
-    onClick={[Function]}
+    <div
+      className="Top"
+    >
+      <svg
+        aria-hidden="true"
+        className="toggleControl"
+        data-icon="chevron-right"
+        data-prefix="fas"
+        focusable="false"
+        onClick={[Function]}
+        role="img"
+        viewBox="0 0 320 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+          fill="currentColor"
+        />
+      </svg>
+      <span
+        className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+        onClick={[Function]}
+      >
+        Tables, tables, tables
+      </span>
+    </div>
+  </div>
+  <div
+    className="Parent"
   >
-    Analytics Drilldown + Changelog Generator Styling
-  </span>
-</div>
-`;
-
-exports[`Test with link (current tab) 1`] = `
-<div
-  className="Pinpoint Documentation Outline Wrapper "
->
-  <a
-    className="Pinpoint Internal Link Pinpoint Documentation Outline Item  "
-    href="#oroH8YQr4vufOiVTRND4"
-  >
-    Linked Content Blocks
-  </a>
-  <a
-    className="Pinpoint Internal Link Pinpoint Documentation Outline Item  "
-    href="#XDF0NAdmohIPYGW0EABP"
-  >
-    Publishing Controls and Social Posting
-  </a>
-  <a
-    className="Pinpoint Internal Link Pinpoint Documentation Outline Item  "
-    href="#Cq4Ong4PJwMYygleMjvk"
-  >
-    Changelog planning just got way simpler!
-  </a>
-  <a
-    className="Pinpoint Internal Link Pinpoint Documentation Outline Item  "
-    href="#CbenrdtHI5j23nXmv5bs"
-  >
-    Email validation, filtering, and subscriber search 🔍
-  </a>
-  <a
-    className="Pinpoint Internal Link Pinpoint Documentation Outline Item  "
-    href="#rBqjJKPrnGpgztbUed5x"
-  >
-    Analytics Drill-Down and Localization
-  </a>
-  <a
-    className="Pinpoint Internal Link Pinpoint Documentation Outline Item  "
-    href="#6Lnjaer8Pywx3Xz4FQAp"
-  >
-    Already mentioned notice
-  </a>
-  <a
-    className="Pinpoint Internal Link Pinpoint Documentation Outline Item  "
-    href="#g4OAy7NHSY4U8ADt62gl"
-  >
-    Published Page Search and Filtering
-  </a>
-  <a
-    className="Pinpoint Internal Link Pinpoint Documentation Outline Item  "
-    href="#HDN9aHy7tP70MtEUPx4c"
-  >
-    Improved Analytics Accessibility
-  </a>
-  <a
-    className="Pinpoint Internal Link Pinpoint Documentation Outline Item  "
-    href="#1iVzyyvqjM0eq0gy7sOq"
-  >
-    Tables, tables, tables
-  </a>
-  <a
-    className="Pinpoint Internal Link Pinpoint Documentation Outline Item  "
-    href="#K9W0A6riW4qmlPMYqbTN"
-  >
-    Analytics Drilldown + Changelog Generator Styling
-  </a>
-</div>
-`;
-
-exports[`Test with link (new tab) 1`] = `
-<div
-  className="Pinpoint Documentation Outline Wrapper "
->
-  <a
-    className="Pinpoint Internal Link Pinpoint Documentation Outline Item  "
-    href="#oroH8YQr4vufOiVTRND4"
-    rel="noopener noreferrer"
-    target="_blank"
-  >
-    Linked Content Blocks
-  </a>
-  <a
-    className="Pinpoint Internal Link Pinpoint Documentation Outline Item  "
-    href="#XDF0NAdmohIPYGW0EABP"
-    rel="noopener noreferrer"
-    target="_blank"
-  >
-    Publishing Controls and Social Posting
-  </a>
-  <a
-    className="Pinpoint Internal Link Pinpoint Documentation Outline Item  "
-    href="#Cq4Ong4PJwMYygleMjvk"
-    rel="noopener noreferrer"
-    target="_blank"
-  >
-    Changelog planning just got way simpler!
-  </a>
-  <a
-    className="Pinpoint Internal Link Pinpoint Documentation Outline Item  "
-    href="#CbenrdtHI5j23nXmv5bs"
-    rel="noopener noreferrer"
-    target="_blank"
-  >
-    Email validation, filtering, and subscriber search 🔍
-  </a>
-  <a
-    className="Pinpoint Internal Link Pinpoint Documentation Outline Item  "
-    href="#rBqjJKPrnGpgztbUed5x"
-    rel="noopener noreferrer"
-    target="_blank"
-  >
-    Analytics Drill-Down and Localization
-  </a>
-  <a
-    className="Pinpoint Internal Link Pinpoint Documentation Outline Item  "
-    href="#6Lnjaer8Pywx3Xz4FQAp"
-    rel="noopener noreferrer"
-    target="_blank"
-  >
-    Already mentioned notice
-  </a>
-  <a
-    className="Pinpoint Internal Link Pinpoint Documentation Outline Item  "
-    href="#g4OAy7NHSY4U8ADt62gl"
-    rel="noopener noreferrer"
-    target="_blank"
-  >
-    Published Page Search and Filtering
-  </a>
-  <a
-    className="Pinpoint Internal Link Pinpoint Documentation Outline Item  "
-    href="#HDN9aHy7tP70MtEUPx4c"
-    rel="noopener noreferrer"
-    target="_blank"
-  >
-    Improved Analytics Accessibility
-  </a>
-  <a
-    className="Pinpoint Internal Link Pinpoint Documentation Outline Item  "
-    href="#1iVzyyvqjM0eq0gy7sOq"
-    rel="noopener noreferrer"
-    target="_blank"
-  >
-    Tables, tables, tables
-  </a>
-  <a
-    className="Pinpoint Internal Link Pinpoint Documentation Outline Item  "
-    href="#K9W0A6riW4qmlPMYqbTN"
-    rel="noopener noreferrer"
-    target="_blank"
-  >
-    Analytics Drilldown + Changelog Generator Styling
-  </a>
+    <div
+      className="Top"
+    >
+      <svg
+        aria-hidden="true"
+        className="toggleControl"
+        data-icon="chevron-right"
+        data-prefix="fas"
+        focusable="false"
+        onClick={[Function]}
+        role="img"
+        viewBox="0 0 320 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+          fill="currentColor"
+        />
+      </svg>
+      <span
+        className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+        onClick={[Function]}
+      >
+        Analytics Drilldown + Changelog Generator Styling
+      </span>
+    </div>
+  </div>
 </div>
 `;

@@ -1,12 +1,12 @@
 .Pinpoint.Documentation.Outline.Wrapper {
-	@apply flex flex-col space-y-2;
+	@apply flex flex-col space-y-4;
 }
 
 .Pinpoint.Documentation.Outline.Item {
 	@apply text-base;
 }
 
-.Pinpoint.Documentation.Outline.active {
+.Pinpoint.Documentation.Outline.Item.active {
 	@apply font-bold;
 }
 
@@ -19,13 +19,41 @@
 }
 
 .Pinpoint.Documentation.Page.Home .Pinpoint.Documentation.Outline.Wrapper {
-	@apply mr-24 ml-4;
+	@apply mr-24 ml-4 flex-grow;
 }
 
 .Pinpoint.Documentation.Page.Home .Pinpoint.Documentation.Outline.Item {
-	@apply whitespace-nowrap w-1/3 text-black dark:text-white;
+	@apply whitespace-nowrap text-black dark:text-white;
 }
 
 .Pinpoint.documentationBodyWrapper {
 	@apply flex-grow mb-12;
+}
+
+.Pinpoint.Documentation.Outline.Wrapper .SubMenu {
+	@apply ml-10 flex flex-col space-y-2 mt-2;
+}
+
+.Pinpoint.Documentation.Outline.Wrapper .SubMenu .SubItem {
+	@apply whitespace-nowrap;
+}
+
+.Pinpoint.Documentation.Outline .SubItem.active {
+	@apply font-bold;
+}
+
+.Pinpoint.Documentation.Outline.Wrapper .Parent .Top {
+	@apply flex items-center;
+}
+
+.Pinpoint.Documentation.Outline.Wrapper .Parent .Top .spacer {
+	width: 12px;
+	height: 12px;
+	@apply mr-2;
+}
+
+.Pinpoint.Documentation.Outline.Wrapper .Parent .Top .toggleControl {
+	width: 12px;
+	height: 12px;
+	@apply mr-2 cursor-pointer;
 }

@@ -7,3 +7,4 @@ export * from './hooks';
 export * from './data';
 export * from './event';
 export * from './subscription';
+export * from './outline';

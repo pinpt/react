@@ -23,14 +23,19 @@ export default {
 
 export const Full_Page: React.VFC<{}> = () => {
 	const [currentEntry, setCurrentEntry] = useState(() => entries[0].id);
+	const [currentAnchor, setCurrentAnchor] = useState(() => '');
 	return (
 		<Prebuilt.Home
 			currentEntry={currentEntry}
-			setCurrentEntry={(e) => setCurrentEntry(e.id)}
+			setCurrentEntry={(e, anchor) => {
+				setCurrentEntry(e.id);
+				setCurrentAnchor(anchor);
+			}}
 			entries={entries as IContent[]}
 			site={site}
 			title="Pinpoint Documentation"
 			description="Get started building with Pinpoint!"
+			currentAnchor={currentAnchor}
 		/>
 	);
 };
