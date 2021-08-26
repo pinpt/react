@@ -28,6 +28,7 @@ body.Pinpoint {
  * Styles for the header component
  */
 .Pinpoint .headerWrapper {
+	@apply transition-colors duration-200;
 	background-color: var(--header-bg-color);
 }
 
@@ -53,6 +54,7 @@ body.Pinpoint {
 }
 
 .Pinpoint.Header .description {
+	@apply transition-colors duration-200;
 	color: var(--header-description-color);
 }
 
@@ -79,7 +81,7 @@ body.Pinpoint {
 }
 
 .Pinpoint.Search.Bar .input {
-	@apply w-full border-0 py-1 pr-2 outline-none bg-transparent;
+	@apply w-full border-0 py-1 pr-2 outline-none bg-transparent transition-colors duration-200;
 	color: var(--page-text-color);
 }
 
@@ -93,7 +95,7 @@ body.Pinpoint {
  */
 
 .Pinpoint.ThemeToggle .mode {
-	@apply relative block h-8 border;
+	@apply relative block h-8 border transition-colors duration-200;
 	border-radius: 30px;
 	width: 58px;
 	outline-width: 0;
@@ -138,7 +140,7 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
  * Styles for the subscribe component
  */
 .Pinpoint.Subscribe {
-	@apply flex items-center cursor-pointer no-underline;
+	@apply flex items-center cursor-pointer no-underline transition-colors duration-200;
 	color: var(--page-highlight-color);
 }
 
@@ -158,12 +160,13 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
  * Styles for the footer component
  */
 .Pinpoint .footerWrapper {
+	@apply transition-colors duration-200;
 	background-color: var(--footer-bg-color);
 	color: var(--footer-text-color);
 }
 
 .Pinpoint.Footer {
-	@apply py-14 text-sm;
+	@apply py-14 text-sm transition-colors duration-200;
 	background-color: var(--footer-bg-color);
 	color: var(--footer-text-color);
 }
@@ -265,7 +268,7 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 }
 
 .Pinpoint.Content.Card .Date {
-	@apply mt-0.5 text-xs mb-2;
+	@apply mt-0.5 text-xs mb-2 transition-colors duration-200;
 	color: var(--card-date-color);
 }
 
@@ -275,16 +278,17 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 }
 
 .Pinpoint.Content.Card:hover .Title {
+	@apply transition-colors duration-200;
 	color: var(--card-link-color);
 }
 
 .Pinpoint.Content.Card.Description {
-	@apply mb-4;
+	@apply mb-4 transition-colors duration-200;
 	color: var(--card-summary-color);
 }
 
 .Pinpoint.Content.Card.Read {
-	@apply flex items-center cursor-pointer no-underline;
+	@apply flex items-center cursor-pointer no-underline transition-colors duration-200;
 	color: var(--card-link-color);
 }
 
@@ -300,7 +304,7 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
  * Styles for the statistic components
  */
 .Pinpoint.Statistic.wrapper {
-	@apply flex items-center;
+	@apply flex items-center transition-colors duration-200;
 	color: var(--card-info-color);
 }
 
@@ -366,7 +370,7 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 }
 
 .Pinpoint.Recent .pageIndicator {
-	@apply font-normal text-base ml-2;
+	@apply font-normal text-base ml-2 transition-colors duration-200;
 	color: var(--page-secondary-text-color);
 }
 
@@ -411,7 +415,7 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 }
 
 .Pinpoint.Pagination {
-	@apply flex justify-between items-center space-x-10;
+	@apply flex justify-between items-center space-x-10 transition-colors duration-200;
 	color: var(--page-highlight-color);
 }
 
@@ -462,12 +466,12 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 }
 
 .Pinpoint .entryWrapper {
-	@apply flex-grow;
+	@apply flex-grow transition-colors duration-200;
 	background-color: var(--article-bg-color);
 }
 
 .Pinpoint .entryWrapper .entry {
-	@apply py-10 md:py-14 flex flex-col md:flex-row border-t;
+	@apply py-10 md:py-14 flex flex-col md:flex-row border-t transition-colors duration-200;
 	border-color: var(--section-border-color);
 }
 
@@ -480,6 +484,7 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 }
 
 .Pinpoint .entryWrapper .sidebarWrapper {
+	@apply transition-colors duration-200;
 	color: var(--article-info-color);
 }
 
@@ -511,7 +516,7 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 }
 
 .Pinpoint .entryWrapper .renderer {
-	@apply mb-10 md:mb-14;
+	@apply mb-10 md:mb-14 transition-colors duration-200;
 	color: var(--article-text-color);
 }
 
