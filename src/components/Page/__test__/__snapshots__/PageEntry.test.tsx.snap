@@ -240,13 +240,13 @@ exports[`Test full entry 1`] = `
         </div>
         <article>
           <section
-            className="cover covermedia"
+            className="Pinpoint cover covermedia"
           >
             <div
-              className="media-container"
+              className="Pinpoint media-container"
             >
               <div
-                className="image "
+                className="Pinpoint image"
               >
                 <img
                   alt=""
@@ -1051,13 +1051,13 @@ exports[`Test no footer 1`] = `
         </div>
         <article>
           <section
-            className="cover covermedia"
+            className="Pinpoint cover covermedia"
           >
             <div
-              className="media-container"
+              className="Pinpoint media-container"
             >
               <div
-                className="image "
+                className="Pinpoint image"
               >
                 <img
                   alt=""
@@ -1449,13 +1449,13 @@ exports[`Test no sidebar 1`] = `
         />
         <article>
           <section
-            className="cover covermedia"
+            className="Pinpoint cover covermedia"
           >
             <div
-              className="media-container"
+              className="Pinpoint media-container"
             >
               <div
-                className="image "
+                className="Pinpoint image"
               >
                 <img
                   alt=""
@@ -2114,13 +2114,13 @@ exports[`Test not zoomable entry 1`] = `
         </div>
         <article>
           <section
-            className="cover covermedia"
+            className="Pinpoint cover covermedia"
           >
             <div
-              className="media-container"
+              className="Pinpoint media-container"
             >
               <div
-                className="image "
+                className="Pinpoint image"
               >
                 <img
                   alt=""
@@ -2930,13 +2930,13 @@ exports[`Test with pagination 1`] = `
         </div>
         <article>
           <section
-            className="cover covermedia"
+            className="Pinpoint cover covermedia"
           >
             <div
-              className="media-container"
+              className="Pinpoint media-container"
             >
               <div
-                className="image "
+                className="Pinpoint image"
               >
                 <img
                   alt=""
