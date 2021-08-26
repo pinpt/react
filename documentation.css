@@ -27,5 +27,5 @@
 }
 
 .Pinpoint.documentationBodyWrapper {
-	@apply flex-grow;
+	@apply flex-grow mb-12;
 }
