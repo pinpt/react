@@ -31,3 +31,16 @@ test('Test with active', () => {
 	const tree = component.toJSON();
 	expect(tree).toMatchSnapshot();
 });
+
+test('Test with active', () => {
+	const component = renderer.create(
+		<Outline
+			site={site}
+			entries={entries as IContent[]}
+			onClick={(entry) => console.log(entry.title)}
+			active="Cq4Ong4PJwMYygleMjvk"
+		/>
+	);
+	const tree = component.toJSON();
+	expect(tree).toMatchSnapshot();
+});

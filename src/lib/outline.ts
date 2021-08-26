@@ -28,7 +28,6 @@ export const getDocumentHeadings = (document: any, title = '', levels = [1]) => 
 
 	content.forEach((node) => {
 		if (node.type === 'heading' && node.attrs?.level && levels.includes(node.attrs.level as number)) {
-			console.log(node.content?.[0].text, document);
 			if (
 				node.content?.[0].type === 'text' &&
 				node.content?.[0].text &&
