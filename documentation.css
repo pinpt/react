@@ -10,6 +10,10 @@
 	@apply font-bold;
 }
 
+.Pinpoint.Documentation.Page.Home {
+	@apply flex flex-col h-screen;
+}
+
 .Pinpoint.Documentation.Page.Home .Pinpoint.Documentation.Page.Content {
 	@apply flex w-full;
 }
@@ -20,4 +24,8 @@
 
 .Pinpoint.Documentation.Page.Home .Pinpoint.Documentation.Outline.Item {
 	@apply whitespace-nowrap w-1/3 text-black dark:text-white;
+}
+
+.Pinpoint.documentationBodyWrapper {
+	@apply flex-grow mb-12;
 }
