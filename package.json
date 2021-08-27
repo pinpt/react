@@ -9,10 +9,10 @@
 		"themes/**/*"
 	],
 	"scripts": {
-		"build:styles:base": "NODE_ENV=production tailwindcss -i ./base.css -o ./dist/base.css",
-		"build:styles:theme": "NODE_ENV=production tailwindcss -i ./defaultTheme.css -o ./themes/default.css",
-		"build:styles:entry": "NODE_ENV=production tailwindcss -i ./entry.css -o ./dist/entry.css",
-		"build:styles:documentation": "NODE_ENV=production tailwindcss -i ./documentation.css -o ./dist/documentation.css",
+		"build:styles:base": "NODE_ENV=production tailwindcss --jit -m -i ./base.css -o ./dist/base.css",
+		"build:styles:theme": "NODE_ENV=production tailwindcss --jit -m -i ./defaultTheme.css -o ./themes/default.css",
+		"build:styles:entry": "NODE_ENV=production tailwindcss --jit -m -i ./entry.css -o ./dist/entry.css",
+		"build:styles:documentation": "NODE_ENV=production tailwindcss --jit -m -i ./documentation.css -o ./dist/documentation.css",
 		"build:styles": "npm run build:styles:base && npm run build:styles:theme && npm run build:styles:entry && npm run build:styles:documentation",
 		"build:ts": "tsc",
 		"build": "npm run build:ts && npm run build:styles",
