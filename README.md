@@ -1,8 +1,14 @@
-# Pinpoint React Library
+<div align="center">
+	 
+## Pinpoint React Library
 
-## Usage
+![npm](https://img.shields.io/npm/v/@pinpt/react?logo=npm&label=latest%20release) ![GitHub issues](https://img.shields.io/github/issues/pinpt/react?logo=github) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/pinpt/react/Tests%20CI?label=tests&logo=github) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/pinpt/react/Node.js%20CI?logo=npm)
 
-Install the library:
+</div>
+
+# Usage
+
+## Installing:
 
 ```
 npm i @pinpt/react
@@ -24,11 +30,21 @@ import { Statistic } from '@pinpt/react';
 const component = () => <Statistic.Bar claps={21} views={5} />;
 ```
 
-## Read the docs
+## Building Your Site:
+
+There are two primary ways to build a site using this library, either using prebuilt components, or custom-building the application yourself. Using prebuilt components is the easiest way to get up and running, and you can read more about them [here](https://react-docs.preview.pinpoint.com/?path=/docs/prebuilt-components-entry--default).
+
+Using the components individually provides for more customization options, but you'll need to be careful to include a few important parts. The most important is the `Pinpoint` component to wrap your content entries. Without this, analytics and link unfurling will not work as expected. Read more about implementation [here](https://react-docs.preview.pinpoint.com/?path=/docs/components-pinpoint--simple-test).
+<br>
+<br>
+
+# Read the docs
 
 [Check out the docs](https://react-docs.preview.pinpoint.com/) for detailed implementation guides. You can also play with the [Interactive Storybook](https://react.preview.pinpoint.com/)
+<br>
+<br>
 
-## Local Dev
+# Local Dev
 
 If you want to do local dev with the [App Template](https://github.com/pinpt/app-template) you can use the following:
 
