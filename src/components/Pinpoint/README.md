@@ -2,7 +2,9 @@
 
 [Full Docs](https://react.preview.pinpoint.com/?path=/docs/components-pinpoint) | [Github](https://github.com/pinpt/react/tree/master/src/components/Pinpoint)
 
-This should be placed at the top level of your application, as such:
+This component ensures that the analytics are set up and user's pageviews will be recorded. It is also responsible for initializing the script to unfurl links inline.
+
+It should be placed at the top level of your application, as such:
 
 ```jsx
 <Pinpoint siteId={site.id}>
@@ -15,7 +17,7 @@ This should be placed at the top level of your application, as such:
 </Pinpoint>
 ```
 
-`ready` will be true once necessary scripts are done loading, and the content can be rendered. The `ref` must be passed to the child that contains your content.
+`ready` will be true once necessary scripts are done loading, and the content can be rendered. The `ref` **must be passed** to the child that contains your content. If omitted, it will lead to link unfurling issues.
 
 #### Theming
 
