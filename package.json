@@ -2,7 +2,9 @@
 	"name": "@pinpt/react",
 	"version": "0.6.5",
 	"description": "The Pinpoint UI Library for React",
-	"sideEffects": false,
+	"sideEffects": [
+		"./src/components/Renderer/**/*"
+	],
 	"main": "dist/index.js",
 	"files": [
 		"dist/**/*",
