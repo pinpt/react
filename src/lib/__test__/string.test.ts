@@ -1,5 +1,5 @@
 import { compactNumber, formatNumber, getTwitterProfileFromURL, slugifyContent, slugifyString } from '../';
-import { getQueryString } from '../string';
+import { getQueryString, titleCase } from '../string';
 
 test('Test slugify', () => {
 	const res = slugifyString('123 456');
@@ -40,4 +40,10 @@ test('Test get query string', () => {
 			projection: [].join(','),
 		})
 	).toEqual('before=false&after=false&site=true&projection=');
+});
+
+test('Test for titlecase', () => {
+	expect(titleCase('hello world')).toEqual('Hello World');
+	expect(titleCase('hElLo wOrLd')).toEqual('Hello World');
+	expect(titleCase('Hello World')).toEqual('Hello World');
 });

@@ -54,6 +54,7 @@ const {
 	getTwitterProfileFromURL,
 	cancelEvent,
 	getQueryString,
+	titleCase,
 	isSubscriberCookieSet,
 	subscribe,
 	useContent,
@@ -198,6 +199,7 @@ test('Test util exports', () => {
 	expect(cancelEvent).toBeTruthy();
 	expect(getQueryString).toBeTruthy();
 	expect(getDocumentHeadings).toBeTruthy();
+	expect(titleCase).toBeTruthy();
 });
 
 test('Test hook exports', () => {
