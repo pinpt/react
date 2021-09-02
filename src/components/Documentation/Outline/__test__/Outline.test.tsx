@@ -1,4 +1,3 @@
-import { DateTime } from 'luxon';
 import renderer from 'react-test-renderer';
 import Outline from '..';
 import { IContent } from '../../../../lib/types/content';

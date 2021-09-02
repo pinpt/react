@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test custom className 1`] = `
+<div
+  className="Pinpoint Documentation Title test-custom"
+>
+  <span
+    className="Pinpoint Internal Link  Pinpoint Logo sm "
+  >
+    <img
+      className="image"
+      src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+    />
+  </span>
+  <div
+    className="text"
+  >
+    Pinpoint
+  </div>
+</div>
+`;
+
+exports[`Test custom text 1`] = `
+<div
+  className="Pinpoint Documentation Title "
+>
+  <span
+    className="Pinpoint Internal Link  Pinpoint Logo sm "
+  >
+    <img
+      className="image"
+      src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+    />
+  </span>
+  <div
+    className="text"
+  >
+    Test Cutom Title Text
+  </div>
+</div>
+`;
+
+exports[`Test default state 1`] = `
+<div
+  className="Pinpoint Documentation Title "
+>
+  <span
+    className="Pinpoint Internal Link  Pinpoint Logo sm "
+  >
+    <img
+      className="image"
+      src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+    />
+  </span>
+  <div
+    className="text"
+  >
+    Pinpoint
+  </div>
+</div>
+`;

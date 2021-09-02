@@ -12,6 +12,7 @@ import { Content } from '../../../Renderer';
 import Footer, { IPrebuiltFooterProps } from '../../../Prebuilt/Footer';
 import { ISocialBarProps } from '../../../Social/Bar';
 import { ICopyrightProps } from '../../../Copyright';
+import Title from '../../Title';
 
 export interface IPrebuiltDocumentationHomeProps {
 	className?: string;
@@ -35,6 +36,7 @@ export interface IPrebuiltDocumentationHomeProps {
 	title?: string;
 	description?: string;
 	currentAnchor?: string;
+	largeTitle?: boolean;
 }
 
 const Home = (props: IPrebuiltDocumentationHomeProps) => {
@@ -60,6 +62,7 @@ const Home = (props: IPrebuiltDocumentationHomeProps) => {
 		title,
 		description,
 		currentAnchor,
+		largeTitle = false,
 	} = props;
 
 	const entry = useMemo(() => {
@@ -77,11 +80,17 @@ const Home = (props: IPrebuiltDocumentationHomeProps) => {
 						searchTerm={searchTerm}
 						handleSearch={handleSearch}
 						handleSelectHome={handleSelectHome}
-						renderLogo={renderLogo}
+						renderLogo={
+							renderLogo
+								? (_site) => renderLogo?.(_site)
+								: (_site) => {
+										return <Title site={_site} text={title} />;
+								  }
+						}
 						renderSearch={renderSearch}
 						renderSubscribe={renderSubscribe ?? (() => <></>)}
 						renderThemeToggle={renderThemeToggle}
-						title={title}
+						title={largeTitle ? title : ''}
 						description={description}
 					/>
 				)

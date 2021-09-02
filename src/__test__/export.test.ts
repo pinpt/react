@@ -141,8 +141,15 @@ test('Test component exports', () => {
 
 	// Test Documentation Exports
 	expect(Documentation).toBeTruthy();
-	const { Outline, Page: PageDocumentation, Prebuilt: PrebuiltDocumentation, ...otherDocumentation } = Documentation;
+	const {
+		Outline,
+		Page: PageDocumentation,
+		Prebuilt: PrebuiltDocumentation,
+		Title: DocumentationTitle,
+		...otherDocumentation
+	} = Documentation;
 	expect(Outline).toBeTruthy();
+	expect(DocumentationTitle).toBeTruthy();
 	expect(Object.keys(otherDocumentation).length).toEqual(0);
 	expect(PageDocumentation).toBeTruthy();
 	const { Home: HomePageDoc, ...otherPageDoc } = PageDocumentation;

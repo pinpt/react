@@ -19,16 +19,23 @@ exports[`Test custom className 1`] = `
           <div
             className="left"
           >
-            <a
-              className="Pinpoint Internal Link Pinpoint Logo sm Prebuilt"
-              href="https://pinpoint.com"
-              title="Header Logo Home Page"
+            <div
+              className="Pinpoint Documentation Title "
             >
-              <img
-                className="image"
-                src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
-              />
-            </a>
+              <span
+                className="Pinpoint Internal Link  Pinpoint Logo sm "
+              >
+                <img
+                  className="image"
+                  src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+                />
+              </span>
+              <div
+                className="text"
+              >
+                Pinpoint
+              </div>
+            </div>
           </div>
           <div
             className="right"
@@ -78,17 +85,7 @@ exports[`Test custom className 1`] = `
         <div
           className="center"
         >
-          <a
-            className="link"
-            onClick={[Function]}
-            title="Pinpoint Changelog"
-          >
-            <h1
-              className="title"
-            >
-              Pinpoint Changelog
-            </h1>
-          </a>
+          
           <div
             className="description"
           >
@@ -639,16 +636,23 @@ exports[`Test custom metadata 1`] = `
           <div
             className="left"
           >
-            <a
-              className="Pinpoint Internal Link Pinpoint Logo sm Prebuilt"
-              href="https://pinpoint.com"
-              title="Header Logo Home Page"
+            <div
+              className="Pinpoint Documentation Title "
             >
-              <img
-                className="image"
-                src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
-              />
-            </a>
+              <span
+                className="Pinpoint Internal Link  Pinpoint Logo sm "
+              >
+                <img
+                  className="image"
+                  src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+                />
+              </span>
+              <div
+                className="text"
+              >
+                Custom Test
+              </div>
+            </div>
           </div>
           <div
             className="right"
@@ -698,17 +702,7 @@ exports[`Test custom metadata 1`] = `
         <div
           className="center"
         >
-          <a
-            className="link"
-            onClick={[Function]}
-            title="Custom Test"
-          >
-            <h1
-              className="title"
-            >
-              Custom Test
-            </h1>
-          </a>
+          
           <div
             className="description"
           >
@@ -1259,16 +1253,23 @@ exports[`Test default state 1`] = `
           <div
             className="left"
           >
-            <a
-              className="Pinpoint Internal Link Pinpoint Logo sm Prebuilt"
-              href="https://pinpoint.com"
-              title="Header Logo Home Page"
+            <div
+              className="Pinpoint Documentation Title "
             >
-              <img
-                className="image"
-                src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
-              />
-            </a>
+              <span
+                className="Pinpoint Internal Link  Pinpoint Logo sm "
+              >
+                <img
+                  className="image"
+                  src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+                />
+              </span>
+              <div
+                className="text"
+              >
+                Pinpoint
+              </div>
+            </div>
           </div>
           <div
             className="right"
@@ -1318,17 +1319,7 @@ exports[`Test default state 1`] = `
         <div
           className="center"
         >
-          <a
-            className="link"
-            onClick={[Function]}
-            title="Pinpoint Changelog"
-          >
-            <h1
-              className="title"
-            >
-              Pinpoint Changelog
-            </h1>
-          </a>
+          
           <div
             className="description"
           >
