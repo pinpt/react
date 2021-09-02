@@ -66,3 +66,11 @@
 .Pinpoint.Documentation.Page.Home .Pinpoint.Documentation.Page.Content article {
 	@apply flex-grow;
 }
+
+.Pinpoint.Documentation.Title {
+	@apply flex items-center;
+}
+
+.Pinpoint.Documentation.Title .text {
+	@apply ml-2 text-lg;
+}
