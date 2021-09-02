@@ -22,7 +22,8 @@
 	@apply mr-24 ml-4;
 }
 
-.Pinpoint.Documentation.Page.Home .Pinpoint.Documentation.Outline.Item {
+.Pinpoint.Documentation.Page.Home .Pinpoint.Documentation.Outline.Item,
+.Pinpoint.Documentation.Page.Home .SubMenu .SubItem {
 	@apply whitespace-nowrap text-black dark:text-white;
 }
 
@@ -44,6 +45,10 @@
 
 .Pinpoint.Documentation.Outline.Wrapper .Parent .Top {
 	@apply flex items-center;
+}
+
+.Pinpoint.Documentation.Outline.Wrapper .Parent .Top .toggleControl {
+	@apply text-black dark:text-white;
 }
 
 .Pinpoint.Documentation.Outline.Wrapper .Parent .Top .spacer {
