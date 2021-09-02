@@ -108,52 +108,30 @@ exports[`Test simple code block 1`] = `
 <div
   className="Pinpoint document"
 >
-  <pre
-    style={
-      Object {
-        "MozHyphens": "none",
-        "MozTabSize": "4",
-        "OTabSize": "4",
-        "WebkitHyphens": "none",
-        "background": "black",
-        "border": ".3em solid hsl(0, 0%, 33%)",
-        "borderRadius": ".25em",
-        "borderWidth": "0px",
-        "boxShadow": "1px 1px .5em black inset",
-        "color": "white",
-        "fontFamily": "ui-monospace",
-        "fontSize": "1em",
-        "hyphens": "none",
-        "lineHeight": "1.5",
-        "margin": ".5em 0",
-        "msHyphens": "none",
-        "overflow": "auto",
-        "padding": "1em",
-        "tabSize": "4",
-        "textAlign": "left",
-        "textShadow": "0 -.1em .2em black",
-        "whiteSpace": "pre",
-        "wordBreak": "normal",
-        "wordSpacing": "normal",
-        "wordWrap": "normal",
-      }
-    }
+  <div
+    className="code_block"
   >
-    <code
-      className="language-javascript"
+    <pre
       style={
         Object {
           "MozHyphens": "none",
           "MozTabSize": "4",
           "OTabSize": "4",
           "WebkitHyphens": "none",
-          "background": "none",
+          "background": "black",
+          "border": ".3em solid hsl(0, 0%, 33%)",
+          "borderRadius": ".25em",
+          "borderWidth": "0px",
+          "boxShadow": "1px 1px .5em black inset",
           "color": "white",
-          "fontFamily": "Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace",
+          "fontFamily": "ui-monospace",
           "fontSize": "1em",
           "hyphens": "none",
           "lineHeight": "1.5",
+          "margin": "0",
           "msHyphens": "none",
+          "overflow": "auto",
+          "padding": "1em",
           "tabSize": "4",
           "textAlign": "left",
           "textShadow": "0 -.1em .2em black",
@@ -164,58 +142,84 @@ exports[`Test simple code block 1`] = `
         }
       }
     >
-      <span
-        className="token"
+      <code
+        className="language-javascript"
         style={
           Object {
-            "color": "hsl(53, 89%, 79%)",
+            "MozHyphens": "none",
+            "MozTabSize": "4",
+            "OTabSize": "4",
+            "WebkitHyphens": "none",
+            "background": "none",
+            "color": "white",
+            "fontFamily": "Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace",
+            "fontSize": "1em",
+            "hyphens": "none",
+            "lineHeight": "1.5",
+            "msHyphens": "none",
+            "tabSize": "4",
+            "textAlign": "left",
+            "textShadow": "0 -.1em .2em black",
+            "whiteSpace": "pre",
+            "wordBreak": "normal",
+            "wordSpacing": "normal",
+            "wordWrap": "normal",
           }
         }
       >
-        var
-      </span>
-      <span
-        style={Object {}}
-      >
-         a 
-      </span>
-      <span
-        className="token"
-        style={
-          Object {
-            "color": "hsl(76, 21%, 52%)",
+        <span
+          className="token"
+          style={
+            Object {
+              "color": "hsl(53, 89%, 79%)",
+            }
           }
-        }
-      >
-        =
-      </span>
-      <span
-        style={Object {}}
-      >
-         
-      </span>
-      <span
-        className="token"
-        style={
-          Object {
-            "color": "hsl(14, 58%, 55%)",
+        >
+          var
+        </span>
+        <span
+          style={Object {}}
+        >
+           a 
+        </span>
+        <span
+          className="token"
+          style={
+            Object {
+              "color": "hsl(76, 21%, 52%)",
+            }
           }
-        }
-      >
-        1
-      </span>
-      <span
-        className="token"
-        style={
-          Object {
-            "Opacity": ".7",
+        >
+          =
+        </span>
+        <span
+          style={Object {}}
+        >
+           
+        </span>
+        <span
+          className="token"
+          style={
+            Object {
+              "color": "hsl(14, 58%, 55%)",
+            }
           }
-        }
-      >
-        ;
-      </span>
-    </code>
-  </pre>
+        >
+          1
+        </span>
+        <span
+          className="token"
+          style={
+            Object {
+              "Opacity": ".7",
+            }
+          }
+        >
+          ;
+        </span>
+      </code>
+    </pre>
+  </div>
 </div>
 `;
 
