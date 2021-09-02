@@ -50,6 +50,7 @@ export interface FetchContentPaginatedResult {
 }
 
 export interface FetchContentPaginationOptions {
+	tag?: string;
 	offset?: number;
 	limit?: number;
 	before?: true;
@@ -63,6 +64,7 @@ export const fetchContentPaginated = async (
 	options?: FetchContentPaginationOptions
 ): Promise<FetchContentPaginatedResult> => {
 	const {
+		tag,
 		offset = 0,
 		limit = 10,
 		before: includeBefore = false,
@@ -77,6 +79,9 @@ export const fetchContentPaginated = async (
 	params.before = String(includeBefore);
 	params.after = String(includeAfter);
 	params.site = String(includeSite);
+	if (tag) {
+		params.tag = tag;
+	}
 	if (projection.length) {
 		params.projection = projection.join(',');
 	}
