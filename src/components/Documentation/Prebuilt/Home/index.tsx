@@ -84,7 +84,7 @@ const Home = (props: IPrebuiltDocumentationHomeProps) => {
 							renderLogo
 								? (_site) => renderLogo?.(_site)
 								: (_site) => {
-										return <Title site={_site} text={title} />;
+										return <Title site={_site} text={title} onClick={handleSelectHome} />;
 								  }
 						}
 						renderSearch={renderSearch}
