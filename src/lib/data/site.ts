@@ -7,7 +7,10 @@ export const fetchSite = async (config: IPinpointConfig): Promise<ISite> => {
 	return data;
 };
 
-export const fetchSiteWithContentCount = async (config: IPinpointConfig, tag?: string): Promise<{ site: ISite; count: number }> => {
+export const fetchSiteWithContentCount = async (
+	config: IPinpointConfig,
+	tag?: string
+): Promise<{ site: ISite; count: number }> => {
 	const { data: site, count } = await executeAPI(config, `/site-api/v1/site?count=true${tag ? `&tag=${tag}` : ''}`);
 	return { site, count };
 };
