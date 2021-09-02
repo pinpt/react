@@ -19,7 +19,7 @@
 }
 
 .Pinpoint.Documentation.Page.Home .Pinpoint.Documentation.Outline.Wrapper {
-	@apply mr-24 ml-4 flex-grow;
+	@apply mr-24 ml-4;
 }
 
 .Pinpoint.Documentation.Page.Home .Pinpoint.Documentation.Outline.Item {
@@ -56,4 +56,8 @@
 	width: 12px;
 	height: 12px;
 	@apply mr-2 cursor-pointer;
+}
+
+.Pinpoint.Documentation.Page.Home .Pinpoint.Documentation.Page.Content article {
+	@apply flex-grow;
 }
