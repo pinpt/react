@@ -4,18 +4,21 @@ import { NodeProps, registerNode } from './register';
 
 const CodeBlock = ({ node }: NodeProps) => {
 	return (
-		<SyntaxHighlighter
-			language={node.attrs.language}
-			style={twilight}
-			customStyle={{
-				background: 'black',
-				fontFamily: 'ui-monospace',
-				borderWidth: '0px',
-				borderRadius: '.25em',
-			}}
-		>
-			{node.content?.[0].text ?? ''}
-		</SyntaxHighlighter>
+		<div className="code_block">
+			<SyntaxHighlighter
+				language={node.attrs.language}
+				style={twilight}
+				customStyle={{
+					margin: '0',
+					background: 'black',
+					fontFamily: 'ui-monospace',
+					borderWidth: '0px',
+					borderRadius: '.25em',
+				}}
+			>
+				{node.content?.[0].text ?? ''}
+			</SyntaxHighlighter>
+		</div>
 	);
 };
 

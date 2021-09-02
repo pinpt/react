@@ -216,44 +216,6 @@
 .Pinpoint.document .notice {
 	@apply relative shadow-lg;
 }
-.Pinpoint.document * + .code_block,
-.Pinpoint.document * + .notice {
-	@apply my-4;
-}
-.Pinpoint.document .code_block > .options,
-.Pinpoint.document .notice > .options {
-	@apply absolute opacity-0 transition-opacity delay-200 duration-100 rounded overflow-hidden top-1 right-1 z-10 flex items-center select-none;
-}
-.Pinpoint.document .code_block:hover > .options,
-.Pinpoint.document .notice:hover > .options {
-	@apply opacity-100;
-}
-.Pinpoint.document .code_block > .options select,
-.Pinpoint.document .code_block > .options button,
-.Pinpoint.document .notice > .options select,
-.Pinpoint.document .notice > .options button {
-	@apply last:mr-0 px-2 h-6 bg-gray-800 hover:bg-gray-900 text-gray-300 hover:text-white text-xs focus:ring-0 cursor-pointer;
-	margin-right: 1px;
-}
-.Pinpoint.document .code_block > .options select,
-.Pinpoint.document .notice > .options select {
-	@apply py-0 pr-8 appearance-none border-0 bg-no-repeat;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	background-image: linear-gradient(45deg, transparent 50%, #d4d4d4 50%),
-		linear-gradient(135deg, #d4d4d4 50%, transparent 50%);
-	background-position: calc(100% - 15px) calc(50%), calc(100% - 10px) calc(50%);
-	background-size: 5px 5px, 5px 5px;
-}
-.Pinpoint.document .code_block > .options select:hover,
-.Pinpoint.document .notice > .options select:hover {
-	background-image: linear-gradient(45deg, transparent 50%, white 50%),
-		linear-gradient(135deg, white 50%, transparent 50%);
-}
-.Pinpoint.document .code_block > .options button svg,
-.Pinpoint.document .notice > .options button svg {
-	@apply mr-2;
-}
 .Pinpoint.document pre {
 	@apply block relative rounded overflow-x-auto px-6 py-4 leading-5 font-mono whitespace-pre overflow-scroll bg-black text-trueGray-300;
 }
@@ -394,13 +356,7 @@
 .Pinpoint.document blockquote {
 	@apply p-4 bg-sky-100 dark:bg-sky-900 text-gray-600 dark:text-gray-300 border-l-4 border-sky-300 dark:border-sky-600 rounded-r;
 }
-.Pinpoint.document * + blockquote,
-.Pinpoint.document * + .blockquote {
-	@apply my-4;
-}
-.Pinpoint.document blockquote .placeholder:before {
-	@apply text-sky-300 dark:text-sky-700;
-}
+
 
 /**
  * Horizontal Rule
@@ -598,12 +554,6 @@
 }
 .file .options .option span.sm {
 	@apply hidden sm:block;
-}
-.file.placeholder .details {
-	@apply opacity-50;
-}
-.file.placeholder .loader {
-	@apply flex-shrink-0;
 }
 
 /**
