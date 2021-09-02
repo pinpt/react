@@ -20,7 +20,7 @@ exports[`Test custom className 1`] = `
             className="left"
           >
             <div
-              className="Pinpoint Documentation Title "
+              className="Pinpoint Documentation Title  "
             >
               <span
                 className="Pinpoint Internal Link  Pinpoint Logo sm "
@@ -637,7 +637,7 @@ exports[`Test custom metadata 1`] = `
             className="left"
           >
             <div
-              className="Pinpoint Documentation Title "
+              className="Pinpoint Documentation Title  "
             >
               <span
                 className="Pinpoint Internal Link  Pinpoint Logo sm "
@@ -1254,7 +1254,7 @@ exports[`Test default state 1`] = `
             className="left"
           >
             <div
-              className="Pinpoint Documentation Title "
+              className="Pinpoint Documentation Title  "
             >
               <span
                 className="Pinpoint Internal Link  Pinpoint Logo sm "

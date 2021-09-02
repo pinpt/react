@@ -1,6 +1,6 @@
 {
 	"name": "@pinpt/react",
-	"version": "0.6.11",
+	"version": "0.6.12",
 	"description": "The Pinpoint UI Library for React",
 	"sideEffects": [
 		"./src/components/Renderer/**/*"

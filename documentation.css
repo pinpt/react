@@ -71,6 +71,10 @@
 	@apply flex items-center;
 }
 
+.Pinpoint.Documentation.Title.clickable {
+	@apply cursor-pointer;
+}
+
 .Pinpoint.Documentation.Title .text {
-	@apply ml-2 text-lg;
+	@apply ml-2 text-lg text-black dark:text-white;
 }

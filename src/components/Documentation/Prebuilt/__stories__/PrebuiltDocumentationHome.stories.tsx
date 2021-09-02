@@ -36,6 +36,7 @@ export const Full_Page: React.VFC<{}> = () => {
 			title="Pinpoint Documentation"
 			description="Get started building with Pinpoint!"
 			currentAnchor={currentAnchor}
+			handleSelectHome={() => setCurrentAnchor('')}
 		/>
 	);
 };

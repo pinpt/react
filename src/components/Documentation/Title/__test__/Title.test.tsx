@@ -19,3 +19,9 @@ test('Test custom className', () => {
 	const tree = component.toJSON();
 	expect(tree).toMatchSnapshot();
 });
+
+test('Test click handler', () => {
+	const component = renderer.create(<Title site={site} onClick={() => console.log('click!')} />);
+	const tree = component.toJSON();
+	expect(tree).toMatchSnapshot();
+});
