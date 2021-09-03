@@ -1,4 +1,4 @@
-import { ReactElement, useMemo } from 'react';
+import { ReactElement, useCallback, useMemo } from 'react';
 import { IHeaderProps } from '../../../Header';
 import Page from '../../Page';
 import Header from '../../../Prebuilt/Header';
@@ -13,6 +13,7 @@ import Footer, { IPrebuiltFooterProps } from '../../../Prebuilt/Footer';
 import { ISocialBarProps } from '../../../Social/Bar';
 import { ICopyrightProps } from '../../../Copyright';
 import Title from '../../Title';
+import Pagination, { IPaginationProps } from '../../../Pagination';
 
 export interface IPrebuiltDocumentationHomeProps {
 	className?: string;
@@ -33,6 +34,13 @@ export interface IPrebuiltDocumentationHomeProps {
 	renderFooter?: (site: ISite) => ReactElement<IPrebuiltFooterProps>;
 	renderSocial?: (site: ISite) => ReactElement<ISocialBarProps>;
 	renderCopyright?: (site: ISite) => ReactElement<ICopyrightProps>;
+	renderPagination?: (
+		nextEntry?: IContent,
+		previousEntry?: IContent,
+		currentEntry?: IContent
+	) => ReactElement<IPaginationProps>;
+	nextEntry?: string;
+	previousEntry?: string;
 	title?: string;
 	description?: string;
 	currentAnchor?: string;
@@ -59,15 +67,30 @@ const Home = (props: IPrebuiltDocumentationHomeProps) => {
 		renderFooter,
 		renderCopyright,
 		renderSocial,
+		renderPagination,
 		title,
 		description,
 		currentAnchor,
 		largeTitle = false,
+		nextEntry: nextEntryId,
+		previousEntry: previousEntryId,
 	} = props;
 
 	const entry = useMemo(() => {
 		return entries.find((e) => e.id === currentEntry);
 	}, [entries, currentEntry]);
+
+	const nextEntry = useMemo(() => {
+		return nextEntryId ? entries.find((e) => e.id === nextEntryId) : undefined;
+	}, [entries, nextEntryId]);
+
+	const previousEntry = useMemo(() => {
+		return previousEntryId ? entries.find((e) => e.id === previousEntryId) : undefined;
+	}, [entries, previousEntryId]);
+
+	const handlePaginate = useCallback((entry: IContent) => {
+		setCurrentEntry(entry);
+	}, []);
 
 	return (
 		<Page.Home
@@ -109,6 +132,16 @@ const Home = (props: IPrebuiltDocumentationHomeProps) => {
 			}
 			content={
 				renderContent?.(entry, currentEntry, entries) ?? <Content id={currentEntry} document={entry?.document} />
+			}
+			pagination={
+				renderPagination?.(nextEntry, previousEntry, entry) ?? (
+					<Pagination
+						goForward={nextEntry ? () => handlePaginate(nextEntry) : undefined}
+						goBack={previousEntry ? () => handlePaginate(previousEntry) : undefined}
+						goForwardText={<Pagination.GoForwardWithArrow text={nextEntry?.title} />}
+						goBackText={<Pagination.GoBackWithArrow text={previousEntry?.title} />}
+					/>
+				)
 			}
 			footer={
 				renderFooter?.(site) ?? (
