@@ -40,3 +40,25 @@ export const Full_Page: React.VFC<{}> = () => {
 		/>
 	);
 };
+
+export const With_Pagination: React.VFC<{}> = () => {
+	const [currentEntry, setCurrentEntry] = useState(() => entries[1].id);
+	const [currentAnchor, setCurrentAnchor] = useState(() => '');
+	return (
+		<Prebuilt.Home
+			currentEntry={currentEntry}
+			setCurrentEntry={(e, anchor) => {
+				setCurrentEntry(e.id);
+				setCurrentAnchor(anchor);
+			}}
+			entries={entries as IContent[]}
+			site={site}
+			title="Pinpoint Documentation"
+			description="Get started building with Pinpoint!"
+			currentAnchor={currentAnchor}
+			handleSelectHome={() => setCurrentAnchor('')}
+			previousEntry={entries[0].id}
+			nextEntry={entries[1].id}
+		/>
+	);
+};

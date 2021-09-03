@@ -46,3 +46,18 @@ test('Test custom metadata', () => {
 	const tree = component.toJSON();
 	expect(tree).toMatchSnapshot();
 });
+
+test('Test with pagination', () => {
+	const component = renderer.create(
+		<Home
+			entries={entries as IContent[]}
+			site={site}
+			previousEntry={entries[0].id}
+			currentEntry={entries[1].id}
+			nextEntry={entries[2].id}
+			setCurrentEntry={(e) => console.log(e)}
+		/>
+	);
+	const tree = component.toJSON();
+	expect(tree).toMatchSnapshot();
+});

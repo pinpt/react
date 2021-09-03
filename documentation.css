@@ -79,6 +79,10 @@
 	@apply ml-2 text-lg text-black dark:text-white;
 }
 
-.Pinpoint.Documentation.Page.Content article {
-	@apply w-0;
+.Pinpoint.Documentation.Page.Content .leftWrapper {
+	@apply flex-grow w-0;
+}
+
+.Pinpoint.Documentation.Page.Content .leftWrapper .Pinpoint.Pagination {
+	@apply mt-8;
 }

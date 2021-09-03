@@ -4,6 +4,7 @@ import { IHeaderProps } from '../../../Header';
 import withWrapper from '../../../Internal/withWrapper';
 import { IOutlineProps } from '../../Outline';
 import { IFooterProps } from '../../../Footer';
+import { IPaginationProps } from '../../../Pagination';
 
 export interface IDocumentationHomeProps {
 	className?: string;
@@ -12,10 +13,11 @@ export interface IDocumentationHomeProps {
 	content?: ReactElement;
 	loading?: boolean;
 	footer?: ReactElement<IFooterProps>;
+	pagination?: ReactElement<IPaginationProps>;
 }
 
 const Home = (props: IDocumentationHomeProps) => {
-	const { className = '', header, loading, outline, content, footer } = props;
+	const { className = '', header, loading, outline, content, footer, pagination } = props;
 
 	return (
 		<div className={`Pinpoint Documentation Page Home ${className}`}>
@@ -28,7 +30,10 @@ const Home = (props: IDocumentationHomeProps) => {
 				withWrapper(
 					<div className="Pinpoint Documentation Page Content">
 						{outline}
-						{content}
+						<div className="leftWrapper">
+							{content}
+							{pagination}
+						</div>
 					</div>,
 					'documentationBody'
 				)
