@@ -23,7 +23,19 @@ export interface ICardContainerProps {
 }
 
 const Container = (props: ICardContainerProps) => {
-	const { title, description, imageUrl, alt, className = '', statistics, date, button, tags, coverMedia, onClick } = props;
+	const {
+		title,
+		description,
+		imageUrl,
+		alt,
+		className = '',
+		statistics,
+		date,
+		button,
+		tags,
+		coverMedia,
+		onClick,
+	} = props;
 	const hasCoverMedia = coverMedia && coverMedia.type !== CoverMediaType.None;
 
 	return (

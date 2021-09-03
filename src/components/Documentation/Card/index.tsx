@@ -7,26 +7,12 @@ export interface IDocumentationCardProps {
 }
 
 const Card = (props: IDocumentationCardProps) => {
-	const {
-		className = '',
-		title,
-		description,
-		cta = 'Read',
-		onCtaClick
-	} = props;
+	const { className = '', title, description, cta = 'Read', onCtaClick } = props;
 
 	return (
 		<div className={`Pinpoint Documentation Card Container wrapper ${className}`}>
-			{title && (
-				<h2 className="title">
-					{title}
-				</h2>
-			)}
-			{description && (
-				<p className="description">
-					{description}
-				</p>
-			)}
+			{title && <h2 className="title">{title}</h2>}
+			{description && <p className="description">{description}</p>}
 			{onCtaClick && (
 				<div className="cta clickable" onClick={onCtaClick}>
 					{cta}
@@ -34,6 +20,6 @@ const Card = (props: IDocumentationCardProps) => {
 			)}
 		</div>
 	);
-}
+};
 
 export default Card;

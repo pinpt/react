@@ -21,10 +21,5 @@ export default {
 } as Meta;
 
 export const Default: React.VFC<{}> = () => (
-	<Card
-		title={entries[0].title}
-		description={entries[0].headline}
-		onCtaClick={() => alert('action!')}
-	/>
+	<Card title={entries[0].title} description={entries[0].headline} onCtaClick={() => alert('action!')} />
 );
-

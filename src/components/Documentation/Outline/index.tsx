@@ -86,7 +86,7 @@ const Entry = (props: IOutlineEntryProps) => {
 			{isSubMenuOpen && (
 				<div className="SubMenu">
 					{headings.map((h) => {
-						const anchorActive = isParentActive && (activeAnchor === h.id);
+						const anchorActive = isParentActive && activeAnchor === h.id;
 						return (
 							<ActionLink
 								key={h.id}
@@ -113,7 +113,14 @@ const Outline = (props: IOutlineProps) => {
 				const isActive = isParentActive && !activeAnchor;
 				const headings = getDocumentHeadings(entry.document, entry.title, [1]);
 				return (
-					<Entry key={`outline-${entry.id}`} {...props} isActive={isActive} isParentActive={isParentActive} headings={headings} entry={entry} />
+					<Entry
+						key={`outline-${entry.id}`}
+						{...props}
+						isActive={isActive}
+						isParentActive={isParentActive}
+						headings={headings}
+						entry={entry}
+					/>
 				);
 			})}
 		</div>

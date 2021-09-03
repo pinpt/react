@@ -107,9 +107,7 @@ export const With_Search: React.VFC<{}> = () => {
 	return (
 		<Home
 			header={<Header title="Pinpoint Documentation" description="Learn how to build with Pinpoint!" />}
-			searchBar={
-				<Search.Bar />
-			}
+			searchBar={<Search.Bar />}
 			outline={
 				<Outline
 					entries={entries as IContent[]}
