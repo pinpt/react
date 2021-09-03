@@ -31,9 +31,53 @@ const Pinpoint = (props: IPinpointProps) => {
 		}
 	}, [siteId, contentId]);
 
+	const wireUpToggles = () => {
+		const toggles = document.querySelectorAll('.toggle');
+		if (toggles && toggles.length) {
+			toggles.forEach((toggle) => {
+				const content = toggle.querySelector(':scope > .content');
+				const options = toggle.querySelector(':scope > .options');
+				const icon = options?.querySelector(':scope > .icon > svg');
+				const title = options?.querySelector(':scope > .title');
+				const expand = function () {
+					if (options) {
+						options?.removeEventListener('click', expand);
+						options?.addEventListener('click', collapse);
+					}
+					if (icon) {
+						(icon as any).style.transform = 'rotate(0deg)';
+					}
+					if (title) {
+						(title as any).style.display = 'none';
+					}
+					if (content) {
+						(content as any).style.display = 'block';
+					}
+				};
+				const collapse = function () {
+					if (options) {
+						(options as any).removeEventListener('click', collapse);
+						(options as any).addEventListener('click', expand);
+					}
+					if (icon) {
+						(icon as any).style.transform = 'rotate(270deg)';
+					}
+					if (title) {
+						(title as any).style.display = 'block';
+					}
+					if (content) {
+						(content as any).style.display = 'none';
+					}
+				};
+				options?.addEventListener('click', collapse);
+			});
+		}
+	};
+
 	const ref = () => {
 		if (ready && typeof window !== 'undefined') {
 			window.iframely?.load?.();
+			wireUpToggles();
 		}
 	};
 

@@ -1,0 +1,86 @@
+{
+	"type": "doc",
+	"content": [
+		{
+			"type": "paragraph",
+			"attrs": {
+				"align": "left"
+			},
+			"content": [
+				{
+					"type": "text",
+					"text": "Toggle Test"
+				}
+			]
+		},
+		{
+			"type": "toggle",
+			"attrs": {
+				"title": "Toggle"
+			},
+			"content": [
+				{
+					"type": "heading",
+					"attrs": {
+						"created_ts": 1630689124039,
+						"creator_id": "trf3XtLCwGcYyZogH6OoKEQO9cs2",
+						"updated_ts": 1630689125578,
+						"editor_id": "trf3XtLCwGcYyZogH6OoKEQO9cs2",
+						"dueDateHasTime": false,
+						"completed": false,
+						"level": 3,
+						"align": "left",
+						"selectionName": "h1",
+						"placeholder": "Heading"
+					},
+					"content": [
+						{
+							"type": "text",
+							"text": "Test"
+						}
+					]
+				},
+				{
+					"type": "paragraph",
+					"attrs": {
+						"updated_ts": 1630689128837,
+						"editor_id": "trf3XtLCwGcYyZogH6OoKEQO9cs2",
+						"dueDateHasTime": false,
+						"completed": false,
+						"align": "left"
+					},
+					"content": [
+						{
+							"type": "text",
+							"text": "item 1"
+						}
+					]
+				},
+				{
+					"type": "paragraph",
+					"attrs": {
+						"created_ts": 1630689128990,
+						"creator_id": "trf3XtLCwGcYyZogH6OoKEQO9cs2",
+						"updated_ts": 1630689129903,
+						"editor_id": "trf3XtLCwGcYyZogH6OoKEQO9cs2",
+						"dueDateHasTime": false,
+						"completed": false,
+						"align": "left"
+					},
+					"content": [
+						{
+							"type": "text",
+							"text": "item2"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "paragraph",
+			"attrs": {
+				"align": "left"
+			}
+		}
+	]
+}
