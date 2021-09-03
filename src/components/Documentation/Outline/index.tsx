@@ -18,10 +18,11 @@ export interface IOutlineEntryProps extends Omit<IOutlineProps, 'className' | 'e
 	entry: IContent;
 	isActive: boolean;
 	headings: IDocumentHeading[];
+	isParentActive: boolean;
 }
 
 const Entry = (props: IOutlineEntryProps) => {
-	const { itemClassName = '', onClick, activeAnchor = '', entry, isActive, headings } = props;
+	const { itemClassName = '', onClick, activeAnchor = '', entry, isActive, headings, isParentActive } = props;
 	const [collapsed, setCollapsed] = useState(true);
 	const hasSubMenu = headings.length > 0;
 	const isSubMenuOpen = hasSubMenu && !collapsed;
@@ -85,7 +86,7 @@ const Entry = (props: IOutlineEntryProps) => {
 			{isSubMenuOpen && (
 				<div className="SubMenu">
 					{headings.map((h) => {
-						const anchorActive = activeAnchor === h.id;
+						const anchorActive = isParentActive && (activeAnchor === h.id);
 						return (
 							<ActionLink
 								key={h.id}
@@ -108,10 +109,11 @@ const Outline = (props: IOutlineProps) => {
 	return (
 		<div className={`Pinpoint Documentation Outline Wrapper ${className}`}>
 			{entries?.map((entry) => {
-				const isActive = active === entry.id && !activeAnchor;
+				const isParentActive = active === entry.id;
+				const isActive = isParentActive && !activeAnchor;
 				const headings = getDocumentHeadings(entry.document, entry.title, [1]);
 				return (
-					<Entry key={`outline-${entry.id}`} {...props} isActive={isActive} headings={headings} entry={entry} />
+					<Entry key={`outline-${entry.id}`} {...props} isActive={isActive} isParentActive={isParentActive} headings={headings} entry={entry} />
 				);
 			})}
 		</div>
