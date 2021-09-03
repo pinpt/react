@@ -78,3 +78,7 @@
 .Pinpoint.Documentation.Title .text {
 	@apply ml-2 text-lg text-black dark:text-white;
 }
+
+.Pinpoint.Documentation.Page.Content article {
+	@apply w-0;
+}
