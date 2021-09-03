@@ -10,11 +10,13 @@
 	@apply font-bold;
 }
 
-.Pinpoint.Documentation.Page.Home {
+.Pinpoint.Documentation.Page.Home,
+.Pinpoint.Documentation.Page.SearchResults {
 	@apply flex flex-col h-screen;
 }
 
-.Pinpoint.Documentation.Page.Home .Pinpoint.Documentation.Page.Content {
+.Pinpoint.Documentation.Page.Home .Pinpoint.Documentation.Page.Content,
+.Pinpoint.Documentation.Page.SearchResults .Pinpoint.Documentation.Page.Content {
 	@apply flex w-full;
 }
 
@@ -81,6 +83,18 @@
 
 .Pinpoint.Documentation.Page.Content .rightWrapper {
 	@apply flex-grow w-0;
+}
+
+.Pinpoint.Documentation.Page.SearchResults .Pinpoint.Documentation.Page.Content .rightWrapper {
+	@apply ml-12 space-y-6;
+}
+
+.Pinpoint.Documentation.Page.SearchResults .Pinpoint.Documentation.Page.Content .leftWrapper .back {
+	@apply ml-8 flex items-center;
+}
+
+.Pinpoint.Documentation.Page.SearchResults .Pinpoint.Documentation.Page.Content .leftWrapper .back .text {
+	@apply ml-2;
 }
 
 .Pinpoint.Documentation.Page.Content .rightWrapper .Pinpoint.Pagination {

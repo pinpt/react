@@ -6,7 +6,7 @@ export interface IPaginationProps {
 	goBack?: () => void;
 }
 
-const GoForwardWithArrow = ({ text = 'Next' }: { text?: React.ReactNode }) => {
+export const GoForwardWithArrow = ({ text = 'Next' }: { text?: React.ReactNode }) => {
 	return (
 		<>
 			<span className="text">{text}</span>
@@ -31,7 +31,7 @@ const GoForwardWithArrow = ({ text = 'Next' }: { text?: React.ReactNode }) => {
 	);
 };
 
-const GoBackWithArrow = ({ text = 'Previous' }: { text?: React.ReactNode }) => {
+export const GoBackWithArrow = ({ text = 'Previous' }: { text?: React.ReactNode }) => {
 	return (
 		<>
 			<svg

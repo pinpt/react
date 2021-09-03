@@ -5,7 +5,7 @@ import withWrapper from '../../../Internal/withWrapper';
 import { IOutlineProps } from '../../Outline';
 import { IFooterProps } from '../../../Footer';
 import { IPaginationProps } from '../../../Pagination';
-import { ISearchBarProps } from 'src/components/Search/Bar';
+import { ISearchBarProps } from '../../../Search/Bar';
 
 export interface IDocumentationHomeProps {
 	className?: string;
