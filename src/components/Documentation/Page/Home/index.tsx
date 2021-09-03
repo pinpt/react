@@ -1,4 +1,4 @@
-import { ReactElement } from 'react';
+import { forwardRef, ReactElement } from 'react';
 import Loader from '../../../Loader';
 import { IHeaderProps } from '../../../Header';
 import withWrapper from '../../../Internal/withWrapper';
@@ -16,11 +16,11 @@ export interface IDocumentationHomeProps {
 	pagination?: ReactElement<IPaginationProps>;
 }
 
-const Home = (props: IDocumentationHomeProps) => {
+const Home = forwardRef((props: IDocumentationHomeProps, ref: any) => {
 	const { className = '', header, loading, outline, content, footer, pagination } = props;
 
 	return (
-		<div className={`Pinpoint Documentation Page Home ${className}`}>
+		<div className={`Pinpoint Documentation Page Home ${className}`} ref={ref}>
 			{withWrapper(header, 'header')}
 			{loading ? (
 				<div className="loaderWrapper">
@@ -41,6 +41,6 @@ const Home = (props: IDocumentationHomeProps) => {
 			{withWrapper(footer, 'footer')}
 		</div>
 	);
-};
+});
 
 export default Home;

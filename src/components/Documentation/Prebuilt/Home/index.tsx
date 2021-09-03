@@ -14,6 +14,7 @@ import { ISocialBarProps } from '../../../Social/Bar';
 import { ICopyrightProps } from '../../../Copyright';
 import Title from '../../Title';
 import Pagination, { IPaginationProps } from '../../../Pagination';
+import Pinpoint from '../../../Pinpoint';
 
 export interface IPrebuiltDocumentationHomeProps {
 	className?: string;
@@ -93,68 +94,75 @@ const Home = (props: IPrebuiltDocumentationHomeProps) => {
 	}, []);
 
 	return (
-		<Page.Home
-			className={`Prebuilt ${className}`}
-			header={
-				renderHeader?.(site) ?? (
-					<Header
-						className="Prebuilt"
-						site={site}
-						searchTerm={searchTerm}
-						handleSearch={handleSearch}
-						handleSelectHome={handleSelectHome}
-						renderLogo={
-							renderLogo
-								? (_site) => renderLogo?.(_site)
-								: (_site) => {
-										return <Title site={_site} text={title} onClick={handleSelectHome} />;
-								  }
-						}
-						renderSearch={renderSearch}
-						renderSubscribe={renderSubscribe ?? (() => <></>)}
-						renderThemeToggle={renderThemeToggle}
-						title={largeTitle ? title : ''}
-						description={description}
-					/>
-				)
-			}
-			outline={
-				renderOutline?.(entries) ?? (
-					<Outline
-						className="Prebuilt"
-						entries={entries}
-						site={site}
-						active={currentEntry}
-						onClick={setCurrentEntry}
-						activeAnchor={currentAnchor}
-					/>
-				)
-			}
-			content={
-				renderContent?.(entry, currentEntry, entries) ?? <Content id={currentEntry} document={entry?.document} />
-			}
-			pagination={
-				renderPagination?.(nextEntry, previousEntry, entry) ?? (
-					<Pagination
-						goForward={nextEntry ? () => handlePaginate(nextEntry) : undefined}
-						goBack={previousEntry ? () => handlePaginate(previousEntry) : undefined}
-						goForwardText={<Pagination.GoForwardWithArrow text={nextEntry?.title} />}
-						goBackText={<Pagination.GoBackWithArrow text={previousEntry?.title} />}
-					/>
-				)
-			}
-			footer={
-				renderFooter?.(site) ?? (
-					<Footer
-						site={site}
-						renderCopyright={renderCopyright}
-						renderLogo={renderLogo}
-						renderSocial={renderSocial}
-						renderSubscribe={renderSubscribe ?? (() => <></>)}
-					/>
-				)
-			}
-		/>
+		<Pinpoint siteId={site.id} contentId={currentEntry}>
+			{(_ready, ref) => (
+				<Page.Home
+					ref={ref}
+					className={`Prebuilt ${className}`}
+					header={
+						renderHeader?.(site) ?? (
+							<Header
+								className="Prebuilt"
+								site={site}
+								searchTerm={searchTerm}
+								handleSearch={handleSearch}
+								handleSelectHome={handleSelectHome}
+								renderLogo={
+									renderLogo
+										? (_site) => renderLogo?.(_site)
+										: (_site) => {
+												return <Title site={_site} text={title} onClick={handleSelectHome} />;
+										  }
+								}
+								renderSearch={renderSearch}
+								renderSubscribe={renderSubscribe ?? (() => <></>)}
+								renderThemeToggle={renderThemeToggle}
+								title={largeTitle ? title : ''}
+								description={description}
+							/>
+						)
+					}
+					outline={
+						renderOutline?.(entries) ?? (
+							<Outline
+								className="Prebuilt"
+								entries={entries}
+								site={site}
+								active={currentEntry}
+								onClick={setCurrentEntry}
+								activeAnchor={currentAnchor}
+							/>
+						)
+					}
+					content={
+						renderContent?.(entry, currentEntry, entries) ?? (
+							<Content id={currentEntry} document={entry?.document} />
+						)
+					}
+					pagination={
+						renderPagination?.(nextEntry, previousEntry, entry) ?? (
+							<Pagination
+								goForward={nextEntry ? () => handlePaginate(nextEntry) : undefined}
+								goBack={previousEntry ? () => handlePaginate(previousEntry) : undefined}
+								goForwardText={<Pagination.GoForwardWithArrow text={nextEntry?.title} />}
+								goBackText={<Pagination.GoBackWithArrow text={previousEntry?.title} />}
+							/>
+						)
+					}
+					footer={
+						renderFooter?.(site) ?? (
+							<Footer
+								site={site}
+								renderCopyright={renderCopyright}
+								renderLogo={renderLogo}
+								renderSocial={renderSocial}
+								renderSubscribe={renderSubscribe ?? (() => <></>)}
+							/>
+						)
+					}
+				/>
+			)}
+		</Pinpoint>
 	);
 };
 
