@@ -182,7 +182,7 @@ exports[`Test full page 1`] = `
           </div>
         </div>
         <div
-          className="leftWrapper"
+          className="rightWrapper"
         >
           <article>
             <section
@@ -964,7 +964,7 @@ exports[`Test no footer 1`] = `
           </div>
         </div>
         <div
-          className="leftWrapper"
+          className="rightWrapper"
         >
           <article>
             <section
@@ -1124,7 +1124,7 @@ exports[`Test no header 1`] = `
           </div>
         </div>
         <div
-          className="leftWrapper"
+          className="rightWrapper"
         >
           <article>
             <section
@@ -1586,7 +1586,7 @@ exports[`With pagination 1`] = `
           </div>
         </div>
         <div
-          className="leftWrapper"
+          className="rightWrapper"
         >
           <article>
             <section

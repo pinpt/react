@@ -236,7 +236,7 @@ exports[`Test custom className 1`] = `
           </div>
         </div>
         <div
-          className="leftWrapper"
+          className="rightWrapper"
         >
           <article>
             <section
@@ -860,7 +860,7 @@ exports[`Test custom metadata 1`] = `
           </div>
         </div>
         <div
-          className="leftWrapper"
+          className="rightWrapper"
         >
           <article>
             <section
@@ -1484,7 +1484,7 @@ exports[`Test default state 1`] = `
           </div>
         </div>
         <div
-          className="leftWrapper"
+          className="rightWrapper"
         >
           <article>
             <section
@@ -2108,7 +2108,7 @@ exports[`Test with pagination 1`] = `
           </div>
         </div>
         <div
-          className="leftWrapper"
+          className="rightWrapper"
         >
           <article>
             <section

@@ -30,7 +30,7 @@ const Home = (props: IDocumentationHomeProps) => {
 				withWrapper(
 					<div className="Pinpoint Documentation Page Content">
 						{outline}
-						<div className="leftWrapper">
+						<div className="rightWrapper">
 							{content}
 							{pagination}
 						</div>
