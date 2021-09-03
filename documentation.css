@@ -86,3 +86,27 @@
 .Pinpoint.Documentation.Page.Content .rightWrapper .Pinpoint.Pagination {
 	@apply mt-8;
 }
+
+.Pinpoint.Documentation.Page.Content .leftWrapper {
+	@apply flex flex-col;
+}
+
+.Pinpoint.Documentation.Page.Content .leftWrapper .Pinpoint.Search.Bar {
+	@apply ml-8 mb-8 mt-1;
+}
+
+.Pinpoint.Documentation.Card.wrapper {
+	@apply flex flex-col rounded-md border-gray-300 border-l-3 pl-4 py-2;
+}
+
+.Pinpoint.Documentation.Card.wrapper .title {
+	@apply text-lg font-bold;
+}
+
+.Pinpoint.Documentation.Card.wrapper .cta {
+	@apply ml-auto mt-2;
+}
+
+.Pinpoint.Documentation.Card.wrapper .clickable {
+	@apply cursor-pointer;
+}

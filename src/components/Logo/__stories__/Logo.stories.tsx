@@ -6,7 +6,7 @@ const { default: readme } = require('../README.md');
 
 export default {
 	component: Logo,
-	title: 'Components/Logo',
+	title: 'Changelog Components/Logo',
 	parameters: {
 		jest: ['Logo.test.tsx'],
 		docs: {

@@ -9,7 +9,7 @@ import type { IContent } from '../../../lib/types';
 
 export default {
 	component: Head,
-	title: 'Components/Head',
+	title: 'Changelog Components/Head',
 	parameters: {
 		jest: ['Head.test.tsx'],
 		docs: {

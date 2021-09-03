@@ -5,7 +5,7 @@ const { default: readme } = require('../README.md');
 
 export default {
 	component: SocialComponent,
-	title: 'Components/Social/Github',
+	title: 'Changelog Components/Social/Github',
 	parameters: {
 		jest: ['SocialGithub.test.tsx'],
 		docs: {

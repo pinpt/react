@@ -9,7 +9,7 @@ const { default: readme } = require('../README.md');
 
 export default {
 	component: Recent,
-	title: 'Components/Recent',
+	title: 'Changelog Components/Recent',
 	parameters: {
 		jest: ['Recent.test.tsx'],
 		docs: {

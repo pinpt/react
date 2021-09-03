@@ -5,7 +5,7 @@ const { default: readme } = require('../README.md');
 
 export default {
 	component: SocialComponent,
-	title: 'Components/Social/Instagram',
+	title: 'Changelog Components/Social/Instagram',
 	parameters: {
 		jest: ['SocialInstagram.test.tsx'],
 		docs: {

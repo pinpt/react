@@ -18,7 +18,7 @@ const { default: readme } = require('../Dashboard/README.md');
 
 export default {
 	component: Page,
-	title: 'Components/Page/Dashboard',
+	title: 'Changelog Components/Page/Dashboard',
 	parameters: {
 		jest: ['PageDashboard.test.tsx'],
 		docs: {

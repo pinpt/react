@@ -5,7 +5,7 @@ const { default: readme } = require('../README.md');
 
 export default {
 	component: SocialComponent,
-	title: 'Components/Social/Twitter',
+	title: 'Changelog Components/Social/Twitter',
 	parameters: {
 		jest: ['SocialTwitter.test.tsx'],
 		docs: {

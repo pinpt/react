@@ -9,7 +9,7 @@ const { default: readme } = require('../README.md');
 
 export default {
 	component: Footer,
-	title: 'Components/Footer',
+	title: 'Changelog Components/Footer',
 	parameters: {
 		jest: ['Footer.test.tsx'],
 		docs: {

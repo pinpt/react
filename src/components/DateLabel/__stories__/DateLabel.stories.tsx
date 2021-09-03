@@ -6,7 +6,7 @@ const { default: readme } = require('../README.md');
 
 export default {
 	component: DateLabel,
-	title: 'Components/DateLabel',
+	title: 'Changelog Components/DateLabel',
 	parameters: {
 		jest: ['DateLabel.test.tsx'],
 		controls: { hideNoControlsWarning: true },

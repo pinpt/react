@@ -10,7 +10,7 @@ const { default: readme } = require('../Error/README.md');
 
 export default {
 	component: ErrorPage,
-	title: 'Components/Page/Error',
+	title: 'Changelog Components/Page/Error',
 	parameters: {
 		jest: ['PageError.test.tsx'],
 		docs: {

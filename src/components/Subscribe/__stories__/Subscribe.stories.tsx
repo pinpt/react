@@ -5,7 +5,7 @@ const { default: readme } = require('../README.md');
 
 export default {
 	component: Subscribe,
-	title: 'Components/Subscribe',
+	title: 'Changelog Components/Subscribe',
 	parameters: {
 		jest: ['Subscribe.test.tsx'],
 		controls: { hideNoControlsWarning: true },

@@ -9,7 +9,7 @@ const { default: readme } = require('../Results/README.md');
 
 export default {
 	component: Results,
-	title: 'Components/Search/Search Results',
+	title: 'Changelog Components/Search/Search Results',
 	parameters: {
 		jest: ['SearchResults.test.tsx'],
 		docs: {

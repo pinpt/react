@@ -11,7 +11,7 @@ const { default: readme } = require('../README.md');
 
 export default {
 	component: Sidebar,
-	title: 'Components/Sidebar',
+	title: 'Changelog Components/Sidebar',
 	parameters: {
 		jest: ['Sidebar.test.tsx'],
 		docs: {

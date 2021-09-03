@@ -5,7 +5,7 @@ const { default: readme } = require('../README.md');
 
 export default {
 	component: ThemeToggle,
-	title: 'Components/Theme Toggle',
+	title: 'Changelog Components/Theme Toggle',
 	parameters: {
 		jest: ['ThemeToggle.test.tsx'],
 		docs: {

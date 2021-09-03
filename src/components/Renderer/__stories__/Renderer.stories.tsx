@@ -26,7 +26,7 @@ const { default: readme } = require('../README.md');
 
 export default {
 	component: Document,
-	title: 'Components/Renderer/Document',
+	title: 'Changelog Components/Renderer/Document',
 	parameters: {
 		jest: ['RendererContent.test.tsx'],
 		controls: { hideNoControlsWarning: true },

@@ -5,7 +5,7 @@ const { default: readme } = require('../README.md');
 
 export default {
 	component: PoweredBy,
-	title: 'Components/Powered By Pinpoint',
+	title: 'Changelog Components/Powered By Pinpoint',
 	parameters: {
 		jest: ['PoweredByPinpoint.test.tsx'],
 		docs: {

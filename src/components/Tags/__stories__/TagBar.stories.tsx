@@ -5,7 +5,7 @@ const { default: readme } = require('../README.md');
 
 export default {
 	component: Bar,
-	title: 'Components/Tag/Bar',
+	title: 'Changelog Components/Tag/Bar',
 	parameters: {
 		jest: ['TagBar.test.tsx'],
 		docs: {

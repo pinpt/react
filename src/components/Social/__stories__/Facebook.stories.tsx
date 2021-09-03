@@ -5,7 +5,7 @@ const { default: readme } = require('../README.md');
 
 export default {
 	component: SocialComponent,
-	title: 'Components/Social/Facebook',
+	title: 'Changelog Components/Social/Facebook',
 	parameters: {
 		jest: ['SocialFacebook.test.tsx'],
 		docs: {

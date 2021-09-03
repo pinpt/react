@@ -5,7 +5,7 @@ const { default: readme } = require('../README.md');
 
 export default {
 	component: Error,
-	title: 'Components/Error',
+	title: 'Changelog Components/Error',
 	parameters: {
 		jest: ['Error.test.tsx'],
 		controls: { hideNoControlsWarning: true },

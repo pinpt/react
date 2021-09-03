@@ -5,7 +5,7 @@ const { default: readme } = require('../README.md');
 
 export default {
 	component: SocialComponent,
-	title: 'Components/Social/RSS',
+	title: 'Changelog Components/Social/RSS',
 	parameters: {
 		jest: ['SocialRSS.test.tsx'],
 		docs: {

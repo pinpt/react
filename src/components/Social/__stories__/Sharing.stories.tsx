@@ -9,7 +9,7 @@ const { default: readme } = require('../README.md');
 
 export default {
 	component: Bar,
-	title: 'Components/Social/Sharing',
+	title: 'Changelog Components/Social/Sharing',
 	parameters: {
 		jest: ['SocialBarSharing.test.tsx'],
 		docs: {

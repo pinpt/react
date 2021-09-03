@@ -5,7 +5,7 @@ const { default: readme } = require('../Bar/README.md');
 
 export default {
 	component: SearchBar,
-	title: 'Components/Search/Search Bar',
+	title: 'Changelog Components/Search/Search Bar',
 	parameters: {
 		jest: ['SearchBar.test.tsx'],
 		docs: {

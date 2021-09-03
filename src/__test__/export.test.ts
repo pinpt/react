@@ -146,9 +146,11 @@ test('Test component exports', () => {
 		Page: PageDocumentation,
 		Prebuilt: PrebuiltDocumentation,
 		Title: DocumentationTitle,
+		Card: DocumentationCard,
 		...otherDocumentation
 	} = Documentation;
 	expect(Outline).toBeTruthy();
+	expect(DocumentationCard).toBeTruthy();
 	expect(DocumentationTitle).toBeTruthy();
 	expect(Object.keys(otherDocumentation).length).toEqual(0);
 	expect(PageDocumentation).toBeTruthy();

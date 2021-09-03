@@ -13,7 +13,7 @@ const { default: readme } = require('../Container/README.md');
 
 export default {
 	component: Container,
-	title: 'Components/Card/Container',
+	title: 'Changelog Components/Card/Container',
 	parameters: {
 		jest: ['CardContainer.test.tsx'],
 		controls: { hideNoControlsWarning: true },

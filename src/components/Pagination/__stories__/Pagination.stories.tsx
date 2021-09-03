@@ -6,7 +6,7 @@ const { default: readme } = require('../README.md');
 
 export default {
 	component: Pagination,
-	title: 'Components/Pagination',
+	title: 'Changelog Components/Pagination',
 	parameters: {
 		jest: ['Pagination.test.tsx'],
 		docs: {

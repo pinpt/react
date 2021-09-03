@@ -14,13 +14,14 @@ import Subscribe from '../../../Subscribe';
 import Copyright from '../../../Copyright';
 import Logo from '../../../Logo';
 import Pagination from '../../../Pagination';
+import Search from '../../../Search';
 
 const IMAGE_URL =
 	'https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png';
 
 export default {
 	component: Home,
-	title: 'Components/Documentation Site/Page/Home',
+	title: 'Documentation Components/Page/Home',
 	parameters: {
 		jest: ['DocumentationHome.test.tsx'],
 		docs: {
@@ -97,6 +98,43 @@ export const With_Pagination: React.VFC<{}> = () => {
 				/>
 			}
 			pagination={<Pagination goForward={() => console.log('forward')} goBack={() => console.log('back')} />}
+		/>
+	);
+};
+
+export const With_Search: React.VFC<{}> = () => {
+	const [currentEntry, setCurrentEntry] = useState(() => entries[0].id);
+	return (
+		<Home
+			header={<Header title="Pinpoint Documentation" description="Learn how to build with Pinpoint!" />}
+			searchBar={
+				<Search.Bar />
+			}
+			outline={
+				<Outline
+					entries={entries as IContent[]}
+					site={site}
+					active={currentEntry}
+					onClick={(e) => setCurrentEntry(e.id)}
+				/>
+			}
+			content={<Content id={currentEntry} document={entries.find((e) => e.id === currentEntry).document} />}
+			footer={
+				<Footer
+					social={
+						<Social.Bar>
+							<Social.Facebook href="https://www.facebook.com/Pinpoint.Engineering" newTab />
+							<Social.Instagram href="https://www.instagram.com/pinpoint_sw/" newTab />
+							<Social.Twitter href="https://twitter.com/pinpoint_sw" newTab />
+							<Social.Github href="https://github.com/pinpt" newTab />
+							<Social.LinkedIn href="https://linkedin.com/company/pinpoint-software" newTab />
+							<Social.RSS href="https://api.pinpoint.com.so/rss/PirxVTE94u3YmGNOySRY" newTab />
+						</Social.Bar>
+					}
+					copyright={<Copyright text="2021 by Pinpoint Software, Inc." logo={<Logo src={IMAGE_URL} />} />}
+					subscribe={<Subscribe href="https://pinpoint.com" />}
+				/>
+			}
 		/>
 	);
 };

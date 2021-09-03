@@ -9,7 +9,7 @@ import { IContent } from '../../../../lib';
 
 export default {
 	component: Home,
-	title: 'Components/Documentation Site/Prebuilt/Home',
+	title: 'Documentation Components/Prebuilt/Home',
 	parameters: {
 		jest: ['DocumentationHome.test.tsx'],
 		docs: {
