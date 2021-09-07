@@ -146,17 +146,21 @@ test('Test component exports', () => {
 		Page: PageDocumentation,
 		Prebuilt: PrebuiltDocumentation,
 		Title: DocumentationTitle,
+		Card: DocumentationCard,
 		...otherDocumentation
 	} = Documentation;
 	expect(Outline).toBeTruthy();
+	expect(DocumentationCard).toBeTruthy();
 	expect(DocumentationTitle).toBeTruthy();
 	expect(Object.keys(otherDocumentation).length).toEqual(0);
 	expect(PageDocumentation).toBeTruthy();
-	const { Home: HomePageDoc, ...otherPageDoc } = PageDocumentation;
+	const { Home: HomePageDoc, SearchResults: SearchPageDoc, ...otherPageDoc } = PageDocumentation;
 	expect(HomePageDoc).toBeTruthy();
+	expect(SearchPageDoc).toBeTruthy();
 	expect(Object.keys(otherPageDoc).length).toEqual(0);
-	const { Home: HomePrebuiltDoc, ...otherPrebuiltDoc } = PrebuiltDocumentation;
+	const { Home: HomePrebuiltDoc, SearchResults: SearchPrebuiltDoc, ...otherPrebuiltDoc } = PrebuiltDocumentation;
 	expect(HomePrebuiltDoc).toBeTruthy();
+	expect(SearchPrebuiltDoc).toBeTruthy();
 	expect(Object.keys(otherPrebuiltDoc).length).toEqual(0);
 
 	// Test other component exports

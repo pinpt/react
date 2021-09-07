@@ -5,7 +5,7 @@ const { default: readme } = require('../ReadButton/README.md');
 
 export default {
 	component: CardReadButton,
-	title: 'Components/Card/Read Button',
+	title: 'Changelog Components/Card/Read Button',
 	parameters: {
 		jest: ['CardReadButton.test.tsx'],
 		controls: { hideNoControlsWarning: true },

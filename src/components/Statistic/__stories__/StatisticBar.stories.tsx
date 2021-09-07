@@ -5,7 +5,7 @@ const { default: readme } = require('../README.md');
 
 export default {
 	component: StatisticsBar,
-	title: 'Components/Statistic/Bar',
+	title: 'Changelog Components/Statistic/Bar',
 	parameters: {
 		jest: ['StatisticBar.test.tsx'],
 		docs: {

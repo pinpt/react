@@ -15,7 +15,7 @@ const config = {
 
 export default {
 	component: SubscribeForm,
-	title: 'Components/SubscribeForm',
+	title: 'Changelog Components/SubscribeForm',
 	parameters: {
 		jest: ['SubscribeForm.test.tsx'],
 		controls: { hideNoControlsWarning: true },

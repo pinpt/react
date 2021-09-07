@@ -5,7 +5,7 @@ const { default: readme } = require('../README.md');
 
 export default {
 	component: Loader,
-	title: 'Components/Loader',
+	title: 'Changelog Components/Loader',
 	parameters: {
 		jest: ['Loader.test.tsx'],
 		docs: {

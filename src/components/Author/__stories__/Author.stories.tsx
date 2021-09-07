@@ -5,7 +5,7 @@ const { default: readme } = require('../README.md');
 
 export default {
 	component: Author,
-	title: 'Components/Author',
+	title: 'Changelog Components/Author',
 	parameters: {
 		jest: ['Author.test.tsx'],
 		docs: {

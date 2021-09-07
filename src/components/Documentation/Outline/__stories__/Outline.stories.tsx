@@ -8,7 +8,7 @@ const { default: readme } = require('../README.md');
 
 export default {
 	component: Outline,
-	title: 'Components/Documentation Site/Outline',
+	title: 'Documentation Components/Outline',
 	parameters: {
 		jest: ['Outline.test.tsx'],
 		docs: {

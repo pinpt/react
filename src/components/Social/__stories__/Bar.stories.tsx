@@ -11,7 +11,7 @@ const { default: readme } = require('../README.md');
 
 export default {
 	component: Bar,
-	title: 'Components/Social/Bar',
+	title: 'Changelog Components/Social/Bar',
 	parameters: {
 		jest: ['SocialBar.test.tsx'],
 		docs: {

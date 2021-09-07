@@ -5,7 +5,7 @@ const { default: readme } = require('../README.md');
 
 export default {
 	component: ClapStatistic,
-	title: 'Components/Statistic/Claps',
+	title: 'Changelog Components/Statistic/Claps',
 	parameters: {
 		jest: ['StatisticClaps.test.tsx'],
 		docs: {

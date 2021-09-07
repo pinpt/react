@@ -5,6 +5,7 @@ import withWrapper from '../../../Internal/withWrapper';
 import { IOutlineProps } from '../../Outline';
 import { IFooterProps } from '../../../Footer';
 import { IPaginationProps } from '../../../Pagination';
+import { ISearchBarProps } from '../../../Search/Bar';
 
 export interface IDocumentationHomeProps {
 	className?: string;
@@ -14,10 +15,11 @@ export interface IDocumentationHomeProps {
 	loading?: boolean;
 	footer?: ReactElement<IFooterProps>;
 	pagination?: ReactElement<IPaginationProps>;
+	searchBar?: ReactElement<ISearchBarProps>;
 }
 
 const Home = forwardRef((props: IDocumentationHomeProps, ref: any) => {
-	const { className = '', header, loading, outline, content, footer, pagination } = props;
+	const { className = '', header, loading, outline, content, footer, pagination, searchBar } = props;
 
 	return (
 		<div className={`Pinpoint Documentation Page Home ${className}`} ref={ref}>
@@ -29,7 +31,10 @@ const Home = forwardRef((props: IDocumentationHomeProps, ref: any) => {
 			) : (
 				withWrapper(
 					<div className="Pinpoint Documentation Page Content">
-						{outline}
+						<div className="leftWrapper">
+							{searchBar}
+							{outline}
+						</div>
 						<div className="rightWrapper">
 							{content}
 							{pagination}

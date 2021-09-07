@@ -9,7 +9,7 @@ const { default: readme } = require('../README.md');
 
 export default {
 	component: Pinpoint,
-	title: 'Components/Pinpoint',
+	title: 'Changelog Components/Pinpoint',
 	parameters: {
 		docs: {
 			description: {

@@ -8,7 +8,7 @@ const { default: readme } = require('../README.md');
 
 export default {
 	component: Copyright,
-	title: 'Components/Copyright',
+	title: 'Changelog Components/Copyright',
 	parameters: {
 		jest: ['Copyright.test.tsx'],
 		docs: {

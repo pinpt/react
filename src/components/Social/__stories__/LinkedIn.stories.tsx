@@ -5,7 +5,7 @@ const { default: readme } = require('../README.md');
 
 export default {
 	component: SocialComponent,
-	title: 'Components/Social/Linkedin',
+	title: 'Changelog Components/Social/Linkedin',
 	parameters: {
 		jest: ['SocialLinkedIn.test.tsx'],
 		docs: {

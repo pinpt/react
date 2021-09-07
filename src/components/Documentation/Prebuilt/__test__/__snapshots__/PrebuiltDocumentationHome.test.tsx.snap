@@ -41,38 +41,6 @@ exports[`Test custom className 1`] = `
             className="right"
           >
             <div
-              className="Pinpoint Search Bar Prebuilt"
-            >
-              <svg
-                aria-hidden="true"
-                className="icon"
-                data-icon="search"
-                data-prefix="fas"
-                focusable="false"
-                height={16}
-                role="img"
-                viewBox="0 0 512 512"
-                width={16}
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
-                  fill="currentColor"
-                />
-              </svg>
-              <form
-                className="form"
-                onSubmit={[Function]}
-              >
-                <input
-                  className="input"
-                  onChange={[Function]}
-                  placeholder="Search"
-                  value=""
-                />
-              </form>
-            </div>
-            <div
               className="Pinpoint ThemeToggle Prebuilt"
             >
               <button
@@ -108,130 +76,166 @@ exports[`Test custom className 1`] = `
         className="Pinpoint Documentation Page Content"
       >
         <div
-          className="Pinpoint Documentation Outline Wrapper Prebuilt"
+          className="leftWrapper"
         >
           <div
-            className="Parent"
+            className="Pinpoint Search Bar Prebuilt"
           >
-            <div
-              className="Top"
+            <svg
+              aria-hidden="true"
+              className="icon"
+              data-icon="search"
+              data-prefix="fas"
+              focusable="false"
+              height={16}
+              role="img"
+              viewBox="0 0 512 512"
+              width={16}
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                aria-hidden="true"
-                className="toggleControl"
-                data-icon="chevron-right"
-                data-prefix="fas"
-                focusable="false"
-                onClick={[Function]}
-                role="img"
-                viewBox="0 0 320 512"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
-                  fill="currentColor"
-                />
-              </svg>
-              <span
-                className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item active "
-                onClick={[Function]}
-              >
-                🔗 Linked Content Blocks
-              </span>
-            </div>
+              <path
+                d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
+                fill="currentColor"
+              />
+            </svg>
+            <form
+              className="form"
+              onSubmit={[Function]}
+            >
+              <input
+                className="input"
+                onChange={[Function]}
+                placeholder="Search"
+                value=""
+              />
+            </form>
           </div>
           <div
-            className="Parent"
+            className="Pinpoint Documentation Outline Wrapper Prebuilt"
           >
             <div
-              className="Top"
+              className="Parent"
             >
               <div
-                className="spacer"
-              />
-              <span
-                className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
-                onClick={[Function]}
+                className="Top"
               >
-                📢 Publishing Controls
-              </span>
+                <svg
+                  aria-hidden="true"
+                  className="toggleControl"
+                  data-icon="chevron-right"
+                  data-prefix="fas"
+                  focusable="false"
+                  onClick={[Function]}
+                  role="img"
+                  viewBox="0 0 320 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+                    fill="currentColor"
+                  />
+                </svg>
+                <span
+                  className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item active "
+                  onClick={[Function]}
+                >
+                  🔗 Linked Content Blocks
+                </span>
+              </div>
             </div>
-          </div>
-          <div
-            className="Parent"
-          >
             <div
-              className="Top"
+              className="Parent"
             >
               <div
-                className="spacer"
-              />
-              <span
-                className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
-                onClick={[Function]}
+                className="Top"
               >
-                🧭 Changelog planning
-              </span>
-            </div>
-          </div>
-          <div
-            className="Parent"
-          >
-            <div
-              className="Top"
-            >
-              <svg
-                aria-hidden="true"
-                className="toggleControl"
-                data-icon="chevron-right"
-                data-prefix="fas"
-                focusable="false"
-                onClick={[Function]}
-                role="img"
-                viewBox="0 0 320 512"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
-                  fill="currentColor"
+                <div
+                  className="spacer"
                 />
-              </svg>
-              <span
-                className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
-                onClick={[Function]}
-              >
-                📨 Email validation
-              </span>
+                <span
+                  className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+                  onClick={[Function]}
+                >
+                  📢 Publishing Controls
+                </span>
+              </div>
             </div>
-          </div>
-          <div
-            className="Parent"
-          >
             <div
-              className="Top"
+              className="Parent"
             >
-              <svg
-                aria-hidden="true"
-                className="toggleControl"
-                data-icon="chevron-right"
-                data-prefix="fas"
-                focusable="false"
-                onClick={[Function]}
-                role="img"
-                viewBox="0 0 320 512"
-                xmlns="http://www.w3.org/2000/svg"
+              <div
+                className="Top"
               >
-                <path
-                  d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
-                  fill="currentColor"
+                <div
+                  className="spacer"
                 />
-              </svg>
-              <span
-                className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
-                onClick={[Function]}
+                <span
+                  className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+                  onClick={[Function]}
+                >
+                  🧭 Changelog planning
+                </span>
+              </div>
+            </div>
+            <div
+              className="Parent"
+            >
+              <div
+                className="Top"
               >
-                🧪 Analytics Drill-Down
-              </span>
+                <svg
+                  aria-hidden="true"
+                  className="toggleControl"
+                  data-icon="chevron-right"
+                  data-prefix="fas"
+                  focusable="false"
+                  onClick={[Function]}
+                  role="img"
+                  viewBox="0 0 320 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+                    fill="currentColor"
+                  />
+                </svg>
+                <span
+                  className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+                  onClick={[Function]}
+                >
+                  📨 Email validation
+                </span>
+              </div>
+            </div>
+            <div
+              className="Parent"
+            >
+              <div
+                className="Top"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="toggleControl"
+                  data-icon="chevron-right"
+                  data-prefix="fas"
+                  focusable="false"
+                  onClick={[Function]}
+                  role="img"
+                  viewBox="0 0 320 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+                    fill="currentColor"
+                  />
+                </svg>
+                <span
+                  className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+                  onClick={[Function]}
+                >
+                  🧪 Analytics Drill-Down
+                </span>
+              </div>
             </div>
           </div>
         </div>
@@ -665,38 +669,6 @@ exports[`Test custom metadata 1`] = `
             className="right"
           >
             <div
-              className="Pinpoint Search Bar Prebuilt"
-            >
-              <svg
-                aria-hidden="true"
-                className="icon"
-                data-icon="search"
-                data-prefix="fas"
-                focusable="false"
-                height={16}
-                role="img"
-                viewBox="0 0 512 512"
-                width={16}
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
-                  fill="currentColor"
-                />
-              </svg>
-              <form
-                className="form"
-                onSubmit={[Function]}
-              >
-                <input
-                  className="input"
-                  onChange={[Function]}
-                  placeholder="Search"
-                  value=""
-                />
-              </form>
-            </div>
-            <div
               className="Pinpoint ThemeToggle Prebuilt"
             >
               <button
@@ -732,130 +704,166 @@ exports[`Test custom metadata 1`] = `
         className="Pinpoint Documentation Page Content"
       >
         <div
-          className="Pinpoint Documentation Outline Wrapper Prebuilt"
+          className="leftWrapper"
         >
           <div
-            className="Parent"
+            className="Pinpoint Search Bar Prebuilt"
           >
-            <div
-              className="Top"
+            <svg
+              aria-hidden="true"
+              className="icon"
+              data-icon="search"
+              data-prefix="fas"
+              focusable="false"
+              height={16}
+              role="img"
+              viewBox="0 0 512 512"
+              width={16}
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                aria-hidden="true"
-                className="toggleControl"
-                data-icon="chevron-right"
-                data-prefix="fas"
-                focusable="false"
-                onClick={[Function]}
-                role="img"
-                viewBox="0 0 320 512"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
-                  fill="currentColor"
-                />
-              </svg>
-              <span
-                className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item active "
-                onClick={[Function]}
-              >
-                🔗 Linked Content Blocks
-              </span>
-            </div>
+              <path
+                d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
+                fill="currentColor"
+              />
+            </svg>
+            <form
+              className="form"
+              onSubmit={[Function]}
+            >
+              <input
+                className="input"
+                onChange={[Function]}
+                placeholder="Search"
+                value=""
+              />
+            </form>
           </div>
           <div
-            className="Parent"
+            className="Pinpoint Documentation Outline Wrapper Prebuilt"
           >
             <div
-              className="Top"
+              className="Parent"
             >
               <div
-                className="spacer"
-              />
-              <span
-                className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
-                onClick={[Function]}
+                className="Top"
               >
-                📢 Publishing Controls
-              </span>
+                <svg
+                  aria-hidden="true"
+                  className="toggleControl"
+                  data-icon="chevron-right"
+                  data-prefix="fas"
+                  focusable="false"
+                  onClick={[Function]}
+                  role="img"
+                  viewBox="0 0 320 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+                    fill="currentColor"
+                  />
+                </svg>
+                <span
+                  className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item active "
+                  onClick={[Function]}
+                >
+                  🔗 Linked Content Blocks
+                </span>
+              </div>
             </div>
-          </div>
-          <div
-            className="Parent"
-          >
             <div
-              className="Top"
+              className="Parent"
             >
               <div
-                className="spacer"
-              />
-              <span
-                className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
-                onClick={[Function]}
+                className="Top"
               >
-                🧭 Changelog planning
-              </span>
-            </div>
-          </div>
-          <div
-            className="Parent"
-          >
-            <div
-              className="Top"
-            >
-              <svg
-                aria-hidden="true"
-                className="toggleControl"
-                data-icon="chevron-right"
-                data-prefix="fas"
-                focusable="false"
-                onClick={[Function]}
-                role="img"
-                viewBox="0 0 320 512"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
-                  fill="currentColor"
+                <div
+                  className="spacer"
                 />
-              </svg>
-              <span
-                className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
-                onClick={[Function]}
-              >
-                📨 Email validation
-              </span>
+                <span
+                  className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+                  onClick={[Function]}
+                >
+                  📢 Publishing Controls
+                </span>
+              </div>
             </div>
-          </div>
-          <div
-            className="Parent"
-          >
             <div
-              className="Top"
+              className="Parent"
             >
-              <svg
-                aria-hidden="true"
-                className="toggleControl"
-                data-icon="chevron-right"
-                data-prefix="fas"
-                focusable="false"
-                onClick={[Function]}
-                role="img"
-                viewBox="0 0 320 512"
-                xmlns="http://www.w3.org/2000/svg"
+              <div
+                className="Top"
               >
-                <path
-                  d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
-                  fill="currentColor"
+                <div
+                  className="spacer"
                 />
-              </svg>
-              <span
-                className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
-                onClick={[Function]}
+                <span
+                  className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+                  onClick={[Function]}
+                >
+                  🧭 Changelog planning
+                </span>
+              </div>
+            </div>
+            <div
+              className="Parent"
+            >
+              <div
+                className="Top"
               >
-                🧪 Analytics Drill-Down
-              </span>
+                <svg
+                  aria-hidden="true"
+                  className="toggleControl"
+                  data-icon="chevron-right"
+                  data-prefix="fas"
+                  focusable="false"
+                  onClick={[Function]}
+                  role="img"
+                  viewBox="0 0 320 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+                    fill="currentColor"
+                  />
+                </svg>
+                <span
+                  className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+                  onClick={[Function]}
+                >
+                  📨 Email validation
+                </span>
+              </div>
+            </div>
+            <div
+              className="Parent"
+            >
+              <div
+                className="Top"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="toggleControl"
+                  data-icon="chevron-right"
+                  data-prefix="fas"
+                  focusable="false"
+                  onClick={[Function]}
+                  role="img"
+                  viewBox="0 0 320 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+                    fill="currentColor"
+                  />
+                </svg>
+                <span
+                  className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+                  onClick={[Function]}
+                >
+                  🧪 Analytics Drill-Down
+                </span>
+              </div>
             </div>
           </div>
         </div>
@@ -1289,38 +1297,6 @@ exports[`Test default state 1`] = `
             className="right"
           >
             <div
-              className="Pinpoint Search Bar Prebuilt"
-            >
-              <svg
-                aria-hidden="true"
-                className="icon"
-                data-icon="search"
-                data-prefix="fas"
-                focusable="false"
-                height={16}
-                role="img"
-                viewBox="0 0 512 512"
-                width={16}
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
-                  fill="currentColor"
-                />
-              </svg>
-              <form
-                className="form"
-                onSubmit={[Function]}
-              >
-                <input
-                  className="input"
-                  onChange={[Function]}
-                  placeholder="Search"
-                  value=""
-                />
-              </form>
-            </div>
-            <div
               className="Pinpoint ThemeToggle Prebuilt"
             >
               <button
@@ -1356,130 +1332,166 @@ exports[`Test default state 1`] = `
         className="Pinpoint Documentation Page Content"
       >
         <div
-          className="Pinpoint Documentation Outline Wrapper Prebuilt"
+          className="leftWrapper"
         >
           <div
-            className="Parent"
+            className="Pinpoint Search Bar Prebuilt"
           >
-            <div
-              className="Top"
+            <svg
+              aria-hidden="true"
+              className="icon"
+              data-icon="search"
+              data-prefix="fas"
+              focusable="false"
+              height={16}
+              role="img"
+              viewBox="0 0 512 512"
+              width={16}
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                aria-hidden="true"
-                className="toggleControl"
-                data-icon="chevron-right"
-                data-prefix="fas"
-                focusable="false"
-                onClick={[Function]}
-                role="img"
-                viewBox="0 0 320 512"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
-                  fill="currentColor"
-                />
-              </svg>
-              <span
-                className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item active "
-                onClick={[Function]}
-              >
-                🔗 Linked Content Blocks
-              </span>
-            </div>
+              <path
+                d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
+                fill="currentColor"
+              />
+            </svg>
+            <form
+              className="form"
+              onSubmit={[Function]}
+            >
+              <input
+                className="input"
+                onChange={[Function]}
+                placeholder="Search"
+                value=""
+              />
+            </form>
           </div>
           <div
-            className="Parent"
+            className="Pinpoint Documentation Outline Wrapper Prebuilt"
           >
             <div
-              className="Top"
+              className="Parent"
             >
               <div
-                className="spacer"
-              />
-              <span
-                className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
-                onClick={[Function]}
+                className="Top"
               >
-                📢 Publishing Controls
-              </span>
+                <svg
+                  aria-hidden="true"
+                  className="toggleControl"
+                  data-icon="chevron-right"
+                  data-prefix="fas"
+                  focusable="false"
+                  onClick={[Function]}
+                  role="img"
+                  viewBox="0 0 320 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+                    fill="currentColor"
+                  />
+                </svg>
+                <span
+                  className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item active "
+                  onClick={[Function]}
+                >
+                  🔗 Linked Content Blocks
+                </span>
+              </div>
             </div>
-          </div>
-          <div
-            className="Parent"
-          >
             <div
-              className="Top"
+              className="Parent"
             >
               <div
-                className="spacer"
-              />
-              <span
-                className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
-                onClick={[Function]}
+                className="Top"
               >
-                🧭 Changelog planning
-              </span>
-            </div>
-          </div>
-          <div
-            className="Parent"
-          >
-            <div
-              className="Top"
-            >
-              <svg
-                aria-hidden="true"
-                className="toggleControl"
-                data-icon="chevron-right"
-                data-prefix="fas"
-                focusable="false"
-                onClick={[Function]}
-                role="img"
-                viewBox="0 0 320 512"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
-                  fill="currentColor"
+                <div
+                  className="spacer"
                 />
-              </svg>
-              <span
-                className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
-                onClick={[Function]}
-              >
-                📨 Email validation
-              </span>
+                <span
+                  className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+                  onClick={[Function]}
+                >
+                  📢 Publishing Controls
+                </span>
+              </div>
             </div>
-          </div>
-          <div
-            className="Parent"
-          >
             <div
-              className="Top"
+              className="Parent"
             >
-              <svg
-                aria-hidden="true"
-                className="toggleControl"
-                data-icon="chevron-right"
-                data-prefix="fas"
-                focusable="false"
-                onClick={[Function]}
-                role="img"
-                viewBox="0 0 320 512"
-                xmlns="http://www.w3.org/2000/svg"
+              <div
+                className="Top"
               >
-                <path
-                  d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
-                  fill="currentColor"
+                <div
+                  className="spacer"
                 />
-              </svg>
-              <span
-                className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
-                onClick={[Function]}
+                <span
+                  className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+                  onClick={[Function]}
+                >
+                  🧭 Changelog planning
+                </span>
+              </div>
+            </div>
+            <div
+              className="Parent"
+            >
+              <div
+                className="Top"
               >
-                🧪 Analytics Drill-Down
-              </span>
+                <svg
+                  aria-hidden="true"
+                  className="toggleControl"
+                  data-icon="chevron-right"
+                  data-prefix="fas"
+                  focusable="false"
+                  onClick={[Function]}
+                  role="img"
+                  viewBox="0 0 320 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+                    fill="currentColor"
+                  />
+                </svg>
+                <span
+                  className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+                  onClick={[Function]}
+                >
+                  📨 Email validation
+                </span>
+              </div>
+            </div>
+            <div
+              className="Parent"
+            >
+              <div
+                className="Top"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="toggleControl"
+                  data-icon="chevron-right"
+                  data-prefix="fas"
+                  focusable="false"
+                  onClick={[Function]}
+                  role="img"
+                  viewBox="0 0 320 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+                    fill="currentColor"
+                  />
+                </svg>
+                <span
+                  className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+                  onClick={[Function]}
+                >
+                  🧪 Analytics Drill-Down
+                </span>
+              </div>
             </div>
           </div>
         </div>
@@ -1913,38 +1925,6 @@ exports[`Test with pagination 1`] = `
             className="right"
           >
             <div
-              className="Pinpoint Search Bar Prebuilt"
-            >
-              <svg
-                aria-hidden="true"
-                className="icon"
-                data-icon="search"
-                data-prefix="fas"
-                focusable="false"
-                height={16}
-                role="img"
-                viewBox="0 0 512 512"
-                width={16}
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
-                  fill="currentColor"
-                />
-              </svg>
-              <form
-                className="form"
-                onSubmit={[Function]}
-              >
-                <input
-                  className="input"
-                  onChange={[Function]}
-                  placeholder="Search"
-                  value=""
-                />
-              </form>
-            </div>
-            <div
               className="Pinpoint ThemeToggle Prebuilt"
             >
               <button
@@ -1980,130 +1960,166 @@ exports[`Test with pagination 1`] = `
         className="Pinpoint Documentation Page Content"
       >
         <div
-          className="Pinpoint Documentation Outline Wrapper Prebuilt"
+          className="leftWrapper"
         >
           <div
-            className="Parent"
+            className="Pinpoint Search Bar Prebuilt"
           >
-            <div
-              className="Top"
+            <svg
+              aria-hidden="true"
+              className="icon"
+              data-icon="search"
+              data-prefix="fas"
+              focusable="false"
+              height={16}
+              role="img"
+              viewBox="0 0 512 512"
+              width={16}
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                aria-hidden="true"
-                className="toggleControl"
-                data-icon="chevron-right"
-                data-prefix="fas"
-                focusable="false"
-                onClick={[Function]}
-                role="img"
-                viewBox="0 0 320 512"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
-                  fill="currentColor"
-                />
-              </svg>
-              <span
-                className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
-                onClick={[Function]}
-              >
-                🔗 Linked Content Blocks
-              </span>
-            </div>
+              <path
+                d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
+                fill="currentColor"
+              />
+            </svg>
+            <form
+              className="form"
+              onSubmit={[Function]}
+            >
+              <input
+                className="input"
+                onChange={[Function]}
+                placeholder="Search"
+                value=""
+              />
+            </form>
           </div>
           <div
-            className="Parent"
+            className="Pinpoint Documentation Outline Wrapper Prebuilt"
           >
             <div
-              className="Top"
+              className="Parent"
             >
               <div
-                className="spacer"
-              />
-              <span
-                className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item active "
-                onClick={[Function]}
+                className="Top"
               >
-                📢 Publishing Controls
-              </span>
+                <svg
+                  aria-hidden="true"
+                  className="toggleControl"
+                  data-icon="chevron-right"
+                  data-prefix="fas"
+                  focusable="false"
+                  onClick={[Function]}
+                  role="img"
+                  viewBox="0 0 320 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+                    fill="currentColor"
+                  />
+                </svg>
+                <span
+                  className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+                  onClick={[Function]}
+                >
+                  🔗 Linked Content Blocks
+                </span>
+              </div>
             </div>
-          </div>
-          <div
-            className="Parent"
-          >
             <div
-              className="Top"
+              className="Parent"
             >
               <div
-                className="spacer"
-              />
-              <span
-                className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
-                onClick={[Function]}
+                className="Top"
               >
-                🧭 Changelog planning
-              </span>
-            </div>
-          </div>
-          <div
-            className="Parent"
-          >
-            <div
-              className="Top"
-            >
-              <svg
-                aria-hidden="true"
-                className="toggleControl"
-                data-icon="chevron-right"
-                data-prefix="fas"
-                focusable="false"
-                onClick={[Function]}
-                role="img"
-                viewBox="0 0 320 512"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
-                  fill="currentColor"
+                <div
+                  className="spacer"
                 />
-              </svg>
-              <span
-                className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
-                onClick={[Function]}
-              >
-                📨 Email validation
-              </span>
+                <span
+                  className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item active "
+                  onClick={[Function]}
+                >
+                  📢 Publishing Controls
+                </span>
+              </div>
             </div>
-          </div>
-          <div
-            className="Parent"
-          >
             <div
-              className="Top"
+              className="Parent"
             >
-              <svg
-                aria-hidden="true"
-                className="toggleControl"
-                data-icon="chevron-right"
-                data-prefix="fas"
-                focusable="false"
-                onClick={[Function]}
-                role="img"
-                viewBox="0 0 320 512"
-                xmlns="http://www.w3.org/2000/svg"
+              <div
+                className="Top"
               >
-                <path
-                  d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
-                  fill="currentColor"
+                <div
+                  className="spacer"
                 />
-              </svg>
-              <span
-                className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
-                onClick={[Function]}
+                <span
+                  className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+                  onClick={[Function]}
+                >
+                  🧭 Changelog planning
+                </span>
+              </div>
+            </div>
+            <div
+              className="Parent"
+            >
+              <div
+                className="Top"
               >
-                🧪 Analytics Drill-Down
-              </span>
+                <svg
+                  aria-hidden="true"
+                  className="toggleControl"
+                  data-icon="chevron-right"
+                  data-prefix="fas"
+                  focusable="false"
+                  onClick={[Function]}
+                  role="img"
+                  viewBox="0 0 320 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+                    fill="currentColor"
+                  />
+                </svg>
+                <span
+                  className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+                  onClick={[Function]}
+                >
+                  📨 Email validation
+                </span>
+              </div>
+            </div>
+            <div
+              className="Parent"
+            >
+              <div
+                className="Top"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="toggleControl"
+                  data-icon="chevron-right"
+                  data-prefix="fas"
+                  focusable="false"
+                  onClick={[Function]}
+                  role="img"
+                  viewBox="0 0 320 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+                    fill="currentColor"
+                  />
+                </svg>
+                <span
+                  className="Pinpoint Internal Link clickable Pinpoint Documentation Outline Item  "
+                  onClick={[Function]}
+                >
+                  🧪 Analytics Drill-Down
+                </span>
+              </div>
             </div>
           </div>
         </div>

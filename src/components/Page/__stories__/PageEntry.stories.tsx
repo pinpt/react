@@ -21,7 +21,7 @@ const { default: readme } = require('../Entry/README.md');
 
 export default {
 	component: Entry,
-	title: 'Components/Page/Entry',
+	title: 'Changelog Components/Page/Entry',
 	parameters: {
 		jest: ['PageEntry.test.tsx'],
 		docs: {

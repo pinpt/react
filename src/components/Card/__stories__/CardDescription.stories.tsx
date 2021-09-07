@@ -5,7 +5,7 @@ const { default: readme } = require('../Description/README.md');
 
 export default {
 	component: CardDescription,
-	title: 'Components/Card/Description',
+	title: 'Changelog Components/Card/Description',
 	parameters: {
 		jest: ['CardDescription.test.tsx'],
 		controls: { hideNoControlsWarning: true },

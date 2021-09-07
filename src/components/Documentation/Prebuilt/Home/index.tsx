@@ -15,6 +15,7 @@ import { ICopyrightProps } from '../../../Copyright';
 import Title from '../../Title';
 import Pagination, { IPaginationProps } from '../../../Pagination';
 import Pinpoint from '../../../Pinpoint';
+import Search from '../../../Search';
 
 export interface IPrebuiltDocumentationHomeProps {
 	className?: string;
@@ -25,7 +26,6 @@ export interface IPrebuiltDocumentationHomeProps {
 	handleSearch?: (value: string) => void;
 	renderLogo?: (site: ISite) => ReactElement<ILogoProps>;
 	handleSelectHome?: () => void;
-	renderSearch?: (site: ISite) => ReactElement<ISearchBarProps>;
 	renderSubscribe?: (site: ISite) => ReactElement<ISubscribeProps>;
 	renderThemeToggle?: (site: ISite) => ReactElement<IThemeToggleProps>;
 	renderOutline?: (entries: IContent[]) => ReactElement<IOutlineProps>;
@@ -46,6 +46,7 @@ export interface IPrebuiltDocumentationHomeProps {
 	description?: string;
 	currentAnchor?: string;
 	largeTitle?: boolean;
+	renderSearchBar?: (site: ISite) => ReactElement<ISearchBarProps>;
 }
 
 const Home = (props: IPrebuiltDocumentationHomeProps) => {
@@ -58,7 +59,7 @@ const Home = (props: IPrebuiltDocumentationHomeProps) => {
 		handleSearch,
 		handleSelectHome,
 		renderLogo,
-		renderSearch,
+		renderSearchBar,
 		renderSubscribe,
 		renderThemeToggle,
 		renderOutline,
@@ -99,13 +100,16 @@ const Home = (props: IPrebuiltDocumentationHomeProps) => {
 				<Page.Home
 					ref={ref}
 					className={`Prebuilt ${className}`}
+					searchBar={
+						renderSearchBar?.(site) ?? (
+							<Search.Bar defaultValue={searchTerm} onSubmit={handleSearch} className="Prebuilt" />
+						)
+					}
 					header={
 						renderHeader?.(site) ?? (
 							<Header
 								className="Prebuilt"
 								site={site}
-								searchTerm={searchTerm}
-								handleSearch={handleSearch}
 								handleSelectHome={handleSelectHome}
 								renderLogo={
 									renderLogo
@@ -114,7 +118,7 @@ const Home = (props: IPrebuiltDocumentationHomeProps) => {
 												return <Title site={_site} text={title} onClick={handleSelectHome} />;
 										  }
 								}
-								renderSearch={renderSearch}
+								renderSearch={() => <></>}
 								renderSubscribe={renderSubscribe ?? (() => <></>)}
 								renderThemeToggle={renderThemeToggle}
 								title={largeTitle ? title : ''}

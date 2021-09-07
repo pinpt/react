@@ -6,7 +6,7 @@ const { default: readme } = require('../README.md');
 
 export default {
 	component: Title,
-	title: 'Components/Documentation Site/Title',
+	title: 'Documentation Components/Title',
 	parameters: {
 		jest: ['Title.test.tsx'],
 		docs: {

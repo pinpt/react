@@ -5,7 +5,7 @@ const { default: readme } = require('../README.md');
 
 export default {
 	component: ViewStatistic,
-	title: 'Components/Statistic/Views',
+	title: 'Changelog Components/Statistic/Views',
 	parameters: {
 		jest: ['StatisticViews.test.tsx'],
 		docs: {

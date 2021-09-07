@@ -11,7 +11,7 @@ const { default: readme } = require('../README.md');
 
 export default {
 	component: Header,
-	title: 'Components/Header',
+	title: 'Changelog Components/Header',
 	parameters: {
 		jest: ['Header.test.tsx'],
 		docs: {

@@ -7,7 +7,7 @@ const { default: readme } = require('../README.md');
 
 export default {
 	component: Banner,
-	title: 'Components/Banner',
+	title: 'Changelog Components/Banner',
 	parameters: {
 		jest: ['Banner.test.tsx'],
 		docs: {
