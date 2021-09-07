@@ -172,6 +172,14 @@ exports[`Test custom className 1`] = `
         <div
           className="rightWrapper "
         >
+          <h2
+            className="resultsText"
+          >
+            Search Results for 
+            <strong>
+              Test
+            </strong>
+          </h2>
           <span
             className="Pinpoint Internal Link clickable Pinpoint Documentation Card Container wrapper Prebuilt"
             onClick={[Function]}
@@ -685,6 +693,14 @@ exports[`Test default state 1`] = `
         <div
           className="rightWrapper "
         >
+          <h2
+            className="resultsText"
+          >
+            Search Results for 
+            <strong>
+              Test
+            </strong>
+          </h2>
           <span
             className="Pinpoint Internal Link clickable Pinpoint Documentation Card Container wrapper Prebuilt"
             onClick={[Function]}
@@ -1198,6 +1214,14 @@ exports[`Test empty state 1`] = `
         <div
           className="rightWrapper "
         >
+          <h2
+            className="resultsText"
+          >
+            Search Results for 
+            <strong>
+              Test
+            </strong>
+          </h2>
           <div
             className="empty"
           >

@@ -85,6 +85,10 @@
 	@apply flex-grow w-0;
 }
 
+.Pinpoint.Documentation.Page.Content .rightWrapper .resultsText {
+	@apply text-2xl pb-2 mt-4 sm:mt-0;
+}
+
 .Pinpoint.Documentation.Page.SearchResults .Pinpoint.Documentation.Page.Content .rightWrapper {
 	@apply ml-0 sm:ml-12 space-y-6;
 }
@@ -117,7 +121,6 @@
 .Pinpoint.Documentation.Page .Pinpoint.Header .center {
 	@apply hidden sm:block;
 }
-
 
 /* Hide the right side when mobile menu is open */
 .Pinpoint.Documentation.Page.Content .rightWrapper {
