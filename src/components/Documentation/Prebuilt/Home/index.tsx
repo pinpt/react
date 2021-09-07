@@ -1,4 +1,4 @@
-import { ReactElement, useCallback, useMemo } from 'react';
+import { ReactElement, useCallback, useMemo, useState } from 'react';
 import { IHeaderProps } from '../../../Header';
 import Page from '../../Page';
 import Header from '../../../Prebuilt/Header';
@@ -77,6 +77,7 @@ const Home = (props: IPrebuiltDocumentationHomeProps) => {
 		nextEntry: nextEntryId,
 		previousEntry: previousEntryId,
 	} = props;
+	const [menuOpen, setMenuOpen] = useState(false);
 
 	const entry = useMemo(() => {
 		return entries.find((e) => e.id === currentEntry);
@@ -90,9 +91,46 @@ const Home = (props: IPrebuiltDocumentationHomeProps) => {
 		return previousEntryId ? entries.find((e) => e.id === previousEntryId) : undefined;
 	}, [entries, previousEntryId]);
 
-	const handlePaginate = useCallback((entry: IContent) => {
-		setCurrentEntry(entry);
+	const closeMenu = useCallback(() => {
+		setMenuOpen(false);
 	}, []);
+
+	const toggleMenu = useCallback(() => {
+		setMenuOpen((x) => !x);
+	}, []);
+
+	const openMenu = useCallback(() => {
+		setMenuOpen(true);
+	}, []);
+
+	const handlePaginate = useCallback(
+		(entry: IContent) => {
+			setCurrentEntry(entry);
+			closeMenu();
+		},
+		[closeMenu]
+	);
+
+	const visitEntry = useCallback(
+		(entry: IContent, anchor?: string) => {
+			setCurrentEntry?.(entry, anchor);
+			closeMenu();
+		},
+		[setCurrentEntry, closeMenu]
+	);
+
+	const goHome = useCallback(() => {
+		handleSelectHome?.();
+		closeMenu();
+	}, [handleSelectHome, closeMenu]);
+
+	const doSearch = useCallback(
+		(value: string) => {
+			handleSearch?.(value);
+			closeMenu();
+		},
+		[handleSearch, closeMenu]
+	);
 
 	return (
 		<Pinpoint siteId={site.id} contentId={currentEntry}>
@@ -102,20 +140,21 @@ const Home = (props: IPrebuiltDocumentationHomeProps) => {
 					className={`Prebuilt ${className}`}
 					searchBar={
 						renderSearchBar?.(site) ?? (
-							<Search.Bar defaultValue={searchTerm} onSubmit={handleSearch} className="Prebuilt" />
+							<Search.Bar defaultValue={searchTerm} onSubmit={doSearch} className="Prebuilt" />
 						)
 					}
+					outlineOpen={menuOpen}
 					header={
 						renderHeader?.(site) ?? (
 							<Header
 								className="Prebuilt"
 								site={site}
-								handleSelectHome={handleSelectHome}
+								handleSelectHome={goHome}
 								renderLogo={
 									renderLogo
 										? (_site) => renderLogo?.(_site)
 										: (_site) => {
-												return <Title site={_site} text={title} onClick={handleSelectHome} />;
+												return <Title site={_site} text={title} onClick={goHome} />;
 										  }
 								}
 								renderSearch={() => <></>}
@@ -123,6 +162,8 @@ const Home = (props: IPrebuiltDocumentationHomeProps) => {
 								renderThemeToggle={renderThemeToggle}
 								title={largeTitle ? title : ''}
 								description={description}
+								mobileMenu
+								onToggleMenu={toggleMenu}
 							/>
 						)
 					}
@@ -133,7 +174,7 @@ const Home = (props: IPrebuiltDocumentationHomeProps) => {
 								entries={entries}
 								site={site}
 								active={currentEntry}
-								onClick={setCurrentEntry}
+								onClick={visitEntry}
 								activeAnchor={currentAnchor}
 							/>
 						)

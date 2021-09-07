@@ -2,7 +2,7 @@
 
 exports[`Test full page 1`] = `
 <div
-  className="Pinpoint Documentation Page SearchResults "
+  className="Pinpoint Documentation Page SearchResults  "
 >
   <div
     className="Pinpoint headerWrapper"
@@ -46,7 +46,7 @@ exports[`Test full page 1`] = `
         className="Pinpoint Documentation Page Content"
       >
         <div
-          className="leftWrapper"
+          className="leftWrapper "
         >
           <div
             className="Pinpoint Search Bar "
@@ -85,7 +85,7 @@ exports[`Test full page 1`] = `
           />
         </div>
         <div
-          className="rightWrapper"
+          className="rightWrapper "
         >
           <div
             className="Pinpoint Documentation Card Container wrapper "

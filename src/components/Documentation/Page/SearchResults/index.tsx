@@ -16,13 +16,14 @@ export interface ISearchResultsProps {
 	results?: ReactElement<IDocumentationCardProps>[];
 	searchTerm?: string;
 	backButton?: ReactElement;
+	outlineOpen?: boolean; // Only applies on mobile (small screen)
 }
 
 const SearchResults = forwardRef((props: ISearchResultsProps, ref: any) => {
-	const { className = '', header, loading, footer, searchBar, results, backButton } = props;
+	const { className = '', header, loading, footer, searchBar, results, backButton, outlineOpen } = props;
 
 	return (
-		<div className={`Pinpoint Documentation Page SearchResults ${className}`} ref={ref}>
+		<div className={`Pinpoint Documentation Page SearchResults ${outlineOpen ? 'open' : ''} ${className}`} ref={ref}>
 			{withWrapper(header, 'header')}
 			{loading ? (
 				<div className="loaderWrapper">
@@ -31,11 +32,11 @@ const SearchResults = forwardRef((props: ISearchResultsProps, ref: any) => {
 			) : (
 				withWrapper(
 					<div className="Pinpoint Documentation Page Content">
-						<div className="leftWrapper">
+						<div className={`leftWrapper ${outlineOpen ? 'open' : ''}`}>
 							{searchBar}
 							<div className="back">{backButton}</div>
 						</div>
-						<div className="rightWrapper">{results}</div>
+						<div className={`rightWrapper ${outlineOpen ? 'open' : ''}`}>{results}</div>
 					</div>,
 					'documentationBody'
 				)

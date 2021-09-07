@@ -40,6 +40,14 @@ body.Pinpoint {
 	@apply flex justify-between;
 }
 
+.Pinpoint.Header .left {
+	@apply flex items-center;
+}
+
+.Pinpoint.Header .mobileMenuButton {
+	@apply hidden;
+}
+
 .Pinpoint.Header .right {
 	@apply flex gap-x-4;
 }

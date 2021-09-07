@@ -1,5 +1,5 @@
 import Page from '../../Page';
-import { ReactElement } from 'react';
+import { ReactElement, useCallback, useState } from 'react';
 import { IHeaderProps } from '../../../Header';
 import Header from '../../../Prebuilt/Header';
 import type { IContent, ISite } from '../../../../lib/types';
@@ -40,6 +40,7 @@ export interface IPrebuiltDocumentationSearchResultsProps {
 	handleCancelSearch?: () => void;
 	renderEntryCta?: () => ReactElement;
 	loading?: boolean;
+	renderMobileMenu?: () => ReactElement;
 }
 
 const SearchResults = (props: IPrebuiltDocumentationSearchResultsProps) => {
@@ -68,6 +69,41 @@ const SearchResults = (props: IPrebuiltDocumentationSearchResultsProps) => {
 		renderEntryCta,
 		loading,
 	} = props;
+	const [menuOpen, setMenuOpen] = useState(false);
+
+	const closeMenu = useCallback(() => {
+		setMenuOpen(false);
+	}, []);
+
+	const toggleMenu = useCallback(() => {
+		setMenuOpen((x) => !x);
+	}, []);
+
+	const visitEntry = useCallback(
+		(id: string) => {
+			setCurrentEntry?.(id);
+			closeMenu();
+		},
+		[setCurrentEntry, closeMenu]
+	);
+
+	const goHome = useCallback(() => {
+		handleSelectHome?.();
+		closeMenu();
+	}, [handleSelectHome, closeMenu]);
+
+	const doSearch = useCallback(
+		(value: string) => {
+			handleSearch?.(value);
+			closeMenu();
+		},
+		[handleSearch, closeMenu]
+	);
+
+	const cancelSearch = useCallback(() => {
+		handleCancelSearch?.();
+		closeMenu();
+	}, [handleCancelSearch, closeMenu]);
 
 	return (
 		<Page.SearchResults
@@ -75,21 +111,20 @@ const SearchResults = (props: IPrebuiltDocumentationSearchResultsProps) => {
 			className={`Prebuilt ${className}`}
 			searchTerm={searchTerm}
 			searchBar={
-				renderSearchBar?.(site) ?? (
-					<Search.Bar defaultValue={searchTerm} onSubmit={handleSearch} className="Prebuilt" />
-				)
+				renderSearchBar?.(site) ?? <Search.Bar defaultValue={searchTerm} onSubmit={doSearch} className="Prebuilt" />
 			}
+			outlineOpen={menuOpen}
 			header={
 				renderHeader?.(site) ?? (
 					<Header
 						className="Prebuilt"
 						site={site}
-						handleSelectHome={handleSelectHome}
+						handleSelectHome={goHome}
 						renderLogo={
 							renderLogo
 								? (_site) => renderLogo?.(_site)
 								: (_site) => {
-										return <Title site={_site} text={title} onClick={handleSelectHome} />;
+										return <Title site={_site} text={title} onClick={goHome} />;
 								  }
 						}
 						renderSubscribe={renderSubscribe ?? (() => <></>)}
@@ -97,6 +132,8 @@ const SearchResults = (props: IPrebuiltDocumentationSearchResultsProps) => {
 						title={largeTitle ? title : ''}
 						description={description}
 						renderSearch={() => <></>}
+						mobileMenu
+						onToggleMenu={toggleMenu}
 					/>
 				)
 			}
@@ -122,8 +159,8 @@ const SearchResults = (props: IPrebuiltDocumentationSearchResultsProps) => {
 										title={entry.title}
 										description={entry.headline}
 										key={entry.id}
-										onClick={() => setCurrentEntry(entry.id)}
-										onCtaClick={() => setCurrentEntry(entry.id)}
+										onClick={() => visitEntry(entry.id)}
+										onCtaClick={() => visitEntry(entry.id)}
 										cta={renderEntryCta?.() ?? <></>}
 									/>
 								)
@@ -137,7 +174,7 @@ const SearchResults = (props: IPrebuiltDocumentationSearchResultsProps) => {
 			}
 			backButton={
 				renderBackButton?.(site) ?? (
-					<ActionLink onClick={handleCancelSearch} className="Prebuilt">
+					<ActionLink onClick={cancelSearch} className="Prebuilt">
 						<GoBackWithArrow text="Close Search" />
 					</ActionLink>
 				)

@@ -2,7 +2,7 @@
 
 exports[`Test custom className 1`] = `
 <div
-  className="Pinpoint Documentation Page SearchResults Prebuilt test-custom"
+  className="Pinpoint Documentation Page SearchResults  Prebuilt test-custom"
 >
   <div
     className="Pinpoint headerWrapper"
@@ -20,7 +20,34 @@ exports[`Test custom className 1`] = `
             className="left"
           >
             <div
-              className="Pinpoint Documentation Title  "
+              className="mobileMenuButton "
+            >
+              <span
+                className="Pinpoint Internal Link clickable "
+                onClick={[Function]}
+              >
+                <svg
+                  aria-hidden="true"
+                  className="icon"
+                  data-icon="bars"
+                  data-prefix="fas"
+                  focusable="false"
+                  height={18}
+                  role="img"
+                  viewBox="0 0 448 512"
+                  width={18}
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+            </div>
+            <div
+              className="Pinpoint Documentation Title clickable "
+              onClick={[Function]}
             >
               <span
                 className="Pinpoint Internal Link  Pinpoint Logo sm "
@@ -76,7 +103,7 @@ exports[`Test custom className 1`] = `
         className="Pinpoint Documentation Page Content"
       >
         <div
-          className="leftWrapper"
+          className="leftWrapper "
         >
           <div
             className="Pinpoint Search Bar Prebuilt"
@@ -143,7 +170,7 @@ exports[`Test custom className 1`] = `
           </div>
         </div>
         <div
-          className="rightWrapper"
+          className="rightWrapper "
         >
           <span
             className="Pinpoint Internal Link clickable Pinpoint Documentation Card Container wrapper Prebuilt"
@@ -488,7 +515,7 @@ populated with your recently completed...
 
 exports[`Test default state 1`] = `
 <div
-  className="Pinpoint Documentation Page SearchResults Prebuilt "
+  className="Pinpoint Documentation Page SearchResults  Prebuilt "
 >
   <div
     className="Pinpoint headerWrapper"
@@ -506,7 +533,34 @@ exports[`Test default state 1`] = `
             className="left"
           >
             <div
-              className="Pinpoint Documentation Title  "
+              className="mobileMenuButton "
+            >
+              <span
+                className="Pinpoint Internal Link clickable "
+                onClick={[Function]}
+              >
+                <svg
+                  aria-hidden="true"
+                  className="icon"
+                  data-icon="bars"
+                  data-prefix="fas"
+                  focusable="false"
+                  height={18}
+                  role="img"
+                  viewBox="0 0 448 512"
+                  width={18}
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+            </div>
+            <div
+              className="Pinpoint Documentation Title clickable "
+              onClick={[Function]}
             >
               <span
                 className="Pinpoint Internal Link  Pinpoint Logo sm "
@@ -562,7 +616,7 @@ exports[`Test default state 1`] = `
         className="Pinpoint Documentation Page Content"
       >
         <div
-          className="leftWrapper"
+          className="leftWrapper "
         >
           <div
             className="Pinpoint Search Bar Prebuilt"
@@ -629,7 +683,7 @@ exports[`Test default state 1`] = `
           </div>
         </div>
         <div
-          className="rightWrapper"
+          className="rightWrapper "
         >
           <span
             className="Pinpoint Internal Link clickable Pinpoint Documentation Card Container wrapper Prebuilt"
@@ -974,7 +1028,7 @@ populated with your recently completed...
 
 exports[`Test empty state 1`] = `
 <div
-  className="Pinpoint Documentation Page SearchResults Prebuilt "
+  className="Pinpoint Documentation Page SearchResults  Prebuilt "
 >
   <div
     className="Pinpoint headerWrapper"
@@ -992,7 +1046,34 @@ exports[`Test empty state 1`] = `
             className="left"
           >
             <div
-              className="Pinpoint Documentation Title  "
+              className="mobileMenuButton "
+            >
+              <span
+                className="Pinpoint Internal Link clickable "
+                onClick={[Function]}
+              >
+                <svg
+                  aria-hidden="true"
+                  className="icon"
+                  data-icon="bars"
+                  data-prefix="fas"
+                  focusable="false"
+                  height={18}
+                  role="img"
+                  viewBox="0 0 448 512"
+                  width={18}
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+            </div>
+            <div
+              className="Pinpoint Documentation Title clickable "
+              onClick={[Function]}
             >
               <span
                 className="Pinpoint Internal Link  Pinpoint Logo sm "
@@ -1048,7 +1129,7 @@ exports[`Test empty state 1`] = `
         className="Pinpoint Documentation Page Content"
       >
         <div
-          className="leftWrapper"
+          className="leftWrapper "
         >
           <div
             className="Pinpoint Search Bar Prebuilt"
@@ -1115,7 +1196,7 @@ exports[`Test empty state 1`] = `
           </div>
         </div>
         <div
-          className="rightWrapper"
+          className="rightWrapper "
         >
           <div
             className="empty"
@@ -1368,7 +1449,7 @@ exports[`Test empty state 1`] = `
 
 exports[`Test loading state 1`] = `
 <div
-  className="Pinpoint Documentation Page SearchResults Prebuilt "
+  className="Pinpoint Documentation Page SearchResults  Prebuilt "
 >
   <div
     className="Pinpoint headerWrapper"
@@ -1386,7 +1467,34 @@ exports[`Test loading state 1`] = `
             className="left"
           >
             <div
-              className="Pinpoint Documentation Title  "
+              className="mobileMenuButton "
+            >
+              <span
+                className="Pinpoint Internal Link clickable "
+                onClick={[Function]}
+              >
+                <svg
+                  aria-hidden="true"
+                  className="icon"
+                  data-icon="bars"
+                  data-prefix="fas"
+                  focusable="false"
+                  height={18}
+                  role="img"
+                  viewBox="0 0 448 512"
+                  width={18}
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+            </div>
+            <div
+              className="Pinpoint Documentation Title clickable "
+              onClick={[Function]}
             >
               <span
                 className="Pinpoint Internal Link  Pinpoint Logo sm "

@@ -86,7 +86,7 @@
 }
 
 .Pinpoint.Documentation.Page.SearchResults .Pinpoint.Documentation.Page.Content .rightWrapper {
-	@apply ml-12 space-y-6;
+	@apply ml-0 sm:ml-12 space-y-6;
 }
 
 .Pinpoint.Documentation.Page.SearchResults .Pinpoint.Documentation.Page.Content .leftWrapper .back {
@@ -113,6 +113,33 @@
 	@apply ml-8 mb-8 mt-1;
 }
 
+/* Hide the center of the header when mobile menu is open */
+.Pinpoint.Documentation.Page.Content .leftWrapper.open .Pinpoint.Header .center {
+	@apply hidden sm:block;
+}
+
+/* Hide the right side when mobile menu is open */
+.Pinpoint.Documentation.Page.Content .rightWrapper {
+	@apply block;
+}
+
+.Pinpoint.Documentation.Page.Content .rightWrapper.open {
+	@apply hidden sm:block;
+}
+
+/* Hide the left sidethe mobile menu is closed */
+.Pinpoint.Documentation.Page.Content .leftWrapper {
+	@apply hidden sm:block;
+}
+
+.Pinpoint.Documentation.Page.Content .leftWrapper.open {
+	@apply block w-full;
+}
+
+.Pinpoint.Documentation.Page.Content .leftWrapper.open .Search.Bar {
+	@apply w-full ml-0;
+}
+
 .Pinpoint.Documentation.Card.wrapper {
 	@apply flex flex-col rounded-md border-gray-200 hover:bg-gray-100 transition border-l-3 pl-4 py-2 text-black dark:text-white;
 }
@@ -131,4 +158,16 @@
 
 .Pinpoint.Documentation.Page.Content .rightWrapper .empty {
 	@apply text-2xl font-bold text-center;
+}
+
+.Pinpoint.Header .mobileMenuButton {
+	@apply block sm:hidden;
+}
+
+.Pinpoint.Header .mobileMenuButton .icon {
+	@apply mr-3 text-black dark:text-white;
+}
+
+.Pinpoint .mobileMenuWrapper {
+	@apply ml-8 mt-4 pr-6;
 }

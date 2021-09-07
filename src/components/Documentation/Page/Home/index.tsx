@@ -16,13 +16,14 @@ export interface IDocumentationHomeProps {
 	footer?: ReactElement<IFooterProps>;
 	pagination?: ReactElement<IPaginationProps>;
 	searchBar?: ReactElement<ISearchBarProps>;
+	outlineOpen?: boolean; // Only applies on mobile (small screen)
 }
 
 const Home = forwardRef((props: IDocumentationHomeProps, ref: any) => {
-	const { className = '', header, loading, outline, content, footer, pagination, searchBar } = props;
+	const { className = '', header, loading, outline, content, footer, pagination, searchBar, outlineOpen } = props;
 
 	return (
-		<div className={`Pinpoint Documentation Page Home ${className}`} ref={ref}>
+		<div className={`Pinpoint Documentation Page Home ${outlineOpen ? 'open' : ''} ${className}`} ref={ref}>
 			{withWrapper(header, 'header')}
 			{loading ? (
 				<div className="loaderWrapper">
@@ -31,11 +32,11 @@ const Home = forwardRef((props: IDocumentationHomeProps, ref: any) => {
 			) : (
 				withWrapper(
 					<div className="Pinpoint Documentation Page Content">
-						<div className="leftWrapper">
+						<div className={`leftWrapper ${outlineOpen ? 'open' : ''}`}>
 							{searchBar}
 							{outline}
 						</div>
-						<div className="rightWrapper">
+						<div className={`rightWrapper ${outlineOpen ? 'open' : ''}`}>
 							{content}
 							{pagination}
 						</div>
