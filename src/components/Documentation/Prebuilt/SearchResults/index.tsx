@@ -11,7 +11,7 @@ import Footer, { IPrebuiltFooterProps } from '../../../Prebuilt/Footer';
 import { ISocialBarProps } from '../../../Social/Bar';
 import { ICopyrightProps } from '../../../Copyright';
 import Title from '../../Title';
-import { GoBackWithArrow } from '../../../Pagination';
+import { GoBackWithArrow, GoForwardWithArrow } from '../../../Pagination';
 import Search from '../../../Search';
 import Card, { IDocumentationCardProps } from '../../Card';
 import ActionLink from '../../../Internal/ActionLink';
@@ -38,6 +38,7 @@ export interface IPrebuiltDocumentationSearchResultsProps {
 	setCurrentEntry: (id: string) => void;
 	renderBackButton?: (site: ISite) => ReactElement;
 	handleCancelSearch?: () => void;
+	renderEntryCta?: () => ReactElement;
 }
 
 const SearchResults = (props: IPrebuiltDocumentationSearchResultsProps) => {
@@ -63,6 +64,7 @@ const SearchResults = (props: IPrebuiltDocumentationSearchResultsProps) => {
 		setCurrentEntry,
 		renderBackButton,
 		handleCancelSearch,
+		renderEntryCta,
 	} = props;
 
 	return (
@@ -116,6 +118,8 @@ const SearchResults = (props: IPrebuiltDocumentationSearchResultsProps) => {
 							description={entry.headline}
 							key={entry.id}
 							onClick={() => setCurrentEntry(entry.id)}
+							onCtaClick={() => setCurrentEntry(entry.id)}
+							cta={renderEntryCta?.() ?? <></>}
 						/>
 					)
 				);

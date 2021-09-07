@@ -159,6 +159,10 @@ exports[`Test custom className 1`] = `
             >
               Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.
             </p>
+            <div
+              className="cta clickable"
+              onClick={[Function]}
+            />
           </span>
           <span
             className="Pinpoint Internal Link clickable Pinpoint Documentation Card Container wrapper Prebuilt"
@@ -174,6 +178,10 @@ exports[`Test custom className 1`] = `
             >
               When you publish a changelog you will now see a new Publish dialog which grants finer control over when you want to notify your subscribers.
             </p>
+            <div
+              className="cta clickable"
+              onClick={[Function]}
+            />
           </span>
           <span
             className="Pinpoint Internal Link clickable Pinpoint Documentation Card Container wrapper Prebuilt"
@@ -191,6 +199,10 @@ exports[`Test custom className 1`] = `
 Planning 
 populated with your recently completed...
             </p>
+            <div
+              className="cta clickable"
+              onClick={[Function]}
+            />
           </span>
           <span
             className="Pinpoint Internal Link clickable Pinpoint Documentation Card Container wrapper Prebuilt"
@@ -206,6 +218,10 @@ populated with your recently completed...
             >
               As new users subscribe to your changelog you will be able to quickly see if they have verified and validated their email addresses with you.  Along with this you also now have the ability to search your subscriber list.  This will help you ensure...
             </p>
+            <div
+              className="cta clickable"
+              onClick={[Function]}
+            />
           </span>
           <span
             className="Pinpoint Internal Link clickable Pinpoint Documentation Card Container wrapper Prebuilt"
@@ -221,6 +237,10 @@ populated with your recently completed...
             >
               We have now added drill-down analytics to give you even deeper insight into where your changelogs are having the most impact.  Check out the video below to lear
             </p>
+            <div
+              className="cta clickable"
+              onClick={[Function]}
+            />
           </span>
         </div>
       </div>
@@ -625,6 +645,10 @@ exports[`Test default state 1`] = `
             >
               Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.
             </p>
+            <div
+              className="cta clickable"
+              onClick={[Function]}
+            />
           </span>
           <span
             className="Pinpoint Internal Link clickable Pinpoint Documentation Card Container wrapper Prebuilt"
@@ -640,6 +664,10 @@ exports[`Test default state 1`] = `
             >
               When you publish a changelog you will now see a new Publish dialog which grants finer control over when you want to notify your subscribers.
             </p>
+            <div
+              className="cta clickable"
+              onClick={[Function]}
+            />
           </span>
           <span
             className="Pinpoint Internal Link clickable Pinpoint Documentation Card Container wrapper Prebuilt"
@@ -657,6 +685,10 @@ exports[`Test default state 1`] = `
 Planning 
 populated with your recently completed...
             </p>
+            <div
+              className="cta clickable"
+              onClick={[Function]}
+            />
           </span>
           <span
             className="Pinpoint Internal Link clickable Pinpoint Documentation Card Container wrapper Prebuilt"
@@ -672,6 +704,10 @@ populated with your recently completed...
             >
               As new users subscribe to your changelog you will be able to quickly see if they have verified and validated their email addresses with you.  Along with this you also now have the ability to search your subscriber list.  This will help you ensure...
             </p>
+            <div
+              className="cta clickable"
+              onClick={[Function]}
+            />
           </span>
           <span
             className="Pinpoint Internal Link clickable Pinpoint Documentation Card Container wrapper Prebuilt"
@@ -687,6 +723,10 @@ populated with your recently completed...
             >
               We have now added drill-down analytics to give you even deeper insight into where your changelogs are having the most impact.  Check out the video below to lear
             </p>
+            <div
+              className="cta clickable"
+              onClick={[Function]}
+            />
           </span>
         </div>
       </div>
