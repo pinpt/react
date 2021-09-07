@@ -2,7 +2,7 @@
 
 exports[`Test full page 1`] = `
 <div
-  className="Pinpoint Documentation Page Home "
+  className="Pinpoint Documentation Page Home  "
 >
   <div
     className="Pinpoint headerWrapper"
@@ -54,7 +54,7 @@ exports[`Test full page 1`] = `
         className="Pinpoint Documentation Page Content"
       >
         <div
-          className="leftWrapper"
+          className="leftWrapper "
         >
           <div
             className="Pinpoint Documentation Outline Wrapper "
@@ -186,7 +186,7 @@ exports[`Test full page 1`] = `
           </div>
         </div>
         <div
-          className="rightWrapper"
+          className="rightWrapper "
         >
           <article>
             <section
@@ -468,7 +468,7 @@ exports[`Test full page 1`] = `
 
 exports[`Test loading 1`] = `
 <div
-  className="Pinpoint Documentation Page Home "
+  className="Pinpoint Documentation Page Home  "
 >
   <div
     className="Pinpoint headerWrapper"
@@ -788,7 +788,7 @@ exports[`Test loading 1`] = `
 
 exports[`Test no footer 1`] = `
 <div
-  className="Pinpoint Documentation Page Home "
+  className="Pinpoint Documentation Page Home  "
 >
   <div
     className="Pinpoint headerWrapper"
@@ -840,7 +840,7 @@ exports[`Test no footer 1`] = `
         className="Pinpoint Documentation Page Content"
       >
         <div
-          className="leftWrapper"
+          className="leftWrapper "
         >
           <div
             className="Pinpoint Documentation Outline Wrapper "
@@ -972,7 +972,7 @@ exports[`Test no footer 1`] = `
           </div>
         </div>
         <div
-          className="rightWrapper"
+          className="rightWrapper "
         >
           <article>
             <section
@@ -992,7 +992,7 @@ exports[`Test no footer 1`] = `
 
 exports[`Test no header 1`] = `
 <div
-  className="Pinpoint Documentation Page Home "
+  className="Pinpoint Documentation Page Home  "
 >
   <div
     className="Pinpoint documentationBodyWrapper"
@@ -1004,7 +1004,7 @@ exports[`Test no header 1`] = `
         className="Pinpoint Documentation Page Content"
       >
         <div
-          className="leftWrapper"
+          className="leftWrapper "
         >
           <div
             className="Pinpoint Documentation Outline Wrapper "
@@ -1136,7 +1136,7 @@ exports[`Test no header 1`] = `
           </div>
         </div>
         <div
-          className="rightWrapper"
+          className="rightWrapper "
         >
           <article>
             <section
@@ -1418,7 +1418,7 @@ exports[`Test no header 1`] = `
 
 exports[`Test with search bar 1`] = `
 <div
-  className="Pinpoint Documentation Page Home "
+  className="Pinpoint Documentation Page Home  "
 >
   <div
     className="Pinpoint headerWrapper"
@@ -1470,7 +1470,7 @@ exports[`Test with search bar 1`] = `
         className="Pinpoint Documentation Page Content"
       >
         <div
-          className="leftWrapper"
+          className="leftWrapper "
         >
           <div
             className="Pinpoint Search Bar "
@@ -1634,7 +1634,7 @@ exports[`Test with search bar 1`] = `
           </div>
         </div>
         <div
-          className="rightWrapper"
+          className="rightWrapper "
         >
           <article>
             <section
@@ -1916,7 +1916,7 @@ exports[`Test with search bar 1`] = `
 
 exports[`With pagination 1`] = `
 <div
-  className="Pinpoint Documentation Page Home "
+  className="Pinpoint Documentation Page Home  "
 >
   <div
     className="Pinpoint headerWrapper"
@@ -1968,7 +1968,7 @@ exports[`With pagination 1`] = `
         className="Pinpoint Documentation Page Content"
       >
         <div
-          className="leftWrapper"
+          className="leftWrapper "
         >
           <div
             className="Pinpoint Documentation Outline Wrapper "
@@ -2100,7 +2100,7 @@ exports[`With pagination 1`] = `
           </div>
         </div>
         <div
-          className="rightWrapper"
+          className="rightWrapper "
         >
           <article>
             <section

@@ -19,6 +19,9 @@ export interface IPrebuiltHeaderProps {
 	renderThemeToggle?: (site: ISite) => ReactElement<IThemeToggleProps>;
 	title?: string;
 	description?: string;
+	onToggleMenu?: () => void;
+	mobileMenu?: boolean;
+	mobileMenuOpen?: boolean;
 }
 
 const Header = (props: IPrebuiltHeaderProps) => {
@@ -34,6 +37,9 @@ const Header = (props: IPrebuiltHeaderProps) => {
 		renderThemeToggle,
 		title,
 		description,
+		onToggleMenu,
+		mobileMenu,
+		mobileMenuOpen,
 	} = props;
 
 	return (
@@ -49,6 +55,9 @@ const Header = (props: IPrebuiltHeaderProps) => {
 					<Search.Bar defaultValue={searchTerm} onSubmit={handleSearch} className="Prebuilt" />
 				)
 			}
+			onToggleMenu={onToggleMenu}
+			mobileMenu={mobileMenu}
+			mobileMenuOpen={mobileMenuOpen}
 			logo={
 				renderLogo?.(site) ?? (
 					<Logo
