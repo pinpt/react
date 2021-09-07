@@ -21,6 +21,7 @@ export interface IPrebuiltHeaderProps {
 	description?: string;
 	onToggleMenu?: () => void;
 	mobileMenu?: boolean;
+	mobileMenuOpen?: boolean;
 }
 
 const Header = (props: IPrebuiltHeaderProps) => {
@@ -38,6 +39,7 @@ const Header = (props: IPrebuiltHeaderProps) => {
 		description,
 		onToggleMenu,
 		mobileMenu,
+		mobileMenuOpen,
 	} = props;
 
 	return (
@@ -55,6 +57,7 @@ const Header = (props: IPrebuiltHeaderProps) => {
 			}
 			onToggleMenu={onToggleMenu}
 			mobileMenu={mobileMenu}
+			mobileMenuOpen={mobileMenuOpen}
 			logo={
 				renderLogo?.(site) ?? (
 					<Logo

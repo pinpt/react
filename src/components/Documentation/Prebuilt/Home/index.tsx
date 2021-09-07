@@ -99,10 +99,6 @@ const Home = (props: IPrebuiltDocumentationHomeProps) => {
 		setMenuOpen((x) => !x);
 	}, []);
 
-	const openMenu = useCallback(() => {
-		setMenuOpen(true);
-	}, []);
-
 	const handlePaginate = useCallback(
 		(entry: IContent) => {
 			setCurrentEntry(entry);
@@ -164,6 +160,7 @@ const Home = (props: IPrebuiltDocumentationHomeProps) => {
 								description={description}
 								mobileMenu
 								onToggleMenu={toggleMenu}
+								mobileMenuOpen={menuOpen}
 							/>
 						)
 					}

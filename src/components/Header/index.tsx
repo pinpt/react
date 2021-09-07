@@ -21,6 +21,7 @@ export interface IHeaderProps {
 	onClick?: () => void;
 	onToggleMenu?: () => void;
 	mobileMenu?: boolean;
+	mobileMenuOpen?: boolean;
 }
 
 const Header = (props: IHeaderProps) => {
@@ -36,13 +37,14 @@ const Header = (props: IHeaderProps) => {
 		onClick,
 		onToggleMenu,
 		mobileMenu,
+		mobileMenuOpen,
 	} = props;
 
 	return (
 		<div className={`Pinpoint Header ${className}`}>
 			<div className="top">
 				<div className="left">
-					<MobileMenuTrigger visible={mobileMenu} toggle={onToggleMenu} />
+					<MobileMenuTrigger open={mobileMenuOpen} visible={mobileMenu} toggle={onToggleMenu} />
 					{logo}
 				</div>
 				<div className="right">

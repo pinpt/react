@@ -134,6 +134,7 @@ const SearchResults = (props: IPrebuiltDocumentationSearchResultsProps) => {
 						renderSearch={() => <></>}
 						mobileMenu
 						onToggleMenu={toggleMenu}
+						mobileMenuOpen={menuOpen}
 					/>
 				)
 			}
