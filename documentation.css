@@ -133,11 +133,11 @@
 }
 
 .Pinpoint.Documentation.Page.Content .leftWrapper.open {
-	@apply block w-full;
+	@apply block w-full sm:w-auto;
 }
 
 .Pinpoint.Documentation.Page.Content .leftWrapper.open .Search.Bar {
-	@apply w-full ml-0;
+	@apply w-full sm:w-48 ml-0 sm:ml-8;
 }
 
 .Pinpoint.Documentation.Card.wrapper {
