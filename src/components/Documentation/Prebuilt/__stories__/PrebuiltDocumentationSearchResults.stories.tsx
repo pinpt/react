@@ -28,7 +28,7 @@ export const Full_Page: React.VFC<{}> = () => {
 			entries={entries as IContent[]}
 			searchTerm={term}
 			handleSearch={setTerm}
-			setCurrentEntry={(id) => alert(`Show entry ${id}`)}
+			setCurrentEntry={(entry) => alert(`Show entry ${entry.id}`)}
 			handleCancelSearch={() => setTerm('')}
 		/>
 	);
@@ -42,7 +42,7 @@ export const Loading: React.VFC<{}> = () => {
 			entries={entries as IContent[]}
 			searchTerm={term}
 			handleSearch={setTerm}
-			setCurrentEntry={(id) => alert(`Show entry ${id}`)}
+			setCurrentEntry={(entry) => alert(`Show entry ${entry.id}`)}
 			handleCancelSearch={() => setTerm('')}
 			loading
 		/>
@@ -57,7 +57,7 @@ export const No_Results: React.VFC<{}> = () => {
 			entries={[] as IContent[]}
 			searchTerm={term}
 			handleSearch={setTerm}
-			setCurrentEntry={(id) => alert(`Show entry ${id}`)}
+			setCurrentEntry={(entry) => alert(`Show entry ${entry.id}`)}
 			handleCancelSearch={() => setTerm('')}
 		/>
 	);
