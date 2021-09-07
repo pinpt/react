@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
-import { Meta } from '@storybook/react';
-import SearchResults from '../SearchResults';
+import renderer from 'react-test-renderer';
+import SearchResults from '../SearchResults/index';
 import entries from '../../__data__/testEntries.json';
-const { default: readme } = require('../SearchResults/README.md');
 import Header from '../../../Header';
 import Footer from '../../../Footer';
 import Social from '../../../Social';
@@ -11,28 +9,12 @@ import Copyright from '../../../Copyright';
 import Logo from '../../../Logo';
 import Search from '../../../Search';
 import Card from '../../Card';
-import { GoBackWithArrow } from '../../../Pagination';
 
 const IMAGE_URL =
 	'https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png';
 
-export default {
-	component: SearchResults,
-	title: 'Documentation Components/Page/Search Results',
-	parameters: {
-		jest: ['DocumentationSearchResults.test.tsx'],
-		docs: {
-			description: {
-				component: readme,
-			},
-		},
-		controls: { hideNoControlsWarning: true },
-	},
-} as Meta;
-
-export const Full_Page: React.VFC<{}> = () => {
-	const [currentEntry, setCurrentEntry] = useState(() => entries[0].id);
-	return (
+test('Test full page', () => {
+	const component = renderer.create(
 		<SearchResults
 			header={<Header title="" description="Learn how to build with Pinpoint!" />}
 			searchBar={<Search.Bar defaultValue="Test" />}
@@ -59,7 +41,8 @@ export const Full_Page: React.VFC<{}> = () => {
 				<Card key={entries[2].id} title={entries[2].title} description={entries[2].headline} />,
 				<Card key={entries[3].id} title={entries[3].title} description={entries[3].headline} />,
 			]}
-			backButton={<GoBackWithArrow text="Close Search" />}
 		/>
 	);
-};
+	const tree = component.toJSON();
+	expect(tree).toMatchSnapshot();
+});

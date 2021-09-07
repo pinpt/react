@@ -90,7 +90,11 @@
 }
 
 .Pinpoint.Documentation.Page.SearchResults .Pinpoint.Documentation.Page.Content .leftWrapper .back {
-	@apply ml-8 flex items-center;
+	@apply ml-8 flex items-center text-black dark:text-white;
+}
+
+.Pinpoint.Documentation.Page.SearchResults .Pinpoint.Documentation.Page.Content .leftWrapper .back .Internal.Link {
+	@apply flex items-center;
 }
 
 .Pinpoint.Documentation.Page.SearchResults .Pinpoint.Documentation.Page.Content .leftWrapper .back .text {
@@ -110,7 +114,7 @@
 }
 
 .Pinpoint.Documentation.Card.wrapper {
-	@apply flex flex-col rounded-md border-gray-300 border-l-3 pl-4 py-2;
+	@apply flex flex-col rounded-md border-gray-200 hover:bg-gray-100 transition border-l-3 pl-4 py-2 text-black dark:text-white;
 }
 
 .Pinpoint.Documentation.Card.wrapper .title {

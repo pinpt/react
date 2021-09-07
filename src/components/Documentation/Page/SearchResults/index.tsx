@@ -15,10 +15,11 @@ export interface ISearchResultsProps {
 	searchBar?: ReactElement<ISearchBarProps>;
 	results?: ReactElement<IDocumentationCardProps>[];
 	searchTerm?: string;
+	backButton?: ReactElement;
 }
 
 const SearchResults = forwardRef((props: ISearchResultsProps, ref: any) => {
-	const { className = '', header, loading, footer, searchBar, results, searchTerm } = props;
+	const { className = '', header, loading, footer, searchBar, results, backButton } = props;
 
 	return (
 		<div className={`Pinpoint Documentation Page SearchResults ${className}`} ref={ref}>
@@ -32,9 +33,7 @@ const SearchResults = forwardRef((props: ISearchResultsProps, ref: any) => {
 					<div className="Pinpoint Documentation Page Content">
 						<div className="leftWrapper">
 							{searchBar}
-							<div className="back">
-								<GoBackWithArrow text="Close Search" />
-							</div>
+							<div className="back">{backButton}</div>
 						</div>
 						<div className="rightWrapper">{results}</div>
 					</div>,
