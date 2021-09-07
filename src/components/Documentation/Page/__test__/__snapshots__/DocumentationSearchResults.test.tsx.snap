@@ -87,6 +87,14 @@ exports[`Test full page 1`] = `
         <div
           className="rightWrapper "
         >
+          <h2
+            className="resultsText"
+          >
+            Search Results for 
+            <strong>
+              Test
+            </strong>
+          </h2>
           <div
             className="Pinpoint Documentation Card Container wrapper "
           >

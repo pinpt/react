@@ -20,7 +20,7 @@ export interface ISearchResultsProps {
 }
 
 const SearchResults = forwardRef((props: ISearchResultsProps, ref: any) => {
-	const { className = '', header, loading, footer, searchBar, results, backButton, outlineOpen } = props;
+	const { className = '', header, loading, footer, searchBar, results, backButton, outlineOpen, searchTerm } = props;
 
 	return (
 		<div className={`Pinpoint Documentation Page SearchResults ${outlineOpen ? 'open' : ''} ${className}`} ref={ref}>
@@ -36,7 +36,12 @@ const SearchResults = forwardRef((props: ISearchResultsProps, ref: any) => {
 							{searchBar}
 							<div className="back">{backButton}</div>
 						</div>
-						<div className={`rightWrapper ${outlineOpen ? 'open' : ''}`}>{results}</div>
+						<div className={`rightWrapper ${outlineOpen ? 'open' : ''}`}>
+							<h2 className="resultsText">
+								Search Results for <strong>{searchTerm}</strong>
+							</h2>
+							{results}
+						</div>
 					</div>,
 					'documentationBody'
 				)
