@@ -39,6 +39,7 @@ export interface IPrebuiltDocumentationSearchResultsProps {
 	renderBackButton?: (site: ISite) => ReactElement;
 	handleCancelSearch?: () => void;
 	renderEntryCta?: () => ReactElement;
+	loading?: boolean;
 }
 
 const SearchResults = (props: IPrebuiltDocumentationSearchResultsProps) => {
@@ -65,10 +66,12 @@ const SearchResults = (props: IPrebuiltDocumentationSearchResultsProps) => {
 		renderBackButton,
 		handleCancelSearch,
 		renderEntryCta,
+		loading,
 	} = props;
 
 	return (
 		<Page.SearchResults
+			loading={loading}
 			className={`Prebuilt ${className}`}
 			searchTerm={searchTerm}
 			searchBar={
@@ -109,21 +112,29 @@ const SearchResults = (props: IPrebuiltDocumentationSearchResultsProps) => {
 					/>
 				)
 			}
-			results={entries.map((entry) => {
-				return (
-					renderEntry?.(entry, site) ?? (
-						<Card
-							className="Prebuilt"
-							title={entry.title}
-							description={entry.headline}
-							key={entry.id}
-							onClick={() => setCurrentEntry(entry.id)}
-							onCtaClick={() => setCurrentEntry(entry.id)}
-							cta={renderEntryCta?.() ?? <></>}
-						/>
-					)
-				);
-			})}
+			results={
+				entries.length > 0
+					? entries.map((entry) => {
+							return (
+								renderEntry?.(entry, site) ?? (
+									<Card
+										className="Prebuilt"
+										title={entry.title}
+										description={entry.headline}
+										key={entry.id}
+										onClick={() => setCurrentEntry(entry.id)}
+										onCtaClick={() => setCurrentEntry(entry.id)}
+										cta={renderEntryCta?.() ?? <></>}
+									/>
+								)
+							);
+					  })
+					: [
+							<div className="empty" key={`${searchTerm}-empty`}>
+								Sorry, we couldn't find anything.
+							</div>,
+					  ]
+			}
 			backButton={
 				renderBackButton?.(site) ?? (
 					<ActionLink onClick={handleCancelSearch} className="Prebuilt">
