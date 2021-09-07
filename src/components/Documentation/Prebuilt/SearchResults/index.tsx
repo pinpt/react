@@ -129,7 +129,11 @@ const SearchResults = (props: IPrebuiltDocumentationSearchResultsProps) => {
 								)
 							);
 					  })
-					: [<div className="empty">Sorry, we couldn't find anything.</div>]
+					: [
+							<div className="empty" key={`${searchTerm}-empty`}>
+								Sorry, we couldn't find anything.
+							</div>,
+					  ]
 			}
 			backButton={
 				renderBackButton?.(site) ?? (
