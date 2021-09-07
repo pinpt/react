@@ -21,13 +21,40 @@ export default {
 } as Meta;
 
 export const Full_Page: React.VFC<{}> = () => {
-	const [currentEntry, setCurrentEntry] = useState(() => entries[0].id);
-	const [currentAnchor, setCurrentAnchor] = useState(() => '');
 	const [term, setTerm] = useState('Test');
 	return (
 		<SearchResults
 			site={site}
 			entries={entries as IContent[]}
+			searchTerm={term}
+			handleSearch={setTerm}
+			setCurrentEntry={(id) => alert(`Show entry ${id}`)}
+			handleCancelSearch={() => setTerm('')}
+		/>
+	);
+};
+
+export const Loading: React.VFC<{}> = () => {
+	const [term, setTerm] = useState('Test');
+	return (
+		<SearchResults
+			site={site}
+			entries={entries as IContent[]}
+			searchTerm={term}
+			handleSearch={setTerm}
+			setCurrentEntry={(id) => alert(`Show entry ${id}`)}
+			handleCancelSearch={() => setTerm('')}
+			loading
+		/>
+	);
+};
+
+export const No_Results: React.VFC<{}> = () => {
+	const [term, setTerm] = useState('Test');
+	return (
+		<SearchResults
+			site={site}
+			entries={[] as IContent[]}
 			searchTerm={term}
 			handleSearch={setTerm}
 			setCurrentEntry={(id) => alert(`Show entry ${id}`)}
