@@ -35,7 +35,7 @@ export interface IPrebuiltDocumentationSearchResultsProps {
 	renderCopyright?: (site: ISite) => ReactElement<ICopyrightProps>;
 	renderSocial?: (site: ISite) => ReactElement<ISocialBarProps>;
 	renderEntry?: (entry: IContent, site: ISite) => ReactElement<IDocumentationCardProps>;
-	setCurrentEntry: (id: string) => void;
+	setCurrentEntry: (entry: IContent) => void;
 	renderBackButton?: (site: ISite) => ReactElement;
 	handleCancelSearch?: () => void;
 	renderEntryCta?: () => ReactElement;
@@ -80,8 +80,8 @@ const SearchResults = (props: IPrebuiltDocumentationSearchResultsProps) => {
 	}, []);
 
 	const visitEntry = useCallback(
-		(id: string) => {
-			setCurrentEntry?.(id);
+		(entry: IContent) => {
+			setCurrentEntry?.(entry);
 			closeMenu();
 		},
 		[setCurrentEntry, closeMenu]
@@ -160,8 +160,8 @@ const SearchResults = (props: IPrebuiltDocumentationSearchResultsProps) => {
 										title={entry.title}
 										description={entry.headline}
 										key={entry.id}
-										onClick={() => visitEntry(entry.id)}
-										onCtaClick={() => visitEntry(entry.id)}
+										onClick={() => visitEntry(entry)}
+										onCtaClick={() => visitEntry(entry)}
 										cta={renderEntryCta?.() ?? <></>}
 									/>
 								)
