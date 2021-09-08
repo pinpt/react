@@ -23,7 +23,16 @@ export interface NodeProps {
 	node: PmNode;
 }
 
+export const nodeRegistry: Record<string, (node: PmNode) => JSX.Element> = {};
+
+export const registerNode = (nodeType: string, factory: (node: PmNode) => JSX.Element) => {
+	nodeRegistry[nodeType] = factory;
+};
+
+export const getNodeFactory = (nodeType: string) => nodeRegistry[nodeType];
+
 export const ProsemirrorNodeRender = ({ node, path }: { node: PmNode; path?: string }) => {
+	console.log(nodeRegistry);
 	const component = getNodeFactory(node.type);
 	if (!component) {
 		console.error(`unknown node type: ${node.type}`, node);
@@ -45,10 +54,4 @@ export const recurseIntoChildren = (node: PmNode, limit?: number): React.ReactNo
 	});
 };
 
-export const nodeRegistry: Record<string, (node: PmNode) => JSX.Element> = {};
 
-export const registerNode = (nodeType: string, factory: (node: PmNode) => JSX.Element) => {
-	nodeRegistry[nodeType] = factory;
-};
-
-export const getNodeFactory = (nodeType: string) => nodeRegistry[nodeType];
