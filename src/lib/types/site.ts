@@ -7,11 +7,15 @@ export interface ISite {
 	name: string;
 	theme?: {
 		title?: string;
-		tosLink?: string;
 		social?: Record<string, string>;
 		description?: string;
-		copyright?: string;
 		logoLink?: string;
+		copyright?: string;
 		eulaLink?: string;
+		privacyLink?: string;
+		tosLink?: string;
+		homepage?: {
+			tags?: string[];
+		};
 	};
 }
