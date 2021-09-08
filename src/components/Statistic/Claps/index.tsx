@@ -1,5 +1,6 @@
 import { compactNumber } from '../../../lib/string';
 import { IStatisticProps } from '../types';
+import React from 'react';
 
 const Claps = (props: IStatisticProps) => {
 	const { count, className } = props;

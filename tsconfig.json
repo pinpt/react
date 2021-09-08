@@ -11,7 +11,7 @@
 		"target": "es2017",
 		"jsx": "react-jsx",
 		"types": ["react", "node", "jest"],
-		"outDir": "dist",
+		"outDir": "dist/cjs",
 		"stripInternal": true,
 		"removeComments": true,
 		"declarationMap": true,

@@ -1,6 +1,6 @@
 import type { ISite, IContent } from '../../../lib/types';
 import { getTwitterProfileFromURL } from '../../../lib/string';
-
+import React from 'react';
 export interface ISEOProps {
 	site: ISite;
 	content?: IContent;

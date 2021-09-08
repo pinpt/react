@@ -1,5 +1,6 @@
 import { useMemo } from 'react';
 import Tags from '../../Tags';
+import React from 'react';
 
 import type { ISearchTerm } from '../../../lib/types';
 

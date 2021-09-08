@@ -1,4 +1,5 @@
 import { ChangeEvent, FormEvent, useCallback, useEffect, useState } from 'react';
+import React from 'react';
 
 export interface ISearchBarProps {
 	className?: string;

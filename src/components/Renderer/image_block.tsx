@@ -1,6 +1,6 @@
 import { extractImageMetadataFromFileID } from '../../lib/file_metadata';
 import { NodeProps, registerNode } from './register';
-
+import React from 'react';
 const ImageBlock = ({ node }: NodeProps) => {
 	const { size } = extractImageMetadataFromFileID(node.attrs.src);
 	const scaledWidth = (size?.width ?? 0) * node.attrs.scale;

@@ -13,7 +13,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { NodeProps, registerNode } from './register';
-
+import React from 'react';
 export const iconForType = (type = '') => {
 	if (/pdf/.test(type)) {
 		return faFilePdf;

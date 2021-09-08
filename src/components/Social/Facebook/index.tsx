@@ -1,3 +1,4 @@
+import React from 'react';
 import ActionLink from '../../Internal/ActionLink';
 import { ISocialProps } from '../types';
 

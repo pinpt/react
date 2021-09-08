@@ -39,7 +39,7 @@ export const compactNumber = (value: number, decimals = 0) => {
 	}
 
 	// 999 < unsignedNumber < 999,999,999,999,999
-	let length;
+	let length = 0;
 	for (let i = 0; i < numberLengths.length; i++) {
 		const _length = numberLengths[i];
 		if (numberLength >= _length) {

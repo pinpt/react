@@ -1,3 +1,4 @@
+import React from 'react';
 export interface ISocialBarProps {
 	className?: string;
 	children: any;

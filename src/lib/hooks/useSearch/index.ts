@@ -34,7 +34,7 @@ export const getPlaceholderImageUrl = (media?: ICoverMedia) => {
 	return '';
 };
 
-const getCoverMediaForHit = (hit) => {
+const getCoverMediaForHit = (hit: any) => {
 	if (hit.coverMedia) {
 		return {
 			...hit.coverMedia,
@@ -76,7 +76,7 @@ const useSearch = (term: string, tags: string[], siteId: string) => {
 			if (res?.hits?.length) {
 				setResults(
 					res.hits
-						.map((hit) => {
+						.map((hit: any) => {
 							return {
 								id: hit.objectID,
 								title: hit.title,
@@ -87,7 +87,7 @@ const useSearch = (term: string, tags: string[], siteId: string) => {
 								url: hit.url,
 							} as IContent;
 						})
-						.sort((a, b) => b.publishedAt - a.publishedAt)
+						.sort((a: IContent, b: IContent) => b.publishedAt - a.publishedAt)
 				);
 			} else {
 				setResults([]);

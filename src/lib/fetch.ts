@@ -1,6 +1,5 @@
 import debuglog from 'debug';
 import fetch from 'isomorphic-unfetch';
-
 import type { IPinpointConfig } from './types';
 
 const debug = debuglog('pinpoint:fetch');
@@ -9,7 +8,7 @@ class FetchError extends Error {
 	public code: number;
 	public headers: any;
 	public url: string;
-	constructor(msg, code, headers, url) {
+	constructor(msg: any, code: number, headers: any, url: string) {
 		super(msg);
 		this.code = code;
 		this.headers = headers;

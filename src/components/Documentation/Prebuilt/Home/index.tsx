@@ -1,3 +1,4 @@
+import React from 'react';
 import { ReactElement, useCallback, useMemo, useState } from 'react';
 import { IHeaderProps } from '../../../Header';
 import Page from '../../Page';

@@ -1,5 +1,5 @@
 import { NodeProps, PmNode, registerNode } from './register';
-
+import React from 'react';
 const LargePreview = ({ node }: NodeProps) => {
 	if (node.attrs.href) {
 		return <a data-iframely-url href={node.attrs.href} className="large"></a>;

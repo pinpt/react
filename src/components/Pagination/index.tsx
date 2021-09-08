@@ -1,3 +1,4 @@
+import React from 'react';
 export interface IPaginationProps {
 	className?: string;
 	goBackText?: React.ReactNode;

@@ -1,3 +1,5 @@
+import React from 'react';
+
 export interface DocOpts {
 	openLinksInNewWindow?: boolean;
 }

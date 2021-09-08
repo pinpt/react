@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { isSubscriberCookieSet } from '../../lib/subscription';
 import ActionLink from '../Internal/ActionLink';
+import React from 'react';
 
 export interface ISubscribeProps {
 	className?: string;

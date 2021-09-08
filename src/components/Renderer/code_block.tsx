@@ -1,7 +1,7 @@
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { twilight } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 import { NodeProps, registerNode } from './register';
-
+import React from 'react';
 const CodeBlock = ({ node }: NodeProps) => {
 	return (
 		<div className="code_block">

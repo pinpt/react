@@ -1,4 +1,5 @@
 import { registerNode, recurseIntoChildren, NodeProps, PmNode } from './register';
+import React from 'react';
 
 const getTableWidth = (node: PmNode) => {
 	if (node.content?.[0]?.content) {

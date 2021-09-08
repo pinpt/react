@@ -1,4 +1,5 @@
 import { NodeProps, registerNode } from './register';
+import React from 'react';
 
 const Text = ({ node }: NodeProps) => {
 	let content = <>{node.text}</>;

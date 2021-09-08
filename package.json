@@ -5,7 +5,8 @@
 	"sideEffects": [
 		"./src/components/Renderer/**/*"
 	],
-	"main": "dist/index.js",
+	"main": "dist/cjs/index.js",
+	"module": "dist/esm/index.js",
 	"files": [
 		"dist/**/*",
 		"themes/**/*"
@@ -16,7 +17,9 @@
 		"build:styles:entry": "NODE_ENV=production tailwindcss --jit -m -i ./entry.css -o ./dist/entry.css",
 		"build:styles:documentation": "NODE_ENV=production tailwindcss --jit -m -i ./documentation.css -o ./dist/documentation.css",
 		"build:styles": "npm run build:styles:base && npm run build:styles:theme && npm run build:styles:entry && npm run build:styles:documentation",
-		"build:ts": "tsc",
+		"build:ts:cjs": "tsc -p tsconfig.json",
+		"build:ts:esm": "tsc -p tsconfig.esm.json",
+		"build:ts": "npm run build:ts:esm && npm run build:ts:cjs",
 		"build": "npm run build:ts && npm run build:styles",
 		"test": "jest --maxWorkers=50%",
 		"test:write": "npm run test -- --updateSnapshot",
@@ -28,7 +31,8 @@
 		"storybook-docs": "start-storybook --docs --no-manager-cache",
 		"build-storybook": "npm run test:generate-output && build-storybook -o docs-build",
 		"build-storybook:docs": "npm run test:generate-output && build-storybook --docs -o docs-build",
-		"prepublishOnly": "npm run build"
+		"prepublishOnly": "npm run build",
+		"build:test": "rollup -c rollup.config.ts"
 	},
 	"license": "MIT",
 	"dependencies": {
@@ -50,12 +54,17 @@
 	"devDependencies": {
 		"@babel/core": "^7.14.8",
 		"@babel/preset-env": "^7.14.8",
+		"@rollup/plugin-commonjs": "11.0.2",
+		"@rollup/plugin-node-resolve": "7.1.1",
 		"@storybook/addon-actions": "^6.3.7",
 		"@storybook/addon-essentials": "^6.3.7",
 		"@storybook/addon-jest": "^6.3.7",
 		"@storybook/addon-links": "^6.3.7",
 		"@storybook/react": "^6.3.7",
 		"@tailwindcss/aspect-ratio": "^0.2.1",
+		"@types/chroma-js": "^2.1.3",
+		"@types/color-hash": "^1.0.1",
+		"@types/debug": "^4.1.7",
 		"@types/jest": "^26.0.24",
 		"@types/luxon": "^1.27.1",
 		"@types/node": "^16.4.4",
@@ -70,6 +79,8 @@
 		"react": "^17.0.2",
 		"react-dom": "^17.0.2",
 		"react-test-renderer": "^17.0.2",
+		"rollup": "1.31.0",
+		"rollup-plugin-typescript2": "0.25.3",
 		"tailwindcss": "^2.2.7",
 		"ts-dedent": "^2.1.1",
 		"ts-jest": "^27.0.4",

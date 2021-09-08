@@ -1,4 +1,4 @@
-import { ReactElement } from 'react';
+import React, { ReactElement } from 'react';
 import { IActionLinkProps } from '../Internal/ActionLink';
 import { ILogoProps } from '../Logo';
 

@@ -1,7 +1,7 @@
 import { forwardRef, ReactElement } from 'react';
 import { CoverMedia } from '../../Renderer';
 import withWrapper from '../../Internal/withWrapper';
-
+import React from 'react';
 import type { IFooterProps } from '../../Footer';
 import type { ISidebarProps } from '../../Sidebar';
 import type { IHeaderProps } from '../../Header';

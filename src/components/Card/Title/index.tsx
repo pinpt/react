@@ -1,3 +1,4 @@
+import React from 'react';
 export interface ICardTitleProps {
 	className?: string;
 	title: string;

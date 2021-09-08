@@ -8,6 +8,8 @@ import Loader from '../../Loader';
 import { IQueryProps } from '../../Search/Query';
 import { IPaginationProps } from '../../Pagination';
 import withWrapper from '../../Internal/withWrapper';
+import React from 'react';
+
 export interface IPageDashboardProps {
 	className?: string;
 	header?: ReactElement<IHeaderProps>;

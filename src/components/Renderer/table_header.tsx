@@ -1,4 +1,5 @@
 import { registerNode, recurseIntoChildren, NodeProps } from './register';
+import React from 'react';
 
 const TableHeader = ({ node }: NodeProps) => {
 	return (

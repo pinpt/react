@@ -1,3 +1,4 @@
+import React from 'react';
 import { useCallback, useRef, useState } from 'react';
 import { compactNumber } from '../../lib/string';
 

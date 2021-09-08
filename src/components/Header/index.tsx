@@ -1,5 +1,5 @@
 import { ReactElement } from 'react';
-
+import React from 'react';
 import type { IActionLinkProps } from '../Internal/ActionLink';
 
 import type { ISearchBarProps } from '../Search/Bar';

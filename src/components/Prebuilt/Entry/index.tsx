@@ -1,3 +1,4 @@
+import React from 'react';
 import { ReactElement } from 'react';
 import Author, { IAuthorProps } from '../../Author';
 import Clap, { IClapProps } from '../../Clap';

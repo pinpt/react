@@ -1,5 +1,5 @@
 import { NodeProps, registerNode } from './register';
-
+import React from 'react';
 const Hr = ({ node }: NodeProps) => {
 	return (
 		<div className="hr">
