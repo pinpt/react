@@ -1,7 +1,8 @@
-import { NodeProps, recurseIntoChildren, registerNode } from './register';
+import { NodeProps, recurseIntoChildren } from './register';
 import React from 'react';
+
 const LinkedDataListItem = ({ node }: NodeProps) => {
 	return <div className="linked-data-list-item">{recurseIntoChildren(node)}</div>;
 };
 
-registerNode('linked_data_list_item', (node) => <LinkedDataListItem node={node} />);
+export default LinkedDataListItem;

@@ -1,4 +1,4 @@
-import { NodeProps, registerNode } from './register';
+import { NodeProps } from './register';
 import React from 'react';
 
 const Text = ({ node }: NodeProps) => {
@@ -80,4 +80,4 @@ const Text = ({ node }: NodeProps) => {
 	return content;
 };
 
-registerNode('text', (node) => <Text node={node} />);
+export default Text;

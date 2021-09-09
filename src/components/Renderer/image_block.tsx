@@ -1,6 +1,7 @@
 import { extractImageMetadataFromFileID } from '../../lib/file_metadata';
-import { NodeProps, registerNode } from './register';
+import { NodeProps } from './register';
 import React from 'react';
+
 const ImageBlock = ({ node }: NodeProps) => {
 	const { size } = extractImageMetadataFromFileID(node.attrs.src);
 	const scaledWidth = (size?.width ?? 0) * node.attrs.scale;
@@ -32,4 +33,4 @@ const ImageBlock = ({ node }: NodeProps) => {
 	);
 };
 
-registerNode('image_block', (node) => <ImageBlock node={node} />);
+export default ImageBlock;

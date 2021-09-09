@@ -1,7 +1,8 @@
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { twilight } from 'react-syntax-highlighter/dist/cjs/styles/prism';
-import { NodeProps, registerNode } from './register';
+import { NodeProps } from './register';
 import React from 'react';
+
 const CodeBlock = ({ node }: NodeProps) => {
 	return (
 		<div className="code_block">
@@ -22,4 +23,4 @@ const CodeBlock = ({ node }: NodeProps) => {
 	);
 };
 
-registerNode('code_block', (node) => <CodeBlock node={node} />);
+export default CodeBlock;

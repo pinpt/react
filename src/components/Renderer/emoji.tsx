@@ -1,5 +1,6 @@
-import { NodeProps, registerNode } from './register';
+import { NodeProps } from './register';
 import React from 'react';
+
 const Emoji = ({ node }: NodeProps) => {
 	return (
 		<span className="emoji" data-markup={node.attrs?.markup}>
@@ -8,4 +9,4 @@ const Emoji = ({ node }: NodeProps) => {
 	);
 };
 
-registerNode('emoji', (node) => <Emoji node={node} />);
+export default Emoji;

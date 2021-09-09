@@ -12,8 +12,9 @@ import {
 	faFileWord,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { NodeProps, registerNode } from './register';
+import { NodeProps } from './register';
 import React from 'react';
+
 export const iconForType = (type = '') => {
 	if (/pdf/.test(type)) {
 		return faFilePdf;
@@ -104,4 +105,4 @@ const File = ({ node }: NodeProps) => {
 	);
 };
 
-registerNode('file', (node) => <File node={node} />);
+export default File;

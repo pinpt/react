@@ -1,6 +1,6 @@
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { NodeProps, PmNode, recurseIntoChildren, registerNode } from './register';
+import { NodeProps, PmNode, recurseIntoChildren } from './register';
 import React from 'react';
 
 const getFirstChildNodeText = (node: PmNode): string | undefined => {
@@ -35,4 +35,4 @@ const Toggle = ({ node }: NodeProps) => {
 	);
 };
 
-registerNode('toggle', (node) => <Toggle node={node} />);
+export default Toggle;
