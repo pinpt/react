@@ -4,7 +4,6 @@ import { extractImageMetadataFromFileID } from '../../lib/file_metadata';
 import { slugifyContent } from '../../lib/string';
 import { CoverMediaType } from '../../lib/types/content';
 import { Document } from './';
-import { getYoutubePosterSize } from './iframe';
 
 import type { ICoverMedia } from '../../lib/types/content';
 
@@ -40,7 +39,7 @@ const VideoMedia = ({ src }: { src: string }) => {
 
 const YoutubeMedia = ({ id, metadata }: { id: string; metadata?: Record<string, any> }) => {
 	const posterUrl = `https://i.ytimg.com/vi/${id}/${metadata?.poster ?? 'hqdefault'}.jpg`;
-	const size = getYoutubePosterSize(posterUrl);
+	const { size } = extractImageMetadataFromFileID(posterUrl);
 	return (
 		<div className="Pinpoint youtube">
 			<div

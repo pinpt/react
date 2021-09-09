@@ -56,37 +56,9 @@ const SmallPreview = ({ node }: NodeProps) => {
 	);
 };
 
-export const getYoutubePosterSize = (src: string) => {
-	const tok = /(\w+)\.jpg$/.exec(src);
-	if (tok?.length) {
-		const [, name] = tok;
-		//https://developers.google.com/youtube/v3/docs/thumbnails
-		switch (name) {
-			case 'hqdefault': {
-				return { width: 800, height: 800 };
-			}
-			case 'mqdefault': {
-				return { width: 240, height: 240 };
-			}
-			case 'sddefault': {
-				return { width: 640, height: 480 };
-			}
-			case 'maxresdefault': {
-				return { width: 1280, height: 720 };
-			}
-			default:
-				break;
-		}
-	}
-	return undefined;
-};
-
 const YouTubePlayer = ({ node, videoId }: { node: PmNode; videoId: string }) => {
-	let { size: thumbSize } = extractImageMetadataFromFileID(node.attrs.thumbnail);
+	const { size: thumbSize } = extractImageMetadataFromFileID(node.attrs.thumbnail);
 	const { size: iconSize } = extractImageMetadataFromFileID(node.attrs.icon);
-	if (!thumbSize) {
-		thumbSize = getYoutubePosterSize(node.attrs.thumbnail);
-	}
 	return (
 		<div
 			className="yt"
