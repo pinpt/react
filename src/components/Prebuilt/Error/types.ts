@@ -3,8 +3,8 @@ import { IFooterProps } from '../../Footer';
 import { ILogoProps } from '../../Logo';
 import { ISite } from '../../../lib';
 import { ISubscribeProps } from '../../Subscribe';
-import { ICopyrightProps } from 'src/components/Copyright';
-import { ISocialBarProps } from 'src/components/Social/Bar';
+import { ICopyrightProps } from '../../Copyright';
+import { ISocialBarProps } from '../../Social/Bar';
 
 export interface IPrebuiltErrorProps {
 	handleLinkClick?: () => void;

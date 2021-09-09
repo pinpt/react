@@ -4,14 +4,14 @@
 
 ```jsx
 import { useState } from 'react';
-import { useSearch, Prebuilt } from '@pinpt/react';
+import { useSearch, PrebuiltSearchResults } from '@pinpt/react';
 
 export default () => {
 	const [term, setTerm] = useState('publish');
 	const { results, loading } = useSearch(term, [], 'PirxVTE94u3YmGNOySRY');
 
 	return (
-		<Prebuilt.SearchResults
+		<PrebuiltSearchResults
 			entries={results}
 			site={site}
 			loading={loading}

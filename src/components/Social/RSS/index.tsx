@@ -1,5 +1,6 @@
 import ActionLink from '../../Internal/ActionLink';
 import { ISocialProps } from '../types';
+import React from 'react';
 
 const RSS = (props: ISocialProps) => {
 	const { className = '', ...rest } = props;

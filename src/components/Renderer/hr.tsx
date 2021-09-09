@@ -1,4 +1,5 @@
-import { NodeProps, registerNode } from './register';
+import { NodeProps } from './register';
+import React from 'react';
 
 const Hr = ({ node }: NodeProps) => {
 	return (
@@ -10,4 +11,4 @@ const Hr = ({ node }: NodeProps) => {
 	);
 };
 
-registerNode('hr', (node) => <Hr node={node} />);
+export default Hr;

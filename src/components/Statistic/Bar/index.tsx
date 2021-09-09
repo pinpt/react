@@ -1,5 +1,6 @@
 import Claps from '../Claps';
 import Views from '../Views';
+import React from 'react';
 
 export interface IStatisticsBarProps {
 	className?: string;

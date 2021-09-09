@@ -1,3 +1,4 @@
+import React from 'react';
 export interface IAuthorProps {
 	className?: string;
 	avatarUrl: string;

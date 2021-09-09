@@ -1,0 +1,23 @@
+{
+	"compilerOptions": {
+		"declaration": true,
+		"esModuleInterop": true,
+		"moduleResolution": "Node",
+		"jsx": "react",
+		"resolveJsonModule": true,
+		"strict": true,
+		"target": "ESNext",
+		"outDir": "dist/esm"
+	},
+	"exclude": [
+		"dist",
+		"node_modules",
+		"**/__stories__",
+		"**/__test__",
+		"**/__data__",
+		"docs",
+		"prettier.config.js",
+		"tailwind.config.js",
+		"jest-setup.js"
+	]
+}

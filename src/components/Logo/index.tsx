@@ -1,5 +1,5 @@
 import ActionLink from '../Internal/ActionLink';
-
+import React from 'react';
 export interface ILogoProps {
 	className?: string;
 	src?: string;

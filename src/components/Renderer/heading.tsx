@@ -1,7 +1,8 @@
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { slugifyString } from '../../lib/string';
-import { NodeProps, recurseIntoChildren, registerNode } from './register';
+import { NodeProps, recurseIntoChildren } from './register';
+import React from 'react';
 
 const Heading = ({ node }: NodeProps) => {
 	const content = recurseIntoChildren(node);
@@ -35,4 +36,4 @@ const Heading = ({ node }: NodeProps) => {
 	}
 };
 
-registerNode('heading', (node) => <Heading node={node} />);
+export default Heading;

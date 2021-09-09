@@ -1,3 +1,4 @@
+import React from 'react';
 import { forwardRef, ReactElement } from 'react';
 import Loader from '../../../Loader';
 import { IHeaderProps } from '../../../Header';

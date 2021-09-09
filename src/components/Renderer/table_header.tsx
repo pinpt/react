@@ -1,4 +1,5 @@
-import { registerNode, recurseIntoChildren, NodeProps } from './register';
+import { recurseIntoChildren, NodeProps } from './register';
+import React from 'react';
 
 const TableHeader = ({ node }: NodeProps) => {
 	return (
@@ -8,4 +9,4 @@ const TableHeader = ({ node }: NodeProps) => {
 	);
 };
 
-registerNode('th', (node) => <TableHeader node={node} />);
+export default TableHeader;

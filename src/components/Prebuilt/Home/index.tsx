@@ -1,3 +1,4 @@
+import React from 'react';
 import { ReactElement } from 'react';
 import { splitEntries } from '../../../lib';
 import Card from '../../Card';
@@ -11,7 +12,7 @@ import { IFooterProps } from '../../Footer';
 import { IHeaderProps } from '../../Header';
 import Latest, { ILatestProps } from '../../Latest';
 import { ILogoProps } from '../../Logo';
-import Page from '../../Page';
+import DashboardPage from '../../Page/Dashboard';
 import Pagination, { IPaginationProps } from '../../Pagination';
 import Recent, { IRecentProps } from '../../Recent';
 import { ISearchBarProps } from '../../Search/Bar';
@@ -101,7 +102,7 @@ const Home = (props: IPrebuiltHomeProps) => {
 	} = props;
 	const { latest, recent } = splitEntries(entries, latestCount);
 	return (
-		<Page.Dashboard
+		<DashboardPage
 			className={`Prebuilt ${className}`}
 			header={
 				renderHeader?.(site) ?? (

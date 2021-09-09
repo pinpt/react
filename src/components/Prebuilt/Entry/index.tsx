@@ -1,3 +1,4 @@
+import React from 'react';
 import { ReactElement } from 'react';
 import Author, { IAuthorProps } from '../../Author';
 import Clap, { IClapProps } from '../../Clap';
@@ -6,7 +7,7 @@ import DateLabel, { IDateProps } from '../../DateLabel';
 import { IFooterProps } from '../../Footer';
 import { IHeaderProps } from '../../Header';
 import { ILogoProps } from '../../Logo';
-import Page from '../../Page';
+import EntryPage from '../../Page/Entry';
 import Pagination from '../../Pagination';
 import Pinpoint from '../../Pinpoint';
 import { Document } from '../../Renderer';
@@ -90,7 +91,7 @@ const Entry = (props: IPrebuiltEntryProps) => {
 	return (
 		<Pinpoint siteId={site.id} contentId={content.id}>
 			{(_ready, ref) => (
-				<Page.Entry
+				<EntryPage
 					ref={ref}
 					zoomable={zoomable}
 					className={`Prebuilt ${className}`}

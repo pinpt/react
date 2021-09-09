@@ -1,6 +1,7 @@
+import React from 'react';
 import { ReactElement, useCallback, useMemo, useState } from 'react';
 import { IHeaderProps } from '../../../Header';
-import Page from '../../Page';
+import HomePage from '../../Page/Home';
 import Header from '../../../Prebuilt/Header';
 import type { Analytics, IContent, ISite } from '../../../../lib/types';
 import { ILogoProps } from '../../../Logo';
@@ -131,7 +132,7 @@ const Home = (props: IPrebuiltDocumentationHomeProps) => {
 	return (
 		<Pinpoint siteId={site.id} contentId={currentEntry}>
 			{(_ready, ref) => (
-				<Page.Home
+				<HomePage
 					ref={ref}
 					className={`Prebuilt ${className}`}
 					searchBar={

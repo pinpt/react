@@ -1,5 +1,6 @@
 import ActionLink from '../../Internal/ActionLink';
 import { ISocialProps } from '../types';
+import React from 'react';
 
 const Twitter = (props: ISocialProps) => {
 	const { className = '', sharing, ...rest } = props;

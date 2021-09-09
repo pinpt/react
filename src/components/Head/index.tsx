@@ -1,7 +1,7 @@
 import type { ISite, IContent } from '../../lib/types';
 import config from '../../config';
 import SEO from './SEO';
-
+import React from 'react';
 const { iframely } = config;
 
 export interface IHeadProps {

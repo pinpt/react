@@ -1,7 +1,13 @@
 import * as Exports from '../';
 
 const {
-	Documentation,
+	DocumentationCard,
+	DocumentationOutline,
+	PrebuiltDocumentationHome,
+	PrebuiltDocumentationSearchResults,
+	DocumentationTitle,
+	DocumentationHome,
+	DocumentationSearchResults,
 	Statistic,
 	Banner,
 	Clap,
@@ -18,9 +24,16 @@ const {
 	Footer,
 	Latest,
 	Recent,
-	Page,
+	DashboardPage,
+	EntryPage,
+	ErrorPage,
 	Header,
-	Prebuilt,
+	PrebuiltEntry,
+	PrebuiltError,
+	PrebuiltFooter,
+	PrebuiltHeader,
+	PrebuiltHome,
+	PrebuiltSearchResults,
 	Tags,
 	ThemeToggle,
 	Author,
@@ -98,12 +111,9 @@ test('Test component exports', () => {
 	expect(Object.keys(otherSocial).length).toEqual(0);
 
 	// Test Page Exports
-	expect(Page).toBeTruthy();
-	const { Dashboard, Entry, Error, ...otherPage } = Page;
-	expect(Dashboard).toBeTruthy();
-	expect(Entry).toBeTruthy();
-	expect(Error).toBeTruthy();
-	expect(Object.keys(otherPage).length).toEqual(0);
+	expect(DashboardPage).toBeTruthy();
+	expect(EntryPage).toBeTruthy();
+	expect(ErrorPage).toBeTruthy();
 
 	// Test Tags Exports
 	expect(Tags).toBeTruthy();
@@ -113,23 +123,12 @@ test('Test component exports', () => {
 	expect(Object.keys(otherTags).length).toEqual(0);
 
 	// Test Prebuilt Exports
-	expect(Prebuilt).toBeTruthy();
-	const {
-		Home,
-		Entry: PrebuiltEntry,
-		Error: PrebuiltError,
-		Footer: PrebuiltFooter,
-		Header: PrebuiltHeader,
-		SearchResults: PrebuiltSearchResults,
-		...otherPrebuilt
-	} = Prebuilt;
-	expect(Home).toBeTruthy();
 	expect(PrebuiltEntry).toBeTruthy();
 	expect(PrebuiltError).toBeTruthy();
 	expect(PrebuiltFooter).toBeTruthy();
 	expect(PrebuiltHeader).toBeTruthy();
 	expect(PrebuiltSearchResults).toBeTruthy();
-	expect(Object.keys(otherPrebuilt).length).toEqual(0);
+	expect(PrebuiltHome).toBeTruthy();
 
 	// Test Search Exports
 	expect(Search).toBeTruthy();
@@ -140,28 +139,13 @@ test('Test component exports', () => {
 	expect(Object.keys(otherSearch).length).toEqual(0);
 
 	// Test Documentation Exports
-	expect(Documentation).toBeTruthy();
-	const {
-		Outline,
-		Page: PageDocumentation,
-		Prebuilt: PrebuiltDocumentation,
-		Title: DocumentationTitle,
-		Card: DocumentationCard,
-		...otherDocumentation
-	} = Documentation;
-	expect(Outline).toBeTruthy();
+	expect(DocumentationOutline).toBeTruthy();
 	expect(DocumentationCard).toBeTruthy();
 	expect(DocumentationTitle).toBeTruthy();
-	expect(Object.keys(otherDocumentation).length).toEqual(0);
-	expect(PageDocumentation).toBeTruthy();
-	const { Home: HomePageDoc, SearchResults: SearchPageDoc, ...otherPageDoc } = PageDocumentation;
-	expect(HomePageDoc).toBeTruthy();
-	expect(SearchPageDoc).toBeTruthy();
-	expect(Object.keys(otherPageDoc).length).toEqual(0);
-	const { Home: HomePrebuiltDoc, SearchResults: SearchPrebuiltDoc, ...otherPrebuiltDoc } = PrebuiltDocumentation;
-	expect(HomePrebuiltDoc).toBeTruthy();
-	expect(SearchPrebuiltDoc).toBeTruthy();
-	expect(Object.keys(otherPrebuiltDoc).length).toEqual(0);
+	expect(DocumentationHome).toBeTruthy();
+	expect(DocumentationSearchResults).toBeTruthy();
+	expect(PrebuiltDocumentationHome).toBeTruthy();
+	expect(PrebuiltDocumentationSearchResults).toBeTruthy();
 
 	// Test other component exports
 	expect(Clap).toBeTruthy();

@@ -1,5 +1,6 @@
 import { cancelEvent } from '../../../lib';
 import Item from '../Item';
+import React from 'react';
 
 export interface ITagBarProps {
 	className?: string;

@@ -1,7 +1,2 @@
-import Home from './Home';
-import SearchResults from './SearchResults';
-
-export default {
-	Home,
-	SearchResults,
-};
+export { default as PrebuiltDocumentationHome } from './Home';
+export { default as PrebuiltDocumentationSearchResults } from './SearchResults';

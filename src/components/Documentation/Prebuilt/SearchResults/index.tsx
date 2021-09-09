@@ -1,4 +1,5 @@
-import Page from '../../Page';
+import React from 'react';
+import SearchResultsPage from '../../Page/SearchResults';
 import { ReactElement, useCallback, useState } from 'react';
 import { IHeaderProps } from '../../../Header';
 import Header from '../../../Prebuilt/Header';
@@ -11,7 +12,7 @@ import Footer, { IPrebuiltFooterProps } from '../../../Prebuilt/Footer';
 import { ISocialBarProps } from '../../../Social/Bar';
 import { ICopyrightProps } from '../../../Copyright';
 import Title from '../../Title';
-import { GoBackWithArrow, GoForwardWithArrow } from '../../../Pagination';
+import { GoBackWithArrow } from '../../../Pagination';
 import Search from '../../../Search';
 import Card, { IDocumentationCardProps } from '../../Card';
 import ActionLink from '../../../Internal/ActionLink';
@@ -106,7 +107,7 @@ const SearchResults = (props: IPrebuiltDocumentationSearchResultsProps) => {
 	}, [handleCancelSearch, closeMenu]);
 
 	return (
-		<Page.SearchResults
+		<SearchResultsPage
 			loading={loading}
 			className={`Prebuilt ${className}`}
 			searchTerm={searchTerm}

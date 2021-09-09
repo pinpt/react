@@ -1,4 +1,4 @@
-import { forwardRef, ReactElement } from 'react';
+import React, { forwardRef, ReactElement } from 'react';
 import Loader from '../../../Loader';
 import withWrapper from '../../../Internal/withWrapper';
 import { IHeaderProps } from '../../../Header';

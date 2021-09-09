@@ -1,4 +1,5 @@
-import { NodeProps, PmNode, registerNode } from './register';
+import { NodeProps, PmNode } from './register';
+import React from 'react';
 
 const LargePreview = ({ node }: NodeProps) => {
 	if (node.attrs.href) {
@@ -81,4 +82,5 @@ const Iframe = ({ node }: NodeProps) => {
 		</div>
 	);
 };
-registerNode('iframe', (node) => <Iframe node={node} />);
+
+export default Iframe;

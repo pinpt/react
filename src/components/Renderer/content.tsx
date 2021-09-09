@@ -4,7 +4,7 @@ import { ReactYouTubeLite as Youtube } from 'react-youtube-lite';
 import { slugifyContent } from '../../lib/string';
 import { CoverMediaType } from '../../lib/types/content';
 import { Document } from './';
-
+import React from 'react';
 import type { ICoverMedia } from '../../lib/types/content';
 
 const ImageMedia = ({ src, title = '', zoomable = false }: { src: string; title?: string; zoomable?: boolean }) => {

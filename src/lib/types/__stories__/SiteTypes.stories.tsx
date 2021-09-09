@@ -3,7 +3,7 @@ import { IPinpointConfig } from '..';
 import useEntries from '../../hooks/useEntries';
 const { default: readme } = require('./Site.README.md');
 import Loader from '../../../components/Loader';
-import Prebuilt from '../../../components/Prebuilt';
+import PrebuiltHome from '../../../components/Prebuilt/Home';
 import { Title, Subtitle, Description, Primary, Stories } from '@storybook/addon-docs';
 
 export default {
@@ -47,5 +47,5 @@ export const Docs: React.VFC<{}> = () => {
 		return <Loader />;
 	}
 
-	return <Prebuilt.Home entries={content} site={site} />;
+	return <PrebuiltHome entries={content} site={site} />;
 };

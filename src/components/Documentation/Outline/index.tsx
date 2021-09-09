@@ -1,3 +1,4 @@
+import React from 'react';
 import ActionLink from '../../Internal/ActionLink';
 import { IContent } from '../../../lib/types/content';
 import { ISite } from '../../../lib/types/site';

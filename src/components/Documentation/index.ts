@@ -1,13 +1,5 @@
-import Outline from './Outline';
-import Page from './Page';
-import Prebuilt from './Prebuilt';
-import Title from './Title';
-import Card from './Card';
-
-export default {
-	Outline,
-	Page,
-	Prebuilt,
-	Title,
-	Card,
-};
+export * from './Prebuilt';
+export * from './Page';
+export { default as DocumentationOutline } from './Outline';
+export { default as DocumentationTitle } from './Title';
+export { default as DocumentationCard } from './Card';

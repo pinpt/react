@@ -1,4 +1,5 @@
 import { useCallback } from 'react';
+import React from 'react';
 
 export interface IThemeToggleProps {
 	className?: string;

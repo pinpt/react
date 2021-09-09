@@ -4,6 +4,7 @@ import { IDateProps } from '../DateLabel';
 import { IClapProps } from '../Clap';
 import { ISocialBarProps } from '../Social/Bar';
 import { ITagBarProps } from '../Tags/Bar';
+import React from 'react';
 
 export interface ISidebarProps {
 	className?: string;

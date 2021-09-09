@@ -1,3 +1,4 @@
+import React from 'react';
 import { ReactElement } from 'react';
 import Card from '../../Card';
 import { ICardContainerProps } from '../../Card/Container';
@@ -11,7 +12,7 @@ import Header from '../Header';
 import { IFooterProps } from '../../Footer';
 import { IHeaderProps } from '../../Header';
 import { ILogoProps } from '../../Logo';
-import Page from '../../Page';
+import DashboardPage from '../../Page/Dashboard';
 import Search from '../../Search';
 import { ISearchBarProps } from '../../Search/Bar';
 import { IQueryProps } from '../../Search/Query';
@@ -88,7 +89,7 @@ const SearchResults = (props: IPrebuiltSearchResultsProps) => {
 		loading,
 	} = props;
 	return (
-		<Page.Dashboard
+		<DashboardPage
 			className={`Prebuilt ${className}`}
 			loading={loading}
 			header={

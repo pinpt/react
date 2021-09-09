@@ -1,3 +1,4 @@
+import React from 'react';
 import Error from '../../../Error';
 import Logo from '../../../Logo';
 import PageError from '../../../Page/Error';
