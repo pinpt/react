@@ -6,7 +6,7 @@ import { Document } from './';
 import React from 'react';
 import type { ICoverMedia } from '../../lib/types/content';
 
-const ImageMedia = ({ src, title = '', zoomable = false }: { src: string; title?: string; zoomable?: boolean }) => {
+const ImageMedia = ({ src, title = '', zoomable = false }: { src?: string; title?: string; zoomable?: boolean }) => {
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
 			mediumZoom('.medium-zoom-cover');
