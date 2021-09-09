@@ -1,9 +1,3 @@
-import Dashboard from './Dashboard';
-import Entry from './Entry';
-import Error from './Error';
-
-export default {
-	Dashboard,
-	Entry,
-	Error,
-};
+export { default as DashboardPage } from './Dashboard';
+export { default as EntryPage } from './Entry';
+export { default as ErrorPage } from './Error';
