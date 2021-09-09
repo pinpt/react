@@ -1,12 +1,15 @@
 import mediumZoom from 'medium-zoom';
-import { forwardRef, useEffect } from 'react';
+import React, { forwardRef, useEffect } from 'react';
+import { extractImageMetadataFromFileID } from '../../lib/file_metadata';
 import { slugifyContent } from '../../lib/string';
 import { CoverMediaType } from '../../lib/types/content';
 import { Document } from './';
-import React from 'react';
+
 import type { ICoverMedia } from '../../lib/types/content';
 
 const ImageMedia = ({ src, title = '', zoomable = false }: { src?: string; title?: string; zoomable?: boolean }) => {
+	const { size } = extractImageMetadataFromFileID(src ?? '');
+
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
 			mediumZoom('.medium-zoom-cover');
@@ -15,7 +18,13 @@ const ImageMedia = ({ src, title = '', zoomable = false }: { src?: string; title
 
 	return (
 		<div className="Pinpoint image">
-			<img src={src} alt={title} className={`${zoomable ? 'medium-zoom-cover' : ''}`} />
+			<img
+				src={src}
+				alt={title}
+				className={`${zoomable ? 'medium-zoom-cover' : ''}`}
+				width={size?.width}
+				height={size?.height}
+			/>
 		</div>
 	);
 };
@@ -28,13 +37,7 @@ const VideoMedia = ({ src }: { src: string }) => {
 	);
 };
 
-const YoutubeMedia = ({
-	id,
-	metadata,
-}: {
-	id: string;
-	metadata?: Record<string, any>;
-}) => {
+const YoutubeMedia = ({ id, metadata }: { id: string; metadata?: Record<string, any> }) => {
 	const posterUrl = `https://i.ytimg.com/vi/${id}/${metadata?.poster ?? 'hqdefault'}.jpg`;
 	return (
 		<div className="Pinpoint youtube">
@@ -49,15 +52,7 @@ const YoutubeMedia = ({
 	);
 };
 
-export const CoverMedia = ({
-	media,
-	title,
-	zoomable,
-}: {
-	media?: ICoverMedia;
-	title?: string;
-	zoomable?: boolean;
-}) => {
+export const CoverMedia = ({ media, title, zoomable }: { media?: ICoverMedia; title?: string; zoomable?: boolean }) => {
 	if (!media) {
 		return <></>;
 	}

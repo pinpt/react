@@ -102,8 +102,11 @@ exports[`Test full entry 1`] = `
                 title="Keegan avatar"
               >
                 <img
+                  alt=""
                   className="avatar"
+                  height={48}
                   src="https://file.pinpoint.com/6cc744395c563f0072b339070aa327f3;UCGt%3D%3DkE~A%3FZJ6%5EhIpS%23o%5BELE3oLT0I%40t7E2;400x400.png?rw=48&rh=48"
+                  width={48}
                 />
                 <span
                   className="name"
@@ -251,7 +254,9 @@ exports[`Test full entry 1`] = `
                 <img
                   alt=""
                   className="medium-zoom-cover"
+                  height={900}
                   src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
+                  width={1600}
                 />
               </div>
             </div>
@@ -301,6 +306,7 @@ exports[`Test full entry 1`] = `
                   className="image"
                 >
                   <img
+                    alt=""
                     className="medium-zoom-body"
                     height={509.6}
                     src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
@@ -351,6 +357,7 @@ exports[`Test full entry 1`] = `
                   className="image"
                 >
                   <img
+                    alt=""
                     className="medium-zoom-body"
                     height={360}
                     src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
@@ -412,8 +419,11 @@ exports[`Test full entry 1`] = `
                 title="Keegan avatar"
               >
                 <img
+                  alt=""
                   className="avatar"
+                  height={48}
                   src="https://file.pinpoint.com/6cc744395c563f0072b339070aa327f3;UCGt%3D%3DkE~A%3FZJ6%5EhIpS%23o%5BELE3oLT0I%40t7E2;400x400.png?rw=48&rh=48"
+                  width={48}
                 />
                 <span
                   className="name"
@@ -573,8 +583,11 @@ exports[`Test full entry 1`] = `
                 className="Pinpoint Internal Link  Pinpoint Logo sm "
               >
                 <img
+                  alt=""
                   className="image"
+                  height={320}
                   src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+                  width={320}
                 />
               </span>
               <span
@@ -618,10 +631,12 @@ exports[`Test full entry 1`] = `
               className="Pinpoint Social Bar "
             >
               <a
+                aria-label="Facebook"
                 className="Pinpoint Internal Link Pinpoint Social Item Facebook  "
                 href="https://www.facebook.com/Pinpoint.Engineering"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Facebook"
               >
                 <svg
                   aria-hidden="true"
@@ -641,10 +656,12 @@ exports[`Test full entry 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Instagram"
                 className="Pinpoint Internal Link Pinpoint Social Item Instagram  "
                 href="https://www.instagram.com/pinpoint_sw/"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Instagram"
               >
                 <svg
                   aria-hidden="true"
@@ -664,10 +681,12 @@ exports[`Test full entry 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Twitter"
                 className="Pinpoint Internal Link Pinpoint Social Item Twitter  "
                 href="https://twitter.com/pinpoint_sw"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Twitter"
               >
                 <svg
                   aria-hidden="true"
@@ -687,10 +706,12 @@ exports[`Test full entry 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="GitHub"
                 className="Pinpoint Internal Link Pinpoint Social Item Github  "
                 href="https://github.com/pinpt"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="GitHub"
               >
                 <svg
                   aria-hidden="true"
@@ -710,10 +731,12 @@ exports[`Test full entry 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="LinkedIn"
                 className="Pinpoint Internal Link Pinpoint Social Item LinkedIn  "
                 href="https://linkedin.com/company/pinpoint-software"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="LinkedIn"
               >
                 <svg
                   aria-hidden="true"
@@ -733,10 +756,12 @@ exports[`Test full entry 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="RSS Feed"
                 className="Pinpoint Internal Link Pinpoint Social Item RSS "
                 href="https://api.pinpoint.com.so/rss/PirxVTE94u3YmGNOySRY"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="RSS Feed"
               >
                 <svg
                   aria-hidden="true"
@@ -913,8 +938,11 @@ exports[`Test no footer 1`] = `
                 title="Keegan avatar"
               >
                 <img
+                  alt=""
                   className="avatar"
+                  height={48}
                   src="https://file.pinpoint.com/6cc744395c563f0072b339070aa327f3;UCGt%3D%3DkE~A%3FZJ6%5EhIpS%23o%5BELE3oLT0I%40t7E2;400x400.png?rw=48&rh=48"
+                  width={48}
                 />
                 <span
                   className="name"
@@ -1062,7 +1090,9 @@ exports[`Test no footer 1`] = `
                 <img
                   alt=""
                   className="medium-zoom-cover"
+                  height={900}
                   src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
+                  width={1600}
                 />
               </div>
             </div>
@@ -1112,6 +1142,7 @@ exports[`Test no footer 1`] = `
                   className="image"
                 >
                   <img
+                    alt=""
                     className="medium-zoom-body"
                     height={509.6}
                     src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
@@ -1162,6 +1193,7 @@ exports[`Test no footer 1`] = `
                   className="image"
                 >
                   <img
+                    alt=""
                     className="medium-zoom-body"
                     height={360}
                     src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
@@ -1218,8 +1250,11 @@ exports[`Test no footer 1`] = `
                 title="Keegan avatar"
               >
                 <img
+                  alt=""
                   className="avatar"
+                  height={48}
                   src="https://file.pinpoint.com/6cc744395c563f0072b339070aa327f3;UCGt%3D%3DkE~A%3FZJ6%5EhIpS%23o%5BELE3oLT0I%40t7E2;400x400.png?rw=48&rh=48"
+                  width={48}
                 />
                 <span
                   className="name"
@@ -1460,7 +1495,9 @@ exports[`Test no sidebar 1`] = `
                 <img
                   alt=""
                   className="medium-zoom-cover"
+                  height={900}
                   src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
+                  width={1600}
                 />
               </div>
             </div>
@@ -1510,6 +1547,7 @@ exports[`Test no sidebar 1`] = `
                   className="image"
                 >
                   <img
+                    alt=""
                     className="medium-zoom-body"
                     height={509.6}
                     src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
@@ -1560,6 +1598,7 @@ exports[`Test no sidebar 1`] = `
                   className="image"
                 >
                   <img
+                    alt=""
                     className="medium-zoom-body"
                     height={360}
                     src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
@@ -1631,8 +1670,11 @@ exports[`Test no sidebar 1`] = `
                 className="Pinpoint Internal Link  Pinpoint Logo sm "
               >
                 <img
+                  alt=""
                   className="image"
+                  height={320}
                   src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+                  width={320}
                 />
               </span>
               <span
@@ -1676,10 +1718,12 @@ exports[`Test no sidebar 1`] = `
               className="Pinpoint Social Bar "
             >
               <a
+                aria-label="Facebook"
                 className="Pinpoint Internal Link Pinpoint Social Item Facebook  "
                 href="https://www.facebook.com/Pinpoint.Engineering"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Facebook"
               >
                 <svg
                   aria-hidden="true"
@@ -1699,10 +1743,12 @@ exports[`Test no sidebar 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Instagram"
                 className="Pinpoint Internal Link Pinpoint Social Item Instagram  "
                 href="https://www.instagram.com/pinpoint_sw/"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Instagram"
               >
                 <svg
                   aria-hidden="true"
@@ -1722,10 +1768,12 @@ exports[`Test no sidebar 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Twitter"
                 className="Pinpoint Internal Link Pinpoint Social Item Twitter  "
                 href="https://twitter.com/pinpoint_sw"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Twitter"
               >
                 <svg
                   aria-hidden="true"
@@ -1745,10 +1793,12 @@ exports[`Test no sidebar 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="GitHub"
                 className="Pinpoint Internal Link Pinpoint Social Item Github  "
                 href="https://github.com/pinpt"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="GitHub"
               >
                 <svg
                   aria-hidden="true"
@@ -1768,10 +1818,12 @@ exports[`Test no sidebar 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="LinkedIn"
                 className="Pinpoint Internal Link Pinpoint Social Item LinkedIn  "
                 href="https://linkedin.com/company/pinpoint-software"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="LinkedIn"
               >
                 <svg
                   aria-hidden="true"
@@ -1791,10 +1843,12 @@ exports[`Test no sidebar 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="RSS Feed"
                 className="Pinpoint Internal Link Pinpoint Social Item RSS "
                 href="https://api.pinpoint.com.so/rss/PirxVTE94u3YmGNOySRY"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="RSS Feed"
               >
                 <svg
                   aria-hidden="true"
@@ -1976,8 +2030,11 @@ exports[`Test not zoomable entry 1`] = `
                 title="Keegan avatar"
               >
                 <img
+                  alt=""
                   className="avatar"
+                  height={48}
                   src="https://file.pinpoint.com/6cc744395c563f0072b339070aa327f3;UCGt%3D%3DkE~A%3FZJ6%5EhIpS%23o%5BELE3oLT0I%40t7E2;400x400.png?rw=48&rh=48"
+                  width={48}
                 />
                 <span
                   className="name"
@@ -2125,7 +2182,9 @@ exports[`Test not zoomable entry 1`] = `
                 <img
                   alt=""
                   className=""
+                  height={900}
                   src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
+                  width={1600}
                 />
               </div>
             </div>
@@ -2175,6 +2234,7 @@ exports[`Test not zoomable entry 1`] = `
                   className="image"
                 >
                   <img
+                    alt=""
                     className="medium-zoom-body"
                     height={509.6}
                     src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
@@ -2225,6 +2285,7 @@ exports[`Test not zoomable entry 1`] = `
                   className="image"
                 >
                   <img
+                    alt=""
                     className="medium-zoom-body"
                     height={360}
                     src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
@@ -2286,8 +2347,11 @@ exports[`Test not zoomable entry 1`] = `
                 title="Keegan avatar"
               >
                 <img
+                  alt=""
                   className="avatar"
+                  height={48}
                   src="https://file.pinpoint.com/6cc744395c563f0072b339070aa327f3;UCGt%3D%3DkE~A%3FZJ6%5EhIpS%23o%5BELE3oLT0I%40t7E2;400x400.png?rw=48&rh=48"
+                  width={48}
                 />
                 <span
                   className="name"
@@ -2447,8 +2511,11 @@ exports[`Test not zoomable entry 1`] = `
                 className="Pinpoint Internal Link  Pinpoint Logo sm "
               >
                 <img
+                  alt=""
                   className="image"
+                  height={320}
                   src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+                  width={320}
                 />
               </span>
               <span
@@ -2492,10 +2559,12 @@ exports[`Test not zoomable entry 1`] = `
               className="Pinpoint Social Bar "
             >
               <a
+                aria-label="Facebook"
                 className="Pinpoint Internal Link Pinpoint Social Item Facebook  "
                 href="https://www.facebook.com/Pinpoint.Engineering"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Facebook"
               >
                 <svg
                   aria-hidden="true"
@@ -2515,10 +2584,12 @@ exports[`Test not zoomable entry 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Instagram"
                 className="Pinpoint Internal Link Pinpoint Social Item Instagram  "
                 href="https://www.instagram.com/pinpoint_sw/"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Instagram"
               >
                 <svg
                   aria-hidden="true"
@@ -2538,10 +2609,12 @@ exports[`Test not zoomable entry 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Twitter"
                 className="Pinpoint Internal Link Pinpoint Social Item Twitter  "
                 href="https://twitter.com/pinpoint_sw"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Twitter"
               >
                 <svg
                   aria-hidden="true"
@@ -2561,10 +2634,12 @@ exports[`Test not zoomable entry 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="GitHub"
                 className="Pinpoint Internal Link Pinpoint Social Item Github  "
                 href="https://github.com/pinpt"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="GitHub"
               >
                 <svg
                   aria-hidden="true"
@@ -2584,10 +2659,12 @@ exports[`Test not zoomable entry 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="LinkedIn"
                 className="Pinpoint Internal Link Pinpoint Social Item LinkedIn  "
                 href="https://linkedin.com/company/pinpoint-software"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="LinkedIn"
               >
                 <svg
                   aria-hidden="true"
@@ -2607,10 +2684,12 @@ exports[`Test not zoomable entry 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="RSS Feed"
                 className="Pinpoint Internal Link Pinpoint Social Item RSS "
                 href="https://api.pinpoint.com.so/rss/PirxVTE94u3YmGNOySRY"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="RSS Feed"
               >
                 <svg
                   aria-hidden="true"
@@ -2792,8 +2871,11 @@ exports[`Test with pagination 1`] = `
                 title="Keegan avatar"
               >
                 <img
+                  alt=""
                   className="avatar"
+                  height={48}
                   src="https://file.pinpoint.com/6cc744395c563f0072b339070aa327f3;UCGt%3D%3DkE~A%3FZJ6%5EhIpS%23o%5BELE3oLT0I%40t7E2;400x400.png?rw=48&rh=48"
+                  width={48}
                 />
                 <span
                   className="name"
@@ -2941,7 +3023,9 @@ exports[`Test with pagination 1`] = `
                 <img
                   alt=""
                   className="medium-zoom-cover"
+                  height={900}
                   src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
+                  width={1600}
                 />
               </div>
             </div>
@@ -2991,6 +3075,7 @@ exports[`Test with pagination 1`] = `
                   className="image"
                 >
                   <img
+                    alt=""
                     className="medium-zoom-body"
                     height={509.6}
                     src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
@@ -3041,6 +3126,7 @@ exports[`Test with pagination 1`] = `
                   className="image"
                 >
                   <img
+                    alt=""
                     className="medium-zoom-body"
                     height={360}
                     src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
@@ -3102,8 +3188,11 @@ exports[`Test with pagination 1`] = `
                 title="Keegan avatar"
               >
                 <img
+                  alt=""
                   className="avatar"
+                  height={48}
                   src="https://file.pinpoint.com/6cc744395c563f0072b339070aa327f3;UCGt%3D%3DkE~A%3FZJ6%5EhIpS%23o%5BELE3oLT0I%40t7E2;400x400.png?rw=48&rh=48"
+                  width={48}
                 />
                 <span
                   className="name"
@@ -3329,8 +3418,11 @@ exports[`Test with pagination 1`] = `
                 className="Pinpoint Internal Link  Pinpoint Logo sm "
               >
                 <img
+                  alt=""
                   className="image"
+                  height={320}
                   src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+                  width={320}
                 />
               </span>
               <span
@@ -3374,10 +3466,12 @@ exports[`Test with pagination 1`] = `
               className="Pinpoint Social Bar "
             >
               <a
+                aria-label="Facebook"
                 className="Pinpoint Internal Link Pinpoint Social Item Facebook  "
                 href="https://www.facebook.com/Pinpoint.Engineering"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Facebook"
               >
                 <svg
                   aria-hidden="true"
@@ -3397,10 +3491,12 @@ exports[`Test with pagination 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Instagram"
                 className="Pinpoint Internal Link Pinpoint Social Item Instagram  "
                 href="https://www.instagram.com/pinpoint_sw/"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Instagram"
               >
                 <svg
                   aria-hidden="true"
@@ -3420,10 +3516,12 @@ exports[`Test with pagination 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Twitter"
                 className="Pinpoint Internal Link Pinpoint Social Item Twitter  "
                 href="https://twitter.com/pinpoint_sw"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Twitter"
               >
                 <svg
                   aria-hidden="true"
@@ -3443,10 +3541,12 @@ exports[`Test with pagination 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="GitHub"
                 className="Pinpoint Internal Link Pinpoint Social Item Github  "
                 href="https://github.com/pinpt"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="GitHub"
               >
                 <svg
                   aria-hidden="true"
@@ -3466,10 +3566,12 @@ exports[`Test with pagination 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="LinkedIn"
                 className="Pinpoint Internal Link Pinpoint Social Item LinkedIn  "
                 href="https://linkedin.com/company/pinpoint-software"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="LinkedIn"
               >
                 <svg
                   aria-hidden="true"
@@ -3489,10 +3591,12 @@ exports[`Test with pagination 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="RSS Feed"
                 className="Pinpoint Internal Link Pinpoint Social Item RSS "
                 href="https://api.pinpoint.com.so/rss/PirxVTE94u3YmGNOySRY"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="RSS Feed"
               >
                 <svg
                   aria-hidden="true"

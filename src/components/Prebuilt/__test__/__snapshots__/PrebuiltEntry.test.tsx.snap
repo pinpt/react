@@ -20,13 +20,17 @@ exports[`Test custom className 1`] = `
             className="left"
           >
             <a
+              aria-label="Header Logo Home Page"
               className="Pinpoint Internal Link Pinpoint Logo sm Prebuilt"
               href="https://pinpoint.com"
               title="Header Logo Home Page"
             >
               <img
+                alt=""
                 className="image"
+                height={320}
                 src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+                width={320}
               />
             </a>
           </div>
@@ -156,6 +160,7 @@ exports[`Test custom className 1`] = `
                 title="Chris Bowley avatar"
               >
                 <img
+                  alt=""
                   className="avatar"
                   src="https://lh3.googleusercontent.com/a-/AOh14GjYVVdtI8V5EAYfRDxOHzuSGul5Sdl01MfGGN9K=s96-c?rw=128&rh=128"
                 />
@@ -282,10 +287,12 @@ exports[`Test custom className 1`] = `
               className="Pinpoint Social Bar sharing"
             >
               <a
+                aria-label="Facebook"
                 className="Pinpoint Internal Link Pinpoint Social Item Facebook sharing "
                 href="https://facebook.com/sharer/sharer.php?u=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Facebook"
               >
                 <svg
                   aria-hidden="true"
@@ -305,10 +312,12 @@ exports[`Test custom className 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Twitter"
                 className="Pinpoint Internal Link Pinpoint Social Item Twitter sharing "
                 href="https://twitter.com/intent/tweet/?text=Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.&url=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Twitter"
               >
                 <svg
                   aria-hidden="true"
@@ -328,10 +337,12 @@ exports[`Test custom className 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="LinkedIn"
                 className="Pinpoint Internal Link Pinpoint Social Item LinkedIn sharing "
                 href="https://www.linkedin.com/shareArticle?mini=true&url=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks&title=Pinpoint - Linked Content Blocks&summary=Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked."
                 rel="noopener noreferrer"
                 target="_blank"
+                title="LinkedIn"
               >
                 <svg
                   aria-hidden="true"
@@ -351,8 +362,10 @@ exports[`Test custom className 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Email"
                 className="Pinpoint Internal Link Pinpoint Social Item Email sharing "
                 href="mailto:?subject=Pinpoint - Linked Content Blocks&body=Pinpoint - Linked Content Blocks%0D%0ALinked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.%0D%0Ahttps://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
+                title="Email"
               >
                 <svg
                   aria-hidden="true"
@@ -387,7 +400,9 @@ exports[`Test custom className 1`] = `
                 <img
                   alt="Linked Content Blocks"
                   className="medium-zoom-cover"
+                  height={900}
                   src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
+                  width={1600}
                 />
               </div>
             </div>
@@ -437,6 +452,7 @@ exports[`Test custom className 1`] = `
                   className="image"
                 >
                   <img
+                    alt=""
                     className="medium-zoom-body"
                     height={509.6}
                     src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
@@ -487,6 +503,7 @@ exports[`Test custom className 1`] = `
                   className="image"
                 >
                   <img
+                    alt=""
                     className="medium-zoom-body"
                     height={360}
                     src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
@@ -548,6 +565,7 @@ exports[`Test custom className 1`] = `
                 title="Chris Bowley avatar"
               >
                 <img
+                  alt=""
                   className="avatar"
                   src="https://lh3.googleusercontent.com/a-/AOh14GjYVVdtI8V5EAYfRDxOHzuSGul5Sdl01MfGGN9K=s96-c?rw=128&rh=128"
                 />
@@ -674,10 +692,12 @@ exports[`Test custom className 1`] = `
               className="Pinpoint Social Bar sharing"
             >
               <a
+                aria-label="Facebook"
                 className="Pinpoint Internal Link Pinpoint Social Item Facebook sharing "
                 href="https://facebook.com/sharer/sharer.php?u=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Facebook"
               >
                 <svg
                   aria-hidden="true"
@@ -697,10 +717,12 @@ exports[`Test custom className 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Twitter"
                 className="Pinpoint Internal Link Pinpoint Social Item Twitter sharing "
                 href="https://twitter.com/intent/tweet/?text=Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.&url=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Twitter"
               >
                 <svg
                   aria-hidden="true"
@@ -720,10 +742,12 @@ exports[`Test custom className 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="LinkedIn"
                 className="Pinpoint Internal Link Pinpoint Social Item LinkedIn sharing "
                 href="https://www.linkedin.com/shareArticle?mini=true&url=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks&title=Pinpoint - Linked Content Blocks&summary=Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked."
                 rel="noopener noreferrer"
                 target="_blank"
+                title="LinkedIn"
               >
                 <svg
                   aria-hidden="true"
@@ -743,8 +767,10 @@ exports[`Test custom className 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Email"
                 className="Pinpoint Internal Link Pinpoint Social Item Email sharing "
                 href="mailto:?subject=Pinpoint - Linked Content Blocks&body=Pinpoint - Linked Content Blocks%0D%0ALinked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.%0D%0Ahttps://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
+                title="Email"
               >
                 <svg
                   aria-hidden="true"
@@ -788,13 +814,17 @@ exports[`Test custom className 1`] = `
               className="Pinpoint Copyright Prebuilt"
             >
               <a
+                aria-label="Footer Logo Home Page"
                 className="Pinpoint Internal Link Pinpoint Logo sm Prebuilt"
                 href="https://pinpoint.com"
                 title="Footer Logo Home Page"
               >
                 <img
+                  alt=""
                   className="image"
+                  height={320}
                   src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+                  width={320}
                 />
               </a>
               <span
@@ -838,10 +868,12 @@ exports[`Test custom className 1`] = `
               className="Pinpoint Social Bar Prebuilt"
             >
               <a
+                aria-label="Facebook"
                 className="Pinpoint Internal Link Pinpoint Social Item Facebook  Prebuilt"
                 href="https://www.facebook.com/Pinpoint.Engineering"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Facebook"
               >
                 <svg
                   aria-hidden="true"
@@ -861,10 +893,12 @@ exports[`Test custom className 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Instagram"
                 className="Pinpoint Internal Link Pinpoint Social Item Instagram  Prebuilt"
                 href="https://www.instagram.com/pinpoint_sw/"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Instagram"
               >
                 <svg
                   aria-hidden="true"
@@ -884,10 +918,12 @@ exports[`Test custom className 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Twitter"
                 className="Pinpoint Internal Link Pinpoint Social Item Twitter  Prebuilt"
                 href="https://twitter.com/pinpoint_sw"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Twitter"
               >
                 <svg
                   aria-hidden="true"
@@ -907,10 +943,12 @@ exports[`Test custom className 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="GitHub"
                 className="Pinpoint Internal Link Pinpoint Social Item Github  Prebuilt"
                 href="https://github.com/pinpt"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="GitHub"
               >
                 <svg
                   aria-hidden="true"
@@ -930,10 +968,12 @@ exports[`Test custom className 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="LinkedIn"
                 className="Pinpoint Internal Link Pinpoint Social Item LinkedIn  Prebuilt"
                 href="https://linkedin.com/company/pinpoint-software"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="LinkedIn"
               >
                 <svg
                   aria-hidden="true"
@@ -953,10 +993,12 @@ exports[`Test custom className 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="RSS Feed"
                 className="Pinpoint Internal Link Pinpoint Social Item RSS Prebuilt"
                 href="/rss"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="RSS Feed"
               >
                 <svg
                   aria-hidden="true"
@@ -1056,13 +1098,17 @@ exports[`Test default state 1`] = `
             className="left"
           >
             <a
+              aria-label="Header Logo Home Page"
               className="Pinpoint Internal Link Pinpoint Logo sm Prebuilt"
               href="https://pinpoint.com"
               title="Header Logo Home Page"
             >
               <img
+                alt=""
                 className="image"
+                height={320}
                 src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+                width={320}
               />
             </a>
           </div>
@@ -1192,6 +1238,7 @@ exports[`Test default state 1`] = `
                 title="Chris Bowley avatar"
               >
                 <img
+                  alt=""
                   className="avatar"
                   src="https://lh3.googleusercontent.com/a-/AOh14GjYVVdtI8V5EAYfRDxOHzuSGul5Sdl01MfGGN9K=s96-c?rw=128&rh=128"
                 />
@@ -1318,10 +1365,12 @@ exports[`Test default state 1`] = `
               className="Pinpoint Social Bar sharing"
             >
               <a
+                aria-label="Facebook"
                 className="Pinpoint Internal Link Pinpoint Social Item Facebook sharing "
                 href="https://facebook.com/sharer/sharer.php?u=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Facebook"
               >
                 <svg
                   aria-hidden="true"
@@ -1341,10 +1390,12 @@ exports[`Test default state 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Twitter"
                 className="Pinpoint Internal Link Pinpoint Social Item Twitter sharing "
                 href="https://twitter.com/intent/tweet/?text=Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.&url=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Twitter"
               >
                 <svg
                   aria-hidden="true"
@@ -1364,10 +1415,12 @@ exports[`Test default state 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="LinkedIn"
                 className="Pinpoint Internal Link Pinpoint Social Item LinkedIn sharing "
                 href="https://www.linkedin.com/shareArticle?mini=true&url=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks&title=Pinpoint - Linked Content Blocks&summary=Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked."
                 rel="noopener noreferrer"
                 target="_blank"
+                title="LinkedIn"
               >
                 <svg
                   aria-hidden="true"
@@ -1387,8 +1440,10 @@ exports[`Test default state 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Email"
                 className="Pinpoint Internal Link Pinpoint Social Item Email sharing "
                 href="mailto:?subject=Pinpoint - Linked Content Blocks&body=Pinpoint - Linked Content Blocks%0D%0ALinked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.%0D%0Ahttps://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
+                title="Email"
               >
                 <svg
                   aria-hidden="true"
@@ -1423,7 +1478,9 @@ exports[`Test default state 1`] = `
                 <img
                   alt="Linked Content Blocks"
                   className="medium-zoom-cover"
+                  height={900}
                   src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
+                  width={1600}
                 />
               </div>
             </div>
@@ -1473,6 +1530,7 @@ exports[`Test default state 1`] = `
                   className="image"
                 >
                   <img
+                    alt=""
                     className="medium-zoom-body"
                     height={509.6}
                     src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
@@ -1523,6 +1581,7 @@ exports[`Test default state 1`] = `
                   className="image"
                 >
                   <img
+                    alt=""
                     className="medium-zoom-body"
                     height={360}
                     src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
@@ -1584,6 +1643,7 @@ exports[`Test default state 1`] = `
                 title="Chris Bowley avatar"
               >
                 <img
+                  alt=""
                   className="avatar"
                   src="https://lh3.googleusercontent.com/a-/AOh14GjYVVdtI8V5EAYfRDxOHzuSGul5Sdl01MfGGN9K=s96-c?rw=128&rh=128"
                 />
@@ -1710,10 +1770,12 @@ exports[`Test default state 1`] = `
               className="Pinpoint Social Bar sharing"
             >
               <a
+                aria-label="Facebook"
                 className="Pinpoint Internal Link Pinpoint Social Item Facebook sharing "
                 href="https://facebook.com/sharer/sharer.php?u=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Facebook"
               >
                 <svg
                   aria-hidden="true"
@@ -1733,10 +1795,12 @@ exports[`Test default state 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Twitter"
                 className="Pinpoint Internal Link Pinpoint Social Item Twitter sharing "
                 href="https://twitter.com/intent/tweet/?text=Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.&url=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Twitter"
               >
                 <svg
                   aria-hidden="true"
@@ -1756,10 +1820,12 @@ exports[`Test default state 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="LinkedIn"
                 className="Pinpoint Internal Link Pinpoint Social Item LinkedIn sharing "
                 href="https://www.linkedin.com/shareArticle?mini=true&url=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks&title=Pinpoint - Linked Content Blocks&summary=Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked."
                 rel="noopener noreferrer"
                 target="_blank"
+                title="LinkedIn"
               >
                 <svg
                   aria-hidden="true"
@@ -1779,8 +1845,10 @@ exports[`Test default state 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Email"
                 className="Pinpoint Internal Link Pinpoint Social Item Email sharing "
                 href="mailto:?subject=Pinpoint - Linked Content Blocks&body=Pinpoint - Linked Content Blocks%0D%0ALinked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.%0D%0Ahttps://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
+                title="Email"
               >
                 <svg
                   aria-hidden="true"
@@ -1824,13 +1892,17 @@ exports[`Test default state 1`] = `
               className="Pinpoint Copyright Prebuilt"
             >
               <a
+                aria-label="Footer Logo Home Page"
                 className="Pinpoint Internal Link Pinpoint Logo sm Prebuilt"
                 href="https://pinpoint.com"
                 title="Footer Logo Home Page"
               >
                 <img
+                  alt=""
                   className="image"
+                  height={320}
                   src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+                  width={320}
                 />
               </a>
               <span
@@ -1874,10 +1946,12 @@ exports[`Test default state 1`] = `
               className="Pinpoint Social Bar Prebuilt"
             >
               <a
+                aria-label="Facebook"
                 className="Pinpoint Internal Link Pinpoint Social Item Facebook  Prebuilt"
                 href="https://www.facebook.com/Pinpoint.Engineering"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Facebook"
               >
                 <svg
                   aria-hidden="true"
@@ -1897,10 +1971,12 @@ exports[`Test default state 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Instagram"
                 className="Pinpoint Internal Link Pinpoint Social Item Instagram  Prebuilt"
                 href="https://www.instagram.com/pinpoint_sw/"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Instagram"
               >
                 <svg
                   aria-hidden="true"
@@ -1920,10 +1996,12 @@ exports[`Test default state 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Twitter"
                 className="Pinpoint Internal Link Pinpoint Social Item Twitter  Prebuilt"
                 href="https://twitter.com/pinpoint_sw"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Twitter"
               >
                 <svg
                   aria-hidden="true"
@@ -1943,10 +2021,12 @@ exports[`Test default state 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="GitHub"
                 className="Pinpoint Internal Link Pinpoint Social Item Github  Prebuilt"
                 href="https://github.com/pinpt"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="GitHub"
               >
                 <svg
                   aria-hidden="true"
@@ -1966,10 +2046,12 @@ exports[`Test default state 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="LinkedIn"
                 className="Pinpoint Internal Link Pinpoint Social Item LinkedIn  Prebuilt"
                 href="https://linkedin.com/company/pinpoint-software"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="LinkedIn"
               >
                 <svg
                   aria-hidden="true"
@@ -1989,10 +2071,12 @@ exports[`Test default state 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="RSS Feed"
                 className="Pinpoint Internal Link Pinpoint Social Item RSS Prebuilt"
                 href="/rss"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="RSS Feed"
               >
                 <svg
                   aria-hidden="true"
@@ -2092,13 +2176,17 @@ exports[`Test no author 1`] = `
             className="left"
           >
             <a
+              aria-label="Header Logo Home Page"
               className="Pinpoint Internal Link Pinpoint Logo sm Prebuilt"
               href="https://pinpoint.com"
               title="Header Logo Home Page"
             >
               <img
+                alt=""
                 className="image"
+                height={320}
                 src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+                width={320}
               />
             </a>
           </div>
@@ -2253,10 +2341,12 @@ exports[`Test no author 1`] = `
               className="Pinpoint Social Bar sharing"
             >
               <a
+                aria-label="Facebook"
                 className="Pinpoint Internal Link Pinpoint Social Item Facebook sharing "
                 href="https://facebook.com/sharer/sharer.php?u=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Facebook"
               >
                 <svg
                   aria-hidden="true"
@@ -2276,10 +2366,12 @@ exports[`Test no author 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Twitter"
                 className="Pinpoint Internal Link Pinpoint Social Item Twitter sharing "
                 href="https://twitter.com/intent/tweet/?text=Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.&url=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Twitter"
               >
                 <svg
                   aria-hidden="true"
@@ -2299,10 +2391,12 @@ exports[`Test no author 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="LinkedIn"
                 className="Pinpoint Internal Link Pinpoint Social Item LinkedIn sharing "
                 href="https://www.linkedin.com/shareArticle?mini=true&url=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks&title=Pinpoint - Linked Content Blocks&summary=Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked."
                 rel="noopener noreferrer"
                 target="_blank"
+                title="LinkedIn"
               >
                 <svg
                   aria-hidden="true"
@@ -2322,8 +2416,10 @@ exports[`Test no author 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Email"
                 className="Pinpoint Internal Link Pinpoint Social Item Email sharing "
                 href="mailto:?subject=Pinpoint - Linked Content Blocks&body=Pinpoint - Linked Content Blocks%0D%0ALinked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.%0D%0Ahttps://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
+                title="Email"
               >
                 <svg
                   aria-hidden="true"
@@ -2358,7 +2454,9 @@ exports[`Test no author 1`] = `
                 <img
                   alt="Linked Content Blocks"
                   className="medium-zoom-cover"
+                  height={900}
                   src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
+                  width={1600}
                 />
               </div>
             </div>
@@ -2408,6 +2506,7 @@ exports[`Test no author 1`] = `
                   className="image"
                 >
                   <img
+                    alt=""
                     className="medium-zoom-body"
                     height={509.6}
                     src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
@@ -2458,6 +2557,7 @@ exports[`Test no author 1`] = `
                   className="image"
                 >
                   <img
+                    alt=""
                     className="medium-zoom-body"
                     height={360}
                     src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
@@ -2544,10 +2644,12 @@ exports[`Test no author 1`] = `
               className="Pinpoint Social Bar sharing"
             >
               <a
+                aria-label="Facebook"
                 className="Pinpoint Internal Link Pinpoint Social Item Facebook sharing "
                 href="https://facebook.com/sharer/sharer.php?u=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Facebook"
               >
                 <svg
                   aria-hidden="true"
@@ -2567,10 +2669,12 @@ exports[`Test no author 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Twitter"
                 className="Pinpoint Internal Link Pinpoint Social Item Twitter sharing "
                 href="https://twitter.com/intent/tweet/?text=Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.&url=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Twitter"
               >
                 <svg
                   aria-hidden="true"
@@ -2590,10 +2694,12 @@ exports[`Test no author 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="LinkedIn"
                 className="Pinpoint Internal Link Pinpoint Social Item LinkedIn sharing "
                 href="https://www.linkedin.com/shareArticle?mini=true&url=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks&title=Pinpoint - Linked Content Blocks&summary=Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked."
                 rel="noopener noreferrer"
                 target="_blank"
+                title="LinkedIn"
               >
                 <svg
                   aria-hidden="true"
@@ -2613,8 +2719,10 @@ exports[`Test no author 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Email"
                 className="Pinpoint Internal Link Pinpoint Social Item Email sharing "
                 href="mailto:?subject=Pinpoint - Linked Content Blocks&body=Pinpoint - Linked Content Blocks%0D%0ALinked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.%0D%0Ahttps://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
+                title="Email"
               >
                 <svg
                   aria-hidden="true"
@@ -2658,13 +2766,17 @@ exports[`Test no author 1`] = `
               className="Pinpoint Copyright Prebuilt"
             >
               <a
+                aria-label="Footer Logo Home Page"
                 className="Pinpoint Internal Link Pinpoint Logo sm Prebuilt"
                 href="https://pinpoint.com"
                 title="Footer Logo Home Page"
               >
                 <img
+                  alt=""
                   className="image"
+                  height={320}
                   src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+                  width={320}
                 />
               </a>
               <span
@@ -2708,10 +2820,12 @@ exports[`Test no author 1`] = `
               className="Pinpoint Social Bar Prebuilt"
             >
               <a
+                aria-label="Facebook"
                 className="Pinpoint Internal Link Pinpoint Social Item Facebook  Prebuilt"
                 href="https://www.facebook.com/Pinpoint.Engineering"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Facebook"
               >
                 <svg
                   aria-hidden="true"
@@ -2731,10 +2845,12 @@ exports[`Test no author 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Instagram"
                 className="Pinpoint Internal Link Pinpoint Social Item Instagram  Prebuilt"
                 href="https://www.instagram.com/pinpoint_sw/"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Instagram"
               >
                 <svg
                   aria-hidden="true"
@@ -2754,10 +2870,12 @@ exports[`Test no author 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Twitter"
                 className="Pinpoint Internal Link Pinpoint Social Item Twitter  Prebuilt"
                 href="https://twitter.com/pinpoint_sw"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Twitter"
               >
                 <svg
                   aria-hidden="true"
@@ -2777,10 +2895,12 @@ exports[`Test no author 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="GitHub"
                 className="Pinpoint Internal Link Pinpoint Social Item Github  Prebuilt"
                 href="https://github.com/pinpt"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="GitHub"
               >
                 <svg
                   aria-hidden="true"
@@ -2800,10 +2920,12 @@ exports[`Test no author 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="LinkedIn"
                 className="Pinpoint Internal Link Pinpoint Social Item LinkedIn  Prebuilt"
                 href="https://linkedin.com/company/pinpoint-software"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="LinkedIn"
               >
                 <svg
                   aria-hidden="true"
@@ -2823,10 +2945,12 @@ exports[`Test no author 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="RSS Feed"
                 className="Pinpoint Internal Link Pinpoint Social Item RSS Prebuilt"
                 href="/rss"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="RSS Feed"
               >
                 <svg
                   aria-hidden="true"
@@ -2926,13 +3050,17 @@ exports[`Test no claps 1`] = `
             className="left"
           >
             <a
+              aria-label="Header Logo Home Page"
               className="Pinpoint Internal Link Pinpoint Logo sm Prebuilt"
               href="https://pinpoint.com"
               title="Header Logo Home Page"
             >
               <img
+                alt=""
                 className="image"
+                height={320}
                 src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+                width={320}
               />
             </a>
           </div>
@@ -3062,6 +3190,7 @@ exports[`Test no claps 1`] = `
                 title="Chris Bowley avatar"
               >
                 <img
+                  alt=""
                   className="avatar"
                   src="https://lh3.googleusercontent.com/a-/AOh14GjYVVdtI8V5EAYfRDxOHzuSGul5Sdl01MfGGN9K=s96-c?rw=128&rh=128"
                 />
@@ -3104,10 +3233,12 @@ exports[`Test no claps 1`] = `
               className="Pinpoint Social Bar sharing"
             >
               <a
+                aria-label="Facebook"
                 className="Pinpoint Internal Link Pinpoint Social Item Facebook sharing "
                 href="https://facebook.com/sharer/sharer.php?u=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Facebook"
               >
                 <svg
                   aria-hidden="true"
@@ -3127,10 +3258,12 @@ exports[`Test no claps 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Twitter"
                 className="Pinpoint Internal Link Pinpoint Social Item Twitter sharing "
                 href="https://twitter.com/intent/tweet/?text=Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.&url=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Twitter"
               >
                 <svg
                   aria-hidden="true"
@@ -3150,10 +3283,12 @@ exports[`Test no claps 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="LinkedIn"
                 className="Pinpoint Internal Link Pinpoint Social Item LinkedIn sharing "
                 href="https://www.linkedin.com/shareArticle?mini=true&url=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks&title=Pinpoint - Linked Content Blocks&summary=Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked."
                 rel="noopener noreferrer"
                 target="_blank"
+                title="LinkedIn"
               >
                 <svg
                   aria-hidden="true"
@@ -3173,8 +3308,10 @@ exports[`Test no claps 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Email"
                 className="Pinpoint Internal Link Pinpoint Social Item Email sharing "
                 href="mailto:?subject=Pinpoint - Linked Content Blocks&body=Pinpoint - Linked Content Blocks%0D%0ALinked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.%0D%0Ahttps://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
+                title="Email"
               >
                 <svg
                   aria-hidden="true"
@@ -3209,7 +3346,9 @@ exports[`Test no claps 1`] = `
                 <img
                   alt="Linked Content Blocks"
                   className="medium-zoom-cover"
+                  height={900}
                   src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
+                  width={1600}
                 />
               </div>
             </div>
@@ -3259,6 +3398,7 @@ exports[`Test no claps 1`] = `
                   className="image"
                 >
                   <img
+                    alt=""
                     className="medium-zoom-body"
                     height={509.6}
                     src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
@@ -3309,6 +3449,7 @@ exports[`Test no claps 1`] = `
                   className="image"
                 >
                   <img
+                    alt=""
                     className="medium-zoom-body"
                     height={360}
                     src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
@@ -3370,6 +3511,7 @@ exports[`Test no claps 1`] = `
                 title="Chris Bowley avatar"
               >
                 <img
+                  alt=""
                   className="avatar"
                   src="https://lh3.googleusercontent.com/a-/AOh14GjYVVdtI8V5EAYfRDxOHzuSGul5Sdl01MfGGN9K=s96-c?rw=128&rh=128"
                 />
@@ -3412,10 +3554,12 @@ exports[`Test no claps 1`] = `
               className="Pinpoint Social Bar sharing"
             >
               <a
+                aria-label="Facebook"
                 className="Pinpoint Internal Link Pinpoint Social Item Facebook sharing "
                 href="https://facebook.com/sharer/sharer.php?u=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Facebook"
               >
                 <svg
                   aria-hidden="true"
@@ -3435,10 +3579,12 @@ exports[`Test no claps 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Twitter"
                 className="Pinpoint Internal Link Pinpoint Social Item Twitter sharing "
                 href="https://twitter.com/intent/tweet/?text=Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.&url=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Twitter"
               >
                 <svg
                   aria-hidden="true"
@@ -3458,10 +3604,12 @@ exports[`Test no claps 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="LinkedIn"
                 className="Pinpoint Internal Link Pinpoint Social Item LinkedIn sharing "
                 href="https://www.linkedin.com/shareArticle?mini=true&url=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks&title=Pinpoint - Linked Content Blocks&summary=Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked."
                 rel="noopener noreferrer"
                 target="_blank"
+                title="LinkedIn"
               >
                 <svg
                   aria-hidden="true"
@@ -3481,8 +3629,10 @@ exports[`Test no claps 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Email"
                 className="Pinpoint Internal Link Pinpoint Social Item Email sharing "
                 href="mailto:?subject=Pinpoint - Linked Content Blocks&body=Pinpoint - Linked Content Blocks%0D%0ALinked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.%0D%0Ahttps://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
+                title="Email"
               >
                 <svg
                   aria-hidden="true"
@@ -3526,13 +3676,17 @@ exports[`Test no claps 1`] = `
               className="Pinpoint Copyright Prebuilt"
             >
               <a
+                aria-label="Footer Logo Home Page"
                 className="Pinpoint Internal Link Pinpoint Logo sm Prebuilt"
                 href="https://pinpoint.com"
                 title="Footer Logo Home Page"
               >
                 <img
+                  alt=""
                   className="image"
+                  height={320}
                   src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+                  width={320}
                 />
               </a>
               <span
@@ -3576,10 +3730,12 @@ exports[`Test no claps 1`] = `
               className="Pinpoint Social Bar Prebuilt"
             >
               <a
+                aria-label="Facebook"
                 className="Pinpoint Internal Link Pinpoint Social Item Facebook  Prebuilt"
                 href="https://www.facebook.com/Pinpoint.Engineering"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Facebook"
               >
                 <svg
                   aria-hidden="true"
@@ -3599,10 +3755,12 @@ exports[`Test no claps 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Instagram"
                 className="Pinpoint Internal Link Pinpoint Social Item Instagram  Prebuilt"
                 href="https://www.instagram.com/pinpoint_sw/"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Instagram"
               >
                 <svg
                   aria-hidden="true"
@@ -3622,10 +3780,12 @@ exports[`Test no claps 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Twitter"
                 className="Pinpoint Internal Link Pinpoint Social Item Twitter  Prebuilt"
                 href="https://twitter.com/pinpoint_sw"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Twitter"
               >
                 <svg
                   aria-hidden="true"
@@ -3645,10 +3805,12 @@ exports[`Test no claps 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="GitHub"
                 className="Pinpoint Internal Link Pinpoint Social Item Github  Prebuilt"
                 href="https://github.com/pinpt"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="GitHub"
               >
                 <svg
                   aria-hidden="true"
@@ -3668,10 +3830,12 @@ exports[`Test no claps 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="LinkedIn"
                 className="Pinpoint Internal Link Pinpoint Social Item LinkedIn  Prebuilt"
                 href="https://linkedin.com/company/pinpoint-software"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="LinkedIn"
               >
                 <svg
                   aria-hidden="true"
@@ -3691,10 +3855,12 @@ exports[`Test no claps 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="RSS Feed"
                 className="Pinpoint Internal Link Pinpoint Social Item RSS Prebuilt"
                 href="/rss"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="RSS Feed"
               >
                 <svg
                   aria-hidden="true"
@@ -3794,13 +3960,17 @@ exports[`Test not zoomable 1`] = `
             className="left"
           >
             <a
+              aria-label="Header Logo Home Page"
               className="Pinpoint Internal Link Pinpoint Logo sm Prebuilt"
               href="https://pinpoint.com"
               title="Header Logo Home Page"
             >
               <img
+                alt=""
                 className="image"
+                height={320}
                 src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+                width={320}
               />
             </a>
           </div>
@@ -3930,6 +4100,7 @@ exports[`Test not zoomable 1`] = `
                 title="Chris Bowley avatar"
               >
                 <img
+                  alt=""
                   className="avatar"
                   src="https://lh3.googleusercontent.com/a-/AOh14GjYVVdtI8V5EAYfRDxOHzuSGul5Sdl01MfGGN9K=s96-c?rw=128&rh=128"
                 />
@@ -4056,10 +4227,12 @@ exports[`Test not zoomable 1`] = `
               className="Pinpoint Social Bar sharing"
             >
               <a
+                aria-label="Facebook"
                 className="Pinpoint Internal Link Pinpoint Social Item Facebook sharing "
                 href="https://facebook.com/sharer/sharer.php?u=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Facebook"
               >
                 <svg
                   aria-hidden="true"
@@ -4079,10 +4252,12 @@ exports[`Test not zoomable 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Twitter"
                 className="Pinpoint Internal Link Pinpoint Social Item Twitter sharing "
                 href="https://twitter.com/intent/tweet/?text=Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.&url=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Twitter"
               >
                 <svg
                   aria-hidden="true"
@@ -4102,10 +4277,12 @@ exports[`Test not zoomable 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="LinkedIn"
                 className="Pinpoint Internal Link Pinpoint Social Item LinkedIn sharing "
                 href="https://www.linkedin.com/shareArticle?mini=true&url=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks&title=Pinpoint - Linked Content Blocks&summary=Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked."
                 rel="noopener noreferrer"
                 target="_blank"
+                title="LinkedIn"
               >
                 <svg
                   aria-hidden="true"
@@ -4125,8 +4302,10 @@ exports[`Test not zoomable 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Email"
                 className="Pinpoint Internal Link Pinpoint Social Item Email sharing "
                 href="mailto:?subject=Pinpoint - Linked Content Blocks&body=Pinpoint - Linked Content Blocks%0D%0ALinked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.%0D%0Ahttps://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
+                title="Email"
               >
                 <svg
                   aria-hidden="true"
@@ -4161,7 +4340,9 @@ exports[`Test not zoomable 1`] = `
                 <img
                   alt="Linked Content Blocks"
                   className=""
+                  height={900}
                   src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
+                  width={1600}
                 />
               </div>
             </div>
@@ -4211,6 +4392,7 @@ exports[`Test not zoomable 1`] = `
                   className="image"
                 >
                   <img
+                    alt=""
                     className="medium-zoom-body"
                     height={509.6}
                     src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
@@ -4261,6 +4443,7 @@ exports[`Test not zoomable 1`] = `
                   className="image"
                 >
                   <img
+                    alt=""
                     className="medium-zoom-body"
                     height={360}
                     src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
@@ -4322,6 +4505,7 @@ exports[`Test not zoomable 1`] = `
                 title="Chris Bowley avatar"
               >
                 <img
+                  alt=""
                   className="avatar"
                   src="https://lh3.googleusercontent.com/a-/AOh14GjYVVdtI8V5EAYfRDxOHzuSGul5Sdl01MfGGN9K=s96-c?rw=128&rh=128"
                 />
@@ -4448,10 +4632,12 @@ exports[`Test not zoomable 1`] = `
               className="Pinpoint Social Bar sharing"
             >
               <a
+                aria-label="Facebook"
                 className="Pinpoint Internal Link Pinpoint Social Item Facebook sharing "
                 href="https://facebook.com/sharer/sharer.php?u=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Facebook"
               >
                 <svg
                   aria-hidden="true"
@@ -4471,10 +4657,12 @@ exports[`Test not zoomable 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Twitter"
                 className="Pinpoint Internal Link Pinpoint Social Item Twitter sharing "
                 href="https://twitter.com/intent/tweet/?text=Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.&url=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Twitter"
               >
                 <svg
                   aria-hidden="true"
@@ -4494,10 +4682,12 @@ exports[`Test not zoomable 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="LinkedIn"
                 className="Pinpoint Internal Link Pinpoint Social Item LinkedIn sharing "
                 href="https://www.linkedin.com/shareArticle?mini=true&url=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks&title=Pinpoint - Linked Content Blocks&summary=Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked."
                 rel="noopener noreferrer"
                 target="_blank"
+                title="LinkedIn"
               >
                 <svg
                   aria-hidden="true"
@@ -4517,8 +4707,10 @@ exports[`Test not zoomable 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Email"
                 className="Pinpoint Internal Link Pinpoint Social Item Email sharing "
                 href="mailto:?subject=Pinpoint - Linked Content Blocks&body=Pinpoint - Linked Content Blocks%0D%0ALinked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.%0D%0Ahttps://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
+                title="Email"
               >
                 <svg
                   aria-hidden="true"
@@ -4562,13 +4754,17 @@ exports[`Test not zoomable 1`] = `
               className="Pinpoint Copyright Prebuilt"
             >
               <a
+                aria-label="Footer Logo Home Page"
                 className="Pinpoint Internal Link Pinpoint Logo sm Prebuilt"
                 href="https://pinpoint.com"
                 title="Footer Logo Home Page"
               >
                 <img
+                  alt=""
                   className="image"
+                  height={320}
                   src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+                  width={320}
                 />
               </a>
               <span
@@ -4612,10 +4808,12 @@ exports[`Test not zoomable 1`] = `
               className="Pinpoint Social Bar Prebuilt"
             >
               <a
+                aria-label="Facebook"
                 className="Pinpoint Internal Link Pinpoint Social Item Facebook  Prebuilt"
                 href="https://www.facebook.com/Pinpoint.Engineering"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Facebook"
               >
                 <svg
                   aria-hidden="true"
@@ -4635,10 +4833,12 @@ exports[`Test not zoomable 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Instagram"
                 className="Pinpoint Internal Link Pinpoint Social Item Instagram  Prebuilt"
                 href="https://www.instagram.com/pinpoint_sw/"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Instagram"
               >
                 <svg
                   aria-hidden="true"
@@ -4658,10 +4858,12 @@ exports[`Test not zoomable 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Twitter"
                 className="Pinpoint Internal Link Pinpoint Social Item Twitter  Prebuilt"
                 href="https://twitter.com/pinpoint_sw"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Twitter"
               >
                 <svg
                   aria-hidden="true"
@@ -4681,10 +4883,12 @@ exports[`Test not zoomable 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="GitHub"
                 className="Pinpoint Internal Link Pinpoint Social Item Github  Prebuilt"
                 href="https://github.com/pinpt"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="GitHub"
               >
                 <svg
                   aria-hidden="true"
@@ -4704,10 +4908,12 @@ exports[`Test not zoomable 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="LinkedIn"
                 className="Pinpoint Internal Link Pinpoint Social Item LinkedIn  Prebuilt"
                 href="https://linkedin.com/company/pinpoint-software"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="LinkedIn"
               >
                 <svg
                   aria-hidden="true"
@@ -4727,10 +4933,12 @@ exports[`Test not zoomable 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="RSS Feed"
                 className="Pinpoint Internal Link Pinpoint Social Item RSS Prebuilt"
                 href="/rss"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="RSS Feed"
               >
                 <svg
                   aria-hidden="true"
@@ -4830,13 +5038,17 @@ exports[`Test with pagination 1`] = `
             className="left"
           >
             <a
+              aria-label="Header Logo Home Page"
               className="Pinpoint Internal Link Pinpoint Logo sm Prebuilt"
               href="https://pinpoint.com"
               title="Header Logo Home Page"
             >
               <img
+                alt=""
                 className="image"
+                height={320}
                 src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+                width={320}
               />
             </a>
           </div>
@@ -4966,6 +5178,7 @@ exports[`Test with pagination 1`] = `
                 title="Chris Bowley avatar"
               >
                 <img
+                  alt=""
                   className="avatar"
                   src="https://lh3.googleusercontent.com/a-/AOh14GjYVVdtI8V5EAYfRDxOHzuSGul5Sdl01MfGGN9K=s96-c?rw=128&rh=128"
                 />
@@ -4996,10 +5209,12 @@ exports[`Test with pagination 1`] = `
               className="Pinpoint Social Bar sharing"
             >
               <a
+                aria-label="Facebook"
                 className="Pinpoint Internal Link Pinpoint Social Item Facebook sharing "
                 href="https://facebook.com/sharer/sharer.php?u=https://changelog.pinpoint.com/entry/9gOsjHBg7tHtNllBWrY8/Publishing-Controls-and-Social-Posting"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Facebook"
               >
                 <svg
                   aria-hidden="true"
@@ -5019,10 +5234,12 @@ exports[`Test with pagination 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Twitter"
                 className="Pinpoint Internal Link Pinpoint Social Item Twitter sharing "
                 href="https://twitter.com/intent/tweet/?text=When you publish a changelog you will now see a new Publish dialog which grants finer control over when you want to notify your subscribers.&url=https://changelog.pinpoint.com/entry/9gOsjHBg7tHtNllBWrY8/Publishing-Controls-and-Social-Posting"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Twitter"
               >
                 <svg
                   aria-hidden="true"
@@ -5042,10 +5259,12 @@ exports[`Test with pagination 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="LinkedIn"
                 className="Pinpoint Internal Link Pinpoint Social Item LinkedIn sharing "
                 href="https://www.linkedin.com/shareArticle?mini=true&url=https://changelog.pinpoint.com/entry/9gOsjHBg7tHtNllBWrY8/Publishing-Controls-and-Social-Posting&title=Pinpoint - Publishing Controls and Social Posting&summary=When you publish a changelog you will now see a new Publish dialog which grants finer control over when you want to notify your subscribers."
                 rel="noopener noreferrer"
                 target="_blank"
+                title="LinkedIn"
               >
                 <svg
                   aria-hidden="true"
@@ -5065,8 +5284,10 @@ exports[`Test with pagination 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Email"
                 className="Pinpoint Internal Link Pinpoint Social Item Email sharing "
                 href="mailto:?subject=Pinpoint - Publishing Controls and Social Posting&body=Pinpoint - Publishing Controls and Social Posting%0D%0AWhen you publish a changelog you will now see a new Publish dialog which grants finer control over when you want to notify your subscribers.%0D%0Ahttps://changelog.pinpoint.com/entry/9gOsjHBg7tHtNllBWrY8/Publishing-Controls-and-Social-Posting"
+                title="Email"
               >
                 <svg
                   aria-hidden="true"
@@ -5101,7 +5322,9 @@ exports[`Test with pagination 1`] = `
                 <img
                   alt="Publishing Controls and Social Posting"
                   className="medium-zoom-cover"
+                  height={900}
                   src="https://file.pinpoint.com/7120741f0e5051b632fdd356fc1cdb16;U40m~QcbVUiFkafladjFUbiZk%5BcbZ%23jEkYbw;1600x900.png"
+                  width={1600}
                 />
               </div>
             </div>
@@ -5151,6 +5374,7 @@ exports[`Test with pagination 1`] = `
                   className="image"
                 >
                   <img
+                    alt=""
                     className="medium-zoom-body"
                     height={540}
                     src="https://file.pinpoint.com/bab9656158820022a480aea23dce8a39;UDP6~%24-%3B00-%3D~XIoV%5Bt700xa%25fRi-%3Bs-aeof;1500x1000.png"
@@ -5204,6 +5428,7 @@ exports[`Test with pagination 1`] = `
                 title="Chris Bowley avatar"
               >
                 <img
+                  alt=""
                   className="avatar"
                   src="https://lh3.googleusercontent.com/a-/AOh14GjYVVdtI8V5EAYfRDxOHzuSGul5Sdl01MfGGN9K=s96-c?rw=128&rh=128"
                 />
@@ -5234,10 +5459,12 @@ exports[`Test with pagination 1`] = `
               className="Pinpoint Social Bar sharing"
             >
               <a
+                aria-label="Facebook"
                 className="Pinpoint Internal Link Pinpoint Social Item Facebook sharing "
                 href="https://facebook.com/sharer/sharer.php?u=https://changelog.pinpoint.com/entry/9gOsjHBg7tHtNllBWrY8/Publishing-Controls-and-Social-Posting"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Facebook"
               >
                 <svg
                   aria-hidden="true"
@@ -5257,10 +5484,12 @@ exports[`Test with pagination 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Twitter"
                 className="Pinpoint Internal Link Pinpoint Social Item Twitter sharing "
                 href="https://twitter.com/intent/tweet/?text=When you publish a changelog you will now see a new Publish dialog which grants finer control over when you want to notify your subscribers.&url=https://changelog.pinpoint.com/entry/9gOsjHBg7tHtNllBWrY8/Publishing-Controls-and-Social-Posting"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Twitter"
               >
                 <svg
                   aria-hidden="true"
@@ -5280,10 +5509,12 @@ exports[`Test with pagination 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="LinkedIn"
                 className="Pinpoint Internal Link Pinpoint Social Item LinkedIn sharing "
                 href="https://www.linkedin.com/shareArticle?mini=true&url=https://changelog.pinpoint.com/entry/9gOsjHBg7tHtNllBWrY8/Publishing-Controls-and-Social-Posting&title=Pinpoint - Publishing Controls and Social Posting&summary=When you publish a changelog you will now see a new Publish dialog which grants finer control over when you want to notify your subscribers."
                 rel="noopener noreferrer"
                 target="_blank"
+                title="LinkedIn"
               >
                 <svg
                   aria-hidden="true"
@@ -5303,8 +5534,10 @@ exports[`Test with pagination 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Email"
                 className="Pinpoint Internal Link Pinpoint Social Item Email sharing "
                 href="mailto:?subject=Pinpoint - Publishing Controls and Social Posting&body=Pinpoint - Publishing Controls and Social Posting%0D%0AWhen you publish a changelog you will now see a new Publish dialog which grants finer control over when you want to notify your subscribers.%0D%0Ahttps://changelog.pinpoint.com/entry/9gOsjHBg7tHtNllBWrY8/Publishing-Controls-and-Social-Posting"
+                title="Email"
               >
                 <svg
                   aria-hidden="true"
@@ -5414,13 +5647,17 @@ exports[`Test with pagination 1`] = `
               className="Pinpoint Copyright Prebuilt"
             >
               <a
+                aria-label="Footer Logo Home Page"
                 className="Pinpoint Internal Link Pinpoint Logo sm Prebuilt"
                 href="https://pinpoint.com"
                 title="Footer Logo Home Page"
               >
                 <img
+                  alt=""
                   className="image"
+                  height={320}
                   src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+                  width={320}
                 />
               </a>
               <span
@@ -5464,10 +5701,12 @@ exports[`Test with pagination 1`] = `
               className="Pinpoint Social Bar Prebuilt"
             >
               <a
+                aria-label="Facebook"
                 className="Pinpoint Internal Link Pinpoint Social Item Facebook  Prebuilt"
                 href="https://www.facebook.com/Pinpoint.Engineering"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Facebook"
               >
                 <svg
                   aria-hidden="true"
@@ -5487,10 +5726,12 @@ exports[`Test with pagination 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Instagram"
                 className="Pinpoint Internal Link Pinpoint Social Item Instagram  Prebuilt"
                 href="https://www.instagram.com/pinpoint_sw/"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Instagram"
               >
                 <svg
                   aria-hidden="true"
@@ -5510,10 +5751,12 @@ exports[`Test with pagination 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Twitter"
                 className="Pinpoint Internal Link Pinpoint Social Item Twitter  Prebuilt"
                 href="https://twitter.com/pinpoint_sw"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Twitter"
               >
                 <svg
                   aria-hidden="true"
@@ -5533,10 +5776,12 @@ exports[`Test with pagination 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="GitHub"
                 className="Pinpoint Internal Link Pinpoint Social Item Github  Prebuilt"
                 href="https://github.com/pinpt"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="GitHub"
               >
                 <svg
                   aria-hidden="true"
@@ -5556,10 +5801,12 @@ exports[`Test with pagination 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="LinkedIn"
                 className="Pinpoint Internal Link Pinpoint Social Item LinkedIn  Prebuilt"
                 href="https://linkedin.com/company/pinpoint-software"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="LinkedIn"
               >
                 <svg
                   aria-hidden="true"
@@ -5579,10 +5826,12 @@ exports[`Test with pagination 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="RSS Feed"
                 className="Pinpoint Internal Link Pinpoint Social Item RSS Prebuilt"
                 href="/rss"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="RSS Feed"
               >
                 <svg
                   aria-hidden="true"

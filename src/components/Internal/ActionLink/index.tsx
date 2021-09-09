@@ -1,5 +1,5 @@
-import { MouseEventHandler } from 'react';
-import React from 'react';
+import React, { MouseEventHandler } from 'react';
+
 export interface IActionLinkProps {
 	className?: string;
 	href?: string;
@@ -7,10 +7,11 @@ export interface IActionLinkProps {
 	newTab?: boolean;
 	children: any;
 	title?: string;
+	ariaLabel?: string;
 }
 
 const ActionLink = (props: IActionLinkProps) => {
-	const { className = '', href, onClick, newTab, children, title } = props;
+	const { className = '', href, onClick, newTab, children, title, ariaLabel = title } = props;
 
 	if (href) {
 		return (
@@ -20,6 +21,7 @@ const ActionLink = (props: IActionLinkProps) => {
 				target={newTab ? '_blank' : undefined}
 				rel={newTab ? 'noopener noreferrer' : undefined}
 				title={title}
+				aria-label={ariaLabel}
 			>
 				{children}
 			</a>

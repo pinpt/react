@@ -1,6 +1,6 @@
+import React from 'react';
 import { extractImageMetadataFromFileID } from '../../lib/file_metadata';
 import { NodeProps } from './register';
-import React from 'react';
 
 const ImageBlock = ({ node }: NodeProps) => {
 	const { size } = extractImageMetadataFromFileID(node.attrs.src);
@@ -14,7 +14,7 @@ const ImageBlock = ({ node }: NodeProps) => {
 				src={node.attrs.src}
 				width={scaledWidth}
 				height={scaledHeight}
-				alt={node.attrs.alt}
+				alt={node.attrs.alt ?? ''}
 			/>
 		</div>
 	);

@@ -9,8 +9,11 @@ exports[`Test with clickable logo 1`] = `
     onClick={[Function]}
   >
     <img
+      alt=""
       className="image"
+      height={320}
       src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+      width={320}
     />
   </span>
   <span
@@ -29,8 +32,11 @@ exports[`Test with custom className 1`] = `
     className="Pinpoint Internal Link  Pinpoint Logo sm "
   >
     <img
+      alt=""
       className="image"
+      height={320}
       src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+      width={320}
     />
   </span>
   <span
@@ -46,13 +52,17 @@ exports[`Test with linked logo 1`] = `
   className="Pinpoint Copyright "
 >
   <a
+    aria-label="Logo"
     className="Pinpoint Internal Link Pinpoint Logo sm "
     href="https://pinpoint.com"
     title="Logo"
   >
     <img
+      alt=""
       className="image"
+      height={320}
       src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+      width={320}
     />
   </a>
   <span
@@ -71,8 +81,11 @@ exports[`Test with logo 1`] = `
     className="Pinpoint Internal Link  Pinpoint Logo sm "
   >
     <img
+      alt=""
       className="image"
+      height={320}
       src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+      width={320}
     />
   </span>
   <span
