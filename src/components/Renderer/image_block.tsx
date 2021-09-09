@@ -4,8 +4,8 @@ import { NodeProps } from './register';
 
 const ImageBlock = ({ node }: NodeProps) => {
 	const { size } = extractImageMetadataFromFileID(node.attrs.src);
-	const scaledWidth = (size?.width ?? 0) * node.attrs.scale;
-	const scaledHeight = (size?.height ?? 0) * node.attrs.scale;
+	const scaledWidth = (size?.width ?? 0) * node.attrs.scale ?? 1;
+	const scaledHeight = (size?.height ?? 0) * node.attrs.scale ?? 1;
 
 	const image = (zoom?: boolean) => (
 		<div className="image">

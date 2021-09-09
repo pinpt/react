@@ -79,6 +79,12 @@ Array [
     name="twitter:description"
   />,
   <link
+    href="https://changelog.pinpoint.com/rss"
+    rel="alternate"
+    title="RSS Feed for Pinpoint Changelog"
+    type="application/rss+xml"
+  />,
+  <link
     href="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
     rel="icon"
   />,
