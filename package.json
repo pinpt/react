@@ -48,7 +48,6 @@
 		"luxon": "^2.0.1",
 		"medium-zoom": "^1.0.6",
 		"react-syntax-highlighter": "^15.4.4",
-		"react-youtube-lite": "^1.0.1",
 		"slugify": "^1.6.0"
 	},
 	"devDependencies": {

@@ -2,7 +2,7 @@
 
 [Full Docs](https://react.preview.pinpoint.com/?path=/docs/components-pinpoint) | [Github](https://github.com/pinpt/react/tree/master/src/components/Pinpoint)
 
-This component ensures that the analytics are set up and user's pageviews will be recorded. It is also responsible for initializing the script to unfurl links inline.
+This component ensures that the analytics are set up and user's pageviews will be recorded. It is also responsible for initializing the script to unfurl links inline and wire up interactive elements such as YouTube videos and Toggle components.
 
 It should be placed at the top level of your application, as such:
 

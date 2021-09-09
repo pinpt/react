@@ -74,9 +74,61 @@ const Pinpoint = (props: IPinpointProps) => {
 		}
 	};
 
+	// wire up youtube players
+	const wireUpYouTubePlayers = () => {
+		const wireUpYouTubePlayer = (
+			ytPlayer: Element,
+			playButtonSelector: string,
+			overlaySelector: string
+		) => {
+			const playButton = ytPlayer.querySelector(playButtonSelector) as HTMLElement;
+			const url = ytPlayer.getAttribute('data-url');
+			const overlay = ytPlayer.querySelector(overlaySelector) as HTMLElement;
+			
+			if (playButton && url) {
+				const play = function () {
+					ytPlayer.removeEventListener('click', play);
+					const iframe = document.createElement('iframe');
+					iframe.className = 'embed-reponsive-item';
+					iframe.width = '560';
+					iframe.height = '315';
+					iframe.allow = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture';
+					iframe.src = url;
+					iframe.allowFullscreen = true;
+					ytPlayer.appendChild(iframe);
+					playButton.style.display = 'none';
+					if (overlay) {
+						overlay.style.display = 'none';
+					}
+				};
+				const warm = function () {
+					ytPlayer.removeEventListener('pointerover', warm);
+					const link1 = document.createElement('link');
+					link1.rel = 'preconnect';
+					link1.href = 'https://www.youtube-nocookie.com';
+					const link2 = document.createElement('link');
+					link2.rel = 'preconnect';
+					link2.href = 'https://www.google.com';
+					document.body.appendChild(link1);
+					document.body.appendChild(link2);
+				};
+				ytPlayer.removeEventListener('pointerover', warm);
+				ytPlayer.addEventListener('pointerover', warm);
+				ytPlayer.removeEventListener('click', play);
+				ytPlayer.addEventListener('click', play);
+			}
+		};
+		
+		const ytPlayers = document.querySelectorAll('.yt');
+		if (ytPlayers && ytPlayers.length) {
+			ytPlayers.forEach((ytPlayer) => wireUpYouTubePlayer(ytPlayer, ':scope > .play-button', ':scope > .overlay'));
+		}
+	};
+
 	const ref = () => {
 		if (ready && typeof window !== 'undefined') {
 			window.iframely?.load?.();
+			wireUpYouTubePlayers();
 			wireUpToggles();
 		}
 	};

@@ -50,7 +50,7 @@ const YouTubePlayer = ({ node, videoId }: { node: PmNode; videoId: string }) => 
 		style={{ backgroundImage: `url("${node.attrs.thumbnail}")` }}
 		data-url={`https://www.youtube-nocookie.com/embed/${encodeURIComponent(videoId)}?autoplay=1`}
 	>
-		<button className="yt-play-button" />
+		<button className="play-button" />
 		{node.attrs.style === 'overlay' && (
 			<div className="overlay">
 				<div className="info">
@@ -68,7 +68,7 @@ const Iframe = ({ node }: NodeProps) => {
 	const embedStyle = node.attrs?.style;
 
 	let component;
-	const matchYouTube = node.attrs.href.match(/(youtube\.com\/watch\?v=|youtu\.be\/)([\w]+)/);
+	const matchYouTube = node.attrs.href.match(/(youtube\.com\/watch\?v=|youtu\.be\/)([\w-]+)/);
 	const isYouTube = node.attrs.type === 'youtube' && matchYouTube && matchYouTube[2];
 	if (isYouTube && (node.attrs.style === 'large' || node.attrs.style === 'overlay')) {
 		component = <YouTubePlayer node={node} videoId={matchYouTube[2]} />;
