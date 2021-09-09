@@ -1,4 +1,4 @@
-import { ReactElement, useEffect } from 'react';
+import { ReactElement, useEffect, useRef } from 'react';
 import useScriptLoader from '../../lib/hooks/useScriptLoader';
 
 export interface IPinpointProps {
@@ -22,6 +22,7 @@ declare global {
 const Pinpoint = (props: IPinpointProps) => {
 	const { siteId, contentId } = props;
 	const [ready] = useScriptLoader([`https://cdn.iframe.ly/embed.js?api_key=ab49ad398c6f631ab44eca&origin=${siteId}`]);
+	const wiredUp = useRef(false);
 
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
@@ -128,8 +129,11 @@ const Pinpoint = (props: IPinpointProps) => {
 	const ref = () => {
 		if (ready && typeof window !== 'undefined') {
 			window.iframely?.load?.();
-			wireUpYouTubePlayers();
-			wireUpToggles();
+			if (!wiredUp.current) {
+				wiredUp.current = true;
+				wireUpYouTubePlayers();
+				wireUpToggles();
+			}
 		}
 	};
 
