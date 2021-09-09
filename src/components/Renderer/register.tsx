@@ -1,5 +1,6 @@
 import React from 'react';
 import BlockQuote from './blockquote';
+import Paragraph from './paragraph';
 
 export interface DocOpts {
 	openLinksInNewWindow?: boolean;
@@ -26,6 +27,7 @@ export interface NodeProps {
 
 export const nodeRegistry: Record<string, (node: PmNode) => JSX.Element> = {
 	blockquote: (node: PmNode) => <BlockQuote node={node} />,
+	paragraph: (node: PmNode) => <Paragraph node={node} />,
 };
 
 export const registerNode = (nodeType: string, factory: (node: PmNode) => JSX.Element) => {
