@@ -1,4 +1,5 @@
 import React from 'react';
+import BlockQuote from './blockquote';
 
 export interface DocOpts {
 	openLinksInNewWindow?: boolean;
@@ -23,10 +24,13 @@ export interface NodeProps {
 	node: PmNode;
 }
 
-export const nodeRegistry: Record<string, (node: PmNode) => JSX.Element> = {};
+export const nodeRegistry: Record<string, (node: PmNode) => JSX.Element> = {
+	blockquote: (node: PmNode) => <BlockQuote node={node} />,
+};
 
 export const registerNode = (nodeType: string, factory: (node: PmNode) => JSX.Element) => {
 	nodeRegistry[nodeType] = factory;
+	console.log('register', nodeType, nodeRegistry);
 };
 
 export const getNodeFactory = (nodeType: string) => nodeRegistry[nodeType];
