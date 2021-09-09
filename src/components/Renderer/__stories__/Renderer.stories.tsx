@@ -1,6 +1,9 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
-import { Document, emptyDoc } from '../';
+import { Content, Document, emptyDoc } from '../';
+import { CoverMediaType } from '../../../lib/types/content';
+import Pinpoint from '../../Pinpoint';
+import image_block_position_and_scale from '../__data__/image_block_position_and_scale';
 import simple_blockquote from '../__data__/simple_blockquote';
 import simple_break from '../__data__/simple_break';
 import simple_bullet_list from '../__data__/simple_bullet_list';
@@ -14,7 +17,6 @@ import simple_h4 from '../__data__/simple_h4';
 import simple_hr from '../__data__/simple_hr';
 import simple_image_block from '../__data__/simple_image_block';
 import simple_image_block_with_link from '../__data__/simple_image_block_with_link';
-import image_block_position_and_scale from '../__data__/image_block_position_and_scale';
 import simple_info_notice from '../__data__/simple_info_notice';
 import simple_inline_image from '../__data__/simple_inline_image';
 import simple_inline_image_with_link from '../__data__/simple_inline_image_with_link';
@@ -22,7 +24,10 @@ import simple_ordered_list from '../__data__/simple_ordered_list';
 import simple_paragraph from '../__data__/simple_paragraph';
 import simple_text from '../__data__/simple_text';
 import simple_warning_notice from '../__data__/simple_warning_notice';
+
 const { default: readme } = require('../README.md');
+
+import type { ICoverMedia } from '../../../lib/types/content';
 
 export default {
 	component: Document,
@@ -81,3 +86,30 @@ export const Simple_Image_Block: React.VFC<{}> = () => <Document node={simple_im
 export const Simple_Image_Block_With_Link: React.VFC<{}> = () => <Document node={simple_image_block_with_link} />;
 
 export const Image_Block_Position_And_Scale: React.VFC<{}> = () => <Document node={image_block_position_and_scale} />;
+
+export const Youtube_Video: React.VFC<{}> = () => {
+	const youtubeCoverMedia: ICoverMedia = {
+		type: CoverMediaType.Youtube,
+		value: 'PoZWTEXRgKo',
+		metadata: {
+			poster: 'maxresdefault',
+		},
+	};
+	return (
+		<Pinpoint siteId="testing">
+			{(ready, ref) => {
+				if (!ready) {
+					return null;
+				}
+				return (
+					<Content
+						ref={ref}
+						coverMedia={youtubeCoverMedia}
+						document={{ type: 'document', content: [] }}
+						id="5678"
+					/>
+				);
+			}}
+		</Pinpoint>
+	);
+};
