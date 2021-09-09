@@ -1,5 +1,6 @@
 import renderer from 'react-test-renderer';
-import { Document, emptyDoc } from '../';
+import { CoverMedia, Document, emptyDoc } from '../';
+import { CoverMediaType } from '../../../lib/types/content';
 import simple_blockquote from '../__data__/simple_blockquote';
 import simple_break from '../__data__/simple_break';
 import simple_bullet_list from '../__data__/simple_bullet_list';
@@ -20,6 +21,8 @@ import simple_ordered_list from '../__data__/simple_ordered_list';
 import simple_paragraph from '../__data__/simple_paragraph';
 import simple_text from '../__data__/simple_text';
 import simple_warning_notice from '../__data__/simple_warning_notice';
+
+import type { ICoverMedia } from '../../../lib/types/content';
 
 test('Test empty doc', () => {
 	const component = renderer.create(<Document node={emptyDoc()} />);
@@ -163,6 +166,69 @@ test('Test simple image block', () => {
 test('Test simple image block with link', () => {
 	const doc = simple_image_block_with_link;
 	const component = renderer.create(<Document node={doc} />);
+	const tree = component.toJSON();
+	expect(tree).toMatchSnapshot();
+});
+
+test('Test Youtube cover media with maxresdefault', () => {
+	const youtubeCoverMedia: ICoverMedia = {
+		type: CoverMediaType.Youtube,
+		value: 'PoZWTEXRgKo',
+		metadata: {
+			poster: 'maxresdefault',
+		},
+	};
+	const component = renderer.create(<CoverMedia media={youtubeCoverMedia} />);
+	const tree = component.toJSON();
+	expect(tree).toMatchSnapshot();
+});
+
+test('Test Youtube cover media with hqdefault', () => {
+	const youtubeCoverMedia: ICoverMedia = {
+		type: CoverMediaType.Youtube,
+		value: 'PoZWTEXRgKo',
+		metadata: {
+			poster: 'hqdefault',
+		},
+	};
+	const component = renderer.create(<CoverMedia media={youtubeCoverMedia} />);
+	const tree = component.toJSON();
+	expect(tree).toMatchSnapshot();
+});
+
+test('Test Youtube cover media with mqdefault', () => {
+	const youtubeCoverMedia: ICoverMedia = {
+		type: CoverMediaType.Youtube,
+		value: 'PoZWTEXRgKo',
+		metadata: {
+			poster: 'mqdefault',
+		},
+	};
+	const component = renderer.create(<CoverMedia media={youtubeCoverMedia} />);
+	const tree = component.toJSON();
+	expect(tree).toMatchSnapshot();
+});
+
+test('Test Youtube cover media with sddefault', () => {
+	const youtubeCoverMedia: ICoverMedia = {
+		type: CoverMediaType.Youtube,
+		value: 'PoZWTEXRgKo',
+		metadata: {
+			poster: 'sddefault',
+		},
+	};
+	const component = renderer.create(<CoverMedia media={youtubeCoverMedia} />);
+	const tree = component.toJSON();
+	expect(tree).toMatchSnapshot();
+});
+
+test('Test Youtube cover media with no poster', () => {
+	const youtubeCoverMedia: ICoverMedia = {
+		type: CoverMediaType.Youtube,
+		value: 'PoZWTEXRgKo',
+		metadata: {},
+	};
+	const component = renderer.create(<CoverMedia media={youtubeCoverMedia} />);
 	const tree = component.toJSON();
 	expect(tree).toMatchSnapshot();
 });

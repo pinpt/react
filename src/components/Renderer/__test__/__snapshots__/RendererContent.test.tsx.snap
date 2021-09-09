@@ -1,5 +1,155 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Test Youtube cover media with hqdefault 1`] = `
+<section
+  className="Pinpoint cover covermedia"
+>
+  <div
+    className="Pinpoint media-container"
+  >
+    <div
+      className="Pinpoint youtube"
+    >
+      <div
+        className="yt"
+        data-url="https://www.youtube-nocookie.com/embed/PoZWTEXRgKo?autoplay=1"
+        style={
+          Object {
+            "backgroundImage": "url(\\"https://i.ytimg.com/vi/PoZWTEXRgKo/hqdefault.jpg\\")",
+            "backgroundSize": "800px 800px",
+          }
+        }
+      >
+        <button
+          aria-label="Play the Video"
+          className="play-button"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`Test Youtube cover media with maxresdefault 1`] = `
+<section
+  className="Pinpoint cover covermedia"
+>
+  <div
+    className="Pinpoint media-container"
+  >
+    <div
+      className="Pinpoint youtube"
+    >
+      <div
+        className="yt"
+        data-url="https://www.youtube-nocookie.com/embed/PoZWTEXRgKo?autoplay=1"
+        style={
+          Object {
+            "backgroundImage": "url(\\"https://i.ytimg.com/vi/PoZWTEXRgKo/maxresdefault.jpg\\")",
+            "backgroundSize": "1280px 720px",
+          }
+        }
+      >
+        <button
+          aria-label="Play the Video"
+          className="play-button"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`Test Youtube cover media with mqdefault 1`] = `
+<section
+  className="Pinpoint cover covermedia"
+>
+  <div
+    className="Pinpoint media-container"
+  >
+    <div
+      className="Pinpoint youtube"
+    >
+      <div
+        className="yt"
+        data-url="https://www.youtube-nocookie.com/embed/PoZWTEXRgKo?autoplay=1"
+        style={
+          Object {
+            "backgroundImage": "url(\\"https://i.ytimg.com/vi/PoZWTEXRgKo/mqdefault.jpg\\")",
+            "backgroundSize": "240px 240px",
+          }
+        }
+      >
+        <button
+          aria-label="Play the Video"
+          className="play-button"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`Test Youtube cover media with no poster 1`] = `
+<section
+  className="Pinpoint cover covermedia"
+>
+  <div
+    className="Pinpoint media-container"
+  >
+    <div
+      className="Pinpoint youtube"
+    >
+      <div
+        className="yt"
+        data-url="https://www.youtube-nocookie.com/embed/PoZWTEXRgKo?autoplay=1"
+        style={
+          Object {
+            "backgroundImage": "url(\\"https://i.ytimg.com/vi/PoZWTEXRgKo/hqdefault.jpg\\")",
+            "backgroundSize": "800px 800px",
+          }
+        }
+      >
+        <button
+          aria-label="Play the Video"
+          className="play-button"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`Test Youtube cover media with sddefault 1`] = `
+<section
+  className="Pinpoint cover covermedia"
+>
+  <div
+    className="Pinpoint media-container"
+  >
+    <div
+      className="Pinpoint youtube"
+    >
+      <div
+        className="yt"
+        data-url="https://www.youtube-nocookie.com/embed/PoZWTEXRgKo?autoplay=1"
+        style={
+          Object {
+            "backgroundImage": "url(\\"https://i.ytimg.com/vi/PoZWTEXRgKo/sddefault.jpg\\")",
+            "backgroundSize": "640px 480px",
+          }
+        }
+      >
+        <button
+          aria-label="Play the Video"
+          className="play-button"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+`;
+
 exports[`Test empty doc 1`] = `
 <div
   className="Pinpoint document"

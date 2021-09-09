@@ -4,6 +4,7 @@ import { extractImageMetadataFromFileID } from '../../lib/file_metadata';
 import { slugifyContent } from '../../lib/string';
 import { CoverMediaType } from '../../lib/types/content';
 import { Document } from './';
+import { getYoutubePosterSize } from './iframe';
 
 import type { ICoverMedia } from '../../lib/types/content';
 
@@ -39,14 +40,18 @@ const VideoMedia = ({ src }: { src: string }) => {
 
 const YoutubeMedia = ({ id, metadata }: { id: string; metadata?: Record<string, any> }) => {
 	const posterUrl = `https://i.ytimg.com/vi/${id}/${metadata?.poster ?? 'hqdefault'}.jpg`;
+	const size = getYoutubePosterSize(posterUrl);
 	return (
 		<div className="Pinpoint youtube">
 			<div
 				className="yt"
-				style={{ backgroundImage: `url("${posterUrl}")` }}
+				style={{
+					backgroundImage: `url("${posterUrl}")`,
+					backgroundSize: size?.width && size?.height ? `${size.width}px ${size.height}px` : undefined,
+				}}
 				data-url={`https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}?autoplay=1`}
 			>
-				<button className="play-button" />
+				<button className="play-button" aria-label="Play the Video" />
 			</div>
 		</div>
 	);

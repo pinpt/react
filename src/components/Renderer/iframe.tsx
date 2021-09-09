@@ -7,7 +7,7 @@ const LargePreview = ({ node }: NodeProps) => {
 		return <a data-iframely-url href={node.attrs.href} title="Cover Image Preview" className="large"></a>;
 	}
 	const { size: thumbSize } = extractImageMetadataFromFileID(node.attrs.thumbnail);
-	const { size: iconSize } = extractImageMetadataFromFileID(node.attrs.attrs);
+	const { size: iconSize } = extractImageMetadataFromFileID(node.attrs.icon);
 	return (
 		<a className="large preview">
 			<img
@@ -35,30 +35,66 @@ const LargePreview = ({ node }: NodeProps) => {
 	);
 };
 
-const SmallPreview = ({ node }: NodeProps) => (
-	<div className="preview small">
-		<img className="thumbnail" src={node.attrs?.thumbnail} alt="" />
-		<div className="info">
-			<div className="site">
-				<img className="icon" src={node.attrs?.icon} alt="" />
-				<div className="site-name">{node.attrs?.site}</div>
+const SmallPreview = ({ node }: NodeProps) => {
+	const { size: iconSize } = extractImageMetadataFromFileID(node.attrs.icon);
+	return (
+		<div className="preview small">
+			<img className="thumbnail" src={node.attrs?.thumbnail} alt="" />
+			<div className="info">
+				<div className="site">
+					<img className="icon" src={node.attrs?.icon} alt="" width={iconSize?.width} height={iconSize?.height} />
+					<div className="site-name">{node.attrs?.site}</div>
+				</div>
+				<div className="title">
+					<a className="cursor-pointer link" href={node.attrs.href}>
+						{node.attrs?.title}
+					</a>
+				</div>
+				<div className="description">{node.attrs?.description}</div>
 			</div>
-			<div className="title">
-				<a className="cursor-pointer link" href={node.attrs.href}>
-					{node.attrs?.title}
-				</a>
-			</div>
-			<div className="description">{node.attrs?.description}</div>
 		</div>
-	</div>
-);
+	);
+};
+
+export const getYoutubePosterSize = (src: string) => {
+	const tok = /(\w+)\.jpg$/.exec(src);
+	if (tok?.length) {
+		const [, name] = tok;
+		//https://developers.google.com/youtube/v3/docs/thumbnails
+		switch (name) {
+			case 'hqdefault': {
+				return { width: 800, height: 800 };
+			}
+			case 'mqdefault': {
+				return { width: 240, height: 240 };
+			}
+			case 'sddefault': {
+				return { width: 640, height: 480 };
+			}
+			case 'maxresdefault': {
+				return { width: 1280, height: 720 };
+			}
+			default:
+				break;
+		}
+	}
+	return undefined;
+};
 
 const YouTubePlayer = ({ node, videoId }: { node: PmNode; videoId: string }) => {
-	const { size: iconSize } = extractImageMetadataFromFileID(node.attrs.thumbnail);
+	let { size: thumbSize } = extractImageMetadataFromFileID(node.attrs.thumbnail);
+	const { size: iconSize } = extractImageMetadataFromFileID(node.attrs.icon);
+	if (!thumbSize) {
+		thumbSize = getYoutubePosterSize(node.attrs.thumbnail);
+	}
 	return (
 		<div
 			className="yt"
-			style={{ backgroundImage: `url("${node.attrs.thumbnail}")` }}
+			style={{
+				backgroundImage: `url("${node.attrs.thumbnail}")`,
+				backgroundSize:
+					thumbSize?.width && thumbSize?.height ? `${thumbSize.width}px ${thumbSize.height}px` : undefined,
+			}}
 			data-url={`https://www.youtube-nocookie.com/embed/${encodeURIComponent(videoId)}?autoplay=1`}
 		>
 			<button className="play-button" />
