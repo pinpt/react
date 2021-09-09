@@ -1,7 +1,7 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
 import useEntries from '..';
-import Prebuilt from '../../../../components/Prebuilt';
+import PrebuiltHome from '../../../../components/Prebuilt/Home';
 import { IPinpointConfig } from '../../../types';
 import Loader from '../../../../components/Loader';
 const { default: readme } = require('../README.md');
@@ -44,5 +44,5 @@ export const Hook: React.VFC<{}> = () => {
 		return <Loader />;
 	}
 
-	return <Prebuilt.Home entries={content} site={site} />;
+	return <PrebuiltHome entries={content} site={site} />;
 };

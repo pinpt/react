@@ -3,7 +3,7 @@
 ## Usage
 
 ```jsx
-import { useEntries, Prebuilt } from '@pinpt/react';
+import { useEntries, PrebuiltHome } from '@pinpt/react';
 
 const config = {
 	slug: 'pinpoint',
@@ -21,7 +21,7 @@ export default () => {
 		return <Loader />
 	}
 
-	return <Prebuilt.Home entries={content} site={site} />;
+	return <PrebuiltHome entries={content} site={site} />;
 };
 ```
 

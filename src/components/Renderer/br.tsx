@@ -1,8 +1,8 @@
 import { NodeProps } from './register';
 import React from 'react';
 
-const Break = ({ node }: NodeProps) => {
+const Br = ({ node }: NodeProps) => {
 	return <br />;
 };
 
-export default Break;
+export default Br;

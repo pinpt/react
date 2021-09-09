@@ -1,6 +1,6 @@
 import React from 'react';
 import BlockQuote from './blockquote';
-import Break from './break';
+import Break from './br';
 import BulletList from './bullet_list';
 import CodeBlock from './code_block';
 import Emoji from './emoji';
