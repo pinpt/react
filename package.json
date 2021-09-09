@@ -1,10 +1,7 @@
 {
 	"name": "@pinpt/react",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "The Pinpoint UI Library for React",
-	"sideEffects": [
-		"./src/components/Renderer/**/*"
-	],
 	"main": "dist/cjs/index.js",
 	"module": "dist/esm/index.js",
 	"files": [

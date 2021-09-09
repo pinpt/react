@@ -5,6 +5,7 @@ exports[`Test full card 1`] = `
   className="Pinpoint Content Card Container wrapper "
 >
   <img
+    alt=""
     className="cover"
     src="https://cdn.pinpoint.com/card.png"
   />
@@ -204,6 +205,7 @@ exports[`Test full card with custom class 1`] = `
   className="Pinpoint Content Card Container wrapper test-custom"
 >
   <img
+    alt=""
     className="cover"
     src="https://cdn.pinpoint.com/card.png"
   />
@@ -351,6 +353,7 @@ exports[`Test multiple cards 1`] = `
     className="Pinpoint Content Card Container wrapper "
   >
     <img
+      alt=""
       className="cover"
       src="https://cdn.pinpoint.com/card.png"
     />
@@ -519,6 +522,7 @@ exports[`Test multiple cards 1`] = `
     className="Pinpoint Content Card Container wrapper "
   >
     <img
+      alt=""
       className="cover"
       src="https://cdn.pinpoint.com/card.png"
     />
@@ -691,6 +695,7 @@ exports[`Test no description 1`] = `
   className="Pinpoint Content Card Container wrapper "
 >
   <img
+    alt=""
     className="cover"
     src="https://cdn.pinpoint.com/card.png"
   />
@@ -963,6 +968,7 @@ exports[`Test no statistics 1`] = `
   className="Pinpoint Content Card Container wrapper "
 >
   <img
+    alt=""
     className="cover"
     src="https://cdn.pinpoint.com/card.png"
   />
@@ -991,6 +997,7 @@ exports[`Test no title 1`] = `
   className="Pinpoint Content Card Container wrapper "
 >
   <img
+    alt=""
     className="cover"
     src="https://cdn.pinpoint.com/card.png"
   />

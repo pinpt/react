@@ -6,7 +6,11 @@ const Email = (props: ISocialProps) => {
 	const { className = '', sharing, ...rest } = props;
 
 	return (
-		<ActionLink className={`Pinpoint Social Item Email ${sharing ? 'sharing' : ''} ${className}`} {...rest}>
+		<ActionLink
+			className={`Pinpoint Social Item Email ${sharing ? 'sharing' : ''} ${className}`}
+			title="Email"
+			{...rest}
+		>
 			<svg
 				width={16}
 				height={16}

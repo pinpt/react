@@ -1,5 +1,7 @@
-import ActionLink from '../Internal/ActionLink';
 import React from 'react';
+import { extractImageMetadataFromFileID } from '../../lib/file_metadata';
+import ActionLink from '../Internal/ActionLink';
+
 export interface ILogoProps {
 	className?: string;
 	src?: string;
@@ -12,6 +14,7 @@ export interface ILogoProps {
 
 const Logo = (props: ILogoProps) => {
 	const { className = '', src, href, newTab, size = 'sm', onClick, title = 'Logo' } = props;
+	const md = src ? extractImageMetadataFromFileID(src) : undefined;
 
 	return (
 		<ActionLink
@@ -21,7 +24,7 @@ const Logo = (props: ILogoProps) => {
 			onClick={onClick}
 			title={title}
 		>
-			<img className="image" src={src} />
+			<img className="image" src={src} alt="" width={md?.size?.width} height={md?.size?.height} />
 		</ActionLink>
 	);
 };

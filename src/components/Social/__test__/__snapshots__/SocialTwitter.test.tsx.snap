@@ -72,10 +72,12 @@ exports[`Test default state 1`] = `
 
 exports[`Test link (new tab) 1`] = `
 <a
+  aria-label="Twitter"
   className="Pinpoint Internal Link Pinpoint Social Item Twitter  "
   href="https://twitter.com/pinpoint_sw"
   rel="noopener noreferrer"
   target="_blank"
+  title="Twitter"
 >
   <svg
     aria-hidden="true"
@@ -98,8 +100,10 @@ exports[`Test link (new tab) 1`] = `
 
 exports[`Test link 1`] = `
 <a
+  aria-label="Twitter"
   className="Pinpoint Internal Link Pinpoint Social Item Twitter  "
   href="https://twitter.com/pinpoint_sw"
+  title="Twitter"
 >
   <svg
     aria-hidden="true"

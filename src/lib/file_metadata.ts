@@ -35,11 +35,29 @@ export const extractFileDataFromFileID = (url: string) => {
 	};
 };
 
-const extractSizeFromString = (str: string) => {
+const extractSizeFromString = (str: string, qs?: string) => {
 	const index = str.indexOf('x');
 	if (index > 0) {
-		const width = parseInt(str.substring(0, index));
-		const height = parseInt(str.substring(index + 1));
+		let width = parseInt(str.substring(0, index));
+		let height = parseInt(str.substring(index + 1));
+		if (qs && qs.indexOf('?') > 0) {
+			// take the resize parameters into consideration when calculating the size
+			const qsstr = qs.substring(qs.indexOf('?') + 1);
+			const tok = qsstr.split('&');
+			tok.forEach((t) => {
+				const [key, val] = t.split('=');
+				switch (key) {
+					case 'rw': {
+						width = parseInt(val);
+						break;
+					}
+					case 'rh': {
+						height = parseInt(val);
+						break;
+					}
+				}
+			});
+		}
 		return { width, height };
 	}
 	return undefined;
@@ -50,7 +68,7 @@ export const extractImageMetadataFromFileID = (fileid: string) => {
 	if (args.length) {
 		return {
 			blurhash: decodeURIComponent(args[0]),
-			size: args.length > 1 ? extractSizeFromString(args[1]) : undefined,
+			size: args.length > 1 ? extractSizeFromString(args[1], fileid) : undefined,
 			ext,
 		};
 	}

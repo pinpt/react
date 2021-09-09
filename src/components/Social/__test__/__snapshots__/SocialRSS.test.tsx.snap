@@ -72,10 +72,12 @@ exports[`Test default state 1`] = `
 
 exports[`Test link (new tab) 1`] = `
 <a
+  aria-label="RSS Feed"
   className="Pinpoint Internal Link Pinpoint Social Item RSS "
   href="https://api.pinpoint.com.so/rss/PirxVTE94u3YmGNOySRY"
   rel="noopener noreferrer"
   target="_blank"
+  title="RSS Feed"
 >
   <svg
     aria-hidden="true"
@@ -98,8 +100,10 @@ exports[`Test link (new tab) 1`] = `
 
 exports[`Test link 1`] = `
 <a
+  aria-label="RSS Feed"
   className="Pinpoint Internal Link Pinpoint Social Item RSS "
   href="https://api.pinpoint.com.so/rss/PirxVTE94u3YmGNOySRY"
+  title="RSS Feed"
 >
   <svg
     aria-hidden="true"

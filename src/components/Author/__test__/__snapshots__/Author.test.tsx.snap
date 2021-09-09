@@ -8,8 +8,11 @@ exports[`Test custom className 1`] = `
     title="Keegan avatar"
   >
     <img
+      alt=""
       className="avatar"
+      height={48}
       src="https://file.pinpoint.com/6cc744395c563f0072b339070aa327f3;UCGt%3D%3DkE~A%3FZJ6%5EhIpS%23o%5BELE3oLT0I%40t7E2;400x400.png?rw=48&rh=48"
+      width={48}
     />
     <span
       className="name"
@@ -28,8 +31,11 @@ exports[`Test default 1`] = `
     title="Keegan avatar"
   >
     <img
+      alt=""
       className="avatar"
+      height={48}
       src="https://file.pinpoint.com/6cc744395c563f0072b339070aa327f3;UCGt%3D%3DkE~A%3FZJ6%5EhIpS%23o%5BELE3oLT0I%40t7E2;400x400.png?rw=48&rh=48"
+      width={48}
     />
     <span
       className="name"
@@ -48,8 +54,11 @@ exports[`Test no name 1`] = `
     title=" avatar"
   >
     <img
+      alt=""
       className="avatar"
+      height={48}
       src="https://file.pinpoint.com/6cc744395c563f0072b339070aa327f3;UCGt%3D%3DkE~A%3FZJ6%5EhIpS%23o%5BELE3oLT0I%40t7E2;400x400.png?rw=48&rh=48"
+      width={48}
     />
     <span
       className="name"

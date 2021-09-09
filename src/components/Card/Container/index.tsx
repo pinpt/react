@@ -1,13 +1,14 @@
-import React, { useEffect, useMemo } from 'react';
+import React from 'react';
+import { extractImageMetadataFromFileID } from '../../../lib/file_metadata';
+import { CoverMediaType, ICoverMedia } from '../../../lib/types';
 import { CoverMedia } from '../../Renderer';
+
 import type { IStatisticsBarProps } from '../../Statistic/Bar';
 import type { ITagBarProps } from '../../Tags/Bar';
 import type { IDateProps } from '../../DateLabel';
 import type { ICardDescriptionProps } from '../Description';
 import type { ICardReadButtonProps } from '../ReadButton';
 import type { ICardTitleProps } from '../Title';
-import { CoverMediaType, ICoverMedia } from '../../../lib/types';
-
 export interface ICardContainerProps {
 	title?: React.ReactElement<ICardTitleProps>;
 	description?: React.ReactElement<ICardDescriptionProps>;
@@ -37,10 +38,13 @@ const Container = (props: ICardContainerProps) => {
 		onClick,
 	} = props;
 	const hasCoverMedia = coverMedia && coverMedia.type !== CoverMediaType.None;
+	const md = imageUrl ? extractImageMetadataFromFileID(imageUrl!) : undefined;
 
 	return (
 		<div className={`Pinpoint Content Card Container wrapper ${className}`} onClick={onClick}>
-			{imageUrl && <img className="cover" src={imageUrl} alt={alt} />}
+			{imageUrl && (
+				<img className="cover" src={imageUrl} alt={alt ?? ''} width={md?.size?.width} height={md?.size?.height} />
+			)}
 			{hasCoverMedia && <CoverMedia media={coverMedia} />}
 			{!hasCoverMedia && !imageUrl && <div className="empty-cover" />}
 			<div className="content">
