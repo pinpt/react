@@ -64,7 +64,7 @@ const YouTubePlayer = ({ node, videoId }: { node: PmNode; videoId: string }) => 
 			}}
 			data-url={`https://www.youtube-nocookie.com/embed/${encodeURIComponent(videoId)}?autoplay=1`}
 		>
-			<button className="play-button" />
+			<button className="play-button" aria-label="Play Youtube Video" />
 			{node.attrs.style === 'overlay' && (
 				<div className="overlay">
 					<div className="info">

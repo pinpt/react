@@ -77,15 +77,11 @@ const Pinpoint = (props: IPinpointProps) => {
 
 	// wire up youtube players
 	const wireUpYouTubePlayers = () => {
-		const wireUpYouTubePlayer = (
-			ytPlayer: Element,
-			playButtonSelector: string,
-			overlaySelector: string
-		) => {
+		const wireUpYouTubePlayer = (ytPlayer: Element, playButtonSelector: string, overlaySelector: string) => {
 			const playButton = ytPlayer.querySelector(playButtonSelector) as HTMLElement;
 			const url = ytPlayer.getAttribute('data-url');
 			const overlay = ytPlayer.querySelector(overlaySelector) as HTMLElement;
-			
+
 			if (playButton && url) {
 				const play = function () {
 					ytPlayer.removeEventListener('click', play);
@@ -96,6 +92,7 @@ const Pinpoint = (props: IPinpointProps) => {
 					iframe.allow = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture';
 					iframe.src = url;
 					iframe.allowFullscreen = true;
+					iframe.title = 'Youtube Video';
 					ytPlayer.appendChild(iframe);
 					playButton.style.display = 'none';
 					if (overlay) {
@@ -119,7 +116,7 @@ const Pinpoint = (props: IPinpointProps) => {
 				ytPlayer.addEventListener('click', play);
 			}
 		};
-		
+
 		const ytPlayers = document.querySelectorAll('.yt');
 		if (ytPlayers && ytPlayers.length) {
 			ytPlayers.forEach((ytPlayer) => wireUpYouTubePlayer(ytPlayer, ':scope > .play-button', ':scope > .overlay'));
