@@ -2,12 +2,14 @@
 
 exports[`Test click handler 1`] = `
 <span
+  aria-label="Logo"
   className="Pinpoint Internal Link clickable Pinpoint Logo sm "
   onClick={[Function]}
 >
   <img
     alt=""
-    className="image"
+    className="Pinpoint Image image"
+    decoding="async"
     height={320}
     src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
     width={320}
@@ -24,7 +26,8 @@ exports[`Test click handler and link 1`] = `
 >
   <img
     alt=""
-    className="image"
+    className="Pinpoint Image image"
+    decoding="async"
     height={320}
     src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
     width={320}
@@ -34,11 +37,13 @@ exports[`Test click handler and link 1`] = `
 
 exports[`Test default state 1`] = `
 <span
+  aria-label="Logo"
   className="Pinpoint Internal Link  Pinpoint Logo sm "
 >
   <img
     alt=""
-    className="image"
+    className="Pinpoint Image image"
+    decoding="async"
     height={320}
     src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
     width={320}
@@ -48,11 +53,13 @@ exports[`Test default state 1`] = `
 
 exports[`Test extra large 1`] = `
 <span
+  aria-label="Logo"
   className="Pinpoint Internal Link  Pinpoint Logo xl "
 >
   <img
     alt=""
-    className="image"
+    className="Pinpoint Image image"
+    decoding="async"
     height={320}
     src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
     width={320}
@@ -62,11 +69,13 @@ exports[`Test extra large 1`] = `
 
 exports[`Test extra small 1`] = `
 <span
+  aria-label="Logo"
   className="Pinpoint Internal Link  Pinpoint Logo xs "
 >
   <img
     alt=""
-    className="image"
+    className="Pinpoint Image image"
+    decoding="async"
     height={320}
     src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
     width={320}
@@ -76,11 +85,13 @@ exports[`Test extra small 1`] = `
 
 exports[`Test large 1`] = `
 <span
+  aria-label="Logo"
   className="Pinpoint Internal Link  Pinpoint Logo lg "
 >
   <img
     alt=""
-    className="image"
+    className="Pinpoint Image image"
+    decoding="async"
     height={320}
     src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
     width={320}
@@ -99,7 +110,8 @@ exports[`Test link (new tab) 1`] = `
 >
   <img
     alt=""
-    className="image"
+    className="Pinpoint Image image"
+    decoding="async"
     height={320}
     src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
     width={320}
@@ -116,7 +128,8 @@ exports[`Test link 1`] = `
 >
   <img
     alt=""
-    className="image"
+    className="Pinpoint Image image"
+    decoding="async"
     height={320}
     src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
     width={320}
@@ -126,11 +139,13 @@ exports[`Test link 1`] = `
 
 exports[`Test medium 1`] = `
 <span
+  aria-label="Logo"
   className="Pinpoint Internal Link  Pinpoint Logo md "
 >
   <img
     alt=""
-    className="image"
+    className="Pinpoint Image image"
+    decoding="async"
     height={320}
     src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
     width={320}
@@ -140,11 +155,13 @@ exports[`Test medium 1`] = `
 
 exports[`Test small 1`] = `
 <span
+  aria-label="Logo"
   className="Pinpoint Internal Link  Pinpoint Logo sm "
 >
   <img
     alt=""
-    className="image"
+    className="Pinpoint Image image"
+    decoding="async"
     height={320}
     src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
     width={320}

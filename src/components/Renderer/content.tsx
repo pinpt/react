@@ -3,6 +3,7 @@ import React, { forwardRef, useEffect } from 'react';
 import { extractImageMetadataFromFileID } from '../../lib/file_metadata';
 import { slugifyContent } from '../../lib/string';
 import { CoverMediaType } from '../../lib/types/content';
+import Image from '../Image';
 import { Document } from './';
 
 import type { ICoverMedia } from '../../lib/types/content';
@@ -18,7 +19,7 @@ const ImageMedia = ({ src, title = '', zoomable = false }: { src?: string; title
 
 	return (
 		<div className="Pinpoint image">
-			<img
+			<Image
 				src={src}
 				alt={title}
 				className={`${zoomable ? 'medium-zoom-cover' : ''}`}

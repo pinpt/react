@@ -1,5 +1,6 @@
 import React from 'react';
 import { extractImageMetadataFromFileID } from '../../lib/file_metadata';
+import Image from '../Image';
 import { NodeProps, PmNode } from './register';
 
 const LargePreview = ({ node }: NodeProps) => {
@@ -10,16 +11,10 @@ const LargePreview = ({ node }: NodeProps) => {
 	const { size: iconSize } = extractImageMetadataFromFileID(node.attrs.icon);
 	return (
 		<a className="large preview">
-			<img
-				className="thumbnail"
-				src={node.attrs.thumbnail}
-				alt=""
-				width={thumbSize?.width}
-				height={thumbSize?.height}
-			/>
+			<Image className="thumbnail" src={node.attrs.thumbnail} width={thumbSize?.width} height={thumbSize?.height} />
 			<div className="info">
 				<div className="site">
-					<img className="icon" src={node.attrs.icon} alt="" width={iconSize?.width} height={iconSize?.height} />
+					<Image className="icon" src={node.attrs.icon} width={iconSize?.width} height={iconSize?.height} />
 					<div className="site-name">{node.attrs.site ?? new URL(node.attrs.href).hostname}</div>
 				</div>
 				{node.attrs.title && (
@@ -39,10 +34,10 @@ const SmallPreview = ({ node }: NodeProps) => {
 	const { size: iconSize } = extractImageMetadataFromFileID(node.attrs.icon);
 	return (
 		<div className="preview small">
-			<img className="thumbnail" src={node.attrs?.thumbnail} alt="" />
+			<Image className="thumbnail" src={node.attrs?.thumbnail} />
 			<div className="info">
 				<div className="site">
-					<img className="icon" src={node.attrs?.icon} alt="" width={iconSize?.width} height={iconSize?.height} />
+					<Image className="icon" src={node.attrs?.icon} width={iconSize?.width} height={iconSize?.height} />
 					<div className="site-name">{node.attrs?.site}</div>
 				</div>
 				<div className="title">
@@ -73,13 +68,7 @@ const YouTubePlayer = ({ node, videoId }: { node: PmNode; videoId: string }) => 
 			{node.attrs.style === 'overlay' && (
 				<div className="overlay">
 					<div className="info">
-						<img
-							className="icon"
-							src={node.attrs.icon}
-							alt=""
-							width={iconSize?.width}
-							height={iconSize?.height}
-						/>
+						<Image className="icon" src={node.attrs.icon} width={iconSize?.width} height={iconSize?.height} />
 						<a
 							className="title link"
 							title="Youtube Play Link"

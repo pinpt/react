@@ -2,6 +2,7 @@
 
 exports[`Test click handler 1`] = `
 <span
+  aria-label="RSS Feed"
   className="Pinpoint Internal Link clickable Pinpoint Social Item RSS "
   onClick={[Function]}
 >
@@ -26,6 +27,7 @@ exports[`Test click handler 1`] = `
 
 exports[`Test custom className 1`] = `
 <span
+  aria-label="RSS Feed"
   className="Pinpoint Internal Link  Pinpoint Social Item RSS custom-test"
 >
   <svg
@@ -49,6 +51,7 @@ exports[`Test custom className 1`] = `
 
 exports[`Test default state 1`] = `
 <span
+  aria-label="RSS Feed"
   className="Pinpoint Internal Link  Pinpoint Social Item RSS "
 >
   <svg

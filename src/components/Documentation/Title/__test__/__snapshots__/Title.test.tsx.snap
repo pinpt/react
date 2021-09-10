@@ -6,11 +6,13 @@ exports[`Test click handler 1`] = `
   onClick={[Function]}
 >
   <span
+    aria-label="Logo"
     className="Pinpoint Internal Link  Pinpoint Logo sm "
   >
     <img
       alt=""
-      className="image"
+      className="Pinpoint Image image"
+      decoding="async"
       height={320}
       src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
       width={320}
@@ -29,11 +31,13 @@ exports[`Test custom className 1`] = `
   className="Pinpoint Documentation Title  test-custom"
 >
   <span
+    aria-label="Logo"
     className="Pinpoint Internal Link  Pinpoint Logo sm "
   >
     <img
       alt=""
-      className="image"
+      className="Pinpoint Image image"
+      decoding="async"
       height={320}
       src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
       width={320}
@@ -52,11 +56,13 @@ exports[`Test custom text 1`] = `
   className="Pinpoint Documentation Title  "
 >
   <span
+    aria-label="Logo"
     className="Pinpoint Internal Link  Pinpoint Logo sm "
   >
     <img
       alt=""
-      className="image"
+      className="Pinpoint Image image"
+      decoding="async"
       height={320}
       src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
       width={320}
@@ -75,11 +81,13 @@ exports[`Test default state 1`] = `
   className="Pinpoint Documentation Title  "
 >
   <span
+    aria-label="Logo"
     className="Pinpoint Internal Link  Pinpoint Logo sm "
   >
     <img
       alt=""
-      className="image"
+      className="Pinpoint Image image"
+      decoding="async"
       height={320}
       src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
       width={320}

@@ -1,5 +1,6 @@
 import React from 'react';
 import { extractImageMetadataFromFileID } from '../../lib/file_metadata';
+import Image from '../Image';
 import { NodeProps } from './register';
 
 const InlineImage = ({ node }: NodeProps) => {
@@ -8,7 +9,7 @@ const InlineImage = ({ node }: NodeProps) => {
 	const height = size?.height;
 
 	const image = (
-		<img src={node.attrs?.src} width={width} height={height} alt={node.attrs?.alt ?? ''} className="inline_image" />
+		<Image src={node.attrs?.src} width={width} height={height} alt={node.attrs?.alt} className="inline_image" />
 	);
 
 	return (

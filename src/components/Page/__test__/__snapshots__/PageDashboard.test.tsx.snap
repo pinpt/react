@@ -97,7 +97,8 @@ exports[`Test full page 1`] = `
           >
             <img
               alt=""
-              className="cover"
+              className="Pinpoint Image cover"
+              decoding="async"
               src="https://cdn.pinpoint.com/card.png"
             />
             <div
@@ -266,7 +267,8 @@ exports[`Test full page 1`] = `
           >
             <img
               alt=""
-              className="cover"
+              className="Pinpoint Image cover"
+              decoding="async"
               src="https://cdn.pinpoint.com/card.png"
             />
             <div
@@ -457,7 +459,8 @@ exports[`Test full page 1`] = `
           >
             <img
               alt=""
-              className="cover"
+              className="Pinpoint Image cover"
+              decoding="async"
               src="https://cdn.pinpoint.com/card.png"
             />
             <div
@@ -626,7 +629,8 @@ exports[`Test full page 1`] = `
           >
             <img
               alt=""
-              className="cover"
+              className="Pinpoint Image cover"
+              decoding="async"
               src="https://cdn.pinpoint.com/card.png"
             />
             <div
@@ -795,7 +799,8 @@ exports[`Test full page 1`] = `
           >
             <img
               alt=""
-              className="cover"
+              className="Pinpoint Image cover"
+              decoding="async"
               src="https://cdn.pinpoint.com/card.png"
             />
             <div
@@ -964,7 +969,8 @@ exports[`Test full page 1`] = `
           >
             <img
               alt=""
-              className="cover"
+              className="Pinpoint Image cover"
+              decoding="async"
               src="https://cdn.pinpoint.com/card.png"
             />
             <div
@@ -1151,11 +1157,13 @@ exports[`Test full page 1`] = `
               className="Pinpoint Copyright "
             >
               <span
+                aria-label="Logo"
                 className="Pinpoint Internal Link  Pinpoint Logo sm "
               >
                 <img
                   alt=""
-                  className="image"
+                  className="Pinpoint Image image"
+                  decoding="async"
                   height={320}
                   src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
                   width={320}
@@ -1517,11 +1525,13 @@ exports[`Test loading 1`] = `
               className="Pinpoint Copyright "
             >
               <span
+                aria-label="Logo"
                 className="Pinpoint Internal Link  Pinpoint Logo sm "
               >
                 <img
                   alt=""
-                  className="image"
+                  className="Pinpoint Image image"
+                  decoding="async"
                   height={320}
                   src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
                   width={320}
@@ -1804,7 +1814,8 @@ exports[`Test no footer 1`] = `
           >
             <img
               alt=""
-              className="cover"
+              className="Pinpoint Image cover"
+              decoding="async"
               src="https://cdn.pinpoint.com/card.png"
             />
             <div
@@ -1973,7 +1984,8 @@ exports[`Test no footer 1`] = `
           >
             <img
               alt=""
-              className="cover"
+              className="Pinpoint Image cover"
+              decoding="async"
               src="https://cdn.pinpoint.com/card.png"
             />
             <div
@@ -2164,7 +2176,8 @@ exports[`Test no footer 1`] = `
           >
             <img
               alt=""
-              className="cover"
+              className="Pinpoint Image cover"
+              decoding="async"
               src="https://cdn.pinpoint.com/card.png"
             />
             <div
@@ -2333,7 +2346,8 @@ exports[`Test no footer 1`] = `
           >
             <img
               alt=""
-              className="cover"
+              className="Pinpoint Image cover"
+              decoding="async"
               src="https://cdn.pinpoint.com/card.png"
             />
             <div
@@ -2502,7 +2516,8 @@ exports[`Test no footer 1`] = `
           >
             <img
               alt=""
-              className="cover"
+              className="Pinpoint Image cover"
+              decoding="async"
               src="https://cdn.pinpoint.com/card.png"
             />
             <div
@@ -2671,7 +2686,8 @@ exports[`Test no footer 1`] = `
           >
             <img
               alt=""
-              className="cover"
+              className="Pinpoint Image cover"
+              decoding="async"
               src="https://cdn.pinpoint.com/card.png"
             />
             <div
@@ -2868,7 +2884,8 @@ exports[`Test no header 1`] = `
           >
             <img
               alt=""
-              className="cover"
+              className="Pinpoint Image cover"
+              decoding="async"
               src="https://cdn.pinpoint.com/card.png"
             />
             <div
@@ -3037,7 +3054,8 @@ exports[`Test no header 1`] = `
           >
             <img
               alt=""
-              className="cover"
+              className="Pinpoint Image cover"
+              decoding="async"
               src="https://cdn.pinpoint.com/card.png"
             />
             <div
@@ -3228,7 +3246,8 @@ exports[`Test no header 1`] = `
           >
             <img
               alt=""
-              className="cover"
+              className="Pinpoint Image cover"
+              decoding="async"
               src="https://cdn.pinpoint.com/card.png"
             />
             <div
@@ -3397,7 +3416,8 @@ exports[`Test no header 1`] = `
           >
             <img
               alt=""
-              className="cover"
+              className="Pinpoint Image cover"
+              decoding="async"
               src="https://cdn.pinpoint.com/card.png"
             />
             <div
@@ -3566,7 +3586,8 @@ exports[`Test no header 1`] = `
           >
             <img
               alt=""
-              className="cover"
+              className="Pinpoint Image cover"
+              decoding="async"
               src="https://cdn.pinpoint.com/card.png"
             />
             <div
@@ -3735,7 +3756,8 @@ exports[`Test no header 1`] = `
           >
             <img
               alt=""
-              className="cover"
+              className="Pinpoint Image cover"
+              decoding="async"
               src="https://cdn.pinpoint.com/card.png"
             />
             <div
@@ -3922,11 +3944,13 @@ exports[`Test no header 1`] = `
               className="Pinpoint Copyright "
             >
               <span
+                aria-label="Logo"
                 className="Pinpoint Internal Link  Pinpoint Logo sm "
               >
                 <img
                   alt=""
-                  className="image"
+                  className="Pinpoint Image image"
+                  decoding="async"
                   height={320}
                   src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
                   width={320}
@@ -4210,7 +4234,8 @@ exports[`Test no latest 1`] = `
           >
             <img
               alt=""
-              className="cover"
+              className="Pinpoint Image cover"
+              decoding="async"
               src="https://cdn.pinpoint.com/card.png"
             />
             <div
@@ -4379,7 +4404,8 @@ exports[`Test no latest 1`] = `
           >
             <img
               alt=""
-              className="cover"
+              className="Pinpoint Image cover"
+              decoding="async"
               src="https://cdn.pinpoint.com/card.png"
             />
             <div
@@ -4548,7 +4574,8 @@ exports[`Test no latest 1`] = `
           >
             <img
               alt=""
-              className="cover"
+              className="Pinpoint Image cover"
+              decoding="async"
               src="https://cdn.pinpoint.com/card.png"
             />
             <div
@@ -4717,7 +4744,8 @@ exports[`Test no latest 1`] = `
           >
             <img
               alt=""
-              className="cover"
+              className="Pinpoint Image cover"
+              decoding="async"
               src="https://cdn.pinpoint.com/card.png"
             />
             <div
@@ -4904,11 +4932,13 @@ exports[`Test no latest 1`] = `
               className="Pinpoint Copyright "
             >
               <span
+                aria-label="Logo"
                 className="Pinpoint Internal Link  Pinpoint Logo sm "
               >
                 <img
                   alt=""
-                  className="image"
+                  className="Pinpoint Image image"
+                  decoding="async"
                   height={320}
                   src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
                   width={320}
@@ -5191,7 +5221,8 @@ exports[`Test no recent 1`] = `
           >
             <img
               alt=""
-              className="cover"
+              className="Pinpoint Image cover"
+              decoding="async"
               src="https://cdn.pinpoint.com/card.png"
             />
             <div
@@ -5360,7 +5391,8 @@ exports[`Test no recent 1`] = `
           >
             <img
               alt=""
-              className="cover"
+              className="Pinpoint Image cover"
+              decoding="async"
               src="https://cdn.pinpoint.com/card.png"
             />
             <div
@@ -5547,11 +5579,13 @@ exports[`Test no recent 1`] = `
               className="Pinpoint Copyright "
             >
               <span
+                aria-label="Logo"
                 className="Pinpoint Internal Link  Pinpoint Logo sm "
               >
                 <img
                   alt=""
-                  className="image"
+                  className="Pinpoint Image image"
+                  decoding="async"
                   height={320}
                   src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
                   width={320}

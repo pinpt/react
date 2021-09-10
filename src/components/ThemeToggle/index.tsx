@@ -1,5 +1,4 @@
-import { useCallback } from 'react';
-import React from 'react';
+import React, { useCallback } from 'react';
 
 export interface IThemeToggleProps {
 	className?: string;
@@ -24,7 +23,7 @@ const ThemeToggle = (props: IThemeToggleProps) => {
 
 	return (
 		<div className={`Pinpoint ThemeToggle ${className}`}>
-			<button className="mode" onClick={handleToggleTheme} />
+			<button className="mode" onClick={handleToggleTheme} aria-label="Toggle Theme" />
 		</div>
 	);
 };

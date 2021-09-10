@@ -49,6 +49,7 @@ exports[`Test complete 1`] = `
         className="Pinpoint ThemeToggle "
       >
         <button
+          aria-label="Toggle Theme"
           className="mode"
           onClick={[Function]}
         />
@@ -205,6 +206,7 @@ exports[`Test no search 1`] = `
         className="Pinpoint ThemeToggle "
       >
         <button
+          aria-label="Toggle Theme"
           className="mode"
           onClick={[Function]}
         />

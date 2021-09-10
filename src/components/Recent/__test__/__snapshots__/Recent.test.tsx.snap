@@ -18,7 +18,8 @@ exports[`Test custom className 1`] = `
     >
       <img
         alt=""
-        className="cover"
+        className="Pinpoint Image cover"
+        decoding="async"
         src="https://cdn.pinpoint.com/card.png"
       />
       <div
@@ -204,7 +205,8 @@ exports[`Test double 1`] = `
     >
       <img
         alt=""
-        className="cover"
+        className="Pinpoint Image cover"
+        decoding="async"
         src="https://cdn.pinpoint.com/card.png"
       />
       <div
@@ -373,7 +375,8 @@ exports[`Test double 1`] = `
     >
       <img
         alt=""
-        className="cover"
+        className="Pinpoint Image cover"
+        decoding="async"
         src="https://cdn.pinpoint.com/card.png"
       />
       <div
@@ -568,7 +571,8 @@ exports[`Test page counts 1`] = `
     >
       <img
         alt=""
-        className="cover"
+        className="Pinpoint Image cover"
+        decoding="async"
         src="https://cdn.pinpoint.com/card.png"
       />
       <div
@@ -737,7 +741,8 @@ exports[`Test page counts 1`] = `
     >
       <img
         alt=""
-        className="cover"
+        className="Pinpoint Image cover"
+        decoding="async"
         src="https://cdn.pinpoint.com/card.png"
       />
       <div
@@ -923,7 +928,8 @@ exports[`Test single 1`] = `
     >
       <img
         alt=""
-        className="cover"
+        className="Pinpoint Image cover"
+        decoding="async"
         src="https://cdn.pinpoint.com/card.png"
       />
       <div
@@ -1109,7 +1115,8 @@ exports[`Test triple 1`] = `
     >
       <img
         alt=""
-        className="cover"
+        className="Pinpoint Image cover"
+        decoding="async"
         src="https://cdn.pinpoint.com/card.png"
       />
       <div
@@ -1278,7 +1285,8 @@ exports[`Test triple 1`] = `
     >
       <img
         alt=""
-        className="cover"
+        className="Pinpoint Image cover"
+        decoding="async"
         src="https://cdn.pinpoint.com/card.png"
       />
       <div
@@ -1447,7 +1455,8 @@ exports[`Test triple 1`] = `
     >
       <img
         alt=""
-        className="cover"
+        className="Pinpoint Image cover"
+        decoding="async"
         src="https://cdn.pinpoint.com/card.png"
       />
       <div
