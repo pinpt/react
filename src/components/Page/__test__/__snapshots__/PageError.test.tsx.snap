@@ -79,7 +79,7 @@ exports[`Test full error 1`] = `
             className="right"
           >
             <a
-              className="Pinpoint Internal Link Pinpoint Subscribe invisible "
+              className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-0 "
               href="https://pinpoint.com"
             >
               <svg

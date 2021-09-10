@@ -1,7 +1,6 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { isSubscriberCookieSet } from '../../lib/subscription';
 import ActionLink from '../Internal/ActionLink';
-import React from 'react';
 
 export interface ISubscribeProps {
 	className?: string;
@@ -23,7 +22,9 @@ const Subscribe = (props: ISubscribeProps) => {
 
 	return (
 		<ActionLink
-			className={`Pinpoint Subscribe ${!ready || hidden ? 'invisible' : 'visible'} ${className}`}
+			className={`Pinpoint Subscribe transition-opacity ${
+				!ready || hidden ? 'opacity-0' : 'opacity-100'
+			} ${className}`}
 			href={href}
 			newTab={newTab}
 			onClick={onClick}

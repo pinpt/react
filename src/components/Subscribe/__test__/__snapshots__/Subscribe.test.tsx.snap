@@ -2,7 +2,7 @@
 
 exports[`Test click handler 1`] = `
 <span
-  className="Pinpoint Internal Link clickable Pinpoint Subscribe visible "
+  className="Pinpoint Internal Link clickable Pinpoint Subscribe transition-opacity opacity-100 "
   onClick={[Function]}
 >
   <svg
@@ -32,7 +32,7 @@ exports[`Test click handler 1`] = `
 
 exports[`Test click handler and link 1`] = `
 <a
-  className="Pinpoint Internal Link Pinpoint Subscribe invisible "
+  className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-0 "
   href="https://pinpoint.com"
 >
   <svg
@@ -62,7 +62,7 @@ exports[`Test click handler and link 1`] = `
 
 exports[`Test custom class 1`] = `
 <span
-  className="Pinpoint Internal Link  Pinpoint Subscribe visible custom-test"
+  className="Pinpoint Internal Link  Pinpoint Subscribe transition-opacity opacity-100 custom-test"
 >
   <svg
     aria-hidden="true"
@@ -91,7 +91,7 @@ exports[`Test custom class 1`] = `
 
 exports[`Test custom text 1`] = `
 <span
-  className="Pinpoint Internal Link  Pinpoint Subscribe invisible "
+  className="Pinpoint Internal Link  Pinpoint Subscribe transition-opacity opacity-0 "
 >
   <svg
     aria-hidden="true"
@@ -120,7 +120,7 @@ exports[`Test custom text 1`] = `
 
 exports[`Test default state 1`] = `
 <span
-  className="Pinpoint Internal Link  Pinpoint Subscribe invisible "
+  className="Pinpoint Internal Link  Pinpoint Subscribe transition-opacity opacity-0 "
 >
   <svg
     aria-hidden="true"
@@ -149,7 +149,7 @@ exports[`Test default state 1`] = `
 
 exports[`Test link (new tab) 1`] = `
 <a
-  className="Pinpoint Internal Link Pinpoint Subscribe invisible "
+  className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-0 "
   href="https://pinpoint.com"
   rel="noopener noreferrer"
   target="_blank"
@@ -181,7 +181,7 @@ exports[`Test link (new tab) 1`] = `
 
 exports[`Test link 1`] = `
 <a
-  className="Pinpoint Internal Link Pinpoint Subscribe visible "
+  className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-100 "
   href="https://pinpoint.com"
 >
   <svg

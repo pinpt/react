@@ -104,7 +104,7 @@ exports[`Test custom className 1`] = `
             className="action"
           >
             <a
-              className="Pinpoint Internal Link Pinpoint Subscribe visible Prebuilt"
+              className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-100 Prebuilt"
               href="/subscription/subscribe"
             >
               <svg
@@ -852,7 +852,7 @@ exports[`Test custom className 1`] = `
             className="right"
           >
             <a
-              className="Pinpoint Internal Link Pinpoint Subscribe visible Prebuilt"
+              className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-100 Prebuilt"
               href="/subscription/subscribe"
             >
               <svg
@@ -1196,7 +1196,7 @@ exports[`Test default state 1`] = `
             className="action"
           >
             <a
-              className="Pinpoint Internal Link Pinpoint Subscribe invisible Prebuilt"
+              className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-0 Prebuilt"
               href="/subscription/subscribe"
             >
               <svg
@@ -1944,7 +1944,7 @@ exports[`Test default state 1`] = `
             className="right"
           >
             <a
-              className="Pinpoint Internal Link Pinpoint Subscribe invisible Prebuilt"
+              className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-0 Prebuilt"
               href="/subscription/subscribe"
             >
               <svg
@@ -2288,7 +2288,7 @@ exports[`Test no author 1`] = `
             className="action"
           >
             <a
-              className="Pinpoint Internal Link Pinpoint Subscribe invisible Prebuilt"
+              className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-0 Prebuilt"
               href="/subscription/subscribe"
             >
               <svg
@@ -2824,7 +2824,7 @@ exports[`Test no author 1`] = `
             className="right"
           >
             <a
-              className="Pinpoint Internal Link Pinpoint Subscribe invisible Prebuilt"
+              className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-0 Prebuilt"
               href="/subscription/subscribe"
             >
               <svg
@@ -3168,7 +3168,7 @@ exports[`Test no claps 1`] = `
             className="action"
           >
             <a
-              className="Pinpoint Internal Link Pinpoint Subscribe visible Prebuilt"
+              className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-100 Prebuilt"
               href="/subscription/subscribe"
             >
               <svg
@@ -3748,7 +3748,7 @@ exports[`Test no claps 1`] = `
             className="right"
           >
             <a
-              className="Pinpoint Internal Link Pinpoint Subscribe visible Prebuilt"
+              className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-100 Prebuilt"
               href="/subscription/subscribe"
             >
               <svg
@@ -4092,7 +4092,7 @@ exports[`Test not zoomable 1`] = `
             className="action"
           >
             <a
-              className="Pinpoint Internal Link Pinpoint Subscribe visible Prebuilt"
+              className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-100 Prebuilt"
               href="/subscription/subscribe"
             >
               <svg
@@ -4840,7 +4840,7 @@ exports[`Test not zoomable 1`] = `
             className="right"
           >
             <a
-              className="Pinpoint Internal Link Pinpoint Subscribe visible Prebuilt"
+              className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-100 Prebuilt"
               href="/subscription/subscribe"
             >
               <svg
@@ -5184,7 +5184,7 @@ exports[`Test with pagination 1`] = `
             className="action"
           >
             <a
-              className="Pinpoint Internal Link Pinpoint Subscribe invisible Prebuilt"
+              className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-0 Prebuilt"
               href="/subscription/subscribe"
             >
               <svg
@@ -5746,7 +5746,7 @@ exports[`Test with pagination 1`] = `
             className="right"
           >
             <a
-              className="Pinpoint Internal Link Pinpoint Subscribe invisible Prebuilt"
+              className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-0 Prebuilt"
               href="/subscription/subscribe"
             >
               <svg
