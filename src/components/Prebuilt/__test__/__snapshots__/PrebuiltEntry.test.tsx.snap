@@ -159,6 +159,7 @@ exports[`Test custom className 1`] = `
               className="Pinpoint Author Prebuilt"
             >
               <span
+                aria-label="Chris Bowley avatar"
                 className="Pinpoint Internal Link  "
               >
                 <img
@@ -570,6 +571,7 @@ exports[`Test custom className 1`] = `
               className="Pinpoint Author Prebuilt"
             >
               <span
+                aria-label="Chris Bowley avatar"
                 className="Pinpoint Internal Link  "
               >
                 <img
@@ -1249,6 +1251,7 @@ exports[`Test default state 1`] = `
               className="Pinpoint Author Prebuilt"
             >
               <span
+                aria-label="Chris Bowley avatar"
                 className="Pinpoint Internal Link  "
               >
                 <img
@@ -1660,6 +1663,7 @@ exports[`Test default state 1`] = `
               className="Pinpoint Author Prebuilt"
             >
               <span
+                aria-label="Chris Bowley avatar"
                 className="Pinpoint Internal Link  "
               >
                 <img
@@ -3219,6 +3223,7 @@ exports[`Test no claps 1`] = `
               className="Pinpoint Author Prebuilt"
             >
               <span
+                aria-label="Chris Bowley avatar"
                 className="Pinpoint Internal Link  "
               >
                 <img
@@ -3546,6 +3551,7 @@ exports[`Test no claps 1`] = `
               className="Pinpoint Author Prebuilt"
             >
               <span
+                aria-label="Chris Bowley avatar"
                 className="Pinpoint Internal Link  "
               >
                 <img
@@ -4141,6 +4147,7 @@ exports[`Test not zoomable 1`] = `
               className="Pinpoint Author Prebuilt"
             >
               <span
+                aria-label="Chris Bowley avatar"
                 className="Pinpoint Internal Link  "
               >
                 <img
@@ -4552,6 +4559,7 @@ exports[`Test not zoomable 1`] = `
               className="Pinpoint Author Prebuilt"
             >
               <span
+                aria-label="Chris Bowley avatar"
                 className="Pinpoint Internal Link  "
               >
                 <img
@@ -5231,6 +5239,7 @@ exports[`Test with pagination 1`] = `
               className="Pinpoint Author Prebuilt"
             >
               <span
+                aria-label="Chris Bowley avatar"
                 className="Pinpoint Internal Link  "
               >
                 <img
@@ -5486,6 +5495,7 @@ exports[`Test with pagination 1`] = `
               className="Pinpoint Author Prebuilt"
             >
               <span
+                aria-label="Chris Bowley avatar"
                 className="Pinpoint Internal Link  "
               >
                 <img

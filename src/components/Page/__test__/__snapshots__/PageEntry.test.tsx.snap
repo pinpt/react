@@ -99,6 +99,7 @@ exports[`Test full entry 1`] = `
               className="Pinpoint Author "
             >
               <span
+                aria-label="Keegan avatar"
                 className="Pinpoint Internal Link  "
               >
                 <img
@@ -420,6 +421,7 @@ exports[`Test full entry 1`] = `
               className="Pinpoint Author "
             >
               <span
+                aria-label="Keegan avatar"
                 className="Pinpoint Internal Link  "
               >
                 <img
@@ -585,6 +587,7 @@ exports[`Test full entry 1`] = `
               className="Pinpoint Copyright "
             >
               <span
+                aria-label="Logo"
                 className="Pinpoint Internal Link  Pinpoint Logo sm "
               >
                 <img
@@ -941,6 +944,7 @@ exports[`Test no footer 1`] = `
               className="Pinpoint Author "
             >
               <span
+                aria-label="Keegan avatar"
                 className="Pinpoint Internal Link  "
               >
                 <img
@@ -1257,6 +1261,7 @@ exports[`Test no footer 1`] = `
               className="Pinpoint Author "
             >
               <span
+                aria-label="Keegan avatar"
                 className="Pinpoint Internal Link  "
               >
                 <img
@@ -1681,6 +1686,7 @@ exports[`Test no sidebar 1`] = `
               className="Pinpoint Copyright "
             >
               <span
+                aria-label="Logo"
                 className="Pinpoint Internal Link  Pinpoint Logo sm "
               >
                 <img
@@ -2042,6 +2048,7 @@ exports[`Test not zoomable entry 1`] = `
               className="Pinpoint Author "
             >
               <span
+                aria-label="Keegan avatar"
                 className="Pinpoint Internal Link  "
               >
                 <img
@@ -2363,6 +2370,7 @@ exports[`Test not zoomable entry 1`] = `
               className="Pinpoint Author "
             >
               <span
+                aria-label="Keegan avatar"
                 className="Pinpoint Internal Link  "
               >
                 <img
@@ -2528,6 +2536,7 @@ exports[`Test not zoomable entry 1`] = `
               className="Pinpoint Copyright "
             >
               <span
+                aria-label="Logo"
                 className="Pinpoint Internal Link  Pinpoint Logo sm "
               >
                 <img
@@ -2889,6 +2898,7 @@ exports[`Test with pagination 1`] = `
               className="Pinpoint Author "
             >
               <span
+                aria-label="Keegan avatar"
                 className="Pinpoint Internal Link  "
               >
                 <img
@@ -3210,6 +3220,7 @@ exports[`Test with pagination 1`] = `
               className="Pinpoint Author "
             >
               <span
+                aria-label="Keegan avatar"
                 className="Pinpoint Internal Link  "
               >
                 <img
@@ -3441,6 +3452,7 @@ exports[`Test with pagination 1`] = `
               className="Pinpoint Copyright "
             >
               <span
+                aria-label="Logo"
                 className="Pinpoint Internal Link  Pinpoint Logo sm "
               >
                 <img

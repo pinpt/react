@@ -5,6 +5,7 @@ exports[`Test custom className 1`] = `
   className="Pinpoint Author custom-test"
 >
   <span
+    aria-label="Keegan avatar"
     className="Pinpoint Internal Link  "
   >
     <img
@@ -29,6 +30,7 @@ exports[`Test default 1`] = `
   className="Pinpoint Author "
 >
   <span
+    aria-label="Keegan avatar"
     className="Pinpoint Internal Link  "
   >
     <img
@@ -53,6 +55,7 @@ exports[`Test no name 1`] = `
   className="Pinpoint Author "
 >
   <span
+    aria-label=" avatar"
     className="Pinpoint Internal Link  "
   >
     <img

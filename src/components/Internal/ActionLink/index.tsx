@@ -29,7 +29,11 @@ const ActionLink = (props: IActionLinkProps) => {
 	}
 
 	return (
-		<span className={`Pinpoint Internal Link ${onClick ? 'clickable' : ''} ${className}`} onClick={onClick}>
+		<span
+			aria-label={title}
+			className={`Pinpoint Internal Link ${onClick ? 'clickable' : ''} ${className}`}
+			onClick={onClick}
+		>
 			{children}
 		</span>
 	);

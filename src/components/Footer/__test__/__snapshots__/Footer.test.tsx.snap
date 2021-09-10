@@ -14,6 +14,7 @@ exports[`Test complete 1`] = `
         className="Pinpoint Copyright "
       >
         <span
+          aria-label="Logo"
           className="Pinpoint Internal Link  Pinpoint Logo sm "
         >
           <img
@@ -287,6 +288,7 @@ exports[`Test no custom class 1`] = `
         className="Pinpoint Copyright "
       >
         <span
+          aria-label="Logo"
           className="Pinpoint Internal Link  Pinpoint Logo sm "
         >
           <img
@@ -378,6 +380,7 @@ exports[`Test no social 1`] = `
         className="Pinpoint Copyright "
       >
         <span
+          aria-label="Logo"
           className="Pinpoint Internal Link  Pinpoint Logo sm "
         >
           <img
@@ -497,6 +500,7 @@ exports[`Test no subscribe 1`] = `
         className="Pinpoint Copyright "
       >
         <span
+          aria-label="Logo"
           className="Pinpoint Internal Link  Pinpoint Logo sm "
         >
           <img

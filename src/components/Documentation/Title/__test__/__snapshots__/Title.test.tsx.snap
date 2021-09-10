@@ -6,6 +6,7 @@ exports[`Test click handler 1`] = `
   onClick={[Function]}
 >
   <span
+    aria-label="Logo"
     className="Pinpoint Internal Link  Pinpoint Logo sm "
   >
     <img
@@ -30,6 +31,7 @@ exports[`Test custom className 1`] = `
   className="Pinpoint Documentation Title  test-custom"
 >
   <span
+    aria-label="Logo"
     className="Pinpoint Internal Link  Pinpoint Logo sm "
   >
     <img
@@ -54,6 +56,7 @@ exports[`Test custom text 1`] = `
   className="Pinpoint Documentation Title  "
 >
   <span
+    aria-label="Logo"
     className="Pinpoint Internal Link  Pinpoint Logo sm "
   >
     <img
@@ -78,6 +81,7 @@ exports[`Test default state 1`] = `
   className="Pinpoint Documentation Title  "
 >
   <span
+    aria-label="Logo"
     className="Pinpoint Internal Link  Pinpoint Logo sm "
   >
     <img

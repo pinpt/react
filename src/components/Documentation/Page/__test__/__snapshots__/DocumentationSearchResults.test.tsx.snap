@@ -176,6 +176,7 @@ populated with your recently completed...
               className="Pinpoint Copyright "
             >
               <span
+                aria-label="Logo"
                 className="Pinpoint Internal Link  Pinpoint Logo sm "
               >
                 <img

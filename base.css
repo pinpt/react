@@ -785,6 +785,6 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 }
 
 .Pinpoint.Image :not(.image_block) {
-	/* not image block can have alignment and shouldn't be responsive */
+	/* note: image block can have alignment and shouldn't be responsive */
 	@apply max-w-full w-full h-auto;
 }

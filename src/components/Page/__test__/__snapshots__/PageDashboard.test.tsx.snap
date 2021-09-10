@@ -1157,6 +1157,7 @@ exports[`Test full page 1`] = `
               className="Pinpoint Copyright "
             >
               <span
+                aria-label="Logo"
                 className="Pinpoint Internal Link  Pinpoint Logo sm "
               >
                 <img
@@ -1524,6 +1525,7 @@ exports[`Test loading 1`] = `
               className="Pinpoint Copyright "
             >
               <span
+                aria-label="Logo"
                 className="Pinpoint Internal Link  Pinpoint Logo sm "
               >
                 <img
@@ -3942,6 +3944,7 @@ exports[`Test no header 1`] = `
               className="Pinpoint Copyright "
             >
               <span
+                aria-label="Logo"
                 className="Pinpoint Internal Link  Pinpoint Logo sm "
               >
                 <img
@@ -4929,6 +4932,7 @@ exports[`Test no latest 1`] = `
               className="Pinpoint Copyright "
             >
               <span
+                aria-label="Logo"
                 className="Pinpoint Internal Link  Pinpoint Logo sm "
               >
                 <img
@@ -5575,6 +5579,7 @@ exports[`Test no recent 1`] = `
               className="Pinpoint Copyright "
             >
               <span
+                aria-label="Logo"
                 className="Pinpoint Internal Link  Pinpoint Logo sm "
               >
                 <img

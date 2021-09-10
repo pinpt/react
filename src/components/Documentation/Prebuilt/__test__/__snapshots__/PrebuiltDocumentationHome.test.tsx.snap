@@ -50,6 +50,7 @@ exports[`Test custom className 1`] = `
               onClick={[Function]}
             >
               <span
+                aria-label="Logo"
                 className="Pinpoint Internal Link  Pinpoint Logo sm "
               >
                 <img
@@ -731,6 +732,7 @@ exports[`Test custom metadata 1`] = `
               onClick={[Function]}
             >
               <span
+                aria-label="Logo"
                 className="Pinpoint Internal Link  Pinpoint Logo sm "
               >
                 <img
@@ -1412,6 +1414,7 @@ exports[`Test default state 1`] = `
               onClick={[Function]}
             >
               <span
+                aria-label="Logo"
                 className="Pinpoint Internal Link  Pinpoint Logo sm "
               >
                 <img
@@ -2093,6 +2096,7 @@ exports[`Test with pagination 1`] = `
               onClick={[Function]}
             >
               <span
+                aria-label="Logo"
                 className="Pinpoint Internal Link  Pinpoint Logo sm "
               >
                 <img
