@@ -8,8 +8,13 @@ export default {
 			},
 			content: [
 				{
-					type: 'text',
-					text: 'hi',
+					type: 'paragraph',
+					content: [
+						{
+							type: 'text',
+							text: 'This is a warning notice',
+						},
+					],
 				},
 			],
 		},
