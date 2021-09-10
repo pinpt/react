@@ -6,7 +6,8 @@ exports[`Test full card 1`] = `
 >
   <img
     alt=""
-    className="cover"
+    className="Pinpoint Image cover"
+    decoding="async"
     src="https://cdn.pinpoint.com/card.png"
   />
   <div
@@ -206,7 +207,8 @@ exports[`Test full card with custom class 1`] = `
 >
   <img
     alt=""
-    className="cover"
+    className="Pinpoint Image cover"
+    decoding="async"
     src="https://cdn.pinpoint.com/card.png"
   />
   <div
@@ -354,7 +356,8 @@ exports[`Test multiple cards 1`] = `
   >
     <img
       alt=""
-      className="cover"
+      className="Pinpoint Image cover"
+      decoding="async"
       src="https://cdn.pinpoint.com/card.png"
     />
     <div
@@ -523,7 +526,8 @@ exports[`Test multiple cards 1`] = `
   >
     <img
       alt=""
-      className="cover"
+      className="Pinpoint Image cover"
+      decoding="async"
       src="https://cdn.pinpoint.com/card.png"
     />
     <div
@@ -696,7 +700,8 @@ exports[`Test no description 1`] = `
 >
   <img
     alt=""
-    className="cover"
+    className="Pinpoint Image cover"
+    decoding="async"
     src="https://cdn.pinpoint.com/card.png"
   />
   <div
@@ -969,7 +974,8 @@ exports[`Test no statistics 1`] = `
 >
   <img
     alt=""
-    className="cover"
+    className="Pinpoint Image cover"
+    decoding="async"
     src="https://cdn.pinpoint.com/card.png"
   />
   <div
@@ -998,7 +1004,8 @@ exports[`Test no title 1`] = `
 >
   <img
     alt=""
-    className="cover"
+    className="Pinpoint Image cover"
+    decoding="async"
     src="https://cdn.pinpoint.com/card.png"
   />
   <div

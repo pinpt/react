@@ -6,7 +6,7 @@ export default {
 			content: [
 				{
 					type: 'text',
-					text: '1500x1000 image. Rendered size is proprtional to scaled image size and container width.',
+					text: '1500x1000 image. Rendered size is proportional to scaled image size and container width.',
 				},
 			],
 		},

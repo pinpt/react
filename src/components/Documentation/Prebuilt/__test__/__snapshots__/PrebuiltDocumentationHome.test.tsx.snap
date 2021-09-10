@@ -54,7 +54,8 @@ exports[`Test custom className 1`] = `
               >
                 <img
                   alt=""
-                  className="image"
+                  className="Pinpoint Image image"
+                  decoding="async"
                   height={320}
                   src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
                   width={320}
@@ -74,6 +75,7 @@ exports[`Test custom className 1`] = `
               className="Pinpoint ThemeToggle Prebuilt"
             >
               <button
+                aria-label="Toggle Theme"
                 className="mode"
                 onClick={[Function]}
               />
@@ -319,7 +321,8 @@ exports[`Test custom className 1`] = `
                   >
                     <img
                       alt=""
-                      className="medium-zoom-body"
+                      className="Pinpoint Image medium-zoom-body"
+                      decoding="async"
                       height={509.6}
                       src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
                       width={564.72}
@@ -370,7 +373,8 @@ exports[`Test custom className 1`] = `
                   >
                     <img
                       alt=""
-                      className="medium-zoom-body"
+                      className="Pinpoint Image medium-zoom-body"
+                      decoding="async"
                       height={360}
                       src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
                       width={540}
@@ -446,7 +450,8 @@ exports[`Test custom className 1`] = `
               >
                 <img
                   alt=""
-                  className="image"
+                  className="Pinpoint Image image"
+                  decoding="async"
                   height={320}
                   src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
                   width={320}
@@ -730,7 +735,8 @@ exports[`Test custom metadata 1`] = `
               >
                 <img
                   alt=""
-                  className="image"
+                  className="Pinpoint Image image"
+                  decoding="async"
                   height={320}
                   src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
                   width={320}
@@ -750,6 +756,7 @@ exports[`Test custom metadata 1`] = `
               className="Pinpoint ThemeToggle Prebuilt"
             >
               <button
+                aria-label="Toggle Theme"
                 className="mode"
                 onClick={[Function]}
               />
@@ -995,7 +1002,8 @@ exports[`Test custom metadata 1`] = `
                   >
                     <img
                       alt=""
-                      className="medium-zoom-body"
+                      className="Pinpoint Image medium-zoom-body"
+                      decoding="async"
                       height={509.6}
                       src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
                       width={564.72}
@@ -1046,7 +1054,8 @@ exports[`Test custom metadata 1`] = `
                   >
                     <img
                       alt=""
-                      className="medium-zoom-body"
+                      className="Pinpoint Image medium-zoom-body"
+                      decoding="async"
                       height={360}
                       src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
                       width={540}
@@ -1122,7 +1131,8 @@ exports[`Test custom metadata 1`] = `
               >
                 <img
                   alt=""
-                  className="image"
+                  className="Pinpoint Image image"
+                  decoding="async"
                   height={320}
                   src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
                   width={320}
@@ -1406,7 +1416,8 @@ exports[`Test default state 1`] = `
               >
                 <img
                   alt=""
-                  className="image"
+                  className="Pinpoint Image image"
+                  decoding="async"
                   height={320}
                   src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
                   width={320}
@@ -1426,6 +1437,7 @@ exports[`Test default state 1`] = `
               className="Pinpoint ThemeToggle Prebuilt"
             >
               <button
+                aria-label="Toggle Theme"
                 className="mode"
                 onClick={[Function]}
               />
@@ -1671,7 +1683,8 @@ exports[`Test default state 1`] = `
                   >
                     <img
                       alt=""
-                      className="medium-zoom-body"
+                      className="Pinpoint Image medium-zoom-body"
+                      decoding="async"
                       height={509.6}
                       src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
                       width={564.72}
@@ -1722,7 +1735,8 @@ exports[`Test default state 1`] = `
                   >
                     <img
                       alt=""
-                      className="medium-zoom-body"
+                      className="Pinpoint Image medium-zoom-body"
+                      decoding="async"
                       height={360}
                       src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
                       width={540}
@@ -1798,7 +1812,8 @@ exports[`Test default state 1`] = `
               >
                 <img
                   alt=""
-                  className="image"
+                  className="Pinpoint Image image"
+                  decoding="async"
                   height={320}
                   src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
                   width={320}
@@ -2082,7 +2097,8 @@ exports[`Test with pagination 1`] = `
               >
                 <img
                   alt=""
-                  className="image"
+                  className="Pinpoint Image image"
+                  decoding="async"
                   height={320}
                   src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
                   width={320}
@@ -2102,6 +2118,7 @@ exports[`Test with pagination 1`] = `
               className="Pinpoint ThemeToggle Prebuilt"
             >
               <button
+                aria-label="Toggle Theme"
                 className="mode"
                 onClick={[Function]}
               />
@@ -2347,7 +2364,8 @@ exports[`Test with pagination 1`] = `
                   >
                     <img
                       alt=""
-                      className="medium-zoom-body"
+                      className="Pinpoint Image medium-zoom-body"
+                      decoding="async"
                       height={540}
                       src="https://file.pinpoint.com/bab9656158820022a480aea23dce8a39;UDP6~%24-%3B00-%3D~XIoV%5Bt700xa%25fRi-%3Bs-aeof;1500x1000.png"
                       width={810}
@@ -2470,7 +2488,8 @@ exports[`Test with pagination 1`] = `
               >
                 <img
                   alt=""
-                  className="image"
+                  className="Pinpoint Image image"
+                  decoding="async"
                   height={320}
                   src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
                   width={320}

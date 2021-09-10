@@ -4,12 +4,13 @@ exports[`Test custom className 1`] = `
 <div
   className="Pinpoint Author custom-test"
 >
-  <a
-    title="Keegan avatar"
+  <span
+    className="Pinpoint Internal Link  "
   >
     <img
       alt=""
-      className="avatar"
+      className="Pinpoint Image avatar"
+      decoding="async"
       height={48}
       src="https://file.pinpoint.com/6cc744395c563f0072b339070aa327f3;UCGt%3D%3DkE~A%3FZJ6%5EhIpS%23o%5BELE3oLT0I%40t7E2;400x400.png?rw=48&rh=48"
       width={48}
@@ -19,7 +20,7 @@ exports[`Test custom className 1`] = `
     >
       Keegan
     </span>
-  </a>
+  </span>
 </div>
 `;
 
@@ -27,12 +28,13 @@ exports[`Test default 1`] = `
 <div
   className="Pinpoint Author "
 >
-  <a
-    title="Keegan avatar"
+  <span
+    className="Pinpoint Internal Link  "
   >
     <img
       alt=""
-      className="avatar"
+      className="Pinpoint Image avatar"
+      decoding="async"
       height={48}
       src="https://file.pinpoint.com/6cc744395c563f0072b339070aa327f3;UCGt%3D%3DkE~A%3FZJ6%5EhIpS%23o%5BELE3oLT0I%40t7E2;400x400.png?rw=48&rh=48"
       width={48}
@@ -42,7 +44,7 @@ exports[`Test default 1`] = `
     >
       Keegan
     </span>
-  </a>
+  </span>
 </div>
 `;
 
@@ -50,12 +52,13 @@ exports[`Test no name 1`] = `
 <div
   className="Pinpoint Author "
 >
-  <a
-    title=" avatar"
+  <span
+    className="Pinpoint Internal Link  "
   >
     <img
       alt=""
-      className="avatar"
+      className="Pinpoint Image avatar"
+      decoding="async"
       height={48}
       src="https://file.pinpoint.com/6cc744395c563f0072b339070aa327f3;UCGt%3D%3DkE~A%3FZJ6%5EhIpS%23o%5BELE3oLT0I%40t7E2;400x400.png?rw=48&rh=48"
       width={48}
@@ -65,6 +68,6 @@ exports[`Test no name 1`] = `
     >
       
     </span>
-  </a>
+  </span>
 </div>
 `;

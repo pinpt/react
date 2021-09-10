@@ -1,6 +1,7 @@
 import React from 'react';
 import { extractImageMetadataFromFileID } from '../../../lib/file_metadata';
 import { CoverMediaType, ICoverMedia } from '../../../lib/types';
+import Image from '../../Image';
 import { CoverMedia } from '../../Renderer';
 
 import type { IStatisticsBarProps } from '../../Statistic/Bar';
@@ -43,7 +44,7 @@ const Container = (props: ICardContainerProps) => {
 	return (
 		<div className={`Pinpoint Content Card Container wrapper ${className}`} onClick={onClick}>
 			{imageUrl && (
-				<img className="cover" src={imageUrl} alt={alt ?? ''} width={md?.size?.width} height={md?.size?.height} />
+				<Image className="cover" src={imageUrl} alt={alt} width={md?.size?.width} height={md?.size?.height} />
 			)}
 			{hasCoverMedia && <CoverMedia media={coverMedia} />}
 			{!hasCoverMedia && !imageUrl && <div className="empty-cover" />}

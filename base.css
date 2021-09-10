@@ -546,6 +546,7 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
  * Styles for the author component
  */
 .Pinpoint.Author,
+.Pinpoint.Author > .Pinpoint.Link,
 .Pinpoint.Author a {
 	@apply flex items-center mr-auto;
 }
@@ -781,4 +782,9 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 
 .Pinpoint.SubscribeForm .error.invisible {
 	@apply invisible;
+}
+
+.Pinpoint.Image :not(.image_block) {
+	/* not image block can have alignment and shouldn't be responsive */
+	@apply max-w-full w-full h-auto;
 }

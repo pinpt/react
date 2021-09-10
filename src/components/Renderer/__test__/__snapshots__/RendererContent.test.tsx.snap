@@ -447,7 +447,8 @@ exports[`Test simple image block 1`] = `
     >
       <img
         alt="Image Caption"
-        className="medium-zoom-body"
+        className="Pinpoint Image medium-zoom-body"
+        decoding="async"
         height={NaN}
         src="https://cdn.pinpoint.com/card.png"
         width={NaN}
@@ -479,7 +480,8 @@ exports[`Test simple image block with link 1`] = `
       >
         <img
           alt="Image Caption"
-          className=""
+          className="Pinpoint Image "
+          decoding="async"
           height={NaN}
           src="https://cdn.pinpoint.com/card.png"
           width={NaN}
@@ -537,7 +539,8 @@ exports[`Test simple inline image 1`] = `
   <div>
     <img
       alt="card"
-      className="inline_image"
+      className="Pinpoint Image inline_image"
+      decoding="async"
       src="https://cdn.pinpoint.com/card.png"
     />
   </div>
@@ -556,7 +559,8 @@ exports[`Test simple inline image with link 1`] = `
     >
       <img
         alt="card"
-        className="inline_image"
+        className="Pinpoint Image inline_image"
+        decoding="async"
         src="https://cdn.pinpoint.com/card.png"
       />
     </a>

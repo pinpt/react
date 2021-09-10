@@ -98,12 +98,13 @@ exports[`Test full entry 1`] = `
             <div
               className="Pinpoint Author "
             >
-              <a
-                title="Keegan avatar"
+              <span
+                className="Pinpoint Internal Link  "
               >
                 <img
                   alt=""
-                  className="avatar"
+                  className="Pinpoint Image avatar"
+                  decoding="async"
                   height={48}
                   src="https://file.pinpoint.com/6cc744395c563f0072b339070aa327f3;UCGt%3D%3DkE~A%3FZJ6%5EhIpS%23o%5BELE3oLT0I%40t7E2;400x400.png?rw=48&rh=48"
                   width={48}
@@ -113,7 +114,7 @@ exports[`Test full entry 1`] = `
                 >
                   Keegan
                 </span>
-              </a>
+              </span>
             </div>
             <div
               className="Pinpoint Tag Bar "
@@ -253,7 +254,8 @@ exports[`Test full entry 1`] = `
               >
                 <img
                   alt=""
-                  className="medium-zoom-cover"
+                  className="Pinpoint Image medium-zoom-cover"
+                  decoding="async"
                   height={900}
                   src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
                   width={1600}
@@ -307,7 +309,8 @@ exports[`Test full entry 1`] = `
                 >
                   <img
                     alt=""
-                    className="medium-zoom-body"
+                    className="Pinpoint Image medium-zoom-body"
+                    decoding="async"
                     height={509.6}
                     src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
                     width={564.72}
@@ -358,7 +361,8 @@ exports[`Test full entry 1`] = `
                 >
                   <img
                     alt=""
-                    className="medium-zoom-body"
+                    className="Pinpoint Image medium-zoom-body"
+                    decoding="async"
                     height={360}
                     src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
                     width={540}
@@ -415,12 +419,13 @@ exports[`Test full entry 1`] = `
             <div
               className="Pinpoint Author "
             >
-              <a
-                title="Keegan avatar"
+              <span
+                className="Pinpoint Internal Link  "
               >
                 <img
                   alt=""
-                  className="avatar"
+                  className="Pinpoint Image avatar"
+                  decoding="async"
                   height={48}
                   src="https://file.pinpoint.com/6cc744395c563f0072b339070aa327f3;UCGt%3D%3DkE~A%3FZJ6%5EhIpS%23o%5BELE3oLT0I%40t7E2;400x400.png?rw=48&rh=48"
                   width={48}
@@ -430,7 +435,7 @@ exports[`Test full entry 1`] = `
                 >
                   Keegan
                 </span>
-              </a>
+              </span>
             </div>
             <div
               className="Pinpoint Tag Bar "
@@ -584,7 +589,8 @@ exports[`Test full entry 1`] = `
               >
                 <img
                   alt=""
-                  className="image"
+                  className="Pinpoint Image image"
+                  decoding="async"
                   height={320}
                   src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
                   width={320}
@@ -934,12 +940,13 @@ exports[`Test no footer 1`] = `
             <div
               className="Pinpoint Author "
             >
-              <a
-                title="Keegan avatar"
+              <span
+                className="Pinpoint Internal Link  "
               >
                 <img
                   alt=""
-                  className="avatar"
+                  className="Pinpoint Image avatar"
+                  decoding="async"
                   height={48}
                   src="https://file.pinpoint.com/6cc744395c563f0072b339070aa327f3;UCGt%3D%3DkE~A%3FZJ6%5EhIpS%23o%5BELE3oLT0I%40t7E2;400x400.png?rw=48&rh=48"
                   width={48}
@@ -949,7 +956,7 @@ exports[`Test no footer 1`] = `
                 >
                   Keegan
                 </span>
-              </a>
+              </span>
             </div>
             <div
               className="Pinpoint Tag Bar "
@@ -1089,7 +1096,8 @@ exports[`Test no footer 1`] = `
               >
                 <img
                   alt=""
-                  className="medium-zoom-cover"
+                  className="Pinpoint Image medium-zoom-cover"
+                  decoding="async"
                   height={900}
                   src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
                   width={1600}
@@ -1143,7 +1151,8 @@ exports[`Test no footer 1`] = `
                 >
                   <img
                     alt=""
-                    className="medium-zoom-body"
+                    className="Pinpoint Image medium-zoom-body"
+                    decoding="async"
                     height={509.6}
                     src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
                     width={564.72}
@@ -1194,7 +1203,8 @@ exports[`Test no footer 1`] = `
                 >
                   <img
                     alt=""
-                    className="medium-zoom-body"
+                    className="Pinpoint Image medium-zoom-body"
+                    decoding="async"
                     height={360}
                     src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
                     width={540}
@@ -1246,12 +1256,13 @@ exports[`Test no footer 1`] = `
             <div
               className="Pinpoint Author "
             >
-              <a
-                title="Keegan avatar"
+              <span
+                className="Pinpoint Internal Link  "
               >
                 <img
                   alt=""
-                  className="avatar"
+                  className="Pinpoint Image avatar"
+                  decoding="async"
                   height={48}
                   src="https://file.pinpoint.com/6cc744395c563f0072b339070aa327f3;UCGt%3D%3DkE~A%3FZJ6%5EhIpS%23o%5BELE3oLT0I%40t7E2;400x400.png?rw=48&rh=48"
                   width={48}
@@ -1261,7 +1272,7 @@ exports[`Test no footer 1`] = `
                 >
                   Keegan
                 </span>
-              </a>
+              </span>
             </div>
             <div
               className="Pinpoint Tag Bar "
@@ -1494,7 +1505,8 @@ exports[`Test no sidebar 1`] = `
               >
                 <img
                   alt=""
-                  className="medium-zoom-cover"
+                  className="Pinpoint Image medium-zoom-cover"
+                  decoding="async"
                   height={900}
                   src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
                   width={1600}
@@ -1548,7 +1560,8 @@ exports[`Test no sidebar 1`] = `
                 >
                   <img
                     alt=""
-                    className="medium-zoom-body"
+                    className="Pinpoint Image medium-zoom-body"
+                    decoding="async"
                     height={509.6}
                     src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
                     width={564.72}
@@ -1599,7 +1612,8 @@ exports[`Test no sidebar 1`] = `
                 >
                   <img
                     alt=""
-                    className="medium-zoom-body"
+                    className="Pinpoint Image medium-zoom-body"
+                    decoding="async"
                     height={360}
                     src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
                     width={540}
@@ -1671,7 +1685,8 @@ exports[`Test no sidebar 1`] = `
               >
                 <img
                   alt=""
-                  className="image"
+                  className="Pinpoint Image image"
+                  decoding="async"
                   height={320}
                   src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
                   width={320}
@@ -2026,12 +2041,13 @@ exports[`Test not zoomable entry 1`] = `
             <div
               className="Pinpoint Author "
             >
-              <a
-                title="Keegan avatar"
+              <span
+                className="Pinpoint Internal Link  "
               >
                 <img
                   alt=""
-                  className="avatar"
+                  className="Pinpoint Image avatar"
+                  decoding="async"
                   height={48}
                   src="https://file.pinpoint.com/6cc744395c563f0072b339070aa327f3;UCGt%3D%3DkE~A%3FZJ6%5EhIpS%23o%5BELE3oLT0I%40t7E2;400x400.png?rw=48&rh=48"
                   width={48}
@@ -2041,7 +2057,7 @@ exports[`Test not zoomable entry 1`] = `
                 >
                   Keegan
                 </span>
-              </a>
+              </span>
             </div>
             <div
               className="Pinpoint Tag Bar "
@@ -2181,7 +2197,8 @@ exports[`Test not zoomable entry 1`] = `
               >
                 <img
                   alt=""
-                  className=""
+                  className="Pinpoint Image "
+                  decoding="async"
                   height={900}
                   src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
                   width={1600}
@@ -2235,7 +2252,8 @@ exports[`Test not zoomable entry 1`] = `
                 >
                   <img
                     alt=""
-                    className="medium-zoom-body"
+                    className="Pinpoint Image medium-zoom-body"
+                    decoding="async"
                     height={509.6}
                     src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
                     width={564.72}
@@ -2286,7 +2304,8 @@ exports[`Test not zoomable entry 1`] = `
                 >
                   <img
                     alt=""
-                    className="medium-zoom-body"
+                    className="Pinpoint Image medium-zoom-body"
+                    decoding="async"
                     height={360}
                     src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
                     width={540}
@@ -2343,12 +2362,13 @@ exports[`Test not zoomable entry 1`] = `
             <div
               className="Pinpoint Author "
             >
-              <a
-                title="Keegan avatar"
+              <span
+                className="Pinpoint Internal Link  "
               >
                 <img
                   alt=""
-                  className="avatar"
+                  className="Pinpoint Image avatar"
+                  decoding="async"
                   height={48}
                   src="https://file.pinpoint.com/6cc744395c563f0072b339070aa327f3;UCGt%3D%3DkE~A%3FZJ6%5EhIpS%23o%5BELE3oLT0I%40t7E2;400x400.png?rw=48&rh=48"
                   width={48}
@@ -2358,7 +2378,7 @@ exports[`Test not zoomable entry 1`] = `
                 >
                   Keegan
                 </span>
-              </a>
+              </span>
             </div>
             <div
               className="Pinpoint Tag Bar "
@@ -2512,7 +2532,8 @@ exports[`Test not zoomable entry 1`] = `
               >
                 <img
                   alt=""
-                  className="image"
+                  className="Pinpoint Image image"
+                  decoding="async"
                   height={320}
                   src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
                   width={320}
@@ -2867,12 +2888,13 @@ exports[`Test with pagination 1`] = `
             <div
               className="Pinpoint Author "
             >
-              <a
-                title="Keegan avatar"
+              <span
+                className="Pinpoint Internal Link  "
               >
                 <img
                   alt=""
-                  className="avatar"
+                  className="Pinpoint Image avatar"
+                  decoding="async"
                   height={48}
                   src="https://file.pinpoint.com/6cc744395c563f0072b339070aa327f3;UCGt%3D%3DkE~A%3FZJ6%5EhIpS%23o%5BELE3oLT0I%40t7E2;400x400.png?rw=48&rh=48"
                   width={48}
@@ -2882,7 +2904,7 @@ exports[`Test with pagination 1`] = `
                 >
                   Keegan
                 </span>
-              </a>
+              </span>
             </div>
             <div
               className="Pinpoint Tag Bar "
@@ -3022,7 +3044,8 @@ exports[`Test with pagination 1`] = `
               >
                 <img
                   alt=""
-                  className="medium-zoom-cover"
+                  className="Pinpoint Image medium-zoom-cover"
+                  decoding="async"
                   height={900}
                   src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
                   width={1600}
@@ -3076,7 +3099,8 @@ exports[`Test with pagination 1`] = `
                 >
                   <img
                     alt=""
-                    className="medium-zoom-body"
+                    className="Pinpoint Image medium-zoom-body"
+                    decoding="async"
                     height={509.6}
                     src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
                     width={564.72}
@@ -3127,7 +3151,8 @@ exports[`Test with pagination 1`] = `
                 >
                   <img
                     alt=""
-                    className="medium-zoom-body"
+                    className="Pinpoint Image medium-zoom-body"
+                    decoding="async"
                     height={360}
                     src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
                     width={540}
@@ -3184,12 +3209,13 @@ exports[`Test with pagination 1`] = `
             <div
               className="Pinpoint Author "
             >
-              <a
-                title="Keegan avatar"
+              <span
+                className="Pinpoint Internal Link  "
               >
                 <img
                   alt=""
-                  className="avatar"
+                  className="Pinpoint Image avatar"
+                  decoding="async"
                   height={48}
                   src="https://file.pinpoint.com/6cc744395c563f0072b339070aa327f3;UCGt%3D%3DkE~A%3FZJ6%5EhIpS%23o%5BELE3oLT0I%40t7E2;400x400.png?rw=48&rh=48"
                   width={48}
@@ -3199,7 +3225,7 @@ exports[`Test with pagination 1`] = `
                 >
                   Keegan
                 </span>
-              </a>
+              </span>
             </div>
             <div
               className="Pinpoint Tag Bar "
@@ -3419,7 +3445,8 @@ exports[`Test with pagination 1`] = `
               >
                 <img
                   alt=""
-                  className="image"
+                  className="Pinpoint Image image"
+                  decoding="async"
                   height={320}
                   src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
                   width={320}
