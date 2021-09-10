@@ -11,13 +11,18 @@ exports[`Test custom className 1`] = `
       className="left"
     >
       <a
+        aria-label="Header Logo Home Page"
         className="Pinpoint Internal Link Pinpoint Logo sm Prebuilt"
         href="https://pinpoint.com"
         title="Header Logo Home Page"
       >
         <img
-          className="image"
+          alt=""
+          className="Pinpoint Image image"
+          decoding="async"
+          height={320}
           src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+          width={320}
         />
       </a>
     </div>
@@ -60,6 +65,7 @@ exports[`Test custom className 1`] = `
         className="Pinpoint ThemeToggle Prebuilt"
       >
         <button
+          aria-label="Toggle Theme"
           className="mode"
           onClick={[Function]}
         />
@@ -89,7 +95,7 @@ exports[`Test custom className 1`] = `
       className="action"
     >
       <a
-        className="Pinpoint Internal Link Pinpoint Subscribe visible Prebuilt"
+        className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-100 Prebuilt"
         href="/subscription/subscribe"
       >
         <svg
@@ -131,13 +137,18 @@ exports[`Test default state 1`] = `
       className="left"
     >
       <a
+        aria-label="Header Logo Home Page"
         className="Pinpoint Internal Link Pinpoint Logo sm Prebuilt"
         href="https://pinpoint.com"
         title="Header Logo Home Page"
       >
         <img
-          className="image"
+          alt=""
+          className="Pinpoint Image image"
+          decoding="async"
+          height={320}
           src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+          width={320}
         />
       </a>
     </div>
@@ -180,6 +191,7 @@ exports[`Test default state 1`] = `
         className="Pinpoint ThemeToggle Prebuilt"
       >
         <button
+          aria-label="Toggle Theme"
           className="mode"
           onClick={[Function]}
         />
@@ -209,7 +221,7 @@ exports[`Test default state 1`] = `
       className="action"
     >
       <a
-        className="Pinpoint Internal Link Pinpoint Subscribe invisible Prebuilt"
+        className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-0 Prebuilt"
         href="/subscription/subscribe"
       >
         <svg

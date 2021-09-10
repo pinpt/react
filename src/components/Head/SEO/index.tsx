@@ -1,6 +1,8 @@
 import type { ISite, IContent } from '../../../lib/types';
-import { getTwitterProfileFromURL } from '../../../lib/string';
 import React from 'react';
+import { extractImageMetadataFromFileID } from '../../../lib/file_metadata';
+import { getTwitterProfileFromURL } from '../../../lib/string';
+
 export interface ISEOProps {
 	site: ISite;
 	content?: IContent;
@@ -29,10 +31,14 @@ const formatAuthors = (content: IContent): string => {
 
 const getCoverImage = (content: IContent): string => {
 	if (content.coverMedia?.placeholderImage) {
-		const u = new URL(content.coverMedia.placeholderImage);
-		u.searchParams.set('rw', '1200');
-		u.searchParams.set('rh', '628');
-		return u.toString();
+		const { size } = extractImageMetadataFromFileID(content.coverMedia.placeholderImage);
+		if (size?.width !== 1200 && size?.height !== 628) {
+			const u = new URL(content.coverMedia.placeholderImage);
+			u.searchParams.set('rw', '1200');
+			u.searchParams.set('rh', '628');
+			return u.toString();
+		}
+		return content.coverMedia.placeholderImage;
 	}
 	return '';
 };
@@ -63,6 +69,12 @@ const ContentSEO = ({ site, content }: { site: ISite; content: IContent }) => {
 			<meta name="twitter:title" content={title} />
 			<meta name="description" property="og:description" content={description} />
 			<meta name="twitter:description" content={description} />
+			<link
+				rel="alternate"
+				type="application/rss+xml"
+				title={`RSS Feed for ${site.theme?.title ?? site.name}`}
+				href={`${site.url}/rss`}
+			/>
 		</>
 	);
 };

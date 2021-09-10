@@ -229,14 +229,23 @@
 .Pinpoint.document .notice.error {
 	@apply bg-red-600 dark:bg-red-700 text-white;
 }
+.Pinpoint.document .notice.error * {
+	@apply text-white;
+}
 .Pinpoint.document .notice.warning {
-	@apply bg-yellow-400 dark:bg-yellow-500 dark:text-gray-800;
+	@apply bg-yellow-400 dark:bg-yellow-500 text-gray-800;
+}
+.Pinpoint.document .notice.warning * {
+	@apply text-gray-800;
 }
 .Pinpoint.document .notice.warning a {
 	@apply text-gray-800 underline;
 }
 .Pinpoint.document .notice.info {
 	@apply bg-green-600 dark:bg-green-700 text-white;
+}
+.Pinpoint.document .notice.info * {
+	@apply text-white;
 }
 .Pinpoint.document .notice.info h1,
 .Pinpoint.document .notice.error h1,
@@ -759,106 +768,4 @@ article .Pinpoint.covermedia > .media-container > .video {
 article .Pinpoint.covermedia > .media-container > video,
 article .Pinpoint.covermedia > .video > video {
 	@apply w-full;
-}
-
-/* youtube lite styles (cover media only) */
-
-.Pinpoint.embed-responsive {
-	position: relative !important;
-	display: block !important;
-	height: 0 !important;
-	padding: 0 !important;
-	overflow: hidden !important;
-}
-
-.Pinpoint.embed-responsive .embed-responsive-item,
-.Pinpoint.embed-responsive iframe,
-.Pinpoint.embed-responsive embed,
-.Pinpoint.embed-responsive object,
-.Pinpoint.embed-responsive video {
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	height: 100%;
-	width: 100%;
-	border: 0;
-}
-
-.Pinpoint.aspect-ratio-16\/9 {
-	padding-bottom: 56.25% !important;
-}
-
-.Pinpoint.ryt-lite {
-	background-color: #000;
-	position: relative;
-	display: block;
-	contain: content;
-	background-position: center center;
-	background-size: cover;
-	cursor: pointer;
-}
-
-/* responsive iframe with a 16:9 aspect ratio
-	  thanks https://css-tricks.com/responsive-iframes/
- */
-.Pinpoint.ryt-lite:before {
-	display: none !important; /* REMOVE THE SHADING FOR THE TITLE AREA ON YOUTUBE VIDEO */
-}
-
-.Pinpoint.ryt-lite::after {
-	content: '';
-	display: block;
-	padding-bottom: calc(100% / (16 / 9));
-}
-
-.Pinpoint.ryt-lite > iframe {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-
-/* play button */
-.Pinpoint.ryt-lite > .lty-playbtn {
-	width: 70px;
-	height: 46px;
-	background-color: #212121;
-	z-index: 1;
-	opacity: 0.8;
-	border-radius: 14%; /* TODO: Consider replacing this with YT's actual svg. Eh. */
-	transition: all 0.2s cubic-bezier(0, 0, 0.2, 1);
-}
-
-.Pinpoint.ryt-lite:hover > .lty-playbtn {
-	background-color: #f00;
-	opacity: 1;
-}
-
-/* play button triangle */
-.Pinpoint.ryt-lite > .lty-playbtn::before {
-	content: '';
-	border-style: solid;
-	border-width: 11px 0 11px 19px;
-	border-color: transparent transparent transparent #fff;
-}
-
-.Pinpoint.ryt-lite > .lty-playbtn,
-.Pinpoint.ryt-lite > .lty-playbtn::before {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate3d(-50%, -50%, 0);
-}
-
-/* Post-click styles */
-.Pinpoint.ryt-lite.lyt-activated {
-	cursor: unset;
-}
-
-.Pinpoint.ryt-lite.lyt-activated::before,
-.Pinpoint.ryt-lite.lyt-activated > .lty-playbtn {
-	opacity: 0;
-	pointer-events: none;
 }

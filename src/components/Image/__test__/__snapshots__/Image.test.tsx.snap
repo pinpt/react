@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test with alt 1`] = `
+<img
+  alt="150x150 placeholder"
+  className="Pinpoint Image "
+  decoding="async"
+  src="https://via.placeholder.com/150"
+/>
+`;
+
+exports[`Test with className 1`] = `
+<img
+  alt="150x150 placeholder"
+  className="Pinpoint Image placeholder"
+  decoding="async"
+  src="https://via.placeholder.com/150"
+/>
+`;
+
+exports[`Test with no source 1`] = `null`;
+
+exports[`Test with no width or height 1`] = `
+<img
+  alt=""
+  className="Pinpoint Image "
+  decoding="async"
+  src="https://via.placeholder.com/150"
+/>
+`;
+
+exports[`Test with width and height 1`] = `
+<img
+  alt=""
+  className="Pinpoint Image "
+  decoding="async"
+  height={150}
+  src="https://via.placeholder.com/150"
+  width={150}
+/>
+`;

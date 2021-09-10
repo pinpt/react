@@ -7,19 +7,24 @@ exports[`Test custom className 1`] = `
   <div
     className="Pinpoint Author "
   >
-    <a
-      title="Keegan avatar"
+    <span
+      aria-label="Keegan avatar"
+      className="Pinpoint Internal Link  "
     >
       <img
-        className="avatar"
+        alt=""
+        className="Pinpoint Image avatar"
+        decoding="async"
+        height={48}
         src="https://file.pinpoint.com/6cc744395c563f0072b339070aa327f3;UCGt%3D%3DkE~A%3FZJ6%5EhIpS%23o%5BELE3oLT0I%40t7E2;400x400.png?rw=48&rh=48"
+        width={48}
       />
       <span
         className="name"
       >
         Keegan
       </span>
-    </a>
+    </span>
   </div>
   <div
     className="Pinpoint Tag Bar "
@@ -155,19 +160,24 @@ exports[`Test default 1`] = `
   <div
     className="Pinpoint Author "
   >
-    <a
-      title="Keegan avatar"
+    <span
+      aria-label="Keegan avatar"
+      className="Pinpoint Internal Link  "
     >
       <img
-        className="avatar"
+        alt=""
+        className="Pinpoint Image avatar"
+        decoding="async"
+        height={48}
         src="https://file.pinpoint.com/6cc744395c563f0072b339070aa327f3;UCGt%3D%3DkE~A%3FZJ6%5EhIpS%23o%5BELE3oLT0I%40t7E2;400x400.png?rw=48&rh=48"
+        width={48}
       />
       <span
         className="name"
       >
         Keegan
       </span>
-    </a>
+    </span>
   </div>
   <div
     className="Pinpoint Tag Bar "
@@ -297,10 +307,12 @@ exports[`Test default 1`] = `
     className="Pinpoint Social Bar "
   >
     <a
+      aria-label="Facebook"
       className="Pinpoint Internal Link Pinpoint Social Item Facebook sharing "
       href="https://www.facebook.com/Pinpoint.Engineering"
       rel="noopener noreferrer"
       target="_blank"
+      title="Facebook"
     >
       <svg
         aria-hidden="true"
@@ -320,10 +332,12 @@ exports[`Test default 1`] = `
       </svg>
     </a>
     <a
+      aria-label="Twitter"
       className="Pinpoint Internal Link Pinpoint Social Item Twitter sharing "
       href="https://twitter.com/pinpoint_sw"
       rel="noopener noreferrer"
       target="_blank"
+      title="Twitter"
     >
       <svg
         aria-hidden="true"
@@ -343,10 +357,12 @@ exports[`Test default 1`] = `
       </svg>
     </a>
     <a
+      aria-label="LinkedIn"
       className="Pinpoint Internal Link Pinpoint Social Item LinkedIn sharing "
       href="https://linkedin.com/company/pinpoint-software"
       rel="noopener noreferrer"
       target="_blank"
+      title="LinkedIn"
     >
       <svg
         aria-hidden="true"
@@ -366,8 +382,10 @@ exports[`Test default 1`] = `
       </svg>
     </a>
     <a
+      aria-label="Email"
       className="Pinpoint Internal Link Pinpoint Social Item Email sharing "
       href="mailto:hello@pinpoint.com"
+      title="Email"
     >
       <svg
         aria-hidden="true"

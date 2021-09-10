@@ -16,7 +16,9 @@ exports[`Test custom className 1`] = `
       className="Pinpoint Content Card Container wrapper "
     >
       <img
-        className="cover"
+        alt=""
+        className="Pinpoint Image cover"
+        decoding="async"
         src="https://cdn.pinpoint.com/card.png"
       />
       <div
@@ -200,7 +202,9 @@ exports[`Test double 1`] = `
       className="Pinpoint Content Card Container wrapper "
     >
       <img
-        className="cover"
+        alt=""
+        className="Pinpoint Image cover"
+        decoding="async"
         src="https://cdn.pinpoint.com/card.png"
       />
       <div
@@ -368,7 +372,9 @@ exports[`Test double 1`] = `
       className="Pinpoint Content Card Container wrapper "
     >
       <img
-        className="cover"
+        alt=""
+        className="Pinpoint Image cover"
+        decoding="async"
         src="https://cdn.pinpoint.com/card.png"
       />
       <div
@@ -554,7 +560,9 @@ exports[`Test single 1`] = `
       className="Pinpoint Content Card Container wrapper "
     >
       <img
-        className="cover"
+        alt=""
+        className="Pinpoint Image cover"
+        decoding="async"
         src="https://cdn.pinpoint.com/card.png"
       />
       <div
@@ -738,7 +746,9 @@ exports[`Test triple 1`] = `
       className="Pinpoint Content Card Container wrapper "
     >
       <img
-        className="cover"
+        alt=""
+        className="Pinpoint Image cover"
+        decoding="async"
         src="https://cdn.pinpoint.com/card.png"
       />
       <div
@@ -906,7 +916,9 @@ exports[`Test triple 1`] = `
       className="Pinpoint Content Card Container wrapper "
     >
       <img
-        className="cover"
+        alt=""
+        className="Pinpoint Image cover"
+        decoding="async"
         src="https://cdn.pinpoint.com/card.png"
       />
       <div
@@ -1074,7 +1086,9 @@ exports[`Test triple 1`] = `
       className="Pinpoint Content Card Container wrapper "
     >
       <img
-        className="cover"
+        alt=""
+        className="Pinpoint Image cover"
+        decoding="async"
         src="https://cdn.pinpoint.com/card.png"
       />
       <div

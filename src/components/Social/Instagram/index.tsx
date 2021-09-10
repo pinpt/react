@@ -1,12 +1,16 @@
+import React from 'react';
 import ActionLink from '../../Internal/ActionLink';
 import { ISocialProps } from '../types';
-import React from 'react';
 
 const Instagram = (props: ISocialProps) => {
 	const { className = '', sharing, ...rest } = props;
 
 	return (
-		<ActionLink className={`Pinpoint Social Item Instagram ${sharing ? 'sharing' : ''} ${className}`} {...rest}>
+		<ActionLink
+			className={`Pinpoint Social Item Instagram ${sharing ? 'sharing' : ''} ${className}`}
+			title="Instagram"
+			{...rest}
+		>
 			<svg
 				width={12.25}
 				height={14}

@@ -20,13 +20,18 @@ exports[`Hidden stats 1`] = `
             className="left"
           >
             <a
+              aria-label="Header Logo Home Page"
               className="Pinpoint Internal Link Pinpoint Logo sm Prebuilt"
               href="https://pinpoint.com"
               title="Header Logo Home Page"
             >
               <img
-                className="image"
+                alt=""
+                className="Pinpoint Image image"
+                decoding="async"
+                height={320}
                 src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+                width={320}
               />
             </a>
           </div>
@@ -69,6 +74,7 @@ exports[`Hidden stats 1`] = `
               className="Pinpoint ThemeToggle Prebuilt"
             >
               <button
+                aria-label="Toggle Theme"
                 className="mode"
                 onClick={[Function]}
               />
@@ -98,7 +104,7 @@ exports[`Hidden stats 1`] = `
             className="action"
           >
             <a
-              className="Pinpoint Internal Link Pinpoint Subscribe visible Prebuilt"
+              className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-100 Prebuilt"
               href="/subscription/subscribe"
             >
               <svg
@@ -151,8 +157,12 @@ exports[`Hidden stats 1`] = `
             onClick={[Function]}
           >
             <img
-              className="cover"
+              alt=""
+              className="Pinpoint Image cover"
+              decoding="async"
+              height={900}
               src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
+              width={1600}
             />
             <div
               className="content"
@@ -266,8 +276,12 @@ exports[`Hidden stats 1`] = `
             onClick={[Function]}
           >
             <img
-              className="cover"
+              alt=""
+              className="Pinpoint Image cover"
+              decoding="async"
+              height={900}
               src="https://file.pinpoint.com/7120741f0e5051b632fdd356fc1cdb16;U40m~QcbVUiFkafladjFUbiZk%5BcbZ%23jEkYbw;1600x900.png"
+              width={1600}
             />
             <div
               className="content"
@@ -346,8 +360,12 @@ exports[`Hidden stats 1`] = `
             onClick={[Function]}
           >
             <img
-              className="cover"
+              alt=""
+              className="Pinpoint Image cover"
+              decoding="async"
+              height={1616}
               src="https://file.pinpoint.com/0b30097a5ab0b70f79d8659a43a06dc2;UAQ%2CL3~qIB_2IUt6IUs%3A00k9M%7CWCogRjWUtR;2428x1616.png"
+              width={2428}
             />
             <div
               className="content"
@@ -428,8 +446,12 @@ populated with your recently completed...
             onClick={[Function]}
           >
             <img
-              className="cover"
+              alt=""
+              className="Pinpoint Image cover"
+              decoding="async"
+              height={1167}
               src="https://file.pinpoint.com/bb92450c0c434e40c7e4b759787f871f;U7QS%7D7%3Fa00~X00ITRies00Ri%25MRQ4T%25Lt7Rk;1590x1167.png"
+              width={1590}
             />
             <div
               className="content"
@@ -521,8 +543,12 @@ populated with your recently completed...
             onClick={[Function]}
           >
             <img
-              className="cover"
+              alt=""
+              className="Pinpoint Image cover"
+              decoding="async"
+              height={701}
               src="https://file.pinpoint.com/427af3d4092966d96238e7f95f41c3a6;UfS%3FANxuf7xu~qj%5BfQj%5BayfjfQj%5B~qoffQkC;2870x701.png"
+              width={2870}
             />
             <div
               className="content"
@@ -720,8 +746,12 @@ populated with your recently completed...
             onClick={[Function]}
           >
             <img
-              className="cover"
+              alt=""
+              className="Pinpoint Image cover"
+              decoding="async"
+              height={1108}
               src="https://file.pinpoint.com/5b306ad32dc7f8735503e0d260ffc944;UcL%3Bmf00ay~q%25MM%7BWBofM%7BM%7BRiWB%25MRjofof;2795x1108.png"
+              width={2795}
             />
             <div
               className="content"
@@ -813,8 +843,12 @@ populated with your recently completed...
             onClick={[Function]}
           >
             <img
-              className="cover"
+              alt=""
+              className="Pinpoint Image cover"
+              decoding="async"
+              height={439}
               src="https://file.pinpoint.com/46da8f9cce9e73b44e4c4fe7dfbfb8e7;UeS~x5tQR%25xu~qofafj%5BofofazfQ~qj%5Bayj%5B;1740x439.png"
+              width={1740}
             />
             <div
               className="content"
@@ -893,8 +927,12 @@ populated with your recently completed...
             onClick={[Function]}
           >
             <img
-              className="cover"
+              alt=""
+              className="Pinpoint Image cover"
+              decoding="async"
+              height={1694}
               src="https://file.pinpoint.com/4e00510e123db827caf3da0196504a5c;UDRMb%24xtWU~q00aeRQj%4000NFRkt600RPWBt7;3264x1694.png"
+              width={3264}
             />
             <div
               className="content"
@@ -986,8 +1024,12 @@ populated with your recently completed...
             onClick={[Function]}
           >
             <img
-              className="cover"
+              alt=""
+              className="Pinpoint Image cover"
+              decoding="async"
+              height={1666}
               src="https://file.pinpoint.com/32e8bdd790263db15fc0eecd8a0c47cb;UARo~e-pkC~pD4Ria%24V%3F00M_bIad8wMxbIxt;3010x1666.png"
+              width={3010}
             />
             <div
               className="content"
@@ -1108,13 +1150,18 @@ populated with your recently completed...
               className="Pinpoint Copyright Prebuilt"
             >
               <a
+                aria-label="Footer Logo Home Page"
                 className="Pinpoint Internal Link Pinpoint Logo sm Prebuilt"
                 href="https://pinpoint.com"
                 title="Footer Logo Home Page"
               >
                 <img
-                  className="image"
+                  alt=""
+                  className="Pinpoint Image image"
+                  decoding="async"
+                  height={320}
                   src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+                  width={320}
                 />
               </a>
               <span
@@ -1128,7 +1175,7 @@ populated with your recently completed...
             className="right"
           >
             <a
-              className="Pinpoint Internal Link Pinpoint Subscribe visible Prebuilt"
+              className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-100 Prebuilt"
               href="/subscription/subscribe"
             >
               <svg
@@ -1158,10 +1205,12 @@ populated with your recently completed...
               className="Pinpoint Social Bar Prebuilt"
             >
               <a
+                aria-label="Facebook"
                 className="Pinpoint Internal Link Pinpoint Social Item Facebook  Prebuilt"
                 href="https://www.facebook.com/Pinpoint.Engineering"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Facebook"
               >
                 <svg
                   aria-hidden="true"
@@ -1181,10 +1230,12 @@ populated with your recently completed...
                 </svg>
               </a>
               <a
+                aria-label="Instagram"
                 className="Pinpoint Internal Link Pinpoint Social Item Instagram  Prebuilt"
                 href="https://www.instagram.com/pinpoint_sw/"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Instagram"
               >
                 <svg
                   aria-hidden="true"
@@ -1204,10 +1255,12 @@ populated with your recently completed...
                 </svg>
               </a>
               <a
+                aria-label="Twitter"
                 className="Pinpoint Internal Link Pinpoint Social Item Twitter  Prebuilt"
                 href="https://twitter.com/pinpoint_sw"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Twitter"
               >
                 <svg
                   aria-hidden="true"
@@ -1227,10 +1280,12 @@ populated with your recently completed...
                 </svg>
               </a>
               <a
+                aria-label="GitHub"
                 className="Pinpoint Internal Link Pinpoint Social Item Github  Prebuilt"
                 href="https://github.com/pinpt"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="GitHub"
               >
                 <svg
                   aria-hidden="true"
@@ -1250,10 +1305,12 @@ populated with your recently completed...
                 </svg>
               </a>
               <a
+                aria-label="LinkedIn"
                 className="Pinpoint Internal Link Pinpoint Social Item LinkedIn  Prebuilt"
                 href="https://linkedin.com/company/pinpoint-software"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="LinkedIn"
               >
                 <svg
                   aria-hidden="true"
@@ -1273,10 +1330,12 @@ populated with your recently completed...
                 </svg>
               </a>
               <a
+                aria-label="RSS Feed"
                 className="Pinpoint Internal Link Pinpoint Social Item RSS Prebuilt"
                 href="/rss"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="RSS Feed"
               >
                 <svg
                   aria-hidden="true"
@@ -1376,13 +1435,18 @@ exports[`Test custom className 1`] = `
             className="left"
           >
             <a
+              aria-label="Header Logo Home Page"
               className="Pinpoint Internal Link Pinpoint Logo sm Prebuilt"
               href="https://pinpoint.com"
               title="Header Logo Home Page"
             >
               <img
-                className="image"
+                alt=""
+                className="Pinpoint Image image"
+                decoding="async"
+                height={320}
                 src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+                width={320}
               />
             </a>
           </div>
@@ -1425,6 +1489,7 @@ exports[`Test custom className 1`] = `
               className="Pinpoint ThemeToggle Prebuilt"
             >
               <button
+                aria-label="Toggle Theme"
                 className="mode"
                 onClick={[Function]}
               />
@@ -1454,7 +1519,7 @@ exports[`Test custom className 1`] = `
             className="action"
           >
             <a
-              className="Pinpoint Internal Link Pinpoint Subscribe invisible Prebuilt"
+              className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-0 Prebuilt"
               href="/subscription/subscribe"
             >
               <svg
@@ -1507,8 +1572,12 @@ exports[`Test custom className 1`] = `
             onClick={[Function]}
           >
             <img
-              className="cover"
+              alt=""
+              className="Pinpoint Image cover"
+              decoding="async"
+              height={900}
               src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
+              width={1600}
             />
             <div
               className="content"
@@ -1729,8 +1798,12 @@ exports[`Test custom className 1`] = `
             onClick={[Function]}
           >
             <img
-              className="cover"
+              alt=""
+              className="Pinpoint Image cover"
+              decoding="async"
+              height={900}
               src="https://file.pinpoint.com/7120741f0e5051b632fdd356fc1cdb16;U40m~QcbVUiFkafladjFUbiZk%5BcbZ%23jEkYbw;1600x900.png"
+              width={1600}
             />
             <div
               className="content"
@@ -1916,8 +1989,12 @@ exports[`Test custom className 1`] = `
             onClick={[Function]}
           >
             <img
-              className="cover"
+              alt=""
+              className="Pinpoint Image cover"
+              decoding="async"
+              height={1616}
               src="https://file.pinpoint.com/0b30097a5ab0b70f79d8659a43a06dc2;UAQ%2CL3~qIB_2IUt6IUs%3A00k9M%7CWCogRjWUtR;2428x1616.png"
+              width={2428}
             />
             <div
               className="content"
@@ -2105,8 +2182,12 @@ populated with your recently completed...
             onClick={[Function]}
           >
             <img
-              className="cover"
+              alt=""
+              className="Pinpoint Image cover"
+              decoding="async"
+              height={1167}
               src="https://file.pinpoint.com/bb92450c0c434e40c7e4b759787f871f;U7QS%7D7%3Fa00~X00ITRies00Ri%25MRQ4T%25Lt7Rk;1590x1167.png"
+              width={1590}
             />
             <div
               className="content"
@@ -2305,8 +2386,12 @@ populated with your recently completed...
             onClick={[Function]}
           >
             <img
-              className="cover"
+              alt=""
+              className="Pinpoint Image cover"
+              decoding="async"
+              height={701}
               src="https://file.pinpoint.com/427af3d4092966d96238e7f95f41c3a6;UfS%3FANxuf7xu~qj%5BfQj%5BayfjfQj%5B~qoffQkC;2870x701.png"
+              width={2870}
             />
             <div
               className="content"
@@ -2718,8 +2803,12 @@ populated with your recently completed...
             onClick={[Function]}
           >
             <img
-              className="cover"
+              alt=""
+              className="Pinpoint Image cover"
+              decoding="async"
+              height={1108}
               src="https://file.pinpoint.com/5b306ad32dc7f8735503e0d260ffc944;UcL%3Bmf00ay~q%25MM%7BWBofM%7BM%7BRiWB%25MRjofof;2795x1108.png"
+              width={2795}
             />
             <div
               className="content"
@@ -2918,8 +3007,12 @@ populated with your recently completed...
             onClick={[Function]}
           >
             <img
-              className="cover"
+              alt=""
+              className="Pinpoint Image cover"
+              decoding="async"
+              height={439}
               src="https://file.pinpoint.com/46da8f9cce9e73b44e4c4fe7dfbfb8e7;UeS~x5tQR%25xu~qofafj%5BofofazfQ~qj%5Bayj%5B;1740x439.png"
+              width={1740}
             />
             <div
               className="content"
@@ -3105,8 +3198,12 @@ populated with your recently completed...
             onClick={[Function]}
           >
             <img
-              className="cover"
+              alt=""
+              className="Pinpoint Image cover"
+              decoding="async"
+              height={1694}
               src="https://file.pinpoint.com/4e00510e123db827caf3da0196504a5c;UDRMb%24xtWU~q00aeRQj%4000NFRkt600RPWBt7;3264x1694.png"
+              width={3264}
             />
             <div
               className="content"
@@ -3305,8 +3402,12 @@ populated with your recently completed...
             onClick={[Function]}
           >
             <img
-              className="cover"
+              alt=""
+              className="Pinpoint Image cover"
+              decoding="async"
+              height={1666}
               src="https://file.pinpoint.com/32e8bdd790263db15fc0eecd8a0c47cb;UARo~e-pkC~pD4Ria%24V%3F00M_bIad8wMxbIxt;3010x1666.png"
+              width={3010}
             />
             <div
               className="content"
@@ -3534,13 +3635,18 @@ populated with your recently completed...
               className="Pinpoint Copyright Prebuilt"
             >
               <a
+                aria-label="Footer Logo Home Page"
                 className="Pinpoint Internal Link Pinpoint Logo sm Prebuilt"
                 href="https://pinpoint.com"
                 title="Footer Logo Home Page"
               >
                 <img
-                  className="image"
+                  alt=""
+                  className="Pinpoint Image image"
+                  decoding="async"
+                  height={320}
                   src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+                  width={320}
                 />
               </a>
               <span
@@ -3554,7 +3660,7 @@ populated with your recently completed...
             className="right"
           >
             <a
-              className="Pinpoint Internal Link Pinpoint Subscribe invisible Prebuilt"
+              className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-0 Prebuilt"
               href="/subscription/subscribe"
             >
               <svg
@@ -3584,10 +3690,12 @@ populated with your recently completed...
               className="Pinpoint Social Bar Prebuilt"
             >
               <a
+                aria-label="Facebook"
                 className="Pinpoint Internal Link Pinpoint Social Item Facebook  Prebuilt"
                 href="https://www.facebook.com/Pinpoint.Engineering"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Facebook"
               >
                 <svg
                   aria-hidden="true"
@@ -3607,10 +3715,12 @@ populated with your recently completed...
                 </svg>
               </a>
               <a
+                aria-label="Instagram"
                 className="Pinpoint Internal Link Pinpoint Social Item Instagram  Prebuilt"
                 href="https://www.instagram.com/pinpoint_sw/"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Instagram"
               >
                 <svg
                   aria-hidden="true"
@@ -3630,10 +3740,12 @@ populated with your recently completed...
                 </svg>
               </a>
               <a
+                aria-label="Twitter"
                 className="Pinpoint Internal Link Pinpoint Social Item Twitter  Prebuilt"
                 href="https://twitter.com/pinpoint_sw"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Twitter"
               >
                 <svg
                   aria-hidden="true"
@@ -3653,10 +3765,12 @@ populated with your recently completed...
                 </svg>
               </a>
               <a
+                aria-label="GitHub"
                 className="Pinpoint Internal Link Pinpoint Social Item Github  Prebuilt"
                 href="https://github.com/pinpt"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="GitHub"
               >
                 <svg
                   aria-hidden="true"
@@ -3676,10 +3790,12 @@ populated with your recently completed...
                 </svg>
               </a>
               <a
+                aria-label="LinkedIn"
                 className="Pinpoint Internal Link Pinpoint Social Item LinkedIn  Prebuilt"
                 href="https://linkedin.com/company/pinpoint-software"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="LinkedIn"
               >
                 <svg
                   aria-hidden="true"
@@ -3699,10 +3815,12 @@ populated with your recently completed...
                 </svg>
               </a>
               <a
+                aria-label="RSS Feed"
                 className="Pinpoint Internal Link Pinpoint Social Item RSS Prebuilt"
                 href="/rss"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="RSS Feed"
               >
                 <svg
                   aria-hidden="true"
@@ -3802,13 +3920,18 @@ exports[`Test custom latest length 1`] = `
             className="left"
           >
             <a
+              aria-label="Header Logo Home Page"
               className="Pinpoint Internal Link Pinpoint Logo sm Prebuilt"
               href="https://pinpoint.com"
               title="Header Logo Home Page"
             >
               <img
-                className="image"
+                alt=""
+                className="Pinpoint Image image"
+                decoding="async"
+                height={320}
                 src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+                width={320}
               />
             </a>
           </div>
@@ -3851,6 +3974,7 @@ exports[`Test custom latest length 1`] = `
               className="Pinpoint ThemeToggle Prebuilt"
             >
               <button
+                aria-label="Toggle Theme"
                 className="mode"
                 onClick={[Function]}
               />
@@ -3880,7 +4004,7 @@ exports[`Test custom latest length 1`] = `
             className="action"
           >
             <a
-              className="Pinpoint Internal Link Pinpoint Subscribe invisible Prebuilt"
+              className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-0 Prebuilt"
               href="/subscription/subscribe"
             >
               <svg
@@ -3933,8 +4057,12 @@ exports[`Test custom latest length 1`] = `
             onClick={[Function]}
           >
             <img
-              className="cover"
+              alt=""
+              className="Pinpoint Image cover"
+              decoding="async"
+              height={900}
               src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
+              width={1600}
             />
             <div
               className="content"
@@ -4133,8 +4261,12 @@ exports[`Test custom latest length 1`] = `
             onClick={[Function]}
           >
             <img
-              className="cover"
+              alt=""
+              className="Pinpoint Image cover"
+              decoding="async"
+              height={900}
               src="https://file.pinpoint.com/7120741f0e5051b632fdd356fc1cdb16;U40m~QcbVUiFkafladjFUbiZk%5BcbZ%23jEkYbw;1600x900.png"
+              width={1600}
             />
             <div
               className="content"
@@ -4342,8 +4474,12 @@ exports[`Test custom latest length 1`] = `
             onClick={[Function]}
           >
             <img
-              className="cover"
+              alt=""
+              className="Pinpoint Image cover"
+              decoding="async"
+              height={1616}
               src="https://file.pinpoint.com/0b30097a5ab0b70f79d8659a43a06dc2;UAQ%2CL3~qIB_2IUt6IUs%3A00k9M%7CWCogRjWUtR;2428x1616.png"
+              width={2428}
             />
             <div
               className="content"
@@ -4531,8 +4667,12 @@ populated with your recently completed...
             onClick={[Function]}
           >
             <img
-              className="cover"
+              alt=""
+              className="Pinpoint Image cover"
+              decoding="async"
+              height={1167}
               src="https://file.pinpoint.com/bb92450c0c434e40c7e4b759787f871f;U7QS%7D7%3Fa00~X00ITRies00Ri%25MRQ4T%25Lt7Rk;1590x1167.png"
+              width={1590}
             />
             <div
               className="content"
@@ -4731,8 +4871,12 @@ populated with your recently completed...
             onClick={[Function]}
           >
             <img
-              className="cover"
+              alt=""
+              className="Pinpoint Image cover"
+              decoding="async"
+              height={701}
               src="https://file.pinpoint.com/427af3d4092966d96238e7f95f41c3a6;UfS%3FANxuf7xu~qj%5BfQj%5BayfjfQj%5B~qoffQkC;2870x701.png"
+              width={2870}
             />
             <div
               className="content"
@@ -5144,8 +5288,12 @@ populated with your recently completed...
             onClick={[Function]}
           >
             <img
-              className="cover"
+              alt=""
+              className="Pinpoint Image cover"
+              decoding="async"
+              height={1108}
               src="https://file.pinpoint.com/5b306ad32dc7f8735503e0d260ffc944;UcL%3Bmf00ay~q%25MM%7BWBofM%7BM%7BRiWB%25MRjofof;2795x1108.png"
+              width={2795}
             />
             <div
               className="content"
@@ -5344,8 +5492,12 @@ populated with your recently completed...
             onClick={[Function]}
           >
             <img
-              className="cover"
+              alt=""
+              className="Pinpoint Image cover"
+              decoding="async"
+              height={439}
               src="https://file.pinpoint.com/46da8f9cce9e73b44e4c4fe7dfbfb8e7;UeS~x5tQR%25xu~qofafj%5BofofazfQ~qj%5Bayj%5B;1740x439.png"
+              width={1740}
             />
             <div
               className="content"
@@ -5531,8 +5683,12 @@ populated with your recently completed...
             onClick={[Function]}
           >
             <img
-              className="cover"
+              alt=""
+              className="Pinpoint Image cover"
+              decoding="async"
+              height={1694}
               src="https://file.pinpoint.com/4e00510e123db827caf3da0196504a5c;UDRMb%24xtWU~q00aeRQj%4000NFRkt600RPWBt7;3264x1694.png"
+              width={3264}
             />
             <div
               className="content"
@@ -5731,8 +5887,12 @@ populated with your recently completed...
             onClick={[Function]}
           >
             <img
-              className="cover"
+              alt=""
+              className="Pinpoint Image cover"
+              decoding="async"
+              height={1666}
               src="https://file.pinpoint.com/32e8bdd790263db15fc0eecd8a0c47cb;UARo~e-pkC~pD4Ria%24V%3F00M_bIad8wMxbIxt;3010x1666.png"
+              width={3010}
             />
             <div
               className="content"
@@ -5960,13 +6120,18 @@ populated with your recently completed...
               className="Pinpoint Copyright Prebuilt"
             >
               <a
+                aria-label="Footer Logo Home Page"
                 className="Pinpoint Internal Link Pinpoint Logo sm Prebuilt"
                 href="https://pinpoint.com"
                 title="Footer Logo Home Page"
               >
                 <img
-                  className="image"
+                  alt=""
+                  className="Pinpoint Image image"
+                  decoding="async"
+                  height={320}
                   src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+                  width={320}
                 />
               </a>
               <span
@@ -5980,7 +6145,7 @@ populated with your recently completed...
             className="right"
           >
             <a
-              className="Pinpoint Internal Link Pinpoint Subscribe invisible Prebuilt"
+              className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-0 Prebuilt"
               href="/subscription/subscribe"
             >
               <svg
@@ -6010,10 +6175,12 @@ populated with your recently completed...
               className="Pinpoint Social Bar Prebuilt"
             >
               <a
+                aria-label="Facebook"
                 className="Pinpoint Internal Link Pinpoint Social Item Facebook  Prebuilt"
                 href="https://www.facebook.com/Pinpoint.Engineering"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Facebook"
               >
                 <svg
                   aria-hidden="true"
@@ -6033,10 +6200,12 @@ populated with your recently completed...
                 </svg>
               </a>
               <a
+                aria-label="Instagram"
                 className="Pinpoint Internal Link Pinpoint Social Item Instagram  Prebuilt"
                 href="https://www.instagram.com/pinpoint_sw/"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Instagram"
               >
                 <svg
                   aria-hidden="true"
@@ -6056,10 +6225,12 @@ populated with your recently completed...
                 </svg>
               </a>
               <a
+                aria-label="Twitter"
                 className="Pinpoint Internal Link Pinpoint Social Item Twitter  Prebuilt"
                 href="https://twitter.com/pinpoint_sw"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Twitter"
               >
                 <svg
                   aria-hidden="true"
@@ -6079,10 +6250,12 @@ populated with your recently completed...
                 </svg>
               </a>
               <a
+                aria-label="GitHub"
                 className="Pinpoint Internal Link Pinpoint Social Item Github  Prebuilt"
                 href="https://github.com/pinpt"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="GitHub"
               >
                 <svg
                   aria-hidden="true"
@@ -6102,10 +6275,12 @@ populated with your recently completed...
                 </svg>
               </a>
               <a
+                aria-label="LinkedIn"
                 className="Pinpoint Internal Link Pinpoint Social Item LinkedIn  Prebuilt"
                 href="https://linkedin.com/company/pinpoint-software"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="LinkedIn"
               >
                 <svg
                   aria-hidden="true"
@@ -6125,10 +6300,12 @@ populated with your recently completed...
                 </svg>
               </a>
               <a
+                aria-label="RSS Feed"
                 className="Pinpoint Internal Link Pinpoint Social Item RSS Prebuilt"
                 href="/rss"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="RSS Feed"
               >
                 <svg
                   aria-hidden="true"
@@ -6228,13 +6405,18 @@ exports[`Test default state 1`] = `
             className="left"
           >
             <a
+              aria-label="Header Logo Home Page"
               className="Pinpoint Internal Link Pinpoint Logo sm Prebuilt"
               href="https://pinpoint.com"
               title="Header Logo Home Page"
             >
               <img
-                className="image"
+                alt=""
+                className="Pinpoint Image image"
+                decoding="async"
+                height={320}
                 src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+                width={320}
               />
             </a>
           </div>
@@ -6277,6 +6459,7 @@ exports[`Test default state 1`] = `
               className="Pinpoint ThemeToggle Prebuilt"
             >
               <button
+                aria-label="Toggle Theme"
                 className="mode"
                 onClick={[Function]}
               />
@@ -6306,7 +6489,7 @@ exports[`Test default state 1`] = `
             className="action"
           >
             <a
-              className="Pinpoint Internal Link Pinpoint Subscribe invisible Prebuilt"
+              className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-0 Prebuilt"
               href="/subscription/subscribe"
             >
               <svg
@@ -6359,8 +6542,12 @@ exports[`Test default state 1`] = `
             onClick={[Function]}
           >
             <img
-              className="cover"
+              alt=""
+              className="Pinpoint Image cover"
+              decoding="async"
+              height={900}
               src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
+              width={1600}
             />
             <div
               className="content"
@@ -6581,8 +6768,12 @@ exports[`Test default state 1`] = `
             onClick={[Function]}
           >
             <img
-              className="cover"
+              alt=""
+              className="Pinpoint Image cover"
+              decoding="async"
+              height={900}
               src="https://file.pinpoint.com/7120741f0e5051b632fdd356fc1cdb16;U40m~QcbVUiFkafladjFUbiZk%5BcbZ%23jEkYbw;1600x900.png"
+              width={1600}
             />
             <div
               className="content"
@@ -6768,8 +6959,12 @@ exports[`Test default state 1`] = `
             onClick={[Function]}
           >
             <img
-              className="cover"
+              alt=""
+              className="Pinpoint Image cover"
+              decoding="async"
+              height={1616}
               src="https://file.pinpoint.com/0b30097a5ab0b70f79d8659a43a06dc2;UAQ%2CL3~qIB_2IUt6IUs%3A00k9M%7CWCogRjWUtR;2428x1616.png"
+              width={2428}
             />
             <div
               className="content"
@@ -6957,8 +7152,12 @@ populated with your recently completed...
             onClick={[Function]}
           >
             <img
-              className="cover"
+              alt=""
+              className="Pinpoint Image cover"
+              decoding="async"
+              height={1167}
               src="https://file.pinpoint.com/bb92450c0c434e40c7e4b759787f871f;U7QS%7D7%3Fa00~X00ITRies00Ri%25MRQ4T%25Lt7Rk;1590x1167.png"
+              width={1590}
             />
             <div
               className="content"
@@ -7157,8 +7356,12 @@ populated with your recently completed...
             onClick={[Function]}
           >
             <img
-              className="cover"
+              alt=""
+              className="Pinpoint Image cover"
+              decoding="async"
+              height={701}
               src="https://file.pinpoint.com/427af3d4092966d96238e7f95f41c3a6;UfS%3FANxuf7xu~qj%5BfQj%5BayfjfQj%5B~qoffQkC;2870x701.png"
+              width={2870}
             />
             <div
               className="content"
@@ -7570,8 +7773,12 @@ populated with your recently completed...
             onClick={[Function]}
           >
             <img
-              className="cover"
+              alt=""
+              className="Pinpoint Image cover"
+              decoding="async"
+              height={1108}
               src="https://file.pinpoint.com/5b306ad32dc7f8735503e0d260ffc944;UcL%3Bmf00ay~q%25MM%7BWBofM%7BM%7BRiWB%25MRjofof;2795x1108.png"
+              width={2795}
             />
             <div
               className="content"
@@ -7770,8 +7977,12 @@ populated with your recently completed...
             onClick={[Function]}
           >
             <img
-              className="cover"
+              alt=""
+              className="Pinpoint Image cover"
+              decoding="async"
+              height={439}
               src="https://file.pinpoint.com/46da8f9cce9e73b44e4c4fe7dfbfb8e7;UeS~x5tQR%25xu~qofafj%5BofofazfQ~qj%5Bayj%5B;1740x439.png"
+              width={1740}
             />
             <div
               className="content"
@@ -7957,8 +8168,12 @@ populated with your recently completed...
             onClick={[Function]}
           >
             <img
-              className="cover"
+              alt=""
+              className="Pinpoint Image cover"
+              decoding="async"
+              height={1694}
               src="https://file.pinpoint.com/4e00510e123db827caf3da0196504a5c;UDRMb%24xtWU~q00aeRQj%4000NFRkt600RPWBt7;3264x1694.png"
+              width={3264}
             />
             <div
               className="content"
@@ -8157,8 +8372,12 @@ populated with your recently completed...
             onClick={[Function]}
           >
             <img
-              className="cover"
+              alt=""
+              className="Pinpoint Image cover"
+              decoding="async"
+              height={1666}
               src="https://file.pinpoint.com/32e8bdd790263db15fc0eecd8a0c47cb;UARo~e-pkC~pD4Ria%24V%3F00M_bIad8wMxbIxt;3010x1666.png"
+              width={3010}
             />
             <div
               className="content"
@@ -8386,13 +8605,18 @@ populated with your recently completed...
               className="Pinpoint Copyright Prebuilt"
             >
               <a
+                aria-label="Footer Logo Home Page"
                 className="Pinpoint Internal Link Pinpoint Logo sm Prebuilt"
                 href="https://pinpoint.com"
                 title="Footer Logo Home Page"
               >
                 <img
-                  className="image"
+                  alt=""
+                  className="Pinpoint Image image"
+                  decoding="async"
+                  height={320}
                   src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+                  width={320}
                 />
               </a>
               <span
@@ -8406,7 +8630,7 @@ populated with your recently completed...
             className="right"
           >
             <a
-              className="Pinpoint Internal Link Pinpoint Subscribe invisible Prebuilt"
+              className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-0 Prebuilt"
               href="/subscription/subscribe"
             >
               <svg
@@ -8436,10 +8660,12 @@ populated with your recently completed...
               className="Pinpoint Social Bar Prebuilt"
             >
               <a
+                aria-label="Facebook"
                 className="Pinpoint Internal Link Pinpoint Social Item Facebook  Prebuilt"
                 href="https://www.facebook.com/Pinpoint.Engineering"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Facebook"
               >
                 <svg
                   aria-hidden="true"
@@ -8459,10 +8685,12 @@ populated with your recently completed...
                 </svg>
               </a>
               <a
+                aria-label="Instagram"
                 className="Pinpoint Internal Link Pinpoint Social Item Instagram  Prebuilt"
                 href="https://www.instagram.com/pinpoint_sw/"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Instagram"
               >
                 <svg
                   aria-hidden="true"
@@ -8482,10 +8710,12 @@ populated with your recently completed...
                 </svg>
               </a>
               <a
+                aria-label="Twitter"
                 className="Pinpoint Internal Link Pinpoint Social Item Twitter  Prebuilt"
                 href="https://twitter.com/pinpoint_sw"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Twitter"
               >
                 <svg
                   aria-hidden="true"
@@ -8505,10 +8735,12 @@ populated with your recently completed...
                 </svg>
               </a>
               <a
+                aria-label="GitHub"
                 className="Pinpoint Internal Link Pinpoint Social Item Github  Prebuilt"
                 href="https://github.com/pinpt"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="GitHub"
               >
                 <svg
                   aria-hidden="true"
@@ -8528,10 +8760,12 @@ populated with your recently completed...
                 </svg>
               </a>
               <a
+                aria-label="LinkedIn"
                 className="Pinpoint Internal Link Pinpoint Social Item LinkedIn  Prebuilt"
                 href="https://linkedin.com/company/pinpoint-software"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="LinkedIn"
               >
                 <svg
                   aria-hidden="true"
@@ -8551,10 +8785,12 @@ populated with your recently completed...
                 </svg>
               </a>
               <a
+                aria-label="RSS Feed"
                 className="Pinpoint Internal Link Pinpoint Social Item RSS Prebuilt"
                 href="/rss"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="RSS Feed"
               >
                 <svg
                   aria-hidden="true"
@@ -8654,13 +8890,18 @@ exports[`Test default state with partial analytics 1`] = `
             className="left"
           >
             <a
+              aria-label="Header Logo Home Page"
               className="Pinpoint Internal Link Pinpoint Logo sm Prebuilt"
               href="https://pinpoint.com"
               title="Header Logo Home Page"
             >
               <img
-                className="image"
+                alt=""
+                className="Pinpoint Image image"
+                decoding="async"
+                height={320}
                 src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+                width={320}
               />
             </a>
           </div>
@@ -8703,6 +8944,7 @@ exports[`Test default state with partial analytics 1`] = `
               className="Pinpoint ThemeToggle Prebuilt"
             >
               <button
+                aria-label="Toggle Theme"
                 className="mode"
                 onClick={[Function]}
               />
@@ -8732,7 +8974,7 @@ exports[`Test default state with partial analytics 1`] = `
             className="action"
           >
             <a
-              className="Pinpoint Internal Link Pinpoint Subscribe visible Prebuilt"
+              className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-100 Prebuilt"
               href="/subscription/subscribe"
             >
               <svg
@@ -8785,8 +9027,12 @@ exports[`Test default state with partial analytics 1`] = `
             onClick={[Function]}
           >
             <img
-              className="cover"
+              alt=""
+              className="Pinpoint Image cover"
+              decoding="async"
+              height={900}
               src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
+              width={1600}
             />
             <div
               className="content"
@@ -9007,8 +9253,12 @@ exports[`Test default state with partial analytics 1`] = `
             onClick={[Function]}
           >
             <img
-              className="cover"
+              alt=""
+              className="Pinpoint Image cover"
+              decoding="async"
+              height={900}
               src="https://file.pinpoint.com/7120741f0e5051b632fdd356fc1cdb16;U40m~QcbVUiFkafladjFUbiZk%5BcbZ%23jEkYbw;1600x900.png"
+              width={1600}
             />
             <div
               className="content"
@@ -9194,8 +9444,12 @@ exports[`Test default state with partial analytics 1`] = `
             onClick={[Function]}
           >
             <img
-              className="cover"
+              alt=""
+              className="Pinpoint Image cover"
+              decoding="async"
+              height={1616}
               src="https://file.pinpoint.com/0b30097a5ab0b70f79d8659a43a06dc2;UAQ%2CL3~qIB_2IUt6IUs%3A00k9M%7CWCogRjWUtR;2428x1616.png"
+              width={2428}
             />
             <div
               className="content"
@@ -9383,8 +9637,12 @@ populated with your recently completed...
             onClick={[Function]}
           >
             <img
-              className="cover"
+              alt=""
+              className="Pinpoint Image cover"
+              decoding="async"
+              height={1167}
               src="https://file.pinpoint.com/bb92450c0c434e40c7e4b759787f871f;U7QS%7D7%3Fa00~X00ITRies00Ri%25MRQ4T%25Lt7Rk;1590x1167.png"
+              width={1590}
             />
             <div
               className="content"
@@ -9583,8 +9841,12 @@ populated with your recently completed...
             onClick={[Function]}
           >
             <img
-              className="cover"
+              alt=""
+              className="Pinpoint Image cover"
+              decoding="async"
+              height={701}
               src="https://file.pinpoint.com/427af3d4092966d96238e7f95f41c3a6;UfS%3FANxuf7xu~qj%5BfQj%5BayfjfQj%5B~qoffQkC;2870x701.png"
+              width={2870}
             />
             <div
               className="content"
@@ -9996,8 +10258,12 @@ populated with your recently completed...
             onClick={[Function]}
           >
             <img
-              className="cover"
+              alt=""
+              className="Pinpoint Image cover"
+              decoding="async"
+              height={1108}
               src="https://file.pinpoint.com/5b306ad32dc7f8735503e0d260ffc944;UcL%3Bmf00ay~q%25MM%7BWBofM%7BM%7BRiWB%25MRjofof;2795x1108.png"
+              width={2795}
             />
             <div
               className="content"
@@ -10196,8 +10462,12 @@ populated with your recently completed...
             onClick={[Function]}
           >
             <img
-              className="cover"
+              alt=""
+              className="Pinpoint Image cover"
+              decoding="async"
+              height={439}
               src="https://file.pinpoint.com/46da8f9cce9e73b44e4c4fe7dfbfb8e7;UeS~x5tQR%25xu~qofafj%5BofofazfQ~qj%5Bayj%5B;1740x439.png"
+              width={1740}
             />
             <div
               className="content"
@@ -10383,8 +10653,12 @@ populated with your recently completed...
             onClick={[Function]}
           >
             <img
-              className="cover"
+              alt=""
+              className="Pinpoint Image cover"
+              decoding="async"
+              height={1694}
               src="https://file.pinpoint.com/4e00510e123db827caf3da0196504a5c;UDRMb%24xtWU~q00aeRQj%4000NFRkt600RPWBt7;3264x1694.png"
+              width={3264}
             />
             <div
               className="content"
@@ -10583,8 +10857,12 @@ populated with your recently completed...
             onClick={[Function]}
           >
             <img
-              className="cover"
+              alt=""
+              className="Pinpoint Image cover"
+              decoding="async"
+              height={1666}
               src="https://file.pinpoint.com/32e8bdd790263db15fc0eecd8a0c47cb;UARo~e-pkC~pD4Ria%24V%3F00M_bIad8wMxbIxt;3010x1666.png"
+              width={3010}
             />
             <div
               className="content"
@@ -10812,13 +11090,18 @@ populated with your recently completed...
               className="Pinpoint Copyright Prebuilt"
             >
               <a
+                aria-label="Footer Logo Home Page"
                 className="Pinpoint Internal Link Pinpoint Logo sm Prebuilt"
                 href="https://pinpoint.com"
                 title="Footer Logo Home Page"
               >
                 <img
-                  className="image"
+                  alt=""
+                  className="Pinpoint Image image"
+                  decoding="async"
+                  height={320}
                   src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+                  width={320}
                 />
               </a>
               <span
@@ -10832,7 +11115,7 @@ populated with your recently completed...
             className="right"
           >
             <a
-              className="Pinpoint Internal Link Pinpoint Subscribe visible Prebuilt"
+              className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-100 Prebuilt"
               href="/subscription/subscribe"
             >
               <svg
@@ -10862,10 +11145,12 @@ populated with your recently completed...
               className="Pinpoint Social Bar Prebuilt"
             >
               <a
+                aria-label="Facebook"
                 className="Pinpoint Internal Link Pinpoint Social Item Facebook  Prebuilt"
                 href="https://www.facebook.com/Pinpoint.Engineering"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Facebook"
               >
                 <svg
                   aria-hidden="true"
@@ -10885,10 +11170,12 @@ populated with your recently completed...
                 </svg>
               </a>
               <a
+                aria-label="Instagram"
                 className="Pinpoint Internal Link Pinpoint Social Item Instagram  Prebuilt"
                 href="https://www.instagram.com/pinpoint_sw/"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Instagram"
               >
                 <svg
                   aria-hidden="true"
@@ -10908,10 +11195,12 @@ populated with your recently completed...
                 </svg>
               </a>
               <a
+                aria-label="Twitter"
                 className="Pinpoint Internal Link Pinpoint Social Item Twitter  Prebuilt"
                 href="https://twitter.com/pinpoint_sw"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Twitter"
               >
                 <svg
                   aria-hidden="true"
@@ -10931,10 +11220,12 @@ populated with your recently completed...
                 </svg>
               </a>
               <a
+                aria-label="GitHub"
                 className="Pinpoint Internal Link Pinpoint Social Item Github  Prebuilt"
                 href="https://github.com/pinpt"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="GitHub"
               >
                 <svg
                   aria-hidden="true"
@@ -10954,10 +11245,12 @@ populated with your recently completed...
                 </svg>
               </a>
               <a
+                aria-label="LinkedIn"
                 className="Pinpoint Internal Link Pinpoint Social Item LinkedIn  Prebuilt"
                 href="https://linkedin.com/company/pinpoint-software"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="LinkedIn"
               >
                 <svg
                   aria-hidden="true"
@@ -10977,10 +11270,12 @@ populated with your recently completed...
                 </svg>
               </a>
               <a
+                aria-label="RSS Feed"
                 className="Pinpoint Internal Link Pinpoint Social Item RSS Prebuilt"
                 href="/rss"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="RSS Feed"
               >
                 <svg
                   aria-hidden="true"

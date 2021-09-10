@@ -50,11 +50,16 @@ exports[`Test custom className 1`] = `
               onClick={[Function]}
             >
               <span
+                aria-label="Logo"
                 className="Pinpoint Internal Link  Pinpoint Logo sm "
               >
                 <img
-                  className="image"
+                  alt=""
+                  className="Pinpoint Image image"
+                  decoding="async"
+                  height={320}
                   src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+                  width={320}
                 />
               </span>
               <div
@@ -71,6 +76,7 @@ exports[`Test custom className 1`] = `
               className="Pinpoint ThemeToggle Prebuilt"
             >
               <button
+                aria-label="Toggle Theme"
                 className="mode"
                 onClick={[Function]}
               />
@@ -300,13 +306,18 @@ populated with your recently completed...
               className="Pinpoint Copyright Prebuilt"
             >
               <a
+                aria-label="Footer Logo Home Page"
                 className="Pinpoint Internal Link Pinpoint Logo sm Prebuilt"
                 href="https://pinpoint.com"
                 title="Footer Logo Home Page"
               >
                 <img
-                  className="image"
+                  alt=""
+                  className="Pinpoint Image image"
+                  decoding="async"
+                  height={320}
                   src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+                  width={320}
                 />
               </a>
               <span
@@ -323,10 +334,12 @@ populated with your recently completed...
               className="Pinpoint Social Bar Prebuilt"
             >
               <a
+                aria-label="Facebook"
                 className="Pinpoint Internal Link Pinpoint Social Item Facebook  Prebuilt"
                 href="https://www.facebook.com/Pinpoint.Engineering"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Facebook"
               >
                 <svg
                   aria-hidden="true"
@@ -346,10 +359,12 @@ populated with your recently completed...
                 </svg>
               </a>
               <a
+                aria-label="Instagram"
                 className="Pinpoint Internal Link Pinpoint Social Item Instagram  Prebuilt"
                 href="https://www.instagram.com/pinpoint_sw/"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Instagram"
               >
                 <svg
                   aria-hidden="true"
@@ -369,10 +384,12 @@ populated with your recently completed...
                 </svg>
               </a>
               <a
+                aria-label="Twitter"
                 className="Pinpoint Internal Link Pinpoint Social Item Twitter  Prebuilt"
                 href="https://twitter.com/pinpoint_sw"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Twitter"
               >
                 <svg
                   aria-hidden="true"
@@ -392,10 +409,12 @@ populated with your recently completed...
                 </svg>
               </a>
               <a
+                aria-label="GitHub"
                 className="Pinpoint Internal Link Pinpoint Social Item Github  Prebuilt"
                 href="https://github.com/pinpt"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="GitHub"
               >
                 <svg
                   aria-hidden="true"
@@ -415,10 +434,12 @@ populated with your recently completed...
                 </svg>
               </a>
               <a
+                aria-label="LinkedIn"
                 className="Pinpoint Internal Link Pinpoint Social Item LinkedIn  Prebuilt"
                 href="https://linkedin.com/company/pinpoint-software"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="LinkedIn"
               >
                 <svg
                   aria-hidden="true"
@@ -438,10 +459,12 @@ populated with your recently completed...
                 </svg>
               </a>
               <a
+                aria-label="RSS Feed"
                 className="Pinpoint Internal Link Pinpoint Social Item RSS Prebuilt"
                 href="/rss"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="RSS Feed"
               >
                 <svg
                   aria-hidden="true"
@@ -571,11 +594,16 @@ exports[`Test default state 1`] = `
               onClick={[Function]}
             >
               <span
+                aria-label="Logo"
                 className="Pinpoint Internal Link  Pinpoint Logo sm "
               >
                 <img
-                  className="image"
+                  alt=""
+                  className="Pinpoint Image image"
+                  decoding="async"
+                  height={320}
                   src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+                  width={320}
                 />
               </span>
               <div
@@ -592,6 +620,7 @@ exports[`Test default state 1`] = `
               className="Pinpoint ThemeToggle Prebuilt"
             >
               <button
+                aria-label="Toggle Theme"
                 className="mode"
                 onClick={[Function]}
               />
@@ -821,13 +850,18 @@ populated with your recently completed...
               className="Pinpoint Copyright Prebuilt"
             >
               <a
+                aria-label="Footer Logo Home Page"
                 className="Pinpoint Internal Link Pinpoint Logo sm Prebuilt"
                 href="https://pinpoint.com"
                 title="Footer Logo Home Page"
               >
                 <img
-                  className="image"
+                  alt=""
+                  className="Pinpoint Image image"
+                  decoding="async"
+                  height={320}
                   src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+                  width={320}
                 />
               </a>
               <span
@@ -844,10 +878,12 @@ populated with your recently completed...
               className="Pinpoint Social Bar Prebuilt"
             >
               <a
+                aria-label="Facebook"
                 className="Pinpoint Internal Link Pinpoint Social Item Facebook  Prebuilt"
                 href="https://www.facebook.com/Pinpoint.Engineering"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Facebook"
               >
                 <svg
                   aria-hidden="true"
@@ -867,10 +903,12 @@ populated with your recently completed...
                 </svg>
               </a>
               <a
+                aria-label="Instagram"
                 className="Pinpoint Internal Link Pinpoint Social Item Instagram  Prebuilt"
                 href="https://www.instagram.com/pinpoint_sw/"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Instagram"
               >
                 <svg
                   aria-hidden="true"
@@ -890,10 +928,12 @@ populated with your recently completed...
                 </svg>
               </a>
               <a
+                aria-label="Twitter"
                 className="Pinpoint Internal Link Pinpoint Social Item Twitter  Prebuilt"
                 href="https://twitter.com/pinpoint_sw"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Twitter"
               >
                 <svg
                   aria-hidden="true"
@@ -913,10 +953,12 @@ populated with your recently completed...
                 </svg>
               </a>
               <a
+                aria-label="GitHub"
                 className="Pinpoint Internal Link Pinpoint Social Item Github  Prebuilt"
                 href="https://github.com/pinpt"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="GitHub"
               >
                 <svg
                   aria-hidden="true"
@@ -936,10 +978,12 @@ populated with your recently completed...
                 </svg>
               </a>
               <a
+                aria-label="LinkedIn"
                 className="Pinpoint Internal Link Pinpoint Social Item LinkedIn  Prebuilt"
                 href="https://linkedin.com/company/pinpoint-software"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="LinkedIn"
               >
                 <svg
                   aria-hidden="true"
@@ -959,10 +1003,12 @@ populated with your recently completed...
                 </svg>
               </a>
               <a
+                aria-label="RSS Feed"
                 className="Pinpoint Internal Link Pinpoint Social Item RSS Prebuilt"
                 href="/rss"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="RSS Feed"
               >
                 <svg
                   aria-hidden="true"
@@ -1092,11 +1138,16 @@ exports[`Test empty state 1`] = `
               onClick={[Function]}
             >
               <span
+                aria-label="Logo"
                 className="Pinpoint Internal Link  Pinpoint Logo sm "
               >
                 <img
-                  className="image"
+                  alt=""
+                  className="Pinpoint Image image"
+                  decoding="async"
+                  height={320}
                   src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+                  width={320}
                 />
               </span>
               <div
@@ -1113,6 +1164,7 @@ exports[`Test empty state 1`] = `
               className="Pinpoint ThemeToggle Prebuilt"
             >
               <button
+                aria-label="Toggle Theme"
                 className="mode"
                 onClick={[Function]}
               />
@@ -1250,13 +1302,18 @@ exports[`Test empty state 1`] = `
               className="Pinpoint Copyright Prebuilt"
             >
               <a
+                aria-label="Footer Logo Home Page"
                 className="Pinpoint Internal Link Pinpoint Logo sm Prebuilt"
                 href="https://pinpoint.com"
                 title="Footer Logo Home Page"
               >
                 <img
-                  className="image"
+                  alt=""
+                  className="Pinpoint Image image"
+                  decoding="async"
+                  height={320}
                   src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+                  width={320}
                 />
               </a>
               <span
@@ -1273,10 +1330,12 @@ exports[`Test empty state 1`] = `
               className="Pinpoint Social Bar Prebuilt"
             >
               <a
+                aria-label="Facebook"
                 className="Pinpoint Internal Link Pinpoint Social Item Facebook  Prebuilt"
                 href="https://www.facebook.com/Pinpoint.Engineering"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Facebook"
               >
                 <svg
                   aria-hidden="true"
@@ -1296,10 +1355,12 @@ exports[`Test empty state 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Instagram"
                 className="Pinpoint Internal Link Pinpoint Social Item Instagram  Prebuilt"
                 href="https://www.instagram.com/pinpoint_sw/"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Instagram"
               >
                 <svg
                   aria-hidden="true"
@@ -1319,10 +1380,12 @@ exports[`Test empty state 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Twitter"
                 className="Pinpoint Internal Link Pinpoint Social Item Twitter  Prebuilt"
                 href="https://twitter.com/pinpoint_sw"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Twitter"
               >
                 <svg
                   aria-hidden="true"
@@ -1342,10 +1405,12 @@ exports[`Test empty state 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="GitHub"
                 className="Pinpoint Internal Link Pinpoint Social Item Github  Prebuilt"
                 href="https://github.com/pinpt"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="GitHub"
               >
                 <svg
                   aria-hidden="true"
@@ -1365,10 +1430,12 @@ exports[`Test empty state 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="LinkedIn"
                 className="Pinpoint Internal Link Pinpoint Social Item LinkedIn  Prebuilt"
                 href="https://linkedin.com/company/pinpoint-software"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="LinkedIn"
               >
                 <svg
                   aria-hidden="true"
@@ -1388,10 +1455,12 @@ exports[`Test empty state 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="RSS Feed"
                 className="Pinpoint Internal Link Pinpoint Social Item RSS Prebuilt"
                 href="/rss"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="RSS Feed"
               >
                 <svg
                   aria-hidden="true"
@@ -1521,11 +1590,16 @@ exports[`Test loading state 1`] = `
               onClick={[Function]}
             >
               <span
+                aria-label="Logo"
                 className="Pinpoint Internal Link  Pinpoint Logo sm "
               >
                 <img
-                  className="image"
+                  alt=""
+                  className="Pinpoint Image image"
+                  decoding="async"
+                  height={320}
                   src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+                  width={320}
                 />
               </span>
               <div
@@ -1542,6 +1616,7 @@ exports[`Test loading state 1`] = `
               className="Pinpoint ThemeToggle Prebuilt"
             >
               <button
+                aria-label="Toggle Theme"
                 className="mode"
                 onClick={[Function]}
               />
@@ -1594,13 +1669,18 @@ exports[`Test loading state 1`] = `
               className="Pinpoint Copyright Prebuilt"
             >
               <a
+                aria-label="Footer Logo Home Page"
                 className="Pinpoint Internal Link Pinpoint Logo sm Prebuilt"
                 href="https://pinpoint.com"
                 title="Footer Logo Home Page"
               >
                 <img
-                  className="image"
+                  alt=""
+                  className="Pinpoint Image image"
+                  decoding="async"
+                  height={320}
                   src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+                  width={320}
                 />
               </a>
               <span
@@ -1617,10 +1697,12 @@ exports[`Test loading state 1`] = `
               className="Pinpoint Social Bar Prebuilt"
             >
               <a
+                aria-label="Facebook"
                 className="Pinpoint Internal Link Pinpoint Social Item Facebook  Prebuilt"
                 href="https://www.facebook.com/Pinpoint.Engineering"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Facebook"
               >
                 <svg
                   aria-hidden="true"
@@ -1640,10 +1722,12 @@ exports[`Test loading state 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Instagram"
                 className="Pinpoint Internal Link Pinpoint Social Item Instagram  Prebuilt"
                 href="https://www.instagram.com/pinpoint_sw/"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Instagram"
               >
                 <svg
                   aria-hidden="true"
@@ -1663,10 +1747,12 @@ exports[`Test loading state 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="Twitter"
                 className="Pinpoint Internal Link Pinpoint Social Item Twitter  Prebuilt"
                 href="https://twitter.com/pinpoint_sw"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="Twitter"
               >
                 <svg
                   aria-hidden="true"
@@ -1686,10 +1772,12 @@ exports[`Test loading state 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="GitHub"
                 className="Pinpoint Internal Link Pinpoint Social Item Github  Prebuilt"
                 href="https://github.com/pinpt"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="GitHub"
               >
                 <svg
                   aria-hidden="true"
@@ -1709,10 +1797,12 @@ exports[`Test loading state 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="LinkedIn"
                 className="Pinpoint Internal Link Pinpoint Social Item LinkedIn  Prebuilt"
                 href="https://linkedin.com/company/pinpoint-software"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="LinkedIn"
               >
                 <svg
                   aria-hidden="true"
@@ -1732,10 +1822,12 @@ exports[`Test loading state 1`] = `
                 </svg>
               </a>
               <a
+                aria-label="RSS Feed"
                 className="Pinpoint Internal Link Pinpoint Social Item RSS Prebuilt"
                 href="/rss"
                 rel="noopener noreferrer"
                 target="_blank"
+                title="RSS Feed"
               >
                 <svg
                   aria-hidden="true"

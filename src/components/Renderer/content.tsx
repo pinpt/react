@@ -1,13 +1,16 @@
 import mediumZoom from 'medium-zoom';
-import { forwardRef, useEffect } from 'react';
-import { ReactYouTubeLite as Youtube } from 'react-youtube-lite';
+import React, { forwardRef, useEffect } from 'react';
+import { extractImageMetadataFromFileID } from '../../lib/file_metadata';
 import { slugifyContent } from '../../lib/string';
 import { CoverMediaType } from '../../lib/types/content';
+import Image from '../Image';
 import { Document } from './';
-import React from 'react';
+
 import type { ICoverMedia } from '../../lib/types/content';
 
-const ImageMedia = ({ src, title = '', zoomable = false }: { src: string; title?: string; zoomable?: boolean }) => {
+const ImageMedia = ({ src, title = '', zoomable = false }: { src?: string; title?: string; zoomable?: boolean }) => {
+	const { size } = extractImageMetadataFromFileID(src ?? '');
+
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
 			mediumZoom('.medium-zoom-cover');
@@ -16,7 +19,13 @@ const ImageMedia = ({ src, title = '', zoomable = false }: { src: string; title?
 
 	return (
 		<div className="Pinpoint image">
-			<img src={src} alt={title} className={`${zoomable ? 'medium-zoom-cover' : ''}`} />
+			<Image
+				src={src}
+				alt={title}
+				className={`${zoomable ? 'medium-zoom-cover' : ''}`}
+				width={size?.width}
+				height={size?.height}
+			/>
 		</div>
 	);
 };
@@ -29,53 +38,26 @@ const VideoMedia = ({ src }: { src: string }) => {
 	);
 };
 
-const YoutubeMediaSSR = ({ id, poster = 'hqdefault' }: { id: string; poster?: string }) => {
-	// the component isn't SSR friendly so this is basically used to sort of mimic it for generated code
-	const posterUrl = `https://i.ytimg.com/vi/${id}/${poster}.jpg`;
-	return (
-		<>
-			{poster && <link rel="preload" href={posterUrl} as="image" />}
-			<div
-				className="Pinpoint youtube ryt-lite embed-responsive aspect-ratio-16/9"
-				style={{ backgroundImage: `url(${posterUrl})` }}
-			>
-				<div className="lty-playbtn" data-url={`https://www.youtube-nocookie.com/embed/${id}?autoplay=1`} />
-			</div>
-		</>
-	);
-};
-
-const YoutubeMedia = ({
-	id,
-	metadata,
-	staticMode,
-}: {
-	id: string;
-	metadata?: Record<string, any>;
-	staticMode?: true;
-}) => {
+const YoutubeMedia = ({ id, metadata }: { id: string; metadata?: Record<string, any> }) => {
+	const posterUrl = `https://i.ytimg.com/vi/${id}/${metadata?.poster ?? 'hqdefault'}.jpg`;
+	const { size } = extractImageMetadataFromFileID(posterUrl);
 	return (
 		<div className="Pinpoint youtube">
-			{!staticMode ? (
-				<Youtube url={`https://www.youtube.com/watch?v=${id}`} poster={metadata?.poster} />
-			) : (
-				<YoutubeMediaSSR id={id} poster={metadata?.poster} />
-			)}
+			<div
+				className="yt"
+				style={{
+					backgroundImage: `url("${posterUrl}")`,
+					backgroundSize: size?.width && size?.height ? `${size.width}px ${size.height}px` : undefined,
+				}}
+				data-url={`https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}?autoplay=1`}
+			>
+				<button className="play-button" aria-label="Play the Video" />
+			</div>
 		</div>
 	);
 };
 
-export const CoverMedia = ({
-	media,
-	title,
-	staticMode,
-	zoomable,
-}: {
-	media?: ICoverMedia;
-	title?: string;
-	staticMode?: true;
-	zoomable?: boolean;
-}) => {
+export const CoverMedia = ({ media, title, zoomable }: { media?: ICoverMedia; title?: string; zoomable?: boolean }) => {
 	if (!media) {
 		return <></>;
 	}
@@ -93,7 +75,7 @@ export const CoverMedia = ({
 			break;
 		}
 		case CoverMediaType.Youtube: {
-			content = <YoutubeMedia id={media.value} metadata={media.metadata} staticMode={staticMode} />;
+			content = <YoutubeMedia id={media.value} metadata={media.metadata} />;
 			break;
 		}
 	}
@@ -111,13 +93,12 @@ interface ContentProps {
 	coverMedia?: ICoverMedia;
 	limit?: number;
 	divider?: boolean;
-	staticMode?: true;
 }
 
 const Content = forwardRef((props: ContentProps, ref: any) => {
 	return (
 		<article ref={ref}>
-			{props.coverMedia && <CoverMedia media={props.coverMedia} title={props.title} staticMode={props.staticMode} />}
+			{props.coverMedia && <CoverMedia media={props.coverMedia} title={props.title} />}
 			<section className="Pinpoint content">
 				<Document node={props.document} limit={props.limit} />
 				{props.limit && props.document.content?.length > props.limit && (

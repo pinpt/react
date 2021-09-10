@@ -5,6 +5,7 @@ exports[`Test default 1`] = `
   className="Pinpoint ThemeToggle "
 >
   <button
+    aria-label="Toggle Theme"
     className="mode"
     onClick={[Function]}
   />
@@ -16,6 +17,7 @@ exports[`Test theme change listener 1`] = `
   className="Pinpoint ThemeToggle "
 >
   <button
+    aria-label="Toggle Theme"
     className="mode"
     onClick={[Function]}
   />

@@ -204,6 +204,16 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 	@apply flex flex-col items-center md:items-start;
 }
 
+.Pinpoint.Footer .Pinpoint.Subscribe {
+	@apply transition-all duration-200;
+	color: var(--footer-text-color);
+}
+
+.Pinpoint.Footer .Pinpoint.Subscribe:hover {
+	filter: brightness(1.5);
+}
+
+
 /*
  * Styles for the copyright component
  */
@@ -551,6 +561,7 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
  * Styles for the author component
  */
 .Pinpoint.Author,
+.Pinpoint.Author > .Pinpoint.Link,
 .Pinpoint.Author a {
 	@apply flex items-center mr-auto;
 }
@@ -786,4 +797,9 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 
 .Pinpoint.SubscribeForm .error.invisible {
 	@apply invisible;
+}
+
+.Pinpoint.Image :not(.image_block) {
+	/* note: image block can have alignment and shouldn't be responsive */
+	@apply max-w-full w-full h-auto;
 }

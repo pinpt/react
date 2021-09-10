@@ -1,12 +1,12 @@
+import React from 'react';
 import ActionLink from '../../Internal/ActionLink';
 import { ISocialProps } from '../types';
-import React from 'react';
 
 const RSS = (props: ISocialProps) => {
 	const { className = '', ...rest } = props;
 
 	return (
-		<ActionLink className={`Pinpoint Social Item RSS ${className}`} {...rest}>
+		<ActionLink className={`Pinpoint Social Item RSS ${className}`} title="RSS Feed" {...rest}>
 			<svg
 				width={12.25}
 				height={14}
