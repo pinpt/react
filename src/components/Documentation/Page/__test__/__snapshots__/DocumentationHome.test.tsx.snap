@@ -243,7 +243,7 @@ exports[`Test full page 1`] = `
             className="right"
           >
             <a
-              className="Pinpoint Internal Link Pinpoint Subscribe invisible "
+              className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-0 "
               href="https://pinpoint.com"
             >
               <svg
@@ -580,7 +580,7 @@ exports[`Test loading 1`] = `
             className="right"
           >
             <a
-              className="Pinpoint Internal Link Pinpoint Subscribe visible "
+              className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-100 "
               href="https://pinpoint.com"
             >
               <svg
@@ -1227,7 +1227,7 @@ exports[`Test no header 1`] = `
             className="right"
           >
             <a
-              className="Pinpoint Internal Link Pinpoint Subscribe invisible "
+              className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-0 "
               href="https://pinpoint.com"
             >
               <svg
@@ -1742,7 +1742,7 @@ exports[`Test with search bar 1`] = `
             className="right"
           >
             <a
-              className="Pinpoint Internal Link Pinpoint Subscribe visible "
+              className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-100 "
               href="https://pinpoint.com"
             >
               <svg
@@ -2283,7 +2283,7 @@ exports[`With pagination 1`] = `
             className="right"
           >
             <a
-              className="Pinpoint Internal Link Pinpoint Subscribe invisible "
+              className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-0 "
               href="https://pinpoint.com"
             >
               <svg

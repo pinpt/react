@@ -37,7 +37,7 @@ exports[`Test complete 1`] = `
       className="right"
     >
       <a
-        className="Pinpoint Internal Link Pinpoint Subscribe invisible "
+        className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-0 "
         href="https://pinpoint.com"
       >
         <svg
@@ -403,7 +403,7 @@ exports[`Test no social 1`] = `
       className="right"
     >
       <a
-        className="Pinpoint Internal Link Pinpoint Subscribe visible "
+        className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-100 "
         href="https://pinpoint.com"
       >
         <svg
