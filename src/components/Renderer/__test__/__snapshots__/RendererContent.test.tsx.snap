@@ -415,7 +415,9 @@ exports[`Test simple error notice 1`] = `
       </svg>
     </div>
     <div>
-      hi
+      <p>
+        This is an error notice
+      </p>
     </div>
   </div>
 </div>
@@ -526,7 +528,9 @@ exports[`Test simple info notice 1`] = `
       </svg>
     </div>
     <div>
-      hi
+      <p>
+        This is an info notice
+      </p>
     </div>
   </div>
 </div>
@@ -627,7 +631,9 @@ exports[`Test simple warning notice 1`] = `
       </svg>
     </div>
     <div>
-      hi
+      <p>
+        This is a warning notice
+      </p>
     </div>
   </div>
 </div>

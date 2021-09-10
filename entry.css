@@ -229,14 +229,23 @@
 .Pinpoint.document .notice.error {
 	@apply bg-red-600 dark:bg-red-700 text-white;
 }
+.Pinpoint.document .notice.error * {
+	@apply text-white;
+}
 .Pinpoint.document .notice.warning {
-	@apply bg-yellow-400 dark:bg-yellow-500 dark:text-gray-800;
+	@apply bg-yellow-400 dark:bg-yellow-500 text-gray-800;
+}
+.Pinpoint.document .notice.warning * {
+	@apply text-gray-800;
 }
 .Pinpoint.document .notice.warning a {
 	@apply text-gray-800 underline;
 }
 .Pinpoint.document .notice.info {
 	@apply bg-green-600 dark:bg-green-700 text-white;
+}
+.Pinpoint.document .notice.info * {
+	@apply text-white;
 }
 .Pinpoint.document .notice.info h1,
 .Pinpoint.document .notice.error h1,
