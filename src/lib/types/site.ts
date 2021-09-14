@@ -5,6 +5,7 @@ export interface ISite {
 	url: string; // the canonical url for the site
 	slug: string;
 	name: string;
+	private: boolean; // true if private and should not be indexable by search engines
 	theme?: {
 		title?: string;
 		social?: Record<string, string>;
