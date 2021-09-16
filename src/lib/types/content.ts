@@ -58,6 +58,7 @@ export interface IUser {
 
 export interface IContent {
 	id: string;
+	slug?: string;
 	type: ContentTemplateType; // the type of content
 	commit: string; // the commit for the content
 	document: ContentDocument;

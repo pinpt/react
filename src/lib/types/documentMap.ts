@@ -2,6 +2,8 @@ export interface IDocumentMapDocumentRef {
 	type: 'document';
 	id: string;
 	index: number;
+	title: string;
+	slug: string;
 };
 
 export interface IDocumentMapGroup {
