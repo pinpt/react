@@ -9,7 +9,7 @@ export default {
 			content: [
 				{
 					type: 'text',
-					text: 'Heading',
+					text: 'H1 Heading',
 				},
 			],
 		},
