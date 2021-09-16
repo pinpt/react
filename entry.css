@@ -532,11 +532,11 @@
 	@apply mt-px mr-3 text-4xl text-gray-300 dark:text-gray-600;
 }
 .file .details {
-	@apply leading-5 flex-grow;
+	@apply leading-tight flex-grow;
 }
 .file .details .filename,
 .file .details a.filename {
-	@apply font-semibold text-gray-700 dark:text-gray-300;
+	@apply font-semibold leading-tight text-gray-700 dark:text-gray-300;
 }
 .file .details .description {
 	@apply mt-1 text-sm text-gray-700 dark:text-gray-300;
@@ -548,7 +548,7 @@
 	@apply absolute z-10 top-1 right-1 flex flex-grow justify-end items-center rounded overflow-hidden;
 }
 .file .options .option {
-	@apply opacity-0 transition-opacity delay-200 duration-100 h-6 px-2 flex items-center bg-gray-800 hover:bg-gray-900 text-gray-300 hover:text-white cursor-pointer text-xs hover:no-underline select-none;
+	@apply opacity-0 transition-opacity duration-200 h-6 px-2 flex items-center bg-gray-800 hover:bg-gray-900 text-gray-300 hover:text-white cursor-pointer text-xs hover:no-underline select-none;
 	margin-left: 1px;
 }
 .file .options .option span {
