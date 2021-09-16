@@ -93,7 +93,11 @@ const SEO = (props: ISEOProps) => {
 			<link rel="shortcut icon" href={site.logoUrl} />
 			<link rel="alternate" type="application/rss+xml" title={`${site.name} RSS Feed`} href="/rss" />
 			<meta property="og:site_name" content={site.name} />
-			{site.private ? <meta name="robots" content="noindex" /> : <meta name="robots" content="index, follow" />}
+			{site.private || content?.robots === 'invisible' ? (
+				<meta name="robots" content="noindex" />
+			) : (
+				<meta name="robots" content="index, follow" />
+			)}
 			<meta name="twitter:card" content="summary_large_image" />
 			<meta property="og:url" content={url} />
 			<meta property="twitter:url" content={url} />

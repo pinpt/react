@@ -70,4 +70,5 @@ export interface IContent {
 	authors: IUser[];
 	coverMedia?: ICoverMedia;
 	order?: number;
+	robots?: 'visible' | 'invisible'; // the robots setting for the page
 }
