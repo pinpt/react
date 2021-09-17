@@ -59,6 +59,7 @@ const {
 	fetchAnalytics,
 	fetchContentAnalytics,
 	fetchContentPaginated,
+	fetchDocumentMap,
 	fetchClaps,
 	createClap,
 	executeAPI,
@@ -182,6 +183,7 @@ test('Test util exports', () => {
 	expect(slugifyString).toBeTruthy();
 	expect(fetchSite).toBeTruthy();
 	expect(fetchSiteWithContentCount).toBeTruthy();
+	expect(fetchDocumentMap).toBeTruthy();
 	expect(splitEntries).toBeTruthy();
 	expect(getTagColorStyles).toBeTruthy();
 	expect(colorForString).toBeTruthy();
