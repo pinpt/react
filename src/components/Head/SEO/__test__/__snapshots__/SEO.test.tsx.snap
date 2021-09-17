@@ -110,3 +110,225 @@ Array [
   />,
 ]
 `;
+
+exports[`Test private content override render 1`] = `
+Array [
+  <title>
+    Linked Content Blocks
+     - 
+    Pinpoint
+  </title>,
+  <meta
+    content="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png?rw=1200&rh=628"
+    name="image"
+    property="og:image"
+  />,
+  <meta
+    content="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png?rw=1200&rh=628"
+    name="twitter:image"
+  />,
+  <meta
+    content="Linked Content Blocks"
+    name="twitter:image:alt"
+  />,
+  <meta
+    content="article"
+    name="type"
+    property="og:type"
+  />,
+  <meta
+    content="Chris Bowley"
+    property="author"
+  />,
+  <meta
+    content="Chris Bowley"
+    name="author"
+    property="og:author"
+  />,
+  <meta
+    content="2021-08-02T14:16:50.147Z"
+    property="article:published_time"
+  />,
+  <meta
+    content="Linked Content Blocks"
+    name="title"
+    property="og:title"
+  />,
+  <meta
+    content="Linked Content Blocks"
+    name="twitter:title"
+  />,
+  <meta
+    content="Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked."
+    name="description"
+    property="og:description"
+  />,
+  <meta
+    content="Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked."
+    name="twitter:description"
+  />,
+  <link
+    href="https://changelog.pinpoint.com/rss"
+    rel="alternate"
+    title="RSS Feed for Pinpoint Changelog"
+    type="application/rss+xml"
+  />,
+  <link
+    href="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+    rel="icon"
+  />,
+  <link
+    href="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+    rel="shortcut icon"
+  />,
+  <link
+    href="/rss"
+    rel="alternate"
+    title="Pinpoint RSS Feed"
+    type="application/rss+xml"
+  />,
+  <meta
+    content="Pinpoint"
+    property="og:site_name"
+  />,
+  <meta
+    content="noindex"
+    name="robots"
+  />,
+  <meta
+    content="summary_large_image"
+    name="twitter:card"
+  />,
+  <meta
+    content="https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
+    property="og:url"
+  />,
+  <meta
+    content="https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
+    property="twitter:url"
+  />,
+  <link
+    href="https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
+    rel="canonical"
+  />,
+  <meta
+    content="@pinpoint_sw"
+    name="twitter:creator"
+  />,
+  <meta
+    content="@pinpoint_sw"
+    name="twitter:site"
+  />,
+]
+`;
+
+exports[`Test private render 1`] = `
+Array [
+  <title>
+    Linked Content Blocks
+     - 
+    Pinpoint
+  </title>,
+  <meta
+    content="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png?rw=1200&rh=628"
+    name="image"
+    property="og:image"
+  />,
+  <meta
+    content="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png?rw=1200&rh=628"
+    name="twitter:image"
+  />,
+  <meta
+    content="Linked Content Blocks"
+    name="twitter:image:alt"
+  />,
+  <meta
+    content="article"
+    name="type"
+    property="og:type"
+  />,
+  <meta
+    content="Chris Bowley"
+    property="author"
+  />,
+  <meta
+    content="Chris Bowley"
+    name="author"
+    property="og:author"
+  />,
+  <meta
+    content="2021-08-02T14:16:50.147Z"
+    property="article:published_time"
+  />,
+  <meta
+    content="Linked Content Blocks"
+    name="title"
+    property="og:title"
+  />,
+  <meta
+    content="Linked Content Blocks"
+    name="twitter:title"
+  />,
+  <meta
+    content="Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked."
+    name="description"
+    property="og:description"
+  />,
+  <meta
+    content="Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked."
+    name="twitter:description"
+  />,
+  <link
+    href="https://changelog.pinpoint.com/rss"
+    rel="alternate"
+    title="RSS Feed for Pinpoint Changelog"
+    type="application/rss+xml"
+  />,
+  <link
+    href="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+    rel="icon"
+  />,
+  <link
+    href="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+    rel="shortcut icon"
+  />,
+  <link
+    href="/rss"
+    rel="alternate"
+    title="Pinpoint RSS Feed"
+    type="application/rss+xml"
+  />,
+  <meta
+    content="Pinpoint"
+    property="og:site_name"
+  />,
+  <meta
+    content="noindex"
+    name="robots"
+  />,
+  <meta
+    content="summary_large_image"
+    name="twitter:card"
+  />,
+  <meta
+    content="https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
+    property="og:url"
+  />,
+  <meta
+    content="https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
+    property="twitter:url"
+  />,
+  <link
+    href="https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
+    rel="canonical"
+  />,
+  <meta
+    content="@pinpoint_sw"
+    name="twitter:creator"
+  />,
+  <meta
+    content="@pinpoint_sw"
+    name="twitter:site"
+  />,
+]
+`;

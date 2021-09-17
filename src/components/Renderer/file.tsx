@@ -59,11 +59,11 @@ export const formattedSize = (size = 0) => {
 };
 
 const File = ({ node }: NodeProps) => {
-	const { description, filename, publicUrl, size, type } = node.attrs;
+	const { description, filename, size, src, type } = node.attrs;
 
 	const onDownload = () => {
-		if (publicUrl) {
-			const u = new URL(publicUrl);
+		if (src) {
+			const u = new URL(src);
 			u.searchParams.set('filename', filename);
 			u.searchParams.set('disposition', 'attachment');
 			const a = document.createElement('a');
@@ -82,8 +82,8 @@ const File = ({ node }: NodeProps) => {
 			<div className="container">
 				<FontAwesomeIcon icon={iconForType(type)} />
 				<div className="details">
-					{publicUrl ? (
-						<a href={publicUrl} target="_blank" rel="noopener noreferrer" className="filename">
+					{src ? (
+						<a href={src} target="_blank" rel="noopener noreferrer" className="filename">
 							{filename}
 						</a>
 					) : (
@@ -93,7 +93,7 @@ const File = ({ node }: NodeProps) => {
 					<div className="size">{formattedSize(size)}</div>
 				</div>
 				<div className="options">
-					{publicUrl && (
+					{src && (
 						<div className="option group" onClick={onDownload}>
 							<FontAwesomeIcon icon={faDownload} />
 							<span>Download</span>

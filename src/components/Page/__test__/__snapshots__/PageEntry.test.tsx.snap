@@ -270,9 +270,12 @@ exports[`Test full entry 1`] = `
             <div
               className="Pinpoint document"
             >
-              <h1
+              <div
                 className="heading"
               >
+                <h1>
+                  Linked Content Blocks
+                </h1>
                 <a
                   aria-hidden="true"
                   className="anchor"
@@ -297,8 +300,7 @@ exports[`Test full entry 1`] = `
                     />
                   </svg>
                 </a>
-                Linked Content Blocks
-              </h1>
+              </div>
               <p>
                 Linked content blocks allow you to quickly populate your changelog from the recently completed work. Annotations show you which issues and pull requests are linked to features. There are blocks for showing rich content about a new feature, and for quickly building a list of small improvements and bug fixes.
               </p>
@@ -325,9 +327,12 @@ exports[`Test full entry 1`] = `
                 </strong>
                  tool.
               </p>
-              <h1
+              <div
                 className="heading"
               >
+                <h1>
+                  Grouping in Planning
+                </h1>
                 <a
                   aria-hidden="true"
                   className="anchor"
@@ -352,8 +357,7 @@ exports[`Test full entry 1`] = `
                     />
                   </svg>
                 </a>
-                Grouping in Planning
-              </h1>
+              </div>
               <div
                 className="image_block center"
               >
@@ -1115,9 +1119,12 @@ exports[`Test no footer 1`] = `
             <div
               className="Pinpoint document"
             >
-              <h1
+              <div
                 className="heading"
               >
+                <h1>
+                  Linked Content Blocks
+                </h1>
                 <a
                   aria-hidden="true"
                   className="anchor"
@@ -1142,8 +1149,7 @@ exports[`Test no footer 1`] = `
                     />
                   </svg>
                 </a>
-                Linked Content Blocks
-              </h1>
+              </div>
               <p>
                 Linked content blocks allow you to quickly populate your changelog from the recently completed work. Annotations show you which issues and pull requests are linked to features. There are blocks for showing rich content about a new feature, and for quickly building a list of small improvements and bug fixes.
               </p>
@@ -1170,9 +1176,12 @@ exports[`Test no footer 1`] = `
                 </strong>
                  tool.
               </p>
-              <h1
+              <div
                 className="heading"
               >
+                <h1>
+                  Grouping in Planning
+                </h1>
                 <a
                   aria-hidden="true"
                   className="anchor"
@@ -1197,8 +1206,7 @@ exports[`Test no footer 1`] = `
                     />
                   </svg>
                 </a>
-                Grouping in Planning
-              </h1>
+              </div>
               <div
                 className="image_block center"
               >
@@ -1525,9 +1533,12 @@ exports[`Test no sidebar 1`] = `
             <div
               className="Pinpoint document"
             >
-              <h1
+              <div
                 className="heading"
               >
+                <h1>
+                  Linked Content Blocks
+                </h1>
                 <a
                   aria-hidden="true"
                   className="anchor"
@@ -1552,8 +1563,7 @@ exports[`Test no sidebar 1`] = `
                     />
                   </svg>
                 </a>
-                Linked Content Blocks
-              </h1>
+              </div>
               <p>
                 Linked content blocks allow you to quickly populate your changelog from the recently completed work. Annotations show you which issues and pull requests are linked to features. There are blocks for showing rich content about a new feature, and for quickly building a list of small improvements and bug fixes.
               </p>
@@ -1580,9 +1590,12 @@ exports[`Test no sidebar 1`] = `
                 </strong>
                  tool.
               </p>
-              <h1
+              <div
                 className="heading"
               >
+                <h1>
+                  Grouping in Planning
+                </h1>
                 <a
                   aria-hidden="true"
                   className="anchor"
@@ -1607,8 +1620,7 @@ exports[`Test no sidebar 1`] = `
                     />
                   </svg>
                 </a>
-                Grouping in Planning
-              </h1>
+              </div>
               <div
                 className="image_block center"
               >
@@ -2219,9 +2231,12 @@ exports[`Test not zoomable entry 1`] = `
             <div
               className="Pinpoint document"
             >
-              <h1
+              <div
                 className="heading"
               >
+                <h1>
+                  Linked Content Blocks
+                </h1>
                 <a
                   aria-hidden="true"
                   className="anchor"
@@ -2246,8 +2261,7 @@ exports[`Test not zoomable entry 1`] = `
                     />
                   </svg>
                 </a>
-                Linked Content Blocks
-              </h1>
+              </div>
               <p>
                 Linked content blocks allow you to quickly populate your changelog from the recently completed work. Annotations show you which issues and pull requests are linked to features. There are blocks for showing rich content about a new feature, and for quickly building a list of small improvements and bug fixes.
               </p>
@@ -2274,9 +2288,12 @@ exports[`Test not zoomable entry 1`] = `
                 </strong>
                  tool.
               </p>
-              <h1
+              <div
                 className="heading"
               >
+                <h1>
+                  Grouping in Planning
+                </h1>
                 <a
                   aria-hidden="true"
                   className="anchor"
@@ -2301,8 +2318,7 @@ exports[`Test not zoomable entry 1`] = `
                     />
                   </svg>
                 </a>
-                Grouping in Planning
-              </h1>
+              </div>
               <div
                 className="image_block center"
               >
@@ -3069,9 +3085,12 @@ exports[`Test with pagination 1`] = `
             <div
               className="Pinpoint document"
             >
-              <h1
+              <div
                 className="heading"
               >
+                <h1>
+                  Linked Content Blocks
+                </h1>
                 <a
                   aria-hidden="true"
                   className="anchor"
@@ -3096,8 +3115,7 @@ exports[`Test with pagination 1`] = `
                     />
                   </svg>
                 </a>
-                Linked Content Blocks
-              </h1>
+              </div>
               <p>
                 Linked content blocks allow you to quickly populate your changelog from the recently completed work. Annotations show you which issues and pull requests are linked to features. There are blocks for showing rich content about a new feature, and for quickly building a list of small improvements and bug fixes.
               </p>
@@ -3124,9 +3142,12 @@ exports[`Test with pagination 1`] = `
                 </strong>
                  tool.
               </p>
-              <h1
+              <div
                 className="heading"
               >
+                <h1>
+                  Grouping in Planning
+                </h1>
                 <a
                   aria-hidden="true"
                   className="anchor"
@@ -3151,8 +3172,7 @@ exports[`Test with pagination 1`] = `
                     />
                   </svg>
                 </a>
-                Grouping in Planning
-              </h1>
+              </div>
               <div
                 className="image_block center"
               >
