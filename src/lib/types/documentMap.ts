@@ -10,7 +10,7 @@ export interface IDocumentMapGroup {
 	type: 'group';
 	id: string;
 	index: number;
-	name: string;
+	title: string;
 	slug?: string;
 	children?: IDocumentMapNode[];
 };
