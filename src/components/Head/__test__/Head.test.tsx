@@ -16,3 +16,9 @@ test('Test default render for Content', () => {
 	const tree = component.toJSON();
 	expect(tree).toMatchSnapshot();
 });
+
+test('Test setting basePath', () => {
+	const component = renderer.create(<Head site={{ ...site, basePath: '/blog' }} content={entries[0] as IContent} />);
+	const tree = component.toJSON();
+	expect(tree).toMatchSnapshot();
+});
