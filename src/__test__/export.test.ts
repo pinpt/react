@@ -76,6 +76,7 @@ const {
 	useScriptLoader,
 	useBackground,
 	getDocumentHeadings,
+	getRouterRelativePath,
 	...otherExports
 } = Exports;
 

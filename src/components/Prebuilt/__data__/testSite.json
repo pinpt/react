@@ -5,6 +5,7 @@
 	"slug": "pinpoint",
 	"name": "Pinpoint",
 	"private": false,
+	"basePath": "/",
 	"mailingAddress": "3131 McKinney Ave Ste 502 PMB 98116 Dallas, Texas 75204-2426 US",
 	"theme": {
 		"title": "Pinpoint Changelog",

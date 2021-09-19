@@ -19,4 +19,5 @@ export interface ISite {
 			tags?: string[];
 		};
 	};
+	basePath: string;
 }
