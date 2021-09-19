@@ -1,23 +1,22 @@
-import React from 'react';
-import { ReactElement, useCallback, useMemo, useState } from 'react';
+import React, { ReactElement, useCallback, useMemo, useState } from 'react';
+import { ICopyrightProps } from '../../../Copyright';
 import { IHeaderProps } from '../../../Header';
-import HomePage from '../../Page/Home';
-import Header from '../../../Prebuilt/Header';
-import type { Analytics, IContent, ISite } from '../../../../lib/types';
 import { ILogoProps } from '../../../Logo';
+import Pagination, { IPaginationProps } from '../../../Pagination';
+import Pinpoint from '../../../Pinpoint';
+import Footer, { IPrebuiltFooterProps } from '../../../Prebuilt/Footer';
+import Header from '../../../Prebuilt/Header';
+import { Content } from '../../../Renderer';
+import Search from '../../../Search';
 import { ISearchBarProps } from '../../../Search/Bar';
+import { ISocialBarProps } from '../../../Social/Bar';
 import { ISubscribeProps } from '../../../Subscribe';
 import { IThemeToggleProps } from '../../../ThemeToggle';
 import Outline, { IOutlineProps } from '../../Outline';
-import { Content } from '../../../Renderer';
-import Footer, { IPrebuiltFooterProps } from '../../../Prebuilt/Footer';
-import { ISocialBarProps } from '../../../Social/Bar';
-import { ICopyrightProps } from '../../../Copyright';
+import HomePage from '../../Page/Home';
 import Title from '../../Title';
-import Pagination, { IPaginationProps } from '../../../Pagination';
-import Pinpoint from '../../../Pinpoint';
-import Search from '../../../Search';
 
+import type { Analytics, IContent, ISite } from '../../../../lib/types';
 export interface IPrebuiltDocumentationHomeProps {
 	className?: string;
 	site: ISite;
@@ -130,7 +129,7 @@ const Home = (props: IPrebuiltDocumentationHomeProps) => {
 	);
 
 	return (
-		<Pinpoint siteId={site.id} contentId={currentEntry}>
+		<Pinpoint siteId={site.id} basePath={site.basePath} contentId={currentEntry}>
 			{(_ready, ref) => (
 				<HomePage
 					ref={ref}
