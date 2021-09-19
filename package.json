@@ -97,7 +97,10 @@
 		"globalSetup": "./jest-setup.js",
 		"transformIgnorePatterns": [
 			"json"
-		]
+		],
+		"testEnvironmentOptions": {
+			"url": "https://pinpoint.com/blog"
+		}
 	},
 	"repository": {
 		"type": "git",
