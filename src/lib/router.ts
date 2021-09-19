@@ -8,12 +8,20 @@ const join = (...paths: string[]) => {
 		.join('/');
 };
 
-export const getRouterRelativePath = (site: ISite, url: string) => {
-	const { basePath = '/', url: siteUrl } = site;
+export const getRouterRelativePath = (site: ISite, url: string, w?: any) => {
+	const { basePath = '/' } = site;
 	const { pathname } = url.indexOf('https://') === 0 ? new URL(url) : { pathname: url };
 	// no custom basepath, just return the pathname part
 	if (basePath === '/') {
 		return pathname;
+	}
+	w = w ? w : typeof window !== 'undefined' ? window : undefined;
+	if (typeof w !== 'undefined') {
+		// if running in the browser, first check to see if we're running inside the same basepath
+		const u = new URL(w.location.href);
+		if (!u.pathname.startsWith(basePath)) {
+			return pathname; // not running inside the basepath so just return the relatiev pathname we received back
+		}
 	}
 	// the url has the same basepath prefix as set, we can just return it
 	if (pathname.startsWith(basePath)) {

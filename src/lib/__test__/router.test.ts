@@ -1,3 +1,6 @@
+/**
+ * @jest-environment jsdom
+ */
 import { getRouterRelativePath, getSiteAnalyticsURL, getSiteRSSURL } from '../';
 
 test('Test getRouterRelativePath', () => {
@@ -42,4 +45,17 @@ test('Test getRouterRelativePath with missing base', () => {
 			'https://jhaynie.dev/entry/pe3dYzI0PKtCgXPQUufC/GitLab'
 		)
 	).toBe('/blog/entry/pe3dYzI0PKtCgXPQUufC/GitLab');
+});
+
+test('Test getRouterRelativePath when running on different domain', () => {
+	expect(
+		getRouterRelativePath({ basePath: '/blog', url: 'https://example.com/blog' } as any, '/entry/1', {
+			location: { href: 'http://localhost:3001' },
+		})
+	).toBe('/entry/1');
+	expect(
+		getRouterRelativePath({ basePath: '/blog', url: 'https://example.com/blog' } as any, '/entry/1', {
+			location: { href: 'http://localhost:3001/blog' },
+		})
+	).toBe('/blog/entry/1');
 });
