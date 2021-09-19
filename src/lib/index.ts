@@ -8,3 +8,4 @@ export * from './data';
 export * from './event';
 export * from './subscription';
 export * from './outline';
+export * from './router';

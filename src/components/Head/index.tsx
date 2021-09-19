@@ -1,8 +1,7 @@
 import type { ISite, IContent } from '../../lib/types';
-import config from '../../config';
-import SEO from './SEO';
 import React from 'react';
-const { iframely } = config;
+import { getSiteAnalyticsURL } from '../../lib/router';
+import SEO from './SEO';
 
 export interface IHeadProps {
 	site: ISite;
@@ -17,7 +16,7 @@ const Head = (props: IHeadProps) => {
 			<meta charSet="utf-8" />
 			<meta httpEquiv="x-ua-compatible" content="ie=edge" />
 			<meta name="viewport" content="width=device-width" />
-			<script src="/a.js" data-site-id={site.id} data-id={content?.id} async defer />
+			<script src={getSiteAnalyticsURL(site)} data-site-id={site.id} data-id={content?.id} async defer />
 			<meta name="generator" content="pinpoint.com" />
 			<SEO site={site} content={content} />
 			{children}

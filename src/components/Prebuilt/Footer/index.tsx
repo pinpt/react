@@ -1,6 +1,5 @@
-import React from 'react';
-import { ReactElement } from 'react';
-import { ISite } from '../../../lib';
+import React, { ReactElement } from 'react';
+import { getSiteRSSURL, ISite } from '../../../lib';
 import Copyright, { ICopyrightProps } from '../../Copyright';
 import BaseFooter from '../../Footer';
 import Logo, { ILogoProps } from '../../Logo';
@@ -42,7 +41,7 @@ const Footer = (props: IPrebuiltFooterProps) => {
 						{site.theme?.social?.linkedin && (
 							<Social.LinkedIn className="Prebuilt" href={site.theme.social?.linkedin} newTab />
 						)}
-						<Social.RSS className="Prebuilt" href="/rss" newTab />
+						<Social.RSS className="Prebuilt" href={getSiteRSSURL(site)} newTab />
 					</Social.Bar>
 				)
 			}

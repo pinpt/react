@@ -1,5 +1,7 @@
 import debuglog from 'debug';
 import fetch from 'isomorphic-unfetch';
+import sleep from './sleep';
+
 import type { IPinpointConfig } from './types';
 
 const debug = debuglog('pinpoint:fetch');
@@ -28,13 +30,18 @@ const getBaseURL = (config: Omit<IPinpointConfig, 'pageSize'>) => {
 	return config.siteUrl || window.location.origin;
 };
 
+const retryOn = [429, 502, 503, 504];
+const maxAttempts = 5;
+const backoff = 250;
+
 export const executeAPI = async (
 	config: Omit<IPinpointConfig, 'pageSize'>,
 	relpath: string,
 	method = 'GET',
 	data?: any,
-	cors?: boolean
-) => {
+	cors?: boolean,
+	attempt = 1
+): Promise<any> => {
 	const headers: any = {};
 	if (data) {
 		headers['Content-Type'] = 'application/json';
@@ -67,6 +74,20 @@ export const executeAPI = async (
 		throw new FetchError(resdata.message, res.status, res.headers, url);
 	}
 	debug('fetched error %d (%s)', res.status, url);
+	if (attempt <= maxAttempts && retryOn.includes(res.status) && method === 'GET') {
+		const delay = Math.max(backoff, Math.random() * attempt * backoff);
+		debug(
+			'retryable error status code = %d (%s), will attempt (%d/%d) again after %d ms...',
+			res.status,
+			url,
+			attempt,
+			maxAttempts,
+			delay
+		);
+		return sleep(delay).then(() => {
+			return executeAPI(config, relpath, method, data, cors, attempt + 1);
+		});
+	}
 	let message = '';
 	switch (res.status) {
 		case 400: {
@@ -82,7 +103,7 @@ export const executeAPI = async (
 			break;
 		}
 		case 500: {
-			message = `Internal Server Error`;
+			message = 'Internal Server Error';
 			break;
 		}
 		default: {
