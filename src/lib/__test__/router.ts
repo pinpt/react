@@ -21,3 +21,27 @@ test('Test getSiteRSSURL', () => {
 		'https://example.com/blog/blog/rss'
 	);
 });
+
+test('Test getRouterRelativePath with missing base', () => {
+	expect(getRouterRelativePath({ basePath: '/blog', url: 'https://example.com/' } as any, '/rss')).toBe(
+		'https://example.com/blog/rss'
+	);
+	expect(getRouterRelativePath({ basePath: '/blog', url: 'https://example.com' } as any, '/rss')).toBe(
+		'https://example.com/blog/rss'
+	);
+	expect(getRouterRelativePath({ basePath: '/', url: 'https://example.com/blog' } as any, '/rss')).toBe(
+		'https://example.com/blog/rss'
+	);
+	expect(
+		getRouterRelativePath({ basePath: '/blog', url: 'https://example.com/blog' } as any, 'https://example.com/rss')
+	).toBe('https://example.com/blog/rss');
+	expect(
+		getRouterRelativePath(
+			{ basePath: '/blog', url: 'https://example.com/blog' } as any,
+			'https://example.com/blog/rss'
+		)
+	).toBe('https://example.com/blog/rss');
+	expect(getRouterRelativePath({ basePath: '/blog', url: 'https://example.com/blog' } as any, '')).toBe(
+		'https://example.com/blog'
+	);
+});
