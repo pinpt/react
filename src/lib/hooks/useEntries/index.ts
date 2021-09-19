@@ -27,7 +27,7 @@ const useEntries = (config: IPinpointConfig, offset?: number) => {
 				res.content.map((e) => e.id)
 			);
 			setAnalytics(analyticsResult);
-		} catch (ex) {
+		} catch (ex: any) {
 			setError(ex.message);
 		} finally {
 			setLoading(false);

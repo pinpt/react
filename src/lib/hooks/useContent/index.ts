@@ -12,7 +12,7 @@ const useContent = (config: Omit<IPinpointConfig, 'pageSize'>, contentId: string
 			setError('');
 			const res = await fetchContent(config, contentId);
 			setContent(res.content);
-		} catch (ex) {
+		} catch (ex: any) {
 			setError(ex.message);
 		} finally {
 			setLoading(false);

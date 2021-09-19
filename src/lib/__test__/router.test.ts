@@ -6,7 +6,18 @@ import { getRouterRelativePath, getSiteAnalyticsURL, getSiteRSSURL } from '../';
 test('Test getRouterRelativePath', () => {
 	expect(getRouterRelativePath({ basePath: undefined } as any, 'https://example.com/foo')).toBe('/foo');
 	expect(getRouterRelativePath({ basePath: '/' } as any, 'https://example.com/foo')).toBe('/foo');
-	expect(getRouterRelativePath({ basePath: '/blog' } as any, 'https://example.com/blog/foo')).toBe('/blog/foo');
+	expect(getRouterRelativePath({ basePath: '/blog' } as any, 'https://example.com/blog/foo')).toBe('/foo');
+	expect(
+		getRouterRelativePath(
+			{ basePath: '/blog', siteUrl: 'https://jhaynie.dev/blog' } as any,
+			'https://jhaynie.dev/blog/entry/1',
+			{
+				location: {
+					href: 'https://jhaynie.dev/blog/',
+				},
+			}
+		)
+	).toBe('/entry/1');
 });
 
 test('Test getSiteAnalyticsURL', () => {
@@ -26,25 +37,26 @@ test('Test getSiteRSSURL', () => {
 });
 
 test('Test getRouterRelativePath with missing base', () => {
-	expect(getRouterRelativePath({ basePath: '/blog', url: 'https://example.com/' } as any, '/rss')).toBe('/blog/rss');
-	expect(getRouterRelativePath({ basePath: '/blog', url: 'https://example.com' } as any, '/rss')).toBe('/blog/rss');
+	expect(getRouterRelativePath({ basePath: '/blog', url: 'https://example.com/' } as any, '/rss')).toBe('/rss');
+	expect(getRouterRelativePath({ basePath: '/blog', url: 'https://example.com' } as any, '/rss')).toBe('/rss');
 	expect(getRouterRelativePath({ basePath: '/', url: 'https://example.com/blog' } as any, '/rss')).toBe('/rss');
 	expect(
 		getRouterRelativePath({ basePath: '/blog', url: 'https://example.com/blog' } as any, 'https://example.com/rss')
-	).toBe('/blog/rss');
+	).toBe('/rss');
 	expect(
 		getRouterRelativePath(
 			{ basePath: '/blog', url: 'https://example.com/blog' } as any,
 			'https://example.com/blog/rss'
 		)
-	).toBe('/blog/rss');
-	expect(getRouterRelativePath({ basePath: '/blog', url: 'https://example.com/blog' } as any, '')).toBe('/blog');
+	).toBe('/rss');
+	expect(getRouterRelativePath({ basePath: '/blog', url: 'https://example.com/blog' } as any, '')).toBe('/');
+	expect(getRouterRelativePath({ basePath: '/blog', url: 'https://example.com/blog' } as any, '/')).toBe('/');
 	expect(
 		getRouterRelativePath(
 			{ basePath: '/blog', url: 'https://jhaynie.dev/blog' } as any,
 			'https://jhaynie.dev/entry/pe3dYzI0PKtCgXPQUufC/GitLab'
 		)
-	).toBe('/blog/entry/pe3dYzI0PKtCgXPQUufC/GitLab');
+	).toBe('/entry/pe3dYzI0PKtCgXPQUufC/GitLab');
 });
 
 test('Test getRouterRelativePath when running on different domain', () => {
@@ -57,10 +69,10 @@ test('Test getRouterRelativePath when running on different domain', () => {
 		getRouterRelativePath({ basePath: '/blog', url: 'https://example.com/blog' } as any, '/entry/1', {
 			location: { href: 'http://localhost:3001/blog' },
 		})
-	).toBe('/blog/entry/1');
+	).toBe('/entry/1');
 	expect(
 		getRouterRelativePath({ basePath: '/blog', url: 'https://example.com/blog' } as any, '/entry/1', {
 			location: { href: 'http://localhost:3001/blog/entry/2' },
 		})
-	).toBe('/blog/entry/1');
+	).toBe('/entry/1');
 });
