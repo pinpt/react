@@ -4,6 +4,7 @@ import useScriptLoader from '../../lib/hooks/useScriptLoader';
 export interface IPinpointProps {
 	siteId: string;
 	contentId?: string;
+	basePath?: string;
 	children: (ready: boolean, ref: any) => ReactElement;
 }
 
@@ -13,20 +14,20 @@ declare global {
 			load: (elem?: HTMLElement, url?: string) => void;
 		};
 		Pinpoint: {
-			setSiteSettings: (siteId: string, contentId: string) => void;
-			startTracking: (siteId?: string, contentId?: string) => () => void;
+			setSiteSettings: (siteId: string, contentId: string, basePath?: string) => void;
+			startTracking: (siteId?: string, contentId?: string, basePath?: string) => () => void;
 		};
 	}
 }
 
 const Pinpoint = (props: IPinpointProps) => {
-	const { siteId, contentId } = props;
+	const { siteId, contentId, basePath } = props;
 	const [ready] = useScriptLoader([`https://cdn.iframe.ly/embed.js?api_key=ab49ad398c6f631ab44eca&origin=${siteId}`]);
 	const wiredUp = useRef(false);
 
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
-			const clear = window.Pinpoint?.startTracking?.(siteId, contentId);
+			const clear = window.Pinpoint?.startTracking?.(siteId, contentId, basePath);
 
 			return () => clear?.();
 		}

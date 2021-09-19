@@ -1,5 +1,4 @@
-import React from 'react';
-import { ReactElement } from 'react';
+import React, { ReactElement } from 'react';
 import Author, { IAuthorProps } from '../../Author';
 import Clap, { IClapProps } from '../../Clap';
 import { ICopyrightProps } from '../../Copyright';
@@ -89,7 +88,7 @@ const Entry = (props: IPrebuiltEntryProps) => {
 	} = props;
 
 	return (
-		<Pinpoint siteId={site.id} contentId={content.id}>
+		<Pinpoint siteId={site.id} basePath={site.basePath} contentId={content.id}>
 			{(_ready, ref) => (
 				<EntryPage
 					ref={ref}
