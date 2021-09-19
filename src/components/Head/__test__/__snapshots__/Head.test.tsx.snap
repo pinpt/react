@@ -79,7 +79,7 @@ Array [
     name="twitter:description"
   />,
   <link
-    href="https://changelog.pinpoint.com/rss"
+    href="/rss"
     rel="alternate"
     title="RSS Feed for Pinpoint Changelog"
     type="application/rss+xml"

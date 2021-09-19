@@ -77,6 +77,8 @@ const {
 	useBackground,
 	getDocumentHeadings,
 	getRouterRelativePath,
+	getSiteAnalyticsURL,
+	getSiteRSSURL,
 	...otherExports
 } = Exports;
 

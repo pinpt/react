@@ -8,3 +8,19 @@ export const getRouterRelativePath = (site: ISite, url: string) => {
 	}
 	return pathname.substring(basePath.length);
 };
+
+export const getSiteRSSURL = (site: ISite) => {
+	const { basePath = '/' } = site;
+	if (basePath === '/') {
+		return '/rss';
+	}
+	return `${site.url}/rss`;
+};
+
+export const getSiteAnalyticsURL = (site: ISite) => {
+	const { basePath = '/' } = site;
+	if (basePath === '/') {
+		return '/a.js';
+	}
+	return `${site.url}/a.js`;
+};

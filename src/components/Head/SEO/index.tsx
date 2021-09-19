@@ -1,6 +1,6 @@
 import type { ISite, IContent } from '../../../lib/types';
-import React from 'react';
 import { extractImageMetadataFromFileID } from '../../../lib/file_metadata';
+import { getSiteRSSURL } from '../../../lib/router';
 import { getTwitterProfileFromURL } from '../../../lib/string';
 
 export interface ISEOProps {
@@ -73,7 +73,7 @@ const ContentSEO = ({ site, content }: { site: ISite; content: IContent }) => {
 				rel="alternate"
 				type="application/rss+xml"
 				title={`RSS Feed for ${site.theme?.title ?? site.name}`}
-				href={`${site.url}/rss`}
+				href={getSiteRSSURL(site)}
 			/>
 		</>
 	);
@@ -91,7 +91,7 @@ const SEO = (props: ISEOProps) => {
 			{siteSEO}
 			<link rel="icon" href={site.logoUrl} />
 			<link rel="shortcut icon" href={site.logoUrl} />
-			<link rel="alternate" type="application/rss+xml" title={`${site.name} RSS Feed`} href="/rss" />
+			<link rel="alternate" type="application/rss+xml" title={`${site.name} RSS Feed`} href={getSiteRSSURL(site)} />
 			<meta property="og:site_name" content={site.name} />
 			{site.private || content?.robots === 'invisible' ? (
 				<meta name="robots" content="noindex" />
