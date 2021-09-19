@@ -9,21 +9,18 @@ const join = (...paths: string[]) => {
 };
 
 export const getRouterRelativePath = (site: ISite, url: string) => {
-	const { basePath = '/' } = site;
-	const { pathname } = new URL(url);
+	const { basePath = '/', url: siteUrl } = site;
+	const { pathname } = url.indexOf('https://') === 0 ? new URL(url) : { pathname: url };
+	// no custom basepath, just return the pathname part
 	if (basePath === '/') {
 		return pathname;
 	}
-	if (site.url.includes(basePath)) {
-		return pathname.substring(basePath.length);
+	// the url has the same basepath prefix as set, we can just return it
+	if (pathname.startsWith(basePath)) {
+		return pathname;
 	}
-	// we have a url where the basepath isn't part of it so we need to
-	// repair the url. this can happen when you have search results
-	// but the basepath was changed before updated.
-	if (url.charAt(0) === '/') {
-		return basePath + url;
-	}
-	return join(site.url, basePath, url);
+	// otherwise, the url path is missing the basepath so we need to add it
+	return '/' + join(basePath, pathname);
 };
 
 export const getSiteRSSURL = (site: ISite) => {
