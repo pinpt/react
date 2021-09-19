@@ -1,9 +1,8 @@
-import { useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { faCheckCircle, faExclamationCircle, faSpinner } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { subscribe } from '../../lib/data/subscription';
 import { isSubscriberCookieSet } from '../../lib/subscription';
-import React from 'react';
 
 import type { IPinpointConfig } from '../../lib/types';
 
@@ -90,7 +89,7 @@ const SubscribeForm = (props: SubscribeFormProps) => {
 			setSuccess(true);
 			onSuccess?.(email);
 			setEmail('');
-		} catch (ex) {
+		} catch (ex: any) {
 			setError(ex.message);
 			setSuccess(false);
 		} finally {
