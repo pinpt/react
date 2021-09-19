@@ -58,4 +58,9 @@ test('Test getRouterRelativePath when running on different domain', () => {
 			location: { href: 'http://localhost:3001/blog' },
 		})
 	).toBe('/blog/entry/1');
+	expect(
+		getRouterRelativePath({ basePath: '/blog', url: 'https://example.com/blog' } as any, '/entry/1', {
+			location: { href: 'http://localhost:3001/blog/entry/2' },
+		})
+	).toBe('/blog/entry/1');
 });

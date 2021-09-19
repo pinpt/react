@@ -19,8 +19,18 @@ export const getRouterRelativePath = (site: ISite, url: string, w?: any) => {
 	if (typeof w !== 'undefined') {
 		// if running in the browser, first check to see if we're running inside the same basepath
 		const u = new URL(w.location.href);
-		if (!u.pathname.startsWith(basePath)) {
-			return pathname; // not running inside the basepath so just return the relatiev pathname we received back
+		if (pathname.startsWith(basePath)) {
+			if (u.pathname.startsWith(basePath)) {
+				return pathname; // the basepath matches
+			}
+			return pathname.substring(basePath.length); // remove the basepath from the pathname
+		} else {
+			// check to main sure the origin is running at the basepath specified
+			if (u.pathname.startsWith(basePath)) {
+				// add the basepat to the path since it's missing
+				return '/' + join(basePath, pathname);
+			}
+			return pathname; // if the url doesn't have the basepath, just return it as is
 		}
 	}
 	// the url has the same basepath prefix as set, we can just return it
