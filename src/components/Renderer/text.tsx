@@ -1,17 +1,25 @@
-import { NodeProps } from './register';
 import React from 'react';
+import { NodeProps } from './register';
 
 const Text = ({ node }: NodeProps) => {
 	let content = <>{node.text}</>;
 	if (node.marks) {
 		node.marks.forEach((mark) => {
 			switch (mark.type) {
+				case 'bold': {
+					content = <b>{content}</b>;
+					break;
+				}
 				case 'strong': {
 					content = <strong>{content}</strong>;
 					break;
 				}
 				case 'em': {
 					content = <em>{content}</em>;
+					break;
+				}
+				case 'italic': {
+					content = <i>{content}</i>;
 					break;
 				}
 				case 'strikethrough': {
@@ -22,6 +30,7 @@ const Text = ({ node }: NodeProps) => {
 					content = <u>{content}</u>;
 					break;
 				}
+				case 'code':
 				case 'code_inline': {
 					content = <code spellCheck="false">{content}</code>;
 					break;
