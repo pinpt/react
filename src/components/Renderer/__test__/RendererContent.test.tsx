@@ -1,6 +1,8 @@
 import renderer from 'react-test-renderer';
 import { CoverMedia, Document, emptyDoc } from '../';
 import { CoverMediaType } from '../../../lib/types/content';
+import blockquote_with_code_mark from '../__data__/blockquote_with_code_mark';
+import notice_with_code_mark from '../__data__/notice_with_code_mark';
 import simple_blockquote from '../__data__/simple_blockquote';
 import simple_break from '../__data__/simple_break';
 import simple_bullet_list from '../__data__/simple_bullet_list';
@@ -46,6 +48,13 @@ test('Test simple paragraph', () => {
 
 test('Test simple blockquote', () => {
 	const doc = simple_blockquote;
+	const component = renderer.create(<Document node={doc} />);
+	const tree = component.toJSON();
+	expect(tree).toMatchSnapshot();
+});
+
+test('Test blockquote with code', () => {
+	const doc = blockquote_with_code_mark;
 	const component = renderer.create(<Document node={doc} />);
 	const tree = component.toJSON();
 	expect(tree).toMatchSnapshot();
@@ -137,6 +146,13 @@ test('Test simple error notice', () => {
 
 test('Test simple info notice', () => {
 	const doc = simple_info_notice;
+	const component = renderer.create(<Document node={doc} />);
+	const tree = component.toJSON();
+	expect(tree).toMatchSnapshot();
+});
+
+test('Test info notice with monospaced font', () => {
+	const doc = notice_with_code_mark;
 	const component = renderer.create(<Document node={doc} />);
 	const tree = component.toJSON();
 	expect(tree).toMatchSnapshot();

@@ -4,7 +4,6 @@ import Break from './br';
 import BulletList from './bullet_list';
 import CodeBlock from './code_block';
 import Emoji from './emoji';
-import Paragraph from './paragraph';
 import File from './file';
 import Heading from './heading';
 import Hr from './hr';
@@ -12,17 +11,18 @@ import Iframe from './iframe';
 import ImageBlock from './image_block';
 import InlineImage from './inline_image';
 import Issue from './issue';
-import LinkedDataListItem from './linked_data_list_item';
 import LinkedDataList from './linked_data_list';
+import LinkedDataListItem from './linked_data_list_item';
 import LinkedDataNode from './linked_data_node';
 import ListItem from './list_item';
 import Notice from './notice';
 import OrderedList from './ordered_list';
+import Paragraph from './paragraph';
 import PullRequest from './pull_request';
+import Table from './table';
 import TableData from './table_data';
 import TableHeader from './table_header';
 import TableRow from './table_row';
-import Table from './table';
 import Text from './text';
 import Toggle from './toggle';
 
@@ -32,7 +32,7 @@ export interface DocOpts {
 
 export interface PmMark {
 	type: string;
-	attrs: Record<string, any>;
+	attrs?: Record<string, any>;
 }
 
 export interface PmNode {
