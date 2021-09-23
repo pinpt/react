@@ -3,7 +3,9 @@ import { Meta } from '@storybook/react';
 import { Content, Document, emptyDoc } from '../';
 import { CoverMediaType } from '../../../lib/types/content';
 import Pinpoint from '../../Pinpoint';
+import blockquote_with_code_mark from '../__data__/blockquote_with_code_mark';
 import image_block_position_and_scale from '../__data__/image_block_position_and_scale';
+import notice_with_code_mark from '../__data__/notice_with_code_mark';
 import simple_blockquote from '../__data__/simple_blockquote';
 import simple_break from '../__data__/simple_break';
 import simple_bullet_list from '../__data__/simple_bullet_list';
@@ -51,6 +53,8 @@ export const Simple_Paragraph: React.VFC<{}> = () => <Document node={simple_para
 
 export const Simple_Blockquote: React.VFC<{}> = () => <Document node={simple_blockquote} />;
 
+export const Blockquote_With_Code_Mark: React.VFC<{}> = () => <Document node={blockquote_with_code_mark} />;
+
 export const Simple_Break: React.VFC<{}> = () => <Document node={simple_break} />;
 
 export const Simple_Hr: React.VFC<{}> = () => <Document node={simple_hr} />;
@@ -76,6 +80,8 @@ export const Simple_Warning_Notice: React.VFC<{}> = () => <Document node={simple
 export const Simple_Error_Notice: React.VFC<{}> = () => <Document node={simple_error_notice} />;
 
 export const Simple_Info_Notice: React.VFC<{}> = () => <Document node={simple_info_notice} />;
+
+export const Info_Notice_Monospaced: React.VFC<{}> = () => <Document node={notice_with_code_mark} />;
 
 export const Simple_Inline_Image: React.VFC<{}> = () => <Document node={simple_inline_image} />;
 

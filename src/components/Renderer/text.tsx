@@ -36,14 +36,14 @@ const Text = ({ node }: NodeProps) => {
 					break;
 				}
 				case 'mark': {
-					const { backgroundColor, color, type } = mark.attrs;
+					const { backgroundColor, color, type } = mark.attrs ?? {};
 					if (type === 'placeholder') {
 						break; // skip placeholders from rendering
 					}
 					const classes: string[] = [];
 
 					if (backgroundColor) {
-						classes.push(`bg-${mark.attrs.backgroundColor}`);
+						classes.push(`bg-${backgroundColor}`);
 					}
 					if (color) {
 						classes.push(color);
@@ -57,7 +57,7 @@ const Text = ({ node }: NodeProps) => {
 					break;
 				}
 				case 'link': {
-					const { href, title = '', id = '' } = mark.attrs;
+					const { href, title = '', id = '' } = mark.attrs ?? {};
 					const hasMarks = (node.marks?.length ?? 0) > 0 && node.marks?.some((m) => !!m.attrs?.color);
 					const className = `${hasMarks ? 'mark-color' : ''}`;
 					content = node._opts?.openLinksInNewWindow ? (
@@ -72,7 +72,7 @@ const Text = ({ node }: NodeProps) => {
 					break;
 				}
 				case 'linked_data': {
-					const { id, type } = mark.attrs;
+					const { id, type } = mark.attrs ?? {};
 					const attrs = {
 						[`data-${type}-id`]: id,
 					};

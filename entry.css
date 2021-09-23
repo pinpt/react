@@ -41,6 +41,14 @@
 	color: unset;
 }
 
+/* if embeded code block, only set the font and unset the styling to adapt to the parent */
+.Pinpoint.document blockquote code,
+.Pinpoint.document .notice code {
+	background-color: unset !important;
+	border: unset !important;
+	color: unset !important;
+}
+
 /**
  * Headings
  */
