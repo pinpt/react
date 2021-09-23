@@ -222,6 +222,15 @@
 .Pinpoint.document .notice {
 	@apply relative shadow-lg;
 }
+.Pinpoint.document .code_block .copy {
+	@apply absolute top-0 right-1 z-10 text-white select-none cursor-pointer opacity-50 transition-opacity;
+}
+.Pinpoint.document .code_block .copy.copied {
+	@apply text-green-500 opacity-100;
+}
+.Pinpoint.document .code_block .copy:not(.copied):hover {
+	@apply opacity-100;
+}
 .Pinpoint.document pre {
 	@apply block relative rounded overflow-x-auto px-6 py-4 leading-5 font-mono whitespace-pre overflow-scroll bg-black text-trueGray-300;
 }
