@@ -484,18 +484,6 @@
 /**
  * Image
  **/
-.Pinpoint.document .image_block .image {
-	@apply flex justify-center;
-}
-.Pinpoint.document .image_block.left .image {
-	@apply justify-start;
-}
-.Pinpoint.document .image_block.center .image {
-	@apply justify-center;
-}
-.Pinpoint.document .image_block.right .image {
-	@apply justify-end;
-}
 .Pinpoint.document .image_block .alt {
 	@apply mt-2 opacity-80 text-center italic;
 }
@@ -510,6 +498,12 @@
 }
 .Pinpoint.document .image_block .image img {
 	@apply rounded-lg;
+}
+.Pinpoint.document .image_block.center .image img {
+	@apply mx-auto;
+}
+.Pinpoint.document .image_block.right .image img {
+	@apply ml-auto;
 }
 
 /**
