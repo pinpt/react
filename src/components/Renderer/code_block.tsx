@@ -1,7 +1,23 @@
+import React from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { twilight } from 'react-syntax-highlighter/dist/cjs/styles/prism';
+import { faCheck, faCopy } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { NodeProps } from './register';
-import React from 'react';
+
+const Copy = ({ text }: { text: string }) => {
+	const [copied, setCopied] = React.useState(false);
+	const onCopy = () => {
+		navigator.clipboard.writeText(text);
+		setCopied(true);
+		setTimeout(() => setCopied(false), 3000);
+	};
+	return (
+		<div className={`copy ${copied && 'copied'}`} onClick={onCopy}>
+			<FontAwesomeIcon icon={copied ? faCheck : faCopy} />
+		</div>
+	);
+};
 
 const CodeBlock = ({ node }: NodeProps) => {
 	return (
@@ -19,6 +35,7 @@ const CodeBlock = ({ node }: NodeProps) => {
 			>
 				{node.content?.[0].text ?? ''}
 			</SyntaxHighlighter>
+			<Copy text={node.content?.[0].text ?? ''} />
 		</div>
 	);
 };
