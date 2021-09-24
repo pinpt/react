@@ -23,8 +23,11 @@ const InlineImage = ({
 
 const ImageBlock = ({ node }: NodeProps) => {
 	const { size } = extractImageMetadataFromFileID(node.attrs.src);
-	const scaledWidth = (size?.width ?? 0) * node.attrs.scale ?? 1;
-	const scaledHeight = (size?.height ?? 0) * node.attrs.scale ?? 1;
+	const _scaledWidth = (size?.width ?? 0) * (node.attrs.scale ?? 1);
+	const _scaledHeight = (size?.height ?? 0) * (node.attrs.scale ?? 1);
+
+	const scaledWidth = _scaledWidth === 0 || isNaN(_scaledWidth) ? undefined : _scaledWidth;
+	const scaledHeight = _scaledHeight === 0 || isNaN(_scaledHeight) ? undefined : _scaledHeight;
 
 	return (
 		<div className={`image_block ${node.attrs.align}`}>
