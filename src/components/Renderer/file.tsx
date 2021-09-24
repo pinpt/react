@@ -1,19 +1,10 @@
+import React from 'react'; // don't remove
 import {
-	faDownload,
-	faFile,
-	faFileAlt,
-	faFileArchive,
-	faFileAudio,
-	faFileCode,
-	faFileExcel,
-	faFilePdf,
-	faFilePowerpoint,
-	faFileVideo,
-	faFileWord,
+	faDownload, faFile, faFileAlt, faFileArchive, faFileAudio, faFileCode, faFileExcel, faFilePdf,
+	faFilePowerpoint, faFileVideo, faFileWord
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { NodeProps } from './register';
-import React from 'react';
 
 export const iconForType = (type = '') => {
 	if (/pdf/.test(type)) {
@@ -58,9 +49,18 @@ export const formattedSize = (size = 0) => {
 	return `${Math.round(MB * 10) / 10} MB`;
 };
 
-const File = ({ node }: NodeProps) => {
-	const { description, filename, size, src, type } = node.attrs;
+const VideoFile = ({ node }: NodeProps) => {
+	const { src, type } = node.attrs;
+	return (
+		<video controls width="100%">
+			<source src={src} type={type} />
+			<DownloadFile node={node} />
+		</video>
+	);
+};
 
+const DownloadFile = ({ node }: NodeProps) => {
+	const { description, filename, size, src, type } = node.attrs;
 	const onDownload = () => {
 		if (src) {
 			const u = new URL(src);
@@ -103,6 +103,15 @@ const File = ({ node }: NodeProps) => {
 			</div>
 		</div>
 	);
+};
+
+const File = ({ node }: NodeProps) => {
+	const { type } = node.attrs;
+
+	if (type.startsWith('video/')) {
+		return <VideoFile node={node} />;
+	}
+	return <DownloadFile node={node} />;
 };
 
 export default File;

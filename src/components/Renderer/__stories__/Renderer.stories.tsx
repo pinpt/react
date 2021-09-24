@@ -26,6 +26,7 @@ import simple_ordered_list from '../__data__/simple_ordered_list';
 import simple_paragraph from '../__data__/simple_paragraph';
 import simple_text from '../__data__/simple_text';
 import simple_warning_notice from '../__data__/simple_warning_notice';
+import video_file from '../__data__/video_file';
 
 const { default: readme } = require('../README.md');
 
@@ -119,3 +120,5 @@ export const Youtube_Video: React.VFC<{}> = () => {
 		</Pinpoint>
 	);
 };
+
+export const File_Video: React.VFC<{}> = () => <Document node={video_file} />;
