@@ -23,6 +23,7 @@ import simple_ordered_list from '../__data__/simple_ordered_list';
 import simple_paragraph from '../__data__/simple_paragraph';
 import simple_text from '../__data__/simple_text';
 import simple_warning_notice from '../__data__/simple_warning_notice';
+import video_file from '../__data__/video_file';
 
 import type { ICoverMedia } from '../../../lib/types/content';
 
@@ -245,6 +246,13 @@ test('Test Youtube cover media with no poster', () => {
 		metadata: {},
 	};
 	const component = renderer.create(<CoverMedia media={youtubeCoverMedia} />);
+	const tree = component.toJSON();
+	expect(tree).toMatchSnapshot();
+});
+
+test('Test file Video', () => {
+	const doc = video_file;
+	const component = renderer.create(<Document node={doc} />);
 	const tree = component.toJSON();
 	expect(tree).toMatchSnapshot();
 });
