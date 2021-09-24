@@ -49,11 +49,30 @@ export const formattedSize = (size = 0) => {
 	return `${Math.round(MB * 10) / 10} MB`;
 };
 
+const Source = ({ current, type, src }: { current: string; type: string; src: string }) => {
+	if (current === type) {
+		return null;
+	}
+	return <source src={src} type={type} />;
+};
+
 const VideoFile = ({ node }: NodeProps) => {
 	const { src, type } = node.attrs;
+	const isFileAPI = src.includes('file.') && src.includes('.pinpoint.com');
 	return (
 		<video controls width="100%">
-			<source src={src} type={type} />
+			{isFileAPI ? (
+				<>
+					<Source src={src} current={type} type="video/webm" />
+					<Source src={src} current={type} type="video/ogg" />
+					<Source src={src} current={type} type="video/mp4" />
+					{type !== 'video/webm' && type !== 'video/ogg' && type !== 'video/mp4' && (
+						<source src={src} type={type} />
+					)}
+				</>
+			) : (
+				<source src={src} type={type} />
+			)}
 			<DownloadFile node={node} />
 		</video>
 	);
