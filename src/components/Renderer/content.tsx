@@ -5,6 +5,7 @@ import { slugifyContent } from '../../lib/string';
 import { CoverMediaType } from '../../lib/types/content';
 import Image from '../Image';
 import { Document } from './';
+import { Source } from './file';
 
 import type { ICoverMedia } from '../../lib/types/content';
 
@@ -30,10 +31,15 @@ const ImageMedia = ({ src, title = '', zoomable = false }: { src?: string; title
 	);
 };
 
-const VideoMedia = ({ src }: { src: string }) => {
+const VideoMedia = ({ src, type }: { src: string; type: string }) => {
 	return (
 		<div className="Pinpoint video">
-			<video controls src={src} />
+			<video controls>
+				<Source current={type} src={src} type="video/webm" />
+				<Source current={type} src={src} type="video/ogg" />
+				<Source current={type} src={src} type="video/mp4" />
+				{type !== 'video/webm' && type !== 'video/ogg' && type !== 'video/mp4' && <source src={src} type={type} />}
+			</video>
 		</div>
 	);
 };
@@ -71,7 +77,7 @@ export const CoverMedia = ({ media, title, zoomable }: { media?: ICoverMedia; ti
 			break;
 		}
 		case CoverMediaType.Video: {
-			content = <VideoMedia src={media.value} />;
+			content = <VideoMedia src={media.value} type={media.metadata?.mimetype} />;
 			break;
 		}
 		case CoverMediaType.Youtube: {

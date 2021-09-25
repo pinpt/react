@@ -49,7 +49,16 @@ export const formattedSize = (size = 0) => {
 	return `${Math.round(MB * 10) / 10} MB`;
 };
 
-const Source = ({ current, type, src }: { current: string; type: string; src: string }) => {
+const addFileExtension = (src: string, extension: string) => {
+	const url = new URL(src);
+	if (url.pathname.endsWith(`.${extension}`)) {
+		return src;
+	}
+	url.pathname = `${url.pathname}.${extension}`;
+	return url.toString();
+};
+
+export const Source = ({ current, type, src }: { current: string; type: string; src: string }) => {
 	if (current === type) {
 		return null;
 	}
@@ -60,21 +69,47 @@ const VideoFile = ({ node }: NodeProps) => {
 	const { src, type } = node.attrs;
 	const isFileAPI = src.includes('file.') && src.includes('.pinpoint.com');
 	return (
-		<video controls width="100%">
-			{isFileAPI ? (
-				<>
-					<Source src={src} current={type} type="video/webm" />
-					<Source src={src} current={type} type="video/ogg" />
-					<Source src={src} current={type} type="video/mp4" />
-					{type !== 'video/webm' && type !== 'video/ogg' && type !== 'video/mp4' && (
-						<source src={src} type={type} />
-					)}
-				</>
-			) : (
-				<source src={src} type={type} />
-			)}
-			<DownloadFile node={node} />
-		</video>
+		<div className="Pinpoint video">
+			<video controls>
+				{isFileAPI ? (
+					<>
+						<Source src={isFileAPI ? addFileExtension(src, 'webm') : src} current={type} type="video/webm" />
+						<Source src={isFileAPI ? addFileExtension(src, 'ogg') : src} current={type} type="video/ogg" />
+						<Source src={isFileAPI ? addFileExtension(src, 'mp4') : src} current={type} type="video/mp4" />
+						{type !== 'video/webm' && type !== 'video/ogg' && type !== 'video/mp4' && (
+							<source src={src} type={type} />
+						)}
+					</>
+				) : (
+					<source src={src} type={type} />
+				)}
+				<DownloadFile node={node} />
+			</video>
+		</div>
+	);
+};
+
+const AudioFile = ({ node }: NodeProps) => {
+	const { src, type } = node.attrs;
+	const isFileAPI = src.includes('file.') && src.includes('.pinpoint.com');
+	return (
+		<div className="Pinpoint audio">
+			<audio controls>
+				{isFileAPI ? (
+					<>
+						<Source src={isFileAPI ? addFileExtension(src, 'mp3') : src} current={type} type="audio/mpeg" />
+						<Source src={isFileAPI ? addFileExtension(src, 'ogg') : src} current={type} type="audio/ogg" />
+						<Source src={isFileAPI ? addFileExtension(src, 'wav') : src} current={type} type="audio/wav" />
+						{type !== 'audio/mpeg' && type !== 'audio/ogg' && type !== 'audio/wav' && (
+							<source src={src} type={type} />
+						)}
+					</>
+				) : (
+					<source src={src} type={type} />
+				)}
+				<DownloadFile node={node} />
+			</audio>
+		</div>
 	);
 };
 
@@ -130,6 +165,10 @@ const File = ({ node }: NodeProps) => {
 	if (type.startsWith('video/')) {
 		return <VideoFile node={node} />;
 	}
+	if (type.startsWith('audio/')) {
+		return <AudioFile node={node} />;
+	}
+
 	return <DownloadFile node={node} />;
 };
 
