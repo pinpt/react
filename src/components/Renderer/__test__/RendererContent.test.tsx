@@ -1,6 +1,7 @@
 import renderer from 'react-test-renderer';
 import { CoverMedia, Document, emptyDoc } from '../';
 import { CoverMediaType } from '../../../lib/types/content';
+import audio_files from '../__data__/audio_files';
 import blockquote_with_code_mark from '../__data__/blockquote_with_code_mark';
 import notice_with_code_mark from '../__data__/notice_with_code_mark';
 import simple_blockquote from '../__data__/simple_blockquote';
@@ -260,6 +261,13 @@ test('Test file Video', () => {
 
 test('Test file Video via File API', () => {
 	const doc = video_file_api;
+	const component = renderer.create(<Document node={doc} />);
+	const tree = component.toJSON();
+	expect(tree).toMatchSnapshot();
+});
+
+test('Test Audio files', () => {
+	const doc = audio_files;
 	const component = renderer.create(<Document node={doc} />);
 	const tree = component.toJSON();
 	expect(tree).toMatchSnapshot();

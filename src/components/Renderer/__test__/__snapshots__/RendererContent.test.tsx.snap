@@ -1,5 +1,276 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Test Audio files 1`] = `
+<div
+  className="Pinpoint document"
+>
+  <p>
+    These are sample audio files
+  </p>
+  <div
+    className="Pinpoint audio"
+  >
+    <audio
+      controls={true}
+    >
+      <source
+        src="https://file.edge.pinpoint.com/21fc8f6438973af8074d1e1b435cf837.mp3"
+        type="audio/mpeg"
+      />
+      <source
+        src="https://file.edge.pinpoint.com/21fc8f6438973af8074d1e1b435cf837.ogg"
+        type="audio/ogg"
+      />
+      <div
+        className="file"
+      >
+        <div
+          className="container"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-file-audio fa-w-12 "
+            data-icon="file-audio"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 384 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm-64 268c0 10.7-12.9 16-20.5 8.5L104 376H76c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h28l35.5-36.5c7.6-7.6 20.5-2.2 20.5 8.5v136zm33.2-47.6c9.1-9.3 9.1-24.1 0-33.4-22.1-22.8 12.2-56.2 34.4-33.5 27.2 27.9 27.2 72.4 0 100.4-21.8 22.3-56.9-10.4-34.4-33.5zm86-117.1c54.4 55.9 54.4 144.8 0 200.8-21.8 22.4-57-10.3-34.4-33.5 36.2-37.2 36.3-96.5 0-133.8-22.1-22.8 12.3-56.3 34.4-33.5zM384 121.9v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <div
+            className="details"
+          >
+            <a
+              className="filename"
+              href="https://file.edge.pinpoint.com/21fc8f6438973af8074d1e1b435cf837"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              sample.wav
+            </a>
+            <div
+              className="size"
+            >
+              0 KB
+            </div>
+          </div>
+          <div
+            className="options"
+          >
+            <div
+              className="option group"
+              onClick={[Function]}
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-download fa-w-16 "
+                data-icon="download"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 512 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+              <span>
+                Download
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </audio>
+  </div>
+  <div
+    className="Pinpoint audio"
+  >
+    <audio
+      controls={true}
+    >
+      <source
+        src="https://file.edge.pinpoint.com/68c65536419fd19a70d0bd27808383f2.mp3"
+        type="audio/mpeg"
+      />
+      <source
+        src="https://file.edge.pinpoint.com/68c65536419fd19a70d0bd27808383f2.wav"
+        type="audio/wav"
+      />
+      <div
+        className="file"
+      >
+        <div
+          className="container"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-file-audio fa-w-12 "
+            data-icon="file-audio"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 384 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm-64 268c0 10.7-12.9 16-20.5 8.5L104 376H76c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h28l35.5-36.5c7.6-7.6 20.5-2.2 20.5 8.5v136zm33.2-47.6c9.1-9.3 9.1-24.1 0-33.4-22.1-22.8 12.2-56.2 34.4-33.5 27.2 27.9 27.2 72.4 0 100.4-21.8 22.3-56.9-10.4-34.4-33.5zm86-117.1c54.4 55.9 54.4 144.8 0 200.8-21.8 22.4-57-10.3-34.4-33.5 36.2-37.2 36.3-96.5 0-133.8-22.1-22.8 12.3-56.3 34.4-33.5zM384 121.9v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <div
+            className="details"
+          >
+            <a
+              className="filename"
+              href="https://file.edge.pinpoint.com/68c65536419fd19a70d0bd27808383f2"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              sample.ogg
+            </a>
+            <div
+              className="size"
+            >
+              0 KB
+            </div>
+          </div>
+          <div
+            className="options"
+          >
+            <div
+              className="option group"
+              onClick={[Function]}
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-download fa-w-16 "
+                data-icon="download"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 512 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+              <span>
+                Download
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </audio>
+  </div>
+  <div
+    className="Pinpoint audio"
+  >
+    <audio
+      controls={true}
+    >
+      <source
+        src="https://file.edge.pinpoint.com/07a5991e20fc75e2a3dc77e461dea616.ogg"
+        type="audio/ogg"
+      />
+      <source
+        src="https://file.edge.pinpoint.com/07a5991e20fc75e2a3dc77e461dea616.wav"
+        type="audio/wav"
+      />
+      <div
+        className="file"
+      >
+        <div
+          className="container"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-file-audio fa-w-12 "
+            data-icon="file-audio"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 384 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm-64 268c0 10.7-12.9 16-20.5 8.5L104 376H76c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h28l35.5-36.5c7.6-7.6 20.5-2.2 20.5 8.5v136zm33.2-47.6c9.1-9.3 9.1-24.1 0-33.4-22.1-22.8 12.2-56.2 34.4-33.5 27.2 27.9 27.2 72.4 0 100.4-21.8 22.3-56.9-10.4-34.4-33.5zm86-117.1c54.4 55.9 54.4 144.8 0 200.8-21.8 22.4-57-10.3-34.4-33.5 36.2-37.2 36.3-96.5 0-133.8-22.1-22.8 12.3-56.3 34.4-33.5zM384 121.9v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <div
+            className="details"
+          >
+            <a
+              className="filename"
+              href="https://file.edge.pinpoint.com/07a5991e20fc75e2a3dc77e461dea616"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              sample.mp3
+            </a>
+            <div
+              className="size"
+            >
+              0 KB
+            </div>
+          </div>
+          <div
+            className="options"
+          >
+            <div
+              className="option group"
+              onClick={[Function]}
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-download fa-w-16 "
+                data-icon="download"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 512 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+              <span>
+                Download
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </audio>
+  </div>
+</div>
+`;
+
 exports[`Test Youtube cover media with hqdefault 1`] = `
 <section
   className="Pinpoint cover covermedia"
@@ -181,86 +452,89 @@ exports[`Test file Video 1`] = `
   <p>
     This is a sample movie
   </p>
-  <video
-    controls={true}
-    width="100%"
+  <div
+    className="Pinpoint video"
   >
-    <source
-      src="https://cdn.pinpoint.com/videos/homepage/Home-Slot-Hero.mp4"
-      type="video/mp4"
-    />
-    <div
-      className="file"
+    <video
+      controls={true}
     >
+      <source
+        src="https://cdn.pinpoint.com/videos/homepage/Home-Slot-Hero.mp4"
+        type="video/mp4"
+      />
       <div
-        className="container"
+        className="file"
       >
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-file-video fa-w-12 "
-          data-icon="file-video"
-          data-prefix="fas"
-          focusable="false"
-          role="img"
-          style={Object {}}
-          viewBox="0 0 384 512"
-          xmlns="http://www.w3.org/2000/svg"
+        <div
+          className="container"
         >
-          <path
-            d="M384 121.941V128H256V0h6.059c6.365 0 12.47 2.529 16.971 7.029l97.941 97.941A24.005 24.005 0 0 1 384 121.941zM224 136V0H24C10.745 0 0 10.745 0 24v464c0 13.255 10.745 24 24 24h336c13.255 0 24-10.745 24-24V160H248c-13.2 0-24-10.8-24-24zm96 144.016v111.963c0 21.445-25.943 31.998-40.971 16.971L224 353.941V392c0 13.255-10.745 24-24 24H88c-13.255 0-24-10.745-24-24V280c0-13.255 10.745-24 24-24h112c13.255 0 24 10.745 24 24v38.059l55.029-55.013c15.011-15.01 40.971-4.491 40.971 16.97z"
-            fill="currentColor"
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-file-video fa-w-12 "
+            data-icon="file-video"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
             style={Object {}}
-          />
-        </svg>
-        <div
-          className="details"
-        >
-          <a
-            className="filename"
-            href="https://cdn.pinpoint.com/videos/homepage/Home-Slot-Hero.mp4"
-            rel="noopener noreferrer"
-            target="_blank"
+            viewBox="0 0 384 512"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            sample-mov-file.mov
-          </a>
-          <div
-            className="size"
-          >
-            14.5 MB
-          </div>
-        </div>
-        <div
-          className="options"
-        >
-          <div
-            className="option group"
-            onClick={[Function]}
-          >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-download fa-w-16 "
-              data-icon="download"
-              data-prefix="fas"
-              focusable="false"
-              role="img"
+            <path
+              d="M384 121.941V128H256V0h6.059c6.365 0 12.47 2.529 16.971 7.029l97.941 97.941A24.005 24.005 0 0 1 384 121.941zM224 136V0H24C10.745 0 0 10.745 0 24v464c0 13.255 10.745 24 24 24h336c13.255 0 24-10.745 24-24V160H248c-13.2 0-24-10.8-24-24zm96 144.016v111.963c0 21.445-25.943 31.998-40.971 16.971L224 353.941V392c0 13.255-10.745 24-24 24H88c-13.255 0-24-10.745-24-24V280c0-13.255 10.745-24 24-24h112c13.255 0 24 10.745 24 24v38.059l55.029-55.013c15.011-15.01 40.971-4.491 40.971 16.97z"
+              fill="currentColor"
               style={Object {}}
-              viewBox="0 0 512 512"
-              xmlns="http://www.w3.org/2000/svg"
+            />
+          </svg>
+          <div
+            className="details"
+          >
+            <a
+              className="filename"
+              href="https://cdn.pinpoint.com/videos/homepage/Home-Slot-Hero.mp4"
+              rel="noopener noreferrer"
+              target="_blank"
             >
-              <path
-                d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z"
-                fill="currentColor"
+              sample-mov-file.mov
+            </a>
+            <div
+              className="size"
+            >
+              14.5 MB
+            </div>
+          </div>
+          <div
+            className="options"
+          >
+            <div
+              className="option group"
+              onClick={[Function]}
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-download fa-w-16 "
+                data-icon="download"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
                 style={Object {}}
-              />
-            </svg>
-            <span>
-              Download
-            </span>
+                viewBox="0 0 512 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+              <span>
+                Download
+              </span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </video>
+    </video>
+  </div>
 </div>
 `;
 
@@ -271,98 +545,101 @@ exports[`Test file Video via File API 1`] = `
   <p>
     This is a sample movie
   </p>
-  <video
-    controls={true}
-    width="100%"
+  <div
+    className="Pinpoint video"
   >
-    <source
-      src="https://file.edge.pinpoint.com/2e6c2701e60cee677c42c34aa027bf1c"
-      type="video/webm"
-    />
-    <source
-      src="https://file.edge.pinpoint.com/2e6c2701e60cee677c42c34aa027bf1c"
-      type="video/ogg"
-    />
-    <source
-      src="https://file.edge.pinpoint.com/2e6c2701e60cee677c42c34aa027bf1c"
-      type="video/mp4"
-    />
-    <source
-      src="https://file.edge.pinpoint.com/2e6c2701e60cee677c42c34aa027bf1c"
-      type="video/quicktime"
-    />
-    <div
-      className="file"
+    <video
+      controls={true}
     >
+      <source
+        src="https://file.edge.pinpoint.com/2e6c2701e60cee677c42c34aa027bf1c.webm"
+        type="video/webm"
+      />
+      <source
+        src="https://file.edge.pinpoint.com/2e6c2701e60cee677c42c34aa027bf1c.ogg"
+        type="video/ogg"
+      />
+      <source
+        src="https://file.edge.pinpoint.com/2e6c2701e60cee677c42c34aa027bf1c.mp4"
+        type="video/mp4"
+      />
+      <source
+        src="https://file.edge.pinpoint.com/2e6c2701e60cee677c42c34aa027bf1c"
+        type="video/quicktime"
+      />
       <div
-        className="container"
+        className="file"
       >
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-file-video fa-w-12 "
-          data-icon="file-video"
-          data-prefix="fas"
-          focusable="false"
-          role="img"
-          style={Object {}}
-          viewBox="0 0 384 512"
-          xmlns="http://www.w3.org/2000/svg"
+        <div
+          className="container"
         >
-          <path
-            d="M384 121.941V128H256V0h6.059c6.365 0 12.47 2.529 16.971 7.029l97.941 97.941A24.005 24.005 0 0 1 384 121.941zM224 136V0H24C10.745 0 0 10.745 0 24v464c0 13.255 10.745 24 24 24h336c13.255 0 24-10.745 24-24V160H248c-13.2 0-24-10.8-24-24zm96 144.016v111.963c0 21.445-25.943 31.998-40.971 16.971L224 353.941V392c0 13.255-10.745 24-24 24H88c-13.255 0-24-10.745-24-24V280c0-13.255 10.745-24 24-24h112c13.255 0 24 10.745 24 24v38.059l55.029-55.013c15.011-15.01 40.971-4.491 40.971 16.97z"
-            fill="currentColor"
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-file-video fa-w-12 "
+            data-icon="file-video"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
             style={Object {}}
-          />
-        </svg>
-        <div
-          className="details"
-        >
-          <a
-            className="filename"
-            href="https://file.edge.pinpoint.com/2e6c2701e60cee677c42c34aa027bf1c"
-            rel="noopener noreferrer"
-            target="_blank"
+            viewBox="0 0 384 512"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            sample-mov-file.mov
-          </a>
-          <div
-            className="size"
-          >
-            0 KB
-          </div>
-        </div>
-        <div
-          className="options"
-        >
-          <div
-            className="option group"
-            onClick={[Function]}
-          >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-download fa-w-16 "
-              data-icon="download"
-              data-prefix="fas"
-              focusable="false"
-              role="img"
+            <path
+              d="M384 121.941V128H256V0h6.059c6.365 0 12.47 2.529 16.971 7.029l97.941 97.941A24.005 24.005 0 0 1 384 121.941zM224 136V0H24C10.745 0 0 10.745 0 24v464c0 13.255 10.745 24 24 24h336c13.255 0 24-10.745 24-24V160H248c-13.2 0-24-10.8-24-24zm96 144.016v111.963c0 21.445-25.943 31.998-40.971 16.971L224 353.941V392c0 13.255-10.745 24-24 24H88c-13.255 0-24-10.745-24-24V280c0-13.255 10.745-24 24-24h112c13.255 0 24 10.745 24 24v38.059l55.029-55.013c15.011-15.01 40.971-4.491 40.971 16.97z"
+              fill="currentColor"
               style={Object {}}
-              viewBox="0 0 512 512"
-              xmlns="http://www.w3.org/2000/svg"
+            />
+          </svg>
+          <div
+            className="details"
+          >
+            <a
+              className="filename"
+              href="https://file.edge.pinpoint.com/2e6c2701e60cee677c42c34aa027bf1c"
+              rel="noopener noreferrer"
+              target="_blank"
             >
-              <path
-                d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z"
-                fill="currentColor"
+              sample-mov-file.mov
+            </a>
+            <div
+              className="size"
+            >
+              0 KB
+            </div>
+          </div>
+          <div
+            className="options"
+          >
+            <div
+              className="option group"
+              onClick={[Function]}
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-download fa-w-16 "
+                data-icon="download"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
                 style={Object {}}
-              />
-            </svg>
-            <span>
-              Download
-            </span>
+                viewBox="0 0 512 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+              <span>
+                Download
+              </span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </video>
+    </video>
+  </div>
 </div>
 `;
 

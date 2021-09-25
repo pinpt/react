@@ -3,6 +3,7 @@ import { Meta } from '@storybook/react';
 import { Content, Document, emptyDoc } from '../';
 import { CoverMediaType } from '../../../lib/types/content';
 import Pinpoint from '../../Pinpoint';
+import audio_files from '../__data__/audio_files';
 import blockquote_with_code_mark from '../__data__/blockquote_with_code_mark';
 import image_block_position_and_scale from '../__data__/image_block_position_and_scale';
 import notice_with_code_mark from '../__data__/notice_with_code_mark';
@@ -124,3 +125,5 @@ export const Youtube_Video: React.VFC<{}> = () => {
 
 export const File_Video: React.VFC<{}> = () => <Document node={video_file} />;
 export const File_Video_With_FileAPI: React.VFC<{}> = () => <Document node={video_file_api} />;
+
+export const Audio_Files: React.VFC<{}> = () => <Document node={audio_files} />;
