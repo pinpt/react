@@ -23,3 +23,10 @@ export const Default: React.VFC<{}> = () => <Image src="https://via.placeholder.
 export const Default_No_Size: React.VFC<{}> = () => <Image src="https://via.placeholder.com/1500" />;
 
 export const Default_Alt: React.VFC<{}> = () => <Image src="https://via.placeholder.com/1500" alt="1500x1500" />;
+
+export const BlurHash: React.VFC<{}> = () => (
+	<Image
+		src="https://file.edge.pinpoint.com/46b9e86a19e11882615784ec76948241;UJC5v9%25jt6ohtntRobflayoMj%5Bj%5Ds%3FkCfioL;1328x860.png"
+		alt="blurhash"
+	/>
+);

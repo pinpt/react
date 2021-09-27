@@ -41,6 +41,7 @@ export interface ICoverMedia {
 	metadata?: Record<string, any>;
 	publicUrl?: string;
 	properties?: CoverMediaProperties;
+	blurhash?: string;
 }
 
 export enum ContentTemplateType {
