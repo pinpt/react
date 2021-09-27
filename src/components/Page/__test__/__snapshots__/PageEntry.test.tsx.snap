@@ -104,11 +104,10 @@ exports[`Test full entry 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image avatar"
+                  className="Pinpoint Image avatar blurhash"
                   decoding="async"
-                  height={48}
-                  src="https://file.pinpoint.com/6cc744395c563f0072b339070aa327f3;UCGt%3D%3DkE~A%3FZJ6%5EhIpS%23o%5BELE3oLT0I%40t7E2;400x400.png?rw=48&rh=48"
-                  width={48}
+                  loading="eager"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                 />
                 <span
                   className="name"
@@ -255,11 +254,10 @@ exports[`Test full entry 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image medium-zoom-cover"
+                  className="Pinpoint Image medium-zoom-cover blurhash"
                   decoding="async"
-                  height={900}
-                  src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
-                  width={1600}
+                  loading="eager"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                 />
               </div>
             </div>
@@ -312,11 +310,10 @@ exports[`Test full entry 1`] = `
                 >
                   <img
                     alt=""
-                    className="Pinpoint Image medium-zoom-body"
+                    className="Pinpoint Image medium-zoom-body blurhash"
                     decoding="async"
-                    height={509.6}
-                    src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
-                    width={564.72}
+                    loading="eager"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                   />
                 </div>
               </div>
@@ -366,11 +363,10 @@ exports[`Test full entry 1`] = `
                 >
                   <img
                     alt=""
-                    className="Pinpoint Image medium-zoom-body"
+                    className="Pinpoint Image medium-zoom-body blurhash"
                     decoding="async"
-                    height={360}
-                    src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
-                    width={540}
+                    loading="eager"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                   />
                 </div>
               </div>
@@ -430,11 +426,10 @@ exports[`Test full entry 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image avatar"
+                  className="Pinpoint Image avatar blurhash"
                   decoding="async"
-                  height={48}
-                  src="https://file.pinpoint.com/6cc744395c563f0072b339070aa327f3;UCGt%3D%3DkE~A%3FZJ6%5EhIpS%23o%5BELE3oLT0I%40t7E2;400x400.png?rw=48&rh=48"
-                  width={48}
+                  loading="eager"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                 />
                 <span
                   className="name"
@@ -596,11 +591,10 @@ exports[`Test full entry 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image image"
+                  className="Pinpoint Image image blurhash"
                   decoding="async"
-                  height={320}
-                  src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
-                  width={320}
+                  loading="eager"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                 />
               </span>
               <span
@@ -953,10 +947,11 @@ exports[`Test no footer 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image avatar"
+                  className="Pinpoint Image avatar "
                   decoding="async"
                   height={48}
-                  src="https://file.pinpoint.com/6cc744395c563f0072b339070aa327f3;UCGt%3D%3DkE~A%3FZJ6%5EhIpS%23o%5BELE3oLT0I%40t7E2;400x400.png?rw=48&rh=48"
+                  loading="lazy"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                   width={48}
                 />
                 <span
@@ -1104,10 +1099,13 @@ exports[`Test no footer 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image medium-zoom-cover"
+                  className="Pinpoint Image medium-zoom-cover "
                   decoding="async"
                   height={900}
+                  loading="eager"
+                  sizes="(min-width: 640px) 640px, (min-width: 768px) 768px, (min-width: 1024px) 1024px, (min-width: 1280px) 1280px, (min-width: 1328px) 1328px, (min-width: 1600px) 1600px"
                   src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
+                  srcSet="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png?rw=640 640w, https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png?rw=768 768w, https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png?rw=1024 1024w, https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png?rw=1280 1280w, https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png?rw=1328 1328w, https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png 1600w"
                   width={1600}
                 />
               </div>
@@ -1161,10 +1159,11 @@ exports[`Test no footer 1`] = `
                 >
                   <img
                     alt=""
-                    className="Pinpoint Image medium-zoom-body"
+                    className="Pinpoint Image medium-zoom-body "
                     decoding="async"
                     height={509.6}
-                    src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
+                    loading="lazy"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                     width={564.72}
                   />
                 </div>
@@ -1215,10 +1214,11 @@ exports[`Test no footer 1`] = `
                 >
                   <img
                     alt=""
-                    className="Pinpoint Image medium-zoom-body"
+                    className="Pinpoint Image medium-zoom-body "
                     decoding="async"
                     height={360}
-                    src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
+                    loading="lazy"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                     width={540}
                   />
                 </div>
@@ -1274,10 +1274,11 @@ exports[`Test no footer 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image avatar"
+                  className="Pinpoint Image avatar "
                   decoding="async"
                   height={48}
-                  src="https://file.pinpoint.com/6cc744395c563f0072b339070aa327f3;UCGt%3D%3DkE~A%3FZJ6%5EhIpS%23o%5BELE3oLT0I%40t7E2;400x400.png?rw=48&rh=48"
+                  loading="lazy"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                   width={48}
                 />
                 <span
@@ -1518,11 +1519,10 @@ exports[`Test no sidebar 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image medium-zoom-cover"
+                  className="Pinpoint Image medium-zoom-cover blurhash"
                   decoding="async"
-                  height={900}
-                  src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
-                  width={1600}
+                  loading="eager"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                 />
               </div>
             </div>
@@ -1575,11 +1575,10 @@ exports[`Test no sidebar 1`] = `
                 >
                   <img
                     alt=""
-                    className="Pinpoint Image medium-zoom-body"
+                    className="Pinpoint Image medium-zoom-body blurhash"
                     decoding="async"
-                    height={509.6}
-                    src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
-                    width={564.72}
+                    loading="eager"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                   />
                 </div>
               </div>
@@ -1629,11 +1628,10 @@ exports[`Test no sidebar 1`] = `
                 >
                   <img
                     alt=""
-                    className="Pinpoint Image medium-zoom-body"
+                    className="Pinpoint Image medium-zoom-body blurhash"
                     decoding="async"
-                    height={360}
-                    src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
-                    width={540}
+                    loading="eager"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                   />
                 </div>
               </div>
@@ -1703,11 +1701,10 @@ exports[`Test no sidebar 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image image"
+                  className="Pinpoint Image image blurhash"
                   decoding="async"
-                  height={320}
-                  src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
-                  width={320}
+                  loading="eager"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                 />
               </span>
               <span
@@ -2065,11 +2062,10 @@ exports[`Test not zoomable entry 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image avatar"
+                  className="Pinpoint Image avatar blurhash"
                   decoding="async"
-                  height={48}
-                  src="https://file.pinpoint.com/6cc744395c563f0072b339070aa327f3;UCGt%3D%3DkE~A%3FZJ6%5EhIpS%23o%5BELE3oLT0I%40t7E2;400x400.png?rw=48&rh=48"
-                  width={48}
+                  loading="eager"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                 />
                 <span
                   className="name"
@@ -2216,11 +2212,10 @@ exports[`Test not zoomable entry 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image "
+                  className="Pinpoint Image  blurhash"
                   decoding="async"
-                  height={900}
-                  src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
-                  width={1600}
+                  loading="eager"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                 />
               </div>
             </div>
@@ -2273,11 +2268,10 @@ exports[`Test not zoomable entry 1`] = `
                 >
                   <img
                     alt=""
-                    className="Pinpoint Image medium-zoom-body"
+                    className="Pinpoint Image medium-zoom-body blurhash"
                     decoding="async"
-                    height={509.6}
-                    src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
-                    width={564.72}
+                    loading="eager"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                   />
                 </div>
               </div>
@@ -2327,11 +2321,10 @@ exports[`Test not zoomable entry 1`] = `
                 >
                   <img
                     alt=""
-                    className="Pinpoint Image medium-zoom-body"
+                    className="Pinpoint Image medium-zoom-body blurhash"
                     decoding="async"
-                    height={360}
-                    src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
-                    width={540}
+                    loading="eager"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                   />
                 </div>
               </div>
@@ -2391,11 +2384,10 @@ exports[`Test not zoomable entry 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image avatar"
+                  className="Pinpoint Image avatar blurhash"
                   decoding="async"
-                  height={48}
-                  src="https://file.pinpoint.com/6cc744395c563f0072b339070aa327f3;UCGt%3D%3DkE~A%3FZJ6%5EhIpS%23o%5BELE3oLT0I%40t7E2;400x400.png?rw=48&rh=48"
-                  width={48}
+                  loading="eager"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                 />
                 <span
                   className="name"
@@ -2557,11 +2549,10 @@ exports[`Test not zoomable entry 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image image"
+                  className="Pinpoint Image image blurhash"
                   decoding="async"
-                  height={320}
-                  src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
-                  width={320}
+                  loading="eager"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                 />
               </span>
               <span
@@ -2919,10 +2910,11 @@ exports[`Test with pagination 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image avatar"
+                  className="Pinpoint Image avatar "
                   decoding="async"
                   height={48}
-                  src="https://file.pinpoint.com/6cc744395c563f0072b339070aa327f3;UCGt%3D%3DkE~A%3FZJ6%5EhIpS%23o%5BELE3oLT0I%40t7E2;400x400.png?rw=48&rh=48"
+                  loading="lazy"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                   width={48}
                 />
                 <span
@@ -3070,10 +3062,13 @@ exports[`Test with pagination 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image medium-zoom-cover"
+                  className="Pinpoint Image medium-zoom-cover "
                   decoding="async"
                   height={900}
+                  loading="eager"
+                  sizes="(min-width: 640px) 640px, (min-width: 768px) 768px, (min-width: 1024px) 1024px, (min-width: 1280px) 1280px, (min-width: 1328px) 1328px, (min-width: 1600px) 1600px"
                   src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
+                  srcSet="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png?rw=640 640w, https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png?rw=768 768w, https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png?rw=1024 1024w, https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png?rw=1280 1280w, https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png?rw=1328 1328w, https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png 1600w"
                   width={1600}
                 />
               </div>
@@ -3127,10 +3122,11 @@ exports[`Test with pagination 1`] = `
                 >
                   <img
                     alt=""
-                    className="Pinpoint Image medium-zoom-body"
+                    className="Pinpoint Image medium-zoom-body "
                     decoding="async"
                     height={509.6}
-                    src="https://file.pinpoint.com/8d06774ccbcc1bd706afac819de9d77f;UBSPX_xu%25M~q_3Rjj%5Bof-%3BRjRjxu_3j%5Bj%5Bof;1086x980.png"
+                    loading="lazy"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                     width={564.72}
                   />
                 </div>
@@ -3181,10 +3177,11 @@ exports[`Test with pagination 1`] = `
                 >
                   <img
                     alt=""
-                    className="Pinpoint Image medium-zoom-body"
+                    className="Pinpoint Image medium-zoom-body "
                     decoding="async"
                     height={360}
-                    src="https://file.pinpoint.com/3d35b6dad14ff02a57e4f12a3340a48b;UVHewn014n~qxuRjWBt700oexuRQt7ofayf6;1500x1000.png"
+                    loading="lazy"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                     width={540}
                   />
                 </div>
@@ -3245,10 +3242,11 @@ exports[`Test with pagination 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image avatar"
+                  className="Pinpoint Image avatar "
                   decoding="async"
                   height={48}
-                  src="https://file.pinpoint.com/6cc744395c563f0072b339070aa327f3;UCGt%3D%3DkE~A%3FZJ6%5EhIpS%23o%5BELE3oLT0I%40t7E2;400x400.png?rw=48&rh=48"
+                  loading="lazy"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                   width={48}
                 />
                 <span
@@ -3477,10 +3475,11 @@ exports[`Test with pagination 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image image"
+                  className="Pinpoint Image image "
                   decoding="async"
                   height={320}
-                  src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+                  loading="lazy"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                   width={320}
                 />
               </span>

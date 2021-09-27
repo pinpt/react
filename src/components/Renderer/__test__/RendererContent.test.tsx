@@ -3,6 +3,7 @@ import { CoverMedia, Document, emptyDoc } from '../';
 import { CoverMediaType } from '../../../lib/types/content';
 import audio_files from '../__data__/audio_files';
 import blockquote_with_code_mark from '../__data__/blockquote_with_code_mark';
+import image_block_position_and_scale from '../__data__/image_block_position_and_scale';
 import notice_with_code_mark from '../__data__/notice_with_code_mark';
 import simple_blockquote from '../__data__/simple_blockquote';
 import simple_break from '../__data__/simple_break';
@@ -189,6 +190,13 @@ test('Test simple image block with link', () => {
 	expect(tree).toMatchSnapshot();
 });
 
+test('Test image with scale', () => {
+	const doc = image_block_position_and_scale;
+	const component = renderer.create(<Document node={doc} />);
+	const tree = component.toJSON();
+	expect(tree).toMatchSnapshot();
+});
+
 test('Test Youtube cover media with maxresdefault', () => {
 	const youtubeCoverMedia: ICoverMedia = {
 		type: CoverMediaType.Youtube,
@@ -269,6 +277,42 @@ test('Test file Video via File API', () => {
 test('Test Audio files', () => {
 	const doc = audio_files;
 	const component = renderer.create(<Document node={doc} />);
+	const tree = component.toJSON();
+	expect(tree).toMatchSnapshot();
+});
+
+test('Test Image cover media with blurhash', () => {
+	const coverMedia: ICoverMedia = {
+		type: CoverMediaType.Image,
+		value: 'https://file.edge.pinpoint.com/b1ee49fa5ea82ea3b71d0101ddc28a84',
+		blurhash:
+			'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAABmJLR0QA/wD/AP+gvaeTAAAAT0lEQVQImQFEALv/AXWlrv/68vAAC+fjABoIBwAE59ncAOnk4gDg18sAMCIqAAT6z9wA6bTHANwA1AADyOUABAQrIgAVFAYALtsRACcgIwA9chplax1J+QAAAABJRU5ErkJggg==',
+		placeholderImage:
+			'https://file.edge.pinpoint.com/b1ee49fa5ea82ea3b71d0101ddc28a84;UI8%3D1pOs.9j%5B-VOroLax.mOrNZoL-VOYaxjF;2048x1344.png',
+	};
+	const component = renderer.create(<CoverMedia media={coverMedia} />);
+	const tree = component.toJSON();
+	expect(tree).toMatchSnapshot();
+});
+
+test('Test Image cover media with blurhash in url', () => {
+	const coverMedia: ICoverMedia = {
+		type: CoverMediaType.Image,
+		value:
+			'https://file.edge.pinpoint.com/b1ee49fa5ea82ea3b71d0101ddc28a84;UI8%3D1pOs.9j%5B-VOroLax.mOrNZoL-VOYaxjF;2048x1344.png',
+	};
+	const component = renderer.create(<CoverMedia media={coverMedia} />);
+	const tree = component.toJSON();
+	expect(tree).toMatchSnapshot();
+});
+
+test('Test video with poster image', () => {
+	const coverMedia: ICoverMedia = {
+		type: CoverMediaType.Video,
+		value: 'https://file.edge.pinpoint.com/2e6c2701e60cee677c42c34aa027bf1c',
+		placeholderImage: 'https://file.edge.pinpoint.com/2e6c2701e60cee677c42c34aa027bf1c/thumbnail',
+	};
+	const component = renderer.create(<CoverMedia media={coverMedia} />);
 	const tree = component.toJSON();
 	expect(tree).toMatchSnapshot();
 });

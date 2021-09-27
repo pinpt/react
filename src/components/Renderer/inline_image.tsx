@@ -9,7 +9,14 @@ const InlineImage = ({ node }: NodeProps) => {
 	const height = size?.height;
 
 	const image = (
-		<Image src={node.attrs?.src} width={width} height={height} alt={node.attrs?.alt} className="inline_image" />
+		<Image
+			src={node.attrs?.src}
+			width={width}
+			height={height}
+			alt={node.attrs?.alt}
+			className="inline_image"
+			blurhash={node.attrs?.blurhash}
+		/>
 	);
 
 	return (

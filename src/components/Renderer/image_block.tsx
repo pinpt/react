@@ -9,15 +9,24 @@ const InlineImage = ({
 	scaledHeight,
 	alt,
 	zoom,
+	blurhash,
 }: {
 	src: string;
 	scaledWidth?: number;
 	scaledHeight?: number;
 	zoom?: boolean;
 	alt?: string;
+	blurhash?: string;
 }) => (
 	<div className="image">
-		<Image className={zoom ? 'medium-zoom-body' : ''} src={src} width={scaledWidth} height={scaledHeight} alt={alt} />
+		<Image
+			className={zoom ? 'medium-zoom-body' : ''}
+			src={src}
+			width={scaledWidth}
+			height={scaledHeight}
+			alt={alt}
+			blurhash={blurhash}
+		/>
 	</div>
 );
 
@@ -38,6 +47,7 @@ const ImageBlock = ({ node }: NodeProps) => {
 						scaledWidth={scaledWidth}
 						scaledHeight={scaledHeight}
 						alt={node.attrs.alt}
+						blurhash={node.attrs.blurhash}
 						zoom={false}
 					/>
 				</a>
@@ -47,6 +57,7 @@ const ImageBlock = ({ node }: NodeProps) => {
 					scaledWidth={scaledWidth}
 					scaledHeight={scaledHeight}
 					alt={node.attrs.alt}
+					blurhash={node.attrs.blurhash}
 					zoom
 				/>
 			)}

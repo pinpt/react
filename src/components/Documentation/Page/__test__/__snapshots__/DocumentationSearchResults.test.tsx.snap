@@ -181,11 +181,10 @@ populated with your recently completed...
               >
                 <img
                   alt=""
-                  className="Pinpoint Image image"
+                  className="Pinpoint Image image blurhash"
                   decoding="async"
-                  height={320}
-                  src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
-                  width={320}
+                  loading="eager"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                 />
               </span>
               <span

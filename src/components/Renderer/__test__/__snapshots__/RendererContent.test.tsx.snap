@@ -271,6 +271,54 @@ exports[`Test Audio files 1`] = `
 </div>
 `;
 
+exports[`Test Image cover media with blurhash 1`] = `
+<section
+  className="Pinpoint cover covermedia"
+>
+  <div
+    className="Pinpoint media-container"
+  >
+    <div
+      className="Pinpoint image"
+    >
+      <img
+        alt=""
+        className="Pinpoint Image  blurhash"
+        decoding="async"
+        loading="eager"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAABmJLR0QA/wD/AP+gvaeTAAAAT0lEQVQImQFEALv/AXWlrv/68vAAC+fjABoIBwAE59ncAOnk4gDg18sAMCIqAAT6z9wA6bTHANwA1AADyOUABAQrIgAVFAYALtsRACcgIwA9chplax1J+QAAAABJRU5ErkJggg=="
+      />
+    </div>
+  </div>
+</section>
+`;
+
+exports[`Test Image cover media with blurhash in url 1`] = `
+<section
+  className="Pinpoint cover covermedia"
+>
+  <div
+    className="Pinpoint media-container"
+  >
+    <div
+      className="Pinpoint image"
+    >
+      <img
+        alt=""
+        className="Pinpoint Image  "
+        decoding="async"
+        height={1344}
+        loading="eager"
+        sizes="(min-width: 640px) 640px, (min-width: 768px) 768px, (min-width: 1024px) 1024px, (min-width: 1280px) 1280px, (min-width: 1328px) 1328px, (min-width: 2048px) 2048px"
+        src="https://file.edge.pinpoint.com/b1ee49fa5ea82ea3b71d0101ddc28a84;UI8%3D1pOs.9j%5B-VOroLax.mOrNZoL-VOYaxjF;2048x1344.png"
+        srcSet="https://file.edge.pinpoint.com/b1ee49fa5ea82ea3b71d0101ddc28a84;UI8%3D1pOs.9j%5B-VOroLax.mOrNZoL-VOYaxjF;2048x1344.png?rw=640 640w, https://file.edge.pinpoint.com/b1ee49fa5ea82ea3b71d0101ddc28a84;UI8%3D1pOs.9j%5B-VOroLax.mOrNZoL-VOYaxjF;2048x1344.png?rw=768 768w, https://file.edge.pinpoint.com/b1ee49fa5ea82ea3b71d0101ddc28a84;UI8%3D1pOs.9j%5B-VOroLax.mOrNZoL-VOYaxjF;2048x1344.png?rw=1024 1024w, https://file.edge.pinpoint.com/b1ee49fa5ea82ea3b71d0101ddc28a84;UI8%3D1pOs.9j%5B-VOroLax.mOrNZoL-VOYaxjF;2048x1344.png?rw=1280 1280w, https://file.edge.pinpoint.com/b1ee49fa5ea82ea3b71d0101ddc28a84;UI8%3D1pOs.9j%5B-VOroLax.mOrNZoL-VOYaxjF;2048x1344.png?rw=1328 1328w, https://file.edge.pinpoint.com/b1ee49fa5ea82ea3b71d0101ddc28a84;UI8%3D1pOs.9j%5B-VOroLax.mOrNZoL-VOYaxjF;2048x1344.png 2048w"
+        width={2048}
+      />
+    </div>
+  </div>
+</section>
+`;
+
 exports[`Test Youtube cover media with hqdefault 1`] = `
 <section
   className="Pinpoint cover covermedia"
@@ -639,6 +687,99 @@ exports[`Test file Video via File API 1`] = `
         </div>
       </div>
     </video>
+  </div>
+</div>
+`;
+
+exports[`Test image with scale 1`] = `
+<div
+  className="Pinpoint document"
+>
+  <p>
+    1500x1000 image. Rendered size is proportional to scaled image size and container width.
+  </p>
+  <p>
+    -
+  </p>
+  <div
+    className="image_block left"
+  >
+    <div
+      className="image"
+    >
+      <img
+        alt="Left aligned, scale 30%"
+        className="Pinpoint Image medium-zoom-body blurhash"
+        decoding="async"
+        loading="eager"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABmJLR0QA/wD/AP+gvaeTAAAAxklEQVQYlQXBvU7DMBSA0c++N43dND9tF8TAxsDCUzHw0CxIUAFCiFDViWs74Rzz/HS/jn+Bl9cPnD/y+HDH7U1PyQun0xl1bkdMQtslvNux3Xoa71kX2HcLOvRHRGfmotTOcdgPHIYBCyiKtm0HsqEvK1optffUtUcMNE1GrRVEFKkqirHMaeESMwKEVNAQIlO8MsVCWjM/Y0AwWOAcAvr5NTJdE78hUIyhxmBLwRoIc0Tf3r+JOXPJM85X5I0lqUGsYU2JfwHmU2jvsbHvAAAAAElFTkSuQmCC"
+      />
+    </div>
+    <div
+      className="alt"
+    >
+      Left aligned, scale 30%
+    </div>
+  </div>
+  <div
+    className="image_block center"
+  >
+    <div
+      className="image"
+    >
+      <img
+        alt="Center aligned, scale 30%"
+        className="Pinpoint Image medium-zoom-body blurhash"
+        decoding="async"
+        loading="eager"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABmJLR0QA/wD/AP+gvaeTAAAAxklEQVQYlQXBvU7DMBSA0c++N43dND9tF8TAxsDCUzHw0CxIUAFCiFDViWs74Rzz/HS/jn+Bl9cPnD/y+HDH7U1PyQun0xl1bkdMQtslvNux3Xoa71kX2HcLOvRHRGfmotTOcdgPHIYBCyiKtm0HsqEvK1optffUtUcMNE1GrRVEFKkqirHMaeESMwKEVNAQIlO8MsVCWjM/Y0AwWOAcAvr5NTJdE78hUIyhxmBLwRoIc0Tf3r+JOXPJM85X5I0lqUGsYU2JfwHmU2jvsbHvAAAAAElFTkSuQmCC"
+      />
+    </div>
+    <div
+      className="alt"
+    >
+      Center aligned, scale 30%
+    </div>
+  </div>
+  <div
+    className="image_block right"
+  >
+    <div
+      className="image"
+    >
+      <img
+        alt="Right aligned, scale 30%"
+        className="Pinpoint Image medium-zoom-body blurhash"
+        decoding="async"
+        loading="eager"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABmJLR0QA/wD/AP+gvaeTAAAAxklEQVQYlQXBvU7DMBSA0c++N43dND9tF8TAxsDCUzHw0CxIUAFCiFDViWs74Rzz/HS/jn+Bl9cPnD/y+HDH7U1PyQun0xl1bkdMQtslvNux3Xoa71kX2HcLOvRHRGfmotTOcdgPHIYBCyiKtm0HsqEvK1optffUtUcMNE1GrRVEFKkqirHMaeESMwKEVNAQIlO8MsVCWjM/Y0AwWOAcAvr5NTJdE78hUIyhxmBLwRoIc0Tf3r+JOXPJM85X5I0lqUGsYU2JfwHmU2jvsbHvAAAAAElFTkSuQmCC"
+      />
+    </div>
+    <div
+      className="alt"
+    >
+      Right aligned, scale 30%
+    </div>
+  </div>
+  <div
+    className="image_block center"
+  >
+    <div
+      className="image"
+    >
+      <img
+        alt="Center aligned, scale 200%"
+        className="Pinpoint Image medium-zoom-body blurhash"
+        decoding="async"
+        loading="eager"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABmJLR0QA/wD/AP+gvaeTAAAAxklEQVQYlQXBvU7DMBSA0c++N43dND9tF8TAxsDCUzHw0CxIUAFCiFDViWs74Rzz/HS/jn+Bl9cPnD/y+HDH7U1PyQun0xl1bkdMQtslvNux3Xoa71kX2HcLOvRHRGfmotTOcdgPHIYBCyiKtm0HsqEvK1optffUtUcMNE1GrRVEFKkqirHMaeESMwKEVNAQIlO8MsVCWjM/Y0AwWOAcAvr5NTJdE78hUIyhxmBLwRoIc0Tf3r+JOXPJM85X5I0lqUGsYU2JfwHmU2jvsbHvAAAAAElFTkSuQmCC"
+      />
+    </div>
+    <div
+      className="alt"
+    >
+      Center aligned, scale 200%
+    </div>
   </div>
 </div>
 `;
@@ -1084,9 +1225,10 @@ exports[`Test simple image block 1`] = `
     >
       <img
         alt="Image Caption"
-        className="Pinpoint Image medium-zoom-body"
+        className="Pinpoint Image medium-zoom-body "
         decoding="async"
-        src="https://cdn.pinpoint.com/card.png"
+        loading="lazy"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
       />
     </div>
     <div
@@ -1115,9 +1257,10 @@ exports[`Test simple image block with link 1`] = `
       >
         <img
           alt="Image Caption"
-          className="Pinpoint Image "
+          className="Pinpoint Image  "
           decoding="async"
-          src="https://cdn.pinpoint.com/card.png"
+          loading="lazy"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
         />
       </div>
     </a>
@@ -1174,9 +1317,10 @@ exports[`Test simple inline image 1`] = `
   <div>
     <img
       alt="card"
-      className="Pinpoint Image inline_image"
+      className="Pinpoint Image inline_image "
       decoding="async"
-      src="https://cdn.pinpoint.com/card.png"
+      loading="lazy"
+      src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
     />
   </div>
 </div>
@@ -1194,9 +1338,10 @@ exports[`Test simple inline image with link 1`] = `
     >
       <img
         alt="card"
-        className="Pinpoint Image inline_image"
+        className="Pinpoint Image inline_image "
         decoding="async"
-        src="https://cdn.pinpoint.com/card.png"
+        loading="lazy"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
       />
     </a>
   </div>
@@ -1268,4 +1413,39 @@ exports[`Test simple warning notice 1`] = `
     </div>
   </div>
 </div>
+`;
+
+exports[`Test video with poster image 1`] = `
+<section
+  className="Pinpoint cover covermedia"
+>
+  <div
+    className="Pinpoint media-container"
+  >
+    <div
+      className="Pinpoint video"
+    >
+      <video
+        controls={true}
+        poster="https://file.edge.pinpoint.com/2e6c2701e60cee677c42c34aa027bf1c/thumbnail"
+      >
+        <source
+          src="https://file.edge.pinpoint.com/2e6c2701e60cee677c42c34aa027bf1c.webm"
+          type="video/webm"
+        />
+        <source
+          src="https://file.edge.pinpoint.com/2e6c2701e60cee677c42c34aa027bf1c.ogg"
+          type="video/ogg"
+        />
+        <source
+          src="https://file.edge.pinpoint.com/2e6c2701e60cee677c42c34aa027bf1c.mp4"
+          type="video/mp4"
+        />
+        <source
+          src="https://file.edge.pinpoint.com/2e6c2701e60cee677c42c34aa027bf1c"
+        />
+      </video>
+    </div>
+  </div>
+</section>
 `;

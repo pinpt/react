@@ -1,6 +1,8 @@
 import mediumZoom from 'medium-zoom';
 import React, { forwardRef, useEffect } from 'react';
-import { extractImageMetadataFromFileID } from '../../lib/file_metadata';
+import {
+	addFileExtension, extractImageMetadataFromFileID, isFileAPI
+} from '../../lib/file_metadata';
 import { slugifyContent } from '../../lib/string';
 import { CoverMediaType } from '../../lib/types/content';
 import Image from '../Image';
@@ -9,8 +11,18 @@ import { Source } from './file';
 
 import type { ICoverMedia } from '../../lib/types/content';
 
-const ImageMedia = ({ src, title = '', zoomable = false }: { src?: string; title?: string; zoomable?: boolean }) => {
-	const { size } = extractImageMetadataFromFileID(src ?? '');
+const ImageMedia = ({
+	src,
+	title = '',
+	zoomable = false,
+	blurhash,
+}: {
+	src?: string;
+	title?: string;
+	zoomable?: boolean;
+	blurhash?: string;
+}) => {
+	const { size, blurhash: _blurhash } = extractImageMetadataFromFileID(src ?? '');
 
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
@@ -26,18 +38,21 @@ const ImageMedia = ({ src, title = '', zoomable = false }: { src?: string; title
 				className={`${zoomable ? 'medium-zoom-cover' : ''}`}
 				width={size?.width}
 				height={size?.height}
+				blurhash={blurhash ?? _blurhash}
+				lazy={false}
 			/>
 		</div>
 	);
 };
 
-const VideoMedia = ({ src, type }: { src: string; type: string }) => {
+const VideoMedia = ({ src, type, poster }: { src: string; type: string; poster?: string }) => {
+	const _isFileAPI = isFileAPI(src);
 	return (
 		<div className="Pinpoint video">
-			<video controls>
-				<Source current={type} src={src} type="video/webm" />
-				<Source current={type} src={src} type="video/ogg" />
-				<Source current={type} src={src} type="video/mp4" />
+			<video controls poster={poster}>
+				<Source current={type} src={_isFileAPI ? addFileExtension(src, 'webm') : src} type="video/webm" />
+				<Source current={type} src={_isFileAPI ? addFileExtension(src, 'ogg') : src} type="video/ogg" />
+				<Source current={type} src={_isFileAPI ? addFileExtension(src, 'mp4') : src} type="video/mp4" />
 				{type !== 'video/webm' && type !== 'video/ogg' && type !== 'video/mp4' && <source src={src} type={type} />}
 			</video>
 		</div>
@@ -73,11 +88,18 @@ export const CoverMedia = ({ media, title, zoomable }: { media?: ICoverMedia; ti
 			return <></>;
 		}
 		case CoverMediaType.Image: {
-			content = <ImageMedia src={media.value || media.placeholderImage} title={title} zoomable={zoomable} />;
+			content = (
+				<ImageMedia
+					src={media.value || media.placeholderImage}
+					title={title}
+					zoomable={zoomable}
+					blurhash={media?.blurhash}
+				/>
+			);
 			break;
 		}
 		case CoverMediaType.Video: {
-			content = <VideoMedia src={media.value} type={media.metadata?.mimetype} />;
+			content = <VideoMedia src={media.value} type={media.metadata?.mimetype} poster={media.placeholderImage} />;
 			break;
 		}
 		case CoverMediaType.Youtube: {

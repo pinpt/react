@@ -93,14 +93,36 @@ const extractSizeFromString = (str: string, qs?: string) => {
 	return extractYoutubePlaceholderImage(str);
 };
 
+const safeDecode = (src: string) => {
+	try {
+		return decodeURIComponent(src);
+	} catch (ex) {
+		return src;
+	}
+};
+
 export const extractImageMetadataFromFileID = (fileid: string) => {
 	const { args, ext } = extractFileDataFromFileID(fileid);
 	if (args.length) {
 		return {
-			blurhash: decodeURIComponent(args[0]),
+			blurhash: safeDecode(args[0]),
 			size: args.length > 1 ? extractSizeFromString(args[1], fileid) : extractSizeFromString(fileid),
 			ext,
 		};
 	}
 	return { ext, size: extractSizeFromString(fileid) };
+};
+
+export const isFileAPI = (src: string) => src.includes('file.') && src.includes('.pinpoint.com');
+
+export const addFileExtension = (src: string, extension: string) => {
+	if (src) {
+		const url = new URL(src);
+		if (url.pathname.endsWith(`.${extension}`) || url.pathname.indexOf('.') > 0) {
+			return src;
+		}
+		url.pathname = `${url.pathname}.${extension}`;
+		return url.toString();
+	}
+	return src;
 };

@@ -1,10 +1,10 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
 import { CoverMediaType } from '../../../lib/types';
+import DateLabel from '../../DateLabel';
 import StatisticsBar from '../../Statistic/Bar';
 import Tags from '../../Tags';
 import Container from '../Container';
-import DateLabel from '../../DateLabel';
 import Description from '../Description';
 import ReadButton from '../ReadButton';
 import Title from '../Title';
@@ -102,11 +102,11 @@ const youtubeCoverMedia = {
 
 const videoCoverMedia = {
 	type: CoverMediaType.Video,
-	value: 'https://file.edge.changelog.so/f5a905e00c493f4e5b625c83ff445bef',
+	value: 'https://file.edge.pinpoint.com/2e6c2701e60cee677c42c34aa027bf1c',
 	metadata: {
 		poster: 'maxresdefault',
 	},
-	placeholderImage: 'https://file.edge.changelog.so/f5a905e00c493f4e5b625c83ff445bef/thumbnail',
+	placeholderImage: 'https://file.edge.pinpoint.com/2e6c2701e60cee677c42c34aa027bf1c/thumbnail',
 };
 
 const imageCoverMedia = {

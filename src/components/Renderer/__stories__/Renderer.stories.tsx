@@ -127,3 +127,24 @@ export const File_Video: React.VFC<{}> = () => <Document node={video_file} />;
 export const File_Video_With_FileAPI: React.VFC<{}> = () => <Document node={video_file_api} />;
 
 export const Audio_Files: React.VFC<{}> = () => <Document node={audio_files} />;
+
+export const CoverImage_With_Blurhash: React.VFC<{}> = () => {
+	const coverMedia: ICoverMedia = {
+		type: CoverMediaType.Image,
+		value: 'https://file.edge.pinpoint.com/b1ee49fa5ea82ea3b71d0101ddc28a84',
+		blurhash:
+			'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAABmJLR0QA/wD/AP+gvaeTAAAAT0lEQVQImQFEALv/AXWlrv/68vAAC+fjABoIBwAE59ncAOnk4gDg18sAMCIqAAT6z9wA6bTHANwA1AADyOUABAQrIgAVFAYALtsRACcgIwA9chplax1J+QAAAABJRU5ErkJggg==',
+		placeholderImage:
+			'https://file.edge.pinpoint.com/b1ee49fa5ea82ea3b71d0101ddc28a84;UI8%3D1pOs.9j%5B-VOroLax.mOrNZoL-VOYaxjF;2048x1344.png',
+	};
+	return (
+		<Pinpoint siteId="testing">
+			{(ready, ref) => {
+				if (!ready) {
+					return null;
+				}
+				return <Content ref={ref} coverMedia={coverMedia} document={{ type: 'document', content: [] }} id="5679" />;
+			}}
+		</Pinpoint>
+	);
+};

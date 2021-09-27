@@ -372,7 +372,7 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 .Pinpoint.Latest .Content.Card.Container.wrapper .cover,
 .Pinpoint.Latest .Content.Card.Container.wrapper .covermedia .media-container img,
 .Pinpoint.Latest .Content.Card.Container.wrapper .empty-cover {
-	@apply md:h-64 lg:h-80;
+	@apply md:!h-64 lg:!h-80;
 }
 
 .recentWrapper,
@@ -803,10 +803,14 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 	@apply max-w-full w-full h-auto;
 }
 
-.Pinpoint.video video {
+:not(.covermedia) .Pinpoint.video video {
 	@apply w-full object-cover object-center;
 }
 
-.Pinpoint.audio audio {
+:not(.covermedia) .Pinpoint.audio audio {
 	@apply w-full object-cover object-center;
+}
+
+.covermedia .Pinpoint.Image img.blurhash {
+	@apply h-[19rem] sm:h-[27rem] md:h-[32rem] lg:h-[36rem];
 }

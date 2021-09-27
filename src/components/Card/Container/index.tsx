@@ -44,7 +44,14 @@ const Container = (props: ICardContainerProps) => {
 	return (
 		<div className={`Pinpoint Content Card Container wrapper ${className}`} onClick={onClick}>
 			{imageUrl && (
-				<Image className="cover" src={imageUrl} alt={alt} width={md?.size?.width} height={md?.size?.height} />
+				<Image
+					className="cover"
+					src={imageUrl}
+					alt={alt}
+					width={md?.size?.width}
+					height={md?.size?.height}
+					blurhash={md?.blurhash}
+				/>
 			)}
 			{hasCoverMedia && <CoverMedia media={coverMedia} />}
 			{!hasCoverMedia && !imageUrl && <div className="empty-cover" />}

@@ -8,11 +8,10 @@ exports[`Test click handler 1`] = `
 >
   <img
     alt=""
-    className="Pinpoint Image image"
+    className="Pinpoint Image image blurhash"
     decoding="async"
-    height={320}
-    src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
-    width={320}
+    loading="eager"
+    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
   />
 </span>
 `;
@@ -26,10 +25,11 @@ exports[`Test click handler and link 1`] = `
 >
   <img
     alt=""
-    className="Pinpoint Image image"
+    className="Pinpoint Image image "
     decoding="async"
     height={320}
-    src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+    loading="lazy"
+    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
     width={320}
   />
 </a>
@@ -42,11 +42,10 @@ exports[`Test default state 1`] = `
 >
   <img
     alt=""
-    className="Pinpoint Image image"
+    className="Pinpoint Image image blurhash"
     decoding="async"
-    height={320}
-    src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
-    width={320}
+    loading="eager"
+    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
   />
 </span>
 `;
@@ -58,10 +57,11 @@ exports[`Test extra large 1`] = `
 >
   <img
     alt=""
-    className="Pinpoint Image image"
+    className="Pinpoint Image image "
     decoding="async"
     height={320}
-    src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+    loading="lazy"
+    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
     width={320}
   />
 </span>
@@ -74,10 +74,11 @@ exports[`Test extra small 1`] = `
 >
   <img
     alt=""
-    className="Pinpoint Image image"
+    className="Pinpoint Image image "
     decoding="async"
     height={320}
-    src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+    loading="lazy"
+    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
     width={320}
   />
 </span>
@@ -90,11 +91,10 @@ exports[`Test large 1`] = `
 >
   <img
     alt=""
-    className="Pinpoint Image image"
+    className="Pinpoint Image image blurhash"
     decoding="async"
-    height={320}
-    src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
-    width={320}
+    loading="eager"
+    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
   />
 </span>
 `;
@@ -110,10 +110,11 @@ exports[`Test link (new tab) 1`] = `
 >
   <img
     alt=""
-    className="Pinpoint Image image"
+    className="Pinpoint Image image "
     decoding="async"
     height={320}
-    src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+    loading="lazy"
+    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
     width={320}
   />
 </a>
@@ -128,11 +129,10 @@ exports[`Test link 1`] = `
 >
   <img
     alt=""
-    className="Pinpoint Image image"
+    className="Pinpoint Image image blurhash"
     decoding="async"
-    height={320}
-    src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
-    width={320}
+    loading="eager"
+    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
   />
 </a>
 `;
@@ -144,10 +144,11 @@ exports[`Test medium 1`] = `
 >
   <img
     alt=""
-    className="Pinpoint Image image"
+    className="Pinpoint Image image "
     decoding="async"
     height={320}
-    src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+    loading="lazy"
+    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
     width={320}
   />
 </span>
@@ -160,11 +161,10 @@ exports[`Test small 1`] = `
 >
   <img
     alt=""
-    className="Pinpoint Image image"
+    className="Pinpoint Image image blurhash"
     decoding="async"
-    height={320}
-    src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
-    width={320}
+    loading="eager"
+    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
   />
 </span>
 `;
