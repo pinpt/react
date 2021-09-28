@@ -20,6 +20,7 @@ import { ITagBarProps } from '../../Tags/Bar';
 import { IThemeToggleProps } from '../../ThemeToggle';
 import Footer from '../Footer';
 import Header from '../Header';
+import { getSubscriberId } from '../../../lib/subscription';
 
 import type { IContent, ISite } from '../../../lib/types';
 export interface IPrebuiltEntryProps {
@@ -53,6 +54,17 @@ export interface IPrebuiltEntryProps {
 	handleSelectEntry?: (entry: IContent) => void;
 	zoomable?: boolean;
 }
+
+const encodeUrlWithTracking = (url: string, tracking: 'twitter' | 'facebook' | 'linkedin') => {
+	const _url = new URL(url);
+	_url.searchParams.set('utm_source', 'pinpt_web');
+	_url.searchParams.set('utm_medium', `pinpt_social_${tracking}`);
+	const subId = getSubscriberId();
+	if (subId) {
+		_url.searchParams.set('utm_campaign', subId);
+	}
+	return encodeURIComponent(_url.toString());
+};
 
 const Entry = (props: IPrebuiltEntryProps) => {
 	const {
@@ -127,17 +139,27 @@ const Entry = (props: IPrebuiltEntryProps) => {
 										<Social.Bar className="sharing">
 											<Social.Facebook
 												sharing
-												href={`https://facebook.com/sharer/sharer.php?u=${content.url}`}
+												href={`https://facebook.com/sharer/sharer.php?u=${encodeUrlWithTracking(
+													content.url,
+													'facebook'
+												)}`}
 												newTab
 											/>
 											<Social.Twitter
 												sharing
-												href={`https://twitter.com/intent/tweet/?text=${content.headline}&url=${content.url}`}
+												href={`https://twitter.com/intent/tweet/?text=${encodeURIComponent(
+													content.headline
+												)}&url=${encodeUrlWithTracking(content.url, 'twitter')}`}
 												newTab
 											/>
 											<Social.LinkedIn
 												sharing
-												href={`https://www.linkedin.com/shareArticle?mini=true&url=${content.url}&title=${site.name} - ${content.title}&summary=${content.headline}`}
+												href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeUrlWithTracking(
+													content.url,
+													'linkedin'
+												)}&title=${encodeURIComponent(`${site.name} - ${content.title}`)}&summary=${
+													content.headline
+												}`}
 												newTab
 											/>
 											<Social.Email

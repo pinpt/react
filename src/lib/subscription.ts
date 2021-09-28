@@ -1,8 +1,21 @@
 const cookieName = 'subscription_id';
 
-export const isSubscriberCookieSet = () => {
+const getSubscriberCookie = () => {
 	if (typeof window === 'undefined') {
-		return false;
+		return undefined;
 	}
-	return document.cookie.split('; ').some((c) => c.startsWith(`${cookieName}=`));
+	return document.cookie.split('; ').find((c) => c.startsWith(`${cookieName}=`));
+};
+
+export const getSubscriberId = () => {
+	const cookie = getSubscriberCookie();
+	if (cookie) {
+		return cookie.split('=')[1];
+	}
+	return undefined;
+};
+
+export const isSubscriberCookieSet = () => {
+	const cookie = getSubscriberCookie();
+	return !!cookie;
 };
