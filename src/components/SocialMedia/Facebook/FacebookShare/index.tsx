@@ -11,7 +11,7 @@ const FacebookShare = (props: ISocialMediaShareProps) => {
 	return (
 		<ActionLink
 			className={`Pinpoint SocialMedia ShareItem FacebookShare ${className}`}
-			title="Twitter"
+			title="Facebook"
 			href={`https://facebook.com/sharer/sharer.php?u=${encodeURIComponent(href)}`}
 			{...rest}
 		>

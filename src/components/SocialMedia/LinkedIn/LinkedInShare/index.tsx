@@ -26,7 +26,7 @@ const LinkedInShare = (props: LinkedinShareProps) => {
 	return (
 		<ActionLink
 			className={`Pinpoint SocialMedia ShareItem LinkedInShare ${className}`}
-			title="Twitter"
+			title="LinkedIn"
 			href={`https://www.linkedin.com/shareArticle?${params.toString()}`}
 			{...rest}
 		>

@@ -13,7 +13,7 @@ const EmailShare = (props: EmailShareProps) => {
 	return (
 		<ActionLink
 			className={`Pinpoint SocialMedia ShareItem EmailShare ${className}`}
-			title="Twitter"
+			title="Email"
 			href={`mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`}
 			{...rest}
 		>

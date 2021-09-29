@@ -6,7 +6,7 @@ const LinkedInLink = (props: ISocialMediaLinkProps) => {
 	const { className = '', ...rest } = props;
 
 	return (
-		<ActionLink className={`Pinpoint SocialMedia LinkItem LinkedInLink ${className}`} title="LnkedIn" {...rest}>
+		<ActionLink className={`Pinpoint SocialMedia LinkItem LinkedInLink ${className}`} title="LinkedIn" {...rest}>
 			<svg
 				width={12.25}
 				height={14}
