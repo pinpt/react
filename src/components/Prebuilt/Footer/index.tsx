@@ -3,8 +3,8 @@ import { getSiteRSSURL, ISite } from '../../../lib';
 import Copyright, { ICopyrightProps } from '../../Copyright';
 import BaseFooter from '../../Footer';
 import Logo, { ILogoProps } from '../../Logo';
-import Social from '../../Social';
-import { ISocialBarProps } from '../../Social/Bar';
+import { Bar, TwitterLink, FacebookLink, InstagramLink, GithubLink, LinkedInLink, RSSLink } from '../../SocialMedia';
+import { ISocialMediaBarProps } from '../../SocialMedia/Bar';
 import Subscribe, { ISubscribeProps } from '../../Subscribe';
 
 export interface IPrebuiltFooterProps {
@@ -12,7 +12,7 @@ export interface IPrebuiltFooterProps {
 	site: ISite;
 	renderCopyright?: (site: ISite) => ReactElement<ICopyrightProps>;
 	renderLogo?: (site: ISite) => ReactElement<ILogoProps>;
-	renderSocial?: (site: ISite) => ReactElement<ISocialBarProps>;
+	renderSocial?: (site: ISite) => ReactElement<ISocialMediaBarProps>;
 	renderSubscribe?: (site: ISite) => ReactElement<ISubscribeProps>;
 }
 
@@ -25,24 +25,24 @@ const Footer = (props: IPrebuiltFooterProps) => {
 			siteId={site?.id}
 			social={
 				renderSocial?.(site) ?? (
-					<Social.Bar className="Prebuilt">
+					<Bar className="Prebuilt">
 						{site.theme?.social?.facebook && (
-							<Social.Facebook className="Prebuilt" href={site.theme.social?.facebook} newTab />
+							<FacebookLink className="Prebuilt" href={site.theme.social?.facebook} newTab />
 						)}
 						{site.theme?.social?.instagram && (
-							<Social.Instagram className="Prebuilt" href={site.theme.social?.instagram} newTab />
+							<InstagramLink className="Prebuilt" href={site.theme.social?.instagram} newTab />
 						)}
 						{site.theme?.social?.twitter && (
-							<Social.Twitter className="Prebuilt" href={site.theme.social?.twitter} newTab />
+							<TwitterLink className="Prebuilt" href={site.theme.social?.twitter} newTab />
 						)}
 						{site.theme?.social?.github && (
-							<Social.Github className="Prebuilt" href={site.theme.social?.github} newTab />
+							<GithubLink className="Prebuilt" href={site.theme.social?.github} newTab />
 						)}
 						{site.theme?.social?.linkedin && (
-							<Social.LinkedIn className="Prebuilt" href={site.theme.social?.linkedin} newTab />
+							<LinkedInLink className="Prebuilt" href={site.theme.social?.linkedin} newTab />
 						)}
-						<Social.RSS className="Prebuilt" href={getSiteRSSURL(site)} newTab />
-					</Social.Bar>
+						<RSSLink className="Prebuilt" href={getSiteRSSURL(site)} newTab />
+					</Bar>
 				)
 			}
 			copyright={

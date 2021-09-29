@@ -20,7 +20,7 @@ import { ITagBarProps } from '../../Tags/Bar';
 import { IThemeToggleProps } from '../../ThemeToggle';
 import Footer from '../Footer';
 import Header from '../Header';
-import { getSubscriberId } from '../../../lib/subscription';
+import { Bar, FacebookShare, TwitterShare, EmailShare, LinkedInShare } from '../../SocialMedia';
 
 import type { IContent, ISite } from '../../../lib/types';
 export interface IPrebuiltEntryProps {
@@ -54,17 +54,6 @@ export interface IPrebuiltEntryProps {
 	handleSelectEntry?: (entry: IContent) => void;
 	zoomable?: boolean;
 }
-
-const encodeUrlWithTracking = (url: string, tracking: 'twitter' | 'facebook' | 'linkedin') => {
-	const _url = new URL(url);
-	_url.searchParams.set('utm_source', 'pinpt_web');
-	_url.searchParams.set('utm_medium', `pinpt_social_${tracking}`);
-	const subId = getSubscriberId();
-	if (subId) {
-		_url.searchParams.set('utm_campaign', subId);
-	}
-	return encodeURIComponent(_url.toString());
-};
 
 const Entry = (props: IPrebuiltEntryProps) => {
 	const {
@@ -136,37 +125,20 @@ const Entry = (props: IPrebuiltEntryProps) => {
 								}
 								sharing={
 									renderSocialSharing?.(site) ?? (
-										<Social.Bar className="sharing">
-											<Social.Facebook
-												sharing
-												href={`https://facebook.com/sharer/sharer.php?u=${encodeUrlWithTracking(
-													content.url,
-													'facebook'
-												)}`}
+										<Bar className="sharing">
+											<FacebookShare href={content.url} newTab />
+											<TwitterShare href={content.url} text={content.headline} newTab />
+											<LinkedInShare
+												href={content.url}
+												title={`${site.name} - ${content.title}`}
+												summary={content.headline}
 												newTab
 											/>
-											<Social.Twitter
-												sharing
-												href={`https://twitter.com/intent/tweet/?text=${encodeURIComponent(
-													content.headline
-												)}&url=${encodeUrlWithTracking(content.url, 'twitter')}`}
-												newTab
+											<EmailShare
+												subject={`${site.name} - ${content.title}`}
+												body={`${site.name} - ${content.title}\n\n${content.headline}\n\n${content.url}`}
 											/>
-											<Social.LinkedIn
-												sharing
-												href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeUrlWithTracking(
-													content.url,
-													'linkedin'
-												)}&title=${encodeURIComponent(`${site.name} - ${content.title}`)}&summary=${
-													content.headline
-												}`}
-												newTab
-											/>
-											<Social.Email
-												sharing
-												href={`mailto:?subject=${site.name} - ${content.title}&body=${site.name} - ${content.title}%0D%0A${content.headline}%0D%0A${content.url}`}
-											/>
-										</Social.Bar>
+										</Bar>
 									)
 								}
 							/>

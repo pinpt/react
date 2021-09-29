@@ -5,9 +5,6 @@ export interface ISocialMediaLinkProps {
 	onClick?: () => void;
 }
 
-export interface ISocialMediaShareProps {
-	className?: string;
-	newTab?: boolean;
-	url: string;
-	onClick?: () => void;
+export interface ISocialMediaShareProps extends ISocialMediaLinkProps {
+	href: string;
 }

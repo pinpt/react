@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { getSubscriberId } from 'src';
+import { getSubscriberId } from '../../subscription';
 
 type Medium = 'twitter' | 'facebook' | 'linkedin';
 
@@ -14,12 +14,18 @@ const addTracking = (url: string, tracking: Medium) => {
 	return _url.toString();
 };
 
-const useLinkTracking = (url: string, medium: Medium): string => {
+const useLinkTracking = (url: string, medium: Medium, disabled = false): string => {
 	const [href, setHref] = useState<string>(url);
 
 	useEffect(() => {
+		if (disabled) {
+			setHref(url);
+			return;
+		}
 		if (url) {
 			setHref(addTracking(url, medium));
+		} else {
+			setHref(url);
 		}
 	}, [url]);
 
