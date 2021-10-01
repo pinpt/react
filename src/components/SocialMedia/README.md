@@ -1,12 +1,12 @@
-### The social component contains a number of sub-components for rendering social links.
+### The social media component contains a number of sub-components for rendering social links.
 
-[Full Docs](https://react.preview.pinpoint.com/?path=/docs/components-social) | [Github](https://github.com/pinpt/react/tree/master/src/components/SocialMedia)
+[Full Docs](https://react.preview.pinpoint.com/?path=/docs/components-socialmedia) | [Github](https://github.com/pinpt/react/tree/master/src/components/SocialMedia)
 
 #### Theming
 
 The parent className for styling this component is `.Pinpoint.SocialMedia`
 
-Each social icon has an additional `.ShareItem` or `.LinkItem` class applied as well as the name of the social network, such as `.Github`
+Each social icon has an additional `.ShareItem` or `.LinkItem` class applied as well as the name of the social network, such as `.GithubShare`
 
 <details>
 	<summary>Base Theme Styles</summary>

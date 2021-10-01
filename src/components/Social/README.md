@@ -1,3 +1,5 @@
+## 🚨 'Social' components are deprecated, please look for the equivalent in 'SocialMedia'
+
 ### The social component contains a number of sub-components for rendering social links.
 
 [Full Docs](https://react.preview.pinpoint.com/?path=/docs/components-social) | [Github](https://github.com/pinpt/react/tree/master/src/components/Social)
