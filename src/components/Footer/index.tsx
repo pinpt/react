@@ -1,7 +1,7 @@
 import { ReactElement } from 'react';
 import { ICopyrightProps } from '../Copyright';
 import PoweredByPinpoint from '../PoweredByPinpoint';
-import { ISocialMediaBarProps } from '../SocialMedia/Bar';
+import { ISocialMediaBarProps } from '../SocialMedia/SocialMediaBar';
 import { ISubscribeProps } from '../Subscribe';
 import React from 'react';
 export interface IFooterProps {

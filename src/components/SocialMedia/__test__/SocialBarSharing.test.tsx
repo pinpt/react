@@ -1,5 +1,5 @@
 import renderer from 'react-test-renderer';
-import Bar from '../Bar';
+import SocialMediaBar from '../SocialMediaBar';
 import FacebookShare from '../Facebook/FacebookShare';
 import TwitterShare from '../Twitter/TwitterShare';
 import LinkedInShare from '../LinkedIn/LinkedInShare';
@@ -7,12 +7,12 @@ import EmailShare from '../Email/EmailShare';
 
 test('Test all', () => {
 	const component = renderer.create(
-		<Bar>
+		<SocialMediaBar>
 			<FacebookShare href="https://www.facebook.com/Pinpoint.Engineering" newTab />
 			<TwitterShare href="https://twitter.com/pinpoint_sw" newTab />
 			<LinkedInShare href="https://linkedin.com/company/pinpoint-software" newTab />
 			<EmailShare subject="hello~" body="what lovely docs ❤️" />
-		</Bar>
+		</SocialMediaBar>
 	);
 	const tree = component.toJSON();
 	expect(tree).toMatchSnapshot();
@@ -20,10 +20,10 @@ test('Test all', () => {
 
 test('Test short', () => {
 	const component = renderer.create(
-		<Bar>
+		<SocialMediaBar>
 			<TwitterShare href="https://twitter.com/pinpoint_sw" newTab />
 			<LinkedInShare href="https://linkedin.com/company/pinpoint-software" newTab />
-		</Bar>
+		</SocialMediaBar>
 	);
 	const tree = component.toJSON();
 	expect(tree).toMatchSnapshot();
@@ -31,9 +31,9 @@ test('Test short', () => {
 
 test('Test single', () => {
 	const component = renderer.create(
-		<Bar>
+		<SocialMediaBar>
 			<TwitterShare href="https://twitter.com/pinpoint_sw" newTab />
-		</Bar>
+		</SocialMediaBar>
 	);
 	const tree = component.toJSON();
 	expect(tree).toMatchSnapshot();
@@ -41,9 +41,9 @@ test('Test single', () => {
 
 test('Custom className', () => {
 	const component = renderer.create(
-		<Bar className="custom-test">
+		<SocialMediaBar className="custom-test">
 			<TwitterShare className="custom-test" href="https://twitter.com/pinpoint_sw" newTab />
-		</Bar>
+		</SocialMediaBar>
 	);
 	const tree = component.toJSON();
 	expect(tree).toMatchSnapshot();

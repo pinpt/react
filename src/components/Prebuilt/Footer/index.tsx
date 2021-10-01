@@ -3,8 +3,16 @@ import { getSiteRSSURL, ISite } from '../../../lib';
 import Copyright, { ICopyrightProps } from '../../Copyright';
 import BaseFooter from '../../Footer';
 import Logo, { ILogoProps } from '../../Logo';
-import { Bar, TwitterLink, FacebookLink, InstagramLink, GithubLink, LinkedInLink, RSSLink } from '../../SocialMedia';
-import { ISocialMediaBarProps } from '../../SocialMedia/Bar';
+import {
+	SocialMediaBar,
+	TwitterLink,
+	FacebookLink,
+	InstagramLink,
+	GithubLink,
+	LinkedInLink,
+	RSSLink,
+} from '../../SocialMedia';
+import { ISocialMediaBarProps } from '../../SocialMedia/SocialMediaBar';
 import Subscribe, { ISubscribeProps } from '../../Subscribe';
 
 export interface IPrebuiltFooterProps {
@@ -25,7 +33,7 @@ const Footer = (props: IPrebuiltFooterProps) => {
 			siteId={site?.id}
 			social={
 				renderSocial?.(site) ?? (
-					<Bar className="Prebuilt">
+					<SocialMediaBar className="Prebuilt">
 						{site.theme?.social?.facebook && (
 							<FacebookLink className="Prebuilt" href={site.theme.social?.facebook} newTab />
 						)}
@@ -42,7 +50,7 @@ const Footer = (props: IPrebuiltFooterProps) => {
 							<LinkedInLink className="Prebuilt" href={site.theme.social?.linkedin} newTab />
 						)}
 						<RSSLink className="Prebuilt" href={getSiteRSSURL(site)} newTab />
-					</Bar>
+					</SocialMediaBar>
 				)
 			}
 			copyright={

@@ -17,7 +17,7 @@ import Search from '../../Search';
 import { ISearchBarProps } from '../../Search/Bar';
 import { IQueryProps } from '../../Search/Query';
 import { ISearchResultsProps } from '../../Search/Results';
-import { ISocialMediaBarProps } from '../../SocialMedia/Bar';
+import { ISocialMediaBarProps } from '../../SocialMedia/SocialMediaBar';
 import Statistic from '../../Statistic';
 import { IStatisticsBarProps } from '../../Statistic/Bar';
 import { ISubscribeProps } from '../../Subscribe';

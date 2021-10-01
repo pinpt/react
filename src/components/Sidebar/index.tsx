@@ -2,7 +2,7 @@ import { ReactElement } from 'react';
 import { IAuthorProps } from '../Author';
 import { IDateProps } from '../DateLabel';
 import { IClapProps } from '../Clap';
-import { ISocialMediaBarProps } from '../SocialMedia/Bar';
+import { ISocialMediaBarProps } from '../SocialMedia/SocialMediaBar';
 import { ITagBarProps } from '../Tags/Bar';
 import React from 'react';
 

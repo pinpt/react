@@ -16,7 +16,7 @@ import DashboardPage from '../../Page/Dashboard';
 import Pagination, { IPaginationProps } from '../../Pagination';
 import Recent, { IRecentProps } from '../../Recent';
 import { ISearchBarProps } from '../../Search/Bar';
-import { ISocialMediaBarProps } from '../../SocialMedia/Bar';
+import { ISocialMediaBarProps } from '../../SocialMedia/SocialMediaBar';
 import Statistic from '../../Statistic';
 import { IStatisticsBarProps } from '../../Statistic/Bar';
 import { ISubscribeProps } from '../../Subscribe';

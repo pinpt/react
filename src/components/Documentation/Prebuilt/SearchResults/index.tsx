@@ -9,7 +9,7 @@ import { ISearchBarProps } from '../../../Search/Bar';
 import { ISubscribeProps } from '../../../Subscribe';
 import { IThemeToggleProps } from '../../../ThemeToggle';
 import Footer, { IPrebuiltFooterProps } from '../../../Prebuilt/Footer';
-import { ISocialMediaBarProps } from '../../../SocialMedia/Bar';
+import { ISocialMediaBarProps } from '../../../SocialMedia/SocialMediaBar';
 import { ICopyrightProps } from '../../../Copyright';
 import Title from '../../Title';
 import { GoBackWithArrow } from '../../../Pagination';

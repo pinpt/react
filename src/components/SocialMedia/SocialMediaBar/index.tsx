@@ -5,9 +5,9 @@ export interface ISocialMediaBarProps {
 	children: any;
 }
 
-const Bar = (props: ISocialMediaBarProps) => {
+const SocialMediaBar = (props: ISocialMediaBarProps) => {
 	const { className = '', children } = props;
 	return <div className={`Pinpoint SocialMedia Bar ${className}`}>{children}</div>;
 };
 
-export default Bar;
+export default SocialMediaBar;

@@ -4,7 +4,15 @@ import Copyright from '../../Copyright';
 import Logo from '../../Logo';
 import Error from '../../Error';
 import Footer from '../../Footer';
-import { Bar, FacebookLink, InstagramLink, TwitterLink, GithubLink, LinkedInLink, RSSLink } from '../../SocialMedia';
+import {
+	SocialMediaBar,
+	FacebookLink,
+	InstagramLink,
+	TwitterLink,
+	GithubLink,
+	LinkedInLink,
+	RSSLink,
+} from '../../SocialMedia';
 import Subscribe from '../../Subscribe';
 const { default: readme } = require('../Error/README.md');
 
@@ -28,14 +36,14 @@ const IMAGE_URL =
 const footer = (
 	<Footer
 		social={
-			<Bar>
+			<SocialMediaBar>
 				<FacebookLink href="https://www.facebook.com/Pinpoint.Engineering" newTab />
 				<InstagramLink href="https://www.instagram.com/pinpoint_sw/" newTab />
 				<TwitterLink href="https://twitter.com/pinpoint_sw" newTab />
 				<GithubLink href="https://github.com/pinpt" newTab />
 				<LinkedInLink href="https://linkedin.com/company/pinpoint-software" newTab />
 				<RSSLink href="https://api.pinpoint.com.so/rss/PirxVTE94u3YmGNOySRY" newTab />
-			</Bar>
+			</SocialMediaBar>
 		}
 		copyright={<Copyright text="2021 by Pinpoint Software, Inc." logo={<Logo src={IMAGE_URL} />} />}
 		subscribe={<Subscribe href="https://pinpoint.com" />}

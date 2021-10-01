@@ -12,14 +12,14 @@ import Pinpoint from '../../Pinpoint';
 import { Document } from '../../Renderer';
 import { ISearchBarProps } from '../../Search/Bar';
 import Sidebar, { ISidebarProps } from '../../Sidebar';
-import { ISocialMediaBarProps } from '../../SocialMedia/Bar';
+import { ISocialMediaBarProps } from '../../SocialMedia/SocialMediaBar';
 import { ISubscribeProps } from '../../Subscribe';
 import Tags from '../../Tags';
 import { ITagBarProps } from '../../Tags/Bar';
 import { IThemeToggleProps } from '../../ThemeToggle';
 import Footer from '../Footer';
 import Header from '../Header';
-import { Bar, FacebookShare, TwitterShare, EmailShare, LinkedInShare } from '../../SocialMedia';
+import { SocialMediaBar, FacebookShare, TwitterShare, EmailShare, LinkedInShare } from '../../SocialMedia';
 
 import type { IContent, ISite } from '../../../lib/types';
 export interface IPrebuiltEntryProps {
@@ -124,7 +124,7 @@ const Entry = (props: IPrebuiltEntryProps) => {
 								}
 								sharing={
 									renderSocialSharing?.(site) ?? (
-										<Bar className="sharing">
+										<SocialMediaBar className="sharing">
 											<FacebookShare href={content.url} newTab />
 											<TwitterShare href={content.url} text={content.headline} newTab />
 											<LinkedInShare
@@ -137,7 +137,7 @@ const Entry = (props: IPrebuiltEntryProps) => {
 												subject={`${site.name} - ${content.title}`}
 												body={`${site.name} - ${content.title}\n\n${content.headline}\n\n${content.url}`}
 											/>
-										</Bar>
+										</SocialMediaBar>
 									)
 								}
 							/>

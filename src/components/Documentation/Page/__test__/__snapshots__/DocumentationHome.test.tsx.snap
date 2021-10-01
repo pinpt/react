@@ -1466,7 +1466,7 @@ exports[`Test no header 1`] = `
 </div>
 `;
 
-exports[`Test with search bar 1`] = `
+exports[`Test with search SocialMediaBar 1`] = `
 <div
   className="Pinpoint Documentation Page Home  "
 >

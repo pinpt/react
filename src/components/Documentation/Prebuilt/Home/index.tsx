@@ -9,7 +9,7 @@ import Header from '../../../Prebuilt/Header';
 import { Content } from '../../../Renderer';
 import Search from '../../../Search';
 import { ISearchBarProps } from '../../../Search/Bar';
-import { ISocialMediaBarProps } from '../../../SocialMedia/Bar';
+import { ISocialMediaBarProps } from '../../../SocialMedia/SocialMediaBar';
 import { ISubscribeProps } from '../../../Subscribe';
 import { IThemeToggleProps } from '../../../ThemeToggle';
 import Outline, { IOutlineProps } from '../../Outline';

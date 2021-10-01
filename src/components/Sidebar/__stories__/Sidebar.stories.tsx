@@ -5,7 +5,7 @@ import DateLabel from '../../DateLabel';
 import Author from '../../Author';
 import Tags from '../../Tags';
 import Clap from '../../Clap';
-import { Bar, FacebookShare, TwitterShare, EmailShare, LinkedInShare } from '../../SocialMedia';
+import { SocialMediaBar, FacebookShare, TwitterShare, EmailShare, LinkedInShare } from '../../SocialMedia';
 
 const { default: readme } = require('../README.md');
 
@@ -35,12 +35,12 @@ export const Full: React.VFC<{}> = () => {
 			tags={<Tags.Bar tags={['feature', 'improvement', 'mobile']} />}
 			clap={<Clap clapCount={count} handleClap={() => setCount((c) => c + 1)} />}
 			sharing={
-				<Bar>
+				<SocialMediaBar>
 					<FacebookShare href="https://www.facebook.com/Pinpoint.Engineering" newTab />
 					<TwitterShare href="https://twitter.com/pinpoint_sw" newTab />
 					<LinkedInShare href="https://linkedin.com/company/pinpoint-software" newTab />
 					<EmailShare recipient="hello@pinpoint.com" />
-				</Bar>
+				</SocialMediaBar>
 			}
 		/>
 	);
@@ -54,12 +54,12 @@ export const No_Date: React.VFC<{}> = () => {
 			tags={<Tags.Bar tags={['feature', 'improvement', 'mobile']} />}
 			clap={<Clap clapCount={count} handleClap={() => setCount((c) => c + 1)} />}
 			sharing={
-				<Bar>
+				<SocialMediaBar>
 					<FacebookShare href="https://www.facebook.com/Pinpoint.Engineering" newTab />
 					<TwitterShare href="https://twitter.com/pinpoint_sw" newTab />
 					<LinkedInShare href="https://linkedin.com/company/pinpoint-software" newTab />
 					<EmailShare recipient="hello@pinpoint.com" />
-				</Bar>
+				</SocialMediaBar>
 			}
 		/>
 	);

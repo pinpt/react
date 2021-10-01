@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
-import Bar from '../Bar';
+import SocialMediaBar from '../SocialMediaBar';
 import FacebookLink from '../Facebook/FacebookLink';
 import FacebookShare from '../Facebook/FacebookShare';
 import InstagramLink from '../Instagram/InstagramLink';
@@ -13,8 +13,8 @@ import RSSLink from '../RSS/RSSLink';
 const { default: readme } = require('../README.md');
 
 export default {
-	component: Bar,
-	title: 'Changelog Components/SocialMedia/Bar',
+	component: SocialMediaBar,
+	title: 'Changelog Components/SocialMedia/SocialMediaBar',
 	parameters: {
 		jest: ['SocialBar.test.tsx'],
 		docs: {
@@ -27,33 +27,33 @@ export default {
 } as Meta;
 
 export const All: React.VFC<{}> = () => (
-	<Bar>
+	<SocialMediaBar>
 		<FacebookLink href="https://www.facebook.com/Pinpoint.Engineering" newTab />
 		<InstagramLink href="https://www.instagram.com/pinpoint_sw/" newTab />
 		<TwitterLink href="https://twitter.com/pinpoint_sw" newTab />
 		<GithubLink href="https://github.com/pinpt" newTab />
 		<LinkedInLink href="https://linkedin.com/company/pinpoint-software" newTab />
 		<RSSLink href="https://api.pinpoint.com.so/rss/PirxVTE94u3YmGNOySRY" newTab />
-	</Bar>
+	</SocialMediaBar>
 );
 
 export const Short: React.VFC<{}> = () => (
-	<Bar>
+	<SocialMediaBar>
 		<TwitterLink href="https://twitter.com/pinpoint_sw" newTab />
 		<GithubLink href="https://github.com/pinpt" newTab />
-	</Bar>
+	</SocialMediaBar>
 );
 
 export const Sharing: React.VFC<{}> = () => (
-	<Bar>
+	<SocialMediaBar>
 		<FacebookShare href="https://pinpoint.com" newTab />
 		<TwitterShare href="https://pinpoint.com" newTab />
 		<LinkedInShare href="https://pinpoint.com" newTab />
-	</Bar>
+	</SocialMediaBar>
 );
 
 export const Single: React.VFC<{}> = () => (
-	<Bar>
+	<SocialMediaBar>
 		<GithubLink href="https://github.com/pinpt" newTab />
-	</Bar>
+	</SocialMediaBar>
 );

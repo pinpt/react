@@ -1,4 +1,4 @@
-export { default as Bar } from './Bar';
+export { default as SocialMediaBar } from './SocialMediaBar';
 export { default as FacebookLink } from './Facebook/FacebookLink';
 export { default as FacebookShare } from './Facebook/FacebookShare';
 export { default as InstagramLink } from './Instagram/InstagramLink';

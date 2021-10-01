@@ -7,7 +7,15 @@ import Header from '../../Header';
 import Latest from '../../Latest';
 import Logo from '../../Logo';
 import Recent from '../../Recent';
-import { Bar, FacebookLink, InstagramLink, TwitterLink, GithubLink, LinkedInLink, RSSLink } from '../../SocialMedia';
+import {
+	SocialMediaBar,
+	FacebookLink,
+	InstagramLink,
+	TwitterLink,
+	GithubLink,
+	LinkedInLink,
+	RSSLink,
+} from '../../SocialMedia';
 import Statistic from '../../Statistic';
 import Subscribe from '../../Subscribe';
 import Page from '../Dashboard';
@@ -87,14 +95,14 @@ test('Test full page', () => {
 			footer={
 				<Footer
 					social={
-						<Bar>
+						<SocialMediaBar>
 							<FacebookLink href="https://www.facebook.com/Pinpoint.Engineering" newTab />
 							<InstagramLink href="https://www.instagram.com/pinpoint_sw/" newTab />
 							<TwitterLink href="https://twitter.com/pinpoint_sw" newTab />
 							<GithubLink href="https://github.com/pinpt" newTab />
 							<LinkedInLink href="https://linkedin.com/company/pinpoint-software" newTab />
 							<RSSLink href="https://api.pinpoint.com.so/rss/PirxVTE94u3YmGNOySRY" newTab />
-						</Bar>
+						</SocialMediaBar>
 					}
 					copyright={<Copyright text="2021 by Pinpoint Software, Inc." logo={<Logo src={IMAGE_URL} />} />}
 					subscribe={<Subscribe href="https://pinpoint.com" />}
@@ -144,14 +152,14 @@ test('Test loading', () => {
 			footer={
 				<Footer
 					social={
-						<Bar>
+						<SocialMediaBar>
 							<FacebookLink href="https://www.facebook.com/Pinpoint.Engineering" newTab />
 							<InstagramLink href="https://www.instagram.com/pinpoint_sw/" newTab />
 							<TwitterLink href="https://twitter.com/pinpoint_sw" newTab />
 							<GithubLink href="https://github.com/pinpt" newTab />
 							<LinkedInLink href="https://linkedin.com/company/pinpoint-software" newTab />
 							<RSSLink href="https://api.pinpoint.com.so/rss/PirxVTE94u3YmGNOySRY" newTab />
-						</Bar>
+						</SocialMediaBar>
 					}
 					copyright={<Copyright text="2021 by Pinpoint Software, Inc." logo={<Logo src={IMAGE_URL} />} />}
 					subscribe={<Subscribe href="https://pinpoint.com" />}
@@ -225,14 +233,14 @@ test('Test no header', () => {
 			footer={
 				<Footer
 					social={
-						<Bar>
+						<SocialMediaBar>
 							<FacebookLink href="https://www.facebook.com/Pinpoint.Engineering" newTab />
 							<InstagramLink href="https://www.instagram.com/pinpoint_sw/" newTab />
 							<TwitterLink href="https://twitter.com/pinpoint_sw" newTab />
 							<GithubLink href="https://github.com/pinpt" newTab />
 							<LinkedInLink href="https://linkedin.com/company/pinpoint-software" newTab />
 							<RSSLink href="https://api.pinpoint.com.so/rss/PirxVTE94u3YmGNOySRY" newTab />
-						</Bar>
+						</SocialMediaBar>
 					}
 					copyright={<Copyright text="2021 by Pinpoint Software, Inc." logo={<Logo src={IMAGE_URL} />} />}
 					subscribe={<Subscribe href="https://pinpoint.com" />}
@@ -286,14 +294,14 @@ test('Test no latest', () => {
 			footer={
 				<Footer
 					social={
-						<Bar>
+						<SocialMediaBar>
 							<FacebookLink href="https://www.facebook.com/Pinpoint.Engineering" newTab />
 							<InstagramLink href="https://www.instagram.com/pinpoint_sw/" newTab />
 							<TwitterLink href="https://twitter.com/pinpoint_sw" newTab />
 							<GithubLink href="https://github.com/pinpt" newTab />
 							<LinkedInLink href="https://linkedin.com/company/pinpoint-software" newTab />
 							<RSSLink href="https://api.pinpoint.com.so/rss/PirxVTE94u3YmGNOySRY" newTab />
-						</Bar>
+						</SocialMediaBar>
 					}
 					copyright={<Copyright text="2021 by Pinpoint Software, Inc." logo={<Logo src={IMAGE_URL} />} />}
 					subscribe={<Subscribe href="https://pinpoint.com" />}
@@ -331,14 +339,14 @@ test('Test no recent', () => {
 			footer={
 				<Footer
 					social={
-						<Bar>
+						<SocialMediaBar>
 							<FacebookLink href="https://www.facebook.com/Pinpoint.Engineering" newTab />
 							<InstagramLink href="https://www.instagram.com/pinpoint_sw/" newTab />
 							<TwitterLink href="https://twitter.com/pinpoint_sw" newTab />
 							<GithubLink href="https://github.com/pinpt" newTab />
 							<LinkedInLink href="https://linkedin.com/company/pinpoint-software" newTab />
 							<RSSLink href="https://api.pinpoint.com.so/rss/PirxVTE94u3YmGNOySRY" newTab />
-						</Bar>
+						</SocialMediaBar>
 					}
 					copyright={<Copyright text="2021 by Pinpoint Software, Inc." logo={<Logo src={IMAGE_URL} />} />}
 					subscribe={<Subscribe href="https://pinpoint.com" />}
