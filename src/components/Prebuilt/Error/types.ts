@@ -4,7 +4,7 @@ import { ILogoProps } from '../../Logo';
 import { ISite } from '../../../lib';
 import { ISubscribeProps } from '../../Subscribe';
 import { ICopyrightProps } from '../../Copyright';
-import { ISocialMediaBarProps } from '../../SocialMedia/Bar';
+import { ISocialMediaBarProps } from '../../SocialMedia/SocialMediaBar';
 
 export interface IPrebuiltErrorProps {
 	handleLinkClick?: () => void;
