@@ -6,5 +6,8 @@ export interface ISocialMediaLinkProps {
 }
 
 export interface ISocialMediaShareProps extends ISocialMediaLinkProps {
+	/**
+	 * the url which will be shared
+	 */
 	href: string;
 }
