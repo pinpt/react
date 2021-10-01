@@ -17,7 +17,7 @@ import Search from '../../Search';
 import { ISearchBarProps } from '../../Search/Bar';
 import { IQueryProps } from '../../Search/Query';
 import { ISearchResultsProps } from '../../Search/Results';
-import { ISocialBarProps } from '../../Social/Bar';
+import { ISocialMediaBarProps } from '../../SocialMedia/Bar';
 import Statistic from '../../Statistic';
 import { IStatisticsBarProps } from '../../Statistic/Bar';
 import { ISubscribeProps } from '../../Subscribe';
@@ -40,7 +40,7 @@ export interface IPrebuiltSearchResultsProps {
 	renderCardStatistics?: (content: IContent) => ReactElement<IStatisticsBarProps>;
 	renderCardButton?: (content: IContent) => ReactElement<ICardReadButtonProps>;
 	renderFooter?: (site: ISite) => ReactElement<IFooterProps>;
-	renderSocial?: (site: ISite) => ReactElement<ISocialBarProps>;
+	renderSocial?: (site: ISite) => ReactElement<ISocialMediaBarProps>;
 	renderCopyright?: (site: ISite) => ReactElement<ICopyrightProps>;
 	renderLogo?: (site: ISite) => ReactElement<ILogoProps>;
 	renderTags?: (content: IContent) => ReactElement<ITagBarProps>;

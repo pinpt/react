@@ -12,8 +12,7 @@ import Pinpoint from '../../Pinpoint';
 import { Document } from '../../Renderer';
 import { ISearchBarProps } from '../../Search/Bar';
 import Sidebar, { ISidebarProps } from '../../Sidebar';
-import Social from '../../Social';
-import { ISocialBarProps } from '../../Social/Bar';
+import { ISocialMediaBarProps } from '../../SocialMedia/Bar';
 import { ISubscribeProps } from '../../Subscribe';
 import Tags from '../../Tags';
 import { ITagBarProps } from '../../Tags/Bar';
@@ -30,7 +29,7 @@ export interface IPrebuiltEntryProps {
 	renderSubscribe?: (site: ISite) => ReactElement<ISubscribeProps>;
 	renderThemeToggle?: (site: ISite) => ReactElement<IThemeToggleProps>;
 	renderFooter?: (site: ISite) => ReactElement<IFooterProps>;
-	renderSocial?: (site: ISite) => ReactElement<ISocialBarProps>;
+	renderSocial?: (site: ISite) => ReactElement<ISocialMediaBarProps>;
 	renderCopyright?: (site: ISite) => ReactElement<ICopyrightProps>;
 	renderLogo?: (site: ISite) => ReactElement<ILogoProps>;
 	renderSidebar?: (content: IContent) => ReactElement<ISidebarProps>;
@@ -40,7 +39,7 @@ export interface IPrebuiltEntryProps {
 	renderClap?: (content: IContent) => ReactElement<IClapProps>;
 	handleSelectHome?: () => void;
 	renderSearch?: (site: ISite) => ReactElement<ISearchBarProps>;
-	renderSocialSharing?: (site: ISite) => ReactElement<ISocialBarProps>;
+	renderSocialSharing?: (site: ISite) => ReactElement<ISocialMediaBarProps>;
 	renderPagination?: (site: ISite, next?: IContent, previous?: IContent) => void;
 	clapCount?: number;
 	sessionClapCount?: number;

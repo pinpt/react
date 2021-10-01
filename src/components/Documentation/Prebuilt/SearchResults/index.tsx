@@ -9,7 +9,7 @@ import { ISearchBarProps } from '../../../Search/Bar';
 import { ISubscribeProps } from '../../../Subscribe';
 import { IThemeToggleProps } from '../../../ThemeToggle';
 import Footer, { IPrebuiltFooterProps } from '../../../Prebuilt/Footer';
-import { ISocialBarProps } from '../../../Social/Bar';
+import { ISocialMediaBarProps } from '../../../SocialMedia/Bar';
 import { ICopyrightProps } from '../../../Copyright';
 import Title from '../../Title';
 import { GoBackWithArrow } from '../../../Pagination';
@@ -34,7 +34,7 @@ export interface IPrebuiltDocumentationSearchResultsProps {
 	handleSearch?: (value: string) => void;
 	renderFooter?: (site: ISite) => ReactElement<IPrebuiltFooterProps>;
 	renderCopyright?: (site: ISite) => ReactElement<ICopyrightProps>;
-	renderSocial?: (site: ISite) => ReactElement<ISocialBarProps>;
+	renderSocial?: (site: ISite) => ReactElement<ISocialMediaBarProps>;
 	renderEntry?: (entry: IContent, site: ISite) => ReactElement<IDocumentationCardProps>;
 	setCurrentEntry: (entry: IContent) => void;
 	renderBackButton?: (site: ISite) => ReactElement;

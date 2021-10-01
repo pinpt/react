@@ -2,6 +2,7 @@ export * from './lib';
 export * from './components/Prebuilt';
 export * from './components/Page';
 export * from './components/Documentation';
+export * from './components/SocialMedia';
 export { Content, Document, emptyDoc } from './components/Renderer';
 export { default as Clap } from './components/Clap';
 export { default as Statistic } from './components/Statistic';

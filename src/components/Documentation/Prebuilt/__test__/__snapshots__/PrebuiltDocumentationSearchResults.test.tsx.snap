@@ -333,11 +333,11 @@ populated with your recently completed...
             className="right"
           >
             <div
-              className="Pinpoint Social Bar Prebuilt"
+              className="Pinpoint SocialMedia Bar Prebuilt"
             >
               <a
                 aria-label="Facebook"
-                className="Pinpoint Internal Link Pinpoint Social Item Facebook  Prebuilt"
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem FacebookLink Prebuilt"
                 href="https://www.facebook.com/Pinpoint.Engineering"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -362,7 +362,7 @@ populated with your recently completed...
               </a>
               <a
                 aria-label="Instagram"
-                className="Pinpoint Internal Link Pinpoint Social Item Instagram  Prebuilt"
+                className="Pinpoint Internal Link Pinpoint Social LinkItem InstagramLink Prebuilt"
                 href="https://www.instagram.com/pinpoint_sw/"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -387,7 +387,7 @@ populated with your recently completed...
               </a>
               <a
                 aria-label="Twitter"
-                className="Pinpoint Internal Link Pinpoint Social Item Twitter  Prebuilt"
+                className="Pinpoint Internal Link Pinpoint SocialMedia Item TwitterLink Prebuilt"
                 href="https://twitter.com/pinpoint_sw"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -411,12 +411,12 @@ populated with your recently completed...
                 </svg>
               </a>
               <a
-                aria-label="GitHub"
-                className="Pinpoint Internal Link Pinpoint Social Item Github  Prebuilt"
+                aria-label="Github"
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem GithubLink Prebuilt"
                 href="https://github.com/pinpt"
                 rel="noopener noreferrer"
                 target="_blank"
-                title="GitHub"
+                title="Github"
               >
                 <svg
                   aria-hidden="true"
@@ -437,7 +437,7 @@ populated with your recently completed...
               </a>
               <a
                 aria-label="LinkedIn"
-                className="Pinpoint Internal Link Pinpoint Social Item LinkedIn  Prebuilt"
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem LinkedInLink Prebuilt"
                 href="https://linkedin.com/company/pinpoint-software"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -462,7 +462,7 @@ populated with your recently completed...
               </a>
               <a
                 aria-label="RSS Feed"
-                className="Pinpoint Internal Link Pinpoint Social Item RSS Prebuilt"
+                className="Pinpoint Internal Link Pinpoint Social LinkItem RSSLink Prebuilt"
                 href="/rss"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -875,11 +875,11 @@ populated with your recently completed...
             className="right"
           >
             <div
-              className="Pinpoint Social Bar Prebuilt"
+              className="Pinpoint SocialMedia Bar Prebuilt"
             >
               <a
                 aria-label="Facebook"
-                className="Pinpoint Internal Link Pinpoint Social Item Facebook  Prebuilt"
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem FacebookLink Prebuilt"
                 href="https://www.facebook.com/Pinpoint.Engineering"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -904,7 +904,7 @@ populated with your recently completed...
               </a>
               <a
                 aria-label="Instagram"
-                className="Pinpoint Internal Link Pinpoint Social Item Instagram  Prebuilt"
+                className="Pinpoint Internal Link Pinpoint Social LinkItem InstagramLink Prebuilt"
                 href="https://www.instagram.com/pinpoint_sw/"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -929,7 +929,7 @@ populated with your recently completed...
               </a>
               <a
                 aria-label="Twitter"
-                className="Pinpoint Internal Link Pinpoint Social Item Twitter  Prebuilt"
+                className="Pinpoint Internal Link Pinpoint SocialMedia Item TwitterLink Prebuilt"
                 href="https://twitter.com/pinpoint_sw"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -953,12 +953,12 @@ populated with your recently completed...
                 </svg>
               </a>
               <a
-                aria-label="GitHub"
-                className="Pinpoint Internal Link Pinpoint Social Item Github  Prebuilt"
+                aria-label="Github"
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem GithubLink Prebuilt"
                 href="https://github.com/pinpt"
                 rel="noopener noreferrer"
                 target="_blank"
-                title="GitHub"
+                title="Github"
               >
                 <svg
                   aria-hidden="true"
@@ -979,7 +979,7 @@ populated with your recently completed...
               </a>
               <a
                 aria-label="LinkedIn"
-                className="Pinpoint Internal Link Pinpoint Social Item LinkedIn  Prebuilt"
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem LinkedInLink Prebuilt"
                 href="https://linkedin.com/company/pinpoint-software"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -1004,7 +1004,7 @@ populated with your recently completed...
               </a>
               <a
                 aria-label="RSS Feed"
-                className="Pinpoint Internal Link Pinpoint Social Item RSS Prebuilt"
+                className="Pinpoint Internal Link Pinpoint Social LinkItem RSSLink Prebuilt"
                 href="/rss"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -1325,11 +1325,11 @@ exports[`Test empty state 1`] = `
             className="right"
           >
             <div
-              className="Pinpoint Social Bar Prebuilt"
+              className="Pinpoint SocialMedia Bar Prebuilt"
             >
               <a
                 aria-label="Facebook"
-                className="Pinpoint Internal Link Pinpoint Social Item Facebook  Prebuilt"
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem FacebookLink Prebuilt"
                 href="https://www.facebook.com/Pinpoint.Engineering"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -1354,7 +1354,7 @@ exports[`Test empty state 1`] = `
               </a>
               <a
                 aria-label="Instagram"
-                className="Pinpoint Internal Link Pinpoint Social Item Instagram  Prebuilt"
+                className="Pinpoint Internal Link Pinpoint Social LinkItem InstagramLink Prebuilt"
                 href="https://www.instagram.com/pinpoint_sw/"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -1379,7 +1379,7 @@ exports[`Test empty state 1`] = `
               </a>
               <a
                 aria-label="Twitter"
-                className="Pinpoint Internal Link Pinpoint Social Item Twitter  Prebuilt"
+                className="Pinpoint Internal Link Pinpoint SocialMedia Item TwitterLink Prebuilt"
                 href="https://twitter.com/pinpoint_sw"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -1403,12 +1403,12 @@ exports[`Test empty state 1`] = `
                 </svg>
               </a>
               <a
-                aria-label="GitHub"
-                className="Pinpoint Internal Link Pinpoint Social Item Github  Prebuilt"
+                aria-label="Github"
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem GithubLink Prebuilt"
                 href="https://github.com/pinpt"
                 rel="noopener noreferrer"
                 target="_blank"
-                title="GitHub"
+                title="Github"
               >
                 <svg
                   aria-hidden="true"
@@ -1429,7 +1429,7 @@ exports[`Test empty state 1`] = `
               </a>
               <a
                 aria-label="LinkedIn"
-                className="Pinpoint Internal Link Pinpoint Social Item LinkedIn  Prebuilt"
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem LinkedInLink Prebuilt"
                 href="https://linkedin.com/company/pinpoint-software"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -1454,7 +1454,7 @@ exports[`Test empty state 1`] = `
               </a>
               <a
                 aria-label="RSS Feed"
-                className="Pinpoint Internal Link Pinpoint Social Item RSS Prebuilt"
+                className="Pinpoint Internal Link Pinpoint Social LinkItem RSSLink Prebuilt"
                 href="/rss"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -1694,11 +1694,11 @@ exports[`Test loading state 1`] = `
             className="right"
           >
             <div
-              className="Pinpoint Social Bar Prebuilt"
+              className="Pinpoint SocialMedia Bar Prebuilt"
             >
               <a
                 aria-label="Facebook"
-                className="Pinpoint Internal Link Pinpoint Social Item Facebook  Prebuilt"
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem FacebookLink Prebuilt"
                 href="https://www.facebook.com/Pinpoint.Engineering"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -1723,7 +1723,7 @@ exports[`Test loading state 1`] = `
               </a>
               <a
                 aria-label="Instagram"
-                className="Pinpoint Internal Link Pinpoint Social Item Instagram  Prebuilt"
+                className="Pinpoint Internal Link Pinpoint Social LinkItem InstagramLink Prebuilt"
                 href="https://www.instagram.com/pinpoint_sw/"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -1748,7 +1748,7 @@ exports[`Test loading state 1`] = `
               </a>
               <a
                 aria-label="Twitter"
-                className="Pinpoint Internal Link Pinpoint Social Item Twitter  Prebuilt"
+                className="Pinpoint Internal Link Pinpoint SocialMedia Item TwitterLink Prebuilt"
                 href="https://twitter.com/pinpoint_sw"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -1772,12 +1772,12 @@ exports[`Test loading state 1`] = `
                 </svg>
               </a>
               <a
-                aria-label="GitHub"
-                className="Pinpoint Internal Link Pinpoint Social Item Github  Prebuilt"
+                aria-label="Github"
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem GithubLink Prebuilt"
                 href="https://github.com/pinpt"
                 rel="noopener noreferrer"
                 target="_blank"
-                title="GitHub"
+                title="Github"
               >
                 <svg
                   aria-hidden="true"
@@ -1798,7 +1798,7 @@ exports[`Test loading state 1`] = `
               </a>
               <a
                 aria-label="LinkedIn"
-                className="Pinpoint Internal Link Pinpoint Social Item LinkedIn  Prebuilt"
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem LinkedInLink Prebuilt"
                 href="https://linkedin.com/company/pinpoint-software"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -1823,7 +1823,7 @@ exports[`Test loading state 1`] = `
               </a>
               <a
                 aria-label="RSS Feed"
-                className="Pinpoint Internal Link Pinpoint Social Item RSS Prebuilt"
+                className="Pinpoint Internal Link Pinpoint Social LinkItem RSSLink Prebuilt"
                 href="/rss"
                 rel="noopener noreferrer"
                 target="_blank"

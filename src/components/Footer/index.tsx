@@ -1,13 +1,13 @@
 import { ReactElement } from 'react';
 import { ICopyrightProps } from '../Copyright';
 import PoweredByPinpoint from '../PoweredByPinpoint';
-import { ISocialBarProps } from '../Social/Bar';
+import { ISocialMediaBarProps } from '../SocialMedia/Bar';
 import { ISubscribeProps } from '../Subscribe';
 import React from 'react';
 export interface IFooterProps {
 	className?: string;
 	siteId?: string;
-	social?: ReactElement<ISocialBarProps>;
+	social?: ReactElement<ISocialMediaBarProps>;
 	copyright?: ReactElement<ICopyrightProps>;
 	subscribe?: ReactElement<ISubscribeProps>;
 }

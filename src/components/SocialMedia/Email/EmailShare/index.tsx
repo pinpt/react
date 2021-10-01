@@ -5,16 +5,17 @@ import { ISocialMediaShareProps } from '../../types';
 interface EmailShareProps extends Omit<ISocialMediaShareProps, 'href'> {
 	subject?: string;
 	body?: string;
+	recipient?: string;
 }
 
 const EmailShare = (props: EmailShareProps) => {
-	const { className = '', subject = '', body = '', ...rest } = props;
+	const { className = '', subject = '', body = '', recipient = '', ...rest } = props;
 
 	return (
 		<ActionLink
 			className={`Pinpoint SocialMedia ShareItem EmailShare ${className}`}
 			title="Email"
-			href={`mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`}
+			href={`mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`}
 			{...rest}
 		>
 			<svg
