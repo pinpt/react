@@ -292,12 +292,12 @@ exports[`Test custom className 1`] = `
               </div>
             </div>
             <div
-              className="Pinpoint Social Bar sharing"
+              className="Pinpoint SocialMedia Bar sharing"
             >
               <a
                 aria-label="Facebook"
-                className="Pinpoint Internal Link Pinpoint Social Item Facebook sharing "
-                href="https://facebook.com/sharer/sharer.php?u=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem FacebookShare "
+                href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_facebook"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Facebook"
@@ -321,8 +321,8 @@ exports[`Test custom className 1`] = `
               </a>
               <a
                 aria-label="Twitter"
-                className="Pinpoint Internal Link Pinpoint Social Item Twitter sharing "
-                href="https://twitter.com/intent/tweet/?text=Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.&url=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem TwitterShare "
+                href="https://twitter.com/intent/tweet/?text=Linked%20content%20blocks%20allow%20you%20to%20populate%20your%20content%20from%20the%20recently%20completed%20work.%20Annotations%20show%20you%20which%20issues%20and%20pull%20requests%20are%20linked.&url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_twitter"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Twitter"
@@ -346,8 +346,8 @@ exports[`Test custom className 1`] = `
               </a>
               <a
                 aria-label="LinkedIn"
-                className="Pinpoint Internal Link Pinpoint Social Item LinkedIn sharing "
-                href="https://www.linkedin.com/shareArticle?mini=true&url=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks&title=Pinpoint - Linked Content Blocks&summary=Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked."
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem LinkedInShare "
+                href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_facebook&mini=true&summary=Linked+content+blocks+allow+you+to+populate+your+content+from+the+recently+completed+work.+Annotations+show+you+which+issues+and+pull+requests+are+linked.&title=Pinpoint+-+Linked+Content+Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="LinkedIn"
@@ -371,8 +371,8 @@ exports[`Test custom className 1`] = `
               </a>
               <a
                 aria-label="Email"
-                className="Pinpoint Internal Link Pinpoint Social Item Email sharing "
-                href="mailto:?subject=Pinpoint - Linked Content Blocks&body=Pinpoint - Linked Content Blocks%0D%0ALinked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.%0D%0Ahttps://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem EmailShare "
+                href="mailto:?subject=Pinpoint%20-%20Linked%20Content%20Blocks&body=Pinpoint%20-%20Linked%20Content%20Blocks%0A%0ALinked%20content%20blocks%20allow%20you%20to%20populate%20your%20content%20from%20the%20recently%20completed%20work.%20Annotations%20show%20you%20which%20issues%20and%20pull%20requests%20are%20linked.%0A%0Ahttps%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks"
                 title="Email"
               >
                 <svg
@@ -714,12 +714,12 @@ exports[`Test custom className 1`] = `
               </div>
             </div>
             <div
-              className="Pinpoint Social Bar sharing"
+              className="Pinpoint SocialMedia Bar sharing"
             >
               <a
                 aria-label="Facebook"
-                className="Pinpoint Internal Link Pinpoint Social Item Facebook sharing "
-                href="https://facebook.com/sharer/sharer.php?u=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem FacebookShare "
+                href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_facebook"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Facebook"
@@ -743,8 +743,8 @@ exports[`Test custom className 1`] = `
               </a>
               <a
                 aria-label="Twitter"
-                className="Pinpoint Internal Link Pinpoint Social Item Twitter sharing "
-                href="https://twitter.com/intent/tweet/?text=Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.&url=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem TwitterShare "
+                href="https://twitter.com/intent/tweet/?text=Linked%20content%20blocks%20allow%20you%20to%20populate%20your%20content%20from%20the%20recently%20completed%20work.%20Annotations%20show%20you%20which%20issues%20and%20pull%20requests%20are%20linked.&url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_twitter"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Twitter"
@@ -768,8 +768,8 @@ exports[`Test custom className 1`] = `
               </a>
               <a
                 aria-label="LinkedIn"
-                className="Pinpoint Internal Link Pinpoint Social Item LinkedIn sharing "
-                href="https://www.linkedin.com/shareArticle?mini=true&url=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks&title=Pinpoint - Linked Content Blocks&summary=Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked."
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem LinkedInShare "
+                href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_facebook&mini=true&summary=Linked+content+blocks+allow+you+to+populate+your+content+from+the+recently+completed+work.+Annotations+show+you+which+issues+and+pull+requests+are+linked.&title=Pinpoint+-+Linked+Content+Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="LinkedIn"
@@ -793,8 +793,8 @@ exports[`Test custom className 1`] = `
               </a>
               <a
                 aria-label="Email"
-                className="Pinpoint Internal Link Pinpoint Social Item Email sharing "
-                href="mailto:?subject=Pinpoint - Linked Content Blocks&body=Pinpoint - Linked Content Blocks%0D%0ALinked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.%0D%0Ahttps://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem EmailShare "
+                href="mailto:?subject=Pinpoint%20-%20Linked%20Content%20Blocks&body=Pinpoint%20-%20Linked%20Content%20Blocks%0A%0ALinked%20content%20blocks%20allow%20you%20to%20populate%20your%20content%20from%20the%20recently%20completed%20work.%20Annotations%20show%20you%20which%20issues%20and%20pull%20requests%20are%20linked.%0A%0Ahttps%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks"
                 title="Email"
               >
                 <svg
@@ -892,11 +892,11 @@ exports[`Test custom className 1`] = `
               </span>
             </a>
             <div
-              className="Pinpoint Social Bar Prebuilt"
+              className="Pinpoint SocialMedia Bar Prebuilt"
             >
               <a
                 aria-label="Facebook"
-                className="Pinpoint Internal Link Pinpoint Social Item Facebook  Prebuilt"
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem FacebookLink Prebuilt"
                 href="https://www.facebook.com/Pinpoint.Engineering"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -921,7 +921,7 @@ exports[`Test custom className 1`] = `
               </a>
               <a
                 aria-label="Instagram"
-                className="Pinpoint Internal Link Pinpoint Social Item Instagram  Prebuilt"
+                className="Pinpoint Internal Link Pinpoint Social LinkItem InstagramLink Prebuilt"
                 href="https://www.instagram.com/pinpoint_sw/"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -946,7 +946,7 @@ exports[`Test custom className 1`] = `
               </a>
               <a
                 aria-label="Twitter"
-                className="Pinpoint Internal Link Pinpoint Social Item Twitter  Prebuilt"
+                className="Pinpoint Internal Link Pinpoint SocialMedia Item TwitterLink Prebuilt"
                 href="https://twitter.com/pinpoint_sw"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -970,12 +970,12 @@ exports[`Test custom className 1`] = `
                 </svg>
               </a>
               <a
-                aria-label="GitHub"
-                className="Pinpoint Internal Link Pinpoint Social Item Github  Prebuilt"
+                aria-label="Github"
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem GithubLink Prebuilt"
                 href="https://github.com/pinpt"
                 rel="noopener noreferrer"
                 target="_blank"
-                title="GitHub"
+                title="Github"
               >
                 <svg
                   aria-hidden="true"
@@ -996,7 +996,7 @@ exports[`Test custom className 1`] = `
               </a>
               <a
                 aria-label="LinkedIn"
-                className="Pinpoint Internal Link Pinpoint Social Item LinkedIn  Prebuilt"
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem LinkedInLink Prebuilt"
                 href="https://linkedin.com/company/pinpoint-software"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -1021,7 +1021,7 @@ exports[`Test custom className 1`] = `
               </a>
               <a
                 aria-label="RSS Feed"
-                className="Pinpoint Internal Link Pinpoint Social Item RSS Prebuilt"
+                className="Pinpoint Internal Link Pinpoint Social LinkItem RSSLink Prebuilt"
                 href="/rss"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -1395,12 +1395,12 @@ exports[`Test default state 1`] = `
               </div>
             </div>
             <div
-              className="Pinpoint Social Bar sharing"
+              className="Pinpoint SocialMedia Bar sharing"
             >
               <a
                 aria-label="Facebook"
-                className="Pinpoint Internal Link Pinpoint Social Item Facebook sharing "
-                href="https://facebook.com/sharer/sharer.php?u=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem FacebookShare "
+                href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Facebook"
@@ -1424,8 +1424,8 @@ exports[`Test default state 1`] = `
               </a>
               <a
                 aria-label="Twitter"
-                className="Pinpoint Internal Link Pinpoint Social Item Twitter sharing "
-                href="https://twitter.com/intent/tweet/?text=Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.&url=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem TwitterShare "
+                href="https://twitter.com/intent/tweet/?text=Linked%20content%20blocks%20allow%20you%20to%20populate%20your%20content%20from%20the%20recently%20completed%20work.%20Annotations%20show%20you%20which%20issues%20and%20pull%20requests%20are%20linked.&url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Twitter"
@@ -1449,8 +1449,8 @@ exports[`Test default state 1`] = `
               </a>
               <a
                 aria-label="LinkedIn"
-                className="Pinpoint Internal Link Pinpoint Social Item LinkedIn sharing "
-                href="https://www.linkedin.com/shareArticle?mini=true&url=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks&title=Pinpoint - Linked Content Blocks&summary=Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked."
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem LinkedInShare "
+                href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks&mini=true&summary=Linked+content+blocks+allow+you+to+populate+your+content+from+the+recently+completed+work.+Annotations+show+you+which+issues+and+pull+requests+are+linked.&title=Pinpoint+-+Linked+Content+Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="LinkedIn"
@@ -1474,8 +1474,8 @@ exports[`Test default state 1`] = `
               </a>
               <a
                 aria-label="Email"
-                className="Pinpoint Internal Link Pinpoint Social Item Email sharing "
-                href="mailto:?subject=Pinpoint - Linked Content Blocks&body=Pinpoint - Linked Content Blocks%0D%0ALinked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.%0D%0Ahttps://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem EmailShare "
+                href="mailto:?subject=Pinpoint%20-%20Linked%20Content%20Blocks&body=Pinpoint%20-%20Linked%20Content%20Blocks%0A%0ALinked%20content%20blocks%20allow%20you%20to%20populate%20your%20content%20from%20the%20recently%20completed%20work.%20Annotations%20show%20you%20which%20issues%20and%20pull%20requests%20are%20linked.%0A%0Ahttps%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks"
                 title="Email"
               >
                 <svg
@@ -1809,12 +1809,12 @@ exports[`Test default state 1`] = `
               </div>
             </div>
             <div
-              className="Pinpoint Social Bar sharing"
+              className="Pinpoint SocialMedia Bar sharing"
             >
               <a
                 aria-label="Facebook"
-                className="Pinpoint Internal Link Pinpoint Social Item Facebook sharing "
-                href="https://facebook.com/sharer/sharer.php?u=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem FacebookShare "
+                href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Facebook"
@@ -1838,8 +1838,8 @@ exports[`Test default state 1`] = `
               </a>
               <a
                 aria-label="Twitter"
-                className="Pinpoint Internal Link Pinpoint Social Item Twitter sharing "
-                href="https://twitter.com/intent/tweet/?text=Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.&url=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem TwitterShare "
+                href="https://twitter.com/intent/tweet/?text=Linked%20content%20blocks%20allow%20you%20to%20populate%20your%20content%20from%20the%20recently%20completed%20work.%20Annotations%20show%20you%20which%20issues%20and%20pull%20requests%20are%20linked.&url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Twitter"
@@ -1863,8 +1863,8 @@ exports[`Test default state 1`] = `
               </a>
               <a
                 aria-label="LinkedIn"
-                className="Pinpoint Internal Link Pinpoint Social Item LinkedIn sharing "
-                href="https://www.linkedin.com/shareArticle?mini=true&url=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks&title=Pinpoint - Linked Content Blocks&summary=Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked."
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem LinkedInShare "
+                href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks&mini=true&summary=Linked+content+blocks+allow+you+to+populate+your+content+from+the+recently+completed+work.+Annotations+show+you+which+issues+and+pull+requests+are+linked.&title=Pinpoint+-+Linked+Content+Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="LinkedIn"
@@ -1888,8 +1888,8 @@ exports[`Test default state 1`] = `
               </a>
               <a
                 aria-label="Email"
-                className="Pinpoint Internal Link Pinpoint Social Item Email sharing "
-                href="mailto:?subject=Pinpoint - Linked Content Blocks&body=Pinpoint - Linked Content Blocks%0D%0ALinked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.%0D%0Ahttps://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem EmailShare "
+                href="mailto:?subject=Pinpoint%20-%20Linked%20Content%20Blocks&body=Pinpoint%20-%20Linked%20Content%20Blocks%0A%0ALinked%20content%20blocks%20allow%20you%20to%20populate%20your%20content%20from%20the%20recently%20completed%20work.%20Annotations%20show%20you%20which%20issues%20and%20pull%20requests%20are%20linked.%0A%0Ahttps%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks"
                 title="Email"
               >
                 <svg
@@ -1985,11 +1985,11 @@ exports[`Test default state 1`] = `
               </span>
             </a>
             <div
-              className="Pinpoint Social Bar Prebuilt"
+              className="Pinpoint SocialMedia Bar Prebuilt"
             >
               <a
                 aria-label="Facebook"
-                className="Pinpoint Internal Link Pinpoint Social Item Facebook  Prebuilt"
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem FacebookLink Prebuilt"
                 href="https://www.facebook.com/Pinpoint.Engineering"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -2014,7 +2014,7 @@ exports[`Test default state 1`] = `
               </a>
               <a
                 aria-label="Instagram"
-                className="Pinpoint Internal Link Pinpoint Social Item Instagram  Prebuilt"
+                className="Pinpoint Internal Link Pinpoint Social LinkItem InstagramLink Prebuilt"
                 href="https://www.instagram.com/pinpoint_sw/"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -2039,7 +2039,7 @@ exports[`Test default state 1`] = `
               </a>
               <a
                 aria-label="Twitter"
-                className="Pinpoint Internal Link Pinpoint Social Item Twitter  Prebuilt"
+                className="Pinpoint Internal Link Pinpoint SocialMedia Item TwitterLink Prebuilt"
                 href="https://twitter.com/pinpoint_sw"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -2063,12 +2063,12 @@ exports[`Test default state 1`] = `
                 </svg>
               </a>
               <a
-                aria-label="GitHub"
-                className="Pinpoint Internal Link Pinpoint Social Item Github  Prebuilt"
+                aria-label="Github"
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem GithubLink Prebuilt"
                 href="https://github.com/pinpt"
                 rel="noopener noreferrer"
                 target="_blank"
-                title="GitHub"
+                title="Github"
               >
                 <svg
                   aria-hidden="true"
@@ -2089,7 +2089,7 @@ exports[`Test default state 1`] = `
               </a>
               <a
                 aria-label="LinkedIn"
-                className="Pinpoint Internal Link Pinpoint Social Item LinkedIn  Prebuilt"
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem LinkedInLink Prebuilt"
                 href="https://linkedin.com/company/pinpoint-software"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -2114,7 +2114,7 @@ exports[`Test default state 1`] = `
               </a>
               <a
                 aria-label="RSS Feed"
-                className="Pinpoint Internal Link Pinpoint Social Item RSS Prebuilt"
+                className="Pinpoint Internal Link Pinpoint Social LinkItem RSSLink Prebuilt"
                 href="/rss"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -2381,12 +2381,12 @@ exports[`Test no author 1`] = `
               </div>
             </div>
             <div
-              className="Pinpoint Social Bar sharing"
+              className="Pinpoint SocialMedia Bar sharing"
             >
               <a
                 aria-label="Facebook"
-                className="Pinpoint Internal Link Pinpoint Social Item Facebook sharing "
-                href="https://facebook.com/sharer/sharer.php?u=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem FacebookShare "
+                href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Facebook"
@@ -2410,8 +2410,8 @@ exports[`Test no author 1`] = `
               </a>
               <a
                 aria-label="Twitter"
-                className="Pinpoint Internal Link Pinpoint Social Item Twitter sharing "
-                href="https://twitter.com/intent/tweet/?text=Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.&url=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem TwitterShare "
+                href="https://twitter.com/intent/tweet/?text=Linked%20content%20blocks%20allow%20you%20to%20populate%20your%20content%20from%20the%20recently%20completed%20work.%20Annotations%20show%20you%20which%20issues%20and%20pull%20requests%20are%20linked.&url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Twitter"
@@ -2435,8 +2435,8 @@ exports[`Test no author 1`] = `
               </a>
               <a
                 aria-label="LinkedIn"
-                className="Pinpoint Internal Link Pinpoint Social Item LinkedIn sharing "
-                href="https://www.linkedin.com/shareArticle?mini=true&url=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks&title=Pinpoint - Linked Content Blocks&summary=Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked."
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem LinkedInShare "
+                href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks&mini=true&summary=Linked+content+blocks+allow+you+to+populate+your+content+from+the+recently+completed+work.+Annotations+show+you+which+issues+and+pull+requests+are+linked.&title=Pinpoint+-+Linked+Content+Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="LinkedIn"
@@ -2460,8 +2460,8 @@ exports[`Test no author 1`] = `
               </a>
               <a
                 aria-label="Email"
-                className="Pinpoint Internal Link Pinpoint Social Item Email sharing "
-                href="mailto:?subject=Pinpoint - Linked Content Blocks&body=Pinpoint - Linked Content Blocks%0D%0ALinked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.%0D%0Ahttps://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem EmailShare "
+                href="mailto:?subject=Pinpoint%20-%20Linked%20Content%20Blocks&body=Pinpoint%20-%20Linked%20Content%20Blocks%0A%0ALinked%20content%20blocks%20allow%20you%20to%20populate%20your%20content%20from%20the%20recently%20completed%20work.%20Annotations%20show%20you%20which%20issues%20and%20pull%20requests%20are%20linked.%0A%0Ahttps%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks"
                 title="Email"
               >
                 <svg
@@ -2688,12 +2688,12 @@ exports[`Test no author 1`] = `
               </div>
             </div>
             <div
-              className="Pinpoint Social Bar sharing"
+              className="Pinpoint SocialMedia Bar sharing"
             >
               <a
                 aria-label="Facebook"
-                className="Pinpoint Internal Link Pinpoint Social Item Facebook sharing "
-                href="https://facebook.com/sharer/sharer.php?u=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem FacebookShare "
+                href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Facebook"
@@ -2717,8 +2717,8 @@ exports[`Test no author 1`] = `
               </a>
               <a
                 aria-label="Twitter"
-                className="Pinpoint Internal Link Pinpoint Social Item Twitter sharing "
-                href="https://twitter.com/intent/tweet/?text=Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.&url=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem TwitterShare "
+                href="https://twitter.com/intent/tweet/?text=Linked%20content%20blocks%20allow%20you%20to%20populate%20your%20content%20from%20the%20recently%20completed%20work.%20Annotations%20show%20you%20which%20issues%20and%20pull%20requests%20are%20linked.&url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Twitter"
@@ -2742,8 +2742,8 @@ exports[`Test no author 1`] = `
               </a>
               <a
                 aria-label="LinkedIn"
-                className="Pinpoint Internal Link Pinpoint Social Item LinkedIn sharing "
-                href="https://www.linkedin.com/shareArticle?mini=true&url=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks&title=Pinpoint - Linked Content Blocks&summary=Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked."
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem LinkedInShare "
+                href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks&mini=true&summary=Linked+content+blocks+allow+you+to+populate+your+content+from+the+recently+completed+work.+Annotations+show+you+which+issues+and+pull+requests+are+linked.&title=Pinpoint+-+Linked+Content+Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="LinkedIn"
@@ -2767,8 +2767,8 @@ exports[`Test no author 1`] = `
               </a>
               <a
                 aria-label="Email"
-                className="Pinpoint Internal Link Pinpoint Social Item Email sharing "
-                href="mailto:?subject=Pinpoint - Linked Content Blocks&body=Pinpoint - Linked Content Blocks%0D%0ALinked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.%0D%0Ahttps://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem EmailShare "
+                href="mailto:?subject=Pinpoint%20-%20Linked%20Content%20Blocks&body=Pinpoint%20-%20Linked%20Content%20Blocks%0A%0ALinked%20content%20blocks%20allow%20you%20to%20populate%20your%20content%20from%20the%20recently%20completed%20work.%20Annotations%20show%20you%20which%20issues%20and%20pull%20requests%20are%20linked.%0A%0Ahttps%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks"
                 title="Email"
               >
                 <svg
@@ -2864,11 +2864,11 @@ exports[`Test no author 1`] = `
               </span>
             </a>
             <div
-              className="Pinpoint Social Bar Prebuilt"
+              className="Pinpoint SocialMedia Bar Prebuilt"
             >
               <a
                 aria-label="Facebook"
-                className="Pinpoint Internal Link Pinpoint Social Item Facebook  Prebuilt"
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem FacebookLink Prebuilt"
                 href="https://www.facebook.com/Pinpoint.Engineering"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -2893,7 +2893,7 @@ exports[`Test no author 1`] = `
               </a>
               <a
                 aria-label="Instagram"
-                className="Pinpoint Internal Link Pinpoint Social Item Instagram  Prebuilt"
+                className="Pinpoint Internal Link Pinpoint Social LinkItem InstagramLink Prebuilt"
                 href="https://www.instagram.com/pinpoint_sw/"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -2918,7 +2918,7 @@ exports[`Test no author 1`] = `
               </a>
               <a
                 aria-label="Twitter"
-                className="Pinpoint Internal Link Pinpoint Social Item Twitter  Prebuilt"
+                className="Pinpoint Internal Link Pinpoint SocialMedia Item TwitterLink Prebuilt"
                 href="https://twitter.com/pinpoint_sw"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -2942,12 +2942,12 @@ exports[`Test no author 1`] = `
                 </svg>
               </a>
               <a
-                aria-label="GitHub"
-                className="Pinpoint Internal Link Pinpoint Social Item Github  Prebuilt"
+                aria-label="Github"
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem GithubLink Prebuilt"
                 href="https://github.com/pinpt"
                 rel="noopener noreferrer"
                 target="_blank"
-                title="GitHub"
+                title="Github"
               >
                 <svg
                   aria-hidden="true"
@@ -2968,7 +2968,7 @@ exports[`Test no author 1`] = `
               </a>
               <a
                 aria-label="LinkedIn"
-                className="Pinpoint Internal Link Pinpoint Social Item LinkedIn  Prebuilt"
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem LinkedInLink Prebuilt"
                 href="https://linkedin.com/company/pinpoint-software"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -2993,7 +2993,7 @@ exports[`Test no author 1`] = `
               </a>
               <a
                 aria-label="RSS Feed"
-                className="Pinpoint Internal Link Pinpoint Social Item RSS Prebuilt"
+                className="Pinpoint Internal Link Pinpoint Social LinkItem RSSLink Prebuilt"
                 href="/rss"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -3285,12 +3285,12 @@ exports[`Test no claps 1`] = `
               </div>
             </div>
             <div
-              className="Pinpoint Social Bar sharing"
+              className="Pinpoint SocialMedia Bar sharing"
             >
               <a
                 aria-label="Facebook"
-                className="Pinpoint Internal Link Pinpoint Social Item Facebook sharing "
-                href="https://facebook.com/sharer/sharer.php?u=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem FacebookShare "
+                href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_facebook"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Facebook"
@@ -3314,8 +3314,8 @@ exports[`Test no claps 1`] = `
               </a>
               <a
                 aria-label="Twitter"
-                className="Pinpoint Internal Link Pinpoint Social Item Twitter sharing "
-                href="https://twitter.com/intent/tweet/?text=Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.&url=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem TwitterShare "
+                href="https://twitter.com/intent/tweet/?text=Linked%20content%20blocks%20allow%20you%20to%20populate%20your%20content%20from%20the%20recently%20completed%20work.%20Annotations%20show%20you%20which%20issues%20and%20pull%20requests%20are%20linked.&url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_twitter"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Twitter"
@@ -3339,8 +3339,8 @@ exports[`Test no claps 1`] = `
               </a>
               <a
                 aria-label="LinkedIn"
-                className="Pinpoint Internal Link Pinpoint Social Item LinkedIn sharing "
-                href="https://www.linkedin.com/shareArticle?mini=true&url=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks&title=Pinpoint - Linked Content Blocks&summary=Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked."
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem LinkedInShare "
+                href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_facebook&mini=true&summary=Linked+content+blocks+allow+you+to+populate+your+content+from+the+recently+completed+work.+Annotations+show+you+which+issues+and+pull+requests+are+linked.&title=Pinpoint+-+Linked+Content+Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="LinkedIn"
@@ -3364,8 +3364,8 @@ exports[`Test no claps 1`] = `
               </a>
               <a
                 aria-label="Email"
-                className="Pinpoint Internal Link Pinpoint Social Item Email sharing "
-                href="mailto:?subject=Pinpoint - Linked Content Blocks&body=Pinpoint - Linked Content Blocks%0D%0ALinked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.%0D%0Ahttps://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem EmailShare "
+                href="mailto:?subject=Pinpoint%20-%20Linked%20Content%20Blocks&body=Pinpoint%20-%20Linked%20Content%20Blocks%0A%0ALinked%20content%20blocks%20allow%20you%20to%20populate%20your%20content%20from%20the%20recently%20completed%20work.%20Annotations%20show%20you%20which%20issues%20and%20pull%20requests%20are%20linked.%0A%0Ahttps%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks"
                 title="Email"
               >
                 <svg
@@ -3623,12 +3623,12 @@ exports[`Test no claps 1`] = `
               </div>
             </div>
             <div
-              className="Pinpoint Social Bar sharing"
+              className="Pinpoint SocialMedia Bar sharing"
             >
               <a
                 aria-label="Facebook"
-                className="Pinpoint Internal Link Pinpoint Social Item Facebook sharing "
-                href="https://facebook.com/sharer/sharer.php?u=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem FacebookShare "
+                href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_facebook"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Facebook"
@@ -3652,8 +3652,8 @@ exports[`Test no claps 1`] = `
               </a>
               <a
                 aria-label="Twitter"
-                className="Pinpoint Internal Link Pinpoint Social Item Twitter sharing "
-                href="https://twitter.com/intent/tweet/?text=Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.&url=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem TwitterShare "
+                href="https://twitter.com/intent/tweet/?text=Linked%20content%20blocks%20allow%20you%20to%20populate%20your%20content%20from%20the%20recently%20completed%20work.%20Annotations%20show%20you%20which%20issues%20and%20pull%20requests%20are%20linked.&url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_twitter"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Twitter"
@@ -3677,8 +3677,8 @@ exports[`Test no claps 1`] = `
               </a>
               <a
                 aria-label="LinkedIn"
-                className="Pinpoint Internal Link Pinpoint Social Item LinkedIn sharing "
-                href="https://www.linkedin.com/shareArticle?mini=true&url=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks&title=Pinpoint - Linked Content Blocks&summary=Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked."
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem LinkedInShare "
+                href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_facebook&mini=true&summary=Linked+content+blocks+allow+you+to+populate+your+content+from+the+recently+completed+work.+Annotations+show+you+which+issues+and+pull+requests+are+linked.&title=Pinpoint+-+Linked+Content+Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="LinkedIn"
@@ -3702,8 +3702,8 @@ exports[`Test no claps 1`] = `
               </a>
               <a
                 aria-label="Email"
-                className="Pinpoint Internal Link Pinpoint Social Item Email sharing "
-                href="mailto:?subject=Pinpoint - Linked Content Blocks&body=Pinpoint - Linked Content Blocks%0D%0ALinked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.%0D%0Ahttps://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem EmailShare "
+                href="mailto:?subject=Pinpoint%20-%20Linked%20Content%20Blocks&body=Pinpoint%20-%20Linked%20Content%20Blocks%0A%0ALinked%20content%20blocks%20allow%20you%20to%20populate%20your%20content%20from%20the%20recently%20completed%20work.%20Annotations%20show%20you%20which%20issues%20and%20pull%20requests%20are%20linked.%0A%0Ahttps%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks"
                 title="Email"
               >
                 <svg
@@ -3801,11 +3801,11 @@ exports[`Test no claps 1`] = `
               </span>
             </a>
             <div
-              className="Pinpoint Social Bar Prebuilt"
+              className="Pinpoint SocialMedia Bar Prebuilt"
             >
               <a
                 aria-label="Facebook"
-                className="Pinpoint Internal Link Pinpoint Social Item Facebook  Prebuilt"
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem FacebookLink Prebuilt"
                 href="https://www.facebook.com/Pinpoint.Engineering"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -3830,7 +3830,7 @@ exports[`Test no claps 1`] = `
               </a>
               <a
                 aria-label="Instagram"
-                className="Pinpoint Internal Link Pinpoint Social Item Instagram  Prebuilt"
+                className="Pinpoint Internal Link Pinpoint Social LinkItem InstagramLink Prebuilt"
                 href="https://www.instagram.com/pinpoint_sw/"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -3855,7 +3855,7 @@ exports[`Test no claps 1`] = `
               </a>
               <a
                 aria-label="Twitter"
-                className="Pinpoint Internal Link Pinpoint Social Item Twitter  Prebuilt"
+                className="Pinpoint Internal Link Pinpoint SocialMedia Item TwitterLink Prebuilt"
                 href="https://twitter.com/pinpoint_sw"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -3879,12 +3879,12 @@ exports[`Test no claps 1`] = `
                 </svg>
               </a>
               <a
-                aria-label="GitHub"
-                className="Pinpoint Internal Link Pinpoint Social Item Github  Prebuilt"
+                aria-label="Github"
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem GithubLink Prebuilt"
                 href="https://github.com/pinpt"
                 rel="noopener noreferrer"
                 target="_blank"
-                title="GitHub"
+                title="Github"
               >
                 <svg
                   aria-hidden="true"
@@ -3905,7 +3905,7 @@ exports[`Test no claps 1`] = `
               </a>
               <a
                 aria-label="LinkedIn"
-                className="Pinpoint Internal Link Pinpoint Social Item LinkedIn  Prebuilt"
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem LinkedInLink Prebuilt"
                 href="https://linkedin.com/company/pinpoint-software"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -3930,7 +3930,7 @@ exports[`Test no claps 1`] = `
               </a>
               <a
                 aria-label="RSS Feed"
-                className="Pinpoint Internal Link Pinpoint Social Item RSS Prebuilt"
+                className="Pinpoint Internal Link Pinpoint Social LinkItem RSSLink Prebuilt"
                 href="/rss"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -4306,12 +4306,12 @@ exports[`Test not zoomable 1`] = `
               </div>
             </div>
             <div
-              className="Pinpoint Social Bar sharing"
+              className="Pinpoint SocialMedia Bar sharing"
             >
               <a
                 aria-label="Facebook"
-                className="Pinpoint Internal Link Pinpoint Social Item Facebook sharing "
-                href="https://facebook.com/sharer/sharer.php?u=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem FacebookShare "
+                href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_facebook"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Facebook"
@@ -4335,8 +4335,8 @@ exports[`Test not zoomable 1`] = `
               </a>
               <a
                 aria-label="Twitter"
-                className="Pinpoint Internal Link Pinpoint Social Item Twitter sharing "
-                href="https://twitter.com/intent/tweet/?text=Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.&url=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem TwitterShare "
+                href="https://twitter.com/intent/tweet/?text=Linked%20content%20blocks%20allow%20you%20to%20populate%20your%20content%20from%20the%20recently%20completed%20work.%20Annotations%20show%20you%20which%20issues%20and%20pull%20requests%20are%20linked.&url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_twitter"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Twitter"
@@ -4360,8 +4360,8 @@ exports[`Test not zoomable 1`] = `
               </a>
               <a
                 aria-label="LinkedIn"
-                className="Pinpoint Internal Link Pinpoint Social Item LinkedIn sharing "
-                href="https://www.linkedin.com/shareArticle?mini=true&url=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks&title=Pinpoint - Linked Content Blocks&summary=Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked."
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem LinkedInShare "
+                href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_facebook&mini=true&summary=Linked+content+blocks+allow+you+to+populate+your+content+from+the+recently+completed+work.+Annotations+show+you+which+issues+and+pull+requests+are+linked.&title=Pinpoint+-+Linked+Content+Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="LinkedIn"
@@ -4385,8 +4385,8 @@ exports[`Test not zoomable 1`] = `
               </a>
               <a
                 aria-label="Email"
-                className="Pinpoint Internal Link Pinpoint Social Item Email sharing "
-                href="mailto:?subject=Pinpoint - Linked Content Blocks&body=Pinpoint - Linked Content Blocks%0D%0ALinked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.%0D%0Ahttps://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem EmailShare "
+                href="mailto:?subject=Pinpoint%20-%20Linked%20Content%20Blocks&body=Pinpoint%20-%20Linked%20Content%20Blocks%0A%0ALinked%20content%20blocks%20allow%20you%20to%20populate%20your%20content%20from%20the%20recently%20completed%20work.%20Annotations%20show%20you%20which%20issues%20and%20pull%20requests%20are%20linked.%0A%0Ahttps%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks"
                 title="Email"
               >
                 <svg
@@ -4728,12 +4728,12 @@ exports[`Test not zoomable 1`] = `
               </div>
             </div>
             <div
-              className="Pinpoint Social Bar sharing"
+              className="Pinpoint SocialMedia Bar sharing"
             >
               <a
                 aria-label="Facebook"
-                className="Pinpoint Internal Link Pinpoint Social Item Facebook sharing "
-                href="https://facebook.com/sharer/sharer.php?u=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem FacebookShare "
+                href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_facebook"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Facebook"
@@ -4757,8 +4757,8 @@ exports[`Test not zoomable 1`] = `
               </a>
               <a
                 aria-label="Twitter"
-                className="Pinpoint Internal Link Pinpoint Social Item Twitter sharing "
-                href="https://twitter.com/intent/tweet/?text=Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.&url=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem TwitterShare "
+                href="https://twitter.com/intent/tweet/?text=Linked%20content%20blocks%20allow%20you%20to%20populate%20your%20content%20from%20the%20recently%20completed%20work.%20Annotations%20show%20you%20which%20issues%20and%20pull%20requests%20are%20linked.&url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_twitter"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Twitter"
@@ -4782,8 +4782,8 @@ exports[`Test not zoomable 1`] = `
               </a>
               <a
                 aria-label="LinkedIn"
-                className="Pinpoint Internal Link Pinpoint Social Item LinkedIn sharing "
-                href="https://www.linkedin.com/shareArticle?mini=true&url=https://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks&title=Pinpoint - Linked Content Blocks&summary=Linked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked."
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem LinkedInShare "
+                href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_facebook&mini=true&summary=Linked+content+blocks+allow+you+to+populate+your+content+from+the+recently+completed+work.+Annotations+show+you+which+issues+and+pull+requests+are+linked.&title=Pinpoint+-+Linked+Content+Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="LinkedIn"
@@ -4807,8 +4807,8 @@ exports[`Test not zoomable 1`] = `
               </a>
               <a
                 aria-label="Email"
-                className="Pinpoint Internal Link Pinpoint Social Item Email sharing "
-                href="mailto:?subject=Pinpoint - Linked Content Blocks&body=Pinpoint - Linked Content Blocks%0D%0ALinked content blocks allow you to populate your content from the recently completed work. Annotations show you which issues and pull requests are linked.%0D%0Ahttps://changelog.pinpoint.com/entry/atBB4DPW5UrCgugTPw6M/Linked-Content-Blocks"
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem EmailShare "
+                href="mailto:?subject=Pinpoint%20-%20Linked%20Content%20Blocks&body=Pinpoint%20-%20Linked%20Content%20Blocks%0A%0ALinked%20content%20blocks%20allow%20you%20to%20populate%20your%20content%20from%20the%20recently%20completed%20work.%20Annotations%20show%20you%20which%20issues%20and%20pull%20requests%20are%20linked.%0A%0Ahttps%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks"
                 title="Email"
               >
                 <svg
@@ -4906,11 +4906,11 @@ exports[`Test not zoomable 1`] = `
               </span>
             </a>
             <div
-              className="Pinpoint Social Bar Prebuilt"
+              className="Pinpoint SocialMedia Bar Prebuilt"
             >
               <a
                 aria-label="Facebook"
-                className="Pinpoint Internal Link Pinpoint Social Item Facebook  Prebuilt"
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem FacebookLink Prebuilt"
                 href="https://www.facebook.com/Pinpoint.Engineering"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -4935,7 +4935,7 @@ exports[`Test not zoomable 1`] = `
               </a>
               <a
                 aria-label="Instagram"
-                className="Pinpoint Internal Link Pinpoint Social Item Instagram  Prebuilt"
+                className="Pinpoint Internal Link Pinpoint Social LinkItem InstagramLink Prebuilt"
                 href="https://www.instagram.com/pinpoint_sw/"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -4960,7 +4960,7 @@ exports[`Test not zoomable 1`] = `
               </a>
               <a
                 aria-label="Twitter"
-                className="Pinpoint Internal Link Pinpoint Social Item Twitter  Prebuilt"
+                className="Pinpoint Internal Link Pinpoint SocialMedia Item TwitterLink Prebuilt"
                 href="https://twitter.com/pinpoint_sw"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -4984,12 +4984,12 @@ exports[`Test not zoomable 1`] = `
                 </svg>
               </a>
               <a
-                aria-label="GitHub"
-                className="Pinpoint Internal Link Pinpoint Social Item Github  Prebuilt"
+                aria-label="Github"
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem GithubLink Prebuilt"
                 href="https://github.com/pinpt"
                 rel="noopener noreferrer"
                 target="_blank"
-                title="GitHub"
+                title="Github"
               >
                 <svg
                   aria-hidden="true"
@@ -5010,7 +5010,7 @@ exports[`Test not zoomable 1`] = `
               </a>
               <a
                 aria-label="LinkedIn"
-                className="Pinpoint Internal Link Pinpoint Social Item LinkedIn  Prebuilt"
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem LinkedInLink Prebuilt"
                 href="https://linkedin.com/company/pinpoint-software"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -5035,7 +5035,7 @@ exports[`Test not zoomable 1`] = `
               </a>
               <a
                 aria-label="RSS Feed"
-                className="Pinpoint Internal Link Pinpoint Social Item RSS Prebuilt"
+                className="Pinpoint Internal Link Pinpoint Social LinkItem RSSLink Prebuilt"
                 href="/rss"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -5313,12 +5313,12 @@ exports[`Test with pagination 1`] = `
               </div>
             </div>
             <div
-              className="Pinpoint Social Bar sharing"
+              className="Pinpoint SocialMedia Bar sharing"
             >
               <a
                 aria-label="Facebook"
-                className="Pinpoint Internal Link Pinpoint Social Item Facebook sharing "
-                href="https://facebook.com/sharer/sharer.php?u=https://changelog.pinpoint.com/entry/9gOsjHBg7tHtNllBWrY8/Publishing-Controls-and-Social-Posting"
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem FacebookShare "
+                href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2F9gOsjHBg7tHtNllBWrY8%2FPublishing-Controls-and-Social-Posting"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Facebook"
@@ -5342,8 +5342,8 @@ exports[`Test with pagination 1`] = `
               </a>
               <a
                 aria-label="Twitter"
-                className="Pinpoint Internal Link Pinpoint Social Item Twitter sharing "
-                href="https://twitter.com/intent/tweet/?text=When you publish a changelog you will now see a new Publish dialog which grants finer control over when you want to notify your subscribers.&url=https://changelog.pinpoint.com/entry/9gOsjHBg7tHtNllBWrY8/Publishing-Controls-and-Social-Posting"
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem TwitterShare "
+                href="https://twitter.com/intent/tweet/?text=When%20you%20publish%20a%20changelog%20you%20will%20now%20see%20a%20new%20Publish%20dialog%20which%20grants%20finer%20control%20over%20when%20you%20want%20to%20notify%20your%20subscribers.&url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2F9gOsjHBg7tHtNllBWrY8%2FPublishing-Controls-and-Social-Posting"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Twitter"
@@ -5367,8 +5367,8 @@ exports[`Test with pagination 1`] = `
               </a>
               <a
                 aria-label="LinkedIn"
-                className="Pinpoint Internal Link Pinpoint Social Item LinkedIn sharing "
-                href="https://www.linkedin.com/shareArticle?mini=true&url=https://changelog.pinpoint.com/entry/9gOsjHBg7tHtNllBWrY8/Publishing-Controls-and-Social-Posting&title=Pinpoint - Publishing Controls and Social Posting&summary=When you publish a changelog you will now see a new Publish dialog which grants finer control over when you want to notify your subscribers."
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem LinkedInShare "
+                href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2F9gOsjHBg7tHtNllBWrY8%2FPublishing-Controls-and-Social-Posting&mini=true&summary=When+you+publish+a+changelog+you+will+now+see+a+new+Publish+dialog+which+grants+finer+control+over+when+you+want+to+notify+your+subscribers.&title=Pinpoint+-+Publishing+Controls+and+Social+Posting"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="LinkedIn"
@@ -5392,8 +5392,8 @@ exports[`Test with pagination 1`] = `
               </a>
               <a
                 aria-label="Email"
-                className="Pinpoint Internal Link Pinpoint Social Item Email sharing "
-                href="mailto:?subject=Pinpoint - Publishing Controls and Social Posting&body=Pinpoint - Publishing Controls and Social Posting%0D%0AWhen you publish a changelog you will now see a new Publish dialog which grants finer control over when you want to notify your subscribers.%0D%0Ahttps://changelog.pinpoint.com/entry/9gOsjHBg7tHtNllBWrY8/Publishing-Controls-and-Social-Posting"
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem EmailShare "
+                href="mailto:?subject=Pinpoint%20-%20Publishing%20Controls%20and%20Social%20Posting&body=Pinpoint%20-%20Publishing%20Controls%20and%20Social%20Posting%0A%0AWhen%20you%20publish%20a%20changelog%20you%20will%20now%20see%20a%20new%20Publish%20dialog%20which%20grants%20finer%20control%20over%20when%20you%20want%20to%20notify%20your%20subscribers.%0A%0Ahttps%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2F9gOsjHBg7tHtNllBWrY8%2FPublishing-Controls-and-Social-Posting"
                 title="Email"
               >
                 <svg
@@ -5570,12 +5570,12 @@ exports[`Test with pagination 1`] = `
               </div>
             </div>
             <div
-              className="Pinpoint Social Bar sharing"
+              className="Pinpoint SocialMedia Bar sharing"
             >
               <a
                 aria-label="Facebook"
-                className="Pinpoint Internal Link Pinpoint Social Item Facebook sharing "
-                href="https://facebook.com/sharer/sharer.php?u=https://changelog.pinpoint.com/entry/9gOsjHBg7tHtNllBWrY8/Publishing-Controls-and-Social-Posting"
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem FacebookShare "
+                href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2F9gOsjHBg7tHtNllBWrY8%2FPublishing-Controls-and-Social-Posting"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Facebook"
@@ -5599,8 +5599,8 @@ exports[`Test with pagination 1`] = `
               </a>
               <a
                 aria-label="Twitter"
-                className="Pinpoint Internal Link Pinpoint Social Item Twitter sharing "
-                href="https://twitter.com/intent/tweet/?text=When you publish a changelog you will now see a new Publish dialog which grants finer control over when you want to notify your subscribers.&url=https://changelog.pinpoint.com/entry/9gOsjHBg7tHtNllBWrY8/Publishing-Controls-and-Social-Posting"
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem TwitterShare "
+                href="https://twitter.com/intent/tweet/?text=When%20you%20publish%20a%20changelog%20you%20will%20now%20see%20a%20new%20Publish%20dialog%20which%20grants%20finer%20control%20over%20when%20you%20want%20to%20notify%20your%20subscribers.&url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2F9gOsjHBg7tHtNllBWrY8%2FPublishing-Controls-and-Social-Posting"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Twitter"
@@ -5624,8 +5624,8 @@ exports[`Test with pagination 1`] = `
               </a>
               <a
                 aria-label="LinkedIn"
-                className="Pinpoint Internal Link Pinpoint Social Item LinkedIn sharing "
-                href="https://www.linkedin.com/shareArticle?mini=true&url=https://changelog.pinpoint.com/entry/9gOsjHBg7tHtNllBWrY8/Publishing-Controls-and-Social-Posting&title=Pinpoint - Publishing Controls and Social Posting&summary=When you publish a changelog you will now see a new Publish dialog which grants finer control over when you want to notify your subscribers."
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem LinkedInShare "
+                href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2F9gOsjHBg7tHtNllBWrY8%2FPublishing-Controls-and-Social-Posting&mini=true&summary=When+you+publish+a+changelog+you+will+now+see+a+new+Publish+dialog+which+grants+finer+control+over+when+you+want+to+notify+your+subscribers.&title=Pinpoint+-+Publishing+Controls+and+Social+Posting"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="LinkedIn"
@@ -5649,8 +5649,8 @@ exports[`Test with pagination 1`] = `
               </a>
               <a
                 aria-label="Email"
-                className="Pinpoint Internal Link Pinpoint Social Item Email sharing "
-                href="mailto:?subject=Pinpoint - Publishing Controls and Social Posting&body=Pinpoint - Publishing Controls and Social Posting%0D%0AWhen you publish a changelog you will now see a new Publish dialog which grants finer control over when you want to notify your subscribers.%0D%0Ahttps://changelog.pinpoint.com/entry/9gOsjHBg7tHtNllBWrY8/Publishing-Controls-and-Social-Posting"
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem EmailShare "
+                href="mailto:?subject=Pinpoint%20-%20Publishing%20Controls%20and%20Social%20Posting&body=Pinpoint%20-%20Publishing%20Controls%20and%20Social%20Posting%0A%0AWhen%20you%20publish%20a%20changelog%20you%20will%20now%20see%20a%20new%20Publish%20dialog%20which%20grants%20finer%20control%20over%20when%20you%20want%20to%20notify%20your%20subscribers.%0A%0Ahttps%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2F9gOsjHBg7tHtNllBWrY8%2FPublishing-Controls-and-Social-Posting"
                 title="Email"
               >
                 <svg
@@ -5812,11 +5812,11 @@ exports[`Test with pagination 1`] = `
               </span>
             </a>
             <div
-              className="Pinpoint Social Bar Prebuilt"
+              className="Pinpoint SocialMedia Bar Prebuilt"
             >
               <a
                 aria-label="Facebook"
-                className="Pinpoint Internal Link Pinpoint Social Item Facebook  Prebuilt"
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem FacebookLink Prebuilt"
                 href="https://www.facebook.com/Pinpoint.Engineering"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -5841,7 +5841,7 @@ exports[`Test with pagination 1`] = `
               </a>
               <a
                 aria-label="Instagram"
-                className="Pinpoint Internal Link Pinpoint Social Item Instagram  Prebuilt"
+                className="Pinpoint Internal Link Pinpoint Social LinkItem InstagramLink Prebuilt"
                 href="https://www.instagram.com/pinpoint_sw/"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -5866,7 +5866,7 @@ exports[`Test with pagination 1`] = `
               </a>
               <a
                 aria-label="Twitter"
-                className="Pinpoint Internal Link Pinpoint Social Item Twitter  Prebuilt"
+                className="Pinpoint Internal Link Pinpoint SocialMedia Item TwitterLink Prebuilt"
                 href="https://twitter.com/pinpoint_sw"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -5890,12 +5890,12 @@ exports[`Test with pagination 1`] = `
                 </svg>
               </a>
               <a
-                aria-label="GitHub"
-                className="Pinpoint Internal Link Pinpoint Social Item Github  Prebuilt"
+                aria-label="Github"
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem GithubLink Prebuilt"
                 href="https://github.com/pinpt"
                 rel="noopener noreferrer"
                 target="_blank"
-                title="GitHub"
+                title="Github"
               >
                 <svg
                   aria-hidden="true"
@@ -5916,7 +5916,7 @@ exports[`Test with pagination 1`] = `
               </a>
               <a
                 aria-label="LinkedIn"
-                className="Pinpoint Internal Link Pinpoint Social Item LinkedIn  Prebuilt"
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem LinkedInLink Prebuilt"
                 href="https://linkedin.com/company/pinpoint-software"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -5941,7 +5941,7 @@ exports[`Test with pagination 1`] = `
               </a>
               <a
                 aria-label="RSS Feed"
-                className="Pinpoint Internal Link Pinpoint Social Item RSS Prebuilt"
+                className="Pinpoint Internal Link Pinpoint Social LinkItem RSSLink Prebuilt"
                 href="/rss"
                 rel="noopener noreferrer"
                 target="_blank"

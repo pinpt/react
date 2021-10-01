@@ -12,14 +12,14 @@ import Pinpoint from '../../Pinpoint';
 import { Document } from '../../Renderer';
 import { ISearchBarProps } from '../../Search/Bar';
 import Sidebar, { ISidebarProps } from '../../Sidebar';
-import Social from '../../Social';
-import { ISocialBarProps } from '../../Social/Bar';
+import { ISocialMediaBarProps } from '../../SocialMedia/SocialMediaBar';
 import { ISubscribeProps } from '../../Subscribe';
 import Tags from '../../Tags';
 import { ITagBarProps } from '../../Tags/Bar';
 import { IThemeToggleProps } from '../../ThemeToggle';
 import Footer from '../Footer';
 import Header from '../Header';
+import { SocialMediaBar, FacebookShare, TwitterShare, EmailShare, LinkedInShare } from '../../SocialMedia';
 
 import type { IContent, ISite } from '../../../lib/types';
 export interface IPrebuiltEntryProps {
@@ -29,7 +29,7 @@ export interface IPrebuiltEntryProps {
 	renderSubscribe?: (site: ISite) => ReactElement<ISubscribeProps>;
 	renderThemeToggle?: (site: ISite) => ReactElement<IThemeToggleProps>;
 	renderFooter?: (site: ISite) => ReactElement<IFooterProps>;
-	renderSocial?: (site: ISite) => ReactElement<ISocialBarProps>;
+	renderSocial?: (site: ISite) => ReactElement<ISocialMediaBarProps>;
 	renderCopyright?: (site: ISite) => ReactElement<ICopyrightProps>;
 	renderLogo?: (site: ISite) => ReactElement<ILogoProps>;
 	renderSidebar?: (content: IContent) => ReactElement<ISidebarProps>;
@@ -39,7 +39,7 @@ export interface IPrebuiltEntryProps {
 	renderClap?: (content: IContent) => ReactElement<IClapProps>;
 	handleSelectHome?: () => void;
 	renderSearch?: (site: ISite) => ReactElement<ISearchBarProps>;
-	renderSocialSharing?: (site: ISite) => ReactElement<ISocialBarProps>;
+	renderSocialSharing?: (site: ISite) => ReactElement<ISocialMediaBarProps>;
 	renderPagination?: (site: ISite, next?: IContent, previous?: IContent) => void;
 	clapCount?: number;
 	sessionClapCount?: number;
@@ -124,27 +124,20 @@ const Entry = (props: IPrebuiltEntryProps) => {
 								}
 								sharing={
 									renderSocialSharing?.(site) ?? (
-										<Social.Bar className="sharing">
-											<Social.Facebook
-												sharing
-												href={`https://facebook.com/sharer/sharer.php?u=${content.url}`}
+										<SocialMediaBar className="sharing">
+											<FacebookShare href={content.url} newTab />
+											<TwitterShare href={content.url} text={content.headline} newTab />
+											<LinkedInShare
+												href={content.url}
+												title={`${site.name} - ${content.title}`}
+												summary={content.headline}
 												newTab
 											/>
-											<Social.Twitter
-												sharing
-												href={`https://twitter.com/intent/tweet/?text=${content.headline}&url=${content.url}`}
-												newTab
+											<EmailShare
+												subject={`${site.name} - ${content.title}`}
+												body={`${site.name} - ${content.title}\n\n${content.headline}\n\n${content.url}`}
 											/>
-											<Social.LinkedIn
-												sharing
-												href={`https://www.linkedin.com/shareArticle?mini=true&url=${content.url}&title=${site.name} - ${content.title}&summary=${content.headline}`}
-												newTab
-											/>
-											<Social.Email
-												sharing
-												href={`mailto:?subject=${site.name} - ${content.title}&body=${site.name} - ${content.title}%0D%0A${content.headline}%0D%0A${content.url}`}
-											/>
-										</Social.Bar>
+										</SocialMediaBar>
 									)
 								}
 							/>

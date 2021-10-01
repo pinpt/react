@@ -9,7 +9,7 @@ import Header from '../../../Prebuilt/Header';
 import { Content } from '../../../Renderer';
 import Search from '../../../Search';
 import { ISearchBarProps } from '../../../Search/Bar';
-import { ISocialBarProps } from '../../../Social/Bar';
+import { ISocialMediaBarProps } from '../../../SocialMedia/SocialMediaBar';
 import { ISubscribeProps } from '../../../Subscribe';
 import { IThemeToggleProps } from '../../../ThemeToggle';
 import Outline, { IOutlineProps } from '../../Outline';
@@ -33,7 +33,7 @@ export interface IPrebuiltDocumentationHomeProps {
 	setCurrentEntry: (entry: IContent, anchor?: string) => void;
 	renderContent?: (entry?: IContent, currentEntry?: string, entries?: IContent[]) => ReactElement;
 	renderFooter?: (site: ISite) => ReactElement<IPrebuiltFooterProps>;
-	renderSocial?: (site: ISite) => ReactElement<ISocialBarProps>;
+	renderSocial?: (site: ISite) => ReactElement<ISocialMediaBarProps>;
 	renderCopyright?: (site: ISite) => ReactElement<ICopyrightProps>;
 	renderPagination?: (
 		nextEntry?: IContent,

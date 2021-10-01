@@ -9,7 +9,19 @@ import Author from '../../Author';
 import Tags from '../../Tags';
 import Clap from '../../Clap';
 import Footer from '../../Footer';
-import Social from '../../Social';
+import {
+	SocialMediaBar,
+	FacebookLink,
+	FacebookShare,
+	InstagramLink,
+	TwitterLink,
+	TwitterShare,
+	GithubLink,
+	LinkedInLink,
+	LinkedInShare,
+	RSSLink,
+	EmailShare,
+} from '../../SocialMedia';
 import Copyright from '../../Copyright';
 import Logo from '../../Logo';
 import testDoc from '../Entry/__data__/testDoc.json';
@@ -58,26 +70,26 @@ export const Default: React.VFC<{}> = () => {
 					tags={<Tags.Bar tags={['feature', 'improvement', 'mobile']} />}
 					clap={<Clap clapCount={count} handleClap={() => setCount((c) => c + 1)} />}
 					sharing={
-						<Social.Bar>
-							<Social.Facebook sharing href="https://www.facebook.com/Pinpoint.Engineering" newTab />
-							<Social.Twitter sharing href="https://twitter.com/pinpoint_sw" newTab />
-							<Social.LinkedIn sharing href="https://linkedin.com/company/pinpoint-software" newTab />
-							<Social.Email sharing href="mailto:hello@pinpoint.com" />
-						</Social.Bar>
+						<SocialMediaBar>
+							<FacebookShare href="https://www.facebook.com/Pinpoint.Engineering" newTab />
+							<TwitterShare href="https://twitter.com/pinpoint_sw" newTab />
+							<LinkedInShare href="https://linkedin.com/company/pinpoint-software" newTab />
+							<EmailShare recipient="hello@pinpoint.com" />
+						</SocialMediaBar>
 					}
 				/>
 			}
 			footer={
 				<Footer
 					social={
-						<Social.Bar>
-							<Social.Facebook href="https://www.facebook.com/Pinpoint.Engineering" newTab />
-							<Social.Instagram href="https://www.instagram.com/pinpoint_sw/" newTab />
-							<Social.Twitter href="https://twitter.com/pinpoint_sw" newTab />
-							<Social.Github href="https://github.com/pinpt" newTab />
-							<Social.LinkedIn href="https://linkedin.com/company/pinpoint-software" newTab />
-							<Social.RSS href="https://api.pinpoint.com.so/rss/PirxVTE94u3YmGNOySRY" newTab />
-						</Social.Bar>
+						<SocialMediaBar>
+							<FacebookLink href="https://www.facebook.com/Pinpoint.Engineering" newTab />
+							<InstagramLink href="https://www.instagram.com/pinpoint_sw/" newTab />
+							<TwitterLink href="https://twitter.com/pinpoint_sw" newTab />
+							<GithubLink href="https://github.com/pinpt" newTab />
+							<LinkedInLink href="https://linkedin.com/company/pinpoint-software" newTab />
+							<RSSLink href="https://api.pinpoint.com.so/rss/PirxVTE94u3YmGNOySRY" newTab />
+						</SocialMediaBar>
 					}
 					copyright={<Copyright text="2021 by Pinpoint Software, Inc." logo={<Logo src={IMAGE_URL} />} />}
 					subscribe={<Subscribe href="https://pinpoint.com" />}
@@ -107,26 +119,26 @@ export const With_Pagination: React.VFC<{}> = () => {
 					tags={<Tags.Bar tags={['feature', 'improvement', 'mobile']} />}
 					clap={<Clap clapCount={count} handleClap={() => setCount((c) => c + 1)} />}
 					sharing={
-						<Social.Bar>
-							<Social.Facebook sharing href="https://www.facebook.com/Pinpoint.Engineering" newTab />
-							<Social.Twitter sharing href="https://twitter.com/pinpoint_sw" newTab />
-							<Social.LinkedIn sharing href="https://linkedin.com/company/pinpoint-software" newTab />
-							<Social.Email sharing href="mailto:hello@pinpoint.com" />
-						</Social.Bar>
+						<SocialMediaBar>
+							<FacebookShare href="https://www.facebook.com/Pinpoint.Engineering" newTab />
+							<TwitterShare href="https://twitter.com/pinpoint_sw" newTab />
+							<LinkedInShare href="https://linkedin.com/company/pinpoint-software" newTab />
+							<EmailShare recipient="hello@pinpoint.com" />
+						</SocialMediaBar>
 					}
 				/>
 			}
 			footer={
 				<Footer
 					social={
-						<Social.Bar>
-							<Social.Facebook href="https://www.facebook.com/Pinpoint.Engineering" newTab />
-							<Social.Instagram href="https://www.instagram.com/pinpoint_sw/" newTab />
-							<Social.Twitter href="https://twitter.com/pinpoint_sw" newTab />
-							<Social.Github href="https://github.com/pinpt" newTab />
-							<Social.LinkedIn href="https://linkedin.com/company/pinpoint-software" newTab />
-							<Social.RSS href="https://api.pinpoint.com.so/rss/PirxVTE94u3YmGNOySRY" newTab />
-						</Social.Bar>
+						<SocialMediaBar>
+							<FacebookLink href="https://www.facebook.com/Pinpoint.Engineering" newTab />
+							<InstagramLink href="https://www.instagram.com/pinpoint_sw/" newTab />
+							<TwitterLink href="https://twitter.com/pinpoint_sw" newTab />
+							<GithubLink href="https://github.com/pinpt" newTab />
+							<LinkedInLink href="https://linkedin.com/company/pinpoint-software" newTab />
+							<RSSLink href="https://api.pinpoint.com.so/rss/PirxVTE94u3YmGNOySRY" newTab />
+						</SocialMediaBar>
 					}
 					copyright={<Copyright text="2021 by Pinpoint Software, Inc." logo={<Logo src={IMAGE_URL} />} />}
 					subscribe={<Subscribe href="https://pinpoint.com" />}
@@ -164,26 +176,26 @@ export const Not_Zoomable: React.VFC<{}> = () => {
 					tags={<Tags.Bar tags={['feature', 'improvement', 'mobile']} />}
 					clap={<Clap clapCount={count} handleClap={() => setCount((c) => c + 1)} />}
 					sharing={
-						<Social.Bar>
-							<Social.Facebook sharing href="https://www.facebook.com/Pinpoint.Engineering" newTab />
-							<Social.Twitter sharing href="https://twitter.com/pinpoint_sw" newTab />
-							<Social.LinkedIn sharing href="https://linkedin.com/company/pinpoint-software" newTab />
-							<Social.Email sharing href="mailto:hello@pinpoint.com" />
-						</Social.Bar>
+						<SocialMediaBar>
+							<FacebookShare href="https://www.facebook.com/Pinpoint.Engineering" newTab />
+							<TwitterShare href="https://twitter.com/pinpoint_sw" newTab />
+							<LinkedInShare href="https://linkedin.com/company/pinpoint-software" newTab />
+							<EmailShare recipient="hello@pinpoint.com" />
+						</SocialMediaBar>
 					}
 				/>
 			}
 			footer={
 				<Footer
 					social={
-						<Social.Bar>
-							<Social.Facebook href="https://www.facebook.com/Pinpoint.Engineering" newTab />
-							<Social.Instagram href="https://www.instagram.com/pinpoint_sw/" newTab />
-							<Social.Twitter href="https://twitter.com/pinpoint_sw" newTab />
-							<Social.Github href="https://github.com/pinpt" newTab />
-							<Social.LinkedIn href="https://linkedin.com/company/pinpoint-software" newTab />
-							<Social.RSS href="https://api.pinpoint.com.so/rss/PirxVTE94u3YmGNOySRY" newTab />
-						</Social.Bar>
+						<SocialMediaBar>
+							<FacebookLink href="https://www.facebook.com/Pinpoint.Engineering" newTab />
+							<InstagramLink href="https://www.instagram.com/pinpoint_sw/" newTab />
+							<TwitterLink href="https://twitter.com/pinpoint_sw" newTab />
+							<GithubLink href="https://github.com/pinpt" newTab />
+							<LinkedInLink href="https://linkedin.com/company/pinpoint-software" newTab />
+							<RSSLink href="https://api.pinpoint.com.so/rss/PirxVTE94u3YmGNOySRY" newTab />
+						</SocialMediaBar>
 					}
 					copyright={<Copyright text="2021 by Pinpoint Software, Inc." logo={<Logo src={IMAGE_URL} />} />}
 					subscribe={<Subscribe href="https://pinpoint.com" />}

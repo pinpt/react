@@ -3,7 +3,7 @@ import Sidebar from '..';
 import Author from '../../Author';
 import Tags from '../../Tags';
 import Clap from '../../Clap';
-import Social from '../../Social';
+import { SocialMediaBar, FacebookShare, TwitterShare, EmailShare, LinkedInShare } from '../../SocialMedia';
 
 const AVATAR =
 	'https://file.pinpoint.com/6cc744395c563f0072b339070aa327f3;UCGt%3D%3DkE~A%3FZJ6%5EhIpS%23o%5BELE3oLT0I%40t7E2;400x400.png?rw=48&rh=48';
@@ -15,12 +15,12 @@ test('Test default', () => {
 			tags={<Tags.Bar tags={['feature', 'improvement', 'mobile']} />}
 			clap={<Clap clapCount={22} handleClap={() => console.log('click!')} />}
 			sharing={
-				<Social.Bar>
-					<Social.Facebook sharing href="https://www.facebook.com/Pinpoint.Engineering" newTab />
-					<Social.Twitter sharing href="https://twitter.com/pinpoint_sw" newTab />
-					<Social.LinkedIn sharing href="https://linkedin.com/company/pinpoint-software" newTab />
-					<Social.Email sharing href="mailto:hello@pinpoint.com" />
-				</Social.Bar>
+				<SocialMediaBar>
+					<FacebookShare href="https://www.facebook.com/Pinpoint.Engineering" newTab />
+					<TwitterShare href="https://twitter.com/pinpoint_sw" newTab />
+					<LinkedInShare href="https://linkedin.com/company/pinpoint-software" newTab />
+					<EmailShare recipient="hello@pinpoint.com" />
+				</SocialMediaBar>
 			}
 		/>
 	);

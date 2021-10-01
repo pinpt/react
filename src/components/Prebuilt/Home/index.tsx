@@ -16,7 +16,7 @@ import DashboardPage from '../../Page/Dashboard';
 import Pagination, { IPaginationProps } from '../../Pagination';
 import Recent, { IRecentProps } from '../../Recent';
 import { ISearchBarProps } from '../../Search/Bar';
-import { ISocialBarProps } from '../../Social/Bar';
+import { ISocialMediaBarProps } from '../../SocialMedia/SocialMediaBar';
 import Statistic from '../../Statistic';
 import { IStatisticsBarProps } from '../../Statistic/Bar';
 import { ISubscribeProps } from '../../Subscribe';
@@ -45,7 +45,7 @@ export interface IPrebuiltHomeProps {
 	) => ReactElement<IStatisticsBarProps>;
 	renderCardButton?: (Content: IContent) => ReactElement<ICardReadButtonProps>;
 	renderFooter?: (site: ISite) => ReactElement<IFooterProps>;
-	renderSocial?: (site: ISite) => ReactElement<ISocialBarProps>;
+	renderSocial?: (site: ISite) => ReactElement<ISocialMediaBarProps>;
 	renderCopyright?: (site: ISite) => ReactElement<ICopyrightProps>;
 	renderLogo?: (site: ISite) => ReactElement<ILogoProps>;
 	renderTags?: (Content: IContent) => ReactElement<ITagBarProps>;
