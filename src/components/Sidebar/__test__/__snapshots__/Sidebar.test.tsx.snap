@@ -302,12 +302,12 @@ exports[`Test default 1`] = `
     </div>
   </div>
   <div
-    className="Pinpoint Social Bar "
+    className="Pinpoint SocialMedia Bar "
   >
     <a
       aria-label="Facebook"
-      className="Pinpoint Internal Link Pinpoint Social Item Facebook sharing "
-      href="https://www.facebook.com/Pinpoint.Engineering"
+      className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem FacebookShare "
+      href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2FPinpoint.Engineering"
       rel="noopener noreferrer"
       target="_blank"
       title="Facebook"
@@ -331,8 +331,8 @@ exports[`Test default 1`] = `
     </a>
     <a
       aria-label="Twitter"
-      className="Pinpoint Internal Link Pinpoint Social Item Twitter sharing "
-      href="https://twitter.com/pinpoint_sw"
+      className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem TwitterShare "
+      href="https://twitter.com/intent/tweet/?text=&url=https%3A%2F%2Ftwitter.com%2Fpinpoint_sw"
       rel="noopener noreferrer"
       target="_blank"
       title="Twitter"
@@ -356,8 +356,8 @@ exports[`Test default 1`] = `
     </a>
     <a
       aria-label="LinkedIn"
-      className="Pinpoint Internal Link Pinpoint Social Item LinkedIn sharing "
-      href="https://linkedin.com/company/pinpoint-software"
+      className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem LinkedInShare "
+      href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Flinkedin.com%2Fcompany%2Fpinpoint-software&mini=true"
       rel="noopener noreferrer"
       target="_blank"
       title="LinkedIn"
@@ -381,8 +381,8 @@ exports[`Test default 1`] = `
     </a>
     <a
       aria-label="Email"
-      className="Pinpoint Internal Link Pinpoint Social Item Email sharing "
-      href="mailto:hello@pinpoint.com"
+      className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem EmailShare "
+      href="mailto:hello@pinpoint.com?subject=&body="
       title="Email"
     >
       <svg

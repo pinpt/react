@@ -225,11 +225,11 @@ populated with your recently completed...
               </span>
             </a>
             <div
-              className="Pinpoint Social Bar "
+              className="Pinpoint SocialMedia Bar "
             >
               <a
                 aria-label="Facebook"
-                className="Pinpoint Internal Link Pinpoint Social Item Facebook  "
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem FacebookLink "
                 href="https://www.facebook.com/Pinpoint.Engineering"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -254,7 +254,7 @@ populated with your recently completed...
               </a>
               <a
                 aria-label="Instagram"
-                className="Pinpoint Internal Link Pinpoint Social Item Instagram  "
+                className="Pinpoint Internal Link Pinpoint Social LinkItem InstagramLink "
                 href="https://www.instagram.com/pinpoint_sw/"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -279,7 +279,7 @@ populated with your recently completed...
               </a>
               <a
                 aria-label="Twitter"
-                className="Pinpoint Internal Link Pinpoint Social Item Twitter  "
+                className="Pinpoint Internal Link Pinpoint SocialMedia Item TwitterLink "
                 href="https://twitter.com/pinpoint_sw"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -303,12 +303,12 @@ populated with your recently completed...
                 </svg>
               </a>
               <a
-                aria-label="GitHub"
-                className="Pinpoint Internal Link Pinpoint Social Item Github  "
+                aria-label="Github"
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem GithubLink "
                 href="https://github.com/pinpt"
                 rel="noopener noreferrer"
                 target="_blank"
-                title="GitHub"
+                title="Github"
               >
                 <svg
                   aria-hidden="true"
@@ -329,7 +329,7 @@ populated with your recently completed...
               </a>
               <a
                 aria-label="LinkedIn"
-                className="Pinpoint Internal Link Pinpoint Social Item LinkedIn  "
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem LinkedInLink "
                 href="https://linkedin.com/company/pinpoint-software"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -354,7 +354,7 @@ populated with your recently completed...
               </a>
               <a
                 aria-label="RSS Feed"
-                className="Pinpoint Internal Link Pinpoint Social Item RSS "
+                className="Pinpoint Internal Link Pinpoint Social LinkItem RSSLink "
                 href="https://api.pinpoint.com.so/rss/PirxVTE94u3YmGNOySRY"
                 rel="noopener noreferrer"
                 target="_blank"

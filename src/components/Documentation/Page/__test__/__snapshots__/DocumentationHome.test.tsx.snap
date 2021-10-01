@@ -269,11 +269,11 @@ exports[`Test full page 1`] = `
               </span>
             </a>
             <div
-              className="Pinpoint Social Bar "
+              className="Pinpoint SocialMedia Bar "
             >
               <a
                 aria-label="Facebook"
-                className="Pinpoint Internal Link Pinpoint Social Item Facebook  "
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem FacebookLink "
                 href="https://www.facebook.com/Pinpoint.Engineering"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -298,7 +298,7 @@ exports[`Test full page 1`] = `
               </a>
               <a
                 aria-label="Instagram"
-                className="Pinpoint Internal Link Pinpoint Social Item Instagram  "
+                className="Pinpoint Internal Link Pinpoint Social LinkItem InstagramLink "
                 href="https://www.instagram.com/pinpoint_sw/"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -323,7 +323,7 @@ exports[`Test full page 1`] = `
               </a>
               <a
                 aria-label="Twitter"
-                className="Pinpoint Internal Link Pinpoint Social Item Twitter  "
+                className="Pinpoint Internal Link Pinpoint SocialMedia Item TwitterLink "
                 href="https://twitter.com/pinpoint_sw"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -347,12 +347,12 @@ exports[`Test full page 1`] = `
                 </svg>
               </a>
               <a
-                aria-label="GitHub"
-                className="Pinpoint Internal Link Pinpoint Social Item Github  "
+                aria-label="Github"
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem GithubLink "
                 href="https://github.com/pinpt"
                 rel="noopener noreferrer"
                 target="_blank"
-                title="GitHub"
+                title="Github"
               >
                 <svg
                   aria-hidden="true"
@@ -373,7 +373,7 @@ exports[`Test full page 1`] = `
               </a>
               <a
                 aria-label="LinkedIn"
-                className="Pinpoint Internal Link Pinpoint Social Item LinkedIn  "
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem LinkedInLink "
                 href="https://linkedin.com/company/pinpoint-software"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -398,7 +398,7 @@ exports[`Test full page 1`] = `
               </a>
               <a
                 aria-label="RSS Feed"
-                className="Pinpoint Internal Link Pinpoint Social Item RSS "
+                className="Pinpoint Internal Link Pinpoint Social LinkItem RSSLink "
                 href="https://api.pinpoint.com.so/rss/PirxVTE94u3YmGNOySRY"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -607,11 +607,11 @@ exports[`Test loading 1`] = `
               </span>
             </a>
             <div
-              className="Pinpoint Social Bar "
+              className="Pinpoint SocialMedia Bar "
             >
               <a
                 aria-label="Facebook"
-                className="Pinpoint Internal Link Pinpoint Social Item Facebook  "
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem FacebookLink "
                 href="https://www.facebook.com/Pinpoint.Engineering"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -636,7 +636,7 @@ exports[`Test loading 1`] = `
               </a>
               <a
                 aria-label="Instagram"
-                className="Pinpoint Internal Link Pinpoint Social Item Instagram  "
+                className="Pinpoint Internal Link Pinpoint Social LinkItem InstagramLink "
                 href="https://www.instagram.com/pinpoint_sw/"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -661,7 +661,7 @@ exports[`Test loading 1`] = `
               </a>
               <a
                 aria-label="Twitter"
-                className="Pinpoint Internal Link Pinpoint Social Item Twitter  "
+                className="Pinpoint Internal Link Pinpoint SocialMedia Item TwitterLink "
                 href="https://twitter.com/pinpoint_sw"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -685,12 +685,12 @@ exports[`Test loading 1`] = `
                 </svg>
               </a>
               <a
-                aria-label="GitHub"
-                className="Pinpoint Internal Link Pinpoint Social Item Github  "
+                aria-label="Github"
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem GithubLink "
                 href="https://github.com/pinpt"
                 rel="noopener noreferrer"
                 target="_blank"
-                title="GitHub"
+                title="Github"
               >
                 <svg
                   aria-hidden="true"
@@ -711,7 +711,7 @@ exports[`Test loading 1`] = `
               </a>
               <a
                 aria-label="LinkedIn"
-                className="Pinpoint Internal Link Pinpoint Social Item LinkedIn  "
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem LinkedInLink "
                 href="https://linkedin.com/company/pinpoint-software"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -736,7 +736,7 @@ exports[`Test loading 1`] = `
               </a>
               <a
                 aria-label="RSS Feed"
-                className="Pinpoint Internal Link Pinpoint Social Item RSS "
+                className="Pinpoint Internal Link Pinpoint Social LinkItem RSSLink "
                 href="https://api.pinpoint.com.so/rss/PirxVTE94u3YmGNOySRY"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -1253,11 +1253,11 @@ exports[`Test no header 1`] = `
               </span>
             </a>
             <div
-              className="Pinpoint Social Bar "
+              className="Pinpoint SocialMedia Bar "
             >
               <a
                 aria-label="Facebook"
-                className="Pinpoint Internal Link Pinpoint Social Item Facebook  "
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem FacebookLink "
                 href="https://www.facebook.com/Pinpoint.Engineering"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -1282,7 +1282,7 @@ exports[`Test no header 1`] = `
               </a>
               <a
                 aria-label="Instagram"
-                className="Pinpoint Internal Link Pinpoint Social Item Instagram  "
+                className="Pinpoint Internal Link Pinpoint Social LinkItem InstagramLink "
                 href="https://www.instagram.com/pinpoint_sw/"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -1307,7 +1307,7 @@ exports[`Test no header 1`] = `
               </a>
               <a
                 aria-label="Twitter"
-                className="Pinpoint Internal Link Pinpoint Social Item Twitter  "
+                className="Pinpoint Internal Link Pinpoint SocialMedia Item TwitterLink "
                 href="https://twitter.com/pinpoint_sw"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -1331,12 +1331,12 @@ exports[`Test no header 1`] = `
                 </svg>
               </a>
               <a
-                aria-label="GitHub"
-                className="Pinpoint Internal Link Pinpoint Social Item Github  "
+                aria-label="Github"
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem GithubLink "
                 href="https://github.com/pinpt"
                 rel="noopener noreferrer"
                 target="_blank"
-                title="GitHub"
+                title="Github"
               >
                 <svg
                   aria-hidden="true"
@@ -1357,7 +1357,7 @@ exports[`Test no header 1`] = `
               </a>
               <a
                 aria-label="LinkedIn"
-                className="Pinpoint Internal Link Pinpoint Social Item LinkedIn  "
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem LinkedInLink "
                 href="https://linkedin.com/company/pinpoint-software"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -1382,7 +1382,7 @@ exports[`Test no header 1`] = `
               </a>
               <a
                 aria-label="RSS Feed"
-                className="Pinpoint Internal Link Pinpoint Social Item RSS "
+                className="Pinpoint Internal Link Pinpoint Social LinkItem RSSLink "
                 href="https://api.pinpoint.com.so/rss/PirxVTE94u3YmGNOySRY"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -1769,11 +1769,11 @@ exports[`Test with search bar 1`] = `
               </span>
             </a>
             <div
-              className="Pinpoint Social Bar "
+              className="Pinpoint SocialMedia Bar "
             >
               <a
                 aria-label="Facebook"
-                className="Pinpoint Internal Link Pinpoint Social Item Facebook  "
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem FacebookLink "
                 href="https://www.facebook.com/Pinpoint.Engineering"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -1798,7 +1798,7 @@ exports[`Test with search bar 1`] = `
               </a>
               <a
                 aria-label="Instagram"
-                className="Pinpoint Internal Link Pinpoint Social Item Instagram  "
+                className="Pinpoint Internal Link Pinpoint Social LinkItem InstagramLink "
                 href="https://www.instagram.com/pinpoint_sw/"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -1823,7 +1823,7 @@ exports[`Test with search bar 1`] = `
               </a>
               <a
                 aria-label="Twitter"
-                className="Pinpoint Internal Link Pinpoint Social Item Twitter  "
+                className="Pinpoint Internal Link Pinpoint SocialMedia Item TwitterLink "
                 href="https://twitter.com/pinpoint_sw"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -1847,12 +1847,12 @@ exports[`Test with search bar 1`] = `
                 </svg>
               </a>
               <a
-                aria-label="GitHub"
-                className="Pinpoint Internal Link Pinpoint Social Item Github  "
+                aria-label="Github"
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem GithubLink "
                 href="https://github.com/pinpt"
                 rel="noopener noreferrer"
                 target="_blank"
-                title="GitHub"
+                title="Github"
               >
                 <svg
                   aria-hidden="true"
@@ -1873,7 +1873,7 @@ exports[`Test with search bar 1`] = `
               </a>
               <a
                 aria-label="LinkedIn"
-                className="Pinpoint Internal Link Pinpoint Social Item LinkedIn  "
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem LinkedInLink "
                 href="https://linkedin.com/company/pinpoint-software"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -1898,7 +1898,7 @@ exports[`Test with search bar 1`] = `
               </a>
               <a
                 aria-label="RSS Feed"
-                className="Pinpoint Internal Link Pinpoint Social Item RSS "
+                className="Pinpoint Internal Link Pinpoint Social LinkItem RSSLink "
                 href="https://api.pinpoint.com.so/rss/PirxVTE94u3YmGNOySRY"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -2309,11 +2309,11 @@ exports[`With pagination 1`] = `
               </span>
             </a>
             <div
-              className="Pinpoint Social Bar "
+              className="Pinpoint SocialMedia Bar "
             >
               <a
                 aria-label="Facebook"
-                className="Pinpoint Internal Link Pinpoint Social Item Facebook  "
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem FacebookLink "
                 href="https://www.facebook.com/Pinpoint.Engineering"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -2338,7 +2338,7 @@ exports[`With pagination 1`] = `
               </a>
               <a
                 aria-label="Instagram"
-                className="Pinpoint Internal Link Pinpoint Social Item Instagram  "
+                className="Pinpoint Internal Link Pinpoint Social LinkItem InstagramLink "
                 href="https://www.instagram.com/pinpoint_sw/"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -2363,7 +2363,7 @@ exports[`With pagination 1`] = `
               </a>
               <a
                 aria-label="Twitter"
-                className="Pinpoint Internal Link Pinpoint Social Item Twitter  "
+                className="Pinpoint Internal Link Pinpoint SocialMedia Item TwitterLink "
                 href="https://twitter.com/pinpoint_sw"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -2387,12 +2387,12 @@ exports[`With pagination 1`] = `
                 </svg>
               </a>
               <a
-                aria-label="GitHub"
-                className="Pinpoint Internal Link Pinpoint Social Item Github  "
+                aria-label="Github"
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem GithubLink "
                 href="https://github.com/pinpt"
                 rel="noopener noreferrer"
                 target="_blank"
-                title="GitHub"
+                title="Github"
               >
                 <svg
                   aria-hidden="true"
@@ -2413,7 +2413,7 @@ exports[`With pagination 1`] = `
               </a>
               <a
                 aria-label="LinkedIn"
-                className="Pinpoint Internal Link Pinpoint Social Item LinkedIn  "
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem LinkedInLink "
                 href="https://linkedin.com/company/pinpoint-software"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -2438,7 +2438,7 @@ exports[`With pagination 1`] = `
               </a>
               <a
                 aria-label="RSS Feed"
-                className="Pinpoint Internal Link Pinpoint Social Item RSS "
+                className="Pinpoint Internal Link Pinpoint Social LinkItem RSSLink "
                 href="https://api.pinpoint.com.so/rss/PirxVTE94u3YmGNOySRY"
                 rel="noopener noreferrer"
                 target="_blank"
