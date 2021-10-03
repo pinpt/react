@@ -62,6 +62,7 @@ export interface IPrebuiltHomeProps {
 	pageNumber?: number;
 	pageCount?: number;
 	analytics?: Analytics;
+	skipAnalyticsFetch?: boolean;
 }
 
 const Home = (props: IPrebuiltHomeProps) => {
@@ -98,20 +99,23 @@ const Home = (props: IPrebuiltHomeProps) => {
 		pageNumber,
 		pageCount,
 		analytics,
+		skipAnalyticsFetch = false,
 	} = props;
 	const { latest, recent } = splitEntries(entries, latestCount);
 	const [_analytics, setAnalytics] = React.useState<Analytics | undefined>(analytics);
 	React.useEffect(() => {
-		const configFromSite = {
-			siteId: site.id,
-			slug: site.slug,
-			siteUrl: site.url,
-		};
-		fetchAnalytics(
-			configFromSite,
-			entries.map((e) => e.id)
-		).then(setAnalytics);
-	}, []);
+		if (!skipAnalyticsFetch) {
+			const configFromSite = {
+				siteId: site.id,
+				slug: site.slug,
+				siteUrl: site.url,
+			};
+			fetchAnalytics(
+				configFromSite,
+				entries.map((e) => e.id)
+			).then(setAnalytics);
+		}
+	}, [skipAnalyticsFetch]);
 	return (
 		<DashboardPage
 			className={`Prebuilt ${className}`}
