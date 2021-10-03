@@ -747,8 +747,10 @@ exports[`Test custom metadata 1`] = `
                   alt=""
                   className="Pinpoint Image image blurhash"
                   decoding="async"
+                  height={320}
                   loading="eager"
                   src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                  width={320}
                 />
               </span>
               <div
@@ -1015,8 +1017,10 @@ exports[`Test custom metadata 1`] = `
                       alt=""
                       className="Pinpoint Image medium-zoom-body blurhash"
                       decoding="async"
+                      height={509.6}
                       loading="eager"
                       src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                      width={564.72}
                     />
                   </div>
                 </div>
@@ -1068,8 +1072,10 @@ exports[`Test custom metadata 1`] = `
                       alt=""
                       className="Pinpoint Image medium-zoom-body blurhash"
                       decoding="async"
+                      height={360}
                       loading="eager"
                       src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                      width={540}
                     />
                   </div>
                 </div>
@@ -1144,8 +1150,10 @@ exports[`Test custom metadata 1`] = `
                   alt=""
                   className="Pinpoint Image image blurhash"
                   decoding="async"
+                  height={320}
                   loading="eager"
                   src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                  width={320}
                 />
               </a>
               <span
@@ -1429,8 +1437,10 @@ exports[`Test default state 1`] = `
                   alt=""
                   className="Pinpoint Image image blurhash"
                   decoding="async"
+                  height={320}
                   loading="eager"
                   src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                  width={320}
                 />
               </span>
               <div
@@ -1697,8 +1707,10 @@ exports[`Test default state 1`] = `
                       alt=""
                       className="Pinpoint Image medium-zoom-body blurhash"
                       decoding="async"
+                      height={509.6}
                       loading="eager"
                       src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                      width={564.72}
                     />
                   </div>
                 </div>
@@ -1750,8 +1762,10 @@ exports[`Test default state 1`] = `
                       alt=""
                       className="Pinpoint Image medium-zoom-body blurhash"
                       decoding="async"
+                      height={360}
                       loading="eager"
                       src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                      width={540}
                     />
                   </div>
                 </div>
@@ -1826,8 +1840,10 @@ exports[`Test default state 1`] = `
                   alt=""
                   className="Pinpoint Image image blurhash"
                   decoding="async"
+                  height={320}
                   loading="eager"
                   src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                  width={320}
                 />
               </a>
               <span

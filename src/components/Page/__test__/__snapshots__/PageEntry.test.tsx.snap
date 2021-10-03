@@ -106,8 +106,10 @@ exports[`Test full entry 1`] = `
                   alt=""
                   className="Pinpoint Image avatar blurhash"
                   decoding="async"
+                  height={48}
                   loading="eager"
                   src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                  width={48}
                 />
                 <span
                   className="name"
@@ -256,8 +258,10 @@ exports[`Test full entry 1`] = `
                   alt=""
                   className="Pinpoint Image medium-zoom-cover blurhash"
                   decoding="async"
+                  height={900}
                   loading="eager"
                   src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                  width={1600}
                 />
               </div>
             </div>
@@ -312,8 +316,10 @@ exports[`Test full entry 1`] = `
                     alt=""
                     className="Pinpoint Image medium-zoom-body blurhash"
                     decoding="async"
+                    height={509.6}
                     loading="eager"
                     src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                    width={564.72}
                   />
                 </div>
               </div>
@@ -365,8 +371,10 @@ exports[`Test full entry 1`] = `
                     alt=""
                     className="Pinpoint Image medium-zoom-body blurhash"
                     decoding="async"
+                    height={360}
                     loading="eager"
                     src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                    width={540}
                   />
                 </div>
               </div>
@@ -428,8 +436,10 @@ exports[`Test full entry 1`] = `
                   alt=""
                   className="Pinpoint Image avatar blurhash"
                   decoding="async"
+                  height={48}
                   loading="eager"
                   src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                  width={48}
                 />
                 <span
                   className="name"
@@ -593,8 +603,10 @@ exports[`Test full entry 1`] = `
                   alt=""
                   className="Pinpoint Image image blurhash"
                   decoding="async"
+                  height={320}
                   loading="eager"
                   src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                  width={320}
                 />
               </span>
               <span
@@ -1521,8 +1533,10 @@ exports[`Test no sidebar 1`] = `
                   alt=""
                   className="Pinpoint Image medium-zoom-cover blurhash"
                   decoding="async"
+                  height={900}
                   loading="eager"
                   src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                  width={1600}
                 />
               </div>
             </div>
@@ -1577,8 +1591,10 @@ exports[`Test no sidebar 1`] = `
                     alt=""
                     className="Pinpoint Image medium-zoom-body blurhash"
                     decoding="async"
+                    height={509.6}
                     loading="eager"
                     src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                    width={564.72}
                   />
                 </div>
               </div>
@@ -1630,8 +1646,10 @@ exports[`Test no sidebar 1`] = `
                     alt=""
                     className="Pinpoint Image medium-zoom-body blurhash"
                     decoding="async"
+                    height={360}
                     loading="eager"
                     src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                    width={540}
                   />
                 </div>
               </div>
@@ -1703,8 +1721,10 @@ exports[`Test no sidebar 1`] = `
                   alt=""
                   className="Pinpoint Image image blurhash"
                   decoding="async"
+                  height={320}
                   loading="eager"
                   src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                  width={320}
                 />
               </span>
               <span
@@ -2064,8 +2084,10 @@ exports[`Test not zoomable entry 1`] = `
                   alt=""
                   className="Pinpoint Image avatar blurhash"
                   decoding="async"
+                  height={48}
                   loading="eager"
                   src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                  width={48}
                 />
                 <span
                   className="name"
@@ -2214,8 +2236,10 @@ exports[`Test not zoomable entry 1`] = `
                   alt=""
                   className="Pinpoint Image  blurhash"
                   decoding="async"
+                  height={900}
                   loading="eager"
                   src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                  width={1600}
                 />
               </div>
             </div>
@@ -2270,8 +2294,10 @@ exports[`Test not zoomable entry 1`] = `
                     alt=""
                     className="Pinpoint Image medium-zoom-body blurhash"
                     decoding="async"
+                    height={509.6}
                     loading="eager"
                     src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                    width={564.72}
                   />
                 </div>
               </div>
@@ -2323,8 +2349,10 @@ exports[`Test not zoomable entry 1`] = `
                     alt=""
                     className="Pinpoint Image medium-zoom-body blurhash"
                     decoding="async"
+                    height={360}
                     loading="eager"
                     src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                    width={540}
                   />
                 </div>
               </div>
@@ -2386,8 +2414,10 @@ exports[`Test not zoomable entry 1`] = `
                   alt=""
                   className="Pinpoint Image avatar blurhash"
                   decoding="async"
+                  height={48}
                   loading="eager"
                   src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                  width={48}
                 />
                 <span
                   className="name"
@@ -2551,8 +2581,10 @@ exports[`Test not zoomable entry 1`] = `
                   alt=""
                   className="Pinpoint Image image blurhash"
                   decoding="async"
+                  height={320}
                   loading="eager"
                   src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                  width={320}
                 />
               </span>
               <span

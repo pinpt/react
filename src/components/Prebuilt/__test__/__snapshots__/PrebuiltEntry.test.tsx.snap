@@ -1134,8 +1134,10 @@ exports[`Test default state 1`] = `
                 alt=""
                 className="Pinpoint Image image blurhash"
                 decoding="async"
+                height={320}
                 loading="eager"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                width={320}
               />
             </a>
           </div>
@@ -1512,8 +1514,10 @@ exports[`Test default state 1`] = `
                   alt="Linked Content Blocks"
                   className="Pinpoint Image medium-zoom-cover blurhash"
                   decoding="async"
+                  height={900}
                   loading="eager"
                   src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                  width={1600}
                 />
               </div>
             </div>
@@ -1568,8 +1572,10 @@ exports[`Test default state 1`] = `
                     alt=""
                     className="Pinpoint Image medium-zoom-body blurhash"
                     decoding="async"
+                    height={509.6}
                     loading="eager"
                     src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                    width={564.72}
                   />
                 </div>
               </div>
@@ -1621,8 +1627,10 @@ exports[`Test default state 1`] = `
                     alt=""
                     className="Pinpoint Image medium-zoom-body blurhash"
                     decoding="async"
+                    height={360}
                     loading="eager"
                     src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                    width={540}
                   />
                 </div>
               </div>
@@ -1943,8 +1951,10 @@ exports[`Test default state 1`] = `
                   alt=""
                   className="Pinpoint Image image blurhash"
                   decoding="async"
+                  height={320}
                   loading="eager"
                   src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                  width={320}
                 />
               </a>
               <span
@@ -2227,8 +2237,10 @@ exports[`Test no author 1`] = `
                 alt=""
                 className="Pinpoint Image image blurhash"
                 decoding="async"
+                height={320}
                 loading="eager"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                width={320}
               />
             </a>
           </div>
@@ -2498,8 +2510,10 @@ exports[`Test no author 1`] = `
                   alt="Linked Content Blocks"
                   className="Pinpoint Image medium-zoom-cover blurhash"
                   decoding="async"
+                  height={900}
                   loading="eager"
                   src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                  width={1600}
                 />
               </div>
             </div>
@@ -2554,8 +2568,10 @@ exports[`Test no author 1`] = `
                     alt=""
                     className="Pinpoint Image medium-zoom-body blurhash"
                     decoding="async"
+                    height={509.6}
                     loading="eager"
                     src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                    width={564.72}
                   />
                 </div>
               </div>
@@ -2607,8 +2623,10 @@ exports[`Test no author 1`] = `
                     alt=""
                     className="Pinpoint Image medium-zoom-body blurhash"
                     decoding="async"
+                    height={360}
                     loading="eager"
                     src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                    width={540}
                   />
                 </div>
               </div>
@@ -2822,8 +2840,10 @@ exports[`Test no author 1`] = `
                   alt=""
                   className="Pinpoint Image image blurhash"
                   decoding="async"
+                  height={320}
                   loading="eager"
                   src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                  width={320}
                 />
               </a>
               <span
@@ -5148,8 +5168,10 @@ exports[`Test with pagination 1`] = `
                 alt=""
                 className="Pinpoint Image image blurhash"
                 decoding="async"
+                height={320}
                 loading="eager"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                width={320}
               />
             </a>
           </div>
@@ -5430,8 +5452,10 @@ exports[`Test with pagination 1`] = `
                   alt="Publishing Controls and Social Posting"
                   className="Pinpoint Image medium-zoom-cover blurhash"
                   decoding="async"
+                  height={900}
                   loading="eager"
                   src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                  width={1600}
                 />
               </div>
             </div>
@@ -5486,8 +5510,10 @@ exports[`Test with pagination 1`] = `
                     alt=""
                     className="Pinpoint Image medium-zoom-body blurhash"
                     decoding="async"
+                    height={540}
                     loading="eager"
                     src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                    width={810}
                   />
                 </div>
               </div>
@@ -5770,8 +5796,10 @@ exports[`Test with pagination 1`] = `
                   alt=""
                   className="Pinpoint Image image blurhash"
                   decoding="async"
+                  height={320}
                   loading="eager"
                   src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                  width={320}
                 />
               </a>
               <span
