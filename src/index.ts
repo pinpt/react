@@ -10,6 +10,7 @@ export { default as Card } from './components/Card';
 export { default as DateLabel } from './components/DateLabel';
 export { default as Error } from './components/Error';
 export { default as Logo } from './components/Logo';
+export { default as Image } from './components/Image';
 export { default as Copyright } from './components/Copyright';
 export { default as Subscribe } from './components/Subscribe';
 export { default as SubscribeForm } from './components/SubscribeForm';
