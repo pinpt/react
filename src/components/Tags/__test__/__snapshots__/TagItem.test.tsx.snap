@@ -5,9 +5,9 @@ exports[`Test 1 1`] = `
   className="Pinpoint Tag Item   "
   style={
     Object {
-      "backgroundColor": "#a1ffa9",
-      "border": "1px solid var(--tag-bcolor, #1e823633)",
-      "color": "var(--tag-fgcolor, #006b21)",
+      "backgroundColor": "#006a21",
+      "border": "1px solid var(--tag-bcolor, #555955)",
+      "color": "var(--tag-fgcolor, #fff)",
     }
   }
 >
@@ -20,9 +20,9 @@ exports[`Test 2 1`] = `
   className="Pinpoint Tag Item   "
   style={
     Object {
-      "backgroundColor": "#79e7f2",
-      "border": "1px solid var(--tag-bcolor, #006d7833)",
-      "color": "var(--tag-fgcolor, #ffffff)",
+      "backgroundColor": "#005862",
+      "border": "1px solid var(--tag-bcolor, #555555)",
+      "color": "var(--tag-fgcolor, #fff)",
     }
   }
 >
@@ -36,8 +36,8 @@ exports[`Test 3 1`] = `
   style={
     Object {
       "backgroundColor": "#6149c5",
-      "border": "1px solid var(--tag-bcolor, #00004f33)",
-      "color": "var(--tag-fgcolor, #ffffff)",
+      "border": "1px solid var(--tag-bcolor, #6a51ac)",
+      "color": "var(--tag-fgcolor, #fff)",
     }
   }
 >
@@ -50,9 +50,9 @@ exports[`Test 4 1`] = `
   className="Pinpoint Tag Item   "
   style={
     Object {
-      "backgroundColor": "#ff9eff",
-      "border": "1px solid var(--tag-bcolor, #7f258333)",
-      "color": "var(--tag-fgcolor, #ffffff)",
+      "backgroundColor": "#973d9b",
+      "border": "1px solid var(--tag-bcolor, #815383)",
+      "color": "var(--tag-fgcolor, #fff)",
     }
   }
 >
@@ -93,9 +93,9 @@ exports[`Test removable 1`] = `
   className="Pinpoint Tag Item   "
   style={
     Object {
-      "backgroundColor": "#ff9eff",
-      "border": "1px solid var(--tag-bcolor, #7f258333)",
-      "color": "var(--tag-fgcolor, #ffffff)",
+      "backgroundColor": "#973d9b",
+      "border": "1px solid var(--tag-bcolor, #815383)",
+      "color": "var(--tag-fgcolor, #fff)",
     }
   }
 >

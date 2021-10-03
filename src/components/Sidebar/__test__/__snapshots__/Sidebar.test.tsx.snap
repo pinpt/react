@@ -36,7 +36,7 @@ exports[`Test custom className 1`] = `
         Object {
           "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
           "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-          "color": "var(--tag-fgcolor, #27632e)",
+          "color": "var(--tag-fgcolor, #000)",
         }
       }
     >
@@ -48,7 +48,7 @@ exports[`Test custom className 1`] = `
         Object {
           "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
           "border": "1px solid var(--tag-bcolor, #23747633)",
-          "color": "var(--tag-fgcolor, #005e5f)",
+          "color": "var(--tag-fgcolor, #000)",
         }
       }
     >
@@ -58,9 +58,9 @@ exports[`Test custom className 1`] = `
       className="Pinpoint Tag Item   "
       style={
         Object {
-          "backgroundColor": "#f473da",
-          "border": "1px solid var(--tag-bcolor, #72006233)",
-          "color": "var(--tag-fgcolor, #ffffff)",
+          "backgroundColor": "#bf40a8",
+          "border": "1px solid var(--tag-bcolor, #702f61)",
+          "color": "var(--tag-fgcolor, #fff)",
         }
       }
     >
@@ -190,7 +190,7 @@ exports[`Test default 1`] = `
         Object {
           "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
           "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-          "color": "var(--tag-fgcolor, #27632e)",
+          "color": "var(--tag-fgcolor, #000)",
         }
       }
     >
@@ -202,7 +202,7 @@ exports[`Test default 1`] = `
         Object {
           "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
           "border": "1px solid var(--tag-bcolor, #23747633)",
-          "color": "var(--tag-fgcolor, #005e5f)",
+          "color": "var(--tag-fgcolor, #000)",
         }
       }
     >
@@ -212,9 +212,9 @@ exports[`Test default 1`] = `
       className="Pinpoint Tag Item   "
       style={
         Object {
-          "backgroundColor": "#f473da",
-          "border": "1px solid var(--tag-bcolor, #72006233)",
-          "color": "var(--tag-fgcolor, #ffffff)",
+          "backgroundColor": "#bf40a8",
+          "border": "1px solid var(--tag-bcolor, #702f61)",
+          "color": "var(--tag-fgcolor, #fff)",
         }
       }
     >
@@ -423,7 +423,7 @@ exports[`Test no author 1`] = `
         Object {
           "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
           "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-          "color": "var(--tag-fgcolor, #27632e)",
+          "color": "var(--tag-fgcolor, #000)",
         }
       }
     >
@@ -435,7 +435,7 @@ exports[`Test no author 1`] = `
         Object {
           "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
           "border": "1px solid var(--tag-bcolor, #23747633)",
-          "color": "var(--tag-fgcolor, #005e5f)",
+          "color": "var(--tag-fgcolor, #000)",
         }
       }
     >
@@ -445,9 +445,9 @@ exports[`Test no author 1`] = `
       className="Pinpoint Tag Item   "
       style={
         Object {
-          "backgroundColor": "#f473da",
-          "border": "1px solid var(--tag-bcolor, #72006233)",
-          "color": "var(--tag-fgcolor, #ffffff)",
+          "backgroundColor": "#bf40a8",
+          "border": "1px solid var(--tag-bcolor, #702f61)",
+          "color": "var(--tag-fgcolor, #fff)",
         }
       }
     >
@@ -554,7 +554,7 @@ exports[`clap only 1`] = `
         Object {
           "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
           "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-          "color": "var(--tag-fgcolor, #27632e)",
+          "color": "var(--tag-fgcolor, #000)",
         }
       }
     >
@@ -566,7 +566,7 @@ exports[`clap only 1`] = `
         Object {
           "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
           "border": "1px solid var(--tag-bcolor, #23747633)",
-          "color": "var(--tag-fgcolor, #005e5f)",
+          "color": "var(--tag-fgcolor, #000)",
         }
       }
     >
@@ -576,9 +576,9 @@ exports[`clap only 1`] = `
       className="Pinpoint Tag Item   "
       style={
         Object {
-          "backgroundColor": "#f473da",
-          "border": "1px solid var(--tag-bcolor, #72006233)",
-          "color": "var(--tag-fgcolor, #ffffff)",
+          "backgroundColor": "#bf40a8",
+          "border": "1px solid var(--tag-bcolor, #702f61)",
+          "color": "var(--tag-fgcolor, #fff)",
         }
       }
     >
