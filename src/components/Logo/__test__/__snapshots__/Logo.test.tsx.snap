@@ -10,8 +10,10 @@ exports[`Test click handler 1`] = `
     alt=""
     className="Pinpoint Image image blurhash"
     decoding="async"
+    height={320}
     loading="eager"
     src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+    width={320}
   />
 </span>
 `;
@@ -44,8 +46,10 @@ exports[`Test default state 1`] = `
     alt=""
     className="Pinpoint Image image blurhash"
     decoding="async"
+    height={320}
     loading="eager"
     src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+    width={320}
   />
 </span>
 `;
@@ -93,8 +97,10 @@ exports[`Test large 1`] = `
     alt=""
     className="Pinpoint Image image blurhash"
     decoding="async"
+    height={320}
     loading="eager"
     src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+    width={320}
   />
 </span>
 `;
@@ -131,8 +137,10 @@ exports[`Test link 1`] = `
     alt=""
     className="Pinpoint Image image blurhash"
     decoding="async"
+    height={320}
     loading="eager"
     src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+    width={320}
   />
 </a>
 `;
@@ -163,8 +171,10 @@ exports[`Test small 1`] = `
     alt=""
     className="Pinpoint Image image blurhash"
     decoding="async"
+    height={320}
     loading="eager"
     src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+    width={320}
   />
 </span>
 `;

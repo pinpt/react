@@ -711,8 +711,10 @@ exports[`Test image with scale 1`] = `
         alt="Left aligned, scale 30%"
         className="Pinpoint Image medium-zoom-body blurhash"
         decoding="async"
+        height={300}
         loading="eager"
         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABmJLR0QA/wD/AP+gvaeTAAAAxklEQVQYlQXBvU7DMBSA0c++N43dND9tF8TAxsDCUzHw0CxIUAFCiFDViWs74Rzz/HS/jn+Bl9cPnD/y+HDH7U1PyQun0xl1bkdMQtslvNux3Xoa71kX2HcLOvRHRGfmotTOcdgPHIYBCyiKtm0HsqEvK1optffUtUcMNE1GrRVEFKkqirHMaeESMwKEVNAQIlO8MsVCWjM/Y0AwWOAcAvr5NTJdE78hUIyhxmBLwRoIc0Tf3r+JOXPJM85X5I0lqUGsYU2JfwHmU2jvsbHvAAAAAElFTkSuQmCC"
+        width={450}
       />
     </div>
     <div
@@ -731,8 +733,10 @@ exports[`Test image with scale 1`] = `
         alt="Center aligned, scale 30%"
         className="Pinpoint Image medium-zoom-body blurhash"
         decoding="async"
+        height={300}
         loading="eager"
         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABmJLR0QA/wD/AP+gvaeTAAAAxklEQVQYlQXBvU7DMBSA0c++N43dND9tF8TAxsDCUzHw0CxIUAFCiFDViWs74Rzz/HS/jn+Bl9cPnD/y+HDH7U1PyQun0xl1bkdMQtslvNux3Xoa71kX2HcLOvRHRGfmotTOcdgPHIYBCyiKtm0HsqEvK1optffUtUcMNE1GrRVEFKkqirHMaeESMwKEVNAQIlO8MsVCWjM/Y0AwWOAcAvr5NTJdE78hUIyhxmBLwRoIc0Tf3r+JOXPJM85X5I0lqUGsYU2JfwHmU2jvsbHvAAAAAElFTkSuQmCC"
+        width={450}
       />
     </div>
     <div
@@ -751,8 +755,10 @@ exports[`Test image with scale 1`] = `
         alt="Right aligned, scale 30%"
         className="Pinpoint Image medium-zoom-body blurhash"
         decoding="async"
+        height={300}
         loading="eager"
         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABmJLR0QA/wD/AP+gvaeTAAAAxklEQVQYlQXBvU7DMBSA0c++N43dND9tF8TAxsDCUzHw0CxIUAFCiFDViWs74Rzz/HS/jn+Bl9cPnD/y+HDH7U1PyQun0xl1bkdMQtslvNux3Xoa71kX2HcLOvRHRGfmotTOcdgPHIYBCyiKtm0HsqEvK1optffUtUcMNE1GrRVEFKkqirHMaeESMwKEVNAQIlO8MsVCWjM/Y0AwWOAcAvr5NTJdE78hUIyhxmBLwRoIc0Tf3r+JOXPJM85X5I0lqUGsYU2JfwHmU2jvsbHvAAAAAElFTkSuQmCC"
+        width={450}
       />
     </div>
     <div
@@ -771,8 +777,10 @@ exports[`Test image with scale 1`] = `
         alt="Center aligned, scale 200%"
         className="Pinpoint Image medium-zoom-body blurhash"
         decoding="async"
+        height={2000}
         loading="eager"
         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABmJLR0QA/wD/AP+gvaeTAAAAxklEQVQYlQXBvU7DMBSA0c++N43dND9tF8TAxsDCUzHw0CxIUAFCiFDViWs74Rzz/HS/jn+Bl9cPnD/y+HDH7U1PyQun0xl1bkdMQtslvNux3Xoa71kX2HcLOvRHRGfmotTOcdgPHIYBCyiKtm0HsqEvK1optffUtUcMNE1GrRVEFKkqirHMaeESMwKEVNAQIlO8MsVCWjM/Y0AwWOAcAvr5NTJdE78hUIyhxmBLwRoIc0Tf3r+JOXPJM85X5I0lqUGsYU2JfwHmU2jvsbHvAAAAAElFTkSuQmCC"
+        width={3000}
       />
     </div>
     <div

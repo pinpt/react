@@ -1170,8 +1170,10 @@ exports[`Test full page 1`] = `
                   alt=""
                   className="Pinpoint Image image blurhash"
                   decoding="async"
+                  height={320}
                   loading="eager"
                   src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                  width={320}
                 />
               </span>
               <span
@@ -3969,8 +3971,10 @@ exports[`Test no header 1`] = `
                   alt=""
                   className="Pinpoint Image image blurhash"
                   decoding="async"
+                  height={320}
                   loading="eager"
                   src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                  width={320}
                 />
               </span>
               <span
@@ -5610,8 +5614,10 @@ exports[`Test no recent 1`] = `
                   alt=""
                   className="Pinpoint Image image blurhash"
                   decoding="async"
+                  height={320}
                   loading="eager"
                   src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                  width={320}
                 />
               </span>
               <span

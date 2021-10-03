@@ -13,8 +13,10 @@ exports[`Test with clickable logo 1`] = `
       alt=""
       className="Pinpoint Image image blurhash"
       decoding="async"
+      height={320}
       loading="eager"
       src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+      width={320}
     />
   </span>
   <span
@@ -37,8 +39,10 @@ exports[`Test with custom className 1`] = `
       alt=""
       className="Pinpoint Image image blurhash"
       decoding="async"
+      height={320}
       loading="eager"
       src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+      width={320}
     />
   </span>
   <span
@@ -89,8 +93,10 @@ exports[`Test with logo 1`] = `
       alt=""
       className="Pinpoint Image image blurhash"
       decoding="async"
+      height={320}
       loading="eager"
       src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+      width={320}
     />
   </span>
   <span
