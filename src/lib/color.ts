@@ -3,12 +3,29 @@ import ColorHash from 'color-hash';
 
 const colorHashInstance = new ColorHash();
 
+const checkConstrast = (_color: string, check = 'white') => {
+	let color = _color;
+	// try and find a color that is within our acceptable range for contrast
+	for (let c = 0; c < 4; c++) {
+		const contrast = chroma.contrast(color, check);
+		if (contrast < 4.5) {
+			color = chroma(color).darken(1).alpha(1).hex();
+			continue;
+		} else if (contrast > 10) {
+			color = chroma(color).brighten(1).alpha(1).hex();
+			continue;
+		}
+		break;
+	}
+	return color;
+};
+
 export const colorForString = (str: string | undefined, brighten = true) => {
 	if (!brighten) {
 		return colorHashInstance.hex(str ?? '#ddd');
 	}
 	const color = colorHashInstance.rgb(str ?? '#ddd');
-	return chroma(color).brighten().hex();
+	return checkConstrast(chroma(color).brighten().hex());
 };
 
 // the following are the basic mapping we provide so that colors are uniform for these types
@@ -49,12 +66,11 @@ export const getTagColorStyles = (tag: string, defaultColor?: string) => {
 				? `#${defaultColor}`
 				: defaultColor
 			: defaultColor;
-		const borderColor = chroma(backgroundColor).darken(2.5).alpha(0.2).hex();
-		let color = chroma(backgroundColor).darken(3).alpha(1).hex();
-		const contrast = chroma.contrast(color, 'white');
-		if (contrast > 8) {
-			// if too dark, go the other direction to lighten
-			color = chroma(backgroundColor).brighten(4).alpha(1).hex();
+		const borderColor = checkConstrast(chroma(backgroundColor).darken(2.5).alpha(0.2).hex());
+		const contrast = chroma.contrast(backgroundColor, 'white');
+		let color = '#fff';
+		if (contrast < 4.5) {
+			color = '#000';
 		}
 		return {
 			backgroundColor,
@@ -65,12 +81,11 @@ export const getTagColorStyles = (tag: string, defaultColor?: string) => {
 	const _tag = synonymMapping[tag.toLowerCase()] as string;
 	const bg = _tag ? tagMapping[_tag] : ({ color: colorForString(tag), variable: '' } as any);
 	const backgroundColor = bg.variable ? `var(${bg.variable},${bg.color})` : bg.color;
-	const borderColor = chroma(bg.color).darken(2.5).alpha(0.2).hex();
-	let color = chroma(bg.color).darken(3).alpha(1).hex();
-	const contrast = chroma.contrast(color, 'white');
-	if (contrast > 8) {
-		// if too dark, go the other direction to lighten
-		color = chroma(bg.color).brighten(4).alpha(1).hex();
+	const borderColor = checkConstrast(chroma(bg.color).darken(2.5).alpha(0.2).hex());
+	const contrast = chroma.contrast(bg.color, '#fff');
+	let color = '#fff';
+	if (contrast < 4.5) {
+		color = '#000';
 	}
 	return {
 		backgroundColor,

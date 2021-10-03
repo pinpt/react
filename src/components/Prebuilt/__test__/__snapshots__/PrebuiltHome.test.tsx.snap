@@ -189,7 +189,7 @@ exports[`Hidden stats 1`] = `
                     Object {
                       "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
                       "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #27632e)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -202,7 +202,7 @@ exports[`Hidden stats 1`] = `
                     Object {
                       "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
                       "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #005e5f)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -309,7 +309,7 @@ exports[`Hidden stats 1`] = `
                     Object {
                       "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
                       "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #27632e)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -394,7 +394,7 @@ exports[`Hidden stats 1`] = `
                     Object {
                       "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
                       "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #27632e)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -481,7 +481,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
                       "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #005e5f)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -494,7 +494,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
                       "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #27632e)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -579,7 +579,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
                       "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #27632e)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -591,8 +591,8 @@ populated with your recently completed...
                   style={
                     Object {
                       "backgroundColor": "var(--tag-bug-bgcolor,#d73a4a)",
-                      "border": "1px solid var(--tag-bcolor, #51000033)",
-                      "color": "var(--tag-fgcolor, #ffffff)",
+                      "border": "1px solid var(--tag-bcolor, #83312b)",
+                      "color": "var(--tag-fgcolor, #fff)",
                     }
                   }
                 >
@@ -605,7 +605,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
                       "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #005e5f)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -685,7 +685,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
                       "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #005e5f)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -697,8 +697,8 @@ populated with your recently completed...
                   style={
                     Object {
                       "backgroundColor": "var(--tag-bug-bgcolor,#d73a4a)",
-                      "border": "1px solid var(--tag-bcolor, #51000033)",
-                      "color": "var(--tag-fgcolor, #ffffff)",
+                      "border": "1px solid var(--tag-bcolor, #83312b)",
+                      "color": "var(--tag-fgcolor, #fff)",
                     }
                   }
                 >
@@ -783,7 +783,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
                       "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #27632e)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -796,7 +796,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
                       "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #005e5f)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -881,7 +881,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
                       "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #005e5f)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -966,7 +966,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
                       "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #27632e)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -979,7 +979,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
                       "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #005e5f)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -1064,7 +1064,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
                       "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #27632e)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -1076,8 +1076,8 @@ populated with your recently completed...
                   style={
                     Object {
                       "backgroundColor": "var(--tag-bug-bgcolor,#d73a4a)",
-                      "border": "1px solid var(--tag-bcolor, #51000033)",
-                      "color": "var(--tag-fgcolor, #ffffff)",
+                      "border": "1px solid var(--tag-bcolor, #83312b)",
+                      "color": "var(--tag-fgcolor, #fff)",
                     }
                   }
                 >
@@ -1615,7 +1615,7 @@ exports[`Test custom className 1`] = `
                     Object {
                       "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
                       "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #27632e)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -1628,7 +1628,7 @@ exports[`Test custom className 1`] = `
                     Object {
                       "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
                       "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #005e5f)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -1842,7 +1842,7 @@ exports[`Test custom className 1`] = `
                     Object {
                       "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
                       "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #27632e)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -2034,7 +2034,7 @@ exports[`Test custom className 1`] = `
                     Object {
                       "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
                       "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #27632e)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -2228,7 +2228,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
                       "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #005e5f)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -2241,7 +2241,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
                       "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #27632e)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -2433,7 +2433,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
                       "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #27632e)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -2445,8 +2445,8 @@ populated with your recently completed...
                   style={
                     Object {
                       "backgroundColor": "var(--tag-bug-bgcolor,#d73a4a)",
-                      "border": "1px solid var(--tag-bcolor, #51000033)",
-                      "color": "var(--tag-fgcolor, #ffffff)",
+                      "border": "1px solid var(--tag-bcolor, #83312b)",
+                      "color": "var(--tag-fgcolor, #fff)",
                     }
                   }
                 >
@@ -2459,7 +2459,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
                       "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #005e5f)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -2646,7 +2646,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
                       "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #005e5f)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -2658,8 +2658,8 @@ populated with your recently completed...
                   style={
                     Object {
                       "backgroundColor": "var(--tag-bug-bgcolor,#d73a4a)",
-                      "border": "1px solid var(--tag-bcolor, #51000033)",
-                      "color": "var(--tag-fgcolor, #ffffff)",
+                      "border": "1px solid var(--tag-bcolor, #83312b)",
+                      "color": "var(--tag-fgcolor, #fff)",
                     }
                   }
                 >
@@ -2851,7 +2851,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
                       "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #27632e)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -2864,7 +2864,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
                       "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #005e5f)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -3056,7 +3056,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
                       "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #005e5f)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -3248,7 +3248,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
                       "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #27632e)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -3261,7 +3261,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
                       "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #005e5f)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -3453,7 +3453,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
                       "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #27632e)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -3465,8 +3465,8 @@ populated with your recently completed...
                   style={
                     Object {
                       "backgroundColor": "var(--tag-bug-bgcolor,#d73a4a)",
-                      "border": "1px solid var(--tag-bcolor, #51000033)",
-                      "color": "var(--tag-fgcolor, #ffffff)",
+                      "border": "1px solid var(--tag-bcolor, #83312b)",
+                      "color": "var(--tag-fgcolor, #fff)",
                     }
                   }
                 >
@@ -4111,7 +4111,7 @@ exports[`Test custom latest length 1`] = `
                     Object {
                       "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
                       "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #27632e)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -4124,7 +4124,7 @@ exports[`Test custom latest length 1`] = `
                     Object {
                       "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
                       "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #005e5f)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -4316,7 +4316,7 @@ exports[`Test custom latest length 1`] = `
                     Object {
                       "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
                       "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #27632e)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -4530,7 +4530,7 @@ exports[`Test custom latest length 1`] = `
                     Object {
                       "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
                       "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #27632e)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -4724,7 +4724,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
                       "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #005e5f)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -4737,7 +4737,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
                       "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #27632e)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -4929,7 +4929,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
                       "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #27632e)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -4941,8 +4941,8 @@ populated with your recently completed...
                   style={
                     Object {
                       "backgroundColor": "var(--tag-bug-bgcolor,#d73a4a)",
-                      "border": "1px solid var(--tag-bcolor, #51000033)",
-                      "color": "var(--tag-fgcolor, #ffffff)",
+                      "border": "1px solid var(--tag-bcolor, #83312b)",
+                      "color": "var(--tag-fgcolor, #fff)",
                     }
                   }
                 >
@@ -4955,7 +4955,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
                       "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #005e5f)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -5142,7 +5142,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
                       "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #005e5f)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -5154,8 +5154,8 @@ populated with your recently completed...
                   style={
                     Object {
                       "backgroundColor": "var(--tag-bug-bgcolor,#d73a4a)",
-                      "border": "1px solid var(--tag-bcolor, #51000033)",
-                      "color": "var(--tag-fgcolor, #ffffff)",
+                      "border": "1px solid var(--tag-bcolor, #83312b)",
+                      "color": "var(--tag-fgcolor, #fff)",
                     }
                   }
                 >
@@ -5347,7 +5347,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
                       "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #27632e)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -5360,7 +5360,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
                       "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #005e5f)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -5552,7 +5552,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
                       "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #005e5f)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -5744,7 +5744,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
                       "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #27632e)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -5757,7 +5757,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
                       "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #005e5f)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -5949,7 +5949,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
                       "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #27632e)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -5961,8 +5961,8 @@ populated with your recently completed...
                   style={
                     Object {
                       "backgroundColor": "var(--tag-bug-bgcolor,#d73a4a)",
-                      "border": "1px solid var(--tag-bcolor, #51000033)",
-                      "color": "var(--tag-fgcolor, #ffffff)",
+                      "border": "1px solid var(--tag-bcolor, #83312b)",
+                      "color": "var(--tag-fgcolor, #fff)",
                     }
                   }
                 >
@@ -6607,7 +6607,7 @@ exports[`Test default state 1`] = `
                     Object {
                       "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
                       "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #27632e)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -6620,7 +6620,7 @@ exports[`Test default state 1`] = `
                     Object {
                       "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
                       "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #005e5f)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -6834,7 +6834,7 @@ exports[`Test default state 1`] = `
                     Object {
                       "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
                       "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #27632e)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -7026,7 +7026,7 @@ exports[`Test default state 1`] = `
                     Object {
                       "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
                       "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #27632e)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -7220,7 +7220,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
                       "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #005e5f)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -7233,7 +7233,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
                       "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #27632e)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -7425,7 +7425,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
                       "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #27632e)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -7437,8 +7437,8 @@ populated with your recently completed...
                   style={
                     Object {
                       "backgroundColor": "var(--tag-bug-bgcolor,#d73a4a)",
-                      "border": "1px solid var(--tag-bcolor, #51000033)",
-                      "color": "var(--tag-fgcolor, #ffffff)",
+                      "border": "1px solid var(--tag-bcolor, #83312b)",
+                      "color": "var(--tag-fgcolor, #fff)",
                     }
                   }
                 >
@@ -7451,7 +7451,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
                       "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #005e5f)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -7638,7 +7638,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
                       "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #005e5f)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -7650,8 +7650,8 @@ populated with your recently completed...
                   style={
                     Object {
                       "backgroundColor": "var(--tag-bug-bgcolor,#d73a4a)",
-                      "border": "1px solid var(--tag-bcolor, #51000033)",
-                      "color": "var(--tag-fgcolor, #ffffff)",
+                      "border": "1px solid var(--tag-bcolor, #83312b)",
+                      "color": "var(--tag-fgcolor, #fff)",
                     }
                   }
                 >
@@ -7843,7 +7843,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
                       "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #27632e)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -7856,7 +7856,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
                       "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #005e5f)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -8048,7 +8048,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
                       "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #005e5f)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -8240,7 +8240,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
                       "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #27632e)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -8253,7 +8253,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
                       "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #005e5f)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -8445,7 +8445,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
                       "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #27632e)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -8457,8 +8457,8 @@ populated with your recently completed...
                   style={
                     Object {
                       "backgroundColor": "var(--tag-bug-bgcolor,#d73a4a)",
-                      "border": "1px solid var(--tag-bcolor, #51000033)",
-                      "color": "var(--tag-fgcolor, #ffffff)",
+                      "border": "1px solid var(--tag-bcolor, #83312b)",
+                      "color": "var(--tag-fgcolor, #fff)",
                     }
                   }
                 >
@@ -9103,7 +9103,7 @@ exports[`Test default state with partial analytics 1`] = `
                     Object {
                       "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
                       "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #27632e)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -9116,7 +9116,7 @@ exports[`Test default state with partial analytics 1`] = `
                     Object {
                       "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
                       "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #005e5f)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -9330,7 +9330,7 @@ exports[`Test default state with partial analytics 1`] = `
                     Object {
                       "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
                       "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #27632e)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -9522,7 +9522,7 @@ exports[`Test default state with partial analytics 1`] = `
                     Object {
                       "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
                       "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #27632e)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -9716,7 +9716,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
                       "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #005e5f)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -9729,7 +9729,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
                       "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #27632e)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -9921,7 +9921,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
                       "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #27632e)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -9933,8 +9933,8 @@ populated with your recently completed...
                   style={
                     Object {
                       "backgroundColor": "var(--tag-bug-bgcolor,#d73a4a)",
-                      "border": "1px solid var(--tag-bcolor, #51000033)",
-                      "color": "var(--tag-fgcolor, #ffffff)",
+                      "border": "1px solid var(--tag-bcolor, #83312b)",
+                      "color": "var(--tag-fgcolor, #fff)",
                     }
                   }
                 >
@@ -9947,7 +9947,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
                       "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #005e5f)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -10134,7 +10134,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
                       "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #005e5f)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -10146,8 +10146,8 @@ populated with your recently completed...
                   style={
                     Object {
                       "backgroundColor": "var(--tag-bug-bgcolor,#d73a4a)",
-                      "border": "1px solid var(--tag-bcolor, #51000033)",
-                      "color": "var(--tag-fgcolor, #ffffff)",
+                      "border": "1px solid var(--tag-bcolor, #83312b)",
+                      "color": "var(--tag-fgcolor, #fff)",
                     }
                   }
                 >
@@ -10339,7 +10339,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
                       "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #27632e)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -10352,7 +10352,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
                       "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #005e5f)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -10544,7 +10544,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
                       "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #005e5f)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -10736,7 +10736,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
                       "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #27632e)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -10749,7 +10749,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
                       "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #005e5f)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -10941,7 +10941,7 @@ populated with your recently completed...
                     Object {
                       "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
                       "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #27632e)",
+                      "color": "var(--tag-fgcolor, #000)",
                     }
                   }
                 >
@@ -10953,8 +10953,8 @@ populated with your recently completed...
                   style={
                     Object {
                       "backgroundColor": "var(--tag-bug-bgcolor,#d73a4a)",
-                      "border": "1px solid var(--tag-bcolor, #51000033)",
-                      "color": "var(--tag-fgcolor, #ffffff)",
+                      "border": "1px solid var(--tag-bcolor, #83312b)",
+                      "color": "var(--tag-fgcolor, #fff)",
                     }
                   }
                 >
