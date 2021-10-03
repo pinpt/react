@@ -53,6 +53,7 @@ const {
 	Loader,
 	Pagination,
 	Head,
+	Image,
 	PoweredByPinpoint,
 	Pinpoint,
 	emptyDoc,
