@@ -7,33 +7,39 @@ import Home from '../Home';
 import type { IContent } from '../../../lib/types/content';
 
 test('Test default state', () => {
-	const component = renderer.create(<Home entries={entries as IContent[]} site={site} />);
+	const component = renderer.create(<Home entries={entries as IContent[]} site={site} skipAnalyticsFetch />);
 	const tree = component.toJSON();
 	expect(tree).toMatchSnapshot();
 });
 
 test('Test default state with partial analytics', () => {
-	const component = renderer.create(<Home entries={entries as IContent[]} site={site} analytics={analytics} />);
+	const component = renderer.create(
+		<Home entries={entries as IContent[]} site={site} analytics={analytics} skipAnalyticsFetch />
+	);
 	const tree = component.toJSON();
 	expect(tree).toMatchSnapshot();
 });
 
 test('Test custom latest length', () => {
-	const component = renderer.create(<Home entries={entries as IContent[]} site={site} latestCount={2} />);
+	const component = renderer.create(
+		<Home entries={entries as IContent[]} site={site} latestCount={2} skipAnalyticsFetch />
+	);
 	const tree = component.toJSON();
 	expect(tree).toMatchSnapshot();
 });
 
 test('Hidden stats', () => {
 	const component = renderer.create(
-		<Home entries={entries as IContent[]} site={site} renderCardStatistics={() => <></>} />
+		<Home entries={entries as IContent[]} site={site} renderCardStatistics={() => <></>} skipAnalyticsFetch />
 	);
 	const tree = component.toJSON();
 	expect(tree).toMatchSnapshot();
 });
 
 test('Test custom className', () => {
-	const component = renderer.create(<Home className="test-custom" entries={entries as IContent[]} site={site} />);
+	const component = renderer.create(
+		<Home className="test-custom" entries={entries as IContent[]} site={site} skipAnalyticsFetch />
+	);
 	const tree = component.toJSON();
 	expect(tree).toMatchSnapshot();
 });

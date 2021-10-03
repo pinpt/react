@@ -1,6 +1,5 @@
-import React from 'react';
-import { ReactElement } from 'react';
-import { splitEntries } from '../../../lib';
+import React, { ReactElement } from 'react';
+import { fetchAnalytics, splitEntries } from '../../../lib';
 import Card from '../../Card';
 import { ICardContainerProps } from '../../Card/Container';
 import { ICardDescriptionProps } from '../../Card/Description';
@@ -63,6 +62,7 @@ export interface IPrebuiltHomeProps {
 	pageNumber?: number;
 	pageCount?: number;
 	analytics?: Analytics;
+	skipAnalyticsFetch?: boolean;
 }
 
 const Home = (props: IPrebuiltHomeProps) => {
@@ -99,8 +99,23 @@ const Home = (props: IPrebuiltHomeProps) => {
 		pageNumber,
 		pageCount,
 		analytics,
+		skipAnalyticsFetch = false,
 	} = props;
 	const { latest, recent } = splitEntries(entries, latestCount);
+	const [_analytics, setAnalytics] = React.useState<Analytics | undefined>(analytics);
+	React.useEffect(() => {
+		if (!skipAnalyticsFetch) {
+			const configFromSite = {
+				siteId: site.id,
+				slug: site.slug,
+				siteUrl: site.url,
+			};
+			fetchAnalytics(
+				configFromSite,
+				entries.map((e) => e.id)
+			).then(setAnalytics);
+		}
+	}, [skipAnalyticsFetch]);
 	return (
 		<DashboardPage
 			className={`Prebuilt ${className}`}
@@ -143,11 +158,11 @@ const Home = (props: IPrebuiltHomeProps) => {
 											)
 										}
 										statistics={
-											renderCardStatistics?.(content, analytics?.[content.id]) ?? (
+											renderCardStatistics?.(content, _analytics?.[content.id]) ?? (
 												<Statistic.Bar
 													className="Prebuilt"
-													claps={analytics?.[content.id]?.claps ?? 0}
-													views={analytics?.[content.id]?.pageviews ?? 0}
+													claps={_analytics?.[content.id]?.claps ?? 0}
+													views={_analytics?.[content.id]?.pageviews ?? 0}
 												/>
 											)
 										}
@@ -200,11 +215,11 @@ const Home = (props: IPrebuiltHomeProps) => {
 											)
 										}
 										statistics={
-											renderCardStatistics?.(content, analytics?.[content.id]) ?? (
+											renderCardStatistics?.(content, _analytics?.[content.id]) ?? (
 												<Statistic.Bar
 													className="Prebuilt"
-													claps={analytics?.[content.id]?.claps ?? 0}
-													views={analytics?.[content.id]?.pageviews ?? 0}
+													claps={_analytics?.[content.id]?.claps ?? 0}
+													views={_analytics?.[content.id]?.pageviews ?? 0}
 												/>
 											)
 										}
