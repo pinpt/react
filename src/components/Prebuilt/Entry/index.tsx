@@ -106,7 +106,9 @@ const Entry = (props: IPrebuiltEntryProps) => {
 										<Author
 											className="Prebuilt"
 											avatarUrl={content.authors?.[0]?.avatarUrl ?? ''}
-											name={`${content.authors?.[0]?.firstName} ${content.authors?.[0]?.lastName}`}
+											name={`${content.authors?.[0]?.firstName ?? ''} ${
+												content.authors?.[0]?.lastName ?? ''
+											}`}
 										/>
 									)
 								}
