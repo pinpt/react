@@ -3097,6 +3097,1312 @@ exports[`Test no author 1`] = `
 </div>
 `;
 
+exports[`Test no authors 1`] = `
+<div
+  className="Pinpoint Page Entry Prebuilt "
+>
+  <div
+    className="Pinpoint headerWrapper"
+  >
+    <div
+      className="Pinpoint constraint"
+    >
+      <div
+        className="Pinpoint Header Prebuilt "
+      >
+        <div
+          className="top"
+        >
+          <div
+            className="left"
+          >
+            <a
+              aria-label="Header Logo Home Page"
+              className="Pinpoint Internal Link Pinpoint Logo sm Prebuilt"
+              href="https://pinpoint.com"
+              title="Header Logo Home Page"
+            >
+              <img
+                alt=""
+                className="Pinpoint Image image "
+                decoding="async"
+                height={320}
+                loading="lazy"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                width={320}
+              />
+            </a>
+          </div>
+          <div
+            className="right"
+          >
+            <div
+              className="Pinpoint Search Bar Prebuilt"
+            >
+              <svg
+                aria-hidden="true"
+                className="icon"
+                data-icon="search"
+                data-prefix="fas"
+                focusable="false"
+                height={16}
+                role="img"
+                viewBox="0 0 512 512"
+                width={16}
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
+                  fill="currentColor"
+                />
+              </svg>
+              <form
+                className="form"
+                onSubmit={[Function]}
+              >
+                <input
+                  className="input"
+                  onChange={[Function]}
+                  placeholder="Search"
+                  value=""
+                />
+              </form>
+            </div>
+            <div
+              className="Pinpoint ThemeToggle Prebuilt"
+            >
+              <button
+                aria-label="Toggle Theme"
+                className="mode"
+                onClick={[Function]}
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="center"
+        >
+          <a
+            className="link"
+            onClick={[Function]}
+            title="Pinpoint Changelog"
+          >
+            <h1
+              className="title"
+            >
+              Pinpoint Changelog
+            </h1>
+          </a>
+          <div
+            className="description"
+          >
+            New updates and improvements to Pinpoint
+          </div>
+          <div
+            className="action"
+          >
+            <a
+              className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-100 Prebuilt"
+              href="/subscription/subscribe"
+            >
+              <svg
+                aria-hidden="true"
+                className="icon"
+                data-icon="envelope"
+                data-prefix="fas"
+                focusable="false"
+                height={14}
+                role="img"
+                viewBox="0 0 512 512"
+                width={14}
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"
+                  fill="currentColor"
+                />
+              </svg>
+              <span
+                className="text"
+              >
+                Subscribe to Updates
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="Pinpoint entryWrapper"
+  >
+    <div
+      className="Pinpoint constraint"
+    >
+      <div
+        className="entry"
+      >
+        <div
+          className="sidebarWrapper before"
+        >
+          <div
+            className="Pinpoint Sidebar "
+          >
+            <span
+              className="Pinpoint Date "
+            >
+              6/25/2021
+            </span>
+            <div
+              className="Pinpoint Author Prebuilt"
+            >
+              <span
+                aria-label="  avatar"
+                className="Pinpoint Internal Link  "
+              >
+                <span
+                  className="name"
+                >
+                   
+                </span>
+              </span>
+            </div>
+            <div
+              className="Pinpoint Tag Bar Prebuilt"
+            >
+              <div
+                className="Pinpoint Tag Item   "
+                style={
+                  Object {
+                    "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
+                    "border": "1px solid var(--tag-bcolor, #3f7a4333)",
+                    "color": "var(--tag-fgcolor, #000)",
+                  }
+                }
+              >
+                feature
+              </div>
+              <div
+                className="Pinpoint Tag Item   "
+                style={
+                  Object {
+                    "backgroundColor": "var(--tag-bug-bgcolor,#d73a4a)",
+                    "border": "1px solid var(--tag-bcolor, #83312b)",
+                    "color": "var(--tag-fgcolor, #fff)",
+                  }
+                }
+              >
+                bug
+              </div>
+            </div>
+            <div
+              className="Pinpoint SocialMedia Bar sharing"
+            >
+              <a
+                aria-label="Facebook"
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem FacebookShare "
+                href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FB1D7ThZS7RhC5mY4PhOR%2FAnalytics-Drilldown-Changelog-Generator-Styling%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_facebook"
+                rel="noopener noreferrer"
+                target="_blank"
+                title="Facebook"
+              >
+                <svg
+                  aria-hidden="true"
+                  data-icon="facebook-f"
+                  data-prefix="fab"
+                  focusable="false"
+                  height={16}
+                  role="img"
+                  viewBox="0 0 320 512"
+                  width={10}
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+              <a
+                aria-label="Twitter"
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem TwitterShare "
+                href="https://twitter.com/intent/tweet/?text=Improved%20changelog%20analytics%20with%20drill-down%20capability%20along%20with%20styling%20improvements%20for%20pinpt%2Fchangelog-generator.&url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FB1D7ThZS7RhC5mY4PhOR%2FAnalytics-Drilldown-Changelog-Generator-Styling%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_twitter"
+                rel="noopener noreferrer"
+                target="_blank"
+                title="Twitter"
+              >
+                <svg
+                  aria-hidden="true"
+                  data-icon="twitter"
+                  data-prefix="fab"
+                  focusable="false"
+                  height={14}
+                  role="img"
+                  viewBox="0 0 512 512"
+                  width={14}
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+              <a
+                aria-label="LinkedIn"
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem LinkedInShare "
+                href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FB1D7ThZS7RhC5mY4PhOR%2FAnalytics-Drilldown-Changelog-Generator-Styling%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_facebook&mini=true&summary=Improved+changelog+analytics+with+drill-down+capability+along+with+styling+improvements+for+pinpt%2Fchangelog-generator.&title=Pinpoint+-+Analytics+Drilldown+%2B+Changelog+Generator+Styling"
+                rel="noopener noreferrer"
+                target="_blank"
+                title="LinkedIn"
+              >
+                <svg
+                  aria-hidden="true"
+                  data-icon="linkedin-in"
+                  data-prefix="fab"
+                  focusable="false"
+                  height={16}
+                  role="img"
+                  viewBox="0 0 448 512"
+                  width={14}
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+              <a
+                aria-label="Email"
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem EmailShare "
+                href="mailto:?subject=Pinpoint%20-%20Analytics%20Drilldown%20%2B%20Changelog%20Generator%20Styling&body=Pinpoint%20-%20Analytics%20Drilldown%20%2B%20Changelog%20Generator%20Styling%0A%0AImproved%20changelog%20analytics%20with%20drill-down%20capability%20along%20with%20styling%20improvements%20for%20pinpt%2Fchangelog-generator.%0A%0Ahttps%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FB1D7ThZS7RhC5mY4PhOR%2FAnalytics-Drilldown-Changelog-Generator-Styling"
+                title="Email"
+              >
+                <svg
+                  aria-hidden="true"
+                  data-icon="envelope"
+                  data-prefix="fas"
+                  focusable="false"
+                  height={16}
+                  role="img"
+                  viewBox="0 0 512 512"
+                  width={16}
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <article>
+          <section
+            className="Pinpoint cover covermedia"
+          >
+            <div
+              className="Pinpoint media-container"
+            >
+              <div
+                className="Pinpoint image"
+              >
+                <img
+                  alt="Analytics Drilldown + Changelog Generator Styling"
+                  className="Pinpoint Image medium-zoom-cover "
+                  decoding="async"
+                  height={1666}
+                  loading="eager"
+                  sizes="(min-width: 640px) 640px, (min-width: 768px) 768px, (min-width: 1024px) 1024px, (min-width: 1280px) 1280px, (min-width: 1328px) 1328px, (min-width: 3010px) 3010px"
+                  src="https://file.pinpoint.com/32e8bdd790263db15fc0eecd8a0c47cb;UARo~e-pkC~pD4Ria%24V%3F00M_bIad8wMxbIxt;3010x1666.png"
+                  srcSet="https://file.pinpoint.com/32e8bdd790263db15fc0eecd8a0c47cb;UARo~e-pkC~pD4Ria%24V%3F00M_bIad8wMxbIxt;3010x1666.png?rw=640 640w, https://file.pinpoint.com/32e8bdd790263db15fc0eecd8a0c47cb;UARo~e-pkC~pD4Ria%24V%3F00M_bIad8wMxbIxt;3010x1666.png?rw=768 768w, https://file.pinpoint.com/32e8bdd790263db15fc0eecd8a0c47cb;UARo~e-pkC~pD4Ria%24V%3F00M_bIad8wMxbIxt;3010x1666.png?rw=1024 1024w, https://file.pinpoint.com/32e8bdd790263db15fc0eecd8a0c47cb;UARo~e-pkC~pD4Ria%24V%3F00M_bIad8wMxbIxt;3010x1666.png?rw=1280 1280w, https://file.pinpoint.com/32e8bdd790263db15fc0eecd8a0c47cb;UARo~e-pkC~pD4Ria%24V%3F00M_bIad8wMxbIxt;3010x1666.png?rw=1328 1328w, https://file.pinpoint.com/32e8bdd790263db15fc0eecd8a0c47cb;UARo~e-pkC~pD4Ria%24V%3F00M_bIad8wMxbIxt;3010x1666.png 3010w"
+                  width={3010}
+                />
+              </div>
+            </div>
+          </section>
+          <section
+            className="content"
+          >
+            <div
+              className="Pinpoint document"
+            >
+              <div
+                className="heading"
+              >
+                <h1>
+                  Analytics Drilldown + Changelog Generator Styling
+                </h1>
+                <a
+                  aria-hidden="true"
+                  className="anchor"
+                  href="#Analytics-Drilldown-Changelog-Generator-Styling"
+                  id="Analytics-Drilldown-Changelog-Generator-Styling"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-link fa-w-16 "
+                    data-icon="link"
+                    data-prefix="fas"
+                    focusable="false"
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 512 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div
+                className="heading"
+              >
+                <h3>
+                   
+                  Changelog Entry Analytics
+                </h3>
+                <a
+                  aria-hidden="true"
+                  className="anchor"
+                  href="#Changelog-Entry-Analytics"
+                  id="Changelog-Entry-Analytics"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-link fa-w-16 "
+                    data-icon="link"
+                    data-prefix="fas"
+                    focusable="false"
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 512 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
+                </a>
+              </div>
+              <p>
+                Another item Keegan was able to get in this week was drill-down ⛏ analytics so you can see similar information as you do in the rollup but now for each individual changelog entry.  Get insight into your top-performing changelog entries at the click of a button.
+              </p>
+              <div
+                className="node iframe small preview"
+              >
+                <div
+                  className="content"
+                >
+                  <div
+                    className="preview small"
+                  >
+                    <img
+                      alt=""
+                      className="Pinpoint Image thumbnail "
+                      decoding="async"
+                      loading="lazy"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                    />
+                    <div
+                      className="info"
+                    >
+                      <div
+                        className="site"
+                      >
+                        <img
+                          alt=""
+                          className="Pinpoint Image icon "
+                          decoding="async"
+                          loading="lazy"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                        />
+                        <div
+                          className="site-name"
+                        >
+                          GitHub
+                        </div>
+                      </div>
+                      <div
+                        className="title"
+                      >
+                        <a
+                          className="cursor-pointer link"
+                          href="https://github.com/keegandonley"
+                        >
+                          keegandonley - Overview
+                        </a>
+                      </div>
+                      <div
+                        className="description"
+                      >
+                        Developer at @pinpt. keegandonley has 42 repositories available. Follow their code on GitHub.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="heading"
+              >
+                <h3>
+                   
+                  Maps for Analytics
+                </h3>
+                <a
+                  aria-hidden="true"
+                  className="anchor"
+                  href="#Maps-for-Analytics"
+                  id="Maps-for-Analytics"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-link fa-w-16 "
+                    data-icon="link"
+                    data-prefix="fas"
+                    focusable="false"
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 512 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
+                </a>
+              </div>
+              <p>
+                <a
+                  className=""
+                  href="https://github.com/keegandonley"
+                  id=""
+                  title=""
+                >
+                  Keegan Donley
+                </a>
+                 was busy this week focusing on improving our analytics capabilities 📈📊 Now inside changelog analytics, you can see where in the world 🌎 your users are coming in to view your changelog entries.  This can give you a sense of whether or not your features are having the intended impacts on the geographies that matter to you.
+              </p>
+              <div
+                className="image_block center"
+              >
+                <div
+                  className="image"
+                >
+                  <img
+                    alt=""
+                    className="Pinpoint Image medium-zoom-body "
+                    decoding="async"
+                    height={468.65}
+                    loading="lazy"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                    width={506.09999999999997}
+                  />
+                </div>
+              </div>
+              <div
+                className="hr"
+              >
+                <div>
+                  <hr />
+                </div>
+              </div>
+              <div
+                className="heading"
+              >
+                <h1>
+                  Improvements
+                </h1>
+                <a
+                  aria-hidden="true"
+                  className="anchor"
+                  href="#Improvements"
+                  id="Improvements"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-link fa-w-16 "
+                    data-icon="link"
+                    data-prefix="fas"
+                    focusable="false"
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 512 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
+                </a>
+              </div>
+              <p>
+                There were several styling improvements 🛠 over at 
+                <a
+                  className=""
+                  href="https://github.com/pinpt/changelog-generator"
+                  id=""
+                  title=""
+                >
+                  pinpt/changelog-generator
+                </a>
+                 for 
+                <a
+                  className=""
+                  href="https://github.com/chrisbowley"
+                  id=""
+                  title=""
+                >
+                  Chris Bowley
+                </a>
+                 this week as we continue to strive to give you complete control over your changelog.  Check out what 
+                <a
+                  className=""
+                  href="https://github.com/rblalock"
+                  id=""
+                  title=""
+                >
+                  Rick Blalock
+                </a>
+                 over at FishRules was able to do with the changelog-generator.
+              </p>
+              <div
+                className="node iframe small preview"
+              >
+                <div
+                  className="content"
+                >
+                  <div
+                    className="preview small"
+                  >
+                    <img
+                      alt=""
+                      className="Pinpoint Image thumbnail "
+                      decoding="async"
+                      loading="lazy"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                    />
+                    <div
+                      className="info"
+                    >
+                      <div
+                        className="site"
+                      >
+                        <img
+                          alt=""
+                          className="Pinpoint Image icon "
+                          decoding="async"
+                          loading="lazy"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                        />
+                        <div
+                          className="site-name"
+                        >
+                          GitHub
+                        </div>
+                      </div>
+                      <div
+                        className="title"
+                      >
+                        <a
+                          className="cursor-pointer link"
+                          href="https://github.com/pinpt/changelog-generator"
+                        >
+                          pinpt/changelog-generator
+                        </a>
+                      </div>
+                      <div
+                        className="description"
+                      >
+                        Changelog Generator is the tool for automatically generating static sites published by changelog.so - pinpt/changelog-generator
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="node iframe overlay player"
+              >
+                <div
+                  className="content"
+                >
+                  <a
+                    className="large"
+                    data-iframely-url={true}
+                    href="https://www.loom.com/share/d063fe3567134d00b18550d82198bdfe"
+                    title="Cover Image Preview"
+                  />
+                </div>
+              </div>
+              <div
+                className="node iframe small preview"
+              >
+                <div
+                  className="content"
+                >
+                  <div
+                    className="preview small"
+                  >
+                    <img
+                      alt=""
+                      className="Pinpoint Image thumbnail "
+                      decoding="async"
+                      loading="lazy"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                    />
+                    <div
+                      className="info"
+                    >
+                      <div
+                        className="site"
+                      >
+                        <img
+                          alt=""
+                          className="Pinpoint Image icon "
+                          decoding="async"
+                          loading="lazy"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                        />
+                        <div
+                          className="site-name"
+                        >
+                          GitHub
+                        </div>
+                      </div>
+                      <div
+                        className="title"
+                      >
+                        <a
+                          className="cursor-pointer link"
+                          href="https://github.com/pinpt/changelog-generator/pull/12"
+                        >
+                          Simplify styles by chrisbowley · Pull Request #12 · pinpt/changelog-generator
+                        </a>
+                      </div>
+                      <div
+                        className="description"
+                      >
+                        Move and consolidate tailwind styles into theme.css Simplify responsive breakpoints Fix some alignment issues Update index page to use page structure Update some colors Reduce mobile margins (from ...
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="node iframe small preview"
+              >
+                <div
+                  className="content"
+                >
+                  <div
+                    className="preview small"
+                  >
+                    <img
+                      alt=""
+                      className="Pinpoint Image thumbnail "
+                      decoding="async"
+                      loading="lazy"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                    />
+                    <div
+                      className="info"
+                    >
+                      <div
+                        className="site"
+                      >
+                        <img
+                          alt=""
+                          className="Pinpoint Image icon "
+                          decoding="async"
+                          loading="lazy"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                        />
+                        <div
+                          className="site-name"
+                        >
+                          GitHub
+                        </div>
+                      </div>
+                      <div
+                        className="title"
+                      >
+                        <a
+                          className="cursor-pointer link"
+                          href="https://github.com/chrisbowley"
+                        >
+                          chrisbowley - Overview
+                        </a>
+                      </div>
+                      <div
+                        className="description"
+                      >
+                        chrisbowley has 5 repositories available. Follow their code on GitHub.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="hr"
+              >
+                <div>
+                  <hr />
+                </div>
+              </div>
+              <div
+                className="heading"
+              >
+                <h1>
+                  Bugs Squashed
+                </h1>
+                <a
+                  aria-hidden="true"
+                  className="anchor"
+                  href="#Bugs-Squashed"
+                  id="Bugs-Squashed"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-link fa-w-16 "
+                    data-icon="link"
+                    data-prefix="fas"
+                    focusable="false"
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 512 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
+                </a>
+              </div>
+              <ul>
+                <li>
+                  <p>
+                    <data
+                      data-pullrequest-id="MDExOlB1bGxSZXF1ZXN0Njc3MjQzNDM1"
+                    >
+                      Proper usage of custom themes for previews
+                    </data>
+                  </p>
+                </li>
+              </ul>
+              <div
+                className="node iframe small preview"
+              >
+                <div
+                  className="content"
+                >
+                  <div
+                    className="preview small"
+                  >
+                    <img
+                      alt=""
+                      className="Pinpoint Image thumbnail "
+                      decoding="async"
+                      loading="lazy"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                    />
+                    <div
+                      className="info"
+                    >
+                      <div
+                        className="site"
+                      >
+                        <img
+                          alt=""
+                          className="Pinpoint Image icon "
+                          decoding="async"
+                          loading="lazy"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                        />
+                        <div
+                          className="site-name"
+                        >
+                          GitHub
+                        </div>
+                      </div>
+                      <div
+                        className="title"
+                      >
+                        <a
+                          className="cursor-pointer link"
+                          href="https://github.com/pinpt/changelog-generator/pull/11"
+                        >
+                          Viewport fix by chrisbowley · Pull Request #11 · pinpt/changelog-generator
+                        </a>
+                      </div>
+                      <div
+                        className="description"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p />
+            </div>
+          </section>
+        </article>
+        <div
+          className="sidebarWrapper after"
+        >
+          <div
+            className="Pinpoint Sidebar "
+          >
+            <span
+              className="Pinpoint Date "
+            >
+              6/25/2021
+            </span>
+            <div
+              className="Pinpoint Author Prebuilt"
+            >
+              <span
+                aria-label="  avatar"
+                className="Pinpoint Internal Link  "
+              >
+                <span
+                  className="name"
+                >
+                   
+                </span>
+              </span>
+            </div>
+            <div
+              className="Pinpoint Tag Bar Prebuilt"
+            >
+              <div
+                className="Pinpoint Tag Item   "
+                style={
+                  Object {
+                    "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
+                    "border": "1px solid var(--tag-bcolor, #3f7a4333)",
+                    "color": "var(--tag-fgcolor, #000)",
+                  }
+                }
+              >
+                feature
+              </div>
+              <div
+                className="Pinpoint Tag Item   "
+                style={
+                  Object {
+                    "backgroundColor": "var(--tag-bug-bgcolor,#d73a4a)",
+                    "border": "1px solid var(--tag-bcolor, #83312b)",
+                    "color": "var(--tag-fgcolor, #fff)",
+                  }
+                }
+              >
+                bug
+              </div>
+            </div>
+            <div
+              className="Pinpoint SocialMedia Bar sharing"
+            >
+              <a
+                aria-label="Facebook"
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem FacebookShare "
+                href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FB1D7ThZS7RhC5mY4PhOR%2FAnalytics-Drilldown-Changelog-Generator-Styling%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_facebook"
+                rel="noopener noreferrer"
+                target="_blank"
+                title="Facebook"
+              >
+                <svg
+                  aria-hidden="true"
+                  data-icon="facebook-f"
+                  data-prefix="fab"
+                  focusable="false"
+                  height={16}
+                  role="img"
+                  viewBox="0 0 320 512"
+                  width={10}
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+              <a
+                aria-label="Twitter"
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem TwitterShare "
+                href="https://twitter.com/intent/tweet/?text=Improved%20changelog%20analytics%20with%20drill-down%20capability%20along%20with%20styling%20improvements%20for%20pinpt%2Fchangelog-generator.&url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FB1D7ThZS7RhC5mY4PhOR%2FAnalytics-Drilldown-Changelog-Generator-Styling%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_twitter"
+                rel="noopener noreferrer"
+                target="_blank"
+                title="Twitter"
+              >
+                <svg
+                  aria-hidden="true"
+                  data-icon="twitter"
+                  data-prefix="fab"
+                  focusable="false"
+                  height={14}
+                  role="img"
+                  viewBox="0 0 512 512"
+                  width={14}
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+              <a
+                aria-label="LinkedIn"
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem LinkedInShare "
+                href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FB1D7ThZS7RhC5mY4PhOR%2FAnalytics-Drilldown-Changelog-Generator-Styling%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_facebook&mini=true&summary=Improved+changelog+analytics+with+drill-down+capability+along+with+styling+improvements+for+pinpt%2Fchangelog-generator.&title=Pinpoint+-+Analytics+Drilldown+%2B+Changelog+Generator+Styling"
+                rel="noopener noreferrer"
+                target="_blank"
+                title="LinkedIn"
+              >
+                <svg
+                  aria-hidden="true"
+                  data-icon="linkedin-in"
+                  data-prefix="fab"
+                  focusable="false"
+                  height={16}
+                  role="img"
+                  viewBox="0 0 448 512"
+                  width={14}
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+              <a
+                aria-label="Email"
+                className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem EmailShare "
+                href="mailto:?subject=Pinpoint%20-%20Analytics%20Drilldown%20%2B%20Changelog%20Generator%20Styling&body=Pinpoint%20-%20Analytics%20Drilldown%20%2B%20Changelog%20Generator%20Styling%0A%0AImproved%20changelog%20analytics%20with%20drill-down%20capability%20along%20with%20styling%20improvements%20for%20pinpt%2Fchangelog-generator.%0A%0Ahttps%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FB1D7ThZS7RhC5mY4PhOR%2FAnalytics-Drilldown-Changelog-Generator-Styling"
+                title="Email"
+              >
+                <svg
+                  aria-hidden="true"
+                  data-icon="envelope"
+                  data-prefix="fas"
+                  focusable="false"
+                  height={16}
+                  role="img"
+                  viewBox="0 0 512 512"
+                  width={16}
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="Pinpoint footerWrapper"
+  >
+    <div
+      className="Pinpoint constraint"
+    >
+      <div
+        className="Pinpoint Footer Prebuilt undefined"
+      >
+        <div
+          className="content"
+        >
+          <div
+            className="left"
+          >
+            <div
+              className="Pinpoint Copyright Prebuilt"
+            >
+              <a
+                aria-label="Footer Logo Home Page"
+                className="Pinpoint Internal Link Pinpoint Logo sm Prebuilt"
+                href="https://pinpoint.com"
+                title="Footer Logo Home Page"
+              >
+                <img
+                  alt=""
+                  className="Pinpoint Image image "
+                  decoding="async"
+                  height={320}
+                  loading="lazy"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                  width={320}
+                />
+              </a>
+              <span
+                className="text"
+              >
+                Copyright © 2021 by Pinpoint Software, Inc.
+              </span>
+            </div>
+          </div>
+          <div
+            className="right"
+          >
+            <a
+              className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-100 Prebuilt"
+              href="/subscription/subscribe"
+            >
+              <svg
+                aria-hidden="true"
+                className="icon"
+                data-icon="envelope"
+                data-prefix="fas"
+                focusable="false"
+                height={14}
+                role="img"
+                viewBox="0 0 512 512"
+                width={14}
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"
+                  fill="currentColor"
+                />
+              </svg>
+              <span
+                className="text"
+              >
+                Subscribe to Updates
+              </span>
+            </a>
+            <div
+              className="Pinpoint SocialMedia Bar Prebuilt"
+            >
+              <a
+                aria-label="Facebook"
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem FacebookLink Prebuilt"
+                href="https://www.facebook.com/Pinpoint.Engineering"
+                rel="noopener noreferrer"
+                target="_blank"
+                title="Facebook"
+              >
+                <svg
+                  aria-hidden="true"
+                  data-icon="facebook"
+                  data-prefix="fab"
+                  focusable="false"
+                  height={14}
+                  role="img"
+                  viewBox="0 0 512 512"
+                  width={14}
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+              <a
+                aria-label="Instagram"
+                className="Pinpoint Internal Link Pinpoint Social LinkItem InstagramLink Prebuilt"
+                href="https://www.instagram.com/pinpoint_sw/"
+                rel="noopener noreferrer"
+                target="_blank"
+                title="Instagram"
+              >
+                <svg
+                  aria-hidden="true"
+                  data-icon="instagram"
+                  data-prefix="fab"
+                  focusable="false"
+                  height={14}
+                  role="img"
+                  viewBox="0 0 448 512"
+                  width={12.25}
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+              <a
+                aria-label="Twitter"
+                className="Pinpoint Internal Link Pinpoint SocialMedia Item TwitterLink Prebuilt"
+                href="https://twitter.com/pinpoint_sw"
+                rel="noopener noreferrer"
+                target="_blank"
+                title="Twitter"
+              >
+                <svg
+                  aria-hidden="true"
+                  data-icon="twitter"
+                  data-prefix="fab"
+                  focusable="false"
+                  height={14}
+                  role="img"
+                  viewBox="0 0 512 512"
+                  width={14}
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+              <a
+                aria-label="Github"
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem GithubLink Prebuilt"
+                href="https://github.com/pinpt"
+                rel="noopener noreferrer"
+                target="_blank"
+                title="Github"
+              >
+                <svg
+                  aria-hidden="true"
+                  data-icon="github"
+                  data-prefix="fab"
+                  focusable="false"
+                  height={14}
+                  role="img"
+                  viewBox="0 0 496 512"
+                  width={14}
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+              <a
+                aria-label="LinkedIn"
+                className="Pinpoint Internal Link Pinpoint SocialMedia LinkItem LinkedInLink Prebuilt"
+                href="https://linkedin.com/company/pinpoint-software"
+                rel="noopener noreferrer"
+                target="_blank"
+                title="LinkedIn"
+              >
+                <svg
+                  aria-hidden="true"
+                  data-icon="linkedin"
+                  data-prefix="fab"
+                  focusable="false"
+                  height={14}
+                  role="img"
+                  viewBox="0 0 448 512"
+                  width={12.25}
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+              <a
+                aria-label="RSS Feed"
+                className="Pinpoint Internal Link Pinpoint Social LinkItem RSSLink Prebuilt"
+                href="/rss"
+                rel="noopener noreferrer"
+                target="_blank"
+                title="RSS Feed"
+              >
+                <svg
+                  aria-hidden="true"
+                  data-icon="rss"
+                  data-prefix="fas"
+                  focusable="false"
+                  height={14}
+                  role="img"
+                  viewBox="0 0 448 512"
+                  width={12.25}
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M128.081 415.959c0 35.369-28.672 64.041-64.041 64.041S0 451.328 0 415.959s28.672-64.041 64.041-64.041 64.04 28.673 64.04 64.041zm175.66 47.25c-8.354-154.6-132.185-278.587-286.95-286.95C7.656 175.765 0 183.105 0 192.253v48.069c0 8.415 6.49 15.472 14.887 16.018 111.832 7.284 201.473 96.702 208.772 208.772.547 8.397 7.604 14.887 16.018 14.887h48.069c9.149.001 16.489-7.655 15.995-16.79zm144.249.288C439.596 229.677 251.465 40.445 16.503 32.01 7.473 31.686 0 38.981 0 48.016v48.068c0 8.625 6.835 15.645 15.453 15.999 191.179 7.839 344.627 161.316 352.465 352.465.353 8.618 7.373 15.453 15.999 15.453h48.068c9.034-.001 16.329-7.474 16.005-16.504z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          className="powered"
+        >
+          <a
+            className="Pinpoint PoweredByPinpoint"
+            href="https://pinpoint.com/?utm_source=referral&utm_medium=web&utm_campaign=PirxVTE94u3YmGNOySRY"
+            style={
+              Object {
+                "alignItems": "center",
+                "color": "inherit",
+                "display": "flex",
+                "margin": "auto",
+                "textDecoration": "none",
+              }
+            }
+          >
+            <span>
+              We run on
+            </span>
+            <svg
+              fill="none"
+              height="21"
+              role="img"
+              style={
+                Object {
+                  "color": "rgba(55,48,163, 1)",
+                  "margin": "0 4px",
+                }
+              }
+              viewBox="0 0 277 297"
+              width="22"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clipRule="evenodd"
+                d="M95.7878 296.635H128.664V296.654C210 296.654 276.157 230.116 276.157 148.332C276.157 66.5476 210 0.00958123 128.659 0H128.483L118.744 0.114995C53.2636 0.1677 0 53.7546 0 119.617C0.000695153 144.543 7.7522 168.845 22.1694 189.121C36.5867 209.397 56.9479 224.632 80.4028 232.694L80.541 232.732V281.302C80.541 285.369 82.1474 289.269 85.0067 292.144C87.866 295.019 91.7441 296.635 95.7878 296.635ZM118.996 31.8291L128.749 31.7141C193.243 31.762 245.702 84.5199 245.702 149.414C245.702 214.309 193.196 267.105 128.664 267.105H110.996V237.495H130.698C175.266 237.495 211.525 201.032 211.525 156.213V150.272C211.525 111.011 179.759 79.0673 140.718 79.0673H95.783C91.7393 79.0673 87.8612 80.6827 85.0019 83.5581C82.1426 86.4335 80.5362 90.3333 80.5362 94.3998V175.312C85.8678 181.89 96.8264 186.687 106.832 186.96H110.996V109.713H140.704C151.401 109.724 161.658 114.003 169.222 121.609C176.787 129.215 181.043 139.529 181.055 150.286V156.213C181.04 169.647 175.726 182.525 166.278 192.022C156.831 201.518 144.023 206.858 130.665 206.868H103.773C94.9191 206.378 86.2752 203.967 78.435 199.801C49.3804 184.943 30.4411 154.886 30.4411 120.704C30.4411 71.6982 70.0874 31.8291 118.82 31.8291H118.996Z"
+                fill="currentColor"
+                fillRule="evenodd"
+              />
+            </svg>
+            <span
+              style={
+                Object {
+                  "color": "white",
+                  "mixBlendMode": "difference",
+                }
+              }
+            >
+              Pinpoint
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Test no claps 1`] = `
 <div
   className="Pinpoint Page Entry Prebuilt "
