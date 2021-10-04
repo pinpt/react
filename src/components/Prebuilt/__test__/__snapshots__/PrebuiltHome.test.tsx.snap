@@ -1453,10 +1453,10 @@ exports[`Test custom className 1`] = `
             >
               <img
                 alt=""
-                className="Pinpoint Image image blurhash"
+                className="Pinpoint Image image "
                 decoding="async"
                 height={320}
-                loading="eager"
+                loading="lazy"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                 width={320}
               />
@@ -1588,7 +1588,7 @@ exports[`Test custom className 1`] = `
               className="Pinpoint Image cover blurhash"
               decoding="async"
               height={900}
-              loading="eager"
+              loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
               width={1600}
             />
@@ -1815,7 +1815,7 @@ exports[`Test custom className 1`] = `
               className="Pinpoint Image cover blurhash"
               decoding="async"
               height={900}
-              loading="eager"
+              loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
               width={1600}
             />
@@ -2007,7 +2007,7 @@ exports[`Test custom className 1`] = `
               className="Pinpoint Image cover blurhash"
               decoding="async"
               height={1616}
-              loading="eager"
+              loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
               width={2428}
             />
@@ -2201,7 +2201,7 @@ populated with your recently completed...
               className="Pinpoint Image cover blurhash"
               decoding="async"
               height={1167}
-              loading="eager"
+              loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
               width={1590}
             />
@@ -2406,7 +2406,7 @@ populated with your recently completed...
               className="Pinpoint Image cover blurhash"
               decoding="async"
               height={701}
-              loading="eager"
+              loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
               width={2870}
             />
@@ -2824,7 +2824,7 @@ populated with your recently completed...
               className="Pinpoint Image cover blurhash"
               decoding="async"
               height={1108}
-              loading="eager"
+              loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
               width={2795}
             />
@@ -3029,7 +3029,7 @@ populated with your recently completed...
               className="Pinpoint Image cover blurhash"
               decoding="async"
               height={439}
-              loading="eager"
+              loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
               width={1740}
             />
@@ -3221,7 +3221,7 @@ populated with your recently completed...
               className="Pinpoint Image cover blurhash"
               decoding="async"
               height={1694}
-              loading="eager"
+              loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
               width={3264}
             />
@@ -3426,7 +3426,7 @@ populated with your recently completed...
               className="Pinpoint Image cover blurhash"
               decoding="async"
               height={1666}
-              loading="eager"
+              loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
               width={3010}
             />
@@ -3663,10 +3663,10 @@ populated with your recently completed...
               >
                 <img
                   alt=""
-                  className="Pinpoint Image image blurhash"
+                  className="Pinpoint Image image "
                   decoding="async"
                   height={320}
-                  loading="eager"
+                  loading="lazy"
                   src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                   width={320}
                 />
@@ -3949,10 +3949,10 @@ exports[`Test custom latest length 1`] = `
             >
               <img
                 alt=""
-                className="Pinpoint Image image blurhash"
+                className="Pinpoint Image image "
                 decoding="async"
                 height={320}
-                loading="eager"
+                loading="lazy"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                 width={320}
               />
@@ -4084,7 +4084,7 @@ exports[`Test custom latest length 1`] = `
               className="Pinpoint Image cover blurhash"
               decoding="async"
               height={900}
-              loading="eager"
+              loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
               width={1600}
             />
@@ -4289,7 +4289,7 @@ exports[`Test custom latest length 1`] = `
               className="Pinpoint Image cover blurhash"
               decoding="async"
               height={900}
-              loading="eager"
+              loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
               width={1600}
             />
@@ -4503,7 +4503,7 @@ exports[`Test custom latest length 1`] = `
               className="Pinpoint Image cover blurhash"
               decoding="async"
               height={1616}
-              loading="eager"
+              loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
               width={2428}
             />
@@ -4697,7 +4697,7 @@ populated with your recently completed...
               className="Pinpoint Image cover blurhash"
               decoding="async"
               height={1167}
-              loading="eager"
+              loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
               width={1590}
             />
@@ -4902,7 +4902,7 @@ populated with your recently completed...
               className="Pinpoint Image cover blurhash"
               decoding="async"
               height={701}
-              loading="eager"
+              loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
               width={2870}
             />
@@ -5320,7 +5320,7 @@ populated with your recently completed...
               className="Pinpoint Image cover blurhash"
               decoding="async"
               height={1108}
-              loading="eager"
+              loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
               width={2795}
             />
@@ -5525,7 +5525,7 @@ populated with your recently completed...
               className="Pinpoint Image cover blurhash"
               decoding="async"
               height={439}
-              loading="eager"
+              loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
               width={1740}
             />
@@ -5717,7 +5717,7 @@ populated with your recently completed...
               className="Pinpoint Image cover blurhash"
               decoding="async"
               height={1694}
-              loading="eager"
+              loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
               width={3264}
             />
@@ -5922,7 +5922,7 @@ populated with your recently completed...
               className="Pinpoint Image cover blurhash"
               decoding="async"
               height={1666}
-              loading="eager"
+              loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
               width={3010}
             />
@@ -6159,10 +6159,10 @@ populated with your recently completed...
               >
                 <img
                   alt=""
-                  className="Pinpoint Image image blurhash"
+                  className="Pinpoint Image image "
                   decoding="async"
                   height={320}
-                  loading="eager"
+                  loading="lazy"
                   src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                   width={320}
                 />
@@ -6445,10 +6445,10 @@ exports[`Test default state 1`] = `
             >
               <img
                 alt=""
-                className="Pinpoint Image image blurhash"
+                className="Pinpoint Image image "
                 decoding="async"
                 height={320}
-                loading="eager"
+                loading="lazy"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                 width={320}
               />
@@ -6580,7 +6580,7 @@ exports[`Test default state 1`] = `
               className="Pinpoint Image cover blurhash"
               decoding="async"
               height={900}
-              loading="eager"
+              loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
               width={1600}
             />
@@ -6807,7 +6807,7 @@ exports[`Test default state 1`] = `
               className="Pinpoint Image cover blurhash"
               decoding="async"
               height={900}
-              loading="eager"
+              loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
               width={1600}
             />
@@ -6999,7 +6999,7 @@ exports[`Test default state 1`] = `
               className="Pinpoint Image cover blurhash"
               decoding="async"
               height={1616}
-              loading="eager"
+              loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
               width={2428}
             />
@@ -7193,7 +7193,7 @@ populated with your recently completed...
               className="Pinpoint Image cover blurhash"
               decoding="async"
               height={1167}
-              loading="eager"
+              loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
               width={1590}
             />
@@ -7398,7 +7398,7 @@ populated with your recently completed...
               className="Pinpoint Image cover blurhash"
               decoding="async"
               height={701}
-              loading="eager"
+              loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
               width={2870}
             />
@@ -7816,7 +7816,7 @@ populated with your recently completed...
               className="Pinpoint Image cover blurhash"
               decoding="async"
               height={1108}
-              loading="eager"
+              loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
               width={2795}
             />
@@ -8021,7 +8021,7 @@ populated with your recently completed...
               className="Pinpoint Image cover blurhash"
               decoding="async"
               height={439}
-              loading="eager"
+              loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
               width={1740}
             />
@@ -8213,7 +8213,7 @@ populated with your recently completed...
               className="Pinpoint Image cover blurhash"
               decoding="async"
               height={1694}
-              loading="eager"
+              loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
               width={3264}
             />
@@ -8418,7 +8418,7 @@ populated with your recently completed...
               className="Pinpoint Image cover blurhash"
               decoding="async"
               height={1666}
-              loading="eager"
+              loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
               width={3010}
             />
@@ -8655,10 +8655,10 @@ populated with your recently completed...
               >
                 <img
                   alt=""
-                  className="Pinpoint Image image blurhash"
+                  className="Pinpoint Image image "
                   decoding="async"
                   height={320}
-                  loading="eager"
+                  loading="lazy"
                   src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                   width={320}
                 />

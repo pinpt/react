@@ -105,7 +105,7 @@ exports[`Test custom className 1`] = `
             className="action"
           >
             <a
-              className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-100 Prebuilt"
+              className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-0 Prebuilt"
               href="/subscription/subscribe"
             >
               <svg
@@ -297,7 +297,7 @@ exports[`Test custom className 1`] = `
               <a
                 aria-label="Facebook"
                 className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem FacebookShare "
-                href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_facebook"
+                href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Facebook"
@@ -322,7 +322,7 @@ exports[`Test custom className 1`] = `
               <a
                 aria-label="Twitter"
                 className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem TwitterShare "
-                href="https://twitter.com/intent/tweet/?text=Linked%20content%20blocks%20allow%20you%20to%20populate%20your%20content%20from%20the%20recently%20completed%20work.%20Annotations%20show%20you%20which%20issues%20and%20pull%20requests%20are%20linked.&url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_twitter"
+                href="https://twitter.com/intent/tweet/?text=Linked%20content%20blocks%20allow%20you%20to%20populate%20your%20content%20from%20the%20recently%20completed%20work.%20Annotations%20show%20you%20which%20issues%20and%20pull%20requests%20are%20linked.&url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Twitter"
@@ -347,7 +347,7 @@ exports[`Test custom className 1`] = `
               <a
                 aria-label="LinkedIn"
                 className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem LinkedInShare "
-                href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_facebook&mini=true&summary=Linked+content+blocks+allow+you+to+populate+your+content+from+the+recently+completed+work.+Annotations+show+you+which+issues+and+pull+requests+are+linked.&title=Pinpoint+-+Linked+Content+Blocks"
+                href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks&mini=true&summary=Linked+content+blocks+allow+you+to+populate+your+content+from+the+recently+completed+work.+Annotations+show+you+which+issues+and+pull+requests+are+linked.&title=Pinpoint+-+Linked+Content+Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="LinkedIn"
@@ -719,7 +719,7 @@ exports[`Test custom className 1`] = `
               <a
                 aria-label="Facebook"
                 className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem FacebookShare "
-                href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_facebook"
+                href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Facebook"
@@ -744,7 +744,7 @@ exports[`Test custom className 1`] = `
               <a
                 aria-label="Twitter"
                 className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem TwitterShare "
-                href="https://twitter.com/intent/tweet/?text=Linked%20content%20blocks%20allow%20you%20to%20populate%20your%20content%20from%20the%20recently%20completed%20work.%20Annotations%20show%20you%20which%20issues%20and%20pull%20requests%20are%20linked.&url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_twitter"
+                href="https://twitter.com/intent/tweet/?text=Linked%20content%20blocks%20allow%20you%20to%20populate%20your%20content%20from%20the%20recently%20completed%20work.%20Annotations%20show%20you%20which%20issues%20and%20pull%20requests%20are%20linked.&url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Twitter"
@@ -769,7 +769,7 @@ exports[`Test custom className 1`] = `
               <a
                 aria-label="LinkedIn"
                 className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem LinkedInShare "
-                href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_facebook&mini=true&summary=Linked+content+blocks+allow+you+to+populate+your+content+from+the+recently+completed+work.+Annotations+show+you+which+issues+and+pull+requests+are+linked.&title=Pinpoint+-+Linked+Content+Blocks"
+                href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks&mini=true&summary=Linked+content+blocks+allow+you+to+populate+your+content+from+the+recently+completed+work.+Annotations+show+you+which+issues+and+pull+requests+are+linked.&title=Pinpoint+-+Linked+Content+Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="LinkedIn"
@@ -865,7 +865,7 @@ exports[`Test custom className 1`] = `
             className="right"
           >
             <a
-              className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-100 Prebuilt"
+              className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-0 Prebuilt"
               href="/subscription/subscribe"
             >
               <svg
@@ -1132,10 +1132,10 @@ exports[`Test default state 1`] = `
             >
               <img
                 alt=""
-                className="Pinpoint Image image blurhash"
+                className="Pinpoint Image image "
                 decoding="async"
                 height={320}
-                loading="eager"
+                loading="lazy"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                 width={320}
               />
@@ -1512,11 +1512,13 @@ exports[`Test default state 1`] = `
               >
                 <img
                   alt="Linked Content Blocks"
-                  className="Pinpoint Image medium-zoom-cover blurhash"
+                  className="Pinpoint Image medium-zoom-cover "
                   decoding="async"
                   height={900}
                   loading="eager"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                  sizes="(min-width: 640px) 640px, (min-width: 768px) 768px, (min-width: 1024px) 1024px, (min-width: 1280px) 1280px, (min-width: 1328px) 1328px, (min-width: 1600px) 1600px"
+                  src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
+                  srcSet="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png?rw=640 640w, https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png?rw=768 768w, https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png?rw=1024 1024w, https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png?rw=1280 1280w, https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png?rw=1328 1328w, https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png 1600w"
                   width={1600}
                 />
               </div>
@@ -1570,10 +1572,10 @@ exports[`Test default state 1`] = `
                 >
                   <img
                     alt=""
-                    className="Pinpoint Image medium-zoom-body blurhash"
+                    className="Pinpoint Image medium-zoom-body "
                     decoding="async"
                     height={509.6}
-                    loading="eager"
+                    loading="lazy"
                     src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                     width={564.72}
                   />
@@ -1625,10 +1627,10 @@ exports[`Test default state 1`] = `
                 >
                   <img
                     alt=""
-                    className="Pinpoint Image medium-zoom-body blurhash"
+                    className="Pinpoint Image medium-zoom-body "
                     decoding="async"
                     height={360}
-                    loading="eager"
+                    loading="lazy"
                     src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                     width={540}
                   />
@@ -1949,10 +1951,10 @@ exports[`Test default state 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image image blurhash"
+                  className="Pinpoint Image image "
                   decoding="async"
                   height={320}
-                  loading="eager"
+                  loading="lazy"
                   src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                   width={320}
                 />
@@ -2235,10 +2237,10 @@ exports[`Test no author 1`] = `
             >
               <img
                 alt=""
-                className="Pinpoint Image image blurhash"
+                className="Pinpoint Image image "
                 decoding="async"
                 height={320}
-                loading="eager"
+                loading="lazy"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                 width={320}
               />
@@ -2508,11 +2510,13 @@ exports[`Test no author 1`] = `
               >
                 <img
                   alt="Linked Content Blocks"
-                  className="Pinpoint Image medium-zoom-cover blurhash"
+                  className="Pinpoint Image medium-zoom-cover "
                   decoding="async"
                   height={900}
                   loading="eager"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                  sizes="(min-width: 640px) 640px, (min-width: 768px) 768px, (min-width: 1024px) 1024px, (min-width: 1280px) 1280px, (min-width: 1328px) 1328px, (min-width: 1600px) 1600px"
+                  src="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png"
+                  srcSet="https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png?rw=640 640w, https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png?rw=768 768w, https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png?rw=1024 1024w, https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png?rw=1280 1280w, https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png?rw=1328 1328w, https://file.pinpoint.com/dee04c201d3ac96f3314041b5382cc43;ULH_.DD%2500%25Ms%3Bxbxbj%5D00%25M~qRjjKV%5BRjax;1600x900.png 1600w"
                   width={1600}
                 />
               </div>
@@ -2566,10 +2570,10 @@ exports[`Test no author 1`] = `
                 >
                   <img
                     alt=""
-                    className="Pinpoint Image medium-zoom-body blurhash"
+                    className="Pinpoint Image medium-zoom-body "
                     decoding="async"
                     height={509.6}
-                    loading="eager"
+                    loading="lazy"
                     src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                     width={564.72}
                   />
@@ -2621,10 +2625,10 @@ exports[`Test no author 1`] = `
                 >
                   <img
                     alt=""
-                    className="Pinpoint Image medium-zoom-body blurhash"
+                    className="Pinpoint Image medium-zoom-body "
                     decoding="async"
                     height={360}
-                    loading="eager"
+                    loading="lazy"
                     src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                     width={540}
                   />
@@ -2838,10 +2842,10 @@ exports[`Test no author 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image image blurhash"
+                  className="Pinpoint Image image "
                   decoding="async"
                   height={320}
-                  loading="eager"
+                  loading="lazy"
                   src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                   width={320}
                 />
@@ -3351,7 +3355,7 @@ exports[`Test no authors 1`] = `
               <a
                 aria-label="LinkedIn"
                 className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem LinkedInShare "
-                href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FB1D7ThZS7RhC5mY4PhOR%2FAnalytics-Drilldown-Changelog-Generator-Styling%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_facebook&mini=true&summary=Improved+changelog+analytics+with+drill-down+capability+along+with+styling+improvements+for+pinpt%2Fchangelog-generator.&title=Pinpoint+-+Analytics+Drilldown+%2B+Changelog+Generator+Styling"
+                href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FB1D7ThZS7RhC5mY4PhOR%2FAnalytics-Drilldown-Changelog-Generator-Styling%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_linkedin&mini=true&summary=Improved+changelog+analytics+with+drill-down+capability+along+with+styling+improvements+for+pinpt%2Fchangelog-generator.&title=Pinpoint+-+Analytics+Drilldown+%2B+Changelog+Generator+Styling"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="LinkedIn"
@@ -4067,7 +4071,7 @@ exports[`Test no authors 1`] = `
               <a
                 aria-label="LinkedIn"
                 className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem LinkedInShare "
-                href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FB1D7ThZS7RhC5mY4PhOR%2FAnalytics-Drilldown-Changelog-Generator-Styling%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_facebook&mini=true&summary=Improved+changelog+analytics+with+drill-down+capability+along+with+styling+improvements+for+pinpt%2Fchangelog-generator.&title=Pinpoint+-+Analytics+Drilldown+%2B+Changelog+Generator+Styling"
+                href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FB1D7ThZS7RhC5mY4PhOR%2FAnalytics-Drilldown-Changelog-Generator-Styling%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_linkedin&mini=true&summary=Improved+changelog+analytics+with+drill-down+capability+along+with+styling+improvements+for+pinpt%2Fchangelog-generator.&title=Pinpoint+-+Analytics+Drilldown+%2B+Changelog+Generator+Styling"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="LinkedIn"
@@ -4666,7 +4670,7 @@ exports[`Test no claps 1`] = `
               <a
                 aria-label="LinkedIn"
                 className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem LinkedInShare "
-                href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_facebook&mini=true&summary=Linked+content+blocks+allow+you+to+populate+your+content+from+the+recently+completed+work.+Annotations+show+you+which+issues+and+pull+requests+are+linked.&title=Pinpoint+-+Linked+Content+Blocks"
+                href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_linkedin&mini=true&summary=Linked+content+blocks+allow+you+to+populate+your+content+from+the+recently+completed+work.+Annotations+show+you+which+issues+and+pull+requests+are+linked.&title=Pinpoint+-+Linked+Content+Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="LinkedIn"
@@ -5004,7 +5008,7 @@ exports[`Test no claps 1`] = `
               <a
                 aria-label="LinkedIn"
                 className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem LinkedInShare "
-                href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_facebook&mini=true&summary=Linked+content+blocks+allow+you+to+populate+your+content+from+the+recently+completed+work.+Annotations+show+you+which+issues+and+pull+requests+are+linked.&title=Pinpoint+-+Linked+Content+Blocks"
+                href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_linkedin&mini=true&summary=Linked+content+blocks+allow+you+to+populate+your+content+from+the+recently+completed+work.+Annotations+show+you+which+issues+and+pull+requests+are+linked.&title=Pinpoint+-+Linked+Content+Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="LinkedIn"
@@ -5445,7 +5449,7 @@ exports[`Test not zoomable 1`] = `
             className="action"
           >
             <a
-              className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-100 Prebuilt"
+              className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-0 Prebuilt"
               href="/subscription/subscribe"
             >
               <svg
@@ -5637,7 +5641,7 @@ exports[`Test not zoomable 1`] = `
               <a
                 aria-label="Facebook"
                 className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem FacebookShare "
-                href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_facebook"
+                href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Facebook"
@@ -5662,7 +5666,7 @@ exports[`Test not zoomable 1`] = `
               <a
                 aria-label="Twitter"
                 className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem TwitterShare "
-                href="https://twitter.com/intent/tweet/?text=Linked%20content%20blocks%20allow%20you%20to%20populate%20your%20content%20from%20the%20recently%20completed%20work.%20Annotations%20show%20you%20which%20issues%20and%20pull%20requests%20are%20linked.&url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_twitter"
+                href="https://twitter.com/intent/tweet/?text=Linked%20content%20blocks%20allow%20you%20to%20populate%20your%20content%20from%20the%20recently%20completed%20work.%20Annotations%20show%20you%20which%20issues%20and%20pull%20requests%20are%20linked.&url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Twitter"
@@ -5687,7 +5691,7 @@ exports[`Test not zoomable 1`] = `
               <a
                 aria-label="LinkedIn"
                 className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem LinkedInShare "
-                href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_facebook&mini=true&summary=Linked+content+blocks+allow+you+to+populate+your+content+from+the+recently+completed+work.+Annotations+show+you+which+issues+and+pull+requests+are+linked.&title=Pinpoint+-+Linked+Content+Blocks"
+                href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks&mini=true&summary=Linked+content+blocks+allow+you+to+populate+your+content+from+the+recently+completed+work.+Annotations+show+you+which+issues+and+pull+requests+are+linked.&title=Pinpoint+-+Linked+Content+Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="LinkedIn"
@@ -6059,7 +6063,7 @@ exports[`Test not zoomable 1`] = `
               <a
                 aria-label="Facebook"
                 className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem FacebookShare "
-                href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_facebook"
+                href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Facebook"
@@ -6084,7 +6088,7 @@ exports[`Test not zoomable 1`] = `
               <a
                 aria-label="Twitter"
                 className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem TwitterShare "
-                href="https://twitter.com/intent/tweet/?text=Linked%20content%20blocks%20allow%20you%20to%20populate%20your%20content%20from%20the%20recently%20completed%20work.%20Annotations%20show%20you%20which%20issues%20and%20pull%20requests%20are%20linked.&url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_twitter"
+                href="https://twitter.com/intent/tweet/?text=Linked%20content%20blocks%20allow%20you%20to%20populate%20your%20content%20from%20the%20recently%20completed%20work.%20Annotations%20show%20you%20which%20issues%20and%20pull%20requests%20are%20linked.&url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Twitter"
@@ -6109,7 +6113,7 @@ exports[`Test not zoomable 1`] = `
               <a
                 aria-label="LinkedIn"
                 className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem LinkedInShare "
-                href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_facebook&mini=true&summary=Linked+content+blocks+allow+you+to+populate+your+content+from+the+recently+completed+work.+Annotations+show+you+which+issues+and+pull+requests+are+linked.&title=Pinpoint+-+Linked+Content+Blocks"
+                href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2FatBB4DPW5UrCgugTPw6M%2FLinked-Content-Blocks&mini=true&summary=Linked+content+blocks+allow+you+to+populate+your+content+from+the+recently+completed+work.+Annotations+show+you+which+issues+and+pull+requests+are+linked.&title=Pinpoint+-+Linked+Content+Blocks"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="LinkedIn"
@@ -6205,7 +6209,7 @@ exports[`Test not zoomable 1`] = `
             className="right"
           >
             <a
-              className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-100 Prebuilt"
+              className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-0 Prebuilt"
               href="/subscription/subscribe"
             >
               <svg
@@ -6472,10 +6476,10 @@ exports[`Test with pagination 1`] = `
             >
               <img
                 alt=""
-                className="Pinpoint Image image blurhash"
+                className="Pinpoint Image image "
                 decoding="async"
                 height={320}
-                loading="eager"
+                loading="lazy"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                 width={320}
               />
@@ -6550,7 +6554,7 @@ exports[`Test with pagination 1`] = `
             className="action"
           >
             <a
-              className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-0 Prebuilt"
+              className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-100 Prebuilt"
               href="/subscription/subscribe"
             >
               <svg
@@ -6646,7 +6650,7 @@ exports[`Test with pagination 1`] = `
               <a
                 aria-label="Facebook"
                 className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem FacebookShare "
-                href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2F9gOsjHBg7tHtNllBWrY8%2FPublishing-Controls-and-Social-Posting"
+                href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2F9gOsjHBg7tHtNllBWrY8%2FPublishing-Controls-and-Social-Posting%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_facebook"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Facebook"
@@ -6671,7 +6675,7 @@ exports[`Test with pagination 1`] = `
               <a
                 aria-label="Twitter"
                 className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem TwitterShare "
-                href="https://twitter.com/intent/tweet/?text=When%20you%20publish%20a%20changelog%20you%20will%20now%20see%20a%20new%20Publish%20dialog%20which%20grants%20finer%20control%20over%20when%20you%20want%20to%20notify%20your%20subscribers.&url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2F9gOsjHBg7tHtNllBWrY8%2FPublishing-Controls-and-Social-Posting"
+                href="https://twitter.com/intent/tweet/?text=When%20you%20publish%20a%20changelog%20you%20will%20now%20see%20a%20new%20Publish%20dialog%20which%20grants%20finer%20control%20over%20when%20you%20want%20to%20notify%20your%20subscribers.&url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2F9gOsjHBg7tHtNllBWrY8%2FPublishing-Controls-and-Social-Posting%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_twitter"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Twitter"
@@ -6696,7 +6700,7 @@ exports[`Test with pagination 1`] = `
               <a
                 aria-label="LinkedIn"
                 className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem LinkedInShare "
-                href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2F9gOsjHBg7tHtNllBWrY8%2FPublishing-Controls-and-Social-Posting&mini=true&summary=When+you+publish+a+changelog+you+will+now+see+a+new+Publish+dialog+which+grants+finer+control+over+when+you+want+to+notify+your+subscribers.&title=Pinpoint+-+Publishing+Controls+and+Social+Posting"
+                href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2F9gOsjHBg7tHtNllBWrY8%2FPublishing-Controls-and-Social-Posting%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_linkedin&mini=true&summary=When+you+publish+a+changelog+you+will+now+see+a+new+Publish+dialog+which+grants+finer+control+over+when+you+want+to+notify+your+subscribers.&title=Pinpoint+-+Publishing+Controls+and+Social+Posting"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="LinkedIn"
@@ -6756,11 +6760,13 @@ exports[`Test with pagination 1`] = `
               >
                 <img
                   alt="Publishing Controls and Social Posting"
-                  className="Pinpoint Image medium-zoom-cover blurhash"
+                  className="Pinpoint Image medium-zoom-cover "
                   decoding="async"
                   height={900}
                   loading="eager"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                  sizes="(min-width: 640px) 640px, (min-width: 768px) 768px, (min-width: 1024px) 1024px, (min-width: 1280px) 1280px, (min-width: 1328px) 1328px, (min-width: 1600px) 1600px"
+                  src="https://file.pinpoint.com/7120741f0e5051b632fdd356fc1cdb16;U40m~QcbVUiFkafladjFUbiZk%5BcbZ%23jEkYbw;1600x900.png"
+                  srcSet="https://file.pinpoint.com/7120741f0e5051b632fdd356fc1cdb16;U40m~QcbVUiFkafladjFUbiZk%5BcbZ%23jEkYbw;1600x900.png?rw=640 640w, https://file.pinpoint.com/7120741f0e5051b632fdd356fc1cdb16;U40m~QcbVUiFkafladjFUbiZk%5BcbZ%23jEkYbw;1600x900.png?rw=768 768w, https://file.pinpoint.com/7120741f0e5051b632fdd356fc1cdb16;U40m~QcbVUiFkafladjFUbiZk%5BcbZ%23jEkYbw;1600x900.png?rw=1024 1024w, https://file.pinpoint.com/7120741f0e5051b632fdd356fc1cdb16;U40m~QcbVUiFkafladjFUbiZk%5BcbZ%23jEkYbw;1600x900.png?rw=1280 1280w, https://file.pinpoint.com/7120741f0e5051b632fdd356fc1cdb16;U40m~QcbVUiFkafladjFUbiZk%5BcbZ%23jEkYbw;1600x900.png?rw=1328 1328w, https://file.pinpoint.com/7120741f0e5051b632fdd356fc1cdb16;U40m~QcbVUiFkafladjFUbiZk%5BcbZ%23jEkYbw;1600x900.png 1600w"
                   width={1600}
                 />
               </div>
@@ -6814,10 +6820,10 @@ exports[`Test with pagination 1`] = `
                 >
                   <img
                     alt=""
-                    className="Pinpoint Image medium-zoom-body blurhash"
+                    className="Pinpoint Image medium-zoom-body "
                     decoding="async"
                     height={540}
-                    loading="eager"
+                    loading="lazy"
                     src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                     width={810}
                   />
@@ -6907,7 +6913,7 @@ exports[`Test with pagination 1`] = `
               <a
                 aria-label="Facebook"
                 className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem FacebookShare "
-                href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2F9gOsjHBg7tHtNllBWrY8%2FPublishing-Controls-and-Social-Posting"
+                href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2F9gOsjHBg7tHtNllBWrY8%2FPublishing-Controls-and-Social-Posting%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_facebook"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Facebook"
@@ -6932,7 +6938,7 @@ exports[`Test with pagination 1`] = `
               <a
                 aria-label="Twitter"
                 className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem TwitterShare "
-                href="https://twitter.com/intent/tweet/?text=When%20you%20publish%20a%20changelog%20you%20will%20now%20see%20a%20new%20Publish%20dialog%20which%20grants%20finer%20control%20over%20when%20you%20want%20to%20notify%20your%20subscribers.&url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2F9gOsjHBg7tHtNllBWrY8%2FPublishing-Controls-and-Social-Posting"
+                href="https://twitter.com/intent/tweet/?text=When%20you%20publish%20a%20changelog%20you%20will%20now%20see%20a%20new%20Publish%20dialog%20which%20grants%20finer%20control%20over%20when%20you%20want%20to%20notify%20your%20subscribers.&url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2F9gOsjHBg7tHtNllBWrY8%2FPublishing-Controls-and-Social-Posting%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_twitter"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Twitter"
@@ -6957,7 +6963,7 @@ exports[`Test with pagination 1`] = `
               <a
                 aria-label="LinkedIn"
                 className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem LinkedInShare "
-                href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2F9gOsjHBg7tHtNllBWrY8%2FPublishing-Controls-and-Social-Posting&mini=true&summary=When+you+publish+a+changelog+you+will+now+see+a+new+Publish+dialog+which+grants+finer+control+over+when+you+want+to+notify+your+subscribers.&title=Pinpoint+-+Publishing+Controls+and+Social+Posting"
+                href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fchangelog.pinpoint.com%2Fentry%2F9gOsjHBg7tHtNllBWrY8%2FPublishing-Controls-and-Social-Posting%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_linkedin&mini=true&summary=When+you+publish+a+changelog+you+will+now+see+a+new+Publish+dialog+which+grants+finer+control+over+when+you+want+to+notify+your+subscribers.&title=Pinpoint+-+Publishing+Controls+and+Social+Posting"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="LinkedIn"
@@ -7100,10 +7106,10 @@ exports[`Test with pagination 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image image blurhash"
+                  className="Pinpoint Image image "
                   decoding="async"
                   height={320}
-                  loading="eager"
+                  loading="lazy"
                   src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                   width={320}
                 />
@@ -7119,7 +7125,7 @@ exports[`Test with pagination 1`] = `
             className="right"
           >
             <a
-              className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-0 Prebuilt"
+              className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-100 Prebuilt"
               href="/subscription/subscribe"
             >
               <svg

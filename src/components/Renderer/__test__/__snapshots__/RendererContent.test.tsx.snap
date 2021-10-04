@@ -283,10 +283,10 @@ exports[`Test Image cover media with blurhash 1`] = `
     >
       <img
         alt=""
-        className="Pinpoint Image  blurhash"
+        className="Pinpoint Image  "
         decoding="async"
         loading="eager"
-        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAABmJLR0QA/wD/AP+gvaeTAAAAT0lEQVQImQFEALv/AXWlrv/68vAAC+fjABoIBwAE59ncAOnk4gDg18sAMCIqAAT6z9wA6bTHANwA1AADyOUABAQrIgAVFAYALtsRACcgIwA9chplax1J+QAAAABJRU5ErkJggg=="
+        src="https://file.edge.pinpoint.com/b1ee49fa5ea82ea3b71d0101ddc28a84"
       />
     </div>
   </div>
@@ -712,7 +712,7 @@ exports[`Test image with scale 1`] = `
         className="Pinpoint Image medium-zoom-body blurhash"
         decoding="async"
         height={300}
-        loading="eager"
+        loading="lazy"
         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABmJLR0QA/wD/AP+gvaeTAAAAxklEQVQYlQXBvU7DMBSA0c++N43dND9tF8TAxsDCUzHw0CxIUAFCiFDViWs74Rzz/HS/jn+Bl9cPnD/y+HDH7U1PyQun0xl1bkdMQtslvNux3Xoa71kX2HcLOvRHRGfmotTOcdgPHIYBCyiKtm0HsqEvK1optffUtUcMNE1GrRVEFKkqirHMaeESMwKEVNAQIlO8MsVCWjM/Y0AwWOAcAvr5NTJdE78hUIyhxmBLwRoIc0Tf3r+JOXPJM85X5I0lqUGsYU2JfwHmU2jvsbHvAAAAAElFTkSuQmCC"
         width={450}
       />
@@ -734,7 +734,7 @@ exports[`Test image with scale 1`] = `
         className="Pinpoint Image medium-zoom-body blurhash"
         decoding="async"
         height={300}
-        loading="eager"
+        loading="lazy"
         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABmJLR0QA/wD/AP+gvaeTAAAAxklEQVQYlQXBvU7DMBSA0c++N43dND9tF8TAxsDCUzHw0CxIUAFCiFDViWs74Rzz/HS/jn+Bl9cPnD/y+HDH7U1PyQun0xl1bkdMQtslvNux3Xoa71kX2HcLOvRHRGfmotTOcdgPHIYBCyiKtm0HsqEvK1optffUtUcMNE1GrRVEFKkqirHMaeESMwKEVNAQIlO8MsVCWjM/Y0AwWOAcAvr5NTJdE78hUIyhxmBLwRoIc0Tf3r+JOXPJM85X5I0lqUGsYU2JfwHmU2jvsbHvAAAAAElFTkSuQmCC"
         width={450}
       />
@@ -756,7 +756,7 @@ exports[`Test image with scale 1`] = `
         className="Pinpoint Image medium-zoom-body blurhash"
         decoding="async"
         height={300}
-        loading="eager"
+        loading="lazy"
         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABmJLR0QA/wD/AP+gvaeTAAAAxklEQVQYlQXBvU7DMBSA0c++N43dND9tF8TAxsDCUzHw0CxIUAFCiFDViWs74Rzz/HS/jn+Bl9cPnD/y+HDH7U1PyQun0xl1bkdMQtslvNux3Xoa71kX2HcLOvRHRGfmotTOcdgPHIYBCyiKtm0HsqEvK1optffUtUcMNE1GrRVEFKkqirHMaeESMwKEVNAQIlO8MsVCWjM/Y0AwWOAcAvr5NTJdE78hUIyhxmBLwRoIc0Tf3r+JOXPJM85X5I0lqUGsYU2JfwHmU2jvsbHvAAAAAElFTkSuQmCC"
         width={450}
       />
@@ -778,7 +778,7 @@ exports[`Test image with scale 1`] = `
         className="Pinpoint Image medium-zoom-body blurhash"
         decoding="async"
         height={2000}
-        loading="eager"
+        loading="lazy"
         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABmJLR0QA/wD/AP+gvaeTAAAAxklEQVQYlQXBvU7DMBSA0c++N43dND9tF8TAxsDCUzHw0CxIUAFCiFDViWs74Rzz/HS/jn+Bl9cPnD/y+HDH7U1PyQun0xl1bkdMQtslvNux3Xoa71kX2HcLOvRHRGfmotTOcdgPHIYBCyiKtm0HsqEvK1optffUtUcMNE1GrRVEFKkqirHMaeESMwKEVNAQIlO8MsVCWjM/Y0AwWOAcAvr5NTJdE78hUIyhxmBLwRoIc0Tf3r+JOXPJM85X5I0lqUGsYU2JfwHmU2jvsbHvAAAAAElFTkSuQmCC"
         width={3000}
       />
