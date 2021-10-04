@@ -27,6 +27,14 @@ test('Test no author', () => {
 	expect(tree).toMatchSnapshot();
 });
 
+test('Test no authors', () => {
+	const mockEnty = JSON.parse(JSON.stringify(entries[9]));
+	mockEnty.authors = [];
+	const component = renderer.create(<PrebuiltEntry content={mockEnty as IContent} site={site} />);
+	const tree = component.toJSON();
+	expect(tree).toMatchSnapshot();
+});
+
 test('Test custom className', () => {
 	const component = renderer.create(
 		<PrebuiltEntry

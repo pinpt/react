@@ -19,10 +19,10 @@ exports[`Test complete 1`] = `
         >
           <img
             alt=""
-            className="Pinpoint Image image blurhash"
+            className="Pinpoint Image image "
             decoding="async"
             height={320}
-            loading="eager"
+            loading="lazy"
             src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
             width={320}
           />
@@ -294,10 +294,10 @@ exports[`Test no custom class 1`] = `
         >
           <img
             alt=""
-            className="Pinpoint Image image blurhash"
+            className="Pinpoint Image image "
             decoding="async"
             height={320}
-            loading="eager"
+            loading="lazy"
             src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
             width={320}
           />
@@ -508,10 +508,10 @@ exports[`Test no subscribe 1`] = `
         >
           <img
             alt=""
-            className="Pinpoint Image image blurhash"
+            className="Pinpoint Image image "
             decoding="async"
             height={320}
-            loading="eager"
+            loading="lazy"
             src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
             width={320}
           />

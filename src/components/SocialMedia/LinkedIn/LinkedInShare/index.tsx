@@ -11,7 +11,7 @@ interface LinkedinShareProps extends ISocialMediaShareProps {
 const LinkedInShare = (props: LinkedinShareProps) => {
 	const { className = '', href: _href, summary, title, ...rest } = props;
 
-	const href = useLinkTracking(_href, 'facebook');
+	const href = useLinkTracking(_href, 'linkedin');
 
 	const params = new URLSearchParams({
 		url: href,

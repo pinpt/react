@@ -116,7 +116,7 @@ const breakpoints = [640, 768, 1024, 1280, 1328]; // aligned to tailwind
 
 const DynamicImage = (props: ImageProps) => {
 	const r = extractImageMetadataFromFileID(props.src!);
-	const [loaded, setLoaded] = React.useState(false);
+	const [loaded, setLoaded] = React.useState(!props.lazy);
 	React.useEffect(() => {
 		setLoaded(true);
 	}, []);

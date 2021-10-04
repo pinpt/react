@@ -169,7 +169,7 @@ exports[`Test short 1`] = `
   <a
     aria-label="LinkedIn"
     className="Pinpoint Internal Link Pinpoint SocialMedia ShareItem LinkedInShare "
-    href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Flinkedin.com%2Fcompany%2Fpinpoint-software%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_facebook&mini=true"
+    href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Flinkedin.com%2Fcompany%2Fpinpoint-software%3Futm_source%3Dpinpt_web%26utm_medium%3Dpinpt_social_linkedin&mini=true"
     rel="noopener noreferrer"
     target="_blank"
     title="LinkedIn"
