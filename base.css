@@ -737,7 +737,11 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 }
 
 .Pinpoint.Banner.wrapper {
-	@apply w-full flex items-center justify-center p-4 bg-yellow-500 text-yellow-900;
+	@apply w-full flex items-center justify-center p-4 bg-yellow-500 text-yellow-900 relative;
+}
+
+.Pinpoint.Banner .close {
+	@apply absolute top-1 right-2 cursor-pointer;
 }
 
 .Pinpoint.Banner .inner {

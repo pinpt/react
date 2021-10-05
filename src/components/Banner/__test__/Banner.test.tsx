@@ -31,3 +31,15 @@ test('Test with className', () => {
 	const tree = component.toJSON();
 	expect(tree).toMatchSnapshot();
 });
+
+test('Test with closeable', () => {
+	const component = renderer.create(<Banner closeable>Hello World</Banner>);
+	const tree = component.toJSON();
+	expect(tree).toMatchSnapshot();
+});
+
+test('Test with styles', () => {
+	const component = renderer.create(<Banner style={{ backgroundColor: '#900', color: '#fff' }}>Hello World</Banner>);
+	const tree = component.toJSON();
+	expect(tree).toMatchSnapshot();
+});
