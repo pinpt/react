@@ -26,3 +26,9 @@ export const Message: React.VFC<{}> = () => <Banner message="Hey this is cool" /
 export const MessageAndIcon: React.VFC<{}> = () => <Banner message="Warning, Will Rogers" icon={faExclamationCircle} />;
 
 export const Children: React.VFC<{}> = () => <Banner>Hello World</Banner>;
+
+export const Closeable: React.VFC<{}> = () => <Banner closeable>Hello World</Banner>;
+
+export const Override_Styles: React.VFC<{}> = () => (
+	<Banner style={{ backgroundColor: '#900', color: '#fff' }}>Hello World</Banner>
+);
