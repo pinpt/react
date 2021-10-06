@@ -32,3 +32,9 @@ export const Closeable: React.VFC<{}> = () => <Banner closeable>Hello World</Ban
 export const Override_Styles: React.VFC<{}> = () => (
 	<Banner style={{ backgroundColor: '#900', color: '#fff' }}>Hello World</Banner>
 );
+
+export const Close_Callback: React.VFC<{}> = () => (
+	<Banner style={{ backgroundColor: '#900', color: '#fff' }} closeable onClose={() => console.error('closed')}>
+		Hello World
+	</Banner>
+);

@@ -9,6 +9,7 @@ interface BannerProps {
 	className?: string;
 	closeable?: boolean;
 	style?: React.CSSProperties;
+	onClose?: () => void;
 }
 
 const Banner = ({
@@ -18,8 +19,14 @@ const Banner = ({
 	className = 'bg-yellow-500 text-yellow-900',
 	style,
 	closeable,
+	onClose,
 }: BannerProps) => {
 	const [visible, setVisible] = React.useState(true);
+	React.useEffect(() => {
+		if (!visible && onClose) {
+			onClose();
+		}
+	}, [visible]);
 	if (!visible) {
 		return null;
 	}
