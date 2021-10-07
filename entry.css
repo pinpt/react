@@ -703,6 +703,7 @@
  **/
 .yt {
 	@apply relative bg-cover bg-center cursor-pointer bg-black;
+	background-repeat: no-repeat;
 }
 /* gradient */
 .yt::before {

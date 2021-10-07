@@ -1,6 +1,6 @@
 {
 	"name": "@pinpt/react",
-	"version": "1.0.40",
+	"version": "1.0.41",
 	"description": "The Pinpoint UI Library for React",
 	"main": "dist/cjs/index.js",
 	"module": "dist/esm/index.js",
@@ -29,7 +29,8 @@
 		"build-storybook": "npm run test:generate-output && build-storybook -o docs-build",
 		"build-storybook:docs": "npm run test:generate-output && build-storybook --docs -o docs-build",
 		"prepublishOnly": "npm run build",
-		"build:test": "rollup -c rollup.config.ts"
+		"build:test": "rollup -c rollup.config.ts",
+		"prerelease": "npm version prerelease --preid=`git rev-parse --short HEAD` && npm publish --access public"
 	},
 	"license": "MIT",
 	"dependencies": {
