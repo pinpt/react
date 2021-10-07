@@ -750,6 +750,13 @@
 }
 
 /**
+ * Embed
+ */
+.Pinpoint.document .embed > iframe {
+	@apply w-full;
+}
+
+/**
  * Emoji
  */
 .Pinpoint.document span.emoji {
