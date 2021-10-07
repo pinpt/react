@@ -30,7 +30,7 @@
 		"build-storybook:docs": "npm run test:generate-output && build-storybook --docs -o docs-build",
 		"prepublishOnly": "npm run build",
 		"build:test": "rollup -c rollup.config.ts",
-		"prerelease": "npm version prerelease --preid=`git rev-parse --short HEAD`"
+		"prerelease": "npm version prerelease --preid=`git rev-parse --short HEAD` && npm publish --access public"
 	},
 	"license": "MIT",
 	"dependencies": {
