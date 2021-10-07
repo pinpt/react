@@ -1,6 +1,6 @@
-import { useState, useEffect, useRef } from 'react';
-import useBackground from '../useBackground';
+import { useEffect, useRef, useState } from 'react';
 import sleep from '../../sleep';
+import useBackground from '../useBackground';
 
 const loadScript = (
 	head: HTMLElement,
@@ -62,6 +62,8 @@ const useScriptLoader = (
 				if (toload?.length) {
 					scriptCount.current = toload.length;
 					toload.forEach((src: string) => loadScript(head, src, () => increment(), setError, retry ? 1 : 5));
+				} else {
+					setReady(true); // no scripts to load, set ready
 				}
 			};
 			if (idlePeriod > 0) {

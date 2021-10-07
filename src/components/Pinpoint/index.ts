@@ -6,6 +6,7 @@ export interface IPinpointProps {
 	contentId?: string;
 	basePath?: string;
 	children: (ready: boolean, ref: any) => ReactElement;
+	noIFramely?: boolean;
 }
 
 declare global {
@@ -21,8 +22,10 @@ declare global {
 }
 
 const Pinpoint = (props: IPinpointProps) => {
-	const { siteId, contentId, basePath } = props;
-	const [ready] = useScriptLoader([`https://cdn.iframe.ly/embed.js?api_key=ab49ad398c6f631ab44eca&origin=${siteId}`]);
+	const { siteId, contentId, basePath, noIFramely } = props;
+	const [ready] = useScriptLoader(
+		noIFramely ? [] : [`https://cdn.iframe.ly/embed.js?api_key=ab49ad398c6f631ab44eca&origin=${siteId}`]
+	);
 	const wiredUp = useRef(false);
 
 	useEffect(() => {
@@ -84,7 +87,9 @@ const Pinpoint = (props: IPinpointProps) => {
 			const overlay = ytPlayer.querySelector(overlaySelector) as HTMLElement;
 
 			if (playButton && url) {
-				const play = function () {
+				const play = function (e: any) {
+					e.preventDefault();
+					e.stopPropagation();
 					ytPlayer.removeEventListener('click', play);
 					const iframe = document.createElement('iframe');
 					iframe.className = 'embed-reponsive-item';
