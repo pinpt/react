@@ -11,6 +11,7 @@ import simple_blockquote from '../__data__/simple_blockquote';
 import simple_break from '../__data__/simple_break';
 import simple_bullet_list from '../__data__/simple_bullet_list';
 import simple_code_block from '../__data__/simple_code_block';
+import simple_embed from '../__data__/simple_embed';
 import simple_emoji from '../__data__/simple_emoji';
 import simple_error_notice from '../__data__/simple_error_notice';
 import simple_h1 from '../__data__/simple_h1';
@@ -61,6 +62,8 @@ export const Blockquote_With_Code_Mark: React.VFC<{}> = () => <Document node={bl
 export const Simple_Break: React.VFC<{}> = () => <Document node={simple_break} />;
 
 export const Simple_Hr: React.VFC<{}> = () => <Document node={simple_hr} />;
+
+export const Simple_Embed: React.VFC<{}> = () => <Document node={simple_embed} />;
 
 export const Simple_Emoji: React.VFC<{}> = () => <Document node={simple_emoji} />;
 

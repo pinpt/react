@@ -3,6 +3,7 @@ import BlockQuote from './blockquote';
 import Break from './br';
 import BulletList from './bullet_list';
 import CodeBlock from './code_block';
+import Embed from './embed';
 import Emoji from './emoji';
 import File from './file';
 import Heading from './heading';
@@ -55,6 +56,7 @@ const nodeRegistry: Record<string, (node: PmNode) => JSX.Element> = {
 	br: (node: PmNode) => <Break node={node} />,
 	bullet_list: (node: PmNode) => <BulletList node={node} />,
 	code_block: (node: PmNode) => <CodeBlock node={node} />,
+	embed: (node: PmNode) => <Embed node={node} />,
 	emoji: (node: PmNode) => <Emoji node={node} />,
 	file: (node: PmNode) => <File node={node} />,
 	heading: (node: PmNode) => <Heading node={node} />,
