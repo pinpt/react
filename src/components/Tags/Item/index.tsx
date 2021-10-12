@@ -4,14 +4,18 @@ import { getTagColorStyles } from '../../../lib/color';
 export interface IItemProps {
 	className?: string;
 	tag: string;
+	style?: React.CSSProperties;
 	onClick?: (e: React.MouseEvent<HTMLDivElement>) => void;
+	/**
+	 * noColor - dont show color, also will cancel `style` prop if both are provided
+	 */
 	noColor?: boolean;
 	removable?: boolean;
 }
 
 const Item = (props: IItemProps) => {
-	const { className = '', tag, onClick, noColor, removable } = props;
-	const style = getTagColorStyles(tag);
+	const { className = '', tag, onClick, noColor, style: _style, removable } = props;
+	const style = _style ? _style : getTagColorStyles(tag);
 
 	return (
 		<div

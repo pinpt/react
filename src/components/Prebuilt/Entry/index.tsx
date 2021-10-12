@@ -112,7 +112,11 @@ const Entry = (props: IPrebuiltEntryProps) => {
 										/>
 									)
 								}
-								tags={renderTags?.(content) ?? <Tags.Bar className="Prebuilt" tags={content.tags ?? []} />}
+								tags={
+									renderTags?.(content) ?? (
+										<Tags.Bar className="Prebuilt" tags={content.styledTags ?? content.tags ?? []} />
+									)
+								}
 								clap={
 									renderClap?.(content) ??
 									(onClap ? (

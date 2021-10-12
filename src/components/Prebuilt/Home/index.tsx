@@ -178,7 +178,7 @@ const Home = (props: IPrebuiltHomeProps) => {
 											renderTags?.(content) ?? (
 												<Tags.Bar
 													className="Prebuilt"
-													tags={content.tags ?? []}
+													tags={content.styledTags ?? content.tags ?? []}
 													onClick={(tag: string) => handleAddTagToQuery?.(tag)}
 												/>
 											)
@@ -235,7 +235,7 @@ const Home = (props: IPrebuiltHomeProps) => {
 											renderTags?.(content) ?? (
 												<Tags.Bar
 													className="Prebuilt"
-													tags={content.tags ?? []}
+													tags={content.styledTags ?? content.tags ?? []}
 													onClick={(tag: string) => handleAddTagToQuery?.(tag)}
 												/>
 											)

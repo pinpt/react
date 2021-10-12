@@ -122,3 +122,17 @@ exports[`Test removable 1`] = `
   </span>
 </div>
 `;
+
+exports[`Test with style 1`] = `
+<div
+  className="Pinpoint Tag Item   "
+  style={
+    Object {
+      "backgroundColor": "#ffffff",
+      "color": "#000000",
+    }
+  }
+>
+  test-style
+</div>
+`;
