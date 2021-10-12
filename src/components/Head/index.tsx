@@ -2,6 +2,7 @@ import type { ISite, IContent } from '../../lib/types';
 import React from 'react';
 import { getSiteAnalyticsURL } from '../../lib/router';
 import SEO from './SEO';
+import ScriptPlugins from './ScriptPlugins';
 
 export interface IHeadProps {
 	site: ISite;
@@ -24,6 +25,7 @@ const Head = (props: IHeadProps) => {
 				async
 				defer
 			/>
+			{site.scriptPlugins ? <ScriptPlugins plugins={site.scriptPlugins} /> : null}
 			<meta name="generator" content="pinpoint.com" />
 			<SEO site={site} content={content} />
 			{children}
