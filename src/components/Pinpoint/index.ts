@@ -9,6 +9,28 @@ export interface IPinpointProps {
 	noIFramely?: boolean;
 }
 
+type CustomPropertyType = string | number | boolean;
+
+export interface IdentifyData {
+	user: {
+		id: string;
+		email: string;
+		firstName?: string;
+		lastName?: string;
+		avatarUrl?: string;
+	};
+	custom_properties?: Record<string, CustomPropertyType>;
+}
+export interface PinpointSettings extends IdentifyData {
+	siteId?: string;
+	contentId?: string;
+	basePath?: string;
+
+	pageViews?: false;
+	trackLinks?: false;
+	widgets?: false;
+}
+
 declare global {
 	interface Window {
 		iframely?: {
@@ -17,7 +39,9 @@ declare global {
 		Pinpoint: {
 			setSiteSettings: (siteId: string, contentId: string, basePath?: string) => void;
 			startTracking: (siteId?: string, contentId?: string, basePath?: string) => () => void;
+			identify: (identityData: IdentifyData) => void;
 		};
+		PinpointSettings: PinpointSettings;
 	}
 }
 
