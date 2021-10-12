@@ -72,19 +72,24 @@ export const Test_Youtube: React.VFC<{}> = () => (
 				<Content
 					ref={ref}
 					coverMedia={{ type: CoverMediaType.Youtube, value: 'N_gD9-Oa0fg', placeholderImage: '' }}
-					document={{ type: 'document', content: [
-						{
-							type: 'iframe',
-							attrs: {
-								type: 'youtube',
-								style: 'overlay',
-								href: 'https://www.youtube.com/watch?v=N_gD9-Oa0fg',
-								thumbnail: 'https://i.ytimg.com/vi/N_gD9-Oa0fg/hqdefault.jpg',
-								icon: 'https://yt3.ggpht.com/ytc/AKedOLRCii9uMFeJxNQ1nRcqOkbrzkeygn-N5gWRHVk6ZGQ=s68-c-k-c0x00ffffff-no-rj',
-								title: 'No Time to Die'
+					document={{
+						type: 'document',
+						content: [
+							{
+								type: 'iframe',
+								attrs: {
+									type: 'youtube',
+									style: 'overlay',
+									href: 'https://www.youtube.com/watch?v=N_gD9-Oa0fg',
+									thumbnail: 'https://i.ytimg.com/vi/N_gD9-Oa0fg/hqdefault.jpg',
+									icon:
+										'https://yt3.ggpht.com/ytc/AKedOLRCii9uMFeJxNQ1nRcqOkbrzkeygn-N5gWRHVk6ZGQ=s68-c-k-c0x00ffffff-no-rj',
+									title: 'No Time to Die',
+								},
 							},
-						}
-					] }} id="5678"
+						],
+					}}
+					id="5678"
 				/>
 			);
 		}}
