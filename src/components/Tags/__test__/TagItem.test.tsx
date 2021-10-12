@@ -25,6 +25,14 @@ test('Test 4', () => {
 	expect(tree).toMatchSnapshot();
 });
 
+test('Test with style', () => {
+	const component = renderer.create(
+		<TagItem tag="test-style" style={{ backgroundColor: '#ffffff', color: '#000000' }} />
+	);
+	const tree = component.toJSON();
+	expect(tree).toMatchSnapshot();
+});
+
 test('Test removable', () => {
 	const component = renderer.create(<TagItem removable tag="test-4" />);
 	const tree = component.toJSON();

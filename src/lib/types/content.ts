@@ -57,6 +57,15 @@ export interface IUser {
 	avatarUrl?: string;
 }
 
+export interface StyledTag {
+	name: string;
+	style: {
+		color: string;
+		backgroundColor: string;
+		border: string;
+	};
+}
+
 export interface IContent {
 	id: string;
 	slug?: string;
@@ -66,7 +75,11 @@ export interface IContent {
 	url: string; // the canonical url to the content
 	dateAt: number; // the date used for purposes of sorting
 	publishedAt: number;
+	/**
+	 * @deprecated tags are deprecated, use styledTags instead
+	 */
 	tags?: string[];
+	styledTags?: StyledTag[];
 	title: string;
 	headline: string;
 	authors: IUser[];
