@@ -52,6 +52,7 @@ export interface IPrebuiltEntryProps {
 	previousEntry?: IContent;
 	handleSelectEntry?: (entry: IContent) => void;
 	zoomable?: boolean;
+	handleAddTagToQuery?: (value: string) => void;
 }
 
 const Entry = (props: IPrebuiltEntryProps) => {
@@ -85,6 +86,7 @@ const Entry = (props: IPrebuiltEntryProps) => {
 		previousEntry,
 		handleSelectEntry,
 		zoomable,
+		handleAddTagToQuery,
 	} = props;
 
 	return (
@@ -114,7 +116,11 @@ const Entry = (props: IPrebuiltEntryProps) => {
 								}
 								tags={
 									renderTags?.(content) ?? (
-										<Tags.Bar className="Prebuilt" tags={content.styledTags ?? content.tags ?? []} />
+										<Tags.Bar
+											className="Prebuilt"
+											tags={content.styledTags ?? content.tags ?? []}
+											onClick={(tag: string) => handleAddTagToQuery?.(tag)}
+										/>
 									)
 								}
 								clap={
