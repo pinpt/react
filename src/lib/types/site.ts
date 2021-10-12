@@ -19,5 +19,6 @@ export interface ISite {
 			tags?: string[];
 		};
 	};
+	scriptPlugins?: Record<string, any>;
 	basePath: string;
 }
