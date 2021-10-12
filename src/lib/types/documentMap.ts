@@ -4,7 +4,7 @@ export interface IDocumentMapDocumentRef {
 	index: number;
 	title: string;
 	slug: string;
-};
+}
 
 export interface IDocumentMapGroup {
 	type: 'group';
@@ -13,6 +13,6 @@ export interface IDocumentMapGroup {
 	title: string;
 	slug?: string;
 	children?: IDocumentMapNode[];
-};
+}
 
 export type IDocumentMapNode = IDocumentMapGroup | IDocumentMapDocumentRef;

@@ -7,7 +7,7 @@ import { NodeProps, recurseIntoChildren } from './register';
 const Heading = ({ node }: NodeProps) => {
 	let content = recurseIntoChildren(node);
 	const level = node.attrs?.level;
-	
+
 	switch (level) {
 		case 1:
 			content = <h1>{content}</h1>;
@@ -22,7 +22,7 @@ const Heading = ({ node }: NodeProps) => {
 			content = <h4>{content}</h4>;
 			break;
 	}
-						
+
 	const title = node.content?.[0]?.text;
 	if (title) {
 		const slug = slugifyString(title);
@@ -35,12 +35,8 @@ const Heading = ({ node }: NodeProps) => {
 			</div>
 		);
 	}
-	
-	return (
-		<div className="heading">
-			{content}
-		</div>
-	)
+
+	return <div className="heading">{content}</div>;
 };
 
 export default Heading;

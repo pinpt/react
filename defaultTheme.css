@@ -3,8 +3,8 @@
 	/* page */
 	--page-bg-color: white;
 	--page-text-color: #3f3f46; /* gray-700 */
-	--page-secondary-text-color: #71717A; /* gray-500 */
-	--page-highlight-color: #4F46E5; /* indigo-600 */
+	--page-secondary-text-color: #71717a; /* gray-500 */
+	--page-highlight-color: #4f46e5; /* indigo-600 */
 	--page-error-color: #dc2626; /* red-600 */
 
 	/* header */
@@ -36,7 +36,7 @@
 
 	/* footer */
 	--footer-bg-color: #18181b; /* gray-900 */
-	--footer-text-color: #A1A1AA; /* gray-400 */
+	--footer-text-color: #a1a1aa; /* gray-400 */
 }
 
 /* dark theme override */

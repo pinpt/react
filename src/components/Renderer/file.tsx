@@ -1,7 +1,16 @@
 import React from 'react'; // don't remove
 import {
-	faDownload, faFile, faFileAlt, faFileArchive, faFileAudio, faFileCode, faFileExcel, faFilePdf,
-	faFilePowerpoint, faFileVideo, faFileWord
+	faDownload,
+	faFile,
+	faFileAlt,
+	faFileArchive,
+	faFileAudio,
+	faFileCode,
+	faFileExcel,
+	faFilePdf,
+	faFilePowerpoint,
+	faFileVideo,
+	faFileWord,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { addFileExtension, isFileAPI } from '../../lib/file_metadata';
