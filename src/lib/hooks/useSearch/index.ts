@@ -1,10 +1,10 @@
 import algoliasearch from 'algoliasearch';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import config from '../../../config';
+import { getTagColorStyles } from '../../color';
 import { CoverMediaType, ICoverMedia } from '../../types';
 
 import type { IContent, ISite, StyledTag } from '../../types';
-import { getTagColorStyles } from 'src';
 
 const { algolia } = config;
 const client = algoliasearch(algolia.appId, algolia.apiKey);
