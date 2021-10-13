@@ -20,5 +20,6 @@ export interface ISite {
 		};
 	};
 	scriptPlugins?: Record<string, any>;
+	tagMapping?: Record<string, { color: string; backgroundColor: string }>;
 	basePath: string;
 }

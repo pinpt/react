@@ -73,8 +73,8 @@ export interface IContent {
 	commit: string; // the commit for the content
 	document: ContentDocument;
 	url: string; // the canonical url to the content
-	dateAt: number; // the date used for purposes of sorting
-	publishedAt: number;
+	dateAt: number; // the date of the Content, same as publishedAt
+	publishedAt: number; // the date of the Content, same as dateAt
 	/**
 	 * @deprecated tags are deprecated, use styledTags instead
 	 */
