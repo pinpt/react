@@ -84,6 +84,7 @@ const useSearch = (term: string, tags: string[], siteId: string) => {
 								publishedAt: hit.createdAt,
 								headline: hit.headline,
 								tags: hit.tags,
+								styledTags: hit.styledTags,
 								url: hit.url,
 							} as IContent;
 						})
