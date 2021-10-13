@@ -9,8 +9,8 @@ test('Test getTagColorStyles', () => {
 	const res = getTagColorStyles('abc123');
 	expect(res).toEqual({
 		backgroundColor: '#4e783a',
-		border: '1px solid var(--tag-bcolor, #546355)',
-		color: 'var(--tag-fgcolor, #fff)',
+		border: '1px solid #546355',
+		color: '#fff',
 	});
 });
 
@@ -18,7 +18,7 @@ test('Test getTagColorStyles for contrast', () => {
 	const res = getTagColorStyles('integrations');
 	expect(res).toEqual({
 		backgroundColor: '#905994',
-		border: '1px solid var(--tag-bcolor, #7a537d)',
-		color: 'var(--tag-fgcolor, #fff)',
+		border: '1px solid #7a537d',
+		color: '#fff',
 	});
 });

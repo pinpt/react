@@ -57,7 +57,7 @@ const synonymMapping = {
 	documentation: 'chore',
 } as Record<string, string>;
 
-export const getTagTextColor = (tagBackgroundColor: string) => {
+const getTagTextColor = (tagBackgroundColor: string) => {
 	const contrast = chroma.contrast(tagBackgroundColor, '#fff');
 	let color = '#fff';
 	if (contrast < 4.5) {

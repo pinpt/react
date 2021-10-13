@@ -6,8 +6,8 @@ exports[`Test 1 1`] = `
   style={
     Object {
       "backgroundColor": "#006a21",
-      "border": "1px solid var(--tag-bcolor, #555955)",
-      "color": "var(--tag-fgcolor, #fff)",
+      "border": "1px solid #555955",
+      "color": "#fff",
     }
   }
 >
@@ -21,8 +21,8 @@ exports[`Test 2 1`] = `
   style={
     Object {
       "backgroundColor": "#005862",
-      "border": "1px solid var(--tag-bcolor, #555555)",
-      "color": "var(--tag-fgcolor, #fff)",
+      "border": "1px solid #555555",
+      "color": "#fff",
     }
   }
 >
@@ -36,8 +36,8 @@ exports[`Test 3 1`] = `
   style={
     Object {
       "backgroundColor": "#6149c5",
-      "border": "1px solid var(--tag-bcolor, #6a51ac)",
-      "color": "var(--tag-fgcolor, #fff)",
+      "border": "1px solid #6a51ac",
+      "color": "#fff",
     }
   }
 >
@@ -51,8 +51,8 @@ exports[`Test 4 1`] = `
   style={
     Object {
       "backgroundColor": "#973d9b",
-      "border": "1px solid var(--tag-bcolor, #815383)",
-      "color": "var(--tag-fgcolor, #fff)",
+      "border": "1px solid #815383",
+      "color": "#fff",
     }
   }
 >
@@ -94,8 +94,8 @@ exports[`Test removable 1`] = `
   style={
     Object {
       "backgroundColor": "#973d9b",
-      "border": "1px solid var(--tag-bcolor, #815383)",
-      "color": "var(--tag-fgcolor, #fff)",
+      "border": "1px solid #815383",
+      "color": "#fff",
     }
   }
 >
