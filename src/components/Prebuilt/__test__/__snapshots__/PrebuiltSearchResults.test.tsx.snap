@@ -194,9 +194,9 @@ exports[`Hidden stats 1`] = `
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
-                      "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #000)",
+                      "backgroundColor": "#B6F5B6",
+                      "border": "1px solid #3f7a4333",
+                      "color": "#000",
                     }
                   }
                 >
@@ -207,9 +207,9 @@ exports[`Hidden stats 1`] = `
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
-                      "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #000)",
+                      "backgroundColor": "#a2eeef",
+                      "border": "1px solid #23747633",
+                      "color": "#000",
                     }
                   }
                 >
@@ -292,9 +292,9 @@ exports[`Hidden stats 1`] = `
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
-                      "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #000)",
+                      "backgroundColor": "#B6F5B6",
+                      "border": "1px solid #3f7a4333",
+                      "color": "#000",
                     }
                   }
                 >
@@ -377,9 +377,9 @@ exports[`Hidden stats 1`] = `
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
-                      "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #000)",
+                      "backgroundColor": "#B6F5B6",
+                      "border": "1px solid #3f7a4333",
+                      "color": "#000",
                     }
                   }
                 >
@@ -464,9 +464,9 @@ populated with your recently completed...
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
-                      "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #000)",
+                      "backgroundColor": "#a2eeef",
+                      "border": "1px solid #23747633",
+                      "color": "#000",
                     }
                   }
                 >
@@ -477,9 +477,9 @@ populated with your recently completed...
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
-                      "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #000)",
+                      "backgroundColor": "#B6F5B6",
+                      "border": "1px solid #3f7a4333",
+                      "color": "#000",
                     }
                   }
                 >
@@ -562,9 +562,9 @@ populated with your recently completed...
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
-                      "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #000)",
+                      "backgroundColor": "#B6F5B6",
+                      "border": "1px solid #3f7a4333",
+                      "color": "#000",
                     }
                   }
                 >
@@ -575,9 +575,9 @@ populated with your recently completed...
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-bug-bgcolor,#d73a4a)",
-                      "border": "1px solid var(--tag-bcolor, #83312b)",
-                      "color": "var(--tag-fgcolor, #fff)",
+                      "backgroundColor": "#d73a4a",
+                      "border": "1px solid #83312b",
+                      "color": "#fff",
                     }
                   }
                 >
@@ -588,9 +588,9 @@ populated with your recently completed...
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
-                      "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #000)",
+                      "backgroundColor": "#a2eeef",
+                      "border": "1px solid #23747633",
+                      "color": "#000",
                     }
                   }
                 >
@@ -668,9 +668,9 @@ populated with your recently completed...
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
-                      "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #000)",
+                      "backgroundColor": "#a2eeef",
+                      "border": "1px solid #23747633",
+                      "color": "#000",
                     }
                   }
                 >
@@ -681,9 +681,9 @@ populated with your recently completed...
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-bug-bgcolor,#d73a4a)",
-                      "border": "1px solid var(--tag-bcolor, #83312b)",
-                      "color": "var(--tag-fgcolor, #fff)",
+                      "backgroundColor": "#d73a4a",
+                      "border": "1px solid #83312b",
+                      "color": "#fff",
                     }
                   }
                 >
@@ -766,9 +766,9 @@ populated with your recently completed...
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
-                      "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #000)",
+                      "backgroundColor": "#B6F5B6",
+                      "border": "1px solid #3f7a4333",
+                      "color": "#000",
                     }
                   }
                 >
@@ -779,9 +779,9 @@ populated with your recently completed...
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
-                      "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #000)",
+                      "backgroundColor": "#a2eeef",
+                      "border": "1px solid #23747633",
+                      "color": "#000",
                     }
                   }
                 >
@@ -864,9 +864,9 @@ populated with your recently completed...
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
-                      "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #000)",
+                      "backgroundColor": "#a2eeef",
+                      "border": "1px solid #23747633",
+                      "color": "#000",
                     }
                   }
                 >
@@ -949,9 +949,9 @@ populated with your recently completed...
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
-                      "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #000)",
+                      "backgroundColor": "#B6F5B6",
+                      "border": "1px solid #3f7a4333",
+                      "color": "#000",
                     }
                   }
                 >
@@ -962,9 +962,9 @@ populated with your recently completed...
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
-                      "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #000)",
+                      "backgroundColor": "#a2eeef",
+                      "border": "1px solid #23747633",
+                      "color": "#000",
                     }
                   }
                 >
@@ -1047,9 +1047,9 @@ populated with your recently completed...
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
-                      "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #000)",
+                      "backgroundColor": "#B6F5B6",
+                      "border": "1px solid #3f7a4333",
+                      "color": "#000",
                     }
                   }
                 >
@@ -1060,9 +1060,9 @@ populated with your recently completed...
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-bug-bgcolor,#d73a4a)",
-                      "border": "1px solid var(--tag-bcolor, #83312b)",
-                      "color": "var(--tag-fgcolor, #fff)",
+                      "backgroundColor": "#d73a4a",
+                      "border": "1px solid #83312b",
+                      "color": "#fff",
                     }
                   }
                 >
@@ -1594,9 +1594,9 @@ exports[`Test custom className 1`] = `
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
-                      "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #000)",
+                      "backgroundColor": "#B6F5B6",
+                      "border": "1px solid #3f7a4333",
+                      "color": "#000",
                     }
                   }
                 >
@@ -1607,9 +1607,9 @@ exports[`Test custom className 1`] = `
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
-                      "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #000)",
+                      "backgroundColor": "#a2eeef",
+                      "border": "1px solid #23747633",
+                      "color": "#000",
                     }
                   }
                 >
@@ -1799,9 +1799,9 @@ exports[`Test custom className 1`] = `
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
-                      "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #000)",
+                      "backgroundColor": "#B6F5B6",
+                      "border": "1px solid #3f7a4333",
+                      "color": "#000",
                     }
                   }
                 >
@@ -1991,9 +1991,9 @@ exports[`Test custom className 1`] = `
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
-                      "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #000)",
+                      "backgroundColor": "#B6F5B6",
+                      "border": "1px solid #3f7a4333",
+                      "color": "#000",
                     }
                   }
                 >
@@ -2185,9 +2185,9 @@ populated with your recently completed...
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
-                      "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #000)",
+                      "backgroundColor": "#a2eeef",
+                      "border": "1px solid #23747633",
+                      "color": "#000",
                     }
                   }
                 >
@@ -2198,9 +2198,9 @@ populated with your recently completed...
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
-                      "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #000)",
+                      "backgroundColor": "#B6F5B6",
+                      "border": "1px solid #3f7a4333",
+                      "color": "#000",
                     }
                   }
                 >
@@ -2390,9 +2390,9 @@ populated with your recently completed...
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
-                      "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #000)",
+                      "backgroundColor": "#B6F5B6",
+                      "border": "1px solid #3f7a4333",
+                      "color": "#000",
                     }
                   }
                 >
@@ -2403,9 +2403,9 @@ populated with your recently completed...
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-bug-bgcolor,#d73a4a)",
-                      "border": "1px solid var(--tag-bcolor, #83312b)",
-                      "color": "var(--tag-fgcolor, #fff)",
+                      "backgroundColor": "#d73a4a",
+                      "border": "1px solid #83312b",
+                      "color": "#fff",
                     }
                   }
                 >
@@ -2416,9 +2416,9 @@ populated with your recently completed...
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
-                      "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #000)",
+                      "backgroundColor": "#a2eeef",
+                      "border": "1px solid #23747633",
+                      "color": "#000",
                     }
                   }
                 >
@@ -2603,9 +2603,9 @@ populated with your recently completed...
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
-                      "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #000)",
+                      "backgroundColor": "#a2eeef",
+                      "border": "1px solid #23747633",
+                      "color": "#000",
                     }
                   }
                 >
@@ -2616,9 +2616,9 @@ populated with your recently completed...
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-bug-bgcolor,#d73a4a)",
-                      "border": "1px solid var(--tag-bcolor, #83312b)",
-                      "color": "var(--tag-fgcolor, #fff)",
+                      "backgroundColor": "#d73a4a",
+                      "border": "1px solid #83312b",
+                      "color": "#fff",
                     }
                   }
                 >
@@ -2808,9 +2808,9 @@ populated with your recently completed...
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
-                      "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #000)",
+                      "backgroundColor": "#B6F5B6",
+                      "border": "1px solid #3f7a4333",
+                      "color": "#000",
                     }
                   }
                 >
@@ -2821,9 +2821,9 @@ populated with your recently completed...
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
-                      "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #000)",
+                      "backgroundColor": "#a2eeef",
+                      "border": "1px solid #23747633",
+                      "color": "#000",
                     }
                   }
                 >
@@ -3013,9 +3013,9 @@ populated with your recently completed...
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
-                      "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #000)",
+                      "backgroundColor": "#a2eeef",
+                      "border": "1px solid #23747633",
+                      "color": "#000",
                     }
                   }
                 >
@@ -3205,9 +3205,9 @@ populated with your recently completed...
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
-                      "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #000)",
+                      "backgroundColor": "#B6F5B6",
+                      "border": "1px solid #3f7a4333",
+                      "color": "#000",
                     }
                   }
                 >
@@ -3218,9 +3218,9 @@ populated with your recently completed...
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
-                      "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #000)",
+                      "backgroundColor": "#a2eeef",
+                      "border": "1px solid #23747633",
+                      "color": "#000",
                     }
                   }
                 >
@@ -3410,9 +3410,9 @@ populated with your recently completed...
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
-                      "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #000)",
+                      "backgroundColor": "#B6F5B6",
+                      "border": "1px solid #3f7a4333",
+                      "color": "#000",
                     }
                   }
                 >
@@ -3423,9 +3423,9 @@ populated with your recently completed...
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-bug-bgcolor,#d73a4a)",
-                      "border": "1px solid var(--tag-bcolor, #83312b)",
-                      "color": "var(--tag-fgcolor, #fff)",
+                      "backgroundColor": "#d73a4a",
+                      "border": "1px solid #83312b",
+                      "color": "#fff",
                     }
                   }
                 >
@@ -4064,9 +4064,9 @@ exports[`Test default state 1`] = `
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
-                      "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #000)",
+                      "backgroundColor": "#B6F5B6",
+                      "border": "1px solid #3f7a4333",
+                      "color": "#000",
                     }
                   }
                 >
@@ -4077,9 +4077,9 @@ exports[`Test default state 1`] = `
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
-                      "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #000)",
+                      "backgroundColor": "#a2eeef",
+                      "border": "1px solid #23747633",
+                      "color": "#000",
                     }
                   }
                 >
@@ -4269,9 +4269,9 @@ exports[`Test default state 1`] = `
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
-                      "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #000)",
+                      "backgroundColor": "#B6F5B6",
+                      "border": "1px solid #3f7a4333",
+                      "color": "#000",
                     }
                   }
                 >
@@ -4461,9 +4461,9 @@ exports[`Test default state 1`] = `
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
-                      "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #000)",
+                      "backgroundColor": "#B6F5B6",
+                      "border": "1px solid #3f7a4333",
+                      "color": "#000",
                     }
                   }
                 >
@@ -4655,9 +4655,9 @@ populated with your recently completed...
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
-                      "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #000)",
+                      "backgroundColor": "#a2eeef",
+                      "border": "1px solid #23747633",
+                      "color": "#000",
                     }
                   }
                 >
@@ -4668,9 +4668,9 @@ populated with your recently completed...
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
-                      "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #000)",
+                      "backgroundColor": "#B6F5B6",
+                      "border": "1px solid #3f7a4333",
+                      "color": "#000",
                     }
                   }
                 >
@@ -4860,9 +4860,9 @@ populated with your recently completed...
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
-                      "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #000)",
+                      "backgroundColor": "#B6F5B6",
+                      "border": "1px solid #3f7a4333",
+                      "color": "#000",
                     }
                   }
                 >
@@ -4873,9 +4873,9 @@ populated with your recently completed...
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-bug-bgcolor,#d73a4a)",
-                      "border": "1px solid var(--tag-bcolor, #83312b)",
-                      "color": "var(--tag-fgcolor, #fff)",
+                      "backgroundColor": "#d73a4a",
+                      "border": "1px solid #83312b",
+                      "color": "#fff",
                     }
                   }
                 >
@@ -4886,9 +4886,9 @@ populated with your recently completed...
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
-                      "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #000)",
+                      "backgroundColor": "#a2eeef",
+                      "border": "1px solid #23747633",
+                      "color": "#000",
                     }
                   }
                 >
@@ -5073,9 +5073,9 @@ populated with your recently completed...
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
-                      "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #000)",
+                      "backgroundColor": "#a2eeef",
+                      "border": "1px solid #23747633",
+                      "color": "#000",
                     }
                   }
                 >
@@ -5086,9 +5086,9 @@ populated with your recently completed...
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-bug-bgcolor,#d73a4a)",
-                      "border": "1px solid var(--tag-bcolor, #83312b)",
-                      "color": "var(--tag-fgcolor, #fff)",
+                      "backgroundColor": "#d73a4a",
+                      "border": "1px solid #83312b",
+                      "color": "#fff",
                     }
                   }
                 >
@@ -5278,9 +5278,9 @@ populated with your recently completed...
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
-                      "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #000)",
+                      "backgroundColor": "#B6F5B6",
+                      "border": "1px solid #3f7a4333",
+                      "color": "#000",
                     }
                   }
                 >
@@ -5291,9 +5291,9 @@ populated with your recently completed...
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
-                      "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #000)",
+                      "backgroundColor": "#a2eeef",
+                      "border": "1px solid #23747633",
+                      "color": "#000",
                     }
                   }
                 >
@@ -5483,9 +5483,9 @@ populated with your recently completed...
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
-                      "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #000)",
+                      "backgroundColor": "#a2eeef",
+                      "border": "1px solid #23747633",
+                      "color": "#000",
                     }
                   }
                 >
@@ -5675,9 +5675,9 @@ populated with your recently completed...
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
-                      "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #000)",
+                      "backgroundColor": "#B6F5B6",
+                      "border": "1px solid #3f7a4333",
+                      "color": "#000",
                     }
                   }
                 >
@@ -5688,9 +5688,9 @@ populated with your recently completed...
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
-                      "border": "1px solid var(--tag-bcolor, #23747633)",
-                      "color": "var(--tag-fgcolor, #000)",
+                      "backgroundColor": "#a2eeef",
+                      "border": "1px solid #23747633",
+                      "color": "#000",
                     }
                   }
                 >
@@ -5880,9 +5880,9 @@ populated with your recently completed...
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
-                      "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-                      "color": "var(--tag-fgcolor, #000)",
+                      "backgroundColor": "#B6F5B6",
+                      "border": "1px solid #3f7a4333",
+                      "color": "#000",
                     }
                   }
                 >
@@ -5893,9 +5893,9 @@ populated with your recently completed...
                   onClick={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "var(--tag-bug-bgcolor,#d73a4a)",
-                      "border": "1px solid var(--tag-bcolor, #83312b)",
-                      "color": "var(--tag-fgcolor, #fff)",
+                      "backgroundColor": "#d73a4a",
+                      "border": "1px solid #83312b",
+                      "color": "#fff",
                     }
                   }
                 >

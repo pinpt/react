@@ -1,9 +1,10 @@
 import algoliasearch from 'algoliasearch';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import config from '../../../config';
-import { CoverMediaType, ICoverMedia } from '../../../lib/types';
+import { getTagColorStyles } from '../../color';
+import { CoverMediaType, ICoverMedia } from '../../types';
 
-import type { IContent } from '../../../lib/types';
+import type { IContent, ISite, StyledTag } from '../../types';
 
 const { algolia } = config;
 const client = algoliasearch(algolia.appId, algolia.apiKey);
@@ -51,9 +52,20 @@ const getCoverMediaForHit = (hit: any) => {
 	}
 };
 
-const useSearch = (term: string, tags: string[], siteId: string) => {
+type TagMapping = Record<string, { color?: string; backgroundColor: string }>;
+
+const getSiteTagMappingAndId = (site: string | ISite): [string, TagMapping | undefined] => {
+	if (typeof site === 'string') {
+		return [site, undefined];
+	}
+	return [site.id, site.tagMapping];
+};
+
+const useSearch = (term: string, tags: string[], site: string | ISite) => {
 	const [loading, setLoading] = useState(() => !!term);
 	const [results, setResults] = useState<IContent[]>([]);
+
+	const [siteId, tagMapping] = getSiteTagMappingAndId(site);
 
 	const filters = useMemo(() => {
 		return `site_id:"${siteId}" ${
@@ -80,12 +92,20 @@ const useSearch = (term: string, tags: string[], siteId: string) => {
 							return {
 								id: hit.objectID,
 								title: hit.title,
+								commit: hit.commit,
+								authors: hit.authors,
 								coverMedia: getCoverMediaForHit(hit),
-								publishedAt: hit.createdAt,
+								publishedAt: hit.publishedAt,
 								headline: hit.headline,
 								tags: hit.tags,
-								styledTags: hit.styledTags,
+								styledTags: hit.tags
+									? (hit.tags as string[]).map<StyledTag>((t) => ({
+											name: t,
+											style: { ...getTagColorStyles(t, undefined, tagMapping) },
+									  }))
+									: [],
 								url: hit.url,
+								robots: hit.robots,
 							} as IContent;
 						})
 						.sort((a: IContent, b: IContent) => b.publishedAt - a.publishedAt)
@@ -95,7 +115,7 @@ const useSearch = (term: string, tags: string[], siteId: string) => {
 			}
 			setLoading(false);
 		}
-	}, [term, filters, hash]);
+	}, [term, filters, hash, tagMapping]);
 
 	useEffect(() => {
 		handleFetchForTerm();

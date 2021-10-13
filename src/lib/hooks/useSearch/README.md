@@ -8,7 +8,7 @@ import { useSearch, PrebuiltSearchResults } from '@pinpt/react';
 
 export default () => {
 	const [term, setTerm] = useState('publish');
-	const { results, loading } = useSearch(term, [], 'PirxVTE94u3YmGNOySRY');
+	const { results, loading } = useSearch(term, [], site);
 
 	return (
 		<PrebuiltSearchResults
@@ -25,11 +25,11 @@ export default () => {
 
 ## Arguments
 
-| Name    | Type     | Description            |
-| ------- | -------- | ---------------------- |
-| Term    | `String` | The term to search for |
-| Tags    | `String` | The tags to search for |
-| Site ID | `String` | The id for your site   |
+| Name | Type              | Description                                            |
+| ---- | ----------------- | ------------------------------------------------------ |
+| Term | `String`          | The term to search for                                 |
+| Tags | `String`          | The tags to search for                                 |
+| Site | `String or ISite` | The site or site id to search from, ISite is preffered |
 
 ## Returns
 

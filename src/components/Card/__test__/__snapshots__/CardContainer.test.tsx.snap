@@ -31,9 +31,9 @@ exports[`Test full card 1`] = `
         className="Pinpoint Tag Item   "
         style={
           Object {
-            "backgroundColor": "var(--tag-feature-bgcolor,#B6F5B6)",
-            "border": "1px solid var(--tag-bcolor, #3f7a4333)",
-            "color": "var(--tag-fgcolor, #000)",
+            "backgroundColor": "#B6F5B6",
+            "border": "1px solid #3f7a4333",
+            "color": "#000",
           }
         }
       >
@@ -43,9 +43,9 @@ exports[`Test full card 1`] = `
         className="Pinpoint Tag Item   "
         style={
           Object {
-            "backgroundColor": "var(--tag-improvement-bgcolor,#a2eeef)",
-            "border": "1px solid var(--tag-bcolor, #23747633)",
-            "color": "var(--tag-fgcolor, #000)",
+            "backgroundColor": "#a2eeef",
+            "border": "1px solid #23747633",
+            "color": "#000",
           }
         }
       >

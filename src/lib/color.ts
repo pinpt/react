@@ -29,12 +29,12 @@ export const colorForString = (str: string | undefined, brighten = true) => {
 };
 
 // the following are the basic mapping we provide so that colors are uniform for these types
-const tagMapping = {
-	bug: { color: '#d73a4a', variable: '--tag-bug-bgcolor' },
-	feature: { color: '#B6F5B6', variable: '--tag-feature-bgcolor' },
-	improvement: { color: '#a2eeef', variable: '--tag-improvement-bgcolor' },
-	chore: { color: '#9B54F5', variable: '--tag-chore-bgcolor' },
-} as Record<string, { color: string; variable: string }>;
+const defaultTagMapping = {
+	bug: { color: '#d73a4a' },
+	feature: { color: '#B6F5B6' },
+	improvement: { color: '#a2eeef' },
+	chore: { color: '#9B54F5' },
+} as Record<string, { color: string }>;
 
 // the key is what the user entered for the tag, the value is what it is mapped to
 const synonymMapping = {
@@ -57,39 +57,54 @@ const synonymMapping = {
 	documentation: 'chore',
 } as Record<string, string>;
 
+const getTagTextColor = (tagBackgroundColor: string) => {
+	const contrast = chroma.contrast(tagBackgroundColor, '#fff');
+	let color = '#fff';
+	if (contrast < 4.5) {
+		color = '#000';
+	}
+	return color;
+};
+
 const isAlpha = (val: string) => /#?[a-z0-9]{3,6}/i.test(val);
 
-export const getTagColorStyles = (tag: string, defaultColor?: string) => {
+const getTagBorderColor = (tagBackgroundColor: string) =>
+	checkConstrast(chroma(tagBackgroundColor).darken(2.5).alpha(0.2).hex());
+
+export const getTagColorStyles = (
+	tag: string,
+	defaultColor?: string,
+	tagMapping: Record<string, { color?: string; backgroundColor: string }> = {}
+): {
+	color: string;
+	backgroundColor: string;
+	border: string;
+} => {
 	if (defaultColor) {
 		const backgroundColor = isAlpha(defaultColor)
 			? defaultColor.charAt(0) !== '#'
 				? `#${defaultColor}`
 				: defaultColor
 			: defaultColor;
-		const borderColor = checkConstrast(chroma(backgroundColor).darken(2.5).alpha(0.2).hex());
-		const contrast = chroma.contrast(backgroundColor, 'white');
-		let color = '#fff';
-		if (contrast < 4.5) {
-			color = '#000';
-		}
 		return {
 			backgroundColor,
-			color,
-			border: `1px solid ${borderColor}`,
+			color: getTagTextColor(backgroundColor),
+			border: `1px solid ${getTagBorderColor(backgroundColor)}`,
 		};
 	}
-	const _tag = synonymMapping[tag.toLowerCase()] as string;
-	const bg = _tag ? tagMapping[_tag] : ({ color: colorForString(tag), variable: '' } as any);
-	const backgroundColor = bg.variable ? `var(${bg.variable},${bg.color})` : bg.color;
-	const borderColor = checkConstrast(chroma(bg.color).darken(2.5).alpha(0.2).hex());
-	const contrast = chroma.contrast(bg.color, '#fff');
-	let color = '#fff';
-	if (contrast < 4.5) {
-		color = '#000';
+	if (tagMapping[tag]) {
+		const { color: _color, backgroundColor } = tagMapping[tag];
+		return {
+			backgroundColor,
+			color: _color ? _color : getTagTextColor(backgroundColor),
+			border: `1px solid ${getTagBorderColor(backgroundColor)}`,
+		};
 	}
+	const _tag = synonymMapping[tag.toLowerCase()];
+	const backgroundColor = _tag ? defaultTagMapping[_tag].color : colorForString(tag);
 	return {
 		backgroundColor,
-		color: `var(--tag-fgcolor, ${color})`,
-		border: `1px solid var(--tag-bcolor, ${borderColor})`,
+		color: getTagTextColor(backgroundColor),
+		border: `1px solid ${getTagBorderColor(backgroundColor)}`,
 	};
 };

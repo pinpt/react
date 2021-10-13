@@ -29,7 +29,7 @@ export default {
 
 export const Hook: React.VFC<{}> = () => {
 	const [term, setTerm] = useState('publish');
-	const { results, loading } = useSearch(term, [], 'PirxVTE94u3YmGNOySRY');
+	const { results, loading } = useSearch(term, [], site);
 	return (
 		<PrebuiltSearchResults
 			entries={results}

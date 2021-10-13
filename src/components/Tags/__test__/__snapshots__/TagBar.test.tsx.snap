@@ -9,8 +9,8 @@ exports[`Test One Tag 1`] = `
     style={
       Object {
         "backgroundColor": "#006a21",
-        "border": "1px solid var(--tag-bcolor, #555955)",
-        "color": "var(--tag-fgcolor, #fff)",
+        "border": "1px solid #555955",
+        "color": "#fff",
       }
     }
   >
@@ -28,8 +28,8 @@ exports[`Test Removable 1`] = `
     style={
       Object {
         "backgroundColor": "#006a21",
-        "border": "1px solid var(--tag-bcolor, #555955)",
-        "color": "var(--tag-fgcolor, #fff)",
+        "border": "1px solid #555955",
+        "color": "#fff",
       }
     }
   >
@@ -60,8 +60,8 @@ exports[`Test Removable 1`] = `
     style={
       Object {
         "backgroundColor": "#005862",
-        "border": "1px solid var(--tag-bcolor, #555555)",
-        "color": "var(--tag-fgcolor, #fff)",
+        "border": "1px solid #555555",
+        "color": "#fff",
       }
     }
   >
@@ -92,8 +92,8 @@ exports[`Test Removable 1`] = `
     style={
       Object {
         "backgroundColor": "#6149c5",
-        "border": "1px solid var(--tag-bcolor, #6a51ac)",
-        "color": "var(--tag-fgcolor, #fff)",
+        "border": "1px solid #6a51ac",
+        "color": "#fff",
       }
     }
   >
@@ -131,8 +131,8 @@ exports[`Test Three Tags 1`] = `
     style={
       Object {
         "backgroundColor": "#006a21",
-        "border": "1px solid var(--tag-bcolor, #555955)",
-        "color": "var(--tag-fgcolor, #fff)",
+        "border": "1px solid #555955",
+        "color": "#fff",
       }
     }
   >
@@ -143,8 +143,8 @@ exports[`Test Three Tags 1`] = `
     style={
       Object {
         "backgroundColor": "#005862",
-        "border": "1px solid var(--tag-bcolor, #555555)",
-        "color": "var(--tag-fgcolor, #fff)",
+        "border": "1px solid #555555",
+        "color": "#fff",
       }
     }
   >
@@ -155,8 +155,8 @@ exports[`Test Three Tags 1`] = `
     style={
       Object {
         "backgroundColor": "#6149c5",
-        "border": "1px solid var(--tag-bcolor, #6a51ac)",
-        "color": "var(--tag-fgcolor, #fff)",
+        "border": "1px solid #6a51ac",
+        "color": "#fff",
       }
     }
   >
@@ -174,8 +174,8 @@ exports[`Test Two Tags 1`] = `
     style={
       Object {
         "backgroundColor": "#006a21",
-        "border": "1px solid var(--tag-bcolor, #555955)",
-        "color": "var(--tag-fgcolor, #fff)",
+        "border": "1px solid #555955",
+        "color": "#fff",
       }
     }
   >
@@ -186,8 +186,8 @@ exports[`Test Two Tags 1`] = `
     style={
       Object {
         "backgroundColor": "#005862",
-        "border": "1px solid var(--tag-bcolor, #555555)",
-        "color": "var(--tag-fgcolor, #fff)",
+        "border": "1px solid #555555",
+        "color": "#fff",
       }
     }
   >
