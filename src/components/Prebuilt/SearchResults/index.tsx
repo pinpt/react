@@ -111,11 +111,11 @@ const SearchResults = (props: IPrebuiltSearchResultsProps) => {
 					<Search.Query
 						className="Prebuilt"
 						terms={[
-							...searchTags.map((t) => {
+							...searchTags.map<ISearchTerm>((t) => {
 								return {
 									type: 'tag',
 									value: t,
-								} as ISearchTerm;
+								};
 							}),
 							...(searchTerm
 								? [
@@ -127,6 +127,7 @@ const SearchResults = (props: IPrebuiltSearchResultsProps) => {
 								: []),
 						]}
 						onRemoveTerm={handleRemoveFromQuery}
+						tagMapping={site.tagMapping}
 					/>
 				)
 			}

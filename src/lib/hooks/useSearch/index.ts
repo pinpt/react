@@ -2,9 +2,9 @@ import algoliasearch from 'algoliasearch';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import config from '../../../config';
 import { getTagColorStyles } from '../../color';
-import { CoverMediaType, ICoverMedia } from '../../types';
+import { CoverMediaType } from '../../types';
 
-import type { IContent, ISite, StyledTag } from '../../types';
+import type { IContent, ISite, StyledTag, ICoverMedia, TagMapping } from '../../types';
 
 const { algolia } = config;
 const client = algoliasearch(algolia.appId, algolia.apiKey);
@@ -51,8 +51,6 @@ const getCoverMediaForHit = (hit: any) => {
 		};
 	}
 };
-
-type TagMapping = Record<string, { color?: string; backgroundColor: string }>;
 
 const getSiteTagMappingAndId = (site: string | ISite): [string, TagMapping | undefined] => {
 	if (typeof site === 'string') {

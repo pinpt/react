@@ -1,3 +1,5 @@
+export type TagMapping = Record<string, { color?: string; backgroundColor: string }>;
+
 export interface ISite {
 	id: string;
 	logoUrl?: string;
@@ -20,6 +22,6 @@ export interface ISite {
 		};
 	};
 	scriptPlugins?: Record<string, any>;
-	tagMapping?: Record<string, { color: string; backgroundColor: string }>;
+	tagMapping?: TagMapping;
 	basePath: string;
 }
