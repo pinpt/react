@@ -1,20 +1,29 @@
 import { useMemo } from 'react';
 import Tags from '../../Tags';
+import { getTagColorStyles } from '../../../lib';
 import React from 'react';
 
-import type { ISearchTerm } from '../../../lib/types';
+import type { StyledTag, ISearchTerm, TagMapping } from '../../../lib/types';
 
 export interface IQueryProps {
 	className?: string;
 	terms?: ISearchTerm[];
+	tagMapping?: TagMapping;
 	onRemoveTerm?: (value: string, clear: boolean) => void;
 }
 
 const Query = (props: IQueryProps) => {
-	const { className = '', terms = [], onRemoveTerm } = props;
+	const { className = '', terms = [], onRemoveTerm, tagMapping } = props;
 
 	const tags = useMemo(() => {
-		return terms.filter((t) => t.type === 'tag').map((t) => t.value);
+		return terms
+			.filter((t) => t.type === 'tag')
+			.map<StyledTag>((t) => ({
+				name: t.value,
+				style: {
+					...getTagColorStyles(t.value, undefined, tagMapping),
+				},
+			}));
 	}, [terms]);
 
 	const text = useMemo(() => {

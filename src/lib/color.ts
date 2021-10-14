@@ -1,5 +1,6 @@
 import chroma from 'chroma-js';
 import ColorHash from 'color-hash';
+import { TagMapping } from './types';
 
 const colorHashInstance = new ColorHash();
 
@@ -74,7 +75,7 @@ const getTagBorderColor = (tagBackgroundColor: string) =>
 export const getTagColorStyles = (
 	tag: string,
 	defaultColor?: string,
-	tagMapping: Record<string, { color?: string; backgroundColor: string }> = {}
+	tagMapping: TagMapping = {}
 ): {
 	color: string;
 	backgroundColor: string;
