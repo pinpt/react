@@ -1,28 +1,36 @@
 const path = require("path");
+const glob = require("glob");
+const fs = require('fs');
+const files = {};
+fs.readdirSync('./src/components').forEach((dir) => {
+	if (dir === 'Internal') {
+		fs.readdirSync('./src/components/Internal').forEach((subDir) => {
+			if (subDir !== '__test__' && subDir !== 'README.md') {
+				files[subDir.toLowerCase()] = `./src/components/Internal/${subDir}`;
+			}
+		})
+	} else {
+		files[dir.toLowerCase()] = `./src/components/${dir}`;
+	}
+});
+
 const config = {
-	entry: ["./src/components/Clap/index.tsx"],
+	entry: files,
 	externals: {
 		react: "React",
 		"react-dom": "ReactDOM",
 	},
 	output: {
-		path: path.resolve(__dirname, "dist"),
-		filename: "bundle.js",
+		path: path.resolve(__dirname, "dist/cdn"),
+		filename: "[name].js",
 		library: {
 			type: "umd",
-			name: "PinpointReact",
+			name: "Pinpoint[name]",
 		},
-		// library: 'umd',
-		// prevent error: `Uncaught ReferenceError: self is not define`
 		globalObject: "this",
 	},
 	module: {
 		rules: [
-			// {
-			// 	test: /\.(js|jsx)$/,
-			// 	use: "babel-loader",
-			// 	exclude: /node_modules/,
-			// },
 			{
 				test: /\.ts(x)?$/,
 				loader: "ts-loader",

@@ -17,7 +17,7 @@
 		"build:ts:cjs": "tsc -p tsconfig.json",
 		"build:ts:esm": "tsc -p tsconfig.esm.json",
 		"build:ts": "npm run build:ts:esm && npm run build:ts:cjs",
-		"build:wp": "webpack --mode production",
+		"build:cdn": "webpack --mode production",
 		"build": "npm run build:ts && npm run build:styles",
 		"test": "jest --maxWorkers=50%",
 		"test:write": "npm run test -- --updateSnapshot",
