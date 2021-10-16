@@ -1,6 +1,8 @@
 import React from 'react';
-import { faInfoCircle, faTimes, IconDefinition } from '@fortawesome/free-solid-svg-icons';
+import { faInfoCircle, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import type { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 
 interface BannerProps {
 	icon?: IconDefinition;
