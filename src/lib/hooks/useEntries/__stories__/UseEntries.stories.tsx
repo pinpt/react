@@ -1,12 +1,11 @@
-import React from 'react';
+import { Description, Primary, Stories, Subtitle, Title } from '@storybook/addon-docs';
 import { Meta } from '@storybook/react';
-import useEntries from '..';
+import useEntries from '../';
+import Loader from '../../../../components/Loader';
 import PrebuiltHome from '../../../../components/Prebuilt/Home';
 import { IPinpointConfig } from '../../../types';
-import Loader from '../../../../components/Loader';
-const { default: readme } = require('../README.md');
-import { Title, Subtitle, Description, Primary, Stories } from '@storybook/addon-docs';
 
+const { default: readme } = require('../README.md');
 export default {
 	title: 'Hooks/useEntries',
 	parameters: {
