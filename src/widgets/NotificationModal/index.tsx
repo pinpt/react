@@ -27,6 +27,7 @@ interface PageProps {
 		foreground?: string;
 	};
 	onClose?: () => void;
+	__previewMode?: boolean;
 }
 
 const NotificationModal = (props: PageProps) => {
@@ -47,7 +48,11 @@ const NotificationModal = (props: PageProps) => {
 		props.onClose?.();
 	};
 	return (
-		<Modal visible={visible} className={`Widget Notification Modal ${coverMedia?.type ?? ''}`}>
+		<Modal
+			visible={visible}
+			className={`Widget Notification Modal ${coverMedia?.type ?? ''}`}
+			__previewMode={props.__previewMode}
+		>
 			<div
 				className="flex flex-col w-full h-full bg-white"
 				style={{ minHeight: !coverMedia || coverMedia?.type === 'none' ? '185px' : '365px' }}

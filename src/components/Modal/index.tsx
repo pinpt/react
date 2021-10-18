@@ -1,10 +1,11 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, createElement } from 'react';
 import { createPortal } from 'react-dom';
 
 interface ModalProps {
 	children?: React.ReactNode;
 	visible: boolean;
 	className?: string;
+	__previewMode?: boolean;
 }
 
 const Modal = (props: ModalProps) => {
@@ -55,11 +56,13 @@ const Modal = (props: ModalProps) => {
 		shadowRef.current = shadow;
 		elementRef.current = element;
 
-		document.body.appendChild(element);
-		return () => {
-			document.body.removeChild(element);
-		};
-	}, []);
+		if (!props.__previewMode) {
+			document.body.appendChild(element);
+			return () => {
+				document.body.removeChild(element);
+			};
+		}
+	}, [props.__previewMode]);
 	useEffect(() => setVisible(props.visible), [props.visible]);
 	useEffect(() => {
 		if (visible) {
@@ -71,6 +74,13 @@ const Modal = (props: ModalProps) => {
 		}
 	}, [visible]);
 	if (containerRef.current && visible) {
+		if (props.__previewMode) {
+			return (
+				<div className="Pinpoint">
+					<div className={props.className ?? 'Pinpoint Modal'}>{props.children}</div>
+				</div>
+			);
+		}
 		return createPortal(props.children, containerRef.current);
 	}
 	return null;

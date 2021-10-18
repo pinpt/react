@@ -26,9 +26,18 @@ interface PopupProps {
 		position?: 'bottom left' | 'bottom right' | 'top left' | 'top right';
 	};
 	onClose?: () => void;
+	__previewMode?: boolean;
 }
 
-const Relative = ({ position, children }: { position: string; children?: React.ReactNode }) => {
+const Relative = ({
+	position,
+	children,
+	__previewMode,
+}: {
+	position: string;
+	children?: React.ReactNode;
+	__previewMode?: boolean;
+}) => {
 	const elementRef = useRef<any>();
 	const [visible, setVisible] = useState(false);
 	useEffect(() => {
@@ -64,13 +73,20 @@ const Relative = ({ position, children }: { position: string; children?: React.R
 				break;
 		}
 		elementRef.current = container;
-		document.body.appendChild(container);
-		setVisible(true);
-		return () => {
-			document.body.removeChild(container);
-		};
-	}, []);
+		if (!__previewMode) {
+			document.body.appendChild(container);
+			setVisible(true);
+			return () => {
+				document.body.removeChild(container);
+			};
+		} else {
+			setVisible(true);
+		}
+	}, [__previewMode]);
 	if (elementRef.current && visible) {
+		if (__previewMode) {
+			return <div className="Pinpoint h-full">{children}</div>;
+		}
 		return createPortal(children, elementRef.current);
 	}
 	return null;
@@ -100,7 +116,7 @@ const NotificationPopup = (props: PopupProps) => {
 		return null;
 	}
 	return (
-		<Relative position={position}>
+		<Relative position={position} __previewMode={props.__previewMode}>
 			<div
 				className="Popup border shadow-xl"
 				style={{ width: '380px', height: !coverMedia || coverMedia?.type === 'none' ? '185px' : '385px' }}
