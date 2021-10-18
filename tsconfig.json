@@ -32,6 +32,7 @@
 		"tsconfig.esm.json",
 		"rollup.config.js",
 		"rewrite-react.js",
-		"postcss.config.js"
+		"postcss.config.js",
+		"build_widget_css.js"
 	]
 }

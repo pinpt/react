@@ -26,6 +26,7 @@ const Widgets = {
 	NotificationBannerWidget: './dist/esm/widgets/NotificationBanner/index.js',
 	NotificationModalWidget: './dist/esm/widgets/NotificationModal/index.js',
 	NotificationPopupWidget: './dist/esm/widgets/NotificationPopup/index.js',
+	FeedbackWidget: './dist/esm/widgets/Feedback/index.js',
 };
 
 const config = Object.keys(Widgets).map((name) => {

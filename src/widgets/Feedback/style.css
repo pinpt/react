@@ -1,0 +1,71 @@
+.Pinpoint.Widget.Feedback {
+	@apply w-full inline-flex flex-col items-start;
+}
+
+.Pinpoint.Widget.Feedback .title {
+	@apply font-medium mb-1;
+}
+
+.Pinpoint.Widget.Feedback textarea {
+	@apply border rounded mt-1 mb-1 p-1 text-sm disabled:bg-gray-100 disabled:text-gray-400;
+}
+
+.Pinpoint.Widget.Feedback input {
+	@apply border rounded p-1 text-sm disabled:bg-gray-100 disabled:text-gray-400;
+}
+
+.Pinpoint.Widget.Feedback button {
+	@apply bg-green-500 text-white border my-2 py-1 px-2 rounded font-sans text-sm disabled:bg-gray-100 disabled:text-gray-500 disabled:cursor-not-allowed;
+}
+
+.Pinpoint.Widget.Feedback .email {
+	@apply flex flex-row items-center;
+}
+
+.Pinpoint.Widget.Feedback .email .icon {
+	@apply ml-2;
+}
+
+.Pinpoint.Widget.Feedback .email .icon.invalid {
+	@apply text-red-500;
+}
+
+.Pinpoint.Widget.Feedback .email .icon.valid {
+	@apply text-green-500;
+}
+
+.Pinpoint.Widget.Feedback .spinner {
+	@apply flex flex-row items-center;
+}
+
+.Pinpoint.Widget.Feedback .spinner .icon {
+	@apply mr-2 invisible;
+}
+
+.Pinpoint.Widget.Feedback .spinner .icon.sending {
+	@apply visible;
+}
+
+.Pinpoint.Widget.Feedback .spinner span {
+	@apply text-gray-500 text-sm;
+}
+
+.Pinpoint.Widget.Feedback .error {
+	@apply flex flex-row items-center;
+}
+
+.Pinpoint.Widget.Feedback .error .icon {
+	@apply mr-2 text-red-500;
+}
+
+.Pinpoint.Widget.Feedback .error .icon span {
+	@apply text-gray-500 text-sm;
+}
+
+.Pinpoint.Widget.Feedback .thankyou {
+	@apply flex flex-row items-center text-green-500 text-sm;
+}
+
+.Pinpoint.Widget.Feedback .thankyou .icon {
+	@apply mr-2;
+}
