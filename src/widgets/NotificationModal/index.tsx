@@ -26,6 +26,7 @@ interface PageProps {
 		background?: string;
 		foreground?: string;
 	};
+	onClose?: () => void;
 }
 
 const NotificationModal = (props: PageProps) => {
@@ -43,6 +44,7 @@ const NotificationModal = (props: PageProps) => {
 	const onClickLink = () => {
 		setVisible(false);
 		linkRef.current.click();
+		props.onClose?.();
 	};
 	return (
 		<Modal visible={visible} className={`Widget Notification Modal ${coverMedia?.type ?? ''}`}>

@@ -13,6 +13,7 @@ interface Props {
 		title: string;
 		url: string;
 	};
+	onClose?: () => void;
 }
 
 const NotificationBanner = (props: Props) => {
@@ -51,6 +52,7 @@ const NotificationBanner = (props: Props) => {
 			}
 			style={{ backgroundColor: props.background, color: props.foreground }}
 			closeable
+			onClose={props.onClose}
 		/>
 	);
 };
