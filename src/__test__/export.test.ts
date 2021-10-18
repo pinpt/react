@@ -92,6 +92,10 @@ const {
 	getRouterRelativePath,
 	getSiteAnalyticsURL,
 	getSiteRSSURL,
+	MostRecentPostsWidget,
+	NotificationModalWidget,
+	NotificationPopupWidget,
+	NotificationBannerWidget,
 	...otherExports
 } = Exports;
 
@@ -221,6 +225,13 @@ test('Test hook exports', () => {
 	expect(useSearch).toBeTruthy();
 	expect(useScriptLoader).toBeTruthy();
 	expect(useBackground).toBeTruthy();
+});
+
+test('Test widget exports', () => {
+	expect(MostRecentPostsWidget).toBeTruthy();
+	expect(NotificationModalWidget).toBeTruthy();
+	expect(NotificationPopupWidget).toBeTruthy();
+	expect(NotificationBannerWidget).toBeTruthy();
 });
 
 test('Test for unexpected exports', () => {
