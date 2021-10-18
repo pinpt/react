@@ -15,29 +15,21 @@ interface PageProps {
 
 const Tile = ({ content }: { content: IContent }) => {
 	return (
-		<div className="relative border rounded-lg Tile">
-			<div className="overflow-hidden border-b border-gray-100">
+		<div className="Tile">
+			<div className="covermedia">
 				<a href={content.url}>
 					{content.coverMedia?.placeholderImage ? (
-						<Image
-							src={content.coverMedia.placeholderImage}
-							alt={content.title}
-							className="object-cover w-full h-40 transition-all duration-300 ease-out rounded-t-lg"
-						/>
+						<Image src={content.coverMedia.placeholderImage} alt={content.title} className="image" />
 					) : (
-						<div className="w-full h-40 bg-gray-50">&nbsp;</div>
+						<div className="empty">&nbsp;</div>
 					)}
 				</a>
 			</div>
-			<div className="mt-2 py-1 px-2">
+			<div className="body">
 				<a href={content.url}>
-					<div className="font-semibold">{content.title}</div>
-					<div className="mt-1 text-sm text-gray-500 mr-2">{content.headline}</div>
-					<FontAwesomeIcon
-						icon={faExternalLinkSquareAlt}
-						className="text-gray-300 hover:text-gray-900 absolute right-2 bottom-2"
-						size="xs"
-					/>
+					<div className="title">{content.title}</div>
+					<div className="headline">{content.headline}</div>
+					<FontAwesomeIcon icon={faExternalLinkSquareAlt} className="icon" size="xs" />
 				</a>
 			</div>
 		</div>
@@ -47,7 +39,7 @@ const Tile = ({ content }: { content: IContent }) => {
 const Page = (props: PageProps) => {
 	const { previewData } = props;
 	return (
-		<div className="Widget MostRecentPosts grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+		<div className="Pinpoint Widget MostRecentPosts">
 			{previewData.content.map((content) => (
 				<Tile key={content.id ?? content.url} content={content} />
 			))}

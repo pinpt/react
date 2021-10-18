@@ -85,7 +85,7 @@ const Relative = ({
 	}, [__previewMode]);
 	if (elementRef.current && visible) {
 		if (__previewMode) {
-			return <div className="Pinpoint h-full">{children}</div>;
+			return <div className="Pinpoint Relative">{children}</div>;
 		}
 		return createPortal(children, elementRef.current);
 	}
@@ -117,31 +117,24 @@ const NotificationPopup = (props: PopupProps) => {
 	}
 	return (
 		<Relative position={position} __previewMode={props.__previewMode}>
-			<div
-				className="Popup border shadow-xl"
-				style={{ width: '380px', height: !coverMedia || coverMedia?.type === 'none' ? '185px' : '385px' }}
-			>
-				<div className="flex flex-col w-full h-full bg-white">
-					<div className="flex w-full flex-row items-center py-1 px-2">
-						<div className="w-full font-semibold text-sm text-gray-500">{headerTitle}</div>
-						<div className="ml-auto cursor-pointer text-gray-400 hover:text-gray-900" onClick={onClose}>
+			<div className="Pinpoint Widget Popup" style={{ width: '380px' }}>
+				<div className="wrapper">
+					<div className="header">
+						<div className="title">{headerTitle}</div>
+						<div className="close" onClick={onClose}>
 							<FontAwesomeIcon icon={faTimes} />
 						</div>
 					</div>
-					<div className="flex flex-col w-full items-center">
+					<div className="body">
 						<Card.Container
-							className=""
+							className="card"
 							coverMedia={coverMedia}
-							title={<Card.Title title={title} className="text-base" />}
-							description={<Card.Description description={headline} className="text-sm" />}
+							title={<Card.Title title={title} className="title" />}
+							description={<Card.Description description={headline} className="headline" />}
 							onClick={onClickLink}
 						/>
 					</div>
-					<button
-						className="border mt-1 mx-2 px-2 py-1 rounded-md text-sm font-semibold self-start bg-gray-100"
-						style={{ backgroundColor: buttonBackground, color: buttonForeground }}
-						onClick={onClickLink}
-					>
+					<button style={{ backgroundColor: buttonBackground, color: buttonForeground }} onClick={onClickLink}>
 						{buttonText}
 					</button>
 					<a ref={linkRef} href={url} rel="noopener" className="hidden" />

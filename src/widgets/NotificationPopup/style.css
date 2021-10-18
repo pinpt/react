@@ -1,0 +1,43 @@
+.Pinpoint.Widget.Popup {
+	@apply border shadow-xl;
+}
+
+.Pinpoint.Widget.Popup .wrapper {
+	@apply flex flex-col w-full h-full bg-white;
+}
+
+.Pinpoint.Widget.Popup .wrapper .header {
+	@apply flex w-full flex-row items-center py-1 px-2;
+}
+
+.Pinpoint.Widget.Popup .wrapper .header .title {
+	@apply w-full font-semibold text-sm text-gray-500;
+}
+
+.Pinpoint.Widget.Popup .wrapper .header .close {
+	@apply ml-auto cursor-pointer text-gray-400 hover:text-gray-900;
+}
+
+.Pinpoint.Widget.Popup .wrapper .body {
+	@apply flex flex-col w-full items-center;
+}
+
+.Pinpoint.Widget.Popup .wrapper .body .card .title {
+	@apply text-base;
+}
+
+.Pinpoint.Widget.Popup .wrapper .body .card .headline {
+	@apply text-sm;
+}
+
+.Pinpoint.Widget.Popup .wrapper > button {
+	@apply border mt-1 mb-2 mx-2 px-2 py-1 rounded-md text-sm font-semibold self-start bg-gray-100;
+}
+
+.Pinpoint.Widget.Popup .wrapper a.hidden {
+	@apply hidden;
+}
+
+.Pinpoint.Relative {
+	@apply h-full;
+}

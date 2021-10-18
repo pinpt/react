@@ -1,0 +1,43 @@
+.Pinpoint.Widget.Notification.Modal .wrapper {
+	@apply flex flex-col w-full h-full bg-white;
+}
+
+.Pinpoint.Widget.Notification.Modal .wrapper .header {
+	@apply flex w-full flex-row items-center p-4 border-b;
+}
+
+.Pinpoint.Widget.Notification.Modal .wrapper .header .title {
+	@apply w-full font-semibold;
+}
+
+.Pinpoint.Widget.Notification.Modal .wrapper .header .close {
+	@apply ml-auto cursor-pointer text-gray-400 hover:text-gray-900;
+}
+
+.Pinpoint.Widget.Notification.Modal .wrapper .body {
+	@apply flex flex-col w-full items-center;
+}
+
+.Pinpoint.Widget.Notification.Modal .wrapper .body .card {
+	@apply p-4;
+}
+
+.Pinpoint.Widget.Notification.Modal .wrapper .body button {
+	@apply border px-2 py-2 rounded-md text-sm font-semibold mb-4;
+}
+
+.Pinpoint.Widget.Notification.Modal .wrapper > .footer {
+	@apply mt-auto border-t p-4 text-gray-400 bg-gray-50 text-sm w-full text-center;
+}
+
+.Pinpoint.Widget.Notification.Modal .wrapper > .footer br {
+	@apply sm:hidden;
+}
+
+.Pinpoint.Widget.Notification.Modal .wrapper > .footer a {
+	@apply cursor-pointer underline;
+}
+
+.Pinpoint.Widget.Notification.Modal .wrapper a.hidden {
+	@apply hidden;
+}
