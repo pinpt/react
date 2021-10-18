@@ -9,10 +9,10 @@
 		"themes/**/*"
 	],
 	"scripts": {
-		"build:styles:base": "NODE_ENV=production tailwindcss --jit -m -i ./base.css -o ./dist/base.css",
-		"build:styles:theme": "NODE_ENV=production tailwindcss --jit -m -i ./defaultTheme.css -o ./themes/default.css",
-		"build:styles:entry": "NODE_ENV=production tailwindcss --jit -m -i ./entry.css -o ./dist/entry.css",
-		"build:styles:documentation": "NODE_ENV=production tailwindcss --jit -m -i ./documentation.css -o ./dist/documentation.css",
+		"build:styles:base": "NODE_ENV=production tailwindcss --jit --postcss -m -i ./base.css -o ./dist/base.css",
+		"build:styles:theme": "NODE_ENV=production tailwindcss --jit --postcss -m -i ./defaultTheme.css -o ./themes/default.css",
+		"build:styles:entry": "NODE_ENV=production tailwindcss --jit --postcss -m -i ./entry.css -o ./dist/entry.css",
+		"build:styles:documentation": "NODE_ENV=production tailwindcss --jit --postcss -m -i ./documentation.css -o ./dist/documentation.css",
 		"build:styles": "npm run build:styles:base && npm run build:styles:theme && npm run build:styles:entry && npm run build:styles:documentation",
 		"build:ts:cjs": "tsc -p tsconfig.json",
 		"build:ts:esm": "tsc -p tsconfig.esm.json",
@@ -33,7 +33,7 @@
 		"prepublishOnly": "npm run build",
 		"build:test": "rollup -c rollup.config.ts",
 		"prerelease": "npm version prerelease --preid=`git rev-parse --short HEAD` && npm publish --access public",
-		"publish:cdn": "VERSION=`node -e 'process.stdout.write(require(\"./package.json\").version)'` && cd dist && cp base.css cdn/$VERSION && cd cdn && gsutil cp -Z -r * gs://cdn-app-pinpoint-com/@pinpt/react"
+		"publish:cdn": "_SUFFIX= _VERSION=`node -e 'process.stdout.write(require(\"./package.json\").version)'` VERSION=${_VERSION}${_SUFFIX} && cd dist && mkdir -p cdn/${VERSION} && cp base.css cdn/${VERSION} && cd cdn && gsutil cp -Z -r * gs://cdn-app-pinpoint-com/@pinpt/react/"
 	},
 	"license": "MIT",
 	"dependencies": {
@@ -58,6 +58,7 @@
 		"@babel/preset-flow": "^7.14.5",
 		"@babel/preset-typescript": "^7.15.0",
 		"@rollup/plugin-commonjs": "^21.0.0",
+		"@rollup/plugin-json": "^4.1.0",
 		"@rollup/plugin-node-resolve": "^13.0.5",
 		"@rollup/plugin-replace": "^3.0.0",
 		"@storybook/addon-actions": "^6.3.8",
@@ -83,13 +84,14 @@
 		"jest": "^27.2.0",
 		"magic-string": "^0.25.7",
 		"postcss": "^8.3.6",
+		"postcss-prefix-selector": "^1.13.0",
 		"react": "^17.0.2",
 		"react-dom": "^17.0.2",
 		"react-test-renderer": "^17.0.2",
 		"rollup": "^2.58.0",
 		"rollup-plugin-terser": "^7.0.2",
 		"source-map-loader": "^3.0.0",
-		"tailwindcss": "^2.2.15",
+		"tailwindcss": "^2.2.16",
 		"terser-webpack-plugin": "^5.2.4",
 		"ts-dedent": "^2.2.0",
 		"ts-jest": "^27.0.5",
