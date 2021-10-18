@@ -28,6 +28,10 @@
 		"docs",
 		"prettier.config.js",
 		"tailwind.config.js",
-		"jest-setup.js"
+		"jest-setup.js",
+		"tsconfig.esm.json",
+		"rollup.config.js",
+		"rewrite-react.js",
+		"postcss.config.js"
 	]
 }
