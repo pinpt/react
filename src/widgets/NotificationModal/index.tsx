@@ -56,7 +56,7 @@ const NotificationModal = (props: PageProps) => {
 	return (
 		<Modal
 			visible={visible}
-			className={`Pinpoint Widget Notification Modal ${coverMedia?.type ?? ''}`}
+			className={`Pinpoint Widget Notification Modal covermedia-type-${coverMedia?.type ?? ''}`}
 			__previewMode={props.__previewMode}
 		>
 			<div className="wrapper" style={{ minHeight: !coverMedia || coverMedia?.type === 'none' ? '185px' : '365px' }}>

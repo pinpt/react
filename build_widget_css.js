@@ -13,6 +13,8 @@ const toModuleName = (str) =>
 
 const tailwindBin = path.join(__dirname, 'node_modules', '.bin', 'tailwindcss');
 
+let cssBuf = '';
+
 dirs.forEach((name) => {
 	const fndir = path.join(dir, name);
 	const css = path.join(fndir, 'style.css');
@@ -25,6 +27,11 @@ dirs.forEach((name) => {
 				env: { ...process.env, NODE_ENV: 'production' },
 				stdio: ['pipe', 'ignore', 'pipe'],
 			});
+			if (scope === 'module') {
+				cssBuf += fs.readFileSync(outfn);
+			}
 		});
 	}
 });
+
+fs.writeFileSync(path.join(__dirname, 'dist', 'widget.css'), cssBuf);

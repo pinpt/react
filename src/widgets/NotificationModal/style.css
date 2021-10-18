@@ -41,3 +41,7 @@
 .Pinpoint.Widget.Notification.Modal .wrapper a.hidden {
 	@apply hidden;
 }
+
+.Pinpoint.Widget.Notification.Modal .covermedia-type-youtube {
+	@apply h-auto;
+}
