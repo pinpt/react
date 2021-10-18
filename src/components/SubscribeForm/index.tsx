@@ -2,22 +2,9 @@ import React, { useCallback, useEffect, useState } from 'react';
 import { faCheckCircle, faExclamationCircle, faSpinner } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { subscribe } from '../../lib/data/subscription';
-import { isSubscriberCookieSet } from '../../lib/subscription';
+import { isSubscriberCookieSet, validateEmail } from '../../lib/subscription';
 
 import type { IPinpointConfig } from '../../lib/types';
-
-const tester = /^[-!#$%&'*+\/0-9=?A-Z^_a-z`{|}~](\.?[-!#$%&'*+\/0-9=?A-Z^_a-z`{|}~])*@[a-zA-Z0-9](-*\.?[a-zA-Z0-9])*\.[a-zA-Z](-?[a-zA-Z0-9])+$/;
-
-// Thanks to:
-// http://fightingforalostcause.net/misc/2006/compare-email-regex.php
-// http://thedailywtf.com/Articles/Validating_Email_Addresses.aspx
-// http://stackoverflow.com/questions/201323/what-is-the-best-regular-expression-for-validating-email-addresses/201378#201378
-export const validateEmail = (email: string): boolean => {
-	if (!email) return false;
-	if (email.length > 256) return false;
-	if (!email.includes('@')) return false;
-	return tester.test(email);
-};
 
 export interface SubscribeFormProps {
 	config: IPinpointConfig;
