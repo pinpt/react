@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-no-target-blank */
-import React, { useRef, useState } from 'react';
+import React, { useCallback, useRef, useState } from 'react';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Card from '../../components/Card';
@@ -47,6 +47,12 @@ const NotificationModal = (props: PageProps) => {
 		linkRef.current.click();
 		props.onClose?.();
 	};
+
+	const handleClose = useCallback(() => {
+		setVisible(false);
+		props.onClose?.();
+	}, [props.onClose]);
+
 	return (
 		<Modal
 			visible={visible}
@@ -61,7 +67,7 @@ const NotificationModal = (props: PageProps) => {
 					<div className="w-full font-semibold">{headerTitle}</div>
 					<div
 						className="ml-auto cursor-pointer text-gray-400 hover:text-gray-900"
-						onClick={() => setVisible(false)}
+						onClick={handleClose}
 					>
 						<FontAwesomeIcon icon={faTimes} />
 					</div>
