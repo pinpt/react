@@ -25,6 +25,7 @@ interface PopupProps {
 	target: {
 		position?: 'bottom left' | 'bottom right' | 'top left' | 'top right';
 	};
+	onClose?: () => void;
 }
 
 const Relative = ({ position, children }: { position: string; children?: React.ReactNode }) => {
@@ -89,6 +90,7 @@ const NotificationPopup = (props: PopupProps) => {
 	const linkRef = useRef<any>();
 	const onClose = () => {
 		setVisible(false);
+		props.onClose?.();
 	};
 	const onClickLink = () => {
 		linkRef.current.click();
