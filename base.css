@@ -93,6 +93,7 @@ a.link {
 	@apply border rounded-full flex items-center w-48 h-8 overflow-hidden transition-colors duration-200;
 	border-color: var(--header-control-color);
 	color: var(--header-control-color);
+	border-style: solid;
 }
 
 .Pinpoint.Search.Bar .icon {

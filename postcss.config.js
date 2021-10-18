@@ -9,6 +9,14 @@ module.exports = {
 				if (selector === 'html' || selector === 'body') {
 					return selector + prefix;
 				}
+				if (
+					selector.startsWith(prefix) ||
+					selector.charAt(0) === ':' ||
+					selector.startsWith('.dark') ||
+					selector.startsWith('html.dark')
+				) {
+					return selector;
+				}
 				return prefixedSelector;
 			},
 		}),
