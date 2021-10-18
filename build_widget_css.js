@@ -8,10 +8,7 @@ const dirs = fs.readdirSync(dir);
 
 const toModuleName = (str) =>
 	str.charAt(0).toUpperCase() +
-	str
-		.substring(1)
-		.toLowerCase()
-		.replace(/([-_][a-z])/g, (group) => group.toUpperCase().replace('-', '').replace('_', '')) +
+	str.substring(1).replace(/([-_][a-z])/g, (group) => group.toUpperCase().replace('-', '').replace('_', '')) +
 	'Widget';
 
 const tailwindBin = path.join(__dirname, 'node_modules', '.bin', 'tailwindcss');
