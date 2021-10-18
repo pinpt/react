@@ -84,6 +84,7 @@ const {
 	isSubscriberCookieSet,
 	getSubscriberId,
 	subscribe,
+	validateEmail,
 	useContent,
 	useEntries,
 	useScriptLoader,
