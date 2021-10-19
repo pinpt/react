@@ -10,4 +10,5 @@ export interface IFeedbackProps {
 	pageType?: 'changelog' | 'blog' | 'documentation';
 	pageTitle?: string;
 	showDisclaimer?: boolean;
+	disclaimer?: React.ReactNode;
 }

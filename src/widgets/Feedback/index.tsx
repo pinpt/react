@@ -69,6 +69,7 @@ const Feedback = (props: IFeedbackProps) => {
 		contentId,
 		url,
 		showDisclaimer = true,
+		disclaimer = 'By submitting, you agree to allow us to communicate with you by email.',
 	} = props;
 	const [isSubscriber, setIsSubscriber] = useState(false);
 	const [email, setEmail] = useState('');
@@ -126,11 +127,7 @@ const Feedback = (props: IFeedbackProps) => {
 					>
 						Submit
 					</button>
-					{showDisclaimer && (
-						<div className="disclaimer">
-							By submitting you agree to our allow us to communicate with you and send you occassional emails.
-						</div>
-					)}
+					{showDisclaimer && <div className="disclaimer">{disclaimer}</div>}
 					{sending && (
 						<div className="spinner">
 							<FontAwesomeIcon icon={faSpinner} pulse className={`icon ${sending ? 'sending' : ''}`} />
