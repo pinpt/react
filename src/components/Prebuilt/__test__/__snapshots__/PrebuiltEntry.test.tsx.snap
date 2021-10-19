@@ -597,7 +597,6 @@ exports[`Test custom className 1`] = `
                 >
                   <input
                     autoComplete="email"
-                    autoFocus={true}
                     disabled={false}
                     onChange={[Function]}
                     placeholder="Your email address"
@@ -1754,7 +1753,6 @@ exports[`Test default state 1`] = `
                 >
                   <input
                     autoComplete="email"
-                    autoFocus={true}
                     disabled={false}
                     onChange={[Function]}
                     placeholder="Your email address"
@@ -2804,7 +2802,6 @@ exports[`Test no author 1`] = `
                 >
                   <input
                     autoComplete="email"
-                    autoFocus={true}
                     disabled={false}
                     onChange={[Function]}
                     placeholder="Your email address"
@@ -4148,7 +4145,6 @@ exports[`Test no authors 1`] = `
                 >
                   <input
                     autoComplete="email"
-                    autoFocus={true}
                     disabled={false}
                     onChange={[Function]}
                     placeholder="Your email address"
@@ -5128,7 +5124,6 @@ exports[`Test no claps 1`] = `
                 >
                   <input
                     autoComplete="email"
-                    autoFocus={true}
                     disabled={false}
                     onChange={[Function]}
                     placeholder="Your email address"
@@ -6201,7 +6196,6 @@ exports[`Test not zoomable 1`] = `
                 >
                   <input
                     autoComplete="email"
-                    autoFocus={true}
                     disabled={false}
                     onChange={[Function]}
                     placeholder="Your email address"
@@ -7198,7 +7192,6 @@ exports[`Test with pagination 1`] = `
                 >
                   <input
                     autoComplete="email"
-                    autoFocus={true}
                     disabled={false}
                     onChange={[Function]}
                     placeholder="Your email address"
