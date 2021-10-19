@@ -42,6 +42,8 @@ const NotificationModal = (props: PageProps) => {
 		foreground: buttonForeground = 'black',
 	} = button ?? {};
 	const [visible, setVisible] = useState(true);
+	(window as any).show = () => setVisible(true);
+	(window as any).hide = () => setVisible(false)
 	const onClickLink = () => {
 		setVisible(false);
 		linkRef.current.click();
