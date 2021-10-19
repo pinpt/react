@@ -614,7 +614,7 @@ exports[`Test custom className 1`] = `
                 <div
                   className="disclaimer"
                 >
-                  By submitting you agree to our allow us to communicate with you and send you occassional emails.
+                  By submitting, you agree to allow us to communicate with you by email.
                 </div>
                 
               </div>
@@ -1775,7 +1775,7 @@ exports[`Test default state 1`] = `
                 <div
                   className="disclaimer"
                 >
-                  By submitting you agree to our allow us to communicate with you and send you occassional emails.
+                  By submitting, you agree to allow us to communicate with you by email.
                 </div>
                 
               </div>
@@ -2829,7 +2829,7 @@ exports[`Test no author 1`] = `
                 <div
                   className="disclaimer"
                 >
-                  By submitting you agree to our allow us to communicate with you and send you occassional emails.
+                  By submitting, you agree to allow us to communicate with you by email.
                 </div>
                 
               </div>
@@ -4177,7 +4177,7 @@ exports[`Test no authors 1`] = `
                 <div
                   className="disclaimer"
                 >
-                  By submitting you agree to our allow us to communicate with you and send you occassional emails.
+                  By submitting, you agree to allow us to communicate with you by email.
                 </div>
                 
               </div>
@@ -5161,7 +5161,7 @@ exports[`Test no claps 1`] = `
                 <div
                   className="disclaimer"
                 >
-                  By submitting you agree to our allow us to communicate with you and send you occassional emails.
+                  By submitting, you agree to allow us to communicate with you by email.
                 </div>
                 
               </div>
@@ -6238,7 +6238,7 @@ exports[`Test not zoomable 1`] = `
                 <div
                   className="disclaimer"
                 >
-                  By submitting you agree to our allow us to communicate with you and send you occassional emails.
+                  By submitting, you agree to allow us to communicate with you by email.
                 </div>
                 
               </div>
@@ -7239,7 +7239,7 @@ exports[`Test with pagination 1`] = `
                 <div
                   className="disclaimer"
                 >
-                  By submitting you agree to our allow us to communicate with you and send you occassional emails.
+                  By submitting, you agree to allow us to communicate with you by email.
                 </div>
                 
               </div>
