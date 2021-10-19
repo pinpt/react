@@ -427,7 +427,7 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 }
 
 .Pinpoint.Search.Results .empty {
-	@apply text-3xl font-bold text-center;
+	@apply text-3xl font-bold text-center ml-auto mr-auto;
 }
 
 .Pinpoint .searchResultsWrapper .empty {

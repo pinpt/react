@@ -2,3 +2,4 @@
 /docs
 /docs-build
 .jest-test-results.json
+/.vscode
