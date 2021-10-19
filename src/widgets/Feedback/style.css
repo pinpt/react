@@ -3,7 +3,11 @@
 }
 
 .Pinpoint.Widget.Feedback .title {
-	@apply font-medium mb-1;
+	@apply font-medium mb-4;
+}
+
+.Pinpoint.Widget.Feedback .disclaimer {
+	@apply text-xs my-2 text-gray-400;
 }
 
 .Pinpoint.Widget.Feedback textarea {
