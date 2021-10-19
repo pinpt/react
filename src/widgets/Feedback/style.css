@@ -1,5 +1,5 @@
 .Pinpoint.Widget.Feedback {
-	@apply w-full inline-flex flex-col items-start;
+	@apply inline-flex flex-col items-start;
 }
 
 .Pinpoint.Widget.Feedback .title {
@@ -7,19 +7,23 @@
 }
 
 .Pinpoint.Widget.Feedback textarea {
-	@apply border rounded mt-1 mb-1 p-1 text-sm disabled:bg-gray-100 disabled:text-gray-400;
+	@apply border rounded mt-1 mb-2 p-1 text-sm disabled:bg-gray-100 disabled:text-gray-400 w-full;
 }
 
 .Pinpoint.Widget.Feedback input {
-	@apply border rounded p-1 text-sm disabled:bg-gray-100 disabled:text-gray-400;
+	@apply border rounded p-1 text-sm disabled:bg-gray-100 disabled:text-gray-400 w-full;
 }
 
 .Pinpoint.Widget.Feedback button {
 	@apply bg-green-500 text-white border my-2 py-1 px-2 rounded font-sans text-sm disabled:bg-gray-100 disabled:text-gray-500 disabled:cursor-not-allowed;
 }
 
+.Pinpoint.Widget.Feedback .message {
+	@apply flex flex-row items-center w-full;
+}
+
 .Pinpoint.Widget.Feedback .email {
-	@apply flex flex-row items-center;
+	@apply flex flex-row items-center w-full;
 }
 
 .Pinpoint.Widget.Feedback .email .icon {
