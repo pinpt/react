@@ -15,7 +15,9 @@ import Pinpoint from '../../Pinpoint';
 import { Document } from '../../Renderer';
 import { ISearchBarProps } from '../../Search/Bar';
 import Sidebar, { ISidebarProps } from '../../Sidebar';
-import { EmailShare, FacebookShare, LinkedInShare, SocialMediaBar, TwitterShare } from '../../SocialMedia';
+import {
+	EmailShare, FacebookShare, LinkedInShare, SocialMediaBar, TwitterShare
+} from '../../SocialMedia';
 import { ISocialMediaBarProps } from '../../SocialMedia/SocialMediaBar';
 import { ISubscribeProps } from '../../Subscribe';
 import Tags from '../../Tags';
@@ -63,18 +65,18 @@ export interface IPrebuiltEntryProps {
 const feedbackTitleFromContent = (content: IContent): string => {
 	switch (content.type) {
 		case ContentTemplateType.Changelog: {
-			return `Have product feedback? We'd like to hear from you`;
+			return `Have product feedback? We'd love to hear from you!`;
 		}
 		case ContentTemplateType.Documentation: {
-			return `Have documentation feedback? We'd like to hear from you`;
+			return `Have documentation feedback? We'd love to hear from you!`;
 		}
 		case ContentTemplateType.Blog: {
-			return `Have feedback on this post? We'd like to hear from you`;
+			return `Have feedback on this post? We'd love to hear from you!`;
 		}
 		default:
 			break;
 	}
-	return `Have feedback? We'd like to hear from you`;
+	return `Have feedback? We'd love to hear from you!`;
 };
 
 const Entry = (props: IPrebuiltEntryProps) => {

@@ -59,7 +59,17 @@ const EmailInput = ({
 };
 
 const Feedback = (props: IFeedbackProps) => {
-	const { title, config, widgetId, className = '', pageTitle, pageType, contentId, url } = props;
+	const {
+		title,
+		config,
+		widgetId,
+		className = '',
+		pageTitle,
+		pageType,
+		contentId,
+		url,
+		showDisclaimer = true,
+	} = props;
 	const [isSubscriber, setIsSubscriber] = useState(false);
 	const [email, setEmail] = useState('');
 	const [message, setMessage] = useState('');
@@ -116,6 +126,11 @@ const Feedback = (props: IFeedbackProps) => {
 					>
 						Submit
 					</button>
+					{showDisclaimer && (
+						<div className="disclaimer">
+							By submitting you agree to our allow us to communicate with you and send you occassional emails.
+						</div>
+					)}
 					{sending && (
 						<div className="spinner">
 							<FontAwesomeIcon icon={faSpinner} pulse className={`icon ${sending ? 'sending' : ''}`} />

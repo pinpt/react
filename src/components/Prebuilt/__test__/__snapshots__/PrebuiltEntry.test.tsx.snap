@@ -580,7 +580,7 @@ exports[`Test custom className 1`] = `
                 <div
                   className="title"
                 >
-                  Have product feedback? We'd like to hear from you
+                  Have product feedback? We'd love to hear from you!
                 </div>
                 <div
                   className="message"
@@ -611,6 +611,11 @@ exports[`Test custom className 1`] = `
                 >
                   Submit
                 </button>
+                <div
+                  className="disclaimer"
+                >
+                  By submitting you agree to our allow us to communicate with you and send you occassional emails.
+                </div>
                 
               </div>
             </div>
@@ -1736,7 +1741,7 @@ exports[`Test default state 1`] = `
                 <div
                   className="title"
                 >
-                  Have product feedback? We'd like to hear from you
+                  Have product feedback? We'd love to hear from you!
                 </div>
                 <div
                   className="message"
@@ -1767,6 +1772,11 @@ exports[`Test default state 1`] = `
                 >
                   Submit
                 </button>
+                <div
+                  className="disclaimer"
+                >
+                  By submitting you agree to our allow us to communicate with you and send you occassional emails.
+                </div>
                 
               </div>
             </div>
@@ -2785,7 +2795,7 @@ exports[`Test no author 1`] = `
                 <div
                   className="title"
                 >
-                  Have product feedback? We'd like to hear from you
+                  Have product feedback? We'd love to hear from you!
                 </div>
                 <div
                   className="message"
@@ -2816,6 +2826,11 @@ exports[`Test no author 1`] = `
                 >
                   Submit
                 </button>
+                <div
+                  className="disclaimer"
+                >
+                  By submitting you agree to our allow us to communicate with you and send you occassional emails.
+                </div>
                 
               </div>
             </div>
@@ -4128,7 +4143,7 @@ exports[`Test no authors 1`] = `
                 <div
                   className="title"
                 >
-                  Have product feedback? We'd like to hear from you
+                  Have product feedback? We'd love to hear from you!
                 </div>
                 <div
                   className="message"
@@ -4159,6 +4174,11 @@ exports[`Test no authors 1`] = `
                 >
                   Submit
                 </button>
+                <div
+                  className="disclaimer"
+                >
+                  By submitting you agree to our allow us to communicate with you and send you occassional emails.
+                </div>
                 
               </div>
             </div>
@@ -5107,7 +5127,7 @@ exports[`Test no claps 1`] = `
                 <div
                   className="title"
                 >
-                  Have product feedback? We'd like to hear from you
+                  Have product feedback? We'd love to hear from you!
                 </div>
                 <div
                   className="message"
@@ -5138,6 +5158,11 @@ exports[`Test no claps 1`] = `
                 >
                   Submit
                 </button>
+                <div
+                  className="disclaimer"
+                >
+                  By submitting you agree to our allow us to communicate with you and send you occassional emails.
+                </div>
                 
               </div>
             </div>
@@ -6179,7 +6204,7 @@ exports[`Test not zoomable 1`] = `
                 <div
                   className="title"
                 >
-                  Have product feedback? We'd like to hear from you
+                  Have product feedback? We'd love to hear from you!
                 </div>
                 <div
                   className="message"
@@ -6210,6 +6235,11 @@ exports[`Test not zoomable 1`] = `
                 >
                   Submit
                 </button>
+                <div
+                  className="disclaimer"
+                >
+                  By submitting you agree to our allow us to communicate with you and send you occassional emails.
+                </div>
                 
               </div>
             </div>
@@ -7175,7 +7205,7 @@ exports[`Test with pagination 1`] = `
                 <div
                   className="title"
                 >
-                  Have product feedback? We'd like to hear from you
+                  Have product feedback? We'd love to hear from you!
                 </div>
                 <div
                   className="message"
@@ -7206,6 +7236,11 @@ exports[`Test with pagination 1`] = `
                 >
                   Submit
                 </button>
+                <div
+                  className="disclaimer"
+                >
+                  By submitting you agree to our allow us to communicate with you and send you occassional emails.
+                </div>
                 
               </div>
             </div>
