@@ -29,6 +29,7 @@ export interface PinpointSettings extends IdentifyData {
 	pageViews?: false;
 	trackLinks?: false;
 	widgets?: false;
+	onLoad?: () => void;
 }
 
 declare global {
@@ -40,6 +41,7 @@ declare global {
 			setSiteSettings: (siteId: string, contentId: string, basePath?: string) => void;
 			startTracking: (siteId?: string, contentId?: string, basePath?: string) => () => void;
 			identify: (identityData: IdentifyData) => void;
+			registerSDKForWidget: (cb: (res: any[]) => void) => () => void;
 		};
 		PinpointSettings: PinpointSettings;
 	}
@@ -54,9 +56,21 @@ const Pinpoint = (props: IPinpointProps) => {
 
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
-			const clear = window.Pinpoint?.startTracking?.(siteId, contentId, basePath);
+			let clearSDK
+			window.PinpointSettings = {
+				...(window.PinpointSettings ?? {}),
+				onLoad: () => {
+					clearSDK = window.Pinpoint?.registerSDKForWidget?.((res) => {
+						console.log(res);
+					})
+				}
+			}
+			const clearTracking = window.Pinpoint?.startTracking?.(siteId, contentId, basePath);
 
-			return () => clear?.();
+			return () => {
+				clearTracking?.();
+				clearSDK?.();
+			};
 		}
 	}, [siteId, contentId]);
 

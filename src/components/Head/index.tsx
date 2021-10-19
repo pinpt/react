@@ -12,6 +12,7 @@ export interface IHeadProps {
 
 const Head = (props: IHeadProps) => {
 	const { site, content, children } = props;
+	console.log(getSiteAnalyticsURL(site));
 	return (
 		<>
 			<meta charSet="utf-8" />
