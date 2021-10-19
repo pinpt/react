@@ -24,4 +24,7 @@ export interface ISite {
 	scriptPlugins?: Record<string, any>;
 	tagMapping?: TagMapping;
 	basePath: string;
+	features: {
+		feedback: boolean;
+	};
 }

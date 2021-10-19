@@ -217,16 +217,18 @@ const Entry = (props: IPrebuiltEntryProps) => {
 						)
 					}
 					feedback={
-						renderFeedback?.(site) ?? (
-							<Feedback
-								config={configFromSite(site)}
-								title={feedbackTitleFromContent(content)}
-								pageTitle={content.title}
-								contentId={content.id}
-								url={content.url}
-								pageType={content.type}
-							/>
-						)
+						site.features?.feedback
+							? renderFeedback?.(site) ?? (
+									<Feedback
+										config={configFromSite(site)}
+										title={feedbackTitleFromContent(content)}
+										pageTitle={content.title}
+										contentId={content.id}
+										url={content.url}
+										pageType={content.type}
+									/>
+							  )
+							: undefined
 					}
 				/>
 			)}

@@ -22,5 +22,8 @@
 		"copyright": "Copyright © 2021 by Pinpoint Software, Inc.",
 		"logoLink": "https://pinpoint.com",
 		"eulaLink": "https://home.pinpoint.com/legal/eula"
+	},
+	"features": {
+		"feedback": true
 	}
 }
