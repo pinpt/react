@@ -237,6 +237,6 @@ test('Test widget exports', () => {
 });
 
 test('Test for unexpected exports', () => {
-	console.log(Object.keys(otherExports));
+	// console.log(Object.keys(otherExports));
 	expect(Object.keys(otherExports).length).toEqual(0);
 });

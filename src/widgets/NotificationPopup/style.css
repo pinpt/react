@@ -45,3 +45,27 @@
 .Pinpoint.Widget.Popup .empty-cover {
 	@apply hidden;
 }
+
+.Pinpoint.Widget.Popup .Pinpoint.Content.Card.Container.wrapper {
+	@apply shadow-none hover:shadow-none rounded-none;
+}
+
+.Pinpoint.Widget.Popup .Pinpoint.Content.Card.Container.wrapper .content {
+	@apply px-1 py-0;
+}
+
+.Pinpoint.Widget.Popup .Pinpoint.Content.Card.Container .covermedia {
+	@apply h-auto;
+}
+
+.Pinpoint.Widget.Popup .Pinpoint.Content.Card.Title {
+	@apply leading-tight;
+}
+
+.Pinpoint.Widget.Popup .Pinpoint.Content.Card.Container.wrapper .content {
+	@apply py-2 px-2;
+}
+
+.Pinpoint.Widget.Popup .Pinpoint.Content.Card.Container.wrapper .content .Title {
+	@apply py-2;
+}

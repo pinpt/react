@@ -3,7 +3,7 @@
 }
 
 .Pinpoint.Widget.MostRecentPosts .Tile {
-	@apply relative border rounded-lg;
+	@apply relative border rounded-lg bg-white;
 }
 
 .Pinpoint.Widget.MostRecentPosts .Tile .covermedia {
