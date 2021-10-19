@@ -9,4 +9,5 @@ export interface IFeedbackProps {
 	url?: string;
 	pageType?: 'changelog' | 'blog' | 'documentation';
 	pageTitle?: string;
+	showDisclaimer?: boolean;
 }
