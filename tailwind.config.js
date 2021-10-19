@@ -7,7 +7,7 @@ module.exports = {
 		removeDeprecatedGapUtilities: true,
 		purgeLayersByDefault: true,
 	},
-	purge: ['./base.css'],
+	purge: ['./base.css', './src/widgets/**/index.tsx', './src/components/**/index.tsx'],
 	darkMode: 'class',
 	theme: {
 		extend: {

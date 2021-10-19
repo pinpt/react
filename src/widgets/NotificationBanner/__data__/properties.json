@@ -1,0 +1,11 @@
+{
+	"background": "#eab208",
+	"previewData": {
+		"id": "vXnbZTLM57rA5fS9qoYe",
+		"title": "This one is Keegan's",
+		"url": "https://keegandonley.edge.changelog.so/entry/vXnbZTLM57rA5fS9qoYe/This-one-is-Keegans"
+	},
+	"icon": "info_circle",
+	"message": "Check out our latest: {title}",
+	"foreground": "#713e12"
+}

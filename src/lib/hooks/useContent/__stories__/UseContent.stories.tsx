@@ -1,11 +1,10 @@
-import React from 'react';
+import { Description, Primary, Stories, Subtitle, Title } from '@storybook/addon-docs';
 import { Meta } from '@storybook/react';
-import useContent from '..';
+import useContent from '../';
 import { Content } from '../../../../components/Renderer';
 import { IPinpointConfig } from '../../../types';
-const { default: readme } = require('../README.md');
-import { Title, Subtitle, Description, Primary, Stories } from '@storybook/addon-docs';
 
+const { default: readme } = require('../README.md');
 export default {
 	title: 'Hooks/useContent',
 	parameters: {

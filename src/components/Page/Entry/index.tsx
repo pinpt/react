@@ -1,12 +1,14 @@
-import { forwardRef, ReactElement } from 'react';
-import { CoverMedia } from '../../Renderer';
+import React, { forwardRef, ReactElement } from 'react';
+import Feedback from '../../../widgets/Feedback';
 import withWrapper from '../../Internal/withWrapper';
-import React from 'react';
+import { CoverMedia } from '../../Renderer';
+
 import type { IFooterProps } from '../../Footer';
 import type { ISidebarProps } from '../../Sidebar';
 import type { IHeaderProps } from '../../Header';
 import type { ICoverMedia } from '../../../lib/types';
-import { IPaginationProps } from '../../Pagination';
+import type { IFeedbackProps } from '../../../lib/types/feedback';
+import type { IPaginationProps } from '../../Pagination';
 export interface IPageEntryProps {
 	className?: string;
 	header?: ReactElement<IHeaderProps>;
@@ -15,12 +17,24 @@ export interface IPageEntryProps {
 	coverMedia?: ICoverMedia;
 	footer?: ReactElement<IFooterProps>;
 	pagination?: ReactElement<IPaginationProps>;
+	feedback?: ReactElement<IFeedbackProps>;
 	title?: string;
 	zoomable?: boolean;
 }
 
 const Entry = forwardRef((props: IPageEntryProps, ref: any) => {
-	const { className = '', header, renderer, sidebar, footer, coverMedia, title, pagination, zoomable } = props;
+	const {
+		className = '',
+		header,
+		renderer,
+		sidebar,
+		footer,
+		coverMedia,
+		title,
+		pagination,
+		zoomable,
+		feedback,
+	} = props;
 
 	return (
 		<div className={`Pinpoint Page Entry ${className}`} ref={ref}>
@@ -31,6 +45,7 @@ const Entry = forwardRef((props: IPageEntryProps, ref: any) => {
 					<article>
 						{coverMedia && <CoverMedia media={coverMedia} title={title} zoomable={zoomable ?? true} />}
 						<section className="content">{renderer}</section>
+						{feedback && withWrapper(feedback, 'feedback')}
 					</article>
 					<div className="sidebarWrapper after">{sidebar}</div>
 				</div>,

@@ -1,3 +1,20 @@
 {
-	"presets": ["@babel/preset-env"]
+	"presets": ["@babel/react", "@babel/preset-typescript", "@babel/preset-env", "@babel/preset-flow"],
+	"plugins": [
+		[
+			"transform-imports",
+			{
+				"@fortawesome/free-solid-svg-icons": {
+					"transform": "@fortawesome/free-solid-svg-icons/${member}",
+					"skipDefaultConversion": true,
+					"preventFullImport": true
+				},
+				"@fortawesome/free-brands-svg-icons": {
+					"transform": "@fortawesome/free-brands-svg-icons/${member}",
+					"skipDefaultConversion": true,
+					"preventFullImport": true
+				}
+			}
+		]
+	]
 }

@@ -1,4 +1,7 @@
 import React, { ReactElement } from 'react';
+import { configFromSite } from '../../../lib/data/site';
+import { ContentTemplateType } from '../../../lib/types/content';
+import Feedback from '../../../widgets/Feedback';
 import Author, { IAuthorProps } from '../../Author';
 import Clap, { IClapProps } from '../../Clap';
 import { ICopyrightProps } from '../../Copyright';
@@ -12,6 +15,9 @@ import Pinpoint from '../../Pinpoint';
 import { Document } from '../../Renderer';
 import { ISearchBarProps } from '../../Search/Bar';
 import Sidebar, { ISidebarProps } from '../../Sidebar';
+import {
+	EmailShare, FacebookShare, LinkedInShare, SocialMediaBar, TwitterShare
+} from '../../SocialMedia';
 import { ISocialMediaBarProps } from '../../SocialMedia/SocialMediaBar';
 import { ISubscribeProps } from '../../Subscribe';
 import Tags from '../../Tags';
@@ -19,9 +25,9 @@ import { ITagBarProps } from '../../Tags/Bar';
 import { IThemeToggleProps } from '../../ThemeToggle';
 import Footer from '../Footer';
 import Header from '../Header';
-import { SocialMediaBar, FacebookShare, TwitterShare, EmailShare, LinkedInShare } from '../../SocialMedia';
 
 import type { IContent, ISite } from '../../../lib/types';
+import type { IFeedbackProps } from '../../../lib/types/feedback';
 export interface IPrebuiltEntryProps {
 	className?: string;
 	renderContent?: (content: IContent) => ReactElement;
@@ -41,6 +47,7 @@ export interface IPrebuiltEntryProps {
 	renderSearch?: (site: ISite) => ReactElement<ISearchBarProps>;
 	renderSocialSharing?: (site: ISite) => ReactElement<ISocialMediaBarProps>;
 	renderPagination?: (site: ISite, next?: IContent, previous?: IContent) => void;
+	renderFeedback?: (site: ISite) => ReactElement<IFeedbackProps>;
 	clapCount?: number;
 	sessionClapCount?: number;
 	onClap?: (content: IContent) => void;
@@ -54,6 +61,23 @@ export interface IPrebuiltEntryProps {
 	zoomable?: boolean;
 	handleAddTagToQuery?: (value: string) => void;
 }
+
+const feedbackTitleFromContent = (content: IContent): string => {
+	switch (content.type) {
+		case ContentTemplateType.Changelog: {
+			return `Have product feedback? We'd like to hear from you`;
+		}
+		case ContentTemplateType.Documentation: {
+			return `Have documentation feedback? We'd like to hear from you`;
+		}
+		case ContentTemplateType.Blog: {
+			return `Have feedback on this post? We'd like to hear from you`;
+		}
+		default:
+			break;
+	}
+	return `Have feedback? We'd like to hear from you`;
+};
 
 const Entry = (props: IPrebuiltEntryProps) => {
 	const {
@@ -73,6 +97,7 @@ const Entry = (props: IPrebuiltEntryProps) => {
 		renderAuthor,
 		renderTags,
 		renderClap,
+		renderFeedback,
 		clapCount = 0,
 		onClap,
 		sessionClapCount = 0,
@@ -188,6 +213,18 @@ const Entry = (props: IPrebuiltEntryProps) => {
 								renderLogo={renderLogo}
 								renderSocial={renderSocial}
 								renderSubscribe={renderSubscribe}
+							/>
+						)
+					}
+					feedback={
+						renderFeedback?.(site) ?? (
+							<Feedback
+								config={configFromSite(site)}
+								title={feedbackTitleFromContent(content)}
+								pageTitle={content.title}
+								contentId={content.id}
+								url={content.url}
+								pageType={content.type}
 							/>
 						)
 					}

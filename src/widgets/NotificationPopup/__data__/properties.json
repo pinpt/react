@@ -1,0 +1,24 @@
+{
+	"header": {
+		"title": "New Updates"
+	},
+	"button": {
+		"text": "See the Details"
+	},
+	"trigger": {
+		"position": "bottom right"
+	},
+	"previewData": {
+		"title": "This one is Keegan's",
+		"headline": "",
+		"url": "https://keegandonley.edge.changelog.so/entry/vXnbZTLM57rA5fS9qoYe/This-one-is-Keegans",
+		"siteUrl": "https://keegandonley.edge.changelog.so/",
+		"coverMedia": {
+			"type": "none",
+			"metadata": {},
+			"publicUrl": "",
+			"value": "",
+			"placeholderImage": ""
+		}
+	}
+}

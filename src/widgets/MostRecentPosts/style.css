@@ -1,0 +1,35 @@
+.Pinpoint.Widget.MostRecentPosts {
+	@apply grid gap-5 md:grid-cols-2 lg:grid-cols-3;
+}
+
+.Pinpoint.Widget.MostRecentPosts .Tile {
+	@apply relative border rounded-lg bg-white;
+}
+
+.Pinpoint.Widget.MostRecentPosts .Tile .covermedia {
+	@apply overflow-hidden border-b border-gray-100;
+}
+
+.Pinpoint.Widget.MostRecentPosts .Tile .covermedia .image {
+	@apply object-cover w-full h-40 transition-all duration-300 ease-out rounded-t-lg;
+}
+
+.Pinpoint.Widget.MostRecentPosts .Tile .covermedia .empty {
+	@apply w-full h-40 bg-gray-50;
+}
+
+.Pinpoint.Widget.MostRecentPosts .Tile .body {
+	@apply mt-2 py-1 px-2;
+}
+
+.Pinpoint.Widget.MostRecentPosts .Tile .body .title {
+	@apply font-semibold;
+}
+
+.Pinpoint.Widget.MostRecentPosts .Tile .body .headline {
+	@apply mt-1 text-sm text-gray-500 mr-2;
+}
+
+.Pinpoint.Widget.MostRecentPosts .Tile .body .icon {
+	@apply text-gray-300 hover:text-gray-900 absolute right-2 bottom-2;
+}

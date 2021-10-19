@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import { Description, Primary, Stories, Subtitle, Title } from '@storybook/addon-docs';
 import { Meta } from '@storybook/react';
 import useSearch from '../';
-import PrebuiltSearchResults from '../../../../components/Prebuilt/SearchResults';
-const { default: readme } = require('../README.md');
 import site from '../../../../components/Prebuilt/__data__/testSite.json';
-import { Title, Subtitle, Description, Primary, Stories } from '@storybook/addon-docs';
+import PrebuiltSearchResults from '../../../../components/Prebuilt/SearchResults';
 
+const { default: readme } = require('../README.md');
 export default {
 	title: 'Hooks/useSearch',
 	parameters: {
