@@ -837,45 +837,6 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 	@apply h-[19rem] sm:h-[27rem] md:h-[32rem] lg:h-[36rem];
 }
 
-.Widget.MostRecentPosts .Tile {
-	@apply bg-white;
-}
-
-.Pinpoint.Content.Card {
-	@apply bg-white;
-}
-
-.Popup .Pinpoint.Content.Card.Container.wrapper,
-.Widget.Notification.Modal .Pinpoint.Content.Card.Container.wrapper {
-	@apply shadow-none hover:shadow-none rounded-none;
-}
-
-.Widget.Notification.Modal .Pinpoint.Content.Card.Container.wrapper .empty-cover {
-	@apply md:h-0 lg:h-0;
-}
-
-.Popup .Pinpoint.Content.Card.Container.wrapper .content,
-.Widget.Notification.Modal .Pinpoint.Content.Card.Container.wrapper .content {
-	@apply px-1 py-0;
-}
-
-.Popup .Pinpoint.Content.Card.Container .covermedia,
-.Widget.Notification.Modal.youtube .Pinpoint.Content.Card.Container .covermedia {
-	@apply h-auto;
-}
-
-.Popup .Pinpoint.Content.Card.Title {
-	@apply leading-tight;
-}
-
-.Widget.Notification.Modal .Pinpoint.Content.Card.Title {
-	@apply mt-2;
-}
-
-.Popup .Pinpoint.Content.Card.Container.wrapper .content {
-	@apply py-2 px-2;
-}
-
-.Popup .Pinpoint.Content.Card.Container.wrapper .content .Title {
-	@apply py-2;
+.Pinpoint.feedbackWrapper {
+	@apply mt-10 mb-5 border rounded p-4 inline-flex;
 }

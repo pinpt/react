@@ -568,6 +568,54 @@ exports[`Test custom className 1`] = `
               </p>
             </div>
           </section>
+          <div
+            className="Pinpoint feedbackWrapper"
+          >
+            <div
+              className="Pinpoint constraint"
+            >
+              <div
+                className=" Pinpoint Widget Feedback"
+              >
+                <div
+                  className="title"
+                >
+                  Have product feedback? We'd like to hear from you
+                </div>
+                <div
+                  className="message"
+                >
+                  <textarea
+                    disabled={false}
+                    onChange={[Function]}
+                    placeholder="Your feedback..."
+                    value=""
+                  />
+                </div>
+                <div
+                  className="email"
+                >
+                  <input
+                    autoComplete="email"
+                    autoFocus={true}
+                    disabled={false}
+                    onChange={[Function]}
+                    placeholder="Your email address"
+                    type="text"
+                    value=""
+                  />
+                  
+                </div>
+                <button
+                  disabled={true}
+                  onClick={[Function]}
+                >
+                  Submit
+                </button>
+                
+              </div>
+            </div>
+          </div>
         </article>
         <div
           className="sidebarWrapper after"
@@ -1677,6 +1725,54 @@ exports[`Test default state 1`] = `
               </p>
             </div>
           </section>
+          <div
+            className="Pinpoint feedbackWrapper"
+          >
+            <div
+              className="Pinpoint constraint"
+            >
+              <div
+                className=" Pinpoint Widget Feedback"
+              >
+                <div
+                  className="title"
+                >
+                  Have product feedback? We'd like to hear from you
+                </div>
+                <div
+                  className="message"
+                >
+                  <textarea
+                    disabled={false}
+                    onChange={[Function]}
+                    placeholder="Your feedback..."
+                    value=""
+                  />
+                </div>
+                <div
+                  className="email"
+                >
+                  <input
+                    autoComplete="email"
+                    autoFocus={true}
+                    disabled={false}
+                    onChange={[Function]}
+                    placeholder="Your email address"
+                    type="text"
+                    value=""
+                  />
+                  
+                </div>
+                <button
+                  disabled={true}
+                  onClick={[Function]}
+                >
+                  Submit
+                </button>
+                
+              </div>
+            </div>
+          </div>
         </article>
         <div
           className="sidebarWrapper after"
@@ -2679,6 +2775,54 @@ exports[`Test no author 1`] = `
               </p>
             </div>
           </section>
+          <div
+            className="Pinpoint feedbackWrapper"
+          >
+            <div
+              className="Pinpoint constraint"
+            >
+              <div
+                className=" Pinpoint Widget Feedback"
+              >
+                <div
+                  className="title"
+                >
+                  Have product feedback? We'd like to hear from you
+                </div>
+                <div
+                  className="message"
+                >
+                  <textarea
+                    disabled={false}
+                    onChange={[Function]}
+                    placeholder="Your feedback..."
+                    value=""
+                  />
+                </div>
+                <div
+                  className="email"
+                >
+                  <input
+                    autoComplete="email"
+                    autoFocus={true}
+                    disabled={false}
+                    onChange={[Function]}
+                    placeholder="Your email address"
+                    type="text"
+                    value=""
+                  />
+                  
+                </div>
+                <button
+                  disabled={true}
+                  onClick={[Function]}
+                >
+                  Submit
+                </button>
+                
+              </div>
+            </div>
+          </div>
         </article>
         <div
           className="sidebarWrapper after"
@@ -3975,6 +4119,54 @@ exports[`Test no authors 1`] = `
               <p />
             </div>
           </section>
+          <div
+            className="Pinpoint feedbackWrapper"
+          >
+            <div
+              className="Pinpoint constraint"
+            >
+              <div
+                className=" Pinpoint Widget Feedback"
+              >
+                <div
+                  className="title"
+                >
+                  Have product feedback? We'd like to hear from you
+                </div>
+                <div
+                  className="message"
+                >
+                  <textarea
+                    disabled={false}
+                    onChange={[Function]}
+                    placeholder="Your feedback..."
+                    value=""
+                  />
+                </div>
+                <div
+                  className="email"
+                >
+                  <input
+                    autoComplete="email"
+                    autoFocus={true}
+                    disabled={false}
+                    onChange={[Function]}
+                    placeholder="Your email address"
+                    type="text"
+                    value=""
+                  />
+                  
+                </div>
+                <button
+                  disabled={true}
+                  onClick={[Function]}
+                >
+                  Submit
+                </button>
+                
+              </div>
+            </div>
+          </div>
         </article>
         <div
           className="sidebarWrapper after"
@@ -4907,6 +5099,54 @@ exports[`Test no claps 1`] = `
               </p>
             </div>
           </section>
+          <div
+            className="Pinpoint feedbackWrapper"
+          >
+            <div
+              className="Pinpoint constraint"
+            >
+              <div
+                className=" Pinpoint Widget Feedback"
+              >
+                <div
+                  className="title"
+                >
+                  Have product feedback? We'd like to hear from you
+                </div>
+                <div
+                  className="message"
+                >
+                  <textarea
+                    disabled={false}
+                    onChange={[Function]}
+                    placeholder="Your feedback..."
+                    value=""
+                  />
+                </div>
+                <div
+                  className="email"
+                >
+                  <input
+                    autoComplete="email"
+                    autoFocus={true}
+                    disabled={false}
+                    onChange={[Function]}
+                    placeholder="Your email address"
+                    type="text"
+                    value=""
+                  />
+                  
+                </div>
+                <button
+                  disabled={true}
+                  onClick={[Function]}
+                >
+                  Submit
+                </button>
+                
+              </div>
+            </div>
+          </div>
         </article>
         <div
           className="sidebarWrapper after"
@@ -5932,6 +6172,54 @@ exports[`Test not zoomable 1`] = `
               </p>
             </div>
           </section>
+          <div
+            className="Pinpoint feedbackWrapper"
+          >
+            <div
+              className="Pinpoint constraint"
+            >
+              <div
+                className=" Pinpoint Widget Feedback"
+              >
+                <div
+                  className="title"
+                >
+                  Have product feedback? We'd like to hear from you
+                </div>
+                <div
+                  className="message"
+                >
+                  <textarea
+                    disabled={false}
+                    onChange={[Function]}
+                    placeholder="Your feedback..."
+                    value=""
+                  />
+                </div>
+                <div
+                  className="email"
+                >
+                  <input
+                    autoComplete="email"
+                    autoFocus={true}
+                    disabled={false}
+                    onChange={[Function]}
+                    placeholder="Your email address"
+                    type="text"
+                    value=""
+                  />
+                  
+                </div>
+                <button
+                  disabled={true}
+                  onClick={[Function]}
+                >
+                  Submit
+                </button>
+                
+              </div>
+            </div>
+          </div>
         </article>
         <div
           className="sidebarWrapper after"
@@ -6881,6 +7169,54 @@ exports[`Test with pagination 1`] = `
               </p>
             </div>
           </section>
+          <div
+            className="Pinpoint feedbackWrapper"
+          >
+            <div
+              className="Pinpoint constraint"
+            >
+              <div
+                className=" Pinpoint Widget Feedback"
+              >
+                <div
+                  className="title"
+                >
+                  Have product feedback? We'd like to hear from you
+                </div>
+                <div
+                  className="message"
+                >
+                  <textarea
+                    disabled={false}
+                    onChange={[Function]}
+                    placeholder="Your feedback..."
+                    value=""
+                  />
+                </div>
+                <div
+                  className="email"
+                >
+                  <input
+                    autoComplete="email"
+                    autoFocus={true}
+                    disabled={false}
+                    onChange={[Function]}
+                    placeholder="Your email address"
+                    type="text"
+                    value=""
+                  />
+                  
+                </div>
+                <button
+                  disabled={true}
+                  onClick={[Function]}
+                >
+                  Submit
+                </button>
+                
+              </div>
+            </div>
+          </div>
         </article>
         <div
           className="sidebarWrapper after"

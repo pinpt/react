@@ -9,8 +9,8 @@ interface FeedbackLink {
 }
 
 interface Feedback {
-	widgetId: string;
 	message: string;
+	widgetId?: string;
 	subscriberId?: string;
 	email?: string;
 	properties?: any;

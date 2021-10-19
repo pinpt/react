@@ -46,6 +46,8 @@ export interface ICoverMedia {
 
 export enum ContentTemplateType {
 	Changelog = 'changelog',
+	Blog = 'blog',
+	Documentation = 'documentation',
 }
 
 type ContentDocument = any;

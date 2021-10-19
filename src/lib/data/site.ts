@@ -2,6 +2,13 @@ import type { ISite } from '../types/site';
 import type { IPinpointConfig } from '../types/config';
 import { executeAPI } from '../fetch';
 
+export const configFromSite = (site: ISite): IPinpointConfig => {
+	return {
+		slug: site.slug,
+		siteId: site.id,
+	};
+};
+
 export const fetchSite = async (config: IPinpointConfig): Promise<ISite> => {
 	const { data } = await executeAPI(config, `/site-api/v1/site`);
 	return data;

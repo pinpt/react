@@ -5,13 +5,7 @@ import { submitFeedback } from '../../lib/data/feedback';
 import { getSubscriberId, isSubscriberCookieSet, validateEmail } from '../../lib/subscription';
 
 import type { IPinpointConfig } from '../../lib/types/config';
-
-interface FeedbackProps {
-	widgetId: string;
-	title: string;
-	className?: string;
-	config: IPinpointConfig;
-}
+import type { IFeedbackProps } from '../../lib/types/feedback';
 
 const MessageInput = ({
 	message,
@@ -23,7 +17,7 @@ const MessageInput = ({
 	disabled: boolean;
 }) => {
 	return (
-		<div>
+		<div className="message">
 			<textarea
 				disabled={disabled}
 				value={message}
@@ -66,8 +60,8 @@ const EmailInput = ({
 	);
 };
 
-const Feedback = (props: FeedbackProps) => {
-	const { title, config, widgetId, className = '' } = props;
+const Feedback = (props: IFeedbackProps) => {
+	const { title, config, widgetId, className = '', pageTitle, pageType, contentId, url } = props;
 	const [isSubscriber, setIsSubscriber] = useState(false);
 	const [email, setEmail] = useState('');
 	const [message, setMessage] = useState('');
@@ -92,6 +86,15 @@ const Feedback = (props: FeedbackProps) => {
 				email,
 				subscriberId: getSubscriberId(),
 				message,
+				referrer:
+					contentId && pageTitle && url && pageType
+						? {
+								id: contentId,
+								url,
+								type: pageType,
+								text: pageTitle,
+						  }
+						: undefined,
 			};
 			await submitFeedback(config, feedback);
 			setSuccess(true);
