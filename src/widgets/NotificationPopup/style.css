@@ -41,3 +41,7 @@
 .Pinpoint.Relative {
 	@apply h-full;
 }
+
+.Pinpoint.Widget.Popup .empty-cover {
+	@apply hidden;
+}

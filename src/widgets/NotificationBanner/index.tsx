@@ -1,6 +1,10 @@
 import React from 'react';
 import {
-	faBullhorn, faExclamationCircle, faFlag, faInfoCircle, IconDefinition
+	faBullhorn,
+	faExclamationCircle,
+	faFlag,
+	faInfoCircle,
+	IconDefinition,
 } from '@fortawesome/free-solid-svg-icons';
 import Banner from '../../components/Banner';
 
