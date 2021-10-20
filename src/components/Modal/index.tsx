@@ -76,25 +76,29 @@ const Modal = (props: ModalProps) => {
 			containerRef.current.style.opacity = '1';
 
 			// Save scroll position and prevent scrolling behind modal
-			document.body.style.left = '0';
-			document.body.style.right = '0';
-			document.body.style.bottom = '0';
-			document.body.style.top = `-${window.scrollY}px`;
-			document.body.style.position = 'fixed';
+			if (!props.__previewMode) {
+				document.body.style.left = '0';
+				document.body.style.right = '0';
+				document.body.style.bottom = '0';
+				document.body.style.top = `-${window.scrollY}px`;
+				document.body.style.position = 'fixed';
+			}
 		} else {
 			// Restore scroll position and allow scrolling again
-			const scrollY = document.body.style.top;
-			document.body.style.position = '';
-			document.body.style.top = '';
-			document.body.style.left = '';
-			document.body.style.right = '';
-			document.body.style.bottom = '';
-			window.scrollTo(0, parseInt(scrollY || '0') * -1);
+			if (!props.__previewMode) {
+				const scrollY = document.body.style.top;
+				document.body.style.position = '';
+				document.body.style.top = '';
+				document.body.style.left = '';
+				document.body.style.right = '';
+				document.body.style.bottom = '';
+				window.scrollTo(0, parseInt(scrollY || '0') * -1);
+			}
 
 			shadowRef.current.style.display = 'none';
 			containerRef.current.style.opacity = '0';
 		}
-	}, [visible]);
+	}, [visible, props.__previewMode]);
 	if (containerRef.current && visible) {
 		if (props.__previewMode) {
 			return (
