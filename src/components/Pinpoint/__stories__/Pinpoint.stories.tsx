@@ -98,7 +98,7 @@ export const Test_Youtube: React.VFC<{}> = () => (
 );
 
 export const Test_Widgets: React.VFC<{}> = () => (
-	<Pinpoint siteId="0eG8DEulKKdC0HYeNRZT">
+	<Pinpoint siteId="0eG8DEulKKdC0HYeNRZT" widgetSDKEnabled>
 		{(ready) => {
 			return <div>{ready ? 'scripts ready' : 'scripts loading'}</div>;
 		}}

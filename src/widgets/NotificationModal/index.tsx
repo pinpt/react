@@ -32,6 +32,7 @@ interface PageProps {
 
 const NotificationModal = (props: PageProps) => {
 	const linkRef = useRef<any>();
+	const modalRef = useRef<any>();
 	const { previewData, button, header, footer } = props;
 	const { title, headline, url, coverMedia, siteUrl } = previewData;
 	const { title: headerTitle = 'New Updates' } = header ?? {};
@@ -50,6 +51,7 @@ const NotificationModal = (props: PageProps) => {
 
 	const handleClose = useCallback(() => {
 		setVisible(false);
+		modalRef.current?.remove?.();
 		props.onClose?.();
 	}, [props.onClose]);
 
@@ -58,6 +60,7 @@ const NotificationModal = (props: PageProps) => {
 			visible={visible}
 			className={`Pinpoint Widget Notification Modal covermedia-type-${coverMedia?.type ?? ''}`}
 			__previewMode={props.__previewMode}
+			ref={modalRef}
 		>
 			<div className="wrapper" style={{ minHeight: !coverMedia || coverMedia?.type === 'none' ? '185px' : '365px' }}>
 				<div className="header">
