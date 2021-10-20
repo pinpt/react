@@ -225,7 +225,7 @@ const Entry = (props: IPrebuiltEntryProps) => {
 										pageTitle={content.title}
 										contentId={content.id}
 										url={content.url}
-										pageType={content.type}
+										pageType={content.type ?? site.type}
 									/>
 							  )
 							: undefined
