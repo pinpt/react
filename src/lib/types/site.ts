@@ -8,6 +8,7 @@ export interface ISite {
 	slug: string;
 	name: string;
 	private: boolean; // true if private and should not be indexable by search engines
+	type: string; // 'changelog' | 'blog' | 'documentation';
 	theme?: {
 		title?: string;
 		social?: Record<string, string>;
@@ -24,4 +25,7 @@ export interface ISite {
 	scriptPlugins?: Record<string, any>;
 	tagMapping?: TagMapping;
 	basePath: string;
+	features: {
+		feedback: boolean;
+	};
 }

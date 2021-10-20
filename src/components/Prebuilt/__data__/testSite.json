@@ -5,6 +5,7 @@
 	"slug": "pinpoint",
 	"name": "Pinpoint",
 	"private": false,
+	"type": "changelog",
 	"basePath": "/",
 	"mailingAddress": "3131 McKinney Ave Ste 502 PMB 98116 Dallas, Texas 75204-2426 US",
 	"theme": {
@@ -22,5 +23,8 @@
 		"copyright": "Copyright © 2021 by Pinpoint Software, Inc.",
 		"logoLink": "https://pinpoint.com",
 		"eulaLink": "https://home.pinpoint.com/legal/eula"
+	},
+	"features": {
+		"feedback": true
 	}
 }
