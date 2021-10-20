@@ -130,7 +130,7 @@ const Pinpoint = (props: IPinpointProps) => {
 			const { target, suppression } = widget;
 			if (suppression && localStorage.getItem(suppression.key) === suppression.value) {
 				if (DEBUG_MODE) {
-					console.debug('suppressed widget based on suppression key');
+					console.debug('[@pinpt/react] suppressed widget based on suppression key');
 				}
 			} else {
 				const elemId = `${widget.type}-${widget.id}`;
