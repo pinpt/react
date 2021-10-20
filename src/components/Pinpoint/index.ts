@@ -57,7 +57,7 @@ const Pinpoint = (props: IPinpointProps) => {
 
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
-			let clearSDK;
+			let clearSDK: () => void;
 			if (widgetSDKEnabled) {
 				window.PinpointSettings = {
 					...(window.PinpointSettings ?? {}),
