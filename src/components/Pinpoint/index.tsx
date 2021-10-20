@@ -57,6 +57,12 @@ const USE_SDK_FOR_WIDGETS =
 const DEBUG_MODE =
 	typeof localStorage === 'undefined' ? false : localStorage.getItem('pinpoint.beacon.debug') === 'true';
 
+const debug = (...args) => {
+	if (DEBUG_MODE) {
+		console.debug('[@pinpt/react]', ...args);
+	}
+};
+
 const Pinpoint = (props: IPinpointProps) => {
 	const { siteId, contentId, basePath, noIFramely, widgetSDKEnabled = false } = props;
 	const [ready] = useScriptLoader(
@@ -72,8 +78,9 @@ const Pinpoint = (props: IPinpointProps) => {
 				window.PinpointSettings = {
 					...(window.PinpointSettings ?? {}),
 					onLoad: () => {
-						console.log('load');
+						debug('Beacon called onload');
 						clearSDK = window.Pinpoint?.registerSDKForWidget?.((res) => {
+							debug('Got widgets from beacon', res);
 							setWidgets(res);
 						});
 					},
@@ -126,12 +133,9 @@ const Pinpoint = (props: IPinpointProps) => {
 	useEffect(() => {
 		const els = [] as { id: string; elem: Element; remove: boolean }[];
 		widgets.forEach((widget) => {
-			console.log(widget);
 			const { target, suppression } = widget;
 			if (suppression && localStorage.getItem(suppression.key) === suppression.value) {
-				if (DEBUG_MODE) {
-					console.debug('[@pinpt/react] suppressed widget based on suppression key');
-				}
+				debug('Widget rendering suppressed by local suppression key');
 			} else {
 				const elemId = `${widget.type}-${widget.id}`;
 				let component: ReactElement | null = null;
@@ -170,6 +174,7 @@ const Pinpoint = (props: IPinpointProps) => {
 						localStorage.setItem(suppression.key, suppression.value);
 					}
 					const result = buildComponentRenderer(component, elemId, target, () => {
+						debug('Removing element from the DOM on close', elemId);
 						removeElement({ id: elemId, elem: result.container, remove: result.remove });
 						const idx = els.findIndex((e) => e.id === elemId);
 						if (idx >= 0) {
