@@ -24,6 +24,11 @@ const Modal = (props: ModalProps) => {
 		element.append(shadow, container);
 
 		element.className = 'Pinpoint';
+		element.style.position = 'fixed';
+		element.style.width = '100vw';
+		element.style.height = '100vh';
+		element.style.top = '0';
+		element.style.left = '0';
 
 		shadow.style.backgroundColor = 'rgba(0, 0, 0, .50)';
 		shadow.style.position = 'absolute';
@@ -69,11 +74,31 @@ const Modal = (props: ModalProps) => {
 		if (visible) {
 			shadowRef.current.style.display = 'block';
 			containerRef.current.style.opacity = '1';
+
+			// Save scroll position and prevent scrolling behind modal
+			if (!props.__previewMode) {
+				document.body.style.left = '0';
+				document.body.style.right = '0';
+				document.body.style.bottom = '0';
+				document.body.style.top = `-${window.scrollY}px`;
+				document.body.style.position = 'fixed';
+			}
 		} else {
+			// Restore scroll position and allow scrolling again
+			if (!props.__previewMode) {
+				const scrollY = document.body.style.top;
+				document.body.style.position = '';
+				document.body.style.top = '';
+				document.body.style.left = '';
+				document.body.style.right = '';
+				document.body.style.bottom = '';
+				window.scrollTo(0, parseInt(scrollY || '0') * -1);
+			}
+
 			shadowRef.current.style.display = 'none';
 			containerRef.current.style.opacity = '0';
 		}
-	}, [visible]);
+	}, [visible, props.__previewMode]);
 	if (containerRef.current && visible) {
 		if (props.__previewMode) {
 			return (

@@ -15,9 +15,7 @@ import Pinpoint from '../../Pinpoint';
 import { Document } from '../../Renderer';
 import { ISearchBarProps } from '../../Search/Bar';
 import Sidebar, { ISidebarProps } from '../../Sidebar';
-import {
-	EmailShare, FacebookShare, LinkedInShare, SocialMediaBar, TwitterShare
-} from '../../SocialMedia';
+import { EmailShare, FacebookShare, LinkedInShare, SocialMediaBar, TwitterShare } from '../../SocialMedia';
 import { ISocialMediaBarProps } from '../../SocialMedia/SocialMediaBar';
 import { ISubscribeProps } from '../../Subscribe';
 import Tags from '../../Tags';

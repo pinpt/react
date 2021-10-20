@@ -6,6 +6,7 @@ import entry from '../__data__/testDocumentIFramely.json';
 import entryToggle from '../__data__/testDocumentToggle.json';
 import { Document, Content } from '../../Renderer';
 import { CoverMediaType } from '../../../lib/types/content';
+import Head from '../../Head';
 const { default: readme } = require('../README.md');
 
 export default {
@@ -92,6 +93,14 @@ export const Test_Youtube: React.VFC<{}> = () => (
 					id="5678"
 				/>
 			);
+		}}
+	</Pinpoint>
+);
+
+export const Test_Widgets: React.VFC<{}> = () => (
+	<Pinpoint siteId="0eG8DEulKKdC0HYeNRZT">
+		{(ready) => {
+			return <div>{ready ? 'scripts ready' : 'scripts loading'}</div>;
 		}}
 	</Pinpoint>
 );
