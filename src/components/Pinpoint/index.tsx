@@ -52,8 +52,10 @@ declare global {
 	}
 }
 
-const USE_SDK_FOR_WIDGETS = typeof localStorage === 'undefined' ? false : localStorage.getItem('pinpoint.react.widgets') === 'true';
-const DEBUG_MODE = typeof localStorage === 'undefined' ? false : localStorage.getItem('pinpoint.beacon.debug') === 'true';
+const USE_SDK_FOR_WIDGETS =
+	typeof localStorage === 'undefined' ? false : localStorage.getItem('pinpoint.react.widgets') === 'true';
+const DEBUG_MODE =
+	typeof localStorage === 'undefined' ? false : localStorage.getItem('pinpoint.beacon.debug') === 'true';
 
 const Pinpoint = (props: IPinpointProps) => {
 	const { siteId, contentId, basePath, noIFramely, widgetSDKEnabled = false } = props;
@@ -86,31 +88,34 @@ const Pinpoint = (props: IPinpointProps) => {
 		}
 	}, [siteId, contentId]);
 
-	const buildComponentRenderer = useCallback((component: ReactElement, elemId: string, target: { selector: string; action: string}, cb: () => void) => {
-		const result = cloneElement(component, {
-			onClose: cb,
-		});
-		if (target.selector === 'body') {
-			const container = document.createElement('div');
-			container.id = elemId;
-			if (target.action === 'prepend') {
-				document.body.prepend(container);
-			} else {
-				document.body.append(container);
-			}
+	const buildComponentRenderer = useCallback(
+		(component: ReactElement, elemId: string, target: { selector: string; action: string }, cb: () => void) => {
+			const result = cloneElement(component, {
+				onClose: cb,
+			});
+			if (target.selector === 'body') {
+				const container = document.createElement('div');
+				container.id = elemId;
+				if (target.action === 'prepend') {
+					document.body.prepend(container);
+				} else {
+					document.body.append(container);
+				}
 
-			render(result, container);
-			return { container, remove: true };
-		} else {
-			const container = document.querySelectorAll(target.selector)?.[0];
-			if (container) {
 				render(result, container);
+				return { container, remove: true };
+			} else {
+				const container = document.querySelectorAll(target.selector)?.[0];
+				if (container) {
+					render(result, container);
+				}
+				return { container, remove: false };
 			}
-			return { container, remove: false };
-		}
-	}, []);
+		},
+		[]
+	);
 
-	const removeElement = useCallback((res: { id: string, elem: Element, remove: boolean }) => {
+	const removeElement = useCallback((res: { id: string; elem: Element; remove: boolean }) => {
 		if (res.remove) {
 			document.body.removeChild(res.elem);
 		} else {
@@ -119,7 +124,7 @@ const Pinpoint = (props: IPinpointProps) => {
 	}, []);
 
 	useEffect(() => {
-		const els = [] as { id: string, elem: Element, remove: boolean }[];
+		const els = [] as { id: string; elem: Element; remove: boolean }[];
 		widgets.forEach((widget) => {
 			console.log(widget);
 			const { target, suppression } = widget;
@@ -132,15 +137,31 @@ const Pinpoint = (props: IPinpointProps) => {
 				let component: ReactElement | null = null;
 				if (widget.type === 'notification_banner') {
 					component = (
-						<NotificationBanner background={widget.background} foreground={widget.foreground} icon={widget.icon} message={widget.message} previewData={widget.previewData} />
+						<NotificationBanner
+							background={widget.background}
+							foreground={widget.foreground}
+							icon={widget.icon}
+							message={widget.message}
+							previewData={widget.previewData}
+						/>
 					);
 				} else if (widget.type === 'notification_popup') {
 					component = (
-						<NotificationPopup button={widget.button} header={widget.header} previewData={widget.previewData} target={widget.target} />
+						<NotificationPopup
+							button={widget.button}
+							header={widget.header}
+							previewData={widget.previewData}
+							target={widget.target}
+						/>
 					);
 				} else if (widget.type === 'notification_modal') {
 					component = (
-						<NotificationModal button={widget.button} footer={widget.footer} header={widget.header} previewData={widget.previewData} />
+						<NotificationModal
+							button={widget.button}
+							footer={widget.footer}
+							header={widget.header}
+							previewData={widget.previewData}
+						/>
 					);
 				}
 
@@ -164,7 +185,7 @@ const Pinpoint = (props: IPinpointProps) => {
 			if (els.length) {
 				els.forEach(removeElement);
 			}
-		}
+		};
 	}, [widgets]);
 
 	const wireUpToggles = () => {

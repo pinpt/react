@@ -107,9 +107,13 @@ const Modal = forwardRef((props: ModalProps, ref: any) => {
 		}
 	}, []);
 
-	useImperativeHandle(ref, () => ({
-		remove: removeFromDOM
-	}), [removeFromDOM]);
+	useImperativeHandle(
+		ref,
+		() => ({
+			remove: removeFromDOM,
+		}),
+		[removeFromDOM]
+	);
 
 	if (containerRef.current && visible) {
 		if (props.__previewMode) {
