@@ -7,6 +7,7 @@ export interface IPinpointProps {
 	basePath?: string;
 	children: (ready: boolean, ref: any) => ReactElement;
 	noIFramely?: boolean;
+	widgetSDKEnabled?: boolean;
 }
 
 type CustomPropertyType = string | number | boolean;
@@ -48,7 +49,7 @@ declare global {
 }
 
 const Pinpoint = (props: IPinpointProps) => {
-	const { siteId, contentId, basePath, noIFramely } = props;
+	const { siteId, contentId, basePath, noIFramely, widgetSDKEnabled = false } = props;
 	const [ready] = useScriptLoader(
 		noIFramely ? [] : [`https://cdn.iframe.ly/embed.js?api_key=ab49ad398c6f631ab44eca&origin=${siteId}`]
 	);
@@ -56,14 +57,16 @@ const Pinpoint = (props: IPinpointProps) => {
 
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
-			let clearSDK
-			window.PinpointSettings = {
-				...(window.PinpointSettings ?? {}),
-				onLoad: () => {
-					clearSDK = window.Pinpoint?.registerSDKForWidget?.((res) => {
-						console.log(res);
-					})
-				}
+			let clearSDK;
+			if (widgetSDKEnabled) {
+				window.PinpointSettings = {
+					...(window.PinpointSettings ?? {}),
+					onLoad: () => {
+						clearSDK = window.Pinpoint?.registerSDKForWidget?.((res) => {
+							console.log(res);
+						});
+					},
+				};
 			}
 			const clearTracking = window.Pinpoint?.startTracking?.(siteId, contentId, basePath);
 
@@ -72,7 +75,7 @@ const Pinpoint = (props: IPinpointProps) => {
 				clearSDK?.();
 			};
 		}
-	}, [siteId, contentId]);
+	}, [siteId, contentId, widgetSDKEnabled]);
 
 	const wireUpToggles = () => {
 		const toggles = document.querySelectorAll('.toggle');

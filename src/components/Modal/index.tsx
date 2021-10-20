@@ -75,14 +75,14 @@ const Modal = (props: ModalProps) => {
 			shadowRef.current.style.display = 'block';
 			containerRef.current.style.opacity = '1';
 
+			// Save scroll position and prevent scrolling behind modal
 			document.body.style.left = '0';
 			document.body.style.right = '0';
 			document.body.style.bottom = '0';
 			document.body.style.top = `-${window.scrollY}px`;
 			document.body.style.position = 'fixed';
-
 		} else {
-
+			// Restore scroll position and allow scrolling again
 			const scrollY = document.body.style.top;
 			document.body.style.position = '';
 			document.body.style.top = '';
