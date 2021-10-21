@@ -104,3 +104,18 @@ export const Test_Widgets: React.VFC<{}> = () => (
 		}}
 	</Pinpoint>
 );
+
+(Test_Widgets as any).loaders = [
+	async () => {
+		return {
+			ready: (() => {
+				const head = document.getElementsByTagName('head')?.[0];
+				const elem = document.createElement('script');
+				elem.src = 'https://keegandonley.edge.changelog.so/a.js';
+				elem.defer = true;
+				elem.async = true;
+				head.appendChild(elem);
+			})(),
+		};
+	},
+];
