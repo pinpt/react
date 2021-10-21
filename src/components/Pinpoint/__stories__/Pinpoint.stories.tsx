@@ -105,6 +105,7 @@ export const Test_Widgets: React.VFC<{}> = (a, b) => {
 					<div>
 						{ready ? 'scripts ready' : 'scripts loading'}
 						<div className="most-recent-target" />
+						<div className="most-recent-target" />
 					</div>
 				);
 			}}

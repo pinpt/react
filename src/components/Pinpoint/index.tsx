@@ -127,15 +127,19 @@ const Pinpoint = (props: IPinpointProps) => {
 				}
 
 				render(result, container);
-				return { container, remove: true };
+				return [{ container, remove: true }];
 			} else {
-				const container = document.querySelectorAll(target.selector)?.[0];
-				if (container) {
-					render(result, container);
-				} else {
-					debug('Container not found, skipping render', target.selector);
-				}
-				return { container, remove: false };
+				const res = [] as any[];
+				const containers = document.querySelectorAll(target.selector);
+				containers.forEach((container) => {
+					if (container) {
+						render(result, container);
+					} else {
+						debug('Container not found, skipping render', target.selector);
+					}
+					res.push({ container, remove: false });
+				});
+				return res;
 			}
 		},
 		[]
@@ -196,15 +200,19 @@ const Pinpoint = (props: IPinpointProps) => {
 					if (suppression && !DEBUG_MODE) {
 						localStorage.setItem(suppression.key, suppression.value);
 					}
-					const result = buildComponentRenderer(component, elemId, target, () => {
+					const results = buildComponentRenderer(component, elemId, target, () => {
 						debug('Removing element from the DOM on close', elemId);
-						removeElement({ id: elemId, elem: result.container, remove: result.remove });
-						const idx = els.findIndex((e) => e.id === elemId);
-						if (idx >= 0) {
-							els.splice(idx, 1);
-						}
+						results.forEach((result) => {
+							removeElement({ id: elemId, elem: result.container, remove: result.remove });
+							const idx = els.findIndex((e) => e.id === elemId);
+							if (idx >= 0) {
+								els.splice(idx, 1);
+							}
+						});
 					});
-					els.push({ id: elemId, elem: result.container, remove: result.remove });
+					results.forEach((result) => {
+						els.push({ id: elemId, elem: result.container, remove: result.remove });
+					});
 				}
 			}
 		});
