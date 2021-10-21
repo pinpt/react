@@ -52,6 +52,9 @@ declare global {
 			identify: (identityData: IdentifyData) => void;
 			registerSDKForWidget: (cb: (res: any[]) => void) => () => void;
 		};
+		__Pinpoint: {
+			load: () => void;
+		}
 		PinpointSettings: PinpointSettings;
 	}
 }
@@ -98,6 +101,7 @@ const Pinpoint = (props: IPinpointProps) => {
 						});
 					},
 				};
+				window.__Pinpoint?.load?.();
 			}
 			const clearTracking = window.Pinpoint?.startTracking?.(siteId, contentId, basePath);
 

@@ -21,9 +21,8 @@ const Head = (props: IHeadProps) => {
 				src={getSiteAnalyticsURL(site)}
 				data-site-id={site.id}
 				data-id={content?.id}
+				data-use-react
 				base-path={site.basePath}
-				async
-				defer
 			/>
 			{site.scriptPlugins ? <ScriptPlugins plugins={site.scriptPlugins} /> : null}
 			<meta name="generator" content="pinpoint.com" />

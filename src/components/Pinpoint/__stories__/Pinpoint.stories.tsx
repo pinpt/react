@@ -113,14 +113,13 @@ export const Test_Widgets: React.VFC<{}> = () => (
 	async () => {
 		return {
 			ready: (() => {
-				setTimeout(() => {
-					const head = document.getElementsByTagName('head')?.[0];
-					const elem = document.createElement('script');
-					elem.src = 'https://keegandonley.edge.changelog.so/a.js';
-					elem.defer = true;
-					elem.async = true;
-					head.appendChild(elem);
-				}, 200);
+				const head = document.getElementsByTagName('head')?.[0];
+				const elem = document.createElement('script');
+				elem.src = 'https://keegandonley.edge.changelog.so/a.js';
+				elem.defer = true;
+				elem.async = true;
+				elem.setAttribute('data-use-react', '');
+				head.appendChild(elem);
 			})(),
 		};
 	},
