@@ -12,3 +12,13 @@ export const subscribe = async (config: IPinpointConfig, email: string): Promise
 		true
 	);
 };
+
+export const validate = async (config: IPinpointConfig, email: string): Promise<boolean> => {
+	const res = await executeAPI(
+		config,
+		`/subscription/validate/${encodeURIComponent(email)}`,
+		'GET'
+	);
+
+	return res;
+}

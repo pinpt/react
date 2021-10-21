@@ -924,3 +924,43 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 .Pinpoint.Field.FullWidth {
 	@apply w-full;
 }
+
+.Pinpoint.SubscriptionSubscribe.Field {
+	@apply flex-1 disabled:cursor-not-allowed focus:ring-blue-500 focus:border-blue-500 block w-full min-w-0 rounded-md text-sm border-gray-300 focus:bg-white bg-gray-100 p-2 border text-black;
+}
+
+.Pinpoint.SubscriptionSubscribe.Submit {
+	@apply disabled:opacity-50 inline-flex justify-center cursor-pointer disabled:cursor-not-allowed px-4 py-1.5 rounded-md flex items-center font-semibold text-white bg-green-600 hover:bg-green-500 transition-colors duration-200 focus:outline-none;
+}
+
+.Pinpoint.EmailValidation.Subscribing {
+	@apply flex items-center w-full;
+}
+
+.Pinpoint.EmailValidation.Subscribing.Icon {
+	@apply text-gray-700 mr-2;
+}
+
+.Pinpoint.EmailValidation.Error {
+	@apply flex items-center text-orange-600 w-full;
+}
+
+.Pinpoint.EmailValidation.Message {
+	@apply flex items-center text-green-600 w-full;
+}
+
+.Pinpoint.EmailValidation.Status {
+	@apply flex items-center w-full;
+}
+
+.Pinpoint.EmailValidation.Status.Success {
+	@apply text-green-600;
+}
+
+.Pinpoint.EmailValidation.Status.Invalid {
+	@apply text-orange-600;
+}
+
+.Pinpoint.EmailValidation.Status .Pinpoint.EmailValidation.Icon {
+	@apply mr-2;
+}
