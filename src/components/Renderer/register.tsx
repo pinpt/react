@@ -90,7 +90,7 @@ export const ProsemirrorNodeRender = ({ node, path }: { node: PmNode; path?: str
 	const component = getNodeFactory(node.type);
 	if (!component) {
 		console.error(`unknown node type: ${node.type}`, node);
-		return <div />;
+		return <div>unknown {node.type}</div>;
 	}
 	if (!node._path) {
 		node._path = 'doc';
