@@ -13,3 +13,9 @@ test('Test custom className', () => {
 	const tree = component.toJSON();
 	expect(tree).toMatchSnapshot();
 });
+
+test('Test custom basepath', () => {
+	const component = renderer.create(<Header className="test-custom" site={{ ...site, basePath: '/blog' }} />);
+	const tree = component.toJSON();
+	expect(tree).toMatchSnapshot();
+});

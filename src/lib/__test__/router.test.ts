@@ -1,7 +1,9 @@
 /**
  * @jest-environment jsdom
  */
-import { getRouterRelativePath, getSiteAnalyticsURL, getSiteRSSURL } from '../';
+import {
+	getRouterAbsolutePath, getRouterRelativePath, getSiteAnalyticsURL, getSiteRSSURL
+} from '../';
 
 test('Test getRouterRelativePath', () => {
 	expect(getRouterRelativePath({ basePath: undefined } as any, 'https://example.com/foo')).toBe('/foo');
@@ -10,12 +12,7 @@ test('Test getRouterRelativePath', () => {
 	expect(
 		getRouterRelativePath(
 			{ basePath: '/blog', siteUrl: 'https://jhaynie.dev/blog' } as any,
-			'https://jhaynie.dev/blog/entry/1',
-			{
-				location: {
-					href: 'https://jhaynie.dev/blog/',
-				},
-			}
+			'https://jhaynie.dev/blog/entry/1'
 		)
 	).toBe('/entry/1');
 });
@@ -60,19 +57,22 @@ test('Test getRouterRelativePath with missing base', () => {
 });
 
 test('Test getRouterRelativePath when running on different domain', () => {
-	expect(
-		getRouterRelativePath({ basePath: '/blog', url: 'https://example.com/blog' } as any, '/entry/1', {
-			location: { href: 'http://localhost:3001' },
-		})
-	).toBe('/entry/1');
-	expect(
-		getRouterRelativePath({ basePath: '/blog', url: 'https://example.com/blog' } as any, '/entry/1', {
-			location: { href: 'http://localhost:3001/blog' },
-		})
-	).toBe('/entry/1');
-	expect(
-		getRouterRelativePath({ basePath: '/blog', url: 'https://example.com/blog' } as any, '/entry/1', {
-			location: { href: 'http://localhost:3001/blog/entry/2' },
-		})
-	).toBe('/entry/1');
+	expect(getRouterRelativePath({ basePath: '/blog', url: 'https://example.com/blog' } as any, '/entry/1')).toBe(
+		'/entry/1'
+	);
+	expect(getRouterRelativePath({ basePath: '/blog', url: 'https://example.com/blog' } as any, '/entry/1')).toBe(
+		'/entry/1'
+	);
+	expect(getRouterRelativePath({ basePath: '/blog', url: 'https://example.com/blog' } as any, '/entry/1')).toBe(
+		'/entry/1'
+	);
+});
+
+test('Test getRouterAbsolutePath', () => {
+	expect(getRouterAbsolutePath({ basePath: '/blog', url: 'https://example.com/blog' } as any, '/subscribe')).toBe(
+		'https://example.com/blog/subscribe'
+	);
+	expect(getRouterAbsolutePath({ url: 'https://example.com/blog' } as any, '/subscribe')).toBe(
+		'https://example.com/subscribe'
+	);
 });

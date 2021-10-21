@@ -15,6 +15,8 @@ const Head = (props: IHeadProps) => {
 	return (
 		<>
 			<meta charSet="utf-8" />
+			<link rel="preconnect" href="https://site-cdn.pinpoint.com" />
+			<link rel="preconnect" href="https://file.pinpoint.com" />
 			<meta httpEquiv="x-ua-compatible" content="ie=edge" />
 			<meta name="viewport" content="width=device-width" />
 			<script
