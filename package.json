@@ -1,6 +1,6 @@
 {
 	"name": "@pinpt/react",
-	"version": "2.0.5",
+	"version": "2.0.8",
 	"description": "The Pinpoint UI Library for React",
 	"main": "dist/cjs/index.js",
 	"module": "dist/esm/index.js",
@@ -35,7 +35,7 @@
 		"prepublishOnly": "npm run build",
 		"build:test": "rollup -c rollup.config.ts",
 		"prerelease": "npm version prerelease --preid=`git rev-parse --short HEAD` && npm publish --access public",
-		"publish:cdn": "_SUFFIX= _VERSION=`node -e 'process.stdout.write(require(\"./package.json\").version)'` VERSION=${_VERSION}${_SUFFIX} && cd dist && mkdir -p cdn/${VERSION} && cp base.css cdn/${VERSION} && cd cdn && gsutil cp -Z -r * gs://cdn-app-pinpoint-com/@pinpt/react/"
+		"publish:cdn": "_SUFFIX= _VERSION=`node -e 'process.stdout.write(require(\"./package.json\").version)'` VERSION=${_VERSION}${_SUFFIX} && cd dist && mkdir -p cdn/${VERSION} && cp base.css cdn/${VERSION} && cp widget.css cdn/${VERSION} && cd cdn && gsutil cp -Z -r * gs://cdn-app-pinpoint-com/@pinpt/react/"
 	},
 	"license": "MIT",
 	"dependencies": {

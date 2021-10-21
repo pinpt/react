@@ -6,7 +6,6 @@ import entry from '../__data__/testDocumentIFramely.json';
 import entryToggle from '../__data__/testDocumentToggle.json';
 import { Document, Content } from '../../Renderer';
 import { CoverMediaType } from '../../../lib/types/content';
-import Head from '../../Head';
 const { default: readme } = require('../README.md');
 
 export default {
@@ -97,10 +96,43 @@ export const Test_Youtube: React.VFC<{}> = () => (
 	</Pinpoint>
 );
 
-export const Test_Widgets: React.VFC<{}> = () => (
-	<Pinpoint siteId="0eG8DEulKKdC0HYeNRZT">
-		{(ready) => {
-			return <div>{ready ? 'scripts ready' : 'scripts loading'}</div>;
-		}}
-	</Pinpoint>
-);
+export const Test_Widgets: React.VFC<{}> = (a, b) => {
+	console.log(a, b);
+	return (
+		<Pinpoint siteId="0eG8DEulKKdC0HYeNRZT">
+			{(ready) => {
+				return (
+					<div>
+						{ready ? 'scripts ready' : 'scripts loading'}
+						<div className="most-recent-target" />
+						<div className="most-recent-target" />
+					</div>
+				);
+			}}
+		</Pinpoint>
+	);
+};
+
+// This is a hack to get the beacon to load in the story. Since it's not loaded in the head before 
+// the story loads, we need to block all rendering until it finishes loading. In normal use, the 
+// beacon will be loaded in the document head and won't have this problem.
+(Test_Widgets as any).loaders = [
+	async () => {
+		return {
+			ready: await (async () => {
+				const res: boolean = await new Promise((resolve) => {
+					const head = document.getElementsByTagName('head')?.[0];
+					const elem = document.createElement('script');
+					elem.src = 'https://keegandonley.edge.changelog.so/a.js';
+					elem.setAttribute('data-use-react', 'true');
+					elem.onload = () => {
+						resolve(true);
+					};
+					head.appendChild(elem);
+				});
+
+				return res;
+			})(),
+		};
+	},
+];

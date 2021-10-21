@@ -27,6 +27,7 @@ interface PopupProps {
 	};
 	onClose?: () => void;
 	__previewMode?: boolean;
+	className?: string;
 }
 
 const Relative = ({
@@ -93,7 +94,7 @@ const Relative = ({
 };
 
 const NotificationPopup = (props: PopupProps) => {
-	const { previewData, header, button, target } = props;
+	const { previewData, header, button, target, className = '' } = props;
 	const { title, headline, url, coverMedia } = previewData;
 	const { position = 'bottom right' } = target;
 	const { title: headerTitle = 'New Updates' } = header ?? {};
@@ -117,7 +118,7 @@ const NotificationPopup = (props: PopupProps) => {
 	}
 	return (
 		<Relative position={position} __previewMode={props.__previewMode}>
-			<div className="Pinpoint Widget Popup" style={{ width: '380px' }}>
+			<div className={`Pinpoint Widget Popup ${className}`} style={{ width: '380px' }}>
 				<div className="wrapper">
 					<div className="header">
 						<div className="title">{headerTitle}</div>
