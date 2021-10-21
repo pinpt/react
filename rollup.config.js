@@ -16,7 +16,9 @@ const plugins = [
 	}),
 	json(),
 	replaceImport(),
-	nodeResolve(),
+	nodeResolve({
+		preferBuiltins: true,
+	}),
 	commonjs(),
 	terser(),
 ];
