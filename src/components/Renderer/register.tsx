@@ -82,6 +82,7 @@ const nodeRegistry: Record<string, (node: PmNode) => JSX.Element> = {
 	hardBreak: (node: PmNode) => <Break node={node} />,
 	bulletList: (node: PmNode) => <BulletList node={node} />,
 	listItem: (node: PmNode) => <ListItem node={node} />,
+	codeBlock: (node: PmNode) => <CodeBlock node={node} />,
 };
 
 const getNodeFactory = (nodeType: string) => nodeRegistry[nodeType];
