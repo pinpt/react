@@ -96,30 +96,38 @@ export const Test_Youtube: React.VFC<{}> = () => (
 	</Pinpoint>
 );
 
-export const Test_Widgets: React.VFC<{}> = () => (
-	<Pinpoint siteId="0eG8DEulKKdC0HYeNRZT">
-		{(ready) => {
-			return (
-				<div>
-					{ready ? 'scripts ready' : 'scripts loading'}
-					<div className="most-recent-target" />
-				</div>
-			);
-		}}
-	</Pinpoint>
-);
+export const Test_Widgets: React.VFC<{}> = (a, b) => {
+	console.log(a, b);
+	return (
+		<Pinpoint siteId="0eG8DEulKKdC0HYeNRZT">
+			{(ready) => {
+				return (
+					<div>
+						{ready ? 'scripts ready' : 'scripts loading'}
+						<div className="most-recent-target" />
+					</div>
+				);
+			}}
+		</Pinpoint>
+	);
+};
 
 (Test_Widgets as any).loaders = [
 	async () => {
 		return {
-			ready: (() => {
-				const head = document.getElementsByTagName('head')?.[0];
-				const elem = document.createElement('script');
-				elem.src = 'https://keegandonley.edge.changelog.so/a.js';
-				elem.defer = true;
-				elem.async = true;
-				elem.setAttribute('data-use-react', '');
-				head.appendChild(elem);
+			ready: await (async () => {
+				const res: boolean = await new Promise((resolve) => {
+					const head = document.getElementsByTagName('head')?.[0];
+					const elem = document.createElement('script');
+					elem.src = 'https://keegandonley.edge.changelog.so/a.js';
+					elem.setAttribute('data-use-react', 'true');
+					elem.onload = () => {
+						resolve(true);
+					};
+					head.appendChild(elem);
+				});
+
+				return res;
 			})(),
 		};
 	},
