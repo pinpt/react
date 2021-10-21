@@ -54,6 +54,7 @@ const nodeRegistry: Record<string, (node: PmNode) => JSX.Element> = {
 	blockquote: (node: PmNode) => <BlockQuote node={node} />,
 	paragraph: (node: PmNode) => <Paragraph node={node} />,
 	br: (node: PmNode) => <Break node={node} />,
+	hard_break: (node: PmNode) => <Break node={node} />,
 	bullet_list: (node: PmNode) => <BulletList node={node} />,
 	code_block: (node: PmNode) => <CodeBlock node={node} />,
 	embed: (node: PmNode) => <Embed node={node} />,
@@ -78,6 +79,9 @@ const nodeRegistry: Record<string, (node: PmNode) => JSX.Element> = {
 	table: (node: PmNode) => <Table node={node} />,
 	text: (node: PmNode) => <Text node={node} />,
 	toggle: (node: PmNode) => <Toggle node={node} />,
+	hardBreak: (node: PmNode) => <Break node={node} />,
+	bulletList: (node: PmNode) => <BulletList node={node} />,
+	listItem: (node: PmNode) => <ListItem node={node} />,
 };
 
 const getNodeFactory = (nodeType: string) => nodeRegistry[nodeType];
@@ -86,7 +90,7 @@ export const ProsemirrorNodeRender = ({ node, path }: { node: PmNode; path?: str
 	const component = getNodeFactory(node.type);
 	if (!component) {
 		console.error(`unknown node type: ${node.type}`, node);
-		return <div>unknown {node.type}</div>;
+		return <div />;
 	}
 	if (!node._path) {
 		node._path = 'doc';
