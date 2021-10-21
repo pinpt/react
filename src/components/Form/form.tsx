@@ -4,7 +4,7 @@
 // - Alert
 // - Cancel handler
 
-import { ReactNode } from 'react';
+import React, { ReactNode } from 'react';
 
 export interface IFormProps {
 	className?: string;

@@ -1,7 +1,7 @@
 // TODO @keegan
 // - Info & Error Tooltips
 
-import { ReactNode } from 'react';
+import React, { ReactNode } from 'react';
 
 export interface IFieldProps {
 	className?: string;
