@@ -1,6 +1,6 @@
 import Form from '../../Form/form';
 import Field from '../../Form/field';
-import { ChangeEvent, useCallback, useState } from 'react';
+import React, { ChangeEvent, useCallback } from 'react';
 import useEmailValidation from '../../../lib/hooks/useEmailValidation';
 
 export interface ISubscribeProps {
