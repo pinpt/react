@@ -4,6 +4,7 @@ import NotificationBanner from '../../widgets/NotificationBanner';
 import useScriptLoader from '../../lib/hooks/useScriptLoader';
 import NotificationPopup from '../../widgets/NotificationPopup';
 import NotificationModal from '../../widgets/NotificationModal';
+import MostRecentPosts from '../../widgets/MostRecentPosts';
 
 export interface IPinpointProps {
 	siteId: string;
@@ -115,6 +116,8 @@ const Pinpoint = (props: IPinpointProps) => {
 				const container = document.querySelectorAll(target.selector)?.[0];
 				if (container) {
 					render(result, container);
+				} else {
+					debug('Container not found, skipping render', target.selector)
 				}
 				return { container, remove: false };
 			}
@@ -165,6 +168,13 @@ const Pinpoint = (props: IPinpointProps) => {
 							footer={widget.footer}
 							header={widget.header}
 							previewData={widget.previewData}
+						/>
+					);
+				} else if (widget.type === 'most_recent_posts') {
+					component = (
+						<MostRecentPosts
+							previewData={widget.previewData}
+							count={widget.count}
 						/>
 					);
 				}

@@ -100,7 +100,12 @@ export const Test_Youtube: React.VFC<{}> = () => (
 export const Test_Widgets: React.VFC<{}> = () => (
 	<Pinpoint siteId="0eG8DEulKKdC0HYeNRZT" widgetSDKEnabled>
 		{(ready) => {
-			return <div>{ready ? 'scripts ready' : 'scripts loading'}</div>;
+			return (
+				<div>
+					{ready ? 'scripts ready' : 'scripts loading'}
+					<div className="most-recent-target" />
+				</div>
+			);
 		}}
 	</Pinpoint>
 );
@@ -109,12 +114,14 @@ export const Test_Widgets: React.VFC<{}> = () => (
 	async () => {
 		return {
 			ready: (() => {
-				const head = document.getElementsByTagName('head')?.[0];
-				const elem = document.createElement('script');
-				elem.src = 'https://keegandonley.edge.changelog.so/a.js';
-				elem.defer = true;
-				elem.async = true;
-				head.appendChild(elem);
+				setTimeout(() => {
+					const head = document.getElementsByTagName('head')?.[0];
+					const elem = document.createElement('script');
+					elem.src = 'https://keegandonley.edge.changelog.so/a.js';
+					elem.defer = true;
+					elem.async = true;
+					head.appendChild(elem);
+				}, 200);
 			})(),
 		};
 	},
