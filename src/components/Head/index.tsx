@@ -1,8 +1,8 @@
 import type { ISite, IContent } from '../../lib/types';
 import React from 'react';
 import { getSiteAnalyticsURL } from '../../lib/router';
-import SEO from './SEO';
 import ScriptPlugins from './ScriptPlugins';
+import SEO from './SEO';
 
 export interface IHeadProps {
 	site: ISite;
@@ -21,8 +21,8 @@ const Head = (props: IHeadProps) => {
 				src={getSiteAnalyticsURL(site)}
 				data-site-id={site.id}
 				data-id={content?.id}
+				data-base-path={site.basePath}
 				data-use-react
-				base-path={site.basePath}
 			/>
 			{site.scriptPlugins ? <ScriptPlugins plugins={site.scriptPlugins} /> : null}
 			<meta name="generator" content="pinpoint.com" />
