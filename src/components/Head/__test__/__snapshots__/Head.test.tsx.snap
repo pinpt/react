@@ -14,11 +14,10 @@ Array [
     name="viewport"
   />,
   <script
-    async={true}
     base-path="/"
     data-id="oroH8YQr4vufOiVTRND4"
     data-site-id="PirxVTE94u3YmGNOySRY"
-    defer={true}
+    data-use-react={true}
     src="/a.js"
   />,
   <meta
@@ -148,10 +147,9 @@ Array [
     name="viewport"
   />,
   <script
-    async={true}
     base-path="/"
     data-site-id="PirxVTE94u3YmGNOySRY"
-    defer={true}
+    data-use-react={true}
     src="/a.js"
   />,
   <meta
@@ -247,11 +245,10 @@ Array [
     name="viewport"
   />,
   <script
-    async={true}
     base-path="/blog"
     data-id="oroH8YQr4vufOiVTRND4"
     data-site-id="PirxVTE94u3YmGNOySRY"
-    defer={true}
+    data-use-react={true}
     src="https://changelog.pinpoint.com/a.js"
   />,
   <meta

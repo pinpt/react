@@ -54,7 +54,7 @@ declare global {
 		};
 		__Pinpoint: {
 			load: () => void;
-		}
+		};
 		PinpointSettings: PinpointSettings;
 	}
 }
