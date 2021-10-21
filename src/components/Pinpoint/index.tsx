@@ -12,7 +12,10 @@ export interface IPinpointProps {
 	basePath?: string;
 	children: (ready: boolean, ref: any) => ReactElement;
 	noIFramely?: boolean;
-	widgetSDKEnabled?: boolean;
+	renderNotificationBannerWidget?: (widget: any) => ReactElement;
+	renderNotificationPopupWidget?: (widget: any) => ReactElement;
+	renderNoficiationModalWidget?: (widget: any) => ReactElement;
+	renderMostRecentPostsWidget?: (widget: any) => ReactElement;
 }
 
 type CustomPropertyType = string | number | boolean;
@@ -65,7 +68,16 @@ const debug = (...args: any) => {
 };
 
 const Pinpoint = (props: IPinpointProps) => {
-	const { siteId, contentId, basePath, noIFramely, widgetSDKEnabled = false } = props;
+	const {
+		siteId,
+		contentId,
+		basePath,
+		noIFramely,
+		renderMostRecentPostsWidget,
+		renderNoficiationModalWidget,
+		renderNotificationBannerWidget,
+		renderNotificationPopupWidget,
+	} = props;
 	const [ready] = useScriptLoader(
 		noIFramely ? [] : [`https://cdn.iframe.ly/embed.js?api_key=ab49ad398c6f631ab44eca&origin=${siteId}`]
 	);
@@ -117,7 +129,7 @@ const Pinpoint = (props: IPinpointProps) => {
 				if (container) {
 					render(result, container);
 				} else {
-					debug('Container not found, skipping render', target.selector)
+					debug('Container not found, skipping render', target.selector);
 				}
 				return { container, remove: false };
 			}
@@ -143,7 +155,7 @@ const Pinpoint = (props: IPinpointProps) => {
 				const elemId = `${widget.type}-${widget.id}`;
 				let component: ReactElement | null = null;
 				if (widget.type === 'notification_banner') {
-					component = (
+					component = renderNotificationBannerWidget?.(widget) ?? (
 						<NotificationBanner
 							background={widget.background}
 							foreground={widget.foreground}
@@ -153,7 +165,7 @@ const Pinpoint = (props: IPinpointProps) => {
 						/>
 					);
 				} else if (widget.type === 'notification_popup') {
-					component = (
+					component = renderNotificationPopupWidget?.(widget) ?? (
 						<NotificationPopup
 							button={widget.button}
 							header={widget.header}
@@ -162,7 +174,7 @@ const Pinpoint = (props: IPinpointProps) => {
 						/>
 					);
 				} else if (widget.type === 'notification_modal') {
-					component = (
+					component = renderNoficiationModalWidget?.(widget) ?? (
 						<NotificationModal
 							button={widget.button}
 							footer={widget.footer}
@@ -171,11 +183,8 @@ const Pinpoint = (props: IPinpointProps) => {
 						/>
 					);
 				} else if (widget.type === 'most_recent_posts') {
-					component = (
-						<MostRecentPosts
-							previewData={widget.previewData}
-							count={widget.count}
-						/>
+					component = renderMostRecentPostsWidget?.(widget) ?? (
+						<MostRecentPosts previewData={widget.previewData} count={widget.count} />
 					);
 				}
 
@@ -201,7 +210,13 @@ const Pinpoint = (props: IPinpointProps) => {
 				els.forEach(removeElement);
 			}
 		};
-	}, [widgets]);
+	}, [
+		widgets,
+		renderNotificationBannerWidget,
+		renderNoficiationModalWidget,
+		renderMostRecentPostsWidget,
+		renderNotificationPopupWidget,
+	]);
 
 	const wireUpToggles = () => {
 		const toggles = document.querySelectorAll('.toggle');
