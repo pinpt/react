@@ -11,6 +11,7 @@ interface PageProps {
 		siteUrl: string;
 		content: IContent[];
 	};
+	className?: string;
 }
 
 const Tile = ({ content }: { content: IContent }) => {
@@ -37,9 +38,9 @@ const Tile = ({ content }: { content: IContent }) => {
 };
 
 const Page = (props: PageProps) => {
-	const { previewData } = props;
+	const { previewData, className = '' } = props;
 	return (
-		<div className="Pinpoint Widget MostRecentPosts">
+		<div className={`Pinpoint Widget MostRecentPosts ${className}`}>
 			{previewData.content.map((content) => (
 				<Tile key={content.id ?? content.url} content={content} />
 			))}

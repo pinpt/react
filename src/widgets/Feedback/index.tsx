@@ -115,7 +115,7 @@ const Feedback = (props: IFeedbackProps) => {
 		}
 	}, [config, widgetId, isSubscriber, message, email]);
 	return (
-		<div className={`${className} Pinpoint Widget Feedback`}>
+		<div className={`Pinpoint Widget Feedback ${className}`}>
 			{!success ? (
 				<>
 					<div className="title">{title}</div>

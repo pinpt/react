@@ -1,5 +1,10 @@
-import { ReactElement, useEffect, useRef } from 'react';
+import React, { cloneElement, ReactElement, useCallback, useEffect, useRef, useState } from 'react';
+import { render } from 'react-dom';
+import NotificationBanner from '../../widgets/NotificationBanner';
 import useScriptLoader from '../../lib/hooks/useScriptLoader';
+import NotificationPopup from '../../widgets/NotificationPopup';
+import NotificationModal from '../../widgets/NotificationModal';
+import MostRecentPosts from '../../widgets/MostRecentPosts';
 
 export interface IPinpointProps {
 	siteId: string;
@@ -7,7 +12,10 @@ export interface IPinpointProps {
 	basePath?: string;
 	children: (ready: boolean, ref: any) => ReactElement;
 	noIFramely?: boolean;
-	widgetSDKEnabled?: boolean;
+	renderNotificationBannerWidget?: (widget: any) => ReactElement;
+	renderNotificationPopupWidget?: (widget: any) => ReactElement;
+	renderNoficiationModalWidget?: (widget: any) => ReactElement;
+	renderMostRecentPostsWidget?: (widget: any) => ReactElement;
 }
 
 type CustomPropertyType = string | number | boolean;
@@ -44,29 +52,56 @@ declare global {
 			identify: (identityData: IdentifyData) => void;
 			registerSDKForWidget: (cb: (res: any[]) => void) => () => void;
 		};
+		__Pinpoint: {
+			load: () => void;
+		};
 		PinpointSettings: PinpointSettings;
 	}
 }
 
+const USE_SDK_FOR_WIDGETS =
+	typeof localStorage === 'undefined' ? false : localStorage.getItem('pinpoint.react.widgets') === 'true';
+const DEBUG_MODE =
+	typeof localStorage === 'undefined' ? false : localStorage.getItem('pinpoint.beacon.debug') === 'true';
+
+const debug = (...args: any) => {
+	if (DEBUG_MODE) {
+		console.debug('[@pinpt/react]', ...args);
+	}
+};
+
 const Pinpoint = (props: IPinpointProps) => {
-	const { siteId, contentId, basePath, noIFramely, widgetSDKEnabled = false } = props;
+	const {
+		siteId,
+		contentId,
+		basePath,
+		noIFramely,
+		renderMostRecentPostsWidget,
+		renderNoficiationModalWidget,
+		renderNotificationBannerWidget,
+		renderNotificationPopupWidget,
+	} = props;
 	const [ready] = useScriptLoader(
 		noIFramely ? [] : [`https://cdn.iframe.ly/embed.js?api_key=ab49ad398c6f631ab44eca&origin=${siteId}`]
 	);
+	const [widgets, setWidgets] = useState<any[]>([]);
 	const wiredUp = useRef(false);
 
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
 			let clearSDK: () => void;
-			if (widgetSDKEnabled) {
+			if (USE_SDK_FOR_WIDGETS) {
 				window.PinpointSettings = {
 					...(window.PinpointSettings ?? {}),
 					onLoad: () => {
+						debug('Beacon called onload');
 						clearSDK = window.Pinpoint?.registerSDKForWidget?.((res) => {
-							console.log(res);
+							debug('Got widgets from beacon', res);
+							setWidgets(res);
 						});
 					},
 				};
+				window.__Pinpoint?.load?.();
 			}
 			const clearTracking = window.Pinpoint?.startTracking?.(siteId, contentId, basePath);
 
@@ -75,7 +110,125 @@ const Pinpoint = (props: IPinpointProps) => {
 				clearSDK?.();
 			};
 		}
-	}, [siteId, contentId, widgetSDKEnabled]);
+	}, [siteId, contentId]);
+
+	const buildComponentRenderer = useCallback(
+		(component: ReactElement, elemId: string, target: { selector: string; action: string }, cb: () => void) => {
+			const result = cloneElement(component, {
+				onClose: cb,
+			});
+			if (target.selector === 'body') {
+				const container = document.createElement('div');
+				container.id = elemId;
+				if (target.action === 'prepend') {
+					document.body.prepend(container);
+				} else {
+					document.body.append(container);
+				}
+
+				render(result, container);
+				return [{ container, remove: true }];
+			} else {
+				const res = [] as any[];
+				const containers = document.querySelectorAll(target.selector);
+				containers.forEach((container) => {
+					if (container) {
+						render(result, container);
+					} else {
+						debug('Container not found, skipping render', target.selector);
+					}
+					res.push({ container, remove: false });
+				});
+				return res;
+			}
+		},
+		[]
+	);
+
+	const removeElement = useCallback((res: { id: string; elem: Element; remove: boolean }) => {
+		if (res.remove) {
+			document.body.removeChild(res.elem);
+		} else {
+			res.elem.innerHTML = '';
+		}
+	}, []);
+
+	useEffect(() => {
+		const els = [] as { id: string; elem: Element; remove: boolean }[];
+		widgets.forEach((widget) => {
+			const { target, suppression } = widget;
+			if (suppression && localStorage.getItem(suppression.key) === suppression.value) {
+				debug('Widget rendering suppressed by local suppression key');
+			} else {
+				const elemId = `${widget.type}-${widget.id}`;
+				let component: ReactElement | null = null;
+				if (widget.type === 'notification_banner') {
+					component = renderNotificationBannerWidget?.(widget) ?? (
+						<NotificationBanner
+							background={widget.background}
+							foreground={widget.foreground}
+							icon={widget.icon}
+							message={widget.message}
+							previewData={widget.previewData}
+						/>
+					);
+				} else if (widget.type === 'notification_popup') {
+					component = renderNotificationPopupWidget?.(widget) ?? (
+						<NotificationPopup
+							button={widget.button}
+							header={widget.header}
+							previewData={widget.previewData}
+							target={widget.target}
+						/>
+					);
+				} else if (widget.type === 'notification_modal') {
+					component = renderNoficiationModalWidget?.(widget) ?? (
+						<NotificationModal
+							button={widget.button}
+							footer={widget.footer}
+							header={widget.header}
+							previewData={widget.previewData}
+						/>
+					);
+				} else if (widget.type === 'most_recent_posts') {
+					component = renderMostRecentPostsWidget?.(widget) ?? (
+						<MostRecentPosts previewData={widget.previewData} count={widget.count} />
+					);
+				}
+
+				if (component) {
+					if (suppression && !DEBUG_MODE) {
+						localStorage.setItem(suppression.key, suppression.value);
+					}
+					const results = buildComponentRenderer(component, elemId, target, () => {
+						debug('Removing element from the DOM on close', elemId);
+						results.forEach((result) => {
+							removeElement({ id: elemId, elem: result.container, remove: result.remove });
+							const idx = els.findIndex((e) => e.id === elemId);
+							if (idx >= 0) {
+								els.splice(idx, 1);
+							}
+						});
+					});
+					results.forEach((result) => {
+						els.push({ id: elemId, elem: result.container, remove: result.remove });
+					});
+				}
+			}
+		});
+
+		return () => {
+			if (els.length) {
+				els.forEach(removeElement);
+			}
+		};
+	}, [
+		widgets,
+		renderNotificationBannerWidget,
+		renderNoficiationModalWidget,
+		renderMostRecentPostsWidget,
+		renderNotificationPopupWidget,
+	]);
 
 	const wireUpToggles = () => {
 		const toggles = document.querySelectorAll('.toggle');

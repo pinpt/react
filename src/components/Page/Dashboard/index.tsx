@@ -1,4 +1,4 @@
-import { ReactElement } from 'react';
+import { forwardRef, ReactElement } from 'react';
 import { ISearchResultsProps } from '../../Search/Results';
 import { IFooterProps } from '../../Footer';
 import { IHeaderProps } from '../../Header';
@@ -22,11 +22,11 @@ export interface IPageDashboardProps {
 	loading?: boolean;
 }
 
-const Dashboard = (props: IPageDashboardProps) => {
+const Dashboard = forwardRef((props: IPageDashboardProps, ref: any) => {
 	const { className = '', footer, latest, recent, header, searchResults, loading, searchQuery, pagination } = props;
 
 	return (
-		<div className={`Pinpoint Page Dashboard ${className}`}>
+		<div className={`Pinpoint Page Dashboard ${className}`} ref={ref}>
 			{withWrapper(header, 'header')}
 			{loading ? (
 				<div className="loaderWrapper">
@@ -44,6 +44,6 @@ const Dashboard = (props: IPageDashboardProps) => {
 			{withWrapper(footer, 'footer')}
 		</div>
 	);
-};
+});
 
 export default Dashboard;

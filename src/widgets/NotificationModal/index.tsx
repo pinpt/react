@@ -28,11 +28,13 @@ interface PageProps {
 	};
 	onClose?: () => void;
 	__previewMode?: boolean;
+	className?: string;
 }
 
 const NotificationModal = (props: PageProps) => {
 	const linkRef = useRef<any>();
-	const { previewData, button, header, footer } = props;
+	const modalRef = useRef<any>();
+	const { previewData, button, header, footer, className = '' } = props;
 	const { title, headline, url, coverMedia, siteUrl } = previewData;
 	const { title: headerTitle = 'New Updates' } = header ?? {};
 	const { title: footerTitle = 'Changelog' } = footer ?? {};
@@ -50,14 +52,16 @@ const NotificationModal = (props: PageProps) => {
 
 	const handleClose = useCallback(() => {
 		setVisible(false);
+		modalRef.current?.remove?.();
 		props.onClose?.();
 	}, [props.onClose]);
 
 	return (
 		<Modal
 			visible={visible}
-			className={`Pinpoint Widget Notification Modal covermedia-type-${coverMedia?.type ?? ''}`}
+			className={`Pinpoint Widget Notification Modal covermedia-type-${coverMedia?.type ?? ''} ${className}`}
 			__previewMode={props.__previewMode}
+			ref={modalRef}
 		>
 			<div className="wrapper" style={{ minHeight: !coverMedia || coverMedia?.type === 'none' ? '185px' : '365px' }}>
 				<div className="header">

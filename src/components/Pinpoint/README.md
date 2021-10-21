@@ -22,3 +22,7 @@ It should be placed at the top level of your application, as such:
 #### Theming
 
 This component has no styles associated with it.
+
+#### Widgets
+
+In order to test widgets, the beacon must be loaded. When viewing stories in canvas mode, the beacon will be loaded for the `Test Widgets` story.

@@ -18,9 +18,11 @@ interface Props {
 		url: string;
 	};
 	onClose?: () => void;
+	className?: string;
 }
 
 const NotificationBanner = (props: Props) => {
+	const { className = '' } = props;
 	let icon: IconDefinition | undefined = undefined;
 	switch (props.icon) {
 		case 'info_circle': {
@@ -45,7 +47,7 @@ const NotificationBanner = (props: Props) => {
 	const message = props.message.replace('{title}', props.previewData.title);
 	return (
 		<Banner
-			className="Pinpoint Widget Notification Banner"
+			className={`Pinpoint Widget Notification Banner ${className}`}
 			icon={icon}
 			message={
 				// allow it for tracking purposes

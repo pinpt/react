@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef, useCallback, useImperativeHandle } from 'react';
 import { useEffect, useRef, useState, createElement } from 'react';
 import { createPortal } from 'react-dom';
 
@@ -9,7 +9,7 @@ interface ModalProps {
 	__previewMode?: boolean;
 }
 
-const Modal = (props: ModalProps) => {
+const Modal = forwardRef((props: ModalProps, ref: any) => {
 	const elementRef = useRef<any>();
 	const containerRef = useRef<any>();
 	const shadowRef = useRef<any>();
@@ -69,6 +69,7 @@ const Modal = (props: ModalProps) => {
 			};
 		}
 	}, [props.__previewMode]);
+
 	useEffect(() => setVisible(props.visible), [props.visible]);
 	useEffect(() => {
 		if (visible) {
@@ -99,6 +100,21 @@ const Modal = (props: ModalProps) => {
 			containerRef.current.style.opacity = '0';
 		}
 	}, [visible, props.__previewMode]);
+
+	const removeFromDOM = useCallback(() => {
+		if (elementRef?.current) {
+			document.body.removeChild(elementRef.current);
+		}
+	}, []);
+
+	useImperativeHandle(
+		ref,
+		() => ({
+			remove: removeFromDOM,
+		}),
+		[removeFromDOM]
+	);
+
 	if (containerRef.current && visible) {
 		if (props.__previewMode) {
 			return (
@@ -110,6 +126,6 @@ const Modal = (props: ModalProps) => {
 		return createPortal(props.children, containerRef.current);
 	}
 	return null;
-};
+});
 
 export default Modal;

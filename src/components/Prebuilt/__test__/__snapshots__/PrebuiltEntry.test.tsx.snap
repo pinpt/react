@@ -575,7 +575,7 @@ exports[`Test custom className 1`] = `
               className="Pinpoint constraint"
             >
               <div
-                className=" Pinpoint Widget Feedback"
+                className="Pinpoint Widget Feedback "
               >
                 <div
                   className="title"
@@ -1736,7 +1736,7 @@ exports[`Test default state 1`] = `
               className="Pinpoint constraint"
             >
               <div
-                className=" Pinpoint Widget Feedback"
+                className="Pinpoint Widget Feedback "
               >
                 <div
                   className="title"
@@ -2790,7 +2790,7 @@ exports[`Test no author 1`] = `
               className="Pinpoint constraint"
             >
               <div
-                className=" Pinpoint Widget Feedback"
+                className="Pinpoint Widget Feedback "
               >
                 <div
                   className="title"
@@ -4138,7 +4138,7 @@ exports[`Test no authors 1`] = `
               className="Pinpoint constraint"
             >
               <div
-                className=" Pinpoint Widget Feedback"
+                className="Pinpoint Widget Feedback "
               >
                 <div
                   className="title"
@@ -5122,7 +5122,7 @@ exports[`Test no claps 1`] = `
               className="Pinpoint constraint"
             >
               <div
-                className=" Pinpoint Widget Feedback"
+                className="Pinpoint Widget Feedback "
               >
                 <div
                   className="title"
@@ -6199,7 +6199,7 @@ exports[`Test not zoomable 1`] = `
               className="Pinpoint constraint"
             >
               <div
-                className=" Pinpoint Widget Feedback"
+                className="Pinpoint Widget Feedback "
               >
                 <div
                   className="title"
@@ -7200,7 +7200,7 @@ exports[`Test with pagination 1`] = `
               className="Pinpoint constraint"
             >
               <div
-                className=" Pinpoint Widget Feedback"
+                className="Pinpoint Widget Feedback "
               >
                 <div
                   className="title"
