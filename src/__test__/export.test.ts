@@ -98,6 +98,7 @@ const {
 	NotificationModalWidget,
 	NotificationPopupWidget,
 	NotificationBannerWidget,
+	validateSubscription,
 	...otherExports
 } = Exports;
 
@@ -219,6 +220,7 @@ test('Test util exports', () => {
 	expect(getQueryString).toBeTruthy();
 	expect(getDocumentHeadings).toBeTruthy();
 	expect(titleCase).toBeTruthy();
+	expect(validateSubscription).toBeTruthy();
 });
 
 test('Test hook exports', () => {
