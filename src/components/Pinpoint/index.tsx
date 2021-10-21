@@ -1,5 +1,5 @@
-import { cloneElement, createElement, ReactElement, useCallback, useEffect, useRef, useState } from 'react';
-import { createPortal, render } from 'react-dom';
+import React, { cloneElement, ReactElement, useCallback, useEffect, useRef, useState } from 'react';
+import { render } from 'react-dom';
 import NotificationBanner from '../../widgets/NotificationBanner';
 import useScriptLoader from '../../lib/hooks/useScriptLoader';
 import NotificationPopup from '../../widgets/NotificationPopup';
@@ -57,7 +57,7 @@ const USE_SDK_FOR_WIDGETS =
 const DEBUG_MODE =
 	typeof localStorage === 'undefined' ? false : localStorage.getItem('pinpoint.beacon.debug') === 'true';
 
-const debug = (...args) => {
+const debug = (...args: any) => {
 	if (DEBUG_MODE) {
 		console.debug('[@pinpt/react]', ...args);
 	}
