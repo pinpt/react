@@ -58,6 +58,10 @@ export interface IPrebuiltEntryProps {
 	handleSelectEntry?: (entry: IContent) => void;
 	zoomable?: boolean;
 	handleAddTagToQuery?: (value: string) => void;
+	renderNotificationBannerWidget?: (widget: any) => ReactElement;
+	renderNotificationPopupWidget?: (widget: any) => ReactElement;
+	renderNoficiationModalWidget?: (widget: any) => ReactElement;
+	renderMostRecentPostsWidget?: (widget: any) => ReactElement;
 }
 
 const feedbackTitleFromContent = (content: IContent): string => {
@@ -110,10 +114,22 @@ const Entry = (props: IPrebuiltEntryProps) => {
 		handleSelectEntry,
 		zoomable,
 		handleAddTagToQuery,
+		renderMostRecentPostsWidget,
+		renderNoficiationModalWidget,
+		renderNotificationPopupWidget,
+		renderNotificationBannerWidget,
 	} = props;
 
 	return (
-		<Pinpoint siteId={site.id} basePath={site.basePath} contentId={content.id}>
+		<Pinpoint
+			siteId={site.id}
+			basePath={site.basePath}
+			contentId={content.id}
+			renderMostRecentPostsWidget={renderMostRecentPostsWidget}
+			renderNoficiationModalWidget={renderNoficiationModalWidget}
+			renderNotificationPopupWidget={renderNotificationPopupWidget}
+			renderNotificationBannerWidget={renderNotificationBannerWidget}
+		>
 			{(_ready, ref) => (
 				<EntryPage
 					ref={ref}
