@@ -92,6 +92,7 @@ const {
 	useBackground,
 	getDocumentHeadings,
 	getRouterRelativePath,
+	getRouterAbsolutePath,
 	getSiteAnalyticsURL,
 	getSiteRSSURL,
 	MostRecentPostsWidget,

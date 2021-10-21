@@ -5,6 +5,14 @@ Array [
   <meta
     charSet="utf-8"
   />,
+  <link
+    href="https://site-cdn.pinpoint.com"
+    rel="preconnect"
+  />,
+  <link
+    href="https://file.pinpoint.com"
+    rel="preconnect"
+  />,
   <meta
     content="ie=edge"
     httpEquiv="x-ua-compatible"
@@ -138,6 +146,14 @@ Array [
   <meta
     charSet="utf-8"
   />,
+  <link
+    href="https://site-cdn.pinpoint.com"
+    rel="preconnect"
+  />,
+  <link
+    href="https://file.pinpoint.com"
+    rel="preconnect"
+  />,
   <meta
     content="ie=edge"
     httpEquiv="x-ua-compatible"
@@ -235,6 +251,14 @@ exports[`Test setting basePath 1`] = `
 Array [
   <meta
     charSet="utf-8"
+  />,
+  <link
+    href="https://site-cdn.pinpoint.com"
+    rel="preconnect"
+  />,
+  <link
+    href="https://file.pinpoint.com"
+    rel="preconnect"
   />,
   <meta
     content="ie=edge"

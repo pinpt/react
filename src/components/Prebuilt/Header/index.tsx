@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
 import { ISite } from '../../../lib';
-import { getRouterRelativePath } from '../../../lib/router';
+import { getRouterAbsolutePath } from '../../../lib/router';
 import BaseHeader from '../../Header';
 import Logo, { ILogoProps } from '../../Logo';
 import Search from '../../Search';
@@ -51,7 +51,7 @@ const Header = (props: IPrebuiltHeaderProps) => {
 			onClick={() => handleSelectHome?.()}
 			subscribe={
 				renderSubscribe?.(site) ?? (
-					<Subscribe className="Prebuilt" href={getRouterRelativePath(site, '/subscription/subscribe')} />
+					<Subscribe className="Prebuilt" href={getRouterAbsolutePath(site, '/subscription/subscribe')} />
 				)
 			}
 			themeToggle={renderThemeToggle?.(site) ?? <ThemeToggle className="Prebuilt" />}
