@@ -968,3 +968,7 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 .Pinpoint.Page.SubscriptionSubscribe {
 	@apply flex flex-col h-screen;
 }
+
+.Pinpoint.SubscriptionManage.Entry {
+	@apply flex;
+}

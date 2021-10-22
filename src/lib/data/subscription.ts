@@ -18,3 +18,9 @@ export const validateSubscription = async (config: IPinpointConfig, email: strin
 
 	return res;
 };
+
+export const listSubscriptions = async (config: IPinpointConfig, subscriptionId: string) => {
+	const res = await executeAPI(config, `/subscription/manage/list/${subscriptionId}`, 'GET');
+
+	return res;
+}
