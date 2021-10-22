@@ -4,6 +4,7 @@ export * from './components/Page';
 export * from './components/Documentation';
 export * from './components/SocialMedia';
 export * from './widgets';
+export * from './components/Subscription';
 export { Content, Document, emptyDoc } from './components/Renderer';
 export { default as Clap } from './components/Clap';
 export { default as Statistic } from './components/Statistic';

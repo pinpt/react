@@ -113,8 +113,8 @@ export const Test_Widgets: React.VFC<{}> = (a, b) => {
 	);
 };
 
-// This is a hack to get the beacon to load in the story. Since it's not loaded in the head before 
-// the story loads, we need to block all rendering until it finishes loading. In normal use, the 
+// This is a hack to get the beacon to load in the story. Since it's not loaded in the head before
+// the story loads, we need to block all rendering until it finishes loading. In normal use, the
 // beacon will be loaded in the document head and won't have this problem.
 (Test_Widgets as any).loaders = [
 	async () => {

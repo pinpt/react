@@ -1,13 +1,13 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
-import Subscribe from '../';
+import Unsubscribe from '../';
 const { default: readme } = require('../../README.md');
 
 export default {
-	component: Subscribe,
-	title: 'Components/Subscription/Subscribe',
+	component: Unsubscribe,
+	title: 'Components/Subscription/Unsubscribe',
 	parameters: {
-		jest: ['SubscriptionSubscribe.test.tsx'],
+		jest: ['SubscriptionUnsubscribe.test.tsx'],
 		docs: {
 			description: {
 				component: readme,
@@ -17,4 +17,4 @@ export default {
 	},
 } as Meta;
 
-export const Default: React.VFC<{}> = () => <Subscribe />;
+export const Default: React.VFC<{}> = () => <Unsubscribe />;

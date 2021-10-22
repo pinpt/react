@@ -20,9 +20,16 @@ const Subscribe = (props: ISubscribeProps) => {
 
 	return (
 		<div className={`Pinpoint SubscriptionSubscribe Wrapper ${className}`}>
-			<Form title={`Subscribe to Updates${name ? ` for ${name}` : ''}.`} description="" buttonLocation="bottom" buttons={(
-				<button disabled={!emailValid} className="Pinpoint SubscriptionSubscribe Submit">Submit</button>
-			)}>
+			<Form
+				title={`Subscribe to Updates${name ? ` for ${name}` : ''}.`}
+				description=""
+				buttonLocation="bottom"
+				buttons={
+					<button disabled={!emailValid} className="Pinpoint SubscriptionSubscribe Submit">
+						Submit
+					</button>
+				}
+			>
 				<Field label="Email">
 					<>
 						<input

@@ -99,6 +99,14 @@ const {
 	NotificationPopupWidget,
 	NotificationBannerWidget,
 	validateSubscription,
+	SubscriptionManage,
+	SubscriptionSubscribe,
+	SubscriptionUnsubscribe,
+	SubscriptionVerify,
+	PrebuiltSubscriptionManage,
+	PrebuiltSubscriptionSubscribe,
+	PrebuiltSubscriptionUnsubscribe,
+	PrebuiltSubscriptionVerify,
 	...otherExports
 } = Exports;
 
@@ -153,6 +161,10 @@ test('Test component exports', () => {
 	expect(PrebuiltHeader).toBeTruthy();
 	expect(PrebuiltSearchResults).toBeTruthy();
 	expect(PrebuiltHome).toBeTruthy();
+	expect(PrebuiltSubscriptionManage).toBeTruthy();
+	expect(PrebuiltSubscriptionSubscribe).toBeTruthy();
+	expect(PrebuiltSubscriptionUnsubscribe).toBeTruthy();
+	expect(PrebuiltSubscriptionVerify).toBeTruthy();
 
 	// Test Search Exports
 	expect(Search).toBeTruthy();
@@ -195,6 +207,12 @@ test('Test component exports', () => {
 	expect(Banner).toBeTruthy();
 	expect(isSubscriberCookieSet).toBeTruthy();
 	expect(subscribe).toBeTruthy();
+
+	// Test subscription components
+	expect(SubscriptionManage).toBeTruthy();
+	expect(SubscriptionSubscribe).toBeTruthy();
+	expect(SubscriptionUnsubscribe).toBeTruthy();
+	expect(SubscriptionVerify).toBeTruthy();
 });
 
 test('Test util exports', () => {

@@ -964,3 +964,7 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 .Pinpoint.EmailValidation.Status .Pinpoint.EmailValidation.Icon {
 	@apply mr-2;
 }
+
+.Pinpoint.Page.SubscriptionSubscribe {
+	@apply flex flex-col h-screen;
+}

@@ -14,11 +14,7 @@ export const subscribe = async (config: IPinpointConfig, email: string): Promise
 };
 
 export const validateSubscription = async (config: IPinpointConfig, email: string): Promise<boolean> => {
-	const res = await executeAPI(
-		config,
-		`/subscription/validate/${encodeURIComponent(email)}`,
-		'GET'
-	);
+	const res = await executeAPI(config, `/subscription/validate/${encodeURIComponent(email)}`, 'GET');
 
 	return res;
-}
+};
