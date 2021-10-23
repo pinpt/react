@@ -58,7 +58,7 @@ const ImageBlock = ({ node }: NodeProps) => {
 					scaledHeight={scaledHeight}
 					alt={node.attrs.alt}
 					blurhash={node.attrs.blurhash}
-					zoom
+					zoom={node._opts?.zoomable ?? true}
 				/>
 			)}
 			{node.attrs.alt && <div className="alt">{node.attrs.alt}</div>}

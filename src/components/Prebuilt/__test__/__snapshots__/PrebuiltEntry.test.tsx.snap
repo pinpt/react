@@ -6093,7 +6093,7 @@ exports[`Test not zoomable 1`] = `
                 >
                   <img
                     alt=""
-                    className="Pinpoint Image medium-zoom-body "
+                    className="Pinpoint Image  "
                     decoding="async"
                     height={509.6}
                     loading="lazy"
@@ -6148,7 +6148,7 @@ exports[`Test not zoomable 1`] = `
                 >
                   <img
                     alt=""
-                    className="Pinpoint Image medium-zoom-body "
+                    className="Pinpoint Image  "
                     decoding="async"
                     height={360}
                     loading="lazy"

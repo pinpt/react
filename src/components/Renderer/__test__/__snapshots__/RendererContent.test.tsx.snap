@@ -319,6 +319,50 @@ exports[`Test Image cover media with blurhash in url 1`] = `
 </section>
 `;
 
+exports[`Test Image cover media with no zoom 1`] = `
+<section
+  className="Pinpoint cover covermedia"
+>
+  <div
+    className="Pinpoint media-container"
+  >
+    <div
+      className="Pinpoint image"
+    >
+      <img
+        alt=""
+        className="Pinpoint Image  "
+        decoding="async"
+        loading="eager"
+        src="https://file.edge.pinpoint.com/b1ee49fa5ea82ea3b71d0101ddc28a84"
+      />
+    </div>
+  </div>
+</section>
+`;
+
+exports[`Test Image cover media with zoom 1`] = `
+<section
+  className="Pinpoint cover covermedia"
+>
+  <div
+    className="Pinpoint media-container"
+  >
+    <div
+      className="Pinpoint image"
+    >
+      <img
+        alt=""
+        className="Pinpoint Image medium-zoom-cover "
+        decoding="async"
+        loading="eager"
+        src="https://file.edge.pinpoint.com/b1ee49fa5ea82ea3b71d0101ddc28a84"
+      />
+    </div>
+  </div>
+</section>
+`;
+
 exports[`Test Youtube cover media with hqdefault 1`] = `
 <section
   className="Pinpoint cover covermedia"
@@ -1272,6 +1316,33 @@ exports[`Test simple image block with link 1`] = `
         />
       </div>
     </a>
+    <div
+      className="alt"
+    >
+      Image Caption
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Test simple image block with no zoom 1`] = `
+<div
+  className="Pinpoint document"
+>
+  <div
+    className="image_block undefined"
+  >
+    <div
+      className="image"
+    >
+      <img
+        alt="Image Caption"
+        className="Pinpoint Image  "
+        decoding="async"
+        loading="lazy"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+      />
+    </div>
     <div
       className="alt"
     >

@@ -1,12 +1,12 @@
 import mediumZoom from 'medium-zoom';
-import { forwardRef, useEffect } from 'react';
+import React, { forwardRef, useEffect } from 'react';
 import Content, { CoverMedia } from './content';
 import { DocOpts, NodeProps, recurseIntoChildren } from './register';
-import React from 'react';
 
 const Document = forwardRef(({ node, limit, opts }: NodeProps & { limit?: number; opts?: DocOpts }, ref: any) => {
+	const { zoomable = true } = opts ?? {};
 	useEffect(() => {
-		if (typeof window !== 'undefined') {
+		if (typeof window !== 'undefined' && zoomable) {
 			mediumZoom('.medium-zoom-body');
 		}
 	}, []);

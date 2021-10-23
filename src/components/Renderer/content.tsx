@@ -1,6 +1,8 @@
 import mediumZoom from 'medium-zoom';
 import React, { forwardRef, useEffect } from 'react';
-import { addFileExtension, extractImageMetadataFromFileID, isFileAPI } from '../../lib/file_metadata';
+import {
+	addFileExtension, extractImageMetadataFromFileID, isFileAPI
+} from '../../lib/file_metadata';
 import { slugifyContent } from '../../lib/string';
 import { CoverMediaType } from '../../lib/types/content';
 import Image from '../Image';
@@ -23,7 +25,7 @@ const ImageMedia = ({
 	const { size, blurhash: _blurhash } = extractImageMetadataFromFileID(src ?? '');
 
 	useEffect(() => {
-		if (typeof window !== 'undefined') {
+		if (typeof window !== 'undefined' && zoomable) {
 			mediumZoom('.medium-zoom-cover');
 		}
 	}, []);
@@ -119,14 +121,16 @@ interface ContentProps {
 	coverMedia?: ICoverMedia;
 	limit?: number;
 	divider?: boolean;
+	zoomable?: boolean;
 }
 
 const Content = forwardRef((props: ContentProps, ref: any) => {
+	const { zoomable = true } = props;
 	return (
 		<article ref={ref}>
-			{props.coverMedia && <CoverMedia media={props.coverMedia} title={props.title} />}
+			{props.coverMedia && <CoverMedia media={props.coverMedia} title={props.title} zoomable={zoomable} />}
 			<section className="Pinpoint content">
-				<Document node={props.document} limit={props.limit} />
+				<Document node={props.document} limit={props.limit} opts={{ zoomable }} />
 				{props.limit && props.document.content?.length > props.limit && (
 					<div className="Pinpoint continue">
 						<a href={slugifyContent(props.id, props.title)}>Continue Reading →</a>
