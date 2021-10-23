@@ -409,7 +409,7 @@ exports[`Test custom className 1`] = `
               >
                 <img
                   alt="Linked Content Blocks"
-                  className="Pinpoint Image medium-zoom-cover "
+                  className="Pinpoint Image  "
                   decoding="async"
                   height={900}
                   loading="eager"
@@ -469,7 +469,7 @@ exports[`Test custom className 1`] = `
                 >
                   <img
                     alt=""
-                    className="Pinpoint Image medium-zoom-body "
+                    className="Pinpoint Image  "
                     decoding="async"
                     height={509.6}
                     loading="lazy"
@@ -524,7 +524,7 @@ exports[`Test custom className 1`] = `
                 >
                   <img
                     alt=""
-                    className="Pinpoint Image medium-zoom-body "
+                    className="Pinpoint Image  "
                     decoding="async"
                     height={360}
                     loading="lazy"
@@ -1570,7 +1570,7 @@ exports[`Test default state 1`] = `
               >
                 <img
                   alt="Linked Content Blocks"
-                  className="Pinpoint Image medium-zoom-cover "
+                  className="Pinpoint Image  "
                   decoding="async"
                   height={900}
                   loading="eager"
@@ -1630,7 +1630,7 @@ exports[`Test default state 1`] = `
                 >
                   <img
                     alt=""
-                    className="Pinpoint Image medium-zoom-body "
+                    className="Pinpoint Image  "
                     decoding="async"
                     height={509.6}
                     loading="lazy"
@@ -1685,7 +1685,7 @@ exports[`Test default state 1`] = `
                 >
                   <img
                     alt=""
-                    className="Pinpoint Image medium-zoom-body "
+                    className="Pinpoint Image  "
                     decoding="async"
                     height={360}
                     loading="lazy"
@@ -2624,7 +2624,7 @@ exports[`Test no author 1`] = `
               >
                 <img
                   alt="Linked Content Blocks"
-                  className="Pinpoint Image medium-zoom-cover "
+                  className="Pinpoint Image  "
                   decoding="async"
                   height={900}
                   loading="eager"
@@ -2684,7 +2684,7 @@ exports[`Test no author 1`] = `
                 >
                   <img
                     alt=""
-                    className="Pinpoint Image medium-zoom-body "
+                    className="Pinpoint Image  "
                     decoding="async"
                     height={509.6}
                     loading="lazy"
@@ -2739,7 +2739,7 @@ exports[`Test no author 1`] = `
                 >
                   <img
                     alt=""
-                    className="Pinpoint Image medium-zoom-body "
+                    className="Pinpoint Image  "
                     decoding="async"
                     height={360}
                     loading="lazy"
@@ -3585,7 +3585,7 @@ exports[`Test no authors 1`] = `
               >
                 <img
                   alt="Analytics Drilldown + Changelog Generator Styling"
-                  className="Pinpoint Image medium-zoom-cover "
+                  className="Pinpoint Image  "
                   decoding="async"
                   height={1666}
                   loading="eager"
@@ -3774,7 +3774,7 @@ exports[`Test no authors 1`] = `
                 >
                   <img
                     alt=""
-                    className="Pinpoint Image medium-zoom-body "
+                    className="Pinpoint Image  "
                     decoding="async"
                     height={468.65}
                     loading="lazy"
@@ -4956,7 +4956,7 @@ exports[`Test no claps 1`] = `
               >
                 <img
                   alt="Linked Content Blocks"
-                  className="Pinpoint Image medium-zoom-cover "
+                  className="Pinpoint Image  "
                   decoding="async"
                   height={900}
                   loading="eager"
@@ -5016,7 +5016,7 @@ exports[`Test no claps 1`] = `
                 >
                   <img
                     alt=""
-                    className="Pinpoint Image medium-zoom-body "
+                    className="Pinpoint Image  "
                     decoding="async"
                     height={509.6}
                     loading="lazy"
@@ -5071,7 +5071,7 @@ exports[`Test no claps 1`] = `
                 >
                   <img
                     alt=""
-                    className="Pinpoint Image medium-zoom-body "
+                    className="Pinpoint Image  "
                     decoding="async"
                     height={360}
                     loading="lazy"
@@ -6093,7 +6093,7 @@ exports[`Test not zoomable 1`] = `
                 >
                   <img
                     alt=""
-                    className="Pinpoint Image medium-zoom-body "
+                    className="Pinpoint Image  "
                     decoding="async"
                     height={509.6}
                     loading="lazy"
@@ -6148,7 +6148,7 @@ exports[`Test not zoomable 1`] = `
                 >
                   <img
                     alt=""
-                    className="Pinpoint Image medium-zoom-body "
+                    className="Pinpoint Image  "
                     decoding="async"
                     height={360}
                     loading="lazy"
@@ -7097,7 +7097,7 @@ exports[`Test with pagination 1`] = `
               >
                 <img
                   alt="Publishing Controls and Social Posting"
-                  className="Pinpoint Image medium-zoom-cover "
+                  className="Pinpoint Image  "
                   decoding="async"
                   height={900}
                   loading="eager"
@@ -7157,7 +7157,7 @@ exports[`Test with pagination 1`] = `
                 >
                   <img
                     alt=""
-                    className="Pinpoint Image medium-zoom-body "
+                    className="Pinpoint Image  "
                     decoding="async"
                     height={540}
                     loading="lazy"

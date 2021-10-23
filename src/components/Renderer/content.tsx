@@ -1,6 +1,8 @@
-import mediumZoom from 'medium-zoom';
-import React, { forwardRef, useEffect } from 'react';
-import { addFileExtension, extractImageMetadataFromFileID, isFileAPI } from '../../lib/file_metadata';
+import React, { forwardRef } from 'react';
+import Zoom from 'react-medium-image-zoom';
+import {
+	addFileExtension, extractImageMetadataFromFileID, isFileAPI
+} from '../../lib/file_metadata';
 import { slugifyContent } from '../../lib/string';
 import { CoverMediaType } from '../../lib/types/content';
 import Image from '../Image';
@@ -22,18 +24,11 @@ const ImageMedia = ({
 }) => {
 	const { size, blurhash: _blurhash } = extractImageMetadataFromFileID(src ?? '');
 
-	useEffect(() => {
-		if (typeof window !== 'undefined') {
-			mediumZoom('.medium-zoom-cover');
-		}
-	}, []);
-
-	return (
+	const img = (
 		<div className="Pinpoint image">
 			<Image
 				src={src}
 				alt={title}
-				className={`${zoomable ? 'medium-zoom-cover' : ''}`}
 				width={size?.width}
 				height={size?.height}
 				blurhash={blurhash ?? _blurhash}
@@ -41,6 +36,12 @@ const ImageMedia = ({
 			/>
 		</div>
 	);
+
+	if (zoomable && typeof window !== 'undefined') {
+		return <Zoom>{img}</Zoom>;
+	}
+
+	return img;
 };
 
 const VideoMedia = ({ src, type, poster }: { src: string; type: string; poster?: string }) => {
@@ -119,14 +120,16 @@ interface ContentProps {
 	coverMedia?: ICoverMedia;
 	limit?: number;
 	divider?: boolean;
+	zoomable?: boolean;
 }
 
 const Content = forwardRef((props: ContentProps, ref: any) => {
+	const { zoomable = true } = props;
 	return (
 		<article ref={ref}>
-			{props.coverMedia && <CoverMedia media={props.coverMedia} title={props.title} />}
+			{props.coverMedia && <CoverMedia media={props.coverMedia} title={props.title} zoomable={zoomable} />}
 			<section className="Pinpoint content">
-				<Document node={props.document} limit={props.limit} />
+				<Document node={props.document} limit={props.limit} opts={{ zoomable }} />
 				{props.limit && props.document.content?.length > props.limit && (
 					<div className="Pinpoint continue">
 						<a href={slugifyContent(props.id, props.title)}>Continue Reading →</a>

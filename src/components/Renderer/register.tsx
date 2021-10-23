@@ -29,6 +29,7 @@ import Toggle from './toggle';
 
 export interface DocOpts {
 	openLinksInNewWindow?: boolean;
+	zoomable?: boolean;
 }
 
 export interface PmMark {
