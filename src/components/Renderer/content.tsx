@@ -1,5 +1,5 @@
-import mediumZoom from 'medium-zoom';
-import React, { forwardRef, useEffect } from 'react';
+import React, { forwardRef } from 'react';
+import Zoom from 'react-medium-image-zoom';
 import {
 	addFileExtension, extractImageMetadataFromFileID, isFileAPI
 } from '../../lib/file_metadata';
@@ -24,18 +24,11 @@ const ImageMedia = ({
 }) => {
 	const { size, blurhash: _blurhash } = extractImageMetadataFromFileID(src ?? '');
 
-	useEffect(() => {
-		if (typeof window !== 'undefined' && zoomable) {
-			mediumZoom('.medium-zoom-cover');
-		}
-	}, []);
-
-	return (
+	const img = (
 		<div className="Pinpoint image">
 			<Image
 				src={src}
 				alt={title}
-				className={`${zoomable ? 'medium-zoom-cover' : ''}`}
 				width={size?.width}
 				height={size?.height}
 				blurhash={blurhash ?? _blurhash}
@@ -43,6 +36,12 @@ const ImageMedia = ({
 			/>
 		</div>
 	);
+
+	if (zoomable && typeof window !== 'undefined') {
+		return <Zoom>{img}</Zoom>;
+	}
+
+	return img;
 };
 
 const VideoMedia = ({ src, type, poster }: { src: string; type: string; poster?: string }) => {

@@ -13,7 +13,8 @@ module.exports = {
 					selector.startsWith(prefix) ||
 					selector.charAt(0) === ':' ||
 					selector.startsWith('.dark') ||
-					selector.startsWith('html.dark')
+					selector.startsWith('html.dark') ||
+					selector.charAt(0) === '['
 				) {
 					return selector;
 				}

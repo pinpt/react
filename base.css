@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.medium-zoom-overlay,
-.medium-zoom-image--opened {
-	@apply z-50;
-}
-
 * {
 	font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial,
 		Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
@@ -839,4 +834,59 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 
 .Pinpoint.feedbackWrapper {
 	@apply mt-10 mb-5 border rounded p-4 inline-flex bg-white shadow-lg;
+}
+
+/* styles from medium zoom image */
+[data-rmiz-wrap='visible'],
+[data-rmiz-wrap='hidden'] {
+	position: relative;
+	display: inline-flex;
+	align-items: flex-start;
+}
+[data-rmiz-wrap='hidden'] {
+	visibility: hidden;
+}
+[data-rmiz-overlay] {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition-property: background-color;
+}
+[data-rmiz-btn-open],
+[data-rmiz-btn-close] {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	border: none;
+	border-radius: 0;
+	font: inherit;
+	color: inherit;
+	background: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+[data-rmiz-btn-open] {
+	cursor: zoom-in;
+}
+[data-rmiz-btn-close] {
+	cursor: zoom-out;
+}
+[data-rmiz-modal-content] {
+	position: absolute;
+	transition-property: transform;
+	transform-origin: center center;
+}
+[data-rmiz-wrap='visible'] > button {
+	cursor: zoom-in;
 }

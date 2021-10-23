@@ -353,7 +353,7 @@ exports[`Test Image cover media with zoom 1`] = `
     >
       <img
         alt=""
-        className="Pinpoint Image medium-zoom-cover "
+        className="Pinpoint Image  "
         decoding="async"
         loading="eager"
         src="https://file.edge.pinpoint.com/b1ee49fa5ea82ea3b71d0101ddc28a84"
@@ -753,7 +753,7 @@ exports[`Test image with scale 1`] = `
     >
       <img
         alt="Left aligned, scale 30%"
-        className="Pinpoint Image medium-zoom-body blurhash"
+        className="Pinpoint Image  blurhash"
         decoding="async"
         height={300}
         loading="lazy"
@@ -775,7 +775,7 @@ exports[`Test image with scale 1`] = `
     >
       <img
         alt="Center aligned, scale 30%"
-        className="Pinpoint Image medium-zoom-body blurhash"
+        className="Pinpoint Image  blurhash"
         decoding="async"
         height={300}
         loading="lazy"
@@ -797,7 +797,7 @@ exports[`Test image with scale 1`] = `
     >
       <img
         alt="Right aligned, scale 30%"
-        className="Pinpoint Image medium-zoom-body blurhash"
+        className="Pinpoint Image  blurhash"
         decoding="async"
         height={300}
         loading="lazy"
@@ -819,7 +819,7 @@ exports[`Test image with scale 1`] = `
     >
       <img
         alt="Center aligned, scale 200%"
-        className="Pinpoint Image medium-zoom-body blurhash"
+        className="Pinpoint Image  blurhash"
         decoding="async"
         height={2000}
         loading="lazy"
@@ -1277,7 +1277,7 @@ exports[`Test simple image block 1`] = `
     >
       <img
         alt="Image Caption"
-        className="Pinpoint Image medium-zoom-body "
+        className="Pinpoint Image  "
         decoding="async"
         loading="lazy"
         src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
