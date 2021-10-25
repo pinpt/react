@@ -529,6 +529,20 @@ exports[`Test blockquote with code 1`] = `
 </div>
 `;
 
+exports[`Test custom render function 1`] = `
+<div
+  className="Pinpoint document"
+>
+  <div
+    className="custom-rendered"
+  >
+    <p>
+      Hi
+    </p>
+  </div>
+</div>
+`;
+
 exports[`Test empty doc 1`] = `
 <div
   className="Pinpoint document"

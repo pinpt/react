@@ -113,3 +113,5 @@ export const recurseIntoChildren = (node: PmNode, limit?: number): React.ReactNo
 export const registerRenderer = (nodeType: string, render: (node: PmNode) => JSX.Element) => {
 	nodeRegistry[nodeType] = render;
 };
+
+export const getRenderer = (nodeType: string) => nodeRegistry[nodeType];

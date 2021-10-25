@@ -1,6 +1,8 @@
 import React, { forwardRef } from 'react';
 import Content, { CoverMedia } from './content';
-import { DocOpts, NodeProps, recurseIntoChildren, registerRenderer } from './register';
+import {
+	DocOpts, getRenderer, NodeProps, PmNode, recurseIntoChildren, registerRenderer
+} from './register';
 
 const Document = forwardRef(({ node, limit, opts }: NodeProps & { limit?: number; opts?: DocOpts }, ref: any) => {
 	return (
@@ -12,4 +14,4 @@ const Document = forwardRef(({ node, limit, opts }: NodeProps & { limit?: number
 
 export const emptyDoc = () => ({ type: 'doc', content: [{ type: 'paragraph', content: [] }] });
 
-export { Document, Content, CoverMedia, registerRenderer };
+export { Document, Content, CoverMedia, registerRenderer, getRenderer, PmNode };
