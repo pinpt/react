@@ -32,3 +32,4 @@ export { default as Pagination } from './components/Pagination';
 export { default as PoweredByPinpoint } from './components/PoweredByPinpoint';
 export { default as Pinpoint } from './components/Pinpoint';
 export { default as Banner } from './components/Banner';
+export { default as EmailAction } from './components/EmailAction';

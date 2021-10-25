@@ -98,7 +98,6 @@ const {
 	NotificationModalWidget,
 	NotificationPopupWidget,
 	NotificationBannerWidget,
-	validateSubscription,
 	SubscriptionManage,
 	SubscriptionSubscribe,
 	SubscriptionUnsubscribe,
@@ -107,8 +106,14 @@ const {
 	PrebuiltSubscriptionSubscribe,
 	PrebuiltSubscriptionUnsubscribe,
 	PrebuiltSubscriptionVerify,
+	EmailAction,
+	useEmailAction,
+	validateSubscription,
+	listSubscriptions,
 	...otherExports
 } = Exports;
+
+console.log(otherExports);
 
 test('Test component exports', () => {
 	// Test Statistic Exports
@@ -207,6 +212,7 @@ test('Test component exports', () => {
 	expect(Banner).toBeTruthy();
 	expect(isSubscriberCookieSet).toBeTruthy();
 	expect(subscribe).toBeTruthy();
+	expect(EmailAction).toBeTruthy();
 
 	// Test subscription components
 	expect(SubscriptionManage).toBeTruthy();
@@ -239,6 +245,7 @@ test('Test util exports', () => {
 	expect(getDocumentHeadings).toBeTruthy();
 	expect(titleCase).toBeTruthy();
 	expect(validateSubscription).toBeTruthy();
+	expect(listSubscriptions).toBeTruthy();
 });
 
 test('Test hook exports', () => {
@@ -247,6 +254,7 @@ test('Test hook exports', () => {
 	expect(useSearch).toBeTruthy();
 	expect(useScriptLoader).toBeTruthy();
 	expect(useBackground).toBeTruthy();
+	expect(useEmailAction).toBeTruthy();
 });
 
 test('Test widget exports', () => {
