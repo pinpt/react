@@ -1,5 +1,5 @@
 import renderer from 'react-test-renderer';
-import { CoverMedia, Document, emptyDoc } from '../';
+import { CoverMedia, Document, emptyDoc, getRenderer, PmNode, registerRenderer } from '../';
 import { CoverMediaType } from '../../../lib/types/content';
 import audio_files from '../__data__/audio_files';
 import blockquote_with_code_mark from '../__data__/blockquote_with_code_mark';
@@ -348,6 +348,17 @@ test('Test Image cover media with no zoom', () => {
 			'https://file.edge.pinpoint.com/b1ee49fa5ea82ea3b71d0101ddc28a84;UI8%3D1pOs.9j%5B-VOroLax.mOrNZoL-VOYaxjF;2048x1344.png',
 	};
 	const component = renderer.create(<CoverMedia media={coverMedia} zoomable={false} />);
+	const tree = component.toJSON();
+	expect(tree).toMatchSnapshot();
+});
+
+test('Test custom render function', () => {
+	const doc = simple_paragraph;
+	const defaultRenderer = getRenderer('paragraph');
+	const customRenderer = (node: PmNode) => <div className="custom-rendered">{defaultRenderer(node)}</div>;
+	registerRenderer('paragraph', customRenderer);
+	const component = renderer.create(<Document node={doc} />);
+	registerRenderer('paragraph', defaultRenderer);
 	const tree = component.toJSON();
 	expect(tree).toMatchSnapshot();
 });
