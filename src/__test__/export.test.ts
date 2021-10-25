@@ -99,6 +99,9 @@ const {
 	NotificationModalWidget,
 	NotificationPopupWidget,
 	NotificationBannerWidget,
+	CoverMedia,
+	registerRenderer,
+	getRenderer,
 	...otherExports
 } = Exports;
 
