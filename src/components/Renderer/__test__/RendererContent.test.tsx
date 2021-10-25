@@ -352,13 +352,34 @@ test('Test Image cover media with no zoom', () => {
 	expect(tree).toMatchSnapshot();
 });
 
-test('Test custom render function', () => {
+test('Test override render function', () => {
 	const doc = simple_paragraph;
 	const defaultRenderer = getRenderer('paragraph');
 	const customRenderer = (node: PmNode) => <div className="custom-rendered">{defaultRenderer(node)}</div>;
 	registerRenderer('paragraph', customRenderer);
 	const component = renderer.create(<Document node={doc} />);
 	registerRenderer('paragraph', defaultRenderer);
+	const tree = component.toJSON();
+	expect(tree).toMatchSnapshot();
+});
+
+test('Test custom render function', () => {
+	const doc: any = {
+		type: 'doc',
+		content: [
+			{
+				type: 'date',
+				attrs: {
+					timestamp: '1635120000000',
+				},
+			},
+		],
+	};
+	const customRenderer = (node: PmNode) => (
+		<div className="custom-rendered">{new Date(+node.attrs.timestamp).toLocaleDateString()}</div>
+	);
+	registerRenderer('date', customRenderer);
+	const component = renderer.create(<Document node={doc} />);
 	const tree = component.toJSON();
 	expect(tree).toMatchSnapshot();
 });

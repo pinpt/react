@@ -536,9 +536,7 @@ exports[`Test custom render function 1`] = `
   <div
     className="custom-rendered"
   >
-    <p>
-      Hi
-    </p>
+    10/24/2021
   </div>
 </div>
 `;
@@ -887,6 +885,20 @@ exports[`Test info notice with monospaced font 1`] = `
         </code>
       </p>
     </div>
+  </div>
+</div>
+`;
+
+exports[`Test override render function 1`] = `
+<div
+  className="Pinpoint document"
+>
+  <div
+    className="custom-rendered"
+  >
+    <p>
+      Hi
+    </p>
   </div>
 </div>
 `;
