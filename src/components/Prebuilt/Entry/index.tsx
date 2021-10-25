@@ -17,7 +17,9 @@ import Pinpoint from '../../Pinpoint';
 import { Document } from '../../Renderer';
 import { ISearchBarProps } from '../../Search/Bar';
 import Sidebar, { ISidebarProps } from '../../Sidebar';
-import { EmailShare, FacebookShare, LinkedInShare, SocialMediaBar, TwitterShare } from '../../SocialMedia';
+import {
+	EmailShare, FacebookShare, LinkedInShare, SocialMediaBar, TwitterShare
+} from '../../SocialMedia';
 import { ISocialMediaBarProps } from '../../SocialMedia/SocialMediaBar';
 import { ISubscribeProps } from '../../Subscribe';
 import Tags from '../../Tags';
@@ -137,7 +139,7 @@ const Entry = (props: IPrebuiltEntryProps) => {
 					className={`Prebuilt ${className}`}
 					coverMedia={content.coverMedia}
 					title={content.title}
-					renderer={renderContent?.(content) ?? <Document node={content.document} />}
+					renderer={renderContent?.(content) ?? <Document node={content.document} opts={{ zoomable }} />}
 					sidebar={
 						renderSidebar?.(content) ?? (
 							<Sidebar

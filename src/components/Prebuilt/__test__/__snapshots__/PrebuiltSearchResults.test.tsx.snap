@@ -106,7 +106,7 @@ exports[`Hidden stats 1`] = `
           >
             <a
               className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-100 Prebuilt"
-              href="/subscription/subscribe"
+              href="https://changelog.pinpoint.com/subscription/subscribe"
             >
               <svg
                 aria-hidden="true"
@@ -1161,7 +1161,7 @@ populated with your recently completed...
           >
             <a
               className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-100 Prebuilt"
-              href="/subscription/subscribe"
+              href="https://changelog.pinpoint.com/subscription/subscribe"
             >
               <svg
                 aria-hidden="true"
@@ -1506,7 +1506,7 @@ exports[`Test custom className 1`] = `
           >
             <a
               className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-0 Prebuilt"
-              href="/subscription/subscribe"
+              href="https://changelog.pinpoint.com/subscription/subscribe"
             >
               <svg
                 aria-hidden="true"
@@ -3631,7 +3631,7 @@ populated with your recently completed...
           >
             <a
               className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-0 Prebuilt"
-              href="/subscription/subscribe"
+              href="https://changelog.pinpoint.com/subscription/subscribe"
             >
               <svg
                 aria-hidden="true"
@@ -3976,7 +3976,7 @@ exports[`Test default state 1`] = `
           >
             <a
               className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-0 Prebuilt"
-              href="/subscription/subscribe"
+              href="https://changelog.pinpoint.com/subscription/subscribe"
             >
               <svg
                 aria-hidden="true"
@@ -6101,7 +6101,7 @@ populated with your recently completed...
           >
             <a
               className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-0 Prebuilt"
-              href="/subscription/subscribe"
+              href="https://changelog.pinpoint.com/subscription/subscribe"
             >
               <svg
                 aria-hidden="true"

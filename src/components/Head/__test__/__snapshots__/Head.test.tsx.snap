@@ -5,6 +5,14 @@ Array [
   <meta
     charSet="utf-8"
   />,
+  <link
+    href="https://site-cdn.pinpoint.com"
+    rel="preconnect"
+  />,
+  <link
+    href="https://file.pinpoint.com"
+    rel="preconnect"
+  />,
   <meta
     content="ie=edge"
     httpEquiv="x-ua-compatible"
@@ -14,7 +22,7 @@ Array [
     name="viewport"
   />,
   <script
-    base-path="/"
+    data-base-path="/"
     data-id="oroH8YQr4vufOiVTRND4"
     data-site-id="PirxVTE94u3YmGNOySRY"
     data-use-react={true}
@@ -138,6 +146,14 @@ Array [
   <meta
     charSet="utf-8"
   />,
+  <link
+    href="https://site-cdn.pinpoint.com"
+    rel="preconnect"
+  />,
+  <link
+    href="https://file.pinpoint.com"
+    rel="preconnect"
+  />,
   <meta
     content="ie=edge"
     httpEquiv="x-ua-compatible"
@@ -147,7 +163,7 @@ Array [
     name="viewport"
   />,
   <script
-    base-path="/"
+    data-base-path="/"
     data-site-id="PirxVTE94u3YmGNOySRY"
     data-use-react={true}
     src="/a.js"
@@ -236,6 +252,14 @@ Array [
   <meta
     charSet="utf-8"
   />,
+  <link
+    href="https://site-cdn.pinpoint.com"
+    rel="preconnect"
+  />,
+  <link
+    href="https://file.pinpoint.com"
+    rel="preconnect"
+  />,
   <meta
     content="ie=edge"
     httpEquiv="x-ua-compatible"
@@ -245,7 +269,7 @@ Array [
     name="viewport"
   />,
   <script
-    base-path="/blog"
+    data-base-path="/blog"
     data-id="oroH8YQr4vufOiVTRND4"
     data-site-id="PirxVTE94u3YmGNOySRY"
     data-use-react={true}

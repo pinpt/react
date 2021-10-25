@@ -1,16 +1,10 @@
-import { forwardRef, useEffect } from 'react';
-import React from 'react';
-import mediumZoom from 'medium-zoom';
+import React, { forwardRef } from 'react';
 import Content, { CoverMedia } from './content';
-import { DocOpts, NodeProps, recurseIntoChildren } from './register';
+import {
+	DocOpts, getRenderer, NodeProps, PmNode, recurseIntoChildren, registerRenderer
+} from './register';
 
 const Document = forwardRef(({ node, limit, opts }: NodeProps & { limit?: number; opts?: DocOpts }, ref: any) => {
-	useEffect(() => {
-		if (typeof window !== 'undefined') {
-			mediumZoom('.medium-zoom-body');
-		}
-	}, []);
-
 	return (
 		<div ref={ref} className="Pinpoint document">
 			{recurseIntoChildren({ ...node, _path: 'doc', _opts: opts }, limit)}
@@ -20,4 +14,4 @@ const Document = forwardRef(({ node, limit, opts }: NodeProps & { limit?: number
 
 export const emptyDoc = () => ({ type: 'doc', content: [{ type: 'paragraph', content: [] }] });
 
-export { Document, Content, CoverMedia };
+export { Document, Content, CoverMedia, registerRenderer, getRenderer, PmNode };

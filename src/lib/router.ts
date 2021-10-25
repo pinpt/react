@@ -8,13 +8,20 @@ const join = (...paths: string[]) => {
 		.join('/');
 };
 
-export const getRouterRelativePath = (site: ISite, url: string, w?: any) => {
+export const getRouterRelativePath = (site: ISite, url: string) => {
 	const { basePath = '/' } = site;
 	const { pathname } = url.indexOf('https://') === 0 ? new URL(url) : { pathname: url };
 	if (pathname.indexOf(basePath) === 0) {
 		return '/' + join(pathname.substring(basePath.length));
 	}
 	return '/' + join(pathname);
+};
+
+export const getRouterAbsolutePath = (site: ISite, url: string) => {
+	const { basePath = '/', url: siteUrl } = site;
+	const { pathname } = url.indexOf('https://') === 0 ? new URL(url) : { pathname: url };
+	const { origin } = new URL(siteUrl);
+	return origin + '/' + join(basePath, pathname);
 };
 
 export const getSiteRSSURL = (site: ISite) => {

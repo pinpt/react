@@ -1,5 +1,6 @@
 import React, { ReactElement } from 'react';
 import { ISite } from '../../../lib';
+import { getRouterAbsolutePath } from '../../../lib/router';
 import BaseHeader from '../../Header';
 import Logo, { ILogoProps } from '../../Logo';
 import Search from '../../Search';
@@ -48,7 +49,11 @@ const Header = (props: IPrebuiltHeaderProps) => {
 			title={title ?? site.theme?.title ?? site.name}
 			description={description ?? site.theme?.description ?? site.name}
 			onClick={() => handleSelectHome?.()}
-			subscribe={renderSubscribe?.(site) ?? <Subscribe className="Prebuilt" href="/subscription/subscribe" />}
+			subscribe={
+				renderSubscribe?.(site) ?? (
+					<Subscribe className="Prebuilt" href={getRouterAbsolutePath(site, '/subscription/subscribe')} />
+				)
+			}
 			themeToggle={renderThemeToggle?.(site) ?? <ThemeToggle className="Prebuilt" />}
 			search={
 				renderSearch?.(site) ?? (

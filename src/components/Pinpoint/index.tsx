@@ -101,8 +101,8 @@ const Pinpoint = (props: IPinpointProps) => {
 						});
 					},
 				};
-				window.__Pinpoint?.load?.();
 			}
+			window.__Pinpoint?.load?.();
 			const clearTracking = window.Pinpoint?.startTracking?.(siteId, contentId, basePath);
 
 			return () => {

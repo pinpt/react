@@ -319,6 +319,50 @@ exports[`Test Image cover media with blurhash in url 1`] = `
 </section>
 `;
 
+exports[`Test Image cover media with no zoom 1`] = `
+<section
+  className="Pinpoint cover covermedia"
+>
+  <div
+    className="Pinpoint media-container"
+  >
+    <div
+      className="Pinpoint image"
+    >
+      <img
+        alt=""
+        className="Pinpoint Image  "
+        decoding="async"
+        loading="eager"
+        src="https://file.edge.pinpoint.com/b1ee49fa5ea82ea3b71d0101ddc28a84"
+      />
+    </div>
+  </div>
+</section>
+`;
+
+exports[`Test Image cover media with zoom 1`] = `
+<section
+  className="Pinpoint cover covermedia"
+>
+  <div
+    className="Pinpoint media-container"
+  >
+    <div
+      className="Pinpoint image"
+    >
+      <img
+        alt=""
+        className="Pinpoint Image  "
+        decoding="async"
+        loading="eager"
+        src="https://file.edge.pinpoint.com/b1ee49fa5ea82ea3b71d0101ddc28a84"
+      />
+    </div>
+  </div>
+</section>
+`;
+
 exports[`Test Youtube cover media with hqdefault 1`] = `
 <section
   className="Pinpoint cover covermedia"
@@ -482,6 +526,18 @@ exports[`Test blockquote with code 1`] = `
       </code>
     </p>
   </blockquote>
+</div>
+`;
+
+exports[`Test custom render function 1`] = `
+<div
+  className="Pinpoint document"
+>
+  <div
+    className="custom-rendered"
+  >
+    10/24/2021
+  </div>
 </div>
 `;
 
@@ -709,7 +765,7 @@ exports[`Test image with scale 1`] = `
     >
       <img
         alt="Left aligned, scale 30%"
-        className="Pinpoint Image medium-zoom-body blurhash"
+        className="Pinpoint Image  blurhash"
         decoding="async"
         height={300}
         loading="lazy"
@@ -731,7 +787,7 @@ exports[`Test image with scale 1`] = `
     >
       <img
         alt="Center aligned, scale 30%"
-        className="Pinpoint Image medium-zoom-body blurhash"
+        className="Pinpoint Image  blurhash"
         decoding="async"
         height={300}
         loading="lazy"
@@ -753,7 +809,7 @@ exports[`Test image with scale 1`] = `
     >
       <img
         alt="Right aligned, scale 30%"
-        className="Pinpoint Image medium-zoom-body blurhash"
+        className="Pinpoint Image  blurhash"
         decoding="async"
         height={300}
         loading="lazy"
@@ -775,7 +831,7 @@ exports[`Test image with scale 1`] = `
     >
       <img
         alt="Center aligned, scale 200%"
-        className="Pinpoint Image medium-zoom-body blurhash"
+        className="Pinpoint Image  blurhash"
         decoding="async"
         height={2000}
         loading="lazy"
@@ -829,6 +885,20 @@ exports[`Test info notice with monospaced font 1`] = `
         </code>
       </p>
     </div>
+  </div>
+</div>
+`;
+
+exports[`Test override render function 1`] = `
+<div
+  className="Pinpoint document"
+>
+  <div
+    className="custom-rendered"
+  >
+    <p>
+      Hi
+    </p>
   </div>
 </div>
 `;
@@ -1233,7 +1303,7 @@ exports[`Test simple image block 1`] = `
     >
       <img
         alt="Image Caption"
-        className="Pinpoint Image medium-zoom-body "
+        className="Pinpoint Image  "
         decoding="async"
         loading="lazy"
         src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
@@ -1272,6 +1342,33 @@ exports[`Test simple image block with link 1`] = `
         />
       </div>
     </a>
+    <div
+      className="alt"
+    >
+      Image Caption
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Test simple image block with no zoom 1`] = `
+<div
+  className="Pinpoint document"
+>
+  <div
+    className="image_block undefined"
+  >
+    <div
+      className="image"
+    >
+      <img
+        alt="Image Caption"
+        className="Pinpoint Image  "
+        decoding="async"
+        loading="lazy"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+      />
+    </div>
     <div
       className="alt"
     >

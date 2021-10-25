@@ -46,7 +46,7 @@ const Unsubscribe = (props: IUnSubscribeProps) => {
 					'You were successfully re-subscribed. Please check your email to verify your subscription.'
 				);
 			}
-		} catch (ex) {
+		} catch (ex: any) {
 			emailActionState.setters.setCritical(false);
 			emailActionState.setters.setError(ex.message);
 		} finally {
@@ -64,7 +64,7 @@ const Unsubscribe = (props: IUnSubscribeProps) => {
 					'You were successfully unsubscribed. Unsubscribed by accident? Re-subscribe below.'
 				);
 			}
-		} catch (ex) {
+		} catch (ex: any) {
 			emailActionState.setters.setCritical(false);
 			emailActionState.setters.setError(ex.message);
 		} finally {

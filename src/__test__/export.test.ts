@@ -92,6 +92,7 @@ const {
 	useBackground,
 	getDocumentHeadings,
 	getRouterRelativePath,
+	getRouterAbsolutePath,
 	getSiteAnalyticsURL,
 	getSiteRSSURL,
 	MostRecentPostsWidget,
@@ -110,6 +111,9 @@ const {
 	useEmailAction,
 	validateSubscription,
 	listSubscriptions,
+	CoverMedia,
+	registerRenderer,
+	getRenderer,
 	...otherExports
 } = Exports;
 

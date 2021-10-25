@@ -1,5 +1,5 @@
 import renderer from 'react-test-renderer';
-import { CoverMedia, Document, emptyDoc } from '../';
+import { CoverMedia, Document, emptyDoc, getRenderer, PmNode, registerRenderer } from '../';
 import { CoverMediaType } from '../../../lib/types/content';
 import type { ICoverMedia } from '../../../lib/types/content';
 import audio_files from '../__data__/audio_files';
@@ -182,6 +182,13 @@ test('Test simple image block', () => {
 	expect(tree).toMatchSnapshot();
 });
 
+test('Test simple image block with no zoom', () => {
+	const doc = simple_image_block;
+	const component = renderer.create(<Document node={doc} opts={{ zoomable: false }} />);
+	const tree = component.toJSON();
+	expect(tree).toMatchSnapshot();
+});
+
 test('Test simple image block with link', () => {
 	const doc = simple_image_block_with_link;
 	const component = renderer.create(<Document node={doc} />);
@@ -312,6 +319,66 @@ test('Test video with poster image', () => {
 		placeholderImage: 'https://file.edge.pinpoint.com/2e6c2701e60cee677c42c34aa027bf1c/thumbnail',
 	};
 	const component = renderer.create(<CoverMedia media={coverMedia} />);
+	const tree = component.toJSON();
+	expect(tree).toMatchSnapshot();
+});
+
+test('Test Image cover media with zoom', () => {
+	const coverMedia: ICoverMedia = {
+		type: CoverMediaType.Image,
+		value: 'https://file.edge.pinpoint.com/b1ee49fa5ea82ea3b71d0101ddc28a84',
+		blurhash:
+			'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAABmJLR0QA/wD/AP+gvaeTAAAAT0lEQVQImQFEALv/AXWlrv/68vAAC+fjABoIBwAE59ncAOnk4gDg18sAMCIqAAT6z9wA6bTHANwA1AADyOUABAQrIgAVFAYALtsRACcgIwA9chplax1J+QAAAABJRU5ErkJggg==',
+		placeholderImage:
+			'https://file.edge.pinpoint.com/b1ee49fa5ea82ea3b71d0101ddc28a84;UI8%3D1pOs.9j%5B-VOroLax.mOrNZoL-VOYaxjF;2048x1344.png',
+	};
+	const component = renderer.create(<CoverMedia media={coverMedia} zoomable />);
+	const tree = component.toJSON();
+	expect(tree).toMatchSnapshot();
+});
+
+test('Test Image cover media with no zoom', () => {
+	const coverMedia: ICoverMedia = {
+		type: CoverMediaType.Image,
+		value: 'https://file.edge.pinpoint.com/b1ee49fa5ea82ea3b71d0101ddc28a84',
+		blurhash:
+			'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAABmJLR0QA/wD/AP+gvaeTAAAAT0lEQVQImQFEALv/AXWlrv/68vAAC+fjABoIBwAE59ncAOnk4gDg18sAMCIqAAT6z9wA6bTHANwA1AADyOUABAQrIgAVFAYALtsRACcgIwA9chplax1J+QAAAABJRU5ErkJggg==',
+		placeholderImage:
+			'https://file.edge.pinpoint.com/b1ee49fa5ea82ea3b71d0101ddc28a84;UI8%3D1pOs.9j%5B-VOroLax.mOrNZoL-VOYaxjF;2048x1344.png',
+	};
+	const component = renderer.create(<CoverMedia media={coverMedia} zoomable={false} />);
+	const tree = component.toJSON();
+	expect(tree).toMatchSnapshot();
+});
+
+test('Test override render function', () => {
+	const doc = simple_paragraph;
+	const defaultRenderer = getRenderer('paragraph');
+	const customRenderer = (node: PmNode) => <div className="custom-rendered">{defaultRenderer(node)}</div>;
+	registerRenderer('paragraph', customRenderer);
+	const component = renderer.create(<Document node={doc} />);
+	registerRenderer('paragraph', defaultRenderer);
+	const tree = component.toJSON();
+	expect(tree).toMatchSnapshot();
+});
+
+test('Test custom render function', () => {
+	const doc: any = {
+		type: 'doc',
+		content: [
+			{
+				type: 'date',
+				attrs: {
+					timestamp: '1635120000000',
+				},
+			},
+		],
+	};
+	const customRenderer = (node: PmNode) => (
+		<div className="custom-rendered">{new Date(+node.attrs.timestamp).toLocaleDateString()}</div>
+	);
+	registerRenderer('date', customRenderer);
+	const component = renderer.create(<Document node={doc} />);
 	const tree = component.toJSON();
 	expect(tree).toMatchSnapshot();
 });
