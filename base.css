@@ -853,11 +853,11 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 }
 
 .Pinpoint.Form.Heading h1 {
-	@apply font-bold text-2xl leading-8 text-gray-800 whitespace-nowrap;
+	@apply font-bold text-2xl leading-8 text-gray-800 whitespace-nowrap dark:text-white;
 }
 
 .Pinpoint.Form.Heading h2 {
-	@apply mt-2 text-gray-500;
+	@apply mt-2 text-gray-500 dark:text-gray-300;
 }
 
 .Pinpoint.Form.BottomButton {
@@ -881,7 +881,7 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 }
 
 .Pinpoint.Field.Label {
-	@apply font-semibold text-gray-700;
+	@apply font-semibold text-gray-700 dark:text-gray-300;
 }
 
 .Pinpoint.Field.Status {
@@ -924,6 +924,10 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 	@apply w-full;
 }
 
+.Pinpoint.SubscriptionSubscribe.Wrapper {
+	@apply flex items-center flex-col mx-16 sm:mx-36 mb-16;
+}
+
 .Pinpoint.SubscriptionSubscribe.Field {
 	@apply flex-1 disabled:cursor-not-allowed focus:ring-blue-500 focus:border-blue-500 block w-full min-w-0 rounded-md text-sm border-gray-300 focus:bg-white bg-gray-100 p-2 border text-black;
 }
@@ -964,21 +968,20 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 	@apply mr-2;
 }
 
-.Pinpoint.Page.SubscriptionSubscribe {
-	@apply flex flex-col h-screen;
-}
-
 /* Manage Subscription Component */
+.Pinpoint.SubscriptionManage.Wrapper {
+	@apply flex items-center flex-col mx-16 sm:mx-36 mb-16;
+}
 .Pinpoint.SubscriptionManage.Entry {
-	@apply bg-gray-100 w-full p-6 rounded-lg mb-6;
+	@apply bg-gray-100 w-full p-6 rounded-lg mb-6 dark:bg-gray-700;
 }
 
 .Pinpoint.SubscriptionManage.Title {
-	@apply text-3xl pt-4 mb-4 px-12 text-center;
+	@apply text-3xl pt-4 mb-4 px-12 text-center dark:text-white;
 }
 
 .Pinpoint.SubscriptionManage.Description {
-	@apply text-center mb-12 px-12 text-gray-600;
+	@apply text-center mb-12 px-12 text-gray-600 dark:text-gray-300;
 }
 
 .Pinpoint.SubscriptionManage.Container {
@@ -990,11 +993,11 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 }
 
 .Pinpoint.SubscriptionManage.SiteName {
-	@apply font-medium text-lg;
+	@apply font-medium text-lg dark:text-white;
 }
 
 .Pinpoint.SubscriptionManage.SubscriptionDate {
-	@apply text-sm text-gray-700;
+	@apply text-sm text-gray-700 dark:text-gray-300;
 }
 
 .Pinpoint.SubscriptionManage.Buttons {
@@ -1065,7 +1068,7 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 /* Subscription Verify Component */
 
 .Pinpoint.SubscriptionVerify.Wrapper {
-	@apply flex flex-col justify-center items-center bg-white;
+	@apply flex flex-col justify-center items-center;
 }
 
 .Pinpoint.SubscriptionVerify.Content {
@@ -1073,7 +1076,7 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 }
 
 .Pinpoint.SubscriptionVerify.Inner {
-	@apply flex items-center flex-col m-16 sm:m-36;
+	@apply flex items-center flex-col mx-16 sm:mx-36 mb-16;
 }
 
 .Pinpoint.SubscriptionVerify.Form {
@@ -1083,7 +1086,7 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 /* Subscription Unsubscribe Component */
 
 .Pinpoint.SubscriptionUnsubscribe.Wrapper {
-	@apply flex flex-col justify-center items-center bg-white;
+	@apply flex flex-col justify-center items-center;
 }
 
 .Pinpoint.SubscriptionUnsubscribe.Container {
@@ -1091,7 +1094,7 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 }
 
 .Pinpoint.SubscriptionUnsubscribe.Content {
-	@apply flex items-center flex-col m-16 sm:m-36;
+	@apply flex items-center flex-col mx-16 sm:mx-36 mb-16 dark:text-white;
 }
 
 .Pinpoint.SubscriptionUnsubscribe.Logo {
@@ -1115,7 +1118,7 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 }
 
 .Pinpoint.SubscriptionUnsubscribe.Manage {
-	@apply text-gray-600 text-sm pt-10 underline;
+	@apply text-gray-600 text-sm pt-10 underline dark:text-gray-300;
 }
 
 /* styles from medium zoom image */

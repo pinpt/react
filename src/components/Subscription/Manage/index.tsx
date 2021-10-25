@@ -42,7 +42,7 @@ const Manage = (props: IManageProps) => {
 									src={getFileUrl(subscriptions.sites[sub.siteId].logoUrl, fileApi)}
 								/>
 								<span>
-									<h2 className={`${baseClass} Sitename`}>{subscriptions.sites[sub.siteId].name}</h2>
+									<h2 className={`${baseClass} SiteName`}>{subscriptions.sites[sub.siteId].name}</h2>
 									<p className={`${baseClass} SubscriptionDate`}>
 										You subscribed {new Date(sub.createdAt).toLocaleString()}
 									</p>

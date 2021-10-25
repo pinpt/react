@@ -1,8 +1,6 @@
 import React, { forwardRef } from 'react';
 import Zoom from 'react-medium-image-zoom';
-import {
-	addFileExtension, extractImageMetadataFromFileID, isFileAPI
-} from '../../lib/file_metadata';
+import { addFileExtension, extractImageMetadataFromFileID, isFileAPI } from '../../lib/file_metadata';
 import { slugifyContent } from '../../lib/string';
 import { CoverMediaType } from '../../lib/types/content';
 import type { ICoverMedia } from '../../lib/types/content';
