@@ -1,8 +1,10 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
 import site from '../__data__/testSite.json';
+import subscriptions from '../../Subscription/Manage/__data__/subscriptions.json';
 import Manage from '../Subscription/Manage';
 import { Subtitle, Description, Primary, Stories, ArgsTable, PRIMARY_STORY } from '@storybook/addon-docs';
+import { SubscriptionInfo } from '../../../lib/types/subscription';
 const { default: readme } = require('../Subscription/Manage/README.md');
 
 export default {
@@ -28,4 +30,6 @@ export default {
 	},
 } as Meta;
 
-export const Default: React.VFC<{}> = () => <Manage site={site} />;
+export const Default: React.VFC<{}> = () => (
+	<Manage site={site} subscriptions={(subscriptions as unknown) as SubscriptionInfo} />
+);

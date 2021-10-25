@@ -10,6 +10,7 @@ import withWrapper from '../../../Internal/withWrapper';
 import { IFooterProps } from '../../../Footer';
 import { ISocialMediaBarProps } from '../../../SocialMedia/SocialMediaBar';
 import { ICopyrightProps } from '../../../Copyright';
+import { SubscriptionInfo } from '../../../../lib/types/subscription';
 
 export interface IPrebuiltSubscribeProps {
 	className?: string;
@@ -21,6 +22,11 @@ export interface IPrebuiltSubscribeProps {
 	renderFooter?: (site: ISite) => ReactElement<IFooterProps>;
 	renderSocial?: (site: ISite) => ReactElement<ISocialMediaBarProps>;
 	renderCopyright?: (site: ISite) => ReactElement<ICopyrightProps>;
+	subscriptions: SubscriptionInfo;
+	handleClickUpdate?: (subscriptionId: string) => void;
+	handleClickUnsubscribe?: (subscriptionId: string) => void;
+	handleClickReSubscribe?: (subscriptionId: string) => void;
+	fileApi?: string;
 }
 
 const Subscribe = (props: IPrebuiltSubscribeProps) => {
@@ -34,6 +40,11 @@ const Subscribe = (props: IPrebuiltSubscribeProps) => {
 		renderFooter,
 		renderCopyright,
 		renderSocial,
+		subscriptions,
+		handleClickReSubscribe,
+		handleClickUnsubscribe,
+		handleClickUpdate,
+		fileApi,
 	} = props;
 
 	return (
@@ -41,6 +52,7 @@ const Subscribe = (props: IPrebuiltSubscribeProps) => {
 			{withWrapper(
 				renderHeader?.(site) ?? (
 					<Header
+						className="Prebuilt"
 						site={site}
 						handleSelectHome={handleSelectHome}
 						renderLogo={renderLogo}
@@ -51,7 +63,17 @@ const Subscribe = (props: IPrebuiltSubscribeProps) => {
 				),
 				'header'
 			)}
-			{withWrapper(<ManageComponent />, 'manage')}
+			{withWrapper(
+				<ManageComponent
+					className="Prebuilt"
+					subscriptions={subscriptions}
+					handleClickReSubscribe={handleClickReSubscribe}
+					handleClickUnsubscribe={handleClickUnsubscribe}
+					handleClickUpdate={handleClickUpdate}
+					fileApi={fileApi}
+				/>,
+				'manage'
+			)}
 			{withWrapper(
 				renderFooter?.(site) ?? (
 					<Footer

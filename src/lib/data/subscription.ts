@@ -23,4 +23,4 @@ export const listSubscriptions = async (config: IPinpointConfig, subscriptionId:
 	const res = await executeAPI(config, `/subscription/manage/list/${subscriptionId}`, 'GET');
 
 	return res;
-}
+};

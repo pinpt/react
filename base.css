@@ -970,5 +970,41 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 }
 
 .Pinpoint.SubscriptionManage.Entry {
-	@apply flex;
+	@apply bg-gray-100 w-full p-6 rounded-lg mb-6;
+}
+
+.Pinpoint.SubscriptionManage.Title {
+	@apply text-3xl pt-4 mb-4 px-12 text-center;
+}
+
+.Pinpoint.SubscriptionManage.Description {
+	@apply text-center mb-12 px-12 text-gray-600;
+}
+
+.Pinpoint.SubscriptionManage.Container {
+	@apply flex flex-grow items-center;
+}
+
+.Pinpoint.SubscriptionManage.SiteLogo {
+	@apply w-12 h-12 rounded-full mr-4;
+}
+
+.Pinpoint.SubscriptionManage.SiteName {
+	@apply font-medium text-lg;
+}
+
+.Pinpoint.SubscriptionManage.SubscriptionDate {
+	@apply text-sm text-gray-700;
+}
+
+.Pinpoint.SubscriptionManage.Buttons {
+	@apply ml-auto pl-6 flex flex-row space-x-2 flex-shrink-0;
+}
+
+.Pinpoint.SubscriptionManage.Buttons .Pinpoint.SubscriptionManage.UpdateButton {
+	@apply disabled:opacity-50 inline-flex items-center justify-center cursor-pointer disabled:cursor-not-allowed px-4 py-1.5 focus:outline-none font-normal rounded-md text-sm transition-colors duration-200 bg-gray-400 disabled:bg-gray-400 disabled:hover:bg-gray-400 hover:bg-gray-500 dark:bg-gray-500 dark:hover:bg-gray-600 text-white;
+}
+
+.Pinpoint.SubscriptionManage.Buttons .Pinpoint.SubscriptionManage.UnsubscribeButton {
+	@apply disabled:opacity-50 inline-flex items-center justify-center cursor-pointer disabled:cursor-not-allowed px-4 py-1.5 focus:outline-none font-normal rounded-md text-sm transition-colors duration-200 bg-red-800 disabled:bg-red-800 disabled:hover:bg-red-800 hover:bg-red-900 text-white;
 }

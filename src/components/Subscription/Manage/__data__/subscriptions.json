@@ -1,0 +1,40 @@
+{
+	"success": true,
+	"subscriptions": [
+		{
+			"subscriptionId": "2611a75dd0b63089",
+			"siteId": "XwzQzLbkCGWuC1WHq9Zl",
+			"createdAt": "2021-06-24T15:54:50.000Z",
+			"subscribed": 1
+		},
+		{
+			"subscriptionId": "84beec9792eff52d",
+			"siteId": "PirxVTE94u3YmGNOySRY",
+			"createdAt": "2021-06-24T15:15:21.000Z",
+			"subscribed": 1
+		},
+		{
+			"subscriptionId": "fd85a8bf7bcbe772",
+			"siteId": "8F5TDkf2sJ3jCqSjZnJE",
+			"createdAt": "2021-10-21T17:57:35.000Z",
+			"subscribed": 1
+		}
+	],
+	"sites": {
+		"8F5TDkf2sJ3jCqSjZnJE": {
+			"id": "8F5TDkf2sJ3jCqSjZnJE",
+			"name": "Demo Site",
+			"logoUrl": "fileid:9f827f9dc1c617dc655e791c570e3c74;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+		},
+		"PirxVTE94u3YmGNOySRY": {
+			"id": "PirxVTE94u3YmGNOySRY",
+			"name": "Pinpoint",
+			"logoUrl": "fileid:1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+		},
+		"XwzQzLbkCGWuC1WHq9Zl": {
+			"id": "XwzQzLbkCGWuC1WHq9Zl",
+			"name": "Fish Rules",
+			"logoUrl": "fileid:20d3346f1d5905b93b0dd48843716c0e;Ur0D%2CWglf-f%2Cg%25g4e-f5g%2Be-ele-g3e-fRf%2C;1024x1024.png"
+		}
+	}
+}

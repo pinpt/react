@@ -1,0 +1,14 @@
+.Pinpoint.Author,
+.Pinpoint.Author > .Pinpoint.Link,
+.Pinpoint.Author a {
+	@apply flex items-center mr-auto;
+}
+
+.Pinpoint.Author .avatar {
+	@apply rounded-full mr-2 w-8 h-8 border-2;
+	border-color: var(--page-secondary-text-color);
+}
+
+.Pinpoint.Author .name {
+	@apply whitespace-nowrap;
+}
