@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { Description, Primary, Stories, Subtitle, Title } from '@storybook/addon-docs';
 import { Meta } from '@storybook/react';
 import useSearch from '../';
-import site from '../../../../components/Prebuilt/__data__/testSite.json';
 import PrebuiltSearchResults from '../../../../components/Prebuilt/SearchResults';
+import site from '../../../../components/Prebuilt/__data__/testSite.json';
 
 const { default: readme } = require('../README.md');
 export default {

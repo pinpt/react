@@ -1,6 +1,7 @@
 import renderer from 'react-test-renderer';
 import { CoverMedia, Document, emptyDoc } from '../';
 import { CoverMediaType } from '../../../lib/types/content';
+import type { ICoverMedia } from '../../../lib/types/content';
 import audio_files from '../__data__/audio_files';
 import blockquote_with_code_mark from '../__data__/blockquote_with_code_mark';
 import image_block_position_and_scale from '../__data__/image_block_position_and_scale';
@@ -27,8 +28,6 @@ import simple_text from '../__data__/simple_text';
 import simple_warning_notice from '../__data__/simple_warning_notice';
 import video_file from '../__data__/video_file';
 import video_file_api from '../__data__/video_file_api';
-
-import type { ICoverMedia } from '../../../lib/types/content';
 
 test('Test empty doc', () => {
 	const component = renderer.create(<Document node={emptyDoc()} />);

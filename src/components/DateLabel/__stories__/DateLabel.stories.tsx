@@ -1,7 +1,8 @@
-import { DateTime } from 'luxon';
 import React from 'react';
 import { Meta } from '@storybook/react';
+import { DateTime } from 'luxon';
 import DateLabel from '../';
+
 const { default: readme } = require('../README.md');
 
 export default {

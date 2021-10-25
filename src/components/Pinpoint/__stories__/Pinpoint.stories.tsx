@@ -1,11 +1,12 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
 import Pinpoint from '../';
+import { CoverMediaType } from '../../../lib/types/content';
 import Loader from '../../Loader';
+import { Document, Content } from '../../Renderer';
 import entry from '../__data__/testDocumentIFramely.json';
 import entryToggle from '../__data__/testDocumentToggle.json';
-import { Document, Content } from '../../Renderer';
-import { CoverMediaType } from '../../../lib/types/content';
+
 const { default: readme } = require('../README.md');
 
 export default {

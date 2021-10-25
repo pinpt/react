@@ -1,9 +1,8 @@
 import renderer from 'react-test-renderer';
 import Head from '../';
+import type { IContent } from '../../../lib/types';
 import entries from '../../Prebuilt/__data__/testEntries.json';
 import site from '../../Prebuilt/__data__/testSite.json';
-
-import type { IContent } from '../../../lib/types';
 
 test('Test default render for Site', () => {
 	const component = renderer.create(<Head site={site} />);

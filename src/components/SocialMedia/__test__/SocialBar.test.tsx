@@ -1,11 +1,11 @@
 import renderer from 'react-test-renderer';
-import SocialMediaBar from '../SocialMediaBar';
 import FacebookLink from '../Facebook/FacebookLink';
-import InstagramLink from '../Instagram/InstagramLink';
-import TwitterLink from '../Twitter/TwitterLink';
 import GithubLink from '../Github/GithubLink';
+import InstagramLink from '../Instagram/InstagramLink';
 import LinkedInLink from '../LinkedIn/LinkedInLink';
 import RSSLink from '../RSS/RSSLink';
+import SocialMediaBar from '../SocialMediaBar';
+import TwitterLink from '../Twitter/TwitterLink';
 
 test('Test all', () => {
 	const component = renderer.create(

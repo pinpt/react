@@ -1,5 +1,5 @@
-import { NodeProps } from './register';
 import React from 'react';
+import { NodeProps } from './register';
 
 /**
  * cb: in the future open source projects may want to link to PRs,

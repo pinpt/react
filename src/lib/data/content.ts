@@ -1,8 +1,8 @@
-import type { IContent } from '../types/content';
-import type { ISite } from '../types/site';
-import type { IPinpointConfig } from '../types/config';
 import { executeAPI } from '../fetch';
 import { getQueryString } from '../string';
+import type { IPinpointConfig } from '../types/config';
+import type { IContent } from '../types/content';
+import type { ISite } from '../types/site';
 
 export interface FetchContentResult {
 	content: IContent;

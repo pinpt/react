@@ -1,9 +1,9 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
 import Feedback from '../';
+import type { IPinpointConfig } from '../../../lib/types';
 
 const { default: readme } = require('../README.md');
-import type { IPinpointConfig } from '../../../lib/types';
 
 const config = {
 	slug: 'pinpoint',

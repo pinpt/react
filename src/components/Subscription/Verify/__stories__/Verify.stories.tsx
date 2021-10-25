@@ -1,6 +1,7 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
 import Verify from '../';
+
 const { default: readme } = require('../../README.md');
 
 export default {

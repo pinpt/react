@@ -1,5 +1,5 @@
-import type { IPinpointConfig } from '../types/config';
 import { executeAPI } from '../fetch';
+import type { IPinpointConfig } from '../types/config';
 
 interface FeedbackLink {
 	id: string; // unique id for the link

@@ -1,10 +1,11 @@
+import { Title, Subtitle, Description, Primary, Stories } from '@storybook/addon-docs';
 import { Meta } from '@storybook/react';
 import { IPinpointConfig } from '..';
-import useEntries from '../../hooks/useEntries';
-const { default: readme } = require('./Site.README.md');
 import Loader from '../../../components/Loader';
 import PrebuiltHome from '../../../components/Prebuilt/Home';
-import { Title, Subtitle, Description, Primary, Stories } from '@storybook/addon-docs';
+import useEntries from '../../hooks/useEntries';
+
+const { default: readme } = require('./Site.README.md');
 
 export default {
 	title: 'Types/Site Types',

@@ -1,9 +1,8 @@
 import renderer from 'react-test-renderer';
+import type { IContent } from '../../../lib/types';
+import PrebuiltEntry from '../Entry';
 import entries from '../__data__/testEntries.json';
 import site from '../__data__/testSite.json';
-import PrebuiltEntry from '../Entry';
-
-import type { IContent } from '../../../lib/types';
 
 test('Test default state', () => {
 	const component = renderer.create(

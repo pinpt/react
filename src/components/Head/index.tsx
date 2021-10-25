@@ -1,6 +1,6 @@
-import type { ISite, IContent } from '../../lib/types';
 import React from 'react';
 import { getSiteAnalyticsURL } from '../../lib/router';
+import type { ISite, IContent } from '../../lib/types';
 import SEO from './SEO';
 import ScriptPlugins from './ScriptPlugins';
 

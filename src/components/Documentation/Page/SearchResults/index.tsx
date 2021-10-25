@@ -1,11 +1,11 @@
 import React, { forwardRef, ReactElement } from 'react';
-import Loader from '../../../Loader';
-import withWrapper from '../../../Internal/withWrapper';
-import { IHeaderProps } from '../../../Header';
 import { IFooterProps } from '../../../Footer';
+import { IHeaderProps } from '../../../Header';
+import withWrapper from '../../../Internal/withWrapper';
+import Loader from '../../../Loader';
+import { GoBackWithArrow } from '../../../Pagination';
 import { ISearchBarProps } from '../../../Search/Bar';
 import { IDocumentationCardProps } from '../../Card';
-import { GoBackWithArrow } from '../../../Pagination';
 
 export interface ISearchResultsProps {
 	className?: string;

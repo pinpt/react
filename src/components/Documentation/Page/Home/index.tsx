@@ -1,12 +1,12 @@
 import React from 'react';
 import { forwardRef, ReactElement } from 'react';
-import Loader from '../../../Loader';
+import { IFooterProps } from '../../../Footer';
 import { IHeaderProps } from '../../../Header';
 import withWrapper from '../../../Internal/withWrapper';
-import { IOutlineProps } from '../../Outline';
-import { IFooterProps } from '../../../Footer';
+import Loader from '../../../Loader';
 import { IPaginationProps } from '../../../Pagination';
 import { ISearchBarProps } from '../../../Search/Bar';
+import { IOutlineProps } from '../../Outline';
 
 export interface IDocumentationHomeProps {
 	className?: string;

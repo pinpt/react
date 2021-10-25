@@ -1,10 +1,11 @@
 import React from 'react';
+import { Subtitle, Description, Primary, Stories, ArgsTable, PRIMARY_STORY } from '@storybook/addon-docs';
 import { Meta } from '@storybook/react';
-import site from '../__data__/testSite.json';
+import { SubscriptionInfo } from '../../../lib/types/subscription';
 import subscriptions from '../../Subscription/Manage/__data__/subscriptions.json';
 import Manage from '../Subscription/Manage';
-import { Subtitle, Description, Primary, Stories, ArgsTable, PRIMARY_STORY } from '@storybook/addon-docs';
-import { SubscriptionInfo } from '../../../lib/types/subscription';
+import site from '../__data__/testSite.json';
+
 const { default: readme } = require('../Subscription/Manage/README.md');
 
 export default {

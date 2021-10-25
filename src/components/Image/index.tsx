@@ -1,5 +1,6 @@
+import React from 'react';
 import { decode } from 'blurhash';
-import React from 'react'; // don't remove
+// don't remove
 import { extractImageMetadataFromFileID, isFileAPI } from '../../lib/file_metadata';
 
 const getImageURLFromArray = (buf: Uint8ClampedArray, w: number, h: number) => {

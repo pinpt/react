@@ -1,6 +1,6 @@
-import Results from './Results';
 import Bar from './Bar';
 import Query from './Query';
+import Results from './Results';
 
 export default {
 	Results,

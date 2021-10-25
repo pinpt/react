@@ -1,8 +1,9 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
 import Manage from '../';
-import subscriptions from '../__data__/subscriptions.json';
 import { SubscriptionInfo } from '../../../../lib/types/subscription';
+import subscriptions from '../__data__/subscriptions.json';
+
 const { default: readme } = require('../../README.md');
 
 export default {

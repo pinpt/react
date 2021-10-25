@@ -1,5 +1,6 @@
-import ActionLink from '../ActionLink';
 import React from 'react';
+import ActionLink from '../ActionLink';
+
 export interface IMobileMenuTriggerProps {
 	className?: string;
 	visible?: boolean;

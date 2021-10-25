@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { Meta } from '@storybook/react';
-import SearchResults from '../SearchResults';
-import entries from '../../__data__/testEntries.json';
-import site from '../../../Prebuilt/__data__/testSite.json';
-const { default: readme } = require('../README.md');
 import { IContent } from '../../../../lib';
+import site from '../../../Prebuilt/__data__/testSite.json';
+import entries from '../../__data__/testEntries.json';
+import SearchResults from '../SearchResults';
+
+const { default: readme } = require('../README.md');
 
 export default {
 	component: SearchResults,

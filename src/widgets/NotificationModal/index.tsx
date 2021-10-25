@@ -4,7 +4,6 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Card from '../../components/Card';
 import Modal from '../../components/Modal';
-
 import type { ICoverMedia } from '../../lib/types';
 
 interface PageProps {

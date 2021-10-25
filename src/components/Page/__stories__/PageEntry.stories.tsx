@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
 import { Meta } from '@storybook/react';
-import Entry from '../Entry';
-import { Content } from '../../Renderer';
-import Subscribe from '../../Subscribe';
-import Header from '../../Header';
-import Sidebar from '../../Sidebar';
+import { ICoverMedia } from '../../../lib/types';
 import Author from '../../Author';
-import Tags from '../../Tags';
 import Clap from '../../Clap';
+import Copyright from '../../Copyright';
+import DateLabel from '../../DateLabel';
 import Footer from '../../Footer';
+import Header from '../../Header';
+import Logo from '../../Logo';
+import Pagination from '../../Pagination';
+import { Content } from '../../Renderer';
+import Sidebar from '../../Sidebar';
 import {
 	SocialMediaBar,
 	FacebookLink,
@@ -22,13 +24,12 @@ import {
 	RSSLink,
 	EmailShare,
 } from '../../SocialMedia';
-import Copyright from '../../Copyright';
-import Logo from '../../Logo';
-import testDoc from '../Entry/__data__/testDoc.json';
+import Subscribe from '../../Subscribe';
+import Tags from '../../Tags';
+import Entry from '../Entry';
 import testCoverMedia from '../Entry/__data__/testCoverMedia.json';
-import DateLabel from '../../DateLabel';
-import Pagination from '../../Pagination';
-import { ICoverMedia } from '../../../lib/types';
+import testDoc from '../Entry/__data__/testDoc.json';
+
 const { default: readme } = require('../Entry/README.md');
 
 export default {

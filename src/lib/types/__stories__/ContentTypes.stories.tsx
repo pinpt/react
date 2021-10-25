@@ -1,9 +1,10 @@
-import { Meta } from '@storybook/react';
-import useContent from '../../hooks/useContent';
-import { Content } from '../../../components/Renderer';
-import { IPinpointConfig } from '../config';
-const { default: readme } = require('./Content.README.md');
 import { Title, Subtitle, Description, Primary, Stories } from '@storybook/addon-docs';
+import { Meta } from '@storybook/react';
+import { Content } from '../../../components/Renderer';
+import useContent from '../../hooks/useContent';
+import { IPinpointConfig } from '../config';
+
+const { default: readme } = require('./Content.README.md');
 
 export default {
 	title: 'Types/Content Types',

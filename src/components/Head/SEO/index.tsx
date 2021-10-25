@@ -1,9 +1,10 @@
-import React from 'react'; // import required
+import React from 'react';
+// import required
 import { extractImageMetadataFromFileID } from '../../../lib/file_metadata';
 import { getSiteRSSURL } from '../../../lib/router';
 import { getTwitterProfileFromURL } from '../../../lib/string';
-
 import type { ISite, IContent } from '../../../lib/types';
+
 export interface ISEOProps {
 	site: ISite;
 	content?: IContent;

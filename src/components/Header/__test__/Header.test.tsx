@@ -1,8 +1,8 @@
 import renderer from 'react-test-renderer';
 import Header from '..';
+import Search from '../../Search';
 import Subscribe from '../../Subscribe';
 import ThemeToggle from '../../ThemeToggle';
-import Search from '../../Search';
 
 test('Test complete', () => {
 	const component = renderer.create(

@@ -1,14 +1,14 @@
 import React, { forwardRef, ReactElement } from 'react';
-import Feedback from '../../../widgets/Feedback';
-import withWrapper from '../../Internal/withWrapper';
-import { CoverMedia } from '../../Renderer';
-
-import type { IFooterProps } from '../../Footer';
-import type { ISidebarProps } from '../../Sidebar';
-import type { IHeaderProps } from '../../Header';
 import type { ICoverMedia } from '../../../lib/types';
 import type { IFeedbackProps } from '../../../lib/types/feedback';
+import Feedback from '../../../widgets/Feedback';
+import type { IFooterProps } from '../../Footer';
+import type { IHeaderProps } from '../../Header';
+import withWrapper from '../../Internal/withWrapper';
 import type { IPaginationProps } from '../../Pagination';
+import { CoverMedia } from '../../Renderer';
+import type { ISidebarProps } from '../../Sidebar';
+
 export interface IPageEntryProps {
 	className?: string;
 	header?: ReactElement<IHeaderProps>;

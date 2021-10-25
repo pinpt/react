@@ -1,5 +1,5 @@
-import type { IPinpointConfig } from '../types/config';
 import { executeAPI } from '../fetch';
+import type { IPinpointConfig } from '../types/config';
 
 export const subscribe = async (config: IPinpointConfig, email: string): Promise<void> => {
 	await executeAPI(

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
 import SearchBar from '../Bar';
+
 const { default: readme } = require('../Bar/README.md');
 
 export default {

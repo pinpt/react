@@ -1,6 +1,7 @@
-import Error from '..';
 import { Meta } from '@storybook/react';
+import Error from '..';
 import Logo from '../../Logo';
+
 const { default: readme } = require('../README.md');
 
 export default {

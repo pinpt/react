@@ -1,5 +1,5 @@
-import { recurseIntoChildren, NodeProps } from './register';
 import React from 'react';
+import { recurseIntoChildren, NodeProps } from './register';
 
 const TableData = ({ node }: NodeProps) => {
 	return <td>{recurseIntoChildren(node)}</td>;

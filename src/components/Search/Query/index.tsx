@@ -1,9 +1,8 @@
 import { useMemo } from 'react';
-import Tags from '../../Tags';
-import { getTagColorStyles } from '../../../lib';
 import React from 'react';
-
+import { getTagColorStyles } from '../../../lib';
 import type { StyledTag, ISearchTerm, TagMapping } from '../../../lib/types';
+import Tags from '../../Tags';
 
 export interface IQueryProps {
 	className?: string;

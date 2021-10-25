@@ -1,6 +1,7 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
 import SocialComponent from '../Instagram/InstagramLink';
+
 const { default: readme } = require('../README.md');
 
 export default {

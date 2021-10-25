@@ -1,8 +1,9 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
 import MostRecentPosts from '../';
-const { default: readme } = require('../README.md');
 import previewData from '../__data__/previewData.json';
+
+const { default: readme } = require('../README.md');
 
 export default {
 	component: MostRecentPosts,

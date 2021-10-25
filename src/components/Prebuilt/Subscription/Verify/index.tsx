@@ -1,15 +1,15 @@
 import React, { ReactElement } from 'react';
-import { IHeaderProps } from '../../../Header';
-import Header from '../../Header';
-import Footer from '../../Footer';
-import VerifyComponent from '../../../Subscription/Verify';
 import { ISite } from '../../../../lib/types/site';
-import { ILogoProps } from '../../../Logo';
-import { IThemeToggleProps } from '../../../ThemeToggle';
-import withWrapper from '../../../Internal/withWrapper';
-import { IFooterProps } from '../../../Footer';
-import { ISocialMediaBarProps } from '../../../SocialMedia/SocialMediaBar';
 import { ICopyrightProps } from '../../../Copyright';
+import { IFooterProps } from '../../../Footer';
+import { IHeaderProps } from '../../../Header';
+import withWrapper from '../../../Internal/withWrapper';
+import { ILogoProps } from '../../../Logo';
+import { ISocialMediaBarProps } from '../../../SocialMedia/SocialMediaBar';
+import VerifyComponent from '../../../Subscription/Verify';
+import { IThemeToggleProps } from '../../../ThemeToggle';
+import Footer from '../../Footer';
+import Header from '../../Header';
 
 export interface IPrebuiltVerifyProps {
 	className?: string;

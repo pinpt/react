@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { Meta } from '@storybook/react';
-import Home from '../Home';
-import entries from '../../__data__/testEntries.json';
-import site from '../../../Prebuilt/__data__/testSite.json';
-const { default: readme } = require('../Home/README.md');
-import Header from '../../../Header';
-import Outline from '../../Outline';
 import { IContent } from '../../../../lib';
-import { Content } from '../../../Renderer';
+import Copyright from '../../../Copyright';
 import Footer from '../../../Footer';
+import Header from '../../../Header';
+import Logo from '../../../Logo';
+import Pagination from '../../../Pagination';
+import site from '../../../Prebuilt/__data__/testSite.json';
+import { Content } from '../../../Renderer';
+import Search from '../../../Search';
 import {
 	SocialMediaBar,
 	FacebookLink,
@@ -19,10 +19,11 @@ import {
 	RSSLink,
 } from '../../../SocialMedia';
 import Subscribe from '../../../Subscribe';
-import Copyright from '../../../Copyright';
-import Logo from '../../../Logo';
-import Pagination from '../../../Pagination';
-import Search from '../../../Search';
+import Outline from '../../Outline';
+import entries from '../../__data__/testEntries.json';
+import Home from '../Home';
+
+const { default: readme } = require('../Home/README.md');
 
 const IMAGE_URL =
 	'https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png';

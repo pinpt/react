@@ -1,7 +1,6 @@
 import debuglog from 'debug';
 import fetch from 'isomorphic-unfetch';
 import sleep from './sleep';
-
 import type { IPinpointConfig } from './types';
 
 const debug = debuglog('pinpoint:fetch');

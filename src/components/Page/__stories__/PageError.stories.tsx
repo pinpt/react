@@ -1,9 +1,8 @@
-import ErrorPage from '../Error';
 import { Meta } from '@storybook/react';
 import Copyright from '../../Copyright';
-import Logo from '../../Logo';
 import Error from '../../Error';
 import Footer from '../../Footer';
+import Logo from '../../Logo';
 import {
 	SocialMediaBar,
 	FacebookLink,
@@ -14,6 +13,8 @@ import {
 	RSSLink,
 } from '../../SocialMedia';
 import Subscribe from '../../Subscribe';
+import ErrorPage from '../Error';
+
 const { default: readme } = require('../Error/README.md');
 
 export default {

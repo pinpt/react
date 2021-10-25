@@ -1,8 +1,8 @@
 import React from 'react';
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { twilight } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 import { faCheck, faCopy } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { twilight } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 import { NodeProps } from './register';
 
 const Copy = ({ text }: { text: string }) => {

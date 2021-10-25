@@ -1,9 +1,8 @@
-import algoliasearch from 'algoliasearch';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import algoliasearch from 'algoliasearch';
 import config from '../../../config';
 import { getTagColorStyles } from '../../color';
 import { CoverMediaType } from '../../types';
-
 import type { IContent, ISite, StyledTag, ICoverMedia, TagMapping } from '../../types';
 
 const { algolia } = config;

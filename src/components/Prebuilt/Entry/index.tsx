@@ -1,6 +1,8 @@
 import React, { ReactElement } from 'react';
 import { configFromSite } from '../../../lib/data/site';
+import type { IContent, ISite } from '../../../lib/types';
 import { ContentTemplateType } from '../../../lib/types/content';
+import type { IFeedbackProps } from '../../../lib/types/feedback';
 import Feedback from '../../../widgets/Feedback';
 import Author, { IAuthorProps } from '../../Author';
 import Clap, { IClapProps } from '../../Clap';
@@ -24,8 +26,6 @@ import { IThemeToggleProps } from '../../ThemeToggle';
 import Footer from '../Footer';
 import Header from '../Header';
 
-import type { IContent, ISite } from '../../../lib/types';
-import type { IFeedbackProps } from '../../../lib/types/feedback';
 export interface IPrebuiltEntryProps {
 	className?: string;
 	renderContent?: (content: IContent) => ReactElement;

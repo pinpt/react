@@ -1,10 +1,9 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React, { useEffect, useRef, useState } from 'react';
-import { createPortal } from 'react-dom';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { createPortal } from 'react-dom';
 import Card from '../../components/Card';
-
 import type { ICoverMedia } from '../../lib/types';
 
 interface PopupProps {

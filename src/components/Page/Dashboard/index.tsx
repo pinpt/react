@@ -1,14 +1,14 @@
 import { forwardRef, ReactElement } from 'react';
-import { ISearchResultsProps } from '../../Search/Results';
+import React from 'react';
 import { IFooterProps } from '../../Footer';
 import { IHeaderProps } from '../../Header';
-import { ILatestProps } from '../../Latest';
-import { IRecentProps } from '../../Recent';
-import Loader from '../../Loader';
-import { IQueryProps } from '../../Search/Query';
-import { IPaginationProps } from '../../Pagination';
 import withWrapper from '../../Internal/withWrapper';
-import React from 'react';
+import { ILatestProps } from '../../Latest';
+import Loader from '../../Loader';
+import { IPaginationProps } from '../../Pagination';
+import { IRecentProps } from '../../Recent';
+import { IQueryProps } from '../../Search/Query';
+import { ISearchResultsProps } from '../../Search/Results';
 
 export interface IPageDashboardProps {
 	className?: string;

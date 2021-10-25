@@ -1,10 +1,10 @@
 import React, { cloneElement, ReactElement, useCallback, useEffect, useRef, useState } from 'react';
 import { render } from 'react-dom';
-import NotificationBanner from '../../widgets/NotificationBanner';
 import useScriptLoader from '../../lib/hooks/useScriptLoader';
-import NotificationPopup from '../../widgets/NotificationPopup';
-import NotificationModal from '../../widgets/NotificationModal';
 import MostRecentPosts from '../../widgets/MostRecentPosts';
+import NotificationBanner from '../../widgets/NotificationBanner';
+import NotificationModal from '../../widgets/NotificationModal';
+import NotificationPopup from '../../widgets/NotificationPopup';
 
 export interface IPinpointProps {
 	siteId: string;

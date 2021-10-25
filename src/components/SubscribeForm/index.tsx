@@ -3,7 +3,6 @@ import { faCheckCircle, faExclamationCircle, faSpinner } from '@fortawesome/free
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { subscribe } from '../../lib/data/subscription';
 import { isSubscriberCookieSet, validateEmail } from '../../lib/subscription';
-
 import type { IPinpointConfig } from '../../lib/types';
 
 export interface SubscribeFormProps {

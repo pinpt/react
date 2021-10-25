@@ -1,15 +1,15 @@
 import React from 'react';
 import { extractImageMetadataFromFileID } from '../../../lib/file_metadata';
 import { CoverMediaType, ICoverMedia } from '../../../lib/types';
+import type { IDateProps } from '../../DateLabel';
 import Image from '../../Image';
 import { CoverMedia } from '../../Renderer';
-
 import type { IStatisticsBarProps } from '../../Statistic/Bar';
 import type { ITagBarProps } from '../../Tags/Bar';
-import type { IDateProps } from '../../DateLabel';
 import type { ICardDescriptionProps } from '../Description';
 import type { ICardReadButtonProps } from '../ReadButton';
 import type { ICardTitleProps } from '../Title';
+
 export interface ICardContainerProps {
 	title?: React.ReactElement<ICardTitleProps>;
 	description?: React.ReactElement<ICardDescriptionProps>;

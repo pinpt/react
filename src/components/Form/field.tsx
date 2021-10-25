@@ -1,6 +1,5 @@
 // TODO @keegan
 // - Info & Error Tooltips
-
 import React, { ReactNode } from 'react';
 
 export interface IFieldProps {

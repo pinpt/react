@@ -1,5 +1,7 @@
 import renderer from 'react-test-renderer';
 import Footer from '..';
+import Copyright from '../../Copyright';
+import Logo from '../../Logo';
 import {
 	SocialMediaBar,
 	FacebookLink,
@@ -9,8 +11,6 @@ import {
 	LinkedInLink,
 	RSSLink,
 } from '../../SocialMedia';
-import Copyright from '../../Copyright';
-import Logo from '../../Logo';
 import Subscribe from '../../Subscribe';
 
 const IMAGE_URL =

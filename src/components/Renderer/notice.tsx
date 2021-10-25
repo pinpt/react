@@ -1,7 +1,7 @@
+import React from 'react';
 import { faExclamationTriangle, faInfoCircle, faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { NodeProps, recurseIntoChildren } from './register';
-import React from 'react';
 
 const Notice = ({ node }: NodeProps) => {
 	const style = node.attrs?.style;

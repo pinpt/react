@@ -1,6 +1,6 @@
 import renderer from 'react-test-renderer';
-import site from '../__data__/testSite.json';
 import Header from '../Header';
+import site from '../__data__/testSite.json';
 
 test('Test default state', () => {
 	const component = renderer.create(<Header site={site} />);

@@ -3,7 +3,6 @@
 // - Navigation Lock
 // - Alert
 // - Cancel handler
-
 import React, { ReactNode } from 'react';
 
 export interface IFormProps {

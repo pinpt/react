@@ -1,7 +1,7 @@
+import React from 'react';
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { NodeProps, PmNode, recurseIntoChildren } from './register';
-import React from 'react';
 
 const getFirstChildNodeText = (node: PmNode): string | undefined => {
 	if (node.content) {

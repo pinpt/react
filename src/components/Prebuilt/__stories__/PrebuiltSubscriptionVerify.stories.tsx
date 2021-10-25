@@ -1,8 +1,9 @@
 import React from 'react';
-import { Meta } from '@storybook/react';
-import site from '../__data__/testSite.json';
-import Verify from '../Subscription/Verify';
 import { Subtitle, Description, Primary, Stories, ArgsTable, PRIMARY_STORY } from '@storybook/addon-docs';
+import { Meta } from '@storybook/react';
+import Verify from '../Subscription/Verify';
+import site from '../__data__/testSite.json';
+
 const { default: readme } = require('../Subscription/Verify/README.md');
 
 export default {

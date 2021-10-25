@@ -1,10 +1,9 @@
 import renderer from 'react-test-renderer';
+import type { IContent } from '../../../lib/types/content';
+import Home from '../Home';
 import analytics from '../__data__/testAnalytics.json';
 import entries from '../__data__/testEntries.json';
 import site from '../__data__/testSite.json';
-import Home from '../Home';
-
-import type { IContent } from '../../../lib/types/content';
 
 test('Test default state', () => {
 	const component = renderer.create(<Home entries={entries as IContent[]} site={site} skipAnalyticsFetch />);
