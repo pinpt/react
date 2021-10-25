@@ -29,4 +29,10 @@ export default {
 	},
 } as Meta;
 
-export const Default: React.VFC<{}> = () => <Verify site={site} />;
+export const Default: React.VFC<{}> = () => <Verify site={site} verified firstName="Keegan" lastName="Donley" />;
+
+export const Loading: React.VFC<{}> = () => (
+	<Verify site={site} loading verified firstName="Keegan" lastName="Donley" />
+);
+
+export const Unverified: React.VFC<{}> = () => <Verify site={site} firstName="Keegan" lastName="Donley" />;

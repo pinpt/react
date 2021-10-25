@@ -6,7 +6,7 @@ import { IHeaderProps } from '../../../Header';
 import withWrapper from '../../../Internal/withWrapper';
 import { ILogoProps } from '../../../Logo';
 import { ISocialMediaBarProps } from '../../../SocialMedia/SocialMediaBar';
-import VerifyComponent from '../../../Subscription/Verify';
+import VerifyComponent, { IVerifyeProps } from '../../../Subscription/Verify';
 import { IThemeToggleProps } from '../../../ThemeToggle';
 import Footer from '../../Footer';
 import Header from '../../Header';
@@ -21,6 +21,11 @@ export interface IPrebuiltVerifyProps {
 	renderFooter?: (site: ISite) => ReactElement<IFooterProps>;
 	renderSocial?: (site: ISite) => ReactElement<ISocialMediaBarProps>;
 	renderCopyright?: (site: ISite) => ReactElement<ICopyrightProps>;
+	renderVerify?: (site: ISite) => ReactElement<IVerifyeProps>;
+	firstName?: string;
+	lastName?: string;
+	loading?: boolean;
+	verified?: boolean;
 }
 
 const Verify = (props: IPrebuiltVerifyProps) => {
@@ -34,6 +39,11 @@ const Verify = (props: IPrebuiltVerifyProps) => {
 		renderFooter,
 		renderCopyright,
 		renderSocial,
+		renderVerify,
+		firstName,
+		lastName,
+		verified,
+		loading,
 	} = props;
 
 	return (
@@ -51,7 +61,12 @@ const Verify = (props: IPrebuiltVerifyProps) => {
 				),
 				'header'
 			)}
-			{withWrapper(<VerifyComponent />, 'subscribe')}
+			{withWrapper(
+				renderVerify?.(site) ?? (
+					<VerifyComponent firstName={firstName} lastName={lastName} verified={verified} loading={loading} />
+				),
+				'subscribe'
+			)}
 			{withWrapper(
 				renderFooter?.(site) ?? (
 					<Footer

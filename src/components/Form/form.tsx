@@ -16,6 +16,7 @@ export interface IFormProps {
 	buttons?: ReactNode;
 	children?: ReactNode;
 	onCancel?: () => void;
+	dirty?: boolean;
 }
 
 const Form = (props: IFormProps) => {
@@ -30,6 +31,7 @@ const Form = (props: IFormProps) => {
 		buttons,
 		children,
 		onCancel,
+		dirty = false,
 	} = props;
 	return (
 		<div className={`Pinpoint Form Wrapper ${className}`}>
@@ -41,7 +43,11 @@ const Form = (props: IFormProps) => {
 					</div>
 					{buttonLocation === 'top' && (
 						<div>
-							{onSave && <div>Placeholder - save</div>}
+							{onSave && (
+								<button disabled={!dirty} type="button" className={`Pinpoint Form SaveButton`}>
+									Save
+								</button>
+							)}
 							{buttons}
 						</div>
 					)}
@@ -51,7 +57,11 @@ const Form = (props: IFormProps) => {
 					<div className="Pinpoint Form BottomButton">
 						<div className="Pinpoint Form Spacer">
 							{onCancel && <div>Placehodler - cancel</div>}
-							{onSave && <div>Placeholder - save</div>}
+							{onSave && (
+								<button disabled={!dirty} type="button" className={`Pinpoint Form SaveButton`}>
+									Save
+								</button>
+							)}
 							{buttons}
 						</div>
 					</div>

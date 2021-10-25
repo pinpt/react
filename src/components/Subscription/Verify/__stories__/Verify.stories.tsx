@@ -18,4 +18,6 @@ export default {
 	},
 } as Meta;
 
-export const Default: React.VFC<{}> = () => <Verify />;
+export const Default: React.VFC<{}> = () => <Verify verified />;
+
+export const Unverified: React.VFC<{}> = () => <Verify />;
