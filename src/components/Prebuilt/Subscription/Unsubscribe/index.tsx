@@ -6,7 +6,7 @@ import { IHeaderProps } from '../../../Header';
 import withWrapper from '../../../Internal/withWrapper';
 import { ILogoProps } from '../../../Logo';
 import { ISocialMediaBarProps } from '../../../SocialMedia/SocialMediaBar';
-import UnsubscribeComponent from '../../../Subscription/Unsubscribe';
+import UnsubscribeComponent, { IUnSubscribeProps } from '../../../Subscription/Unsubscribe';
 import { IThemeToggleProps } from '../../../ThemeToggle';
 import Footer from '../../Footer';
 import Header from '../../Header';
@@ -21,6 +21,13 @@ export interface IPrebuiltUnsubscribeProps {
 	renderFooter?: (site: ISite) => ReactElement<IFooterProps>;
 	renderSocial?: (site: ISite) => ReactElement<ISocialMediaBarProps>;
 	renderCopyright?: (site: ISite) => ReactElement<ICopyrightProps>;
+	renderUnsubscribe?: (site: ISite) => ReactElement<IUnSubscribeProps>;
+	email: string;
+	fileApi?: string;
+	subscribed?: boolean;
+	handleUnsubscribe?: () => Promise<void>;
+	handleSubscribe?: () => Promise<void>;
+	manageSubscriptions?: () => void;
 }
 
 const Unsubscribe = (props: IPrebuiltUnsubscribeProps) => {
@@ -34,6 +41,13 @@ const Unsubscribe = (props: IPrebuiltUnsubscribeProps) => {
 		renderFooter,
 		renderCopyright,
 		renderSocial,
+		renderUnsubscribe,
+		email,
+		fileApi,
+		subscribed,
+		handleUnsubscribe,
+		handleSubscribe,
+		manageSubscriptions,
 	} = props;
 
 	return (
@@ -51,7 +65,22 @@ const Unsubscribe = (props: IPrebuiltUnsubscribeProps) => {
 				),
 				'header'
 			)}
-			{withWrapper(<UnsubscribeComponent />, 'unsubscribe')}
+			{withWrapper(
+				renderUnsubscribe?.(site) ?? (
+					<UnsubscribeComponent
+						className="Prebuilt"
+						name={site.name}
+						logo={site.logoUrl}
+						email={email}
+						fileApi={fileApi}
+						subscribed={subscribed}
+						handleSubscribe={handleSubscribe}
+						handleUnsubscribe={handleUnsubscribe}
+						manageSubscriptions={manageSubscriptions}
+					/>
+				),
+				'unsubscribe'
+			)}
 			{withWrapper(
 				renderFooter?.(site) ?? (
 					<Footer
