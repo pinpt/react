@@ -6,3 +6,5 @@ export { default as useBackground } from './useBackground';
 export { default as useEmailAction } from './useEmailAction';
 export { default as useSubscriptionCreator } from './useSubscriptionCreator';
 export { default as useSubscriptionList } from './useSubscriptionList';
+export { default as useSubscription } from './useSubscription';
+export { default as useSubscriptionUpdater } from './useSubscriptionUpdater';

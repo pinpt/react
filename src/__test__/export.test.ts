@@ -116,6 +116,8 @@ const {
 	getRenderer,
 	useSubscriptionCreator,
 	useSubscriptionList,
+	useSubscription,
+	useSubscriptionUpdater,
 	...otherExports
 } = Exports;
 
@@ -263,6 +265,8 @@ test('Test hook exports', () => {
 	expect(useEmailAction).toBeTruthy();
 	expect(useSubscriptionCreator).toBeTruthy();
 	expect(useSubscriptionList).toBeTruthy();
+	expect(useSubscription).toBeTruthy();
+	expect(useSubscriptionUpdater).toBeTruthy();
 });
 
 test('Test widget exports', () => {

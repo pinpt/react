@@ -1,9 +1,8 @@
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useState } from 'react';
 import { executeAPI } from '../../fetch';
 import { getRouterAbsolutePath } from '../../router';
 import { IPinpointConfig } from '../../types/config';
 import { ISite } from '../../types/site';
-import { SubscriptionInfo } from '../../types/subscription';
 
 const useSubscriptionCreator = (site: ISite) => {
 	const [loading, setLoading] = useState<boolean>(false);

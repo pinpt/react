@@ -44,7 +44,7 @@ const Form = (props: IFormProps) => {
 					{buttonLocation === 'top' && (
 						<div>
 							{onSave && (
-								<button disabled={!dirty} type="button" className={`Pinpoint Form SaveButton`}>
+								<button disabled={!dirty} type="button" className={`Pinpoint Form SaveButton`} onClick={onSave}>
 									Save
 								</button>
 							)}
