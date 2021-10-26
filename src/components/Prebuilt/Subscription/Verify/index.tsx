@@ -26,6 +26,8 @@ export interface IPrebuiltVerifyProps {
 	lastName?: string;
 	loading?: boolean;
 	verified?: boolean;
+	onSave?: (firstName: string, lastName: string) => Promise<any>;
+	pending?: boolean;
 }
 
 const Verify = (props: IPrebuiltVerifyProps) => {
@@ -44,6 +46,8 @@ const Verify = (props: IPrebuiltVerifyProps) => {
 		lastName,
 		verified,
 		loading,
+		onSave,
+		pending,
 	} = props;
 
 	return (
@@ -63,7 +67,14 @@ const Verify = (props: IPrebuiltVerifyProps) => {
 			)}
 			{withWrapper(
 				renderVerify?.(site) ?? (
-					<VerifyComponent firstName={firstName} lastName={lastName} verified={verified} loading={loading} />
+					<VerifyComponent
+						firstName={firstName}
+						lastName={lastName}
+						verified={verified}
+						loading={loading}
+						onSave={onSave}
+						pending={pending}
+					/>
 				),
 				'subscribe'
 			)}

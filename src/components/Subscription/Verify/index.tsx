@@ -11,6 +11,8 @@ export interface IVerifyeProps {
 	loading?: boolean;
 	firstName?: string;
 	lastName?: string;
+	onSave?: (firstName: string, lastName: string) => Promise<any>;
+	pending?: boolean;
 }
 
 const baseClass = 'Pinpoint SubscriptionVerify';
@@ -22,6 +24,8 @@ const Verify = (props: IVerifyeProps) => {
 		loading = false,
 		firstName: propsFirstName = '',
 		lastName: propsLastName = '',
+		onSave,
+		pending = false,
 	} = props;
 	const emailActionState = useEmailAction();
 	const [firstName, setFirstName] = useState(() => propsFirstName);
@@ -50,6 +54,10 @@ const Verify = (props: IVerifyeProps) => {
 		return propsFirstName !== firstName || propsLastName !== lastName;
 	}, [propsFirstName, propsLastName, firstName, lastName]);
 
+	const handleSave = useCallback(() => {
+		onSave?.(firstName, lastName);
+	}, [firstName, lastName, onSave]);
+
 	if (loading) {
 		return <Loader />;
 	}
@@ -64,7 +72,7 @@ const Verify = (props: IVerifyeProps) => {
 							<Form
 								title="👋 We'd love to know a little more about you!"
 								description="If you prefer to, you can simply close this tab instead."
-								onSave={() => console.log('save')}
+								onSave={handleSave}
 								dirty={isFormDirty}
 							>
 								<div className={`${baseClass} Form`}>
