@@ -6,6 +6,7 @@ import Form from '../../Form/form';
 export interface ISubscribeProps {
 	className?: string;
 	name?: string;
+	handleSubmit?: (email: string) => Promise<any>;
 }
 
 const validate = async () => true;
@@ -18,6 +19,10 @@ const Subscribe = (props: ISubscribeProps) => {
 		setEmail(e.target.value);
 	}, []);
 
+	const handleSubmit = useCallback(() => {
+		props.handleSubmit?.(email);
+	}, [props.handleSubmit, email]);
+
 	return (
 		<div className={`Pinpoint SubscriptionSubscribe Wrapper ${className}`}>
 			<Form
@@ -25,7 +30,7 @@ const Subscribe = (props: ISubscribeProps) => {
 				description=""
 				buttonLocation="bottom"
 				buttons={
-					<button disabled={!emailValid} className="Pinpoint SubscriptionSubscribe Submit">
+					<button disabled={!emailValid} className="Pinpoint SubscriptionSubscribe Submit" onClick={handleSubmit}>
 						Submit
 					</button>
 				}

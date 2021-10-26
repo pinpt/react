@@ -21,6 +21,8 @@ export interface IPrebuiltSubscribeProps {
 	renderFooter?: (site: ISite) => ReactElement<IFooterProps>;
 	renderSocial?: (site: ISite) => ReactElement<ISocialMediaBarProps>;
 	renderCopyright?: (site: ISite) => ReactElement<ICopyrightProps>;
+	handleSubmit?: (email: string) => Promise<any>;
+	contentClassName?: string;
 }
 
 const Subscribe = (props: IPrebuiltSubscribeProps) => {
@@ -34,6 +36,8 @@ const Subscribe = (props: IPrebuiltSubscribeProps) => {
 		renderFooter,
 		renderCopyright,
 		renderSocial,
+		handleSubmit,
+		contentClassName,
 	} = props;
 
 	return (
@@ -51,7 +55,14 @@ const Subscribe = (props: IPrebuiltSubscribeProps) => {
 				),
 				'header'
 			)}
-			{withWrapper(<SubscribeComponent name={site.name} />, 'subscribe')}
+			{withWrapper(
+				<SubscribeComponent
+					name={site.name}
+					handleSubmit={handleSubmit}
+					className={`Prebuilt ${contentClassName}`}
+				/>,
+				'subscribe'
+			)}
 			{withWrapper(
 				renderFooter?.(site) ?? (
 					<Footer
