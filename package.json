@@ -1,6 +1,6 @@
 {
 	"name": "@pinpt/react",
-	"version": "2.0.16-8fe9d0f.0",
+	"version": "2.0.16-fa26059.0",
 	"description": "The Pinpoint UI Library for React",
 	"main": "dist/cjs/index.js",
 	"module": "dist/esm/index.js",
