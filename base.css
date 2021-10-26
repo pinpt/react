@@ -924,6 +924,10 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 	@apply w-full;
 }
 
+.Pinpoint.subscribeWrapper {
+	@apply flex-grow;
+}
+
 .Pinpoint.SubscriptionSubscribe.Wrapper {
 	@apply flex items-center flex-col mx-16 sm:mx-36 mb-16;
 }
