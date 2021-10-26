@@ -33,12 +33,15 @@ const Verify = (props: IVerifyeProps) => {
 
 	useEffect(() => {
 		if (verified) {
+			emailActionState.setters.setError('');
+			emailActionState.setters.setCritical(false);
 			emailActionState.setters.setCanClear(false);
 			emailActionState.setters.setMessage('Your email address has been verified');
 		} else {
 			emailActionState.setters.setCritical(true);
 			emailActionState.setters.setCode(500);
 			emailActionState.setters.setError('Your email could not be verified at this time');
+			emailActionState.setters.setMessage('');
 		}
 	}, [verified]);
 
