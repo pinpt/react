@@ -114,6 +114,8 @@ const {
 	CoverMedia,
 	registerRenderer,
 	getRenderer,
+	useSubscriptionCreator,
+	useSubscriptionList,
 	...otherExports
 } = Exports;
 
@@ -259,6 +261,8 @@ test('Test hook exports', () => {
 	expect(useScriptLoader).toBeTruthy();
 	expect(useBackground).toBeTruthy();
 	expect(useEmailAction).toBeTruthy();
+	expect(useSubscriptionCreator).toBeTruthy();
+	expect(useSubscriptionList).toBeTruthy();
 });
 
 test('Test widget exports', () => {
