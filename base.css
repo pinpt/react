@@ -924,7 +924,7 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 	@apply w-full;
 }
 
-.Pinpoint.subscribeWrapper {
+.Pinpoint.subscribeWrapper, .Pinpoint.unsubscribeWrapper, .Pinpoint.manageWrapper {
 	@apply flex-grow;
 }
 
