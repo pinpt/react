@@ -32,6 +32,14 @@ const Verify = (props: IVerifyeProps) => {
 	const [lastName, setLastName] = useState(() => propsLastName);
 
 	useEffect(() => {
+		setFirstName(propsFirstName);
+	}, [propsFirstName]);
+
+	useEffect(() => {
+		setLastName(propsLastName);
+	}, [propsLastName]);
+
+	useEffect(() => {
 		if (verified) {
 			emailActionState.setters.setError('');
 			emailActionState.setters.setCritical(false);
