@@ -6,7 +6,7 @@ import { IHeaderProps } from '../../../Header';
 import withWrapper from '../../../Internal/withWrapper';
 import { ILogoProps } from '../../../Logo';
 import { ISocialMediaBarProps } from '../../../SocialMedia/SocialMediaBar';
-import VerifyComponent, { IVerifyeProps } from '../../../Subscription/Verify';
+import VerifyComponent, { IVerifyProps } from '../../../Subscription/Verify';
 import { IThemeToggleProps } from '../../../ThemeToggle';
 import Footer from '../../Footer';
 import Header from '../../Header';
@@ -21,13 +21,12 @@ export interface IPrebuiltVerifyProps {
 	renderFooter?: (site: ISite) => ReactElement<IFooterProps>;
 	renderSocial?: (site: ISite) => ReactElement<ISocialMediaBarProps>;
 	renderCopyright?: (site: ISite) => ReactElement<ICopyrightProps>;
-	renderVerify?: (site: ISite) => ReactElement<IVerifyeProps>;
+	renderVerify?: (site: ISite) => ReactElement<IVerifyProps>;
 	firstName?: string;
 	lastName?: string;
 	loading?: boolean;
 	verified?: boolean;
 	onSave?: (firstName: string, lastName: string) => Promise<any>;
-	pending?: boolean;
 }
 
 const Verify = (props: IPrebuiltVerifyProps) => {
@@ -47,7 +46,6 @@ const Verify = (props: IPrebuiltVerifyProps) => {
 		verified,
 		loading,
 		onSave,
-		pending,
 	} = props;
 
 	return (
@@ -73,7 +71,6 @@ const Verify = (props: IPrebuiltVerifyProps) => {
 						verified={verified}
 						loading={loading}
 						onSave={onSave}
-						pending={pending}
 					/>
 				),
 				'subscribe'

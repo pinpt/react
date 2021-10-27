@@ -1,0 +1,177 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test default state 1`] = `
+<div
+  className="Pinpoint SubscriptionSubscribe Wrapper "
+>
+  <h2
+    className="Pinpoint SubscriptionSubscribe Title"
+  >
+    Subscribe to Updates
+  </h2>
+  <p
+    className="Pinpoint SubscriptionSubscribe Description"
+  >
+    Enter your email to be notified of new content
+    
+    !
+  </p>
+  
+  
+  
+  <div
+    className="Pinpoint Form Wrapper "
+  >
+    <div
+      className="Pinpoint Form Parent "
+    >
+      <div
+        className="Pinpoint Form Control"
+      >
+        <div
+          className="Pinpoint Form Heading "
+        >
+          <h1>
+            
+          </h1>
+          <h2>
+            
+          </h2>
+        </div>
+      </div>
+      <div
+        className="Pinpoint Field Wrapper "
+      >
+        <div
+          className="Pinpoint Field Parent"
+        >
+          <label
+            className="Pinpoint Field Label "
+          >
+            Email
+          </label>
+          <div
+            className="Pinpoint Field Status"
+          />
+        </div>
+        <div
+          className="Pinpoint Field Children"
+        >
+          <input
+            className="Pinpoint SubscriptionSubscribe Field"
+            onChange={[Function]}
+            placeholder="Enter your email address"
+            value=""
+          />
+        </div>
+        <div
+          className="Pinpoint Field Description"
+        />
+      </div>
+      <div
+        className="Pinpoint Form BottomButton"
+      >
+        <div
+          className="Pinpoint Form Spacer"
+        >
+          <button
+            className="Pinpoint SubscriptionSubscribe Submit"
+            disabled={true}
+            onClick={[Function]}
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Test with name 1`] = `
+<div
+  className="Pinpoint SubscriptionSubscribe Wrapper "
+>
+  <h2
+    className="Pinpoint SubscriptionSubscribe Title"
+  >
+    Subscribe to Updates for Pinpoint
+  </h2>
+  <p
+    className="Pinpoint SubscriptionSubscribe Description"
+  >
+    Enter your email to be notified of new content
+     from Pinpoint
+    !
+  </p>
+  
+  
+  
+  <div
+    className="Pinpoint Form Wrapper "
+  >
+    <div
+      className="Pinpoint Form Parent "
+    >
+      <div
+        className="Pinpoint Form Control"
+      >
+        <div
+          className="Pinpoint Form Heading "
+        >
+          <h1>
+            
+          </h1>
+          <h2>
+            
+          </h2>
+        </div>
+      </div>
+      <div
+        className="Pinpoint Field Wrapper "
+      >
+        <div
+          className="Pinpoint Field Parent"
+        >
+          <label
+            className="Pinpoint Field Label "
+          >
+            Email
+          </label>
+          <div
+            className="Pinpoint Field Status"
+          />
+        </div>
+        <div
+          className="Pinpoint Field Children"
+        >
+          <input
+            className="Pinpoint SubscriptionSubscribe Field"
+            onChange={[Function]}
+            placeholder="Enter your email address"
+            value=""
+          />
+        </div>
+        <div
+          className="Pinpoint Field Description"
+        />
+      </div>
+      <div
+        className="Pinpoint Form BottomButton"
+      >
+        <div
+          className="Pinpoint Form Spacer"
+        >
+          <button
+            className="Pinpoint SubscriptionSubscribe Submit"
+            disabled={true}
+            onClick={[Function]}
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

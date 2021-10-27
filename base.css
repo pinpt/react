@@ -930,6 +930,18 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 	@apply flex-grow;
 }
 
+.Pinpoint.SubscriptionSubscribe .Pinpoint.Form.Control {
+	@apply hidden;
+}
+
+.Pinpoint.SubscriptionSubscribe.Title {
+	@apply text-3xl pt-4 mb-4 px-12 text-center dark:text-white;
+}
+
+.Pinpoint.SubscriptionSubscribe.Description {
+	@apply text-center mb-12 px-12 text-gray-600 dark:text-gray-300;
+}
+
 .Pinpoint.SubscriptionSubscribe.Wrapper {
 	@apply flex items-center flex-col mx-16 sm:mx-36 mb-16;
 }
@@ -1089,6 +1101,10 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 	@apply mt-6 grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-4;
 }
 
+.Pinpoint.SubscriptionVerify.Save {
+	@apply disabled:opacity-50 inline-flex justify-center cursor-pointer disabled:cursor-not-allowed px-4 py-1.5 rounded-md flex items-center font-semibold text-white bg-green-600 hover:bg-green-500 transition-colors duration-200 focus:outline-none ml-8;
+}
+
 /* Subscription Unsubscribe Component */
 
 .Pinpoint.SubscriptionUnsubscribe.Wrapper {
@@ -1124,7 +1140,7 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 }
 
 .Pinpoint.SubscriptionUnsubscribe.Manage {
-	@apply text-gray-600 text-sm pt-10 underline dark:text-gray-300;
+	@apply text-gray-600 text-sm pt-10 underline dark:text-gray-300 cursor-pointer;
 }
 
 /* styles from medium zoom image */

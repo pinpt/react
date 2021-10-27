@@ -1,4 +1,6 @@
 import React, { useMemo } from 'react';
+import { faSpinner } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { getFileUrl } from '../../../lib/file_metadata';
 import { SubscriptionInfo } from '../../../lib/types/subscription';
 
@@ -9,6 +11,7 @@ export interface IManageProps {
 	handleClickUnsubscribe?: (subscriptionId: string) => void;
 	handleClickReSubscribe?: (subscriptionId: string) => void;
 	fileApi?: string;
+	pendingState?: Record<string, boolean>;
 }
 const baseClass = 'Pinpoint SubscriptionManage';
 const Manage = (props: IManageProps) => {
@@ -19,6 +22,7 @@ const Manage = (props: IManageProps) => {
 		handleClickUnsubscribe,
 		handleClickReSubscribe,
 		fileApi = 'https://file.pinpoint.com',
+		pendingState,
 	} = props;
 
 	const filteredSubscriptions = useMemo(() => {
@@ -63,14 +67,22 @@ const Manage = (props: IManageProps) => {
 											className={`${baseClass} UnsubscribeButton`}
 											onClick={() => handleClickUnsubscribe?.(sub.subscriptionId)}
 										>
-											Unsubscribe
+											{pendingState?.[sub.subscriptionId] ? (
+												<FontAwesomeIcon icon={faSpinner} pulse />
+											) : (
+												'Unsubscribe'
+											)}
 										</button>
 									) : (
 										<button
 											className={`${baseClass} UpdateButton`}
 											onClick={() => handleClickReSubscribe?.(sub.subscriptionId)}
 										>
-											Resubscribe
+											{pendingState?.[sub.subscriptionId] ? (
+												<FontAwesomeIcon icon={faSpinner} pulse />
+											) : (
+												'Resubscribe'
+											)}
 										</button>
 									)}
 								</div>

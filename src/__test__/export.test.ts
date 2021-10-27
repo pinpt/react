@@ -121,8 +121,6 @@ const {
 	...otherExports
 } = Exports;
 
-console.log(otherExports);
-
 test('Test component exports', () => {
 	// Test Statistic Exports
 	expect(Statistic).toBeTruthy();

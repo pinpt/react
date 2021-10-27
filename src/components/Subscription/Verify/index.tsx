@@ -1,23 +1,24 @@
 import React, { ChangeEvent, useCallback, useEffect, useMemo, useState } from 'react';
+import { faSpinner } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import useEmailAction from '../../../lib/hooks/useEmailAction';
 import EmailAction from '../../EmailAction';
 import Field from '../../Form/field';
 import Form from '../../Form/form';
 import Loader from '../../Loader';
 
-export interface IVerifyeProps {
+export interface IVerifyProps {
 	className?: string;
 	verified?: boolean;
 	loading?: boolean;
 	firstName?: string;
 	lastName?: string;
 	onSave?: (firstName: string, lastName: string) => Promise<any>;
-	pending?: boolean;
 }
 
 const baseClass = 'Pinpoint SubscriptionVerify';
 
-const Verify = (props: IVerifyeProps) => {
+const Verify = (props: IVerifyProps) => {
 	const {
 		className = '',
 		verified = false,
@@ -25,11 +26,11 @@ const Verify = (props: IVerifyeProps) => {
 		firstName: propsFirstName = '',
 		lastName: propsLastName = '',
 		onSave,
-		pending = false,
 	} = props;
 	const emailActionState = useEmailAction();
 	const [firstName, setFirstName] = useState(() => propsFirstName);
 	const [lastName, setLastName] = useState(() => propsLastName);
+	const [pending, setPending] = useState<boolean>(false);
 
 	useEffect(() => {
 		setFirstName(propsFirstName);
@@ -65,8 +66,15 @@ const Verify = (props: IVerifyeProps) => {
 		return propsFirstName !== firstName || propsLastName !== lastName;
 	}, [propsFirstName, propsLastName, firstName, lastName]);
 
-	const handleSave = useCallback(() => {
-		onSave?.(firstName, lastName);
+	const handleSave = useCallback(async () => {
+		if (onSave) {
+			try {
+				setPending(true);
+				await onSave(firstName, lastName);
+			} finally {
+				setPending(false);
+			}
+		}
 	}, [firstName, lastName, onSave]);
 
 	if (loading) {
@@ -83,8 +91,12 @@ const Verify = (props: IVerifyeProps) => {
 							<Form
 								title="👋 We'd love to know a little more about you!"
 								description="If you prefer to, you can simply close this tab instead."
-								onSave={handleSave}
 								dirty={isFormDirty}
+								buttons={
+									<button disabled={!isFormDirty} className={`${baseClass} Save`} onClick={handleSave}>
+										{pending ? <FontAwesomeIcon icon={faSpinner} pulse /> : 'Save'}
+									</button>
+								}
 							>
 								<div className={`${baseClass} Form`}>
 									<Field label="First Name">

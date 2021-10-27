@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test default state 1`] = `
+<div
+  className="Pinpoint SubscriptionUnsubscribe Wrapper "
+>
+  <div
+    className="Pinpoint SubscriptionUnsubscribe Container"
+  >
+    <div
+      className="Pinpoint SubscriptionUnsubscribe Content"
+    >
+      
+      
+      
+      <p
+        className="Pinpoint SubscriptionUnsubscribe Warning"
+      >
+        You are about to 
+        unsubscribe
+         
+        <strong>
+          keegan@pinpoint.com
+        </strong>
+         
+        from
+         updates from 
+        Pinpoint
+        .
+      </p>
+      <div
+        className="pt-6"
+      >
+        <button
+          className="Pinpoint SubscriptionUnsubscribe Button Unsubscribe"
+          disabled={false}
+          onClick={[Function]}
+        >
+          Unsubscribe
+        </button>
+      </div>
+      <span
+        className="Pinpoint SubscriptionUnsubscribe Manage"
+      >
+        manage all subscriptions
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Test not subscribed state 1`] = `
+<div
+  className="Pinpoint SubscriptionUnsubscribe Wrapper "
+>
+  <div
+    className="Pinpoint SubscriptionUnsubscribe Container"
+  >
+    <div
+      className="Pinpoint SubscriptionUnsubscribe Content"
+    >
+      
+      
+      
+      <p
+        className="Pinpoint SubscriptionUnsubscribe Warning"
+      >
+        You are about to 
+        subscribe
+         
+        <strong>
+          keegan@pinpoint.com
+        </strong>
+         
+        to
+         updates from 
+        Pinpoint
+        .
+      </p>
+      <div
+        className="pt-6"
+      >
+        <button
+          className="Pinpoint SubscriptionUnsubscribe Button Resubscribe"
+          disabled={false}
+          onClick={[Function]}
+        >
+          Resubscribe
+        </button>
+      </div>
+      <span
+        className="Pinpoint SubscriptionUnsubscribe Manage"
+      >
+        manage all subscriptions
+      </span>
+    </div>
+  </div>
+</div>
+`;

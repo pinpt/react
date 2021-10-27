@@ -9,20 +9,23 @@ const useSubscriptionList = (subscriptionId: string, site: ISite, config: IPinpo
 	const [result, setResult] = useState<SubscriptionInfo>({ subscriptions: [], sites: {} } as SubscriptionInfo);
 	const [loading, setLoading] = useState<boolean>(true);
 
-	const query = useCallback(async (useLoader = true) => {
-		try {
-			if (useLoader) {
-				setLoading(true);
+	const query = useCallback(
+		async (useLoader = true) => {
+			try {
+				if (useLoader) {
+					setLoading(true);
+				}
+				const result = await executeAPI(
+					{ ...config, siteUrl: getRouterAbsolutePath(site, '') },
+					`api/subscription/manage/list/${subscriptionId}`
+				);
+				setResult(result);
+			} finally {
+				setLoading(false);
 			}
-			const result = await executeAPI(
-				{ ...config, siteUrl: getRouterAbsolutePath(site, '') },
-				`api/subscription/manage/list/${subscriptionId}`
-			);
-			setResult(result);
-		} finally {
-			setLoading(false);
-		}
-	}, [subscriptionId, site]);
+		},
+		[subscriptionId, site]
+	);
 
 	const fileApi = useMemo(() => {
 		if (getRouterAbsolutePath(site, '').includes('edge')) {

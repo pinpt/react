@@ -19,3 +19,13 @@ export default {
 } as Meta;
 
 export const Default: React.VFC<{}> = () => <Subscribe />;
+
+export const With_Name: React.VFC<{}> = () => <Subscribe name="Pinpoint" />;
+
+export const With_Success_Handler: React.VFC<{}> = () => (
+	<Subscribe name="Pinpoint" handleSubmit={(email) => new Promise((resolve) => resolve(true))} />
+);
+
+export const With_Error_Handler: React.VFC<{}> = () => (
+	<Subscribe name="Pinpoint" handleSubmit={(email) => new Promise((resolve) => resolve(false))} />
+);

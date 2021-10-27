@@ -27,3 +27,12 @@ export const Default: React.VFC<{}> = () => (
 		fileApi="https://file.pinpoint.com"
 	/>
 );
+
+export const Not_Subscribed: React.VFC<{}> = () => (
+	<Unsubscribe
+		name="Pinpoint"
+		logo="fileid:1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+		email="keegan@pinpoint.com"
+		fileApi="https://file.pinpoint.com"
+	/>
+);

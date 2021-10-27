@@ -1,0 +1,153 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test default state 1`] = `
+<div
+  className="Pinpoint SubscriptionVerify Wrapper "
+>
+  <div
+    className="Pinpoint SubscriptionVerify Content"
+  >
+    <div
+      className="Pinpoint SubscriptionVerify Inner"
+    >
+      
+      
+      
+      <div>
+        <div
+          className="Pinpoint Form Wrapper "
+        >
+          <div
+            className="Pinpoint Form Parent "
+          >
+            <div
+              className="Pinpoint Form Control"
+            >
+              <div
+                className="Pinpoint Form Heading "
+              >
+                <h1>
+                  👋 We'd love to know a little more about you!
+                </h1>
+                <h2>
+                  If you prefer to, you can simply close this tab instead.
+                </h2>
+              </div>
+              <div>
+                <button
+                  className="Pinpoint SubscriptionVerify Save"
+                  disabled={true}
+                  onClick={[Function]}
+                >
+                  Save
+                </button>
+              </div>
+            </div>
+            <div
+              className="Pinpoint SubscriptionVerify Form"
+            >
+              <div
+                className="Pinpoint Field Wrapper "
+              >
+                <div
+                  className="Pinpoint Field Parent"
+                >
+                  <label
+                    className="Pinpoint Field Label "
+                  >
+                    First Name
+                  </label>
+                  <div
+                    className="Pinpoint Field Status"
+                  />
+                </div>
+                <div
+                  className="Pinpoint Field Children"
+                >
+                  <input
+                    className="Pinpoint SubscriptionSubscribe Field"
+                    onChange={[Function]}
+                    value=""
+                  />
+                </div>
+                <div
+                  className="Pinpoint Field Description"
+                />
+              </div>
+              <div
+                className="Pinpoint Field Wrapper "
+              >
+                <div
+                  className="Pinpoint Field Parent"
+                >
+                  <label
+                    className="Pinpoint Field Label "
+                  >
+                    Last Name
+                  </label>
+                  <div
+                    className="Pinpoint Field Status"
+                  />
+                </div>
+                <div
+                  className="Pinpoint Field Children"
+                >
+                  <input
+                    className="Pinpoint SubscriptionSubscribe Field"
+                    onChange={[Function]}
+                    value=""
+                  />
+                </div>
+                <div
+                  className="Pinpoint Field Description"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Test not verified state 1`] = `
+<div
+  className="Pinpoint SubscriptionVerify Wrapper "
+>
+  <div
+    className="Pinpoint SubscriptionVerify Content"
+  >
+    <div
+      className="Pinpoint SubscriptionVerify Inner"
+    >
+      <div
+        className="Pinpoint Error "
+      >
+        <div
+          className="logo"
+        />
+        <div
+          className="error"
+        >
+          Your email could not be verified at this time
+        </div>
+        <h1
+          className="title"
+        >
+          Something Went Wrong
+        </h1>
+        <div
+          className="description"
+        >
+          Sorry, an unexpected error occurred.
+        </div>
+        <div
+          className="link"
+        />
+      </div>
+      
+    </div>
+  </div>
+</div>
+`;
