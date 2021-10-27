@@ -55,7 +55,7 @@ exports[`Test custom className 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image image "
+                  className="Pinpoint Image image"
                   decoding="async"
                   height={320}
                   loading="lazy"
@@ -325,7 +325,7 @@ exports[`Test custom className 1`] = `
                   >
                     <img
                       alt=""
-                      className="Pinpoint Image  "
+                      className="Pinpoint Image"
                       decoding="async"
                       height={509.6}
                       loading="lazy"
@@ -380,7 +380,7 @@ exports[`Test custom className 1`] = `
                   >
                     <img
                       alt=""
-                      className="Pinpoint Image  "
+                      className="Pinpoint Image"
                       decoding="async"
                       height={360}
                       loading="lazy"
@@ -458,7 +458,7 @@ exports[`Test custom className 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image image "
+                  className="Pinpoint Image image"
                   decoding="async"
                   height={320}
                   loading="lazy"
@@ -745,7 +745,7 @@ exports[`Test custom metadata 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image image "
+                  className="Pinpoint Image image"
                   decoding="async"
                   height={320}
                   loading="lazy"
@@ -1015,7 +1015,7 @@ exports[`Test custom metadata 1`] = `
                   >
                     <img
                       alt=""
-                      className="Pinpoint Image  "
+                      className="Pinpoint Image"
                       decoding="async"
                       height={509.6}
                       loading="lazy"
@@ -1070,7 +1070,7 @@ exports[`Test custom metadata 1`] = `
                   >
                     <img
                       alt=""
-                      className="Pinpoint Image  "
+                      className="Pinpoint Image"
                       decoding="async"
                       height={360}
                       loading="lazy"
@@ -1148,7 +1148,7 @@ exports[`Test custom metadata 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image image "
+                  className="Pinpoint Image image"
                   decoding="async"
                   height={320}
                   loading="lazy"
@@ -1435,7 +1435,7 @@ exports[`Test default state 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image image "
+                  className="Pinpoint Image image"
                   decoding="async"
                   height={320}
                   loading="lazy"
@@ -1705,7 +1705,7 @@ exports[`Test default state 1`] = `
                   >
                     <img
                       alt=""
-                      className="Pinpoint Image  "
+                      className="Pinpoint Image"
                       decoding="async"
                       height={509.6}
                       loading="lazy"
@@ -1760,7 +1760,7 @@ exports[`Test default state 1`] = `
                   >
                     <img
                       alt=""
-                      className="Pinpoint Image  "
+                      className="Pinpoint Image"
                       decoding="async"
                       height={360}
                       loading="lazy"
@@ -1838,7 +1838,7 @@ exports[`Test default state 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image image "
+                  className="Pinpoint Image image"
                   decoding="async"
                   height={320}
                   loading="lazy"
@@ -2125,7 +2125,7 @@ exports[`Test with pagination 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image image "
+                  className="Pinpoint Image image"
                   decoding="async"
                   height={320}
                   loading="lazy"
@@ -2395,7 +2395,7 @@ exports[`Test with pagination 1`] = `
                   >
                     <img
                       alt=""
-                      className="Pinpoint Image  "
+                      className="Pinpoint Image"
                       decoding="async"
                       height={540}
                       loading="lazy"
@@ -2520,7 +2520,7 @@ exports[`Test with pagination 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image image "
+                  className="Pinpoint Image image"
                   decoding="async"
                   height={320}
                   loading="lazy"

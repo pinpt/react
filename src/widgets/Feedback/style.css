@@ -1,9 +1,15 @@
+.Pinpoint.feedbackWrapper {
+	@apply mt-10 mb-5 border dark:border-black rounded p-4 inline-flex shadow-lg;
+	background-color: var(--page-bg-color, #fff);
+	color: var(--page-text-color, rgb(19, 18, 18));
+}
+
 .Pinpoint.Widget.Feedback {
 	@apply inline-flex flex-col items-start;
 }
 
 .Pinpoint.Widget.Feedback .title {
-	@apply font-medium mb-4 dark:text-white;
+	@apply font-medium mb-4;
 }
 
 .Pinpoint.Widget.Feedback .disclaimer {
@@ -11,11 +17,11 @@
 }
 
 .Pinpoint.Widget.Feedback textarea {
-	@apply border rounded mt-1 mb-2 p-1 text-sm disabled:bg-gray-100 disabled:text-gray-400 w-full;
+	@apply border rounded mt-1 mb-2 p-1 text-sm dark:text-black disabled:bg-gray-100 disabled:text-gray-400 dark:disabled:text-gray-500 w-full;
 }
 
 .Pinpoint.Widget.Feedback input {
-	@apply border rounded p-1 text-sm disabled:bg-gray-100 disabled:text-gray-400 w-full;
+	@apply border rounded p-1 text-sm dark:text-black disabled:bg-gray-100 disabled:text-gray-400 dark:disabled:text-gray-500 w-full;
 }
 
 .Pinpoint.Widget.Feedback button {

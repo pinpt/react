@@ -6,7 +6,7 @@ exports[`Test full card 1`] = `
 >
   <img
     alt=""
-    className="Pinpoint Image cover "
+    className="Pinpoint Image cover"
     decoding="async"
     loading="lazy"
     src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
@@ -208,7 +208,7 @@ exports[`Test full card with custom class 1`] = `
 >
   <img
     alt=""
-    className="Pinpoint Image cover "
+    className="Pinpoint Image cover"
     decoding="async"
     loading="lazy"
     src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
@@ -358,7 +358,7 @@ exports[`Test multiple cards 1`] = `
   >
     <img
       alt=""
-      className="Pinpoint Image cover "
+      className="Pinpoint Image cover"
       decoding="async"
       loading="lazy"
       src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
@@ -529,7 +529,7 @@ exports[`Test multiple cards 1`] = `
   >
     <img
       alt=""
-      className="Pinpoint Image cover "
+      className="Pinpoint Image cover"
       decoding="async"
       loading="lazy"
       src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
@@ -704,7 +704,7 @@ exports[`Test no description 1`] = `
 >
   <img
     alt=""
-    className="Pinpoint Image cover "
+    className="Pinpoint Image cover"
     decoding="async"
     loading="lazy"
     src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
@@ -979,7 +979,7 @@ exports[`Test no statistics 1`] = `
 >
   <img
     alt=""
-    className="Pinpoint Image cover "
+    className="Pinpoint Image cover"
     decoding="async"
     loading="lazy"
     src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
@@ -1010,7 +1010,7 @@ exports[`Test no title 1`] = `
 >
   <img
     alt=""
-    className="Pinpoint Image cover "
+    className="Pinpoint Image cover"
     decoding="async"
     loading="lazy"
     src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="

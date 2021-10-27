@@ -18,7 +18,7 @@ exports[`Test custom className 1`] = `
     >
       <img
         alt=""
-        className="Pinpoint Image cover "
+        className="Pinpoint Image cover"
         decoding="async"
         loading="lazy"
         src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
@@ -206,7 +206,7 @@ exports[`Test double 1`] = `
     >
       <img
         alt=""
-        className="Pinpoint Image cover "
+        className="Pinpoint Image cover"
         decoding="async"
         loading="lazy"
         src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
@@ -377,7 +377,7 @@ exports[`Test double 1`] = `
     >
       <img
         alt=""
-        className="Pinpoint Image cover "
+        className="Pinpoint Image cover"
         decoding="async"
         loading="lazy"
         src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
@@ -574,7 +574,7 @@ exports[`Test page counts 1`] = `
     >
       <img
         alt=""
-        className="Pinpoint Image cover "
+        className="Pinpoint Image cover"
         decoding="async"
         loading="lazy"
         src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
@@ -745,7 +745,7 @@ exports[`Test page counts 1`] = `
     >
       <img
         alt=""
-        className="Pinpoint Image cover "
+        className="Pinpoint Image cover"
         decoding="async"
         loading="lazy"
         src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
@@ -933,7 +933,7 @@ exports[`Test single 1`] = `
     >
       <img
         alt=""
-        className="Pinpoint Image cover "
+        className="Pinpoint Image cover"
         decoding="async"
         loading="lazy"
         src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
@@ -1121,7 +1121,7 @@ exports[`Test triple 1`] = `
     >
       <img
         alt=""
-        className="Pinpoint Image cover "
+        className="Pinpoint Image cover"
         decoding="async"
         loading="lazy"
         src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
@@ -1292,7 +1292,7 @@ exports[`Test triple 1`] = `
     >
       <img
         alt=""
-        className="Pinpoint Image cover "
+        className="Pinpoint Image cover"
         decoding="async"
         loading="lazy"
         src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
@@ -1463,7 +1463,7 @@ exports[`Test triple 1`] = `
     >
       <img
         alt=""
-        className="Pinpoint Image cover "
+        className="Pinpoint Image cover"
         decoding="async"
         loading="lazy"
         src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="

@@ -10,6 +10,29 @@ export interface IHeadProps {
 	children?: React.ReactChild;
 }
 
+const functionToString = (func: Function) => {
+	// poormans minify
+	return func
+		.toString()
+		.replace(/[\n\t]/g, '')
+		.replace(/[\s]{2,}/g, ' ')
+		.replace(/;\s/g, ';')
+		.replace(/if\s\(/g, 'if(')
+		.replace(/\s{\s/g, '{')
+		.replace(/\s}\s/g, '}')
+		.replace(/}\s/g, '}')
+		.replace(/=\s/g, '=')
+		.replace(/\s=/g, '=');
+};
+
+const InlineScript = ({ children }: { children: Function }) => (
+	<script
+		dangerouslySetInnerHTML={{
+			__html: `(${functionToString(children)})();`,
+		}}
+	/> // eslint-disable-line
+);
+
 const Head = (props: IHeadProps) => {
 	const { site, content, children } = props;
 	return (
@@ -19,6 +42,16 @@ const Head = (props: IHeadProps) => {
 			<link rel="preconnect" href="https://file.pinpoint.com" />
 			<meta httpEquiv="x-ua-compatible" content="ie=edge" />
 			<meta name="viewport" content="width=device-width" />
+			{/* Set the theme while parsing so that we dont have a flash for the theme */}
+			<InlineScript>
+				{() => {
+					const element = document.documentElement;
+					const localTheme = window.localStorage.getItem('theme');
+					if (localTheme === 'dark') {
+						element.classList.add('dark');
+					}
+				}}
+			</InlineScript>
 			<script
 				src={getSiteAnalyticsURL(site)}
 				data-site-id={site.id}

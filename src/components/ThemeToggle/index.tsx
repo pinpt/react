@@ -10,7 +10,7 @@ const ThemeToggle = (props: IThemeToggleProps) => {
 	const { className = '', onThemeChange, localStorageKey = 'theme' } = props;
 
 	const handleToggleTheme = useCallback(() => {
-		const element = document.getElementsByTagName('html')?.[0];
+		const element = document.documentElement;
 		if (element) {
 			if (element.classList.contains('dark')) {
 				element.classList.remove('dark');
@@ -28,7 +28,7 @@ const ThemeToggle = (props: IThemeToggleProps) => {
 		if (typeof window !== 'undefined') {
 			const localTheme = window.localStorage.getItem(localStorageKey);
 			if (localTheme) {
-				const element = document.getElementsByTagName('html')?.[0];
+				const element = document.documentElement;
 				switch (localTheme) {
 					case 'dark': {
 						element.classList.add('dark');

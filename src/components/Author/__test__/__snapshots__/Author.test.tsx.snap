@@ -10,7 +10,7 @@ exports[`Test custom className 1`] = `
   >
     <img
       alt=""
-      className="Pinpoint Image avatar "
+      className="Pinpoint Image avatar"
       decoding="async"
       height={48}
       loading="lazy"
@@ -36,7 +36,7 @@ exports[`Test default 1`] = `
   >
     <img
       alt=""
-      className="Pinpoint Image avatar "
+      className="Pinpoint Image avatar"
       decoding="async"
       height={48}
       loading="lazy"
@@ -62,7 +62,7 @@ exports[`Test no name 1`] = `
   >
     <img
       alt=""
-      className="Pinpoint Image avatar "
+      className="Pinpoint Image avatar"
       decoding="async"
       height={48}
       loading="lazy"

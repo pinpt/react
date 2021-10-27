@@ -104,7 +104,7 @@ exports[`Test full entry 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image avatar "
+                  className="Pinpoint Image avatar"
                   decoding="async"
                   height={48}
                   loading="lazy"
@@ -256,7 +256,7 @@ exports[`Test full entry 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image  "
+                  className="Pinpoint Image   medium-zoom-body"
                   decoding="async"
                   height={900}
                   loading="eager"
@@ -316,7 +316,7 @@ exports[`Test full entry 1`] = `
                 >
                   <img
                     alt=""
-                    className="Pinpoint Image  "
+                    className="Pinpoint Image"
                     decoding="async"
                     height={509.6}
                     loading="lazy"
@@ -371,7 +371,7 @@ exports[`Test full entry 1`] = `
                 >
                   <img
                     alt=""
-                    className="Pinpoint Image  "
+                    className="Pinpoint Image"
                     decoding="async"
                     height={360}
                     loading="lazy"
@@ -436,7 +436,7 @@ exports[`Test full entry 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image avatar "
+                  className="Pinpoint Image avatar"
                   decoding="async"
                   height={48}
                   loading="lazy"
@@ -603,7 +603,7 @@ exports[`Test full entry 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image image "
+                  className="Pinpoint Image image"
                   decoding="async"
                   height={320}
                   loading="lazy"
@@ -961,7 +961,7 @@ exports[`Test no footer 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image avatar "
+                  className="Pinpoint Image avatar"
                   decoding="async"
                   height={48}
                   loading="lazy"
@@ -1113,7 +1113,7 @@ exports[`Test no footer 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image  "
+                  className="Pinpoint Image   medium-zoom-body"
                   decoding="async"
                   height={900}
                   loading="eager"
@@ -1173,7 +1173,7 @@ exports[`Test no footer 1`] = `
                 >
                   <img
                     alt=""
-                    className="Pinpoint Image  "
+                    className="Pinpoint Image"
                     decoding="async"
                     height={509.6}
                     loading="lazy"
@@ -1228,7 +1228,7 @@ exports[`Test no footer 1`] = `
                 >
                   <img
                     alt=""
-                    className="Pinpoint Image  "
+                    className="Pinpoint Image"
                     decoding="async"
                     height={360}
                     loading="lazy"
@@ -1288,7 +1288,7 @@ exports[`Test no footer 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image avatar "
+                  className="Pinpoint Image avatar"
                   decoding="async"
                   height={48}
                   loading="lazy"
@@ -1533,7 +1533,7 @@ exports[`Test no sidebar 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image  "
+                  className="Pinpoint Image   medium-zoom-body"
                   decoding="async"
                   height={900}
                   loading="eager"
@@ -1593,7 +1593,7 @@ exports[`Test no sidebar 1`] = `
                 >
                   <img
                     alt=""
-                    className="Pinpoint Image  "
+                    className="Pinpoint Image"
                     decoding="async"
                     height={509.6}
                     loading="lazy"
@@ -1648,7 +1648,7 @@ exports[`Test no sidebar 1`] = `
                 >
                   <img
                     alt=""
-                    className="Pinpoint Image  "
+                    className="Pinpoint Image"
                     decoding="async"
                     height={360}
                     loading="lazy"
@@ -1723,7 +1723,7 @@ exports[`Test no sidebar 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image image "
+                  className="Pinpoint Image image"
                   decoding="async"
                   height={320}
                   loading="lazy"
@@ -2086,7 +2086,7 @@ exports[`Test not zoomable entry 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image avatar "
+                  className="Pinpoint Image avatar"
                   decoding="async"
                   height={48}
                   loading="lazy"
@@ -2238,7 +2238,7 @@ exports[`Test not zoomable entry 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image  "
+                  className="Pinpoint Image"
                   decoding="async"
                   height={900}
                   loading="eager"
@@ -2298,7 +2298,7 @@ exports[`Test not zoomable entry 1`] = `
                 >
                   <img
                     alt=""
-                    className="Pinpoint Image  "
+                    className="Pinpoint Image"
                     decoding="async"
                     height={509.6}
                     loading="lazy"
@@ -2353,7 +2353,7 @@ exports[`Test not zoomable entry 1`] = `
                 >
                   <img
                     alt=""
-                    className="Pinpoint Image  "
+                    className="Pinpoint Image"
                     decoding="async"
                     height={360}
                     loading="lazy"
@@ -2418,7 +2418,7 @@ exports[`Test not zoomable entry 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image avatar "
+                  className="Pinpoint Image avatar"
                   decoding="async"
                   height={48}
                   loading="lazy"
@@ -2585,7 +2585,7 @@ exports[`Test not zoomable entry 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image image "
+                  className="Pinpoint Image image"
                   decoding="async"
                   height={320}
                   loading="lazy"
@@ -2948,7 +2948,7 @@ exports[`Test with pagination 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image avatar "
+                  className="Pinpoint Image avatar"
                   decoding="async"
                   height={48}
                   loading="lazy"
@@ -3100,7 +3100,7 @@ exports[`Test with pagination 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image  "
+                  className="Pinpoint Image   medium-zoom-body"
                   decoding="async"
                   height={900}
                   loading="eager"
@@ -3160,7 +3160,7 @@ exports[`Test with pagination 1`] = `
                 >
                   <img
                     alt=""
-                    className="Pinpoint Image  "
+                    className="Pinpoint Image"
                     decoding="async"
                     height={509.6}
                     loading="lazy"
@@ -3215,7 +3215,7 @@ exports[`Test with pagination 1`] = `
                 >
                   <img
                     alt=""
-                    className="Pinpoint Image  "
+                    className="Pinpoint Image"
                     decoding="async"
                     height={360}
                     loading="lazy"
@@ -3280,7 +3280,7 @@ exports[`Test with pagination 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image avatar "
+                  className="Pinpoint Image avatar"
                   decoding="async"
                   height={48}
                   loading="lazy"
@@ -3513,7 +3513,7 @@ exports[`Test with pagination 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image image "
+                  className="Pinpoint Image image"
                   decoding="async"
                   height={320}
                   loading="lazy"
