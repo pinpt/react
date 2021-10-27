@@ -13,7 +13,9 @@ module.exports = {
 					selector.startsWith(prefix) ||
 					selector.charAt(0) === ':' ||
 					selector.startsWith('.dark') ||
-					selector.startsWith('html.dark') ||
+					selector.startsWith('html') ||
+					selector.startsWith('body') ||
+					selector.startsWith('.medium-zoom') ||
 					selector.charAt(0) === '['
 				) {
 					return selector;

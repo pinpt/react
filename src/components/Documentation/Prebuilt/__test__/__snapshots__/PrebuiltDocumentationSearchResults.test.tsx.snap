@@ -55,7 +55,7 @@ exports[`Test custom className 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image image "
+                  className="Pinpoint Image image"
                   decoding="async"
                   height={320}
                   loading="lazy"
@@ -314,7 +314,7 @@ populated with your recently completed...
               >
                 <img
                   alt=""
-                  className="Pinpoint Image image "
+                  className="Pinpoint Image image"
                   decoding="async"
                   height={320}
                   loading="lazy"
@@ -601,7 +601,7 @@ exports[`Test default state 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image image "
+                  className="Pinpoint Image image"
                   decoding="async"
                   height={320}
                   loading="lazy"
@@ -860,7 +860,7 @@ populated with your recently completed...
               >
                 <img
                   alt=""
-                  className="Pinpoint Image image "
+                  className="Pinpoint Image image"
                   decoding="async"
                   height={320}
                   loading="lazy"
@@ -1147,7 +1147,7 @@ exports[`Test empty state 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image image "
+                  className="Pinpoint Image image"
                   decoding="async"
                   height={320}
                   loading="lazy"
@@ -1314,7 +1314,7 @@ exports[`Test empty state 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image image "
+                  className="Pinpoint Image image"
                   decoding="async"
                   height={320}
                   loading="lazy"
@@ -1601,7 +1601,7 @@ exports[`Test loading state 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image image "
+                  className="Pinpoint Image image"
                   decoding="async"
                   height={320}
                   loading="lazy"
@@ -1683,7 +1683,7 @@ exports[`Test loading state 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image image "
+                  className="Pinpoint Image image"
                   decoding="async"
                   height={320}
                   loading="lazy"

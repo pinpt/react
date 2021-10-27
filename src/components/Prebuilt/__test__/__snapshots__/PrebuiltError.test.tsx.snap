@@ -24,7 +24,7 @@ exports[`Test default internal server error 1`] = `
           >
             <img
               alt=""
-              className="Pinpoint Image image "
+              className="Pinpoint Image image"
               decoding="async"
               height={320}
               loading="lazy"
@@ -80,7 +80,7 @@ exports[`Test default internal server error 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image image "
+                  className="Pinpoint Image image"
                   decoding="async"
                   height={320}
                   loading="lazy"
@@ -363,7 +363,7 @@ exports[`Test default not found 1`] = `
           >
             <img
               alt=""
-              className="Pinpoint Image image "
+              className="Pinpoint Image image"
               decoding="async"
               height={320}
               loading="lazy"
@@ -419,7 +419,7 @@ exports[`Test default not found 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image image "
+                  className="Pinpoint Image image"
                   decoding="async"
                   height={320}
                   loading="lazy"
@@ -702,7 +702,7 @@ exports[`Test internal server error no footer 1`] = `
           >
             <img
               alt=""
-              className="Pinpoint Image image "
+              className="Pinpoint Image image"
               decoding="async"
               height={320}
               loading="lazy"
@@ -766,7 +766,7 @@ exports[`Test not found no footer 1`] = `
           >
             <img
               alt=""
-              className="Pinpoint Image image "
+              className="Pinpoint Image image"
               decoding="async"
               height={320}
               loading="lazy"

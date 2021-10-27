@@ -3,7 +3,7 @@
 exports[`Test with alt 1`] = `
 <img
   alt="150x150 placeholder"
-  className="Pinpoint Image  "
+  className="Pinpoint Image"
   decoding="async"
   loading="lazy"
   src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
@@ -13,7 +13,7 @@ exports[`Test with alt 1`] = `
 exports[`Test with blurhash 1`] = `
 <img
   alt="blurhash"
-  className="Pinpoint Image  "
+  className="Pinpoint Image"
   decoding="async"
   height={860}
   loading="lazy"
@@ -25,7 +25,7 @@ exports[`Test with blurhash 1`] = `
 exports[`Test with className 1`] = `
 <img
   alt="150x150 placeholder"
-  className="Pinpoint Image placeholder "
+  className="Pinpoint Image placeholder"
   decoding="async"
   loading="lazy"
   src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
@@ -37,7 +37,7 @@ exports[`Test with no source 1`] = `null`;
 exports[`Test with no width or height 1`] = `
 <img
   alt=""
-  className="Pinpoint Image  "
+  className="Pinpoint Image"
   decoding="async"
   loading="lazy"
   src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
@@ -47,7 +47,7 @@ exports[`Test with no width or height 1`] = `
 exports[`Test with width and height 1`] = `
 <img
   alt=""
-  className="Pinpoint Image  "
+  className="Pinpoint Image"
   decoding="async"
   height={150}
   loading="lazy"

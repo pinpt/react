@@ -1,4 +1,5 @@
 import { decode } from 'blurhash';
+import mediumZoom from 'medium-zoom';
 import React from 'react'; // don't remove
 import { extractImageMetadataFromFileID, isFileAPI } from '../../lib/file_metadata';
 
@@ -27,11 +28,12 @@ interface ImageProps {
 	sizes?: string;
 	blurhash?: string;
 	lazy?: boolean;
+	zoomable?: boolean;
 }
 
 const NativeImage = (props: ImageProps) => {
 	const ref = React.useRef<any>();
-	const { src, alt = '', width, height, className = '', srcSet, sizes, blurhash, lazy = true } = props;
+	const { src, alt = '', width, height, className = '', srcSet, sizes, blurhash, zoomable, lazy = true } = props;
 	const [ready, setReady] = React.useState(!lazy);
 	React.useEffect(() => {
 		if (src && ref.current && lazy) {
@@ -67,6 +69,7 @@ const NativeImage = (props: ImageProps) => {
 			ready={ready}
 			blurhash={blurhash}
 			lazy={lazy}
+			zoomable={zoomable}
 		/>
 	);
 };
@@ -96,12 +99,24 @@ const BlurImage = React.forwardRef<any, BlurImageProps>((props: BlurImageProps, 
 		src = 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==';
 		// show a 1x1 transparent pixel while loading if no blurhash
 	}
+	const { zoomable, src: _src, ready } = props;
+	React.useEffect(() => {
+		if (zoomable && typeof window !== 'undefined' && !isBlurhash && _src && ready) {
+			const el = (ref as any).current as any;
+			const zoom = mediumZoom(el);
+			return () => {
+				zoom.detach();
+			};
+		}
+	}, [zoomable, _src, ready]);
 	return (
 		<img
 			ref={ref}
 			src={src}
 			alt={props.alt ?? ''}
-			className={`Pinpoint Image ${props.className ?? ''} ${isBlurhash ? 'blurhash' : ''}`}
+			className={`Pinpoint Image ${props.className ?? ''} ${isBlurhash ? 'blurhash' : ''} ${
+				zoomable && !isBlurhash && ready && _src ? 'medium-zoom-body' : ''
+			}`.trim()}
 			width={props.width ?? r.size?.width}
 			height={props.height ?? r.size?.height}
 			decoding="async"
@@ -157,6 +172,7 @@ const DynamicImage = (props: ImageProps) => {
 			height={props.height}
 			blurhash={props.blurhash}
 			ready={loaded}
+			zoomable={props.zoomable}
 		/>
 	);
 };

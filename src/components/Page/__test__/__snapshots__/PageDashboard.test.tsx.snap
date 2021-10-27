@@ -97,7 +97,7 @@ exports[`Test full page 1`] = `
           >
             <img
               alt=""
-              className="Pinpoint Image cover "
+              className="Pinpoint Image cover"
               decoding="async"
               loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
@@ -268,7 +268,7 @@ exports[`Test full page 1`] = `
           >
             <img
               alt=""
-              className="Pinpoint Image cover "
+              className="Pinpoint Image cover"
               decoding="async"
               loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
@@ -461,7 +461,7 @@ exports[`Test full page 1`] = `
           >
             <img
               alt=""
-              className="Pinpoint Image cover "
+              className="Pinpoint Image cover"
               decoding="async"
               loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
@@ -632,7 +632,7 @@ exports[`Test full page 1`] = `
           >
             <img
               alt=""
-              className="Pinpoint Image cover "
+              className="Pinpoint Image cover"
               decoding="async"
               loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
@@ -803,7 +803,7 @@ exports[`Test full page 1`] = `
           >
             <img
               alt=""
-              className="Pinpoint Image cover "
+              className="Pinpoint Image cover"
               decoding="async"
               loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
@@ -974,7 +974,7 @@ exports[`Test full page 1`] = `
           >
             <img
               alt=""
-              className="Pinpoint Image cover "
+              className="Pinpoint Image cover"
               decoding="async"
               loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
@@ -1168,7 +1168,7 @@ exports[`Test full page 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image image "
+                  className="Pinpoint Image image"
                   decoding="async"
                   height={320}
                   loading="lazy"
@@ -1537,7 +1537,7 @@ exports[`Test loading 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image image "
+                  className="Pinpoint Image image"
                   decoding="async"
                   height={320}
                   loading="lazy"
@@ -1822,7 +1822,7 @@ exports[`Test no footer 1`] = `
           >
             <img
               alt=""
-              className="Pinpoint Image cover "
+              className="Pinpoint Image cover"
               decoding="async"
               loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
@@ -1993,7 +1993,7 @@ exports[`Test no footer 1`] = `
           >
             <img
               alt=""
-              className="Pinpoint Image cover "
+              className="Pinpoint Image cover"
               decoding="async"
               loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
@@ -2186,7 +2186,7 @@ exports[`Test no footer 1`] = `
           >
             <img
               alt=""
-              className="Pinpoint Image cover "
+              className="Pinpoint Image cover"
               decoding="async"
               loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
@@ -2357,7 +2357,7 @@ exports[`Test no footer 1`] = `
           >
             <img
               alt=""
-              className="Pinpoint Image cover "
+              className="Pinpoint Image cover"
               decoding="async"
               loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
@@ -2528,7 +2528,7 @@ exports[`Test no footer 1`] = `
           >
             <img
               alt=""
-              className="Pinpoint Image cover "
+              className="Pinpoint Image cover"
               decoding="async"
               loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
@@ -2699,7 +2699,7 @@ exports[`Test no footer 1`] = `
           >
             <img
               alt=""
-              className="Pinpoint Image cover "
+              className="Pinpoint Image cover"
               decoding="async"
               loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
@@ -2898,7 +2898,7 @@ exports[`Test no header 1`] = `
           >
             <img
               alt=""
-              className="Pinpoint Image cover "
+              className="Pinpoint Image cover"
               decoding="async"
               loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
@@ -3069,7 +3069,7 @@ exports[`Test no header 1`] = `
           >
             <img
               alt=""
-              className="Pinpoint Image cover "
+              className="Pinpoint Image cover"
               decoding="async"
               loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
@@ -3262,7 +3262,7 @@ exports[`Test no header 1`] = `
           >
             <img
               alt=""
-              className="Pinpoint Image cover "
+              className="Pinpoint Image cover"
               decoding="async"
               loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
@@ -3433,7 +3433,7 @@ exports[`Test no header 1`] = `
           >
             <img
               alt=""
-              className="Pinpoint Image cover "
+              className="Pinpoint Image cover"
               decoding="async"
               loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
@@ -3604,7 +3604,7 @@ exports[`Test no header 1`] = `
           >
             <img
               alt=""
-              className="Pinpoint Image cover "
+              className="Pinpoint Image cover"
               decoding="async"
               loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
@@ -3775,7 +3775,7 @@ exports[`Test no header 1`] = `
           >
             <img
               alt=""
-              className="Pinpoint Image cover "
+              className="Pinpoint Image cover"
               decoding="async"
               loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
@@ -3969,7 +3969,7 @@ exports[`Test no header 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image image "
+                  className="Pinpoint Image image"
                   decoding="async"
                   height={320}
                   loading="lazy"
@@ -4255,7 +4255,7 @@ exports[`Test no latest 1`] = `
           >
             <img
               alt=""
-              className="Pinpoint Image cover "
+              className="Pinpoint Image cover"
               decoding="async"
               loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
@@ -4426,7 +4426,7 @@ exports[`Test no latest 1`] = `
           >
             <img
               alt=""
-              className="Pinpoint Image cover "
+              className="Pinpoint Image cover"
               decoding="async"
               loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
@@ -4597,7 +4597,7 @@ exports[`Test no latest 1`] = `
           >
             <img
               alt=""
-              className="Pinpoint Image cover "
+              className="Pinpoint Image cover"
               decoding="async"
               loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
@@ -4768,7 +4768,7 @@ exports[`Test no latest 1`] = `
           >
             <img
               alt=""
-              className="Pinpoint Image cover "
+              className="Pinpoint Image cover"
               decoding="async"
               loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
@@ -4962,7 +4962,7 @@ exports[`Test no latest 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image image "
+                  className="Pinpoint Image image"
                   decoding="async"
                   height={320}
                   loading="lazy"
@@ -5247,7 +5247,7 @@ exports[`Test no recent 1`] = `
           >
             <img
               alt=""
-              className="Pinpoint Image cover "
+              className="Pinpoint Image cover"
               decoding="async"
               loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
@@ -5418,7 +5418,7 @@ exports[`Test no recent 1`] = `
           >
             <img
               alt=""
-              className="Pinpoint Image cover "
+              className="Pinpoint Image cover"
               decoding="async"
               loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
@@ -5612,7 +5612,7 @@ exports[`Test no recent 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image image "
+                  className="Pinpoint Image image"
                   decoding="async"
                   height={320}
                   loading="lazy"

@@ -30,3 +30,14 @@ export const BlurHash: React.VFC<{}> = () => (
 		alt="blurhash"
 	/>
 );
+
+export const Zoomable: React.VFC<{}> = () => (
+	<div className="flex flex-row gap-10">
+		<Image src="https://via.placeholder.com/150" width={150} height={150} zoomable />
+		<Image src="https://via.placeholder.com/150" width={150} height={150} zoomable />
+		<Image src="https://via.placeholder.com/150" width={150} height={150} zoomable />
+		<Image src="https://via.placeholder.com/150" width={150} height={150} zoomable />
+		<Image src="https://via.placeholder.com/150" width={150} height={150} zoomable />
+		<Image src="https://via.placeholder.com/150" width={150} height={150} zoomable />
+	</div>
+);

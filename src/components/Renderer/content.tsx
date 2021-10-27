@@ -1,5 +1,4 @@
 import React, { forwardRef } from 'react';
-import Zoom from 'react-medium-image-zoom';
 import {
 	addFileExtension, extractImageMetadataFromFileID, isFileAPI
 } from '../../lib/file_metadata';
@@ -24,7 +23,7 @@ const ImageMedia = ({
 }) => {
 	const { size, blurhash: _blurhash } = extractImageMetadataFromFileID(src ?? '');
 
-	const img = (
+	return (
 		<div className="Pinpoint image">
 			<Image
 				src={src}
@@ -33,15 +32,10 @@ const ImageMedia = ({
 				height={size?.height}
 				blurhash={blurhash ?? _blurhash}
 				lazy={false}
+				zoomable={zoomable}
 			/>
 		</div>
 	);
-
-	if (zoomable && typeof window !== 'undefined') {
-		return <Zoom>{img}</Zoom>;
-	}
-
-	return img;
 };
 
 const VideoMedia = ({ src, type, poster }: { src: string; type: string; poster?: string }) => {

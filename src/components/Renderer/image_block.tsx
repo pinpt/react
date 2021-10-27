@@ -1,5 +1,4 @@
 import React from 'react';
-import Zoom from 'react-medium-image-zoom';
 import { extractImageMetadataFromFileID } from '../../lib/file_metadata';
 import Image from '../Image';
 import { NodeProps } from './register';
@@ -21,12 +20,9 @@ const InlineImage = ({
 }) => {
 	const img = (
 		<div className="image">
-			<Image src={src} width={scaledWidth} height={scaledHeight} alt={alt} blurhash={blurhash} />
+			<Image src={src} width={scaledWidth} height={scaledHeight} alt={alt} blurhash={blurhash} zoomable={zoom} />
 		</div>
 	);
-	if (zoom && typeof window !== 'undefined') {
-		return <Zoom>{img}</Zoom>;
-	}
 	return img;
 };
 

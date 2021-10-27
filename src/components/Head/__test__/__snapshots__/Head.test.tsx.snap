@@ -22,6 +22,13 @@ Array [
     name="viewport"
   />,
   <script
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "(()=>{const element=document.documentElement;const localTheme=window.localStorage.getItem('theme');if(localTheme==='dark'){element.classList.add('dark');}})();",
+      }
+    }
+  />,
+  <script
     data-base-path="/"
     data-id="oroH8YQr4vufOiVTRND4"
     data-site-id="PirxVTE94u3YmGNOySRY"
@@ -163,6 +170,13 @@ Array [
     name="viewport"
   />,
   <script
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "(()=>{const element=document.documentElement;const localTheme=window.localStorage.getItem('theme');if(localTheme==='dark'){element.classList.add('dark');}})();",
+      }
+    }
+  />,
+  <script
     data-base-path="/"
     data-site-id="PirxVTE94u3YmGNOySRY"
     data-use-react={true}
@@ -267,6 +281,13 @@ Array [
   <meta
     content="width=device-width"
     name="viewport"
+  />,
+  <script
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "(()=>{const element=document.documentElement;const localTheme=window.localStorage.getItem('theme');if(localTheme==='dark'){element.classList.add('dark');}})();",
+      }
+    }
   />,
   <script
     data-base-path="/blog"
