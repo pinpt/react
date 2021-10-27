@@ -8,9 +8,11 @@ const useSubscription = (subscriptionId: string, site: ISite, config: IPinpointC
 	const [subscription, setSubscription] = useState<any>({});
 	const [loading, setLoading] = useState<boolean>(false);
 
-	const query = useCallback(async () => {
+	const query = useCallback(async (useLoader = true) => {
 		try {
-			setLoading(true);
+			if (useLoader) {
+				setLoading(true);
+			}
 			const result = await executeAPI(
 				{ ...config, siteUrl: getRouterAbsolutePath(site, '') },
 				`api/subscription/manage/${subscriptionId}`
@@ -25,9 +27,14 @@ const useSubscription = (subscriptionId: string, site: ISite, config: IPinpointC
 		query();
 	}, [query]);
 
+	const refetch = useCallback(() => {
+		query(false);
+	}, [query]);
+
 	return {
 		subscription,
 		loading,
+		refetch,
 	};
 };
 
