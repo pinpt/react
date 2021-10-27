@@ -29,10 +29,12 @@ Array [
     }
   />,
   <script
+    async={true}
     data-base-path="/"
     data-id="oroH8YQr4vufOiVTRND4"
     data-site-id="PirxVTE94u3YmGNOySRY"
     data-use-react={true}
+    defer={true}
     src="/a.js"
   />,
   <meta
@@ -177,9 +179,11 @@ Array [
     }
   />,
   <script
+    async={true}
     data-base-path="/"
     data-site-id="PirxVTE94u3YmGNOySRY"
     data-use-react={true}
+    defer={true}
     src="/a.js"
   />,
   <meta
@@ -290,10 +294,12 @@ Array [
     }
   />,
   <script
+    async={true}
     data-base-path="/blog"
     data-id="oroH8YQr4vufOiVTRND4"
     data-site-id="PirxVTE94u3YmGNOySRY"
     data-use-react={true}
+    defer={true}
     src="https://changelog.pinpoint.com/a.js"
   />,
   <meta
