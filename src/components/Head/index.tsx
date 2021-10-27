@@ -1,8 +1,9 @@
-import type { ISite, IContent } from '../../lib/types';
 import React from 'react';
 import { getSiteAnalyticsURL } from '../../lib/router';
-import ScriptPlugins from './ScriptPlugins';
+import { IContent } from '../../lib/types/content';
+import { ISite } from '../../lib/types/site';
 import SEO from './SEO';
+import ScriptPlugins from './ScriptPlugins';
 
 export interface IHeadProps {
 	site: ISite;

@@ -1,11 +1,11 @@
 import Bar from './Bar';
+import Email from './Email';
 import Facebook from './Facebook';
-import Instagram from './Instagram';
-import Twitter from './Twitter';
 import Github from './Github';
+import Instagram from './Instagram';
 import LinkedIn from './LinkedIn';
 import RSS from './RSS';
-import Email from './Email';
+import Twitter from './Twitter';
 
 /**
  * Social

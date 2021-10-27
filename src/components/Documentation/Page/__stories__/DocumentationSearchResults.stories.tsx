@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { Meta } from '@storybook/react';
-import SearchResults from '../SearchResults';
-import entries from '../../__data__/testEntries.json';
-const { default: readme } = require('../SearchResults/README.md');
-import Header from '../../../Header';
+import Copyright from '../../../Copyright';
 import Footer from '../../../Footer';
+import Header from '../../../Header';
+import Logo from '../../../Logo';
+import { GoBackWithArrow } from '../../../Pagination';
+import Search from '../../../Search';
 import {
 	SocialMediaBar,
 	FacebookLink,
@@ -15,11 +16,11 @@ import {
 	RSSLink,
 } from '../../../SocialMedia';
 import Subscribe from '../../../Subscribe';
-import Copyright from '../../../Copyright';
-import Logo from '../../../Logo';
-import Search from '../../../Search';
 import Card from '../../Card';
-import { GoBackWithArrow } from '../../../Pagination';
+import entries from '../../__data__/testEntries.json';
+import SearchResults from '../SearchResults';
+
+const { default: readme } = require('../SearchResults/README.md');
 
 const IMAGE_URL =
 	'https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png';

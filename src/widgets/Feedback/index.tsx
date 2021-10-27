@@ -3,7 +3,6 @@ import { faCheckCircle, faExclamationCircle, faSpinner } from '@fortawesome/free
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { submitFeedback } from '../../lib/data/feedback';
 import { getSubscriberId, isSubscriberCookieSet, validateEmail } from '../../lib/subscription';
-
 import type { IFeedbackProps } from '../../lib/types/feedback';
 
 const MessageInput = ({

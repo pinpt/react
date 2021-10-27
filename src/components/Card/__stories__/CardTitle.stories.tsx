@@ -1,6 +1,7 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
 import CardTitle from '../Title';
+
 const { default: readme } = require('../Title/README.md');
 
 export default {

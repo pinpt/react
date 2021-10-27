@@ -1,0 +1,309 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test default state 1`] = `
+<div
+  className="Pinpoint SubscriptionManage Wrapper "
+>
+  <h2
+    className="Pinpoint SubscriptionManage Title"
+  >
+    Your Subscriptions
+  </h2>
+  <p
+    className="Pinpoint SubscriptionManage Description"
+  >
+    Manage your subscriptions below. Missing subscriptions you expect to see? You may have subscribed with a different email address.
+  </p>
+  <div
+    className="Pinpoint SubscriptionManage Entry"
+  >
+    <div>
+      <div
+        className="Pinpoint SubscriptionManage Container"
+      >
+        <img
+          className="Pinpoint SubscriptionManage SiteLogo"
+          src="https://file.pinpoint.com/20d3346f1d5905b93b0dd48843716c0e;Ur0D%2CWglf-f%2Cg%25g4e-f5g%2Be-ele-g3e-fRf%2C;1024x1024.png"
+        />
+        <span>
+          <h2
+            className="Pinpoint SubscriptionManage SiteName"
+          >
+            Fish Rules
+          </h2>
+          <p
+            className="Pinpoint SubscriptionManage SubscriptionDate"
+          >
+            You subscribed 
+            6/24/2021, 10:54:50 AM
+          </p>
+        </span>
+        <div
+          className="Pinpoint SubscriptionManage Buttons"
+        >
+          <button
+            className="Pinpoint SubscriptionManage UpdateButton"
+            onClick={[Function]}
+          >
+            Update
+          </button>
+          <button
+            className="Pinpoint SubscriptionManage UnsubscribeButton"
+            onClick={[Function]}
+          >
+            Unsubscribe
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="Pinpoint SubscriptionManage Entry"
+  >
+    <div>
+      <div
+        className="Pinpoint SubscriptionManage Container"
+      >
+        <img
+          className="Pinpoint SubscriptionManage SiteLogo"
+          src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+        />
+        <span>
+          <h2
+            className="Pinpoint SubscriptionManage SiteName"
+          >
+            Pinpoint
+          </h2>
+          <p
+            className="Pinpoint SubscriptionManage SubscriptionDate"
+          >
+            You subscribed 
+            6/24/2021, 10:15:21 AM
+          </p>
+        </span>
+        <div
+          className="Pinpoint SubscriptionManage Buttons"
+        >
+          <button
+            className="Pinpoint SubscriptionManage UpdateButton"
+            onClick={[Function]}
+          >
+            Update
+          </button>
+          <button
+            className="Pinpoint SubscriptionManage UnsubscribeButton"
+            onClick={[Function]}
+          >
+            Unsubscribe
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="Pinpoint SubscriptionManage Entry"
+  >
+    <div>
+      <div
+        className="Pinpoint SubscriptionManage Container"
+      >
+        <img
+          className="Pinpoint SubscriptionManage SiteLogo"
+          src="https://file.pinpoint.com/9f827f9dc1c617dc655e791c570e3c74;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+        />
+        <span>
+          <h2
+            className="Pinpoint SubscriptionManage SiteName"
+          >
+            Demo Site
+          </h2>
+          <p
+            className="Pinpoint SubscriptionManage SubscriptionDate"
+          >
+            You subscribed 
+            10/21/2021, 12:57:35 PM
+          </p>
+        </span>
+        <div
+          className="Pinpoint SubscriptionManage Buttons"
+        >
+          <button
+            className="Pinpoint SubscriptionManage UpdateButton"
+            onClick={[Function]}
+          >
+            Update
+          </button>
+          <button
+            className="Pinpoint SubscriptionManage UnsubscribeButton"
+            onClick={[Function]}
+          >
+            Unsubscribe
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Test loading state 1`] = `
+<div
+  className="Pinpoint SubscriptionManage Wrapper "
+>
+  <h2
+    className="Pinpoint SubscriptionManage Title"
+  >
+    Your Subscriptions
+  </h2>
+  <p
+    className="Pinpoint SubscriptionManage Description"
+  >
+    Manage your subscriptions below. Missing subscriptions you expect to see? You may have subscribed with a different email address.
+  </p>
+  <div
+    className="Pinpoint SubscriptionManage Entry"
+  >
+    <div>
+      <div
+        className="Pinpoint SubscriptionManage Container"
+      >
+        <img
+          className="Pinpoint SubscriptionManage SiteLogo"
+          src="https://file.pinpoint.com/20d3346f1d5905b93b0dd48843716c0e;Ur0D%2CWglf-f%2Cg%25g4e-f5g%2Be-ele-g3e-fRf%2C;1024x1024.png"
+        />
+        <span>
+          <h2
+            className="Pinpoint SubscriptionManage SiteName"
+          >
+            Fish Rules
+          </h2>
+          <p
+            className="Pinpoint SubscriptionManage SubscriptionDate"
+          >
+            You subscribed 
+            6/24/2021, 10:54:50 AM
+          </p>
+        </span>
+        <div
+          className="Pinpoint SubscriptionManage Buttons"
+        >
+          <button
+            className="Pinpoint SubscriptionManage UpdateButton"
+            onClick={[Function]}
+          >
+            Update
+          </button>
+          <button
+            className="Pinpoint SubscriptionManage UnsubscribeButton"
+            onClick={[Function]}
+          >
+            Unsubscribe
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="Pinpoint SubscriptionManage Entry"
+  >
+    <div>
+      <div
+        className="Pinpoint SubscriptionManage Container"
+      >
+        <img
+          className="Pinpoint SubscriptionManage SiteLogo"
+          src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+        />
+        <span>
+          <h2
+            className="Pinpoint SubscriptionManage SiteName"
+          >
+            Pinpoint
+          </h2>
+          <p
+            className="Pinpoint SubscriptionManage SubscriptionDate"
+          >
+            You subscribed 
+            6/24/2021, 10:15:21 AM
+          </p>
+        </span>
+        <div
+          className="Pinpoint SubscriptionManage Buttons"
+        >
+          <button
+            className="Pinpoint SubscriptionManage UpdateButton"
+            onClick={[Function]}
+          >
+            Update
+          </button>
+          <button
+            className="Pinpoint SubscriptionManage UnsubscribeButton"
+            onClick={[Function]}
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-spinner fa-w-16 fa-pulse "
+              data-icon="spinner"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="Pinpoint SubscriptionManage Entry"
+  >
+    <div>
+      <div
+        className="Pinpoint SubscriptionManage Container"
+      >
+        <img
+          className="Pinpoint SubscriptionManage SiteLogo"
+          src="https://file.pinpoint.com/9f827f9dc1c617dc655e791c570e3c74;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+        />
+        <span>
+          <h2
+            className="Pinpoint SubscriptionManage SiteName"
+          >
+            Demo Site
+          </h2>
+          <p
+            className="Pinpoint SubscriptionManage SubscriptionDate"
+          >
+            You subscribed 
+            10/21/2021, 12:57:35 PM
+          </p>
+        </span>
+        <div
+          className="Pinpoint SubscriptionManage Buttons"
+        >
+          <button
+            className="Pinpoint SubscriptionManage UpdateButton"
+            onClick={[Function]}
+          >
+            Update
+          </button>
+          <button
+            className="Pinpoint SubscriptionManage UnsubscribeButton"
+            onClick={[Function]}
+          >
+            Unsubscribe
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

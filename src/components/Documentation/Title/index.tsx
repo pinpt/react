@@ -1,6 +1,6 @@
 import React from 'react';
-import Logo from '../../Logo';
 import { ISite } from '../../../lib';
+import Logo from '../../Logo';
 
 export interface IDocoumentationTitleProps {
 	className?: string;

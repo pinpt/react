@@ -1,8 +1,9 @@
 import renderer from 'react-test-renderer';
-import SearchResults from '../SearchResults/index';
-import entries from '../../__data__/testEntries.json';
-import Header from '../../../Header';
+import Copyright from '../../../Copyright';
 import Footer from '../../../Footer';
+import Header from '../../../Header';
+import Logo from '../../../Logo';
+import Search from '../../../Search';
 import {
 	SocialMediaBar,
 	FacebookLink,
@@ -13,10 +14,9 @@ import {
 	RSSLink,
 } from '../../../SocialMedia';
 import Subscribe from '../../../Subscribe';
-import Copyright from '../../../Copyright';
-import Logo from '../../../Logo';
-import Search from '../../../Search';
 import Card from '../../Card';
+import entries from '../../__data__/testEntries.json';
+import SearchResults from '../SearchResults/index';
 
 const IMAGE_URL =
 	'https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png';

@@ -1,13 +1,13 @@
 import React, { useCallback, useState } from 'react';
+import { Subtitle, Description, Primary, Stories, ArgsTable, PRIMARY_STORY } from '@storybook/addon-docs';
 import { Meta } from '@storybook/react';
 import { useSearch } from '../../../lib';
+import type { IContent } from '../../../lib/types';
+import PrebuiltSearchResults from '../SearchResults';
 import entries from '../__data__/testEntries.json';
 import site from '../__data__/testSite.json';
-import PrebuiltSearchResults from '../SearchResults';
-import { Subtitle, Description, Primary, Stories, ArgsTable, PRIMARY_STORY } from '@storybook/addon-docs';
-const { default: readme } = require('../SearchResults/README.md');
 
-import type { IContent } from '../../../lib/types';
+const { default: readme } = require('../SearchResults/README.md');
 
 export default {
 	component: PrebuiltSearchResults,

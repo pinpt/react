@@ -1,9 +1,8 @@
 import renderer from 'react-test-renderer';
+import type { IContent } from '../../../lib/types/content';
+import SearchResults from '../SearchResults';
 import entries from '../__data__/testEntries.json';
 import site from '../__data__/testSite.json';
-import SearchResults from '../SearchResults';
-
-import type { IContent } from '../../../lib/types/content';
 
 test('Test default state', () => {
 	const component = renderer.create(<SearchResults entries={entries as IContent[]} site={site} />);

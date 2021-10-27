@@ -1,6 +1,6 @@
+import React from 'react';
 import ActionLink from '../../Internal/ActionLink';
 
-import React from 'react';
 export interface IDocumentationCardProps {
 	className?: string;
 	title?: string | React.ReactElement;

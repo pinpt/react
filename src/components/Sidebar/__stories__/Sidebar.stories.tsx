@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Meta } from '@storybook/react';
 import Sidebar from '..';
-import DateLabel from '../../DateLabel';
 import Author from '../../Author';
-import Tags from '../../Tags';
 import Clap from '../../Clap';
+import DateLabel from '../../DateLabel';
 import { SocialMediaBar, FacebookShare, TwitterShare, EmailShare, LinkedInShare } from '../../SocialMedia';
+import Tags from '../../Tags';
 
 const { default: readme } = require('../README.md');
 

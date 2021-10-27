@@ -1,6 +1,5 @@
 import renderer from 'react-test-renderer';
 import SubscribeForm from '../';
-
 import type { IPinpointConfig } from '../../../lib/types';
 
 const config = {

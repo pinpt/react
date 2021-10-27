@@ -1,21 +1,21 @@
 import React from 'react';
-import SearchResultsPage from '../../Page/SearchResults';
 import { ReactElement, useCallback, useState } from 'react';
-import { IHeaderProps } from '../../../Header';
-import Header from '../../../Prebuilt/Header';
 import type { IContent, ISite } from '../../../../lib/types';
+import { ICopyrightProps } from '../../../Copyright';
+import { IHeaderProps } from '../../../Header';
+import ActionLink from '../../../Internal/ActionLink';
 import { ILogoProps } from '../../../Logo';
+import { GoBackWithArrow } from '../../../Pagination';
+import Footer, { IPrebuiltFooterProps } from '../../../Prebuilt/Footer';
+import Header from '../../../Prebuilt/Header';
+import Search from '../../../Search';
 import { ISearchBarProps } from '../../../Search/Bar';
+import { ISocialMediaBarProps } from '../../../SocialMedia/SocialMediaBar';
 import { ISubscribeProps } from '../../../Subscribe';
 import { IThemeToggleProps } from '../../../ThemeToggle';
-import Footer, { IPrebuiltFooterProps } from '../../../Prebuilt/Footer';
-import { ISocialMediaBarProps } from '../../../SocialMedia/SocialMediaBar';
-import { ICopyrightProps } from '../../../Copyright';
-import Title from '../../Title';
-import { GoBackWithArrow } from '../../../Pagination';
-import Search from '../../../Search';
 import Card, { IDocumentationCardProps } from '../../Card';
-import ActionLink from '../../../Internal/ActionLink';
+import SearchResultsPage from '../../Page/SearchResults';
+import Title from '../../Title';
 
 export interface IPrebuiltDocumentationSearchResultsProps {
 	className?: string;

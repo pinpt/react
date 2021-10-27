@@ -832,6 +832,317 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 	@apply h-[19rem] sm:h-[27rem] md:h-[32rem] lg:h-[36rem];
 }
 
+.Pinpoint.feedbackWrapper {
+	@apply mt-10 mb-5 border rounded p-4 inline-flex bg-white shadow-lg;
+}
+
+.Pinpoint.Form.Wrapper {
+	@apply flex flex-col w-full;
+}
+
+.Pinpoint.Form.Parent {
+	@apply mt-4 sm:mt-8 sm:mx-8 py-2 px-4;
+}
+
+.Pinpoint.Form.Control {
+	@apply mb-4 md:mb-0 flex flex-col md:flex-row md:justify-between;
+}
+
+.Pinpoint.Form.Heading {
+	@apply mb-4 md:mb-8;
+}
+
+.Pinpoint.Form.Heading h1 {
+	@apply font-bold text-2xl leading-8 text-gray-800 whitespace-nowrap dark:text-white;
+}
+
+.Pinpoint.Form.Heading h2 {
+	@apply mt-2 text-gray-500 dark:text-gray-300;
+}
+
+.Pinpoint.Form.BottomButton {
+	@apply flex flex-wrap;
+}
+
+.Pinpoint.Form.Spacer {
+	@apply space-x-4;
+}
+
+.Pinpoint.Form.SaveButton {
+	@apply disabled:opacity-50 inline-flex items-center justify-center cursor-pointer disabled:cursor-not-allowed px-4 py-1.5 focus:outline-none font-normal rounded-md transition-colors duration-200 bg-green-600 hover:bg-green-800 text-white ml-8;
+}
+
+.Pinpoint.Field.Wrapper {
+	@apply flex flex-col;
+}
+
+.Pinpoint.Field.Parent {
+	@apply flex flex-row text-sm;
+}
+
+.Pinpoint.Field.Label {
+	@apply font-semibold text-gray-700 dark:text-gray-300;
+}
+
+.Pinpoint.Field.Status {
+	@apply ml-auto mr-1 space-x-2 flex flex-row items-center;
+}
+
+.Pinpoint.Field.Error {
+	@apply text-red-500;
+}
+
+.Pinpoint.Field.Info {
+	@apply text-gray-400;
+}
+
+.Pinpoint.Field.Children {
+	@apply mt-1;
+}
+
+.Pinpoint.Field.Description {
+	@apply mt-2 text-sm text-gray-500;
+}
+
+.Pinpoint.SegmentedControl.Wrapper {
+	@apply flex space-x-2;
+}
+
+.Pinpoint.SegmentedControl.Button {
+	@apply w-8 h-8 rounded border;
+}
+
+.Pinpoint.SegmentedControl.Button.active {
+	@apply bg-blue-500 border-transparent text-white;
+}
+
+.Pinpoint.SegmentedControl.Button.inactive {
+	@apply bg-white;
+}
+
+.Pinpoint.Field.FullWidth {
+	@apply w-full;
+}
+
+.Pinpoint.subscribeWrapper,
+.Pinpoint.unsubscribeWrapper,
+.Pinpoint.manageWrapper {
+	@apply flex-grow;
+}
+
+.Pinpoint.SubscriptionSubscribe .Pinpoint.Form.Control {
+	@apply hidden;
+}
+
+.Pinpoint.SubscriptionSubscribe.Title {
+	@apply text-3xl pt-4 mb-4 px-12 text-center dark:text-white;
+}
+
+.Pinpoint.SubscriptionSubscribe.Description {
+	@apply text-center mb-12 px-12 text-gray-600 dark:text-gray-300;
+}
+
+.Pinpoint.SubscriptionSubscribe.Wrapper {
+	@apply flex items-center flex-col mx-16 sm:mx-36 mb-16;
+}
+
+.Pinpoint.SubscriptionSubscribe.Field {
+	@apply flex-1 disabled:cursor-not-allowed focus:ring-blue-500 focus:border-blue-500 block w-full min-w-0 rounded-md text-sm border-gray-300 focus:bg-white bg-gray-100 p-2 border text-black;
+}
+
+.Pinpoint.SubscriptionSubscribe.Submit {
+	@apply disabled:opacity-50 inline-flex justify-center cursor-pointer disabled:cursor-not-allowed px-4 py-1.5 rounded-md flex items-center font-semibold text-white bg-green-600 hover:bg-green-500 transition-colors duration-200 focus:outline-none;
+}
+
+.Pinpoint.EmailValidation.Subscribing {
+	@apply flex items-center w-full;
+}
+
+.Pinpoint.EmailValidation.Subscribing.Icon {
+	@apply text-gray-700 mr-2;
+}
+
+.Pinpoint.EmailValidation.Error {
+	@apply flex items-center text-orange-600 w-full;
+}
+
+.Pinpoint.EmailValidation.Message {
+	@apply flex items-center text-green-600 w-full;
+}
+
+.Pinpoint.EmailValidation.Status {
+	@apply flex items-center w-full;
+}
+
+.Pinpoint.EmailValidation.Status.Success {
+	@apply text-green-600;
+}
+
+.Pinpoint.EmailValidation.Status.Invalid {
+	@apply text-orange-600;
+}
+
+.Pinpoint.EmailValidation.Status .Pinpoint.EmailValidation.Icon {
+	@apply mr-2;
+}
+
+/* Manage Subscription Component */
+.Pinpoint.SubscriptionManage.Wrapper {
+	@apply flex items-center flex-col mx-16 sm:mx-36 mb-16;
+}
+.Pinpoint.SubscriptionManage.Entry {
+	@apply bg-gray-100 w-full p-6 rounded-lg mb-6 dark:bg-gray-700;
+}
+
+.Pinpoint.SubscriptionManage.Title {
+	@apply text-3xl pt-4 mb-4 px-12 text-center dark:text-white;
+}
+
+.Pinpoint.SubscriptionManage.Description {
+	@apply text-center mb-12 px-12 text-gray-600 dark:text-gray-300;
+}
+
+.Pinpoint.SubscriptionManage.Container {
+	@apply flex flex-grow items-center;
+}
+
+.Pinpoint.SubscriptionManage.SiteLogo {
+	@apply w-12 h-12 rounded-full mr-4;
+}
+
+.Pinpoint.SubscriptionManage.SiteName {
+	@apply font-medium text-lg dark:text-white;
+}
+
+.Pinpoint.SubscriptionManage.SubscriptionDate {
+	@apply text-sm text-gray-700 dark:text-gray-300;
+}
+
+.Pinpoint.SubscriptionManage.Buttons {
+	@apply ml-auto pl-6 flex flex-row space-x-2 flex-shrink-0;
+}
+
+.Pinpoint.SubscriptionManage.Buttons .Pinpoint.SubscriptionManage.UpdateButton {
+	@apply disabled:opacity-50 inline-flex items-center justify-center cursor-pointer disabled:cursor-not-allowed px-4 py-1.5 focus:outline-none font-normal rounded-md text-sm transition-colors duration-200 bg-gray-400 disabled:bg-gray-400 disabled:hover:bg-gray-400 hover:bg-gray-500 dark:bg-gray-500 dark:hover:bg-gray-600 text-white;
+}
+
+.Pinpoint.SubscriptionManage.Buttons .Pinpoint.SubscriptionManage.UnsubscribeButton {
+	@apply disabled:opacity-50 inline-flex items-center justify-center cursor-pointer disabled:cursor-not-allowed px-4 py-1.5 focus:outline-none font-normal rounded-md text-sm transition-colors duration-200 bg-red-800 disabled:bg-red-800 disabled:hover:bg-red-800 hover:bg-red-900 text-white;
+}
+
+/* Email Action Component */
+.Pinpoint.EmailAction.ErrorWrapper {
+	@apply rounded-md bg-red-50 p-4 flex w-full mb-6;
+}
+
+.Pinpoint.EmailAction.Container {
+	@apply flex flex-grow items-center;
+}
+
+.Pinpoint.EmailAction.Container .Pinpoint.EmailAction.ErrorIcon {
+	@apply flex-shrink-0 text-red-400;
+}
+
+.Pinpoint.EmailAction.Message {
+	@apply ml-3;
+}
+
+.Pinpoint.EmailAction.Message .Pinpoint.EmailAction.ErrorText {
+	@apply text-sm font-medium text-red-800;
+}
+
+.Pinpoint.EmailAction.Interactive {
+	@apply ml-auto pl-3;
+}
+
+.Pinpoint.EmailAction.ButtonWrapper {
+	@apply -mx-1.5 -my-1.5;
+}
+
+.Pinpoint.EmailAction.ErrorButton {
+	@apply inline-flex bg-red-50 rounded-md p-1.5 text-red-500 hover:bg-red-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-red-50 focus:ring-red-600;
+}
+
+.Pinpoint.EmailAction.SR {
+	@apply sr-only;
+}
+
+.Pinpoint.EmailAction.MessageWrapper {
+	@apply rounded-md bg-green-50 p-4 flex w-full mb-6;
+}
+
+.Pinpoint.EmailAction.Container .Pinpoint.EmailAction.MessageIcon {
+	@apply flex-shrink-0 text-green-400;
+}
+
+.Pinpoint.EmailAction.Message .Pinpoint.EmailAction.MessageText {
+	@apply text-sm font-medium text-green-800;
+}
+
+.Pinpoint.EmailAction.MessageButton {
+	@apply inline-flex bg-green-50 rounded-md p-1.5 text-green-500 hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-green-50 focus:ring-green-600;
+}
+
+/* Subscription Verify Component */
+
+.Pinpoint.SubscriptionVerify.Wrapper {
+	@apply flex flex-col justify-center items-center;
+}
+
+.Pinpoint.SubscriptionVerify.Content {
+	@apply flex-grow flex justify-center items-center;
+}
+
+.Pinpoint.SubscriptionVerify.Inner {
+	@apply flex items-center flex-col mx-16 sm:mx-36 mb-16;
+}
+
+.Pinpoint.SubscriptionVerify.Form {
+	@apply mt-6 grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-4;
+}
+
+.Pinpoint.SubscriptionVerify.Save {
+	@apply disabled:opacity-50 inline-flex justify-center cursor-pointer disabled:cursor-not-allowed px-4 py-1.5 rounded-md flex items-center font-semibold text-white bg-green-600 hover:bg-green-500 transition-colors duration-200 focus:outline-none ml-8;
+}
+
+/* Subscription Unsubscribe Component */
+
+.Pinpoint.SubscriptionUnsubscribe.Wrapper {
+	@apply flex flex-col justify-center items-center;
+}
+
+.Pinpoint.SubscriptionUnsubscribe.Container {
+	@apply flex-grow flex justify-center items-center max-w-5xl;
+}
+
+.Pinpoint.SubscriptionUnsubscribe.Content {
+	@apply flex items-center flex-col mx-16 sm:mx-36 mb-16 dark:text-white;
+}
+
+.Pinpoint.SubscriptionUnsubscribe.Logo {
+	@apply w-20 h-20 rounded-full;
+}
+
+.Pinpoint.SubscriptionUnsubscribe.Name {
+	@apply text-2xl py-5;
+}
+
+.Pinpoint.SubscriptionUnsubscribe.Warning {
+	@apply py-10 text-xl text-center;
+}
+
+.Pinpoint.SubscriptionUnsubscribe.Button.Resubscribe {
+	@apply disabled:opacity-50 inline-flex items-center justify-center cursor-pointer disabled:cursor-not-allowed px-4 py-1.5 focus:outline-none font-normal rounded-md text-sm transition-colors duration-200 bg-gray-400 disabled:bg-gray-400 disabled:hover:bg-gray-400 hover:bg-gray-500 dark:bg-gray-500 dark:hover:bg-gray-600 text-white;
+}
+
+.Pinpoint.SubscriptionUnsubscribe.Button.Unsubscribe {
+	@apply disabled:opacity-50 inline-flex items-center justify-center cursor-pointer disabled:cursor-not-allowed px-4 py-1.5 focus:outline-none font-normal rounded-md text-sm transition-colors duration-200 bg-red-800 disabled:bg-red-800 disabled:hover:bg-red-800 hover:bg-red-900 text-white;
+}
+
+.Pinpoint.SubscriptionUnsubscribe.Manage {
+	@apply text-gray-600 text-sm pt-10 underline dark:text-gray-300 cursor-pointer;
+}
+
 /* styles from medium zoom image */
 .medium-zoom-overlay,
 .medium-zoom-image--opened {

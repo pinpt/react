@@ -99,9 +99,25 @@ const {
 	NotificationModalWidget,
 	NotificationPopupWidget,
 	NotificationBannerWidget,
+	SubscriptionManage,
+	SubscriptionSubscribe,
+	SubscriptionUnsubscribe,
+	SubscriptionVerify,
+	PrebuiltSubscriptionManage,
+	PrebuiltSubscriptionSubscribe,
+	PrebuiltSubscriptionUnsubscribe,
+	PrebuiltSubscriptionVerify,
+	EmailAction,
+	useEmailAction,
+	validateSubscription,
+	listSubscriptions,
 	CoverMedia,
 	registerRenderer,
 	getRenderer,
+	useSubscriptionCreator,
+	useSubscriptionList,
+	useSubscription,
+	useSubscriptionUpdater,
 	...otherExports
 } = Exports;
 
@@ -156,6 +172,10 @@ test('Test component exports', () => {
 	expect(PrebuiltHeader).toBeTruthy();
 	expect(PrebuiltSearchResults).toBeTruthy();
 	expect(PrebuiltHome).toBeTruthy();
+	expect(PrebuiltSubscriptionManage).toBeTruthy();
+	expect(PrebuiltSubscriptionSubscribe).toBeTruthy();
+	expect(PrebuiltSubscriptionUnsubscribe).toBeTruthy();
+	expect(PrebuiltSubscriptionVerify).toBeTruthy();
 
 	// Test Search Exports
 	expect(Search).toBeTruthy();
@@ -198,6 +218,13 @@ test('Test component exports', () => {
 	expect(Banner).toBeTruthy();
 	expect(isSubscriberCookieSet).toBeTruthy();
 	expect(subscribe).toBeTruthy();
+	expect(EmailAction).toBeTruthy();
+
+	// Test subscription components
+	expect(SubscriptionManage).toBeTruthy();
+	expect(SubscriptionSubscribe).toBeTruthy();
+	expect(SubscriptionUnsubscribe).toBeTruthy();
+	expect(SubscriptionVerify).toBeTruthy();
 });
 
 test('Test util exports', () => {
@@ -223,6 +250,8 @@ test('Test util exports', () => {
 	expect(getQueryString).toBeTruthy();
 	expect(getDocumentHeadings).toBeTruthy();
 	expect(titleCase).toBeTruthy();
+	expect(validateSubscription).toBeTruthy();
+	expect(listSubscriptions).toBeTruthy();
 });
 
 test('Test hook exports', () => {
@@ -231,6 +260,11 @@ test('Test hook exports', () => {
 	expect(useSearch).toBeTruthy();
 	expect(useScriptLoader).toBeTruthy();
 	expect(useBackground).toBeTruthy();
+	expect(useEmailAction).toBeTruthy();
+	expect(useSubscriptionCreator).toBeTruthy();
+	expect(useSubscriptionList).toBeTruthy();
+	expect(useSubscription).toBeTruthy();
+	expect(useSubscriptionUpdater).toBeTruthy();
 });
 
 test('Test widget exports', () => {

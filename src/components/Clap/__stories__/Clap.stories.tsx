@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Meta } from '@storybook/react';
 import Clap from '..';
+
 const { default: readme } = require('../README.md');
 
 export default {

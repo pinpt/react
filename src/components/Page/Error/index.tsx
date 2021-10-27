@@ -1,8 +1,8 @@
-import withWrapper from '../../Internal/withWrapper';
 import React from 'react';
 import { ReactElement } from 'react';
 import { IErrorProps } from '../../Error';
 import { IFooterProps } from '../../Footer';
+import withWrapper from '../../Internal/withWrapper';
 
 export interface IPageErrorProps {
 	className?: string;

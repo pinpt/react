@@ -1,10 +1,11 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
 import Bar from '../Bar';
-import Facebook from '../Facebook';
-import Twitter from '../Twitter';
-import LinkedIn from '../LinkedIn';
 import Email from '../Email';
+import Facebook from '../Facebook';
+import LinkedIn from '../LinkedIn';
+import Twitter from '../Twitter';
+
 const { default: readme } = require('../README.md');
 
 export default {

@@ -1,9 +1,10 @@
 import { ReactElement } from 'react';
+import React from 'react';
 import { ICopyrightProps } from '../Copyright';
 import PoweredByPinpoint from '../PoweredByPinpoint';
 import { ISocialMediaBarProps } from '../SocialMedia/SocialMediaBar';
 import { ISubscribeProps } from '../Subscribe';
-import React from 'react';
+
 export interface IFooterProps {
 	className?: string;
 	siteId?: string;

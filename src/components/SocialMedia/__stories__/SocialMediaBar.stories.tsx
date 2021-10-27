@@ -1,15 +1,16 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
-import SocialMediaBar from '../SocialMediaBar';
 import FacebookLink from '../Facebook/FacebookLink';
 import FacebookShare from '../Facebook/FacebookShare';
-import InstagramLink from '../Instagram/InstagramLink';
-import TwitterLink from '../Twitter/TwitterLink';
-import TwitterShare from '../Twitter/TwitterShare';
 import GithubLink from '../Github/GithubLink';
+import InstagramLink from '../Instagram/InstagramLink';
 import LinkedInLink from '../LinkedIn/LinkedInLink';
 import LinkedInShare from '../LinkedIn/LinkedInShare';
 import RSSLink from '../RSS/RSSLink';
+import SocialMediaBar from '../SocialMediaBar';
+import TwitterLink from '../Twitter/TwitterLink';
+import TwitterShare from '../Twitter/TwitterShare';
+
 const { default: readme } = require('../README.md');
 
 export default {

@@ -1,11 +1,11 @@
 import renderer from 'react-test-renderer';
 import Bar from '../Bar';
 import Facebook from '../Facebook';
-import Instagram from '../Instagram';
-import Twitter from '../Twitter';
 import Github from '../Github';
+import Instagram from '../Instagram';
 import LinkedIn from '../LinkedIn';
 import RSS from '../RSS';
+import Twitter from '../Twitter';
 
 test('Test all', () => {
 	const component = renderer.create(

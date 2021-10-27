@@ -1,18 +1,18 @@
 import React from 'react';
 import { ReactElement } from 'react';
+import type { IContent, ISearchTerm, ISite } from '../../../lib/types';
 import Card from '../../Card';
 import { ICardContainerProps } from '../../Card/Container';
-import DateLabel, { IDateProps } from '../../DateLabel';
 import { ICardDescriptionProps } from '../../Card/Description';
 import { ICardReadButtonProps } from '../../Card/ReadButton';
 import { ICardTitleProps } from '../../Card/Title';
 import { ICopyrightProps } from '../../Copyright';
-import Footer from '../Footer';
-import Header from '../Header';
+import DateLabel, { IDateProps } from '../../DateLabel';
 import { IFooterProps } from '../../Footer';
 import { IHeaderProps } from '../../Header';
 import { ILogoProps } from '../../Logo';
 import DashboardPage from '../../Page/Dashboard';
+import Pinpoint from '../../Pinpoint';
 import Search from '../../Search';
 import { ISearchBarProps } from '../../Search/Bar';
 import { IQueryProps } from '../../Search/Query';
@@ -24,9 +24,9 @@ import { ISubscribeProps } from '../../Subscribe';
 import Tags from '../../Tags';
 import { ITagBarProps } from '../../Tags/Bar';
 import { IThemeToggleProps } from '../../ThemeToggle';
+import Footer from '../Footer';
+import Header from '../Header';
 
-import type { IContent, ISearchTerm, ISite } from '../../../lib/types';
-import Pinpoint from '../../Pinpoint';
 export interface IPrebuiltSearchResultsProps {
 	className?: string;
 	site: ISite;

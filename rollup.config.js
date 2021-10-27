@@ -1,8 +1,8 @@
-import { terser } from 'rollup-plugin-terser';
-import replace from '@rollup/plugin-replace';
-import { nodeResolve } from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import json from '@rollup/plugin-json';
+import { nodeResolve } from '@rollup/plugin-node-resolve';
+import replace from '@rollup/plugin-replace';
+import { terser } from 'rollup-plugin-terser';
 import pkg from './package.json';
 import replaceImport from './rewrite-react';
 
@@ -16,7 +16,9 @@ const plugins = [
 	}),
 	json(),
 	replaceImport(),
-	nodeResolve(),
+	nodeResolve({
+		preferBuiltins: true,
+	}),
 	commonjs(),
 	terser(),
 ];

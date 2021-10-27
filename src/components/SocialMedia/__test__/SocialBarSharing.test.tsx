@@ -1,9 +1,9 @@
 import renderer from 'react-test-renderer';
-import SocialMediaBar from '../SocialMediaBar';
-import FacebookShare from '../Facebook/FacebookShare';
-import TwitterShare from '../Twitter/TwitterShare';
-import LinkedInShare from '../LinkedIn/LinkedInShare';
 import EmailShare from '../Email/EmailShare';
+import FacebookShare from '../Facebook/FacebookShare';
+import LinkedInShare from '../LinkedIn/LinkedInShare';
+import SocialMediaBar from '../SocialMediaBar';
+import TwitterShare from '../Twitter/TwitterShare';
 
 test('Test all', () => {
 	const component = renderer.create(

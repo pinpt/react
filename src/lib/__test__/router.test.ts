@@ -1,9 +1,7 @@
 /**
  * @jest-environment jsdom
  */
-import {
-	getRouterAbsolutePath, getRouterRelativePath, getSiteAnalyticsURL, getSiteRSSURL
-} from '../';
+import { getRouterAbsolutePath, getRouterRelativePath, getSiteAnalyticsURL, getSiteRSSURL } from '../';
 
 test('Test getRouterRelativePath', () => {
 	expect(getRouterRelativePath({ basePath: undefined } as any, 'https://example.com/foo')).toBe('/foo');

@@ -1,6 +1,7 @@
-import { Meta } from '@storybook/react';
-const { default: readme } = require('./Config.README.md');
 import { Title, Subtitle, Description } from '@storybook/addon-docs';
+import { Meta } from '@storybook/react';
+
+const { default: readme } = require('./Config.README.md');
 
 export default {
 	title: 'Types/Pinpoint Config Types',

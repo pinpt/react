@@ -5,4 +5,5 @@ module.exports = {
 	trailingComma: 'es5',
 	useTabs: true,
 	tabWidth: 3,
+	importOrder: ['^react$', '^next/(.*)$', '@pinpt.*', '^@.*', '^[A-Z]', '^[a-z]', '^[../]', '^[./]', '.*'],
 };

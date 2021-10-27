@@ -1,5 +1,5 @@
-import type { IPinpointConfig } from '../types/config';
 import { executeAPI } from '../fetch';
+import type { IPinpointConfig } from '../types/config';
 
 export const subscribe = async (config: IPinpointConfig, email: string): Promise<void> => {
 	await executeAPI(
@@ -11,4 +11,16 @@ export const subscribe = async (config: IPinpointConfig, email: string): Promise
 		},
 		true
 	);
+};
+
+export const validateSubscription = async (config: IPinpointConfig, email: string): Promise<boolean> => {
+	const res = await executeAPI(config, `/subscription/validate/${encodeURIComponent(email)}`, 'GET');
+
+	return res;
+};
+
+export const listSubscriptions = async (config: IPinpointConfig, subscriptionId: string) => {
+	const res = await executeAPI(config, `/subscription/manage/list/${subscriptionId}`, 'GET');
+
+	return res;
 };

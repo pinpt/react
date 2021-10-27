@@ -1,5 +1,5 @@
-import renderer from 'react-test-renderer';
 import { faExclamationCircle } from '@fortawesome/free-solid-svg-icons';
+import renderer from 'react-test-renderer';
 import Banner from '../';
 
 test('Test empty state', () => {

@@ -1,7 +1,7 @@
-import Title from './Title';
-import Description from './Description';
 import Container from './Container';
+import Description from './Description';
 import ReadButton from './ReadButton';
+import Title from './Title';
 
 export default {
 	Title,

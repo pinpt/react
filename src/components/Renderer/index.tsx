@@ -1,8 +1,6 @@
 import React, { forwardRef } from 'react';
 import Content, { CoverMedia } from './content';
-import {
-	DocOpts, getRenderer, NodeProps, PmNode, recurseIntoChildren, registerRenderer
-} from './register';
+import { DocOpts, getRenderer, NodeProps, PmNode, recurseIntoChildren, registerRenderer } from './register';
 
 const Document = forwardRef(({ node, limit, opts }: NodeProps & { limit?: number; opts?: DocOpts }, ref: any) => {
 	return (

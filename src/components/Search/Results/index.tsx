@@ -1,6 +1,6 @@
 import { Children, ReactElement } from 'react';
-import { ICardContainerProps } from '../../Card/Container';
 import React from 'react';
+import { ICardContainerProps } from '../../Card/Container';
 
 export interface ISearchResultsProps {
 	className?: string;

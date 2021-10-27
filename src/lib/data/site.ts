@@ -1,6 +1,6 @@
-import type { ISite } from '../types/site';
-import type { IPinpointConfig } from '../types/config';
 import { executeAPI } from '../fetch';
+import type { IPinpointConfig } from '../types/config';
+import type { ISite } from '../types/site';
 
 export const configFromSite = (site: ISite): IPinpointConfig => {
 	return {

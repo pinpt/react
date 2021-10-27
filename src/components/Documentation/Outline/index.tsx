@@ -1,9 +1,9 @@
 import React from 'react';
-import ActionLink from '../../Internal/ActionLink';
+import { useCallback, useState } from 'react';
+import { getDocumentHeadings, IDocumentHeading } from '../../../lib';
 import { IContent } from '../../../lib/types/content';
 import { ISite } from '../../../lib/types/site';
-import { getDocumentHeadings, IDocumentHeading } from '../../../lib';
-import { useCallback, useState } from 'react';
+import ActionLink from '../../Internal/ActionLink';
 
 export interface IOutlineProps {
 	className?: string;

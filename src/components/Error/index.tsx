@@ -2,8 +2,8 @@ import React from 'react';
 import { ReactElement, ReactNode } from 'react';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { ILogoProps } from '../Logo';
 import { IActionLinkProps } from '../Internal/ActionLink';
+import { ILogoProps } from '../Logo';
 
 export interface IErrorProps {
 	className?: string;

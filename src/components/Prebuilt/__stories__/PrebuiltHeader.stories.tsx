@@ -1,8 +1,9 @@
 import React from 'react';
-import { Meta } from '@storybook/react';
-import site from '../__data__/testSite.json';
-import Header from '../Header';
 import { Subtitle, Description, Primary, Stories, ArgsTable, PRIMARY_STORY } from '@storybook/addon-docs';
+import { Meta } from '@storybook/react';
+import Header from '../Header';
+import site from '../__data__/testSite.json';
+
 const { default: readme } = require('../Header/README.md');
 
 export default {

@@ -1,6 +1,6 @@
-import type { IStatisticProps } from '../types';
-import { compactNumber } from '../../../lib/string';
 import React from 'react';
+import { compactNumber } from '../../../lib/string';
+import type { IStatisticProps } from '../types';
 
 const Views = (props: IStatisticProps) => {
 	const { count, className } = props;

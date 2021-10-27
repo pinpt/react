@@ -1,10 +1,10 @@
 import { ReactElement } from 'react';
+import React from 'react';
 import { IAuthorProps } from '../Author';
-import { IDateProps } from '../DateLabel';
 import { IClapProps } from '../Clap';
+import { IDateProps } from '../DateLabel';
 import { ISocialMediaBarProps } from '../SocialMedia/SocialMediaBar';
 import { ITagBarProps } from '../Tags/Bar';
-import React from 'react';
 
 export interface ISidebarProps {
 	className?: string;

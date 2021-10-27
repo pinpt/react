@@ -1,10 +1,11 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
 import Footer from '..';
-import { Bar, FacebookLink, InstagramLink, TwitterLink, GithubLink, LinkedInLink, RSSLink } from '../../SocialMedia';
 import Copyright from '../../Copyright';
 import Logo from '../../Logo';
+import { Bar, FacebookLink, InstagramLink, TwitterLink, GithubLink, LinkedInLink, RSSLink } from '../../SocialMedia';
 import Subscribe from '../../Subscribe';
+
 const { default: readme } = require('../README.md');
 
 export default {

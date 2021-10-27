@@ -1,11 +1,12 @@
 import React from 'react';
+import { Subtitle, Description, Primary, Stories, ArgsTable, PRIMARY_STORY } from '@storybook/addon-docs';
 import { Meta } from '@storybook/react';
+import type { IContent } from '../../../lib/types';
+import Home from '../Home';
 import analytics from '../__data__/testAnalytics.json';
 import entries from '../__data__/testEntries.json';
 import site from '../__data__/testSite.json';
-import Home from '../Home';
-import { Subtitle, Description, Primary, Stories, ArgsTable, PRIMARY_STORY } from '@storybook/addon-docs';
-import type { IContent } from '../../../lib/types';
+
 const { default: readme } = require('../Home/README.md');
 
 export default {

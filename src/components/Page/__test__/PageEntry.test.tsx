@@ -1,10 +1,13 @@
 import renderer from 'react-test-renderer';
+import { ICoverMedia } from '../../../lib/types';
 import Author from '../../Author';
 import Clap from '../../Clap';
 import Copyright from '../../Copyright';
+import DateLabel from '../../DateLabel';
 import Footer from '../../Footer';
 import Header from '../../Header';
 import Logo from '../../Logo';
+import Pagination from '../../Pagination';
 import { Document } from '../../Renderer';
 import Sidebar from '../../Sidebar';
 import {
@@ -19,11 +22,8 @@ import {
 import Subscribe from '../../Subscribe';
 import Tags from '../../Tags';
 import Page from '../Entry';
-import testDoc from '../Entry/__data__/testDoc.json';
 import testCoverMedia from '../Entry/__data__/testCoverMedia.json';
-import DateLabel from '../../DateLabel';
-import Pagination from '../../Pagination';
-import { ICoverMedia } from '../../../lib/types';
+import testDoc from '../Entry/__data__/testDoc.json';
 
 const IMAGE_URL =
 	'https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png';

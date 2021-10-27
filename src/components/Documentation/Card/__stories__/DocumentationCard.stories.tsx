@@ -1,9 +1,10 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
 import Card from '..';
+import { IContent } from '../../../../lib';
 import entries from '../../../Prebuilt/__data__/testEntries.json';
 import site from '../../../Prebuilt/__data__/testSite.json';
-import { IContent } from '../../../../lib';
+
 const { default: readme } = require('../README.md');
 
 export default {

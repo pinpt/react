@@ -1,11 +1,11 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
 import Head from '../';
+import type { IContent } from '../../../lib/types';
 import entries from '../../Prebuilt/__data__/testEntries.json';
 import site from '../../Prebuilt/__data__/testSite.json';
 
 const { default: readme } = require('../README.md');
-import type { IContent } from '../../../lib/types';
 
 export default {
 	component: Head,

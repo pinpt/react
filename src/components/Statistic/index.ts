@@ -1,6 +1,6 @@
-import Views from './Views';
-import Claps from './Claps';
 import Bar from './Bar';
+import Claps from './Claps';
+import Views from './Views';
 
 export default {
 	Views,

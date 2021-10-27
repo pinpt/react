@@ -1,5 +1,5 @@
-import { NodeProps } from './register';
 import React from 'react';
+import { NodeProps } from './register';
 
 const Hr = ({ node }: NodeProps) => {
 	return (

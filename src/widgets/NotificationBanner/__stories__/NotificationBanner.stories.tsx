@@ -1,8 +1,9 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
 import NotificationBanner from '../';
-const { default: readme } = require('../README.md');
 import properties from '../__data__/properties.json';
+
+const { default: readme } = require('../README.md');
 
 export default {
 	component: NotificationBanner,

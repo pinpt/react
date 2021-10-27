@@ -1,4 +1,5 @@
 import React from 'react';
+
 export interface ICardDescriptionProps {
 	className?: string;
 	description: string;

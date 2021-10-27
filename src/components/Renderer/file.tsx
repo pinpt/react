@@ -1,4 +1,5 @@
-import React from 'react'; // don't remove
+import React from 'react';
+// don't remove
 import {
 	faDownload,
 	faFile,

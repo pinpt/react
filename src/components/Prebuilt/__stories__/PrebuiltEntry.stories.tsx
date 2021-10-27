@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
+import { Subtitle, Description, Primary, Stories, ArgsTable, PRIMARY_STORY } from '@storybook/addon-docs';
 import { Meta } from '@storybook/react';
-import entries from '../__data__/testEntries.json';
-import site from '../__data__/testSite.json';
+import { ContentTemplateType, IContent } from '../../../lib/types';
 import content from '../../Pinpoint/__data__/testDocumentIFramely.json';
 import PrebuiltEntry from '../Entry';
-import { Subtitle, Description, Primary, Stories, ArgsTable, PRIMARY_STORY } from '@storybook/addon-docs';
-const { default: readme } = require('../Entry/README.md');
+import entries from '../__data__/testEntries.json';
+import site from '../__data__/testSite.json';
 
-import { ContentTemplateType, IContent } from '../../../lib/types';
+const { default: readme } = require('../Entry/README.md');
 
 export default {
 	component: PrebuiltEntry,

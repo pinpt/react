@@ -1,8 +1,9 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
 import SubscribeForm from '../';
-const { default: readme } = require('../README.md');
 import type { IPinpointConfig } from '../../../lib/types';
+
+const { default: readme } = require('../README.md');
 
 const config = {
 	slug: 'pinpoint',

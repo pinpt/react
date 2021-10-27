@@ -2,6 +2,7 @@ import React from 'react';
 import { Meta } from '@storybook/react';
 import { Content, Document, emptyDoc } from '../';
 import { CoverMediaType } from '../../../lib/types/content';
+import type { ICoverMedia } from '../../../lib/types/content';
 import Pinpoint from '../../Pinpoint';
 import audio_files from '../__data__/audio_files';
 import blockquote_with_code_mark from '../__data__/blockquote_with_code_mark';
@@ -32,8 +33,6 @@ import video_file from '../__data__/video_file';
 import video_file_api from '../__data__/video_file_api';
 
 const { default: readme } = require('../README.md');
-
-import type { ICoverMedia } from '../../../lib/types/content';
 
 export default {
 	component: Document,

@@ -1,5 +1,6 @@
 import React, { ReactElement } from 'react';
 import { fetchAnalytics, splitEntries } from '../../../lib';
+import type { Analytics, IContent, ISite } from '../../../lib/types';
 import Card from '../../Card';
 import { ICardContainerProps } from '../../Card/Container';
 import { ICardDescriptionProps } from '../../Card/Description';
@@ -13,6 +14,7 @@ import Latest, { ILatestProps } from '../../Latest';
 import { ILogoProps } from '../../Logo';
 import DashboardPage from '../../Page/Dashboard';
 import Pagination, { IPaginationProps } from '../../Pagination';
+import Pinpoint from '../../Pinpoint';
 import Recent, { IRecentProps } from '../../Recent';
 import { ISearchBarProps } from '../../Search/Bar';
 import { ISocialMediaBarProps } from '../../SocialMedia/SocialMediaBar';
@@ -24,8 +26,6 @@ import { ITagBarProps } from '../../Tags/Bar';
 import { IThemeToggleProps } from '../../ThemeToggle';
 import Footer from '../Footer';
 import Header from '../Header';
-import type { Analytics, IContent, ISite } from '../../../lib/types';
-import Pinpoint from '../../Pinpoint';
 
 export interface IPrebuiltHomeProps {
 	className?: string;

@@ -1,13 +1,12 @@
 import { ReactElement } from 'react';
 import React from 'react';
 import type { IActionLinkProps } from '../Internal/ActionLink';
-
+import ActionLink from '../Internal/ActionLink';
+import MobileMenuTrigger from '../Internal/MobileMenuTrigger';
+import type { ILogoProps } from '../Logo';
 import type { ISearchBarProps } from '../Search/Bar';
 import type { ISubscribeProps } from '../Subscribe';
 import type { IThemeToggleProps } from '../ThemeToggle';
-import type { ILogoProps } from '../Logo';
-import ActionLink from '../Internal/ActionLink';
-import MobileMenuTrigger from '../Internal/MobileMenuTrigger';
 
 export interface IHeaderProps {
 	className?: string;

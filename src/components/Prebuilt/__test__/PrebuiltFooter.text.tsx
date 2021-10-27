@@ -1,6 +1,6 @@
 import renderer from 'react-test-renderer';
-import site from '../__data__/testSite.json';
 import Footer from '../Footer';
+import site from '../__data__/testSite.json';
 
 test('Test default state', () => {
 	const component = renderer.create(<Footer site={site} />);

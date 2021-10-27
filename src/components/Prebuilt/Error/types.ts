@@ -1,10 +1,10 @@
 import { ReactElement } from 'react';
+import { ISite } from '../../../lib';
+import { ICopyrightProps } from '../../Copyright';
 import { IFooterProps } from '../../Footer';
 import { ILogoProps } from '../../Logo';
-import { ISite } from '../../../lib';
-import { ISubscribeProps } from '../../Subscribe';
-import { ICopyrightProps } from '../../Copyright';
 import { ISocialMediaBarProps } from '../../SocialMedia/SocialMediaBar';
+import { ISubscribeProps } from '../../Subscribe';
 
 export interface IPrebuiltErrorProps {
 	handleLinkClick?: () => void;

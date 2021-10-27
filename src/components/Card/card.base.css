@@ -1,0 +1,59 @@
+.Pinpoint.Content.Card.Container.wrapper {
+	@apply w-full rounded-md overflow-hidden flex flex-col cursor-pointer shadow-md hover:shadow-lg transition-all duration-200;
+	background-color: var(--card-bg-color);
+}
+
+.Pinpoint.Content.Card.Container.wrapper .cover,
+.Pinpoint.Content.Card.Container.wrapper .covermedia .media-container img {
+	@apply md:h-36 lg:h-48 w-full object-cover object-center;
+}
+
+.Pinpoint.Content.Card.Container.wrapper .empty-cover {
+	@apply md:h-36 lg:h-48 w-full;
+	background-image: linear-gradient(to right, var(--card-empty-gradient-from), var(--card-empty-gradient-to));
+}
+
+.Pinpoint.Content.Card.Container.wrapper .content {
+	@apply flex flex-col p-6 flex-grow flex-shrink;
+}
+
+.Pinpoint.Content.Card.Container.wrapper .footer {
+	@apply flex mt-auto;
+}
+
+.Pinpoint.Content.Card.Container.wrapper .statistics {
+	@apply ml-auto;
+}
+
+.Pinpoint.Content.Card .Date {
+	@apply mt-0.5 text-xs mb-2 transition-colors duration-200;
+	color: var(--card-date-color);
+}
+
+.Pinpoint.Content.Card.Title {
+	@apply text-lg font-semibold transition-colors duration-200;
+	color: var(--card-title-color);
+}
+
+.Pinpoint.Content.Card:hover .Title {
+	@apply transition-colors duration-200;
+	color: var(--card-link-color);
+}
+
+.Pinpoint.Content.Card.Description {
+	@apply mb-4 transition-colors duration-200;
+	color: var(--card-summary-color);
+}
+
+.Pinpoint.Content.Card.Read {
+	@apply flex items-center cursor-pointer no-underline transition-colors duration-200;
+	color: var(--card-link-color);
+}
+
+.Pinpoint.Content.Card.Read .arrow {
+	@apply ml-2;
+}
+
+.Pinpoint.Content.Card .Tag.Bar {
+	@apply mb-4;
+}
