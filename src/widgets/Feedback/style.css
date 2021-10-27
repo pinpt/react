@@ -3,7 +3,7 @@
 }
 
 .Pinpoint.Widget.Feedback .title {
-	@apply font-medium mb-4;
+	@apply font-medium mb-4 dark:text-white;
 }
 
 .Pinpoint.Widget.Feedback .disclaimer {
@@ -19,7 +19,7 @@
 }
 
 .Pinpoint.Widget.Feedback button {
-	@apply bg-green-500 text-white border my-2 py-1 px-2 rounded font-sans text-sm disabled:bg-gray-100 disabled:text-gray-500 disabled:cursor-not-allowed;
+	@apply bg-green-500 dark:bg-green-600 dark:border-0 outline-none text-white border my-2 py-1 px-2 rounded font-sans text-sm disabled:bg-gray-100 disabled:text-gray-500 disabled:cursor-not-allowed;
 }
 
 .Pinpoint.Widget.Feedback .message {
