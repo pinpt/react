@@ -86,9 +86,11 @@ const Pinpoint = (props: IPinpointProps) => {
 	);
 	const [widgets, setWidgets] = useState<any[]>([]);
 	const wiredUp = useRef(false);
+	const ppInited = useRef(false);
 
 	useEffect(() => {
-		if (typeof window !== 'undefined') {
+		if (typeof window !== 'undefined' && !ppInited.current) {
+			ppInited.current = true;
 			let clearSDK: () => void;
 			if (USE_SDK_FOR_WIDGETS) {
 				window.PinpointSettings = {
@@ -102,8 +104,23 @@ const Pinpoint = (props: IPinpointProps) => {
 					},
 				};
 			}
-			window.__Pinpoint?.load?.();
-			const clearTracking = window.Pinpoint?.startTracking?.(siteId, contentId, basePath);
+			let clearTracking: () => void;
+			// check to see if we've loaded the beacon
+			if (typeof window.__Pinpoint?.load === 'function') {
+				debug('Beacon is already loaded');
+				window.__Pinpoint.load();
+				clearTracking = window.Pinpoint?.startTracking?.(siteId, contentId, basePath);
+			} else {
+				// if not, register a callback to be called when it's loaded
+				debug('Beacon is not yet loaded, registering a callback');
+				window.__Pinpoint = window.__Pinpoint ?? {};
+				const wp = window.__Pinpoint as any;
+				wp.onload = () => {
+					debug('Beacon is now loaded');
+					window.__Pinpoint.load();
+					clearTracking = window.Pinpoint?.startTracking?.(siteId, contentId, basePath);
+				};
+			}
 
 			return () => {
 				clearTracking?.();

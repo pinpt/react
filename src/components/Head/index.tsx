@@ -58,6 +58,8 @@ const Head = (props: IHeadProps) => {
 				data-id={content?.id}
 				data-base-path={site.basePath}
 				data-use-react
+				async
+				defer
 			/>
 			{site.scriptPlugins ? <ScriptPlugins plugins={site.scriptPlugins} /> : null}
 			<meta name="generator" content="pinpoint.com" />
