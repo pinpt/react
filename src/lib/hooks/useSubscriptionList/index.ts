@@ -9,9 +9,11 @@ const useSubscriptionList = (subscriptionId: string, site: ISite, config: IPinpo
 	const [result, setResult] = useState<SubscriptionInfo>({ subscriptions: [], sites: {} } as SubscriptionInfo);
 	const [loading, setLoading] = useState<boolean>(true);
 
-	const query = useCallback(async () => {
+	const query = useCallback(async (useLoader = true) => {
 		try {
-			setLoading(true);
+			if (useLoader) {
+				setLoading(true);
+			}
 			const result = await executeAPI(
 				{ ...config, siteUrl: getRouterAbsolutePath(site, '') },
 				`api/subscription/manage/list/${subscriptionId}`
@@ -28,6 +30,10 @@ const useSubscriptionList = (subscriptionId: string, site: ISite, config: IPinpo
 		}
 	}, [site]);
 
+	const refetch = useCallback(() => {
+		query(false);
+	}, [query]);
+
 	useEffect(() => {
 		query();
 	}, [query]);
@@ -36,6 +42,7 @@ const useSubscriptionList = (subscriptionId: string, site: ISite, config: IPinpo
 		result,
 		fileApi,
 		loading,
+		refetch,
 	};
 };
 
