@@ -283,7 +283,7 @@ exports[`Test Image cover media with blurhash 1`] = `
     >
       <img
         alt=""
-        className="Pinpoint Image  "
+        className="Pinpoint Image"
         decoding="async"
         loading="eager"
         src="https://file.edge.pinpoint.com/b1ee49fa5ea82ea3b71d0101ddc28a84"
@@ -305,7 +305,7 @@ exports[`Test Image cover media with blurhash in url 1`] = `
     >
       <img
         alt=""
-        className="Pinpoint Image  "
+        className="Pinpoint Image"
         decoding="async"
         height={1344}
         loading="eager"
@@ -331,7 +331,7 @@ exports[`Test Image cover media with no zoom 1`] = `
     >
       <img
         alt=""
-        className="Pinpoint Image  "
+        className="Pinpoint Image"
         decoding="async"
         loading="eager"
         src="https://file.edge.pinpoint.com/b1ee49fa5ea82ea3b71d0101ddc28a84"
@@ -353,7 +353,7 @@ exports[`Test Image cover media with zoom 1`] = `
     >
       <img
         alt=""
-        className="Pinpoint Image  "
+        className="Pinpoint Image   medium-zoom-body"
         decoding="async"
         loading="eager"
         src="https://file.edge.pinpoint.com/b1ee49fa5ea82ea3b71d0101ddc28a84"
@@ -1303,7 +1303,7 @@ exports[`Test simple image block 1`] = `
     >
       <img
         alt="Image Caption"
-        className="Pinpoint Image  "
+        className="Pinpoint Image"
         decoding="async"
         loading="lazy"
         src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
@@ -1335,7 +1335,7 @@ exports[`Test simple image block with link 1`] = `
       >
         <img
           alt="Image Caption"
-          className="Pinpoint Image  "
+          className="Pinpoint Image"
           decoding="async"
           loading="lazy"
           src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
@@ -1363,7 +1363,7 @@ exports[`Test simple image block with no zoom 1`] = `
     >
       <img
         alt="Image Caption"
-        className="Pinpoint Image  "
+        className="Pinpoint Image"
         decoding="async"
         loading="lazy"
         src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
@@ -1422,7 +1422,7 @@ exports[`Test simple inline image 1`] = `
   <div>
     <img
       alt="card"
-      className="Pinpoint Image inline_image "
+      className="Pinpoint Image inline_image"
       decoding="async"
       loading="lazy"
       src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
@@ -1443,7 +1443,7 @@ exports[`Test simple inline image with link 1`] = `
     >
       <img
         alt="card"
-        className="Pinpoint Image inline_image "
+        className="Pinpoint Image inline_image"
         decoding="async"
         loading="lazy"
         src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="

@@ -3,7 +3,7 @@ import { Meta } from '@storybook/react';
 import Pinpoint from '../';
 import { CoverMediaType } from '../../../lib/types/content';
 import Loader from '../../Loader';
-import { Document, Content } from '../../Renderer';
+import { Content, Document } from '../../Renderer';
 import entry from '../__data__/testDocumentIFramely.json';
 import entryToggle from '../__data__/testDocumentToggle.json';
 
@@ -98,7 +98,6 @@ export const Test_Youtube: React.VFC<{}> = () => (
 );
 
 export const Test_Widgets: React.VFC<{}> = (a, b) => {
-	console.log(a, b);
 	return (
 		<Pinpoint siteId="0eG8DEulKKdC0HYeNRZT">
 			{(ready) => {
@@ -126,10 +125,51 @@ export const Test_Widgets: React.VFC<{}> = (a, b) => {
 					const elem = document.createElement('script');
 					elem.src = 'https://keegandonley.edge.changelog.so/a.js';
 					elem.setAttribute('data-use-react', 'true');
+					elem.setAttribute('data-site-id', '0eG8DEulKKdC0HYeNRZT');
 					elem.onload = () => {
 						resolve(true);
 					};
+					// load sync *before* loading the <Pinpoint /> component
 					head.appendChild(elem);
+				});
+
+				return res;
+			})(),
+		};
+	},
+];
+
+export const Test_Delayed_Widgets: React.VFC<{}> = (a, b) => {
+	return (
+		<Pinpoint siteId="0eG8DEulKKdC0HYeNRZT">
+			{(ready) => {
+				return (
+					<div>
+						{ready ? 'scripts ready' : 'scripts loading'}
+						<div className="most-recent-target" />
+						<div className="most-recent-target" />
+					</div>
+				);
+			}}
+		</Pinpoint>
+	);
+};
+
+// will load the beacon script *after* we load our <Pinpoint /> component is loaded
+(Test_Delayed_Widgets as any).loaders = [
+	async () => {
+		return {
+			ready: await (async () => {
+				const res: boolean = await new Promise((resolve) => {
+					const head = document.getElementsByTagName('head')?.[0];
+					const elem = document.createElement('script');
+					elem.src = 'https://keegandonley.edge.changelog.so/a.js';
+					elem.setAttribute('data-use-react', 'true');
+					elem.setAttribute('data-site-id', '0eG8DEulKKdC0HYeNRZT');
+					elem.async = true;
+					elem.defer = true;
+					setTimeout(() => head.appendChild(elem), Math.max(500, Math.random() * 1_500)); // simulate delay in loading beacon async
+					resolve(true);
 				});
 
 				return res;

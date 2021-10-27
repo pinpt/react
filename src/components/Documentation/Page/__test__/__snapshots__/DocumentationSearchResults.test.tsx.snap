@@ -181,7 +181,7 @@ populated with your recently completed...
               >
                 <img
                   alt=""
-                  className="Pinpoint Image image "
+                  className="Pinpoint Image image"
                   decoding="async"
                   height={320}
                   loading="lazy"

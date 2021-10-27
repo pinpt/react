@@ -22,10 +22,19 @@ Array [
     name="viewport"
   />,
   <script
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "(()=>{const element=document.documentElement;const localTheme=window.localStorage.getItem('theme');if(localTheme==='dark'){element.classList.add('dark');}})();",
+      }
+    }
+  />,
+  <script
+    async={true}
     data-base-path="/"
     data-id="oroH8YQr4vufOiVTRND4"
     data-site-id="PirxVTE94u3YmGNOySRY"
     data-use-react={true}
+    defer={true}
     src="/a.js"
   />,
   <meta
@@ -163,9 +172,18 @@ Array [
     name="viewport"
   />,
   <script
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "(()=>{const element=document.documentElement;const localTheme=window.localStorage.getItem('theme');if(localTheme==='dark'){element.classList.add('dark');}})();",
+      }
+    }
+  />,
+  <script
+    async={true}
     data-base-path="/"
     data-site-id="PirxVTE94u3YmGNOySRY"
     data-use-react={true}
+    defer={true}
     src="/a.js"
   />,
   <meta
@@ -269,10 +287,19 @@ Array [
     name="viewport"
   />,
   <script
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "(()=>{const element=document.documentElement;const localTheme=window.localStorage.getItem('theme');if(localTheme==='dark'){element.classList.add('dark');}})();",
+      }
+    }
+  />,
+  <script
+    async={true}
     data-base-path="/blog"
     data-id="oroH8YQr4vufOiVTRND4"
     data-site-id="PirxVTE94u3YmGNOySRY"
     data-use-react={true}
+    defer={true}
     src="https://changelog.pinpoint.com/a.js"
   />,
   <meta

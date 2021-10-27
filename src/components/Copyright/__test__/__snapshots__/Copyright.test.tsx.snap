@@ -11,7 +11,7 @@ exports[`Test with clickable logo 1`] = `
   >
     <img
       alt=""
-      className="Pinpoint Image image "
+      className="Pinpoint Image image"
       decoding="async"
       height={320}
       loading="lazy"
@@ -37,7 +37,7 @@ exports[`Test with custom className 1`] = `
   >
     <img
       alt=""
-      className="Pinpoint Image image "
+      className="Pinpoint Image image"
       decoding="async"
       height={320}
       loading="lazy"
@@ -65,7 +65,7 @@ exports[`Test with linked logo 1`] = `
   >
     <img
       alt=""
-      className="Pinpoint Image image "
+      className="Pinpoint Image image"
       decoding="async"
       height={320}
       loading="lazy"
@@ -91,7 +91,7 @@ exports[`Test with logo 1`] = `
   >
     <img
       alt=""
-      className="Pinpoint Image image "
+      className="Pinpoint Image image"
       decoding="async"
       height={320}
       loading="lazy"

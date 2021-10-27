@@ -8,7 +8,7 @@ exports[`Test click handler 1`] = `
 >
   <img
     alt=""
-    className="Pinpoint Image image "
+    className="Pinpoint Image image"
     decoding="async"
     height={320}
     loading="lazy"
@@ -27,7 +27,7 @@ exports[`Test click handler and link 1`] = `
 >
   <img
     alt=""
-    className="Pinpoint Image image "
+    className="Pinpoint Image image"
     decoding="async"
     height={320}
     loading="lazy"
@@ -44,7 +44,7 @@ exports[`Test default state 1`] = `
 >
   <img
     alt=""
-    className="Pinpoint Image image "
+    className="Pinpoint Image image"
     decoding="async"
     height={320}
     loading="lazy"
@@ -61,7 +61,7 @@ exports[`Test extra large 1`] = `
 >
   <img
     alt=""
-    className="Pinpoint Image image "
+    className="Pinpoint Image image"
     decoding="async"
     height={320}
     loading="lazy"
@@ -78,7 +78,7 @@ exports[`Test extra small 1`] = `
 >
   <img
     alt=""
-    className="Pinpoint Image image "
+    className="Pinpoint Image image"
     decoding="async"
     height={320}
     loading="lazy"
@@ -95,7 +95,7 @@ exports[`Test large 1`] = `
 >
   <img
     alt=""
-    className="Pinpoint Image image "
+    className="Pinpoint Image image"
     decoding="async"
     height={320}
     loading="lazy"
@@ -116,7 +116,7 @@ exports[`Test link (new tab) 1`] = `
 >
   <img
     alt=""
-    className="Pinpoint Image image "
+    className="Pinpoint Image image"
     decoding="async"
     height={320}
     loading="lazy"
@@ -135,7 +135,7 @@ exports[`Test link 1`] = `
 >
   <img
     alt=""
-    className="Pinpoint Image image "
+    className="Pinpoint Image image"
     decoding="async"
     height={320}
     loading="lazy"
@@ -152,7 +152,7 @@ exports[`Test medium 1`] = `
 >
   <img
     alt=""
-    className="Pinpoint Image image "
+    className="Pinpoint Image image"
     decoding="async"
     height={320}
     loading="lazy"
@@ -169,7 +169,7 @@ exports[`Test small 1`] = `
 >
   <img
     alt=""
-    className="Pinpoint Image image "
+    className="Pinpoint Image image"
     decoding="async"
     height={320}
     loading="lazy"

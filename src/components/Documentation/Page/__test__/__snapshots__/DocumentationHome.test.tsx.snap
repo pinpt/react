@@ -225,7 +225,7 @@ exports[`Test full page 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image image "
+                  className="Pinpoint Image image"
                   decoding="async"
                   height={320}
                   loading="lazy"
@@ -563,7 +563,7 @@ exports[`Test loading 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image image "
+                  className="Pinpoint Image image"
                   decoding="async"
                   height={320}
                   loading="lazy"
@@ -1211,7 +1211,7 @@ exports[`Test no header 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image image "
+                  className="Pinpoint Image image"
                   decoding="async"
                   height={320}
                   loading="lazy"
@@ -1727,7 +1727,7 @@ exports[`Test with search SocialMediaBar 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image image "
+                  className="Pinpoint Image image"
                   decoding="async"
                   height={320}
                   loading="lazy"
@@ -2269,7 +2269,7 @@ exports[`With pagination 1`] = `
               >
                 <img
                   alt=""
-                  className="Pinpoint Image image "
+                  className="Pinpoint Image image"
                   decoding="async"
                   height={320}
                   loading="lazy"
