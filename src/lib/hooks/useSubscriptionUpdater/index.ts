@@ -9,12 +9,12 @@ const useSubscriptionUpdater = (subscriptionId: string, site: ISite, config: IPi
 	const [loading, setLoading] = useState<boolean>(false);
 
 	const query = useCallback(
-		async (payload: UpdateSubscriptionManagePayload): Promise<UpdateSubscriptionManageResponse> => {
+		async (payload: UpdateSubscriptionManagePayload, id?: string): Promise<UpdateSubscriptionManageResponse> => {
 			try {
 				setLoading(true);
 				const result = await executeAPI(
 					{ ...config, siteUrl: getRouterAbsolutePath(site, '') },
-					`api/subscription/manage/${subscriptionId}`,
+					`api/subscription/manage/${id ?? subscriptionId}`,
 					'PUT',
 					payload
 				);
