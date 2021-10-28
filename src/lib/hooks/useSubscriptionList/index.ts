@@ -17,7 +17,7 @@ const useSubscriptionList = (subscriptionId: string, site: ISite, config: IPinpo
 				}
 				const result = await executeAPI(
 					{ ...config, siteUrl: getRouterAbsolutePath(site, '') },
-					`api/subscription/manage/list/${subscriptionId}`
+					`/api/subscription/manage/list/${subscriptionId}`
 				);
 				setResult(result);
 			} catch {
