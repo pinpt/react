@@ -12,7 +12,7 @@ const useSubscriptionCreator = (site: ISite) => {
 				setLoading(true);
 				const res = await executeAPI(
 					{ ...config, siteUrl: getRouterAbsolutePath(site, '') },
-					'api/subscription/manage/create',
+					'/api/subscription/manage/create',
 					'POST',
 					{
 						siteId: site.id,
@@ -20,6 +20,8 @@ const useSubscriptionCreator = (site: ISite) => {
 					}
 				);
 				return res;
+			} catch {
+				return undefined;
 			} finally {
 				setLoading(false);
 			}

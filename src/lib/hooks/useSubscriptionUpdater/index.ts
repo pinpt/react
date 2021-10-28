@@ -14,12 +14,14 @@ const useSubscriptionUpdater = (subscriptionId: string, site: ISite, config: IPi
 				setLoading(true);
 				const result = await executeAPI(
 					{ ...config, siteUrl: getRouterAbsolutePath(site, '') },
-					`api/subscription/manage/${id ?? subscriptionId}`,
+					`/api/subscription/manage/${id ?? subscriptionId}`,
 					'PUT',
 					payload
 				);
 
 				return result;
+			} catch {
+				return { subscriptionId: id ?? subscriptionId };
 			} finally {
 				setLoading(false);
 			}

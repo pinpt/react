@@ -47,7 +47,7 @@ const Verify = (props: IVerifyProps) => {
 			emailActionState.setters.setCanClear(false);
 			emailActionState.setters.setMessage('Your email address has been verified');
 		} else {
-			emailActionState.setters.setCritical(true);
+			emailActionState.setters.setCritical(false);
 			emailActionState.setters.setCode(500);
 			emailActionState.setters.setError('Your email could not be verified at this time');
 			emailActionState.setters.setMessage('');
@@ -77,46 +77,46 @@ const Verify = (props: IVerifyProps) => {
 		}
 	}, [firstName, lastName, onSave]);
 
-	if (loading) {
-		return <Loader />;
-	}
-
 	return (
 		<div className={`${baseClass} Wrapper ${className}`}>
 			<div className={`${baseClass} Content`}>
 				<div className={`${baseClass} Inner`}>
-					<EmailAction {...emailActionState} />
-					{verified && (
-						<div>
-							<Form
-								title="👋 We'd love to know a little more about you!"
-								description="If you prefer to, you can simply close this tab instead."
-								dirty={isFormDirty}
-								buttons={
-									<button disabled={!isFormDirty} className={`${baseClass} Save`} onClick={handleSave}>
-										{pending ? <FontAwesomeIcon icon={faSpinner} pulse /> : 'Save'}
-									</button>
-								}
-							>
-								<div className={`${baseClass} Form`}>
-									<Field label="First Name">
-										<input
-											value={firstName}
-											className="Pinpoint SubscriptionSubscribe Field"
-											onChange={handleFirstNameChange}
-										/>
-									</Field>
-									<Field label="Last Name">
-										<input
-											value={lastName}
-											className="Pinpoint SubscriptionSubscribe Field"
-											onChange={handleLastNameChange}
-										/>
-									</Field>
-								</div>
-							</Form>
-						</div>
-					)}
+					{!loading && <EmailAction {...emailActionState} />}
+					<div>
+						<Form
+							title="👋 We'd love to know a little more about you!"
+							description="If you prefer to, you can simply close this tab instead."
+							dirty={isFormDirty}
+							buttons={
+								<button
+									disabled={!isFormDirty || pending || loading}
+									className={`${baseClass} Save`}
+									onClick={handleSave}
+								>
+									{pending || loading ? <FontAwesomeIcon icon={faSpinner} pulse /> : 'Save'}
+								</button>
+							}
+						>
+							<div className={`${baseClass} Form`}>
+								<Field label="First Name">
+									<input
+										value={firstName}
+										className="Pinpoint SubscriptionSubscribe Field"
+										onChange={handleFirstNameChange}
+										disabled={pending || loading}
+									/>
+								</Field>
+								<Field label="Last Name">
+									<input
+										value={lastName}
+										className="Pinpoint SubscriptionSubscribe Field"
+										onChange={handleLastNameChange}
+										disabled={pending || loading}
+									/>
+								</Field>
+							</div>
+						</Form>
+					</div>
 				</div>
 			</div>
 		</div>

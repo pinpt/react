@@ -16,9 +16,11 @@ const useSubscription = (subscriptionId: string, site: ISite, config: IPinpointC
 				}
 				const result = await executeAPI(
 					{ ...config, siteUrl: getRouterAbsolutePath(site, '') },
-					`api/subscription/manage/${subscriptionId}`
+					`/api/subscription/manage/${subscriptionId}`
 				);
 				setSubscription(result);
+			} catch {
+				setSubscription({});
 			} finally {
 				setLoading(false);
 			}
