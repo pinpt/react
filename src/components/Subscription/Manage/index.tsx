@@ -2,6 +2,8 @@ import React, { useMemo } from 'react';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { getFileUrl } from '../../../lib/file_metadata';
+import { getRouterAbsolutePath } from '../../../lib/router';
+import { ISite } from '../../../lib/types/site';
 import { SubscriptionInfo } from '../../../lib/types/subscription';
 
 export interface IManageProps {
@@ -10,8 +12,8 @@ export interface IManageProps {
 	handleClickUpdate?: (subscriptionId: string) => void;
 	handleClickUnsubscribe?: (subscriptionId: string) => void;
 	handleClickReSubscribe?: (subscriptionId: string) => void;
-	fileApi?: string;
 	pendingState?: Record<string, boolean>;
+	site: ISite;
 }
 const baseClass = 'Pinpoint SubscriptionManage';
 const Manage = (props: IManageProps) => {
@@ -21,13 +23,19 @@ const Manage = (props: IManageProps) => {
 		handleClickUpdate,
 		handleClickUnsubscribe,
 		handleClickReSubscribe,
-		fileApi = 'https://file.pinpoint.com',
 		pendingState,
+		site,
 	} = props;
 
 	const filteredSubscriptions = useMemo(() => {
 		return subscriptions.subscriptions.filter((sub) => subscriptions.sites[sub.siteId]);
 	}, [subscriptions]);
+
+	const fileApi = useMemo(() => {
+		if (getRouterAbsolutePath(site, '').includes('edge')) {
+			return 'https://file.edge.pinpoint.com';
+		}
+	}, [site]);
 
 	return (
 		<div className={`${baseClass} Wrapper ${className}`}>

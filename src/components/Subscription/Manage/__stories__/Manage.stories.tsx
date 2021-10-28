@@ -2,6 +2,7 @@ import React from 'react';
 import { Meta } from '@storybook/react';
 import Manage from '../';
 import { SubscriptionInfo } from '../../../../lib/types/subscription';
+import site from '../../../Prebuilt/__data__/testSite.json';
 import subscriptions from '../__data__/subscriptions.json';
 
 const { default: readme } = require('../../README.md');
@@ -26,7 +27,7 @@ export const Default: React.VFC<{}> = () => (
 		handleClickReSubscribe={(subId: string) => alert(`Resubscribe ${subId}`)}
 		handleClickUnsubscribe={(subId: string) => alert(`Unsubscribe ${subId}`)}
 		handleClickUpdate={(subId: string) => alert(`Update ${subId}`)}
-		fileApi="https://file.pinpoint.com"
+		site={site}
 	/>
 );
 
@@ -36,7 +37,7 @@ export const Loading_State: React.VFC<{}> = () => (
 		handleClickReSubscribe={(subId: string) => alert(`Resubscribe ${subId}`)}
 		handleClickUnsubscribe={(subId: string) => alert(`Unsubscribe ${subId}`)}
 		handleClickUpdate={(subId: string) => alert(`Update ${subId}`)}
-		fileApi="https://file.pinpoint.com"
+		site={site}
 		pendingState={{ '84beec9792eff52d': true }}
 	/>
 );

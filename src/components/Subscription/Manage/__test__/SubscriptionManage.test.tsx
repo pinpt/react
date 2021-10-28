@@ -1,6 +1,7 @@
 import renderer from 'react-test-renderer';
 import Manage from '..';
 import { SubscriptionInfo } from '../../../../lib/types/subscription';
+import site from '../../../Prebuilt/__data__/testSite.json';
 import subscriptions from '../__data__/subscriptions.json';
 
 test('Test default state', () => {
@@ -10,7 +11,7 @@ test('Test default state', () => {
 			handleClickReSubscribe={(subId: string) => console.log(`Resubscribe ${subId}`)}
 			handleClickUnsubscribe={(subId: string) => console.log(`Unsubscribe ${subId}`)}
 			handleClickUpdate={(subId: string) => console.log(`Update ${subId}`)}
-			fileApi="https://file.pinpoint.com"
+			site={site}
 		/>
 	);
 	const tree = component.toJSON();
@@ -24,7 +25,7 @@ test('Test loading state', () => {
 			handleClickReSubscribe={(subId: string) => alert(`Resubscribe ${subId}`)}
 			handleClickUnsubscribe={(subId: string) => alert(`Unsubscribe ${subId}`)}
 			handleClickUpdate={(subId: string) => alert(`Update ${subId}`)}
-			fileApi="https://file.pinpoint.com"
+			site={site}
 			pendingState={{ '84beec9792eff52d': true }}
 		/>
 	);

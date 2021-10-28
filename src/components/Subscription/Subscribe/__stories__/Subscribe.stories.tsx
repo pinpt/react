@@ -22,6 +22,8 @@ export const Default: React.VFC<{}> = () => <Subscribe />;
 
 export const With_Name: React.VFC<{}> = () => <Subscribe name="Pinpoint" />;
 
+export const With_Pending_State: React.VFC<{}> = () => <Subscribe name="Pinpoint" pending />;
+
 export const With_Success_Handler: React.VFC<{}> = () => (
 	<Subscribe name="Pinpoint" handleSubmit={(email) => new Promise((resolve) => resolve(true))} />
 );

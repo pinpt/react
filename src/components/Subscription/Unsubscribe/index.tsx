@@ -1,21 +1,24 @@
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useMemo, useState } from 'react';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { getFileUrl } from '../../../lib/file_metadata';
 import useEmailAction from '../../../lib/hooks/useEmailAction';
+import { getRouterAbsolutePath } from '../../../lib/router';
+import { ISite } from '../../../lib/types/site';
 import EmailAction from '../../EmailAction';
 
 export interface IUnSubscribeProps {
 	className?: string;
 	logo?: string;
 	name: string;
-	fileApi?: string;
 	subscribed?: boolean;
 	email: string;
 	handleUnsubscribe?: () => Promise<void>;
 	handleSubscribe?: () => Promise<void>;
 	manageSubscriptions?: () => void;
 	showLogo?: boolean;
+	site: ISite;
+	pending?: boolean;
 }
 
 const baseClass = 'Pinpoint SubscriptionUnsubscribe';
@@ -24,7 +27,6 @@ const Unsubscribe = (props: IUnSubscribeProps) => {
 	const {
 		className = '',
 		logo,
-		fileApi,
 		name,
 		subscribed = false,
 		email,
@@ -32,13 +34,19 @@ const Unsubscribe = (props: IUnSubscribeProps) => {
 		handleUnsubscribe,
 		manageSubscriptions,
 		showLogo = false,
+		site,
+		pending = false,
 	} = props;
-	const [pending, setPending] = useState<boolean>(false);
 	const emailActionState = useEmailAction();
+
+	const fileApi = useMemo(() => {
+		if (getRouterAbsolutePath(site, '').includes('edge')) {
+			return 'https://file.edge.pinpoint.com';
+		}
+	}, [site]);
 
 	const onSubscribe = useCallback(async () => {
 		try {
-			setPending(true);
 			emailActionState.setters.setMessage('');
 			if (handleSubscribe) {
 				await handleSubscribe();
@@ -49,14 +57,11 @@ const Unsubscribe = (props: IUnSubscribeProps) => {
 		} catch (ex: any) {
 			emailActionState.setters.setCritical(false);
 			emailActionState.setters.setError(ex.message);
-		} finally {
-			setPending(false);
 		}
 	}, [emailActionState.setters, handleSubscribe]);
 
 	const onUnSubscribe = useCallback(async () => {
 		try {
-			setPending(true);
 			emailActionState.setters.setMessage('');
 			if (handleUnsubscribe) {
 				await handleUnsubscribe();
@@ -67,8 +72,6 @@ const Unsubscribe = (props: IUnSubscribeProps) => {
 		} catch (ex: any) {
 			emailActionState.setters.setCritical(false);
 			emailActionState.setters.setError(ex.message);
-		} finally {
-			setPending(false);
 		}
 	}, [emailActionState.setters, handleUnsubscribe]);
 

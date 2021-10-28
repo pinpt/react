@@ -26,7 +26,6 @@ export interface IPrebuiltSubscribeProps {
 	handleClickUpdate?: (subscriptionId: string) => void;
 	handleClickUnsubscribe?: (subscriptionId: string) => void;
 	handleClickReSubscribe?: (subscriptionId: string) => void;
-	fileApi?: string;
 	pendingState?: Record<string, boolean>;
 }
 
@@ -45,7 +44,6 @@ const Subscribe = (props: IPrebuiltSubscribeProps) => {
 		handleClickReSubscribe,
 		handleClickUnsubscribe,
 		handleClickUpdate,
-		fileApi,
 		pendingState,
 	} = props;
 
@@ -72,8 +70,8 @@ const Subscribe = (props: IPrebuiltSubscribeProps) => {
 					handleClickReSubscribe={handleClickReSubscribe}
 					handleClickUnsubscribe={handleClickUnsubscribe}
 					handleClickUpdate={handleClickUpdate}
-					fileApi={fileApi}
 					pendingState={pendingState}
+					site={site}
 				/>,
 				'manage'
 			)}

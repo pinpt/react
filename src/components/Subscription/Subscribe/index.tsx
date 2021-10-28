@@ -11,6 +11,7 @@ export interface ISubscribeProps {
 	className?: string;
 	name?: string;
 	handleSubmit?: (email: string) => Promise<boolean>;
+	pending?: boolean;
 }
 
 const baseClass = `Pinpoint SubscriptionSubscribe`;
@@ -18,10 +19,9 @@ const baseClass = `Pinpoint SubscriptionSubscribe`;
 const validate = async () => true;
 
 const Subscribe = (props: ISubscribeProps) => {
-	const { className = '', name } = props;
+	const { className = '', name, pending = false } = props;
 	const emailActionState = useEmailAction();
 	const { email, setEmail, statusText, emailValid } = useEmailValidation(validate);
-	const [pending, setPending] = useState<boolean>(false);
 
 	const handleChange = useCallback((e: ChangeEvent<HTMLInputElement>) => {
 		setEmail(e.target.value);
@@ -30,7 +30,6 @@ const Subscribe = (props: ISubscribeProps) => {
 	const handleSubmit = useCallback(async () => {
 		if (props.handleSubmit) {
 			try {
-				setPending(true);
 				const result = await props.handleSubmit(email);
 				if (result) {
 					emailActionState.setters.setError('');
@@ -45,8 +44,6 @@ const Subscribe = (props: ISubscribeProps) => {
 				emailActionState.setters.setMessage('');
 				emailActionState.setters.setError(ex?.message ?? 'An unknown error occurred creating your subscription');
 				emailActionState.setters.setCanClear(true);
-			} finally {
-				setPending(false);
 			}
 		}
 	}, [props.handleSubmit, email]);
