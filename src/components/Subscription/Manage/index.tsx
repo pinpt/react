@@ -2,6 +2,8 @@ import React, { useMemo } from 'react';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { getFileUrl } from '../../../lib/file_metadata';
+import { getRouterAbsolutePath } from '../../../lib/router';
+import { ISite } from '../../../lib/types/site';
 import { SubscriptionInfo } from '../../../lib/types/subscription';
 
 export interface IManageProps {
@@ -10,7 +12,6 @@ export interface IManageProps {
 	handleClickUpdate?: (subscriptionId: string) => void;
 	handleClickUnsubscribe?: (subscriptionId: string) => void;
 	handleClickReSubscribe?: (subscriptionId: string) => void;
-	fileApi?: string;
 	pendingState?: Record<string, boolean>;
 }
 const baseClass = 'Pinpoint SubscriptionManage';
@@ -21,7 +22,6 @@ const Manage = (props: IManageProps) => {
 		handleClickUpdate,
 		handleClickUnsubscribe,
 		handleClickReSubscribe,
-		fileApi = 'https://file.pinpoint.com',
 		pendingState,
 	} = props;
 
@@ -41,10 +41,7 @@ const Manage = (props: IManageProps) => {
 					<div className={`${baseClass} Entry`} key={sub.subscriptionId}>
 						<div>
 							<div className={`${baseClass} Container`}>
-								<img
-									className={`${baseClass} SiteLogo`}
-									src={getFileUrl(subscriptions.sites[sub.siteId].logoUrl, fileApi)}
-								/>
+								<img className={`${baseClass} SiteLogo`} src={subscriptions.sites[sub.siteId].logoUrl} />
 								<span>
 									<h2 className={`${baseClass} SiteName`}>{subscriptions.sites[sub.siteId].name}</h2>
 									<p className={`${baseClass} SubscriptionDate`}>

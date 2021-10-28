@@ -8,7 +8,20 @@ test('Test default state', () => {
 			logo="fileid:1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
 			subscribed
 			email="keegan@pinpoint.com"
-			fileApi="https://file.pinpoint.com"
+		/>
+	);
+	const tree = component.toJSON();
+	expect(tree).toMatchSnapshot();
+});
+
+test('Test pending state', () => {
+	const component = renderer.create(
+		<Unsubscribe
+			name="Pinpoint"
+			logo="fileid:1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+			subscribed
+			email="keegan@pinpoint.com"
+			pending
 		/>
 	);
 	const tree = component.toJSON();
@@ -21,7 +34,19 @@ test('Test not subscribed state', () => {
 			name="Pinpoint"
 			logo="fileid:1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
 			email="keegan@pinpoint.com"
-			fileApi="https://file.pinpoint.com"
+		/>
+	);
+	const tree = component.toJSON();
+	expect(tree).toMatchSnapshot();
+});
+
+test('Test not subscribed pending state', () => {
+	const component = renderer.create(
+		<Unsubscribe
+			name="Pinpoint"
+			logo="fileid:1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+			email="keegan@pinpoint.com"
+			pending
 		/>
 	);
 	const tree = component.toJSON();

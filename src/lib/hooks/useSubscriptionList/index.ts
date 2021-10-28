@@ -27,12 +27,6 @@ const useSubscriptionList = (subscriptionId: string, site: ISite, config: IPinpo
 		[subscriptionId, site]
 	);
 
-	const fileApi = useMemo(() => {
-		if (getRouterAbsolutePath(site, '').includes('edge')) {
-			return 'https://file.edge.pinpoint.com';
-		}
-	}, [site]);
-
 	const refetch = useCallback(() => {
 		query(false);
 	}, [query]);
@@ -43,7 +37,6 @@ const useSubscriptionList = (subscriptionId: string, site: ISite, config: IPinpo
 
 	return {
 		result,
-		fileApi,
 		loading,
 		refetch,
 	};

@@ -26,7 +26,6 @@ export const Default: React.VFC<{}> = () => (
 		handleClickReSubscribe={(subId: string) => alert(`Resubscribe ${subId}`)}
 		handleClickUnsubscribe={(subId: string) => alert(`Unsubscribe ${subId}`)}
 		handleClickUpdate={(subId: string) => alert(`Update ${subId}`)}
-		fileApi="https://file.pinpoint.com"
 	/>
 );
 
@@ -36,7 +35,6 @@ export const Loading_State: React.VFC<{}> = () => (
 		handleClickReSubscribe={(subId: string) => alert(`Resubscribe ${subId}`)}
 		handleClickUnsubscribe={(subId: string) => alert(`Unsubscribe ${subId}`)}
 		handleClickUpdate={(subId: string) => alert(`Update ${subId}`)}
-		fileApi="https://file.pinpoint.com"
 		pendingState={{ '84beec9792eff52d': true }}
 	/>
 );

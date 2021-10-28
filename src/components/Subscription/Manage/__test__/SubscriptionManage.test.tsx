@@ -10,7 +10,6 @@ test('Test default state', () => {
 			handleClickReSubscribe={(subId: string) => console.log(`Resubscribe ${subId}`)}
 			handleClickUnsubscribe={(subId: string) => console.log(`Unsubscribe ${subId}`)}
 			handleClickUpdate={(subId: string) => console.log(`Update ${subId}`)}
-			fileApi="https://file.pinpoint.com"
 		/>
 	);
 	const tree = component.toJSON();
@@ -24,7 +23,6 @@ test('Test loading state', () => {
 			handleClickReSubscribe={(subId: string) => alert(`Resubscribe ${subId}`)}
 			handleClickUnsubscribe={(subId: string) => alert(`Unsubscribe ${subId}`)}
 			handleClickUpdate={(subId: string) => alert(`Update ${subId}`)}
-			fileApi="https://file.pinpoint.com"
 			pendingState={{ '84beec9792eff52d': true }}
 		/>
 	);

@@ -23,11 +23,11 @@ export interface IPrebuiltUnsubscribeProps {
 	renderCopyright?: (site: ISite) => ReactElement<ICopyrightProps>;
 	renderUnsubscribe?: (site: ISite) => ReactElement<IUnSubscribeProps>;
 	email: string;
-	fileApi?: string;
 	subscribed?: boolean;
 	handleUnsubscribe?: () => Promise<void>;
 	handleSubscribe?: () => Promise<void>;
 	manageSubscriptions?: () => void;
+	pending?: boolean;
 }
 
 const Unsubscribe = (props: IPrebuiltUnsubscribeProps) => {
@@ -43,11 +43,11 @@ const Unsubscribe = (props: IPrebuiltUnsubscribeProps) => {
 		renderSocial,
 		renderUnsubscribe,
 		email,
-		fileApi,
 		subscribed,
 		handleUnsubscribe,
 		handleSubscribe,
 		manageSubscriptions,
+		pending,
 	} = props;
 
 	return (
@@ -72,11 +72,11 @@ const Unsubscribe = (props: IPrebuiltUnsubscribeProps) => {
 						name={site.name}
 						logo={site.logoUrl}
 						email={email}
-						fileApi={fileApi}
 						subscribed={subscribed}
 						handleSubscribe={handleSubscribe}
 						handleUnsubscribe={handleUnsubscribe}
 						manageSubscriptions={manageSubscriptions}
+						pending={pending}
 					/>
 				),
 				'unsubscribe'
