@@ -23,7 +23,7 @@ exports[`Test default state 1`] = `
       >
         <img
           className="Pinpoint SubscriptionManage SiteLogo"
-          src="/20d3346f1d5905b93b0dd48843716c0e;Ur0D%2CWglf-f%2Cg%25g4e-f5g%2Be-ele-g3e-fRf%2C;1024x1024.png"
+          src="https://file.pinpoint.com/20d3346f1d5905b93b0dd48843716c0e;Ur0D%2CWglf-f%2Cg%25g4e-f5g%2Be-ele-g3e-fRf%2C;1024x1024.png"
         />
         <span>
           <h2
@@ -66,7 +66,7 @@ exports[`Test default state 1`] = `
       >
         <img
           className="Pinpoint SubscriptionManage SiteLogo"
-          src="/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+          src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
         />
         <span>
           <h2
@@ -109,7 +109,7 @@ exports[`Test default state 1`] = `
       >
         <img
           className="Pinpoint SubscriptionManage SiteLogo"
-          src="/9f827f9dc1c617dc655e791c570e3c74;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+          src="https://file.pinpoint.com/9f827f9dc1c617dc655e791c570e3c74;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
         />
         <span>
           <h2
@@ -169,7 +169,7 @@ exports[`Test loading state 1`] = `
       >
         <img
           className="Pinpoint SubscriptionManage SiteLogo"
-          src="/20d3346f1d5905b93b0dd48843716c0e;Ur0D%2CWglf-f%2Cg%25g4e-f5g%2Be-ele-g3e-fRf%2C;1024x1024.png"
+          src="https://file.pinpoint.com/20d3346f1d5905b93b0dd48843716c0e;Ur0D%2CWglf-f%2Cg%25g4e-f5g%2Be-ele-g3e-fRf%2C;1024x1024.png"
         />
         <span>
           <h2
@@ -212,7 +212,7 @@ exports[`Test loading state 1`] = `
       >
         <img
           className="Pinpoint SubscriptionManage SiteLogo"
-          src="/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+          src="https://file.pinpoint.com/1fcde4196a4c70a8a86f0ce4af53f2a5;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
         />
         <span>
           <h2
@@ -271,7 +271,7 @@ exports[`Test loading state 1`] = `
       >
         <img
           className="Pinpoint SubscriptionManage SiteLogo"
-          src="/9f827f9dc1c617dc655e791c570e3c74;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
+          src="https://file.pinpoint.com/9f827f9dc1c617dc655e791c570e3c74;U75%3B-sj_NAoPtDojoij_RdfPRdaxoPfPavaw;320x320.png"
         />
         <span>
           <h2

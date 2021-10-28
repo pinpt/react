@@ -17,7 +17,6 @@ export interface IUnSubscribeProps {
 	handleSubscribe?: () => Promise<void>;
 	manageSubscriptions?: () => void;
 	showLogo?: boolean;
-	site: ISite;
 	pending?: boolean;
 }
 
@@ -34,16 +33,9 @@ const Unsubscribe = (props: IUnSubscribeProps) => {
 		handleUnsubscribe,
 		manageSubscriptions,
 		showLogo = false,
-		site,
 		pending = false,
 	} = props;
 	const emailActionState = useEmailAction();
-
-	const fileApi = useMemo(() => {
-		if (getRouterAbsolutePath(site, '').includes('edge')) {
-			return 'https://file.edge.pinpoint.com';
-		}
-	}, [site]);
 
 	const onSubscribe = useCallback(async () => {
 		try {
@@ -82,7 +74,7 @@ const Unsubscribe = (props: IUnSubscribeProps) => {
 					<EmailAction {...emailActionState} />
 					{showLogo && (
 						<>
-							{logo && <img src={getFileUrl(logo, fileApi)} alt="" className={`${baseClass} Logo`} />}
+							{logo && <img src={logo} alt="" className={`${baseClass} Logo`} />}
 							<h3 className={`${baseClass} Name`}>{name}</h3>
 						</>
 					)}

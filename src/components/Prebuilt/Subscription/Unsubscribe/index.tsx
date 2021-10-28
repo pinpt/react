@@ -72,7 +72,6 @@ const Unsubscribe = (props: IPrebuiltUnsubscribeProps) => {
 						name={site.name}
 						logo={site.logoUrl}
 						email={email}
-						site={site}
 						subscribed={subscribed}
 						handleSubscribe={handleSubscribe}
 						handleUnsubscribe={handleUnsubscribe}

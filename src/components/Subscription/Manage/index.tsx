@@ -13,7 +13,6 @@ export interface IManageProps {
 	handleClickUnsubscribe?: (subscriptionId: string) => void;
 	handleClickReSubscribe?: (subscriptionId: string) => void;
 	pendingState?: Record<string, boolean>;
-	site: ISite;
 }
 const baseClass = 'Pinpoint SubscriptionManage';
 const Manage = (props: IManageProps) => {
@@ -24,18 +23,11 @@ const Manage = (props: IManageProps) => {
 		handleClickUnsubscribe,
 		handleClickReSubscribe,
 		pendingState,
-		site,
 	} = props;
 
 	const filteredSubscriptions = useMemo(() => {
 		return subscriptions.subscriptions.filter((sub) => subscriptions.sites[sub.siteId]);
 	}, [subscriptions]);
-
-	const fileApi = useMemo(() => {
-		if (getRouterAbsolutePath(site, '').includes('edge')) {
-			return 'https://file.edge.pinpoint.com';
-		}
-	}, [site]);
 
 	return (
 		<div className={`${baseClass} Wrapper ${className}`}>
@@ -49,10 +41,7 @@ const Manage = (props: IManageProps) => {
 					<div className={`${baseClass} Entry`} key={sub.subscriptionId}>
 						<div>
 							<div className={`${baseClass} Container`}>
-								<img
-									className={`${baseClass} SiteLogo`}
-									src={getFileUrl(subscriptions.sites[sub.siteId].logoUrl, fileApi)}
-								/>
+								<img className={`${baseClass} SiteLogo`} src={subscriptions.sites[sub.siteId].logoUrl} />
 								<span>
 									<h2 className={`${baseClass} SiteName`}>{subscriptions.sites[sub.siteId].name}</h2>
 									<p className={`${baseClass} SubscriptionDate`}>

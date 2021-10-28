@@ -71,7 +71,6 @@ const Subscribe = (props: IPrebuiltSubscribeProps) => {
 					handleClickUnsubscribe={handleClickUnsubscribe}
 					handleClickUpdate={handleClickUpdate}
 					pendingState={pendingState}
-					site={site}
 				/>,
 				'manage'
 			)}
