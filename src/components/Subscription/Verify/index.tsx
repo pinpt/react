@@ -77,10 +77,6 @@ const Verify = (props: IVerifyProps) => {
 		}
 	}, [firstName, lastName, onSave]);
 
-	if (loading) {
-		return <Loader />;
-	}
-
 	return (
 		<div className={`${baseClass} Wrapper ${className}`}>
 			<div className={`${baseClass} Content`}>
@@ -93,8 +89,8 @@ const Verify = (props: IVerifyProps) => {
 								description="If you prefer to, you can simply close this tab instead."
 								dirty={isFormDirty}
 								buttons={
-									<button disabled={!isFormDirty} className={`${baseClass} Save`} onClick={handleSave}>
-										{pending ? <FontAwesomeIcon icon={faSpinner} pulse /> : 'Save'}
+									<button disabled={!isFormDirty || pending || loading} className={`${baseClass} Save`} onClick={handleSave}>
+										{pending || loading ? <FontAwesomeIcon icon={faSpinner} pulse /> : 'Save'}
 									</button>
 								}
 							>
@@ -104,6 +100,7 @@ const Verify = (props: IVerifyProps) => {
 											value={firstName}
 											className="Pinpoint SubscriptionSubscribe Field"
 											onChange={handleFirstNameChange}
+											disabled={pending || loading}
 										/>
 									</Field>
 									<Field label="Last Name">
@@ -111,6 +108,7 @@ const Verify = (props: IVerifyProps) => {
 											value={lastName}
 											className="Pinpoint SubscriptionSubscribe Field"
 											onChange={handleLastNameChange}
+											disabled={pending || loading}
 										/>
 									</Field>
 								</div>
