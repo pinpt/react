@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
 import { getSiteRSSURL, ISite } from '../../../lib';
-import { getRouterAbsolutePath } from '../../../lib/router';
+import { getRouterAbsolutePath, getRouterRelativePath } from '../../../lib/router';
 import Copyright, { ICopyrightProps } from '../../Copyright';
 import BaseFooter from '../../Footer';
 import Logo, { ILogoProps } from '../../Logo';
@@ -74,7 +74,7 @@ const Footer = (props: IPrebuiltFooterProps) => {
 			}
 			subscribe={
 				renderSubscribe?.(site) ?? (
-					<Subscribe className="Prebuilt" href={getRouterAbsolutePath(site, '/subscription/subscribe')} />
+					<Subscribe className="Prebuilt" href={getRouterRelativePath(site, '/subscribe')} />
 				)
 			}
 		/>

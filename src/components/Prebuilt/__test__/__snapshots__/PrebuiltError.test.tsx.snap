@@ -100,7 +100,7 @@ exports[`Test default internal server error 1`] = `
           >
             <a
               className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-0 Prebuilt"
-              href="https://changelog.pinpoint.com/subscription/subscribe"
+              href="/subscribe"
             >
               <svg
                 aria-hidden="true"
@@ -439,7 +439,7 @@ exports[`Test default not found 1`] = `
           >
             <a
               className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-0 Prebuilt"
-              href="https://changelog.pinpoint.com/subscription/subscribe"
+              href="/subscribe"
             >
               <svg
                 aria-hidden="true"

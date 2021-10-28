@@ -20,7 +20,6 @@ const {
 	Copyright,
 	Subscribe,
 	SubscribeForm,
-	Social,
 	SocialMediaBar,
 	FacebookLink,
 	FacebookShare,
@@ -139,19 +138,6 @@ test('Test component exports', () => {
 	expect(Date).toBeTruthy();
 	expect(ReadButton).toBeTruthy();
 	expect(Object.keys(otherCard).length).toEqual(0);
-
-	// Test Social exports
-	expect(Social).toBeTruthy();
-	const { Bar: SocialBar, Facebook, Github, Instagram, LinkedIn, RSS, Twitter, Email, ...otherSocial } = Social;
-	expect(SocialBar).toBeTruthy();
-	expect(Facebook).toBeTruthy();
-	expect(Github).toBeTruthy();
-	expect(Instagram).toBeTruthy();
-	expect(LinkedIn).toBeTruthy();
-	expect(RSS).toBeTruthy();
-	expect(Twitter).toBeTruthy();
-	expect(Email).toBeTruthy();
-	expect(Object.keys(otherSocial).length).toEqual(0);
 
 	// Test Page Exports
 	expect(DashboardPage).toBeTruthy();

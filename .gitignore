@@ -5,3 +5,4 @@ themes
 apiTest.ts
 .vscode
 .DS_Store
+*.tgz
