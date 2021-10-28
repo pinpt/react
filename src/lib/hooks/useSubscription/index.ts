@@ -19,6 +19,8 @@ const useSubscription = (subscriptionId: string, site: ISite, config: IPinpointC
 					`api/subscription/manage/${subscriptionId}`
 				);
 				setSubscription(result);
+			} catch {
+				setSubscription({});
 			} finally {
 				setLoading(false);
 			}

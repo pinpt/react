@@ -20,6 +20,8 @@ const useSubscriptionCreator = (site: ISite) => {
 					}
 				);
 				return res;
+			} catch {
+				return undefined;
 			} finally {
 				setLoading(false);
 			}

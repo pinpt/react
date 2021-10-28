@@ -20,6 +20,8 @@ const useSubscriptionUpdater = (subscriptionId: string, site: ISite, config: IPi
 				);
 
 				return result;
+			} catch {
+				return { subscriptionId: id ?? subscriptionId };
 			} finally {
 				setLoading(false);
 			}

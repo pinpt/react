@@ -20,6 +20,8 @@ const useSubscriptionList = (subscriptionId: string, site: ISite, config: IPinpo
 					`api/subscription/manage/list/${subscriptionId}`
 				);
 				setResult(result);
+			} catch {
+				setResult({ subscriptions: [], sites: {} } as SubscriptionInfo);
 			} finally {
 				setLoading(false);
 			}
