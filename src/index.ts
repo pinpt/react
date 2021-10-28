@@ -16,7 +16,6 @@ export { default as Image } from './components/Image';
 export { default as Copyright } from './components/Copyright';
 export { default as Subscribe } from './components/Subscribe';
 export { default as SubscribeForm } from './components/SubscribeForm';
-export { default as Social } from './components/Social';
 export { default as Footer } from './components/Footer';
 export { default as Latest } from './components/Latest';
 export { default as Recent } from './components/Recent';
