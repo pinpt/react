@@ -23,6 +23,7 @@ export interface IPrebuiltSubscribeProps {
 	renderCopyright?: (site: ISite) => ReactElement<ICopyrightProps>;
 	handleSubmit?: (email: string) => Promise<any>;
 	contentClassName?: string;
+	pending?: boolean;
 }
 
 const Subscribe = (props: IPrebuiltSubscribeProps) => {
@@ -38,6 +39,7 @@ const Subscribe = (props: IPrebuiltSubscribeProps) => {
 		renderSocial,
 		handleSubmit,
 		contentClassName,
+		pending,
 	} = props;
 
 	return (
@@ -60,6 +62,7 @@ const Subscribe = (props: IPrebuiltSubscribeProps) => {
 					name={site.name}
 					handleSubmit={handleSubmit}
 					className={`Prebuilt ${contentClassName}`}
+					pending={pending}
 				/>,
 				'subscribe'
 			)}

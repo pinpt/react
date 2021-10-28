@@ -27,6 +27,7 @@ export interface IPrebuiltUnsubscribeProps {
 	handleUnsubscribe?: () => Promise<void>;
 	handleSubscribe?: () => Promise<void>;
 	manageSubscriptions?: () => void;
+	pending?: boolean;
 }
 
 const Unsubscribe = (props: IPrebuiltUnsubscribeProps) => {
@@ -46,6 +47,7 @@ const Unsubscribe = (props: IPrebuiltUnsubscribeProps) => {
 		handleUnsubscribe,
 		handleSubscribe,
 		manageSubscriptions,
+		pending,
 	} = props;
 
 	return (
@@ -75,6 +77,7 @@ const Unsubscribe = (props: IPrebuiltUnsubscribeProps) => {
 						handleSubscribe={handleSubscribe}
 						handleUnsubscribe={handleUnsubscribe}
 						manageSubscriptions={manageSubscriptions}
+						pending={pending}
 					/>
 				),
 				'unsubscribe'
