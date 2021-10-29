@@ -11,6 +11,7 @@ import '../src/widgets/MostRecentPosts/style.css';
 import '../src/widgets/NotificationBanner/style.css';
 import '../src/widgets/NotificationModal/style.css';
 import '../src/widgets/NotificationPopup/style.css';
+import '../src/widgets/FeedbackModal/style.css';
 import './storybookOnly.css';
 
 addDecorator(

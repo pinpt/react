@@ -2,6 +2,7 @@ import React from 'react';
 import { faExternalLinkSquareAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from '../../components/Image';
+
 import type { IContent } from '../../lib/types';
 
 type Styles = 'style1' | 'style2';
@@ -15,7 +16,6 @@ interface PageProps {
 	className?: string;
 	style?: Styles;
 	inlineCSS?: string;
-	cssID?: string;
 }
 
 const Style1 = ({ content }: { content: IContent }) => {
