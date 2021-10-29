@@ -1,18 +1,50 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import { faCheckCircle, faExclamationCircle, faSpinner } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { submitFeedback } from '../../lib/data/feedback';
-import { getSubscriberId, isSubscriberCookieSet, validateEmail } from '../../lib/subscription';
+import useFeedback from '../../lib/hooks/useFeedback';
+
 import type { IFeedbackProps } from '../../lib/types/feedback';
 
-const MessageInput = ({
+export const SendButton = ({
+	sending,
+	message,
+	isSubscriber,
+	email,
+	emailValid,
+	onClick,
+	children,
+	style,
+}: {
+	sending: boolean;
+	message: string;
+	isSubscriber: boolean;
+	email: string;
+	emailValid: boolean;
+	children?: React.ReactNode;
+	style?: React.CSSProperties;
+	onClick: () => Promise<void>;
+}) => (
+	<button
+		disabled={sending || !(message && (isSubscriber ? true : email && emailValid))}
+		style={style}
+		onClick={onClick}
+	>
+		{children}
+	</button>
+);
+
+export const MessageInput = ({
 	message,
 	setMessage,
 	disabled,
+	rows,
+	autoFocus,
 }: {
 	message: string;
 	setMessage: (val: string) => void;
-	disabled: boolean;
+	disabled?: boolean;
+	rows?: number;
+	autoFocus?: boolean;
 }) => {
 	return (
 		<div className="message">
@@ -21,22 +53,29 @@ const MessageInput = ({
 				value={message}
 				onChange={(e) => setMessage(e.target.value)}
 				placeholder="Your feedback..."
+				rows={rows}
+				autoFocus={autoFocus}
 			/>
 		</div>
 	);
 };
 
-const EmailInput = ({
+export const EmailInput = ({
 	email,
 	setEmail,
 	valid,
 	disabled,
+	hide,
 }: {
 	email: string;
 	setEmail: (val: string) => void;
 	valid: boolean;
 	disabled: boolean;
+	hide: boolean;
 }) => {
+	if (hide) {
+		return null;
+	}
 	return (
 		<div className="email">
 			<input
@@ -60,72 +99,41 @@ const EmailInput = ({
 const Feedback = (props: IFeedbackProps) => {
 	const {
 		title,
-		config,
-		widgetId,
 		className = '',
-		pageTitle,
-		pageType,
-		contentId,
-		url,
 		showDisclaimer = true,
 		disclaimer = 'By submitting, you agree to allow us to communicate with you by email.',
 	} = props;
-	const [isSubscriber, setIsSubscriber] = useState(false);
 	const [email, setEmail] = useState('');
 	const [message, setMessage] = useState('');
-	const [sending, setSending] = useState(false);
 	const [success, setSuccess] = useState(false);
-	const [emailValid, setEmailValid] = useState(false);
-	const [error, setError] = useState('');
-	useEffect(() => setIsSubscriber(isSubscriberCookieSet()), []);
-	useEffect(() => {
-		if (email) {
-			setEmailValid(validateEmail(email));
-		} else {
-			setEmailValid(false);
-		}
-	}, [email]);
+	const { submit, error, sending, emailValid, isSubscriber } = useFeedback({ ...props, email, message });
 	const onClick = useCallback(async () => {
-		setSending(true);
-		setError('');
-		try {
-			const feedback = {
-				widgetId,
-				email,
-				subscriberId: getSubscriberId(),
-				message,
-				referrer:
-					contentId && pageTitle && url && pageType
-						? {
-								id: contentId,
-								url,
-								type: pageType,
-								text: pageTitle,
-						  }
-						: undefined,
-			};
-			await submitFeedback(config, feedback);
-			setSuccess(true);
-		} catch (ex: any) {
-			console.error(ex);
-			setError(ex.message);
-		} finally {
-			setSending(false);
-		}
-	}, [config, widgetId, isSubscriber, message, email]);
+		await submit();
+		setSuccess(true);
+	}, []);
 	return (
 		<div className={`Pinpoint Widget Feedback ${className}`}>
 			{!success ? (
 				<>
 					<div className="title">{title}</div>
 					<MessageInput message={message} setMessage={setMessage} disabled={sending} />
-					{!isSubscriber && <EmailInput email={email} setEmail={setEmail} disabled={sending} valid={emailValid} />}
-					<button
-						disabled={sending || !(message && (isSubscriber ? true : email && emailValid))}
+					<EmailInput
+						hide={isSubscriber}
+						email={email}
+						setEmail={setEmail}
+						disabled={sending}
+						valid={emailValid}
+					/>
+					<SendButton
+						sending={sending}
+						message={message}
+						isSubscriber={isSubscriber}
+						email={email}
+						emailValid={emailValid}
 						onClick={onClick}
 					>
 						Submit
-					</button>
+					</SendButton>
 					{showDisclaimer && <div className="disclaimer">{disclaimer}</div>}
 					{sending && (
 						<div className="spinner">

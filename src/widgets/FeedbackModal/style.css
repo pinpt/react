@@ -1,0 +1,71 @@
+.Pinpoint.Widget.Feedback.Modal .wrapper {
+	@apply flex flex-col w-full h-full bg-white;
+}
+
+.Pinpoint.Widget.Feedback.Modal .wrapper .header {
+	@apply flex w-full flex-col p-4 border-b relative;
+}
+
+.Pinpoint.Widget.Feedback.Modal .wrapper .header .title {
+	@apply font-semibold;
+}
+
+.Pinpoint.Widget.Feedback.Modal .wrapper .header .description {
+	@apply text-sm text-gray-400;
+}
+
+.Pinpoint.Widget.Feedback.Modal .wrapper .header .close {
+	@apply cursor-pointer text-gray-400 hover:text-gray-900 absolute top-2 right-2;
+}
+
+.Pinpoint.Widget.Feedback.Modal .wrapper .body {
+	@apply flex flex-col w-full items-center;
+}
+
+.Pinpoint.Widget.Feedback.Modal .wrapper .body button {
+	@apply border px-2 py-2 rounded-md text-sm font-semibold mb-4;
+}
+
+.Pinpoint.Widget.Feedback.Modal .wrapper > .footer {
+	@apply mt-auto border-t p-4 text-gray-400 bg-gray-50 text-sm w-full flex flex-row;
+}
+
+.Pinpoint.Widget.Feedback.Modal .wrapper > .footer button {
+	@apply ml-auto;
+}
+
+.Pinpoint.Widget.Feedback.Modal .wrapper > .footer aside .title {
+	@apply text-xs font-normal;
+}
+
+.Pinpoint.Widget.Feedback.Modal .wrapper > .footer aside .disclaimer {
+	@apply text-xs -mt-2;
+}
+
+.Pinpoint.Widget.Feedback.Modal textarea {
+	@apply border-0 h-full w-full m-1 p-4 flex-1 outline-none;
+}
+
+.Pinpoint.Widget.Feedback.Modal input[type='text'] {
+	@apply border-0 h-full w-full m-1 p-4 flex-1 outline-none;
+}
+
+.Pinpoint.Widget.Feedback.Modal .email {
+	@apply border-t rounded-none pr-2;
+}
+
+.Pinpoint.Widget.Feedback.Modal .success {
+	@apply flex flex-col h-[365px] w-full items-center justify-center;
+}
+
+.Pinpoint.Widget.Feedback.Modal .success button {
+	@apply border px-2 py-2 rounded-md text-sm font-semibold mb-4 bg-gray-100 border-gray-100 text-gray-600 mt-5;
+}
+
+.Pinpoint.Widget.Feedback.Modal .error {
+	@apply mx-4 text-red-500 my-1;
+}
+
+.Pinpoint.Widget.Feedback.Modal .error .icon {
+	@apply mr-2;
+}
