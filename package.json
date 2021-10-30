@@ -1,6 +1,6 @@
 {
 	"name": "@pinpt/react",
-	"version": "3.0.8",
+	"version": "3.0.9",
 	"description": "The Pinpoint UI Library for React",
 	"main": "dist/cjs/index.js",
 	"module": "dist/esm/index.js",
@@ -59,6 +59,7 @@
 		"@babel/preset-env": "^7.15.6",
 		"@babel/preset-flow": "^7.14.5",
 		"@babel/preset-typescript": "^7.15.0",
+		"@rollup/plugin-alias": "^3.1.8",
 		"@rollup/plugin-commonjs": "^21.0.0",
 		"@rollup/plugin-json": "^4.1.0",
 		"@rollup/plugin-node-resolve": "^13.0.5",
