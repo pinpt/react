@@ -46,7 +46,7 @@ const FeedbackModal = (props: IFeedbackModalProps) => {
 	return (
 		<Modal
 			visible={visible}
-			className={`Pinpoint Widget Feedback Modal ${className}`}
+			className={`Pinpoint Widget FeedbackModal Modal ${className}`}
 			__previewMode={props.__previewMode}
 			ref={modalRef}
 		>
@@ -79,7 +79,12 @@ const FeedbackModal = (props: IFeedbackModalProps) => {
 							</div>
 						)}
 						<div className="body">
-							<MessageInput message={message} setMessage={setMessage} rows={8} autoFocus />
+							<MessageInput
+								message={message}
+								setMessage={setMessage}
+								rows={8}
+								autoFocus={!props.__previewMode}
+							/>
 							<EmailInput
 								hide={isSubscriber}
 								email={email}

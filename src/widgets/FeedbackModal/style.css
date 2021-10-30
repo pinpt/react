@@ -1,75 +1,127 @@
-.Pinpoint.Widget.Feedback.Modal .wrapper {
+.Pinpoint.Widget.FeedbackModal.Modal .wrapper {
 	@apply flex flex-col w-full h-full bg-white min-h-[365px] min-w-[450px] max-w-full;
 }
 
-.Pinpoint.Widget.Feedback.Modal .wrapper .header {
+.Pinpoint.Widget.FeedbackModal.Modal .wrapper .header {
 	@apply flex w-full flex-col p-4 border-b relative;
 }
 
-.Pinpoint.Widget.Feedback.Modal .wrapper .header .title {
+.Pinpoint.Widget.FeedbackModal.Modal .wrapper .header .title {
 	@apply font-semibold;
 }
 
-.Pinpoint.Widget.Feedback.Modal .wrapper .header .description {
+.Pinpoint.Widget.FeedbackModal.Modal .wrapper .header .description {
 	@apply text-sm text-gray-400;
 }
 
-.Pinpoint.Widget.Feedback.Modal .wrapper .header .close {
+.Pinpoint.Widget.FeedbackModal.Modal .wrapper .header .close {
 	@apply cursor-pointer text-gray-400 hover:text-gray-900 absolute top-2 right-2;
 }
 
-.Pinpoint.Widget.Feedback.Modal .wrapper .body {
+.Pinpoint.Widget.FeedbackModal.Modal .wrapper .body {
 	@apply flex flex-col w-full items-center;
 }
 
-.Pinpoint.Widget.Feedback.Modal .wrapper .body button {
+.Pinpoint.Widget.FeedbackModal.Modal .wrapper .body button {
 	@apply border px-2 py-2 rounded-md text-sm font-semibold mb-4;
 }
 
-.Pinpoint.Widget.Feedback.Modal .wrapper > .footer {
+.Pinpoint.Widget.FeedbackModal.Modal .wrapper > .footer {
 	@apply mt-auto border-t p-4 text-gray-400 bg-gray-50 text-sm w-full flex flex-row;
 }
 
-.Pinpoint.Widget.Feedback.Modal .wrapper > .footer button {
+.Pinpoint.Widget.FeedbackModal.Modal .wrapper > .footer button {
 	@apply ml-auto;
 }
 
-.Pinpoint.Widget.Feedback.Modal .wrapper > .footer aside {
+.Pinpoint.Widget.FeedbackModal.Modal .wrapper > .footer aside {
 	@apply mr-4;
 }
 
-.Pinpoint.Widget.Feedback.Modal .wrapper > .footer aside .title {
+.Pinpoint.Widget.FeedbackModal.Modal .wrapper > .footer aside .title {
 	@apply text-xs font-normal;
 }
 
-.Pinpoint.Widget.Feedback.Modal .wrapper > .footer aside .disclaimer {
+.Pinpoint.Widget.FeedbackModal.Modal .wrapper > .footer aside .disclaimer {
 	@apply text-xs -mt-2;
 }
 
-.Pinpoint.Widget.Feedback.Modal textarea {
-	@apply border-0 h-full w-full m-1 p-4 flex-1 outline-none;
+.Pinpoint.Widget.FeedbackModal.Modal .wrapper .message {
+	@apply w-full mx-4;
 }
 
-.Pinpoint.Widget.Feedback.Modal input[type='text'] {
-	@apply border-0 h-full w-full m-1 p-4 flex-1 outline-none;
+.Pinpoint.Widget.FeedbackModal.Modal textarea {
+	@apply border-0 h-full w-full p-4 outline-none;
 }
 
-.Pinpoint.Widget.Feedback.Modal .email {
-	@apply border-t rounded-none pr-2;
+.Pinpoint.Widget.FeedbackModal.Modal input[type='text'] {
+	@apply border-0 h-full m-1 p-4 flex-1 outline-none;
 }
 
-.Pinpoint.Widget.Feedback.Modal .success {
+.Pinpoint.Widget.FeedbackModal.Modal .email {
+	@apply border-t rounded-none pr-2 w-full flex flex-row items-center text-sm;
+}
+
+.Pinpoint.Widget.FeedbackModal.Modal .email .icon.invalid {
+	@apply text-red-500;
+}
+
+.Pinpoint.Widget.FeedbackModal.Modal .email .icon.valid {
+	@apply text-green-500;
+}
+
+.Pinpoint.Widget.FeedbackModal.Modal .success {
 	@apply flex flex-col h-[365px] w-full items-center justify-center;
 }
 
-.Pinpoint.Widget.Feedback.Modal .success button {
+.Pinpoint.Widget.FeedbackModal.Modal .success button {
 	@apply border px-2 py-2 rounded-md text-sm font-semibold mb-4 bg-gray-100 border-gray-100 text-gray-600 mt-5;
 }
 
-.Pinpoint.Widget.Feedback.Modal .error {
+.Pinpoint.Widget.FeedbackModal .spinner {
+	@apply flex flex-row items-center;
+}
+
+.Pinpoint.Widget.FeedbackModal .spinner .icon {
+	@apply mr-2 invisible;
+}
+
+.Pinpoint.Widget.FeedbackModal .spinner .icon.sending {
+	@apply visible;
+}
+
+.Pinpoint.Widget.FeedbackModal .spinner span {
+	@apply text-gray-500 text-sm;
+}
+
+.Pinpoint.Widget.FeedbackModal.Modal .error {
 	@apply mx-4 text-red-500 my-1;
 }
 
-.Pinpoint.Widget.Feedback.Modal .error .icon {
+.Pinpoint.Widget.FeedbackModal.Modal .error .icon {
 	@apply mr-2;
+}
+
+.Pinpoint.Widget.FeedbackModal .error {
+	@apply flex flex-row items-center;
+}
+
+.Pinpoint.Widget.FeedbackModal .error .icon {
+	@apply mr-2 text-red-500;
+}
+
+.Pinpoint.Widget.FeedbackModal .error .icon span {
+	@apply text-gray-500 text-sm;
+}
+
+.Pinpoint.Widget.FeedbackModal .thankyou {
+	@apply flex flex-row items-center text-green-500 text-sm;
+}
+
+.Pinpoint.Widget.FeedbackModal .thankyou .icon {
+	@apply mr-2;
+}
+
+.Pinpoint.Widget.FeedbackModal button {
+	@apply bg-green-500 dark:bg-green-600 dark:border-0 outline-none text-white border mt-4 my-2 py-2 px-2 rounded font-sans text-sm disabled:bg-gray-100 disabled:text-gray-500 disabled:cursor-not-allowed;
 }
