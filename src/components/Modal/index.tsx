@@ -37,11 +37,12 @@ const Modal = forwardRef((props: ModalProps, ref: any) => {
 		shadow.style.left = '0';
 		shadow.style.right = '0';
 		shadow.style.bottom = '0';
-		shadow.style.zIndex = '99998';
+		shadow.style.zIndex = '2147483646';
 		shadow.style.display = 'none';
+		shadow.style.transition = 'transition: all 0.5s ease-in-out';
 
 		container.className = props.className ?? 'Pinpoint Modal';
-		container.style.zIndex = '99999';
+		container.style.zIndex = '2147483647';
 		container.style.position = 'absolute';
 		container.style.opacity = '0';
 		container.style.maxWidth = 'calc(100% - 80px)';
@@ -58,6 +59,7 @@ const Modal = forwardRef((props: ModalProps, ref: any) => {
 		container.style.borderRadius = '4px';
 		container.style.border = '1px solid #eee';
 		container.style.boxShadow = '0 0 #0000, 0 0 #0000, 0 25px 50px -12px rgba(0, 0, 0, 0.25)';
+		container.style.transition = 'all 0.3s ease-in-out';
 
 		containerRef.current = container;
 		shadowRef.current = shadow;
