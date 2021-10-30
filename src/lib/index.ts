@@ -6,6 +6,7 @@ export * from './color';
 export * from './hooks';
 export * from './data';
 export * from './event';
-export * from './subscription';
 export * from './outline';
 export * from './router';
+
+export { getSubscriberId, isSubscriberCookieSet, validateEmail } from './subscription';

@@ -40,7 +40,12 @@ const useFeedback = (props: FeedbackProps) => {
 								type: pageType,
 								text: pageTitle,
 						  }
-						: undefined,
+						: {
+								id: '',
+								url: document.location.href,
+								type: 'url',
+								text: document.title,
+						  },
 			};
 			await submitFeedback(config, feedback);
 		} catch (ex: any) {

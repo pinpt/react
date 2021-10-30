@@ -19,6 +19,8 @@ class FetchError extends Error {
 	}
 }
 
+const trimEndSlash = (s: string) => s.replace(/\/$/, '');
+
 const getBaseURL = (config: Omit<IPinpointConfig, 'pageSize'>) => {
 	// server side
 	if (typeof window === 'undefined') {
@@ -28,7 +30,7 @@ const getBaseURL = (config: Omit<IPinpointConfig, 'pageSize'>) => {
 		return `https://${config.slug}.changelog.so`;
 	}
 	// client side, relative to the window origin
-	return config.siteUrl || window.location.origin;
+	return trimEndSlash(config.siteUrl || window.location.origin);
 };
 
 const retryOn = [429, 502, 503, 504];

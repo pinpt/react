@@ -1,4 +1,5 @@
 const cookieName = 'subscription_id';
+const localStoreKey = 'pinpoint_subscriber_id';
 
 const getSubscriberCookie = () => {
 	if (typeof window === 'undefined') {
@@ -7,16 +8,27 @@ const getSubscriberCookie = () => {
 	return document.cookie.split('; ').find((c) => c.startsWith(`${cookieName}=`));
 };
 
+export const setSubscriberId = (id: string) => {
+	localStorage.setItem(localStoreKey, id);
+	document.cookie = `${cookieName}=${id}; path=/; max-age=31536000; SameSite=lax; Secure;`;
+};
+
 export const getSubscriberId = () => {
 	const cookie = getSubscriberCookie();
 	if (cookie) {
 		return cookie.split('=')[1];
 	}
+	if (typeof localStorage !== 'undefined') {
+		const val = localStorage.getItem(localStoreKey);
+		if (val) {
+			return val;
+		}
+	}
 	return undefined;
 };
 
 export const isSubscriberCookieSet = () => {
-	const cookie = getSubscriberCookie();
+	const cookie = getSubscriberId();
 	return !!cookie;
 };
 

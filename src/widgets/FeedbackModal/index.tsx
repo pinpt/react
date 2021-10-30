@@ -7,7 +7,6 @@ import useFeedback from '../../lib/hooks/useFeedback';
 import { EmailInput, MessageInput, SendButton } from '../Feedback';
 
 import type { IFeedbackModalProps } from '../../lib/types/feedback';
-
 const FeedbackModal = (props: IFeedbackModalProps) => {
 	const modalRef = useRef<any>();
 	const {
@@ -39,8 +38,12 @@ const FeedbackModal = (props: IFeedbackModalProps) => {
 	}, [props.onClose]);
 
 	const onClick = useCallback(async () => {
-		await submit();
-		setSuccess(true);
+		try {
+			await submit();
+			setSuccess(true);
+		} catch (ex) {
+			setSuccess(false);
+		}
 	}, [submit]);
 
 	return (
