@@ -35,6 +35,12 @@ const maxAttempts = 5;
 const backoff = 250;
 
 const getFetch = () => {
+	if (typeof window !== 'undefined') {
+		if (window.fetch) {
+			return window.fetch;
+		}
+		return _fetch;
+	}
 	if (typeof global !== 'undefined') {
 		if (global.fetch) {
 			return global.fetch;
@@ -42,12 +48,8 @@ const getFetch = () => {
 		console.error(
 			`In NodeJS environment, make sure you set global.fetch or import a polyfill such as node-fetch and add global.fetch = require('node-fetch') before importing @pinpt/react`
 		);
-		throw new Error('global.fetch is not defined');
 	}
-	if (typeof window !== 'undefined' && window.fetch) {
-		return window.fetch;
-	}
-	return _fetch;
+	throw new Error('fetch is not defined');
 };
 
 export const executeAPI = async (

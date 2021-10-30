@@ -14,6 +14,8 @@ const plugins = [
 	builtins(),
 	replace({
 		'process.env.NODE_ENV': '"production"',
+		global: 'globalThis',
+		'global.': 'globalThis.',
 		preventAssignment: true,
 	}),
 	json(),
