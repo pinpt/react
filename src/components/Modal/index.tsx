@@ -30,6 +30,7 @@ const Modal = forwardRef((props: ModalProps, ref: any) => {
 		element.style.height = '100vh';
 		element.style.top = '0';
 		element.style.left = '0';
+		element.style.zIndex = '2147483645';
 
 		shadow.style.backgroundColor = 'rgba(0, 0, 0, .50)';
 		shadow.style.position = 'absolute';
