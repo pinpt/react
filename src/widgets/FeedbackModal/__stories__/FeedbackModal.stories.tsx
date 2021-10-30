@@ -34,3 +34,5 @@ export const Default: React.VFC<{}> = () => <FeedbackModal config={config} />;
 export const Footer_Override: React.VFC<{}> = () => (
 	<FeedbackModal config={config} footer={{ title: 'You can also send us email at feedback@pinpoint.com' }} />
 );
+
+export const NoDisclaimer: React.VFC<{}> = () => <FeedbackModal config={config} showDisclaimer={false} />;

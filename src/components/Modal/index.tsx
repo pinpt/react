@@ -1,6 +1,7 @@
-import React, { forwardRef, useCallback, useImperativeHandle } from 'react';
-import { useEffect, useRef, useState, createElement } from 'react';
-import { createPortal } from 'react-dom';
+import React, {
+	forwardRef, useCallback, useEffect, useImperativeHandle, useRef, useState
+} from 'react';
+import { createPortal, unmountComponentAtNode } from 'react-dom';
 
 interface ModalProps {
 	children?: React.ReactNode;
@@ -103,7 +104,13 @@ const Modal = forwardRef((props: ModalProps, ref: any) => {
 
 	const removeFromDOM = useCallback(() => {
 		if (elementRef?.current) {
-			document.body.removeChild(elementRef.current);
+			if (!unmountComponentAtNode(elementRef.current)) {
+				try {
+					document.body.removeChild(elementRef.current);
+				} catch (e) {
+					// ignore
+				}
+			}
 		}
 	}, []);
 

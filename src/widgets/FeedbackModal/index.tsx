@@ -6,36 +6,16 @@ import Modal from '../../components/Modal';
 import useFeedback from '../../lib/hooks/useFeedback';
 import { EmailInput, MessageInput, SendButton } from '../Feedback';
 
-import type { IPinpointConfig } from '../../lib/types';
+import type { IFeedbackModalProps } from '../../lib/types/feedback';
 
-interface PageProps {
-	header?: {
-		title: string;
-		description: string;
-	};
-	footer?: {
-		title: string;
-	};
-	button?: {
-		text: string;
-		background?: string;
-		foreground?: string;
-	};
-	disclaimer?: string;
-	onClose?: () => void;
-	__previewMode?: boolean;
-	className?: string;
-	config: IPinpointConfig;
-}
-
-const FeedbackModal = (props: PageProps) => {
-	const linkRef = useRef<any>();
+const FeedbackModal = (props: IFeedbackModalProps) => {
 	const modalRef = useRef<any>();
 	const {
 		button,
 		header,
 		footer,
 		className = '',
+		showDisclaimer = true,
 		disclaimer = 'By submitting, you agree to allow us to communicate with you by email.',
 		config,
 	} = props;
@@ -70,7 +50,7 @@ const FeedbackModal = (props: PageProps) => {
 			__previewMode={props.__previewMode}
 			ref={modalRef}
 		>
-			<div className="wrapper" style={{ minHeight: '365px' }}>
+			<div className="wrapper">
 				{success ? (
 					<>
 						<div className="header">
@@ -111,7 +91,7 @@ const FeedbackModal = (props: PageProps) => {
 						<div className="footer">
 							<aside>
 								<div className="title">{footerTitle}</div>
-								<div className="disclaimer">{disclaimer}</div>
+								{showDisclaimer && <div className="disclaimer">{disclaimer}</div>}
 							</aside>
 							<SendButton
 								style={{ backgroundColor: buttonBackground, color: buttonForeground }}

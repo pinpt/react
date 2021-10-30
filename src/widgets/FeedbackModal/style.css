@@ -1,5 +1,5 @@
 .Pinpoint.Widget.Feedback.Modal .wrapper {
-	@apply flex flex-col w-full h-full bg-white;
+	@apply flex flex-col w-full h-full bg-white min-h-[365px] min-w-[450px] max-w-full;
 }
 
 .Pinpoint.Widget.Feedback.Modal .wrapper .header {
@@ -32,6 +32,10 @@
 
 .Pinpoint.Widget.Feedback.Modal .wrapper > .footer button {
 	@apply ml-auto;
+}
+
+.Pinpoint.Widget.Feedback.Modal .wrapper > .footer aside {
+	@apply mr-4;
 }
 
 .Pinpoint.Widget.Feedback.Modal .wrapper > .footer aside .title {

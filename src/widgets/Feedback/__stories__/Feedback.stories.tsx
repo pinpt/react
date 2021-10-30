@@ -1,6 +1,7 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
 import Feedback from '../';
+
 import type { IPinpointConfig } from '../../../lib/types';
 
 const { default: readme } = require('../README.md');
@@ -29,3 +30,11 @@ export default {
 } as Meta;
 
 export const Default: React.VFC<{}> = () => <Feedback title="We want your feedback!" widgetId="123" config={config} />;
+
+export const Disclaimer: React.VFC<{}> = () => (
+	<Feedback title="We want your feedback!" widgetId="123" config={config} disclaimer="This is a disclaimer" />
+);
+
+export const ButtonTitle: React.VFC<{}> = () => (
+	<Feedback title="We want your feedback!" widgetId="123" config={config} button={{ text: "Let's do this" }} />
+);
