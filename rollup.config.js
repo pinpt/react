@@ -1,8 +1,8 @@
 import commonjs from '@rollup/plugin-commonjs';
 import json from '@rollup/plugin-json';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
-import builtins from 'rollup-plugin-node-builtins';
 import replace from '@rollup/plugin-replace';
+import builtins from 'rollup-plugin-node-builtins';
 import { terser } from 'rollup-plugin-terser';
 import pkg from './package.json';
 import replaceImport from './rewrite-react';
@@ -21,7 +21,6 @@ const plugins = [
 	nodeResolve({
 		preferBuiltins: true,
 	}),
-	// globals(),
 	commonjs(),
 	terser(),
 ];
