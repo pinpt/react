@@ -3,7 +3,8 @@ import sleep from './sleep';
 
 import type { IPinpointConfig } from './types';
 
-const DEBUG = false;
+const DEBUG =
+	typeof window === 'undefined' ? !!process.env.DEBUG : localStorage.getItem('pinpoint.fetch.debug') === 'true';
 const debug = DEBUG ? (...args: any[]) => console.log(...args) : () => null;
 
 class FetchError extends Error {
