@@ -3,6 +3,7 @@ import json from '@rollup/plugin-json';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 import replace from '@rollup/plugin-replace';
 import builtins from 'rollup-plugin-node-builtins';
+import globals from 'rollup-plugin-node-globals';
 import { terser } from 'rollup-plugin-terser';
 import pkg from './package.json';
 import replaceImport from './rewrite-react';
@@ -11,7 +12,8 @@ const suffix = '';
 const buildid = `${pkg.version}${suffix}`;
 
 const plugins = [
-	builtins(),
+	// globals(),
+	// builtins(),
 	replace({
 		'process.env.NODE_ENV': '"production"',
 		global: 'globalThis',
@@ -20,11 +22,9 @@ const plugins = [
 	}),
 	json(),
 	replaceImport(),
-	nodeResolve({
-		preferBuiltins: true,
-	}),
+	nodeResolve(),
 	commonjs(),
-	terser(),
+	// terser(),
 ];
 
 const Widgets = {
