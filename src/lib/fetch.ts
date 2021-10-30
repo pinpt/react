@@ -1,10 +1,11 @@
-import debuglog from 'debug';
 import _fetch from 'unfetch';
 import sleep from './sleep';
 
 import type { IPinpointConfig } from './types';
 
-const debug = debuglog('pinpoint:fetch');
+const DEBUG =
+	typeof window === 'undefined' ? !!process.env.DEBUG : localStorage.getItem('pinpoint.fetch.debug') === 'true';
+const debug = DEBUG ? (...args: any[]) => console.log(...args) : () => null;
 
 class FetchError extends Error {
 	public code: number;
@@ -75,7 +76,7 @@ export const executeAPI = async (
 				.map((key) => `${key}=${encodeURIComponent(config.apihostParams![key])}`)
 				.join('&');
 	}
-	debug('fetching %s', url);
+	debug('fetching', url);
 	const res = await getFetch()(url, {
 		method,
 		headers,
@@ -84,23 +85,18 @@ export const executeAPI = async (
 	});
 	if (res.ok) {
 		const resdata = await res.json();
-		debug('fetched %j (%s)', resdata, url);
+		debug('fetched', { resdata, url });
 		const { success, ...rest } = resdata;
 		if (resdata.success) {
 			return rest;
 		}
 		throw new FetchError(resdata.message, res.status, res.headers, url);
 	}
-	debug('fetched error %d (%s)', res.status, url);
+	debug('fetched error', { status: res.status, url });
 	if (attempt <= maxAttempts && retryOn.includes(res.status) && method === 'GET') {
 		const delay = Math.max(backoff, Math.random() * attempt * backoff);
 		debug(
-			'retryable error status code = %d (%s), will attempt (%d/%d) again after %d ms...',
-			res.status,
-			url,
-			attempt,
-			maxAttempts,
-			delay
+			`retryable error status code = ${res.status} (${url}), will attempt (${attempt}/${maxAttempts}) again after ${delay} ms...`
 		);
 		return sleep(delay).then(() => {
 			return executeAPI(config, relpath, method, data, cors, attempt + 1);
