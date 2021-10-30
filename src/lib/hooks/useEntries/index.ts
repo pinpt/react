@@ -9,7 +9,7 @@ const useEntries = (config: IPinpointConfig, offset?: number) => {
 	const [res, setRes] = useState<FetchContentPaginatedResult>();
 	const [analytics, setAnalytics] = useState<AnalyticsResult>();
 
-	const fetch = useCallback(async () => {
+	const _fetch = useCallback(async () => {
 		try {
 			setLoading(true);
 			setError('');
@@ -35,8 +35,8 @@ const useEntries = (config: IPinpointConfig, offset?: number) => {
 	}, [config, offset]);
 
 	useEffect(() => {
-		fetch();
-	}, [fetch]);
+		_fetch();
+	}, [_fetch]);
 
 	return {
 		loading,

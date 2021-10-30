@@ -6,7 +6,7 @@ const useContent = (config: Omit<IPinpointConfig, 'pageSize'>, contentId: string
 	const [loading, setLoading] = useState(true);
 	const [error, setError] = useState('');
 	const [content, setContent] = useState<IContent>();
-	const fetch = useCallback(async () => {
+	const _fetch = useCallback(async () => {
 		try {
 			setLoading(true);
 			setError('');
@@ -20,8 +20,8 @@ const useContent = (config: Omit<IPinpointConfig, 'pageSize'>, contentId: string
 	}, [contentId, config]);
 
 	useEffect(() => {
-		fetch();
-	}, [fetch]);
+		_fetch();
+	}, [_fetch]);
 
 	return {
 		loading,
