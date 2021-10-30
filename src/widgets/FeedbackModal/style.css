@@ -27,7 +27,7 @@
 }
 
 .Pinpoint.Widget.FeedbackModal.Modal .wrapper > .footer {
-	@apply mt-auto border-t p-4 text-gray-400 bg-gray-50 text-sm w-full flex flex-row;
+	@apply mt-auto border-t p-4 text-gray-400 bg-gray-50 text-sm w-full flex flex-row items-center;
 }
 
 .Pinpoint.Widget.FeedbackModal.Modal .wrapper > .footer button {
@@ -39,11 +39,11 @@
 }
 
 .Pinpoint.Widget.FeedbackModal.Modal .wrapper > .footer aside .title {
-	@apply text-xs font-normal;
+	@apply text-xs font-normal mb-1;
 }
 
 .Pinpoint.Widget.FeedbackModal.Modal .wrapper > .footer aside .disclaimer {
-	@apply text-xs -mt-2;
+	@apply text-xs;
 }
 
 .Pinpoint.Widget.FeedbackModal.Modal .wrapper .message {
@@ -51,11 +51,11 @@
 }
 
 .Pinpoint.Widget.FeedbackModal.Modal textarea {
-	@apply border-0 h-full w-full p-4 outline-none;
+	@apply border-0 h-full w-full p-4 outline-none resize-none focus:outline-none focus:ring-0;
 }
 
 .Pinpoint.Widget.FeedbackModal.Modal input[type='text'] {
-	@apply border-0 h-full m-1 p-4 flex-1 outline-none;
+	@apply border-0 h-full m-1 p-4 flex-1 outline-none focus:outline-none focus:ring-0;
 }
 
 .Pinpoint.Widget.FeedbackModal.Modal .email {
