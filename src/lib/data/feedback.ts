@@ -1,4 +1,6 @@
 import { executeAPI } from '../fetch';
+import { getSubscriberId, setSubscriberId } from '../subscription';
+
 import type { IPinpointConfig } from '../types/config';
 
 interface FeedbackLink {
@@ -19,5 +21,15 @@ interface Feedback {
 }
 
 export const submitFeedback = async (config: IPinpointConfig, data: Feedback): Promise<void> => {
-	await executeAPI(config, `/site-api/v1/feedback/submit`, 'POST', { ...data, channel: 'widget' }, true);
+	let _data = { ...data, channel: 'widget' };
+	if (!data.subscriberId) {
+		const id = getSubscriberId();
+		if (id) {
+			_data.subscriberId = id;
+		}
+	}
+	const { subscriber_id } = await executeAPI(config, `/site-api/v1/feedback/submit`, 'POST', _data, true);
+	if (subscriber_id) {
+		setSubscriberId(subscriber_id);
+	}
 };
