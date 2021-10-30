@@ -1,3 +1,4 @@
+import alias from '@rollup/plugin-alias';
 import commonjs from '@rollup/plugin-commonjs';
 import json from '@rollup/plugin-json';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
@@ -11,6 +12,7 @@ const suffix = '';
 const buildid = `${pkg.version}${suffix}`;
 
 const plugins = [
+	alias({ debug: 'node_modules/debug/src/browser.js' }),
 	builtins(),
 	replace({
 		'process.env.NODE_ENV': '"production"',
