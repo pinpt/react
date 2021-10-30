@@ -1,6 +1,7 @@
 import debuglog from 'debug';
-import fetch from 'isomorphic-unfetch';
+import _fetch from 'unfetch';
 import sleep from './sleep';
+
 import type { IPinpointConfig } from './types';
 
 const debug = debuglog('pinpoint:fetch');
@@ -33,6 +34,22 @@ const retryOn = [429, 502, 503, 504];
 const maxAttempts = 5;
 const backoff = 250;
 
+const getFetch = () => {
+	if (typeof global !== 'undefined') {
+		if (global.fetch) {
+			return global.fetch;
+		}
+		console.error(
+			`In NodeJS environment, make sure you set global.fetch or import a polyfill such as node-fetch and add global.fetch = require('node-fetch') before importing @pinpt/react`
+		);
+		throw new Error('global.fetch is not defined');
+	}
+	if (typeof window !== 'undefined' && window.fetch) {
+		return window.fetch;
+	}
+	return _fetch;
+};
+
 export const executeAPI = async (
 	config: Omit<IPinpointConfig, 'pageSize'>,
 	relpath: string,
@@ -57,7 +74,7 @@ export const executeAPI = async (
 				.join('&');
 	}
 	debug('fetching %s', url);
-	const res = await fetch(url, {
+	const res = await getFetch()(url, {
 		method,
 		headers,
 		body: data ? JSON.stringify(data) : undefined,
