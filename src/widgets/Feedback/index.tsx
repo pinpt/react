@@ -102,7 +102,9 @@ const Feedback = (props: IFeedbackProps) => {
 		className = '',
 		showDisclaimer = true,
 		disclaimer = 'By submitting, you agree to allow us to communicate with you by email.',
+		button,
 	} = props;
+	const { text: buttonText = 'Send Feedback' } = button ?? {};
 	const [email, setEmail] = useState('');
 	const [message, setMessage] = useState('');
 	const [success, setSuccess] = useState(false);
@@ -132,7 +134,7 @@ const Feedback = (props: IFeedbackProps) => {
 						emailValid={emailValid}
 						onClick={onClick}
 					>
-						Submit
+						{buttonText}
 					</SendButton>
 					{showDisclaimer && <div className="disclaimer">{disclaimer}</div>}
 					{sending && (

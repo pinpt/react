@@ -1,6 +1,7 @@
 import React, { cloneElement, ReactElement, useCallback, useEffect, useRef, useState } from 'react';
 import { render } from 'react-dom';
 import useScriptLoader from '../../lib/hooks/useScriptLoader';
+import FeedbackModal from '../../widgets/FeedbackModal';
 import MostRecentPosts from '../../widgets/MostRecentPosts';
 import NotificationBanner from '../../widgets/NotificationBanner';
 import NotificationModal from '../../widgets/NotificationModal';
@@ -16,6 +17,7 @@ export interface IPinpointProps {
 	renderNotificationPopupWidget?: (widget: any) => ReactElement;
 	renderNoficiationModalWidget?: (widget: any) => ReactElement;
 	renderMostRecentPostsWidget?: (widget: any) => ReactElement;
+	renderFeedbackModalWidget?: (widget: any) => ReactElement;
 }
 
 type CustomPropertyType = string | number | boolean;
@@ -80,6 +82,7 @@ const Pinpoint = (props: IPinpointProps) => {
 		renderNoficiationModalWidget,
 		renderNotificationBannerWidget,
 		renderNotificationPopupWidget,
+		renderFeedbackModalWidget,
 	} = props;
 	const [ready] = useScriptLoader(
 		noIFramely ? [] : [`https://cdn.iframe.ly/embed.js?api_key=ab49ad398c6f631ab44eca&origin=${siteId}`]
@@ -179,38 +182,29 @@ const Pinpoint = (props: IPinpointProps) => {
 			} else {
 				const elemId = `${widget.type}-${widget.id}`;
 				let component: ReactElement | null = null;
-				if (widget.type === 'notification_banner') {
-					component = renderNotificationBannerWidget?.(widget) ?? (
-						<NotificationBanner
-							background={widget.background}
-							foreground={widget.foreground}
-							icon={widget.icon}
-							message={widget.message}
-							previewData={widget.previewData}
-						/>
-					);
-				} else if (widget.type === 'notification_popup') {
-					component = renderNotificationPopupWidget?.(widget) ?? (
-						<NotificationPopup
-							button={widget.button}
-							header={widget.header}
-							previewData={widget.previewData}
-							target={widget.target}
-						/>
-					);
-				} else if (widget.type === 'notification_modal') {
-					component = renderNoficiationModalWidget?.(widget) ?? (
-						<NotificationModal
-							button={widget.button}
-							footer={widget.footer}
-							header={widget.header}
-							previewData={widget.previewData}
-						/>
-					);
-				} else if (widget.type === 'most_recent_posts') {
-					component = renderMostRecentPostsWidget?.(widget) ?? (
-						<MostRecentPosts previewData={widget.previewData} count={widget.count} />
-					);
+				switch (widget.type) {
+					case 'notification_banner': {
+						component = renderNotificationBannerWidget?.(widget) ?? <NotificationBanner {...widget} />;
+						break;
+					}
+					case 'notification_popup': {
+						component = renderNotificationPopupWidget?.(widget) ?? <NotificationPopup {...widget} />;
+						break;
+					}
+					case 'notification_modal': {
+						component = renderNoficiationModalWidget?.(widget) ?? <NotificationModal {...widget} />;
+						break;
+					}
+					case 'most_recent_posts': {
+						component = renderMostRecentPostsWidget?.(widget) ?? <MostRecentPosts {...widget} />;
+						break;
+					}
+					case 'feedback_modal': {
+						component = renderFeedbackModalWidget?.(widget) ?? <FeedbackModal {...widget} />;
+						break;
+					}
+					default:
+						break;
 				}
 
 				if (component) {
@@ -245,6 +239,7 @@ const Pinpoint = (props: IPinpointProps) => {
 		renderNoficiationModalWidget,
 		renderMostRecentPostsWidget,
 		renderNotificationPopupWidget,
+		renderFeedbackModalWidget,
 	]);
 
 	const wireUpToggles = () => {

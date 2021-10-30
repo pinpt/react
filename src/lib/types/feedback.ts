@@ -11,4 +11,28 @@ export interface IFeedbackProps {
 	pageTitle?: string;
 	showDisclaimer?: boolean;
 	disclaimer?: React.ReactNode;
+	button?: {
+		text: string;
+	};
+}
+
+export interface IFeedbackModalProps {
+	header?: {
+		title: string;
+		description: string;
+	};
+	footer?: {
+		title: string;
+	};
+	button?: {
+		text: string;
+		background?: string;
+		foreground?: string;
+	};
+	showDisclaimer?: boolean;
+	disclaimer?: string;
+	onClose?: () => void;
+	__previewMode?: boolean;
+	className?: string;
+	config: IPinpointConfig;
 }

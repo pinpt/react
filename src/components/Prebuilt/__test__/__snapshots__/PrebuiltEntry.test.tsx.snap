@@ -609,7 +609,7 @@ exports[`Test custom className 1`] = `
                   disabled={true}
                   onClick={[Function]}
                 >
-                  Submit
+                  Send Feedback
                 </button>
                 <div
                   className="disclaimer"
@@ -1770,7 +1770,7 @@ exports[`Test default state 1`] = `
                   disabled={true}
                   onClick={[Function]}
                 >
-                  Submit
+                  Send Feedback
                 </button>
                 <div
                   className="disclaimer"
@@ -2824,7 +2824,7 @@ exports[`Test no author 1`] = `
                   disabled={true}
                   onClick={[Function]}
                 >
-                  Submit
+                  Send Feedback
                 </button>
                 <div
                   className="disclaimer"
@@ -4172,7 +4172,7 @@ exports[`Test no authors 1`] = `
                   disabled={true}
                   onClick={[Function]}
                 >
-                  Submit
+                  Send Feedback
                 </button>
                 <div
                   className="disclaimer"
@@ -5156,7 +5156,7 @@ exports[`Test no claps 1`] = `
                   disabled={true}
                   onClick={[Function]}
                 >
-                  Submit
+                  Send Feedback
                 </button>
                 <div
                   className="disclaimer"
@@ -6233,7 +6233,7 @@ exports[`Test not zoomable 1`] = `
                   disabled={true}
                   onClick={[Function]}
                 >
-                  Submit
+                  Send Feedback
                 </button>
                 <div
                   className="disclaimer"
@@ -7234,7 +7234,7 @@ exports[`Test with pagination 1`] = `
                   disabled={true}
                   onClick={[Function]}
                 >
-                  Submit
+                  Send Feedback
                 </button>
                 <div
                   className="disclaimer"
