@@ -46,8 +46,8 @@ const Modal = forwardRef((props: ModalProps, ref: any) => {
 		container.style.zIndex = '2147483647';
 		container.style.position = 'absolute';
 		container.style.opacity = '0';
-		container.style.maxWidth = 'calc(100% - 80px)';
-		container.style.maxHeight = 'calc(100% - 80px)';
+		container.style.maxWidth = 'calc(100% - 10px)';
+		container.style.maxHeight = 'calc(100% - 10px)';
 		container.style.left = '50%';
 		container.style.top = '50%';
 		container.style.bottom = 'auto';
