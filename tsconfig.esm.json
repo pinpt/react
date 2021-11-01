@@ -6,7 +6,7 @@
 		"jsx": "react",
 		"resolveJsonModule": true,
 		"strict": true,
-		"target": "ESNext",
+		"target": "ES2019",
 		"outDir": "dist/esm"
 	},
 	"exclude": [
