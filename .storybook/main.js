@@ -2,7 +2,12 @@ const path = require('path');
 
 module.exports = {
 	stories: ['../**/*.stories.mdx', '../**/*.stories.@(js|jsx|ts|tsx)'],
-	addons: ['@storybook/addon-links', '@storybook/addon-essentials', '@storybook/addon-jest'],
+	addons: [
+		'@storybook/addon-links',
+		'@storybook/addon-essentials',
+		'@storybook/addon-jest',
+		'@jhaynie/storybook-tailwind-dark-mode',
+	],
 	webpackFinal: async (config) => {
 		config.module.rules.push({
 			test: /\.css$/,

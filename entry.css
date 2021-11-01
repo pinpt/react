@@ -794,3 +794,7 @@ article .Pinpoint.covermedia > .media-container > video,
 article .Pinpoint.covermedia > .video > video {
 	@apply w-full;
 }
+
+.Pinpoint.feedbackWrapper {
+	@apply bg-transparent border-0 p-0 m-0;
+}

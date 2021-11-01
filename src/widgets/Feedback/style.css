@@ -1,5 +1,5 @@
 .Pinpoint.Widget.Feedback {
-	@apply inline-flex flex-col items-start mt-10 mb-5 border dark:border-black rounded p-4 shadow-lg min-w-[450px] max-w-full;
+	@apply inline-flex flex-col items-start mt-10 mb-5 border dark:border-gray-700 rounded p-4 shadow-lg min-w-[450px] max-w-full;
 	background-color: var(--page-bg-color, #fff);
 	color: var(--page-text-color, rgb(19, 18, 18));
 }
