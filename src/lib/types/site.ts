@@ -1,4 +1,4 @@
-export type TagMapping = Record<string, { color?: string; backgroundColor: string }>;
+export type TagMapping = Record<string, { color: string; border: string; backgroundColor: string }>;
 
 export interface ISite {
 	id: string;
