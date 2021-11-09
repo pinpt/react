@@ -1,8 +1,10 @@
 import React from 'react';
 import GoogleTagManagerPlugin from './gtm';
+import TypekitPlugin from './typekit';
 
 const pluginRegistry: Record<string, (opts: any) => React.ReactFragment> = {
 	gtm: (opts) => <GoogleTagManagerPlugin options={opts} key="gtm" />,
+	typekit: (opts) => <TypekitPlugin options={opts} key="typekit" />,
 };
 
 const ScriptPlugins = ({ plugins }: { plugins: Record<string, any> }) => {
