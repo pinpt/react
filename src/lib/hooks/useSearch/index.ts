@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import algoliasearch from 'algoliasearch';
 import config from '../../../config';
-import { getTagColorStyles } from '../../color';
+import { toStyledTag } from '../../color';
 import { CoverMediaType } from '../../types';
 import type { IContent, ISite, StyledTag, ICoverMedia, TagMapping } from '../../types';
 
@@ -96,10 +96,7 @@ const useSearch = (term: string, tags: string[], site: string | ISite) => {
 								headline: hit.headline,
 								tags: hit.tags,
 								styledTags: hit.tags
-									? (hit.tags as string[]).map<StyledTag>((t) => ({
-											name: t,
-											style: { ...getTagColorStyles(t, undefined, tagMapping) },
-									  }))
+									? (hit.tags as string[]).map<StyledTag>((t) => toStyledTag(t, tagMapping))
 									: [],
 								url: hit.url,
 								robots: hit.robots,

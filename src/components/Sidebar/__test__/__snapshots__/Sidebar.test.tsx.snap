@@ -32,37 +32,16 @@ exports[`Test custom className 1`] = `
   >
     <div
       className="Pinpoint Tag Item   "
-      style={
-        Object {
-          "backgroundColor": "#B6F5B6",
-          "border": "1px solid #3f7a4333",
-          "color": "#000",
-        }
-      }
     >
       feature
     </div>
     <div
       className="Pinpoint Tag Item   "
-      style={
-        Object {
-          "backgroundColor": "#a2eeef",
-          "border": "1px solid #23747633",
-          "color": "#000",
-        }
-      }
     >
       improvement
     </div>
     <div
       className="Pinpoint Tag Item   "
-      style={
-        Object {
-          "backgroundColor": "#bf40a8",
-          "border": "1px solid #702f61",
-          "color": "#fff",
-        }
-      }
     >
       mobile
     </div>
@@ -186,37 +165,16 @@ exports[`Test default 1`] = `
   >
     <div
       className="Pinpoint Tag Item   "
-      style={
-        Object {
-          "backgroundColor": "#B6F5B6",
-          "border": "1px solid #3f7a4333",
-          "color": "#000",
-        }
-      }
     >
       feature
     </div>
     <div
       className="Pinpoint Tag Item   "
-      style={
-        Object {
-          "backgroundColor": "#a2eeef",
-          "border": "1px solid #23747633",
-          "color": "#000",
-        }
-      }
     >
       improvement
     </div>
     <div
       className="Pinpoint Tag Item   "
-      style={
-        Object {
-          "backgroundColor": "#bf40a8",
-          "border": "1px solid #702f61",
-          "color": "#fff",
-        }
-      }
     >
       mobile
     </div>
@@ -419,37 +377,16 @@ exports[`Test no author 1`] = `
   >
     <div
       className="Pinpoint Tag Item   "
-      style={
-        Object {
-          "backgroundColor": "#B6F5B6",
-          "border": "1px solid #3f7a4333",
-          "color": "#000",
-        }
-      }
     >
       feature
     </div>
     <div
       className="Pinpoint Tag Item   "
-      style={
-        Object {
-          "backgroundColor": "#a2eeef",
-          "border": "1px solid #23747633",
-          "color": "#000",
-        }
-      }
     >
       improvement
     </div>
     <div
       className="Pinpoint Tag Item   "
-      style={
-        Object {
-          "backgroundColor": "#bf40a8",
-          "border": "1px solid #702f61",
-          "color": "#fff",
-        }
-      }
     >
       mobile
     </div>
@@ -550,37 +487,16 @@ exports[`clap only 1`] = `
   >
     <div
       className="Pinpoint Tag Item   "
-      style={
-        Object {
-          "backgroundColor": "#B6F5B6",
-          "border": "1px solid #3f7a4333",
-          "color": "#000",
-        }
-      }
     >
       feature
     </div>
     <div
       className="Pinpoint Tag Item   "
-      style={
-        Object {
-          "backgroundColor": "#a2eeef",
-          "border": "1px solid #23747633",
-          "color": "#000",
-        }
-      }
     >
       improvement
     </div>
     <div
       className="Pinpoint Tag Item   "
-      style={
-        Object {
-          "backgroundColor": "#bf40a8",
-          "border": "1px solid #702f61",
-          "color": "#fff",
-        }
-      }
     >
       mobile
     </div>

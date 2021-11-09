@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import React from 'react';
-import { getTagColorStyles } from '../../../lib';
+import { toStyledTag } from '../../../lib';
 import type { StyledTag, ISearchTerm, TagMapping } from '../../../lib/types';
 import Tags from '../../Tags';
 
@@ -17,12 +17,7 @@ const Query = (props: IQueryProps) => {
 	const tags = useMemo(() => {
 		return terms
 			.filter((t) => t.type === 'tag')
-			.map<StyledTag>((t) => ({
-				name: t.value,
-				style: {
-					...getTagColorStyles(t.value, undefined, tagMapping),
-				},
-			}));
+			.map<StyledTag>((t) => toStyledTag(t.value, tagMapping));
 	}, [terms]);
 
 	const text = useMemo(() => {

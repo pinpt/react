@@ -3,13 +3,6 @@
 exports[`Test 1 1`] = `
 <div
   className="Pinpoint Tag Item   "
-  style={
-    Object {
-      "backgroundColor": "#006a21",
-      "border": "1px solid #555955",
-      "color": "#fff",
-    }
-  }
 >
   test-1
 </div>
@@ -18,13 +11,6 @@ exports[`Test 1 1`] = `
 exports[`Test 2 1`] = `
 <div
   className="Pinpoint Tag Item   "
-  style={
-    Object {
-      "backgroundColor": "#005862",
-      "border": "1px solid #555555",
-      "color": "#fff",
-    }
-  }
 >
   test-2
 </div>
@@ -33,13 +19,6 @@ exports[`Test 2 1`] = `
 exports[`Test 3 1`] = `
 <div
   className="Pinpoint Tag Item   "
-  style={
-    Object {
-      "backgroundColor": "#6149c5",
-      "border": "1px solid #6a51ac",
-      "color": "#fff",
-    }
-  }
 >
   test-3
 </div>
@@ -48,13 +27,6 @@ exports[`Test 3 1`] = `
 exports[`Test 4 1`] = `
 <div
   className="Pinpoint Tag Item   "
-  style={
-    Object {
-      "backgroundColor": "#973d9b",
-      "border": "1px solid #815383",
-      "color": "#fff",
-    }
-  }
 >
   test-4
 </div>
@@ -91,13 +63,6 @@ exports[`Test noColor 1`] = `
 exports[`Test removable 1`] = `
 <div
   className="Pinpoint Tag Item   "
-  style={
-    Object {
-      "backgroundColor": "#973d9b",
-      "border": "1px solid #815383",
-      "color": "#fff",
-    }
-  }
 >
   test-4
   <span
