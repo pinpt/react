@@ -6,13 +6,6 @@ exports[`Test One Tag 1`] = `
 >
   <div
     className="Pinpoint Tag Item   "
-    style={
-      Object {
-        "backgroundColor": "#006a21",
-        "border": "1px solid #555955",
-        "color": "#fff",
-      }
-    }
   >
     test-1
   </div>
@@ -25,13 +18,6 @@ exports[`Test Removable 1`] = `
 >
   <div
     className="Pinpoint Tag Item   "
-    style={
-      Object {
-        "backgroundColor": "#006a21",
-        "border": "1px solid #555955",
-        "color": "#fff",
-      }
-    }
   >
     test-1
     <span
@@ -57,13 +43,6 @@ exports[`Test Removable 1`] = `
   </div>
   <div
     className="Pinpoint Tag Item   "
-    style={
-      Object {
-        "backgroundColor": "#005862",
-        "border": "1px solid #555555",
-        "color": "#fff",
-      }
-    }
   >
     test-2
     <span
@@ -89,13 +68,6 @@ exports[`Test Removable 1`] = `
   </div>
   <div
     className="Pinpoint Tag Item   "
-    style={
-      Object {
-        "backgroundColor": "#6149c5",
-        "border": "1px solid #6a51ac",
-        "color": "#fff",
-      }
-    }
   >
     test-3
     <span
@@ -128,37 +100,16 @@ exports[`Test Three Tags 1`] = `
 >
   <div
     className="Pinpoint Tag Item   "
-    style={
-      Object {
-        "backgroundColor": "#006a21",
-        "border": "1px solid #555955",
-        "color": "#fff",
-      }
-    }
   >
     test-1
   </div>
   <div
     className="Pinpoint Tag Item   "
-    style={
-      Object {
-        "backgroundColor": "#005862",
-        "border": "1px solid #555555",
-        "color": "#fff",
-      }
-    }
   >
     test-2
   </div>
   <div
     className="Pinpoint Tag Item   "
-    style={
-      Object {
-        "backgroundColor": "#6149c5",
-        "border": "1px solid #6a51ac",
-        "color": "#fff",
-      }
-    }
   >
     test-3
   </div>
@@ -171,25 +122,11 @@ exports[`Test Two Tags 1`] = `
 >
   <div
     className="Pinpoint Tag Item   "
-    style={
-      Object {
-        "backgroundColor": "#006a21",
-        "border": "1px solid #555955",
-        "color": "#fff",
-      }
-    }
   >
     test-1
   </div>
   <div
     className="Pinpoint Tag Item   "
-    style={
-      Object {
-        "backgroundColor": "#005862",
-        "border": "1px solid #555555",
-        "color": "#fff",
-      }
-    }
   >
     test-2
   </div>

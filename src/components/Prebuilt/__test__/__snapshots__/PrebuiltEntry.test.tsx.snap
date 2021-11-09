@@ -185,26 +185,12 @@ exports[`Test custom className 1`] = `
               <div
                 className="Pinpoint Tag Item Link clickable  "
                 onClick={[Function]}
-                style={
-                  Object {
-                    "backgroundColor": "#B6F5B6",
-                    "border": "1px solid #3f7a4333",
-                    "color": "#000",
-                  }
-                }
               >
                 feature
               </div>
               <div
                 className="Pinpoint Tag Item Link clickable  "
                 onClick={[Function]}
-                style={
-                  Object {
-                    "backgroundColor": "#a2eeef",
-                    "border": "1px solid #23747633",
-                    "color": "#000",
-                  }
-                }
               >
                 improvement
               </div>
@@ -661,26 +647,12 @@ exports[`Test custom className 1`] = `
               <div
                 className="Pinpoint Tag Item Link clickable  "
                 onClick={[Function]}
-                style={
-                  Object {
-                    "backgroundColor": "#B6F5B6",
-                    "border": "1px solid #3f7a4333",
-                    "color": "#000",
-                  }
-                }
               >
                 feature
               </div>
               <div
                 className="Pinpoint Tag Item Link clickable  "
                 onClick={[Function]}
-                style={
-                  Object {
-                    "backgroundColor": "#a2eeef",
-                    "border": "1px solid #23747633",
-                    "color": "#000",
-                  }
-                }
               >
                 improvement
               </div>
@@ -1346,26 +1318,12 @@ exports[`Test default state 1`] = `
               <div
                 className="Pinpoint Tag Item Link clickable  "
                 onClick={[Function]}
-                style={
-                  Object {
-                    "backgroundColor": "#B6F5B6",
-                    "border": "1px solid #3f7a4333",
-                    "color": "#000",
-                  }
-                }
               >
                 feature
               </div>
               <div
                 className="Pinpoint Tag Item Link clickable  "
                 onClick={[Function]}
-                style={
-                  Object {
-                    "backgroundColor": "#a2eeef",
-                    "border": "1px solid #23747633",
-                    "color": "#000",
-                  }
-                }
               >
                 improvement
               </div>
@@ -1822,26 +1780,12 @@ exports[`Test default state 1`] = `
               <div
                 className="Pinpoint Tag Item Link clickable  "
                 onClick={[Function]}
-                style={
-                  Object {
-                    "backgroundColor": "#B6F5B6",
-                    "border": "1px solid #3f7a4333",
-                    "color": "#000",
-                  }
-                }
               >
                 feature
               </div>
               <div
                 className="Pinpoint Tag Item Link clickable  "
                 onClick={[Function]}
-                style={
-                  Object {
-                    "backgroundColor": "#a2eeef",
-                    "border": "1px solid #23747633",
-                    "color": "#000",
-                  }
-                }
               >
                 improvement
               </div>
@@ -2484,26 +2428,12 @@ exports[`Test no author 1`] = `
               <div
                 className="Pinpoint Tag Item Link clickable  "
                 onClick={[Function]}
-                style={
-                  Object {
-                    "backgroundColor": "#B6F5B6",
-                    "border": "1px solid #3f7a4333",
-                    "color": "#000",
-                  }
-                }
               >
                 feature
               </div>
               <div
                 className="Pinpoint Tag Item Link clickable  "
                 onClick={[Function]}
-                style={
-                  Object {
-                    "backgroundColor": "#a2eeef",
-                    "border": "1px solid #23747633",
-                    "color": "#000",
-                  }
-                }
               >
                 improvement
               </div>
@@ -2853,26 +2783,12 @@ exports[`Test no author 1`] = `
               <div
                 className="Pinpoint Tag Item Link clickable  "
                 onClick={[Function]}
-                style={
-                  Object {
-                    "backgroundColor": "#B6F5B6",
-                    "border": "1px solid #3f7a4333",
-                    "color": "#000",
-                  }
-                }
               >
                 feature
               </div>
               <div
                 className="Pinpoint Tag Item Link clickable  "
                 onClick={[Function]}
-                style={
-                  Object {
-                    "backgroundColor": "#a2eeef",
-                    "border": "1px solid #23747633",
-                    "color": "#000",
-                  }
-                }
               >
                 improvement
               </div>
@@ -3445,26 +3361,12 @@ exports[`Test no authors 1`] = `
               <div
                 className="Pinpoint Tag Item Link clickable  "
                 onClick={[Function]}
-                style={
-                  Object {
-                    "backgroundColor": "#B6F5B6",
-                    "border": "1px solid #3f7a4333",
-                    "color": "#000",
-                  }
-                }
               >
                 feature
               </div>
               <div
                 className="Pinpoint Tag Item Link clickable  "
                 onClick={[Function]}
-                style={
-                  Object {
-                    "backgroundColor": "#d73a4a",
-                    "border": "1px solid #83312b",
-                    "color": "#fff",
-                  }
-                }
               >
                 bug
               </div>
@@ -4215,26 +4117,12 @@ exports[`Test no authors 1`] = `
               <div
                 className="Pinpoint Tag Item Link clickable  "
                 onClick={[Function]}
-                style={
-                  Object {
-                    "backgroundColor": "#B6F5B6",
-                    "border": "1px solid #3f7a4333",
-                    "color": "#000",
-                  }
-                }
               >
                 feature
               </div>
               <div
                 className="Pinpoint Tag Item Link clickable  "
                 onClick={[Function]}
-                style={
-                  Object {
-                    "backgroundColor": "#d73a4a",
-                    "border": "1px solid #83312b",
-                    "color": "#fff",
-                  }
-                }
               >
                 bug
               </div>
@@ -4816,26 +4704,12 @@ exports[`Test no claps 1`] = `
               <div
                 className="Pinpoint Tag Item Link clickable  "
                 onClick={[Function]}
-                style={
-                  Object {
-                    "backgroundColor": "#B6F5B6",
-                    "border": "1px solid #3f7a4333",
-                    "color": "#000",
-                  }
-                }
               >
                 feature
               </div>
               <div
                 className="Pinpoint Tag Item Link clickable  "
                 onClick={[Function]}
-                style={
-                  Object {
-                    "backgroundColor": "#a2eeef",
-                    "border": "1px solid #23747633",
-                    "color": "#000",
-                  }
-                }
               >
                 improvement
               </div>
@@ -5208,26 +5082,12 @@ exports[`Test no claps 1`] = `
               <div
                 className="Pinpoint Tag Item Link clickable  "
                 onClick={[Function]}
-                style={
-                  Object {
-                    "backgroundColor": "#B6F5B6",
-                    "border": "1px solid #3f7a4333",
-                    "color": "#000",
-                  }
-                }
               >
                 feature
               </div>
               <div
                 className="Pinpoint Tag Item Link clickable  "
                 onClick={[Function]}
-                style={
-                  Object {
-                    "backgroundColor": "#a2eeef",
-                    "border": "1px solid #23747633",
-                    "color": "#000",
-                  }
-                }
               >
                 improvement
               </div>
@@ -5809,26 +5669,12 @@ exports[`Test not zoomable 1`] = `
               <div
                 className="Pinpoint Tag Item Link clickable  "
                 onClick={[Function]}
-                style={
-                  Object {
-                    "backgroundColor": "#B6F5B6",
-                    "border": "1px solid #3f7a4333",
-                    "color": "#000",
-                  }
-                }
               >
                 feature
               </div>
               <div
                 className="Pinpoint Tag Item Link clickable  "
                 onClick={[Function]}
-                style={
-                  Object {
-                    "backgroundColor": "#a2eeef",
-                    "border": "1px solid #23747633",
-                    "color": "#000",
-                  }
-                }
               >
                 improvement
               </div>
@@ -6285,26 +6131,12 @@ exports[`Test not zoomable 1`] = `
               <div
                 className="Pinpoint Tag Item Link clickable  "
                 onClick={[Function]}
-                style={
-                  Object {
-                    "backgroundColor": "#B6F5B6",
-                    "border": "1px solid #3f7a4333",
-                    "color": "#000",
-                  }
-                }
               >
                 feature
               </div>
               <div
                 className="Pinpoint Tag Item Link clickable  "
                 onClick={[Function]}
-                style={
-                  Object {
-                    "backgroundColor": "#a2eeef",
-                    "border": "1px solid #23747633",
-                    "color": "#000",
-                  }
-                }
               >
                 improvement
               </div>
@@ -6970,13 +6802,6 @@ exports[`Test with pagination 1`] = `
               <div
                 className="Pinpoint Tag Item Link clickable  "
                 onClick={[Function]}
-                style={
-                  Object {
-                    "backgroundColor": "#B6F5B6",
-                    "border": "1px solid #3f7a4333",
-                    "color": "#000",
-                  }
-                }
               >
                 feature
               </div>
@@ -7286,13 +7111,6 @@ exports[`Test with pagination 1`] = `
               <div
                 className="Pinpoint Tag Item Link clickable  "
                 onClick={[Function]}
-                style={
-                  Object {
-                    "backgroundColor": "#B6F5B6",
-                    "border": "1px solid #3f7a4333",
-                    "color": "#000",
-                  }
-                }
               >
                 feature
               </div>

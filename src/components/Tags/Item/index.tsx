@@ -1,5 +1,4 @@
 import React from 'react';
-import { getTagColorStyles } from '../../../lib/color';
 
 export interface IItemProps {
 	className?: string;
@@ -14,8 +13,7 @@ export interface IItemProps {
 }
 
 const Item = (props: IItemProps) => {
-	const { className = '', tag, onClick, noColor, style: _style, removable } = props;
-	const style = _style ? _style : getTagColorStyles(tag);
+	const { className = '', tag, onClick, noColor, style, removable } = props;
 
 	return (
 		<div

@@ -34,7 +34,13 @@ const getTagStyles = (
 export const getTagColorStyles = (tag: string, defaultColor?: string, tagMapping?: TagMapping) =>
 	getTagStyles(tag, tagMapping);
 
-export const getStyledTag = (tag: string, tagMapping: TagMapping = {}): StyledTag => ({
+/**
+ * @deprecated no longer supported, returns #ffffff
+ * @param str
+ */
+export const colorForString = (str: string = '') => '#ffffff';
+
+export const toStyledTag = (tag: string, tagMapping: TagMapping = {}): StyledTag => ({
 	name: tag,
 	style: getTagStyles(tag, tagMapping),
 });

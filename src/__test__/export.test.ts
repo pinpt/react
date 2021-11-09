@@ -67,6 +67,7 @@ const {
 	splitEntries,
 	getTagColorStyles,
 	colorForString,
+	toStyledTag,
 	fetchAnalytics,
 	fetchContentAnalytics,
 	fetchContentPaginated,
@@ -232,6 +233,7 @@ test('Test util exports', () => {
 	expect(splitEntries).toBeTruthy();
 	expect(getTagColorStyles).toBeTruthy();
 	expect(colorForString).toBeTruthy();
+	expect(toStyledTag).toBeTruthy();
 	expect(fetchAnalytics).toBeTruthy();
 	expect(fetchContentAnalytics).toBeTruthy();
 	expect(createClap).toBeTruthy();
