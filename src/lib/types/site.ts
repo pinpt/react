@@ -27,5 +27,6 @@ export interface ISite {
 	basePath: string;
 	features: {
 		feedback: boolean;
+		roadmap: boolean;
 	};
 }
