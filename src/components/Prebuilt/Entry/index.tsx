@@ -1,6 +1,8 @@
 import React, { ReactElement } from 'react';
 import { configFromSite } from '../../../lib/data/site';
+import type { IContent, ISite } from '../../../lib/types';
 import { ContentTemplateType } from '../../../lib/types/content';
+import type { IFeedbackProps, IFeedbackModalProps } from '../../../lib/types/feedback';
 import Feedback from '../../../widgets/Feedback';
 import FeedbackModal from '../../../widgets/FeedbackModal';
 import Author, { IAuthorProps } from '../../Author';
@@ -16,9 +18,7 @@ import Pinpoint from '../../Pinpoint';
 import { Document } from '../../Renderer';
 import { ISearchBarProps } from '../../Search/Bar';
 import Sidebar, { ISidebarProps } from '../../Sidebar';
-import {
-	EmailShare, FacebookShare, LinkedInShare, SocialMediaBar, TwitterShare
-} from '../../SocialMedia';
+import { EmailShare, FacebookShare, LinkedInShare, SocialMediaBar, TwitterShare } from '../../SocialMedia';
 import { ISocialMediaBarProps } from '../../SocialMedia/SocialMediaBar';
 import { ISubscribeProps } from '../../Subscribe';
 import Tags from '../../Tags';
@@ -27,8 +27,6 @@ import { IThemeToggleProps } from '../../ThemeToggle';
 import Footer from '../Footer';
 import Header from '../Header';
 
-import type { IContent, ISite } from '../../../lib/types';
-import type { IFeedbackProps, IFeedbackModalProps } from '../../../lib/types/feedback';
 export interface IPrebuiltEntryProps {
 	className?: string;
 	renderContent?: (content: IContent) => ReactElement;

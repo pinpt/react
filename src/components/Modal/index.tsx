@@ -1,6 +1,4 @@
-import React, {
-	forwardRef, useCallback, useEffect, useImperativeHandle, useRef, useState
-} from 'react';
+import React, { forwardRef, useCallback, useEffect, useImperativeHandle, useRef, useState } from 'react';
 import { createPortal, unmountComponentAtNode } from 'react-dom';
 
 interface ModalProps {
