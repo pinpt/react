@@ -124,8 +124,12 @@ const {
 	CoverMedia,
 	registerRenderer,
 	getRenderer,
+	fetchRoadmap,
+	useRoadmap,
 	...otherExports
 } = Exports;
+
+console.log(otherExports);
 
 test('Test component exports', () => {
 	// Test Statistic Exports
@@ -246,6 +250,7 @@ test('Test util exports', () => {
 	expect(titleCase).toBeTruthy();
 	expect(validateSubscription).toBeTruthy();
 	expect(listSubscriptions).toBeTruthy();
+	expect(fetchRoadmap).toBeTruthy();
 });
 
 test('Test hook exports', () => {
@@ -259,6 +264,7 @@ test('Test hook exports', () => {
 	expect(useSubscriptionList).toBeTruthy();
 	expect(useSubscription).toBeTruthy();
 	expect(useSubscriptionUpdater).toBeTruthy();
+	expect(useRoadmap).toBeTruthy();
 });
 
 test('Test widget exports', () => {

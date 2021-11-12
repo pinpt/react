@@ -1,4 +1,5 @@
-import { executeAPI, FetchContentOptions, IPinpointConfig } from 'src';
+import { FetchContentOptions, executeAPI } from '../';
+import { IPinpointConfig } from '../types';
 import { PublishedRoadmapResponse } from '../types/roadmap';
 
 export const fetchRoadmap = async (

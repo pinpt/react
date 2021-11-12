@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from 'react';
-import { PublishedRoadmapResponse } from 'src/lib/types/roadmap';
 import { fetchRoadmap } from '../../data';
 import { IPinpointConfig } from '../../types';
+import { PublishedRoadmapResponse } from '../../types/roadmap';
 
 const useRoadmap = (config: Omit<IPinpointConfig, 'pageSize'>) => {
 	const [loading, setLoading] = useState(true);
