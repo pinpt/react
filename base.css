@@ -1154,3 +1154,43 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 		transition: transform 1ms !important;
 	}
 }
+
+.Pinpoint.RoadmapCard.Wrapper {
+	@apply border inline-flex flex-col;
+}
+
+.Pinpoint.RoadmapCard .Heading {
+	@apply border-b flex p-6 flex-col;
+}
+
+.Pinpoint.RoadmapCard .Heading .Title {
+	@apply text-lg mb-2;
+}
+
+.Pinpoint.RoadmapCard .Heading .Description {
+	@apply text-sm text-gray-500;
+}
+
+.Pinpoint.RoadmapCard .Body {
+	@apply flex p-6 bg-gray-50 text-sm flex-col gap-y-2;
+}
+
+.Pinpoint.RoadmapSection .Children {
+	@apply flex flex-wrap gap-4 mt-4 ml-10;
+}
+
+.Pinpoint.RoadmapSection .Pinpoint.RoadmapSection.Title {
+	@apply flex items-center select-none text-lg;
+}
+
+.Pinpoint.RoadmapSection .Pinpoint.RoadmapSection.Description {
+	@apply ml-10 text-gray-500;
+}
+
+.Pinpoint.RoadmapSection .Pinpoint.RoadmapSection.Title .Icon {
+	@apply m-2 cursor-pointer;
+}
+
+.Pinpoint.RoadmapSection.Children .Pinpoint.RoadmapSection.Empty {
+	@apply text-center w-full my-8;
+}

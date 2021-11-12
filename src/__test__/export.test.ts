@@ -126,10 +126,10 @@ const {
 	getRenderer,
 	fetchRoadmap,
 	useRoadmap,
+	RoadmapCard,
+	RoadmapSection,
 	...otherExports
 } = Exports;
-
-console.log(otherExports);
 
 test('Test component exports', () => {
 	// Test Statistic Exports
@@ -222,6 +222,10 @@ test('Test component exports', () => {
 	expect(SubscriptionSubscribe).toBeTruthy();
 	expect(SubscriptionUnsubscribe).toBeTruthy();
 	expect(SubscriptionVerify).toBeTruthy();
+
+	// Test roadmap components
+	expect(RoadmapSection).toBeTruthy();
+	expect(RoadmapCard).toBeTruthy();
 });
 
 test('Test util exports', () => {
