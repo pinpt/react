@@ -1,0 +1,507 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test custom className 1`] = `
+<div
+  className="Pinpoint RoadmapSection Wrapper test-custom"
+>
+  <div
+    className="Pinpoint RoadmapSection Title"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-chevron-down fa-w-14 fa-fw Pinpoint RoadmapSection Icon"
+      data-icon="chevron-down"
+      data-prefix="fas"
+      focusable="false"
+      onClick={[Function]}
+      role="img"
+      style={Object {}}
+      viewBox="0 0 448 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    Section Title
+  </div>
+  <div
+    className="Pinpoint RoadmapSection Description"
+  >
+    Some information about what this particular section contains.
+  </div>
+  <div
+    className="Pinpoint RoadmapSection Children"
+  >
+    <div
+      className="Pinpoint RoadmapCard Wrapper "
+    >
+      <div
+        className="Pinpoint RoadmapCard Heading"
+      >
+        <div
+          className="Pinpoint RoadmapCard Top"
+        >
+          <div
+            className="Pinpoint RoadmapCard Title"
+          >
+            My cool feature
+          </div>
+        </div>
+        <div
+          className="Pinpoint RoadmapCard Description"
+        >
+          Some interesting points about the cool feature I made.
+        </div>
+      </div>
+      <div
+        className="Pinpoint RoadmapCard Body"
+      >
+        <div>
+          Point number 1 for the feature.
+        </div>
+        <div>
+          Another point for the feature.
+        </div>
+        <div>
+          The third and final thing about the cool feature.
+        </div>
+      </div>
+    </div>
+    <div
+      className="Pinpoint RoadmapCard Wrapper "
+    >
+      <div
+        className="Pinpoint RoadmapCard Heading"
+      >
+        <div
+          className="Pinpoint RoadmapCard Top"
+        >
+          <div
+            className="Pinpoint RoadmapCard Title"
+          >
+            My cool feature
+          </div>
+        </div>
+        <div
+          className="Pinpoint RoadmapCard Description"
+        >
+          Some interesting points about the cool feature I made.
+        </div>
+      </div>
+      <div
+        className="Pinpoint RoadmapCard Body"
+      >
+        <div>
+          Point number 1 for the feature.
+        </div>
+        <div>
+          Another point for the feature.
+        </div>
+        <div>
+          The third and final thing about the cool feature.
+        </div>
+      </div>
+    </div>
+    <div
+      className="Pinpoint RoadmapCard Wrapper "
+    >
+      <div
+        className="Pinpoint RoadmapCard Heading"
+      >
+        <div
+          className="Pinpoint RoadmapCard Top"
+        >
+          <div
+            className="Pinpoint RoadmapCard Title"
+          >
+            My cool feature
+          </div>
+        </div>
+        <div
+          className="Pinpoint RoadmapCard Description"
+        >
+          Some interesting points about the cool feature I made.
+        </div>
+      </div>
+      <div
+        className="Pinpoint RoadmapCard Body"
+      >
+        <div>
+          Point number 1 for the feature.
+        </div>
+        <div>
+          Another point for the feature.
+        </div>
+        <div>
+          The third and final thing about the cool feature.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Test default 1`] = `
+<div
+  className="Pinpoint RoadmapSection Wrapper "
+>
+  <div
+    className="Pinpoint RoadmapSection Title"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-chevron-down fa-w-14 fa-fw Pinpoint RoadmapSection Icon"
+      data-icon="chevron-down"
+      data-prefix="fas"
+      focusable="false"
+      onClick={[Function]}
+      role="img"
+      style={Object {}}
+      viewBox="0 0 448 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    Section Title
+  </div>
+  <div
+    className="Pinpoint RoadmapSection Description"
+  >
+    Some information about what this particular section contains.
+  </div>
+  <div
+    className="Pinpoint RoadmapSection Children"
+  >
+    <div
+      className="Pinpoint RoadmapCard Wrapper "
+    >
+      <div
+        className="Pinpoint RoadmapCard Heading"
+      >
+        <div
+          className="Pinpoint RoadmapCard Top"
+        >
+          <div
+            className="Pinpoint RoadmapCard Title"
+          >
+            My cool feature
+          </div>
+        </div>
+        <div
+          className="Pinpoint RoadmapCard Description"
+        >
+          Some interesting points about the cool feature I made.
+        </div>
+      </div>
+      <div
+        className="Pinpoint RoadmapCard Body"
+      >
+        <div>
+          Point number 1 for the feature.
+        </div>
+        <div>
+          Another point for the feature.
+        </div>
+        <div>
+          The third and final thing about the cool feature.
+        </div>
+      </div>
+    </div>
+    <div
+      className="Pinpoint RoadmapCard Wrapper "
+    >
+      <div
+        className="Pinpoint RoadmapCard Heading"
+      >
+        <div
+          className="Pinpoint RoadmapCard Top"
+        >
+          <div
+            className="Pinpoint RoadmapCard Title"
+          >
+            My cool feature
+          </div>
+        </div>
+        <div
+          className="Pinpoint RoadmapCard Description"
+        >
+          Some interesting points about the cool feature I made.
+        </div>
+      </div>
+      <div
+        className="Pinpoint RoadmapCard Body"
+      >
+        <div>
+          Point number 1 for the feature.
+        </div>
+        <div>
+          Another point for the feature.
+        </div>
+        <div>
+          The third and final thing about the cool feature.
+        </div>
+      </div>
+    </div>
+    <div
+      className="Pinpoint RoadmapCard Wrapper "
+    >
+      <div
+        className="Pinpoint RoadmapCard Heading"
+      >
+        <div
+          className="Pinpoint RoadmapCard Top"
+        >
+          <div
+            className="Pinpoint RoadmapCard Title"
+          >
+            My cool feature
+          </div>
+        </div>
+        <div
+          className="Pinpoint RoadmapCard Description"
+        >
+          Some interesting points about the cool feature I made.
+        </div>
+      </div>
+      <div
+        className="Pinpoint RoadmapCard Body"
+      >
+        <div>
+          Point number 1 for the feature.
+        </div>
+        <div>
+          Another point for the feature.
+        </div>
+        <div>
+          The third and final thing about the cool feature.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Test default closed 1`] = `
+<div
+  className="Pinpoint RoadmapSection Wrapper "
+>
+  <div
+    className="Pinpoint RoadmapSection Title"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-chevron-right fa-w-10 fa-fw Pinpoint RoadmapSection Icon"
+      data-icon="chevron-right"
+      data-prefix="fas"
+      focusable="false"
+      onClick={[Function]}
+      role="img"
+      style={Object {}}
+      viewBox="0 0 320 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    Section Title
+  </div>
+  <div
+    className="Pinpoint RoadmapSection Description"
+  >
+    Some information about what this particular section contains.
+  </div>
+</div>
+`;
+
+exports[`Test empty section 1`] = `
+<div
+  className="Pinpoint RoadmapSection Wrapper "
+>
+  <div
+    className="Pinpoint RoadmapSection Title"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-chevron-down fa-w-14 fa-fw Pinpoint RoadmapSection Icon"
+      data-icon="chevron-down"
+      data-prefix="fas"
+      focusable="false"
+      onClick={[Function]}
+      role="img"
+      style={Object {}}
+      viewBox="0 0 448 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    Section Title
+  </div>
+  <div
+    className="Pinpoint RoadmapSection Description"
+  >
+    Some information about what this particular section contains.
+  </div>
+  <div
+    className="Pinpoint RoadmapSection Children"
+  >
+    <div
+      className="Pinpoint RoadmapSection Empty"
+    >
+      There are currently no items in this stage on the roadmap.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Test no description 1`] = `
+<div
+  className="Pinpoint RoadmapSection Wrapper "
+>
+  <div
+    className="Pinpoint RoadmapSection Title"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-chevron-down fa-w-14 fa-fw Pinpoint RoadmapSection Icon"
+      data-icon="chevron-down"
+      data-prefix="fas"
+      focusable="false"
+      onClick={[Function]}
+      role="img"
+      style={Object {}}
+      viewBox="0 0 448 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    Section Title
+  </div>
+  <div
+    className="Pinpoint RoadmapSection Children"
+  >
+    <div
+      className="Pinpoint RoadmapCard Wrapper "
+    >
+      <div
+        className="Pinpoint RoadmapCard Heading"
+      >
+        <div
+          className="Pinpoint RoadmapCard Top"
+        >
+          <div
+            className="Pinpoint RoadmapCard Title"
+          >
+            My cool feature
+          </div>
+        </div>
+        <div
+          className="Pinpoint RoadmapCard Description"
+        >
+          Some interesting points about the cool feature I made.
+        </div>
+      </div>
+      <div
+        className="Pinpoint RoadmapCard Body"
+      >
+        <div>
+          Point number 1 for the feature.
+        </div>
+        <div>
+          Another point for the feature.
+        </div>
+        <div>
+          The third and final thing about the cool feature.
+        </div>
+      </div>
+    </div>
+    <div
+      className="Pinpoint RoadmapCard Wrapper "
+    >
+      <div
+        className="Pinpoint RoadmapCard Heading"
+      >
+        <div
+          className="Pinpoint RoadmapCard Top"
+        >
+          <div
+            className="Pinpoint RoadmapCard Title"
+          >
+            My cool feature
+          </div>
+        </div>
+        <div
+          className="Pinpoint RoadmapCard Description"
+        >
+          Some interesting points about the cool feature I made.
+        </div>
+      </div>
+      <div
+        className="Pinpoint RoadmapCard Body"
+      >
+        <div>
+          Point number 1 for the feature.
+        </div>
+        <div>
+          Another point for the feature.
+        </div>
+        <div>
+          The third and final thing about the cool feature.
+        </div>
+      </div>
+    </div>
+    <div
+      className="Pinpoint RoadmapCard Wrapper "
+    >
+      <div
+        className="Pinpoint RoadmapCard Heading"
+      >
+        <div
+          className="Pinpoint RoadmapCard Top"
+        >
+          <div
+            className="Pinpoint RoadmapCard Title"
+          >
+            My cool feature
+          </div>
+        </div>
+        <div
+          className="Pinpoint RoadmapCard Description"
+        >
+          Some interesting points about the cool feature I made.
+        </div>
+      </div>
+      <div
+        className="Pinpoint RoadmapCard Body"
+      >
+        <div>
+          Point number 1 for the feature.
+        </div>
+        <div>
+          Another point for the feature.
+        </div>
+        <div>
+          The third and final thing about the cool feature.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
