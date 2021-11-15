@@ -1156,7 +1156,7 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 }
 
 .Pinpoint.RoadmapCard.Wrapper {
-	@apply border inline-flex flex-col;
+	@apply border inline-flex flex-col flex-grow;
 }
 
 .Pinpoint.RoadmapCard .Heading {
@@ -1172,7 +1172,7 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 }
 
 .Pinpoint.RoadmapCard .Body {
-	@apply flex p-6 bg-gray-50 text-sm flex-col gap-y-2;
+	@apply flex p-6 bg-gray-50 text-sm flex-col gap-y-2 flex-grow;
 }
 
 .Pinpoint.RoadmapSection .Children {
@@ -1193,4 +1193,8 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 
 .Pinpoint.RoadmapSection.Children .Pinpoint.RoadmapSection.Empty {
 	@apply text-center w-full my-8;
+}
+
+.Pinpoint.Page.Roadmap.List {
+	@apply space-y-8;
 }

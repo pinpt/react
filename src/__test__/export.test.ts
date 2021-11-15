@@ -128,6 +128,7 @@ const {
 	useRoadmap,
 	RoadmapCard,
 	RoadmapSection,
+	RoadmapPage,
 	...otherExports
 } = Exports;
 
@@ -154,6 +155,7 @@ test('Test component exports', () => {
 	expect(DashboardPage).toBeTruthy();
 	expect(EntryPage).toBeTruthy();
 	expect(ErrorPage).toBeTruthy();
+	expect(RoadmapPage).toBeTruthy();
 
 	// Test Tags Exports
 	expect(Tags).toBeTruthy();
