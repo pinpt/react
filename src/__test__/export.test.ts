@@ -129,6 +129,7 @@ const {
 	RoadmapCard,
 	RoadmapSection,
 	RoadmapPage,
+	PrebuiltRoadmap,
 	...otherExports
 } = Exports;
 
@@ -175,6 +176,7 @@ test('Test component exports', () => {
 	expect(PrebuiltSubscriptionSubscribe).toBeTruthy();
 	expect(PrebuiltSubscriptionUnsubscribe).toBeTruthy();
 	expect(PrebuiltSubscriptionVerify).toBeTruthy();
+	expect(PrebuiltRoadmap).toBeTruthy();
 
 	// Test Search Exports
 	expect(Search).toBeTruthy();

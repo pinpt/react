@@ -1,15 +1,23 @@
 import React, { useState } from 'react';
 import { Meta } from '@storybook/react';
-import Roadmap from '../Roadmap';
-import roadmap from '../Roadmap/__data__/roadmap.json';
-import RoadmapSection from '../../RoadmapSection';
-import RoadmapCard from '../../RoadmapCard';
+import Copyright from '../../Copyright';
 import Footer from '../../Footer';
 import Header from '../../Header';
-import Subscribe from '../../Subscribe';
-import { SocialMediaBar, FacebookLink, InstagramLink, TwitterLink, GithubLink, LinkedInLink, RSSLink } from '../../SocialMedia';
-import Copyright from '../../Copyright';
 import Logo from '../../Logo';
+import RoadmapCard from '../../RoadmapCard';
+import RoadmapSection from '../../RoadmapSection';
+import {
+	SocialMediaBar,
+	FacebookLink,
+	InstagramLink,
+	TwitterLink,
+	GithubLink,
+	LinkedInLink,
+	RSSLink,
+} from '../../SocialMedia';
+import Subscribe from '../../Subscribe';
+import Roadmap from '../Roadmap';
+import roadmap from '../Roadmap/__data__/roadmap.json';
 
 const { default: readme } = require('../Roadmap/README.md');
 
@@ -35,11 +43,7 @@ export const Default: React.VFC<{}> = () => {
 		<Roadmap
 			sections={roadmap.columns?.map((column) => {
 				return (
-					<RoadmapSection
-						key={column.id}
-						title={column.title}
-						description={column.description}
-					>
+					<RoadmapSection key={column.id} title={column.title} description={column.description}>
 						{roadmap.board[column.id].map((item: any) => {
 							return (
 								<RoadmapCard title={item.title} description={item.description} key={item.id}>

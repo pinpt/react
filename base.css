@@ -1156,23 +1156,23 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 }
 
 .Pinpoint.RoadmapCard.Wrapper {
-	@apply border inline-flex flex-col flex-grow;
+	@apply border inline-flex flex-col flex-grow dark:border-gray-700 max-w-[100%] sm:max-w-[45%] rounded-sm overflow-hidden shadow;
 }
 
 .Pinpoint.RoadmapCard .Heading {
-	@apply border-b flex p-6 flex-col;
+	@apply border-b dark:border-gray-700 flex p-6 flex-col dark:text-white;
 }
 
 .Pinpoint.RoadmapCard .Heading .Title {
-	@apply text-lg mb-2;
+	@apply text-lg mb-2 dark:text-white;
 }
 
 .Pinpoint.RoadmapCard .Heading .Description {
-	@apply text-sm text-gray-500;
+	@apply text-sm text-gray-500 dark:text-gray-300;
 }
 
 .Pinpoint.RoadmapCard .Body {
-	@apply flex p-6 bg-gray-50 text-sm flex-col gap-y-2 flex-grow;
+	@apply flex p-6 bg-gray-50 dark:bg-gray-800 text-sm flex-col gap-y-2 flex-grow dark:text-white;
 }
 
 .Pinpoint.RoadmapSection .Children {
@@ -1180,11 +1180,11 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 }
 
 .Pinpoint.RoadmapSection .Pinpoint.RoadmapSection.Title {
-	@apply flex items-center select-none text-lg;
+	@apply flex items-center select-none text-lg dark:text-white;
 }
 
 .Pinpoint.RoadmapSection .Pinpoint.RoadmapSection.Description {
-	@apply ml-10 text-gray-500;
+	@apply ml-10 text-gray-500 dark:text-gray-300;
 }
 
 .Pinpoint.RoadmapSection .Pinpoint.RoadmapSection.Title .Icon {
@@ -1192,7 +1192,7 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 }
 
 .Pinpoint.RoadmapSection.Children .Pinpoint.RoadmapSection.Empty {
-	@apply text-center w-full my-8;
+	@apply text-center w-full my-8 text-gray-500;
 }
 
 .Pinpoint.Page.Roadmap.List .Pinpoint.sectionsWrapper .Pinpoint.constraint {

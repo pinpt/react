@@ -1,8 +1,8 @@
 import React, { forwardRef, ReactElement } from 'react';
+import { PublishedRoadmapResponse } from '../../../lib/types/roadmap';
 import { IFooterProps } from '../../Footer';
 import { IHeaderProps } from '../../Header';
 import withWrapper from '../../Internal/withWrapper';
-import { PublishedRoadmapResponse } from '../../../lib/types/roadmap';
 import RoadmapCard from '../../RoadmapCard';
 import RoadmapSection, { IRoadmapSectionProps } from '../../RoadmapSection';
 
@@ -20,9 +20,7 @@ const Roadmap = forwardRef((props: IRoadmapPageProps, ref: any) => {
 	return (
 		<div className={`${baseClass} Wrapper ${className}`} ref={ref}>
 			{withWrapper(header, 'header')}
-			<div className={`${baseClass} List`}>
-				{withWrapper(sections, 'sections')}
-			</div>
+			<div className={`${baseClass} List`}>{withWrapper(sections, 'sections')}</div>
 			{withWrapper(footer, 'footer')}
 		</div>
 	);
