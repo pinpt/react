@@ -1195,6 +1195,6 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 	@apply text-center w-full my-8;
 }
 
-.Pinpoint.Page.Roadmap.List {
-	@apply space-y-8;
+.Pinpoint.Page.Roadmap.List .Pinpoint.sectionsWrapper .Pinpoint.constraint {
+	@apply space-y-8 mb-8;
 }

@@ -1,42 +1,29 @@
-import React, { forwardRef } from 'react';
+import React, { forwardRef, ReactElement } from 'react';
+import { IFooterProps } from '../../Footer';
+import { IHeaderProps } from '../../Header';
+import withWrapper from '../../Internal/withWrapper';
 import { PublishedRoadmapResponse } from '../../../lib/types/roadmap';
 import RoadmapCard from '../../RoadmapCard';
-import RoadmapSection from '../../RoadmapSection';
+import RoadmapSection, { IRoadmapSectionProps } from '../../RoadmapSection';
 
 export interface IRoadmapPageProps {
 	className?: string;
-	roadmap: PublishedRoadmapResponse;
-	defaultOpen?: boolean;
+	header?: ReactElement<IHeaderProps>;
+	sections?: ReactElement<IRoadmapSectionProps>[];
+	footer?: ReactElement<IFooterProps>;
 }
 
 const baseClass = 'Pinpoint Page Roadmap';
 
 const Roadmap = forwardRef((props: IRoadmapPageProps, ref: any) => {
-	const { className = '', roadmap, defaultOpen } = props;
+	const { className = '', header, sections, footer } = props;
 	return (
 		<div className={`${baseClass} Wrapper ${className}`} ref={ref}>
+			{withWrapper(header, 'header')}
 			<div className={`${baseClass} List`}>
-				{roadmap.columns?.map((column) => {
-					return (
-						<RoadmapSection
-							key={column.id}
-							title={column.title}
-							description={column.description}
-							initialOpen={defaultOpen ?? true}
-						>
-							{roadmap.board[column.id].map((item: any) => {
-								return (
-									<RoadmapCard title={item.title} description={item.description} key={item.id}>
-										{item.children.map((child: any) => {
-											return <div key={child.id}>{child.title}</div>;
-										})}
-									</RoadmapCard>
-								);
-							})}
-						</RoadmapSection>
-					);
-				})}
+				{withWrapper(sections, 'sections')}
 			</div>
+			{withWrapper(footer, 'footer')}
 		</div>
 	);
 });
