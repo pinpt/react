@@ -20,7 +20,11 @@ export default {
 } as Meta;
 
 export const Default: React.VFC<{}> = () => (
-	<RoadmapCard title="My cool feature" description="Some interesting points about the cool feature I made.">
+	<RoadmapCard
+		title="My cool feature"
+		description="Some interesting points about the cool feature I made."
+		dueDate={999}
+	>
 		<div>Point number 1 for the feature.</div>
 		<div>Another point for the feature.</div>
 		<div>The third and final thing about the cool feature.</div>

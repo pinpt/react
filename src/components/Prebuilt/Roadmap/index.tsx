@@ -97,7 +97,12 @@ const Roadmap = (props: IPrebuiltRoadmapProps) => {
 								>
 									{roadmap.board[column.id].map((item: any) => {
 										return (
-											<RoadmapCard title={item.title} description={item.description} key={item.id}>
+											<RoadmapCard
+												title={item.title}
+												description={item.description}
+												dueDate={item.dueDate}
+												key={item.id}
+											>
 												{item.children.map((child: any) => {
 													return <div key={child.id}>{child.title}</div>;
 												})}
