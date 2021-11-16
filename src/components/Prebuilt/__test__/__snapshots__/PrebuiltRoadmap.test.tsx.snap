@@ -88,18 +88,18 @@ exports[`Test custom className 1`] = `
           <a
             className="link"
             onClick={[Function]}
-            title="Pinpoint Changelog"
+            title="This is a roadmap"
           >
             <h1
               className="title"
             >
-              Pinpoint Changelog
+              This is a roadmap
             </h1>
           </a>
           <div
             className="description"
           >
-            New updates and improvements to Pinpoint
+            It has a title and a description
           </div>
           <div
             className="action"
@@ -961,18 +961,18 @@ exports[`Test full page 1`] = `
           <a
             className="link"
             onClick={[Function]}
-            title="Pinpoint Changelog"
+            title="This is a roadmap"
           >
             <h1
               className="title"
             >
-              Pinpoint Changelog
+              This is a roadmap
             </h1>
           </a>
           <div
             className="description"
           >
-            New updates and improvements to Pinpoint
+            It has a title and a description
           </div>
           <div
             className="action"
@@ -1834,18 +1834,18 @@ exports[`Test full page default closed 1`] = `
           <a
             className="link"
             onClick={[Function]}
-            title="Pinpoint Changelog"
+            title="This is a roadmap"
           >
             <h1
               className="title"
             >
-              Pinpoint Changelog
+              This is a roadmap
             </h1>
           </a>
           <div
             className="description"
           >
-            New updates and improvements to Pinpoint
+            It has a title and a description
           </div>
           <div
             className="action"
@@ -2395,18 +2395,18 @@ exports[`Test full page default empty 1`] = `
           <a
             className="link"
             onClick={[Function]}
-            title="Pinpoint Changelog"
+            title="This is another roadmap"
           >
             <h1
               className="title"
             >
-              Pinpoint Changelog
+              This is another roadmap
             </h1>
           </a>
           <div
             className="description"
           >
-            New updates and improvements to Pinpoint
+            It has a title and a description
           </div>
           <div
             className="action"

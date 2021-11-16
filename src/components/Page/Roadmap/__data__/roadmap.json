@@ -1,6 +1,8 @@
 {
 	"exists": true,
 	"success": true,
+	"title": "This is a roadmap",
+	"description": "It has a title and a description",
 	"columns": [
 		{
 			"id": "features",
