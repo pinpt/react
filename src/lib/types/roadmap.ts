@@ -4,4 +4,6 @@ export interface PublishedRoadmapResponse {
 	columns?: any[];
 	board: any;
 	publishedBy: Omit<any, 'id'>;
+	title?: string;
+	description?: string;
 }
