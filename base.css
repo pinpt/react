@@ -1214,3 +1214,59 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 .Pinpoint.Page.Roadmap.Wrapper {
 	@apply h-screen flex flex-col;
 }
+
+.Pinpoint.Vote.Wrapper {
+	@apply flex relative;
+}
+
+.Pinpoint.Vote.Icon {
+	@apply text-gray-700;
+}
+
+.Pinpoint.Vote.Options {
+	@apply absolute flex space-x-2 left-[-60px] bottom-[-5px] h-[50px] hidden;
+}
+
+.Pinpoint.Vote.Wrapper:hover .Pinpoint.Vote.Options {
+	@apply flex;
+}
+
+.Pinpoint.Vote.Options:hover {
+	@apply: flex;
+}
+
+.Pinpoint.Vote.Option:nth-child(1), .Pinpoint.Vote.Option:nth-child(5) {
+	@apply translate-y-6
+}
+
+.Pinpoint.Vote.Option:nth-child(2), .Pinpoint.Vote.Option:nth-child(4) {
+	@apply translate-y-2;
+}
+
+.Pinpoint.Vote.Option:nth-child(3) {
+	@apply translate-y-1
+}
+
+.Pinpoint.Vote.Option:nth-child(1) {
+	@apply translate-x-2
+}
+
+.Pinpoint.Vote.Option:nth-child(5) {
+	@apply -translate-x-2
+}
+
+.Pinpoint.Vote.Option {
+	@apply cursor-pointer
+}
+
+.Pinpoint.Vote.Option {
+	@apply w-5 h-5 rounded-full flex items-center text-center border border-transparent;
+	padding-right: 20px;
+}
+
+.Pinpoint.Vote.Option:hover {
+	@apply border border-white shadow;
+}
+.Pinpoint.Vote.Option.selected {
+	@apply bg-green-500 shadow;
+}
