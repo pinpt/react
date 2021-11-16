@@ -1,0 +1,359 @@
+{
+	"exists": true,
+	"success": true,
+	"columns": [
+		{
+			"id": "features",
+			"description": "Features for consideration",
+			"title": "Features",
+			"background": {
+				"dragover": "bg-gray-300",
+				"active": "bg-gray-100"
+			}
+		},
+		{
+			"id": "consideration",
+			"description": "Items under consideration",
+			"title": "Consideration",
+			"background": {
+				"dragover": "bg-blue-300",
+				"active": "bg-blue-100"
+			}
+		},
+		{
+			"id": "progress",
+			"description": "Items in progress",
+			"title": "In Progress",
+			"background": {
+				"active": "bg-yellow-100",
+				"dragover": "bg-yellow-300"
+			}
+		},
+		{
+			"id": "done",
+			"description": "Items that are finished",
+			"title": "Done",
+			"background": {
+				"active": "bg-green-100",
+				"dragover": "bg-green-500"
+			}
+		}
+	],
+	"board": {
+		"consideration": [
+			{
+				"children": [
+					{
+						"type": "custom",
+						"id": "0.8351911210326157-1636996314381",
+						"content": {
+							"html": "",
+							"doc": {
+								"type": "doc",
+								"content": [
+									{
+										"type": "paragraph",
+										"content": []
+									}
+								]
+							}
+						},
+						"title": "Create new roadmap card in the ui library",
+						"order": 0,
+						"dateAt": 1636996314381
+					}
+				],
+				"dateAt": 1636996292244,
+				"title": "Better Roadmap Cards",
+				"type": "feature",
+				"dueDate": 1639634400000,
+				"order": 0,
+				"id": "1636996292244-0.4917895241216428",
+				"description": "Right now the roadmap cards are a bit boring"
+			}
+		],
+		"done": [
+			{
+				"dateAt": 1636996195231,
+				"id": "1636996195231-0.014970658950312243",
+				"description": "We want to show when stuff is due!",
+				"type": "feature",
+				"children": [
+					{
+						"id": "0.018272201667766552-1636996210801",
+						"type": "custom",
+						"title": "Allow assigning items a due date",
+						"content": {
+							"doc": {
+								"type": "doc",
+								"content": [
+									{
+										"content": [],
+										"type": "paragraph"
+									}
+								]
+							},
+							"html": ""
+						},
+						"order": 0,
+						"dateAt": 1636996210801
+					},
+					{
+						"type": "custom",
+						"content": {
+							"html": "",
+							"doc": {
+								"type": "doc",
+								"content": [
+									{
+										"type": "paragraph",
+										"content": []
+									}
+								]
+							}
+						},
+						"dateAt": 1636996219183,
+						"title": "Render the due date on the card",
+						"id": "0.5545386721175729-1636996219183",
+						"order": 0
+					},
+					{
+						"order": 0,
+						"content": {
+							"doc": {
+								"type": "doc",
+								"content": [
+									{
+										"type": "paragraph",
+										"content": []
+									}
+								]
+							},
+							"html": ""
+						},
+						"id": "0.37070273549017574-1636996227073",
+						"title": "Build a calendar view that is capable of showing the cards on various days",
+						"dateAt": 1636996227073,
+						"type": "custom"
+					}
+				],
+				"title": "Create a Calendar View for Planning",
+				"order": 0
+			},
+			{
+				"order": 1,
+				"id": "1636996380509-0.41220898993173694",
+				"type": "feature",
+				"description": "The planning feature",
+				"title": "Planning",
+				"children": [
+					{
+						"content": {
+							"html": "",
+							"doc": {
+								"content": [
+									{
+										"content": [],
+										"type": "paragraph"
+									}
+								],
+								"type": "doc"
+							}
+						},
+						"id": "0.779079862908779-1636996390186",
+						"order": 0,
+						"type": "custom",
+						"title": "Make planning awesome",
+						"dateAt": 1636996390186
+					}
+				],
+				"dateAt": 1636996380509
+			},
+			{
+				"dateAt": 1636996396366,
+				"type": "feature",
+				"title": "Write Software",
+				"id": "1636996396366-0.10653790351538994",
+				"description": "We should write some software probaby",
+				"order": 2,
+				"children": [
+					{
+						"order": 0,
+						"title": "The software should do at least one thing",
+						"type": "custom",
+						"dateAt": 1636996414932,
+						"id": "0.879329829092016-1636996414932",
+						"content": {
+							"doc": {
+								"type": "doc",
+								"content": [
+									{
+										"type": "paragraph",
+										"content": []
+									}
+								]
+							},
+							"html": ""
+						}
+					},
+					{
+						"content": {
+							"doc": {
+								"content": [
+									{
+										"type": "paragraph",
+										"content": []
+									}
+								],
+								"type": "doc"
+							},
+							"html": ""
+						},
+						"type": "custom",
+						"id": "0.11185334948781489-1636996429310",
+						"dateAt": 1636996429310,
+						"title": "Actually, it should probably do at least two things, maybe even more. This text just needs to be long so I'm going to keep talking.",
+						"order": 0
+					}
+				]
+			}
+		],
+		"progress": [
+			{
+				"order": 0,
+				"children": [
+					{
+						"dateAt": 1636996352996,
+						"id": "0.047892442821842574-1636996352996",
+						"title": "Ability to drag items between columns",
+						"type": "custom",
+						"content": {
+							"doc": {
+								"content": [
+									{
+										"content": [],
+										"type": "paragraph"
+									}
+								],
+								"type": "doc"
+							},
+							"html": ""
+						},
+						"order": 0
+					},
+					{
+						"title": "Ability to set due dates for items (or estimated completion date)",
+						"id": "0.23782730781994554-1636996359760",
+						"dateAt": 1636996359760,
+						"order": 0,
+						"content": {
+							"doc": {
+								"content": [
+									{
+										"type": "paragraph",
+										"content": []
+									}
+								],
+								"type": "doc"
+							},
+							"html": ""
+						},
+						"type": "custom"
+					}
+				],
+				"id": "1636996334066-0.20457956247449505",
+				"title": "Private Planning Data",
+				"dateAt": 1636996334066,
+				"dueDate": 1637820000000,
+				"type": "feature",
+				"description": "The view for planning data to customers"
+			},
+			{
+				"id": "1636996140110-0.50629272164942",
+				"description": "The planning view should be visible to readers once published",
+				"dueDate": 1637906400000,
+				"type": "feature",
+				"children": [
+					{
+						"content": {
+							"html": "",
+							"doc": {
+								"type": "doc",
+								"content": [
+									{
+										"content": [],
+										"type": "paragraph"
+									}
+								]
+							}
+						},
+						"order": 0,
+						"type": "custom",
+						"title": "The publishing flow should allow there to be different versions",
+						"dateAt": 1636996164571,
+						"id": "0.6862470007042387-1636996164571"
+					},
+					{
+						"title": "Component library should support customers' ability to customize",
+						"type": "custom",
+						"content": {
+							"html": "",
+							"doc": {
+								"type": "doc",
+								"content": [
+									{
+										"content": [],
+										"type": "paragraph"
+									}
+								]
+							}
+						},
+						"order": 0,
+						"id": "0.317187050202169-1636996175972",
+						"dateAt": 1636996175972
+					}
+				],
+				"title": "Create a Public Planning View",
+				"order": 1,
+				"dateAt": 1636996140110
+			}
+		],
+		"features": [
+			{
+				"description": "Add drag and drop features to the calendar component",
+				"id": "1636996247793-0.35149232302258704",
+				"title": "Drag and Drop Calendar",
+				"type": "feature",
+				"children": [
+					{
+						"order": 0,
+						"title": "Need to wire up a dnd backend",
+						"content": {
+							"doc": {
+								"type": "doc",
+								"content": [
+									{
+										"type": "paragraph",
+										"content": []
+									}
+								]
+							},
+							"html": ""
+						},
+						"id": "0.0984685531689915-1636996273960",
+						"dateAt": 1636996273960,
+						"type": "custom"
+					}
+				],
+				"dateAt": 1636996247793,
+				"order": 0
+			}
+		]
+	},
+	"publishedBy": {
+		"firstName": "Keegan",
+		"id": "trf3XtLCwGcYyZogH6OoKEQO9cs2",
+		"avatarUrl": "https://lh3.googleusercontent.com/a-/AOh14Gj-IoAU4Z2Bscm7Uo7UsRyeH6yYKvPZAnEp4FVi=s96-c",
+		"lastName": "Donley"
+	}
+}

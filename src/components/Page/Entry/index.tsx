@@ -1,12 +1,11 @@
 import React, { forwardRef, ReactElement } from 'react';
-import withWrapper from '../../Internal/withWrapper';
-import { CoverMedia } from '../../Renderer';
-
 import type { ICoverMedia } from '../../../lib/types';
 import type { IFeedbackProps } from '../../../lib/types/feedback';
 import type { IFooterProps } from '../../Footer';
 import type { IHeaderProps } from '../../Header';
+import withWrapper from '../../Internal/withWrapper';
 import type { IPaginationProps } from '../../Pagination';
+import { CoverMedia } from '../../Renderer';
 import type { ISidebarProps } from '../../Sidebar';
 
 export interface IPageEntryProps {

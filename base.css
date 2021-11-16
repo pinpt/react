@@ -1154,3 +1154,63 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 		transition: transform 1ms !important;
 	}
 }
+
+.Pinpoint.RoadmapCard.Wrapper {
+	@apply border inline-flex flex-col flex-grow dark:border-gray-700 max-w-[100%] sm:max-w-[45%] rounded-sm overflow-hidden shadow;
+}
+
+.Pinpoint.RoadmapCard .Heading {
+	@apply border-b dark:border-gray-700 flex p-4 flex-col dark:text-white;
+}
+
+.Pinpoint.RoadmapCard .Top {
+	@apply flex items-start mb-2;
+}
+
+.Pinpoint.RoadmapCard .Top .DueDate {
+	@apply ml-auto text-xs flex items-center space-x-2 mt-[0.4rem];
+}
+
+.Pinpoint.RoadmapCard .Heading .Title {
+	@apply text-lg dark:text-white mr-6 font-bold;
+}
+
+.Pinpoint.RoadmapCard .Heading .Description {
+	@apply text-sm text-gray-500 dark:text-gray-300;
+}
+
+.Pinpoint.RoadmapCard .Body {
+	@apply flex p-4 text-sm flex-col gap-y-3 flex-grow dark:text-white;
+}
+
+.Pinpoint.RoadmapSection .Children {
+	@apply flex flex-wrap gap-4 mt-4 ml-10;
+}
+
+.Pinpoint.RoadmapSection .Pinpoint.RoadmapSection.Title {
+	@apply flex items-center select-none text-lg dark:text-white;
+}
+
+.Pinpoint.RoadmapSection .Pinpoint.RoadmapSection.Description {
+	@apply ml-10 text-gray-500 dark:text-gray-300;
+}
+
+.Pinpoint.RoadmapSection .Pinpoint.RoadmapSection.Title .Icon {
+	@apply m-2 cursor-pointer;
+}
+
+.Pinpoint.RoadmapSection.Children .Pinpoint.RoadmapSection.Empty {
+	@apply text-center w-full my-8 text-gray-500;
+}
+
+.Pinpoint.Page.Roadmap.List {
+	@apply flex-grow mt-8;
+}
+
+.Pinpoint.Page.Roadmap.List .Pinpoint.sectionsWrapper .Pinpoint.constraint {
+	@apply space-y-8 mb-8;
+}
+
+.Pinpoint.Page.Roadmap.Wrapper {
+	@apply h-screen flex flex-col;
+}

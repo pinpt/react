@@ -25,6 +25,7 @@
 		"eulaLink": "https://home.pinpoint.com/legal/eula"
 	},
 	"features": {
-		"feedback": true
+		"feedback": true,
+		"roadmap": true
 	}
 }

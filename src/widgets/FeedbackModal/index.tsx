@@ -4,9 +4,9 @@ import { faExclamationCircle, faTimes } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Modal from '../../components/Modal';
 import useFeedback from '../../lib/hooks/useFeedback';
+import type { IFeedbackModalProps } from '../../lib/types/feedback';
 import { EmailInput, MessageInput, SendButton } from '../Feedback';
 
-import type { IFeedbackModalProps } from '../../lib/types/feedback';
 const FeedbackModal = (props: IFeedbackModalProps) => {
 	const modalRef = useRef<any>();
 	const {

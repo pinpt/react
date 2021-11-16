@@ -1,6 +1,5 @@
 import { executeAPI } from '../fetch';
 import { getSubscriberId, setSubscriberId } from '../subscription';
-
 import type { IPinpointConfig } from '../types/config';
 
 interface FeedbackLink {

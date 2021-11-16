@@ -1,6 +1,5 @@
 import _fetch from 'unfetch';
 import sleep from './sleep';
-
 import type { IPinpointConfig } from './types';
 
 const DEBUG =

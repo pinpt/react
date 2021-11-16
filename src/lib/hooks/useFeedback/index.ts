@@ -1,7 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { submitFeedback } from '../../data/feedback';
 import { getSubscriberId, isSubscriberCookieSet, validateEmail } from '../../subscription';
-
 import type { IFeedbackProps } from '../../types/feedback';
 
 type FeedbackProps = Omit<IFeedbackProps, 'title' | 'className' | 'showDisclaimer' | 'disclaimer'> & {

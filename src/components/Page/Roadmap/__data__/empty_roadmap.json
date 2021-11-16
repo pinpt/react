@@ -1,0 +1,229 @@
+{
+	"exists": true,
+	"success": true,
+	"columns": [
+		{
+			"id": "features",
+			"description": "Features for consideration",
+			"title": "Features",
+			"background": {
+				"active": "bg-gray-100",
+				"dragover": "bg-gray-300"
+			}
+		},
+		{
+			"id": "consideration",
+			"description": "Items under consideration",
+			"title": "Consideration",
+			"background": {
+				"active": "bg-blue-100",
+				"dragover": "bg-blue-300"
+			}
+		},
+		{
+			"id": "progress",
+			"description": "Items in progress",
+			"title": "In Progress",
+			"background": {
+				"dragover": "bg-yellow-300",
+				"active": "bg-yellow-100"
+			}
+		},
+		{
+			"id": "done",
+			"description": "Items that are finished",
+			"title": "Done",
+			"background": {
+				"active": "bg-green-100",
+				"dragover": "bg-green-500"
+			}
+		}
+	],
+	"board": {
+		"consideration": [
+			{
+				"title": "Better Roadmap Cards",
+				"dateAt": 1636996292244,
+				"children": [
+					{
+						"id": "0.8351911210326157-1636996314381",
+						"content": {
+							"doc": {
+								"type": "doc",
+								"content": [
+									{
+										"type": "paragraph",
+										"content": []
+									}
+								]
+							},
+							"html": ""
+						},
+						"dateAt": 1636996314381,
+						"type": "custom",
+						"title": "Create new roadmap card in the ui library",
+						"order": 0
+					}
+				],
+				"order": 0,
+				"id": "1636996292244-0.4917895241216428",
+				"type": "feature",
+				"description": "Right now the roadmap cards are a bit boring"
+			}
+		],
+		"progress": [],
+		"features": [],
+		"done": [
+			{
+				"children": [
+					{
+						"order": 0,
+						"id": "0.018272201667766552-1636996210801",
+						"dateAt": 1636996210801,
+						"title": "Allow assigning items a due date",
+						"type": "custom",
+						"content": {
+							"html": "",
+							"doc": {
+								"content": [
+									{
+										"content": [],
+										"type": "paragraph"
+									}
+								],
+								"type": "doc"
+							}
+						}
+					},
+					{
+						"type": "custom",
+						"title": "Render the due date on the card",
+						"order": 0,
+						"content": {
+							"html": "",
+							"doc": {
+								"content": [
+									{
+										"type": "paragraph",
+										"content": []
+									}
+								],
+								"type": "doc"
+							}
+						},
+						"id": "0.5545386721175729-1636996219183",
+						"dateAt": 1636996219183
+					},
+					{
+						"type": "custom",
+						"order": 0,
+						"id": "0.37070273549017574-1636996227073",
+						"dateAt": 1636996227073,
+						"title": "Build a calendar view that is capable of showing the cards on various days",
+						"content": {
+							"doc": {
+								"type": "doc",
+								"content": [
+									{
+										"type": "paragraph",
+										"content": []
+									}
+								]
+							},
+							"html": ""
+						}
+					}
+				],
+				"id": "1636996195231-0.014970658950312243",
+				"type": "feature",
+				"order": 0,
+				"description": "We want to show when stuff is due!",
+				"dateAt": 1636996195231,
+				"title": "Create a Calendar View for Planning"
+			},
+			{
+				"type": "feature",
+				"children": [
+					{
+						"title": "Make planning awesome",
+						"type": "custom",
+						"content": {
+							"html": "",
+							"doc": {
+								"content": [
+									{
+										"content": [],
+										"type": "paragraph"
+									}
+								],
+								"type": "doc"
+							}
+						},
+						"dateAt": 1636996390186,
+						"order": 0,
+						"id": "0.779079862908779-1636996390186"
+					}
+				],
+				"dateAt": 1636996380509,
+				"order": 1,
+				"id": "1636996380509-0.41220898993173694",
+				"title": "Planning",
+				"description": "The planning feature"
+			},
+			{
+				"type": "feature",
+				"id": "1636996396366-0.10653790351538994",
+				"order": 2,
+				"description": "We should write some software probaby",
+				"dateAt": 1636996396366,
+				"title": "Write Software",
+				"children": [
+					{
+						"id": "0.879329829092016-1636996414932",
+						"order": 0,
+						"type": "custom",
+						"title": "The software should do at least one thing",
+						"dateAt": 1636996414932,
+						"content": {
+							"doc": {
+								"content": [
+									{
+										"content": [],
+										"type": "paragraph"
+									}
+								],
+								"type": "doc"
+							},
+							"html": ""
+						}
+					},
+					{
+						"content": {
+							"doc": {
+								"content": [
+									{
+										"content": [],
+										"type": "paragraph"
+									}
+								],
+								"type": "doc"
+							},
+							"html": ""
+						},
+						"title": "Actually, it should probably do at least two things, maybe even more. This text just needs to be long so I'm going to keep talking.",
+						"id": "0.11185334948781489-1636996429310",
+						"dateAt": 1636996429310,
+						"order": 0,
+						"type": "custom"
+					}
+				]
+			}
+		]
+	},
+	"publishedBy": {
+		"id": "trf3XtLCwGcYyZogH6OoKEQO9cs2",
+		"firstName": "Keegan",
+		"avatarUrl": "https://lh3.googleusercontent.com/a-/AOh14Gj-IoAU4Z2Bscm7Uo7UsRyeH6yYKvPZAnEp4FVi=s96-c",
+		"lastName": "Donley"
+	}
+}

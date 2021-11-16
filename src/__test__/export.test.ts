@@ -124,6 +124,12 @@ const {
 	CoverMedia,
 	registerRenderer,
 	getRenderer,
+	fetchRoadmap,
+	useRoadmap,
+	RoadmapCard,
+	RoadmapSection,
+	RoadmapPage,
+	PrebuiltRoadmap,
 	...otherExports
 } = Exports;
 
@@ -150,6 +156,7 @@ test('Test component exports', () => {
 	expect(DashboardPage).toBeTruthy();
 	expect(EntryPage).toBeTruthy();
 	expect(ErrorPage).toBeTruthy();
+	expect(RoadmapPage).toBeTruthy();
 
 	// Test Tags Exports
 	expect(Tags).toBeTruthy();
@@ -169,6 +176,7 @@ test('Test component exports', () => {
 	expect(PrebuiltSubscriptionSubscribe).toBeTruthy();
 	expect(PrebuiltSubscriptionUnsubscribe).toBeTruthy();
 	expect(PrebuiltSubscriptionVerify).toBeTruthy();
+	expect(PrebuiltRoadmap).toBeTruthy();
 
 	// Test Search Exports
 	expect(Search).toBeTruthy();
@@ -218,6 +226,10 @@ test('Test component exports', () => {
 	expect(SubscriptionSubscribe).toBeTruthy();
 	expect(SubscriptionUnsubscribe).toBeTruthy();
 	expect(SubscriptionVerify).toBeTruthy();
+
+	// Test roadmap components
+	expect(RoadmapSection).toBeTruthy();
+	expect(RoadmapCard).toBeTruthy();
 });
 
 test('Test util exports', () => {
@@ -246,6 +258,7 @@ test('Test util exports', () => {
 	expect(titleCase).toBeTruthy();
 	expect(validateSubscription).toBeTruthy();
 	expect(listSubscriptions).toBeTruthy();
+	expect(fetchRoadmap).toBeTruthy();
 });
 
 test('Test hook exports', () => {
@@ -259,6 +272,7 @@ test('Test hook exports', () => {
 	expect(useSubscriptionList).toBeTruthy();
 	expect(useSubscription).toBeTruthy();
 	expect(useSubscriptionUpdater).toBeTruthy();
+	expect(useRoadmap).toBeTruthy();
 });
 
 test('Test widget exports', () => {

@@ -2,7 +2,6 @@ import React from 'react';
 import { faExternalLinkSquareAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from '../../components/Image';
-
 import type { IContent } from '../../lib/types';
 
 type Styles = 'style1' | 'style2';

@@ -8,3 +8,4 @@ export { default as PrebuiltSubscriptionSubscribe } from './Subscription/Subscri
 export { default as PrebuiltSubscriptionUnsubscribe } from './Subscription/Unsubscribe';
 export { default as PrebuiltSubscriptionVerify } from './Subscription/Verify';
 export { default as PrebuiltSubscriptionManage } from './Subscription/Manage';
+export { default as PrebuiltRoadmap } from './Roadmap';
