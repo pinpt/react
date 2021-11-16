@@ -1,12 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Subtitle, Description, Primary, Stories, ArgsTable, PRIMARY_STORY } from '@storybook/addon-docs';
 import { Meta } from '@storybook/react';
-import { ContentTemplateType, IContent } from '../../../lib/types';
 import empty_roadmap from '../../Page/Roadmap/__data__/empty_roadmap.json';
 import roadmap from '../../Page/Roadmap/__data__/roadmap.json';
-import content from '../../Pinpoint/__data__/testDocumentIFramely.json';
 import PrebuiltRoadmap from '../Roadmap';
-import entries from '../__data__/testEntries.json';
 import site from '../__data__/testSite.json';
 
 const { default: readme } = require('../Roadmap/README.md');

@@ -82,6 +82,8 @@ const Roadmap = (props: IPrebuiltRoadmapProps) => {
 								renderSearch={renderSearch}
 								renderSubscribe={renderSubscribe}
 								renderThemeToggle={renderThemeToggle}
+								title={roadmap.title}
+								description={roadmap.description}
 							/>
 						)
 					}
