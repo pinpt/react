@@ -6,10 +6,10 @@ import { IPinpointConfig, ISite } from '../../types';
 
 const useRoadmap = (config: Omit<IPinpointConfig, 'pageSize'>, site: ISite) => {
 	const [loading, setLoading] = useState(true);
-	const [votePending, setVotePending] = useState(false);
 	const [error, setError] = useState('');
 	const [userVotes, setUserVotes] = useState<Record<string, number>>({});
 	const [globalVotes, setGlobalVotes] = useState<Record<string, number>>({});
+	const [pendingVotes, setPendingVotes] = useState<Record<string, boolean>>({});
 
 	const _fetch = useCallback(
 		async (indicator = true) => {
@@ -35,7 +35,11 @@ const useRoadmap = (config: Omit<IPinpointConfig, 'pageSize'>, site: ISite) => {
 
 	const handleVote = useCallback(
 		async (featureId: string, vote: number, email?: string) => {
-			setVotePending(true);
+			setPendingVotes((curr) => {
+				const res = { ...curr };
+				res[featureId] = true;
+				return res;
+			});
 			try {
 				setError('');
 				const subscriberId = await createVote(
@@ -59,7 +63,11 @@ const useRoadmap = (config: Omit<IPinpointConfig, 'pageSize'>, site: ISite) => {
 			} catch (ex: any) {
 				setError(ex.message);
 			} finally {
-				setVotePending(false);
+				setPendingVotes((curr) => {
+					const res = { ...curr };
+					delete res[featureId];
+					return res;
+				});
 			}
 		},
 		[site, _fetch]
@@ -75,7 +83,7 @@ const useRoadmap = (config: Omit<IPinpointConfig, 'pageSize'>, site: ISite) => {
 		userVotes,
 		globalVotes,
 		handleVote,
-		votePending,
+		pendingVotes,
 	};
 };
 
