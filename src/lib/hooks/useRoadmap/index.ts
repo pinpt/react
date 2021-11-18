@@ -1,28 +1,55 @@
 import { useCallback, useEffect, useState } from 'react';
-import { fetchRoadmap } from '../../data';
+import { setSubscriberId } from '../../../lib/subscription';
+import { createVote, getVoteCounts } from '../../data';
 import { getRouterAbsolutePath } from '../../router';
 import { IPinpointConfig, ISite } from '../../types';
-import { PublishedRoadmapResponse } from '../../types/roadmap';
 
 const useRoadmap = (config: Omit<IPinpointConfig, 'pageSize'>, site: ISite) => {
 	const [loading, setLoading] = useState(true);
 	const [error, setError] = useState('');
-	const [roadmap, setRoadmap] = useState<PublishedRoadmapResponse>();
+	const [userVotes, setUserVotes] = useState<Record<string, number>>({});
+	const [globalVotes, setGlobalVotes] = useState<Record<string, number>>({});
+
 	const _fetch = useCallback(async () => {
 		try {
 			setLoading(true);
 			setError('');
-			const res = await fetchRoadmap({
+			const { userVoteCounts, globalVoteCounts } = await getVoteCounts({
 				...config,
 				siteUrl: getRouterAbsolutePath(site, ''),
 			});
-			setRoadmap(res);
+			setUserVotes(userVoteCounts);
+			setGlobalVotes(globalVoteCounts);
 		} catch (ex: any) {
 			setError(ex.message);
 		} finally {
 			setLoading(false);
 		}
 	}, [config, site]);
+
+	const handleVote = useCallback(
+		async (featureId: string, vote: number, email?: string) => {
+			const subscriberId = await createVote(
+				{
+					...config,
+					siteUrl: getRouterAbsolutePath(site, ''),
+				},
+				featureId,
+				vote,
+				email
+			);
+
+			if (subscriberId) {
+				setSubscriberId(subscriberId);
+			}
+			setUserVotes((current) => {
+				const result = { ...current };
+				result[featureId] = vote;
+				return result;
+			});
+		},
+		[site]
+	);
 
 	useEffect(() => {
 		_fetch();
@@ -31,7 +58,9 @@ const useRoadmap = (config: Omit<IPinpointConfig, 'pageSize'>, site: ISite) => {
 	return {
 		loading,
 		error,
-		roadmap,
+		userVotes,
+		globalVotes,
+		handleVote,
 	};
 };
 
