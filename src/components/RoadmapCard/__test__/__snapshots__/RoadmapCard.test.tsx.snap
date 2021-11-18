@@ -1,5 +1,103 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Test No Vote Selected 1`] = `
+<div
+  className="Pinpoint RoadmapCard Wrapper "
+>
+  <div
+    className="Pinpoint RoadmapCard Heading"
+  >
+    <div
+      className="Pinpoint RoadmapCard Top"
+    >
+      <div
+        className="Pinpoint RoadmapCard Title"
+      >
+        My cool feature
+      </div>
+      <div
+        className="Pinpoint RoadmapCard DueDate"
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-calendar-alt fa-w-14 "
+          data-icon="calendar-alt"
+          data-prefix="far"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 448 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+        <span
+          className="Pinpoint Date "
+        >
+          12/31/1969
+        </span>
+      </div>
+    </div>
+    <div
+      className="Pinpoint RoadmapCard Description"
+    >
+      Some interesting points about the cool feature I made.
+    </div>
+  </div>
+  <div
+    className="Pinpoint RoadmapCard Body"
+  >
+    <div>
+      Point number 1 for the feature.
+    </div>
+    <div>
+      Another point for the feature.
+    </div>
+    <div>
+      The third and final thing about the cool feature.
+    </div>
+  </div>
+  <div
+    className="Pinpoint RoadmapCard Actions"
+  >
+    <div
+      className="Pinpoint RoadmapCard VoteButton"
+    >
+      <div
+        className="Pinpoint Vote Wrapper "
+      >
+        <div
+          className="Pinpoint Vote Icon"
+          onClick={[Function]}
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-vote-yea fa-w-20 fa-fw Pinpoint Vote Button "
+            data-icon="vote-yea"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 640 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M608 320h-64v64h22.4c5.3 0 9.6 3.6 9.6 8v16c0 4.4-4.3 8-9.6 8H73.6c-5.3 0-9.6-3.6-9.6-8v-16c0-4.4 4.3-8 9.6-8H96v-64H32c-17.7 0-32 14.3-32 32v96c0 17.7 14.3 32 32 32h576c17.7 0 32-14.3 32-32v-96c0-17.7-14.3-32-32-32zm-96 64V64.3c0-17.9-14.5-32.3-32.3-32.3H160.4C142.5 32 128 46.5 128 64.3V384h384zM211.2 202l25.5-25.3c4.2-4.2 11-4.2 15.2.1l41.3 41.6 95.2-94.4c4.2-4.2 11-4.2 15.2.1l25.3 25.5c4.2 4.2 4.2 11-.1 15.2L300.5 292c-4.2 4.2-11 4.2-15.2-.1l-74.1-74.7c-4.3-4.2-4.2-11 0-15.2z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Test custom className 1`] = `
 <div
   className="Pinpoint RoadmapCard Wrapper test-custom"
@@ -59,6 +157,61 @@ exports[`Test custom className 1`] = `
     </div>
     <div>
       The third and final thing about the cool feature.
+    </div>
+  </div>
+  <div
+    className="Pinpoint RoadmapCard Actions"
+  >
+    <div
+      className="Pinpoint RoadmapCard VoteButton"
+    >
+      <div
+        className="Pinpoint Vote Wrapper "
+      >
+        <div
+          className="Pinpoint Vote Icon"
+          onClick={[Function]}
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-vote-yea fa-w-20 fa-fw Pinpoint Vote Button selected"
+            data-icon="vote-yea"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 640 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M608 320h-64v64h22.4c5.3 0 9.6 3.6 9.6 8v16c0 4.4-4.3 8-9.6 8H73.6c-5.3 0-9.6-3.6-9.6-8v-16c0-4.4 4.3-8 9.6-8H96v-64H32c-17.7 0-32 14.3-32 32v96c0 17.7 14.3 32 32 32h576c17.7 0 32-14.3 32-32v-96c0-17.7-14.3-32-32-32zm-96 64V64.3c0-17.9-14.5-32.3-32.3-32.3H160.4C142.5 32 128 46.5 128 64.3V384h384zM211.2 202l25.5-25.3c4.2-4.2 11-4.2 15.2.1l41.3 41.6 95.2-94.4c4.2-4.2 11-4.2 15.2.1l25.3 25.5c4.2 4.2 4.2 11-.1 15.2L300.5 292c-4.2 4.2-11 4.2-15.2-.1l-74.1-74.7c-4.3-4.2-4.2-11 0-15.2z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <div
+            className="Pinpoint Vote Indicator"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-meh fa-w-16 fa-fw "
+              data-icon="meh"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 496 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm-80 168c17.7 0 32 14.3 32 32s-14.3 32-32 32-32-14.3-32-32 14.3-32 32-32zm176 192H152c-21.2 0-21.2-32 0-32h192c21.2 0 21.2 32 0 32zm-16-128c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -125,6 +278,61 @@ exports[`Test default 1`] = `
       The third and final thing about the cool feature.
     </div>
   </div>
+  <div
+    className="Pinpoint RoadmapCard Actions"
+  >
+    <div
+      className="Pinpoint RoadmapCard VoteButton"
+    >
+      <div
+        className="Pinpoint Vote Wrapper "
+      >
+        <div
+          className="Pinpoint Vote Icon"
+          onClick={[Function]}
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-vote-yea fa-w-20 fa-fw Pinpoint Vote Button selected"
+            data-icon="vote-yea"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 640 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M608 320h-64v64h22.4c5.3 0 9.6 3.6 9.6 8v16c0 4.4-4.3 8-9.6 8H73.6c-5.3 0-9.6-3.6-9.6-8v-16c0-4.4 4.3-8 9.6-8H96v-64H32c-17.7 0-32 14.3-32 32v96c0 17.7 14.3 32 32 32h576c17.7 0 32-14.3 32-32v-96c0-17.7-14.3-32-32-32zm-96 64V64.3c0-17.9-14.5-32.3-32.3-32.3H160.4C142.5 32 128 46.5 128 64.3V384h384zM211.2 202l25.5-25.3c4.2-4.2 11-4.2 15.2.1l41.3 41.6 95.2-94.4c4.2-4.2 11-4.2 15.2.1l25.3 25.5c4.2 4.2 4.2 11-.1 15.2L300.5 292c-4.2 4.2-11 4.2-15.2-.1l-74.1-74.7c-4.3-4.2-4.2-11 0-15.2z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <div
+            className="Pinpoint Vote Indicator"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-meh fa-w-16 fa-fw "
+              data-icon="meh"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 496 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm-80 168c17.7 0 32 14.3 32 32s-14.3 32-32 32-32-14.3-32-32 14.3-32 32-32zm176 192H152c-21.2 0-21.2-32 0-32h192c21.2 0 21.2 32 0 32zm-16-128c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 `;
 
@@ -184,6 +392,61 @@ exports[`Test no description 1`] = `
       The third and final thing about the cool feature.
     </div>
   </div>
+  <div
+    className="Pinpoint RoadmapCard Actions"
+  >
+    <div
+      className="Pinpoint RoadmapCard VoteButton"
+    >
+      <div
+        className="Pinpoint Vote Wrapper "
+      >
+        <div
+          className="Pinpoint Vote Icon"
+          onClick={[Function]}
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-vote-yea fa-w-20 fa-fw Pinpoint Vote Button selected"
+            data-icon="vote-yea"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 640 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M608 320h-64v64h22.4c5.3 0 9.6 3.6 9.6 8v16c0 4.4-4.3 8-9.6 8H73.6c-5.3 0-9.6-3.6-9.6-8v-16c0-4.4 4.3-8 9.6-8H96v-64H32c-17.7 0-32 14.3-32 32v96c0 17.7 14.3 32 32 32h576c17.7 0 32-14.3 32-32v-96c0-17.7-14.3-32-32-32zm-96 64V64.3c0-17.9-14.5-32.3-32.3-32.3H160.4C142.5 32 128 46.5 128 64.3V384h384zM211.2 202l25.5-25.3c4.2-4.2 11-4.2 15.2.1l41.3 41.6 95.2-94.4c4.2-4.2 11-4.2 15.2.1l25.3 25.5c4.2 4.2 4.2 11-.1 15.2L300.5 292c-4.2 4.2-11 4.2-15.2-.1l-74.1-74.7c-4.3-4.2-4.2-11 0-15.2z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <div
+            className="Pinpoint Vote Indicator"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-meh fa-w-16 fa-fw "
+              data-icon="meh"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 496 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm-80 168c17.7 0 32 14.3 32 32s-14.3 32-32 32-32-14.3-32-32 14.3-32 32-32zm176 192H152c-21.2 0-21.2-32 0-32h192c21.2 0 21.2 32 0 32zm-16-128c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 `;
 
@@ -202,6 +465,125 @@ exports[`Test no due date 1`] = `
       >
         My cool feature
       </div>
+    </div>
+  </div>
+  <div
+    className="Pinpoint RoadmapCard Body"
+  >
+    <div>
+      Point number 1 for the feature.
+    </div>
+    <div>
+      Another point for the feature.
+    </div>
+    <div>
+      The third and final thing about the cool feature.
+    </div>
+  </div>
+  <div
+    className="Pinpoint RoadmapCard Actions"
+  >
+    <div
+      className="Pinpoint RoadmapCard VoteButton"
+    >
+      <div
+        className="Pinpoint Vote Wrapper "
+      >
+        <div
+          className="Pinpoint Vote Icon"
+          onClick={[Function]}
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-vote-yea fa-w-20 fa-fw Pinpoint Vote Button selected"
+            data-icon="vote-yea"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 640 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M608 320h-64v64h22.4c5.3 0 9.6 3.6 9.6 8v16c0 4.4-4.3 8-9.6 8H73.6c-5.3 0-9.6-3.6-9.6-8v-16c0-4.4 4.3-8 9.6-8H96v-64H32c-17.7 0-32 14.3-32 32v96c0 17.7 14.3 32 32 32h576c17.7 0 32-14.3 32-32v-96c0-17.7-14.3-32-32-32zm-96 64V64.3c0-17.9-14.5-32.3-32.3-32.3H160.4C142.5 32 128 46.5 128 64.3V384h384zM211.2 202l25.5-25.3c4.2-4.2 11-4.2 15.2.1l41.3 41.6 95.2-94.4c4.2-4.2 11-4.2 15.2.1l25.3 25.5c4.2 4.2 4.2 11-.1 15.2L300.5 292c-4.2 4.2-11 4.2-15.2-.1l-74.1-74.7c-4.3-4.2-4.2-11 0-15.2z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <div
+            className="Pinpoint Vote Indicator"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-meh fa-w-16 fa-fw "
+              data-icon="meh"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 496 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm-80 168c17.7 0 32 14.3 32 32s-14.3 32-32 32-32-14.3-32-32 14.3-32 32-32zm176 192H152c-21.2 0-21.2-32 0-32h192c21.2 0 21.2 32 0 32zm-16-128c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Test no voting 1`] = `
+<div
+  className="Pinpoint RoadmapCard Wrapper "
+>
+  <div
+    className="Pinpoint RoadmapCard Heading"
+  >
+    <div
+      className="Pinpoint RoadmapCard Top"
+    >
+      <div
+        className="Pinpoint RoadmapCard Title"
+      >
+        My cool feature
+      </div>
+      <div
+        className="Pinpoint RoadmapCard DueDate"
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-calendar-alt fa-w-14 "
+          data-icon="calendar-alt"
+          data-prefix="far"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 448 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+        <span
+          className="Pinpoint Date "
+        >
+          12/31/1969
+        </span>
+      </div>
+    </div>
+    <div
+      className="Pinpoint RoadmapCard Description"
+    >
+      Some interesting points about the cool feature I made.
     </div>
   </div>
   <div

@@ -12,12 +12,24 @@ export interface IRoadmapCardProps {
 	dueDate?: number;
 	selectedVote: number;
 	setSelectedVote: (value: number) => void;
+	onSubmitNewSubscriber: (email: string, value: number) => void;
+	enableVoting?: boolean;
 }
 
 const baseClass = `Pinpoint RoadmapCard`;
 
 const RoadmapCard = (props: IRoadmapCardProps) => {
-	const { className = '', title, description, children, dueDate = -1, selectedVote, setSelectedVote } = props;
+	const {
+		className = '',
+		title,
+		description,
+		children,
+		dueDate = -1,
+		selectedVote,
+		setSelectedVote,
+		onSubmitNewSubscriber,
+		enableVoting = false,
+	} = props;
 
 	return (
 		<div className={`${baseClass} Wrapper ${className}`}>
@@ -34,11 +46,18 @@ const RoadmapCard = (props: IRoadmapCardProps) => {
 				{description && <div className={`${baseClass} Description`}>{description}</div>}
 			</div>
 			<div className={`${baseClass} Body`}>{children}</div>
-			<div className={`${baseClass} Actions`}>
-				<div className={`${baseClass} VoteButton`}>
-					<Vote selected={selectedVote} setSelected={setSelectedVote} />
+			{enableVoting && (
+				<div className={`${baseClass} Actions`}>
+					<div className={`${baseClass} VoteButton`}>
+						<Vote
+							selected={selectedVote}
+							setSelected={setSelectedVote}
+							onSubmitNewSubscriber={onSubmitNewSubscriber}
+							featureName={title}
+						/>
+					</div>
 				</div>
-			</div>
+			)}
 		</div>
 	);
 };

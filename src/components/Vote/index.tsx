@@ -1,11 +1,18 @@
-import { useCallback, useState } from 'react';
-import { faGrin, faLaugh, faLaughBeam, faMeh, faSmile, faVoteYea } from '@fortawesome/free-solid-svg-icons';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { faGrin, faLaugh, faLaughBeam, faMeh, faSmile, faTimes, faVoteYea } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { getSubscriberId } from '../../';
+import { validateEmail } from '../../lib/subscription';
+import { EmailInput } from '../../widgets/Feedback';
+import Modal from '../Modal';
 
 export interface IVoteProps {
 	className?: string;
 	selected: number;
 	setSelected: (value: number) => void;
+	modalClassName?: string;
+	featureName?: string;
+	onSubmitNewSubscriber: (email: string, vote: number) => void;
 }
 
 const baseClass = 'Pinpoint Vote';
@@ -20,8 +27,20 @@ const indicators = [
 ];
 
 const Vote = (props: IVoteProps) => {
-	const { className = '', selected, setSelected } = props;
+	const {
+		className = '',
+		selected,
+		setSelected,
+		modalClassName = '',
+		featureName = 'this feature',
+		onSubmitNewSubscriber,
+	} = props;
 	const [hasVoted, setHasVoted] = useState(false);
+	const [showModal, setShowModal] = useState(false);
+	const [email, setEmail] = useState('');
+	const [emailValid, setEmailValid] = useState(false);
+	const [internalSelected, setInternalSelected] = useState(-1);
+	const modalRef = useRef<any>();
 
 	const handleSelect = useCallback(
 		(score: number) => {
@@ -38,9 +57,38 @@ const Vote = (props: IVoteProps) => {
 		[selected, setSelected]
 	);
 
+	const subscriberId = useMemo(() => {
+		return getSubscriberId();
+	}, []);
+
+	const handleCloseModal = useCallback(() => {
+		setShowModal(false);
+		modalRef.current?.remove?.();
+	}, []);
+
+	useEffect(() => {
+		if (email) {
+			setEmailValid(validateEmail(email));
+		} else {
+			setEmailValid(false);
+		}
+	}, [email]);
+
+	const isFormValid = useMemo(() => {
+		return emailValid && internalSelected > 0;
+	}, [emailValid, internalSelected]);
+
+	const handleSubmit = useCallback(() => {
+		console.log('submit', isFormValid);
+		if (isFormValid) {
+			onSubmitNewSubscriber(email, internalSelected);
+			handleCloseModal();
+		}
+	}, [isFormValid, email, internalSelected, handleCloseModal]);
+
 	return (
 		<div className={`${baseClass} Wrapper ${className}`}>
-			<div className={`${baseClass} Icon`}>
+			<div className={`${baseClass} Icon`} onClick={!subscriberId ? () => setShowModal(true) : undefined}>
 				<FontAwesomeIcon
 					className={`${baseClass} Button ${selected > 0 ? 'selected' : ''}`}
 					icon={faVoteYea}
@@ -48,23 +96,107 @@ const Vote = (props: IVoteProps) => {
 				/>
 				{selected > 0 ? <div className={`${baseClass} Indicator`}>{indicators[selected]}</div> : undefined}
 			</div>
-			<div className={`${baseClass} Options ${hasVoted ? 'locked' : ''}`}>
-				<div className={`${baseClass} Option ${selected === 1 ? 'selected' : ''}`} onClick={() => handleSelect(1)}>
-					{indicators[1]}
+			{subscriberId ? (
+				<div className={`${baseClass} Options ${hasVoted ? 'locked' : ''}`}>
+					<div
+						className={`${baseClass} Option ${selected === 1 ? 'selected' : ''}`}
+						onClick={() => handleSelect(1)}
+					>
+						{indicators[1]}
+					</div>
+					<div
+						className={`${baseClass} Option ${selected === 2 ? 'selected' : ''}`}
+						onClick={() => handleSelect(2)}
+					>
+						{indicators[2]}
+					</div>
+					<div
+						className={`${baseClass} Option ${selected === 3 ? 'selected' : ''}`}
+						onClick={() => handleSelect(3)}
+					>
+						{indicators[3]}
+					</div>
+					<div
+						className={`${baseClass} Option ${selected === 4 ? 'selected' : ''}`}
+						onClick={() => handleSelect(4)}
+					>
+						{indicators[4]}
+					</div>
+					<div
+						className={`${baseClass} Option ${selected === 5 ? 'selected' : ''}`}
+						onClick={() => handleSelect(5)}
+					>
+						{indicators[5]}
+					</div>
 				</div>
-				<div className={`${baseClass} Option ${selected === 2 ? 'selected' : ''}`} onClick={() => handleSelect(2)}>
-					{indicators[2]}
-				</div>
-				<div className={`${baseClass} Option ${selected === 3 ? 'selected' : ''}`} onClick={() => handleSelect(3)}>
-					{indicators[3]}
-				</div>
-				<div className={`${baseClass} Option ${selected === 4 ? 'selected' : ''}`} onClick={() => handleSelect(4)}>
-					{indicators[4]}
-				</div>
-				<div className={`${baseClass} Option ${selected === 5 ? 'selected' : ''}`} onClick={() => handleSelect(5)}>
-					{indicators[5]}
-				</div>
-			</div>
+			) : (
+				<>
+					{showModal && (
+						<Modal
+							visible={showModal}
+							className={`${baseClass} Modal SubscriberVoteModal ${modalClassName}`}
+							ref={modalRef}
+						>
+							<div className="wrapper">
+								<div className="header">
+									<div className="title">Vote for {featureName}</div>
+									<div className="description">Please provide your email address to vote on this feature</div>
+									<div className="close" onClick={handleCloseModal}>
+										<FontAwesomeIcon icon={faTimes} />
+									</div>
+								</div>
+								<div className="body">
+									<EmailInput
+										hide={false}
+										email={email}
+										setEmail={setEmail}
+										valid={emailValid}
+										disabled={false}
+									/>
+									<span className="label">Your vote for {featureName}:</span>
+									<div className="options">
+										<div
+											className={`${baseClass} ModalOption ${internalSelected === 1 ? 'selected' : ''}`}
+											onClick={() => setInternalSelected(1)}
+										>
+											{indicators[1]}
+										</div>
+										<div
+											className={`${baseClass} ModalOption ${internalSelected === 2 ? 'selected' : ''}`}
+											onClick={() => setInternalSelected(2)}
+										>
+											{indicators[2]}
+										</div>
+										<div
+											className={`${baseClass} ModalOption ${internalSelected === 3 ? 'selected' : ''}`}
+											onClick={() => setInternalSelected(3)}
+										>
+											{indicators[3]}
+										</div>
+										<div
+											className={`${baseClass} ModalOption ${internalSelected === 4 ? 'selected' : ''}`}
+											onClick={() => setInternalSelected(4)}
+										>
+											{indicators[4]}
+										</div>
+										<div
+											className={`${baseClass} ModalOption ${internalSelected === 5 ? 'selected' : ''}`}
+											onClick={() => setInternalSelected(5)}
+										>
+											{indicators[5]}
+										</div>
+									</div>
+								</div>
+								<div className="footer">
+									<button disabled={!isFormValid} onClick={handleSubmit}>
+										Send
+									</button>
+								</div>
+							</div>
+						</Modal>
+					)}
+				</>
+			)}
 		</div>
 	);
 };
