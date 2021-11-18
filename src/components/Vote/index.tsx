@@ -62,8 +62,8 @@ const Vote = (props: IVoteProps) => {
 	}, []);
 
 	const handleCloseModal = useCallback(() => {
-		setShowModal(false);
 		modalRef.current?.remove?.();
+		setShowModal(false);
 	}, []);
 
 	useEffect(() => {
