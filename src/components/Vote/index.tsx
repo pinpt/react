@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { faGrin, faLaugh, faLaughBeam, faMeh, faSmile, faTimes, faVoteYea } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { getSubscriberId } from '../../';
@@ -40,7 +40,6 @@ const Vote = (props: IVoteProps) => {
 	const [email, setEmail] = useState('');
 	const [emailValid, setEmailValid] = useState(false);
 	const [internalSelected, setInternalSelected] = useState(-1);
-	const modalRef = useRef<any>();
 
 	const handleSelect = useCallback(
 		(score: number) => {
@@ -62,7 +61,6 @@ const Vote = (props: IVoteProps) => {
 	}, []);
 
 	const handleCloseModal = useCallback(() => {
-		modalRef.current?.remove?.();
 		setShowModal(false);
 	}, []);
 
@@ -132,11 +130,7 @@ const Vote = (props: IVoteProps) => {
 			) : (
 				<>
 					{showModal && (
-						<Modal
-							visible={showModal}
-							className={`${baseClass} Modal SubscriberVoteModal ${modalClassName}`}
-							ref={modalRef}
-						>
+						<Modal visible className={`${baseClass} Modal SubscriberVoteModal ${modalClassName}`}>
 							<div className="wrapper">
 								<div className="header">
 									<div className="title">Vote for {featureName}</div>
