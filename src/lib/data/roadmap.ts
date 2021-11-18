@@ -10,3 +10,18 @@ export const fetchRoadmap = async (
 
 	return result;
 };
+
+export const createVote = async (
+	config: Omit<IPinpointConfig, 'pageSize'>,
+	featureId: string,
+	vote: number,
+	email?: string
+): Promise<string> => {
+	const { subscriberId } = await executeAPI(config, `/roadmap/vote/${config.siteId}`, 'POST', {
+		featureId,
+		vote,
+		email,
+	});
+
+	return subscriberId;
+};
