@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Meta } from '@storybook/react';
 import Vote from '../';
 
@@ -18,4 +18,7 @@ export default {
 	},
 } as Meta;
 
-export const Default: React.VFC<{}> = () => <Vote className="mx-32" />;
+export const Default: React.VFC<{}> = () => {
+	const [selected, setSelected] = useState<number>(-1);
+	return <Vote className="mx-32" selected={selected} setSelected={setSelected} />;
+};

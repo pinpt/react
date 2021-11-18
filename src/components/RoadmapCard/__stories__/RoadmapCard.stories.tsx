@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Meta } from '@storybook/react';
 import RoadmapCard from '../';
 
@@ -19,22 +19,30 @@ export default {
 	},
 } as Meta;
 
-export const Default: React.VFC<{}> = () => (
-	<RoadmapCard
-		title="My cool feature"
-		description="Some interesting points about the cool feature I made."
-		dueDate={999}
-	>
-		<div>Point number 1 for the feature.</div>
-		<div>Another point for the feature.</div>
-		<div>The third and final thing about the cool feature.</div>
-	</RoadmapCard>
-);
+export const Default: React.VFC<{}> = () => {
+	const [selectedVote, setSelectedVote] = useState(-1);
+	return (
+		<RoadmapCard
+			title="My cool feature"
+			description="Some interesting points about the cool feature I made."
+			dueDate={999}
+			selectedVote={selectedVote}
+			setSelectedVote={setSelectedVote}
+		>
+			<div>Point number 1 for the feature.</div>
+			<div>Another point for the feature.</div>
+			<div>The third and final thing about the cool feature.</div>
+		</RoadmapCard>
+	);
+};
 
-export const No_Description: React.VFC<{}> = () => (
-	<RoadmapCard title="My cool feature">
-		<div>Point number 1 for the feature.</div>
-		<div>Another point for the feature.</div>
-		<div>The third and final thing about the cool feature.</div>
-	</RoadmapCard>
-);
+export const No_Description: React.VFC<{}> = () => {
+	const [selectedVote, setSelectedVote] = useState(-1);
+	return (
+		<RoadmapCard title="My cool feature" selectedVote={selectedVote} setSelectedVote={setSelectedVote}>
+			<div>Point number 1 for the feature.</div>
+			<div>Another point for the feature.</div>
+			<div>The third and final thing about the cool feature.</div>
+		</RoadmapCard>
+	);
+};

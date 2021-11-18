@@ -1156,7 +1156,7 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 }
 
 .Pinpoint.RoadmapCard.Wrapper {
-	@apply border inline-flex flex-col flex-grow dark:border-gray-700 max-w-[100%] sm:max-w-[45%] rounded-sm overflow-hidden shadow;
+	@apply border inline-flex flex-col flex-grow dark:border-gray-700 max-w-[100%] sm:max-w-[45%] rounded-sm shadow;
 }
 
 .Pinpoint.RoadmapCard .Heading {
@@ -1220,11 +1220,11 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 }
 
 .Pinpoint.Vote.Icon {
-	@apply text-gray-700;
+	@apply cursor-pointer z-10;
 }
 
 .Pinpoint.Vote.Options {
-	@apply absolute flex space-x-2 left-[-60px] bottom-[-5px] h-[50px] hidden;
+	@apply absolute flex space-x-2 left-[-73px] bottom-0 h-[50px] hidden text-2xl text-yellow-500;
 }
 
 .Pinpoint.Vote.Wrapper:hover .Pinpoint.Vote.Options {
@@ -1235,38 +1235,62 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 	@apply: flex;
 }
 
-.Pinpoint.Vote.Option:nth-child(1), .Pinpoint.Vote.Option:nth-child(5) {
-	@apply translate-y-6
+.Pinpoint.Vote.Options.locked {
+	@apply !hidden;
 }
 
-.Pinpoint.Vote.Option:nth-child(2), .Pinpoint.Vote.Option:nth-child(4) {
+.Pinpoint.Vote.Option:nth-child(1),
+.Pinpoint.Vote.Option:nth-child(5) {
+	@apply translate-y-6;
+}
+
+.Pinpoint.Vote.Option:nth-child(2),
+.Pinpoint.Vote.Option:nth-child(4) {
 	@apply translate-y-2;
 }
 
 .Pinpoint.Vote.Option:nth-child(3) {
-	@apply translate-y-1
+	@apply translate-y-1;
 }
 
 .Pinpoint.Vote.Option:nth-child(1) {
-	@apply translate-x-2
+	@apply translate-x-2;
 }
 
 .Pinpoint.Vote.Option:nth-child(5) {
-	@apply -translate-x-2
+	@apply -translate-x-2;
 }
 
 .Pinpoint.Vote.Option {
-	@apply cursor-pointer
+	@apply cursor-pointer border-2 border-yellow-600 bg-yellow-700;
 }
 
 .Pinpoint.Vote.Option {
-	@apply w-5 h-5 rounded-full flex items-center text-center border border-transparent;
-	padding-right: 20px;
+	@apply w-6 h-6 rounded-full flex items-center text-center overflow-hidden;
+	padding-right: 23px;
+	padding-top: 1px;
+	padding-bottom: 1px;
 }
 
 .Pinpoint.Vote.Option:hover {
-	@apply border border-white shadow;
+	@apply shadow border-yellow-700;
 }
 .Pinpoint.Vote.Option.selected {
-	@apply bg-green-500 shadow;
+	@apply shadow border-yellow-800;
+}
+
+.Pinpoint.RoadmapCard.Actions {
+	@apply flex p-2 bg-gray-100 border-t border-gray-200 text-gray-600;
+}
+
+.Pinpoint.RoadmapCard.VoteButton {
+	@apply ml-auto overflow-visible;
+}
+
+.Pinpoint.Vote.Indicator {
+	@apply absolute top-0 text-yellow-600;
+}
+
+.Pinpoint.Vote.Button.selected {
+	@apply opacity-0;
 }
