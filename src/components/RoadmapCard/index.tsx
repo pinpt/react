@@ -14,6 +14,7 @@ export interface IRoadmapCardProps {
 	setSelectedVote: (value: number) => void;
 	onSubmitNewSubscriber: (email: string, value: number) => void;
 	enableVoting?: boolean;
+	totalVotes?: number;
 }
 
 const baseClass = `Pinpoint RoadmapCard`;
@@ -29,6 +30,7 @@ const RoadmapCard = (props: IRoadmapCardProps) => {
 		setSelectedVote,
 		onSubmitNewSubscriber,
 		enableVoting = false,
+		totalVotes = 0,
 	} = props;
 
 	return (
@@ -56,6 +58,7 @@ const RoadmapCard = (props: IRoadmapCardProps) => {
 							featureName={title}
 						/>
 					</div>
+					<div className={`${baseClass} Count`}>{totalVotes} votes</div>
 				</div>
 			)}
 		</div>

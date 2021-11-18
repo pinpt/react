@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
-import { setSubscriberId } from '../../../lib/subscription';
+import { setSubscriberId, getSubscriberId } from '../../../lib/subscription';
 import { createVote, getVoteCounts } from '../../data';
 import { getRouterAbsolutePath } from '../../router';
 import { IPinpointConfig, ISite } from '../../types';
@@ -40,11 +40,24 @@ const useRoadmap = (config: Omit<IPinpointConfig, 'pageSize'>, site: ISite) => {
 			);
 
 			if (subscriberId) {
+				const old = getSubscriberId();
 				setSubscriberId(subscriberId);
+				if (!old) {
+					window.location.reload();
+				}
 			}
 			setUserVotes((current) => {
 				const result = { ...current };
 				result[featureId] = vote;
+				return result;
+			});
+			setGlobalVotes((current) => {
+				const result = { ...current };
+				if (result[featureId]) {
+					result[featureId] += vote;
+				} else {
+					result[featureId] = vote;
+				}
 				return result;
 			});
 		},

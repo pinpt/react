@@ -1220,7 +1220,7 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 }
 
 .Pinpoint.Vote.Icon {
-	@apply cursor-pointer z-10;
+	@apply cursor-pointer z-10 mt-[2px];
 }
 
 .Pinpoint.Vote.Options {
@@ -1284,7 +1284,7 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 }
 
 .Pinpoint.Vote.Indicator {
-	@apply absolute top-0 text-yellow-600;
+	@apply absolute top-0 text-yellow-600 mt-[2px];
 }
 
 .Pinpoint.Vote.Button.selected {
@@ -1366,4 +1366,8 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 }
 .Pinpoint.Vote.ModalOption.selected {
 	@apply shadow border-yellow-800;
+}
+
+.Pinpoint.RoadmapCard.Count {
+	@apply ml-2 text-sm;
 }

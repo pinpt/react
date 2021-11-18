@@ -102,6 +102,12 @@ exports[`Test custom className 1`] = `
             </div>
           </div>
         </div>
+        <div
+          className="Pinpoint RoadmapCard Count"
+        >
+          0
+           votes
+        </div>
       </div>
     </div>
     <div
@@ -171,6 +177,12 @@ exports[`Test custom className 1`] = `
             </div>
           </div>
         </div>
+        <div
+          className="Pinpoint RoadmapCard Count"
+        >
+          0
+           votes
+        </div>
       </div>
     </div>
     <div
@@ -239,6 +251,12 @@ exports[`Test custom className 1`] = `
               </svg>
             </div>
           </div>
+        </div>
+        <div
+          className="Pinpoint RoadmapCard Count"
+        >
+          0
+           votes
         </div>
       </div>
     </div>
@@ -348,6 +366,12 @@ exports[`Test default 1`] = `
             </div>
           </div>
         </div>
+        <div
+          className="Pinpoint RoadmapCard Count"
+        >
+          0
+           votes
+        </div>
       </div>
     </div>
     <div
@@ -417,6 +441,12 @@ exports[`Test default 1`] = `
             </div>
           </div>
         </div>
+        <div
+          className="Pinpoint RoadmapCard Count"
+        >
+          0
+           votes
+        </div>
       </div>
     </div>
     <div
@@ -485,6 +515,12 @@ exports[`Test default 1`] = `
               </svg>
             </div>
           </div>
+        </div>
+        <div
+          className="Pinpoint RoadmapCard Count"
+        >
+          0
+           votes
         </div>
       </div>
     </div>
@@ -668,6 +704,12 @@ exports[`Test no description 1`] = `
             </div>
           </div>
         </div>
+        <div
+          className="Pinpoint RoadmapCard Count"
+        >
+          0
+           votes
+        </div>
       </div>
     </div>
     <div
@@ -737,6 +779,12 @@ exports[`Test no description 1`] = `
             </div>
           </div>
         </div>
+        <div
+          className="Pinpoint RoadmapCard Count"
+        >
+          0
+           votes
+        </div>
       </div>
     </div>
     <div
@@ -805,6 +853,12 @@ exports[`Test no description 1`] = `
               </svg>
             </div>
           </div>
+        </div>
+        <div
+          className="Pinpoint RoadmapCard Count"
+        >
+          0
+           votes
         </div>
       </div>
     </div>

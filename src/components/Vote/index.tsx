@@ -13,6 +13,7 @@ export interface IVoteProps {
 	modalClassName?: string;
 	featureName?: string;
 	onSubmitNewSubscriber: (email: string, vote: number) => void;
+	totalVotes?: number;
 }
 
 const baseClass = 'Pinpoint Vote';
