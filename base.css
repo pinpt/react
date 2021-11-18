@@ -1231,6 +1231,10 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 	@apply flex;
 }
 
+.Pinpoint.Vote.Wrapper.loading:hover .Pinpoint.Vote.Options {
+	@apply hidden;
+}
+
 .Pinpoint.Vote.Options:hover {
 	@apply: flex;
 }
@@ -1285,6 +1289,10 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 
 .Pinpoint.Vote.Indicator {
 	@apply absolute top-0 text-yellow-600 mt-[2px];
+}
+
+.Pinpoint.Vote.Indicator.Loading {
+	@apply text-gray-600;
 }
 
 .Pinpoint.Vote.Button.selected {

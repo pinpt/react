@@ -39,6 +39,8 @@ export interface IPrebuiltRoadmapProps {
 	userVotes?: Record<string, number>;
 	enableVoting?: boolean;
 	totalVotes?: Record<string, number>;
+	fetching?: boolean;
+	loadingVotes?: Record<string, boolean>;
 }
 
 const Roadmap = (props: IPrebuiltRoadmapProps) => {
@@ -65,6 +67,8 @@ const Roadmap = (props: IPrebuiltRoadmapProps) => {
 		handleVote,
 		enableVoting = false,
 		totalVotes,
+		fetching = false,
+		loadingVotes,
 	} = props;
 
 	return (
@@ -117,6 +121,7 @@ const Roadmap = (props: IPrebuiltRoadmapProps) => {
 												setSelectedVote={(value) => handleVote?.(item.id, value)}
 												onSubmitNewSubscriber={(email, value) => handleVote?.(item.id, value, email)}
 												totalVotes={totalVotes?.[item.id] ?? 0}
+												loading={fetching || (loadingVotes?.[item.id] ?? false)}
 											>
 												{item.children.map((child: any) => {
 													return <div key={child.id}>{child.title}</div>;

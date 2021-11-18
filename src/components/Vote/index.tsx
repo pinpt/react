@@ -1,5 +1,14 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
-import { faGrin, faLaugh, faLaughBeam, faMeh, faSmile, faTimes, faVoteYea } from '@fortawesome/free-solid-svg-icons';
+import {
+	faGrin,
+	faLaugh,
+	faLaughBeam,
+	faMeh,
+	faSmile,
+	faSpinner,
+	faTimes,
+	faVoteYea,
+} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { getSubscriberId } from '../../';
 import { validateEmail } from '../../lib/subscription';
@@ -14,6 +23,7 @@ export interface IVoteProps {
 	featureName?: string;
 	onSubmitNewSubscriber: (email: string, vote: number) => void;
 	totalVotes?: number;
+	loading?: boolean;
 }
 
 const baseClass = 'Pinpoint Vote';
@@ -35,6 +45,7 @@ const Vote = (props: IVoteProps) => {
 		modalClassName = '',
 		featureName = 'this feature',
 		onSubmitNewSubscriber,
+		loading,
 	} = props;
 	const [hasVoted, setHasVoted] = useState(false);
 	const [showModal, setShowModal] = useState(false);
@@ -85,14 +96,24 @@ const Vote = (props: IVoteProps) => {
 	}, [isFormValid, email, internalSelected, handleCloseModal]);
 
 	return (
-		<div className={`${baseClass} Wrapper ${className}`}>
-			<div className={`${baseClass} Icon`} onClick={!subscriberId ? () => setShowModal(true) : undefined}>
+		<div className={`${baseClass} Wrapper ${loading ? 'loading' : ''} ${className}`}>
+			<div
+				className={`${baseClass} Icon`}
+				onClick={!subscriberId && !loading ? () => setShowModal(true) : undefined}
+			>
 				<FontAwesomeIcon
-					className={`${baseClass} Button ${selected > 0 ? 'selected' : ''}`}
+					className={`${baseClass} Button ${selected > 0 || loading ? 'selected' : ''}`}
 					icon={faVoteYea}
 					fixedWidth
 				/>
-				{selected > 0 ? <div className={`${baseClass} Indicator`}>{indicators[selected]}</div> : undefined}
+				{selected > 0 && !loading ? (
+					<div className={`${baseClass} Indicator`}>{indicators[selected]}</div>
+				) : undefined}
+				{loading ? (
+					<div className={`${baseClass} Indicator Loading`}>
+						{<FontAwesomeIcon icon={faSpinner} fixedWidth pulse />}
+					</div>
+				) : undefined}
 			</div>
 			{subscriberId ? (
 				<div className={`${baseClass} Options ${hasVoted ? 'locked' : ''}`}>

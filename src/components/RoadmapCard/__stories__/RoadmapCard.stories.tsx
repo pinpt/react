@@ -58,6 +58,27 @@ export const With_Votes: React.VFC<{}> = () => {
 	);
 };
 
+export const Loading: React.VFC<{}> = () => {
+	const [selectedVote, setSelectedVote] = useState(-1);
+	return (
+		<RoadmapCard
+			title="My cool feature"
+			description="Some interesting points about the cool feature I made."
+			dueDate={999}
+			selectedVote={selectedVote}
+			setSelectedVote={setSelectedVote}
+			onSubmitNewSubscriber={(_email, vote) => setSelectedVote(vote)}
+			enableVoting
+			totalVotes={9345}
+			loading
+		>
+			<div>Point number 1 for the feature.</div>
+			<div>Another point for the feature.</div>
+			<div>The third and final thing about the cool feature.</div>
+		</RoadmapCard>
+	);
+};
+
 export const No_Description: React.VFC<{}> = () => {
 	const [selectedVote, setSelectedVote] = useState(-1);
 	return (

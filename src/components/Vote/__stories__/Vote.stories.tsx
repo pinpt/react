@@ -29,3 +29,16 @@ export const Default: React.VFC<{}> = () => {
 		/>
 	);
 };
+
+export const Loading: React.VFC<{}> = () => {
+	const [selected, setSelected] = useState<number>(-1);
+	return (
+		<Vote
+			className="mx-32"
+			selected={selected}
+			setSelected={setSelected}
+			onSubmitNewSubscriber={(_email, vote) => setSelected(vote)}
+			loading
+		/>
+	);
+};

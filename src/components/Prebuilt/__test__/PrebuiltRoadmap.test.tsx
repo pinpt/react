@@ -13,6 +13,12 @@ test('Test full page', () => {
 	expect(tree).toMatchSnapshot();
 });
 
+test('Test fetching', () => {
+	const component = renderer.create(<PrebuiltRoadmap site={site} roadmap={roadmap} enableVoting fetching />);
+	const tree = component.toJSON();
+	expect(tree).toMatchSnapshot();
+});
+
 test('Test no voting', () => {
 	const component = renderer.create(<PrebuiltRoadmap site={site} roadmap={roadmap} />);
 	const tree = component.toJSON();

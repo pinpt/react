@@ -76,7 +76,7 @@ exports[`Test custom className 1`] = `
           className="Pinpoint RoadmapCard VoteButton"
         >
           <div
-            className="Pinpoint Vote Wrapper "
+            className="Pinpoint Vote Wrapper  "
           >
             <div
               className="Pinpoint Vote Icon"
@@ -106,7 +106,8 @@ exports[`Test custom className 1`] = `
           className="Pinpoint RoadmapCard Count"
         >
           0
-           votes
+           vote
+          s
         </div>
       </div>
     </div>
@@ -151,7 +152,7 @@ exports[`Test custom className 1`] = `
           className="Pinpoint RoadmapCard VoteButton"
         >
           <div
-            className="Pinpoint Vote Wrapper "
+            className="Pinpoint Vote Wrapper  "
           >
             <div
               className="Pinpoint Vote Icon"
@@ -181,7 +182,8 @@ exports[`Test custom className 1`] = `
           className="Pinpoint RoadmapCard Count"
         >
           0
-           votes
+           vote
+          s
         </div>
       </div>
     </div>
@@ -226,7 +228,7 @@ exports[`Test custom className 1`] = `
           className="Pinpoint RoadmapCard VoteButton"
         >
           <div
-            className="Pinpoint Vote Wrapper "
+            className="Pinpoint Vote Wrapper  "
           >
             <div
               className="Pinpoint Vote Icon"
@@ -256,7 +258,8 @@ exports[`Test custom className 1`] = `
           className="Pinpoint RoadmapCard Count"
         >
           0
-           votes
+           vote
+          s
         </div>
       </div>
     </div>
@@ -340,7 +343,7 @@ exports[`Test default 1`] = `
           className="Pinpoint RoadmapCard VoteButton"
         >
           <div
-            className="Pinpoint Vote Wrapper "
+            className="Pinpoint Vote Wrapper  "
           >
             <div
               className="Pinpoint Vote Icon"
@@ -370,7 +373,8 @@ exports[`Test default 1`] = `
           className="Pinpoint RoadmapCard Count"
         >
           0
-           votes
+           vote
+          s
         </div>
       </div>
     </div>
@@ -415,7 +419,7 @@ exports[`Test default 1`] = `
           className="Pinpoint RoadmapCard VoteButton"
         >
           <div
-            className="Pinpoint Vote Wrapper "
+            className="Pinpoint Vote Wrapper  "
           >
             <div
               className="Pinpoint Vote Icon"
@@ -445,7 +449,8 @@ exports[`Test default 1`] = `
           className="Pinpoint RoadmapCard Count"
         >
           0
-           votes
+           vote
+          s
         </div>
       </div>
     </div>
@@ -490,7 +495,7 @@ exports[`Test default 1`] = `
           className="Pinpoint RoadmapCard VoteButton"
         >
           <div
-            className="Pinpoint Vote Wrapper "
+            className="Pinpoint Vote Wrapper  "
           >
             <div
               className="Pinpoint Vote Icon"
@@ -520,7 +525,8 @@ exports[`Test default 1`] = `
           className="Pinpoint RoadmapCard Count"
         >
           0
-           votes
+           vote
+          s
         </div>
       </div>
     </div>
@@ -678,7 +684,7 @@ exports[`Test no description 1`] = `
           className="Pinpoint RoadmapCard VoteButton"
         >
           <div
-            className="Pinpoint Vote Wrapper "
+            className="Pinpoint Vote Wrapper  "
           >
             <div
               className="Pinpoint Vote Icon"
@@ -708,7 +714,8 @@ exports[`Test no description 1`] = `
           className="Pinpoint RoadmapCard Count"
         >
           0
-           votes
+           vote
+          s
         </div>
       </div>
     </div>
@@ -753,7 +760,7 @@ exports[`Test no description 1`] = `
           className="Pinpoint RoadmapCard VoteButton"
         >
           <div
-            className="Pinpoint Vote Wrapper "
+            className="Pinpoint Vote Wrapper  "
           >
             <div
               className="Pinpoint Vote Icon"
@@ -783,7 +790,8 @@ exports[`Test no description 1`] = `
           className="Pinpoint RoadmapCard Count"
         >
           0
-           votes
+           vote
+          s
         </div>
       </div>
     </div>
@@ -828,7 +836,7 @@ exports[`Test no description 1`] = `
           className="Pinpoint RoadmapCard VoteButton"
         >
           <div
-            className="Pinpoint Vote Wrapper "
+            className="Pinpoint Vote Wrapper  "
           >
             <div
               className="Pinpoint Vote Icon"
@@ -858,7 +866,8 @@ exports[`Test no description 1`] = `
           className="Pinpoint RoadmapCard Count"
         >
           0
-           votes
+           vote
+          s
         </div>
       </div>
     </div>

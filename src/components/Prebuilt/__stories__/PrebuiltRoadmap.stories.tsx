@@ -35,6 +35,10 @@ export const Default: React.VFC<{}> = () => {
 	return <PrebuiltRoadmap site={site} roadmap={roadmap} enableVoting />;
 };
 
+export const Fetching: React.VFC<{}> = () => {
+	return <PrebuiltRoadmap site={site} roadmap={roadmap} enableVoting fetching />;
+};
+
 export const No_Voting: React.VFC<{}> = () => {
 	return <PrebuiltRoadmap site={site} roadmap={roadmap} />;
 };
