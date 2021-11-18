@@ -77,7 +77,6 @@ const Vote = (props: IVoteProps) => {
 	}, [emailValid, internalSelected]);
 
 	const handleSubmit = useCallback(() => {
-		console.log('submit', isFormValid);
 		if (isFormValid) {
 			onSubmitNewSubscriber(email, internalSelected);
 			handleCloseModal();
