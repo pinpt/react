@@ -25,3 +25,11 @@ export const createVote = async (
 
 	return subscriberId;
 };
+
+export const getVoteCounts = async (
+	config: Omit<IPinpointConfig, 'pageSize'>
+): Promise<{ globalVoteCounts: Record<string, number>; userVoteCounts: Record<string, number> }> => {
+	const { globalVoteCounts, userVoteCounts } = await executeAPI(config, `/roadmap/votes/${config.siteId}`);
+
+	return { globalVoteCounts, userVoteCounts };
+};
