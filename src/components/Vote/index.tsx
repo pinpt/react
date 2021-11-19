@@ -1,13 +1,6 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import {
-	faGrin,
-	faLaugh,
-	faLaughBeam,
-	faMeh,
-	faSmile,
-	faSpinner,
-	faTimes,
-	faVoteYea,
+	faGrin, faLaugh, faLaughBeam, faMeh, faSmile, faSpinner, faTimes, faVoteYea
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { getSubscriberId } from '../../';
@@ -167,6 +160,7 @@ const Vote = (props: IVoteProps) => {
 										setEmail={setEmail}
 										valid={emailValid}
 										disabled={false}
+										autoFocus
 									/>
 									<span className="label">Your vote for {featureName}:</span>
 									<div className="options">
@@ -200,6 +194,9 @@ const Vote = (props: IVoteProps) => {
 										>
 											{indicators[5]}
 										</div>
+									</div>
+									<div className="disclaimer">
+										By submitting, you agree to allow us to communicate with you by email.
 									</div>
 								</div>
 								<div className="footer">

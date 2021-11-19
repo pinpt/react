@@ -1,6 +1,8 @@
 import React, { ReactElement } from 'react';
-import type { ISite } from '../../../lib/types';
+import { feedbackTitleFromSite } from '../../../lib/data/feedback';
+import { configFromSite } from '../../../lib/data/site';
 import { PublishedRoadmapResponse } from '../../../lib/types/roadmap';
+import Feedback from '../../../widgets/Feedback';
 import { ICopyrightProps } from '../../Copyright';
 import { IFooterProps } from '../../Footer';
 import { IHeaderProps } from '../../Header';
@@ -16,6 +18,9 @@ import { IThemeToggleProps } from '../../ThemeToggle';
 import Footer from '../Footer';
 import Header from '../Header';
 
+import type { ISite } from '../../../lib/types';
+import type { IFeedbackProps } from '../../../lib/types/feedback';
+const pageUrl = typeof window === 'undefined' ? '' : window.location.href;
 export interface IPrebuiltRoadmapProps {
 	className?: string;
 	site: ISite;
@@ -30,6 +35,7 @@ export interface IPrebuiltRoadmapProps {
 	renderThemeToggle?: (site: ISite) => ReactElement<IThemeToggleProps>;
 	renderSearch?: (site: ISite) => ReactElement<ISearchBarProps>;
 	renderFooter?: (site: ISite) => ReactElement<IFooterProps>;
+	renderFeedback?: (site: ISite) => ReactElement<IFeedbackProps>;
 	renderSocial?: (site: ISite) => ReactElement<ISocialMediaBarProps>;
 	renderCopyright?: (site: ISite) => ReactElement<ICopyrightProps>;
 	roadmap: PublishedRoadmapResponse;
@@ -59,6 +65,7 @@ const Roadmap = (props: IPrebuiltRoadmapProps) => {
 		renderSearch,
 		renderCopyright,
 		renderFooter,
+		renderFeedback,
 		renderSocial,
 		roadmap,
 		renderRoadmap,
@@ -132,6 +139,19 @@ const Roadmap = (props: IPrebuiltRoadmapProps) => {
 								</RoadmapSection>
 							);
 						})
+					}
+					feedback={
+						site.features?.feedback
+							? renderFeedback?.(site) ?? (
+									<Feedback
+										config={configFromSite(site)}
+										title={feedbackTitleFromSite(site)}
+										pageTitle={roadmap.title}
+										url={pageUrl}
+										pageType={site.type as any}
+									/>
+							  )
+							: undefined
 					}
 					footer={
 						renderFooter?.(site) ?? (

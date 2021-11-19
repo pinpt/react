@@ -332,6 +332,11 @@ populated with your recently completed...
           <div
             className="right"
           >
+            <a
+              href="/roadmap"
+            >
+              View our Roadmap
+            </a>
             <div
               className="Pinpoint SocialMedia Bar Prebuilt"
             >
@@ -878,6 +883,11 @@ populated with your recently completed...
           <div
             className="right"
           >
+            <a
+              href="/roadmap"
+            >
+              View our Roadmap
+            </a>
             <div
               className="Pinpoint SocialMedia Bar Prebuilt"
             >
@@ -1332,6 +1342,11 @@ exports[`Test empty state 1`] = `
           <div
             className="right"
           >
+            <a
+              href="/roadmap"
+            >
+              View our Roadmap
+            </a>
             <div
               className="Pinpoint SocialMedia Bar Prebuilt"
             >
@@ -1701,6 +1716,11 @@ exports[`Test loading state 1`] = `
           <div
             className="right"
           >
+            <a
+              href="/roadmap"
+            >
+              View our Roadmap
+            </a>
             <div
               className="Pinpoint SocialMedia Bar Prebuilt"
             >

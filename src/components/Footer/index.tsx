@@ -1,5 +1,4 @@
-import { ReactElement } from 'react';
-import React from 'react';
+import React, { ReactElement } from 'react';
 import { ICopyrightProps } from '../Copyright';
 import PoweredByPinpoint from '../PoweredByPinpoint';
 import { ISocialMediaBarProps } from '../SocialMedia/SocialMediaBar';
@@ -11,16 +10,18 @@ export interface IFooterProps {
 	social?: ReactElement<ISocialMediaBarProps>;
 	copyright?: ReactElement<ICopyrightProps>;
 	subscribe?: ReactElement<ISubscribeProps>;
+	roadmap?: ReactElement;
 }
 
 const Footer = (props: IFooterProps) => {
-	const { className = '', siteId = '', social, copyright, subscribe } = props;
+	const { className = '', siteId = '', social, copyright, subscribe, roadmap } = props;
 
 	return (
 		<div className={`Pinpoint Footer ${className}`}>
 			<div className="content">
 				<div className="left">{copyright}</div>
 				<div className="right">
+					{roadmap}
 					{subscribe}
 					{social}
 				</div>

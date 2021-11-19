@@ -836,6 +836,10 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 	@apply mt-10 mb-5 border rounded p-4 inline-flex bg-white;
 }
 
+.Pinpoint.Roadmap .Pinpoint.feedbackWrapper {
+	@apply mx-12 pb-5;
+}
+
 .Pinpoint.Form.Wrapper {
 	@apply flex flex-col w-full;
 }
@@ -1102,7 +1106,7 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 }
 
 .Pinpoint.SubscriptionVerify.Save {
-	@apply disabled:opacity-50 inline-flex justify-center cursor-pointer disabled:cursor-not-allowed px-4 py-1.5 rounded-md flex items-center font-semibold text-white bg-green-600 hover:bg-green-500 transition-colors duration-200 focus:outline-none ml-8;
+	@apply disabled:opacity-50 justify-center cursor-pointer disabled:cursor-not-allowed px-4 py-1.5 rounded-md flex items-center font-semibold text-white bg-green-600 hover:bg-green-500 transition-colors duration-200 focus:outline-none ml-8;
 }
 
 /* Subscription Unsubscribe Component */
@@ -1183,8 +1187,8 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 	@apply flex p-4 text-sm flex-col gap-y-3 flex-grow dark:text-white;
 }
 
-.Pinpoint.RoadmapSection .Children {
-	@apply flex flex-wrap gap-4 mt-4 ml-10;
+.Pinpoint.RoadmapSection.Children {
+	@apply flex flex-col sm:flex-row flex-wrap gap-4 mt-4 ml-10;
 }
 
 .Pinpoint.RoadmapSection .Pinpoint.RoadmapSection.Title {
@@ -1224,7 +1228,7 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 }
 
 .Pinpoint.Vote.Options {
-	@apply absolute flex space-x-2 left-[-73px] bottom-0 h-[50px] hidden text-2xl text-yellow-500;
+	@apply absolute space-x-2 left-[-73px] bottom-0 h-[50px] hidden text-2xl text-yellow-500;
 }
 
 .Pinpoint.Vote.Wrapper:hover .Pinpoint.Vote.Options {
@@ -1266,15 +1270,13 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 }
 
 .Pinpoint.Vote.Option {
-	@apply w-6 h-6 rounded-full flex items-center text-center overflow-hidden cursor-pointer border-2 border-yellow-600 bg-yellow-700;
-	padding-right: 23px;
-	padding-top: 1px;
-	padding-bottom: 1px;
+	@apply w-6 h-6 relative pr-[23px] pt-[1px] pb-[1px] rounded-full flex items-center text-center overflow-hidden cursor-pointer border-2 border-yellow-400 bg-yellow-700;
 }
 
 .Pinpoint.Vote.Option:hover {
 	@apply shadow border-yellow-700;
 }
+
 .Pinpoint.Vote.Option.selected {
 	@apply shadow border-yellow-800;
 }
@@ -1324,7 +1326,7 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 }
 
 .Pinpoint.Vote.Modal .wrapper .body .label {
-	@apply mb-2 mt-4 text-gray-700 ml-1 text-sm;
+	@apply mt-4 text-gray-500 ml-1 mb-5 text-sm;
 }
 
 .Pinpoint.Vote.Modal .wrapper .body button {
@@ -1332,7 +1334,7 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 }
 
 .Pinpoint.Vote.Modal .wrapper > .footer {
-	@apply mt-auto border-t p-4 text-gray-400 bg-gray-50 text-sm w-full flex flex-row items-center;
+	@apply mt-auto border-t pb-1 px-4 text-gray-400 bg-gray-50 text-sm w-full flex flex-row items-center;
 }
 
 .Pinpoint.Vote.Modal .wrapper > .footer button {
@@ -1364,18 +1366,21 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 }
 
 .Pinpoint.Vote.ModalOption {
-	@apply w-10 h-10 rounded-full flex items-center text-center overflow-hidden cursor-pointer border-2 border-yellow-600 bg-yellow-700;
-	padding-top: 1px;
-	padding-bottom: 1px;
+	@apply w-10 h-10 relative pt-[1px] pb-[1px] rounded-full flex items-center text-center cursor-pointer border-2 border-yellow-500 bg-yellow-700;
 }
 
 .Pinpoint.Vote.ModalOption:hover {
 	@apply shadow border-yellow-700;
 }
+
 .Pinpoint.Vote.ModalOption.selected {
 	@apply shadow border-yellow-800;
 }
 
 .Pinpoint.RoadmapCard.Count {
 	@apply ml-2 text-sm;
+}
+
+.Pinpoint.Vote .disclaimer {
+	@apply text-xs text-gray-400 mx-2 mt-10;
 }

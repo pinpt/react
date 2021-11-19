@@ -1,6 +1,9 @@
 import { executeAPI } from '../fetch';
 import { getSubscriberId, setSubscriberId } from '../subscription';
+import { ContentTemplateType, IContent } from '../types/content';
+
 import type { IPinpointConfig } from '../types/config';
+import type { ISite } from '../types/site';
 
 interface FeedbackLink {
 	id: string; // unique id for the link
@@ -31,4 +34,38 @@ export const submitFeedback = async (config: IPinpointConfig, data: Feedback): P
 	if (subscriber_id) {
 		setSubscriberId(subscriber_id);
 	}
+};
+
+export const feedbackTitleFromContent = (content: IContent): string => {
+	switch (content.type) {
+		case ContentTemplateType.Changelog: {
+			return `Have product feedback? We'd love to hear from you!`;
+		}
+		case ContentTemplateType.Documentation: {
+			return `Have documentation feedback? We'd love to hear from you!`;
+		}
+		case ContentTemplateType.Blog: {
+			return `Have feedback on this post? We'd love to hear from you!`;
+		}
+		default:
+			break;
+	}
+	return `Have feedback? We'd love to hear from you!`;
+};
+
+export const feedbackTitleFromSite = (site: ISite): string => {
+	switch (site.type) {
+		case 'changelog': {
+			return `Have product feedback? We'd love to hear from you!`;
+		}
+		case 'documentation': {
+			return `Have documentation feedback? We'd love to hear from you!`;
+		}
+		case 'blog': {
+			return `Have feedback on this post? We'd love to hear from you!`;
+		}
+		default:
+			break;
+	}
+	return `Have feedback? We'd love to hear from you!`;
 };

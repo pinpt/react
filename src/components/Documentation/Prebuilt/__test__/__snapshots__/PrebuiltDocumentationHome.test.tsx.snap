@@ -476,6 +476,11 @@ exports[`Test custom className 1`] = `
           <div
             className="right"
           >
+            <a
+              href="/roadmap"
+            >
+              View our Roadmap
+            </a>
             <div
               className="Pinpoint SocialMedia Bar Prebuilt"
             >
@@ -1166,6 +1171,11 @@ exports[`Test custom metadata 1`] = `
           <div
             className="right"
           >
+            <a
+              href="/roadmap"
+            >
+              View our Roadmap
+            </a>
             <div
               className="Pinpoint SocialMedia Bar Prebuilt"
             >
@@ -1856,6 +1866,11 @@ exports[`Test default state 1`] = `
           <div
             className="right"
           >
+            <a
+              href="/roadmap"
+            >
+              View our Roadmap
+            </a>
             <div
               className="Pinpoint SocialMedia Bar Prebuilt"
             >
@@ -2538,6 +2553,11 @@ exports[`Test with pagination 1`] = `
           <div
             className="right"
           >
+            <a
+              href="/roadmap"
+            >
+              View our Roadmap
+            </a>
             <div
               className="Pinpoint SocialMedia Bar Prebuilt"
             >

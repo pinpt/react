@@ -1,8 +1,10 @@
 import React from 'react';
-import { Subtitle, Description, Primary, Stories, ArgsTable, PRIMARY_STORY } from '@storybook/addon-docs';
+import {
+	ArgsTable, Description, Primary, PRIMARY_STORY, Stories, Subtitle
+} from '@storybook/addon-docs';
 import { Meta } from '@storybook/react';
-import Footer from '../Footer';
 import site from '../__data__/testSite.json';
+import Footer from '../Footer';
 
 const { default: readme } = require('../Footer/README.md');
 
@@ -30,3 +32,7 @@ export default {
 } as Meta;
 
 export const Default: React.VFC<{}> = () => <Footer site={site} />;
+
+export const Without_Roadmap: React.VFC<{}> = () => (
+	<Footer site={{ ...site, features: { feedback: false, roadmap: false } }} />
+);
