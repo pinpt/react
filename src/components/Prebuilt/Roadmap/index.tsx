@@ -1,6 +1,8 @@
 import React, { ReactElement } from 'react';
 import { feedbackTitleFromSite } from '../../../lib/data/feedback';
 import { configFromSite } from '../../../lib/data/site';
+import type { ISite } from '../../../lib/types';
+import type { IFeedbackProps } from '../../../lib/types/feedback';
 import { PublishedRoadmapResponse } from '../../../lib/types/roadmap';
 import Feedback from '../../../widgets/Feedback';
 import { ICopyrightProps } from '../../Copyright';
@@ -18,8 +20,6 @@ import { IThemeToggleProps } from '../../ThemeToggle';
 import Footer from '../Footer';
 import Header from '../Header';
 
-import type { ISite } from '../../../lib/types';
-import type { IFeedbackProps } from '../../../lib/types/feedback';
 const pageUrl = typeof window === 'undefined' ? '' : window.location.href;
 export interface IPrebuiltRoadmapProps {
 	className?: string;

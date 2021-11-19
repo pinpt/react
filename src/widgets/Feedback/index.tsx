@@ -2,7 +2,6 @@ import React, { useCallback, useState } from 'react';
 import { faCheckCircle, faExclamationCircle, faSpinner } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import useFeedback from '../../lib/hooks/useFeedback';
-
 import type { IFeedbackProps } from '../../lib/types/feedback';
 
 export const SendButton = ({

@@ -1,4 +1,5 @@
 import React, { ReactElement, useCallback, useMemo, useState } from 'react';
+import type { Analytics, IContent, ISite } from '../../../../lib/types';
 import { ICopyrightProps } from '../../../Copyright';
 import { IHeaderProps } from '../../../Header';
 import { ILogoProps } from '../../../Logo';
@@ -16,7 +17,6 @@ import Outline, { IOutlineProps } from '../../Outline';
 import HomePage from '../../Page/Home';
 import Title from '../../Title';
 
-import type { Analytics, IContent, ISite } from '../../../../lib/types';
 export interface IPrebuiltDocumentationHomeProps {
 	className?: string;
 	site: ISite;

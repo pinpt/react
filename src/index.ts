@@ -34,3 +34,4 @@ export { default as Banner } from './components/Banner';
 export { default as EmailAction } from './components/EmailAction';
 export { default as RoadmapSection } from './components/RoadmapSection';
 export { default as RoadmapCard } from './components/RoadmapCard';
+export { indicators as voteIndicators } from './components/Vote';

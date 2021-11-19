@@ -5,7 +5,13 @@ import Copyright, { ICopyrightProps } from '../../Copyright';
 import BaseFooter from '../../Footer';
 import Logo, { ILogoProps } from '../../Logo';
 import {
-	FacebookLink, GithubLink, InstagramLink, LinkedInLink, RSSLink, SocialMediaBar, TwitterLink
+	FacebookLink,
+	GithubLink,
+	InstagramLink,
+	LinkedInLink,
+	RSSLink,
+	SocialMediaBar,
+	TwitterLink,
 } from '../../SocialMedia';
 import { ISocialMediaBarProps } from '../../SocialMedia/SocialMediaBar';
 import Subscribe, { ISubscribeProps } from '../../Subscribe';

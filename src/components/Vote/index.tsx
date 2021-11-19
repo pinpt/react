@@ -1,6 +1,13 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import {
-	faGrin, faLaugh, faLaughBeam, faMeh, faSmile, faSpinner, faTimes, faVoteYea
+	faGrin,
+	faLaugh,
+	faLaughBeam,
+	faMeh,
+	faSmile,
+	faSpinner,
+	faTimes,
+	faVoteYea,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { getSubscriberId } from '../../';
@@ -21,7 +28,7 @@ export interface IVoteProps {
 
 const baseClass = 'Pinpoint Vote';
 
-const indicators = [
+export const indicators = [
 	,
 	<FontAwesomeIcon icon={faMeh} fixedWidth />,
 	<FontAwesomeIcon icon={faSmile} fixedWidth />,

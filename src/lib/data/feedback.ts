@@ -1,8 +1,7 @@
 import { executeAPI } from '../fetch';
 import { getSubscriberId, setSubscriberId } from '../subscription';
-import { ContentTemplateType, IContent } from '../types/content';
-
 import type { IPinpointConfig } from '../types/config';
+import { ContentTemplateType, IContent } from '../types/content';
 import type { ISite } from '../types/site';
 
 interface FeedbackLink {

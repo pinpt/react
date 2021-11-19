@@ -1,10 +1,8 @@
 import React from 'react';
-import {
-	ArgsTable, Description, Primary, PRIMARY_STORY, Stories, Subtitle
-} from '@storybook/addon-docs';
+import { ArgsTable, Description, Primary, PRIMARY_STORY, Stories, Subtitle } from '@storybook/addon-docs';
 import { Meta } from '@storybook/react';
-import site from '../__data__/testSite.json';
 import Footer from '../Footer';
+import site from '../__data__/testSite.json';
 
 const { default: readme } = require('../Footer/README.md');
 
