@@ -837,7 +837,7 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 }
 
 .Pinpoint.Roadmap .Pinpoint.feedbackWrapper {
-	@apply mx-12 pb-5;
+	@apply mx-auto lg:mx-12 pb-5;
 }
 
 .Pinpoint.Form.Wrapper {
