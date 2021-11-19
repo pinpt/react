@@ -35,6 +35,12 @@ export interface IPrebuiltRoadmapProps {
 	roadmap: PublishedRoadmapResponse;
 	renderRoadmap?: (roadmap: PublishedRoadmapResponse, site: ISite) => ReactElement[];
 	initialOpen?: boolean;
+	handleVote?: (id: string, vote: number, email?: string) => any;
+	userVotes?: Record<string, number>;
+	enableVoting?: boolean;
+	totalVotes?: Record<string, number>;
+	fetching?: boolean;
+	loadingVotes?: Record<string, boolean>;
 }
 
 const Roadmap = (props: IPrebuiltRoadmapProps) => {
@@ -57,6 +63,12 @@ const Roadmap = (props: IPrebuiltRoadmapProps) => {
 		roadmap,
 		renderRoadmap,
 		initialOpen,
+		userVotes,
+		handleVote,
+		enableVoting = false,
+		totalVotes,
+		fetching = false,
+		loadingVotes,
 	} = props;
 
 	return (
@@ -104,6 +116,12 @@ const Roadmap = (props: IPrebuiltRoadmapProps) => {
 												description={item.description}
 												dueDate={item.dueDate}
 												key={item.id}
+												selectedVote={userVotes?.[item.id] ?? -1}
+												enableVoting={enableVoting}
+												setSelectedVote={(value) => handleVote?.(item.id, value)}
+												onSubmitNewSubscriber={(email, value) => handleVote?.(item.id, value, email)}
+												totalVotes={totalVotes?.[item.id] ?? 0}
+												loading={fetching || (loadingVotes?.[item.id] ?? false)}
 											>
 												{item.children.map((child: any) => {
 													return <div key={child.id}>{child.title}</div>;

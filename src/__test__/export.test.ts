@@ -130,6 +130,8 @@ const {
 	RoadmapSection,
 	RoadmapPage,
 	PrebuiltRoadmap,
+	createVote,
+	getVoteCounts,
 	...otherExports
 } = Exports;
 
@@ -259,6 +261,8 @@ test('Test util exports', () => {
 	expect(validateSubscription).toBeTruthy();
 	expect(listSubscriptions).toBeTruthy();
 	expect(fetchRoadmap).toBeTruthy();
+	expect(createVote).toBeTruthy();
+	expect(getVoteCounts).toBeTruthy();
 });
 
 test('Test hook exports', () => {

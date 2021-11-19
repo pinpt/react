@@ -29,7 +29,14 @@ test('Test full page', () => {
 					<RoadmapSection key={column.id} title={column.title} description={column.description}>
 						{roadmap.board[column.id].map((item: any) => {
 							return (
-								<RoadmapCard title={item.title} description={item.description} key={item.id}>
+								<RoadmapCard
+									title={item.title}
+									description={item.description}
+									key={item.id}
+									selectedVote={1}
+									setSelectedVote={(vote) => console.log(vote)}
+									onSubmitNewSubscriber={(email, vote) => console.log(email, vote)}
+								>
 									{item.children.map((child: any) => {
 										return <div key={child.id}>{child.title}</div>;
 									})}
@@ -81,7 +88,14 @@ test('Test full page default closed', () => {
 					>
 						{roadmap.board[column.id].map((item: any) => {
 							return (
-								<RoadmapCard title={item.title} description={item.description} key={item.id}>
+								<RoadmapCard
+									title={item.title}
+									description={item.description}
+									key={item.id}
+									selectedVote={2}
+									setSelectedVote={(vote) => console.log(vote)}
+									onSubmitNewSubscriber={(email, vote) => console.log(email, vote)}
+								>
 									{item.children.map((child: any) => {
 										return <div key={child.id}>{child.title}</div>;
 									})}
@@ -129,7 +143,14 @@ test('Test custom className', () => {
 					<RoadmapSection key={column.id} title={column.title} description={column.description}>
 						{roadmap.board[column.id].map((item: any) => {
 							return (
-								<RoadmapCard title={item.title} description={item.description} key={item.id}>
+								<RoadmapCard
+									title={item.title}
+									description={item.description}
+									key={item.id}
+									selectedVote={3}
+									setSelectedVote={(vote) => console.log(vote)}
+									onSubmitNewSubscriber={(email, vote) => console.log(email, vote)}
+								>
 									{item.children.map((child: any) => {
 										return <div key={child.id}>{child.title}</div>;
 									})}

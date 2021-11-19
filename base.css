@@ -1156,7 +1156,7 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 }
 
 .Pinpoint.RoadmapCard.Wrapper {
-	@apply border inline-flex flex-col flex-grow dark:border-gray-700 max-w-[100%] sm:max-w-[45%] rounded-sm overflow-hidden shadow;
+	@apply border inline-flex flex-col flex-grow dark:border-gray-700 max-w-[100%] sm:max-w-[45%] rounded-sm shadow;
 }
 
 .Pinpoint.RoadmapCard .Heading {
@@ -1213,4 +1213,169 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 
 .Pinpoint.Page.Roadmap.Wrapper {
 	@apply h-screen flex flex-col;
+}
+
+.Pinpoint.Vote.Wrapper {
+	@apply flex relative;
+}
+
+.Pinpoint.Vote.Icon {
+	@apply cursor-pointer z-10 mt-[2px];
+}
+
+.Pinpoint.Vote.Options {
+	@apply absolute flex space-x-2 left-[-73px] bottom-0 h-[50px] hidden text-2xl text-yellow-500;
+}
+
+.Pinpoint.Vote.Wrapper:hover .Pinpoint.Vote.Options {
+	@apply flex;
+}
+
+.Pinpoint.Vote.Wrapper.loading:hover .Pinpoint.Vote.Options {
+	@apply hidden;
+}
+
+.Pinpoint.Vote.Options:hover {
+	@apply: flex;
+}
+
+.Pinpoint.Vote.Options.locked {
+	@apply !hidden;
+}
+
+.Pinpoint.Vote.Option:nth-child(1),
+.Pinpoint.Vote.Option:nth-child(5) {
+	@apply translate-y-6;
+}
+
+.Pinpoint.Vote.Option:nth-child(2),
+.Pinpoint.Vote.Option:nth-child(4) {
+	@apply translate-y-2;
+}
+
+.Pinpoint.Vote.Option:nth-child(3) {
+	@apply translate-y-1;
+}
+
+.Pinpoint.Vote.Option:nth-child(1) {
+	@apply translate-x-2;
+}
+
+.Pinpoint.Vote.Option:nth-child(5) {
+	@apply -translate-x-2;
+}
+
+.Pinpoint.Vote.Option {
+	@apply w-6 h-6 rounded-full flex items-center text-center overflow-hidden cursor-pointer border-2 border-yellow-600 bg-yellow-700;
+	padding-right: 23px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+.Pinpoint.Vote.Option:hover {
+	@apply shadow border-yellow-700;
+}
+.Pinpoint.Vote.Option.selected {
+	@apply shadow border-yellow-800;
+}
+
+.Pinpoint.RoadmapCard.Actions {
+	@apply flex p-2 bg-gray-100 border-t border-gray-200 text-gray-600;
+}
+
+.Pinpoint.RoadmapCard.VoteButton {
+	@apply ml-auto overflow-visible;
+}
+
+.Pinpoint.Vote.Indicator {
+	@apply absolute top-0 text-yellow-600 mt-[2px];
+}
+
+.Pinpoint.Vote.Indicator.Loading {
+	@apply text-gray-600;
+}
+
+.Pinpoint.Vote.Button.selected {
+	@apply opacity-0;
+}
+
+.Pinpoint.Vote.Modal .wrapper {
+	@apply flex flex-col w-full h-full bg-white min-h-[365px] min-w-[450px] max-w-full;
+}
+
+.Pinpoint.Vote.Modal .wrapper .header {
+	@apply flex w-full flex-col p-4 border-b relative;
+}
+
+.Pinpoint.Vote.Modal .wrapper .header .title {
+	@apply font-semibold;
+}
+
+.Pinpoint.Vote.Modal .wrapper .header .description {
+	@apply text-sm text-gray-400;
+}
+
+.Pinpoint.Vote.Modal .wrapper .header .close {
+	@apply cursor-pointer text-gray-400 hover:text-gray-900 absolute top-2 right-2;
+}
+
+.Pinpoint.Vote.Modal .wrapper .body {
+	@apply flex flex-col w-full p-4;
+}
+
+.Pinpoint.Vote.Modal .wrapper .body .label {
+	@apply mb-2 mt-4 text-gray-700 ml-1 text-sm;
+}
+
+.Pinpoint.Vote.Modal .wrapper .body button {
+	@apply border px-2 py-2 rounded-md text-sm font-semibold mb-4;
+}
+
+.Pinpoint.Vote.Modal .wrapper > .footer {
+	@apply mt-auto border-t p-4 text-gray-400 bg-gray-50 text-sm w-full flex flex-row items-center;
+}
+
+.Pinpoint.Vote.Modal .wrapper > .footer button {
+	@apply ml-auto;
+}
+
+.Pinpoint.Vote.Modal input[type='text'] {
+	@apply border h-full m-1 p-2 flex-1 outline-none focus:outline-none focus:ring-0;
+}
+
+.Pinpoint.Vote.Modal .email {
+	@apply rounded-none pr-2 w-full flex flex-row items-center text-sm;
+}
+
+.Pinpoint.Vote.Modal .email .icon.invalid {
+	@apply text-red-500;
+}
+
+.Pinpoint.Vote.Modal .email .icon.valid {
+	@apply text-green-500;
+}
+
+.Pinpoint.Vote.Modal button {
+	@apply bg-green-500 dark:bg-green-600 dark:border-0 outline-none text-white border mt-4 my-2 py-2 px-2 rounded font-sans text-sm disabled:bg-gray-100 disabled:text-gray-500 disabled:cursor-not-allowed flex-shrink-0;
+}
+
+.Pinpoint.Vote.Modal .body .options {
+	@apply flex space-x-6 text-4xl text-yellow-500 ml-1;
+}
+
+.Pinpoint.Vote.ModalOption {
+	@apply w-10 h-10 rounded-full flex items-center text-center overflow-hidden cursor-pointer border-2 border-yellow-600 bg-yellow-700;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+.Pinpoint.Vote.ModalOption:hover {
+	@apply shadow border-yellow-700;
+}
+.Pinpoint.Vote.ModalOption.selected {
+	@apply shadow border-yellow-800;
+}
+
+.Pinpoint.RoadmapCard.Count {
+	@apply ml-2 text-sm;
 }

@@ -5,17 +5,38 @@ import RoadmapSection from '../index';
 test('Test default', () => {
 	const component = renderer.create(
 		<RoadmapSection title="Section Title" description="Some information about what this particular section contains.">
-			<RoadmapCard title="My cool feature" description="Some interesting points about the cool feature I made.">
+			<RoadmapCard
+				title="My cool feature"
+				description="Some interesting points about the cool feature I made."
+				selectedVote={-1}
+				setSelectedVote={(vote) => console.log(vote)}
+				onSubmitNewSubscriber={(_email, vote) => console.log(vote)}
+				enableVoting
+			>
 				<div>Point number 1 for the feature.</div>
 				<div>Another point for the feature.</div>
 				<div>The third and final thing about the cool feature.</div>
 			</RoadmapCard>
-			<RoadmapCard title="My cool feature" description="Some interesting points about the cool feature I made.">
+			<RoadmapCard
+				title="My cool feature"
+				description="Some interesting points about the cool feature I made."
+				selectedVote={-1}
+				setSelectedVote={(vote) => console.log(vote)}
+				onSubmitNewSubscriber={(_email, vote) => console.log(vote)}
+				enableVoting
+			>
 				<div>Point number 1 for the feature.</div>
 				<div>Another point for the feature.</div>
 				<div>The third and final thing about the cool feature.</div>
 			</RoadmapCard>
-			<RoadmapCard title="My cool feature" description="Some interesting points about the cool feature I made.">
+			<RoadmapCard
+				title="My cool feature"
+				description="Some interesting points about the cool feature I made."
+				selectedVote={-1}
+				setSelectedVote={(vote) => console.log(vote)}
+				onSubmitNewSubscriber={(_email, vote) => console.log(vote)}
+				enableVoting
+			>
 				<div>Point number 1 for the feature.</div>
 				<div>Another point for the feature.</div>
 				<div>The third and final thing about the cool feature.</div>
@@ -29,17 +50,38 @@ test('Test default', () => {
 test('Test no description', () => {
 	const component = renderer.create(
 		<RoadmapSection title="Section Title">
-			<RoadmapCard title="My cool feature" description="Some interesting points about the cool feature I made.">
+			<RoadmapCard
+				title="My cool feature"
+				description="Some interesting points about the cool feature I made."
+				selectedVote={-1}
+				setSelectedVote={(vote) => console.log(vote)}
+				onSubmitNewSubscriber={(_email, vote) => console.log(vote)}
+				enableVoting
+			>
 				<div>Point number 1 for the feature.</div>
 				<div>Another point for the feature.</div>
 				<div>The third and final thing about the cool feature.</div>
 			</RoadmapCard>
-			<RoadmapCard title="My cool feature" description="Some interesting points about the cool feature I made.">
+			<RoadmapCard
+				title="My cool feature"
+				description="Some interesting points about the cool feature I made."
+				selectedVote={-1}
+				setSelectedVote={(vote) => console.log(vote)}
+				onSubmitNewSubscriber={(_email, vote) => console.log(vote)}
+				enableVoting
+			>
 				<div>Point number 1 for the feature.</div>
 				<div>Another point for the feature.</div>
 				<div>The third and final thing about the cool feature.</div>
 			</RoadmapCard>
-			<RoadmapCard title="My cool feature" description="Some interesting points about the cool feature I made.">
+			<RoadmapCard
+				title="My cool feature"
+				description="Some interesting points about the cool feature I made."
+				selectedVote={-1}
+				setSelectedVote={(vote) => console.log(vote)}
+				onSubmitNewSubscriber={(_email, vote) => console.log(vote)}
+				enableVoting
+			>
 				<div>Point number 1 for the feature.</div>
 				<div>Another point for the feature.</div>
 				<div>The third and final thing about the cool feature.</div>
@@ -57,17 +99,38 @@ test('Test default closed', () => {
 			description="Some information about what this particular section contains."
 			initialOpen={false}
 		>
-			<RoadmapCard title="My cool feature" description="Some interesting points about the cool feature I made.">
+			<RoadmapCard
+				title="My cool feature"
+				description="Some interesting points about the cool feature I made."
+				selectedVote={-1}
+				setSelectedVote={(vote) => console.log(vote)}
+				onSubmitNewSubscriber={(_email, vote) => console.log(vote)}
+				enableVoting
+			>
 				<div>Point number 1 for the feature.</div>
 				<div>Another point for the feature.</div>
 				<div>The third and final thing about the cool feature.</div>
 			</RoadmapCard>
-			<RoadmapCard title="My cool feature" description="Some interesting points about the cool feature I made.">
+			<RoadmapCard
+				title="My cool feature"
+				description="Some interesting points about the cool feature I made."
+				selectedVote={-1}
+				setSelectedVote={(vote) => console.log(vote)}
+				onSubmitNewSubscriber={(_email, vote) => console.log(vote)}
+				enableVoting
+			>
 				<div>Point number 1 for the feature.</div>
 				<div>Another point for the feature.</div>
 				<div>The third and final thing about the cool feature.</div>
 			</RoadmapCard>
-			<RoadmapCard title="My cool feature" description="Some interesting points about the cool feature I made.">
+			<RoadmapCard
+				title="My cool feature"
+				description="Some interesting points about the cool feature I made."
+				selectedVote={-1}
+				setSelectedVote={(vote) => console.log(vote)}
+				onSubmitNewSubscriber={(_email, vote) => console.log(vote)}
+				enableVoting
+			>
 				<div>Point number 1 for the feature.</div>
 				<div>Another point for the feature.</div>
 				<div>The third and final thing about the cool feature.</div>
@@ -97,17 +160,38 @@ test('Test custom className', () => {
 			title="Section Title"
 			description="Some information about what this particular section contains."
 		>
-			<RoadmapCard title="My cool feature" description="Some interesting points about the cool feature I made.">
+			<RoadmapCard
+				title="My cool feature"
+				description="Some interesting points about the cool feature I made."
+				selectedVote={-1}
+				setSelectedVote={(vote) => console.log(vote)}
+				onSubmitNewSubscriber={(_email, vote) => console.log(vote)}
+				enableVoting
+			>
 				<div>Point number 1 for the feature.</div>
 				<div>Another point for the feature.</div>
 				<div>The third and final thing about the cool feature.</div>
 			</RoadmapCard>
-			<RoadmapCard title="My cool feature" description="Some interesting points about the cool feature I made.">
+			<RoadmapCard
+				title="My cool feature"
+				description="Some interesting points about the cool feature I made."
+				selectedVote={-1}
+				setSelectedVote={(vote) => console.log(vote)}
+				onSubmitNewSubscriber={(_email, vote) => console.log(vote)}
+				enableVoting
+			>
 				<div>Point number 1 for the feature.</div>
 				<div>Another point for the feature.</div>
 				<div>The third and final thing about the cool feature.</div>
 			</RoadmapCard>
-			<RoadmapCard title="My cool feature" description="Some interesting points about the cool feature I made.">
+			<RoadmapCard
+				title="My cool feature"
+				description="Some interesting points about the cool feature I made."
+				selectedVote={-1}
+				setSelectedVote={(vote) => console.log(vote)}
+				onSubmitNewSubscriber={(_email, vote) => console.log(vote)}
+				enableVoting
+			>
 				<div>Point number 1 for the feature.</div>
 				<div>Another point for the feature.</div>
 				<div>The third and final thing about the cool feature.</div>
