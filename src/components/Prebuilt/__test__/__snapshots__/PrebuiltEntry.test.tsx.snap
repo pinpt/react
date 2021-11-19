@@ -893,6 +893,11 @@ exports[`Test custom className 1`] = `
             className="right"
           >
             <a
+              href="/roadmap"
+            >
+              View our Roadmap
+            </a>
+            <a
               className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-0 Prebuilt"
               href="/subscribe"
             >
@@ -2026,6 +2031,11 @@ exports[`Test default state 1`] = `
             className="right"
           >
             <a
+              href="/roadmap"
+            >
+              View our Roadmap
+            </a>
+            <a
               className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-0 Prebuilt"
               href="/subscribe"
             >
@@ -2944,6 +2954,11 @@ exports[`Test no author 1`] = `
           <div
             className="right"
           >
+            <a
+              href="/roadmap"
+            >
+              View our Roadmap
+            </a>
             <a
               className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-0 Prebuilt"
               href="/subscribe"
@@ -4279,6 +4294,11 @@ exports[`Test no authors 1`] = `
             className="right"
           >
             <a
+              href="/roadmap"
+            >
+              View our Roadmap
+            </a>
+            <a
               className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-100 Prebuilt"
               href="/subscribe"
             >
@@ -5243,6 +5263,11 @@ exports[`Test no claps 1`] = `
           <div
             className="right"
           >
+            <a
+              href="/roadmap"
+            >
+              View our Roadmap
+            </a>
             <a
               className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-100 Prebuilt"
               href="/subscribe"
@@ -6377,6 +6402,11 @@ exports[`Test not zoomable 1`] = `
             className="right"
           >
             <a
+              href="/roadmap"
+            >
+              View our Roadmap
+            </a>
+            <a
               className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-0 Prebuilt"
               href="/subscribe"
             >
@@ -7332,6 +7362,11 @@ exports[`Test with pagination 1`] = `
           <div
             className="right"
           >
+            <a
+              href="/roadmap"
+            >
+              View our Roadmap
+            </a>
             <a
               className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-100 Prebuilt"
               href="/subscribe"

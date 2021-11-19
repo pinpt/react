@@ -836,6 +836,10 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 	@apply mt-10 mb-5 border rounded p-4 inline-flex bg-white;
 }
 
+.Pinpoint.Roadmap .Pinpoint.feedbackWrapper {
+	@apply mx-12 pb-5;
+}
+
 .Pinpoint.Form.Wrapper {
 	@apply flex flex-col w-full;
 }

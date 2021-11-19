@@ -1,5 +1,4 @@
 import React, { ReactElement, useCallback, useMemo, useState } from 'react';
-import type { Analytics, IContent, ISite } from '../../../../lib/types';
 import { ICopyrightProps } from '../../../Copyright';
 import { IHeaderProps } from '../../../Header';
 import { ILogoProps } from '../../../Logo';
@@ -17,6 +16,7 @@ import Outline, { IOutlineProps } from '../../Outline';
 import HomePage from '../../Page/Home';
 import Title from '../../Title';
 
+import type { Analytics, IContent, ISite } from '../../../../lib/types';
 export interface IPrebuiltDocumentationHomeProps {
 	className?: string;
 	site: ISite;
@@ -47,6 +47,7 @@ export interface IPrebuiltDocumentationHomeProps {
 	currentAnchor?: string;
 	largeTitle?: boolean;
 	renderSearchBar?: (site: ISite) => ReactElement<ISearchBarProps>;
+	renderRoadmap?: (site: ISite) => ReactElement;
 }
 
 const Home = (props: IPrebuiltDocumentationHomeProps) => {
@@ -70,6 +71,7 @@ const Home = (props: IPrebuiltDocumentationHomeProps) => {
 		renderCopyright,
 		renderSocial,
 		renderPagination,
+		renderRoadmap,
 		title,
 		description,
 		currentAnchor,
@@ -199,6 +201,7 @@ const Home = (props: IPrebuiltDocumentationHomeProps) => {
 								renderLogo={renderLogo}
 								renderSocial={renderSocial}
 								renderSubscribe={renderSubscribe ?? (() => <></>)}
+								renderRoadmap={site.features.roadmap ? renderRoadmap : () => <></>}
 							/>
 						)
 					}

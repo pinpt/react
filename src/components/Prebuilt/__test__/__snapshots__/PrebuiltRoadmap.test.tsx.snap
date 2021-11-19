@@ -876,6 +876,58 @@ exports[`Test custom className 1`] = `
     </div>
   </div>
   <div
+    className="Pinpoint feedbackWrapper"
+  >
+    <div
+      className="Pinpoint constraint"
+    >
+      <div
+        className="Pinpoint Widget Feedback "
+      >
+        <div
+          className="title"
+        >
+          Have product feedback? We'd love to hear from you!
+        </div>
+        <div
+          className="message"
+        >
+          <textarea
+            disabled={false}
+            onChange={[Function]}
+            placeholder="Your feedback..."
+            value=""
+          />
+        </div>
+        <div
+          className="email"
+        >
+          <input
+            autoComplete="email"
+            disabled={false}
+            onChange={[Function]}
+            placeholder="Your email address"
+            type="text"
+            value=""
+          />
+          
+        </div>
+        <button
+          disabled={true}
+          onClick={[Function]}
+        >
+          Send Feedback
+        </button>
+        <div
+          className="disclaimer"
+        >
+          By submitting, you agree to allow us to communicate with you by email.
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div
     className="Pinpoint footerWrapper"
   >
     <div
@@ -919,6 +971,11 @@ exports[`Test custom className 1`] = `
           <div
             className="right"
           >
+            <a
+              href="/roadmap"
+            >
+              View our Roadmap
+            </a>
             <a
               className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-100 Prebuilt"
               href="/subscribe"
@@ -2176,6 +2233,58 @@ exports[`Test fetching 1`] = `
     </div>
   </div>
   <div
+    className="Pinpoint feedbackWrapper"
+  >
+    <div
+      className="Pinpoint constraint"
+    >
+      <div
+        className="Pinpoint Widget Feedback "
+      >
+        <div
+          className="title"
+        >
+          Have product feedback? We'd love to hear from you!
+        </div>
+        <div
+          className="message"
+        >
+          <textarea
+            disabled={false}
+            onChange={[Function]}
+            placeholder="Your feedback..."
+            value=""
+          />
+        </div>
+        <div
+          className="email"
+        >
+          <input
+            autoComplete="email"
+            disabled={false}
+            onChange={[Function]}
+            placeholder="Your email address"
+            type="text"
+            value=""
+          />
+          
+        </div>
+        <button
+          disabled={true}
+          onClick={[Function]}
+        >
+          Send Feedback
+        </button>
+        <div
+          className="disclaimer"
+        >
+          By submitting, you agree to allow us to communicate with you by email.
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div
     className="Pinpoint footerWrapper"
   >
     <div
@@ -2219,6 +2328,11 @@ exports[`Test fetching 1`] = `
           <div
             className="right"
           >
+            <a
+              href="/roadmap"
+            >
+              View our Roadmap
+            </a>
             <a
               className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-100 Prebuilt"
               href="/subscribe"
@@ -3336,6 +3450,58 @@ exports[`Test full page 1`] = `
     </div>
   </div>
   <div
+    className="Pinpoint feedbackWrapper"
+  >
+    <div
+      className="Pinpoint constraint"
+    >
+      <div
+        className="Pinpoint Widget Feedback "
+      >
+        <div
+          className="title"
+        >
+          Have product feedback? We'd love to hear from you!
+        </div>
+        <div
+          className="message"
+        >
+          <textarea
+            disabled={false}
+            onChange={[Function]}
+            placeholder="Your feedback..."
+            value=""
+          />
+        </div>
+        <div
+          className="email"
+        >
+          <input
+            autoComplete="email"
+            disabled={false}
+            onChange={[Function]}
+            placeholder="Your email address"
+            type="text"
+            value=""
+          />
+          
+        </div>
+        <button
+          disabled={true}
+          onClick={[Function]}
+        >
+          Send Feedback
+        </button>
+        <div
+          className="disclaimer"
+        >
+          By submitting, you agree to allow us to communicate with you by email.
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div
     className="Pinpoint footerWrapper"
   >
     <div
@@ -3379,6 +3545,11 @@ exports[`Test full page 1`] = `
           <div
             className="right"
           >
+            <a
+              href="/roadmap"
+            >
+              View our Roadmap
+            </a>
             <a
               className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-0 Prebuilt"
               href="/subscribe"
@@ -3897,6 +4068,58 @@ exports[`Test full page default closed 1`] = `
     </div>
   </div>
   <div
+    className="Pinpoint feedbackWrapper"
+  >
+    <div
+      className="Pinpoint constraint"
+    >
+      <div
+        className="Pinpoint Widget Feedback "
+      >
+        <div
+          className="title"
+        >
+          Have product feedback? We'd love to hear from you!
+        </div>
+        <div
+          className="message"
+        >
+          <textarea
+            disabled={false}
+            onChange={[Function]}
+            placeholder="Your feedback..."
+            value=""
+          />
+        </div>
+        <div
+          className="email"
+        >
+          <input
+            autoComplete="email"
+            disabled={false}
+            onChange={[Function]}
+            placeholder="Your email address"
+            type="text"
+            value=""
+          />
+          
+        </div>
+        <button
+          disabled={true}
+          onClick={[Function]}
+        >
+          Send Feedback
+        </button>
+        <div
+          className="disclaimer"
+        >
+          By submitting, you agree to allow us to communicate with you by email.
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div
     className="Pinpoint footerWrapper"
   >
     <div
@@ -3940,6 +4163,11 @@ exports[`Test full page default closed 1`] = `
           <div
             className="right"
           >
+            <a
+              href="/roadmap"
+            >
+              View our Roadmap
+            </a>
             <a
               className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-100 Prebuilt"
               href="/subscribe"
@@ -4773,6 +5001,58 @@ exports[`Test full page default empty 1`] = `
     </div>
   </div>
   <div
+    className="Pinpoint feedbackWrapper"
+  >
+    <div
+      className="Pinpoint constraint"
+    >
+      <div
+        className="Pinpoint Widget Feedback "
+      >
+        <div
+          className="title"
+        >
+          Have product feedback? We'd love to hear from you!
+        </div>
+        <div
+          className="message"
+        >
+          <textarea
+            disabled={false}
+            onChange={[Function]}
+            placeholder="Your feedback..."
+            value=""
+          />
+        </div>
+        <div
+          className="email"
+        >
+          <input
+            autoComplete="email"
+            disabled={false}
+            onChange={[Function]}
+            placeholder="Your email address"
+            type="text"
+            value=""
+          />
+          
+        </div>
+        <button
+          disabled={true}
+          onClick={[Function]}
+        >
+          Send Feedback
+        </button>
+        <div
+          className="disclaimer"
+        >
+          By submitting, you agree to allow us to communicate with you by email.
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div
     className="Pinpoint footerWrapper"
   >
     <div
@@ -4816,6 +5096,11 @@ exports[`Test full page default empty 1`] = `
           <div
             className="right"
           >
+            <a
+              href="/roadmap"
+            >
+              View our Roadmap
+            </a>
             <a
               className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-0 Prebuilt"
               href="/subscribe"
@@ -5646,6 +5931,58 @@ exports[`Test no voting 1`] = `
     </div>
   </div>
   <div
+    className="Pinpoint feedbackWrapper"
+  >
+    <div
+      className="Pinpoint constraint"
+    >
+      <div
+        className="Pinpoint Widget Feedback "
+      >
+        <div
+          className="title"
+        >
+          Have product feedback? We'd love to hear from you!
+        </div>
+        <div
+          className="message"
+        >
+          <textarea
+            disabled={false}
+            onChange={[Function]}
+            placeholder="Your feedback..."
+            value=""
+          />
+        </div>
+        <div
+          className="email"
+        >
+          <input
+            autoComplete="email"
+            disabled={false}
+            onChange={[Function]}
+            placeholder="Your email address"
+            type="text"
+            value=""
+          />
+          
+        </div>
+        <button
+          disabled={true}
+          onClick={[Function]}
+        >
+          Send Feedback
+        </button>
+        <div
+          className="disclaimer"
+        >
+          By submitting, you agree to allow us to communicate with you by email.
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div
     className="Pinpoint footerWrapper"
   >
     <div
@@ -5689,6 +6026,11 @@ exports[`Test no voting 1`] = `
           <div
             className="right"
           >
+            <a
+              href="/roadmap"
+            >
+              View our Roadmap
+            </a>
             <a
               className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-0 Prebuilt"
               href="/subscribe"

@@ -40,6 +40,11 @@ exports[`Test custom className 1`] = `
       className="right"
     >
       <a
+        href="/roadmap"
+      >
+        View our Roadmap
+      </a>
+      <a
         className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-100 Prebuilt"
         href="/subscribe"
       >
@@ -316,6 +321,11 @@ exports[`Test default state 1`] = `
     <div
       className="right"
     >
+      <a
+        href="/roadmap"
+      >
+        View our Roadmap
+      </a>
       <a
         className="Pinpoint Internal Link Pinpoint Subscribe transition-opacity opacity-0 Prebuilt"
         href="/subscribe"

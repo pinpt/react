@@ -1,17 +1,11 @@
 import React, { ReactElement } from 'react';
 import { getSiteRSSURL, ISite } from '../../../lib';
-import { getRouterAbsolutePath, getRouterRelativePath } from '../../../lib/router';
+import { getRouterRelativePath } from '../../../lib/router';
 import Copyright, { ICopyrightProps } from '../../Copyright';
 import BaseFooter from '../../Footer';
 import Logo, { ILogoProps } from '../../Logo';
 import {
-	FacebookLink,
-	GithubLink,
-	InstagramLink,
-	LinkedInLink,
-	RSSLink,
-	SocialMediaBar,
-	TwitterLink,
+	FacebookLink, GithubLink, InstagramLink, LinkedInLink, RSSLink, SocialMediaBar, TwitterLink
 } from '../../SocialMedia';
 import { ISocialMediaBarProps } from '../../SocialMedia/SocialMediaBar';
 import Subscribe, { ISubscribeProps } from '../../Subscribe';
@@ -23,15 +17,23 @@ export interface IPrebuiltFooterProps {
 	renderLogo?: (site: ISite) => ReactElement<ILogoProps>;
 	renderSocial?: (site: ISite) => ReactElement<ISocialMediaBarProps>;
 	renderSubscribe?: (site: ISite) => ReactElement<ISubscribeProps>;
+	renderRoadmap?: (site: ISite) => ReactElement;
 }
 
 const Footer = (props: IPrebuiltFooterProps) => {
-	const { className, site, renderCopyright, renderLogo, renderSocial, renderSubscribe } = props;
+	const { className, site, renderCopyright, renderLogo, renderSocial, renderSubscribe, renderRoadmap } = props;
 
 	return (
 		<BaseFooter
 			className={`Prebuilt ${className}`}
 			siteId={site?.id}
+			roadmap={
+				renderRoadmap?.(site) ?? site.features.roadmap ? (
+					<a href={getRouterRelativePath(site, '/roadmap')}>View our Roadmap</a>
+				) : (
+					<></>
+				)
+			}
 			social={
 				renderSocial?.(site) ?? (
 					<SocialMediaBar className="Prebuilt">

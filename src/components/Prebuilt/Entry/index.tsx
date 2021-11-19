@@ -1,10 +1,7 @@
 import React, { ReactElement } from 'react';
+import { feedbackTitleFromContent } from '../../../lib/data/feedback';
 import { configFromSite } from '../../../lib/data/site';
-import type { IContent, ISite } from '../../../lib/types';
-import { ContentTemplateType } from '../../../lib/types/content';
-import type { IFeedbackProps, IFeedbackModalProps } from '../../../lib/types/feedback';
 import Feedback from '../../../widgets/Feedback';
-import FeedbackModal from '../../../widgets/FeedbackModal';
 import Author, { IAuthorProps } from '../../Author';
 import Clap, { IClapProps } from '../../Clap';
 import { ICopyrightProps } from '../../Copyright';
@@ -18,7 +15,9 @@ import Pinpoint from '../../Pinpoint';
 import { Document } from '../../Renderer';
 import { ISearchBarProps } from '../../Search/Bar';
 import Sidebar, { ISidebarProps } from '../../Sidebar';
-import { EmailShare, FacebookShare, LinkedInShare, SocialMediaBar, TwitterShare } from '../../SocialMedia';
+import {
+	EmailShare, FacebookShare, LinkedInShare, SocialMediaBar, TwitterShare
+} from '../../SocialMedia';
 import { ISocialMediaBarProps } from '../../SocialMedia/SocialMediaBar';
 import { ISubscribeProps } from '../../Subscribe';
 import Tags from '../../Tags';
@@ -27,6 +26,8 @@ import { IThemeToggleProps } from '../../ThemeToggle';
 import Footer from '../Footer';
 import Header from '../Header';
 
+import type { IContent, ISite } from '../../../lib/types';
+import type { IFeedbackProps, IFeedbackModalProps } from '../../../lib/types/feedback';
 export interface IPrebuiltEntryProps {
 	className?: string;
 	renderContent?: (content: IContent) => ReactElement;
@@ -47,7 +48,6 @@ export interface IPrebuiltEntryProps {
 	renderSocialSharing?: (site: ISite) => ReactElement<ISocialMediaBarProps>;
 	renderPagination?: (site: ISite, next?: IContent, previous?: IContent) => void;
 	renderFeedback?: (site: ISite) => ReactElement<IFeedbackProps>;
-	renderFeedbackModal?: (site: ISite) => ReactElement<IFeedbackModalProps>;
 	clapCount?: number;
 	sessionClapCount?: number;
 	onClap?: (content: IContent) => void;
@@ -65,23 +65,6 @@ export interface IPrebuiltEntryProps {
 	renderNoficiationModalWidget?: (widget: any) => ReactElement;
 	renderMostRecentPostsWidget?: (widget: any) => ReactElement;
 }
-
-const feedbackTitleFromContent = (content: IContent): string => {
-	switch (content.type) {
-		case ContentTemplateType.Changelog: {
-			return `Have product feedback? We'd love to hear from you!`;
-		}
-		case ContentTemplateType.Documentation: {
-			return `Have documentation feedback? We'd love to hear from you!`;
-		}
-		case ContentTemplateType.Blog: {
-			return `Have feedback on this post? We'd love to hear from you!`;
-		}
-		default:
-			break;
-	}
-	return `Have feedback? We'd love to hear from you!`;
-};
 
 const Entry = (props: IPrebuiltEntryProps) => {
 	const {
@@ -102,7 +85,6 @@ const Entry = (props: IPrebuiltEntryProps) => {
 		renderTags,
 		renderClap,
 		renderFeedback,
-		renderFeedbackModal,
 		clapCount = 0,
 		onClap,
 		sessionClapCount = 0,
