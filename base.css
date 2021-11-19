@@ -833,7 +833,7 @@ html.dark .Pinpoint.ThemeToggle .mode::after {
 }
 
 .Pinpoint.feedbackWrapper {
-	@apply mt-10 mb-5 border rounded p-4 inline-flex bg-white shadow-lg;
+	@apply mt-10 mb-5 border rounded p-4 inline-flex bg-white;
 }
 
 .Pinpoint.Form.Wrapper {
