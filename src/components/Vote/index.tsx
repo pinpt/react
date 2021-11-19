@@ -21,7 +21,7 @@ export interface IVoteProps {
 
 const baseClass = 'Pinpoint Vote';
 
-const indicators = [
+export const indicators = [
 	,
 	<FontAwesomeIcon icon={faMeh} fixedWidth />,
 	<FontAwesomeIcon icon={faSmile} fixedWidth />,

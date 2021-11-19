@@ -132,6 +132,7 @@ const {
 	PrebuiltRoadmap,
 	createVote,
 	getVoteCounts,
+	voteIndicators,
 	...otherExports
 } = Exports;
 
@@ -232,6 +233,7 @@ test('Test component exports', () => {
 	// Test roadmap components
 	expect(RoadmapSection).toBeTruthy();
 	expect(RoadmapCard).toBeTruthy();
+	expect(voteIndicators).toBeTruthy();
 });
 
 test('Test util exports', () => {
