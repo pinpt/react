@@ -2,6 +2,7 @@ import React, { useCallback, useState } from 'react';
 import { faCheckCircle, faExclamationCircle, faSpinner } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import useFeedback from '../../lib/hooks/useFeedback';
+
 import type { IFeedbackProps } from '../../lib/types/feedback';
 
 export const SendButton = ({
@@ -65,12 +66,14 @@ export const EmailInput = ({
 	valid,
 	disabled,
 	hide,
+	autoFocus,
 }: {
 	email: string;
 	setEmail: (val: string) => void;
 	valid: boolean;
 	disabled: boolean;
 	hide: boolean;
+	autoFocus?: boolean;
 }) => {
 	if (hide) {
 		return null;
@@ -84,6 +87,7 @@ export const EmailInput = ({
 				autoComplete="email"
 				disabled={disabled}
 				placeholder="Your email address"
+				autoFocus={autoFocus}
 			/>
 			{email && (
 				<FontAwesomeIcon
