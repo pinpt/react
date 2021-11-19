@@ -1,9 +1,8 @@
 import React, { forwardRef, ReactElement } from 'react';
+import type { IFeedbackProps } from '../../../lib/types/feedback';
 import { IFooterProps } from '../../Footer';
 import { IHeaderProps } from '../../Header';
 import withWrapper from '../../Internal/withWrapper';
-
-import type { IFeedbackProps } from '../../../lib/types/feedback';
 import type { IRoadmapSectionProps } from '../../RoadmapSection';
 
 export interface IRoadmapPageProps {
